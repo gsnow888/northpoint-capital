@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NORTHPOINT — The Bootcamp</title>
+<link rel="stylesheet" href="css/bootcamp.css">
+<meta name="robots" content="noindex,follow">
+</head>
+<body>
+
+<!-- ══════════ PORTADA ══════════ -->
+<div class="portada">
+  <div class="centro">
+    <div class="marca">NORTHPOINT</div>
+    <div class="bajo">TRADER BACKING</div>
+    <div class="raya"></div>
+    <div class="tagline">THE BOOTCAMP · THE MODULES · +48 HRS OF RECORDED VIDEO</div>
+  </div>
+  <div class="pie-h"><span>THE WRITTEN COMPANION</span><span>MMXXVI</span></div>
+</div>
+
+<!-- ══════════ ÍNDICE ══════════ -->
+<div class="indice">
+  <div class="ix-cab">// INDEX</div>
+  <div class="ix-fila"><em>Futures, from zero</em><i>/01</i></div>
+  <div class="ix-fila"><em>Market structure</em><i>/02</i></div>
+  <div class="ix-fila"><em>Liquidity</em><i>/03</i></div>
+  <div class="ix-fila"><em>The setup</em><i>/04</i></div>
+  <div class="ix-fila"><em>The entry</em><i>/05</i></div>
+  <div class="ix-fila"><em>Risk</em><i>/06</i></div>
+  <div class="ix-fila"><em>The journal</em><i>/07</i></div>
+  <div class="ix-fila"><em>Funded accounts</em><i>/08</i></div>
+  <p style="margin-top:26px;color:var(--faint);font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;line-height:2">
+    This book is the written companion to the recorded modules. It teaches the language,
+    the structure and the discipline of the desk — WHAT we do and HOW we think.
+    The exact settings of the house tools are handed out personally, never printed.</p>
+</div>
+
+<!-- ══════════ MÓDULO 01 ══════════ -->
+<div class="portada-mod">
+  <div class="pm-num">MODULE / 01</div>
+  <div class="pm-tit">Futures,<br>from zero</div>
+  <div class="pm-lista">
+    <div><span>01</span>What a futures contract is</div>
+    <div><span>02</span>Ticks, points &amp; contract sizes</div>
+    <div><span>03</span>Micros vs minis</div>
+    <div><span>04</span>Sessions and market hours</div>
+    <div><span>05</span>Your first chart</div>
+  </div>
+</div>
+<div class="cuerpo">
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 01 · TOPIC 01</div>
+    <div class="t-tit">What a futures contract is</div>
+    <p>A futures contract is a <b>standardized agreement</b> to buy or sell something at a
+    fixed price on a future date. Standardized means the exchange — for us, the CME in
+    Chicago — decides everything about the contract except the price: the size, the tick,
+    the expiry, the hours. The only thing traders negotiate is price, which is exactly why
+    futures markets are so clean to read: every participant is trading the identical
+    instrument, on the identical terms, in one central order book.</p>
+    <p>The contracts we trade track <b>stock indexes</b> — the Nasdaq-100 and the S&amp;P 500.
+    Nobody delivers a basket of a hundred stocks at expiry; index futures are
+    <b>cash-settled</b>. You never own shares. You own a position whose value moves with the
+    index, and your profit or loss settles in dollars, every day.</p>
+    <p>Two properties make futures the natural instrument for this desk. First,
+    <b>leverage</b>: you post a small margin deposit to control a much larger notional value,
+    which is why risk discipline is not optional here — the same lever that multiplies wins
+    multiplies mistakes. Second, <b>symmetry</b>: selling short is as natural as buying long.
+    There is no borrow, no restriction — a short is just the other side of the same trade.</p>
+    <p>Contracts expire quarterly — March (H), June (M), September (U), December (Z). About
+    a week before expiry, volume migrates to the next contract; that migration is called
+    <b>rollover</b>. You always trade the front contract, the one carrying the volume.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 01 · TOPIC 02</div>
+    <div class="t-tit">Ticks, points &amp; contract sizes</div>
+    <p>A <b>tick</b> is the smallest step price can move. A <b>point</b> is a whole unit of
+    the index. Every contract defines both, and together they define what a move is worth in
+    dollars. This is arithmetic you must know cold, because position sizing — module 05 —
+    is built on it.</p>
+    <table>
+      <tr><th>CONTRACT</th><th>INDEX</th><th>TICK</th><th>TICK VALUE</th><th>POINT VALUE</th></tr>
+      <tr><td><b>MNQ</b> · Micro Nasdaq</td><td>Nasdaq-100</td><td>0.25 pt</td><td>$0.50</td><td>$2</td></tr>
+      <tr><td><b>NQ</b> · E-mini Nasdaq</td><td>Nasdaq-100</td><td>0.25 pt</td><td>$5.00</td><td>$20</td></tr>
+      <tr><td><b>MES</b> · Micro S&amp;P</td><td>S&amp;P 500</td><td>0.25 pt</td><td>$1.25</td><td>$5</td></tr>
+      <tr><td><b>ES</b> · E-mini S&amp;P</td><td>S&amp;P 500</td><td>0.25 pt</td><td>$12.50</td><td>$50</td></tr>
+    </table>
+    <p>Read the table like a trader: a 20-point move on MNQ is <b>$40 per contract</b>; the
+    same move on NQ is <b>$400 per contract</b>. Same chart, same move, ten times the money —
+    and ten times the damage when you are wrong. When you hear someone at the desk say
+    "twenty-three points of risk", you should instantly hear the dollar figure for the size
+    they carry. If you have to reach for a calculator mid-session, you are not ready to
+    click.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 01 · TOPIC 03</div>
+    <div class="t-tit">Micros vs minis</div>
+    <p>Every E-mini has a micro twin at exactly <b>one tenth</b> the size. MNQ is one tenth
+    of NQ; MES is one tenth of ES. The charts are identical — same price, same structure,
+    same levels — only the dollars per point change.</p>
+    <p>Micros are not a toy tier; they are a <b>precision tool</b>. They let you size risk
+    finely (ten micros equal one mini, so you can hold any size between), they let you learn
+    with real money and real fills without real destruction, and they let a funded account
+    breathe: on a $50k evaluation, risking a fixed daily amount with micros keeps single
+    mistakes survivable. The desk's rule of thumb: <b>earn size, never guess it</b> — you
+    move from micros toward minis when your journal proves the edge at the current size,
+    not when impatience suggests it.</p>
+    <p>One honest caveat: micro commissions are proportionally heavier per dollar traded.
+    That is the tuition you pay for precision, and it is worth every cent while you build
+    the sample that proves you belong at bigger size.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 01 · TOPIC 04</div>
+    <div class="t-tit">Sessions and market hours</div>
+    <p>Index futures trade almost around the clock, but the clock has a shape, and the desk
+    lives by it. All times below are <b>New York time</b> — the only clock this desk uses.</p>
+    <table>
+      <tr><th>WINDOW</th><th>NY TIME</th><th>WHAT IT IS</th></tr>
+      <tr><td><b>Globex open</b></td><td>Sun 18:00</td><td>the week begins</td></tr>
+      <tr><td><b>Asia</b></td><td>18:00 – 02:00</td><td>thin, slow, sets overnight levels</td></tr>
+      <tr><td><b>London</b></td><td>02:00 – 09:30</td><td>volume returns, overnight range builds</td></tr>
+      <tr><td><b>New York RTH</b></td><td>09:30 – 16:00</td><td>the cash session — where we work</td></tr>
+      <tr><td><b>Daily halt</b></td><td>17:00 – 18:00</td><td>the only hour futures truly close</td></tr>
+    </table>
+    <p>The half-day around the New York cash open carries the volume, the news and the
+    institutional flow. Overnight matters to us as <b>context</b> — where Asia and London
+    left their highs and lows — but the work happens in the New York morning, when the real
+    participants are present and moves have fuel. Trading a dead window because you are
+    bored is not trading; it is donating.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 01 · TOPIC 05</div>
+    <div class="t-tit">Your first chart</div>
+    <p>A candle compresses a window of time into four prices: <b>open, high, low, close</b>.
+    The body spans open to close; the wicks reach the extremes. A candle with a long lower
+    wick says sellers pushed and were refused. A candle that closes on its high says buyers
+    finished in control. One candle is a sentence; a chart is the conversation.</p>
+    <p>The desk reads two clocks of the same market: a slower chart for <b>context</b> —
+    where are we in the day's structure, where are the levels — and a fast chart for
+    <b>execution</b> — the precise moment the plan becomes a click. Neither replaces the
+    other. Context without execution is commentary; execution without context is gambling.</p>
+    <p>Set your chart to New York time, keep the palette clean enough to read in one glance,
+    and resist the beginner's urge to stack indicators until the price disappears. Everything
+    this bootcamp teaches is visible on a bare chart first; tools come later, and every tool
+    on the desk's screen earns its place by answering one question the bare chart cannot.</p>
+  </div>
+
+</div>
+
+<!-- ══════════ MÓDULO 02 ══════════ -->
+<div class="portada-mod">
+  <div class="pm-num">MODULE / 02</div>
+  <div class="pm-tit">Market<br>structure</div>
+  <div class="pm-lista">
+    <div><span>01</span>Highs, lows and swings</div>
+    <div><span>02</span>Trend vs range</div>
+    <div><span>03</span>Support &amp; resistance</div>
+    <div><span>04</span>Timeframes and context</div>
+    <div><span>05</span>Reading a full session</div>
+  </div>
+</div>
+<div class="cuerpo">
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 02 · TOPIC 01</div>
+    <div class="t-tit">Highs, lows and swings</div>
+    <p>Strip everything from a chart and what remains is a sequence of <b>swings</b>: price
+    pushes, pauses, pulls back, pushes again. Each push leaves a swing high or a swing low —
+    a local extreme with lower activity on both sides. These pivots are the skeleton of
+    structure, and naming them precisely is the first fluency this desk demands.</p>
+    <ul>
+      <li><b>HH / HL</b> — higher high, higher low: buyers keep paying more and defending higher. Bullish structure.</li>
+      <li><b>LL / LH</b> — lower low, lower high: sellers press further and cap every bounce. Bearish structure.</li>
+      <li><b>Break of structure</b> — the moment a defended pivot gives way; the market's vote just changed.</li>
+    </ul>
+    <p>Structure is objective. Two traders can argue forever about "bullish or bearish", but
+    whether the last swing low held or broke is a fact on the chart. The desk's language is
+    built from those facts — when a teammate says "we just took the previous high and made a
+    higher low", that sentence has exactly one meaning, and everyone sees the same thing.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 02 · TOPIC 02</div>
+    <div class="t-tit">Trend vs range</div>
+    <p>Markets alternate between two regimes, and every mistake of strategy is really a
+    mistake of regime. A <b>trend</b> is structure stacking in one direction — HH/HL after
+    HH/HL — where pullbacks are opportunities and fading strength is expensive. A
+    <b>range</b> is the absence of that stacking: price oscillates between a defended high
+    and a defended low, breakouts fail more often than they follow through, and the middle
+    of the box is a no-man's-land where nothing good happens.</p>
+    <p>The uncomfortable statistical truth: markets spend most of their time ranging. The
+    edge is not predicting which regime comes next; it is <b>identifying the current regime
+    honestly</b> and either applying the tactics that fit it or standing aside. Trend tactics
+    in a range bleed you with false breaks. Range tactics in a trend put you in front of a
+    train.</p>
+    <p>The transition is where fortunes change hands: a range that finally breaks with
+    conviction becomes the start of a trend, and the traders trapped on the wrong side
+    become its fuel. Which is why the next module — liquidity — is really the study of who
+    is trapped where.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 02 · TOPIC 03</div>
+    <div class="t-tit">Support &amp; resistance</div>
+    <p>A level is a price where something already happened: a swing was defended, a session
+    opened or closed, an overnight extreme was printed. <b>Support</b> is a level below where
+    buying appeared before; <b>resistance</b> is a level above where selling appeared before.
+    They matter not from magic but from <b>memory</b> — the traders who acted there before
+    still have their positions, their regrets, and their orders.</p>
+    <p>The levels this desk marks every single day are few and always the same:</p>
+    <ul>
+      <li><b>PDH / PDL</b> — the previous day's high and low</li>
+      <li><b>ONH / ONL</b> — the overnight session's high and low</li>
+      <li><b>The open</b> — where the New York cash session starts</li>
+      <li>Yesterday's close, and any untouched extreme from recent days</li>
+    </ul>
+    <p>Two behaviors matter at a level: <b>rejection</b> — price tests it and leaves fast —
+    and <b>the flip</b> — a broken resistance behaves as new support (and vice versa),
+    because the trapped side now defends the price that once trapped them. Few levels,
+    watched carefully, beat many levels watched vaguely.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 02 · TOPIC 04</div>
+    <div class="t-tit">Timeframes and context</div>
+    <p>Every timeframe tells the truth about its own scale and nothing else. The 1-minute
+    chart is honest about the last twenty minutes; it knows nothing about the week. Trading
+    a fast chart without a slow one is how you end up shorting a pullback in a bull day and
+    calling it a trend change.</p>
+    <p>The desk reads <b>top-down, always in the same order</b>: the higher timeframe gives
+    the regime and the levels; the middle gives today's structure; the execution chart gives
+    the moment. The rule that keeps it clean: <b>bias flows down, entries flow up</b>. You
+    are allowed to refine a higher-timeframe idea on the small chart; you are not allowed to
+    invent a trade on the small chart that the big picture contradicts.</p>
+    <p>And when timeframes disagree — the day says up, the hour says down — that is not a
+    puzzle to force; it is the market telling you the picture is unclear. Unclear is a
+    position too: flat.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 02 · TOPIC 05</div>
+    <div class="t-tit">Reading a full session</div>
+    <p>A New York session has anatomy. Learn it and the day stops feeling random:</p>
+    <ul>
+      <li><b>Before the bell</b> — overnight has drawn its range; the levels are marked; the plan is written. You know what would make you act and what keeps you flat.</li>
+      <li><b>The open</b> — the most information-dense minutes of the day. The market chooses: drive away from the open with conviction, or rotate and auction around it.</li>
+      <li><b>The morning</b> — the highest-quality two hours. Real participation, real follow-through; this is where the desk works.</li>
+      <li><b>Midday</b> — participation drains, moves shrink and lie. The desk's rule: the morning pays, midday charges.</li>
+      <li><b>The afternoon</b> — flows return into the close; the day resolves its open question — did we accept above or below yesterday's business?</li>
+    </ul>
+    <p>After the close, the session becomes a story you can retell in three sentences: where
+    it opened, what it attempted, what it accepted. If you can't retell it, you weren't
+    reading it — you were staring at it.</p>
+  </div>
+
+</div>
+
+<!-- ══════════ MÓDULO 03 ══════════ -->
+<div class="portada-mod">
+  <div class="pm-num">MODULE / 03</div>
+  <div class="pm-tit">Liquidity</div>
+  <div class="pm-lista">
+    <div><span>01</span>Where orders rest</div>
+    <div><span>02</span>Sweeps and traps</div>
+    <div><span>03</span>Why price really moves</div>
+    <div><span>04</span>Volume, the basics</div>
+    <div><span>05</span>The open, explained</div>
+  </div>
+</div>
+<div class="cuerpo">
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 03 · TOPIC 01</div>
+    <div class="t-tit">Where orders rest</div>
+    <p>Liquidity is not a metaphor. It is <b>resting orders</b> — real size sitting in the
+    book, waiting. Two kinds matter: <b>limit orders</b>, placed by traders willing to
+    transact at a better price, and <b>stop orders</b>, placed by traders already in a
+    position who will be forced out if price reaches them. Stops are the important ones,
+    because a stop is an order to trade <i>with</i> the move that hurts you — a buy stop
+    above the market, a sell stop below it.</p>
+    <p>Where do stops cluster? Exactly where this course already taught you to look:
+    just above obvious highs, just below obvious lows, behind round numbers, behind
+    yesterday's extremes. Every "obvious level" that a thousand retail charts display is
+    also a <b>map of where forced orders sleep</b>.</p>
+    <p>Shift your reading one level up: stop seeing highs and lows as walls, and start
+    seeing them as <b>fuel depots</b>. Price is drawn toward resting orders the way water is
+    drawn downhill, because resting orders are the counterparty big players need to fill
+    size. That single idea reorganizes everything you see on a chart.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 03 · TOPIC 02</div>
+    <div class="t-tit">Sweeps and traps</div>
+    <p>A <b>sweep</b> is the harvest: price pushes through an obvious level, detonates the
+    stops resting behind it, fills the aggressor's size against those forced orders — and
+    then leaves. On the chart it prints as a wick through the level with a fast reclaim.
+    The level "broke" for thirty seconds and the move happened in the opposite direction.</p>
+    <p>A <b>trap</b> is the same event seen from the loser's chair: the breakout trader who
+    bought the push above the high is now long, alone, at the top, and his exit is the fuel
+    for the reversal. Failed breakouts are not noise; they are the market's most repeatable
+    story, because they are built from the most predictable force there is — other people's
+    pain.</p>
+    <p>The practical discipline: when price approaches an obvious level, do not ask
+    "will it break?" Ask <b>"who is forced to act here, and which side of their forced
+    action do I want to be on?"</b> The desk does not chase the sweep; it waits for the
+    sweep to finish and prove itself. Patience at the exact place where everyone else is
+    forced to hurry — that is the whole personality of this firm, in one image.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 03 · TOPIC 03</div>
+    <div class="t-tit">Why price really moves</div>
+    <p>Price does not move because "there were more buyers than sellers" — every trade has
+    both. Price moves because of <b>imbalance between aggression and patience</b>: market
+    orders demanding immediacy, versus limit orders providing it. When aggressive buying
+    eats every offer at one price, the auction moves up to find the next seller. That is
+    the entire mechanism.</p>
+    <p>From that mechanism, three consequences the desk trades by:</p>
+    <ul>
+      <li><b>Fast moves come from vacuum</b> — price accelerates where resting orders are thin, and stalls where size is stacked.</li>
+      <li><b>Follow-through needs fuel</b> — a real move keeps finding fresh aggression; a sweep exhausts its fuel in one burst and dies.</li>
+      <li><b>Effort vs result is readable</b> — heavy volume that moves price nowhere means someone patient is absorbing someone aggressive. The patient side usually wins.</li>
+    </ul>
+    <p>You will never see the whole order book's intent, and you don't need to. Structure
+    (module 02) tells you where forced orders live; the tape's behavior at those places
+    tells you which side just lost. That combination is enough — and it is honest.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 03 · TOPIC 04</div>
+    <div class="t-tit">Volume, the basics</div>
+    <p>Volume is participation: how many contracts changed hands in the window. It answers
+    one question price alone cannot — <b>how much conviction paid for this move?</b></p>
+    <ul>
+      <li><b>Expansion with volume</b> — the move is funded; strength is real.</li>
+      <li><b>Expansion without volume</b> — price drifted through emptiness; suspicious, easily reversed.</li>
+      <li><b>Climax</b> — an extreme candle on extreme volume after a long move often marks the crowd arriving last; endings, not beginnings.</li>
+      <li><b>Dry-up</b> — shrinking volume in a pullback says the counter-move lacks sponsors; the trend likely resumes.</li>
+    </ul>
+    <p>One layer deeper lives <b>delta</b> — the split between volume traded at the offer
+    (aggressive buying) and at the bid (aggressive selling). Delta lets you see divergence:
+    price makes a new high while aggressive buying shrinks — the push is running on fumes.
+    You do not need delta to pass this course; you need to never read volume in isolation.
+    Volume confirms or denies what structure proposes. Alone, it is a number; next to
+    structure, it is testimony.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 03 · TOPIC 05</div>
+    <div class="t-tit">The open, explained</div>
+    <p>The New York open is the day's great liquidity event: overnight positions meet the
+    cash session's full participation, and every gap or overnight imbalance must finally be
+    voted on with real size. The first minutes define an <b>opening range</b> — the initial
+    high and low that becomes the day's first real level pair.</p>
+    <p>Three archetypes cover most opens:</p>
+    <ul>
+      <li><b>Drive</b> — the market opens and leaves, one-directional, barely retesting. Conviction arrived pre-loaded; fighting it is expensive.</li>
+      <li><b>Auction</b> — the market rotates around the open, testing both sides, hunting the overnight stops one direction, then often reversing through the range once that fuel is spent.</li>
+      <li><b>Rejection</b> — the market opens inside or near yesterday's business, tests out of it, fails, and returns — the failed test defines the day.</li>
+    </ul>
+    <p>The desk's relationship with the open is disciplined on purpose: the open is
+    <b>observed before it is traded</b>. The first minutes are the most information-dense
+    and the least forgiving of the whole day — the moment where beginners donate fastest and
+    where patient traders collect the map they will use for the next two hours.</p>
+  </div>
+
+</div>
+
+<!-- ══════════ MÓDULO 04 ══════════ -->
+<div class="portada-mod">
+  <div class="pm-num">MODULE / 04</div>
+  <div class="pm-tit">The setup</div>
+  <div class="pm-lista">
+    <div><span>01</span>What a setup is — conditions, not opinions</div>
+    <div><span>02</span>Waiting for confirmation</div>
+    <div><span>03</span>When there is NO trade</div>
+    <div><span>04</span>Checklist thinking</div>
+    <div><span>05</span>One setup, known by heart</div>
+  </div>
+</div>
+<div class="cuerpo">
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 04 · TOPIC 01</div>
+    <div class="t-tit">What a setup is — conditions, not opinions</div>
+    <p>An opinion is "I think it goes up." A setup is <b>"IF this list of observable
+    conditions is true, THEN I execute this exact plan."</b> The difference is not style;
+    it is the difference between trading and guessing.</p>
+    <p>A complete setup always answers four questions, in writing, before the session:</p>
+    <ul>
+      <li><b>Context</b> — what kind of day and regime must be in progress?</li>
+      <li><b>Location</b> — at which level or zone is the trade even allowed to exist?</li>
+      <li><b>Signal</b> — what exact, binary event flips the setup from watching to valid?</li>
+      <li><b>Invalidation</b> — what price proves the idea wrong, before entry is ever taken?</li>
+    </ul>
+    <p>Notice what a setup removes: prediction. You are no longer required to know what the
+    market will do — only to recognize, honestly, whether your conditions are present. The
+    market becomes a series of yes/no questions instead of an argument. That is a
+    profound psychological unload, and it is the reason disciplined traders look calm: they
+    are not smarter; they have <b>fewer decisions</b> to make.</p>
+    <div class="nota">The desk trades its own house setup with its own signal tools. Their
+    exact parameters are handed to members personally — but every setup on earth, ours
+    included, reduces to these four questions.</div>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 04 · TOPIC 02</div>
+    <div class="t-tit">Waiting for confirmation</div>
+    <p>Between "my zone is being touched" and "my conditions are complete" lives the gap
+    where most accounts die. Entering at the touch feels sharp — better price, more size,
+    the fantasy of the perfect bottom-tick. What it actually buys you is a position
+    <b>before the market has voted</b>, which means your stop is a guess and your thesis is
+    hope.</p>
+    <p>Confirmation is the market doing the specific, observable thing your setup demands —
+    the reclaim, the failure, the signal completing. Yes, confirmation costs you ticks: you
+    will never enter at the extreme, and sometimes the move leaves without you. That cost
+    buys three things worth far more than ticks: a <b>defined invalidation</b> (the
+    structure that confirmed is the structure your stop lives behind), a dramatically
+    <b>better hit rate</b>, and — quietly the most valuable — <b>evidence over impulse</b>
+    as the lifelong habit of your hands.</p>
+    <p>Write this on the desk: <b>the trade must come to you and prove itself. You never go
+    to the trade.</b> The patience that feels like weakness in the moment is, measured over
+    a hundred trades, the strongest thing you own — the lion only moves when the watching
+    stops.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 04 · TOPIC 03</div>
+    <div class="t-tit">When there is NO trade</div>
+    <p>The market owes you nothing daily. Some sessions your conditions simply never
+    complete — the context is wrong, the level never gets tested, the signal never fires.
+    On this desk that outcome has a name and a status: it is called a <b>valid day</b>,
+    executed perfectly.</p>
+    <p>The beginner's disease is inventing a B-grade trade because the A-grade never showed.
+    Understand the arithmetic of that mistake: the profits of the few real setups get spent
+    financing the many invented ones, and the journal that could prove your edge fills with
+    noise until the edge is invisible even to you. One forced trade does not cost one stop —
+    it costs <b>the statistical clarity of everything else you do</b>.</p>
+    <p>Practical protocol for the no-trade day: the levels get marked, the plan gets
+    written, the session gets watched, the journal gets its entry — <i>"conditions did not
+    complete; no trade; plan respected"</i> — and that line is logged as a <b>win of
+    process</b>. The desk's own terminal counts a planned no-trade day as discipline, not
+    as absence. Sitting on your hands, on purpose, in front of a moving market, is a skill.
+    Train it like one.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 04 · TOPIC 04</div>
+    <div class="t-tit">Checklist thinking</div>
+    <p>Aviation made flying the safest way to travel with one boring tool: before every
+    takeoff, a pilot with ten thousand hours still reads the checklist out loud. Not because
+    they forgot how to fly — because <b>under pressure, memory and judgment degrade
+    precisely when they matter most</b>. Markets are pressure. Your checklist is your
+    cockpit.</p>
+    <p>The trading checklist is your setup's conditions written as binary questions — each
+    answerable yes/no by looking, none answerable by feeling:</p>
+    <ul>
+      <li>Context present? · Location reached? · Signal complete? · Invalidation defined?</li>
+      <li>Size calculated from the stop — not from confidence?</li>
+      <li>Daily limits untouched — am I even allowed to trade?</li>
+    </ul>
+    <p><b>Any "no" means no trade.</b> Not "probably", not "close enough" — the checklist
+    has no partial credit. Its deepest function is not organization; it is that it moves the
+    decision out of the emotional moment. You decided the rules calmly, before the open;
+    the checklist just checks whether reality matches them. The trader who negotiates with
+    his checklist mid-session has fired the calm version of himself and hired the excited
+    one — the exact person the market eats.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 04 · TOPIC 05</div>
+    <div class="t-tit">One setup, known by heart</div>
+    <p>The apprentice collects setups; the professional deletes them. This desk teaches
+    <b>one setup, mastered to reflex</b> — and the reasoning is statistical before it is
+    stylistic.</p>
+    <p>An edge only exists as a <b>sample</b>. Twenty occurrences of one setup, logged
+    identically, is data — you can measure its hit rate, its average R, its best hours, its
+    failure patterns, and improve it. Twenty trades spread across five setups is four
+    occurrences each: statistically nothing, forever. The trader with five setups is
+    permanently a beginner in all of them, and his journal can never tell him which one is
+    bleeding.</p>
+    <p>"Known by heart" has a physical meaning: you have seen your setup so many times —
+    live, in replay, in the journal — that recognition is instant, and hesitation
+    disappears not through courage but through <b>familiarity</b>. Doubt at the trigger is
+    almost never a psychology problem; it is a sample-size problem wearing a costume.</p>
+    <p>Boredom is the tax. The market will show you brilliant days that do not fit your
+    lane, and watching them pass hurts. Pay the tax. Depth compounds; variety just spends.</p>
+  </div>
+
+</div>
+
+<!-- ══════════ MÓDULO 05 ══════════ -->
+<div class="portada-mod">
+  <div class="pm-num">MODULE / 05</div>
+  <div class="pm-tit">The entry</div>
+  <div class="pm-lista">
+    <div><span>01</span>Triggers and timing</div>
+    <div><span>02</span>Stop placement</div>
+    <div><span>03</span>Position sizing</div>
+    <div><span>04</span>One good entry a day</div>
+    <div><span>05</span>The execution routine</div>
+  </div>
+</div>
+<div class="cuerpo">
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 05 · TOPIC 01</div>
+    <div class="t-tit">Triggers and timing</div>
+    <p>The trigger is the final domino: the last condition of the setup completing, on the
+    execution chart, in real time. Everything before it was preparation; the trigger is the
+    only moment where a click is allowed. Define it so precisely that <b>a stranger given
+    your rules would click within the same seconds you do</b> — if two honest readings of
+    your trigger are possible, it is not a trigger yet; it is a mood.</p>
+    <p>Timing discipline cuts both ways. <b>Early is wrong</b>: entering "because it's about
+    to trigger" means entering without the information the trigger exists to provide — you
+    paid for confirmation and then refused the goods. <b>Late is also wrong</b>: chasing a
+    trigger that completed a minute ago buys a worse price with the same stop, which
+    silently shrinks your R multiple until the math of your edge breaks. The trigger is a
+    moment, not a region.</p>
+    <p>If it triggered and you froze — you missed it. Log the miss honestly and wait. The
+    market prints your setup again; it never refunds a chase.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 05 · TOPIC 02</div>
+    <div class="t-tit">Stop placement</div>
+    <p>The stop is not where pain becomes unbearable. The stop is <b>the price at which
+    your idea is objectively wrong</b> — behind the structure that made the trade valid.
+    If you entered on a reclaim, the stop lives beyond the swing that reclaimed; if the
+    market returns there, the story you paid for no longer exists, and you want out
+    automatically, without a meeting with your feelings.</p>
+    <p>Order of operations — this is law: <b>structure decides the stop, the stop decides
+    the size.</b> Never backwards. The trader who moves his stop closer "to afford more
+    contracts" has quietly replaced his setup's invalidation with his wallet's, and will be
+    stopped out by noise inside a trade that was never wrong.</p>
+    <p>Two corollaries. Give the stop room to breathe — a stop placed exactly at the
+    obvious pivot sits inside everyone else's stop cluster, the first place sweeps reach.
+    And once placed, the stop only moves <b>in your favor</b>. Widening a stop mid-trade is
+    not adjusting; it is refusing the answer you asked the market to give you.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 05 · TOPIC 03</div>
+    <div class="t-tit">Position sizing</div>
+    <p>Sizing is where the modules meet the calculator, and it is gloriously mechanical.
+    Three inputs, one output:</p>
+    <table>
+      <tr><th>STEP</th><th>QUESTION</th><th>EXAMPLE</th></tr>
+      <tr><td><b>1 · Risk</b></td><td>dollars I accept losing if the stop hits</td><td>$100</td></tr>
+      <tr><td><b>2 · Stop</b></td><td>points from entry to invalidation</td><td>20 pts</td></tr>
+      <tr><td><b>3 · Value</b></td><td>dollars per point per contract</td><td>MNQ = $2</td></tr>
+      <tr><td><b>= Size</b></td><td>risk ÷ (stop × value)</td><td>100 ÷ 40 = <b>2 MNQ</b></td></tr>
+    </table>
+    <p>Read the direction of causality: risk was chosen calmly in the plan; the stop was
+    dictated by structure; size is just the quotient. <b>Size is never an input.</b> The
+    moment you pick contracts first and bend the stop around them, the entire risk
+    architecture of modules 04–06 collapses into decoration.</p>
+    <p>Note what this makes constant: every trade risks the same dollars whether the stop
+    is 8 points or 40. Tight stop, more contracts; wide stop, fewer. Your equity curve
+    stops caring about stop distance and starts reflecting the only thing it should:
+    whether your setup works. Fractional results round <b>down</b> — 2.7 contracts is 2.
+    Always down.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 05 · TOPIC 04</div>
+    <div class="t-tit">One good entry a day</div>
+    <p>The desk's most famous rule, and its most misunderstood: <b>one trade per day</b>.
+    It is not a punishment; it is edge-engineering, and the mechanism deserves to be
+    understood rather than obeyed blindly.</p>
+    <p>First, it deletes revenge trading at the root — the second trade after a loss is
+    statistically the worst trade retail takes, entered to repair a feeling rather than to
+    exploit a condition. No second bullet, no revenge. Second, it repairs quality upstream:
+    knowing you own a single shot, you become brutally selective — B-setups stop being
+    tempting because they would <i>spend</i> the day. Third, it caps the damage of your
+    worst state: your most destructive sessions in history were never one loss; they were
+    one loss multiplied by tilt.</p>
+    <p>One trade, win or lose, then flat — review, journal, close the screens. A green day
+    ends because giving profits back to boredom is a tax with no service attached. A red
+    day ends because the version of you that exists after a loss has worse judgment and
+    more motivation — the market's favorite customer.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 05 · TOPIC 05</div>
+    <div class="t-tit">The execution routine</div>
+    <p>Excellence in execution is boring, and that is the point: the same minutes, in the
+    same order, every session, until the routine is the trader.</p>
+    <ul>
+      <li><b>Before the open</b> — levels marked, plan written, risk numbers set, platform checked: correct contract, correct size defaults, brackets armed.</li>
+      <li><b>During the wait</b> — observe, annotate, do nothing. The hands stay off the mouse; the checklist stays on the desk.</li>
+      <li><b>At the trigger</b> — execute the pre-written plan with a bracket: entry, stop and target placed as one action. No naked positions, ever, even for seconds.</li>
+      <li><b>In the trade</b> — the plan manages, not the pulse. No stop-widening, no panic exits at noise, no improvised adds.</li>
+      <li><b>After</b> — screenshot, journal entry, close. The trade is over when it is written, not when it is closed.</li>
+    </ul>
+    <p>Why brackets are non-negotiable: the seconds after entry are your emotional worst —
+    adrenaline decides fast and badly. The bracket means every decision that matters was
+    made by the calm pre-market version of you. The in-trade version is just a witness.</p>
+  </div>
+
+</div>
+
+<!-- ══════════ MÓDULO 06 ══════════ -->
+<div class="portada-mod">
+  <div class="pm-num">MODULE / 06</div>
+  <div class="pm-tit">Risk</div>
+  <div class="pm-lista">
+    <div><span>01</span>The daily stop</div>
+    <div><span>02</span>Risk per trade</div>
+    <div><span>03</span>Drawdown math</div>
+    <div><span>04</span>Burn days and the road back</div>
+    <div><span>05</span>Protecting the payout</div>
+  </div>
+</div>
+<div class="cuerpo">
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 06 · TOPIC 01</div>
+    <div class="t-tit">The daily stop</div>
+    <p>The daily stop is a fixed dollar amount that, once lost, ends the session — screens
+    closed, done, no appeal. It exists because the per-trade stop protects you from a bad
+    trade, but nothing in the market protects you from a bad <i>day</i>: the state where
+    judgment is compromised and each loss manufactures the urgency for the next.</p>
+    <p>Its power is entirely in its <b>pre-commitment</b>. Decided calmly, written in the
+    plan, it requires no strength in the moment — the decision was already made by a
+    smarter version of you. The trader who "decides at the moment" whether to keep going
+    has no daily stop; he has a suggestion, and suggestions lose to adrenaline every time.</p>
+    <p>Under the desk's one-trade rule the daily stop and the trade stop often coincide —
+    and that redundancy is intentional. Rules that overlap catch each other's failures.
+    The day you break one rule, the second one is standing behind it. That layering is
+    what makes a system, instead of a mood, the thing that trades your account.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 06 · TOPIC 02</div>
+    <div class="t-tit">Risk per trade</div>
+    <p>Risk per trade is the fixed fraction of your account you expose to a single stop —
+    professionally, one to two percent, and on funded accounts often less, because the
+    firm's drawdown is tighter than the math of ruin. The number matters less than its
+    <b>constancy</b>: the edge you measured in your journal was measured at a risk level,
+    and changing risk trade-to-trade invalidates your own statistics.</p>
+    <p>Understand why small constant risk is not timidity — it is survival arithmetic.
+    Losing streaks are not failures of a working edge; they are <b>guaranteed features</b>
+    of one. A 55%-win-rate system will still print five losses in a row routinely. At 1%
+    risk, five straight losses cost about 5% — annoying, recoverable, psychologically
+    survivable. At 10% risk, the same routine streak destroys 40% of the account and
+    approximately all of your judgment.</p>
+    <p>The doubling trap deserves its own sentence: increasing size to "win it back
+    faster" converts a routine streak into ruin, mathematically and always. Size goes up
+    for one reason only — the journal earned it — and never inside a losing week.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 06 · TOPIC 03</div>
+    <div class="t-tit">Drawdown math</div>
+    <p>Drawdown is the distance from your equity peak to the current valley — and its
+    cruelty is asymmetric. Losses and gains are not symmetric percentages:</p>
+    <table>
+      <tr><th>LOSS FROM PEAK</th><th>GAIN REQUIRED TO RECOVER</th></tr>
+      <tr><td>5%</td><td>5.3%</td></tr>
+      <tr><td>10%</td><td>11.1%</td></tr>
+      <tr><td>20%</td><td>25%</td></tr>
+      <tr><td>33%</td><td>50%</td></tr>
+      <tr><td>50%</td><td><b>100%</b></td></tr>
+    </table>
+    <p>Read the table until it changes your priorities. Deep drawdowns are not a slower
+    road back; they are a <b>different road</b> — one that must be traveled with damaged
+    confidence, at reduced size, under time pressure. The professional's conclusion is
+    upstream: the game is not maximizing wins; it is <b>refusing the deep valley</b>, which
+    is precisely what fixed risk per trade and the daily stop conspire to do.</p>
+    <p>On funded accounts the table turns lethal: the firm's max drawdown ends the account
+    long before the mathematics gets hard. A $50k account with a $2,000 trailing limit is
+    not a $50k account — it is a $2,000 account wearing a costume, and every risk number
+    you choose must be chosen against the $2,000.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 06 · TOPIC 04</div>
+    <div class="t-tit">Burn days and the road back</div>
+    <p>A <b>burn day</b> — the desk's terminal marks them with fire — is a day that ended
+    at the daily stop. The mark is not shame; it is <b>data made visible</b>. Burn days
+    cluster, and the cluster always has a cause: a rule got optional, size crept, a news
+    day got traded, sleep got short. One burn day is variance. Three in two weeks is a
+    pattern demanding an audit.</p>
+    <p>The <b>road back</b> is the desk's protocol for what follows, and its logic inverts
+    every instinct: after damage you go <b>smaller</b>, not bigger. Half size until a set
+    number of clean, rule-respecting sessions rebuilds the evidence. The account needs the
+    gains; the trader needs the proof; and hurry is the enemy of both. The terminal draws
+    this literally — a path from the valley back to the peak, walked in days, not in
+    hero-trades.</p>
+    <p>Respect what the instinct to "make it back today" actually is: the same force that
+    built the drawdown, asking for the keys again. The road back is walked slowly
+    <i>because</i> it is walked once. The fast version gets walked over and over, each time
+    from deeper.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 06 · TOPIC 05</div>
+    <div class="t-tit">Protecting the payout</div>
+    <p>There is a specific moment where funded traders die at extraordinary rates: <b>close
+    to the payout</b>. The finish line changes the game in the trader's head — from
+    "execute my process" to "don't lose what I almost have" — and scared trading breaks
+    process precisely when process was about to pay.</p>
+    <p>The protocol is mechanical, so the head can stay out of it:</p>
+    <ul>
+      <li><b>Buffer first</b> — the first profits build cushion above the drawdown line; you take real risk only with the firm's money, never with the payout's.</li>
+      <li><b>Reduce into the line</b> — approaching the payout threshold, size goes down. The last hundred dollars are earned at minimum risk, because their job is arithmetic, not glory.</li>
+      <li><b>Respect payout rules as trading rules</b> — minimum days, consistency requirements: they are part of the setup now. A payout lost to an administrative rule is a full trading loss with extra embarrassment.</li>
+      <li><b>Take it</b> — money inside a funded account is a score; money withdrawn is money. The desk celebrates payouts, not balances.</li>
+    </ul>
+    <p>And after the payout, the account keeps its discipline — because the account that
+    paid once is the account most worth keeping alive. Module 08 finishes that thought.</p>
+  </div>
+
+</div>
+
+<!-- ══════════ MÓDULO 07 ══════════ -->
+<div class="portada-mod">
+  <div class="pm-num">MODULE / 07</div>
+  <div class="pm-tit">The journal</div>
+  <div class="pm-lista">
+    <div><span>01</span>Why every trade is written</div>
+    <div><span>02</span>What to log, exactly</div>
+    <div><span>03</span>Reviewing your week</div>
+    <div><span>04</span>The metrics that matter</div>
+    <div><span>05</span>The month, day by day</div>
+  </div>
+</div>
+<div class="cuerpo">
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 07 · TOPIC 01</div>
+    <div class="t-tit">Why every trade is written</div>
+    <p>Memory is a defense attorney, not a historian. It remembers your wins vividly,
+    files your rule-breaks under "exceptions", and quietly rewrites last month to match
+    this month's mood. Every trader believes he knows how he trades; the journal is the
+    only witness that isn't lying to him.</p>
+    <p>Written trades convert experience into <b>evidence</b>. Twenty logged occurrences of
+    your setup are a measurable sample: hit rate, average R, time-of-day patterns, the
+    specific condition that was present in every loser. Twenty remembered trades are a
+    feeling. The desk's motto — <i>every trade, written</i> — is not bookkeeping culture;
+    it is the entire mechanism by which a trader improves, because <b>you cannot fix what
+    you refuse to see, and you cannot see what you didn't record</b>.</p>
+    <p>There is also a quieter effect, and every journaling trader knows it: the journal
+    polices in real time. Mid-session, about to improvise, you hear the entry you would
+    have to write — <i>"entered without signal, again"</i> — and the click dies in your
+    hand. A trade you would be ashamed to log is a trade you already know not to take.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 07 · TOPIC 02</div>
+    <div class="t-tit">What to log, exactly</div>
+    <p>A useful entry is structured — the same fields, every trade, no essays required:</p>
+    <ul>
+      <li><b>The facts</b> — date, instrument, direction, entry, stop, target, exit, size, session window.</li>
+      <li><b>The R</b> — planned risk in dollars, result as a multiple of it. A +$80 win risking $100 is +0.8R; R is the only unit that makes trades comparable.</li>
+      <li><b>The evidence</b> — a screenshot at entry and one at exit. In review, the picture beats the memory, every single time.</li>
+      <li><b>The state</b> — one honest line: calm, anxious, rushed, revenge-tempted. Patterns of state predict losses better than patterns of price.</li>
+      <li><b>The flags</b> — did any rule bend? Entered without full conditions? Moved a stop? Flags are gold: they are your future losses, announcing themselves early.</li>
+    </ul>
+    <p>And on the days without trades: the no-trade entry — <i>conditions absent, plan
+    respected</i>. The desk's terminal automates the arithmetic — P&amp;L, R, violations,
+    streaks — precisely so the human only owes what automation cannot supply: the
+    screenshot and the honesty.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 07 · TOPIC 03</div>
+    <div class="t-tit">Reviewing your week</div>
+    <p>Logging without review is a diary. The weekly review — fixed day, fixed hour,
+    markets closed — is where the journal becomes a coach. The ritual is four questions,
+    in order, and the order matters:</p>
+    <ul>
+      <li><b>Did I follow the rules?</b> — discipline first, always before profit. A green week of broken rules is a red week in incubation; a red week of perfect process is variance doing its job.</li>
+      <li><b>What do the flags say?</b> — count them, name them. Two "entered early" flags is a pattern with a name, and next week it becomes a specific instruction.</li>
+      <li><b>What does the sample say?</b> — hit rate, average R, best and worst behavior, time-of-day tendencies. Let the numbers argue with your feelings and win.</li>
+      <li><b>One instruction</b> — the review ends with a single, concrete sentence for next week. One. "Wait for the full signal on every entry." Five instructions are zero instructions.</li>
+    </ul>
+    <p>Review with screenshots open, not from memory. And review red weeks with the same
+    posture as green ones — the journal is a laboratory, not a courtroom. The goal every
+    Sunday is one truth you didn't have on Monday.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 07 · TOPIC 04</div>
+    <div class="t-tit">The metrics that matter</div>
+    <p>Five numbers, measured on a real sample, tell you almost everything:</p>
+    <table>
+      <tr><th>METRIC</th><th>WHAT IT ANSWERS</th></tr>
+      <tr><td><b>Win rate</b></td><td>how often you're right — meaningless alone</td></tr>
+      <tr><td><b>Avg win / avg loss</b></td><td>how you're paid when right vs charged when wrong</td></tr>
+      <tr><td><b>Expectancy</b></td><td>(win% × avg win) − (loss% × avg loss): dollars per trade, the edge itself</td></tr>
+      <tr><td><b>Profit factor</b></td><td>gross wins ÷ gross losses; above ~1.3 sustained, you have a business</td></tr>
+      <tr><td><b>Discipline %</b></td><td>trades executed fully by the rules — the desk's most watched number</td></tr>
+    </table>
+    <p>The pair to internalize is win rate <i>versus</i> payoff: a 40% win rate with 2R
+    winners prints money; a 70% win rate with tiny wins and occasional −3R disasters goes
+    broke — while feeling great. Never evaluate either number without its partner.</p>
+    <p>And why discipline sits on the throne: on a twenty-trade sample, expectancy is still
+    noisy — but discipline is measurable from trade one, and every other metric is
+    <b>meaningless if the process that generated it keeps changing</b>. Measure the
+    following of rules first; the money statistics only acquire meaning once the rules
+    hold still.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 07 · TOPIC 05</div>
+    <div class="t-tit">The month, day by day</div>
+    <p>The monthly calendar is the journal's wide shot: every day a cell, every cell a
+    verdict — green, red, flat, or marked. On the desk's terminal the calendar carries the
+    house symbols: the <b>flame</b> on burn days, the <b>flag</b> on days with violations,
+    the quiet cells of planned no-trade days. One glance answers questions a table of
+    trades cannot: do reds cluster on Mondays? Did the burn days arrive in pairs? Is the
+    month's profit three good days and twenty of churn?</p>
+    <p>That last discovery is nearly universal and changes careers: <b>a handful of days
+    make the month</b>. The corollary cuts deep — most of the damage comes from days that
+    didn't need to be traded at all. The calendar makes overtrading visible as geography.</p>
+    <p>Month-end closes the loop with the same discipline as the weekly, one level up:
+    the month's expectancy joins the ledger, the discipline percentage gets judged, and
+    one structural instruction survives into the next month. Trading is a business;
+    month-end is when the business reads its books.</p>
+  </div>
+
+</div>
+
+<!-- ══════════ MÓDULO 08 ══════════ -->
+<div class="portada-mod">
+  <div class="pm-num">MODULE / 08</div>
+  <div class="pm-tit">Funded<br>accounts</div>
+  <div class="pm-lista">
+    <div><span>01</span>How evaluations work</div>
+    <div><span>02</span>Firm rules that matter</div>
+    <div><span>03</span>Trailing vs EOD drawdown</div>
+    <div><span>04</span>Payout rules</div>
+    <div><span>05</span>Keeping the account alive</div>
+  </div>
+</div>
+<div class="cuerpo">
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 08 · TOPIC 01</div>
+    <div class="t-tit">How evaluations work</div>
+    <p>A funding firm sells a simple deal: pay a small evaluation fee, trade their
+    simulated account by their rules, and if you reach the profit target without touching
+    the loss limits, they fund you — you keep the majority of future profits, they keep
+    the risk. For a skilled trader without capital, it is genuinely the cheapest leverage
+    on earth. For an unskilled one, it is a subscription to hope.</p>
+    <p>Every evaluation is the same four numbers wearing different logos: a <b>profit
+    target</b> (commonly 6–8% of nominal size), a <b>maximum drawdown</b> (the real account
+    size — module 06 already taught you a $50k eval with a $2k limit is a $2k account), a
+    <b>daily loss limit</b>, and a <b>minimum number of trading days</b> so you cannot pass
+    on one lucky swing.</p>
+    <p>The founding insight of this desk: the evaluation is not a race, it is an
+    <b>audition of discipline</b> played against tight math. The all-in pass attempt fails
+    a hundred times for every time it works, and the fee is repriced each attempt. The
+    trader who treats day one of the eval exactly like a funded day — same size, same
+    rules, same patience — passes slower and only once.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 08 · TOPIC 02</div>
+    <div class="t-tit">Firm rules that matter</div>
+    <p>The rules PDF is boring; account deaths by rule are not. Beyond the four headline
+    numbers, these are the clauses that actually kill accounts, and they differ by firm —
+    read yours like a lawyer:</p>
+    <ul>
+      <li><b>Consistency rules</b> — no single day may exceed a set percentage of total profit (30–50% at many firms). They outlaw the hero day: a monster Monday can literally make your account <i>unpayable</i> until you grind the ratio back down.</li>
+      <li><b>News restrictions</b> — some firms void trades or accounts around major releases. If your window overlaps the calendar, the calendar wins.</li>
+      <li><b>Inactivity clauses</b> — accounts expire untended; funded accounts usually require a trade every set number of days.</li>
+      <li><b>Scaling plans</b> — contract limits that grow with cushion; exceeding your tier's size is a violation even in a winning trade.</li>
+      <li><b>Platform-dependent behavior</b> — the same firm's drawdown can behave differently by platform; the desk verifies each rule against the firm's own document, current version, before the first trade.</li>
+    </ul>
+    <p>The house habit: the rules of your firm are written into your trading plan as
+    conditions — the same status as your setup's conditions. A rule you have to remember
+    mid-trade is a rule you will eventually break.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 08 · TOPIC 03</div>
+    <div class="t-tit">Trailing vs EOD drawdown</div>
+    <p>Two accounts with "the same" $2,000 drawdown can be entirely different animals.
+    The difference is <b>when the line moves</b>.</p>
+    <ul>
+      <li><b>Intraday trailing</b> — the limit trails your equity peak <i>including open profit</i>. Run +$800 unrealized and give it back, and the line rose $800 while you watched. The harshest variant: it punishes letting winners breathe.</li>
+      <li><b>End-of-day trailing</b> — the line moves only at the close, on realized balance. Open-profit excursions don't drag it; managing a winner is safe again.</li>
+      <li><b>Static</b> — the line never moves from the initial threshold. Rarest and kindest; every dollar of cushion you build is truly yours.</li>
+    </ul>
+    <p>With most trailing schemes the line rises until it <b>locks</b> — typically at
+    initial balance plus the drawdown amount — after which the account behaves statically.
+    Reaching the lock is a real milestone: the desk plays visibly more conservative
+    before it, freer after.</p>
+    <p>The strategic consequence is blunt: an intraday-trailing account demands taking
+    profits mechanically and hates the home-run manage; an EOD account tolerates it. Know
+    which animal you are riding <b>before</b> you design how you'll exit winners — not
+    after the line has eaten one.</p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 08 · TOPIC 04</div>
+    <div class="t-tit">Payout rules</div>
+    <p>Passing funds the account; the payout rules decide when the money becomes yours.
+    The recurring shapes:</p>
+    <ul>
+      <li><b>Minimum days</b> — a set number of trading (often winning) days between payouts; patience is a written requirement, not a virtue.</li>
+      <li><b>Buffers</b> — many firms require cushion above the drawdown line before the first withdrawal, and cap how much of the balance can leave.</li>
+      <li><b>Splits</b> — traders commonly keep 80–100% of early profits; the split and its schedule are contract terms worth knowing to the letter.</li>
+      <li><b>Caps and lifetimes</b> — some firms limit payout size, frequency, or even the total number of payouts an account can ever produce. A lifetime cap changes the entire strategy of which accounts you grow.</li>
+      <li><b>Consistency at the gate</b> — the payout request re-audits the ratio rules; the hero day that inflated the balance can block the door on the way out.</li>
+    </ul>
+    <p>The desk's arithmetic habit: before the first trade of the cycle, write the number
+    that actually matters — <i>how many clean days at my daily target reach the next
+    payout?</i> That number, not the balance, is the scoreboard. And the standing rule
+    repeats from module 06 because it pays twice: <b>money withdrawn is money; money in a
+    funded account is a score.</b></p>
+  </div>
+
+  <div class="tema">
+    <div class="t-eyebrow">MODULE 08 · TOPIC 05</div>
+    <div class="t-tit">Keeping the account alive</div>
+    <p>The statistic the industry does not advertise: most funded traders lose the account
+    <b>after</b> passing — usually within weeks. The evaluation's structure imposed
+    discipline; the moment it ends, the trader relaxes, sizes up "because it's real now",
+    and meets the same drawdown math with a worse attitude.</p>
+    <p>The desk's answer is a single sentence: <b>nothing changes on funding day.</b> Same
+    size, same one-trade rule, same daily stop, same journal. The account's job in month
+    one is not to make you rich; it is to build the buffer that makes it hard to kill.
+    Every dollar of cushion above the line converts the account from fragile to durable —
+    buffer first, glory later, exactly as module 06 ordered.</p>
+    <p>Funded reality also means living permanently under the firm's clauses: the news
+    windows, the consistency ratios, the inactivity clock. Sustainable rhythm beats
+    heroic sprints — the goal was never to pass an evaluation. The goal is a funded
+    account that pays, survives, and compounds into the next one; the desk grows as a
+    <b>fleet</b>, and fleets are built from accounts that refused to die.</p>
+    <p style="margin-top:14px"><b>End of the written companion.</b> The recorded modules
+    walk every one of these pages on live charts — and the seat at the desk is where the
+    watching becomes practice. The door, as always, is the Discord.</p>
+  </div>
+
+</div>
+
+<!-- ══════════ CIERRE ══════════ -->
+<div class="portada" style="break-before:page">
+  <div class="centro">
+    <div class="marca" style="font-size:34px">NORTHPOINT</div>
+    <div class="bajo">TRADER BACKING</div>
+    <div class="raya"></div>
+    <div class="tagline">PATIENCE IS THE EDGE</div>
+  </div>
+  <div class="pie-h"><span>THE BOOTCAMP</span><span>northpointcapital.io</span></div>
+</div>
+
+</body>
+</html>

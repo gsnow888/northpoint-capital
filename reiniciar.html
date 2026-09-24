@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>NORTHPOINT · Reiniciar cuenta</title>
+<link rel="stylesheet" href="css/reiniciar.css">
+</head>
+<body>
+<div class="w">
+  <span class="et">Northpoint · herramienta</span>
+  <h1>Reiniciar la cuenta</h1>
+  <p>Deja el terminal como recién instalado, pero con tus cinco cuentas ya dadas de alta
+     y Kuro desde cero, para volver a ver la apertura.</p>
+
+  <div class="aviso">
+    <b>ESTO BORRA DE VERDAD</b>
+    <p>Se van tus <b>trades</b>, tu <b>caja</b> (los payouts ya cobrados), tu <b>journal</b>,
+       tus posiciones y todo el avance de Kuro. No se puede deshacer desde la app.
+       Por eso el primer botón <b>baja un respaldo</b> antes de tocar nada — descárgalo
+       y guárdalo, es tu única marcha atrás.</p>
+    <p style="margin-top:12px;color:rgba(237,239,242,.62)"><b style="color:#57c79b">NO SE TOCA</b><br>
+       Tu monito, tu ninja de Kuro, tu perfil, tu contrato firmado, tu correo y tu
+       clave se quedan igual. La apertura de Kuro se vuelve a ver sin borrarlos.</p>
+  </div>
+
+  <span class="et">Lo que queda dado de alta</span>
+  <table>
+    <thead><tr><th>Cuenta</th><th>Firma</th><th>Fase</th><th class="r">Balance</th></tr></thead>
+    <tbody id="tabla"></tbody>
+  </table>
+
+  <!-- ══ EL LOG, aparte ══ (André, 31-ago-2026) Vaciar el log NO es lo mismo
+       que reiniciar la cuenta: aquí sólo se tocan los trades, y el resto —tus
+       cuentas, tu caja, tu monito, Kuro— se queda intacto. Por eso va en su
+       propio bloque y no dentro del botón rojo. -->
+  <div style="margin:30px 0 0;padding-top:26px;border-top:1px solid var(--hair)">
+    <span class="et">Sólo el log de trades</span>
+    <p style="margin:10px 0 0">Borra los trades y deja <b style="color:var(--tinta)">los que de verdad
+       llevas</b>. No toca tus cuentas, tu caja, tu monito ni Kuro.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;margin-top:14px">
+      <label style="flex:1;min-width:110px"><span class="et" style="display:block;margin-bottom:6px">P&L de cada uno</span>
+        <input id="lgPnl2" type="number" step="10" value="-500"
+          style="width:100%;padding:12px;border-radius:12px;border:1px solid var(--hair);
+                 background:transparent;color:var(--tinta);font-family:var(--mono);font-size:14px"></label>
+      <label style="flex:0 0 110px"><span class="et" style="display:block;margin-bottom:6px">¿Cuántos?</span>
+        <input id="lgN2" type="number" min="1" max="20" step="1" value="2"
+          style="width:100%;padding:12px;border-radius:12px;border:1px solid var(--hair);
+                 background:transparent;color:var(--tinta);font-family:var(--mono);font-size:14px"></label>
+      <label style="flex:1;min-width:140px"><span class="et" style="display:block;margin-bottom:6px">Dirección</span>
+        <select id="lgDir2" style="width:100%;padding:12px;border-radius:12px;border:1px solid var(--hair);
+                 background:#0b0d13;color:var(--tinta);font-family:var(--mono);font-size:14px">
+          <option value="S">SHORT</option><option value="L">LONG</option></select></label>
+      <label style="flex:2;min-width:200px"><span class="et" style="display:block;margin-bottom:6px">¿De qué cuenta?</span>
+        <select id="lgCta2" style="width:100%;padding:12px;border-radius:12px;border:1px solid var(--hair);
+                 background:#0b0d13;color:var(--tinta);font-family:var(--mono);font-size:13px"></select></label>
+    </div>
+    <button class="btn" id="soloUno">Dejar sólo esos trades</button>
+  </div>
+
+  <button class="btn" id="bkp" style="margin-top:30px">1 · Descargar respaldo</button>
+  <button class="btn rojo" id="go" disabled>2 · Borrar y dejarla nueva</button>
+  <button class="btn" id="ir" style="display:none">Abrir el terminal →</button>
+
+  <div class="log" id="log"></div>
+</div>
+
+<script src="js/reiniciar.js"></script>
+</body>
+</html>

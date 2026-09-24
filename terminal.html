@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NORTHPOINT Terminal — tu mesa entera en una pantalla</title>
+<meta name="description" content="El Terminal de NorthPoint: pegas la captura del trade y se registra solo. Tus cuentas de fondeo, tu drawdown al aire, tus reglas encima del chart, la academia completa y los dos indicadores en Pine v6. Trece pantallas, una sola aplicación.">
+<link rel="canonical" href="https://northpointcapital.io/terminal.html">
+<meta property="og:title" content="NORTHPOINT Terminal">
+<meta property="og:description" content="Tu mesa entera en una pantalla. Pegas la captura y el trade se registra solo.">
+<meta property="og:image" content="https://northpointcapital.io/assets/images/og.png">
+<meta property="og:url" content="https://northpointcapital.io/terminal.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icons/favicon.svg">
+<link rel="stylesheet" href="css/terminal.css">
+</head>
+<body>
+
+<div class="deck">
+  <b>NORTHPOINT</b> <em>// TERMINAL</em>
+  <div class="sp">
+    <button class="tbtn" id="themeBtn" aria-label="Cambiar tema">◐ CLARO</button>
+    <a class="btn sm" href="#precio">Ver el precio</a>
+  </div>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="k rv">NorthPoint Terminal · v1 · en línea</div>
+    <h1 class="rv">Tu mesa entera.<br>Una sola pantalla.</h1>
+    <p class="lead rv">Pegas la captura del trade y se registra solo. El Terminal calcula
+      lo demás: tus cuentas de fondeo, cuánto le queda a cada una antes de romperse, y si
+      hoy te saltaste tu propia regla.</p>
+    <div class="hero-cta rv">
+      <a class="btn pri" href="#precio">Ver el precio</a>
+      <a class="btn" href="app.html">Abrir el Terminal →</a>
+    </div>
+    <p class="hero-nota rv">TRECE PANTALLAS · SIN INSTALAR NADA · ESTÁ EN LÍNEA AHORA MISMO</p>
+
+    <div class="cifras rv">
+      <div><b>13</b><span>pantallas</span></div>
+      <div><b>35</b><span>lecciones</span></div>
+      <div><b>2</b><span>indicadores Pine v6</span></div>
+      <div><b>0</b><span>instalaciones</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EL DOLOR ══════════ -->
+<section>
+  <div class="wrap narrow">
+    <div class="k rv">Antes de enseñarte nada</div>
+    <h2 class="big rv">Operar es la parte fácil.<br>Lo demás es lo que te tumba.</h2>
+    <p class="lead rv">Cierras la operación y empieza la tarea: capturarla en una hoja,
+      acordarte de con qué cuenta fue, calcular cuánto te queda de drawdown, revisar si
+      rompiste tu propia regla. Casi nadie lo hace todos los días. Y el que no lo hace,
+      no sabe por qué pierde.</p>
+    <ul class="dolor rv">
+      <li><i>01</i><span>Tres cuentas de fondeo y ningún lugar que te diga, hoy, cuánto le queda a cada una antes de morir.</span></li>
+      <li><i>02</i><span>El journal que empiezas el lunes y abandonas el jueves.</span></li>
+      <li><i>03</i><span>Reglas escritas en una libreta que nadie revisa a las 9:41 de la mañana.</span></li>
+      <li><i>04</i><span>Un año operando y cero idea de si tu problema es el setup, el tamaño o la hora.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════ LOS PANELES ══════════ -->
+<section>
+  <div class="wrap">
+    <div class="k rv">Lo que compras</div>
+    <h2 class="big rv">No son fotos. Es el Terminal corriendo.</h2>
+    <p class="lead rv">Los paneles de abajo están dibujados con los mismos datos que ves al
+      entrar, con una cuenta de demostración. Ábrelo en otra pestaña y compáralos.</p>
+
+    <!-- 01 · LOG TRADE -->
+    <div class="bloque">
+      <div class="txt rv">
+        <span class="k">01 · Log trade</span>
+        <h3>Pegas la captura. Ya quedó.</h3>
+        <p>Terminas el trade, copias la captura de TradingView y la pegas con ⌘V. Una IA la
+          lee y saca el instrumento, el lado, el resultado y la hora. Tú confirmas. Se acabó
+          llenar cajas.</p>
+        <ul>
+          <li>La captura se guarda con el trade: entras meses después y ves el chart exacto.</li>
+          <li>¿Prefieres el archivo? Importas el CSV de tu bróker y entra el mes completo.</li>
+          <li>¿Sin llave de IA? Escribes el resultado y la curva se mueve igual.</li>
+          <li>La llave es TUYA y vive en tu equipo. Nosotros no vemos tus trades.</li>
+        </ul>
+      </div>
+      <div class="demo rv">
+        <div class="dbar"><b>APEX 13</b> · CUENTA EN COBRO
+          <span class="dsp"><span class="chip">MNQ</span><span class="chip u">+$21,420</span></span></div>
+        <div class="dbody">
+          <div class="bal">
+            <div><span class="bal-k">BALANCE</span><span class="bal-n">$170,490</span></div>
+            <div class="bal-r">
+              <div><i>TRADES</i><s>20</s></div>
+              <div><i>WIN RATE</i><s>65%</s></div>
+              <div><i>PROFIT FACTOR</i><s class="up">4.97</s></div>
+              <div><i>W · L</i><s>13 / 7</s></div>
+            </div>
+          </div>
+          <div class="curva">
+            <svg viewBox="0 0 560 150" preserveAspectRatio="none" aria-label="Curva de capital">
+              <line class="gd" x1="0" y1="38" x2="560" y2="38"/>
+              <line class="gd" x1="0" y1="76" x2="560" y2="76"/>
+              <line class="gd" x1="0" y1="114" x2="560" y2="114"/>
+              <path class="ar" d="M0,132 L56,120 L112,126 L168,101 L224,92 L280,97 L336,71 L392,58 L448,62 L504,34 L560,22 L560,150 L0,150 Z"/>
+              <path class="ln" d="M0,132 L56,120 L112,126 L168,101 L224,92 L280,97 L336,71 L392,58 L448,62 L504,34 L560,22"/>
+              <circle class="pt" cx="560" cy="22" r="3.6"/>
+            </svg>
+          </div>
+          <div class="dtit">REGISTRAR</div>
+          <div class="kpis">
+            <div class="kpi"><i>LADO</i><b>LONG</b><span>UN CLIC</span></div>
+            <div class="kpi"><i>P&amp;L $</i><b class="up">+1,560</b><span>ENTER Y SIGUE</span></div>
+            <div class="kpi"><i>CUENTA</i><b style="font-size:15px">APEX 13</b><span>DE TRES</span></div>
+            <div class="kpi"><i>DESHACER</i><b style="font-size:15px">SIEMPRE</b><span>SIN MENÚS</span></div>
+          </div>
+        </div>
+        <div class="dpie">CADA TRADE ATERRIZA EN TU HISTORIAL REAL Y EN LA MESA</div>
+      </div>
+    </div>
+
+    <!-- 02 · JOURNAL -->
+    <div class="bloque rev">
+      <div class="txt rv">
+        <span class="k">02 · Journal</span>
+        <h3>Cómo vas, sin abrir una hoja de cálculo.</h3>
+        <p>Balance, resultado del mes, capital y cuentas hasta arriba. Debajo, los números
+          que sí dicen algo: cuántos trades ganas, cuántos días cierras en verde, cuánto gana
+          tu ganancia media contra lo que pierde tu pérdida media, y de qué lado estás ganando.</p>
+        <ul>
+          <li>Se calculan solos con cada trade que registras.</li>
+          <li>Filtras por cuenta o ves las tres juntas.</li>
+          <li>Si rompiste tu plan del día, la barra de arriba te lo dice.</li>
+        </ul>
+      </div>
+      <div class="demo rv">
+        <div class="dbar"><b>TODAS LAS CUENTAS</b> · 3 DE 3 · $150,000
+          <span class="dsp"><span class="chip">FASES MIXTAS</span><span class="chip">IMPORT CSV</span></span></div>
+        <div class="alerta"><b>⚠ 3 violaciones hoy:</b><span>Sin setup · Overtrading · Revenge.
+          Medido contra tu plan de sesión de ese día.</span></div>
+        <div class="dbody">
+          <div class="kpis">
+            <div class="kpi"><i>BALANCE</i><b>$170,490</b><span>3 CUENTAS</span></div>
+            <div class="kpi"><i>PNL</i><b class="up">+$20,490</b><span>AGOSTO</span></div>
+            <div class="kpi"><i>CAPITAL</i><b>$150,000</b><span>EN LA MESA</span></div>
+            <div class="kpi"><i>DÍAS GANADOS</i><b>10 / 10</b><span>100%</span></div>
+          </div>
+          <div class="dtit">WIN RATE Y RATIOS DE LA MESA</div>
+          <div class="kpis">
+            <div class="kpi"><i>WIN RATE · POR TRADE</i><b>65%</b><span>13W · 7L</span>
+              <div class="mini"><u style="flex:13"></u><s style="flex:7"></s></div></div>
+            <div class="kpi"><i>GANA / PIERDE</i><b>2.68<sup style="font-size:11px">R</sup></b><span>+$1,973 · −$737</span></div>
+            <div class="kpi"><i>LARGOS</i><b class="up">+$25,650</b><span>DE AHÍ SALE TODO</span></div>
+            <div class="kpi"><i>CORTOS</i><b>−$5,160</b><span>AHÍ ESTÁ LA FUGA</span></div>
+          </div>
+        </div>
+        <div class="dpie">AGOSTO 2026 · OBJETIVO DIARIO $1,750 · 20 TRADES</div>
+      </div>
+    </div>
+
+    <!-- 03 · THE PLAN -->
+    <div class="bloque">
+      <div class="txt rv">
+        <span class="k">03 · The plan</span>
+        <h3>Cuánto le queda a cada cuenta. Hoy, sin calculadora.</h3>
+        <p>Das de alta una cuenta con tres datos —nombre, balance y etapa— y a partir de ahí
+          el Terminal te dice todos los días cuánto le falta para pasar y cuánto le queda
+          antes de romperse.</p>
+        <ul>
+          <li>Todas corren el mismo camino: examen en cero, fondeada a la mitad, payout al final.</li>
+          <li>Si te acercas al drawdown, te lo grita antes, no después.</li>
+          <li>Debajo, la escalera de patrimonio de nueve fases.</li>
+        </ul>
+      </div>
+      <div class="demo rv">
+        <div class="dbar"><b>TU MESA</b> · 3 CUENTAS
+          <span class="dsp"><span class="chip u">$170,490 TOTAL</span></span></div>
+        <div class="dbody">
+          <div class="fila">
+            <b>APEX 13<small>APEX · COBRANDO</small></b>
+            <div><i>BALANCE</i><s class="up">$56,830</s><em>+$6,830</em></div>
+            <div><i>LE QUEDA</i><s>$6,730</s><em>al drawdown</em></div>
+            <div><i>ESTADO</i><s>YA COBRA</s><em>payout 2 de 5</em></div>
+          </div>
+          <div class="fila">
+            <b>APEX 22<small>APEX · COLCHÓN</small></b>
+            <div><i>BALANCE</i><s class="up">$56,830</s><em>+$6,830</em></div>
+            <div><i>LE QUEDA</i><s>$6,730</s><em>al drawdown</em></div>
+            <div><i>LE FALTA</i><s>$0</s><em>para pasar</em></div>
+          </div>
+          <div class="fila">
+            <b>EVAL 3<small>APEX · EVALUACIÓN</small></b>
+            <div><i>BALANCE</i><s class="up">$56,830</s><em>+$6,830</em></div>
+            <div><i>LE QUEDA</i><s class="dn">$1,180</s><em>al drawdown</em></div>
+            <div><i>LE FALTA</i><s>$0</s><em>para pasar</em></div>
+          </div>
+        </div>
+        <div class="dpie">SALE DE LAS CUENTAS QUE TÚ REGISTRASTE · SI NO CUADRA, MANDA TU TABLERO</div>
+      </div>
+    </div>
+
+    <!-- 04 · TRADE HISTORY -->
+    <div class="bloque rev">
+      <div class="txt rv">
+        <span class="k">04 · Trade history</span>
+        <h3>No es una lista de trades. Es la prueba de cómo operas.</h3>
+        <p>Cada operación guarda su setup y sus marcas de disciplina. Al final del mes no ves
+          solo cuánto ganaste: ves cuántas veces te saltaste tu propia regla y qué te costó
+          cada vez.</p>
+        <ul>
+          <li>Profit factor, win rate y ganancia media contra pérdida media, solos.</li>
+          <li>Cada trade abre su reporte, con su captura.</li>
+          <li>El cierre del mes sale en PDF.</li>
+        </ul>
+      </div>
+      <div class="demo rv">
+        <div class="dbar"><b>HISTORIAL</b> · 20 TRADES · PROFIT FACTOR 4.97
+          <span class="dsp"><span class="chip u">+$20,490</span></span></div>
+        <div class="dbody" style="overflow-x:auto">
+          <table class="tabla">
+            <thead><tr><th>FECHA</th><th>HORA</th><th>SÍMBOLO</th><th>LADO</th>
+              <th class="op">SETUP</th><th class="op">DISCIPLINA</th><th style="text-align:right">P&amp;L</th></tr></thead>
+            <tbody>
+              <tr class="dia"><td colspan="6">31 AGO 2026 · 2 TRADES</td><td class="n up">+$630</td></tr>
+              <tr><td>31/08</td><td>10:42</td><td>MNQ</td><td><span class="t s">SHORT</span></td>
+                <td class="op"><span class="t">INCOMPLETO</span></td><td class="op"><span class="t x">SIN SETUP</span></td>
+                <td class="n dn">−$930</td></tr>
+              <tr><td>31/08</td><td>9:30</td><td>MNQ</td><td><span class="t l">LONG</span></td>
+                <td class="op"><span class="t">INCOMPLETO</span></td><td class="op"><span class="t x">OVERTRADING</span></td>
+                <td class="n up">+$1,560</td></tr>
+              <tr class="dia"><td colspan="6">28 AGO 2026 · 2 TRADES</td><td class="n up">+$1,650</td></tr>
+              <tr><td>28/08</td><td>10:42</td><td>MNQ</td><td><span class="t l">LONG</span></td>
+                <td class="op"><span class="t">A+</span></td><td class="op"><span class="t">LIMPIO</span></td>
+                <td class="n up">+$2,070</td></tr>
+              <tr><td>28/08</td><td>9:30</td><td>MNQ</td><td><span class="t s">SHORT</span></td>
+                <td class="op"><span class="t">A+</span></td><td class="op"><span class="t x">SIN SETUP</span></td>
+                <td class="n dn">−$420</td></tr>
+              <tr class="dia"><td colspan="6">27 AGO 2026 · 2 TRADES</td><td class="n up">+$3,840</td></tr>
+              <tr><td>27/08</td><td>9:30</td><td>MNQ</td><td><span class="t l">LONG</span></td>
+                <td class="op"><span class="t">A+</span></td><td class="op"><span class="t">LIMPIO</span></td>
+                <td class="n up">+$2,160</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dpie">CADA RENGLÓN ABRE SU REPORTE, CON SU CAPTURA</div>
+      </div>
+    </div>
+
+    <!-- 05 · ALGORITHM -->
+    <div class="bloque">
+      <div class="txt rv">
+        <span class="k">05 · Algorithm</span>
+        <h3>El panel del día, encima del chart.</h3>
+        <p>Los dos indicadores del método en Pine Script v6, para copiar y pegar en tu
+          TradingView. Uno de ellos monta este panel sobre el gráfico: en qué sesión vas, qué
+          toca hacer ahora, en qué fase del contrato estás y cuántos puntos lleva cada sesión
+          del día. Sin quitar los ojos del precio.</p>
+        <ul>
+          <li><b style="color:var(--txt);font-weight:400">NP A+</b> — killzones, rango de apertura de Nueva York con su ruptura, huecos de precio, medias y este panel.</li>
+          <li><b style="color:var(--txt);font-weight:400">NP ESTRUCTURA</b> — el tramo con su alto y su bajo, Order Block, Fibonacci, la orden completa y el canal de regresión.</li>
+          <li>Con cada pieza explicada dentro del Terminal, sin dar nada por sabido.</li>
+        </ul>
+      </div>
+      <div class="demo rv">
+        <div class="dbar"><b>NP A+</b> · MICRO E-MINI NASDAQ-100 · 5 MINUTOS
+          <span class="dsp"><span class="chip w">PINE v6</span></span></div>
+        <div class="dbody" style="overflow-x:auto">
+          <table class="chart">
+            <tr><td class="k2">SESIÓN</td><td colspan="3">ASIA abre en 1h 54m</td></tr>
+            <tr class="on"><td class="k2">RUTINA</td><td colspan="3">4/4 DÍA TERMINADO<small>NY cerró. Nos vemos mañana.</small></td></tr>
+            <tr><td class="k2">FASE</td><td colspan="3">EVAL · día 1/5 · trades 1/6</td></tr>
+            <tr class="on"><td class="k2">F1 EVAL</td><td>▶ 31 ago – 4 sep</td><td>1:1 a 1:2 · target $500 a $1,000</td><td>2 minis · 1 trade · riesgo $500</td></tr>
+            <tr><td class="k2">F2 COLCHÓN</td><td>7 sep – 18 sep</td><td>1:1 a 1:2 · target $500 a $1,000</td><td>2 minis · 1 trade · riesgo $500</td></tr>
+            <tr><td class="k2">F3 PAYOUTS</td><td>21 sep – 30 sep</td><td>1:1 a 1:2 · cobro diario</td><td>1 mini · 1 trade · riesgo $250</td></tr>
+            <tr><td class="k2">PROTOCOLO</td><td colspan="3">1 posición al día · protege la cuenta</td></tr>
+            <tr><td class="k2">⏰ AGENDA</td><td colspan="3">en 14h 36m · 06:55 · En 5 min: PREMARKET, revisa las noticias</td></tr>
+            <tr><td class="k2">ASIA</td><td class="c">29290.00</td><td class="c">↑ 29461.25</td><td class="n up">+171.25 pts</td></tr>
+            <tr><td class="k2">LNDN</td><td class="c">29461.25</td><td class="c">↓ 29389.75</td><td class="n dn">−71.50 pts</td></tr>
+            <tr><td class="k2">NY</td><td class="c">29438.25</td><td class="c">↑ 29506.25</td><td class="n up">+68.00 pts</td></tr>
+            <tr><td class="k2">ORB</td><td class="c">ORH 29517.00</td><td class="c">↑ 29521.50</td><td class="n up">+4.50 pts</td></tr>
+            <tr class="on"><td class="k2">TOTAL</td><td class="c">29290.00</td><td class="c">↑ 29506.25</td><td class="n up">+216.25 pts</td></tr>
+          </table>
+        </div>
+        <div class="dpie">SE COPIA DEL TERMINAL Y SE PEGA EN TRADINGVIEW · EL CÓDIGO COMPLETO, A LA VISTA</div>
+      </div>
+    </div>
+
+    <!-- 06 · KURO -->
+    <div class="bloque rev">
+      <div class="txt rv">
+        <span class="k">06 · Kuro</span>
+        <h3>Un rival que no duerme.</h3>
+        <p>Mil años en la cima y nadie lo ha bajado. Kuro convierte la disciplina en algo que
+          se puede ganar: retas a alguien de la mesa —o a él—, se pone tiempo y monto, y gana
+          el que hace más profit. Cada quien con su cuenta, sin copiar a nadie.</p>
+        <ul>
+          <li>Duelos de 30 minutos hasta 4 horas, con montos de $1,000 a $50,000.</li>
+          <li>Diez grados de dan y ranking por elo.</li>
+          <li>Una campaña de nueve katanas: cada tramo pide una cosa distinta —paciencia, ojo para la liquidez, ruptura del rango, gestión del riesgo— y ninguna se regala.</li>
+        </ul>
+      </div>
+      <div class="demo rv">
+        <div class="dbar"><b>DUELO EN CURSO</b> · TOKIO
+          <span class="dsp"><span class="chip">☂ LLUVIA</span><span class="chip">1 h 30</span><span class="chip w">$25,000</span></span></div>
+        <div class="duelo">
+          <div class="lado"><b>ANDRÉ</b><i>7º DAN · 七 · 1,612 ELO</i><s>+$1,840</s></div>
+          <div class="reloj"><span>RESTAN</span>42:07</div>
+          <div class="lado"><b>KURO</b><i>10º DAN · 十 · 2,050 ELO</i><s>+$1,210</s></div>
+        </div>
+        <div class="dbody" style="padding-top:0">
+          <div class="dtit">DUELOS RECIENTES</div>
+          <table class="tabla">
+            <tr><td>vs GERARDO · 1 h · $10,000</td><td class="n up">GANADO +$2,310</td></tr>
+            <tr><td>vs KURO · 2 h · $25,000</td><td class="n dn">PERDIDO −$640</td></tr>
+            <tr><td>vs PABLO · 30 min · $5,000</td><td class="n up">GANADO +$880</td></tr>
+          </table>
+        </div>
+        <div class="dpie">GANA EL MAYOR PROFIT · CADA QUIEN CON SU CUENTA</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ LAS TRECE PANTALLAS ══════════ -->
+<section>
+  <div class="wrap">
+    <div class="k rv">Todo lo que entra</div>
+    <h2 class="big rv">Trece pantallas. Ningún plan recortado.</h2>
+    <p class="lead rv">Las trece están en línea hoy. No hay módulo que se cobre aparte ni
+      lista de espera.</p>
+    <div class="rej tres rv">
+      <div><i>01</i><b>The Desk</b><span>Quién opera, con cuánto capital, cuántas cuentas en examen y cuántas fondeadas.</span></div>
+      <div><i>02</i><b>Journal</b><span>Balance, ratios de la mesa y calendario del mes con tu objetivo diario.</span></div>
+      <div><i>03</i><b>Log trade</b><span>La curva viva y el registro del día. Un botón para largo, otro para corto.</span></div>
+      <div><i>04</i><b>Trade history</b><span>Cada trade con su setup y sus marcas de disciplina. Profit factor arriba.</span></div>
+      <div><i>05</i><b>The plan</b><span>Tus cuentas con su drawdown y la escalera de nueve fases.</span></div>
+      <div><i>06</i><b>Payout management</b><span>El camino al primer cobro: evaluación, colchón y tramo de pago.</span></div>
+      <div><i>07</i><b>Algorithm</b><span>Los dos indicadores en Pine v6, con cada pieza explicada.</span></div>
+      <div><i>08</i><b>Academia</b><span>4 programas, 12 módulos, 35 lecciones. Con tu avance guardado.</span></div>
+      <div><i>09</i><b>Cuaderno</b><span>Tus notas por lección, tus objetivos, tu promesa y tu firma.</span></div>
+      <div><i>10</i><b>Kuro</b><span>Duelos 1v1 con tiempo y monto, ranking por dan y la campaña.</span></div>
+      <div><i>11</i><b>Backtesting</b><span>Cuentas de práctica aparte, para no ensuciar tus números reales.</span></div>
+      <div><i>12</i><b>Portafolio</b><span>La tesis a 2040 en IA, semiconductores, infraestructura y blockchain.</span></div>
+      <div><i>13</i><b>Cash flow</b><span>Lo que entra y lo que sale de verdad. El patrimonio, no solo la cuenta.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EL DÍA ══════════ -->
+<section>
+  <div class="wrap">
+    <div class="k rv">Así se usa</div>
+    <h2 class="big rv">No hay manual. El día ya viene armado.</h2>
+    <p class="lead rv">De las 06:55 a las 16:00, el Terminal te dice qué toca. Tú nada más
+      lo haces.</p>
+    <div class="dia rv">
+      <div><u>06:55</u><b>Premarket</b><span>El panel te despierta. Marcas los niveles de Asia y Londres que siguen sin tocarse. Cero entradas.</span></div>
+      <div><u>09:30</u><b>Abre Nueva York</b><span>Se empieza a formar el rango de apertura. El indicador lo dibuja solo. Todavía no se entra.</span></div>
+      <div><u>09:45</u><b>Tu ventana</b><span>Cierra el rango y se abre tu turno. Un trade. El panel te dice en qué fase del contrato vas y cuánto puedes arriesgar.</span></div>
+      <div><u>16:00</u><b>Cierra</b><span>Pegas la captura, el trade queda, el calendario del mes se pinta y el camino a payout avanza.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTRA LA HOJA DE CÁLCULO ══════════ -->
+<section>
+  <div class="wrap narrow">
+    <div class="k rv">Contra lo que usas hoy</div>
+    <h2 class="big rv">La misma hora, dos resultados.</h2>
+    <div class="duo rv">
+      <div>
+        <h4>La hoja de cálculo</h4>
+        <ul>
+          <li>La llenas tú, a mano, todos los días</li>
+          <li>Una pestaña por cuenta y ninguna cuadra</li>
+          <li>El drawdown lo calculas de memoria</li>
+          <li>Las reglas viven en otra libreta</li>
+          <li>La abandonas el jueves</li>
+        </ul>
+      </div>
+      <div>
+        <h4>El Terminal</h4>
+        <ul>
+          <li>Pegas la captura y se llena solo</li>
+          <li>Las tres cuentas en una pantalla</li>
+          <li>El drawdown, al aire, todo el día</li>
+          <li>Tus reglas, encima del chart</li>
+          <li>Y un rival que te espera mañana</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EL MOTOR ══════════ -->
+<section>
+  <div class="wrap">
+    <div class="k rv">Para el que quiere ver el motor</div>
+    <h2 class="big rv">Lo que no se ve, pero se nota todos los días.</h2>
+    <div class="rej tres rv">
+      <div><i>ARRANQUE</i><b>Abre en un clic</b><span>Una sola aplicación que corre en el navegador — laptop, iPad y teléfono, con la misma cuenta. Sin descargas ni instaladores que pidan permisos.</span></div>
+      <div><i>TUS DATOS</i><b>Local primero, nube después</b><span>Se guarda en tu equipo al instante y se sincroniza a tu cuenta. Si se te va el internet a media sesión sigues registrando; cuando vuelve, se pone al día solo.</span></div>
+      <div><i>PRIVACIDAD</i><b>Tu llave de IA, tu journal</b><span>La lectura de capturas corre con TU llave, directo desde tu navegador a Anthropic. No pasa por nuestros servidores. Está hecho así a propósito.</span></div>
+      <div><i>IDIOMA Y TEMA</i><b>Español o inglés. Oscuro o claro</b><span>Mil sesenta y nueve textos escritos dos veces, uno por idioma — no traducción automática. Y dos temas completos, no un filtro invertido.</span></div>
+      <div><i>DETALLE</i><b>Deshacer en todo lo que borra</b><span>Registras un trade con el número equivocado a las 9:41 y lo arreglas en dos segundos, sin abrir un menú.</span></div>
+      <div><i>HECHO A MANO</i><b>Ni una librería de gráficas</b><span>Las curvas, los mapas de Kuro y los paneles están dibujados a mano en SVG y en lienzo. Por eso cargan al instante en vez de pesar tres megas de dependencias.</span></div>
+    </div>
+    <div class="cifras rv">
+      <div><b>13</b><span>pantallas</span></div>
+      <div><b>28,189</b><span>líneas de código</span></div>
+      <div><b>1,069</b><span>textos en 2 idiomas</span></div>
+      <div><b>0</b><span>instalaciones</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PARA QUIÉN ══════════ -->
+<section>
+  <div class="wrap narrow">
+    <div class="k rv">Antes de que pagues</div>
+    <h2 class="big rv">Esto no es para todo el mundo.</h2>
+    <div class="quien rv">
+      <div>
+        <h4>Es para ti si</h4>
+        <ul>
+          <li>Operas futuros con una o varias cuentas de fondeo</li>
+          <li>Ya sabes que tu problema es la disciplina, no encontrar otro indicador</li>
+          <li>Quieres saber, con números, por qué pierdes</li>
+          <li>Estás dispuesto a registrar cada trade</li>
+        </ul>
+      </div>
+      <div>
+        <h4>No es para ti si</h4>
+        <ul>
+          <li>Buscas señales o que alguien te diga qué comprar</li>
+          <li>Quieres un bot que opere por ti</li>
+          <li>Esperas que un software te vuelva rentable sin cambiar nada</li>
+          <li>No piensas abrirlo todos los días</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PRECIO ══════════ -->
+<section id="precio">
+  <div class="wrap">
+    <div class="k rv">El precio</div>
+    <h2 class="big rv">Un solo producto. Tres formas de pagarlo.</h2>
+    <p class="lead rv">No hay plan recortado. Las trece pantallas, la academia completa, los
+      dos indicadores y Kuro entran en los tres. Lo único que cambia es cada cuánto pagas.</p>
+
+    <div class="planes rv">
+      <div class="plan">
+        <h4>Mensual</h4>
+        <div class="precio">$1,490<i>MXN / mes · se cancela cuando quieras</i></div>
+        <ul>
+          <li>Las 13 pantallas completas</li>
+          <li>Academia: 4 programas, 35 lecciones</li>
+          <li>NP A+ y NP ESTRUCTURA</li>
+          <li>Kuro: duelos y campaña</li>
+          <li>Actualizaciones mientras estés dentro</li>
+        </ul>
+        <a class="btn" href="#" data-pago="stripeMensual"><span>Empezar mensual</span></a>
+      </div>
+      <div class="plan destacado">
+        <i class="tag">EL QUE CONVIENE</i>
+        <h4>Anual</h4>
+        <div class="precio">$11,900<i>MXN al año · sale en $992 al mes</i></div>
+        <ul>
+          <li>Todo lo del mensual</li>
+          <li>Ahorras $5,980 contra pagar mes a mes</li>
+          <li>Precio congelado los 12 meses</li>
+          <li>Todo lo que salga este año, incluido</li>
+          <li>Un solo cargo, un solo recordatorio</li>
+        </ul>
+        <a class="btn pri" href="#" data-pago="stripeAnual"><span>Tomar el anual</span></a>
+      </div>
+      <div class="plan">
+        <h4>De por vida</h4>
+        <div class="precio">$17,000<i>MXN una sola vez · sin renovación</i></div>
+        <ul>
+          <li>Todo, para siempre</li>
+          <li>Lo que se agregue después, también</li>
+          <li>Contra el anual se paga solo en menos de año y medio</li>
+          <li>Nunca vuelves a ver un cobro</li>
+        </ul>
+        <a class="btn" href="#" data-pago="stripeVida"><span>Comprarlo de por vida</span></a>
+      </div>
+    </div>
+
+    <div class="oferta rv">
+      <div>
+        <b>FUNDADORES · LOS PRIMEROS 50</b>
+        <p>Quien entre en este primer grupo se queda con el precio de hoy mientras siga
+          suscrito, aunque el Terminal suba después. No es una cuenta regresiva falsa: son
+          cincuenta lugares y cuando se acaben, se acaban.</p>
+      </div>
+      <a class="btn" href="app.html"><span>Abrir el Terminal →</span></a>
+    </div>
+
+    <p class="legal rv">PRECIOS EN PESOS, IVA INCLUIDO · LOS NÚMEROS DE LOS PANELES DE ESTA
+      PÁGINA SON DE UNA CUENTA DE DEMOSTRACIÓN · EL TERMINAL ES SOFTWARE, NO ASESORÍA DE
+      INVERSIÓN NI SERVICIO DE SEÑALES · OPERAR FUTUROS IMPLICA RIESGO DE PÉRDIDA</p>
+  </div>
+</section>
+
+<!-- ══════════ PREGUNTAS ══════════ -->
+<section>
+  <div class="wrap narrow">
+    <div class="k rv">Con el dedo en el botón</div>
+    <h2 class="big rv">Lo que se pregunta antes de pagar.</h2>
+    <div class="faq rv">
+      <details><summary>¿Se conecta a mi bróker?</summary>
+        <p>Hoy no. El trade entra de dos formas: pegas la captura de TradingView y una IA la
+          lee, o importas el CSV de tu bróker y entra el mes completo. La conexión directa
+          con más brókers está en camino y entra sin costo extra.</p></details>
+      <details><summary>¿Necesito una llave de IA para que sirva?</summary>
+        <p>No. Sin llave escribes el resultado en una caja y la curva, las cuentas y el
+          historial se mueven igual. La llave sólo sirve para el atajo de pegar la captura y
+          que se llene sola.</p></details>
+      <details><summary>¿Ustedes ven mis trades?</summary>
+        <p>No. La lectura de la captura corre con tu llave, directo de tu navegador a
+          Anthropic, sin pasar por nuestros servidores. Tus datos se guardan primero en tu
+          equipo y luego se sincronizan a tu cuenta.</p></details>
+      <details><summary>¿Me sirve si no opero MNQ ni el método de la casa?</summary>
+        <p>El journal, las cuentas, el drawdown, el historial y Kuro funcionan con lo que
+          operes. Lo que está hecho a la medida del método son los dos indicadores y la
+          academia: apuntan al Nasdaq en la sesión de Nueva York.</p></details>
+      <details><summary>¿Es un bot? ¿Dan señales?</summary>
+        <p>No y no. El Terminal no toca tu bróker, no abre posiciones y nadie te dice qué
+          comprar. Es software para medir tu operación y sostener tu disciplina.</p></details>
+      <details><summary>¿Qué pasa si cancelo?</summary>
+        <p>Dejas de pagar y se acabó, sin llamadas ni formularios. El cierre de cada mes sale
+          en PDF y tus datos viven en tu equipo, así que te quedas con tu historial.</p></details>
+      <details><summary>¿Y si no me convence?</summary>
+        <p>Ábrelo antes de decidir. El Terminal está en línea ahora mismo: creas tu acceso,
+          entras y lo ves por dentro con tus propios ojos. Esta página no te va a convencer
+          más que la aplicación.</p></details>
+      <details><summary>¿Qué falta por salir?</summary>
+        <p>Conexión directa con más brókers, más lecciones en la academia y más katanas en la
+          campaña. La regla es la misma: lo que salga entra en tu plan mientras estés dentro,
+          sin módulos que se cobren aparte.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CIERRE ══════════ -->
+<section class="cierre">
+  <div class="wrap narrow">
+    <div class="k rv">La última línea</div>
+    <h2 class="big rv">Ábrelo y míralo. Está en línea ahora mismo.</h2>
+    <p class="lead rv">Mañana a las 9:41 vas a estar frente al chart otra vez. La única
+      pregunta es si vas a saber, esa misma noche, qué pasó y por qué.</p>
+    <div class="hero-cta rv">
+      <a class="btn pri" href="app.html">Entrar al Terminal →</a>
+      <a class="btn" href="#precio">Ver el precio</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fl">
+      <span>NORTHPOINT CAPITAL · TERMINAL v1</span>
+      <a href="index.html">NorthPoint</a>
+      <a href="index.html#educacion">Academia</a>
+      <a href="kuro.html">Kuro</a>
+      <a href="app.html">Terminal</a>
+      <a href="legal/terminos.html">Términos</a>
+      <a href="legal/privacidad.html">Privacidad</a>
+      <a href="legal/riesgo.html">Aviso de riesgo</a>
+    </div>
+  </div>
+</footer>
+
+<!-- barra de compra: aparece cuando ya viste el producto, no antes -->
+<div class="sticky" id="sticky">
+  <span>NORTHPOINT TERMINAL · <b>desde $992 MXN al mes</b> · 13 pantallas</span>
+  <div class="sp">
+    <a class="btn sm" href="app.html">Abrirlo</a>
+    <a class="btn pri sm" href="#precio">Ver el precio</a>
+  </div>
+</div>
+
+<script src="js/terminal.js"></script>
+</body>
+</html>

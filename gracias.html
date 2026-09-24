@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>NORTHPOINT · Ya estás dentro</title>
+
+<!--
+  LA PÁGINA DE DESPUÉS DEL PAGO.
+
+  Aquí aterriza quien acaba de comprar. Es la URL de éxito que hay que pegar en
+  Stripe y en MercadoPago:
+
+      https://northpointcapital.io/gracias.html
+
+    · Stripe        → Payment link → «After payment» → Redirect to a page
+    · MercadoPago   → Link de pago → «URL de retorno» → Pago aprobado
+
+  Sin eso, el que paga se queda mirando el recibo de Stripe y nadie le dice qué
+  hacer a continuación — que es justo el minuto en el que más ganas tiene de
+  empezar. Los cuatro pasos de abajo existen para gastar esas ganas ese mismo
+  día, no la semana que viene.
+
+  La versión anterior de este archivo era la página de gracias del embudo VIEJO
+  de reclutamiento («posiciones», currículum, agendar Zoom). Está guardada en
+  .respaldos/930-gracias-reclutamiento.html por si ese embudo vuelve.
+-->
+
+<link rel="stylesheet" href="css/gracias.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">NORTHPOINT</div>
+
+  <p class="micro">Pago confirmado</p>
+  <h1>Ya estás dentro. <em>Empieza hoy, no el lunes.</em></h1>
+
+  <p>El recibo va en camino a tu correo. Mientras llega, <strong>haz los cuatro
+  pasos de abajo</strong> — se hacen en veinte minutos y son la diferencia entre
+  entrar de verdad y dejarlo para después.</p>
+
+  <div class="pasos">
+    <div class="paso">
+      <span class="n">01</span>
+      <div>
+        <h3>Revisa tu correo</h3>
+        <p>Ahí van el recibo y tus accesos. Si no aparece en quince minutos,
+        búscalo en spam antes de escribirme.</p>
+      </div>
+    </div>
+    <div class="paso">
+      <span class="n">02</span>
+      <div>
+        <h3>Abre el Terminal y crea tu cuenta</h3>
+        <p>Es donde se mide todo: el journal, tu curva, las reglas de tu
+        fondeadora y el camino a payout.</p>
+      </div>
+    </div>
+    <div class="paso">
+      <span class="n">03</span>
+      <div>
+        <h3>Entra al Discord y preséntate</h3>
+        <p>Lee <strong>#reglas</strong>, escribe en <strong>#presentate</strong> y
+        sigue el orden de <strong>#ruta-de-aprendizaje</strong>. Está armado para
+        que no adivines por dónde empezar.</p>
+      </div>
+    </div>
+    <div class="paso">
+      <span class="n">04</span>
+      <div>
+        <h3>Mañana, a la apertura</h3>
+        <p>La mesa opera la sesión de Nueva York, <strong>8:30 AM hora del
+        Este</strong>, de lunes a viernes. Llega con tu plan escrito, aunque el
+        primer día no operes nada.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="acciones">
+    <a class="btn solid" href="app.html">Abrir el Terminal</a>
+    <a class="btn" id="discord" href="#" target="_blank" rel="noopener">Entrar al Discord</a>
+  </div>
+
+  <div class="aviso">
+    <p>¿Algo no llegó o no te deja entrar? Escríbeme directo a
+    <a href="mailto:andremacouzetruiz@gmail.com" style="color:var(--fg)">andremacouzetruiz@gmail.com</a>
+    con el correo que usaste para pagar. Contesto el mismo día.</p>
+  </div>
+
+  <p style="font-size:13.5px">Operar futuros con apalancamiento es de alto riesgo
+  y puedes perder dinero. Lee el
+  <a href="legal/riesgo.html" style="color:var(--fg)">aviso de riesgo</a> antes de
+  operar en real.</p>
+
+  <div class="pie">
+    NORTHPOINT ·
+    <a href="index.html">Inicio</a> ·
+    <a href="legal/terminos.html">Términos</a> ·
+    <a href="mailto:andremacouzetruiz@gmail.com">andremacouzetruiz@gmail.com</a>
+  </div>
+
+</div>
+
+<script src="js/gracias.js"></script>
+</body>
+</html>

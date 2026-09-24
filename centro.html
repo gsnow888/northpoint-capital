@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Centro de Clientes — NORTHPOINT · muestra</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Cpath fill=%22%23A6EEDA%22 d=%22M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z%22/%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="css/centro.css">
+</head>
+<body>
+
+<aside class="lado" id="lado">
+  <a class="marca" href="#/panel">
+    <svg viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+    <span>NORTHPOINT<small>CENTRO DE CLIENTES</small></span>
+  </a>
+  <nav class="menu" aria-label="Menú">
+    <button class="mn" data-v="panel"><u></u>Panel</button>
+    <button class="mn" data-v="clientes"><u></u>Clientes</button>
+    <button class="mn" data-v="posiciones"><u></u>Posiciones</button>
+  </nav>
+  <div class="lado-pie">
+    <span class="conx" id="conx"><u></u><span id="conxTxt">conectando…</span></span>
+  </div>
+</aside>
+<div class="velo-menu" id="veloMenu"></div>
+<header class="topbar">
+  <button class="burger" id="burger" aria-label="Menú"><i></i><i></i><i></i></button>
+  <a class="marca" href="#/panel" style="padding:0">
+    <svg viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+    <span>NORTHPOINT<small>CENTRO</small></span>
+  </a>
+</header>
+
+<!-- ══ desconectado (servido fuera del motor) ══ -->
+<div id="vOffline" style="display:none">
+  <div class="card desconectado">
+    <span class="eb">CENTRO DE CLIENTES</span>
+    <h1>Abre esto desde tu motor SNOW</h1>
+    <p>El centro de control lee los datos reales de tus clientes desde el motor que corre en tu
+      máquina. Ábrelo en <b class="mono">http://127.0.0.1:4747</b> (arranca el motor con
+      <b class="mono">node server.js</b>) y aquí verás todo: patrimonio, tareas, documentos y reportes.</p>
+  </div>
+</div>
+
+<!-- ══ PANEL ══ -->
+<main id="vPanel" style="display:none">
+  <div class="cab w">
+    <span class="eb">PANEL</span>
+    <h1>Resumen</h1>
+    <p class="cab-sub">Todo lo que pasa con tus clientes, de un vistazo.</p>
+    <span class="cab-linea"></span>
+  </div>
+  <div class="w" style="padding-bottom:40px">
+    <div class="kpi-g">
+      <div class="kpi"><span class="ico">👥</span><b id="kTotal">—</b><span>Clientes</span></div>
+      <div class="kpi"><span class="ico">✳</span><b id="kActivos">—</b><span>Activos</span></div>
+      <div class="kpi"><span class="ico">💼</span><b id="kPat">—</b><span>Patrimonio administrado</span></div>
+      <div class="kpi"><span class="ico">◷</span><b id="kAcc">—</b><span>Próximas acciones</span></div>
+    </div>
+    <div class="viz-g">
+      <div class="card">
+        <h2>Pipeline</h2>
+        <p class="sub">Tus clientes por etapa, de prospecto a activo.</p>
+        <div id="embudo"></div>
+      </div>
+      <div class="card">
+        <h2>Carga del equipo</h2>
+        <p class="sub">Cómo se reparten los clientes entre asesores.</p>
+        <div class="dona-flex"><div id="donaEquipo"></div><div id="leyEquipo"></div></div>
+      </div>
+    </div>
+    <div class="card" id="cardAlertas" style="display:none">
+      <h2>Atención</h2>
+      <p class="sub">Clientes activos que necesitan algo esta semana.</p>
+      <div id="alertas"></div>
+    </div>
+    <div class="card">
+      <h2>Lo que sigue</h2>
+      <p class="sub">Las próximas acciones de todos tus clientes, por fecha.</p>
+      <div id="acciones"></div>
+    </div>
+  </div>
+</main>
+
+<!-- ══ CLIENTES (directorio) ══ -->
+<main id="vClientes" style="display:none">
+  <div class="cab w">
+    <span class="eb">DIRECTORIO</span>
+    <h1>Clientes</h1>
+    <p class="cab-sub">Busca, filtra y abre a cualquier cliente.</p>
+    <span class="cab-linea"></span>
+  </div>
+  <div class="w" style="padding-bottom:40px">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:12px">
+        <h2 style="margin:0">Todos tus clientes</h2>
+        <button class="btn" id="btnNuevo">+ Cliente</button>
+      </div>
+      <input class="buscar" id="buscar" placeholder="Buscar por nombre o familia…" aria-label="Buscar cliente">
+      <div class="etchips" id="etFiltros"></div>
+      <div id="listaClientes"></div>
+    </div>
+  </div>
+</main>
+
+<!-- ══ POSICIONES (global, en tiempo real) ══ -->
+<main id="vPosiciones" style="display:none">
+  <div class="cab w">
+    <span class="eb">CUENTAS · EN VIVO</span>
+    <h1>Posiciones</h1>
+    <p class="cab-sub">Todo lo que tienen tus clientes invertido ahora mismo, sumado.</p>
+    <span class="cab-linea"></span>
+  </div>
+  <div class="w" style="padding-bottom:40px">
+    <div class="kpi-g" style="grid-template-columns:repeat(3,1fr)">
+      <div class="kpi"><b id="pTotal">—</b><span>Exposición total</span></div>
+      <div class="kpi"><b id="pCuentas">—</b><span>Cuentas con datos</span></div>
+      <div class="kpi"><b id="pPos">—</b><span>Posiciones</span></div>
+    </div>
+    <div class="card" id="posAviso" style="display:none;border-color:rgba(216,138,128,.4)"></div>
+    <div class="card">
+      <h2>Exposición por tipo</h2>
+      <p class="sub">En qué clase de activo está el dinero de todos tus clientes.</p>
+      <div class="dona-flex"><div id="donaExpo"></div><div id="expoClase"></div></div>
+    </div>
+    <div class="card">
+      <h2>Todas las posiciones</h2>
+      <p class="sub" id="posSub">Cada renglón es una posición abierta de un cliente.</p>
+      <div class="tabla-wrap"><table class="tabla" id="tablaPos"></table></div>
+    </div>
+  </div>
+</main>
+
+<!-- ══ FICHA ══ -->
+<main id="vFicha" style="display:none">
+  <div class="ficha-cab w">
+    <a class="volver" href="#/clientes">← DIRECTORIO</a>
+    <div class="ficha-tit">
+      <h1 id="fNombre">—</h1>
+      <div class="meta" id="fMeta"></div>
+    </div>
+    <div class="ficha-acc" id="fAcciones"></div>
+  </div>
+  <div class="w" style="padding-bottom:40px">
+    <div class="grid2">
+      <!-- IZQUIERDA · el dinero y el análisis -->
+      <div>
+        <!-- patrimonio & portafolio -->
+        <div class="card">
+          <h2>Patrimonio y portafolio</h2>
+          <p class="sub">En vivo desde el motor. <span id="fSyncInfo" class="mono"></span></p>
+          <div id="fPortafolio"><p class="vacio">Cargando…</p></div>
+        </div>
+        <!-- cuentas & posiciones (en vivo) -->
+        <div class="card">
+          <h2>Cuentas y posiciones</h2>
+          <p class="sub">Lo que tiene en su cuenta ahora mismo: efectivo, posiciones abiertas y movimientos. <span id="fCtaInfo" class="mono"></span></p>
+          <div id="fCuentas"><p class="vacio">Cargando…</p></div>
+        </div>
+        <!-- oficina: política, fiscal, escudo, legado -->
+        <div class="card">
+          <h2>Oficina</h2>
+          <p class="sub">Rebalanceo, provisión fiscal, escudo y legado — el trabajo de family office.</p>
+          <div id="fOficina"><p class="vacio">Cargando…</p></div>
+        </div>
+      </div>
+      <!-- DERECHA · perfil, relación y entrega -->
+      <div>
+        <!-- datos & estado -->
+        <div class="card">
+          <h2>Datos y estado</h2>
+          <p class="sub">Quién es, en qué etapa va y cómo contactarlo.</p>
+          <div id="fDatos"></div>
+        </div>
+        <!-- tareas -->
+        <div class="card">
+          <h2>Tareas</h2>
+          <p class="sub">Lo que hay que hacer con este cliente.</p>
+          <div id="fTareas"></div>
+          <form class="mini-form" id="formTarea">
+            <input name="txt" placeholder="Nueva tarea…" maxlength="160" required>
+            <input name="fecha" type="date">
+            <button class="btn" type="submit">Agregar</button>
+          </form>
+        </div>
+        <!-- reuniones -->
+        <div class="card">
+          <h2>Reuniones</h2>
+          <p class="sub">La bitácora de lo que han platicado.</p>
+          <div id="fReuniones"></div>
+          <form class="mini-form" id="formReunion">
+            <input name="f" type="date">
+            <textarea name="nota" placeholder="Qué se habló, qué se acordó…" maxlength="1200" required style="min-height:44px"></textarea>
+            <button class="btn" type="submit">Guardar</button>
+          </form>
+        </div>
+        <!-- documentos -->
+        <div class="card">
+          <h2>Documentos</h2>
+          <p class="sub">El expediente de cumplimiento de este cliente.</p>
+          <div id="fDocs"></div>
+        </div>
+        <!-- reporte / dashboard -->
+        <div class="card">
+          <h2>Su reporte</h2>
+          <p class="sub">Publica el corte que verá el cliente y comparte su acceso.</p>
+          <div id="fReporte"></div>
+        </div>
+        <!-- análisis con IA -->
+        <div class="card">
+          <h2>Análisis con IA</h2>
+          <p class="sub">Un memorándum sobre este cliente para tu conversación con él. Apoyo, no recomendación automatizada.</p>
+          <div id="fIA"><button class="btn" id="bMemo">Generar análisis</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- modal alta/edición -->
+<div class="velo" id="velo" hidden>
+  <div class="card modal">
+    <h2 id="modalTit">Nuevo cliente</h2>
+    <form id="formCliente">
+      <div class="par">
+        <div class="campo"><label>Nombre del cliente</label><input name="nombre" maxlength="60" required placeholder="Ej. Roberto García"></div>
+        <div class="campo"><label>Familia</label><input name="familia" maxlength="60" placeholder="Familia García"></div>
+        <div class="campo"><label>Teléfono</label><input name="contactoTel" maxlength="40" placeholder="+52 …"></div>
+        <div class="campo"><label>Correo</label><input name="contactoMail" maxlength="80" placeholder="correo@…"></div>
+        <div class="campo"><label>Etapa</label><select name="etapa"></select></div>
+        <div class="campo"><label>Perfil de riesgo</label><select name="riesgo">
+          <option value="conservador">Conservador</option><option value="moderado">Moderado</option><option value="agresivo">Agresivo</option>
+        </select></div>
+        <div class="campo"><label>Asesor asignado</label><select name="asesor" id="selAsesor"><option value="">Sin asignar</option></select></div>
+        <div class="campo"><label>Patrimonio estimado (MXN)</label><input name="patrimonioEstimado" type="number" min="0" step="10000" placeholder="0"></div>
+        <div class="campo"><label>Gasto mensual deseado (MXN)</label><input name="gastoMensualDeseado" type="number" min="0" step="5000" placeholder="0"></div>
+        <div class="campo"><label>Aportación mensual (MXN)</label><input name="aportacionMensual" type="number" min="0" step="1000" placeholder="0"></div>
+        <div class="campo"><label>Tasa real anual esperada (%)</label><input name="tasaRealPct" type="number" min="0" max="20" step="0.5" placeholder="4"></div>
+      </div>
+      <div class="campo"><label>Notas</label><textarea name="notas" maxlength="600" placeholder="Contexto, objetivos, lo que quieras recordar…"></textarea></div>
+      <div class="acciones">
+        <button type="button" class="btn btn-g" id="modalCancel">Cancelar</button>
+        <button type="submit" class="btn">Guardar cliente</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<div id="tip"></div>
+
+<script src="js/centro.js"></script>
+
+</body>
+</html>

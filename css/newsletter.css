@@ -1,0 +1,26 @@
+/* ============================================================
+   newsletter.html — estilos propios: el formulario y los puntos de
+   "qué recibes". La piel viene de css/index.css.
+   ============================================================ */
+.nl-g{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(34px,6vw,80px);max-width:1040px;align-items:start}
+.nl-form{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px;max-width:520px}
+.nl-in{flex:1;min-width:200px;padding:14px 16px;background:var(--glass);border:1px solid var(--line);
+  color:var(--txt);font-family:var(--sans);font-size:14.5px;outline:none;transition:border-color .2s,background .2s}
+.nl-in::placeholder{color:var(--faint)}
+.nl-in:focus{border-color:var(--accent-deep);background:var(--glass-2)}
+.nl-btn{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--bg);background:var(--txt);border:1px solid var(--txt);padding:14px 22px;cursor:pointer;
+  white-space:nowrap;transition:opacity .2s,transform .16s}
+.nl-btn:hover{opacity:.88;transform:translateY(-1px)}
+.nl-ok{margin-top:16px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--dim)}
+.nl-ok[hidden]{display:none}
+.nl-nota{margin-top:14px;font-size:12.5px;color:var(--faint);font-weight:300;max-width:52ch;line-height:1.6}
+.nl-puntos{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.nl-puntos li{padding:20px 0;border-bottom:1px solid var(--line-soft);display:grid;grid-template-columns:44px 1fr;gap:14px}
+.nl-puntos i{font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--txt);padding-top:3px}
+.nl-puntos b{display:block;font-size:15.5px;font-weight:600;letter-spacing:-.01em;margin-bottom:5px}
+.nl-puntos span{display:block;color:var(--dim);font-size:13.5px;line-height:1.6;font-weight:300}
+.nl-memos{display:inline-block;margin-top:26px;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--txt);border-bottom:1px solid var(--line);padding-bottom:4px;transition:border-color .2s}
+.nl-memos:hover{border-color:currentColor}
+@media(max-width:820px){.nl-g{grid-template-columns:1fr}}

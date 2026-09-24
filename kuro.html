@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#04060C" />
+<title>KURO — El trading game de NorthPoint</title>
+<meta name="description" content="Un juego de trading: nueve maestros juzgan tus trades de verdad contra su objetivo, su drawdown y su tope de entradas. Entrenamiento de NorthPoint." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NORTHPOINT" />
+<meta property="og:title" content="KURO — El trading game de NorthPoint" />
+<meta property="og:description" content="Nueve maestros juzgan tus trades de verdad. Mil años en la cima; nadie lo ha bajado." />
+<meta property="og:url" content="https://northpointcapital.io/kuro.html" />
+<link rel="stylesheet" href="css/kuro.css">
+</head>
+<body>
+
+<!-- ═══ LA MONTAÑA: dieciséis cordilleras y el aura ═══ -->
+<div id="escena"><canvas id="heroCv"></canvas></div>
+<div id="velo"></div>
+<a class="marca" href="index.html">NORTHPOINT</a>
+
+<header class="hero">
+  <div class="hero-in">
+    <span class="hero-kan">黒</span>
+    <h1>KURO</h1>
+    <p class="hero-lin">NORTHPOINT &middot; TRADING GAME</p>
+    <a class="hero-cta" href="#leyenda">Sube</a>
+    <span class="baja">&#8595;</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- ═══ 00 · LAS DOS RAMAS ═══
+       Lo primero después de la montaña: hay DOS maneras de jugar y el visitante
+       tiene que verlas antes de bajar nada más. Si sólo cuentas la campaña,
+       nadie se entera de que puede retar a sus amigos. -->
+  <section class="ramas-sec">
+    <p class="eyebrow rev">DOS CAMINOS</p>
+    <h2 class="rev">Trading battles.</h2>
+    <div class="ramas">
+      <a class="rama rev" href="/app.html">
+        <span class="ra-k">九</span>
+        <span class="ra-t">CAMPA&Ntilde;A</span>
+        <span class="ra-p">Los retos que te va a pedir una cuenta de verdad.</span>
+        <span class="ra-vis"><canvas></canvas></span>
+        <span class="ra-lista">
+          <span class="rl">Pasa un examen de $50K</span>
+          <span class="rl">Arma el colch&oacute;n</span>
+          <span class="rl">Consigue tu payout</span>
+          <span class="rl">Qu&iacute;tale la negra a Kuro</span>
+        </span>
+        <span class="ra-go">Empezar la campa&ntilde;a &rarr;</span>
+      </a>
+      <a class="rama rev" href="/app.html">
+        <span class="ra-k">決</span>
+        <span class="ra-t">1&nbsp;v&nbsp;1</span>
+        <span class="ra-p">Juega con tus amigos, a la misma hora.</span>
+        <span class="ra-vis"><canvas></canvas></span>
+        <span class="ra-lista">
+          <span class="rl">En Asia, Londres o Nueva York</span>
+          <span class="rl">De un d&iacute;a o de varios</span>
+          <span class="rl">Todos en la misma party</span>
+          <span class="rl">Gana el mayor profit</span>
+        </span>
+        <span class="ra-go">Retar a un amigo &rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══ 01 · LOS NUEVE Y EL LORE ═══ -->
+  <section class="leyenda" id="leyenda">
+    <p class="eyebrow rev">I &middot; LA LEYENDA</p>
+    <h2 class="rev" style="max-width:20ch;margin:0 auto 46px">Ocho maestros custodian el camino.</h2>
+    <div class="nueve rev" id="nueve"></div>
+    <p class="ley-p rev"><b>Kuro escogi&oacute; este camino.</b>Pele&oacute; con los ocho maestros y les gan&oacute; a los ocho.</p>
+    <p class="ley-p rev"><b>No se qued&oacute; con sus espadas.</b>Se las devolvi&oacute;, para que hubiera con qui&eacute;n medirse.</p>
+    <p class="ley-p rev"><b>Desde ese d&iacute;a nadie lo ha bajado.</b>Su espada es negra y no la ha soltado.</p>
+    <p class="ley-p fin rev"><b>Lleva mil a&ntilde;os esperando al siguiente.</b>Hoy le tocas t&uacute;.</p>
+  </section>
+
+  <!-- ═══ 02 · LAS NUEVE KATANAS, en ficha alargada ═══ -->
+  <hr class="linea">
+  <section>
+    <p class="eyebrow rev">NUEVE ACEROS</p>
+    <h2 class="rev">Ocho se arrancan.<span class="baja-t">El noveno se le quita a &eacute;l.</span></h2>
+    <p class="p rev">Cada maestro que cae suelta la suya. No se compran, no se cambian,
+      no se regalan: <b>se traen puestas o no se tienen.</b></p>
+    <div class="fichas rev" id="fichas"></div>
+  </section>
+
+  <!-- ═══ PARTE II ═══ -->
+  <hr class="linea">
+  <section class="parte">
+    <p class="parte-n rev">II</p>
+    <h2 class="rev">El ascenso</h2>
+  </section>
+
+  <!-- 03 · EL EDÉN -->
+  <section>
+    <div class="bloque">
+      <div class="txt">
+        <p class="eyebrow rev">DONDE EMPIEZA TODO EL MUNDO</p>
+        <h2 class="rev">Un jard&iacute;n.<span class="baja-t">Una espada sin filo.</span></h2>
+        <p class="p rev"><b>El acero decide el cielo.</b> Gana la primera katana y el jard&iacute;n
+          se acaba: el mundo por el que caminas cambia con la espada que llevas puesta.</p>
+      </div>
+      <div class="rev"><div class="lienzo"><canvas id="edenCv" width="900" height="620"></canvas></div></div>
+    </div>
+  </section>
+
+  <!-- 04 · EL MAPA -->
+  <section>
+    <div class="bloque rev-der">
+      <div class="txt">
+        <p class="eyebrow rev">EL MAPA</p>
+        <h2 class="rev">Nueve mundos.<span class="baja-t">Un solo sendero.</span></h2>
+      </div>
+      <div class="rev"><div class="lienzo"><img src="assets/images/kuro-mapa.jpg" width="1520" height="4712"
+        alt="El mapa de Kuro: el sendero que sube por los nueve mundos"></div></div>
+    </div>
+  </section>
+
+  <!-- 05 · ENTRENA -->
+  <hr class="linea">
+  <section>
+    <p class="eyebrow rev">ENTRENA</p>
+    <h2 class="rev">Nueve retos.<span class="baja-t">Ninguno te pide ganar.</span></h2>
+    <div class="retos rev" id="retos"></div>
+  </section>
+
+
+  <!-- ═══ EL PANEL DE LA PELEA, EN VIVO ═══ -->
+  <section>
+    <p class="eyebrow rev">AS&Iacute; SE VE UNA PELEA</p>
+    <h2 class="rev">Carlos contra David.<span class="baja-t">En cualquiera de las tres arenas.</span></h2>
+    <div class="escena-duelo rev"><canvas id="duCv"></canvas></div>
+    <div class="pelea rev" id="pelea">
+      <div class="pl-top">
+        <span class="pl-sede"><i></i>ASIA &middot; 6 h</span>
+        <span class="pl-reloj" id="plReloj">04:12:38</span>
+        <span class="pl-bote">BOTE <b>$10,000</b></span>
+      </div>
+      <div class="pl-tabla" id="plTabla"></div>
+      <div class="pl-graf"><canvas id="plCv"></canvas></div>
+      <div class="pl-log" id="plLog"></div>
+    </div>
+  </section>
+
+  <!-- 07 · TORNEOS, EVENTOS Y RETOS -->
+  <section>
+    <p class="eyebrow rev">SIETE MANERAS DE MEDIRTE</p>
+    <div class="modos" id="modos"></div>
+  </section>
+
+  <!-- 08 · LA MESA · cinta infinita con las pantallas de verdad -->
+  <hr class="linea">
+  <section class="mesa-tit">
+    <p class="eyebrow rev">III &middot; LA MESA</p>
+    <h2 class="rev">Kuro es el juego.<span class="baja-t">Detr&aacute;s hay una mesa de trabajo.</span></h2>
+    <p class="p rev" style="margin-left:auto;margin-right:auto">Backtest, registro, bit&aacute;cora y n&uacute;meros.
+      Lo que se entrena en la monta&ntilde;a se mide aqu&iacute;.</p>
+  </section>
+  <div class="cinta" data-dir="1"><div class="cinta-pista" id="cintaA"></div></div>
+  <div class="cinta" data-dir="-1"><div class="cinta-pista" id="cintaB"></div></div>
+
+  <!-- 08 · CIERRE -->
+  <section class="cierre">
+    <canvas id="cierreCv"></canvas>
+    <h2 class="rev">Arriba no se llega ganando.<span class="baja-t">Se llega sin romperse.</span></h2>
+    <p class="hero-lin rev" style="margin-top:34px">MIL A&Ntilde;OS ESPERANDO.<br>HOY TE TOCA A TI.</p>
+    <p class="rev" style="margin-top:36px"><a class="hero-cta" href="/app.html">Sube con la de madera</a></p>
+    <p class="pie">NORTHPOINT &middot; TRADING GAME &middot; entrenamiento, no ejecuci&oacute;n</p>
+  </section>
+
+</main>
+
+<script src="js/kuro.js"></script>
+</body>
+</html>

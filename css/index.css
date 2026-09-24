@@ -1,0 +1,1021 @@
+/* ============================================================
+   index.html — hoja de estilos
+   Generada a partir del CSS inline original de la página. El contenido de
+   los bloques <style> se conserva íntegro y en el mismo orden.
+   ============================================================ */
+
+/* ── Fuentes locales (antes se cargaban de https://fonts.googleapis.com/css2) ── */
+/* cyrillic-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* vietnamese */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* vietnamese */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* vietnamese */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* greek-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}
+/* greek */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek.woff2) format("woff2");unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF}
+/* vietnamese */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* greek-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}
+/* greek */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek.woff2) format("woff2");unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF}
+/* vietnamese */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* greek-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}
+/* greek */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek.woff2) format("woff2");unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF}
+/* vietnamese */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+
+
+/* ══════════ bloque <style> 1 de 2 (orden original conservado) ══════════ */
+
+/* ============================================================
+   NORTHPOINT — Dark Glass Institucional
+   ============================================================ */
+:root{
+  --bg:#080808;
+  --bg-2:#0E0E0E;
+  --glass:rgba(255,255,255,.05);
+  --glass-2:rgba(255,255,255,.09);
+  --line:rgba(255,255,255,.13);
+  --line-soft:rgba(255,255,255,.06);
+  --txt:#F4F4F4;
+  --dim:#A6A6A6;
+  --faint:#7C7C7C;
+  --accent:#FFFFFF;
+  --accent-deep:#B8B8B8;
+  --up:#D9D9D9;
+  --down:#8F8F8F;
+  --warn:#CFCFCF;
+  --sheen:rgba(255,255,255,.38);
+  --edge:rgba(255,255,255,.22);
+  --glow1:rgba(255,255,255,.055);
+  --glow2:rgba(255,255,255,.03);
+  --nav-glass:rgba(8,8,8,.62);
+  --nav-glass-2:rgba(8,8,8,.85);
+  --sans:'Inter',-apple-system,system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+[data-theme="light"]{
+  --bg:#F5F5F3;
+  --bg-2:#EBEBE9;
+  --glass:rgba(0,0,0,.035);
+  --glass-2:rgba(0,0,0,.065);
+  --line:rgba(0,0,0,.16);
+  --line-soft:rgba(0,0,0,.08);
+  --txt:#0C0C0C;
+  --dim:#585858;
+  --faint:#8C8C8C;
+  --accent:#000000;
+  --accent-deep:#404040;
+  --up:#2E2E2E;
+  --down:#8F8F8F;
+  --warn:#4A4A4A;
+  --sheen:rgba(255,255,255,.9);
+  --edge:rgba(255,255,255,.65);
+  --glow1:rgba(0,0,0,.045);
+  --glow2:rgba(0,0,0,.025);
+  --nav-glass:rgba(245,245,243,.66);
+  --nav-glass-2:rgba(245,245,243,.9);
+}
+html{background:var(--bg)}
+body,.nav,.deck,.card,.nav.scrolled{transition:background .35s ease,color .35s ease,border-color .35s ease}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:84px;
+}
+
+body{
+  background:var(--bg);
+  color:var(--txt);
+  font-family:var(--sans);
+  font-size:15px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+/* Fondo profesional (fórmula Montfort/21 Capital: negro roto + un azul frío como tinta):
+   glows que respiran muy lento + arcos de horizonte del motivo de marca */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  background:
+    radial-gradient(1100px 700px at 78% -12%, var(--glow1), transparent 62%),
+    radial-gradient(900px 620px at 18% 112%, var(--glow2), transparent 60%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg) 55%, var(--bg-2) 100%);
+  pointer-events:none;
+  animation:bgbreath 26s ease-in-out infinite alternate;
+}
+@keyframes bgbreath{from{opacity:.85}to{opacity:1}}
+.bg-arcs{
+  position:fixed;left:50%;bottom:-6vh;transform:translateX(-50%);
+  width:max(1500px,140vw);height:52vh;z-index:-1;
+  color:var(--accent);opacity:.045;pointer-events:none;
+}
+@media (prefers-reduced-motion:reduce){
+  body::before{animation:none}
+}
+
+/* Ruido fino */
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:2000;
+  opacity:.025;
+  pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+::selection{background:var(--glass-2);color:var(--txt)}
+
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:1px solid var(--accent-deep);outline-offset:3px}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.micro,.mono,.deck-sec,.ix .fr,.sec-num{font-variant-numeric:tabular-nums slashed-zero}
+
+/* Micro-etiquetas */
+.micro{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  color:var(--dim);
+  font-weight:500;
+}
+.micro.acc{color:var(--accent)}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav{
+  position:fixed;
+  top:0;left:0;right:0;
+  height:64px;
+  z-index:100;
+  background:var(--nav-glass);
+  backdrop-filter:blur(28px) saturate(140%);
+  -webkit-backdrop-filter:blur(28px) saturate(140%);
+  border-bottom:1px solid var(--line-soft);
+}
+.nav-in{
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 24px;
+  height:64px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:26px;height:26px;color:var(--accent);flex:none}
+.brand-t{display:flex;flex-direction:column;line-height:1.15}
+.brand-name{
+  font-weight:600;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--txt);
+}
+.brand-sub{
+  font-size:8.5px;
+  letter-spacing:.26em;
+  text-transform:uppercase;
+  color:var(--dim);
+  font-weight:500;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+  min-height:100vh;
+  min-height:100svh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  position:relative;
+  padding-top:96px;
+  padding-bottom:170px;
+  overflow:hidden;
+}
+@keyframes drift{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
+.hero .wrap{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero h1{
+  font-size:clamp(36px,5.4vw,68px);
+  font-weight:500;
+  letter-spacing:-.028em;
+  line-height:1.06;
+  color:var(--txt);
+  max-width:19ch;
+  margin:0 auto;
+}
+.hero h1 em{font-style:normal;color:var(--accent)}
+
+/* ============================================================
+   SECCIONES
+   ============================================================ */
+section{
+  padding:110px 0;
+  border-top:1px solid var(--line-soft);
+}
+.mv .micro{margin-bottom:14px}
+
+
+.noes{
+  margin-top:64px;
+}
+.noes .micro{margin-bottom:22px}
+.sub-block>.micro{display:block;margin-bottom:34px}
+.veh .micro{margin-bottom:6px}
+.veh-row .k{color:var(--faint)}
+.termina .micro{color:var(--warn);margin-bottom:6px}
+.score-card .micro{margin-bottom:18px}
+.rv.on .bar i{width:var(--w)}
+.stack .micro{margin-bottom:14px;color:var(--txt)}
+.nivel .micro{margin-bottom:8px}
+.proj-head .micro{color:var(--txt)}
+#snowchart{width:100%;height:auto;display:block}
+.legal .micro{margin-bottom:14px;color:var(--faint)}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+.rv{
+  opacity:0;
+  transform:translateY(14px);
+  transition:opacity .5s ease,transform .5s ease;
+}
+.rv.on{opacity:1;transform:translateY(0)}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width:900px){
+  
+  section{padding:84px 0}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+@media (max-width:640px){
+}
+
+/* ============================================================
+   MOTION · coreografía profesional
+   ============================================================ */
+.hl{display:block;overflow:hidden}
+.hl-in{display:block;transform:translateY(112%);animation:lineUp 1.05s cubic-bezier(.16,1,.3,1) forwards;animation-delay:var(--hd,0s)}
+@keyframes lineUp{to{transform:none}}
+.hup{opacity:0;transform:translateY(22px);animation:heroUp .95s cubic-bezier(.16,1,.3,1) forwards;animation-delay:var(--hd,0s)}
+@keyframes heroUp{to{opacity:1;transform:none}}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .95s cubic-bezier(.16,1,.3,1),transform .95s cubic-bezier(.16,1,.3,1)}
+.rv.on{opacity:1;transform:none}
+.quote-sep.rv{filter:blur(7px)}
+.quote-sep.rv.on{filter:blur(0);transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.16,1,.3,1),filter 1.1s ease}
+.nav{transition:background .3s,border-color .3s,box-shadow .3s}
+.nav.scrolled{background:var(--nav-glass-2);border-bottom-color:var(--line);box-shadow:0 10px 34px rgba(0,0,0,.35)}
+.score-card.on .bar i{width:var(--w)}
+#sc-area,
+#sc-marks{opacity:0;transition:opacity .9s ease 1.4s}
+.proj-card.on #sc-area,
+.proj-card.on #sc-marks{opacity:1}
+.bg-arcs path[stroke-dasharray]{animation:arcdrift 60s linear infinite}
+@keyframes arcdrift{to{stroke-dashoffset:-160}}
+@media (prefers-reduced-motion:reduce){
+  .hl-in,.hup{animation:none;transform:none;opacity:1}
+  .rv,.quote-sep.rv{opacity:1;transform:none;filter:none;transition:none}
+  .bg-arcs path[stroke-dasharray]{animation:none}
+  #sc-area,#sc-marks{opacity:1;transition:none}
+}
+
+/* índice tipo Palantir */
+.index-list{border-top:1px solid var(--line)}
+.ix{
+  display:grid;grid-template-columns:1fr auto;align-items:baseline;
+  gap:6px 24px;padding:34px 4px 30px;border-bottom:1px solid var(--line);
+  color:var(--txt);transition:background .25s,padding-left .3s;
+}
+.ix:hover{background:rgba(255,255,255,.02);padding-left:18px}
+.ix .nm{font-size:clamp(34px,5.6vw,64px);font-weight:400;letter-spacing:-.03em;line-height:1.05}
+.ix:hover .nm em{color:var(--accent)}
+.ix .nm em{font-style:normal;transition:color .25s}
+.ix .fr{font-family:var(--mono);font-size:13px;color:var(--faint)}
+
+
+/* barra de instrumentos inferior */
+.deck{
+  position:fixed;left:0;right:0;bottom:0;z-index:120;height:56px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:0 clamp(16px,3vw,32px);
+  background:var(--nav-glass-2);
+  backdrop-filter:blur(24px) saturate(140%);
+  -webkit-backdrop-filter:blur(24px) saturate(140%);
+  border-top:1px solid var(--line);
+}
+.deck-sec{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--dim);text-transform:uppercase}
+.deck-sec em{font-style:normal;color:var(--accent)}
+.deck-cta{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--txt);border:1px solid var(--line);padding:10px 20px;
+  transition:background .2s,border-color .2s;white-space:nowrap;
+}
+.deck-cta:hover{background:var(--glass-2);border-color:var(--accent-deep)}
+body{padding-bottom:56px}
+@media (max-width:640px){ .deck-sec{display:none} .deck{justify-content:flex-end} }
+
+/* cue del hero estilo Palantir */
+.explore{
+  position:absolute;left:0;right:0;bottom:84px;margin:0 auto;width:max-content;
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.26em;color:var(--dim);text-transform:uppercase;
+}
+.explore .arr{font-size:16px;color:var(--accent);animation:expl 2.2s ease-in-out infinite}
+@keyframes expl{0%,100%{transform:translateY(0);opacity:.9}50%{transform:translateY(7px);opacity:.5}}
+@media (prefers-reduced-motion:reduce){ .explore .arr{animation:none} }
+.apply .micro{margin-bottom:14px}
+@media(max-width:760px){
+}
+
+/* ============================================================
+   MODO DOCUMENTO · cada sección vive detrás de su botón del índice
+   ============================================================ */
+/* ── LAS SECCIONES-DOCUMENTO ──
+   Ocultas hasta que el índice las abre. ANTES esto era una LISTA DE IDS escrita
+   a mano (#filosofia,#estructura,#conducta,…) y al renombrar #estructura a
+   #mesa la sección se quedó fuera de la lista: dejó de esconderse y se pintaba
+   pegada debajo del índice en la pantalla principal.
+
+   Es el mismo error que ya había en el script con DOC_SECS, DECK_MAP y el mapa
+   del tracker — tres listas a mano que sí actualicé y estas dos se me pasaron.
+   Ahora la regla se escribe sola: toda <section> con id que no sea el índice.
+   Renombrar o agregar una sección ya no puede romper esto. */
+section[id]:not(#indice){display:none}
+section[id]:not(#indice).doc-active{display:block;border-top:none;padding-top:130px}
+/* apiladas: sólo la primera carga el aire del encabezado; las demás se
+   separan con una línea suave, como capítulos del mismo documento.
+   OJO con la especificidad: el selector repite :not(#indice) a ambos lados
+   porque la regla de arriba lleva un id dentro del :not y si no, pierde. */
+section[id]:not(#indice).doc-active ~ section[id]:not(#indice).doc-active{
+  padding-top:64px;border-top:1px solid var(--line-soft)}
+body.doc-open .hero,
+body.doc-open #indice{display:none}
+
+/* hero mínimo: la marca, flotando */
+.hero-mark{
+  font-size:clamp(52px,11vw,150px);
+  font-weight:500;
+  letter-spacing:-.02em;
+  line-height:1;
+  color:var(--txt);
+  text-align:center;
+  animation:markFloat 9s ease-in-out infinite;
+}
+@keyframes markFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+@media (prefers-reduced-motion:reduce){ .hero-mark{animation:none} }
+
+/* ============================================================
+   SHINY GLASS · monocromo con brillo
+   ============================================================ */
+#snowfill stop{stop-color:var(--txt)}
+#sc-line{stroke:var(--txt)}
+#sc-grid line{stroke:var(--line-soft)}
+#sc-grid text,#sc-marks text{fill:var(--dim)}
+#sc-marks text:nth-of-type(odd){fill:var(--txt)}
+#sc-marks circle{fill:var(--bg);stroke:var(--txt)}
+.ix{position:relative;overflow:hidden}
+.ix::after{
+  content:'';position:absolute;top:0;left:-70%;width:50%;height:100%;
+  background:linear-gradient(105deg, transparent, var(--sheen), transparent);
+  transform:skewX(-18deg);
+  transition:left .9s cubic-bezier(.16,1,.3,1);
+  pointer-events:none;
+}
+.ix:hover::after{left:140%}
+
+.hero-mark .hl-in{
+  background:linear-gradient(110deg, var(--txt) 42%, var(--sheen) 50%, var(--txt) 58%);
+  background-size:240% 100%;
+  background-position:120% 0;
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  animation:lineUp 1.05s cubic-bezier(.16,1,.3,1) forwards, markShine 7s ease-in-out infinite;
+  animation-delay:var(--hd,0s), 1.8s;
+}
+@keyframes markShine{0%{background-position:120% 0}22%{background-position:-30% 0}100%{background-position:-30% 0}}
+
+.theme-btn{
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--dim);border:1px solid var(--line);padding:10px 16px;background:none;cursor:pointer;
+  transition:color .2s,border-color .2s;
+}
+.theme-btn:hover{color:var(--txt);border-color:var(--accent-deep)}
+
+@media (prefers-reduced-motion:reduce){
+  .card::after,.ix::after{display:none}
+  .hero-mark .hl-in{animation:none;transform:none;background:none;color:var(--txt)}
+}
+
+
+
+
+/* ── LAS DOS PANTALLAS DE PARTÍCULAS (Filosofía y Mesa) ──
+   A pantalla completa y SIN recuadro: el canvas es la sección entera, para que
+   se sienta espacio y no una ventana adentro de la página. Los colores salen
+   del TEMA: en oscuro, luz sobre negro; en claro se INVIERTEN solos —tinta
+   sobre papel— porque el motor lee color y fondo computados, no valores fijos. */
+/* CINCO listas tenían que nombrar la sección nueva, no cuatro. Ésta era la
+   quinta y la que faltaba: sin `position:relative` aquí, el lienzo del skyline
+   se colgaba de otro ancestro y la sección entera quedaba descuadrada. */
+/* (André, 31-ago-2026) Esta lista forzaba min-height:100vh a SIETE secciones,
+   pero sólo cuatro son una escena a pantalla completa (el leopardo, la ciudad
+   del journal, la torre de comunidad y el skyline de la mesa). En #terminal y
+   #educacion no hay lienzo: son texto, y el 100vh les dejaba un hueco BLANCO
+   debajo del contenido —282 px y 458 px medidos— que es justo lo que se veía
+   como «zonas en blanco». #programa ya ni existe como sección. */
+#filosofia.doc-active,#journal.doc-active,#comunidad.doc-active,#mesa.doc-active{
+  min-height:100vh}
+#filosofia.doc-active,#journal.doc-active,#comunidad.doc-active,#mesa.doc-active,
+#terminal.doc-active,#educacion.doc-active{position:relative;
+  overflow:hidden;background:var(--bg)}
+.caza-marco,.torre-marco{position:absolute;inset:0}
+/* bootcamp y journal tienen CONTENIDO debajo del héroe: sus marcos son bandas
+   relativas de 76vh —no inset:0 de la sección, que ahora crece— y el
+   manifiesto vive DENTRO de la banda para anclarse a ella y no al fondo de
+   toda la sección */
+#cazaCanvas,#torreCanvas{position:absolute;inset:0;width:100%;height:100%;color:var(--txt)}
+
+/* ── EL PROGRAMA · la tabla de tres pasos (vive dentro de BOOTCAMP) ── */
+.pg-cont{position:relative;z-index:2;padding:40px 0 110px;max-width:860px;margin:0 auto}
+.pg-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.34em;color:var(--txt);
+  margin:0 0 10px;text-align:center}
+@media (max-width:640px){ }
+/* journal: la escena POV es la sección entera (absolute inset:0) */
+
+/* ── EL MANIFIESTO sobre las pantallas de partículas ──
+   Texto de verdad (no muestreado): un párrafo en partículas no se lee. Va en
+   tokens del tema para que se invierta con todo lo demás. */
+/* OJO: centrado con left/right:0 + margin:auto, NUNCA translateX — el .rv.on
+   del revelado termina en transform:none y pisa cualquier transform propio.
+   Es la colisión documentada desde julio; hoy volvió a morder. */
+.manifiesto{position:absolute;left:0;right:0;margin:0 auto;bottom:7vh;z-index:2;
+  width:min(660px,88vw);text-align:center}
+.manifiesto .k{font-family:var(--mono);font-size:12px;letter-spacing:.3em;color:var(--txt);
+  margin-bottom:14px}
+.manifiesto p{color:var(--dim);font-size:14.5px;line-height:1.8;margin:0}
+.manifiesto .k2{font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;color:var(--faint);
+  margin-top:16px}
+.jr-demo{--jdup:#2FA57C;--jddn:#C65A4E;
+  border:1px solid var(--line-soft);border-radius:14px;background:var(--glass);
+  padding:8px 22px 20px}
+.jd-head{display:flex;align-items:baseline;justify-content:flex-end;padding:14px 0 12px}
+.jd-tag{font-family:var(--mono);font-size:9px;letter-spacing:.14em;color:var(--faint);
+  border:1px solid var(--line-soft);border-radius:99px;padding:3px 9px}
+/* la cinta infinita de KPIs — el mismo truco de siempre: dos mitades idénticas
+   y el −50% del keyframe */
+.jd-cinta{overflow:hidden;margin-bottom:12px;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.jd-track{display:flex;width:max-content;animation:jdCorre 32s linear infinite}
+.jd-cinta:hover .jd-track{animation-play-state:paused}
+.jd-grupo{display:flex;flex:0 0 auto}
+.jd-t{width:170px;flex:0 0 auto;margin-right:12px;border:1px solid var(--line-soft);
+  border-radius:11px;padding:12px 14px}
+.jd-t i{display:block;font-style:normal;font-family:var(--mono);font-size:8.5px;
+  letter-spacing:.16em;color:var(--faint);margin-bottom:7px}
+.jd-t b{display:block;font-size:21px;font-weight:600;font-variant-numeric:tabular-nums}
+.jd-t span{font-family:var(--mono);font-size:9.5px;color:var(--faint)}
+@keyframes jdCorre{from{transform:none}to{transform:translateX(-50%)}}
+.jd-curva{border:1px solid var(--line-soft);border-radius:11px;margin-bottom:14px;padding:8px}
+#jdCurva{display:block;width:100%;height:170px;color:var(--txt)}
+.jd-calhead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:8px}
+.jd-calhead b{font-size:14px}
+.jd-calhead span{font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:var(--faint)}
+.jd-cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.jd-c{aspect-ratio:1;border:1px solid var(--line-soft);border-radius:7px;padding:4px 6px;
+  display:flex;flex-direction:column;justify-content:space-between;min-width:0;
+  transition:background .3s,border-color .3s}
+.jd-c.off{border:0}
+.jd-c.finde{opacity:.3}
+.jd-c u{text-decoration:none;font-family:var(--mono);font-size:8.5px;color:var(--faint)}
+.jd-c b{font-family:var(--mono);font-size:9.5px;font-weight:600;white-space:nowrap;overflow:hidden}
+.jd-c.up{background:color-mix(in srgb,var(--jdup) 13%,transparent);
+  border-color:color-mix(in srgb,var(--jdup) 35%,transparent)}
+.jd-c.up b{color:var(--jdup)}
+.jd-c.dn{background:color-mix(in srgb,var(--jddn) 11%,transparent);
+  border-color:color-mix(in srgb,var(--jddn) 35%,transparent)}
+.jd-c.dn b{color:var(--jddn)}
+.jd-c.flag{box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--txt) 45%,transparent)}
+.jd-tot{display:flex;align-items:baseline;gap:14px;margin-top:12px;padding-top:12px;
+  border-top:1px solid var(--line-soft)}
+.jd-tot i{font-style:normal;font-family:var(--mono);font-size:9px;letter-spacing:.18em;color:var(--faint)}
+.jd-tot b{font-size:20px;font-variant-numeric:tabular-nums}
+.jd-tot span{font-family:var(--mono);font-size:10px;color:var(--faint);margin-left:auto}
+@media (max-width:640px){ .jd-c u{font-size:7.5px} .jd-c b{font-size:8px} }
+@media (prefers-reduced-motion:reduce){ .jd-track{animation:none} .jd-cinta{overflow-x:auto} }
+
+/* el rótulo de Futures sobre la ciudad sólida: sin escudo, la torre del centro
+   se lo tragaba. Píldora con el fondo del tema y blur, tema-consciente. */
+#mesa .manifiesto .k{display:inline-block;padding:10px 20px;border-radius:99px;
+  background:color-mix(in srgb,var(--bg) 78%,transparent);
+  border:1px solid var(--line-soft);backdrop-filter:blur(5px)}
+
+/* ── COMMUNITY · solo el Discord ── centrado con inset+margin:auto: la
+   regla genérica de secciones (especificidad de :not(#indice)) pisa un
+   display:grid propio, y transform está vetado por el .rv.on */
+
+
+/* ── EL POV DEL ESCRITORIO (journal) ── ES TODA LA PÁGINA (André): nada de
+   tarjeta — la escena cubre la sección completa y es RESPONSIVA (posiciones
+   en %/vw, ya no un lienzo fijo escalado). Tiene DOS HORAS: de noche en tema
+   oscuro y DE DÍA en tema claro — cielo, ciudad, mesa y hasta el modo de las
+   pantallas cambian con estos tokens de escena. */
+/* ── LA OFICINA ────────────────────────────────────────────────────────────
+   André: «en vez de ventanas, una pared con monitores y pósters de trading,
+   premios, etc — adórnalo como oficina pro». Antes fue una ventana con cielo
+   dibujado, después una hoja técnica; ahora es la PARED DEL FONDO de un
+   despacho. Todo lo de la pared se pinta en el canvas y va a bajo contraste a
+   propósito: en una foto real el fondo está fuera de foco, y lo único que
+   tiene que leerse de verdad son los números del diario. La escena hereda las
+   dos horas de la página — de día la pared es cálida y clara, de noche es
+   grafito con las pantallas encendidas. */
+.pov{
+  --panta:#0E0E0E;--bisel:#232323;--cuello:#1A1A1A;--basec:#1E1E1E;
+  --lift:0 0 120px -46px rgba(170,192,244,.34);
+  position:absolute;inset:0;overflow:hidden}
+[data-theme="light"] .pov{
+  --panta:#FAFAF8;--bisel:#2A2A28;--cuello:#2E2E2C;--basec:#262624;
+  --lift:0 0 0 0 transparent}
+#povCiudad{position:absolute;inset:0;width:100%;height:100%}
+
+/* el monitor del diario, parado sobre el escritorio que pinta el canvas */
+.mon{position:absolute;bottom:20.5%;z-index:2}
+.mon-pant{position:relative;background:var(--panta);border:9px solid var(--bisel);
+  border-radius:9px;overflow:hidden;
+  box-shadow:0 46px 90px -44px rgba(0,0,0,.62),var(--lift)}
+.mon-cuello{margin:0 auto;width:44px;height:24px;background:var(--cuello)}
+.mon-base{margin:0 auto;width:min(180px,58%);height:9px;background:var(--basec);
+  border-radius:99px;box-shadow:0 8px 18px -8px rgba(0,0,0,.6)}
+/* SOLO el monitor vertical, CENTRADO (André) — left/right + margin:auto,
+   nunca transform (la colisión del .rv.on) */
+.mon-v{left:0;right:0;margin:0 auto;width:max-content}
+.mon-v .mon-pant{width:clamp(230px,28vw,368px);aspect-ratio:316/492}
+/* la altura real la fija ajustaMon() con el contenido ya medido */
+.mon-esc{width:760px;transform-origin:0 0;padding:6px}
+.pov-pie{position:absolute;left:0;right:0;bottom:104px;margin:0;text-align:center;
+  font-family:var(--mono);font-size:9.5px;letter-spacing:.24em;color:var(--faint);z-index:3}
+
+/* ── LOS PODS DE LA PARED ── la pared estaba vacía (André, 24-ago): pósters
+   enmarcados con los beneficios del Terminal, colgados a los lados del
+   monitor. Bajo contraste a propósito — son decoración de oficina, no UI. */
+.pod{position:absolute;z-index:1;width:clamp(180px,16vw,230px);
+  background:color-mix(in srgb,var(--bg) 94%,var(--txt) 6%);
+  border:1px solid var(--line);padding:18px 18px 20px;
+  box-shadow:0 18px 40px -22px rgba(0,0,0,.5)}
+.pod-eb{font-family:var(--mono);font-size:7.5px;letter-spacing:.26em;color:var(--faint);margin:0 0 10px;text-transform:uppercase}
+.pod-t{font-size:14.5px;font-weight:600;letter-spacing:-.01em;line-height:1.25;color:var(--txt);margin:0 0 8px}
+.pod-n{font-family:var(--mono);font-size:26px;font-weight:300;letter-spacing:-.01em;color:var(--txt);margin:0 0 4px;line-height:1}
+.pod-d{font-size:11px;color:var(--dim);line-height:1.55;margin:0}
+.pod-l{list-style:none;margin:8px 0 0;padding:0}
+.pod-l li{font-family:var(--mono);font-size:8.5px;letter-spacing:.08em;color:var(--dim);
+  padding:5px 0 5px 14px;position:relative;border-top:1px solid var(--line-soft)}
+.pod-l li::before{content:"◆";position:absolute;left:0;font-size:6px;color:var(--faint);top:8px}
+.pod-1{left:5%;top:16%;transform:rotate(-1.1deg)}
+.pod-2{left:7.5%;top:47%;transform:rotate(.7deg)}
+.pod-3{right:5%;top:14%;transform:rotate(.9deg)}
+.pod-4{right:7.5%;top:49%;transform:rotate(-.6deg)}
+/* en teléfono las notas se van (André, 24-ago v2: la versión compacta no
+   convenció) — la escena móvil queda limpia: solo el monitor y su pie */
+@media (max-width:980px){.pod{display:none}}
+
+/* ── LOS TICKERS ── llenan el filo de arriba y el de abajo de la página, por
+   ENCIMA de la escena (velo del fondo + blur para leerse sobre la ciudad).
+   El mismo truco infinito de siempre: dos mitades IDÉNTICAS y -50% exacto. */
+.jr-cinta{position:absolute;left:0;right:0;overflow:hidden;padding:13px 0;z-index:3;
+  border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);
+  background:color-mix(in srgb,var(--bg) 60%,transparent);backdrop-filter:blur(3px)}
+.jr-top{top:64px}
+.jr-bot{bottom:56px}
+.jr-cin{display:flex;width:max-content;animation:jrRueda 36s linear infinite}
+.jr-rev .jr-cin{animation-duration:42s;animation-direction:reverse}
+.jr-mit{display:flex;align-items:center;gap:34px;padding-right:34px;white-space:nowrap}
+.jr-mit span{font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--dim)}
+.jr-mit i{font-style:normal;font-size:7px;color:var(--faint)}
+@keyframes jrRueda{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){ .jr-cin{animation:none} }
+
+/* ════ FUNDADORES ════ Dos socios, una rejilla. La foto manda: es lo que
+   detiene el scroll y lo que dice que detrás hay gente, no una marca sola. */
+.funds{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:clamp(30px,4vw,58px)}
+.fund-foto{margin:0 0 24px;overflow:hidden;aspect-ratio:3/4;border:1px solid var(--line);
+  position:relative;background:linear-gradient(160deg,#141414,#0a0a0a)}
+/* El retrato que falta. Antes, una foto ausente dejaba el icono de imagen rota
+   justo en la sección donde el visitante decide si confía en quién está detrás
+   — el peor lugar posible para que algo se vea descuidado. Ahora el hueco se ve
+   intencional y dice qué falta, igual que en perfil.html. */
+.fund-foto.sin-foto::after{content:attr(data-falta);position:absolute;inset:0;
+  display:grid;place-content:center;text-align:center;padding:24px;
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:#4E4E4E}
+.fund-foto.sin-foto img{display:none}
+.fund-foto img{width:100%;height:100%;object-fit:cover;display:block}
+.fund h3{font-size:clamp(26px,3vw,34px);font-weight:600;line-height:1.05;
+  letter-spacing:-.025em;margin:0}
+.fund-rol{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--dim);margin:12px 0 0}
+.fund-cita{font-size:clamp(15px,1.6vw,18px);line-height:1.45;font-weight:500;
+  margin:20px 0 0;letter-spacing:-.01em}
+.fund-bio{font-size:14.5px;line-height:1.62;color:var(--dim);margin:14px 0 0;font-weight:300}
+.fund-tags{display:flex;gap:16px;flex-wrap:wrap;margin-top:20px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.18em;color:var(--faint)}
+.fund-liga{display:inline-block;margin-top:22px;font-family:var(--mono);
+  font-size:11px;letter-spacing:.16em;text-decoration:none;color:var(--txt);
+  border-bottom:1px solid var(--line);padding-bottom:5px;transition:border-color .2s}
+.fund-liga:hover{border-color:currentColor}
+/* en el teléfono se apilan solas por el auto-fit; sólo se aprieta el aire */
+@media(max-width:560px){ .funds{gap:38px} .fund-foto{margin-bottom:18px} }
+
+/* ════ PIE LEGAL ════ Lo que toda web que cobra tiene que enseñar: quién es,
+   cómo contactarlo, y el riesgo dicho de frente. */
+.pie-legal{border-top:1px solid var(--line);padding:clamp(40px,5vw,60px) 0 90px;
+  margin-top:clamp(60px,8vw,110px)}
+.pl-fila{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;
+  align-items:flex-start}
+.pl-marca b{display:block;font-size:14px;font-weight:600;letter-spacing:.2em}
+.pl-marca span{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+  color:var(--faint);margin-top:7px}
+.pl-links{display:flex;gap:22px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;
+  letter-spacing:.08em}
+.pl-links a{color:var(--dim);text-decoration:none;border-bottom:1px solid transparent;
+  padding-bottom:2px;transition:color .18s,border-color .18s}
+.pl-links a:hover{color:var(--txt);border-bottom-color:var(--line)}
+.pl-aviso{margin-top:32px;max-width:76ch;font-size:12.5px;line-height:1.65;
+  color:var(--faint);font-weight:300}
+.pl-aviso strong{color:var(--dim);font-weight:500}
+.pl-copy{margin-top:16px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;
+  color:var(--faint)}
+@media(max-width:640px){ .pl-fila{flex-direction:column;gap:22px} .pl-links{gap:14px} }
+
+/* ════ LOS PLANES ════
+   Tres columnas que se apilan solas. El destacado sube unos píxeles y lleva
+   borde de acento: en una rejilla de tres, el ojo va al centro, y ahí está el
+   plan que conviene vender. */
+
+
+/* la comparativa: tres cajas de precio no se comparan solas */
+
+/* lo que NO es, y las preguntas que quedan con el dedo en el botón */
+.dos-col{display:grid;gap:clamp(34px,5vw,58px);margin-top:clamp(56px,7vw,90px);
+  grid-template-columns:1fr;max-width:960px;margin-left:auto;margin-right:auto}
+@media(min-width:820px){.dos-col{grid-template-columns:.82fr 1.18fr}}
+.blq h3{font-family:var(--mono);font-size:10px;letter-spacing:.3em;color:var(--faint);
+  text-transform:uppercase;font-weight:400;margin:0 0 20px}
+.noes{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+.noes li{color:var(--dim);font-size:14px;font-weight:300;padding-left:20px;
+  position:relative;line-height:1.5}
+.noes li::before{content:'\00D7';position:absolute;left:0;color:var(--faint);font-size:13px}
+.faq{border-top:1px solid var(--line-soft)}
+.faq details{border-bottom:1px solid var(--line-soft)}
+.faq summary{cursor:pointer;list-style:none;padding:16px 0;font-size:14.5px;
+  display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';font-family:var(--mono);color:var(--faint);font-size:15px}
+.faq details[open] summary::after{content:'\2013'}
+.faq p{margin:0 0 18px;color:var(--dim);font-size:13.5px;line-height:1.65;
+  font-weight:300;max-width:62ch}
+
+/* ══ EL PROGRAMA, DENTRO DE FUTUROS ══ La rejilla de seis es «todo lo que hay»
+   de un golpe: un número, una línea de sustancia y un sello. Debajo, el
+   temario completo y el Terminal en su propia caja. */
+.of-cab{max-width:860px;margin:0 auto;padding:clamp(20px,3vw,40px) 0 0}
+.of-cab h2{font-size:clamp(28px,4.4vw,44px);font-weight:600;letter-spacing:-.025em;
+  line-height:1.06;margin:14px 0 0;max-width:20ch}
+.of-cab > p{color:var(--dim);font-size:clamp(14.5px,1.7vw,17px);font-weight:300;
+  line-height:1.58;margin:20px 0 0;max-width:58ch}
+.of-rejilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));
+  gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);
+  margin-top:clamp(34px,4.5vw,52px)}
+.of-item{background:var(--bg);padding:26px 24px 26px;display:flex;flex-direction:column}
+.of-item i{font-style:normal;font-family:var(--mono);font-size:10px;
+  letter-spacing:.24em;color:var(--faint)}
+.of-item b{display:block;font-size:15.5px;letter-spacing:.01em;margin:14px 0 9px;font-weight:600}
+.of-item span{display:block;color:var(--dim);font-size:13.5px;line-height:1.6;
+  font-weight:300;flex:1}
+.of-item em{font-style:normal;display:block;margin-top:16px;padding-top:12px;
+  border-top:1px solid var(--line-soft);font-family:var(--mono);font-size:9px;
+  letter-spacing:.2em;color:var(--faint)}
+
+/* ══ EN VIVO ══ la sección del skyline. Misma rejilla sobria de la mesa, más
+   los enlaces a donde se transmite. Un icono apagado es HONESTO: hasta que
+   André pegue su URL, no manda a nadie al canal de otra persona. */
+/* Sin cajas arriba (André): la sección ES el skyline, y encima de los
+   edificios sólo va dónde se transmite. */
+/* Los botones arriba, en el cielo, que es donde hay aire; el rótulo abajo,
+   sobre los edificios (André). El `space-between` con el padding de arriba los
+   separa solos, sin números mágicos por cada altura de pantalla. */
+.lv-cont{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;
+  align-items:center;padding:clamp(64px,9vh,110px) 20px clamp(90px,16vh,180px);
+  pointer-events:none}
+.lv-cont > *{pointer-events:auto}
+.lv-titulo{text-align:center;margin-bottom:clamp(20px,3vh,34px)}
+.lv-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.34em;color:var(--dim);margin:0 0 12px}
+.lv-h2{font-size:clamp(26px,4vw,46px);font-weight:600;letter-spacing:-.025em;line-height:1.08;color:var(--txt);margin:0;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+
+/* ── LA CALLE ── los edificios llegan a la banqueta, y por la calle pasan
+   coches y gente en loop (André, 24-ago). Todo silueta, tonos del tema. */
+/* la franja tiene 24px de aire TRANSPARENTE arriba: ahí viven las cabezas de
+   los peatones sin que el overflow:hidden se las recorte */
+.lv-calle{position:absolute;left:0;right:0;bottom:0;height:120px;z-index:3;
+  overflow:hidden;pointer-events:none}
+.lvc-banqueta{position:absolute;left:0;right:0;top:24px;height:26px;
+  background:color-mix(in srgb,var(--bg) 86%,var(--txt) 14%);
+  border-top:1px solid var(--line)}
+.lvc-via{position:absolute;left:0;right:0;top:50px;bottom:0;
+  background:color-mix(in srgb,var(--bg) 72%,var(--txt) 28%)}
+.lvc-linea{position:absolute;left:0;right:0;top:50%;height:2px;
+  background:repeating-linear-gradient(90deg,color-mix(in srgb,var(--bg) 30%,var(--txt) 70%) 0 26px,transparent 26px 54px);
+  opacity:.5}
+.lvc-coche{position:absolute;width:64px;height:24px;color:color-mix(in srgb,var(--bg) 16%,var(--txt) 84%)}
+.lvc-coche.ida{top:8px;animation:lvcIda linear infinite}
+.lvc-coche.vuelta{bottom:6px;transform:scaleX(-1);animation:lvcVuelta linear infinite}
+.lvc-peaton{position:absolute;top:-22px;width:13px;height:26px;
+  color:color-mix(in srgb,var(--bg) 22%,var(--txt) 78%);
+  animation:lvcIda linear infinite, lvcPaso .55s ease-in-out infinite alternate}
+.lvc-peaton.oeste{animation-name:lvcVuelta,lvcPaso;transform:scaleX(-1)}
+@keyframes lvcIda{from{left:-90px}to{left:calc(100% + 90px)}}
+@keyframes lvcVuelta{from{left:calc(100% + 90px)}to{left:-90px}}
+@keyframes lvcPaso{from{margin-top:0}to{margin-top:2px}}
+@media (prefers-reduced-motion:reduce){.lvc-coche,.lvc-peaton{animation:none;left:30%}}
+@media (max-width:640px){.lv-calle{height:96px}.lvc-banqueta{top:22px;height:20px}.lvc-via{top:42px}}
+.lv-k{text-align:center;margin:0;font-family:var(--mono);font-size:12px;
+  letter-spacing:.3em;color:var(--txt);width:100%}
+.lv-k span{background:color-mix(in srgb,var(--bg) 93%,transparent);
+  backdrop-filter:blur(8px);padding:8px 18px}
+/* En pantalla angosta los tres botones no caben en fila: a 196 px de mínimo
+   el tercero se caía y se encimaba con el rótulo. Debajo de 760 px se apilan
+   en columna y cada uno ocupa lo que necesita. */
+.lv-redes{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;width:100%}
+@media(max-width:760px){
+  .lv-redes{flex-direction:column;align-items:center;gap:10px}
+  .lv-red{min-width:0;width:100%;max-width:300px}
+}
+.lv-red{display:flex;align-items:center;gap:12px;text-decoration:none;
+  border:1px solid var(--line);padding:16px 24px;color:var(--txt);
+  transition:background .2s,color .2s,border-color .2s;min-width:196px;
+  /* velo + blur: el skyline pasa POR DETRÁS y sin esto las torres se comían
+     el texto de los botones justo en el centro del cuadro */
+  background:color-mix(in srgb,var(--bg) 93%,transparent);backdrop-filter:blur(8px)}
+.lv-red svg{width:22px;height:22px;fill:currentColor;flex:none}
+.lv-red span{font-size:14px;font-weight:500;letter-spacing:.01em}
+.lv-red i{font-style:normal;margin-left:auto;font-family:var(--mono);font-size:9px;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--faint)}
+.lv-red:hover{background:var(--txt);color:var(--bg);border-color:var(--txt)}
+.lv-red:hover i{color:var(--bg);opacity:.65}
+/* los apagados suben a .62: a .42 y encima de las torres no se leían */
+.lv-red[aria-disabled="true"]{opacity:.62;pointer-events:none}
+
+/* las cajas de precio, alineadas: el botón SIEMPRE abajo, pase lo que pase
+   con el largo de la lista */
+.bc-plan{display:flex;flex-direction:column}
+.bc-incluye{flex:0 0 auto}
+.bc-incluye li.no{color:var(--faint);opacity:.72}
+.bc-incluye li.no::before{content:"—";color:var(--faint)}
+.bc-incluye li.no b{color:var(--faint);font-weight:300}
+.bc-extra{margin:20px 0 0;font-size:12.5px;line-height:1.55;color:var(--dim);
+  font-weight:300;border-left:2px solid var(--line);padding-left:12px}
+.bc-extra b{color:var(--txt);font-weight:500}
+.bc-plan > .bc-btn,.bc-plan > .bc-botones{margin-top:auto}
+.bc-plan > .bc-botones{padding-top:24px}
+.bc-plan > .bc-btn{margin-top:auto;margin-bottom:0}
+
+
+/* el temario, en tabla: una fila por módulo y sus cinco puntos en dos columnas */
+.pg-tabla{border-top:1px solid var(--line-soft);margin-top:clamp(24px,3vw,36px)}
+.pg-fila{display:flex;gap:26px;padding:26px 8px;border-bottom:1px solid var(--line-soft);
+  transition:background .2s,padding-left .2s}
+.pg-fila:hover{background:var(--glass);padding-left:18px}
+.pg-num{font-family:var(--mono);font-size:12px;color:var(--txt);letter-spacing:.2em;
+  flex:none;width:34px;padding-top:2px}
+.pg-cuerpo{flex:1}
+.pg-cuerpo b{display:block;font-size:16px;letter-spacing:.05em;margin-bottom:6px}
+.pg-cuerpo ul{margin:0;padding:0;list-style:none;display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:6px 26px}
+.pg-cuerpo li{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--dim);
+  padding-left:14px;position:relative}
+.pg-cuerpo li::before{content:'\25C6';position:absolute;left:0;color:var(--txt);font-size:8px;top:2px}
+.md-sub{font-family:var(--mono);font-size:10px;letter-spacing:.28em;
+  color:var(--faint);text-transform:uppercase;margin:10px 0 0}
+.bc-cuatro .bc-plan{padding:26px 22px 24px}
+.bc-cuatro .bc-num{font-size:clamp(26px,2.9vw,34px)}
+
+/* ══ LAS RESEÑAS ══ misma tira infinita del temario. La sección va `hidden`
+   hasta que RESEÑAS tenga algo: una fila de tarjetas vacías se ve peor que no
+   tener la sección, y una fila de tarjetas inventadas es mentir. */
+.rs-bloque{padding-top:clamp(54px,7vw,88px)}
+.rs-bloque[hidden]{display:none}
+.rs-cinta{overflow:hidden;margin-top:clamp(26px,3.4vw,40px);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.rs-track{display:flex;width:max-content;animation:rsRueda 64s linear infinite}
+.rs-cinta:hover .rs-track{animation-play-state:paused}
+.rs-mit{display:flex;gap:16px;padding-right:16px}
+.rs-card{width:320px;flex:none;border:1px solid var(--line-soft);background:var(--bg);
+  padding:24px 24px 20px;display:flex;flex-direction:column}
+.rs-card i{font-style:normal;font-family:var(--mono);font-size:9px;letter-spacing:.24em;
+  color:var(--txt);border-bottom:1px solid var(--line-soft);padding-bottom:12px}
+.rs-card p{margin:16px 0 0;color:var(--dim);font-size:13.5px;line-height:1.62;
+  font-weight:300;flex:1}
+.rs-card footer{display:flex;align-items:baseline;gap:10px;margin-top:20px;
+  padding-top:14px;border-top:1px solid var(--line-soft)}
+.rs-card b{font-size:13px;font-weight:600;letter-spacing:-.01em}
+.rs-card span{font-family:var(--mono);font-size:9px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--faint)}
+@keyframes rsRueda{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){
+  .rs-track{animation:none}
+  .rs-cinta{overflow-x:auto;-webkit-mask-image:none;mask-image:none}
+}
+
+/* ══ LOS SEIS FRENTES ══ La bomba de productos, agrupada. Treinta puntos
+   seguidos se leen como relleno; en seis cuartos se leen como una casa. */
+.cat{max-width:960px;margin:clamp(34px,4.5vw,52px) auto 0}
+.cat-grupo{border-top:1px solid var(--line);padding:clamp(24px,3.2vw,36px) 0}
+.cat-grupo:last-child{border-bottom:1px solid var(--line)}
+.cat-cab{display:flex;align-items:baseline;gap:14px;margin-bottom:18px}
+.cat-cab i{font-style:normal;font-family:var(--mono);font-size:10px;
+  letter-spacing:.24em;color:var(--faint)}
+.cat-cab b{font-size:clamp(17px,2.1vw,22px);font-weight:600;letter-spacing:-.012em}
+.cat-lista{list-style:none;margin:0;padding:0;display:grid;gap:11px 34px;
+  grid-template-columns:repeat(auto-fit,minmax(258px,1fr))}
+.cat-lista li{font-size:13.5px;color:var(--dim);font-weight:300;padding-left:18px;
+  position:relative;line-height:1.55}
+.cat-lista li::before{content:'\25C6';position:absolute;left:0;top:3px;
+  color:var(--txt);font-size:7px}
+.cat-lista li b{color:var(--txt);font-weight:500}
+.cat-tot{text-align:center;font-family:var(--mono);font-size:10px;letter-spacing:.3em;
+  color:var(--faint);margin:clamp(28px,4vw,44px) 0 0}
+
+.bc-planes{margin-bottom:clamp(52px,7vw,88px)}
+.bc-rejilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:14px;align-items:start}
+.bc-plan{position:relative;border:1px solid var(--line);border-radius:3px;
+  padding:clamp(24px,3vw,32px);display:flex;flex-direction:column;height:100%}
+.bc-destacado{border-color:rgba(200,162,74,.45);
+  box-shadow:0 0 0 1px rgba(200,162,74,.12)}
+@media(min-width:820px){ .bc-destacado{transform:translateY(-12px)} }
+.bc-cinta{position:absolute;top:-1px;right:16px;transform:translateY(-50%);
+  background:#C8A24A;color:#0b0b0b;font-family:var(--mono);font-size:9px;
+  letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:2px}
+.bc-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.24em;
+  color:var(--faint);text-transform:uppercase}
+.bc-num{font-family:var(--mono);font-size:clamp(30px,3.6vw,40px);font-weight:250;
+  letter-spacing:-.035em;line-height:1;margin-top:12px;display:flex;
+  align-items:baseline;gap:7px;flex-wrap:wrap}
+.bc-num i{font-style:normal;font-size:11px;letter-spacing:.12em;color:var(--faint)}
+.bc-sub{font-size:12.5px;color:var(--dim);margin-top:10px;font-weight:300}
+.bc-sub b{color:var(--txt);font-weight:500}
+.bc-incluye{list-style:none;margin:22px 0 0;padding:20px 0 0;
+  border-top:1px solid var(--line);flex:1}
+.bc-incluye li{font-size:13.5px;color:var(--dim);font-weight:300;padding-left:18px;
+  position:relative;margin-bottom:9px}
+.bc-incluye li::before{content:"—";position:absolute;left:0;color:var(--faint)}
+.bc-incluye b{color:var(--txt);font-weight:500}
+.bc-botones{display:flex;flex-direction:column;gap:8px;margin-top:22px}
+.bc-btn{display:block;text-align:center;text-decoration:none;padding:13px 16px;
+  border-radius:2px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;
+  transition:transform .16s,opacity .16s;border:1px solid transparent;margin-top:22px}
+.bc-botones .bc-btn{margin-top:0}
+.bc-btn span{display:block;font-size:9px;letter-spacing:.12em;opacity:.6;margin-top:4px}
+.bc-btn:hover{transform:translateY(-1px)}
+.bc-btn-1{background:var(--txt);color:var(--bg)}
+.bc-btn-2{border-color:var(--line);color:var(--txt)}
+.bc-btn-2:hover{border-color:var(--txt)}
+.bc-btn[aria-disabled="true"]{opacity:.45;pointer-events:none}
+
+/* ════ LOS DATOS DE LA MESA ════ Cuatro columnas que se apilan solas. */
+
+
+/* ══════════ bloque <style> 2 de 2 (orden original conservado) ══════════ */
+
+body.doc-open .puertas{display:none}
+.casas-g{display:grid;gap:1px;background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.07);grid-template-columns:1fr}
+@media(min-width:700px){.casas-g{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.casas-g{grid-template-columns:repeat(4,1fr)}}
+.casa-c{background:var(--bg);padding:clamp(26px,3vw,34px);display:block;position:relative;
+  transition:background .2s}
+.casa-c:hover{background:var(--glass)}
+.casa-c .fr{position:absolute;top:clamp(26px,3vw,34px);right:clamp(22px,2.4vw,28px);
+  font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--faint)}
+.casa-c b{display:block;font-size:clamp(19px,2.3vw,24px);font-weight:600;letter-spacing:-.02em}
+.casa-c em{display:block;margin-top:12px;font-style:normal;font-size:13.5px;line-height:1.65;
+  color:var(--dim);max-width:40ch}
+.casa-c i{display:inline-block;margin-top:18px;font-style:normal;font-family:var(--mono);
+  font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--txt);
+  border-bottom:1px solid rgba(255,255,255,.18)}
+.casa-c:hover i{border-color:currentColor}
+
+/* ════════════════════════════════════════════════════════════════
+   PÁGINAS-DOCUMENTO DE LA PORTADA (Gregorio, 23-sep-2026)
+   socios.html · memos.html · newsletter.html comparten esta hoja (la
+   piel de la portada: tokens, nav, deck, pie legal, reveal) y añaden la
+   suya. Aquí sólo va la cabecera común de esas páginas.
+   ════════════════════════════════════════════════════════════════ */
+.doc{padding-top:64px}
+.doc-head{max-width:1180px;margin:0 auto;padding:clamp(72px,10vw,128px) 24px clamp(36px,5vw,56px)}
+.doc-num{font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--faint);margin-bottom:22px;font-variant-numeric:tabular-nums slashed-zero}
+.doc-t{font-size:clamp(40px,6.4vw,84px);font-weight:500;letter-spacing:-.03em;line-height:1.02;
+  color:var(--txt);max-width:14ch;text-wrap:balance}
+.doc-lede{margin-top:22px;max-width:56ch;color:var(--dim);font-size:clamp(15px,1.7vw,18px);line-height:1.6}
+section.doc-body{padding:0 0 clamp(24px,4vw,48px);border-top:0}
+.doc-nota{margin-top:clamp(40px,5vw,64px);max-width:76ch;font-size:12.5px;line-height:1.65;
+  color:var(--faint);font-weight:300;border-top:1px solid var(--line-soft);padding-top:20px}
+.doc-nota strong{color:var(--dim);font-weight:500}

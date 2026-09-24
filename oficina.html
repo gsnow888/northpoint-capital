@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LA OFICINA — NORTHPOINT Family Office</title>
+<meta name="description" content="La plataforma del family office NORTHPOINT: tu patrimonio completo — activos, deudas, capas, plan mensual y libertad financiera — en una sola pantalla. Tus datos viven en tu dispositivo.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<meta name="robots" content="noindex">
+
+<!--
+  LA OFICINA · plataforma del Family Office · 24-ago-2026
+  App real, no mockup: los datos son del usuario y viven en SU dispositivo
+  (localStorage). Nada viaja a ningún servidor — no hay servidor.
+  Estética: el dark glass de la sección LA PLATAFORMA de family-office.html.
+  Arquitectura: las 5 capas del método de la casa.
+  Honestidad: la única proyección que existe es hipotética, con la tasa que
+  el usuario elige, y está etiquetada como tal. El modo demo se marca DEMO.
+-->
+
+
+<link rel="stylesheet" href="css/oficina.css">
+</head>
+<body>
+
+<aside class="lado" id="lado">
+  <a class="brand" href="family-office.html">
+    <svg viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+    <span>NORTHPOINT<small>LA OFICINA</small></span>
+  </a>
+  <nav class="menu" aria-label="Menú principal">
+    <button class="mn" data-v="resumen"><u></u>Resumen</button>
+    <button class="mn" data-v="portafolio"><u></u>Portafolio</button>
+    <button class="mn" data-v="plan"><u></u>El plan</button>
+    <button class="mn" data-v="chat"><u></u>Chat</button>
+    <button class="mn" data-v="ajustes"><u></u>Personalizar</button>
+  </nav>
+  <div class="lado-pie">
+    <button class="chip-demo" id="chipDemo" style="border:none;cursor:pointer">DEMO · SALIR ×</button>
+    <button class="nav-out" id="chipResp" style="display:none;background:none"></button>
+    <a class="nav-out" href="family-office.html">&larr; FAMILY OFFICE</a>
+  </div>
+</aside>
+<div class="velo" id="velo"></div>
+<header class="topbar">
+  <button class="burger" id="burger" aria-label="Menú"><i></i><i></i><i></i></button>
+  <a class="brand" href="family-office.html" style="padding:0">
+    <svg viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+    <span>NORTHPOINT<small>LA OFICINA</small></span>
+  </a>
+  <button class="chip-demo" id="chipDemoM" style="border:none;cursor:pointer;margin-left:auto">DEMO ×</button>
+</header>
+<div class="vista-cab w" id="cabVista">
+  <span class="eb" id="cabEb">LA OFICINA</span>
+  <h1 id="cabTitulo">Resumen</h1>
+  <p class="cab-sub" id="cabSub"></p>
+  <span class="cab-linea" aria-hidden="true"></span>
+</div>
+
+<!-- onboarding cuando no hay datos -->
+<section class="onboard w">
+  <p class="eb">LA OFICINA</p>
+  <h1>Tu patrimonio, en una sola pantalla.</h1>
+  <p>Tu asesor NORTHPOINT registra y mantiene tus cuentas, inmuebles y estrategia;
+    aquí los ves ordenados por capas, con tu plan mensual y el camino a tu libertad
+    financiera. <b style="color:var(--cream)">Tus datos se quedan en tu navegador</b> —
+    no hay cuentas ni base de datos.</p>
+  <div class="btns">
+    <button class="btn btn-g" id="obDemo">Ver con datos de ejemplo</button>
+    <button class="btn btn-g" id="obImporta">Restaurar un respaldo</button>
+  </div>
+</section>
+
+<!-- RESUMEN -->
+<header class="resumen w" id="top">
+  <div class="res-g">
+    <div class="card">
+      <div class="aurora" aria-hidden="true"></div>
+      <p class="eb">PATRIMONIO NETO</p>
+      <p class="neto-big" id="netoBig">$0<small>MXN</small></p>
+      <p class="neto-sub" id="netoSub">Activos $0 · Deudas $0</p>
+      <div id="netoExtra"></div>
+      <div class="res-actions">
+      </div>
+    </div>
+    <div class="card">
+      <div class="spark-cab">
+        <div>
+          <p class="eb">EVOLUCIÓN</p>
+          <p class="spark-rango" id="sparkRango">—</p>
+        </div>
+        <span class="spark-chip" id="sparkChip" hidden>+0%</span>
+      </div>
+      <div id="spark" style="height:160px"></div>
+      <p class="foto-hint" id="fotoHint" hidden>La oficina toma sola una foto de tu patrimonio cada mes; con dos meses aparece tu línea de avance.</p>
+    </div>
+  </div>
+  <div class="card" id="sistemaCard" style="margin-top:14px"><svg class="spk" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+    <h2>El sistema</h2>
+    <p class="sub">Tu patrimonio como sistema: cada esfera es un activo — tamaño = valor, órbita = capa. Pasa el cursor y pícale para el detalle.</p>
+    <canvas id="sys" style="width:100%;height:320px;display:block"></canvas>
+    <div class="cap-chips" id="sysLeyenda" style="margin:12px 0 0"></div>
+  </div>
+  <div class="card" id="histCortes" style="margin-top:14px;display:none"><svg class="spk" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+    <h2>Historial</h2>
+    <div class="lista" id="listaCortes"></div>
+  </div>
+</header>
+
+<main class="tablero w">
+  <div class="col">
+
+    <div class="card" id="portafolio"><svg class="spk" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+      <h2>Activos</h2>
+      <p class="mareas-tot" id="mareasTot">$0</p>
+      <div id="mareas" style="width:100%;min-height:280px"></div>
+    </div>
+
+    <div class="card" id="plan"><svg class="spk" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+      <h2>Plan de acción mensual</h2>
+      <p class="sub">Reparte tu aportación del mes hacia las capas que van más atrás de su referencia.</p>
+      <div class="in-box">
+        <label for="inAporta">Aportación mensual</label>
+        <div class="fila"><input type="number" id="inAporta" min="0" step="500" value="10000"><span class="ud">MXN /MES</span></div>
+      </div>
+      <canvas id="flujo" style="width:100%;height:200px;display:block;margin-bottom:6px"></canvas>
+      <div class="seg" id="planSeg" style="height:9px;margin-bottom:12px"></div>
+      <div id="planRows"></div>
+      <p class="plan-nota">Sugerencia aritmética según una estrategia de referencia de la casa — no es una recomendación de inversión.</p>
+    </div>
+
+  </div>
+  <div class="col">
+
+    <div class="card" id="libertad"><svg class="spk" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+      <h2>Si sigues el plan…</h2>
+      <p class="sub">A dónde te lleva tu aportación, año por año — hipotético, en pesos de hoy, con tus activos invertibles.</p>
+      <p class="plan-intro" id="libIntro"></p>
+      <div id="camino" style="width:100%"></div>
+      <div id="libHitos"></div>
+      <label class="eb" for="inTasa">TASA REAL ANUAL: <b id="tasaVal" style="color:var(--cream)">4.0%</b></label>
+      <input type="range" id="inTasa" min="0" max="15" step="0.5" value="4">
+      <p class="lib-disc">Cálculo hipotético — no es promesa; la regla del 4% es una guía para traducir patrimonio en retiro mensual.</p>
+    </div>
+
+    <div class="card" id="activos"><svg class="spk" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+      <h2>Activos</h2>
+      <p class="sub">Cuentas, casas de bolsa, inmuebles, negocio — cada uno en su capa.</p>
+      <div class="lista" id="listaActivos"></div>
+      <div class="tot-row"><span>Total activos</span><b id="totActivos">$0</b></div>
+      <form class="form" id="formActivo">
+        <div class="fg">
+          <div><label for="fa-nombre">Nombre</label><input id="fa-nombre" name="nombre" required maxlength="40" placeholder="Cetes / BBVA / Depto Roma"></div>
+          <div><label for="fa-valor">Valor</label><input id="fa-valor" name="valor" type="number" min="0" step="0.01" required placeholder="0"></div>
+          <div><label for="fa-capa">Capa</label><select id="fa-capa" name="capa"></select><small class="hint-campo">Efectivo/ahorro→Liquidez · Afore/PPR→Retiro · depa que rentas→Ingresos pasivos · ETF/acciones→Acciones · negocio/cripto→Alternativos</small></div>
+          <div><label for="fa-moneda">Moneda</label><select id="fa-moneda" name="moneda"><option value="MXN">MXN</option><option value="USD">USD</option></select></div>
+          <div style="grid-column:1/-1"><label for="fa-inst">Institución (opcional)</label><input id="fa-inst" name="inst" maxlength="40" placeholder="GBM, banco, notaría…"></div>
+          <div style="grid-column:1/-1;display:flex;align-items:center;gap:9px">
+            <input type="checkbox" name="lib" id="faLib" checked style="width:auto;accent-color:#A6EEDA">
+            <label for="faLib" style="margin:0;font-size:12px;line-height:1.5">Cuenta para libertad financiera <small style="display:block;font-size:11px;color:var(--tenue)">apágalo en la casa donde vives, la Afore bloqueada o el negocio que no venderías</small></label>
+          </div>
+        </div>
+        <details class="fa-det" id="faFam">
+          <summary>Para tu familia (opcional) — de quién es y quién lo hereda</summary>
+          <div class="fg">
+            <div><label for="fa-titular">Titular</label><input id="fa-titular" name="titular" maxlength="40" placeholder="Papá / Mamá / SAPI familiar"></div>
+            <div><label for="fa-veh">¿Cómo lo tienes?</label><select id="fa-veh" name="veh"><option value="directo">A tu nombre (directo)</option><option value="copropiedad">Copropiedad</option><option value="empresa">Empresa</option><option value="fideicomiso">Fideicomiso</option></select></div>
+            <div><label for="fa-benef">¿Ya dijiste quién lo hereda?</label><select id="fa-benef" name="benef"><option value="">—</option><option value="si">Sí</option><option value="no">No</option><option value="na">No aplica</option></select></div>
+            <div><label for="fa-benefnom">Quién lo hereda (opcional)</label><input id="fa-benefnom" name="benefNombre" maxlength="40" placeholder="Nombre del beneficiario"></div>
+            <div style="grid-column:1/-1"><label for="fa-doc">Dónde está el documento (opcional)</label><input id="fa-doc" name="doc" maxlength="60" placeholder="Escritura en caja fuerte / Notaría 12 / contrato en Drive familiar"></div>
+          </div>
+        </details>
+        <div class="acciones">
+          <button type="button" class="btn btn-g" data-cerrar>Cancelar</button>
+          <button type="submit" class="btn">Guardar</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="card" id="chat"><svg class="spk" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+      <h2>Chat con tu analista</h2>
+      <p class="sub">Escribe tu duda y tu analista NORTHPOINT te contesta aquí mismo.</p>
+      <div class="chat-hilo" id="chatHilo"></div>
+      <textarea id="chatTxt" class="chat-txt" maxlength="600" placeholder="Escribe tu duda… por ejemplo: ¿por qué bajó mi capa de acciones este mes?"></textarea>
+      <div class="chat-acc">
+        <button class="btn" id="chatEnviar">Enviar →</button>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<section class="ajustes w">
+  <div class="aj-g">
+    <div class="aj aj-tema" style="grid-column:1/-1">
+      <label>Tema de tu oficina</label>
+      <div class="tema-opts">
+        <button type="button" class="tema-opt" id="temaBlanco" aria-pressed="true">
+          <span class="tema-mini tema-mini-b"><i></i><i></i><i></i></span>Blanco
+        </button>
+        <button type="button" class="tema-opt" id="temaNegro" aria-pressed="false">
+          <span class="tema-mini tema-mini-n"><i></i><i></i><i></i></span>Negro
+        </button>
+      </div>
+      <small>Se guarda en este dispositivo — tu oficina se abre siempre como tú la dejaste.</small>
+    </div>
+    <div class="aj aj-fx">
+      <label for="inFx">Tipo de cambio USD → MXN</label>
+      <input type="number" id="inFx" min="1" step="0.05" value="17">
+      <small id="fxNota"></small>
+    </div>
+    <div class="aj">
+      <label for="inGasto">Gasto familiar mensual (MXN)</label>
+      <input type="number" id="inGasto" min="0" step="1000" value="0">
+      <small>Alimenta el fondo de emergencia en meses.</small>
+    </div>
+    <div class="aj">
+      <label>Respaldo</label>
+      <button class="btn btn-g" id="btnExporta" style="justify-content:center">Exportar JSON</button>
+      <small id="ultExp">Nunca has exportado un respaldo.</small>
+    </div>
+    <div class="aj">
+      <label>Restaurar</label>
+      <button class="btn btn-g" id="btnImporta" style="justify-content:center">Importar JSON</button>
+      <input type="file" id="fileImporta" accept="application/json" hidden>
+    </div>
+    <div class="aj">
+      <label>Datos</label>
+      <button class="btn btn-g" id="btnDemo" style="justify-content:center">Modo demo</button>
+      <button class="btn btn-g" id="btnBorrar" style="justify-content:center;color:var(--rojo)">Borrar todo</button>
+    </div>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="w">
+    <p>LA OFICINA es una herramienta de organización patrimonial de NORTHPOINT. No es asesoría de
+      inversión ni recomendación de comprar o vender; los cálculos hipotéticos usan los supuestos que
+      tú ingresas. Tus datos se guardan únicamente en este dispositivo (localStorage de tu navegador):
+      NORTHPOINT no los recibe, no los ve y no puede recuperarlos — exporta tu respaldo. ·
+      <a href="legal/terminos.html" style="text-decoration:underline;text-underline-offset:3px">Términos</a> ·
+      <a href="legal/privacidad.html" style="text-decoration:underline;text-underline-offset:3px">Privacidad</a></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<div id="tipviz" style="position:fixed;z-index:120;display:none;pointer-events:none;
+  background:rgba(10,10,10,.92);border:1px solid rgba(255,255,255,.16);border-radius:10px;
+  backdrop-filter:blur(10px);padding:9px 12px;font-family:var(--fm);font-size:9.5px;
+  letter-spacing:.04em;color:var(--cream);line-height:1.7;box-shadow:0 18px 40px rgba(0,0,0,.6)"></div>
+
+<script src="js/oficina.js"></script>
+</body>
+</html>

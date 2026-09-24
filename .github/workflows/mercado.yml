@@ -1,0 +1,51 @@
+name: Datos de mercado
+
+# El terminal es un sitio estático: el navegador no puede leer las fuentes por CORS.
+# Este trabajo las baja desde un servidor y deja data/mercado.json en el repo,
+# que la página sí puede leer del mismo origen. Sin llaves y sin servicios de por medio.
+
+on:
+  schedule:
+    - cron: '*/20 * * * *'      # cada 20 minutos
+  workflow_dispatch:            # y a mano cuando haga falta
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mercado
+  cancel-in-progress: true
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Bajar calendario, precios y noticias
+        run: python3 scripts/mercado.py
+
+      - name: Publicar si algo cambió
+        run: |
+          if git diff --quiet -- data/mercado.json; then
+            echo "sin cambios"
+            exit 0
+          fi
+          git config user.name  "northpoint-bot"
+          git config user.email "actions@github.com"
+          git add data/mercado.json
+          git commit -m "datos de mercado $(date -u +'%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase --autostash -q && git push -q; then
+              echo "publicado"
+              exit 0
+            fi
+            echo "el push chocó con otro trabajo; reintento $i"
+            sleep $((i * 4))
+          done
+          echo "no se pudo publicar después de 5 intentos" >&2
+          exit 1

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EL DESPACHO — NORTHPOINT Socios</title>
+<meta name="description" content="La mesa de socios de NORTHPOINT: pipeline de familias, tareas, la ruta del negocio y acuerdos. Solo André y Gregorio.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<meta name="robots" content="noindex">
+
+<!--
+  EL DESPACHO · plataforma de socios · 25-ago-2026
+  Para André y Gregorio: llevar a cabo TODO el family office — pipeline de
+  familias, tareas por socio, LA RUTA (regulatorio/certificaciones/comercial/
+  producto/academia) y la bitácora de acuerdos.
+  Datos en localStorage del dispositivo; los socios se sincronizan por
+  respaldo (exportar/importar). La nube de socios llega después — la
+  estructura ya está lista para colgarla de Supabase.
+-->
+
+
+<link rel="stylesheet" href="css/despacho.css">
+</head>
+<body>
+
+<aside class="lado" id="lado">
+  <a class="brand" href="family-office.html">
+    <svg viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+    <span>NORTHPOINT<small>EL DESPACHO · SOCIOS</small></span>
+  </a>
+  <nav class="menu" aria-label="Menú principal">
+    <button class="mn" data-v="tablero"><u></u>Tablero</button>
+    <button class="mn" data-v="familias"><u></u>Familias</button>
+    <button class="mn" data-v="tareas"><u></u>Tareas</button>
+    <button class="mn" data-v="ruta"><u></u>La ruta</button>
+    <button class="mn" data-v="acuerdos"><u></u>Acuerdos</button>
+    <button class="mn" data-v="ajustes"><u></u>Ajustes</button>
+  </nav>
+  <div class="lado-pie">
+    <div class="perfil" role="group" aria-label="Quién soy">
+      <button id="pfAndre" data-p="andre">ANDRÉ</button>
+      <button id="pfGoyo" data-p="goyo">GREGORIO</button>
+    </div>
+    <button class="nav-out" id="chipResp" style="display:none"></button>
+    <a class="nav-out" href="oficina.html">LA OFICINA →</a>
+  </div>
+</aside>
+<div class="velo" id="velo"></div>
+<header class="topbar">
+  <button class="burger" id="burger" aria-label="Menú"><i></i><i></i><i></i></button>
+  <a class="brand" href="family-office.html" style="padding:0">
+    <svg viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+    <span>NORTHPOINT<small>EL DESPACHO</small></span>
+  </a>
+</header>
+
+<div class="vista-cab w">
+  <span class="eb" id="cabEb">EL DESPACHO</span>
+  <h1 id="cabTitulo">Tablero</h1>
+  <p class="cab-sub" id="cabSub"></p>
+  <span class="cab-linea" aria-hidden="true"></span>
+</div>
+
+<!-- ══ TABLERO ══ -->
+<main class="vista w" id="v-tablero">
+  <div class="kpi-g">
+    <div class="kpi"><b id="kFam">0</b><span>Familias en pipeline</span></div>
+    <div class="kpi"><b id="kActivas">0</b><span>Familias activas</span></div>
+    <div class="kpi"><b id="kTareas">0</b><span>Tareas abiertas</span></div>
+    <div class="kpi"><b id="kRuta">0%</b><span>La ruta completada</span></div>
+  </div>
+  <div class="card"><svg class="spk" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+    <h2>El embudo</h2>
+    <p class="sub">Las familias, etapa por etapa — de la primera llamada a la familia activa.</p>
+    <div class="funnel" id="funnel"></div>
+  </div>
+  <div class="card"><svg class="spk" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+    <h2>Próximas acciones</h2>
+    <p class="sub">Lo que sigue con cada familia, ordenado por fecha. Lo vencido, en rojo.</p>
+    <div class="prox" id="proxAcciones"></div>
+  </div>
+  <div class="card"><svg class="spk" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
+    <h2>Pendientes de la mesa</h2>
+    <p class="sub">Las tareas abiertas de cada socio.</p>
+    <div class="prox" id="tabTareas"></div>
+  </div>
+</main>
+
+<!-- ══ FAMILIAS ══ -->
+<main class="vista w" id="v-familias">
+  <button class="btn" id="btnFamilia" style="margin-bottom:14px">+ Familia</button>
+  <div class="etapas" id="etFiltros"></div>
+  <div class="card">
+    <div id="listaFamilias"></div>
+    <form class="form" id="formFamilia">
+      <h3 class="form-titulo" id="famFormTitulo">Nueva familia</h3>
+      <div class="fg">
+        <div><label>Familia / nombre</label><input name="nombre" required maxlength="60" placeholder="Familia García"></div>
+        <div><label>Contacto (tel / correo)</label><input name="contacto" maxlength="80" placeholder="+52 ..."></div>
+        <div><label>Origen</label><input name="origen" maxlength="40" placeholder="Referido / IG / conocido"></div>
+        <div><label>Patrimonio estimado</label><select name="rango">
+          <option value="">— sin estimar —</option>
+          <option value="<5M">Menos de $5M</option>
+          <option value="5-20M">$5M – $20M</option>
+          <option value="20-50M">$20M – $50M</option>
+          <option value=">50M">Más de $50M</option>
+        </select></div>
+        <div><label>Etapa</label><select name="etapa"></select></div>
+        <div><label>Responsable</label><select name="resp">
+          <option value="andre">André</option><option value="goyo">Gregorio</option>
+        </select></div>
+        <div><label>Próxima acción</label><input name="accion" maxlength="90" placeholder="Llamar para agendar sesión"></div>
+        <div><label>Fecha de la acción</label><input name="fecha" type="date"></div>
+        <div style="grid-column:1/-1"><label>Notas</label><textarea name="nota" maxlength="600" placeholder="Qué construyeron, qué les preocupa, quién los refirió…"></textarea></div>
+      </div>
+      <div class="acciones">
+        <button type="button" class="btn btn-g" data-cerrar>Cancelar</button>
+        <button type="button" class="btn btn-g" id="btnGuardarOtra">Guardar y otra</button>
+        <button type="submit" class="btn" id="famSubmit">Guardar</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<!-- ══ TAREAS ══ -->
+<main class="vista w" id="v-tareas">
+  <div class="card">
+    <h2 id="tareaFormTitulo">Nueva tarea</h2>
+    <form class="form abierto" id="formTarea" style="margin-top:10px">
+      <div class="fg">
+        <div style="grid-column:1/-1"><label>Qué hay que hacer</label><input name="txt" required maxlength="140" placeholder="Sacar cita para el examen AMIB"></div>
+        <div><label>Responsable</label><select name="resp">
+          <option value="andre">André</option><option value="goyo">Gregorio</option>
+        </select></div>
+        <div><label>Para cuándo (opcional)</label><input name="fecha" type="date"></div>
+      </div>
+      <div class="acciones"><button type="submit" class="btn" id="tareaSubmit">Agregar</button></div>
+    </form>
+  </div>
+  <div class="card">
+    <div class="ta-filtros">
+      <button class="et-chip on" data-tf="todas">TODAS</button>
+      <button class="et-chip" data-tf="andre">ANDRÉ</button>
+      <button class="et-chip" data-tf="goyo">GREGORIO</button>
+      <button class="et-chip" data-tf="hechas">HECHAS</button>
+    </div>
+    <div id="listaTareas"></div>
+  </div>
+</main>
+
+<!-- ══ LA RUTA ══ -->
+<main class="vista w" id="v-ruta">
+  <div class="card">
+    <div class="ruta-hero">
+      <div class="anillo-wrap">
+        <svg class="anillo" viewBox="0 0 120 120" aria-hidden="true">
+          <defs><linearGradient id="rutaGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#8F63DE"/><stop offset="1" stop-color="#EFECE7"/>
+          </linearGradient></defs>
+          <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="9"/>
+          <circle id="rutaProg" cx="60" cy="60" r="52" fill="none" stroke="url(#rutaGrad)" stroke-width="9"
+            stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="326.7" transform="rotate(-90 60 60)"/>
+        </svg>
+        <div class="anillo-c"><b id="rutaPct">0%</b><span>DE LA RUTA</span></div>
+      </div>
+      <div>
+        <span class="eb">DEL PLAN AL REGISTRO</span>
+        <p style="font-size:13px;color:var(--dim);margin-top:6px;max-width:420px">
+          Todo lo que falta para operar en forma: regulatorio, certificaciones,
+          comercial, producto y academia. Toca el estado para avanzarlo —
+          pendiente → en curso → hecho. El porcentaje cuenta solo lo
+          obligatorio; lo condicional (ruta EE.UU., CFA) no lo infla.</p>
+      </div>
+    </div>
+    <div id="listaRuta"></div>
+  </div>
+</main>
+
+<!-- ══ ACUERDOS ══ -->
+<main class="vista w" id="v-acuerdos">
+  <div class="card">
+    <h2>Nuevo acuerdo</h2>
+    <p class="sub">Lo que se decide entre socios se escribe — o no existió.</p>
+    <form class="form abierto" id="formAcuerdo" style="margin-top:4px">
+      <div class="fg">
+        <div style="grid-column:1/-1"><label>El acuerdo, tal cual se decidió</label><textarea name="txt" required maxlength="800" placeholder="Hoy acordamos que…"></textarea></div>
+      </div>
+      <p class="sub" id="acFirma" style="margin-bottom:8px"></p>
+      <div class="acciones"><button type="submit" class="btn">Guardar acuerdo</button></div>
+    </form>
+  </div>
+  <div class="card">
+    <h2>Bitácora</h2>
+    <div id="listaAcuerdos"></div>
+  </div>
+</main>
+
+<!-- ══ AJUSTES ══ -->
+<main class="vista w" id="v-ajustes">
+  <div class="aj-g">
+    <div class="aj">
+      <label>Respaldo</label>
+      <button class="btn btn-g" id="btnExporta" style="justify-content:center">Exportar JSON</button>
+      <small id="ultExp">Nunca has exportado.</small>
+      <small>Así se sincronizan los socios hoy: uno exporta, el otro importa. La nube de socios llega después.</small>
+    </div>
+    <div class="aj">
+      <label>Restaurar</label>
+      <button class="btn btn-g" id="btnImporta" style="justify-content:center">Importar JSON</button>
+      <input type="file" id="fileImporta" accept="application/json" hidden>
+    </div>
+    <div class="aj">
+      <label>Datos</label>
+      <button class="btn btn-g" id="btnBorrar" style="justify-content:center;color:var(--rojo)">Borrar todo</button>
+      <small>La ruta se restaura a su estado inicial; familias, tareas y acuerdos se borran.</small>
+    </div>
+  </div>
+  <footer class="pie">
+    <p>EL DESPACHO es la mesa interna de los socios de NORTHPOINT. Los datos viven en este
+      dispositivo (localStorage) — exporta tu respaldo y compártelo con tu socio para sincronizar.
+      Nada aquí es asesoría; es la operación de la casa, escrita.</p>
+  </footer>
+</main>
+
+<div class="obp" id="obPerfil" hidden>
+  <div class="card obp-card">
+    <span class="eb">EL DESPACHO · NORTHPOINT</span>
+    <h2>¿Quién está en la mesa?</h2>
+    <p>Esto marca tus registros y acuerdos en este dispositivo.
+      Se puede cambiar en cualquier momento desde el menú.</p>
+    <div class="obp-g">
+      <button class="btn" data-obp="andre">ANDRÉ</button>
+      <button class="btn" data-obp="goyo">GREGORIO</button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="js/despacho.js"></script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+/* ============================================================
+   northpoint-app.html — hoja de estilos
+   Generada a partir del CSS inline original de la página. El contenido de
+   los bloques <style> se conserva íntegro y en el mismo orden.
+   ============================================================ */
+
+/* ── Fuentes locales (antes se cargaban de https://fonts.googleapis.com/css2) ── */
+/* cyrillic-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* vietnamese */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* vietnamese */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* vietnamese */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* greek-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}
+/* greek */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek.woff2) format("woff2");unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF}
+/* vietnamese */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* greek-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}
+/* greek */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek.woff2) format("woff2");unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF}
+/* vietnamese */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* greek-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}
+/* greek */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek.woff2) format("woff2");unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF}
+/* vietnamese */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* greek-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}
+/* greek */
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek.woff2) format("woff2");unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF}
+/* vietnamese */
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+
+
+/* ══════════════════════════════════════════════════════════════
+   NORTHPOINT TERMINAL — landing de UN producto
+   (André, 3-sep-2026)
+
+   La anterior era tres páginas peleándose por el mismo scroll: la
+   academia, el family office y el Terminal, con un router de
+   documentos encima. Quien llegaba a vender el software tenía que
+   escoger primero de qué negocio quería leer. Está guardada entera
+   en index.html (la portada de la marca).
+
+   El orden de abajo no es de gusto. Es el que sale de cómo decide
+   alguien que compra software, y cada sección tiene UN trabajo:
+
+     1 HERO        una promesa concreta, un botón, y el producto
+                   visible ANTES del primer scroll
+     2 PRUEBA      los números medidos, con fecha
+     3 CÓMO        tres pasos, no una lista de features
+     4 PANTALLAS   capturas reales, una línea cada una
+     5 INDICADORES lo que ve el chart
+     6 EJECUCIONES lo que pasó de verdad
+     7 PRECIO      ya con todo el contexto encima
+     8 PREGUNTAS   las que frenan con el dedo en el botón
+     9 CIERRE      un botón, otra vez
+
+   Regla de la casa, sin excepción: aquí no hay una cifra inventada,
+   ni un testimonio, ni una promesa de resultado. Quien va a operar
+   apalancado merece la verdad, y además la verdad vende más.
+   ══════════════════════════════════════════════════════════════ */
+
+:root{
+  --bg:#080808; --bg-2:#0E0E0E; --bg-3:#141414;
+  --glass:rgba(255,255,255,.05); --glass-2:rgba(255,255,255,.09);
+  --line:rgba(255,255,255,.13); --line-soft:rgba(255,255,255,.07);
+  --txt:#F4F4F4; --dim:#A6A6A6; --faint:#7C7C7C;
+  --up:#57C79B; --down:#D9736A;
+  --sans:'Inter',-apple-system,system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --wrap:1180px;
+  color-scheme:dark;
+}
+html[data-theme="light"]{
+  --bg:#F5F5F3; --bg-2:#FFFFFF; --bg-3:#EDEDEA;
+  --glass:rgba(16,20,28,.035); --glass-2:rgba(16,20,28,.07);
+  --line:rgba(16,20,28,.16); --line-soft:rgba(16,20,28,.08);
+  --txt:#101418; --dim:#4E545C; --faint:#82888F;
+  --up:#1B7A50; --down:#B5473A;
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:var(--sans);
+  -webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+.mono{font-family:var(--mono)}
+
+/* el renglón chiquito que titula cada sección */
+.eyebrow{font-family:var(--mono);font-size:9.5px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--faint)}
+h2.tit{font-size:clamp(28px,4.6vw,50px);font-weight:600;letter-spacing:-.03em;
+  line-height:1.08;margin:14px 0 0}
+.lede{color:var(--dim);font-size:clamp(15px,1.8vw,18px);font-weight:300;
+  line-height:1.62;margin-top:18px;max-width:56ch}
+section{padding:clamp(64px,9vw,124px) 0;border-top:1px solid var(--line-soft)}
+section:first-of-type{border-top:0}
+
+/* Aparecen al hacer scroll — pero VISIBLES por defecto.
+   Si el estado escondido viviera en el CSS, cualquier falla del script
+   (un error arriba, JS bloqueado, un navegador viejo) dejaría la página
+   entera en blanco. Aquí el script tiene que ENCENDER la animación
+   poniendo .anim en <html>; si no corre, todo se ve. */
+html.anim .rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+html.anim .rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html.anim .rv{opacity:1;transform:none;transition:none}}
+
+/* ── botones ── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  padding:15px 26px;border:1px solid var(--line);color:var(--txt);white-space:nowrap;
+  transition:background .2s,border-color .2s,opacity .2s;cursor:pointer;background:none}
+.btn:hover{background:var(--glass-2);border-color:var(--txt)}
+.btn.pri{background:var(--txt);color:var(--bg);border-color:var(--txt);font-weight:500}
+.btn.pri:hover{opacity:.86;background:var(--txt)}
+
+/* ══ NAV ══ */
+.nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--bg) 82%,transparent);
+  backdrop-filter:blur(14px);border-bottom:1px solid var(--line-soft)}
+.nav-in{max-width:var(--wrap);margin:0 auto;padding:0 clamp(20px,4vw,40px);
+  height:62px;display:flex;align-items:center;gap:clamp(14px,3vw,32px)}
+.nav-logo b{font-size:13.5px;font-weight:600;letter-spacing:.02em;display:block;line-height:1.1}
+.nav-logo i{font-style:normal;font-family:var(--mono);font-size:8px;letter-spacing:.2em;
+  color:var(--faint);display:block}
+.nav-links{display:none;gap:clamp(14px,2.2vw,26px);margin-left:auto}
+@media(min-width:820px){.nav-links{display:flex}}
+.nav-links a{font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--dim);transition:color .2s}
+.nav-links a:hover{color:var(--txt)}
+.nav-acc{margin-left:auto;display:flex;align-items:center;gap:10px}
+@media(min-width:820px){.nav-acc{margin-left:0}}
+.nav-acc .btn{padding:10px 16px;font-size:9.5px}
+.tema{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--line);
+  color:var(--dim);font-size:12px;background:none;cursor:pointer;transition:color .2s,border-color .2s}
+.tema:hover{color:var(--txt);border-color:var(--txt)}
+
+/* ══ 1 · HERO ══ */
+.hero{padding-top:clamp(52px,7vw,86px);border-top:0}
+.hero h1{font-size:clamp(36px,6.6vw,74px);font-weight:600;letter-spacing:-.038em;
+  line-height:1.03;margin-top:16px;max-width:17ch}
+/* el nombre, en grande. La segunda línea va hueca —sólo contorno— para que
+   NORTHPOINT pese y APP acompañe, en vez de competir. */
+.hero h1.app-tit{font-size:clamp(52px,11vw,132px);font-weight:700;letter-spacing:-.05em;
+  line-height:.9;margin-top:20px;max-width:none}
+.hero h1.app-tit span{display:block;color:transparent;
+  -webkit-text-stroke:1.5px var(--txt);text-stroke:1.5px var(--txt)}
+@supports not ((-webkit-text-stroke: 1px black) or (text-stroke: 1px black)){
+  .hero h1.app-tit span{color:var(--faint)}
+}
+.hero-sub{color:var(--dim);font-size:clamp(15.5px,1.9vw,19px);font-weight:300;
+  line-height:1.6;margin-top:22px;max-width:52ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px;align-items:center}
+.hero-fe{font-family:var(--mono);font-size:10px;letter-spacing:.13em;color:var(--faint);
+  margin-top:20px;line-height:1.9}
+.hero-fe b{color:var(--txt);font-weight:400}
+
+/* ══ LA MACBOOK, DE FRENTE ══ (André, 3-sep-2026)
+   Antes era un borde grueso y ya; parecía una foto con marco, no una
+   computadora. Ahora está dibujada como se ve de frente una MacBook abierta:
+   la tapa de aluminio con su bisel y la cámara arriba, la bisagra, y el
+   canto del cuerpo —más ancho que la tapa— con la muesca por donde se abre.
+   Todo en CSS: ni una imagen, y se adapta al tema.
+
+   El Terminal corre DENTRO, a 1280×800 lógicos, escalado con transform para
+   caber. Se escala en vez de encoger el iframe porque así la app se dibuja
+   con su layout de escritorio —el que se compra— y no con el de una pantalla
+   angosta. En el teléfono es al revés: ahí sí se le deja su ancho real para
+   que use su propio diseño móvil (ver más abajo). */
+.mac{margin-top:clamp(36px,5vw,60px);max-width:1020px;margin-left:auto;margin-right:auto;
+  --alu:#3a3a3e; --alu2:#232326; --canto:#c3c3c8}
+html[data-theme="light"] .mac{--alu:#d8d8dc; --alu2:#b9b9bf; --canto:#8e8e95}
+/* la tapa: aluminio por fuera, pantalla negra por dentro */
+.mac-tapa{position:relative;padding:11px 11px 20px;border-radius:15px 15px 5px 5px;
+  background:linear-gradient(180deg,var(--alu),var(--alu2));
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.07)}
+.mac-cam{position:absolute;top:4.5px;left:50%;transform:translateX(-50%);
+  width:6px;height:6px;border-radius:50%;background:#0b0b0d;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.18)}
+/* el renglón «MacBook Pro» de abajo del bisel */
+.mac-tapa::after{content:'';position:absolute;bottom:7px;left:50%;transform:translateX(-50%);
+  width:52px;height:5px;border-radius:3px;background:rgba(255,255,255,.06)}
+/* 1280×950, no 16/10, y está medido: el calendario del Journal mide 890 px de
+   alto y la barra pegajosa se come 56 más. Con los 800 de una pantalla 16:10
+   se quedaba fuera la última semana; con 900 entraba la rejilla pero no el
+   nombre del mes. Se probó también a 1120 y a 1600 de ancho — el calendario
+   crece con el ancho y la proporción que necesita se queda en 4:3 igual. La
+   tapa sale un pelo más cuadrada que una MacBook de verdad: que se vea el mes
+   completo, con su total abajo, importa más que el milímetro. */
+.mac-vp{position:relative;overflow:hidden;background:var(--bg);border-radius:3px;
+  aspect-ratio:1280/950}
+.mac-vp iframe{width:1280px;height:950px;border:0;display:block;transform-origin:0 0}
+/* la bisagra y el canto del cuerpo, más ancho que la tapa */
+.mac-bisagra{height:5px;width:86%;margin:0 auto;background:var(--alu2);
+  box-shadow:inset 0 1px 2px rgba(0,0,0,.5)}
+.mac-base{position:relative;height:13px;width:112%;margin-left:-6%;
+  background:linear-gradient(180deg,var(--canto),var(--alu2));
+  border-radius:0 0 10px 10px;
+  clip-path:polygon(0 0,100% 0,99% 100%,1% 100%);
+  box-shadow:0 16px 26px -18px rgba(0,0,0,.75)}
+/* la muesca por donde se levanta la tapa */
+.mac-base::after{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:15%;height:6px;background:rgba(0,0,0,.32);border-radius:0 0 8px 8px}
+
+/* ── EN EL TELÉFONO, LA VENTANA TAMBIÉN SE TOCA ──
+   Antes aquí había un botón que mandaba a otra pestaña. Un botón no es una
+   demo. La app se queda, pero SIN escalar: se le da su ancho real para que
+   use su propio diseño móvil y se lea. La MacBook no cabe en 390 px, así que
+   se queda sólo el marco de ventana. */
+@media(max-width:760px){
+  .mac-tapa{padding:7px 7px 7px;border-radius:12px}
+  .mac-cam,.mac-tapa::after,.mac-bisagra,.mac-base{display:none}
+  .mac-vp{aspect-ratio:auto;height:min(72vh,560px)}
+  .mac-vp iframe{width:100%;height:100%;transform:none !important}
+}
+
+/* el producto, en su ventana, antes del primer scroll *//* el producto, en su ventana, antes del primer scroll */
+/* del marco de ventana ya sólo queda el pie: lo usa la cinta de ejecuciones */
+.shot-pie{font-family:var(--mono);font-size:9px;letter-spacing:.11em;color:var(--faint);
+  margin-top:14px;line-height:1.8}
+
+/* ══ MARCOS VIVOS ══ (André, 3-sep-2026)
+   Ni capturas ni video: la escena de la oficina y la portada de Kuro son las
+   de verdad, corriendo en un iframe. La oficina trae su reloj y sus botones
+   de sesión; la de Kuro es la misma puerta por la que se entra al juego. */
+.vivo{position:relative;border:1px solid var(--line);overflow:hidden;background:#0E1018;
+  margin-top:clamp(28px,3.6vw,44px)}
+.vivo iframe{display:block;width:100%;border:0}
+.vivo-of iframe{height:clamp(320px,44vw,560px)}
+.vivo-ku iframe{height:clamp(380px,50vw,620px)}
+/* LOS MARCOS VIVOS SON PARA MIRAR, NO PARA USAR (André, 3-sep-2026).
+   Una tapa transparente encima: se ve la escena corriendo, pero el clic no
+   entra al iframe — sale a los precios, que es lo que quien pica está
+   preguntando. De paso arregla lo del teléfono, donde un iframe a media
+   pantalla se robaba el scroll de la página. */
+.vivo-tapa{position:absolute;inset:0;z-index:2;display:flex;align-items:flex-end;
+  justify-content:center;padding-bottom:22px;
+  background:linear-gradient(transparent 55%, rgba(0,0,0,.55));
+  opacity:0;transition:opacity .25s}
+.vivo-tapa:hover, .vivo-tapa:focus-visible{opacity:1}
+.vivo-tapa span{font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+  text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.5);
+  padding:11px 20px;background:rgba(0,0,0,.4);backdrop-filter:blur(4px)}
+@media(max-width:760px){.vivo-tapa{opacity:1;background:linear-gradient(transparent 62%, rgba(0,0,0,.6))}}
+.vivo-pie{margin-top:14px;font-family:var(--mono);font-size:9px;letter-spacing:.11em;
+  color:var(--faint);line-height:1.8}
+
+/* ══ KURO ══ */
+.kuro{background:var(--bg-2)}
+/* ── LA LEYENDA ── */
+.ku-leyenda{margin-top:clamp(34px,4.4vw,56px);display:grid;gap:clamp(22px,3vw,44px)}
+@media(min-width:900px){.ku-leyenda{grid-template-columns:.85fr 1.15fr;align-items:start}}
+.ku-kanji{font-size:clamp(64px,9vw,108px);line-height:1;font-weight:400;color:var(--txt);
+  opacity:.9}
+.ku-leyenda h3{font-size:clamp(24px,3.4vw,38px);font-weight:600;letter-spacing:-.028em;
+  line-height:1.1;margin-top:14px}
+.ku-leyenda p{color:var(--dim);font-size:14.5px;line-height:1.75;margin-top:16px;max-width:62ch}
+
+/* ── LOS DOS MODOS ── */
+.ku-modos{display:grid;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);
+  margin-top:clamp(28px,3.4vw,42px);grid-template-columns:1fr}
+@media(min-width:760px){.ku-modos{grid-template-columns:repeat(2,1fr)}}
+.ku-modo{background:var(--bg-2);padding:clamp(24px,3vw,34px)}
+.ku-modo .kj{font-size:30px;line-height:1;color:var(--faint)}
+.ku-modo b{display:block;margin-top:12px;font-family:var(--mono);font-size:11px;
+  letter-spacing:.2em;color:var(--txt)}
+.ku-modo p{margin-top:10px;font-size:14px;line-height:1.6;color:var(--dim)}
+.ku-modo ul{list-style:none;margin-top:16px;display:grid;gap:9px}
+.ku-modo li{font-size:13px;line-height:1.5;color:var(--dim);padding-left:16px;position:relative}
+.ku-modo li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:1px;
+  background:var(--faint)}
+
+/* ── LOS NUEVE ACEROS ── */
+.ku-aceros{display:grid;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);
+  margin-top:clamp(22px,2.6vw,30px);grid-template-columns:repeat(2,1fr)}
+/* TRES POR TRES, no cinco: son NUEVE aceros. Con cinco columnas la última
+   fila dejaba un hueco, y un hueco en una rejilla de nueve se ve como si
+   faltara uno. */
+@media(min-width:680px){.ku-aceros{grid-template-columns:repeat(3,1fr)}}
+.ac{background:var(--bg-2);padding:18px 16px;position:relative;overflow:hidden}
+/* SÓLO EL ACERO Y SU NOMBRE (André, 3-sep-2026): la tarjeta traía además lo
+   que te arranca y el color de la hoja. El color ya lo dice el kanji —va
+   pintado del suyo— y lo que te arranca lo dice mejor la línea de abajo, en
+   una sola frase para los nueve. Sin esos dos renglones el kanji puede ser lo
+   que tiene que ser: grande. */
+.ac{text-align:center;padding:26px 14px}
+.ac .kj{font-size:clamp(46px,5.6vw,68px);line-height:1;color:var(--ka,#888)}
+.ac b{display:block;margin-top:14px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;
+  color:var(--txt)}
+.ac.negra{background:var(--bg-3)}
+
+/* ══ 6 · LAS EJECUCIONES ══ */
+.cinta{margin-top:clamp(28px,3.4vw,42px);overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.pista{display:flex;gap:14px;width:max-content;animation:rueda 68s linear infinite}
+.cinta:hover .pista{animation-play-state:paused}
+@keyframes rueda{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.cinta a{flex:0 0 auto;height:clamp(230px,30vh,320px);min-width:130px;
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid var(--line-soft);overflow:hidden;background:#08090d}
+.cinta img{max-height:100%;width:auto;max-width:none}
+@media(prefers-reduced-motion:reduce){.cinta{overflow-x:auto}.pista{animation:none}}
+
+/* ══ 7 · PRECIO ══ */
+.precio{background:var(--bg-2)}
+.pl-g{display:grid;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);
+  margin-top:clamp(30px,4vw,46px);grid-template-columns:1fr}
+@media(min-width:880px){.pl-g{grid-template-columns:repeat(3,1fr)}}
+.pl{background:var(--bg-2);padding:clamp(26px,3vw,34px);display:flex;flex-direction:column;
+  position:relative}
+.pl.dest{background:var(--bg-3)}
+.pl-tag{position:absolute;top:0;right:0;font-style:normal;font-family:var(--mono);
+  font-size:8px;letter-spacing:.18em;background:var(--txt);color:var(--bg);padding:5px 11px}
+.pl h4{font-size:14px;font-weight:600;letter-spacing:-.01em}
+.pl-n{font-family:var(--mono);font-size:clamp(30px,4vw,40px);font-weight:300;
+  letter-spacing:-.035em;margin-top:14px;line-height:1}
+.pl-n i{display:block;font-style:normal;font-size:8.5px;letter-spacing:.17em;
+  color:var(--faint);margin-top:11px;line-height:1.8}
+.pl ul{list-style:none;margin:22px 0 26px;display:grid;gap:10px}
+.pl li{font-size:13.5px;line-height:1.5;color:var(--dim);padding-left:17px;position:relative}
+.pl li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:1px;
+  background:var(--faint)}
+.pl .btn{margin-top:auto;width:100%}
+.fund{margin-top:18px;border:1px solid var(--line);border-left:2px solid var(--txt);
+  padding:22px 24px;background:var(--glass);display:grid;gap:16px;align-items:center}
+@media(min-width:820px){.fund{grid-template-columns:1fr auto}}
+.fund b{font-family:var(--mono);font-size:10px;letter-spacing:.18em;display:block}
+.fund p{font-size:13px;line-height:1.65;color:var(--dim);margin-top:9px;max-width:60ch}
+
+/* ══ 8 · PREGUNTAS ══ */
+.dos{display:grid;gap:clamp(26px,3.6vw,54px);margin-top:clamp(30px,4vw,46px)}
+@media(min-width:880px){.dos{grid-template-columns:.8fr 1.2fr}}
+.dos h3{font-size:15px;font-weight:600;letter-spacing:-.01em;margin-bottom:16px}
+.noes{list-style:none;display:grid;gap:12px}
+.noes li{font-size:13.5px;line-height:1.55;color:var(--dim);padding-left:17px;position:relative}
+.noes li::before{content:'';position:absolute;left:0;top:9px;width:7px;height:1px;
+  background:var(--down)}
+.faq details{border-bottom:1px solid var(--line-soft)}
+.faq summary{cursor:pointer;list-style:none;padding:16px 0;font-size:14.5px;font-weight:500;
+  display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';font-family:var(--mono);color:var(--faint);font-size:15px}
+.faq details[open] summary::after{content:'−'}
+.faq p{padding:0 0 18px;font-size:13.5px;line-height:1.7;color:var(--dim);max-width:64ch}
+
+/* ══ 9 · CIERRE ══ */
+.cierre{text-align:center;background:var(--bg-2)}
+.cierre h2{font-size:clamp(28px,5vw,54px);font-weight:600;letter-spacing:-.032em;
+  line-height:1.08;max-width:18ch;margin:14px auto 0}
+.cierre .hero-cta{justify-content:center}
+.cierre-n{font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;color:var(--faint);
+  margin-top:24px}
+
+/* ══ LAS OTRAS DOS CASAS ══ */
+.casas-g{display:grid;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);
+  margin-top:clamp(22px,2.8vw,32px);grid-template-columns:1fr}
+/* auto-fit y no «repeat(2)»: al irse la academia queda UNA tarjeta, y con dos
+   columnas fijas se veía media fila vacía como si faltara algo. */
+.casas-g{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.casa-c{background:var(--bg);padding:clamp(26px,3vw,36px);display:block;position:relative;
+  transition:background .2s}
+.casa-c:hover{background:var(--glass)}
+.casa-c .fr{position:absolute;top:clamp(26px,3vw,36px);right:clamp(24px,2.6vw,30px);
+  font-family:var(--mono);font-size:9px;letter-spacing:.18em;color:var(--faint)}
+.casa-c b{display:block;font-size:clamp(21px,2.6vw,27px);font-weight:600;letter-spacing:-.022em}
+.casa-c em{display:block;margin-top:12px;font-style:normal;font-size:13.5px;line-height:1.65;
+  color:var(--dim);max-width:44ch}
+.casa-c i{display:inline-block;margin-top:20px;font-style:normal;font-family:var(--mono);
+  font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--txt);
+  border-bottom:1px solid var(--line)}
+.casa-c:hover i{border-color:var(--txt)}
+
+/* ══ PIE ══ */
+footer{border-top:1px solid var(--line-soft);padding:clamp(40px,5vw,64px) 0 clamp(30px,4vw,44px)}
+.pie-g{display:grid;gap:clamp(26px,3.4vw,44px)}
+@media(min-width:760px){.pie-g{grid-template-columns:1.3fr 1fr 1fr}}
+.pie-g h5{font-family:var(--mono);font-size:8.5px;letter-spacing:.2em;color:var(--faint);
+  text-transform:uppercase;margin-bottom:14px;font-weight:400}
+.pie-g a{display:block;font-size:13px;color:var(--dim);padding:5px 0;transition:color .2s}
+.pie-g a:hover{color:var(--txt)}
+.pie-legal{margin-top:clamp(34px,4vw,52px);padding-top:22px;border-top:1px solid var(--line-soft);
+  font-family:var(--mono);font-size:9px;letter-spacing:.1em;line-height:2;color:var(--faint);
+  max-width:84ch}

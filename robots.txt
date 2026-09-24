@@ -1,0 +1,9 @@
+# northpointcapital.io
+User-agent: *
+Allow: /
+# el Terminal es de miembros y la página de gracias no aporta nada en buscador
+Disallow: /app.html
+Disallow: /gracias.html
+Disallow: /bootcamp.html
+
+Sitemap: https://northpointcapital.io/sitemap.xml

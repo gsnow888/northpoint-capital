@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NORTHPOINT — Auditoría 0→100</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/reporte.css">
+</head>
+<body>
+
+<nav class="nav"><div class="wrap nav-in">
+  <div class="brand">NORTHPOINT ✦ AUDITORÍA</div>
+  <div class="nav-links">
+    <a href="#resumen">Resumen</a>
+    <a href="#seguridad">Seguridad</a>
+    <a href="#dinero">Dinero</a>
+    <a href="#desk">The Desk</a>
+    <a href="#datos">Datos</a>
+    <a href="#comercial">Venta</a>
+    <a href="#ux">UX</a>
+    <a href="#plan">Plan</a>
+  </div>
+</div></nav>
+
+<header class="hero wrap">
+  <div class="kicker">Auditoría profesional · de 0 a 100</div>
+  <h1>Qué falta para<br>vender NorthPoint</h1>
+  <p class="lede">Revisión completa de la terminal (<code>app.html</code>, 12,176 líneas), la nube, la landing y el repositorio público — con el objetivo de dejarla lista para venderse a otros traders. Cada hallazgo cita la línea exacta del código y trae su corrección.</p>
+  <div class="meta">
+    <span>28 AGO 2026</span><span>6 FRENTES DE AUDITORÍA</span><span>app.html · index.html · nube · repo</span>
+  </div>
+</header>
+
+<section class="wrap" id="resumen">
+  <div class="verdict">
+    <h2>Veredicto — ¿lista para vender?</h2>
+    <div class="gauge">
+      <div class="num" id="scoreNum">—</div>
+      <div class="lbl">listo para vender como producto multi-cliente</div>
+    </div>
+    <div class="gbar" id="gbar"></div>
+    <p class="note" id="verdictNote"><b>Como herramienta personal del equipo, la terminal es sólida</b> — sync a prueba de pérdida de datos, matemáticas con una sola fuente de verdad, errores de red bien manejados. <b>Como producto para vender, hoy no está lista:</b> el bloqueo mayor es que no hay multi-tenancy — todos los equipos comparten una sola fila de base de datos y una sola llave de IA, así que vender a un segundo cliente es una brecha de datos garantizada. A eso se suma que está personalizada al equipo de André (136 nombres, plan de vida, meta $6,100 clavada) y que no hay forma de cobrar. Ninguno es imposible; los tres son trabajo de fondo, no de acabado.</p>
+  </div>
+
+  <div class="counts">
+    <div class="count c-crit"><div class="n" id="cCrit">·</div><div class="k">Crítico</div></div>
+    <div class="count c-high"><div class="n" id="cHigh">·</div><div class="k">Alto</div></div>
+    <div class="count c-med"><div class="n" id="cMed">·</div><div class="k">Medio</div></div>
+    <div class="count c-low"><div class="n" id="cLow">·</div><div class="k">Menor</div></div>
+    <div class="count c-ok"><div class="n" id="cOk">·</div><div class="k">Bien hecho</div></div>
+  </div>
+</section>
+
+<!-- SECCIÓN 1: SEGURIDAD MULTI-TENANT (pendiente agente) -->
+<section class="sec wrap" id="seguridad">
+  <div class="sec-h"><span class="ix">01</span><h2>Seguridad y aislamiento entre clientes</h2></div>
+  <p class="sec-lede">El riesgo número uno al vender un SaaS: que un cliente vea o pise los datos de otro. <b style="color:var(--crit)">Aquí está el bloqueo mayor de toda la auditoría.</b></p>
+
+  <div class="finding f-crit">
+    <div class="f-top"><span class="badge b-crit">Crítico</span><span class="f-loc">app.html:9879, 9947 · ABRIR-LA-MESA.sql:180</span></div>
+    <div class="f-title">No hay aislamiento entre equipos: todos escriben a una sola fila <code>id=eq.1</code></div>
+    <p>Todo el estado de la firma (trades, balances, cuentas, journal, tesis) vive en <b>una única fila</b> de una única tabla. No existe columna de tenant/equipo. Si el Equipo B se registra en el mismo proyecto Supabase, <code>cloudPull()</code> les baja el estado del Equipo A y su primer <code>cloudPush()</code> lo sobrescribe. Vender a varios equipos con este diseño es una brecha de datos garantizada. La única forma de aislar hoy es un proyecto Supabase distinto por cliente, editando <code>CLOUD</code> a mano en cada copia — no es multi-tenancy real.</p>
+    <div class="fix"><b>Corrección — bloqueante de venta</b>Añadir <code>tenant_id</code> a <code>northpoint_estado</code>, dejar de usar <code>id=eq.1</code>, y reescribir la RLS para filtrar por el tenant del usuario (no por "está en la mesa"). Sin esto no se puede vender a más de un equipo con seguridad.</div>
+  </div>
+
+  <div class="finding f-crit">
+    <div class="f-top"><span class="badge b-crit">Crítico</span><span class="f-loc">app.html:9535–9558, 8149–8163 · ABRIR-LA-MESA.sql:58–79</span></div>
+    <div class="f-title">El "código de invitación" es decorativo — cualquier registro entra a la mesa</div>
+    <p>La función <code>unirse_a_mesa()</code> del servidor <b>nunca lee el parámetro código</b>: con solo tener sesión, inserta al usuario en <code>mesa_socios</code> y queda autorizado a la fila compartida. El signup crea cuenta con email + password de 6 caracteres y entra derecho. No hay que adivinar el código porque no hay código — cualquier desconocido con el link se auto-autoriza a los datos de todos.</p>
+    <div class="fix"><b>Corrección — bloqueante de venta</b>Que <code>unirse_a_mesa</code> valide un código/invitación real ligado a un tenant, o mover el alta a un proceso controlado.</div>
+  </div>
+
+  <div class="finding f-crit">
+    <div class="f-top"><span class="badge b-crit">Crítico</span><span class="f-loc">app.html:6980–6997, 7002–7009</span></div>
+    <div class="f-title">La llave de Anthropic (BYOK) es compartida por toda la mesa</div>
+    <p><code>S.llaveIA</code> se guarda en el estado y sube a la fila compartida; <code>llaveIAAuto()</code> la baja de otro. Como cualquiera que se registre queda en la mesa (crítico anterior), <b>cualquier cliente puede bajar tu llave de Anthropic y facturarte consumo</b>. Lo bueno: solo viaja a <code>api.anthropic.com</code>, no se loguea ni va a otros hosts.</p>
+    <div class="fix"><b>Corrección</b>Llave de IA por-tenant, fuera del blob legible por todos.</div>
+  </div>
+
+  <div class="finding f-med">
+    <div class="f-top"><span class="badge b-med">Medio</span><span class="f-loc">app.html:3505 · 80 usos de innerHTML</span></div>
+    <div class="f-title">Superficie XSS amplia, con escape razonable pero sin garantía total</div>
+    <p>Hay una función <code>esc()</code> correcta y aplicada en los puntos de texto libre (notas, tesis, nombres, caja). Pero con 80 <code>innerHTML</code> no hay garantía de que los 80 escapen. Un solo <code>${campoUsuario}</code> sin <code>esc()</code> daría XSS almacenado que, al sincronizarse por la fila compartida, se ejecutaría en el navegador de todos — un XSS "gusano" multi-usuario.</p>
+    <div class="fix"><b>Corrección</b>Auditar los 80 uno por uno, o migrar a <code>textContent</code>/plantillas con escape por defecto.</div>
+  </div>
+
+  <div class="finding f-ok">
+    <div class="f-top"><span class="badge b-ok">Bien hecho</span></div>
+    <div class="f-title">Higiene de tokens y datos por-usuario en el front</div>
+    <p>Los datos SÍ están scopeados por <code>uid</code> en la capa visual: un registrante nuevo arranca con copia en blanco y no ve los trades de André. El token de recovery se limpia de la barra. Reset y cambio de contraseña usan endpoints estándar de Supabase. El hash de contraseña no viaja en texto plano. (El problema es el backend compartido, no el front.)</p>
+  </div>
+</section>
+
+<!-- SECCIÓN 2: DINERO (verificado) -->
+<section class="sec wrap" id="dinero">
+  <div class="sec-h"><span class="ix">02</span><h2>Matemáticas del dinero</h2></div>
+  <p class="sec-lede">Que la terminal nunca mienta en un número. Los $11,477 cobrados y 745 fills reales dependen de esto. Base sólida — con un crítico y desfases del plan viejo.</p>
+
+  <div class="finding f-crit">
+    <div class="f-top"><span class="badge b-crit">Crítico</span><span class="f-loc">app.html:5520–5537, 5595</span></div>
+    <div class="f-title">"Reiniciar cuenta" en día verde infla el balance</div>
+    <p>Al reiniciar una cuenta, para que los trades de hoy no se re-sumen hace <code>a.start = a.size − hoyPnl</code>, pero <code>carreraCuenta()</code> aplica <code>Math.max(0, start − size)</code> y destruye el descuento (queda negativo → 0). Si reinicias en un día de +$1,000, la cuenta arranca con <code>balance = size + $1,000</code> y avance $1,000 en la barra — el doble conteo que el propio comentario dice haber arreglado. Mancha balance, avance y la pista de la firma.</p>
+    <div class="fix"><b>Corrección</b>Cambiar el cálculo de <code>previo</code> para respetar un <code>start</code> menor a <code>size</code> (drawdown) y mayor (día ya descontado) sin el <code>Math.max(0,…)</code> que aplasta el ajuste. Es el fix #1 antes del lunes.</div>
+  </div>
+
+  <div class="finding f-med">
+    <div class="f-top"><span class="badge b-med">Medio</span><span class="f-loc">app.html:5589–5606, 8408, 11610</span></div>
+    <div class="f-title">"La vara: $6,100" trae los números del plan Tradeify viejo</div>
+    <p>Conviven tres definiciones de meta: el contrato real firmado (eval 50k→53k, colchón 50k→52.5k = $5,500 al tramo de payouts) contra <code>CAMINO_TOTAL=6100</code> y <code>EVAL_$=3000, COLCHON_$=2100</code>. Durante el contrato la barra marcará FUNDED tarde y PAID ~$600 tarde. Además el corte del 50% en <code>3050</code> deja "en examen" una eval terminada exacto en +$3,000.</p>
+    <div class="fix"><b>Corrección</b>Alinear <code>CAMINO_TOTAL</code>, los cortes y el calendario de pagos a las cifras del <code>CONTRATO</code> que ya vive en línea 11801. Una sola fuente de verdad.</div>
+  </div>
+
+  <div class="finding f-med">
+    <div class="f-top"><span class="badge b-med">Medio</span><span class="f-loc">app.html:4740–4758, 4880</span></div>
+    <div class="f-title">"Qué cuenta rompió el límite" usa el P&L multiplicado por N cuentas</div>
+    <p><code>cuentaQueRompio()</code> suma <code>t.pnl</code> ya proyectado por <code>proy()</code> (multiplicado por las cuentas en vista). Con la copiadora en 5 cuentas, una pérdida de −$120 por cuenta se evalúa como −$600 contra el límite de $500 → alertas <code>FIRM_LIMIT</code>/<code>DAY_RISK</code> falsas y días "limpios" que dejan de serlo.</p>
+    <div class="fix"><b>Corrección</b>Usar <code>pnl1</code> (por cuenta) en la detección de violación, como ya hace <code>perdidaDia</code> en la misma zona.</div>
+  </div>
+
+  <div class="finding f-med">
+    <div class="f-top"><span class="badge b-med">Medio</span><span class="f-loc">app.html:5610, 11640</span></div>
+    <div class="f-title"><code>pasoBuffer</code> cableado a <code>false</code> — el calendario de payouts nunca lo detecta</div>
+    <p><code>carreraCuenta</code> siempre devuelve <code>pasoBuffer:false</code>, así que <code>plazoPagos</code> cuenta 0 cuentas que libraron el colchón desde datos reales, y las fechas de payout proyectadas salen más tarde de lo real. El reporte nunca muestra la etapa "tramo de pago".</p>
+    <div class="fix"><b>Corrección</b>Calcular <code>pasoBuffer</code> real desde el avance de la cuenta vs. el objetivo del colchón.</div>
+  </div>
+
+  <div class="finding f-low">
+    <div class="f-top"><span class="badge b-low">Menor</span><span class="f-loc">app.html:8060–8071</span></div>
+    <div class="f-title">Cobrar un payout no descuenta de la cuenta</div>
+    <p><code>cjSave</code> solo empuja a <code>S.caja</code>; <code>carreraCuenta</code> no sabe de cobros. Tras el primer payout real, el balance de FUTUROS sigue sumando todo el P&L histórico y la barra queda en "COBRÓ"/100% para siempre. Sobrestima la plataforma, que sí descuenta el retiro.</p>
+  </div>
+
+  <div class="finding f-ok">
+    <div class="f-top"><span class="badge b-ok">Bien hecho</span></div>
+    <div class="f-title">La base de dinero es sólida</div>
+    <p>"Cobrados" tiene una sola fuente de verdad (sin dobles conteos entre pantallas). Sin pérdida de centavos (redondeo solo al mostrar). Sumas por rango protegidas contra fechas futuras. Zona horaria del núcleo correcta: fecha del trade en hora de Morelia, sellado en NY.</p>
+  </div>
+</section>
+
+<!-- SECCIÓN 3: THE DESK / IA (verificado) -->
+<section class="sec wrap" id="desk">
+  <div class="sec-h"><span class="ix">03</span><h2>The Desk y los agentes de IA</h2></div>
+  <p class="sec-lede">Lectura de capturas de TradingView y análisis del día, BYOK contra Anthropic. El modelo <code>claude-opus-5</code> y los headers de navegador están correctos.</p>
+
+  <div class="finding f-crit">
+    <div class="f-top"><span class="badge b-crit">Crítico</span><span class="f-loc">app.html:7481–7572</span></div>
+    <div class="f-title">Pegar una captura registra el trade sin revisión, sin dedupe, ×toda la mesa</div>
+    <p>Un <code>Cmd+V</code> o "soltar" en cualquier pantalla llama <code>registraDeCaptura</code>, que guarda el trade con el P&L que leyó la IA, replicado a TODAS las cuentas prop en pie, y el journal lo proyecta <code>pnl × cuentas</code>. Con ~20 cuentas, una lectura de signo o monto equivocada se multiplica ×20. Un Cmd+V doble crea dos trades idénticos: no hay deduplicación. El comentario "NUNCA guarda solo" ya no es verdad para esta ruta.</p>
+    <div class="fix"><b>Corrección</b>Que el pegado abra el modal de confirmación (como el flujo manual) en vez de guardar directo, y añadir dedupe por huella (fecha·hora·símbolo·monto). Antes del lunes: pegar con intención y verificar el toast.</div>
+  </div>
+
+  <div class="finding f-med">
+    <div class="f-top"><span class="badge b-med">Medio</span><span class="f-loc">app.html:7102, 7421</span></div>
+    <div class="f-title"><code>max_tokens</code> bajos sin apagar el thinking de Opus 5</div>
+    <p>En <code>claude-opus-5</code> el thinking adaptativo viene encendido y consume <code>max_tokens</code>. Con 500 para la extracción y 1024 para el análisis hay riesgo real de respuestas vacías o truncadas justo en el flujo estrella. Nadie revisa <code>stop_reason === 'max_tokens'</code>. El fallback es benigno (la captura no se pierde, abre el modal), pero rompe el flujo.</p>
+    <div class="fix"><b>Corrección</b>Subir <code>max_tokens</code> (p.ej. 2–4k) o desactivar thinking para estas llamadas, y manejar <code>stop_reason</code>.</div>
+  </div>
+
+  <div class="finding f-low">
+    <div class="f-top"><span class="badge b-low">Menor</span><span class="f-loc">app.html:7092, 7415</span></div>
+    <div class="f-title">Fetch a la IA sin timeout / AbortController</div>
+    <p>Una conexión colgada deja "Analizando el día…" y el botón deshabilitado hasta que el navegador rinda el fetch (minutos). Offline franco sí falla rápido y muestra el error.</p>
+  </div>
+
+  <div class="finding f-low">
+    <div class="f-top"><span class="badge b-low">Menor</span><span class="f-loc">app.html:6981–6997</span></div>
+    <div class="f-title">La llave de Anthropic viaja en el estado sincronizado</div>
+    <p>Deliberado y documentado, pero cualquier socio con sesión gasta la cuenta de André. La rotación se auto-repara (merge por timestamp, <code>tiraLlaveIA</code> en 401). Para vender: cada cliente debe traer su propia llave, no compartir una.</p>
+  </div>
+
+  <div class="finding f-ok">
+    <div class="f-top"><span class="badge b-ok">Bien hecho</span></div>
+    <div class="f-title">Routing sólido y honestidad operativa</div>
+    <p>El router valida contra <code>TITLES</code> y cae a un default seguro; no encontré estados de crash. Los avisos de "la nube no está guardando" y "estás trabajando solo" en The Desk son exactamente la honestidad que un contrato de 30 días necesita. El manejo de 401 tira la llave y re-pide sin perder nada.</p>
+  </div>
+</section>
+
+<!-- SECCIÓN 4: DATOS Y SYNC (verificado) -->
+<section class="sec wrap" id="datos">
+  <div class="sec-h"><span class="ix">04</span><h2>Persistencia y sincronía</h2></div>
+  <p class="sec-lede">El peor sabotaje sería perder los meses de datos reales. Buenas noticias: el sync está bien diseñado contra eso.</p>
+
+  <div class="finding f-ok">
+    <div class="f-top"><span class="badge b-ok">Bien hecho</span><span class="f-loc">app.html:9698–9980</span></div>
+    <div class="f-title">Un dispositivo viejo NO puede pisar los 745 fills</div>
+    <p>Concurrencia optimista por número de revisión (<code>rev=eq.</code>) + fusión por unión (nunca reemplazo). Un navegador limpio al hacer login fusiona local vacío ∪ remoto completo = remoto completo. Borrados por lápidas con timestamp. Hay backup manual descargable (JSON) y export CSV. "Delete everything" ya no borra la mesa de los demás.</p>
+  </div>
+
+  <div class="finding f-med">
+    <div class="f-top"><span class="badge b-med">Medio</span><span class="f-loc">app.html:9321, 9591</span></div>
+    <div class="f-title">Sesión por link de recuperación se queda sin <code>refresh_token</code></div>
+    <p>Al entrar por link de reset, el token no se puede renovar; al expirar (~1h) todo sync da 401 y la sesión queda local-only el resto del día. No se pierden datos (el disco se escribe antes del push, hay pill rojo + banner), pero horas de trabajo pueden quedarse en un solo dispositivo hasta el siguiente login.</p>
+    <div class="fix"><b>Corrección</b>Tras fijar contraseña por link, forzar un re-login normal que sí obtenga refresh_token.</div>
+  </div>
+
+  <div class="finding f-low">
+    <div class="f-top"><span class="badge b-low">Menor</span><span class="f-loc">app.html:9137, 9736, 9019</span></div>
+    <div class="f-title">Restore pisa datos locales no subidos; dedupe de import puede tragar un fill</div>
+    <p>Restaurar un backup reemplaza lo local (con confirm) y un respaldo &gt;90 días puede resucitar trades borrados (lápidas expiradas). El dedupe de import descarta como "repetido" dos fills idénticos en el mismo minuto. Riesgos de resurrección/omisión, no de pérdida masiva.</p>
+  </div>
+</section>
+
+<!-- SECCIÓN 5: PREPARACIÓN COMERCIAL (pendiente agente) -->
+<section class="sec wrap" id="comercial">
+  <div class="sec-h"><span class="ix">05</span><h2>Preparación para la venta</h2></div>
+  <p class="sec-lede">Hoy la app está hecha a la medida del equipo de André. Para venderla tiene que servir a cualquier cliente, cobrar, y protegerte legalmente. <b>Veredicto del frente: ~20-25% lista como producto multi-cliente.</b></p>
+
+  <div class="finding f-high">
+    <div class="f-top"><span class="badge b-high">Bloquea venta</span><span class="f-loc">app.html:3693–3712, 3942, 4075–4120</span></div>
+    <div class="f-title">"The Desk" y "El plan" vienen poblados con André, Pablo, Gerardo — para todo el que entre</div>
+    <p><code>PERSONAJES</code> está sembrado con tres socios reales (con cargos, lemas, hasta color de traje) y tienen cuentas sembradas, así que <b>aparecen en el escritorio de cualquier comprador</b>. Y el "plan" es la escalera de vida personal de André: <code>PRECIOS = {g63:185000, sf90:550000, casa:12M, yate:40M}</code>, con gates hasta $150,000,000 y reparto "20% para Gerardo / Pablo / André". El cliente compra "su plataforma" y ve el sueño patrimonial de André.</p>
+    <div class="fix"><b>Corrección</b>Extraer un objeto <code>CONFIG</code>/"mesa": nombre de firma, miembros, tamaño de cuenta, meta, reparto — todo configurable, no constantes globales sembradas.</div>
+  </div>
+
+  <div class="finding f-high">
+    <div class="f-top"><span class="badge b-high">Bloquea venta</span><span class="f-loc">app.html (grep vacío) · index.html:2663–2676</span></div>
+    <div class="f-title">No existe forma de cobrar dentro del producto</div>
+    <p>Cero Stripe/checkout/suscripción/gating por plan en toda la app. La única intención de cobro vive en la landing para el <i>curso</i> ($1,490/mes · $11,900/año · $17,000 vida MXN) y <b>las URLs de Stripe están vacías</b> — el botón dice "ABRE EN UNOS DÍAS". André no puede cobrar por la app ni limitar acceso a quien no pagó.</p>
+    <div class="fix"><b>Corrección</b>Stripe funcional + control de acceso por plan. Y publicar términos, política de reembolso y aviso de riesgo — las pasarelas los exigen (tu propio <code>docs/AUDITORIA.md</code> ya lo dice).</div>
+  </div>
+
+  <div class="finding f-high">
+    <div class="f-top"><span class="badge b-high">Bloquea venta</span><span class="f-loc">app.html:5589, 3585–3590, 2884</span></div>
+    <div class="f-title">El "camino" está clavado en $6,100 sobre una cuenta 50k→53k</div>
+    <p>Textos visibles: "TODA cuenta corre el mismo camino de $6,100". Asume que cada comprador tradea el mismo tamaño de cuenta y la misma fondeadora que André. Un trader con cuenta de $100k o $25k ve números falsos. No es configurable.</p>
+  </div>
+
+  <div class="finding f-med">
+    <div class="f-top"><span class="badge b-med">Importante</span><span class="f-loc">app.html:3222–3234, 3273, 3452, 3596</span></div>
+    <div class="f-title">Spanglish severo — el idioma está a medias</div>
+    <p>Solo 43 atributos <code>data-i18n</code> para 12,176 líneas; el grueso del texto está hardcodeado. Toda la pantalla de registro no tiene un solo <code>data-i18n</code>. Peor: hay entradas del diccionario con los idiomas volteados (<code>es:'All accounts'</code>, <code>es:'Every condition present…'</code>). Un cliente hispanohablante ve inglés donde debería ver español. Se ve descuidado.</p>
+    <div class="fix"><b>Corrección</b>Completar i18n y arreglar las ~12 entradas con idiomas invertidos.</div>
+  </div>
+
+  <div class="finding f-med">
+    <div class="f-top"><span class="badge b-med">Importante</span><span class="f-loc">legal/terminos.html:39 · legal/riesgo.html:55</span></div>
+    <div class="f-title">Lo legal existe pero está escrito para la operación personal de André</div>
+    <p>Términos y privacidad nombran a "André Macouzet Ruiz, Morelia" como responsable. El aviso de no-asesoría existe (bien), pero <b>no hay Términos de Servicio del software</b> (licencia de uso, límite de responsabilidad, reembolsos, propiedad de datos del cliente). Vender la herramienta exige un contrato de <i>producto</i>, no solo el aviso de riesgo de <i>tu</i> trading.</p>
+  </div>
+
+  <div class="finding f-med">
+    <div class="f-top"><span class="badge b-med">Importante</span><span class="f-loc">app.html:8158, 8228, 8269, 8233</span></div>
+    <div class="f-title">El soporte y el alta pasan por André en persona</div>
+    <p>Varios textos mandan a "dile a André" / "pídele a André que te dé de alta". Hay atajo hardcodeado: escribir "amr" cuenta como el correo de André. No hay setup wizard para que un cliente cree <i>su</i> firma, tamaño de cuenta y equipo — el alta cae directo en la mesa de André poblada.</p>
+    <div class="fix"><b>Corrección</b>Wizard de primera vez: el cliente crea su firma, define su meta e invita a su equipo.</div>
+  </div>
+
+  <div class="finding f-ok">
+    <div class="f-top"><span class="badge b-ok">Bien hecho</span></div>
+    <div class="f-title">La llave de IA ya es BYOK por-usuario (en la UI)</div>
+    <p>Cada quien pega su llave y "se cobra en tu cuenta" — bien resuelto para reventa. (Solo falta que deje de compartirse por el backend, ver Seguridad, y que el texto no diga "la llave es de la mesa".)</p>
+  </div>
+</section>
+
+<!-- SECCIÓN 6: UX / RENDIMIENTO (pendiente agente) -->
+<section class="sec wrap" id="ux">
+  <div class="sec-h"><span class="ix">06</span><h2>UX, rendimiento y robustez</h2></div>
+  <p class="sec-lede">Lo que un cliente que paga notaría o sufriría. Buena noticia: el código es <b>más robusto de lo que sugiere su tamaño</b> — try/catch por todos lados y errores de red bien manejados. Los problemas son de peso, una red de seguridad que falta, y legibilidad en móvil.</p>
+
+  <div class="finding f-crit">
+    <div class="f-top"><span class="badge b-crit">Crítico</span><span class="f-loc">app.html:12104 · vistas 11204/7263/7866/6420/12066/11867</span></div>
+    <div class="f-title">No hay red de seguridad global — un dato malformado deja la pantalla en blanco muda</div>
+    <p>No existe <code>window.onerror</code> ni <code>unhandledrejection</code> en todo el archivo, y el despachador <code>render()</code> más las 6 funciones de vista no tienen try/catch. Un solo registro malformado (un respaldo viejo, una edición a mano, un sync raro) que reviente en una de estas rutas deja la vista <b>en blanco o congelada, sin una palabra al usuario</b>. El propio código lo confiesa: un comentario narra que la función <code>loc()</code> estuvo indefinida durante meses, tronaba la oficina "a media pintura" y jamás llegó a la consola.</p>
+    <div class="fix"><b>Corrección</b>Envolver <code>render()</code> y las 6 vistas en try/catch + un <code>window.onerror</code>/<code>unhandledrejection</code> que muestre un toast "algo falló, recarga" en vez de dejar la pantalla muda. Fix barato, alto impacto.</div>
+  </div>
+
+  <div class="finding f-med">
+    <div class="f-top"><span class="badge b-med">Medio</span><span class="f-loc">app.html:1295, 862–990 · 265 font-size &lt;12px</span></div>
+    <div class="f-title">Texto ilegible y botones chicos en teléfono</div>
+    <p>265 declaraciones de <code>font-size</code> bajo 12px, 18 de ellas entre 8 y 8.5px, varias en gris tenue. Para un producto de pago que se usa a pulso en la calle es demasiado chico. Los <code>.btn</code> miden ~34px de alto (bajo la guía de 44px de Apple/Google) y hay una sola regla <code>:active</code> en todo el CSS — casi nula retroalimentación al tocar.</p>
+    <div class="fix"><b>Corrección</b>Piso tipográfico de ~12px en móvil, agrandar botones a ≥44px de área de toque.</div>
+  </div>
+
+  <div class="finding f-med">
+    <div class="f-top"><span class="badge b-med">Medio</span><span class="f-loc">app.html:9254</span></div>
+    <div class="f-title">Tap en el fondo descarta el trade tecleado sin confirmar</div>
+    <p>El modal de registrar trade se cierra con tap en el backdrop, lo que <b>descarta el P&L tecleado sin aviso</b> ante un toque accidental fuera del cuadro. En móvil es un riesgo real de perder lo capturado. Además no hay una "X" arriba a la derecha.</p>
+    <div class="fix"><b>Corrección</b>Confirmar antes de descartar con datos tecleados, o no cerrar por backdrop en ese modal.</div>
+  </div>
+
+  <div class="finding f-med">
+    <div class="f-top"><span class="badge b-med">Medio</span><span class="f-loc">app.html: script único ~497 KB JS</span></div>
+    <div class="f-title">Arranque en móvil: 215 KB gzip + medio mega de JS a parsear</div>
+    <p>GitHub Pages sirve gzip (el cliente baja ~215 KB, no 685). Pero es un solo <code>&lt;script&gt;</code> que se parsea entero antes de ser interactivo (~4–8 s en 3G/4G débil), y <b>cambiar una coma re-descarga los 215 KB</b> (sin granularidad de caché). No es catastrófico, pero es la mayor palanca de rendimiento.</p>
+    <div class="fix"><b>Corrección</b>Minificar el JS bajaría los 215 KB notablemente sin partir el archivo. Nota positiva: cero imágenes embebidas.</div>
+  </div>
+
+  <div class="finding f-ok">
+    <div class="f-top"><span class="badge b-ok">Bien hecho</span></div>
+    <div class="f-title">Robustez defensiva y errores de red ejemplares</div>
+    <p><code>fmt$</code> devuelve "—" ante NaN, todos los <code>JSON.parse</code> en try/catch con fallback, la mayoría de <code>.find()</code> con guarda. La llave de IA y el sync muestran estado de carga, manejan 401/refusal/cuota llena con mensajes concretos. El pinch-zoom funciona (accesibilidad preservada), el modal tiene <code>role="dialog"</code> y hace scroll en pantallas chicas.</p>
+  </div>
+</section>
+
+<!-- EXPOSICIÓN DEL REPO (verificado por mí) -->
+<section class="sec wrap" id="repo">
+  <div class="sec-h"><span class="ix">07</span><h2>Exposición del repositorio público</h2></div>
+  <p class="sec-lede">GitHub Pages sirve TODO lo que esté en el repo. Revisé qué es visible para cualquiera.</p>
+
+  <div class="finding f-high">
+    <div class="f-top"><span class="badge b-high">Alto</span><span class="f-loc">docs/book/*.pdf · docs/AUDITORIA-*.md</span></div>
+    <div class="f-title">Books personales del equipo y tus auditorías internas están públicos</div>
+    <p>Cualquiera con la URL puede descargar <code>docs/book/NORTHPOINT-Andre.pdf</code> (y los de Pablo, Mateo, Candidato) y leer <code>docs/AUDITORIA.md</code>, <code>AUDITORIA-GABINETE.md</code>, etc. — que documentan tus debilidades. Un comprador o competidor los encuentra fácil.</p>
+    <div class="fix"><b>Corrección</b>Mover <code>docs/book/</code> y los <code>AUDITORIA-*.md</code> fuera del repo público (o a <code>.gitignore</code> + borrar del historial). Dejar solo lo que quieras que el mundo vea.</div>
+  </div>
+
+  <div class="finding f-ok">
+    <div class="f-top"><span class="badge b-ok">Bien hecho</span></div>
+    <div class="f-title">Las credenciales con contraseñas SÍ están protegidas</div>
+    <p>La carpeta <code>credenciales/</code> tiene <code>.gitignore</code> con <code>*</code> — ningún PDF de contraseñas ni las llaves de Anthropic se commitearon jamás al repo (verificado en todo el historial de git).</p>
+  </div>
+</section>
+
+<!-- PLAN -->
+<section class="sec wrap" id="plan">
+  <div class="sec-h"><span class="ix">08</span><h2>Plan de corrección priorizado</h2></div>
+  <p class="sec-lede">Orden de ataque: primero lo que te miente durante el contrato del lunes, después lo que bloquea la venta, al final el pulido.</p>
+  <table class="plan-tbl">
+    <thead><tr><th>Prioridad</th><th>Qué</th><th>Por qué</th></tr></thead>
+    <tbody>
+      <tr><td><span class="pill p1">Antes del lunes</span></td><td>Fix del reinicio en día verde (dinero), del pegado que guarda sin revisar (Desk), y <code>window.onerror</code> + try/catch en las vistas (UX)</td><td>Los que pueden mentirte en números reales o dejarte la pantalla en blanco durante el contrato de 30 días.</td></tr>
+      <tr><td><span class="pill p1">Antes del lunes</span></td><td>Reactivar tu alerta de ICE VADER (estaba "Stopped" en MNQU2026) y quitar BTC/1m como default en TradingView</td><td>Sin la señal no hay trade, y hoy operaste BTC a las 9 PM fuera de ventana: −$1,500 con etiquetas OUTSIDE WINDOW / NO SETUP.</td></tr>
+      <tr><td><span class="pill p2">Bloquea la venta</span></td><td>Multi-tenancy real: <code>tenant_id</code> en la tabla, dejar <code>id=eq.1</code>, RLS por tenant, cerrar el auto-alta y separar la llave de IA por cliente</td><td>Sin esto, vender a un segundo equipo es una brecha de datos garantizada. Es el trabajo #1 para vender.</td></tr>
+      <tr><td><span class="pill p2">Bloquea la venta</span></td><td>Extraer un <code>CONFIG</code>/"mesa" configurable (marca, miembros, tamaño de cuenta, meta, reparto) + setup wizard + Stripe + términos de software</td><td>Despersonalizar del equipo de André y poder cobrar. Convierte "la mesa de André" en un producto.</td></tr>
+      <tr><td><span class="pill p2">Bloquea la venta</span></td><td>Sacar del repo público <code>docs/book/*.pdf</code>, <code>docs/AUDITORIA-*.md</code>, <code>ABRIR-LA-MESA.sql</code> y backups <code>app-*.html</code> (y borrarlos del historial de git)</td><td>Hoy exponen correos de socios, el ref de Supabase, tus debilidades y la superficie de ataque. No entregues eso al comprador.</td></tr>
+      <tr><td><span class="pill p3">Pulido</span></td><td>Vara $6,100→contrato, pnl1 en violaciones, pasoBuffer real, max_tokens IA, timeouts, i18n completo, tipografía ≥12px y botones ≥44px, barrido de los 80 innerHTML</td><td>Precisión, idioma y robustez móvil; no bloquean pero un cliente que paga los nota.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<footer class="footer wrap">
+  <span>NORTHPOINT ✦ AUDITORÍA 0→100</span>
+  <span>28 AGO 2026 · CONFIDENCIAL</span>
+</footer>
+
+<script src="js/reporte.js"></script>
+</body>
+</html>

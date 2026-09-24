@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NorthPoint Terminal — La mesa entera en una pantalla</title>
+<meta name="description" content="El software con el que se mide una mesa de futuros: registras el trade, y sabes al instante cuánto le queda a la cuenta antes de romperse. 13 pantallas, 2 indicadores y Kuro.">>
+<meta property="og:title" content="NorthPoint Terminal">
+<meta property="og:description" content="Registras el trade. El Terminal te dice cuánto le queda a la cuenta antes de romperse.">
+<meta property="og:image" content="https://northpointcapital.io/assets/images/og.png">
+<meta property="og:url" content="https://northpointcapital.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icons/favicon.svg">
+<link rel="stylesheet" href="css/northpoint-app.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <!-- EL LOGO SIEMPRE VUELVE A LA MARCA (André, 3-sep-2026): esta página es
+         UN producto de NorthPoint, no NorthPoint. Picar el logo tiene que
+         llevar a la portada de la casa, no al principio de este scroll. -->
+    <a class="nav-logo" href="index.html"><b>NORTHPOINT</b><i>TERMINAL</i></a>
+    <div class="nav-links">
+      <a href="#top">El Terminal</a>
+      <a href="#mesa">La mesa</a>
+      <a href="#ejecuciones">Ejecuciones</a>
+      <a href="#kuro">Kuro</a>
+      <a href="#precio">Precio</a>
+    </div>
+    <div class="nav-acc">
+      <button class="tema" id="btTema" aria-label="Cambiar tema">◐</button>
+      <a class="btn pri" href="#precio">Ver el precio</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════ 1 · HERO ══════════
+     Una promesa concreta, UN botón, y el producto visible antes del
+     primer scroll. El renglón de abajo del botón es la única prueba
+     que hace falta aquí: cuánto se cobró y sobre cuántos fills. -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <!-- EL PRODUCTO SE PRESENTA POR SU NOMBRE (André, 3-sep-2026).
+         Antes el titular era una frase —«Registras el trade»— y quien caía
+         aquí tenía que deducir qué estaba viendo. Un producto se presenta:
+         primero cómo se llama, luego qué hace. -->
+    <p class="eyebrow rv">v1 · EN LÍNEA · SIN INSTALAR NADA</p>
+    <h1 class="app-tit rv">NORTHPOINT<br><span>APP</span></h1>
+    <p class="hero-sub rv">La mesa entera en una pantalla. Registras el trade y el resto
+      se calcula solo: cuánto le falta a la cuenta para pasar, cuánto le queda antes de
+      romperse, y si hoy te saltaste tu propia regla.</p>
+    <div class="hero-cta rv">
+      <a class="btn pri" href="#precio">Ver el precio →</a>
+      <a class="btn" href="#kuro">Ver qué trae</a>
+    </div>
+    <p class="hero-fe rv">HECHO SOBRE <b>745 FILLS MEDIDOS</b> Y <b>$11,477 COBRADOS</b>
+      DE CUENTAS DE FONDEO &nbsp;·&nbsp; ABRIL – JUNIO 2026</p>
+
+    <!-- ══ LA VITRINA ══ (André, 3-sep-2026)
+         Aquí vivían capturas .jpg: se veían borrosas al estirarlas, salían
+         negras sobre el tema claro y no se podían tocar. Ahora es el Terminal
+         DE VERDAD corriendo dentro de la página, con tres meses de historial
+         de muestra. Se navega, se pica, se cambia de pantalla.
+         El iframe usa su propia llave de localStorage y con la nube apagada
+         (ver VITRINA en app.html): jamás toca los datos de nadie. -->
+    <div class="mac rv" id="mac">
+      <div class="mac-tapa">
+        <div class="mac-cam"></div>
+        <div class="mac-vp">
+          <iframe id="vitrina" title="NorthPoint Terminal, en vivo"
+            src="app.html?vitrina=1" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="mac-bisagra"></div>
+      <div class="mac-base"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ LA MESA, EN VIVO ══════════
+     La oficina que sigue al mercado por el mundo estaba enterrada dentro de
+     The Desk y es de lo más vistoso que tiene la app. Aquí se sirve sola —el
+     mismo canvas, con su reloj de verdad— en un modo del Terminal hecho para
+     esto (?escena=1). No es un video: es la escena corriendo. -->
+<section id="mesa">
+  <div class="wrap">
+    <p class="eyebrow rv">LA MESA, EN VIVO</p>
+    <h2 class="tit rv">El mercado da la vuelta al mundo.<br>La mesa lo sigue.</h2>
+    <p class="lede rv">Tokio abre, Londres releva, Nueva York remata. El Terminal sabe en
+      qué sesión estás y la oficina se muda con ella — con el reloj de allá, no el tuyo.</p>
+    <div class="vivo vivo-of rv">
+      <iframe title="La oficina de NorthPoint, en vivo" loading="lazy"
+        src="app.html?vitrina=1&amp;escena=1" scrolling="no"></iframe>
+      <a class="vivo-tapa" href="#precio" aria-label="Ver los precios"><span>Ver los precios →</span></a>
+    </div>
+    <p class="vivo-pie rv">ES LA ESCENA DE LA APP CORRIENDO, NO UN VIDEO. LA OFICINA
+      CAMBIA SOLA CON LA SESIÓN QUE ESTÉ ABIERTA.</p>
+  </div>
+</section>
+
+<!-- ══════════ 6 · LAS EJECUCIONES ══════════
+     Diez capturas de trades reales. Es la prueba que se puede mirar
+     sin creerle a nadie. -->
+<section id="ejecuciones">
+  <div class="wrap">
+    <p class="eyebrow rv">LAS EJECUCIONES</p>
+    <h2 class="tit rv">Los fills que están detrás<br>de esos números.</h2>
+  </div>
+  <div class="cinta rv" aria-label="Ejecuciones reales">
+    <div class="pista" id="pista"></div>
+  </div>
+  <div class="wrap">
+    <p class="shot-pie rv">CAPTURAS DE EJECUCIONES REALES · MNQ · RANGO DE APERTURA DE NUEVA
+      YORK. PÍCALAS PARA VERLAS EN GRANDE.</p>
+  </div>
+</section>
+
+<!-- ══════════ KURO ══════════
+     Va aquí, justo antes del precio, y no antes: primero se cree en el
+     software y en los fills, y sólo entonces «además trae esto» suma en vez
+     de distraer. Un juego arriba de la prueba habría hecho ver todo lo
+     demás menos serio. -->
+<section class="kuro" id="kuro">
+  <div class="wrap">
+    <p class="eyebrow rv">KURO · VIENE INCLUIDO</p>
+    <h2 class="tit rv">La disciplina<br>no se aprende leyendo.</h2>
+    <p class="lede rv">El problema de operar solo es que nadie ve si te saltaste tu
+      regla. Kuro convierte eso en un juego con tus trades DE VERDAD: nueve maestros
+      los juzgan contra su objetivo, su drawdown y su tope de entradas. Si te pasas,
+      pierdes el duelo aunque hayas ganado dinero.</p>
+
+    <div class="vivo vivo-ku rv">
+      <iframe title="La entrada de Kuro" loading="lazy" src="kuro.html" scrolling="no"></iframe>
+      <a class="vivo-tapa" href="#precio" aria-label="Ver los precios"><span>Ver los precios →</span></a>
+    </div>
+
+    <!-- ══ LA LEYENDA ══ Es de donde sale todo lo demás: los nueve aceros, el
+         mapa y hasta por qué la espada negra no se gana, se le quita a él. -->
+    <div class="ku-leyenda rv">
+      <div><span class="ku-kanji">黒</span></div>
+      <div>
+        <h3>Mil años en la cima.<br>Nadie lo ha bajado.</h3>
+        <p>Hace mil años, nueve maestros forjaron nueve espadas. En cada una encerraron
+          una lección que no se puede enseñar hablando &mdash; sólo se gana peleando.
+          Luego las repartieron por nueve mundos y se fueron.</p>
+        <p>Kuro escogió este camino. Peleó con los ocho maestros y les ganó a los ocho.
+          No se quedó con sus espadas: se las devolvió, para que hubiera con quién
+          medirse. Desde ese día nadie lo ha bajado, y su espada negra no la ha soltado.
+          Lleva mil años esperando al siguiente.</p>
+      </div>
+    </div>
+
+    <!-- ══ LOS DOS MODOS ══ -->
+    <div class="ku-modos rv">
+      <div class="ku-modo">
+        <span class="kj">九</span>
+        <b>CAMPAÑA</b>
+        <p>Los retos que te va a pedir una cuenta de verdad.</p>
+        <ul>
+          <li>Pasar un examen de $50,000</li>
+          <li>Armar el colchón</li>
+          <li>Conseguir tu payout</li>
+          <li>Quitarle la negra a Kuro</li>
+        </ul>
+      </div>
+      <div class="ku-modo">
+        <span class="kj">決</span>
+        <b>1 V 1</b>
+        <p>Juega con los de la mesa, a la misma hora.</p>
+        <ul>
+          <li>En Asia, en Londres o en Nueva York</li>
+          <li>De treinta minutos a cuatro horas</li>
+          <li>Diez grados de dan y ranking por elo</li>
+          <li>Gana el mayor profit</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ══ LOS NUEVE ACEROS ══ -->
+    <p class="eyebrow rv" style="margin-top:clamp(34px,4vw,52px)">NUEVE ACEROS ·
+      OCHO SE ARRANCAN, EL NOVENO SE LE QUITA A ÉL</p>
+    <div class="ku-aceros rv">
+      <div class="ac" style="--ka:#E8E8E8"><span class="kj">白</span><b>SHIRO</b></div>
+      <div class="ac" style="--ka:#D9B33C"><span class="kj">黄</span><b>KIIRO</b></div>
+      <div class="ac" style="--ka:#D98A3C"><span class="kj">橙</span><b>DAIDAI</b></div>
+      <div class="ac" style="--ka:#57C79B"><span class="kj">緑</span><b>MIDORI</b></div>
+      <div class="ac" style="--ka:#5E8BD6"><span class="kj">青</span><b>AO</b></div>
+      <div class="ac" style="--ka:#A87BE0"><span class="kj">紫</span><b>MURASAKI</b></div>
+      <div class="ac" style="--ka:#9A7A5C"><span class="kj">茶</span><b>CHA</b></div>
+      <div class="ac" style="--ka:#D9736A"><span class="kj">赤</span><b>AKA</b></div>
+      <div class="ac negra" style="--ka:#8A8A8A"><span class="kj">黒</span><b>KURO</b></div>
+    </div>
+
+
+
+    <div class="hero-cta rv">
+      <a class="btn" href="kuro.html">Ver Kuro completo →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 7 · PRECIO ══════════
+     Hasta aquí ya se vio el producto, la prueba y el flujo. Ahora sí
+     el precio, y con la devolución de frente. -->
+<section class="precio" id="precio">
+  <div class="wrap">
+    <p class="eyebrow rv">EL PRECIO</p>
+    <h2 class="tit rv">Un solo producto.<br>Tres formas de pagarlo.</h2>
+    <p class="lede rv">No hay plan recortado: todo entra en los tres. Lo único que cambia
+      es cada cuánto pagas.</p>
+
+    <div class="pl-g rv">
+      <div class="pl">
+        <h4>Mensual</h4>
+        <div class="pl-n">$1,490<i>MXN / MES · SE CANCELA CUANDO QUIERAS</i></div>
+        <ul>
+          <li>Las 13 pantallas completas</li>
+          <li>NP A+ y NP ESTRUCTURA</li>
+          <li>Kuro: duelos y campaña</li>
+          <li>Actualizaciones mientras estés dentro</li>
+        </ul>
+        <a class="btn" href="terminal.html#precio">Empezar mensual</a>
+      </div>
+      <div class="pl dest">
+        <i class="pl-tag">EL QUE CONVIENE</i>
+        <h4>Anual</h4>
+        <div class="pl-n">$11,900<i>MXN AL AÑO · SALE EN $992 AL MES</i></div>
+        <ul>
+          <li>Todo lo del mensual</li>
+          <li>Ahorras $5,980 contra pagar mes a mes</li>
+          <li>Precio congelado los 12 meses</li>
+          <li>Todo lo que salga este año, incluido</li>
+          <li>Uno a uno con la mesa</li>
+        </ul>
+        <a class="btn pri" href="terminal.html#precio">Tomar el anual</a>
+      </div>
+      <div class="pl">
+        <h4>De por vida</h4>
+        <div class="pl-n">$17,000<i>MXN UNA SOLA VEZ · SIN RENOVACIÓN</i></div>
+        <ul>
+          <li>Todo, para siempre</li>
+          <li>Lo que se agregue después, también</li>
+          <li>Se paga solo en menos de año y medio</li>
+          <li>Uno a uno con la mesa</li>
+          <li>Nunca vuelves a ver un cobro</li>
+        </ul>
+        <a class="btn" href="terminal.html#precio">Comprarlo de por vida</a>
+      </div>
+    </div>
+
+    <div class="fund rv">
+      <div>
+        <b>FUNDADORES · LOS PRIMEROS 50</b>
+        <p>El precio de hoy, congelado mientras sigas suscrito. No es una cuenta regresiva
+          falsa: son cincuenta lugares y cuando se acaben, se acaban.</p>
+      </div>
+      <a class="btn" href="terminal.html#precio">Apartar el lugar →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 8 · PREGUNTAS ══════════
+     Las que quedan en la cabeza con el dedo en el botón. Decirlas de
+     frente cierra más que esconderlas. -->
+<section id="preguntas">
+  <div class="wrap">
+    <p class="eyebrow rv">ANTES DE DECIDIR</p>
+    <h2 class="tit rv">Lo que hay que decir de frente.</h2>
+    <div class="dos rv">
+      <div>
+        <h3>Lo que NO es</h3>
+        <ul class="noes">
+          <li>No es asesoría de inversión ni un servicio de señales: nunca te decimos qué operar.</li>
+          <li>No tocamos tus fondos. Nunca.</li>
+          <li>No garantiza que ganes ni que pases una evaluación de fondeo.</li>
+          <li>No es rápido. Si buscas eso, esto no es para ti.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Preguntas</h3>
+        <div class="faq">
+          <details>
+            <summary>¿Y si no es para mí?</summary>
+            <p>7 días para pedir tu dinero de vuelta, sin explicar por qué, mientras no
+              hayas visto más del 30%.</p>
+          </details>
+          <details>
+            <summary>¿Necesito capital para empezar?</summary>
+            <p>No. Todo se practica en simulado, y así debe empezarse. La cuota de la
+              fondeadora, cuando la quieras, es aparte y no va a NorthPoint.</p>
+          </details>
+          <details>
+            <summary>¿Sirve si tengo trabajo?</summary>
+            <p>Sí. El Terminal no te exige horario: registras el trade cuando puedas y
+              el resto lo calcula solo. Lo único con hora es el mercado.</p>
+          </details>
+          <details>
+            <summary>¿En qué se guarda mi información?</summary>
+            <p>El Terminal corre en tu navegador y guarda tu historial ahí. Los CSV de la
+              fondeadora se leen en tu máquina: no se suben a ningún lado.</p>
+          </details>
+          <details>
+            <summary>¿Cuándo entro después de pagar?</summary>
+            <p>El acceso se manda a mano, al correo con el que compraste. No es automático
+              a propósito: preferimos hablar con quien entra a la mesa.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 9 · CIERRE ══════════ -->
+<section class="cierre">
+  <div class="wrap">
+    <p class="eyebrow rv">EMPIEZA HOY</p>
+    <h2 class="rv">Operar sin medirte<br>es la parte cara.</h2>
+    <div class="hero-cta rv">
+      <a class="btn pri" href="terminal.html#precio">Tomar el Terminal →</a>
+      <a class="btn" href="#preguntas">Antes de decidir</a>
+    </div>
+    <p class="cierre-n rv">DESDE $992 MXN AL MES · 7 DÍAS DE DEVOLUCIÓN</p>
+  </div>
+</section>
+
+<!-- ══════════ LAS OTRAS DOS CASAS ══════════
+     (André, 3-sep-2026) La portada anterior abría con un índice de dos:
+     Academia /0.1 y Family Office /0.2. Al volverla la página del Terminal
+     esas dos se quedaron sin puerta, y son negocios, no notas al pie.
+     Vuelven — pero hasta abajo, después del cierre: quien llegó por el
+     software ya decidió, y quien venía por las otras dos las encuentra sin
+     que le disputen el scroll a lo que se está vendiendo. -->
+<section id="casas">
+  <div class="wrap">
+    <p class="eyebrow rv">NORTHPOINT NO ES SÓLO EL TERMINAL</p>
+    <div class="casas-g rv">
+      <a class="casa-c" href="family-office.html">
+        <span class="fr">/0.2</span>
+        <b>Family Office</b>
+        <em>La oficina privada que gestiona, protege y hace crecer el patrimonio
+          de una familia — inversiones, inmuebles, negocio, impuestos y
+          herencia, con un solo equipo.</em>
+        <i>Ver el family office →</i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="pie-g">
+      <div>
+        <a class="nav-logo" href="index.html" style="margin-bottom:12px"><b>NORTHPOINT</b><i>TERMINAL</i></a>
+        <p style="font-size:13px;line-height:1.65;color:var(--dim);max-width:38ch">
+          El software con el que se mide una mesa de futuros. Hecho en Morelia, México.</p>
+      </div>
+      <div>
+        <h5>El producto</h5>
+        <a href="#top">Probar el Terminal</a>
+        <a href="#precio">El precio</a>
+        <a href="#kuro">Kuro</a>
+      </div>
+      <div>
+        <h5>NorthPoint</h5>
+        <a href="#casas">Family office</a>
+        <a href="kuro.html">Kuro</a>
+        <a href="index.html">Portada NorthPoint</a>
+      </div>
+    </div>
+    <p class="pie-legal">
+      NORTHPOINT NO ES ASESOR EN INVERSIONES NI ADMINISTRA RECURSOS DE TERCEROS. NADA EN
+      ESTA PÁGINA ES UNA RECOMENDACIÓN DE COMPRA O VENTA. OPERAR FUTUROS APALANCADOS PUEDE
+      HACERTE PERDER MÁS DE LO QUE PUSISTE; LOS RESULTADOS PASADOS NO PREDICEN LOS FUTUROS.
+      LAS CIFRAS DE ESTA PÁGINA SON DEL FUNDADOR EN EL PERIODO INDICADO Y NO SON UNA PROMESA
+      DE RESULTADOS PARA NADIE MÁS.<br>
+      © 2026 NORTHPOINT · MORELIA, MICHOACÁN, MÉXICO
+    </p>
+  </div>
+</footer>
+
+<script src="js/northpoint-app.js"></script>
+</body>
+</html>

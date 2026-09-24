@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NORTHPOINT — Journal · Contrato 30 Días</title>
+<meta name="description" content="Journal del contrato de 30 días. 31 agosto — 30 septiembre. EVAL · BUFFER · DAILY PAYOUTS.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/journal.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <div class="brand">NORTHPOINT <span class="star">✦</span></div>
+    <div class="nav-tag">JOURNAL · CONTRATO 30 DÍAS</div>
+  </div>
+</nav>
+
+<header class="hero wrap">
+  <h1>Contrato<br><span class="thin">30 Días</span></h1>
+  <div class="hero-sub">
+    <span class="lockin">LOCK IN</span>
+    <span>31 AGOSTO — 30 SEP</span>
+    <span>EVAL · BUFFER · DAILY PAYOUTS</span>
+  </div>
+</header>
+
+<section class="wrap">
+  <div class="stats">
+    <div class="stat" id="statFase">
+      <div class="k">Fase actual</div>
+      <div class="v" id="faseV">—</div>
+      <div class="s" id="faseS"></div>
+    </div>
+    <div class="stat">
+      <div class="k">Balance de fase</div>
+      <div class="v" id="balV">$50,000</div>
+      <div class="s" id="balS">target —</div>
+    </div>
+    <div class="stat">
+      <div class="k">Payouts cobrados</div>
+      <div class="v pos" id="payV">$0</div>
+      <div class="s">desde 21 sep · daily payouts</div>
+    </div>
+    <div class="stat">
+      <div class="k">Días operados</div>
+      <div class="v" id="diasV">0 / 22</div>
+      <div class="s" id="rachaS">racha lock in: 0</div>
+    </div>
+  </div>
+
+  <div class="progress">
+    <div class="row"><span id="progLabel">Progreso de fase</span><span id="progPct">0%</span></div>
+    <div class="bar"><i id="progBar" style="background:var(--eval)"></i></div>
+    <div class="ladder" id="progLadder"></div>
+  </div>
+</section>
+
+<section class="sec wrap" id="fases">
+  <h2><span class="star">✦</span> Las 3 fases</h2>
+  <div class="sub">El contrato completo. Nada más, nada menos.</div>
+  <div class="fases">
+    <div class="fase f1">
+      <div class="tag">Fase 1 · 31 ago — 4 sep</div>
+      <h3>Eval 50K</h3>
+      <div class="fechas">53K TARGET · 3 días</div>
+      <ul>
+        <li><span>Contratos</span><b>4 mini</b></li>
+        <li><span>Trades por día</span><b>1 trade</b></li>
+        <li><span>Ratio</span><b>1:2</b></li>
+        <li><span>Riesgo</span><b style="color:var(--buff)">$(500)</b></li>
+        <li><span>Objetivo diario</span><b style="color:var(--pay)">+1,000</b></li>
+      </ul>
+      <div class="nota">Escalera: 50K → 51K → 52K → 53K</div>
+    </div>
+    <div class="fase f2">
+      <div class="tag">Fase 2 · 7 sep — 18 sep</div>
+      <h3>Buffer</h3>
+      <div class="fechas">REDPILL · 52.5K TARGET · 5 días</div>
+      <ul>
+        <li><span>Contratos</span><b>2 mini</b></li>
+        <li><span>Trades por día</span><b>1 trade</b></li>
+        <li><span>Ratio</span><b>1:1</b></li>
+        <li><span>Riesgo</span><b style="color:var(--buff)">$(500)</b></li>
+        <li><span>Objetivo diario</span><b style="color:var(--pay)">+500</b></li>
+      </ul>
+      <div class="nota">Escalera: 50.5K → 51K → 51.5K → 52K → 52.5K</div>
+    </div>
+    <div class="fase f3">
+      <div class="tag">Fase 3 · desde 21 sep</div>
+      <h3>Daily Payouts</h3>
+      <div class="fechas">PRIMER PAYOUT · 21 SEP</div>
+      <ul>
+        <li><span>Contratos</span><b>1 mini</b></li>
+        <li><span>Trades por día</span><b>1 trade</b></li>
+        <li><span>Riesgo</span><b style="color:var(--buff)">$250</b></li>
+        <li><span>Objetivo diario</span><b style="color:var(--pay)">+250 a +1,000</b></li>
+        <li><span>Payout</span><b>diario</b></li>
+      </ul>
+      <div class="nota">Cada día verde se cobra. Daily payouts.</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap" id="strat">
+  <h2><span class="star">✦</span> Strat Daily</h2>
+  <div class="sub">La misma rutina, los 30 días.</div>
+  <div class="strat">
+    <div class="strat-card">
+      <h3>Rutina diaria</h3>
+      <div class="tl">
+        <div class="tl-row"><div class="tl-h">7:00 AM</div><div class="tl-t">Premarket</div></div>
+        <div class="tl-row"><div class="tl-h">7:30 AM</div><div class="tl-t">Opening NY</div></div>
+        <div class="tl-row"><div class="tl-h">7:45 AM</div><div class="tl-t">ORB + Entry</div></div>
+        <div class="tl-row"><div class="tl-h">9:00 AM</div><div class="tl-t">Cierre</div></div>
+      </div>
+    </div>
+    <div class="strat-card">
+      <h3>A+ Setups · Análisis técnico</h3>
+      <ul class="setup-list">
+        <li>ORB + Killzones + EMAs 14 / 50 + SMC</li>
+        <li>ENTRY al break</li>
+        <li>Un solo trade. A+ o nada.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap" id="cal">
+  <h2><span class="star">✦</span> Calendario</h2>
+  <div class="sub">Toca un día para registrar tu journal.</div>
+  <div class="cal">
+    <div class="cal-head">
+      <div class="m">31 agosto — 30 septiembre 2026</div>
+      <div class="leyenda">
+        <span><i class="dot e"></i> EVAL</span>
+        <span><i class="dot b"></i> BUFF</span>
+        <span><i class="dot p"></i> PAYOUT</span>
+      </div>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+  </div>
+</section>
+
+<!-- ===== PANEL DE DÍA ===== -->
+<div class="overlay" id="overlay">
+  <div class="panel" id="panel">
+    <button class="close" id="closeBtn">✕</button>
+    <div class="p-tag" id="pTag">FASE</div>
+    <h3 id="pTitle">Día</h3>
+    <div class="p-rules" id="pRules"></div>
+
+    <div class="p-sec">
+      <h4>Rutina · Strat Daily</h4>
+      <div class="checks" id="rutinaChecks"></div>
+    </div>
+
+    <div class="p-sec">
+      <h4>Setup A+ · antes de entrar</h4>
+      <div class="checks" id="setupChecks"></div>
+    </div>
+
+    <div class="p-sec">
+      <h4>El trade del día</h4>
+      <div class="form">
+        <div class="field">
+          <label>Dirección</label>
+          <div class="seg" id="dirSeg">
+            <button data-dir="long">LONG</button>
+            <button data-dir="short">SHORT</button>
+            <button data-dir="none">NO TRADE</button>
+          </div>
+        </div>
+        <div class="field">
+          <label id="ctsLabel">Contratos</label>
+          <input type="number" id="cts" min="0" step="1" placeholder="0">
+        </div>
+        <div class="field">
+          <label>Resultado del día ($)</label>
+          <input type="number" id="resultado" step="0.01" placeholder="+1000 / -500">
+        </div>
+        <div class="field">
+          <label>¿Respetó el riesgo?</label>
+          <select id="riesgoOk">
+            <option value="">—</option>
+            <option value="si">Sí — dentro del máximo</option>
+            <option value="no">No — se pasó</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label>Notas del día</label>
+          <textarea id="notas" placeholder="Qué vi, qué ejecuté, qué aprendí."></textarea>
+        </div>
+      </div>
+      <div class="warn" id="warnBox"></div>
+    </div>
+
+    <div class="p-actions">
+      <button class="btn ghost" id="clearBtn">Limpiar día</button>
+      <button class="btn save" id="saveBtn">Sellar el día ✦</button>
+    </div>
+    <div class="saved-flash" id="savedFlash">DÍA SELLADO ✦</div>
+  </div>
+</div>
+
+<footer class="footer wrap">
+  <span>NORTHPOINT ✦ JOURNAL</span>
+  <span>31 AGO — 30 SEP · LOCK IN</span>
+</footer>
+
+<script src="js/journal.js"></script>
+</body>
+</html>

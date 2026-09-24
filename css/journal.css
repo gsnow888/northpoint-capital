@@ -1,0 +1,375 @@
+/* ============================================================
+   journal.html — hoja de estilos
+   Generada a partir del CSS inline original de la página. El contenido de
+   los bloques <style> se conserva íntegro y en el mismo orden.
+   ============================================================ */
+
+/* ── Fuentes locales (antes se cargaban de https://fonts.googleapis.com/css2) ── */
+/* cyrillic-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* vietnamese */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-300-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* vietnamese */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* vietnamese */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-500-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-600-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-600-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* vietnamese */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-600-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-600-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/ibm-plex-mono/ibm-plex-mono-600-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* greek-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}
+/* greek */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek.woff2) format("woff2");unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF}
+/* vietnamese */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* greek-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}
+/* greek */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek.woff2) format("woff2");unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF}
+/* vietnamese */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* greek-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}
+/* greek */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek.woff2) format("woff2");unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF}
+/* vietnamese */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* greek-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}
+/* greek */
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek.woff2) format("woff2");unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF}
+/* vietnamese */
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* greek-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}
+/* greek */
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek.woff2) format("woff2");unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF}
+/* vietnamese */
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* cyrillic-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:900;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}
+/* cyrillic */
+@font-face{font-family:"Inter";font-style:normal;font-weight:900;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-cyrillic.woff2) format("woff2");unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+/* greek-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:900;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF}
+/* greek */
+@font-face{font-family:"Inter";font-style:normal;font-weight:900;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-greek.woff2) format("woff2");unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF}
+/* vietnamese */
+@font-face{font-family:"Inter";font-style:normal;font-weight:900;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB}
+/* latin-ext */
+@font-face{font-family:"Inter";font-style:normal;font-weight:900;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+/* latin */
+@font-face{font-family:"Inter";font-style:normal;font-weight:900;font-display:swap;src:url(../assets/fonts/inter/inter-400-normal-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+
+
+:root{
+  --bg:#080808;
+  --bg-2:#0E0E0E;
+  --glass:rgba(255,255,255,.05);
+  --glass-2:rgba(255,255,255,.09);
+  --line:rgba(255,255,255,.13);
+  --line-soft:rgba(255,255,255,.06);
+  --txt:#F4F4F4;
+  --dim:#A6A6A6;
+  --faint:#7C7C7C;
+  --eval:#3E8BFF;
+  --eval-soft:rgba(62,139,255,.14);
+  --buff:#FF3B30;
+  --buff-soft:rgba(255,59,48,.13);
+  --pay:#30D158;
+  --pay-soft:rgba(48,209,88,.13);
+  --sans:'Inter',-apple-system,system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:var(--bg);scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--txt);
+  font-family:var(--sans);
+  font-size:15px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  min-height:100vh;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* ===== NAV ===== */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(8,8,8,.78);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line-soft);
+}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.22em;font-size:13px}
+.star{display:inline-block;transform:translateY(-1px)}
+.nav-tag{font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.14em}
+
+/* ===== HERO ===== */
+.hero{padding-top:44px;padding-bottom:8px;text-align:left}
+.hero h1{
+  font-weight:900;font-size:clamp(38px,7vw,74px);
+  letter-spacing:-.01em;line-height:.95;text-transform:uppercase;
+}
+.hero h1 .thin{color:var(--faint)}
+.hero-sub{
+  margin-top:14px;font-family:var(--mono);font-size:12px;letter-spacing:.28em;
+  color:var(--dim);text-transform:uppercase;display:flex;gap:18px;flex-wrap:wrap;align-items:center;
+}
+.lockin{color:var(--txt);border:1px solid var(--line);padding:4px 12px;border-radius:999px}
+
+/* ===== STATS ===== */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:30px 0 8px}
+.stat{
+  background:var(--glass);border:1px solid var(--line-soft);border-radius:14px;
+  padding:16px 18px;
+}
+.stat .k{font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--faint);text-transform:uppercase}
+.stat .v{font-family:var(--mono);font-size:24px;font-weight:600;margin-top:6px}
+.stat .s{font-family:var(--mono);font-size:11px;color:var(--dim);margin-top:2px}
+.v.pos{color:var(--pay)} .v.neg{color:var(--buff)}
+.stat.ph-eval{border-color:rgba(62,139,255,.4)}
+.stat.ph-buff{border-color:rgba(255,59,48,.4)}
+.stat.ph-pay{border-color:rgba(48,209,88,.4)}
+
+/* progress bar */
+.progress{margin:22px 0 0;background:var(--glass);border:1px solid var(--line-soft);border-radius:14px;padding:18px}
+.progress .row{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--dim);text-transform:uppercase}
+.bar{height:10px;border-radius:999px;background:rgba(255,255,255,.07);margin-top:10px;overflow:hidden;position:relative}
+.bar>i{display:block;height:100%;border-radius:999px;width:0%;transition:width .6s ease}
+.ladder{display:flex;justify-content:space-between;margin-top:8px;font-family:var(--mono);font-size:10px;color:var(--faint)}
+
+/* ===== SECTION TITLES ===== */
+.sec{padding-top:46px}
+.sec h2{
+  font-weight:900;font-size:clamp(22px,3.4vw,32px);text-transform:uppercase;letter-spacing:.02em;
+  display:flex;align-items:center;gap:12px;
+}
+.sec h2 .star{font-size:.8em}
+.sec .sub{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--faint);text-transform:uppercase;margin-top:4px}
+
+/* ===== FASES ===== */
+.fases{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+.fase{border-radius:16px;padding:20px;border:1px solid var(--line-soft);background:var(--glass);position:relative;overflow:hidden}
+.fase::before{content:"";position:absolute;inset:0 0 auto 0;height:3px}
+.fase.f1::before{background:var(--eval)} .fase.f2::before{background:var(--buff)} .fase.f3::before{background:var(--pay)}
+.fase .tag{font-family:var(--mono);font-size:10px;letter-spacing:.24em;text-transform:uppercase}
+.f1 .tag{color:var(--eval)} .f2 .tag{color:var(--buff)} .f3 .tag{color:var(--pay)}
+.fase h3{font-weight:900;font-size:26px;text-transform:uppercase;letter-spacing:.01em;margin-top:4px}
+.fase .fechas{font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.12em;margin-top:2px}
+.fase ul{list-style:none;margin-top:14px;display:grid;gap:7px}
+.fase li{
+  display:flex;justify-content:space-between;gap:10px;
+  font-family:var(--mono);font-size:12.5px;
+  border-bottom:1px dashed var(--line-soft);padding-bottom:7px;
+}
+.fase li span:first-child{color:var(--dim)}
+.fase li b{font-weight:600}
+.fase .nota{margin-top:12px;font-family:var(--mono);font-size:10.5px;color:var(--faint);letter-spacing:.06em}
+
+/* ===== STRAT DAILY ===== */
+.strat{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+.strat-card{background:var(--glass);border:1px solid var(--line-soft);border-radius:16px;padding:20px}
+.strat-card h3{font-weight:900;text-transform:uppercase;font-size:18px;letter-spacing:.03em}
+.tl{margin-top:14px;display:grid;gap:0}
+.tl-row{display:grid;grid-template-columns:92px 1fr;gap:14px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line-soft)}
+.tl-row:last-child{border-bottom:none}
+.tl-h{font-family:var(--mono);font-weight:600;font-size:15px}
+.tl-t{font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:14px}
+.setup-list{margin-top:14px;list-style:none;display:grid;gap:10px}
+.setup-list li{display:flex;gap:10px;align-items:baseline;font-family:var(--mono);font-size:13px}
+.setup-list li::before{content:"✦";font-size:10px;color:var(--dim)}
+
+/* ===== CALENDARIO ===== */
+.cal{margin-top:20px;background:var(--bg-2);border:1px solid var(--line-soft);border-radius:18px;padding:18px}
+.cal-head{display:flex;justify-content:space-between;align-items:center;padding:0 4px 12px}
+.cal-head .m{font-weight:800;font-size:16px;text-transform:capitalize}
+.leyenda{display:flex;gap:14px;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+.leyenda span{display:flex;align-items:center;gap:6px;color:var(--dim)}
+.dot{width:8px;height:8px;border-radius:2px;display:inline-block}
+.dot.e{background:var(--eval)} .dot.b{background:var(--buff)} .dot.p{background:var(--pay)}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.cal-dow{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--faint);text-transform:uppercase;text-align:center;padding:6px 0}
+.day{
+  min-height:78px;border-radius:10px;border:1px solid var(--line-soft);
+  background:rgba(255,255,255,.02);padding:8px;position:relative;
+  font-family:var(--mono);cursor:default;transition:transform .12s ease,border-color .12s ease;
+}
+.day .n{font-size:12px;color:var(--faint)}
+.day.off{opacity:.28}
+.day.trading{cursor:pointer}
+.day.trading:hover{transform:translateY(-2px);border-color:var(--line)}
+.day .ph{
+  margin-top:8px;font-weight:700;font-size:11px;letter-spacing:.14em;
+  display:inline-block;padding:2px 7px;border-radius:5px;
+}
+.day.d-eval .ph{color:var(--eval);background:var(--eval-soft)}
+.day.d-buff .ph{color:var(--buff);background:var(--buff-soft)}
+.day.d-pay .ph{color:var(--pay);background:var(--pay-soft)}
+.day.d-eval.trading{border-color:rgba(62,139,255,.35)}
+.day.d-buff.trading{border-color:rgba(255,59,48,.3)}
+.day.d-pay.trading{border-color:rgba(48,209,88,.32)}
+.day .res{position:absolute;top:8px;right:8px;font-size:13px;font-weight:600}
+.res.win{color:var(--pay)} .res.loss{color:var(--buff)} .res.flat{color:var(--faint)}
+.day.today{outline:2px solid rgba(255,255,255,.35);outline-offset:1px}
+.day .amt{position:absolute;bottom:7px;left:8px;right:8px;font-size:10.5px;color:var(--dim)}
+
+/* ===== PANEL DÍA (modal) ===== */
+.overlay{
+  position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.72);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:4vh 16px 6vh;
+}
+.overlay.open{display:flex}
+.panel{
+  width:100%;max-width:680px;background:var(--bg-2);
+  border:1px solid var(--line);border-radius:20px;padding:26px;position:relative;
+}
+.panel::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;border-radius:20px 20px 0 0}
+.panel.d-eval::before{background:var(--eval)}
+.panel.d-buff::before{background:var(--buff)}
+.panel.d-pay::before{background:var(--pay)}
+.panel .close{
+  position:absolute;top:16px;right:16px;background:var(--glass-2);border:1px solid var(--line-soft);
+  color:var(--txt);width:34px;height:34px;border-radius:10px;cursor:pointer;font-size:15px;
+}
+.panel .p-tag{font-family:var(--mono);font-size:10px;letter-spacing:.24em;text-transform:uppercase}
+.panel.d-eval .p-tag{color:var(--eval)} .panel.d-buff .p-tag{color:var(--buff)} .panel.d-pay .p-tag{color:var(--pay)}
+.panel h3{font-weight:900;font-size:26px;text-transform:uppercase;margin-top:2px}
+.panel .p-rules{
+  margin-top:10px;display:flex;flex-wrap:wrap;gap:8px;
+}
+.chip{font-family:var(--mono);font-size:11px;letter-spacing:.08em;border:1px solid var(--line-soft);background:var(--glass);padding:4px 10px;border-radius:999px;color:var(--dim)}
+.chip b{color:var(--txt);font-weight:600}
+.p-sec{margin-top:22px}
+.p-sec h4{font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--faint);margin-bottom:10px}
+.checks{display:grid;gap:8px}
+.chk{
+  display:flex;align-items:center;gap:12px;background:var(--glass);border:1px solid var(--line-soft);
+  border-radius:10px;padding:10px 14px;cursor:pointer;user-select:none;
+}
+.chk input{accent-color:#fff;width:16px;height:16px;cursor:pointer}
+.chk .t{font-family:var(--mono);font-size:13px}
+.chk .hora{margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--faint)}
+.chk.done .t{color:var(--dim);text-decoration:line-through}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{display:grid;gap:6px}
+.field label{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
+.field input,.field select,.field textarea{
+  background:var(--glass);border:1px solid var(--line-soft);border-radius:10px;
+  color:var(--txt);font-family:var(--mono);font-size:14px;padding:10px 12px;outline:none;width:100%;
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--line)}
+.field.full{grid-column:1/-1}
+.field textarea{resize:vertical;min-height:70px}
+.seg{display:flex;gap:8px}
+.seg button{
+  flex:1;background:var(--glass);border:1px solid var(--line-soft);border-radius:10px;
+  color:var(--dim);font-family:var(--mono);font-size:13px;padding:10px;cursor:pointer;font-weight:600;
+}
+.seg button.on-long{background:var(--pay-soft);border-color:var(--pay);color:var(--pay)}
+.seg button.on-short{background:var(--buff-soft);border-color:var(--buff);color:var(--buff)}
+.seg button.on-none{background:var(--glass-2);border-color:var(--line);color:var(--txt)}
+.warn{
+  margin-top:12px;font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;
+  color:var(--buff);background:var(--buff-soft);border:1px solid rgba(255,59,48,.3);
+  border-radius:10px;padding:9px 12px;display:none;
+}
+.warn.show{display:block}
+.p-actions{margin-top:24px;display:flex;gap:10px}
+.btn{
+  flex:1;border-radius:12px;padding:13px;font-family:var(--mono);font-weight:600;font-size:13px;
+  letter-spacing:.12em;text-transform:uppercase;cursor:pointer;border:1px solid var(--line);
+}
+.btn.save{background:#fff;color:#000;border-color:#fff}
+.btn.ghost{background:transparent;color:var(--dim)}
+.saved-flash{font-family:var(--mono);font-size:11px;color:var(--pay);letter-spacing:.14em;margin-top:10px;text-align:center;opacity:0;transition:opacity .3s}
+.saved-flash.show{opacity:1}
+
+/* ===== FOOTER ===== */
+.footer{margin-top:60px;padding:26px 0 40px;border-top:1px solid var(--line-soft);
+  font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:.18em;text-transform:uppercase;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+@media(max-width:860px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .fases{grid-template-columns:1fr}
+  .strat{grid-template-columns:1fr}
+  .form{grid-template-columns:1fr}
+  .cal{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .cal-grid{min-width:620px}
+  .day{min-height:64px;padding:6px}
+  .day .amt{display:none}
+  .cal-head{flex-direction:column;gap:8px;align-items:flex-start}
+}
