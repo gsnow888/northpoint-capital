@@ -75,355 +75,355 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30562.25,
-   "cambio": -222.5,
-   "pct": -0.72
+   "precio": 30740.25,
+   "cambio": -44.5,
+   "pct": -0.14
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7738.75,
-   "cambio": -94.75,
-   "pct": -1.21
+   "precio": 7767.5,
+   "cambio": -66.0,
+   "pct": -0.84
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4287.3,
-   "cambio": -96.6,
-   "pct": -2.2
+   "precio": 4304.5,
+   "cambio": -79.4,
+   "pct": -1.81
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 95.73,
-   "cambio": -0.05,
-   "pct": -0.05
+   "precio": 94.93,
+   "cambio": -0.85,
+   "pct": -0.89
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2838.5,
-   "cambio": -58.9,
-   "pct": -2.03
+   "precio": 2855.3,
+   "cambio": -42.1,
+   "pct": -1.45
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51574.0,
-   "cambio": -901.0,
-   "pct": -1.72
+   "precio": 51708.0,
+   "cambio": -767.0,
+   "pct": -1.46
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 83735.0,
-   "cambio": -2855.0,
-   "pct": -3.3
+   "precio": 84325.0,
+   "cambio": -2265.0,
+   "pct": -2.62
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 158.26,
-   "pct": -0.6,
+   "precio": 159.05,
+   "pct": -0.11,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 703.38,
-   "pct": 0.34,
+   "precio": 707.45,
+   "pct": 0.92,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 376.03,
-   "pct": 0.18,
+   "precio": 378.17,
+   "pct": 0.75,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 85.19,
-   "pct": -1.52,
+   "precio": 85.52,
+   "pct": -1.14,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 734.99,
-   "pct": 2.52,
+   "precio": 740.98,
+   "pct": 3.36,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 763.26,
-   "pct": 0.09,
+   "precio": 767.68,
+   "pct": 0.67,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 70.61,
-   "pct": -1.21,
+   "precio": 70.52,
+   "pct": -1.33,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 33.19,
-   "pct": -2.07,
+   "precio": 33.13,
+   "pct": -2.23,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 91.22,
-   "pct": -2.76,
+   "precio": 91.41,
+   "pct": -2.56,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 81.44,
-   "pct": -0.08,
+   "precio": 81.64,
+   "pct": 0.17,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 389.13,
-   "pct": -2.32,
+   "precio": 391.45,
+   "pct": -1.73,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 47.47,
-   "pct": 9.63,
+   "precio": 47.88,
+   "pct": 10.58,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 335.71,
-   "pct": -0.38,
+   "precio": 337.76,
+   "pct": 0.23,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 492.98,
-   "pct": -0.96,
+   "precio": 497.59,
+   "pct": -0.03,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 221.63,
-   "pct": 1.04,
+   "precio": 223.89,
+   "pct": 2.07,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 337.46,
-   "pct": -2.84,
+   "precio": 341.72,
+   "pct": -1.62,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 245.9,
-   "pct": -2.11,
+   "precio": 249.59,
+   "pct": -0.63,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 764.27,
-   "pct": 12.01,
+   "precio": 778.43,
+   "pct": 14.09,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 376.34,
-   "pct": 2.77,
+   "precio": 379.17,
+   "pct": 3.54,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 507.27,
-   "pct": -0.38,
+   "precio": 507.16,
+   "pct": -0.4,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 901.8,
-   "pct": 0.88,
+   "precio": 899.11,
+   "pct": 0.58,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 335.53,
-   "pct": -3.94,
+   "precio": 337.5,
+   "pct": -3.38,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 364.84,
-   "pct": -1.38,
+   "precio": 366.8,
+   "pct": -0.85,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 371.07,
-   "pct": -1.1,
+   "precio": 374.33,
+   "pct": -0.23,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "Nearly half of adults under 30 live with their parents. The financial fallout could last for decades.",
-   "url": "https://www.marketwatch.com/story/nearly-half-of-adults-under-30-live-with-their-parents-the-financial-fallout-could-last-for-decades-5d9f059d?mod=mw_rss_topstories",
+   "titulo": "The case against buying and holding stocks for the long term",
+   "url": "https://www.marketwatch.com/story/the-case-against-buying-and-holding-stocks-for-the-long-term-a7fd79bb?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 24 Sep 2026 15:08:00 GMT"
-  },
-  {
-   "titulo": "White House still blocks some reporters despite judge's order lifting Trump ban",
-   "url": "https://www.cnbc.com/2026/09/24/judge-lifts-trumps-white-house-ban-on-cnn-ms-now-and-politico.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 24 Sep 2026 15:06:59 GMT"
-  },
-  {
-   "titulo": "Hyundai expected to outsell Ford in third quarter as Detroit automakers lack hybrids",
-   "url": "https://www.cnbc.com/2026/09/24/hyundai-set-to-outsell-ford-in-q3-as-detroit-automakers-lack-hybrids.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 24 Sep 2026 15:03:59 GMT"
-  },
-  {
-   "titulo": "MGM Resorts shares sink 9% after Barry Diller's People Inc. rescinds takeover offer",
-   "url": "https://www.cnbc.com/2026/09/24/barry-diller-people-mgm-resorts.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 24 Sep 2026 14:59:42 GMT"
-  },
-  {
-   "titulo": "3 things Micron investors need to watch as the stakes get higher",
-   "url": "https://www.marketwatch.com/story/3-things-micron-investors-need-to-watch-as-the-stakes-get-higher-e53fde7e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 24 Sep 2026 14:57:00 GMT"
-  },
-  {
-   "titulo": "Oracle sends 'force majeure' notice about data center project — stock sinks 5%",
-   "url": "https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 24 Sep 2026 14:50:44 GMT"
-  },
-  {
-   "titulo": "Millions will lose Medicaid once new work rules kick in. These groups will be hit the hardest.",
-   "url": "https://www.marketwatch.com/story/millions-will-lose-medicaid-once-new-work-rules-kick-in-these-groups-will-be-hit-the-hardest-507694d3?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 24 Sep 2026 14:50:00 GMT"
-  },
-  {
-   "titulo": "Meta wants to put its Muse AI assistant on your face — but will consumers buy in?",
-   "url": "https://www.marketwatch.com/story/meta-gets-price-target-boost-as-jpmorgan-says-muse-agent-has-potential-to-become-the-top-ai-application-since-chatgpt-280ca648?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 24 Sep 2026 14:44:00 GMT"
-  },
-  {
-   "titulo": "Inflation could cost Republicans the Senate — this chart shows how",
-   "url": "https://www.marketwatch.com/story/inflation-could-cost-republicans-the-senate-this-chart-shows-how-e94a49da?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 24 Sep 2026 14:40:00 GMT"
-  },
-  {
-   "titulo": "‘We made a bad, bad decision’: I learned the hard way how to manage my aging father’s money",
-   "url": "https://www.marketwatch.com/story/we-made-a-bad-bad-decision-i-learned-the-hard-way-how-to-manage-my-aging-fathers-money-c87cabed?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 24 Sep 2026 14:30:00 GMT"
-  },
-  {
-   "titulo": "Trump, Xi to talk Taiwan, AI, trade and Iran as DC summit kicks off",
-   "url": "https://www.cnbc.com/2026/09/24/trump-xi-meeting-china-washington.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 24 Sep 2026 14:28:52 GMT"
-  },
-  {
-   "titulo": "Everyone knows Social Security and Medicare are on the ropes. Here’s what to do instead of panicking.",
-   "url": "https://www.marketwatch.com/story/everyone-knows-social-security-and-medicare-are-on-the-ropes-heres-what-to-do-instead-of-panicking-717ff133?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 24 Sep 2026 14:28:00 GMT"
-  },
-  {
-   "titulo": "Philadelphia Fed's Anna Paulson says 'modest' rate moves likely ahead to tame inflation",
-   "url": "https://www.cnbc.com/2026/09/24/philadelphia-feds-anna-paulson-says-modest-rate-moves-likely-ahead-to-tame-inflation.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 24 Sep 2026 14:26:05 GMT"
-  },
-  {
-   "titulo": "How is Gen Z investing their money? Over a dozen share their strategies for today’s market.",
-   "url": "https://www.marketwatch.com/story/how-is-gen-z-investing-their-money-over-a-dozen-share-their-strategies-for-todays-market-c8a418da?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 24 Sep 2026 14:00:00 GMT"
-  },
-  {
-   "titulo": "Do this one thing to help prevent your parents from being scammed",
-   "url": "https://www.marketwatch.com/story/do-this-one-thing-to-help-prevent-your-parents-from-being-scammed-27a0ca4b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 24 Sep 2026 14:00:00 GMT"
-  },
-  {
-   "titulo": "Social Security checks are projected to be cut by $540 a month in just six years",
-   "url": "https://www.marketwatch.com/story/social-security-checks-are-projected-to-be-cut-by-540-a-month-in-just-six-years-a8842912?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 24 Sep 2026 13:56:00 GMT"
-  },
-  {
-   "titulo": "Darden Restaurants stock falls as Olive Garden reports slower growth",
-   "url": "https://www.cnbc.com/2026/09/24/darden-restaurants-dri-q1-2027-earnings.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 24 Sep 2026 13:54:21 GMT"
-  },
-  {
-   "titulo": "Meta's standoff with Amazon over Muse could be a sign of things to come",
-   "url": "https://www.cnbc.com/2026/09/23/metas-standoff-with-amazon-over-muse-comes-ahead-of-meta-connect.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 24 Sep 2026 13:49:39 GMT"
+   "fecha": "Thu, 24 Sep 2026 19:06:00 GMT"
   },
   {
    "titulo": "30-year Treasury yield hits highest level since 2004 as bond market rout continues",
    "url": "https://www.cnbc.com/2026/09/24/us-treasury-yields-bonds-fed-inflation.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 24 Sep 2026 13:44:23 GMT"
+   "fecha": "Thu, 24 Sep 2026 19:01:56 GMT"
   },
   {
-   "titulo": "Mark Zuckerberg debuts $1,299 Meta VR Glasses and Muse Charm pendant as part of AI agent push",
-   "url": "https://www.cnbc.com/2026/09/23/mark-zuckerberg-1299-meta-vr-glasses-ai-agent.html",
+   "titulo": "Senate narrowly votes down resolution calling for end to Iran war",
+   "url": "https://www.cnbc.com/2026/09/24/iran-war-powers-senate-vote-fuel.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 24 Sep 2026 13:36:53 GMT"
+   "fecha": "Thu, 24 Sep 2026 18:53:07 GMT"
   },
   {
-   "titulo": "Starbucks to shutter about 250 stores in latest round of cafe closures",
-   "url": "https://www.cnbc.com/2026/09/24/starbucks-to-close-250-stores.html",
+   "titulo": "Analysis: Higher Treasury yields deliver a reality check on a hot, inflation-prone economy",
+   "url": "https://www.cnbc.com/2026/09/24/treasury-yields-warsh-bessent-fed-national-debt-analysis.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 24 Sep 2026 12:40:27 GMT"
+   "fecha": "Thu, 24 Sep 2026 18:38:44 GMT"
   },
   {
-   "titulo": "Lowe's is launching a drone delivery service in partnership with DoorDash, Alphabet",
-   "url": "https://www.cnbc.com/2026/09/24/lowes-drones-delivery-doordash-alphabet.html",
+   "titulo": "Surging Treasury yields pose a brand new problem for Kevin Warsh and the Fed",
+   "url": "https://www.cnbc.com/2026/09/24/surging-treasury-yields-are-posing-a-brand-new-problem-for-kevin-warsh-and-the-fed.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 24 Sep 2026 12:00:01 GMT"
+   "fecha": "Thu, 24 Sep 2026 18:35:11 GMT"
+  },
+  {
+   "titulo": "I spend my time and money caring for my aging mother — yet she gave my brother $100,000. Should I pull back?",
+   "url": "https://www.marketwatch.com/story/i-spend-my-time-and-money-caring-for-my-aging-mother-yet-she-gave-my-brother-100-000-should-i-pull-back-7e4a3185?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 24 Sep 2026 18:31:00 GMT"
+  },
+  {
+   "titulo": "8% mortgage rates are ‘not an impossibility’ as the 30-year fixed rate surges",
+   "url": "https://www.marketwatch.com/story/8-mortgage-rates-are-not-an-impossibility-as-the-30-year-fixed-rate-surges-aa202464?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 24 Sep 2026 18:29:00 GMT"
+  },
+  {
+   "titulo": "It’s no secret that Social Security and Medicare are on the ropes. Here’s what to do instead of panicking.",
+   "url": "https://www.marketwatch.com/story/everyone-knows-social-security-and-medicare-are-on-the-ropes-heres-what-to-do-instead-of-panicking-717ff133?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 24 Sep 2026 18:24:00 GMT"
+  },
+  {
+   "titulo": "Bond liquidation wrecks small caps. Here's how bad some traders see it getting",
+   "url": "https://www.cnbc.com/2026/09/24/bond-liquidation-wrecks-small-caps-heres-how-bad-some-traders-see-it-getting.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 24 Sep 2026 18:22:51 GMT"
+  },
+  {
+   "titulo": "FAFSA opens early: Why families should apply for college aid now",
+   "url": "https://www.cnbc.com/2026/09/24/fafsa-opens-early-college-aid.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 24 Sep 2026 18:19:40 GMT"
+  },
+  {
+   "titulo": "Social Security stopped our checks due to a hacked bank account. We’re relying on our church for help. What can we do?",
+   "url": "https://www.marketwatch.com/story/social-security-stopped-our-checks-due-to-a-hacked-bank-account-were-relying-on-our-church-for-help-what-can-we-do-a9464325?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 24 Sep 2026 18:17:00 GMT"
+  },
+  {
+   "titulo": "Here are 3 alternatives for investors looking to dodge the bond-market beatdown",
+   "url": "https://www.marketwatch.com/story/here-are-3-alternatives-for-investors-looking-to-dodge-the-bond-market-beatdown-ec8fda43?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 24 Sep 2026 18:07:00 GMT"
+  },
+  {
+   "titulo": "Pete Hegseth reports at least $3.1 million in cash, investments and Bitcoin",
+   "url": "https://www.cnbc.com/2026/09/24/pete-hegseth-financial-disclosure-cash-investments-bitcoin.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 24 Sep 2026 18:05:37 GMT"
+  },
+  {
+   "titulo": "A new bill in Congress would lower the retirement age to 60. See who would qualify.",
+   "url": "https://www.marketwatch.com/story/a-new-bill-in-congress-would-lower-the-retirement-age-to-60-see-who-would-qualify-10563052?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 24 Sep 2026 17:47:00 GMT"
+  },
+  {
+   "titulo": "Rising Treasury yields could push car loan rates higher, experts say. What buyers need to know",
+   "url": "https://www.cnbc.com/2026/09/24/car-loan-rates-may-rise-as-treasury-yields-climb.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 24 Sep 2026 17:45:53 GMT"
+  },
+  {
+   "titulo": "New York sues Polymarket U.S., two months after filing lawsuit against Kalshi",
+   "url": "https://www.cnbc.com/2026/09/24/new-york-sues-polymarket-us-two-months-after-filing-suit-against-kalshi-.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 24 Sep 2026 17:44:32 GMT"
+  },
+  {
+   "titulo": "‘We made a bad, bad decision’: I learned the hard way how to manage my aging father’s money",
+   "url": "https://www.marketwatch.com/story/we-made-a-bad-bad-decision-i-learned-the-hard-way-how-to-manage-my-aging-fathers-money-c87cabed?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 24 Sep 2026 17:15:00 GMT"
+  },
+  {
+   "titulo": "Philadelphia Fed's Anna Paulson says 'modest' rate moves likely ahead to tame inflation",
+   "url": "https://www.cnbc.com/2026/09/24/philadelphia-feds-anna-paulson-says-modest-rate-moves-likely-ahead-to-tame-inflation.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 24 Sep 2026 17:12:04 GMT"
+  },
+  {
+   "titulo": "Student loan borrowers sue Trump administration over forgiven debts on credit reports",
+   "url": "https://www.cnbc.com/2026/09/24/student-loan-borrowers-sue-credit-reports-forgiven-loans.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 24 Sep 2026 16:49:40 GMT"
+  },
+  {
+   "titulo": "Oracle sends 'force majeure' notice about data center project — stock sinks 4%",
+   "url": "https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 24 Sep 2026 16:48:38 GMT"
+  },
+  {
+   "titulo": "My husband and I are in our 50s and have no kids. We have $2 million in IRAs and 401(k)s. Do we really need a will?",
+   "url": "https://www.marketwatch.com/story/my-husband-and-i-are-in-our-50s-and-have-no-kids-we-have-2-million-do-we-need-a-will-62fb422f?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 24 Sep 2026 16:45:00 GMT"
+  },
+  {
+   "titulo": "Oracle’s stock is falling as investors fear a data-center setback",
+   "url": "https://www.marketwatch.com/story/oracles-stock-is-falling-as-investors-fear-a-data-center-setback-d8105ef9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 24 Sep 2026 16:42:00 GMT"
   }
  ],
  "videos": [
@@ -537,7 +537,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-09-24T15:14:34Z",
+ "ts": "2026-09-24T19:17:07Z",
  "fallas": [
   "videos",
   "directos"
