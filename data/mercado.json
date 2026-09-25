@@ -75,224 +75,308 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30890.0,
-   "cambio": 105.25,
-   "pct": 0.34
+   "precio": 30921.75,
+   "cambio": 137.0,
+   "pct": 0.45
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7803.75,
-   "cambio": -29.75,
-   "pct": -0.38
+   "precio": 7805.75,
+   "cambio": -27.75,
+   "pct": -0.35
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4328.1,
-   "cambio": -55.8,
-   "pct": -1.27
+   "precio": 4320.5,
+   "cambio": -63.4,
+   "pct": -1.45
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 92.34,
-   "cambio": -3.44,
-   "pct": -3.59
+   "precio": 92.44,
+   "cambio": -3.34,
+   "pct": -3.49
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2864.3,
-   "cambio": -33.1,
-   "pct": -1.14
+   "precio": 2859.9,
+   "cambio": -37.5,
+   "pct": -1.29
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52171.0,
-   "cambio": -304.0,
-   "pct": -0.58
+   "precio": 52180.0,
+   "cambio": -295.0,
+   "pct": -0.56
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84405.0,
-   "cambio": -2185.0,
-   "pct": -2.52
+   "precio": 84300.0,
+   "cambio": -2290.0,
+   "pct": -2.64
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 160.1,
-   "pct": 0.98,
+   "precio": 160.03,
+   "pct": 0.93,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 711.24,
-   "pct": 1.35,
+   "precio": 710.79,
+   "pct": 1.28,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 380.11,
-   "pct": 1.25,
+   "precio": 379.77,
+   "pct": 1.16,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 86.38,
-   "pct": 0.58,
+   "precio": 86.35,
+   "pct": 0.55,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 744.98,
-   "pct": 3.26,
+   "precio": 744.5,
+   "pct": 3.19,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 771.83,
-   "pct": 1.33,
+   "precio": 771.35,
+   "pct": 1.27,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 70.64,
-   "pct": -0.78,
+   "precio": 70.63,
+   "pct": -0.8,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 33.24,
-   "pct": -1.31,
+   "precio": 33.21,
+   "pct": -1.4,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 91.11,
-   "pct": -1.93,
+   "precio": 90.99,
+   "pct": -2.07,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
    "precio": 82.55,
-   "pct": 1.08,
+   "pct": 1.09,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 393.37,
-   "pct": -1.94,
+   "precio": 393.41,
+   "pct": -1.93,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 47.56,
-   "pct": 3.35,
+   "precio": 47.57,
+   "pct": 3.37,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 341.13,
-   "pct": 1.49,
+   "precio": 341.07,
+   "pct": 1.47,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 516.18,
-   "pct": 4.54,
+   "precio": 516.17,
+   "pct": 4.53,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 225.36,
-   "pct": 1.39,
+   "precio": 225.07,
+   "pct": 1.26,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 343.81,
-   "pct": -1.64,
+   "precio": 343.92,
+   "pct": -1.61,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 250.61,
-   "pct": -1.22,
+   "precio": 249.67,
+   "pct": -1.59,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 751.13,
-   "pct": 12.82,
+   "precio": 751.66,
+   "pct": 12.9,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 372.22,
-   "pct": 2.18,
+   "precio": 372.11,
+   "pct": 2.15,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 505.43,
-   "pct": -0.85,
+   "precio": 505.48,
+   "pct": -0.84,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 922.86,
-   "pct": 3.08,
+   "precio": 922.76,
+   "pct": 3.07,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 342.52,
-   "pct": -2.04,
+   "precio": 343.06,
+   "pct": -1.89,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 367.47,
-   "pct": -0.22,
+   "precio": 367.38,
+   "pct": -0.25,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 377.71,
-   "pct": 0.21,
+   "precio": 376.59,
+   "pct": -0.08,
    "moneda": "USD"
   }
  ],
  "noticias": [
+  {
+   "titulo": "‘She says it’s just money’: My friend pays for everything. I should be grateful, but I can’t stand her anymore.",
+   "url": "https://www.marketwatch.com/story/she-says-its-just-money-my-friend-pays-for-everything-i-should-be-grateful-but-i-cant-stand-her-anymore-2e7c5c10?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 25 Sep 2026 22:00:00 GMT"
+  },
+  {
+   "titulo": "A ‘death cross’ is coming for the dollar. Why Trump will be happy.",
+   "url": "https://www.marketwatch.com/story/a-death-cross-is-coming-for-the-dollar-why-trump-will-be-happy-0766303d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 25 Sep 2026 21:57:00 GMT"
+  },
+  {
+   "titulo": "My husband and I are in our 50s and have no kids. We have $2 million in IRAs and 401(k)s. Do we really need a will?",
+   "url": "https://www.marketwatch.com/story/my-husband-and-i-are-in-our-50s-and-have-no-kids-we-have-2-million-do-we-need-a-will-62fb422f?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 25 Sep 2026 21:45:00 GMT"
+  },
+  {
+   "titulo": "Appeals court rules that states can regulate Kalshi’s sports prediction markets, dealing another legal blow to platforms",
+   "url": "https://www.cnbc.com/2026/09/25/appeals-court-rules-states-can-regulate-sports-prediction-markets.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 25 Sep 2026 21:41:18 GMT"
+  },
+  {
+   "titulo": "Trump, Xi wrap state visit centered on spectacle over substance. Here are the top takeaways",
+   "url": "https://www.cnbc.com/2026/09/25/trump-xi-summit-takeaways.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 25 Sep 2026 21:38:38 GMT"
+  },
+  {
+   "titulo": "Microsoft’s stock has roared back to life, closing at its highest level of the year",
+   "url": "https://www.marketwatch.com/story/microsofts-stock-has-roared-back-to-life-and-is-now-headed-for-its-highest-close-of-the-year-89e4d596?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 25 Sep 2026 21:04:00 GMT"
+  },
+  {
+   "titulo": "Coca-Cola hires Rob Gehring from Monster Energy to run its North American operations",
+   "url": "https://www.cnbc.com/2026/09/25/monster-coca-cola-rob-gehring.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 25 Sep 2026 21:02:20 GMT"
+  },
+  {
+   "titulo": "How recent grads and college students should be thinking about AI, the CV, and the job market",
+   "url": "https://www.cnbc.com/2026/09/25/ai-jobs-recent-graduates-college-degrees.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 25 Sep 2026 20:52:09 GMT"
+  },
+  {
+   "titulo": "Apple’s expensive new iPhones could be a double-edged sword for the company",
+   "url": "https://www.marketwatch.com/story/apples-expensive-new-iphones-could-be-a-double-edged-sword-for-the-company-21c4fefb?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 25 Sep 2026 20:37:00 GMT"
+  },
+  {
+   "titulo": "Micron investors should get ready for a seesaw ride, analyst says",
+   "url": "https://www.marketwatch.com/story/micron-investors-should-get-ready-for-a-seesaw-ride-analyst-says-1c0cc651?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 25 Sep 2026 20:36:00 GMT"
+  },
+  {
+   "titulo": "Tesla’s stock falls as launch of Semi truck fails to excite investors",
+   "url": "https://www.marketwatch.com/story/teslas-stock-falls-as-semi-launch-fails-to-excite-investors-5b216e59?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 25 Sep 2026 20:34:00 GMT"
+  },
+  {
+   "titulo": "A 10% risk-free yield? For some, yes.",
+   "url": "https://www.marketwatch.com/story/a-10-risk-free-yield-for-some-yes-0d1fa51a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 25 Sep 2026 20:32:00 GMT"
+  },
+  {
+   "titulo": "These under-the-radar risk factors may explain why some older people are more vulnerable to scams",
+   "url": "https://www.marketwatch.com/story/these-under-the-radar-risk-factors-may-explain-why-some-older-people-are-more-vulnerable-to-scams-865182dc?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 25 Sep 2026 20:19:00 GMT"
+  },
+  {
+   "titulo": "Airlines waive change fees ahead of nor'easter as flight delays trickle in",
+   "url": "https://www.cnbc.com/2026/09/25/flights-storm-new-york-boston-east-coast.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 25 Sep 2026 19:59:45 GMT"
+  },
   {
    "titulo": "Trump’s ban on Canadian alcohol starts Tuesday, but these well-known brands will avoid it",
    "url": "https://www.marketwatch.com/story/trumps-ban-on-canadian-alcohol-starts-tuesday-but-these-well-known-brands-will-avoid-it-89c2e5c5?mod=mw_rss_topstories",
@@ -306,94 +390,16 @@
    "fecha": "Fri, 25 Sep 2026 19:38:31 GMT"
   },
   {
-   "titulo": "I’m 77, pay rent and live off Social Security, but I help homeless people. Why are so many people going hungry?",
-   "url": "https://www.marketwatch.com/story/im-77-pay-rent-and-live-off-social-security-but-i-help-homeless-people-why-are-so-many-people-going-hungry-5818465f?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 25 Sep 2026 19:30:00 GMT"
-  },
-  {
-   "titulo": "How recent grads and college students should be thinking about AI, the CV, and the job market",
-   "url": "https://www.cnbc.com/2026/09/25/ai-jobs-recent-graduates-college-degrees.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 25 Sep 2026 19:16:16 GMT"
-  },
-  {
-   "titulo": "Microsoft’s stock has roared back to life and is now headed for its highest close of the year",
-   "url": "https://www.marketwatch.com/story/microsofts-stock-has-roared-back-to-life-and-is-now-headed-for-its-highest-close-of-the-year-89e4d596?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 25 Sep 2026 19:14:00 GMT"
-  },
-  {
-   "titulo": "Nike’s stock is one of the worst in the S&P 500 — and BofA says it’s not done sliding",
-   "url": "https://www.marketwatch.com/story/nikes-stock-is-one-of-the-worst-in-the-s-p-500-and-bofa-says-its-not-done-sliding-c99a9107?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 25 Sep 2026 18:54:00 GMT"
-  },
-  {
-   "titulo": "Trump, Xi wrap state visit centered on spectacle over substance. Here are the top takeaways",
-   "url": "https://www.cnbc.com/2026/09/25/trump-xi-summit-takeaways.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 25 Sep 2026 18:52:40 GMT"
-  },
-  {
    "titulo": "Saudi Arabia crude oil exports hit highest level since Iran war began despite pipeline outage",
    "url": "https://www.cnbc.com/2026/09/25/saudi-arabia-oil-iran-war-pipeline-strait-hormuz-red-sea-houthis.html",
    "fuente": "CNBC",
    "fecha": "Fri, 25 Sep 2026 18:46:23 GMT"
   },
   {
-   "titulo": "My friend is terminally ill. Should she sell her rental home and pay $100,000 in capital gains?",
-   "url": "https://www.marketwatch.com/story/my-friend-is-terminally-ill-should-she-sell-her-rental-home-and-pay-100-000-in-capital-gains-8568aada?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 25 Sep 2026 18:45:00 GMT"
-  },
-  {
-   "titulo": "‘I don’t begrudge them their money’: My husband and I have friends who spend, spend, spend. How do we keep up?",
-   "url": "https://www.marketwatch.com/story/i-dont-begrudge-them-their-money-my-husband-and-i-have-friends-who-spend-spend-spend-how-do-we-keep-up-e10164dc?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 25 Sep 2026 18:30:00 GMT"
-  },
-  {
-   "titulo": "A 10% risk-free yield? For some, yes.",
-   "url": "https://www.marketwatch.com/story/a-10-risk-free-yield-for-some-yes-0d1fa51a?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 25 Sep 2026 18:21:00 GMT"
-  },
-  {
-   "titulo": "Nearly half of adults under 30 live with their parents. The financial fallout could last for decades.",
-   "url": "https://www.marketwatch.com/story/nearly-half-of-adults-under-30-live-with-their-parents-the-financial-fallout-could-last-for-decades-5d9f059d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 25 Sep 2026 18:16:00 GMT"
-  },
-  {
-   "titulo": "My friend grosses $300,000 a year with her pet-sitting business. She pays herself $50,000. Should I do the same?",
-   "url": "https://www.marketwatch.com/story/my-friend-grosses-300-000-a-year-with-her-pet-sitting-business-she-pays-herself-50-000-should-i-do-the-same-8ab5cba3?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 25 Sep 2026 18:15:00 GMT"
-  },
-  {
-   "titulo": "See which incumbents have the biggest cash advantage in the tightest U.S. House races",
-   "url": "https://www.cnbc.com/2026/09/25/house-midterms-toss-ups-campaign-cash-incumbents.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 25 Sep 2026 18:10:20 GMT"
-  },
-  {
    "titulo": "Meta's 'powerful breakout' sets up a unique trading strategy, says Mike Khouw",
    "url": "https://www.cnbc.com/2026/09/25/-metas-powerful-breakout-sets-up-a-unique-trading-strategy-says-mike-khouw.html",
    "fuente": "CNBC",
    "fecha": "Fri, 25 Sep 2026 17:57:14 GMT"
-  },
-  {
-   "titulo": "‘We made a bad, bad decision’: I learned the hard way how to manage my aging father’s money",
-   "url": "https://www.marketwatch.com/story/we-made-a-bad-bad-decision-i-learned-the-hard-way-how-to-manage-my-aging-fathers-money-c87cabed?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 25 Sep 2026 17:45:00 GMT"
-  },
-  {
-   "titulo": "Trump says Scott Bessent won't be AI czar",
-   "url": "https://www.cnbc.com/2026/09/25/trump-bessent-ai-czar.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 25 Sep 2026 17:28:32 GMT"
   },
   {
    "titulo": "U.S. appeals court upholds Pentagon designation of Anthropic as supply chain risk",
@@ -412,12 +418,6 @@
    "url": "https://www.cnbc.com/2026/09/25/ceo-who-posted-lake-america-sweatshirt-photos-has-left-the-company.html",
    "fuente": "CNBC",
    "fecha": "Fri, 25 Sep 2026 13:32:57 GMT"
-  },
-  {
-   "titulo": "Warsh's regime change at the Fed pushes ahead – and meets resistance",
-   "url": "https://www.cnbc.com/2026/09/25/kevin-warsh-fed-interest-rates-balance-sheet.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 25 Sep 2026 10:30:01 GMT"
   },
   {
    "titulo": "History shows financial calamities occur when rates rise rapidly like this: 'Something always breaks'",
@@ -537,7 +537,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-09-25T19:54:49Z",
+ "ts": "2026-09-25T23:09:56Z",
  "fallas": [
   "videos",
   "directos"
