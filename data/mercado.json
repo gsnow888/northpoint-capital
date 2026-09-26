@@ -117,9 +117,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84300.0,
-   "cambio": -2290.0,
-   "pct": -2.64
+   "precio": 84500.0,
+   "cambio": -2090.0,
+   "pct": -2.41
   }
  ],
  "acciones": [
@@ -294,6 +294,24 @@
  ],
  "noticias": [
   {
+   "titulo": "I’m 77, pay rent and live off Social Security, but I help homeless people. Why are so many people going hungry?",
+   "url": "https://www.marketwatch.com/story/im-77-pay-rent-and-live-off-social-security-but-i-help-homeless-people-why-are-so-many-people-going-hungry-5818465f?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 26 Sep 2026 00:00:00 GMT"
+  },
+  {
+   "titulo": "My friend is terminally ill. Should she sell her rental home and pay $100,000 in capital gains?",
+   "url": "https://www.marketwatch.com/story/my-friend-is-terminally-ill-should-she-sell-her-rental-home-and-pay-100-000-in-capital-gains-8568aada?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 25 Sep 2026 23:30:00 GMT"
+  },
+  {
+   "titulo": "Appeals court rules that states can regulate Kalshi’s sports prediction markets, dealing another legal blow to platforms",
+   "url": "https://www.cnbc.com/2026/09/25/appeals-court-rules-states-can-regulate-sports-prediction-markets.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 25 Sep 2026 23:28:42 GMT"
+  },
+  {
    "titulo": "‘She says it’s just money’: My friend pays for everything. I should be grateful, but I can’t stand her anymore.",
    "url": "https://www.marketwatch.com/story/she-says-its-just-money-my-friend-pays-for-everything-i-should-be-grateful-but-i-cant-stand-her-anymore-2e7c5c10?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -310,12 +328,6 @@
    "url": "https://www.marketwatch.com/story/my-husband-and-i-are-in-our-50s-and-have-no-kids-we-have-2-million-do-we-need-a-will-62fb422f?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Fri, 25 Sep 2026 21:45:00 GMT"
-  },
-  {
-   "titulo": "Appeals court rules that states can regulate Kalshi’s sports prediction markets, dealing another legal blow to platforms",
-   "url": "https://www.cnbc.com/2026/09/25/appeals-court-rules-states-can-regulate-sports-prediction-markets.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 25 Sep 2026 21:41:18 GMT"
   },
   {
    "titulo": "Trump, Xi wrap state visit centered on spectacle over substance. Here are the top takeaways",
@@ -366,22 +378,10 @@
    "fecha": "Fri, 25 Sep 2026 20:32:00 GMT"
   },
   {
-   "titulo": "These under-the-radar risk factors may explain why some older people are more vulnerable to scams",
-   "url": "https://www.marketwatch.com/story/these-under-the-radar-risk-factors-may-explain-why-some-older-people-are-more-vulnerable-to-scams-865182dc?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 25 Sep 2026 20:19:00 GMT"
-  },
-  {
    "titulo": "Airlines waive change fees ahead of nor'easter as flight delays trickle in",
    "url": "https://www.cnbc.com/2026/09/25/flights-storm-new-york-boston-east-coast.html",
    "fuente": "CNBC",
    "fecha": "Fri, 25 Sep 2026 19:59:45 GMT"
-  },
-  {
-   "titulo": "Trump’s ban on Canadian alcohol starts Tuesday, but these well-known brands will avoid it",
-   "url": "https://www.marketwatch.com/story/trumps-ban-on-canadian-alcohol-starts-tuesday-but-these-well-known-brands-will-avoid-it-89c2e5c5?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 25 Sep 2026 19:45:00 GMT"
   },
   {
    "titulo": "U.S. crude oil falls nearly 8% for the week after Tehran and Washington hold talks at the U.N.",
@@ -537,7 +537,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-09-25T23:09:56Z",
+ "ts": "2026-09-26T01:40:06Z",
  "fallas": [
   "videos",
   "directos"
