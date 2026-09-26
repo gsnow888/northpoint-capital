@@ -75,51 +75,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30921.75,
-   "cambio": 137.0,
-   "pct": 0.45
+   "precio": 30889.25,
+   "cambio": 104.5,
+   "pct": 0.34
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7805.75,
-   "cambio": -27.75,
-   "pct": -0.35
+   "precio": 7803.75,
+   "cambio": -29.75,
+   "pct": -0.38
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4320.5,
-   "cambio": -63.4,
-   "pct": -1.45
+   "precio": 4321.2,
+   "cambio": -62.7,
+   "pct": -1.43
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 92.44,
-   "cambio": -3.34,
-   "pct": -3.49
+   "precio": 92.41,
+   "cambio": -3.37,
+   "pct": -3.52
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2859.9,
-   "cambio": -37.5,
-   "pct": -1.29
+   "precio": 2859.3,
+   "cambio": -38.1,
+   "pct": -1.31
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52180.0,
-   "cambio": -295.0,
-   "pct": -0.56
+   "precio": 52163.0,
+   "cambio": -312.0,
+   "pct": -0.59
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84500.0,
-   "cambio": -2090.0,
-   "pct": -2.41
+   "precio": 84420.0,
+   "cambio": -2170.0,
+   "pct": -2.51
   }
  ],
  "acciones": [
@@ -312,6 +312,12 @@
    "fecha": "Fri, 25 Sep 2026 23:28:42 GMT"
   },
   {
+   "titulo": "Here's exactly what Paramount promised Hollywood to land WBD — and why some are still skeptical",
+   "url": "https://www.cnbc.com/2026/09/25/paramount-hollywood-promises.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 25 Sep 2026 22:53:52 GMT"
+  },
+  {
    "titulo": "‘She says it’s just money’: My friend pays for everything. I should be grateful, but I can’t stand her anymore.",
    "url": "https://www.marketwatch.com/story/she-says-its-just-money-my-friend-pays-for-everything-i-should-be-grateful-but-i-cant-stand-her-anymore-2e7c5c10?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -382,12 +388,6 @@
    "url": "https://www.cnbc.com/2026/09/25/flights-storm-new-york-boston-east-coast.html",
    "fuente": "CNBC",
    "fecha": "Fri, 25 Sep 2026 19:59:45 GMT"
-  },
-  {
-   "titulo": "U.S. crude oil falls nearly 8% for the week after Tehran and Washington hold talks at the U.N.",
-   "url": "https://www.cnbc.com/2026/09/25/oil-falls-as-potential-diplomatic-solution-to-iran-conflict-arises.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 25 Sep 2026 19:38:31 GMT"
   },
   {
    "titulo": "Saudi Arabia crude oil exports hit highest level since Iran war began despite pipeline outage",
@@ -537,7 +537,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-09-26T01:40:06Z",
+ "ts": "2026-09-26T06:39:04Z",
  "fallas": [
   "videos",
   "directos"
