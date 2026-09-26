@@ -117,9 +117,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84420.0,
-   "cambio": -2170.0,
-   "pct": -2.51
+   "precio": 84540.0,
+   "cambio": -2050.0,
+   "pct": -2.37
   }
  ],
  "acciones": [
@@ -294,6 +294,24 @@
  ],
  "noticias": [
   {
+   "titulo": "Meta turned Muse into a viral hit. Now comes the hard part.",
+   "url": "https://www.marketwatch.com/story/meta-turned-muse-into-a-viral-hit-now-comes-the-hard-part-fb3177a8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 26 Sep 2026 11:00:00 GMT"
+  },
+  {
+   "titulo": "Audemars Piguet says its Royal Pop collaboration with Swatch is breaking sales records, despite luxury watch slump and tariffs",
+   "url": "https://www.cnbc.com/2026/09/26/audemars-piguet-and-royal-pop-defy-luxury-watch-slump-and-tariffs.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 26 Sep 2026 10:00:01 GMT"
+  },
+  {
+   "titulo": "Chinese AI models surge in global popularity — and Washington is worried",
+   "url": "https://www.cnbc.com/2026/09/26/china-ai-global-adoption.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 26 Sep 2026 05:00:01 GMT"
+  },
+  {
    "titulo": "I’m 77, pay rent and live off Social Security, but I help homeless people. Why are so many people going hungry?",
    "url": "https://www.marketwatch.com/story/im-77-pay-rent-and-live-off-social-security-but-i-help-homeless-people-why-are-so-many-people-going-hungry-5818465f?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -378,28 +396,10 @@
    "fecha": "Fri, 25 Sep 2026 20:34:00 GMT"
   },
   {
-   "titulo": "A 10% risk-free yield? For some, yes.",
-   "url": "https://www.marketwatch.com/story/a-10-risk-free-yield-for-some-yes-0d1fa51a?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 25 Sep 2026 20:32:00 GMT"
-  },
-  {
    "titulo": "Airlines waive change fees ahead of nor'easter as flight delays trickle in",
    "url": "https://www.cnbc.com/2026/09/25/flights-storm-new-york-boston-east-coast.html",
    "fuente": "CNBC",
    "fecha": "Fri, 25 Sep 2026 19:59:45 GMT"
-  },
-  {
-   "titulo": "Saudi Arabia crude oil exports hit highest level since Iran war began despite pipeline outage",
-   "url": "https://www.cnbc.com/2026/09/25/saudi-arabia-oil-iran-war-pipeline-strait-hormuz-red-sea-houthis.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 25 Sep 2026 18:46:23 GMT"
-  },
-  {
-   "titulo": "Meta's 'powerful breakout' sets up a unique trading strategy, says Mike Khouw",
-   "url": "https://www.cnbc.com/2026/09/25/-metas-powerful-breakout-sets-up-a-unique-trading-strategy-says-mike-khouw.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 25 Sep 2026 17:57:14 GMT"
   },
   {
    "titulo": "U.S. appeals court upholds Pentagon designation of Anthropic as supply chain risk",
@@ -537,7 +537,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-09-26T06:39:04Z",
+ "ts": "2026-09-26T11:48:51Z",
  "fallas": [
   "videos",
   "directos"
