@@ -105,51 +105,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30889.25,
-   "cambio": -139.25,
-   "pct": -0.45
+   "precio": 30811.5,
+   "cambio": -217.0,
+   "pct": -0.7
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7803.75,
-   "cambio": -28.0,
-   "pct": -0.36
+   "precio": 7785.0,
+   "cambio": -46.75,
+   "pct": -0.6
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4321.2,
-   "cambio": -55.2,
-   "pct": -1.26
+   "precio": 4304.0,
+   "cambio": -72.4,
+   "pct": -1.65
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 92.41,
-   "cambio": -2.18,
-   "pct": -2.3
+   "precio": 93.3,
+   "cambio": -1.29,
+   "pct": -1.36
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2859.3,
-   "cambio": -54.8,
-   "pct": -1.88
+   "precio": 2848.5,
+   "cambio": -65.6,
+   "pct": -2.25
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52163.0,
-   "cambio": -116.0,
-   "pct": -0.22
+   "precio": 52037.0,
+   "cambio": -242.0,
+   "pct": -0.46
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84420.0,
-   "cambio": -1870.0,
-   "pct": -2.17
+   "precio": 84880.0,
+   "cambio": -1410.0,
+   "pct": -1.63
   }
  ],
  "acciones": [
@@ -324,6 +324,24 @@
  ],
  "noticias": [
   {
+   "titulo": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
+   "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 27 Sep 2026 22:00:00 GMT"
+  },
+  {
+   "titulo": "‘We lived within our means’: I earned $30,000 as a pastor and still retired comfortably. Why don’t you tell people that?",
+   "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 27 Sep 2026 21:45:00 GMT"
+  },
+  {
+   "titulo": "Taxpayer-funded Trump ads draw bipartisan scrutiny ahead of midterms",
+   "url": "https://www.cnbc.com/2026/09/27/trump-government-funded-ads-midterms.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 27 Sep 2026 21:38:59 GMT"
+  },
+  {
    "titulo": "A ‘death cross’ is coming for the dollar. Why Trump will be happy.",
    "url": "https://www.marketwatch.com/story/a-death-cross-is-coming-for-the-dollar-why-trump-will-be-happy-0766303d?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -342,22 +360,10 @@
    "fecha": "Sun, 27 Sep 2026 18:45:27 GMT"
   },
   {
-   "titulo": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
-   "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 27 Sep 2026 18:45:00 GMT"
-  },
-  {
    "titulo": "Nor'easter delays hundreds of flights, airlines waive change fees",
    "url": "https://www.cnbc.com/2026/09/25/flights-storm-new-york-boston-east-coast.html",
    "fuente": "CNBC",
    "fecha": "Sun, 27 Sep 2026 18:43:21 GMT"
-  },
-  {
-   "titulo": "‘We lived within our means’: I earned $30,000 as a pastor and still retired comfortably. Why don’t you tell people that?",
-   "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 27 Sep 2026 18:30:00 GMT"
   },
   {
    "titulo": "Social Security overpaid my 82-year-old mother by $20,000. What else is hiding in her finances?",
@@ -420,12 +426,6 @@
    "fecha": "Sun, 27 Sep 2026 13:00:00 GMT"
   },
   {
-   "titulo": "Wall Street money takes back over from small investors as driving force of the stock market",
-   "url": "https://www.cnbc.com/2026/09/27/institutional-investors-stocks-treaurys-retail-traders.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 27 Sep 2026 11:32:35 GMT"
-  },
-  {
    "titulo": "Apple faces $5.7 billion patent infringement verdict over iPhone and Apple Watch haptics",
    "url": "https://www.cnbc.com/2026/09/26/apple-taction-technology-patent-infringement-verdict.html",
    "fuente": "CNBC",
@@ -448,12 +448,6 @@
    "url": "https://www.cnbc.com/2026/09/26/audemars-piguet-and-royal-pop-defy-luxury-watch-slump-and-tariffs.html",
    "fuente": "CNBC",
    "fecha": "Sat, 26 Sep 2026 10:00:01 GMT"
-  },
-  {
-   "titulo": "History shows financial calamities occur when rates rise rapidly like this: 'Something always breaks'",
-   "url": "https://www.cnbc.com/2026/09/24/history-shows-financial-calamities-occur-when-rates-rise-rapidly-like-this-something-always-breaks.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 24 Sep 2026 20:57:11 GMT"
   }
  ],
  "videos": [
@@ -567,7 +561,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-09-27T19:37:48Z",
+ "ts": "2026-09-27T22:32:49Z",
  "fallas": [
   "videos",
   "directos"
