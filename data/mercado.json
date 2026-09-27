@@ -324,6 +324,66 @@
  ],
  "noticias": [
   {
+   "titulo": "Debt-hungry AI companies face increased risk as bond yields spike",
+   "url": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 27 Sep 2026 15:35:34 GMT"
+  },
+  {
+   "titulo": "At NFL games this season, drone defense tech aims to bring down disruptions",
+   "url": "https://www.cnbc.com/2026/09/27/nfl-drone-defense-tech-game-disruptions.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 27 Sep 2026 15:22:03 GMT"
+  },
+  {
+   "titulo": "My friend is terminally ill. Should she sell her rental home and pay $100,000 in capital gains?",
+   "url": "https://www.marketwatch.com/story/my-friend-is-terminally-ill-should-she-sell-her-rental-home-and-pay-100-000-in-capital-gains-8568aada?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 27 Sep 2026 15:15:00 GMT"
+  },
+  {
+   "titulo": "I’m 77, pay rent and live off Social Security, but I help homeless people. Why are so many people going hungry?",
+   "url": "https://www.marketwatch.com/story/im-77-pay-rent-and-live-off-social-security-but-i-help-homeless-people-why-are-so-many-people-going-hungry-5818465f?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 27 Sep 2026 15:00:00 GMT"
+  },
+  {
+   "titulo": "‘We lived within our means’: I earned $30,000 as a pastor and still retired comfortably. Why don’t you tell people that?",
+   "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 27 Sep 2026 14:45:00 GMT"
+  },
+  {
+   "titulo": "Meta's Muse agent is attacking one of the economy's most profitable weak spots",
+   "url": "https://www.cnbc.com/2026/09/27/meta-muse-ai-personal-agent.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 27 Sep 2026 14:33:22 GMT"
+  },
+  {
+   "titulo": "Micron could dethrone Nvidia and become the biggest driver of S&P 500 profit growth",
+   "url": "https://www.marketwatch.com/story/micron-could-dethrone-nvidia-and-become-the-biggest-driver-of-s-p-500-profit-growth-d62e0e68?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 27 Sep 2026 14:00:00 GMT"
+  },
+  {
+   "titulo": "Airlines waive change fees ahead of nor'easter as flight disruptions trickle in",
+   "url": "https://www.cnbc.com/2026/09/25/flights-storm-new-york-boston-east-coast.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 27 Sep 2026 13:39:11 GMT"
+  },
+  {
+   "titulo": "Iran's foreign minister keeps indirect talks with the U.S. open; Iranian navy claims capture of underwater drone",
+   "url": "https://www.cnbc.com/2026/09/27/iran-foreign-minister-keeps-indirect-talks-with-us-open-state-media.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 27 Sep 2026 13:30:02 GMT"
+  },
+  {
+   "titulo": "Look closer, and Wall Street’s rally is showing cracks",
+   "url": "https://www.marketwatch.com/story/look-closer-and-wall-streets-rally-is-showing-cracks-94952048?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 27 Sep 2026 13:00:00 GMT"
+  },
+  {
    "titulo": "Top Wall Street analysts like these 3 dividend stocks for steady income",
    "url": "https://www.cnbc.com/2026/09/27/top-wall-street-analysts-like-these-dividend-stocks-for-steady-income.html",
    "fuente": "CNBC",
@@ -334,12 +394,6 @@
    "url": "https://www.cnbc.com/2026/09/27/institutional-investors-stocks-treaurys-retail-traders.html",
    "fuente": "CNBC",
    "fecha": "Sun, 27 Sep 2026 11:32:35 GMT"
-  },
-  {
-   "titulo": "Debt-hungry AI companies face increased risk as bond yields spike",
-   "url": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 27 Sep 2026 11:00:01 GMT"
   },
   {
    "titulo": "Why the upcoming jobs report could send 10-year and 30-year Treasury yields surging",
@@ -354,28 +408,10 @@
    "fecha": "Sun, 27 Sep 2026 05:00:02 GMT"
   },
   {
-   "titulo": "Boeing flags 737 Max software glitch affecting some automated approach functions",
-   "url": "https://www.cnbc.com/2026/09/26/boeing-737-max-navigation-software-glitch.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 26 Sep 2026 21:55:01 GMT"
-  },
-  {
-   "titulo": "Trump says he approved new fuel economy standards, rolling back Biden-era rules",
-   "url": "https://www.cnbc.com/2026/09/26/trump-fuel-economy-cafe-standards.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 26 Sep 2026 21:21:04 GMT"
-  },
-  {
    "titulo": "My friend grosses $300,000 a year with her pet-sitting business. She pays herself $50,000. Should I do the same?",
    "url": "https://www.marketwatch.com/story/my-friend-grosses-300-000-a-year-with-her-pet-sitting-business-she-pays-herself-50-000-should-i-do-the-same-8ab5cba3?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 26 Sep 2026 20:00:00 GMT"
-  },
-  {
-   "titulo": "‘We lived within our means’: I earned $30,000 as a pastor and still retired comfortably. Why don’t you tell people that?",
-   "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 26 Sep 2026 19:00:00 GMT"
   },
   {
    "titulo": "From $6 eggs to $50,000 cars, these charts show how inflation has defined the past 5 years",
@@ -406,42 +442,6 @@
    "url": "https://www.marketwatch.com/story/a-10-risk-free-yield-for-some-yes-0d1fa51a?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 26 Sep 2026 16:51:00 GMT"
-  },
-  {
-   "titulo": "Choosing these AI-exposed college majors could dent your job prospects — and lower your pay",
-   "url": "https://www.marketwatch.com/story/choosing-these-ai-exposed-college-majors-could-dent-your-job-prospects-and-lower-your-pay-b80576cb?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 26 Sep 2026 16:22:00 GMT"
-  },
-  {
-   "titulo": "Tax-free bond yields are in a sweet spot. Get in before it’s too late.",
-   "url": "https://www.marketwatch.com/story/tax-free-bond-yields-are-in-a-sweet-spot-get-in-before-its-too-late-94b8adac?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 26 Sep 2026 15:48:00 GMT"
-  },
-  {
-   "titulo": "‘She says it’s just money’: My friend pays for everything. I should be grateful, but I can’t stand her anymore.",
-   "url": "https://www.marketwatch.com/story/she-says-its-just-money-my-friend-pays-for-everything-i-should-be-grateful-but-i-cant-stand-her-anymore-2e7c5c10?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 26 Sep 2026 15:30:00 GMT"
-  },
-  {
-   "titulo": "Millions will lose Medicaid once new work rules kick in. These groups will be hit the hardest.",
-   "url": "https://www.marketwatch.com/story/millions-will-lose-medicaid-once-new-work-rules-kick-in-these-groups-will-be-hit-the-hardest-507694d3?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 26 Sep 2026 15:30:00 GMT"
-  },
-  {
-   "titulo": "Trump rejects Iran's conditional ceasefire proposal, WSJ reports, as Saudi coalition intercepts projectiles",
-   "url": "https://www.cnbc.com/2026/09/26/trump-rejects-irans-conditional-ceasefire-proposal-wsj-reports.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 26 Sep 2026 15:05:38 GMT"
-  },
-  {
-   "titulo": "This may be the ‘missing piece’ for investors looking to boost AI exposure",
-   "url": "https://www.cnbc.com/2026/09/26/ai-portfolios-may-need-china-to-grab-the-biggest-gains.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 26 Sep 2026 15:00:01 GMT"
   },
   {
    "titulo": "Supply glut, lab-grown alternatives: What's behind the fall of diamond prices to record lows",
@@ -567,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-09-27T11:39:29Z",
+ "ts": "2026-09-27T15:48:17Z",
  "fallas": [
   "videos",
   "directos"
