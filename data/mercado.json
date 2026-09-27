@@ -1,74 +1,104 @@
 {
  "calendario": [
   {
-   "dia": "2026-09-21",
-   "hora": "21:10",
-   "hora_ny": "23:10",
-   "iso": "2026-09-21T23:10:00-04:00",
-   "titulo": "RBA Gov Bullock Speaks",
+   "dia": "2026-09-28",
+   "hora": "22:30",
+   "hora_ny": "00:30",
+   "iso": "2026-09-29T00:30:00-04:00",
+   "titulo": "Cash Rate",
+   "pais": "AUD",
+   "previsto": "4.60%",
+   "previo": "4.35%"
+  },
+  {
+   "dia": "2026-09-28",
+   "hora": "22:30",
+   "hora_ny": "00:30",
+   "iso": "2026-09-29T00:30:00-04:00",
+   "titulo": "RBA Rate Statement",
    "pais": "AUD",
    "previsto": "",
    "previo": ""
   },
   {
-   "dia": "2026-09-23",
+   "dia": "2026-09-29",
    "hora": "19:30",
    "hora_ny": "21:30",
-   "iso": "2026-09-23T21:30:00-04:00",
-   "titulo": "Employment Change",
+   "iso": "2026-09-29T21:30:00-04:00",
+   "titulo": "CPI m/m",
    "pais": "AUD",
-   "previsto": "21.5K",
-   "previo": "-15.8K"
+   "previsto": "0.5%",
+   "previo": "1.0%"
   },
   {
-   "dia": "2026-09-23",
+   "dia": "2026-09-29",
    "hora": "19:30",
    "hora_ny": "21:30",
-   "iso": "2026-09-23T21:30:00-04:00",
+   "iso": "2026-09-29T21:30:00-04:00",
+   "titulo": "CPI y/y",
+   "pais": "AUD",
+   "previsto": "4.1%",
+   "previo": "3.5%"
+  },
+  {
+   "dia": "2026-09-29",
+   "hora": "19:30",
+   "hora_ny": "21:30",
+   "iso": "2026-09-29T21:30:00-04:00",
+   "titulo": "Trimmed Mean CPI m/m",
+   "pais": "AUD",
+   "previsto": "0.3%",
+   "previo": "0.5%"
+  },
+  {
+   "dia": "2026-09-30",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-09-30T08:30:00-04:00",
+   "titulo": "Core PCE Price Index m/m",
+   "pais": "USD",
+   "previsto": "0.3%",
+   "previo": "0.2%"
+  },
+  {
+   "dia": "2026-09-30",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-09-30T08:30:00-04:00",
+   "titulo": "Final GDP q/q",
+   "pais": "USD",
+   "previsto": "1.5%",
+   "previo": "1.5%"
+  },
+  {
+   "dia": "2026-10-02",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-02T08:30:00-04:00",
+   "titulo": "Average Hourly Earnings m/m",
+   "pais": "USD",
+   "previsto": "0.3%",
+   "previo": "0.3%"
+  },
+  {
+   "dia": "2026-10-02",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-02T08:30:00-04:00",
+   "titulo": "Non-Farm Employment Change",
+   "pais": "USD",
+   "previsto": "98K",
+   "previo": "162K"
+  },
+  {
+   "dia": "2026-10-02",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-02T08:30:00-04:00",
    "titulo": "Unemployment Rate",
-   "pais": "AUD",
-   "previsto": "4.5%",
-   "previo": "4.5%"
-  },
-  {
-   "dia": "2026-09-24",
-   "hora": "01:30",
-   "hora_ny": "03:30",
-   "iso": "2026-09-24T03:30:00-04:00",
-   "titulo": "SNB Monetary Policy Assessment",
-   "pais": "CHF",
-   "previsto": "",
-   "previo": ""
-  },
-  {
-   "dia": "2026-09-24",
-   "hora": "01:30",
-   "hora_ny": "03:30",
-   "iso": "2026-09-24T03:30:00-04:00",
-   "titulo": "SNB Policy Rate",
-   "pais": "CHF",
-   "previsto": "0.00%",
-   "previo": "0.00%"
-  },
-  {
-   "dia": "2026-09-24",
-   "hora": "02:00",
-   "hora_ny": "04:00",
-   "iso": "2026-09-24T04:00:00-04:00",
-   "titulo": "SNB Press Conference",
-   "pais": "CHF",
-   "previsto": "",
-   "previo": ""
-  },
-  {
-   "dia": "2026-09-25",
-   "hora": "03:15",
-   "hora_ny": "05:15",
-   "iso": "2026-09-25T05:15:00-04:00",
-   "titulo": "BOE Gov Bailey Speaks",
-   "pais": "GBP",
-   "previsto": "",
-   "previo": ""
+   "pais": "USD",
+   "previsto": "4.1%",
+   "previo": "4.1%"
   }
  ],
  "precios": [
@@ -76,50 +106,50 @@
    "sym": "NQ",
    "nombre": "Nasdaq 100",
    "precio": 30889.25,
-   "cambio": 104.5,
-   "pct": 0.34
+   "cambio": -139.25,
+   "pct": -0.45
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
    "precio": 7803.75,
-   "cambio": -29.75,
-   "pct": -0.38
+   "cambio": -28.0,
+   "pct": -0.36
   },
   {
    "sym": "GC",
    "nombre": "Oro",
    "precio": 4321.2,
-   "cambio": -62.7,
-   "pct": -1.43
+   "cambio": -55.2,
+   "pct": -1.26
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
    "precio": 92.41,
-   "cambio": -3.37,
-   "pct": -3.52
+   "cambio": -2.18,
+   "pct": -2.3
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
    "precio": 2859.3,
-   "cambio": -38.1,
-   "pct": -1.31
+   "cambio": -54.8,
+   "pct": -1.88
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
    "precio": 52163.0,
-   "cambio": -312.0,
-   "pct": -0.59
+   "cambio": -116.0,
+   "pct": -0.22
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84705.0,
-   "cambio": -1885.0,
-   "pct": -2.18
+   "precio": 84420.0,
+   "cambio": -1870.0,
+   "pct": -2.17
   }
  ],
  "acciones": [
@@ -537,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-09-27T00:27:33Z",
+ "ts": "2026-09-27T05:43:53Z",
  "fallas": [
   "videos",
   "directos"
