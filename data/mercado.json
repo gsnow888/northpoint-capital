@@ -105,51 +105,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30800.5,
-   "cambio": -228.0,
-   "pct": -0.73
+   "precio": 30618.0,
+   "cambio": -146.75,
+   "pct": -0.48
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7783.0,
-   "cambio": -48.75,
-   "pct": -0.62
+   "precio": 7773.5,
+   "cambio": 1.0,
+   "pct": 0.01
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4263.1,
-   "cambio": -113.3,
-   "pct": -2.59
+   "precio": 4204.0,
+   "cambio": -114.4,
+   "pct": -2.65
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 92.97,
-   "cambio": -1.62,
-   "pct": -1.71
+   "precio": 93.62,
+   "cambio": 1.46,
+   "pct": 1.58
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2847.3,
-   "cambio": -66.8,
-   "pct": -2.29
+   "precio": 2844.7,
+   "cambio": -15.5,
+   "pct": -0.54
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51993.0,
-   "cambio": -286.0,
-   "pct": -0.55
+   "precio": 51983.0,
+   "cambio": 110.0,
+   "pct": 0.21
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84485.0,
-   "cambio": -1805.0,
-   "pct": -2.09
+   "precio": 83465.0,
+   "cambio": -1030.0,
+   "pct": -1.22
   }
  ],
  "acciones": [
@@ -324,16 +324,34 @@
  ],
  "noticias": [
   {
-   "titulo": "Oil gains over 1% as Trump rejects Iranian proposal to reopen Hormuz Strait",
-   "url": "https://www.cnbc.com/2026/09/28/oil-price-today-wti-brent-trump-iran.html",
+   "titulo": "Northern Star shares pop as Australia's largest gold miner rejects $27 billion takeover proposal",
+   "url": "https://www.cnbc.com/2026/09/28/northern-star-shares-gold-fields-takeover-bid.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 28 Sep 2026 00:32:09 GMT"
+   "fecha": "Mon, 28 Sep 2026 06:51:52 GMT"
   },
   {
-   "titulo": "Apple, Microsoft, and Meta prove stock picking for individuals is not a fool's errand",
-   "url": "https://www.cnbc.com/2026/09/27/jim-cramer-apple-microsoft-and-meta-prove-stock-picking-for-individuals-is-not-a-fools-errand.html",
+   "titulo": "Brent crude tops $107 as Trump rejects Iranian proposal to reopen Hormuz Strait",
+   "url": "https://www.cnbc.com/2026/09/28/oil-price-today-wti-brent-trump-iran.html",
    "fuente": "CNBC",
-   "fecha": "Sun, 27 Sep 2026 23:33:21 GMT"
+   "fecha": "Mon, 28 Sep 2026 06:34:26 GMT"
+  },
+  {
+   "titulo": "SpaceX prepares to send Starship rocket to orbit for first time",
+   "url": "https://www.cnbc.com/2026/09/28/spacex-prepares-to-send-starship-rocket-to-orbit-for-first-time.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 28 Sep 2026 04:12:20 GMT"
+  },
+  {
+   "titulo": "China posts weakest industrial profit growth this year, expanding 4.2% in August",
+   "url": "https://www.cnbc.com/2026/09/28/china-posts-weakest-industrial-profit-growth-this-year-expanding-4point2percent-in-august-.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 28 Sep 2026 04:04:16 GMT"
+  },
+  {
+   "titulo": "Trump-Xi summit analysis: 'Tangible outcomes' needed for U.S.-China truce to hold",
+   "url": "https://www.cnbc.com/2026/09/28/trump-xi-summit-tangible-outcomes-us-china-truce.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 28 Sep 2026 02:49:10 GMT"
   },
   {
    "titulo": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
@@ -372,12 +390,6 @@
    "fecha": "Sun, 27 Sep 2026 18:45:27 GMT"
   },
   {
-   "titulo": "Nor'easter delays hundreds of flights, airlines waive change fees",
-   "url": "https://www.cnbc.com/2026/09/25/flights-storm-new-york-boston-east-coast.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 27 Sep 2026 18:43:21 GMT"
-  },
-  {
    "titulo": "Social Security overpaid my 82-year-old mother by $20,000. What else is hiding in her finances?",
    "url": "https://www.marketwatch.com/story/she-gave-a-neighbor-2-000-social-security-overpaid-my-mother-82-by-20-000-what-else-is-hiding-in-her-finances-1b54977f?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -394,18 +406,6 @@
    "url": "https://www.marketwatch.com/story/it-doesnt-seem-fair-im-retired-and-have-plenty-of-money-why-cant-i-qualify-for-a-retail-credit-card-8a58eda3?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sun, 27 Sep 2026 16:00:00 GMT"
-  },
-  {
-   "titulo": "Debt-hungry AI companies face increased risk as bond yields spike",
-   "url": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 27 Sep 2026 15:35:34 GMT"
-  },
-  {
-   "titulo": "At NFL games this season, drone defense tech aims to bring down disruptions",
-   "url": "https://www.cnbc.com/2026/09/27/nfl-drone-defense-tech-game-disruptions.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 27 Sep 2026 15:22:03 GMT"
   },
   {
    "titulo": "My friend is terminally ill. Should she sell her rental home and pay $100,000 in capital gains?",
@@ -438,10 +438,10 @@
    "fecha": "Sun, 27 Sep 2026 13:00:00 GMT"
   },
   {
-   "titulo": "Apple faces $5.7 billion patent infringement verdict over iPhone and Apple Watch haptics",
-   "url": "https://www.cnbc.com/2026/09/26/apple-taction-technology-patent-infringement-verdict.html",
+   "titulo": "'Funflation' is on the rise as hobbies get pricier, but consumers keep spending anyway",
+   "url": "https://www.cnbc.com/2026/09/27/funflation-consumer-spending-pricier-hobbies.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 26 Sep 2026 16:57:57 GMT"
+   "fecha": "Sun, 27 Sep 2026 05:00:02 GMT"
   },
   {
    "titulo": "Supply glut, lab-grown alternatives: What's behind the fall of diamond prices to record lows",
@@ -567,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-09-28T01:10:17Z",
+ "ts": "2026-09-28T07:02:56Z",
  "fallas": [
   "videos",
   "directos"
