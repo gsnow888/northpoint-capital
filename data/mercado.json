@@ -105,51 +105,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30811.5,
-   "cambio": -217.0,
-   "pct": -0.7
+   "precio": 30800.5,
+   "cambio": -228.0,
+   "pct": -0.73
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7785.0,
-   "cambio": -46.75,
-   "pct": -0.6
+   "precio": 7783.0,
+   "cambio": -48.75,
+   "pct": -0.62
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4304.0,
-   "cambio": -72.4,
-   "pct": -1.65
+   "precio": 4263.1,
+   "cambio": -113.3,
+   "pct": -2.59
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 93.3,
-   "cambio": -1.29,
-   "pct": -1.36
+   "precio": 92.97,
+   "cambio": -1.62,
+   "pct": -1.71
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2848.5,
-   "cambio": -65.6,
-   "pct": -2.25
+   "precio": 2847.3,
+   "cambio": -66.8,
+   "pct": -2.29
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52037.0,
-   "cambio": -242.0,
-   "pct": -0.46
+   "precio": 51993.0,
+   "cambio": -286.0,
+   "pct": -0.55
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84880.0,
-   "cambio": -1410.0,
-   "pct": -1.63
+   "precio": 84485.0,
+   "cambio": -1805.0,
+   "pct": -2.09
   }
  ],
  "acciones": [
@@ -324,6 +324,18 @@
  ],
  "noticias": [
   {
+   "titulo": "Oil gains over 1% as Trump rejects Iranian proposal to reopen Hormuz Strait",
+   "url": "https://www.cnbc.com/2026/09/28/oil-price-today-wti-brent-trump-iran.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 28 Sep 2026 00:32:09 GMT"
+  },
+  {
+   "titulo": "Apple, Microsoft, and Meta prove stock picking for individuals is not a fool's errand",
+   "url": "https://www.cnbc.com/2026/09/27/jim-cramer-apple-microsoft-and-meta-prove-stock-picking-for-individuals-is-not-a-fools-errand.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 27 Sep 2026 23:33:21 GMT"
+  },
+  {
    "titulo": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
    "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -430,12 +442,6 @@
    "url": "https://www.cnbc.com/2026/09/26/apple-taction-technology-patent-infringement-verdict.html",
    "fuente": "CNBC",
    "fecha": "Sat, 26 Sep 2026 16:57:57 GMT"
-  },
-  {
-   "titulo": "The 10-year Treasury yield is at its highest in nearly two decades. How we got here",
-   "url": "https://www.cnbc.com/2026/09/26/10-year-treasury-yield-is-at-its-highest-in-19-years-how-we-got-here.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 26 Sep 2026 13:30:06 GMT"
   },
   {
    "titulo": "Supply glut, lab-grown alternatives: What's behind the fall of diamond prices to record lows",
@@ -561,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-09-27T22:32:49Z",
+ "ts": "2026-09-28T01:10:17Z",
  "fallas": [
   "videos",
   "directos"
