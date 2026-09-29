@@ -105,73 +105,73 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30628.25,
-   "cambio": -138.5,
-   "pct": -0.45
+   "precio": 30626.0,
+   "cambio": -140.75,
+   "pct": -0.46
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7740.25,
-   "cambio": -26.75,
-   "pct": -0.34
+   "precio": 7732.75,
+   "cambio": -34.25,
+   "pct": -0.44
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4191.1,
-   "cambio": -106.9,
-   "pct": -2.49
+   "precio": 4202.3,
+   "cambio": -95.7,
+   "pct": -2.23
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 90.76,
-   "cambio": -3.85,
-   "pct": -4.07
+   "precio": 89.27,
+   "cambio": -5.34,
+   "pct": -5.64
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2837.7,
-   "cambio": -19.1,
-   "pct": -0.67
+   "precio": 2825.6,
+   "cambio": -31.2,
+   "pct": -1.09
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51727.0,
-   "cambio": 10.0,
-   "pct": 0.02
+   "precio": 51695.0,
+   "cambio": -22.0,
+   "pct": -0.04
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84620.0,
-   "cambio": 260.0,
-   "pct": 0.31
+   "precio": 83990.0,
+   "cambio": -370.0,
+   "pct": -0.44
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 158.47,
-   "pct": -1.71,
+   "precio": 158.41,
+   "pct": -1.76,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 703.05,
-   "pct": -1.36,
+   "precio": 702.72,
+   "pct": -1.41,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 375.56,
-   "pct": -1.5,
+   "precio": 375.3,
+   "pct": -1.57,
    "moneda": "USD"
   },
   {
@@ -184,276 +184,276 @@
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 738.01,
-   "pct": -1.26,
+   "precio": 738.18,
+   "pct": -1.24,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 764.88,
-   "pct": -1.1,
+   "precio": 764.46,
+   "pct": -1.15,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 70.22,
-   "pct": -1.67,
+   "precio": 70.2,
+   "pct": -1.69,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 32.91,
-   "pct": -2.47,
+   "precio": 32.83,
+   "pct": -2.7,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 90.75,
-   "pct": -3.07,
+   "precio": 90.47,
+   "pct": -3.36,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 81.67,
-   "pct": -2.66,
+   "precio": 81.91,
+   "pct": -2.38,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 381.94,
-   "pct": -4.53,
+   "precio": 382.31,
+   "pct": -4.44,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 47.55,
-   "pct": -2.62,
+   "precio": 47.3,
+   "pct": -3.12,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 333.18,
-   "pct": -1.93,
+   "precio": 330.37,
+   "pct": -2.76,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 504.57,
-   "pct": 1.32,
+   "precio": 511.24,
+   "pct": 2.66,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 229.54,
-   "pct": 0.29,
+   "precio": 228.05,
+   "pct": -0.36,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 339.9,
-   "pct": -3.21,
+   "precio": 340.57,
+   "pct": -3.01,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 245.67,
-   "pct": -3.65,
+   "precio": 247.14,
+   "pct": -3.07,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 721.64,
-   "pct": -2.03,
+   "precio": 732.88,
+   "pct": -0.51,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 354.05,
-   "pct": -6.56,
+   "precio": 352.9,
+   "pct": -6.86,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 502.54,
-   "pct": -0.19,
+   "precio": 502.3,
+   "pct": -0.24,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 920.34,
-   "pct": 2.33,
+   "precio": 924.3,
+   "pct": 2.77,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 335.84,
-   "pct": -1.22,
+   "precio": 334.96,
+   "pct": -1.48,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 366.62,
-   "pct": 1.26,
+   "precio": 366.79,
+   "pct": 1.31,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 373.45,
-   "pct": 0.13,
+   "precio": 373.19,
+   "pct": 0.07,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "Trump’s municipal bond portfolio reaches as much as $1 billion as policy overlaps mount",
-   "url": "https://www.cnbc.com/2026/09/29/trump-municipal-bond-portfolio.html",
+   "titulo": "Ford CEO says it's 'too late' for Europe to fend off Chinese automakers, but not U.S.",
+   "url": "https://www.cnbc.com/2026/09/29/ford-ceo-jim-farley-china-automakers.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 14:03:05 GMT"
+   "fecha": "Tue, 29 Sep 2026 19:27:07 GMT"
   },
   {
-   "titulo": "Rep. James Comer expands House investigation into prediction market insider trading",
-   "url": "https://www.cnbc.com/2026/09/29/comer-house-prediction-market-insider-trading.html",
+   "titulo": "Homeowners are sitting on record equity – and not using it",
+   "url": "https://www.cnbc.com/2026/09/29/homeowners-are-sitting-on-record-equity-and-not-using-it.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 14:00:01 GMT"
+   "fecha": "Tue, 29 Sep 2026 19:23:06 GMT"
+  },
+  {
+   "titulo": "Trump touts AI self regulation, data center benefits in meeting with top tech leaders",
+   "url": "https://www.cnbc.com/2026/09/29/tech-white-house-ai-lunch-trump.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 19:21:09 GMT"
+  },
+  {
+   "titulo": "Trump government ads were funded by Homeland Security, WSJ reports",
+   "url": "https://www.cnbc.com/2026/09/29/trump-ads-cbp-dhs-taxpayer-funding-election.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 19:16:35 GMT"
+  },
+  {
+   "titulo": "Prediction market traders think the U.S. added more jobs in September than economists estimate",
+   "url": "https://www.cnbc.com/2026/09/29/prediction-market-traders-september-jobs-report-will-beat-estimates.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 19:11:51 GMT"
+  },
+  {
+   "titulo": "Two Indian nationals charged with smuggling counterfeit Ozempic from China: DOJ",
+   "url": "https://www.cnbc.com/2026/09/29/ozempiz-counterfeit-china-smuggling-doj.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 19:11:25 GMT"
+  },
+  {
+   "titulo": "The Fed's main inflation measure will be released Wednesday. Here's what to expect",
+   "url": "https://www.cnbc.com/2026/09/29/the-feds-main-inflation-measure-will-be-released-wednesday-heres-what-to-expect.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 19:07:29 GMT"
   },
   {
    "titulo": "My kids don’t want my decades’ worth of stuff. Here’s how I’m learning to let go of it.",
    "url": "https://www.marketwatch.com/story/my-kids-dont-want-my-decades-worth-of-stuff-heres-how-im-learning-to-let-go-of-it-74f91da6?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Tue, 29 Sep 2026 14:00:00 GMT"
+   "fecha": "Tue, 29 Sep 2026 19:02:00 GMT"
   },
   {
-   "titulo": "Junk bonds are heading for worst month since 2022 after punishing global selloff",
-   "url": "https://www.marketwatch.com/story/junk-bonds-are-heading-for-worst-month-since-2022-after-punishing-global-selloff-12b70a3e?mod=mw_rss_topstories",
+   "titulo": "I’m in my 50s. My mother died from Alzheimer’s. Do I need long-term-care insurance?",
+   "url": "https://www.marketwatch.com/story/im-in-my-50s-my-mother-died-from-alzheimers-do-i-need-long-term-insurance-14d58069?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Tue, 29 Sep 2026 14:00:00 GMT"
+   "fecha": "Tue, 29 Sep 2026 18:55:00 GMT"
   },
   {
-   "titulo": "Before you invest in the Oura IPO, understand what you’re buying",
-   "url": "https://www.marketwatch.com/story/before-you-invest-in-the-oura-ipo-understand-what-youre-buying-1d88d868?mod=mw_rss_topstories",
+   "titulo": "OpenAI launches a rival to Meta’s Muse, as the battle for AI agents kicks into high gear",
+   "url": "https://www.marketwatch.com/story/openai-launches-a-rival-to-metas-muse-as-the-battle-for-ai-agents-kicks-into-high-gear-0f0de9b3?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Tue, 29 Sep 2026 13:45:00 GMT"
+   "fecha": "Tue, 29 Sep 2026 18:34:00 GMT"
   },
   {
-   "titulo": "Two stock picks from a money manager who expects small-caps to roar in 2027",
-   "url": "https://www.marketwatch.com/story/two-stock-picks-from-a-money-manager-who-expects-small-caps-to-roar-in-2027-70de9c4d?mod=mw_rss_topstories",
+   "titulo": "Education Department extends deadline for student loan interest rate discount",
+   "url": "https://www.cnbc.com/2026/09/29/trump-officials-extend-student-loan-interest-rate-discount-deadline.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 18:28:03 GMT"
+  },
+  {
+   "titulo": "Good news for OpenAI is great news for Oracle’s stock — here’s why",
+   "url": "https://www.marketwatch.com/story/good-news-for-openai-is-great-news-for-oracles-stock-heres-why-993b6a5f?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Tue, 29 Sep 2026 13:39:00 GMT"
+   "fecha": "Tue, 29 Sep 2026 18:28:00 GMT"
+  },
+  {
+   "titulo": "Disney laying off around 300 employees in latest cuts under new CEO Josh D'Amaro",
+   "url": "https://www.cnbc.com/2026/09/29/disney-layoffs-josh-damaro.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 18:21:27 GMT"
+  },
+  {
+   "titulo": "Trump Accounts will auto-enroll children, potentially adding 60 million accounts: Treasury",
+   "url": "https://www.cnbc.com/2026/09/29/trump-accounts-auto-enroll.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 18:01:58 GMT"
+  },
+  {
+   "titulo": "Medicare Advantage plans will be cheaper next year. Here’s the new cost.",
+   "url": "https://www.marketwatch.com/story/medicare-advantage-plans-will-be-cheaper-next-year-heres-the-new-cost-2f7ab55b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 29 Sep 2026 17:45:00 GMT"
+  },
+  {
+   "titulo": "I’m 77, pay rent and live off Social Security, but I help homeless people. Why are so many people going hungry?",
+   "url": "https://www.marketwatch.com/story/im-77-pay-rent-and-live-off-social-security-but-i-help-homeless-people-why-are-so-many-people-going-hungry-5818465f?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 29 Sep 2026 17:30:00 GMT"
+  },
+  {
+   "titulo": "Could SpaceX be worth $12 trillion one day? Citi says Starship gets it a step closer.",
+   "url": "https://www.marketwatch.com/story/could-spacex-be-worth-12-trillion-one-day-citi-says-starship-gets-it-a-step-closer-6ce44961?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 29 Sep 2026 16:59:00 GMT"
+  },
+  {
+   "titulo": "Here’s what Netflix skeptics are getting wrong about the stock, according to an analyst",
+   "url": "https://www.marketwatch.com/story/heres-what-netflix-skeptics-are-getting-wrong-about-the-stock-according-to-an-analyst-40436696?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 29 Sep 2026 16:45:00 GMT"
+  },
+  {
+   "titulo": "The hidden messages the bond market is sending about the AI boom and the stock market",
+   "url": "https://www.marketwatch.com/story/the-hidden-messages-the-bond-market-is-sending-about-the-ai-boom-and-the-stock-market-5c9495ba?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 29 Sep 2026 16:44:00 GMT"
+  },
+  {
+   "titulo": "‘I’d rather be on a beach in Bali’: My husband resents my $8 million net worth. Should I pay for his retirement?",
+   "url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 29 Sep 2026 16:30:00 GMT"
+  },
+  {
+   "titulo": "Gina Raimondo thinks AI ultimately will create jobs. It's the initial mass layoffs wave that worries her",
+   "url": "https://www.cnbc.com/2026/09/29/ai-job-losses-layoffs.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 15:46:04 GMT"
   },
   {
    "titulo": "House Speaker Johnson says he hopes AI guardrails are 'voluntary' amid Congress inaction",
    "url": "https://www.cnbc.com/2026/09/29/ai-safety-regulation-mike-johnson-congress.html",
    "fuente": "CNBC",
    "fecha": "Tue, 29 Sep 2026 13:37:49 GMT"
-  },
-  {
-   "titulo": "Investors who have shunned diversification face maybe the best buying opportunity for bonds in decades",
-   "url": "https://www.cnbc.com/2026/09/29/investors-who-have-shunned-diversification-face-maybe-the-best-buying-opportunity-for-bonds-in-decades.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 13:22:56 GMT"
-  },
-  {
-   "titulo": "Hassett: 'We're still working our way out from' Biden Covid spending",
-   "url": "https://www.cnbc.com/2026/09/29/hassett-trump-economy-biden-covid.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 13:18:58 GMT"
-  },
-  {
-   "titulo": "Coinbase Ventures and CMCC Global close strategic funding round with trading firm Raven",
-   "url": "https://www.cnbc.com/2026/09/29/coinbase-ventures-and-cmcc-global-close-strategic-funding-round-with-raven.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 13:05:06 GMT"
-  },
-  {
-   "titulo": "These private and public colleges have the best return on investment, according to The Princeton Review",
-   "url": "https://www.cnbc.com/2026/09/29/private-public-colleges-best-roi-return-on-investment-the-princeton-review.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 13:00:01 GMT"
-  },
-  {
-   "titulo": "Alaska Airlines unveils massive premium cabin overhaul in high-end travel race",
-   "url": "https://www.cnbc.com/2026/09/29/alaska-airlines-hawaiian-new-cabins.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 12:45:16 GMT"
-  },
-  {
-   "titulo": "Dolly Parton planned for her estate. The fight with her nephew shows why that matters.",
-   "url": "https://www.marketwatch.com/story/dolly-parton-planned-for-her-estate-the-fight-with-her-nephew-shows-why-that-matters-b7e57c26?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 29 Sep 2026 12:42:00 GMT"
-  },
-  {
-   "titulo": "Jamie Dimon has a plan to revive the West: A 'big, beautiful' deal with Europe",
-   "url": "https://www.cnbc.com/2026/09/29/jamie-dimon-europe-trade.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 12:39:14 GMT"
-  },
-  {
-   "titulo": "IRS sends notices on Saver's Match to taxpayers who might qualify for new benefit, worth up to $2,000",
-   "url": "https://www.cnbc.com/2026/09/29/savers-match-irs-retirement-benefit.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 12:15:01 GMT"
-  },
-  {
-   "titulo": "‘We lived within our means’: I earned $30,000 as a pastor and still retired comfortably. Why don’t you tell people that?",
-   "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 29 Sep 2026 12:15:00 GMT"
-  },
-  {
-   "titulo": "Taking Ozempic and worried about vision loss? This test can help you understand your risk.",
-   "url": "https://www.marketwatch.com/story/taking-ozempic-a-routine-eye-exam-could-help-you-understand-your-risk-for-vision-loss-3392c1a0?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 29 Sep 2026 12:03:00 GMT"
-  },
-  {
-   "titulo": "Polymarket taps Goldman Sachs veteran Lisa Mantil to attract Wall Street liquidity",
-   "url": "https://www.cnbc.com/2026/09/29/polymarket-lisa-mantil-institutional-growth.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 12:00:33 GMT"
-  },
-  {
-   "titulo": "America's Canadian import restrictions come into force. Here are the products barred from entry",
-   "url": "https://www.cnbc.com/2026/09/29/canada-import-ban-trade-war.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 11:23:19 GMT"
-  },
-  {
-   "titulo": "‘I’d rather be on a beach in Bali’: My husband resents my $8 million net worth. Should I pay for his retirement?",
-   "url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 29 Sep 2026 11:15:00 GMT"
-  },
-  {
-   "titulo": "Morgan Stanley’s Mike Wilson says an S&P 500 correction may be exactly what the market needs",
-   "url": "https://www.marketwatch.com/story/morgan-stanleys-mike-wilson-says-an-s-p-500-correction-may-be-exactly-what-the-market-needs-a6baf54e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 29 Sep 2026 11:03:00 GMT"
-  },
-  {
-   "titulo": "‘I’m never selling’: I’m 47 and buy bitcoin with every dollar I earn. Am I crazy?",
-   "url": "https://www.marketwatch.com/story/im-never-selling-im-47-and-buy-bitcoin-with-every-dollar-i-earn-am-i-crazy-364d2a64?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 29 Sep 2026 10:15:00 GMT"
   }
  ],
  "videos": [
@@ -567,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-09-29T14:08:33Z",
+ "ts": "2026-09-29T19:28:13Z",
  "fallas": [
   "videos",
   "directos"
