@@ -105,51 +105,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30512.0,
-   "cambio": -252.75,
-   "pct": -0.82
+   "precio": 30553.0,
+   "cambio": -213.75,
+   "pct": -0.69
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7737.75,
-   "cambio": -34.75,
-   "pct": -0.45
+   "precio": 7745.5,
+   "cambio": -21.5,
+   "pct": -0.28
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4150.5,
-   "cambio": -167.9,
-   "pct": -3.89
+   "precio": 4173.5,
+   "cambio": -124.5,
+   "pct": -2.9
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 93.43,
-   "cambio": 1.27,
-   "pct": 1.38
+   "precio": 94.03,
+   "cambio": -0.58,
+   "pct": -0.61
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2836.5,
-   "cambio": -23.7,
-   "pct": -0.83
+   "precio": 2836.8,
+   "cambio": -20.0,
+   "pct": -0.7
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51790.0,
-   "cambio": -83.0,
-   "pct": -0.16
+   "precio": 51820.0,
+   "cambio": 103.0,
+   "pct": 0.2
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 83545.0,
-   "cambio": -950.0,
-   "pct": -1.12
+   "precio": 84280.0,
+   "cambio": -80.0,
+   "pct": -0.09
   }
  ],
  "acciones": [
@@ -324,10 +324,52 @@
  ],
  "noticias": [
   {
-   "titulo": "Luckin Coffee, flush with investor cash, weighs entry into Middle East markets",
+   "titulo": "Luckin Coffee weighs entry into Middle East markets, chairman tells CNBC",
    "url": "https://www.cnbc.com/2026/09/29/luckin-coffee-mubadala-middle-east-temasek-centurium-capital.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 01:10:41 GMT"
+   "fecha": "Tue, 29 Sep 2026 06:48:59 GMT"
+  },
+  {
+   "titulo": "China has three new criteria for humanoid robot IPOs. Few, if any, meet them",
+   "url": "https://www.cnbc.com/2026/09/29/china-criteria-humanoid-robot-ipos.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 05:13:03 GMT"
+  },
+  {
+   "titulo": "India readies $25 billion for Deep Tech investment as U.S. and China race ahead",
+   "url": "https://www.cnbc.com/2026/09/29/india-investment-billions-tech-ai-us-china.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 05:12:10 GMT"
+  },
+  {
+   "titulo": "Australia says more hikes not off the table after raising rates to 15-year high",
+   "url": "https://www.cnbc.com/2026/09/29/australia-rates-inflation-monetary-policy.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 05:00:58 GMT"
+  },
+  {
+   "titulo": "U.S., Iran hold separate mediator talks as Mideast oil exports hit war-time high",
+   "url": "https://www.cnbc.com/2026/09/29/us-iran-war-trump-hormuz-.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 04:02:47 GMT"
+  },
+  {
+   "titulo": "Senate advances college sports bill aimed at regulating NIL deals",
+   "url": "https://www.cnbc.com/2026/09/28/college-sports-bill-senate-nil.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 02:56:45 GMT"
+  },
+  {
+   "titulo": "Samsung to inject $1 billion into Nvidia- and KKR-backed AI infrastructure firm",
+   "url": "https://www.cnbc.com/2026/09/29/samsung-investment-nvidia-kkr-ai-helix-digital.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 29 Sep 2026 01:48:52 GMT"
+  },
+  {
+   "titulo": "Anthropic’s potential $2 trillion IPO comes with the following fine print",
+   "url": "https://www.marketwatch.com/story/anthropics-potential-2-trillion-ipo-comes-with-the-following-fine-print-99d3cb90?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 29 Sep 2026 01:31:00 GMT"
   },
   {
    "titulo": "AMD makes a big bet on the next era of AI with World Labs acquisition",
@@ -336,28 +378,22 @@
    "fecha": "Tue, 29 Sep 2026 00:03:00 GMT"
   },
   {
-   "titulo": "Samsung to inject $1 billion into Nvidia- and KKR-backed AI infrastructure firm",
-   "url": "https://www.cnbc.com/2026/09/29/samsung-investment-nvidia-kkr-ai-helix-digital.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 00:00:10 GMT"
-  },
-  {
    "titulo": "OpenAI abandons plan to release upcoming model as safety concerns escalate",
    "url": "https://www.cnbc.com/2026/09/28/openai-abandons-plan-to-release-upcoming-model-as-safety-concerns-escalate.html",
    "fuente": "CNBC",
    "fecha": "Mon, 28 Sep 2026 23:19:46 GMT"
   },
   {
+   "titulo": "CNBC's The China Connection newsletter: Spectacle-heavy Trump-Xi summit was more about domestic messaging",
+   "url": "https://www.cnbc.com/2026/09/28/cnbcs-the-china-connection-trump-xi-summit-about-domestic-messaging.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 28 Sep 2026 23:00:01 GMT"
+  },
+  {
    "titulo": "‘We lived within our means’: I earned $30,000 as a pastor and still retired comfortably. Why don’t you tell people that?",
    "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Mon, 28 Sep 2026 23:00:00 GMT"
-  },
-  {
-   "titulo": "LeBron James is already boosting ticket and merchandise demand for Philadelphia 76ers",
-   "url": "https://www.cnbc.com/2026/09/28/lebron-james-boosts-ticket-jersey-demand-for-nba-philadelphia-76ers.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 28 Sep 2026 22:49:39 GMT"
   },
   {
    "titulo": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
@@ -370,12 +406,6 @@
    "url": "https://www.marketwatch.com/story/im-never-selling-im-47-and-buy-bitcoin-with-every-dollar-i-earn-am-i-crazy-364d2a64?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Mon, 28 Sep 2026 22:35:00 GMT"
-  },
-  {
-   "titulo": "AMD briefly joined the $1 trillion club. Cramer says its monster run isn’t over",
-   "url": "https://www.cnbc.com/2026/09/28/jim-cramer-amd-lisa-su-agentic-ai.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 28 Sep 2026 22:27:10 GMT"
   },
   {
    "titulo": "SpaceX’s next big growth engine isn’t rockets — it’s this play on AI power, analysts say",
@@ -418,36 +448,6 @@
    "url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Mon, 28 Sep 2026 21:00:00 GMT"
-  },
-  {
-   "titulo": "Michael Burry believes the AI bubble 'may burst' sooner than he first believed",
-   "url": "https://www.cnbc.com/2026/09/28/michael-burry-believes-the-ai-bubble-may-burst-sooner-than-he-first-believed.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 28 Sep 2026 20:43:14 GMT"
-  },
-  {
-   "titulo": "Bond yields move relentlessly higher, as Wall Street wonders how much more tech stocks can take",
-   "url": "https://www.marketwatch.com/story/bond-yields-move-relentlessly-higher-as-wall-street-wonders-how-much-more-tech-stocks-can-take-dd050c39?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 28 Sep 2026 20:43:00 GMT"
-  },
-  {
-   "titulo": "OpenAI sparked Hugging Face bids with early investment offer ahead of Nvidia's $13 billion deal",
-   "url": "https://www.cnbc.com/2026/09/28/openai-spark-hugging-face-bid-war-early-investment-bid-ahead-of-nvidia.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 28 Sep 2026 20:36:55 GMT"
-  },
-  {
-   "titulo": "Boeing 737 Max 10 certification delayed by software issue, FAA says",
-   "url": "https://www.cnbc.com/2026/09/28/faa-boeing-737-max-10-certification-delay-software-issue.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 28 Sep 2026 20:16:04 GMT"
-  },
-  {
-   "titulo": "Supreme Court Justice Alito will not participate in big climate change case next week",
-   "url": "https://www.cnbc.com/2026/09/28/supreme-court-justice-alito-recusal-climate-change-case.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 28 Sep 2026 20:13:00 GMT"
   },
   {
    "titulo": "SpaceX launches its massive Starship rocket into orbit for the first time",
@@ -567,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-09-29T01:14:57Z",
+ "ts": "2026-09-29T07:00:21Z",
  "fallas": [
   "videos",
   "directos"
