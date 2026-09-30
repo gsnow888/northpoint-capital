@@ -105,51 +105,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30650.0,
-   "cambio": -116.75,
-   "pct": -0.38
+   "precio": 30656.25,
+   "cambio": -233.0,
+   "pct": -0.75
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7747.5,
-   "cambio": -19.5,
-   "pct": -0.25
+   "precio": 7749.5,
+   "cambio": -54.25,
+   "pct": -0.7
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4204.5,
-   "cambio": -93.5,
-   "pct": -2.18
+   "precio": 4231.1,
+   "cambio": -90.1,
+   "pct": -2.09
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 89.51,
-   "cambio": -5.1,
-   "pct": -5.39
+   "precio": 89.8,
+   "cambio": -2.61,
+   "pct": -2.82
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2837.6,
-   "cambio": -19.2,
-   "pct": -0.67
+   "precio": 2837.2,
+   "cambio": -22.1,
+   "pct": -0.77
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51870.0,
-   "cambio": 153.0,
-   "pct": 0.3
+   "precio": 51909.0,
+   "cambio": -254.0,
+   "pct": -0.49
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 83730.0,
-   "cambio": -630.0,
-   "pct": -0.75
+   "precio": 83330.0,
+   "cambio": -342.0,
+   "pct": -0.41
   }
  ],
  "acciones": [
@@ -324,10 +324,52 @@
  ],
  "noticias": [
   {
+   "titulo": "Russia targets data centers in Kyiv as NATO condemns Moscow’s ‘irresponsible nuclear rhetoric’",
+   "url": "https://www.cnbc.com/2026/09/30/ukraine-war-russia-nato-nuclear-kyiv.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 08:33:09 GMT"
+  },
+  {
+   "titulo": "Tuesday’s market moves was one of the more disturbing days of late, says Goldman Sachs pro",
+   "url": "https://www.marketwatch.com/story/tuesdays-market-moves-was-one-of-the-more-disturbing-days-of-late-says-goldman-sachs-pro-22abf406?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 30 Sep 2026 08:25:00 GMT"
+  },
+  {
+   "titulo": "Boeing rises 3% after securing U.S. navy deal to develop next-generation fighter jet",
+   "url": "https://www.cnbc.com/2026/09/29/boeing-fighter-contract-pentagon.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 08:19:02 GMT"
+  },
+  {
+   "titulo": "Trump denies offering Iran sanctions relief; Qatar pushes for peace talks",
+   "url": "https://www.cnbc.com/2026/09/30/us-iran-war-trump-hormuz.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 07:47:42 GMT"
+  },
+  {
+   "titulo": "AI broke the job application. What replaces it?",
+   "url": "https://www.cnbc.com/2026/09/30/ai-resume-cv-job-application-interview.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 05:00:01 GMT"
+  },
+  {
    "titulo": "China factory activity snaps 2-month contractionary streak in September",
    "url": "https://www.cnbc.com/2026/09/30/china-manufacturing-exports-capacity-economy-.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 01:52:50 GMT"
+   "fecha": "Wed, 30 Sep 2026 03:39:35 GMT"
+  },
+  {
+   "titulo": "Beijing warns of retaliation if Europe imposes curbs on Chinese businesses",
+   "url": "https://www.cnbc.com/2026/09/30/china-warns-europe-increases-trade-pressure.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 03:39:08 GMT"
+  },
+  {
+   "titulo": "‘Don’t go with a fund, go with a solution’: CEO’s tips from decades of global investing",
+   "url": "https://www.cnbc.com/2026/09/30/bluefive-ceo-offers-tips-from-decades-of-global-investing.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 02:37:21 GMT"
   },
   {
    "titulo": "‘I have $400,000 in equity’: I’m 80. Should I sell my house because of dangerous stairs — or spend thousands renovating?",
@@ -358,12 +400,6 @@
    "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Tue, 29 Sep 2026 23:03:00 GMT"
-  },
-  {
-   "titulo": "Trump tries to rename AI 'super intelligence' as polls show him sinking on key issue",
-   "url": "https://www.cnbc.com/2026/09/29/trump-ai-super-intelligence.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 22:42:35 GMT"
   },
   {
    "titulo": "‘I’d rather be on a beach in Bali’: My husband resents my $8 million net worth. Should I pay for his retirement?",
@@ -402,52 +438,16 @@
    "fecha": "Tue, 29 Sep 2026 21:33:00 GMT"
   },
   {
-   "titulo": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
-   "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 29 Sep 2026 21:30:00 GMT"
-  },
-  {
-   "titulo": "Ford CEO says it's 'too late' for Europe to fend off Chinese automakers, but not for U.S.",
-   "url": "https://www.cnbc.com/2026/09/29/ford-ceo-jim-farley-china-automakers.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 21:08:05 GMT"
-  },
-  {
-   "titulo": "IPO postponements are accelerating in third quarter, even beyond Oura",
-   "url": "https://www.cnbc.com/2026/09/29/ipo-postponements-are-accelerating-in-third-quarter-even-beyond-oura.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 21:05:26 GMT"
-  },
-  {
    "titulo": "The Fed's main inflation measure will be released Wednesday. Here's what to expect",
    "url": "https://www.cnbc.com/2026/09/29/the-feds-main-inflation-measure-will-be-released-wednesday-heres-what-to-expect.html",
    "fuente": "CNBC",
    "fecha": "Tue, 29 Sep 2026 20:51:43 GMT"
   },
   {
-   "titulo": "Goldman Sachs CEO succession planning faces one big problem",
-   "url": "https://www.cnbc.com/2026/09/29/goldman-sachs-ceo-succession-planning.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 20:50:10 GMT"
-  },
-  {
-   "titulo": "Prediction market traders think the U.S. added more jobs in September than economists estimate",
-   "url": "https://www.cnbc.com/2026/09/29/prediction-market-traders-september-jobs-report-will-beat-estimates.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 20:33:08 GMT"
-  },
-  {
    "titulo": "30-year Treasury bond yield scales to highest level since 2002",
    "url": "https://www.cnbc.com/2026/09/29/treasury-yields-bonds.html",
    "fuente": "CNBC",
    "fecha": "Tue, 29 Sep 2026 20:03:39 GMT"
-  },
-  {
-   "titulo": "Homeowners are sitting on record equity – and not using it",
-   "url": "https://www.cnbc.com/2026/09/29/homeowners-are-sitting-on-record-equity-and-not-using-it.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 29 Sep 2026 19:23:06 GMT"
   },
   {
    "titulo": "New AI-powered government website uses Gemini, Grok, Trump official Gebbia says",
@@ -567,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-09-30T02:11:02Z",
+ "ts": "2026-09-30T08:41:55Z",
  "fallas": [
   "videos",
   "directos"
