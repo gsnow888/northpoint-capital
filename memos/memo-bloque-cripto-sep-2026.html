@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Memo de Mercado: BTC, MSTR, COIN y CRCL · NORTHPOINT</title>
+<meta name="description" content="Los cuatro activos son, en la práctica, una sola apuesta a Bitcoin: sesgo alcista de fondo, pero ninguno en zona de entrada óptima. BTC rechazado en 87,300; entradas en MSTR 130–146, COIN 175–180 y CRCL con doble test en 80.5. Memo de mercado de Gregorio Sánchez Calderón, cofundador de NORTHPOINT.">
+<link rel="canonical" href="https://northpointcapital.io/memos/memo-bloque-cripto-sep-2026.html">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://northpointcapital.io/memos/memo-bloque-cripto-sep-2026.html">
+<meta property="og:title" content="Memo de Mercado: cuatro activos, una apuesta">
+<meta property="og:description" content="BTC, MSTR, COIN y CRCL son una sola apuesta a Bitcoin. Sesgo alcista de fondo, ninguno en zona de entrada óptima. Bitcoin decide primero.">
+<meta property="og:image" content="https://northpointcapital.io/assets/images/og.png?v=2">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="NORTHPOINT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Memo de Mercado: cuatro activos, una apuesta">
+<meta name="twitter:description" content="BTC, MSTR, COIN y CRCL son una sola apuesta a Bitcoin. Sesgo alcista de fondo, ninguno en zona de entrada óptima.">
+<meta name="twitter:image" content="https://northpointcapital.io/assets/images/og.png?v=2">
+<meta name="author" content="Gregorio Sánchez Calderón">
+<!--
+  ════════════════════════════════════════════════════════════════
+  NORTHPOINT · Memo de mercado · BTC, MSTR, COIN y CRCL · 29-sep-2026
+  ════════════════════════════════════════════════════════════════
+  Segundo memo de la serie. Continúa memos/memo-btc-sep-2026.html.
+  · CSS en ../css/memo-bloque-cripto-sep-2026.css (mismo sistema que el
+    primer memo + el componente .bloque de las cuatro fichas).
+  · JS en ../js/memo-bloque-cripto-sep-2026.js (tema, nav, progreso).
+  · Rutas relativas: el memo vive en memos/ y sube un nivel para todo.
+  · Tema claro/oscuro compartido con la portada (localStorage np_theme).
+  · GRÁFICAS: las cuatro están colocadas (29-sep-2026), una por activo, en
+    ../assets/images/memos/bloque-cripto-sep-2026-0*.png. Son las capturas
+    de TradingView recortadas al área útil y reescaladas a 1600 px.
+    Usan <figure class="fig ancha">: al ser muy apaisadas (2.4:1 a 3.3:1)
+    rompen la columna de texto de 760 px y ocupan el ancho del .wrap.
+  · Los niveles se transcribieron del análisis del 29-sep-2026. Si se
+    corrige un nivel, hay que corregirlo también en la ficha .bloque
+    de la sección 01 y en la sección 07 (invalidaciones).
+-->
+<link rel="stylesheet" href="../css/memo-bloque-cripto-sep-2026.css">
+</head>
+<body>
+
+<nav class="nav" id="nav" aria-label="Navegación principal">
+  <div class="nav-in">
+    <a href="../index.html" class="brand" aria-label="NORTHPOINT — inicio">
+      <span class="brand-t">
+        <span class="brand-name">NORTHPOINT</span>
+        <span class="brand-sub">Family Office · Terminal</span>
+      </span>
+    </a>
+    <div class="nav-r">
+      <span class="micro">Memo de mercado</span>
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Cambiar tema">Claro</button>
+    </div>
+  </div>
+</nav>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<main>
+
+  <!-- ============================ TAPA ============================ -->
+  <header class="tapa">
+    <div class="wrap">
+      <span class="micro hup" style="--hd:.05s">Memo de mercado · Septiembre 2026</span>
+      <h1 class="hup" style="--hd:.15s">Cuatro activos, una apuesta</h1>
+      <p class="meta hup" style="--hd:.3s">
+        <span>29 sep 2026</span><span class="sep">·</span>
+        <span>@Greg</span><span class="sep">·</span>
+        <span>14 min de lectura</span>
+      </p>
+
+      <div class="ficha hup" style="--hd:.45s">
+        <div>
+          <span class="micro k">Instrumentos</span>
+          <span class="v">4<small>BTC · MSTR · COIN · CRCL</small></span>
+        </div>
+        <div>
+          <span class="micro k">Horizonte</span>
+          <span class="v">1–3 semanas<small>Continúa el memo del 23 de septiembre</small></span>
+        </div>
+        <div>
+          <span class="micro k">Sesgo</span>
+          <span class="v">Alcista de fondo<small>Ninguno en zona de entrada óptima</small></span>
+        </div>
+        <div>
+          <span class="micro k">Regla del memo</span>
+          <span class="v">BTC decide<small>Las acciones ligadas entran después</small></span>
+        </div>
+      </div>
+
+      <p class="aviso hup" style="--hd:.55s">
+        <b>Aviso</b>
+        <span>Este documento no es asesoría financiera. Es un marco de análisis técnico para la toma de decisiones propias.</span>
+      </p>
+    </div>
+  </header>
+
+  <!-- ============================ 01 ============================ -->
+  <section class="sec" id="conclusion">
+    <div class="wrap col">
+      <header class="sec-h">
+        <p class="sec-n">01</p>
+        <h2 class="sec-t">Conclusión principal</h2>
+        <p class="lead">Los cuatro activos son, en la práctica, una sola apuesta a Bitcoin: el sesgo de fondo es alcista, pero ninguno está hoy en zona de entrada óptima y todos esperan un retroceso.</p>
+      </header>
+      <div class="sec-b">
+        <p>Bitcoin fue rechazado en <span class="num">~87,300</span>, que resulta ser la extensión de 61.8% del trazo vigente, y cotiza en <span class="num">~83,700</span>. MSTR cotiza pegado a su propia extensión de 61.8% y COIN quedó justo debajo de la suya: ninguno de los dos ha confirmado la ruptura. CRCL perdió sus medias y se acerca a su invalidación.</p>
+
+        <p>El plan del memo anterior sigue vigente. <strong>Primero corrige Bitcoin; después se carga exposición en las acciones ligadas.</strong> Comprar las tres hoy, a la vez, es tomar una sola posición grande en BTC al peor precio de las tres.</p>
+
+        <div class="callout">
+          <span class="micro">Continúa el memo anterior</span>
+          <p><a href="memo-btc-sep-2026.html">Bitcoin en septiembre</a> · 23 de septiembre de 2026. Aquel memo pedía una corrección de 8–10% hacia <strong>78,570–81,200</strong> con invalidación en <strong>75,000</strong>. El rechazo de esta semana en 87,300 confirmó el escenario base.</p>
+        </div>
+
+        <!-- Las cuatro fichas: el resumen operativo del memo completo.
+             Si se corrige un nivel abajo, hay que corregirlo también aquí. -->
+        <div class="bloque">
+          <div class="ancla">
+            <div class="bh">
+              <span class="tk">BTC<small>CME · contrato de octubre · 4H</small></span>
+              <span class="px">~83,700</span>
+            </div>
+            <div class="bd">
+              <div><span class="micro k">Sesgo</span><div class="v">Corrección dentro de tendencia alcista</div></div>
+              <div><span class="micro k">Zona de entrada</span><div class="v"><span class="num">82,200</span> parcial · <span class="num">78,570–80,316</span> principal</div></div>
+              <div><span class="micro k">Invalidación</span><div class="v">Cierre diario por debajo de <span class="num">75,000</span></div></div>
+              <div><span class="micro k">Primer objetivo</span><div class="v"><span class="num">87,300</span> y luego <span class="num">94,855</span></div></div>
+            </div>
+          </div>
+          <div>
+            <div class="bh">
+              <span class="tk">MSTR<small>Strategy · 1D</small></span>
+              <span class="px">154.67</span>
+            </div>
+            <div class="bd">
+              <div><span class="micro k">Sesgo</span><div class="v">Alcista tras la ruptura de la línea guía</div></div>
+              <div><span class="micro k">Zona de entrada</span><div class="v"><span class="num">130–146</span></div></div>
+              <div><span class="micro k">Invalidación</span><div class="v"><span class="num">125</span></div></div>
+              <div><span class="micro k">Primer objetivo</span><div class="v"><span class="num">177.09</span></div></div>
+            </div>
+          </div>
+          <div>
+            <div class="bh">
+              <span class="tk">COIN<small>Coinbase · 4H</small></span>
+              <span class="px">190.02</span>
+            </div>
+            <div class="bd">
+              <div><span class="micro k">Sesgo</span><div class="v">Neutral-alcista, sin confirmar</div></div>
+              <div><span class="micro k">Zona de entrada</span><div class="v"><span class="num">175–180</span></div></div>
+              <div><span class="micro k">Invalidación</span><div class="v"><span class="num">175</span></div></div>
+              <div><span class="micro k">Primer objetivo</span><div class="v"><span class="num">216.00</span></div></div>
+            </div>
+          </div>
+          <div>
+            <div class="bh">
+              <span class="tk">CRCL<small>Circle · 1D</small></span>
+              <span class="px">83.70</span>
+            </div>
+            <div class="bd">
+              <div><span class="micro k">Sesgo</span><div class="v">Neutral, en compresión</div></div>
+              <div><span class="micro k">Zona de entrada</span><div class="v"><span class="num">78.5–80.5</span> con doble test</div></div>
+              <div><span class="micro k">Invalidación</span><div class="v"><span class="num">78.18</span></div></div>
+              <div><span class="micro k">Primer objetivo</span><div class="v"><span class="num">103.09</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <p style="margin-top:28px">Los valores de Fibonacci se tomaron de los trazos de las gráficas propias. Donde el trazo y el nivel redondo no coinciden, manda el trazo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 02 ============================ -->
+  <section class="sec" id="btc">
+    <div class="wrap col">
+      <header class="sec-h">
+        <p class="sec-n">02</p>
+        <h2 class="sec-t">Bitcoin</h2>
+        <p class="lead">El rechazo en <span class="num">87,300</span> confirma el escenario base del memo anterior: la corrección hacia <span class="num">78,570–80,316</span> sigue siendo el plan.</p>
+      </header>
+      <div class="sec-b">
+
+        <h3>La tesis</h3>
+        <div class="dl">
+          <div class="k">Rechazo</div>
+          <div class="v">En un nivel de extensión de Fibonacci: <span class="num">87,300</span></div>
+          <div class="k">Entradas</div>
+          <div class="v">Si se testea <span class="num">82,200</span></div>
+          <div class="k">Escenario bajista</div>
+          <div class="v">Si rompe <span class="num">80,400</span>, podría ir a buscar <span class="num">75,000</span></div>
+          <div class="k">Continuidad</div>
+          <div class="v">Se mantiene el plan del memo anterior</div>
+        </div>
+
+        <h3>Lectura independiente</h3>
+        <p>La extensión está anclada en <span class="num">62,500 → 82,300 → 75,040</span>. Con esos puntos, el 61.8% cae en <span class="num">~87,290</span>, exactamente donde se rechazó el precio. El propio mercado validó el trazo.</p>
+
+        <p>El 38.2% cae en <span class="num">~82,610</span>, así que la entrada en <span class="num">82,200</span> tiene sentido técnico y coincide con el nivel de <span class="num">82,487</span> marcado en la gráfica.</p>
+
+        <p><strong>Ajuste para congeniar con el memo anterior.</strong> <span class="num">82,200</span> está por encima de la zona de corrección de 8–10%. Conviene tratarla como entrada parcial —un tercio— y dejar la entrada principal para <span class="num">78,570–80,316</span>. Además, romper <span class="num">80,400</span> no implica ir directo a <span class="num">75,000</span>: primero se entra en la zona de recompra. El detonante para buscar <span class="num">75,000</span> es un cierre de 4H por debajo de <span class="num">78,500</span>.</p>
+
+        <!-- GRÁFICA 1 · BTC1! (Bitcoin CME Futures · 4 h). Captura del 29-sep-2026. -->
+        <figure class="fig ancha">
+          <a href="../assets/images/memos/bloque-cripto-sep-2026-01-btc-4h.png" target="_blank" rel="noopener" title="Abrir la gráfica a tamaño completo">
+          <img src="../assets/images/memos/bloque-cripto-sep-2026-01-btc-4h.png" width="1600" height="618" loading="lazy" decoding="async"
+               alt="Gráfico de 4 horas de los futuros de Bitcoin en CME, contrato BTCV2026, con el precio en 83,725. La escalera de extensiones de Fibonacci marca el 61.8% en 87,285, el 100% en 94,855, el 132.8% en 101,355, el 161.8% en 107,100, el 200% en 114,670 y el 261.8% en 126,915. Los retrocesos marcan el 38.2% en 74,875, el 50% en 72,520, el 61.8% en 70,160 y el 72.8% en 67,960, con la línea de tendencia alcista trazada desde el mínimo de julio.">
+          </a>
+          <figcaption>BTC1! · 4 h · CME · Rechazo en la extensión de 61.8% (87,285). Objetivos 94,855 · 107,100 · 126,915. Retrocesos 74,875 · 72,520 · 70,160.</figcaption>
+        </figure>
+
+        <h3>Mapa de niveles</h3>
+        <div class="tabla">
+          <table>
+            <thead>
+              <tr><th>Nivel</th><th>Referencia</th><th>Uso</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="n" data-l="Nivel">126,915</td><td class="t" data-l="Referencia">Extensión 261.8%</td><td data-l="Uso">Objetivo de largo plazo</td></tr>
+              <tr><td class="n" data-l="Nivel">107,100</td><td class="t" data-l="Referencia">Extensión 161.8%</td><td data-l="Uso">Segundo objetivo</td></tr>
+              <tr><td class="n" data-l="Nivel">94,855</td><td class="t" data-l="Referencia">Extensión 100%</td><td data-l="Uso">Primer objetivo tras romper 87,300</td></tr>
+              <tr><td class="n" data-l="Nivel">~87,300</td><td class="t" data-l="Referencia">Extensión 61.8%</td><td data-l="Uso">Resistencia confirmada</td></tr>
+              <tr><td class="n" data-l="Nivel">82,200–82,610 <span class="chip on">Precio ~83,700</span></td><td class="t" data-l="Referencia">Extensión 38.2%</td><td data-l="Uso">Entrada parcial</td></tr>
+              <tr class="key"><td class="n" data-l="Nivel">78,570–80,316 <span class="chip">Entrada</span></td><td class="t" data-l="Referencia">Corrección 8–10%</td><td data-l="Uso">Entrada principal</td></tr>
+              <tr class="key"><td class="n" data-l="Nivel">74,875–75,000 <span class="chip">Invalidación</span></td><td class="t" data-l="Referencia">Retroceso 38.2%</td><td data-l="Uso">Invalidación de la estructura</td></tr>
+              <tr><td class="n" data-l="Nivel">72,520 / 70,160</td><td class="t" data-l="Referencia">Retroceso 50% / 61.8%</td><td data-l="Uso">Objetivos si se pierde 75,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>El contrato</h3>
+        <div class="formula" aria-label="Equivalencia del contrato">
+          <span>BTC1!</span><span class="eq">=</span><span>5 BTC</span>
+          <span class="eq">·</span>
+          <span>MBT</span><span class="eq">→</span><span>1,000 puntos = $100</span>
+        </div>
+        <p>El contrato de la gráfica ya es el de octubre (<span class="num">BTCV2026</span>), así que el roll está resuelto y no hay que rehacer los niveles esta semana.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 03 ============================ -->
+  <section class="sec" id="mstr">
+    <div class="wrap col">
+      <header class="sec-h">
+        <p class="sec-n">03</p>
+        <h2 class="sec-t">MSTR · Strategy</h2>
+        <p class="lead">La ruptura de la línea guía bajista es real, pero comprar en <span class="num">154.67</span> con invalidación en <span class="num">125</span> da mala relación riesgo/beneficio. La entrada está en el retest.</p>
+      </header>
+      <div class="sec-b">
+
+        <h3>La tesis</h3>
+        <div class="dl">
+          <div class="k">Ruptura</div>
+          <div class="v">De una línea guía; aumento de posiciones en el retest de <span class="num">130</span></div>
+          <div class="k">Soporte</div>
+          <div class="v">La extensión de 61.8% de Fibonacci</div>
+          <div class="k">Aumento de exposición</div>
+          <div class="v">En el 0.5 o el 0.618, en confluencia con el canal de Donchian y la EMA de 21</div>
+          <div class="k">Estructura</div>
+          <div class="v">Rebote en la línea media del tridente, con continuación alcista</div>
+          <div class="k">Invalidación</div>
+          <div class="v"><span class="num">125</span></div>
+          <div class="k">Confirmación total</div>
+          <div class="v">Al romper y testear <span class="num">195</span></div>
+        </div>
+
+        <h3>Lectura independiente</h3>
+        <p>La extensión, con base en <span class="num">~121.4</span>, pone el 61.8% en <span class="num">155.81</span>, y el precio cotiza pegado a ese nivel: está sobre él, no por encima con holgura. La EMA de 21 está en <span class="num">~144.1</span> y la de 100 en <span class="num">~130.1</span>, así que el retest de <span class="num">130</span> coincide con la EMA de 100. <strong>Es la mejor confluencia de la gráfica.</strong></p>
+
+        <p>El retroceso del último impulso pone el 50% en <span class="num">146.41</span> y el 61.8% en <span class="num">140.97</span>. Con la EMA de 21 en medio, esa franja es la zona de aumento de exposición.</p>
+
+        <h3>El problema del precio actual</h3>
+        <div class="inv">
+          <div>
+            <span class="micro k">Comprar hoy</span>
+            <div class="n">−19%<small>de riesgo</small></div>
+            <p>Desde <span class="num">154.67</span>, con stop en <span class="num">125</span>, para ganar ~14% hasta <span class="num">177</span>.</p>
+          </div>
+          <div>
+            <span class="micro k">Esperar el retest</span>
+            <div class="n">−4%<small>de riesgo</small></div>
+            <p>Desde <span class="num">130</span>, con el mismo stop, para ganar ~36% hasta <span class="num">177</span>.</p>
+          </div>
+        </div>
+        <p style="margin-top:24px">Es la misma tesis, el mismo objetivo y el mismo stop. Lo único que cambia es el precio de entrada, y con él la operación entera.</p>
+
+        <p><strong>Relación con BTC.</strong> MSTR se mueve con más beta que Bitcoin, típicamente entre 1.5 y 2 veces. Una caída de BTC de 8–10% hacia <span class="num">78,500–80,300</span> es coherente con que MSTR visite <span class="num">130–140</span>. Ambos planes apuntan al mismo momento de entrada.</p>
+
+        <!-- GRÁFICA 2 · MSTR (Strategy · 1 D). Captura del 29-sep-2026. -->
+        <figure class="fig ancha">
+          <a href="../assets/images/memos/bloque-cripto-sep-2026-02-mstr-1d.png" target="_blank" rel="noopener" title="Abrir la gráfica a tamaño completo">
+          <img src="../assets/images/memos/bloque-cripto-sep-2026-02-mstr-1d.png" width="1600" height="484" loading="lazy" decoding="async"
+               alt="Gráfico diario de Strategy (MSTR) en NASDAQ con el precio en 154.67, la ruptura de la línea guía bajista y el tridente de Andrews proyectado hacia arriba. Las extensiones de Fibonacci marcan el 61.8% en 155.81, el 100% en 177.09, el 132.8% en 195.36, el 161.8% en 211.52, el 200% en 232.80 y el 261.8% en 267.23. Los retrocesos del último impulso caen en 151.86, 146.41, 140.97 y 135.8, y el eje marca los niveles de 144.14 y 130.12.">
+          </a>
+          <figcaption>MSTR · 1 D · NASDAQ · Ruptura de la línea guía bajista. El retest de 130 coincide con la EMA de 100. Extensiones 177.09 · 195.36 · 211.52.</figcaption>
+        </figure>
+
+        <h3>Mapa de niveles</h3>
+        <div class="tabla">
+          <table>
+            <thead>
+              <tr><th>Nivel</th><th>Referencia</th><th>Uso</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="n" data-l="Nivel">267.23</td><td class="t" data-l="Referencia">Extensión 261.8%</td><td data-l="Uso">Objetivo de largo plazo</td></tr>
+              <tr><td class="n" data-l="Nivel">232.80</td><td class="t" data-l="Referencia">Extensión 200%</td><td data-l="Uso">Tercer objetivo</td></tr>
+              <tr><td class="n" data-l="Nivel">211.52</td><td class="t" data-l="Referencia">Extensión 161.8%</td><td data-l="Uso">Segundo objetivo</td></tr>
+              <tr><td class="n" data-l="Nivel">195.36</td><td class="t" data-l="Referencia">Extensión 132.8%</td><td data-l="Uso">Confirmación alcista total al romper y testear</td></tr>
+              <tr><td class="n" data-l="Nivel">177.09</td><td class="t" data-l="Referencia">Extensión 100%</td><td data-l="Uso">Primer objetivo</td></tr>
+              <tr><td class="n" data-l="Nivel">155.81 <span class="chip on">Precio 154.67</span></td><td class="t" data-l="Referencia">Extensión 61.8%</td><td data-l="Uso">Soporte frágil: el precio está sobre él</td></tr>
+              <tr><td class="n" data-l="Nivel">151.86</td><td class="t" data-l="Referencia">Retroceso 38.2% del último impulso</td><td data-l="Uso">Primer soporte</td></tr>
+              <tr class="key"><td class="n" data-l="Nivel">140.97–146.41 <span class="chip">Parcial</span></td><td class="t" data-l="Referencia">Retroceso 50%–61.8% y EMA 21 (~144.1)</td><td data-l="Uso">Entrada parcial</td></tr>
+              <tr><td class="n" data-l="Nivel">135.80</td><td class="t" data-l="Referencia">Retroceso 72.8% del último impulso</td><td data-l="Uso">Último soporte antes del retest</td></tr>
+              <tr class="key"><td class="n" data-l="Nivel">~130.10 <span class="chip">Entrada</span></td><td class="t" data-l="Referencia">EMA 100 y retest de la línea guía</td><td data-l="Uso">Entrada principal</td></tr>
+              <tr class="key"><td class="n" data-l="Nivel">125 <span class="chip">Invalidación</span></td><td class="t" data-l="Referencia">Invalidación</td><td data-l="Uso">Salida</td></tr>
+              <tr><td class="n" data-l="Nivel">123.64</td><td class="t" data-l="Referencia">Retroceso 38.2% del swing mayor</td><td data-l="Uso">Primer soporte tras invalidar</td></tr>
+              <tr><td class="n" data-l="Nivel">117.07 / 110.49</td><td class="t" data-l="Referencia">Retroceso 50% / 61.8% del swing mayor</td><td data-l="Uso">Objetivos si se pierde 125</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout">
+          <span class="micro">Plan sugerido</span>
+          <p>Entrada parcial en <strong>141–146</strong>, principal en <strong>130–133</strong>, stop por debajo de <strong>125</strong>.</p>
+          <p>Toma de ganancias parcial en <strong>177</strong> y en <strong>195</strong>. Si <strong>195</strong> se rompe y se sostiene, dejar correr el remanente hacia <strong>211</strong>.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 04 ============================ -->
+  <section class="sec" id="coin">
+    <div class="wrap col">
+      <header class="sec-h">
+        <p class="sec-n">04</p>
+        <h2 class="sec-t">COIN · Coinbase</h2>
+        <p class="lead">COIN está debajo de una capa densa de resistencias entre <span class="num">195</span> y <span class="num">216</span>. La tendencia alcista no se confirma hasta romper <span class="num">216</span>.</p>
+      </header>
+      <div class="sec-b">
+
+        <h3>La tesis</h3>
+        <div class="dl">
+          <div class="k">Invalidación</div>
+          <div class="v"><span class="num">175</span>; observar el movimiento en <span class="num">180</span></div>
+          <div class="k">Confirmación</div>
+          <div class="v">Cierre por encima de la EMA de 21 en diario</div>
+          <div class="k">Cobertura</div>
+          <div class="v">En la extensión de 100% (<span class="num">216</span>), atento a noticias</div>
+          <div class="k">Tendencia</div>
+          <div class="v">Sin romper <span class="num">216</span> no hay tendencia alcista definitiva</div>
+          <div class="k">Entradas probables</div>
+          <div class="v">Retroceso en el canal del tridente, en el canal inferior</div>
+          <div class="k">Vigilar</div>
+          <div class="v">La ruptura de la línea guía azul</div>
+        </div>
+
+        <h3>Lectura independiente</h3>
+        <p>Entre <span class="num">195</span> y <span class="num">216</span> se acumulan cuatro resistencias: la extensión de 61.8% (<span class="num">195.06</span>), la EMA de 100 en 4H (<span class="num">~200.4</span>), la línea bajista desde el máximo de 2025 y la extensión de 100% (<span class="num">216</span>). El precio está además debajo de la EMA de 21 en 4H (<span class="num">~193.7</span>), así que el impulso de corto plazo es débil.</p>
+
+        <p>La invalidación en <span class="num">175</span> coincide casi exacto con el retroceso de 38.2% (<span class="num">174.91</span>). Es un nivel bien elegido: el mismo punto sirve de tesis y de salida.</p>
+
+        <h3>Riesgo y beneficio</h3>
+        <div class="inv">
+          <div>
+            <span class="micro k">Entrar en 190</span>
+            <div class="n">1.7 : 1<small>riesgo / beneficio</small></div>
+            <p>Arriesga ~8% con stop en <span class="num">175</span> para ganar ~14% hasta <span class="num">216</span>.</p>
+          </div>
+          <div>
+            <span class="micro k">Entrar en 178–180</span>
+            <div class="n">3 : 1<small>riesgo / beneficio</small></div>
+            <p>La misma operación esperando el soporte horizontal, donde pasa el canal inferior del tridente.</p>
+          </div>
+        </div>
+
+        <p style="margin-top:24px"><strong>Sobre la cobertura en 216.</strong> Es coherente, porque <span class="num">216</span> es resistencia hasta demostrar lo contrario. Pero si rompe con volumen y cierra en diario por encima, la cobertura debe levantarse: ahí <span class="num">216</span> deja de ser techo y pasa a ser soporte.</p>
+
+        <!-- GRÁFICA 3 · COIN (Coinbase · 4 h). Captura del 29-sep-2026. -->
+        <figure class="fig ancha">
+          <a href="../assets/images/memos/bloque-cripto-sep-2026-03-coin-4h.png" target="_blank" rel="noopener" title="Abrir la gráfica a tamaño completo">
+          <img src="../assets/images/memos/bloque-cripto-sep-2026-03-coin-4h.png" width="1600" height="676" loading="lazy" decoding="async"
+               alt="Gráfico de 4 horas de Coinbase (COIN) en NASDAQ con el precio en 190.02, por debajo de la EMA de 21 en 193.74 y de la EMA de 100 en 200.37. Las extensiones de Fibonacci marcan el 61.8% en 195.06, el 100% en 216.00, el 132.8% en 233.98, el 161.8% en 249.88, el 200% en 270.82 y el 261.8% en 304.70. Los retrocesos caen en 174.91, 168.44, 161.98 y 155.94, con el soporte horizontal en 177.92 y la base del rango de 2026 en 146.15.">
+          </a>
+          <figcaption>COIN · 4 h · NASDAQ · Capa de resistencias entre 195.06 y 216. Soporte de entrada en 177.92 y base del rango en 146.15.</figcaption>
+        </figure>
+
+        <h3>Mapa de niveles</h3>
+        <div class="tabla">
+          <table>
+            <thead>
+              <tr><th>Nivel</th><th>Referencia</th><th>Uso</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="n" data-l="Nivel">304.70</td><td class="t" data-l="Referencia">Extensión 261.8%</td><td data-l="Uso">Objetivo de largo plazo</td></tr>
+              <tr><td class="n" data-l="Nivel">270.82</td><td class="t" data-l="Referencia">Extensión 200%</td><td data-l="Uso">Tercer objetivo</td></tr>
+              <tr><td class="n" data-l="Nivel">249.88</td><td class="t" data-l="Referencia">Extensión 161.8%</td><td data-l="Uso">Segundo objetivo</td></tr>
+              <tr><td class="n" data-l="Nivel">233.98</td><td class="t" data-l="Referencia">Extensión 132.8%</td><td data-l="Uso">Primer objetivo tras romper 216</td></tr>
+              <tr class="key"><td class="n" data-l="Nivel">216.00 <span class="chip">Objetivo</span></td><td class="t" data-l="Referencia">Extensión 100%</td><td data-l="Uso">Confirmación alcista y zona de cobertura</td></tr>
+              <tr><td class="n" data-l="Nivel">195–200 <span class="chip on">Precio 190.02</span></td><td class="t" data-l="Referencia">Extensión 61.8% y EMA 100 (4H)</td><td data-l="Uso">Primera resistencia</td></tr>
+              <tr class="key"><td class="n" data-l="Nivel">177.9–180 <span class="chip">Entrada</span></td><td class="t" data-l="Referencia">Soporte horizontal</td><td data-l="Uso">Zona de entrada</td></tr>
+              <tr class="key"><td class="n" data-l="Nivel">175 <span class="chip">Invalidación</span></td><td class="t" data-l="Referencia">Invalidación</td><td data-l="Uso">Salida</td></tr>
+              <tr><td class="n" data-l="Nivel">174.91</td><td class="t" data-l="Referencia">Retroceso 38.2%</td><td data-l="Uso">Coincide con la invalidación</td></tr>
+              <tr><td class="n" data-l="Nivel">168.44 / 161.98</td><td class="t" data-l="Referencia">Retroceso 50% / 61.8%</td><td data-l="Uso">Objetivos bajistas</td></tr>
+              <tr><td class="n" data-l="Nivel">146.15</td><td class="t" data-l="Referencia">Soporte mayor</td><td data-l="Uso">Base del rango de 2026</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout">
+          <span class="micro">Evento a vigilar</span>
+          <p>La gráfica marca el <strong>reporte trimestral alrededor de finales de octubre</strong>. Conviene no llegar a esa fecha con la posición completa y sin cobertura. Hay que verificar la fecha exacta antes de entrar.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 05 ============================ -->
+  <section class="sec" id="crcl">
+    <div class="wrap col">
+      <header class="sec-h">
+        <p class="sec-n">05</p>
+        <h2 class="sec-t">CRCL · Circle</h2>
+        <p class="lead">CRCL está en un triángulo que se comprime y acaba de perder sus medias. Esperar un doble test es lo correcto: la invalidación está solo ~7% abajo.</p>
+      </header>
+      <div class="sec-b">
+
+        <h3>La tesis</h3>
+        <div class="dl">
+          <div class="k">Invalidación</div>
+          <div class="v"><span class="num">78.18</span></div>
+          <div class="k">Entradas</div>
+          <div class="v">Al confirmarse un doble test que corrobore la idea alcista</div>
+          <div class="k">Objetivo</div>
+          <div class="v">La extensión de 100% si sigue la tendencia alcista</div>
+          <div class="k">Cobertura</div>
+          <div class="v">Sacar 30% de ganancias al romper <span class="num">103.09</span></div>
+        </div>
+
+        <h3>Lectura independiente</h3>
+        <p>El retroceso está trazado sobre el swing de <span class="num">~57.9</span> a <span class="num">103.09</span>, y la extensión tiene base en <span class="num">~78.5</span>. Por eso la invalidación en <span class="num">78.18</span> está bien colocada: si se pierde, el patrón de extensión deja de ser válido. No es un nivel arbitrario, es el punto donde el trazo se cae.</p>
+
+        <p>El precio ya cayó debajo del 38.2% (<span class="num">85.89</span>) y de las EMAs de 21 y 100 (<span class="num">~88.7</span> y <span class="num">~85.0</span>), así que el impulso de corto plazo es negativo.</p>
+
+        <h3>Estructura</h3>
+        <p>La línea bajista desde el máximo de mayo y la alcista desde el mínimo de julio forman un <strong>triángulo simétrico cerca de su vértice</strong>. Eso suele resolverse con un movimiento fuerte en cualquier dirección. El doble test en <span class="num">80.54</span> —el retroceso de 50%— sería la señal de que la ruptura buena es hacia arriba.</p>
+
+        <p><strong>Sobre el 30% en 103.09.</strong> Al romper <span class="num">103.09</span> se toma 30% de ganancias y el resto queda corriendo hacia <span class="num">124.11</span>. Tiene lógica: <span class="num">103.09</span> es el máximo del swing y todavía quedan dos resistencias antes del 100%, <span class="num">106.70</span> y la línea bajista.</p>
+
+        <!-- GRÁFICA 4 · CRCL (Circle · 1 D). Captura del 29-sep-2026. -->
+        <figure class="fig ancha">
+          <a href="../assets/images/memos/bloque-cripto-sep-2026-04-crcl-1d.png" target="_blank" rel="noopener" title="Abrir la gráfica a tamaño completo">
+          <img src="../assets/images/memos/bloque-cripto-sep-2026-04-crcl-1d.png" width="1600" height="626" loading="lazy" decoding="async"
+               alt="Gráfico diario de Circle (CRCL) en NYSE con el precio en 83.70, dentro de un triángulo simétrico formado por la línea bajista desde el máximo de mayo y la alcista desde el mínimo de julio. El precio perdió el retroceso de 38.2% en 85.89 y las EMAs de 21 y 100, marcadas en 88.70 y 85.03. Los retrocesos siguientes caen en 80.54, 75.18 y 70.19, y las extensiones marcan 106.70, 124.11, 139.07, 152.29, 169.70 y 197.88.">
+          </a>
+          <figcaption>CRCL · 1 D · NYSE · Triángulo simétrico cerca del vértice, con las EMAs de 21 (88.70) y 100 (85.03) perdidas. Doble test en 80.54 · invalidación en 78.18.</figcaption>
+        </figure>
+
+        <h3>Mapa de niveles</h3>
+        <div class="tabla">
+          <table>
+            <thead>
+              <tr><th>Nivel</th><th>Referencia</th><th>Uso</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="n" data-l="Nivel">197.88</td><td class="t" data-l="Referencia">Extensión 261.8%</td><td data-l="Uso">Objetivo de largo plazo</td></tr>
+              <tr><td class="n" data-l="Nivel">152.29</td><td class="t" data-l="Referencia">Extensión 161.8%</td><td data-l="Uso">Tercer objetivo</td></tr>
+              <tr><td class="n" data-l="Nivel">139.07</td><td class="t" data-l="Referencia">Extensión 132.8%</td><td data-l="Uso">Segundo objetivo</td></tr>
+              <tr><td class="n" data-l="Nivel">124.11</td><td class="t" data-l="Referencia">Extensión 100%</td><td data-l="Uso">Objetivo principal</td></tr>
+              <tr><td class="n" data-l="Nivel">106.70</td><td class="t" data-l="Referencia">Extensión 61.8%</td><td data-l="Uso">Resistencia</td></tr>
+              <tr class="key"><td class="n" data-l="Nivel">103.09 <span class="chip">Objetivo</span></td><td class="t" data-l="Referencia">Máximo del swing</td><td data-l="Uso">Toma de 30% al romperlo</td></tr>
+              <tr><td class="n" data-l="Nivel">85.0–88.7 <span class="chip on">Precio 83.70</span></td><td class="t" data-l="Referencia">EMAs de 100 y 21</td><td data-l="Uso">Resistencia a recuperar</td></tr>
+              <tr><td class="n" data-l="Nivel">85.89</td><td class="t" data-l="Referencia">Retroceso 38.2%</td><td data-l="Uso">Perdido</td></tr>
+              <tr class="key"><td class="n" data-l="Nivel">80.54 <span class="chip">Entrada</span></td><td class="t" data-l="Referencia">Retroceso 50%</td><td data-l="Uso">Zona de doble test</td></tr>
+              <tr class="key"><td class="n" data-l="Nivel">78.18 <span class="chip">Invalidación</span></td><td class="t" data-l="Referencia">Base de la extensión</td><td data-l="Uso">Salida</td></tr>
+              <tr><td class="n" data-l="Nivel">75.18 / 70.19</td><td class="t" data-l="Referencia">Retroceso 61.8% / 72.8%</td><td data-l="Uso">Objetivos bajistas</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout">
+          <span class="micro">Diferencia con las otras tres</span>
+          <p>CRCL depende menos de Bitcoin y más de las <strong>tasas de interés</strong> y la <strong>regulación de stablecoins</strong>, porque buena parte de su ingreso viene de los intereses de sus reservas.</p>
+          <p>Eso la vuelve una diversificación parcial del bloque, <strong>no una cobertura</strong>. Si BTC cae, CRCL puede caer también; solo que por motivos propios.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 06 ============================ -->
+  <section class="sec" id="cartera">
+    <div class="wrap col">
+      <header class="sec-h">
+        <p class="sec-n">06</p>
+        <h2 class="sec-t">Riesgo de cartera</h2>
+        <p class="lead">La regla más importante de este memo: Bitcoin decide primero, y las acciones ligadas se compran después de que BTC confirme su zona de recompra.</p>
+      </header>
+      <div class="sec-b">
+        <p><strong>Correlación.</strong> BTC, MSTR y COIN se mueven casi juntos, y MSTR con más beta. Tener las tres posiciones completas equivale a una sola posición grande en Bitcoin, con la ilusión de estar diversificado. Conviene fijar un <strong>límite de riesgo total para el bloque</strong> —la suma de las pérdidas posibles hasta cada invalidación— y no solo un límite por operación.</p>
+
+        <h3>Secuencia sugerida</h3>
+        <ol class="pasos">
+          <li><span><b>BTC toca 78,570–80,316 y muestra rechazo:</b> activar entradas en MSTR (<span class="num">130–146</span>) y COIN (<span class="num">175–180</span>).</span></li>
+          <li><span><b>BTC cierra en 4H por debajo de 78,500:</b> no abrir nuevas posiciones y cubrir parcialmente las existentes.</span></li>
+          <li><span><b>BTC cierra en diario por debajo de 75,000:</b> es muy probable que MSTR pierda 125 y COIN pierda 175 al mismo tiempo. Salida o cobertura completa del bloque.</span></li>
+          <li><span><b>CRCL:</b> se gestiona aparte, con su propio doble test, porque depende menos de BTC.</span></li>
+        </ol>
+
+        <p style="margin-top:24px"><strong>Escenario alcista inmediato.</strong> Si BTC rompe <span class="num">87,300</span> sin corregir, MSTR probablemente buscaría <span class="num">177</span> y COIN retaría <span class="num">216</span>. En ese caso las entradas serían en los <strong>retests de las rupturas</strong>, no persiguiendo el precio. Quedarse fuera de una continuación es un costo aceptable; entrar tarde y sin nivel de referencia, no.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 07 ============================ -->
+  <section class="sec" id="invalidaciones">
+    <div class="wrap col">
+      <header class="sec-h">
+        <p class="sec-n">07</p>
+        <h2 class="sec-t">Invalidaciones y calendario</h2>
+        <p class="lead">Cada activo tiene su propia salida, pero tres de las cuatro se activan casi al mismo tiempo. Esa es la verdadera exposición.</p>
+      </header>
+      <div class="sec-b">
+        <div class="inv">
+          <div>
+            <span class="micro k">Bitcoin</span>
+            <div class="n">&lt; 75,000<small>cierre diario</small></div>
+            <p>Invalida la estructura alcista intermedia y dispara al resto del bloque.</p>
+          </div>
+          <div>
+            <span class="micro k">MSTR</span>
+            <div class="n">&lt; 125<small>salida</small></div>
+            <p>Debajo de 125, los siguientes soportes son 123.64 y luego 117.07.</p>
+          </div>
+          <div>
+            <span class="micro k">COIN</span>
+            <div class="n">&lt; 175<small>salida</small></div>
+            <p>Coincide con el retroceso de 38.2% en 174.91. Después, 168.44 y 161.98.</p>
+          </div>
+          <div>
+            <span class="micro k">CRCL</span>
+            <div class="n">&lt; 78.18<small>salida</small></div>
+            <p>Debajo de ahí el patrón de extensión deja de ser válido. Después, 75.18 y 70.19.</p>
+          </div>
+        </div>
+
+        <p style="margin-top:24px"><strong>Calendario.</strong> Los reportes trimestrales de COIN, MSTR y CRCL suelen caer entre finales de octubre y mediados de noviembre, y las gráficas marcan fechas en ese rango. Hay que verificar las fechas exactas antes de entrar y no llegar a un reporte con la posición completa y sin cobertura.</p>
+
+        <p><strong>Riesgo externo.</strong> Los datos de inflación y las decisiones de la Fed pueden mover el bloque entero a la vez y dominar sobre cualquier nivel técnico. El plan técnico dice dónde entrar y dónde salir; no dice cuándo va a hablar la Fed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ DESPEDIDA ============================ -->
+  <section class="despedida" id="autor">
+    <div class="wrap">
+      <div class="desp-g">
+        <figure class="retrato">
+          <img src="../assets/images/marca/fotos/greg-autor.jpg" alt="Gregorio Sánchez Calderón, cofundador de NORTHPOINT" width="540" height="720">
+          <i class="esq e1"></i><i class="esq e2"></i><i class="esq e3"></i><i class="esq e4"></i>
+        </figure>
+        <div class="desp-t">
+          <span class="micro">Del autor</span>
+          <p class="saludo">Cuatro gráficas, una sola decisión.</p>
+          <p>Este memo empezó como cuatro análisis separados y terminó siendo uno solo. Cuando los pones lado a lado, las cuatro invalidaciones se activan casi el mismo día, y eso cambia por completo el tamaño que puedes tomar.</p>
+          <p>La parte incómoda de esta semana es que la tesis está bien y el precio está mal. No hay nada que hacer con eso más que esperar el nivel. Un buen plan en mal precio sigue siendo una mala operación.</p>
+          <p>Si el mercado no llega a las zonas de entrada, no pasa nada: el plan también contempla quedarse fuera. Nos leemos en el siguiente memo. Recibe un saludo cordial,</p>
+        </div>
+        <div class="firma">
+          <b>Gregorio Sánchez Calderón</b>
+          <span>Cofundador · NORTHPOINT · @Greg</span>
+          <span><a href="mailto:hola@northpointcapital.io">hola@northpointcapital.io</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie-legal">
+  <div class="wrap">
+    <div class="pl-fila">
+      <div class="pl-marca">
+        <b>NORTHPOINT</b>
+        <span>Morelia, Michoacán · México</span>
+      </div>
+      <nav class="pl-links" aria-label="Enlaces legales">
+        <a href="../legal/terminos.html">Términos y condiciones</a>
+        <a href="../legal/privacidad.html">Aviso de privacidad</a>
+        <a href="../legal/riesgo.html">Aviso de riesgo</a>
+        <a href="mailto:hola@northpointcapital.io">hola@northpointcapital.io</a>
+      </nav>
+    </div>
+    <p class="pl-aviso">Operar futuros implica apalancamiento y <strong>puedes perder todo tu capital</strong>. NORTHPOINT no es asesor financiero registrado y nada de lo publicado aquí es una recomendación de inversión. Los resultados pasados no garantizan resultados futuros.</p>
+    <p class="pl-copy">© 2026 NORTHPOINT. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="../js/memo-bloque-cripto-sep-2026.js"></script>
+</body>
+</html>
