@@ -87,7 +87,7 @@
    "iso": "2026-10-02T08:30:00-04:00",
    "titulo": "Non-Farm Employment Change",
    "pais": "USD",
-   "previsto": "90K",
+   "previsto": "89K",
    "previo": "162K"
   },
   {
@@ -105,51 +105,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30815.5,
-   "cambio": -73.75,
-   "pct": -0.24
+   "precio": 31079.5,
+   "cambio": 513.25,
+   "pct": 1.68
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7742.5,
-   "cambio": -61.25,
-   "pct": -0.78
+   "precio": 7763.0,
+   "cambio": 16.25,
+   "pct": 0.21
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4183.5,
-   "cambio": -137.7,
-   "pct": -3.19
+   "precio": 4216.4,
+   "cambio": 48.0,
+   "pct": 1.15
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 89.92,
-   "cambio": -2.49,
-   "pct": -2.69
+   "precio": 89.65,
+   "cambio": -2.95,
+   "pct": -3.19
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2826.0,
-   "cambio": -33.3,
-   "pct": -1.16
+   "precio": 2831.3,
+   "cambio": -8.8,
+   "pct": -0.31
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51410.0,
-   "cambio": -753.0,
-   "pct": -1.44
+   "precio": 51443.0,
+   "cambio": -394.0,
+   "pct": -0.76
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 83805.0,
-   "cambio": 133.0,
-   "pct": 0.16
+   "precio": 84620.0,
+   "cambio": 830.0,
+   "pct": 0.99
   }
  ],
  "acciones": [
@@ -324,16 +324,64 @@
  ],
  "noticias": [
   {
-   "titulo": "California Gov. Gavin Newsom bans AI 'robo bosses' in landmark state law, reversing his earlier veto",
-   "url": "https://www.cnbc.com/2026/09/30/california-gavin-newsom-ai-ban.html",
+   "titulo": "South Korean President Lee pushes back on Alaska LNG project after Trump touts Seoul's participation",
+   "url": "https://www.cnbc.com/2026/10/01/trump-south-korea-investment-alaska-lng-nuclear-power.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 23:50:01 GMT"
+   "fecha": "Thu, 01 Oct 2026 05:44:18 GMT"
   },
   {
-   "titulo": "Fed's Kashkari says inflation is 'still too high' even after softer-than-expected PCE data, labor market is 'pretty good'",
-   "url": "https://www.cnbc.com/2026/09/30/watch-minneapolis-fed-president-neel-kashkari.html",
+   "titulo": "UK Prime Minister Burnham says Iran 'played a part' in British air base incident",
+   "url": "https://www.cnbc.com/2026/10/01/us-iran-war-trump-hormuz.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 23:44:28 GMT"
+   "fecha": "Thu, 01 Oct 2026 05:08:23 GMT"
+  },
+  {
+   "titulo": "In photos: China's Xi hardens Taiwan warning as country celebrates week-long National Day holiday",
+   "url": "https://www.cnbc.com/2026/10/01/china-golden-week-holiday-taiwan-consumption-travel.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 01 Oct 2026 03:25:38 GMT"
+  },
+  {
+   "titulo": "Cars have become unaffordable for many Americans. Here’s what the numbers show.",
+   "url": "https://www.marketwatch.com/story/heres-the-most-you-should-be-spending-on-your-car-payment-whether-you-make-60-000-or-over-150-000-ee1c228c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 01 Oct 2026 02:35:00 GMT"
+  },
+  {
+   "titulo": "AI race heats up as OpenAI flags alleged model-copying campaign",
+   "url": "https://www.cnbc.com/2026/10/01/openai-chinas-moonshot-ai-kimi.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 01 Oct 2026 02:14:43 GMT"
+  },
+  {
+   "titulo": "Trump’s AI lunch included every major tech company. Except Apple",
+   "url": "https://www.cnbc.com/2026/09/30/trumps-ai-lunch-included-everyone-but-apple.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 01 Oct 2026 02:07:06 GMT"
+  },
+  {
+   "titulo": "Passengers and crew foil co-pilot's apparent attempt to crash FlyDubai flight to Israel",
+   "url": "https://www.cnbc.com/2026/10/01/dubai-israel-flight-pilot-crash-indian.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 01 Oct 2026 01:09:18 GMT"
+  },
+  {
+   "titulo": "‘I’m never selling’: I’m 47 and buy bitcoin with every dollar I earn. Am I crazy?",
+   "url": "https://www.marketwatch.com/story/im-never-selling-im-47-and-buy-bitcoin-with-every-dollar-i-earn-am-i-crazy-364d2a64?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 01 Oct 2026 00:45:00 GMT"
+  },
+  {
+   "titulo": "‘I have $400,000 in equity’: I’m 80. Should I sell my house because of dangerous stairs — or spend thousands renovating?",
+   "url": "https://www.marketwatch.com/story/i-have-a-low-interest-rate-im-80-years-old-should-i-move-out-of-my-house-because-of-dangerous-stairs-389c3c7b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 01 Oct 2026 00:20:00 GMT"
+  },
+  {
+   "titulo": "I’m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
+   "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 01 Oct 2026 00:11:00 GMT"
   },
   {
    "titulo": "David Ellison names Ynon Kreiz co-CEO of Paramount and Warner Bros. Discovery",
@@ -360,28 +408,10 @@
    "fecha": "Wed, 30 Sep 2026 22:43:53 GMT"
   },
   {
-   "titulo": "Google rolls out Gemini 4 Argon, its most advanced AI model",
-   "url": "https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 22:27:09 GMT"
-  },
-  {
-   "titulo": "Treasury launches student loan support center as new data show 9.3 million borrowers in default",
-   "url": "https://www.cnbc.com/2026/09/30/student-loan-default-support-center.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 22:15:29 GMT"
-  },
-  {
    "titulo": "Trump administration starts sending $500 Obamacare refund checks — who stands to benefit",
    "url": "https://www.cnbc.com/2026/09/30/obamacare-aca-refund-checks.html",
    "fuente": "CNBC",
    "fecha": "Wed, 30 Sep 2026 22:11:08 GMT"
-  },
-  {
-   "titulo": "Meta stock enjoys best month since 2022 on AI momentum",
-   "url": "https://www.cnbc.com/2026/09/30/meta-stock-best-month-2013-ai.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 21:36:47 GMT"
   },
   {
    "titulo": "The 15 worst-performing S&P 500 stocks during a dismal September",
@@ -420,40 +450,10 @@
    "fecha": "Wed, 30 Sep 2026 20:51:44 GMT"
   },
   {
-   "titulo": "I’m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
-   "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 30 Sep 2026 20:45:00 GMT"
-  },
-  {
    "titulo": "U.S. bond yields post biggest jump in a generation as global rout rattles investors",
    "url": "https://www.marketwatch.com/story/u-s-bond-yields-head-for-biggest-jump-in-a-generation-as-global-rout-rattles-investors-7dede2f2?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Wed, 30 Sep 2026 20:32:00 GMT"
-  },
-  {
-   "titulo": "Paramount’s mega debt sale reveals how higher bond yields are squeezing corporate America",
-   "url": "https://www.marketwatch.com/story/paramounts-mega-debt-sale-reveals-how-higher-bond-yields-are-squeezing-corporate-america-e9694ec3?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 30 Sep 2026 19:42:00 GMT"
-  },
-  {
-   "titulo": "Billionaires like Ken Griffin are doling out tons of money to prove that a college degree still matters",
-   "url": "https://www.marketwatch.com/story/billionaires-like-ken-griffin-are-doling-out-tons-of-money-to-prove-that-a-college-degree-still-matters-63e50332?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 30 Sep 2026 19:21:00 GMT"
-  },
-  {
-   "titulo": "My friend’s pet-sitting business grosses $300,000 a year, but she pays herself $50,000. Should I start one too?",
-   "url": "https://www.marketwatch.com/story/my-friend-grosses-300-000-a-year-with-her-pet-sitting-business-she-pays-herself-50-000-should-i-do-the-same-8ab5cba3?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 30 Sep 2026 19:00:00 GMT"
-  },
-  {
-   "titulo": "Inside Man: How Chinese spies used lies, love and betrayal to target the Federal Reserve",
-   "url": "https://www.cnbc.com/2026/09/30/john-rogers-fed-china-espionage-case.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 17:21:23 GMT"
   }
  ],
  "videos": [
@@ -567,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-01T00:11:17Z",
+ "ts": "2026-10-01T06:08:05Z",
  "fallas": [
   "videos",
   "directos"
