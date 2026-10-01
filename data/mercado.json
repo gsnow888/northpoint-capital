@@ -105,51 +105,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30745.25,
-   "cambio": -144.0,
-   "pct": -0.47
+   "precio": 30815.5,
+   "cambio": -73.75,
+   "pct": -0.24
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7724.75,
-   "cambio": -79.0,
-   "pct": -1.01
+   "precio": 7742.5,
+   "cambio": -61.25,
+   "pct": -0.78
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4189.0,
-   "cambio": -132.2,
-   "pct": -3.06
+   "precio": 4183.5,
+   "cambio": -137.7,
+   "pct": -3.19
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 90.49,
-   "cambio": -1.92,
-   "pct": -2.08
+   "precio": 89.92,
+   "cambio": -2.49,
+   "pct": -2.69
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2819.6,
-   "cambio": -39.7,
-   "pct": -1.39
+   "precio": 2826.0,
+   "cambio": -33.3,
+   "pct": -1.16
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51306.0,
-   "cambio": -857.0,
-   "pct": -1.64
+   "precio": 51410.0,
+   "cambio": -753.0,
+   "pct": -1.44
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84080.0,
-   "cambio": 408.0,
-   "pct": 0.49
+   "precio": 83805.0,
+   "cambio": 133.0,
+   "pct": 0.16
   }
  ],
  "acciones": [
@@ -324,10 +324,106 @@
  ],
  "noticias": [
   {
+   "titulo": "California Gov. Gavin Newsom bans AI 'robo bosses' in landmark state law, reversing his earlier veto",
+   "url": "https://www.cnbc.com/2026/09/30/california-gavin-newsom-ai-ban.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 23:50:01 GMT"
+  },
+  {
+   "titulo": "Fed's Kashkari says inflation is 'still too high' even after softer-than-expected PCE data, labor market is 'pretty good'",
+   "url": "https://www.cnbc.com/2026/09/30/watch-minneapolis-fed-president-neel-kashkari.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 23:44:28 GMT"
+  },
+  {
+   "titulo": "David Ellison names Ynon Kreiz co-CEO of Paramount and Warner Bros. Discovery",
+   "url": "https://www.cnbc.com/2026/09/30/david-ellison-ynon-kreiz-co-ceo-paramount-wbd.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 23:01:40 GMT"
+  },
+  {
+   "titulo": "Cramer says 'frozen' conditions are holding many stocks back. Here's what could change that",
+   "url": "https://www.cnbc.com/2026/09/30/jim-cramer-frozen-markets-stocks.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 23:00:52 GMT"
+  },
+  {
+   "titulo": "Google shows it’s not out of the AI race just yet",
+   "url": "https://www.marketwatch.com/story/google-shows-its-not-out-of-the-ai-race-just-yet-75e19860?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 30 Sep 2026 22:51:00 GMT"
+  },
+  {
+   "titulo": "Trump 'thinking about' diesel export ban, but says it could have 'negative impact' on gasoline",
+   "url": "https://www.cnbc.com/2026/09/30/trump-diesel-export-ban-gas.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 22:43:53 GMT"
+  },
+  {
+   "titulo": "Google rolls out Gemini 4 Argon, its most advanced AI model",
+   "url": "https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 22:27:09 GMT"
+  },
+  {
+   "titulo": "Treasury launches student loan support center as new data show 9.3 million borrowers in default",
+   "url": "https://www.cnbc.com/2026/09/30/student-loan-default-support-center.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 22:15:29 GMT"
+  },
+  {
+   "titulo": "Trump administration starts sending $500 Obamacare refund checks — who stands to benefit",
+   "url": "https://www.cnbc.com/2026/09/30/obamacare-aca-refund-checks.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 22:11:08 GMT"
+  },
+  {
+   "titulo": "Meta stock enjoys best month since 2022 on AI momentum",
+   "url": "https://www.cnbc.com/2026/09/30/meta-stock-best-month-2013-ai.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 21:36:47 GMT"
+  },
+  {
+   "titulo": "The 15 worst-performing S&P 500 stocks during a dismal September",
+   "url": "https://www.marketwatch.com/story/the-15-worst-performing-s-p-500-stocks-during-a-dismal-september-991f8a07?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 30 Sep 2026 21:22:00 GMT"
+  },
+  {
+   "titulo": "Trump touts economic wins in battleground states — like a $54 billion Alaskan pipeline — as the midterms draw closer",
+   "url": "https://www.marketwatch.com/story/trump-touts-economic-wins-in-battleground-states-like-a-54-billion-alaskan-pipeline-as-the-midterms-draw-closer-46db0149?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 30 Sep 2026 21:16:00 GMT"
+  },
+  {
    "titulo": "Micron beats on earnings and issues strong guidance as data center revenue jumps 11-fold",
    "url": "https://www.cnbc.com/2026/09/30/micron-mu-q4-earnings-report-2026.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 20:36:29 GMT"
+   "fecha": "Wed, 30 Sep 2026 20:59:05 GMT"
+  },
+  {
+   "titulo": "How the ‘AI put’ has become the only thing that matters for stocks",
+   "url": "https://www.marketwatch.com/story/this-is-the-big-risk-that-stock-investors-should-be-watching-as-rising-bond-yields-menace-markets-904cae0a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 30 Sep 2026 20:59:00 GMT"
+  },
+  {
+   "titulo": "A brutal September for bonds points to an even darker October",
+   "url": "https://www.marketwatch.com/story/a-brutal-september-for-bonds-points-to-an-even-darker-october-239d0fb5?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 30 Sep 2026 20:56:00 GMT"
+  },
+  {
+   "titulo": "Sen. Hawley: OpenAI CEO Sam Altman declined to testify at rogue AI hearing",
+   "url": "https://www.cnbc.com/2026/09/30/hawley-openai-sam-altman-rogue-ai.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 30 Sep 2026 20:51:44 GMT"
+  },
+  {
+   "titulo": "I’m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
+   "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 30 Sep 2026 20:45:00 GMT"
   },
   {
    "titulo": "U.S. bond yields post biggest jump in a generation as global rout rattles investors",
@@ -336,46 +432,10 @@
    "fecha": "Wed, 30 Sep 2026 20:32:00 GMT"
   },
   {
-   "titulo": "Elon Musk, Palmer Luckey and Newt Gingrich to help Pentagon with warfare initiative, Hegseth says",
-   "url": "https://www.cnbc.com/2026/09/30/musk-luckey-gingrich-pentagon-hegseth-.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 20:29:10 GMT"
-  },
-  {
-   "titulo": "Fed watchdog finds renovation failures, but no grounds for criminal referral",
-   "url": "https://www.cnbc.com/2026/09/30/fed-inspector-general-report-powell-trump.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 20:17:49 GMT"
-  },
-  {
-   "titulo": "Crude oil exports through the Strait of Hormuz hit prewar levels, but fuel shipments remain constrained",
-   "url": "https://www.cnbc.com/2026/09/30/iran-war-strait-hormuz-gulf-oil-fuel.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 20:16:17 GMT"
-  },
-  {
-   "titulo": "Meta stock enjoys best month since 2022 on AI momentum",
-   "url": "https://www.cnbc.com/2026/09/30/meta-stock-best-month-2013-ai.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 20:08:47 GMT"
-  },
-  {
    "titulo": "Paramount’s mega debt sale reveals how higher bond yields are squeezing corporate America",
    "url": "https://www.marketwatch.com/story/paramounts-mega-debt-sale-reveals-how-higher-bond-yields-are-squeezing-corporate-america-e9694ec3?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Wed, 30 Sep 2026 19:42:00 GMT"
-  },
-  {
-   "titulo": "Senators clinch construction permitting deal before election jet-set",
-   "url": "https://www.cnbc.com/2026/09/30/permitting-deal-congress-election.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 19:35:53 GMT"
-  },
-  {
-   "titulo": "Sen. Hawley: OpenAI CEO Sam Altman declined to testify at rogue AI hearing",
-   "url": "https://www.cnbc.com/2026/09/30/hawley-openai-sam-altman-rogue-ai.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 19:34:11 GMT"
   },
   {
    "titulo": "Billionaires like Ken Griffin are doling out tons of money to prove that a college degree still matters",
@@ -390,70 +450,10 @@
    "fecha": "Wed, 30 Sep 2026 19:00:00 GMT"
   },
   {
-   "titulo": "Two trades that just happened in 'Magnificent Seven' stocks point to big gains ahead",
-   "url": "https://www.cnbc.com/2026/09/30/two-trades-that-just-happened-in-magnificent-seven-stocks-point-to-big-gains-ahead.html",
+   "titulo": "Inside Man: How Chinese spies used lies, love and betrayal to target the Federal Reserve",
+   "url": "https://www.cnbc.com/2026/09/30/john-rogers-fed-china-espionage-case.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 18:47:35 GMT"
-  },
-  {
-   "titulo": "Adding Lilly’s new drug to Zepbound helped people lose more weight — but there were more side effects",
-   "url": "https://www.marketwatch.com/story/adding-lillys-new-drug-to-zepbound-helped-people-lose-up-to-23-of-their-weight-but-there-were-more-side-effects-b7b7c6c0?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 30 Sep 2026 18:45:00 GMT"
-  },
-  {
-   "titulo": "After I sold TOMS Shoes for $400 million I was misdiagnosed with bipolar disorder — and it almost cost me everything",
-   "url": "https://www.marketwatch.com/story/after-i-sold-toms-shoes-for-400-million-i-was-misdiagnosed-with-bipolar-disorder-and-it-almost-cost-me-everything-4409da4c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 30 Sep 2026 18:44:00 GMT"
-  },
-  {
-   "titulo": "This chart shows that buying and holding stocks beats ‘sell in May and go away’ and other gimmicks",
-   "url": "https://www.marketwatch.com/story/why-the-halloween-indicator-isnt-working-and-what-smart-investors-are-doing-instead-6d758662?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 30 Sep 2026 18:20:00 GMT"
-  },
-  {
-   "titulo": "‘I’d rather be on a beach in Bali’: My husband resents my $8 million net worth. Should I pay for his retirement?",
-   "url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 30 Sep 2026 18:15:00 GMT"
-  },
-  {
-   "titulo": "Medicare Advantage plans will be cheaper next year. Here’s the new cost.",
-   "url": "https://www.marketwatch.com/story/medicare-advantage-plans-will-be-cheaper-next-year-heres-the-new-cost-2f7ab55b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 30 Sep 2026 18:03:00 GMT"
-  },
-  {
-   "titulo": "These bond strategies can help you get a safe 5% return on your cash",
-   "url": "https://www.marketwatch.com/story/these-bond-strategies-can-help-you-get-a-safe-5-return-on-your-cash-5fa45ccd?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 30 Sep 2026 17:38:00 GMT"
-  },
-  {
-   "titulo": "Commerce Secretary Howard Lutnick reports more than $250 million in income last year",
-   "url": "https://www.cnbc.com/2026/09/30/howard-lutnick-commerce-secretary-disclosure-cantor-fitzgerald.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 16:30:42 GMT"
-  },
-  {
-   "titulo": "Trump administration starts sending $500 Obamacare refund checks — who stands to benefit",
-   "url": "https://www.cnbc.com/2026/09/30/obamacare-aca-refund-checks.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 16:19:47 GMT"
-  },
-  {
-   "titulo": "Treasury launches student loan support center as new data show 9.3 million borrowers in default",
-   "url": "https://www.cnbc.com/2026/09/30/student-loan-default-support-center.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 15:56:15 GMT"
-  },
-  {
-   "titulo": "FTC is investigating OpenAI, Anthropic and other AI companies over product risks",
-   "url": "https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 30 Sep 2026 15:54:38 GMT"
+   "fecha": "Wed, 30 Sep 2026 17:21:23 GMT"
   }
  ],
  "videos": [
@@ -567,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-09-30T20:38:06Z",
+ "ts": "2026-10-01T00:11:17Z",
  "fallas": [
   "videos",
   "directos"
