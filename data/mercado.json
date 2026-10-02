@@ -105,355 +105,355 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30997.5,
-   "cambio": 431.25,
-   "pct": 1.41
+   "precio": 31024.25,
+   "cambio": 458.0,
+   "pct": 1.5
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7757.0,
-   "cambio": 10.25,
-   "pct": 0.13
+   "precio": 7762.0,
+   "cambio": 15.25,
+   "pct": 0.2
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4212.8,
-   "cambio": 44.4,
-   "pct": 1.07
+   "precio": 4170.5,
+   "cambio": 2.1,
+   "pct": 0.05
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 89.51,
-   "cambio": -3.09,
-   "pct": -3.34
+   "precio": 90.54,
+   "cambio": -2.06,
+   "pct": -2.22
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2844.3,
-   "cambio": 4.2,
-   "pct": 0.15
+   "precio": 2846.3,
+   "cambio": 6.2,
+   "pct": 0.22
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51472.0,
-   "cambio": -365.0,
-   "pct": -0.7
+   "precio": 51283.0,
+   "cambio": -554.0,
+   "pct": -1.07
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 86815.0,
-   "cambio": 3025.0,
-   "pct": 3.61
+   "precio": 85935.0,
+   "cambio": 2145.0,
+   "pct": 2.56
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 157.8,
-   "pct": -0.79,
+   "precio": 158.72,
+   "pct": -0.82,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 702.35,
-   "pct": -0.66,
+   "precio": 706.41,
+   "pct": -0.62,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 375.18,
-   "pct": -0.77,
+   "precio": 377.6,
+   "pct": -0.57,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 84.46,
-   "pct": -1.32,
+   "precio": 85.02,
+   "pct": -1.54,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 742.03,
-   "pct": 0.13,
+   "precio": 749.01,
+   "pct": 0.61,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 763.99,
-   "pct": -0.42,
+   "precio": 768.55,
+   "pct": -0.36,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 70.09,
-   "pct": -0.51,
+   "precio": 70.04,
+   "pct": -0.84,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 32.66,
-   "pct": -1.33,
+   "precio": 32.72,
+   "pct": -1.49,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 89.17,
-   "pct": -2.19,
+   "precio": 89.62,
+   "pct": -1.5,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 81.22,
-   "pct": -0.59,
+   "precio": 81.92,
+   "pct": -0.77,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 382.76,
-   "pct": -2.28,
+   "precio": 379.63,
+   "pct": -3.5,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 47.96,
-   "pct": 0.31,
+   "precio": 48.43,
+   "pct": 1.81,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 330.32,
-   "pct": -1.67,
+   "precio": 332.11,
+   "pct": -2.63,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 512.8,
-   "pct": 2.99,
+   "precio": 515.47,
+   "pct": -0.14,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 230.86,
-   "pct": 2.8,
+   "precio": 234.72,
+   "pct": 4.29,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 338.24,
-   "pct": -1.2,
+   "precio": 341.83,
+   "pct": -0.61,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 248.23,
-   "pct": -0.46,
+   "precio": 250.65,
+   "pct": 0.39,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 725.93,
-   "pct": -6.64,
+   "precio": 731.08,
+   "pct": -2.74,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 354.11,
-   "pct": -6.31,
+   "precio": 372.38,
+   "pct": 0.07,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 500.5,
-   "pct": -0.93,
+   "precio": 501.89,
+   "pct": -0.71,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 914.94,
-   "pct": 2.06,
+   "precio": 917.58,
+   "pct": -0.56,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 333.18,
-   "pct": -1.59,
+   "precio": 331.1,
+   "pct": -3.49,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 359.85,
-   "pct": -2.21,
+   "precio": 359.64,
+   "pct": -2.11,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 365.2,
-   "pct": -2.62,
+   "precio": 366.85,
+   "pct": -2.59,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "Brazil votes in high-stakes election as U.S.-China rivalry and debt loom large",
-   "url": "https://www.cnbc.com/2026/10/02/brazil-election-bolsonaro-lula-china-trump.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 08:01:39 GMT"
-  },
-  {
-   "titulo": "U.S. urges Europe to ‘immediately’ release diesel reserves as Iran war fuels record prices",
+   "titulo": "G7 nations to release diesel stocks as wars in Europe and Middle East constrain fuel supplies",
    "url": "https://www.cnbc.com/2026/10/02/diesel-oil-trump-europe-export-ban.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 07:51:56 GMT"
+   "fecha": "Fri, 02 Oct 2026 15:22:55 GMT"
   },
   {
-   "titulo": "U.S. to send third carrier group to Mideast as Trump warns of new Iran strikes",
-   "url": "https://www.cnbc.com/2026/10/02/us-iran-war-trump-hormuz-.html",
+   "titulo": "Why Lilly and Novo are betting on amylin to power a new wave of obesity drugs after GLP-1s",
+   "url": "https://www.cnbc.com/2026/10/02/lilly-novo-amylin-obesity-drugs.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 06:51:41 GMT"
+   "fecha": "Fri, 02 Oct 2026 15:20:29 GMT"
   },
   {
-   "titulo": "South Korean President Lee warns of 'measures' against Ukraine over prisoner row, demands apology",
-   "url": "https://www.cnbc.com/2026/10/02/south-korea-ukraine-prisoner-north-korea-.html",
+   "titulo": "Ford fends off Hyundai to retain No. 3 U.S. sales position in third quarter",
+   "url": "https://www.cnbc.com/2026/10/02/ford-q3-sales.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 06:36:56 GMT"
+   "fecha": "Fri, 02 Oct 2026 15:19:40 GMT"
   },
   {
-   "titulo": "Jewelry giant Pandora is getting in on lab-grown diamonds and hoping a new Vietnam plant helps growth in Asia",
-   "url": "https://www.cnbc.com/2026/10/02/-jewelry-giant-pandora-vietnam-asia-growth-.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 06:27:58 GMT"
+   "titulo": "‘Complete disruption of the economy is all but certain’: Top jobs and home prices are at risk, a new report on AI says",
+   "url": "https://www.marketwatch.com/story/another-viral-ai-doomsday-report-claims-its-over-why-home-prices-could-take-a-hit-as-screen-based-jobs-disappear-4bed48bc?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 15:18:00 GMT"
   },
   {
-   "titulo": "Washington’s big crypto bill is stuck. The SEC is pushing ahead anyway",
-   "url": "https://www.cnbc.com/2026/10/02/sec-bitcoin-crypto-proposal.html",
+   "titulo": "American starts letting customers mix cash and miles for tickets",
+   "url": "https://www.cnbc.com/2026/10/02/american-airlines-tickets-cash-miles.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 06:15:49 GMT"
+   "fecha": "Fri, 02 Oct 2026 15:00:01 GMT"
   },
   {
-   "titulo": "Bitget 'not expecting to recover a lot' from $388 million hack, CEO tells CNBC",
-   "url": "https://www.cnbc.com/2026/10/02/bitget-crypto-stolen-hack-recovery.html",
+   "titulo": "‘We lived within our means’: I earned $30,000 as a pastor and still retired comfortably. Why don’t you tell people that?",
+   "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 15:00:00 GMT"
+  },
+  {
+   "titulo": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
+   "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 15:00:00 GMT"
+  },
+  {
+   "titulo": "Rivian tops Q3 delivery expectations, reconfirms 2026 guidance",
+   "url": "https://www.cnbc.com/2026/10/02/q3-vehicle-deliveries.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 06:03:23 GMT"
+   "fecha": "Fri, 02 Oct 2026 14:58:42 GMT"
+  },
+  {
+   "titulo": "Tesla sold a lot more EVs than Wall Street expected, and the stock is surging",
+   "url": "https://www.marketwatch.com/story/tesla-ev-sales-beat-wall-streets-expectations-again-and-the-stock-jumps-294a4f53?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 14:30:00 GMT"
+  },
+  {
+   "titulo": "David Ellison says combined Paramount and Warner Bros. Discovery will be named Skydance",
+   "url": "https://www.cnbc.com/2026/10/02/paramount-warner-bros-discovery-skydance.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 02 Oct 2026 14:05:29 GMT"
+  },
+  {
+   "titulo": "‘I don’t want to die on the sales floor’: I’m 67 and earn $19.50 an hour at a big-box store. When can I finally retire?",
+   "url": "https://www.marketwatch.com/story/i-dont-want-to-die-on-the-sales-floor-im-67-and-earn-19-50-an-hour-at-a-big-box-store-when-can-i-finally-retire-369abcf9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 14:00:00 GMT"
+  },
+  {
+   "titulo": "Treasury Sec. Bessent, IRS crack down on ETF strategy the wealthy are using to avoid capital gains taxes",
+   "url": "https://www.cnbc.com/2026/10/02/treasury-irs-capital-gains-income-tax-section-351-warning.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 02 Oct 2026 13:48:40 GMT"
+  },
+  {
+   "titulo": "Labor market faltered in September as jobs increased by just 29,000, unemployment rate rose to 4.2%",
+   "url": "https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 02 Oct 2026 13:45:58 GMT"
+  },
+  {
+   "titulo": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
+   "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 13:45:00 GMT"
+  },
+  {
+   "titulo": "Nike shares tumble after weak revenue outlook and layoff plans underway",
+   "url": "https://www.cnbc.com/2026/10/02/nike-nke-stock-q1-earnings-layoffs.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 02 Oct 2026 13:43:56 GMT"
+  },
+  {
+   "titulo": "Three reasons this Wall Street market-making powerhouse says investors should reload on stocks right now",
+   "url": "https://www.marketwatch.com/story/three-reasons-why-this-wall-street-market-making-powerhouse-says-investors-should-reload-on-stocks-now-8e19ecce?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 13:30:00 GMT"
+  },
+  {
+   "titulo": "‘I have $400,000 in equity’: I’m 80. Should I sell my house because of dangerous stairs — or spend thousands renovating?",
+   "url": "https://www.marketwatch.com/story/i-have-a-low-interest-rate-im-80-years-old-should-i-move-out-of-my-house-because-of-dangerous-stairs-389c3c7b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 13:30:00 GMT"
+  },
+  {
+   "titulo": "Tesla reports 486,532 vehicle deliveries for third quarter, topping expectation",
+   "url": "https://www.cnbc.com/2026/10/02/tesla-tsla-q3-2026-vehicle-delivery-production.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 02 Oct 2026 13:20:46 GMT"
+  },
+  {
+   "titulo": "I’m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
+   "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 13:00:00 GMT"
+  },
+  {
+   "titulo": "Why Western Digital and Seagate are seeing big stock drops today",
+   "url": "https://www.marketwatch.com/story/why-western-digital-and-seagate-are-seeing-big-stock-drops-today-6b16d95e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 12:58:00 GMT"
+  },
+  {
+   "titulo": "A violent classroom revolt is becoming France's next big crisis",
+   "url": "https://www.cnbc.com/2026/10/02/france-student-protests-budget-debt.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 02 Oct 2026 12:10:56 GMT"
   },
   {
    "titulo": "A Brexit reversal is on the table 10 years on from the vote that changed Britain. Here’s what’s at stake",
    "url": "https://www.cnbc.com/2026/10/02/brexit-uk-rejoin-eu-referendum.html",
    "fuente": "CNBC",
    "fecha": "Fri, 02 Oct 2026 05:00:01 GMT"
-  },
-  {
-   "titulo": "U.S. trade representative Greer says deal with India not 'imminent' after Modi-Trump call",
-   "url": "https://www.cnbc.com/2026/10/02/us-india-trade-modi-trump-russia-oil.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 04:07:54 GMT"
-  },
-  {
-   "titulo": "‘I have $400,000 in equity’: I’m 80. Should I sell my house because of dangerous stairs — or spend thousands renovating?",
-   "url": "https://www.marketwatch.com/story/i-have-a-low-interest-rate-im-80-years-old-should-i-move-out-of-my-house-because-of-dangerous-stairs-389c3c7b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 01:00:00 GMT"
-  },
-  {
-   "titulo": "I’m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
-   "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 00:30:00 GMT"
-  },
-  {
-   "titulo": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
-   "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 00:15:00 GMT"
-  },
-  {
-   "titulo": "Here’s who’s joining the S&P 500 in the index’s latest shakeup",
-   "url": "https://www.marketwatch.com/story/heres-whos-joining-the-s-p-500-in-the-indexs-latest-shakeup-07280a15?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 00:14:00 GMT"
-  },
-  {
-   "titulo": "This could be the worst year ever for Nike’s stock, with sales set to fall further",
-   "url": "https://www.marketwatch.com/story/nikes-troubles-are-mounting-and-sales-could-fall-further-2c19699d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 00:13:00 GMT"
-  },
-  {
-   "titulo": "South Korean President Lee pushes back on Alaska LNG project after Trump touts Seoul's participation",
-   "url": "https://www.cnbc.com/2026/10/01/trump-south-korea-investment-alaska-lng-nuclear-power.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 01 Oct 2026 23:01:03 GMT"
-  },
-  {
-   "titulo": "The hidden silver lining of high interest rates: safer, cheaper retirement income",
-   "url": "https://www.marketwatch.com/story/the-hidden-silver-lining-of-high-interest-rates-safer-cheaper-retirement-income-36e2e077?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 01 Oct 2026 21:27:00 GMT"
-  },
-  {
-   "titulo": "Treasury yields fall from multiyear highs",
-   "url": "https://www.cnbc.com/2026/10/01/us-treasury-bond-yield.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 01 Oct 2026 21:17:31 GMT"
-  },
-  {
-   "titulo": "Trump could target three Fed governors. Removing them may be harder than it looks",
-   "url": "https://www.cnbc.com/2026/10/01/trump-fed-powell-lisa-cook-michael-barr-removal.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 01 Oct 2026 21:14:49 GMT"
-  },
-  {
-   "titulo": "The stock market is anything but normal right now — and these charts show it",
-   "url": "https://www.marketwatch.com/story/the-stock-market-is-anything-but-normal-right-now-and-these-charts-show-it-91ea187d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 01 Oct 2026 21:01:00 GMT"
-  },
-  {
-   "titulo": "Here’s how much more groceries, clothing and household appliances could cost as diesel prices keep surging",
-   "url": "https://www.marketwatch.com/story/heres-how-much-more-groceries-clothing-and-household-appliances-could-cost-as-diesel-prices-keep-surging-771c9247?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 01 Oct 2026 20:58:00 GMT"
-  },
-  {
-   "titulo": "Republicans sabotaged their own bill to prevent people in Congress from trading stocks. Why?",
-   "url": "https://www.marketwatch.com/story/republicans-sabotaged-their-own-bill-to-prevent-people-in-congress-from-trading-stocks-why-828ef40d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 01 Oct 2026 20:58:00 GMT"
-  },
-  {
-   "titulo": "Bond yields suddenly retreat from recent highs as buyers step back into the Treasury market",
-   "url": "https://www.marketwatch.com/story/bond-yields-suddenly-retreat-from-recent-highs-as-buyers-step-back-into-the-treasury-market-e3840e3d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 01 Oct 2026 20:28:00 GMT"
   }
  ],
  "videos": [
@@ -567,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-02T08:41:15Z",
+ "ts": "2026-10-02T15:30:39Z",
  "fallas": [
   "videos",
   "directos"
