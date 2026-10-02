@@ -105,289 +105,337 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 31024.25,
-   "cambio": 458.0,
-   "pct": 1.5
+   "precio": 31060.0,
+   "cambio": 493.75,
+   "pct": 1.62
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7762.0,
-   "cambio": 15.25,
-   "pct": 0.2
+   "precio": 7777.75,
+   "cambio": 31.0,
+   "pct": 0.4
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4170.5,
-   "cambio": 2.1,
-   "pct": 0.05
+   "precio": 4173.6,
+   "cambio": 5.2,
+   "pct": 0.12
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 90.54,
-   "cambio": -2.06,
-   "pct": -2.22
+   "precio": 91.45,
+   "cambio": -1.15,
+   "pct": -1.24
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2846.3,
-   "cambio": 6.2,
-   "pct": 0.22
+   "precio": 2850.0,
+   "cambio": 9.9,
+   "pct": 0.35
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51283.0,
-   "cambio": -554.0,
-   "pct": -1.07
+   "precio": 51492.0,
+   "cambio": -345.0,
+   "pct": -0.67
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 85935.0,
-   "cambio": 2145.0,
-   "pct": 2.56
+   "precio": 84535.0,
+   "cambio": 745.0,
+   "pct": 0.89
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 158.72,
-   "pct": -0.82,
+   "precio": 159.15,
+   "pct": -0.55,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 706.41,
-   "pct": -0.62,
+   "precio": 707.45,
+   "pct": -0.47,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 377.6,
-   "pct": -0.57,
+   "precio": 377.94,
+   "pct": -0.48,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 85.02,
-   "pct": -1.54,
+   "precio": 85.43,
+   "pct": -1.07,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 749.01,
-   "pct": 0.61,
+   "precio": 749.58,
+   "pct": 0.68,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 768.55,
-   "pct": -0.36,
+   "precio": 769.66,
+   "pct": -0.22,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 70.04,
-   "pct": -0.84,
+   "precio": 69.94,
+   "pct": -0.98,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 32.72,
-   "pct": -1.49,
+   "precio": 32.71,
+   "pct": -1.51,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 89.62,
-   "pct": -1.5,
+   "precio": 89.51,
+   "pct": -1.63,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 81.92,
-   "pct": -0.77,
+   "precio": 82.37,
+   "pct": -0.22,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 379.63,
-   "pct": -3.5,
+   "precio": 380.18,
+   "pct": -3.36,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 48.43,
-   "pct": 1.81,
+   "precio": 47.73,
+   "pct": 0.34,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 332.11,
-   "pct": -2.63,
+   "precio": 333.69,
+   "pct": -2.16,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 515.47,
-   "pct": -0.14,
+   "precio": 517.53,
+   "pct": 0.26,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 234.72,
-   "pct": 4.29,
+   "precio": 233.95,
+   "pct": 3.95,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 341.83,
-   "pct": -0.61,
+   "precio": 343.5,
+   "pct": -0.12,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 250.65,
-   "pct": 0.39,
+   "precio": 251.52,
+   "pct": 0.74,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 731.08,
-   "pct": -2.74,
+   "precio": 728.08,
+   "pct": -3.14,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 372.38,
-   "pct": 0.07,
+   "precio": 370.59,
+   "pct": -0.41,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 501.89,
-   "pct": -0.71,
+   "precio": 502.73,
+   "pct": -0.54,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 917.58,
-   "pct": -0.56,
+   "precio": 920.65,
+   "pct": -0.23,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 331.1,
-   "pct": -3.49,
+   "precio": 332.35,
+   "pct": -3.12,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 359.64,
-   "pct": -2.11,
+   "precio": 360.68,
+   "pct": -1.82,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 366.85,
-   "pct": -2.59,
+   "precio": 371.87,
+   "pct": -1.25,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
+   "titulo": "The best industry to change jobs to get paid more money — and the worst",
+   "url": "https://www.marketwatch.com/story/the-best-industry-to-change-jobs-to-get-paid-more-money-and-the-worst-ae33a3a7?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 20:04:00 GMT"
+  },
+  {
+   "titulo": "10-year Treasury yield ticks higher despite weaker-than-expected jobs report",
+   "url": "https://www.cnbc.com/2026/10/02/treasury-yields-bonds-nonfarm-payrolls.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 02 Oct 2026 20:03:56 GMT"
+  },
+  {
+   "titulo": "Does AI have a soul? Pope Leo and Anthropic clash.",
+   "url": "https://www.marketwatch.com/story/does-ai-have-a-soul-pope-leo-and-anthropic-clash-0c1669fb?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 19:32:00 GMT"
+  },
+  {
    "titulo": "G7 nations to release diesel stocks as wars in Europe and Middle East constrain fuel supplies",
    "url": "https://www.cnbc.com/2026/10/02/diesel-oil-trump-europe-export-ban.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 15:22:55 GMT"
+   "fecha": "Fri, 02 Oct 2026 19:25:36 GMT"
   },
   {
-   "titulo": "Why Lilly and Novo are betting on amylin to power a new wave of obesity drugs after GLP-1s",
-   "url": "https://www.cnbc.com/2026/10/02/lilly-novo-amylin-obesity-drugs.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 15:20:29 GMT"
-  },
-  {
-   "titulo": "Ford fends off Hyundai to retain No. 3 U.S. sales position in third quarter",
-   "url": "https://www.cnbc.com/2026/10/02/ford-q3-sales.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 15:19:40 GMT"
-  },
-  {
-   "titulo": "‘Complete disruption of the economy is all but certain’: Top jobs and home prices are at risk, a new report on AI says",
-   "url": "https://www.marketwatch.com/story/another-viral-ai-doomsday-report-claims-its-over-why-home-prices-could-take-a-hit-as-screen-based-jobs-disappear-4bed48bc?mod=mw_rss_topstories",
+   "titulo": "Why bond investors quickly lost their enthusiasm for weak jobs figures",
+   "url": "https://www.marketwatch.com/story/why-bond-investors-quickly-lost-their-enthusiasm-for-weak-labor-figures-7a9727da?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 15:18:00 GMT"
+   "fecha": "Fri, 02 Oct 2026 19:23:00 GMT"
   },
   {
-   "titulo": "American starts letting customers mix cash and miles for tickets",
-   "url": "https://www.cnbc.com/2026/10/02/american-airlines-tickets-cash-miles.html",
+   "titulo": "FAA says Boeing 737 Max software glitch not a flight-safety issue",
+   "url": "https://www.cnbc.com/2026/10/02/faa-says-boeing-737-max-10-software-glitch-not-a-flight-safety-issue.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 15:00:01 GMT"
+   "fecha": "Fri, 02 Oct 2026 19:19:15 GMT"
   },
   {
-   "titulo": "‘We lived within our means’: I earned $30,000 as a pastor and still retired comfortably. Why don’t you tell people that?",
-   "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
+   "titulo": "‘I’m never selling’: I’m 47 and buy bitcoin with every dollar I earn. Am I crazy?",
+   "url": "https://www.marketwatch.com/story/im-never-selling-im-47-and-buy-bitcoin-with-every-dollar-i-earn-am-i-crazy-364d2a64?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 15:00:00 GMT"
+   "fecha": "Fri, 02 Oct 2026 19:08:00 GMT"
   },
   {
-   "titulo": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
-   "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
+   "titulo": "The government can take 15% of Social Security benefits to repay student loans. These proposals seek to stop it.",
+   "url": "https://www.marketwatch.com/story/the-government-can-take-15-of-social-security-benefits-to-repay-student-loans-these-proposals-seek-to-stop-it-102622fa?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 15:00:00 GMT"
+   "fecha": "Fri, 02 Oct 2026 18:50:00 GMT"
   },
   {
-   "titulo": "Rivian tops Q3 delivery expectations, reconfirms 2026 guidance",
-   "url": "https://www.cnbc.com/2026/10/02/q3-vehicle-deliveries.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 14:58:42 GMT"
-  },
-  {
-   "titulo": "Tesla sold a lot more EVs than Wall Street expected, and the stock is surging",
-   "url": "https://www.marketwatch.com/story/tesla-ev-sales-beat-wall-streets-expectations-again-and-the-stock-jumps-294a4f53?mod=mw_rss_topstories",
+   "titulo": "These bond strategies can help you get a safe 5% return on your cash",
+   "url": "https://www.marketwatch.com/story/these-bond-strategies-can-help-you-get-a-safe-5-return-on-your-cash-5fa45ccd?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 14:30:00 GMT"
+   "fecha": "Fri, 02 Oct 2026 18:48:00 GMT"
+  },
+  {
+   "titulo": "Cars have become unaffordable for many Americans. Here’s what the numbers show.",
+   "url": "https://www.marketwatch.com/story/heres-the-most-you-should-be-spending-on-your-car-payment-whether-you-make-60-000-or-over-150-000-ee1c228c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 18:47:00 GMT"
   },
   {
    "titulo": "David Ellison says combined Paramount and Warner Bros. Discovery will be named Skydance",
    "url": "https://www.cnbc.com/2026/10/02/paramount-warner-bros-discovery-skydance.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 14:05:29 GMT"
+   "fecha": "Fri, 02 Oct 2026 18:31:49 GMT"
   },
   {
-   "titulo": "‘I don’t want to die on the sales floor’: I’m 67 and earn $19.50 an hour at a big-box store. When can I finally retire?",
-   "url": "https://www.marketwatch.com/story/i-dont-want-to-die-on-the-sales-floor-im-67-and-earn-19-50-an-hour-at-a-big-box-store-when-can-i-finally-retire-369abcf9?mod=mw_rss_topstories",
+   "titulo": "Why Lilly and Novo are betting on amylin to power a new wave of obesity drugs after GLP-1s",
+   "url": "https://www.cnbc.com/2026/10/02/lilly-novo-amylin-obesity-drugs.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 02 Oct 2026 17:55:26 GMT"
+  },
+  {
+   "titulo": "How much higher can bond yields rise — and what does it mean for stocks?",
+   "url": "https://www.marketwatch.com/story/how-much-higher-can-bond-yields-rise-and-what-does-it-mean-for-stocks-12883d6c?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 14:00:00 GMT"
+   "fecha": "Fri, 02 Oct 2026 17:48:00 GMT"
+  },
+  {
+   "titulo": "Europe’s leaders rush to release diesel from stockpiles as fuel shock hangs over U.S. midterms",
+   "url": "https://www.marketwatch.com/story/europes-leaders-rush-to-release-diesel-from-stockpiles-as-fuel-shock-hangs-over-u-s-midterms-80bf0f38?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 17:48:00 GMT"
+  },
+  {
+   "titulo": "Men are losing ground in the labor market. Here's why",
+   "url": "https://www.cnbc.com/2026/10/02/men-labor-market-jobs-report.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 02 Oct 2026 17:38:59 GMT"
+  },
+  {
+   "titulo": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
+   "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 02 Oct 2026 17:30:00 GMT"
+  },
+  {
+   "titulo": "Ford fends off Hyundai to retain No. 3 U.S. sales position in third quarter",
+   "url": "https://www.cnbc.com/2026/10/02/ford-q3-sales.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 02 Oct 2026 17:20:33 GMT"
+  },
+  {
+   "titulo": "American starts letting customers mix cash and miles for tickets",
+   "url": "https://www.cnbc.com/2026/10/02/american-airlines-tickets-cash-miles.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 02 Oct 2026 16:49:55 GMT"
+  },
+  {
+   "titulo": "Your health insurance premiums may take a big jump in 2027 — here's why",
+   "url": "https://www.cnbc.com/2026/10/02/health-insurance-premiums-2027-inflation-aca-obamacare.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 02 Oct 2026 16:26:57 GMT"
   },
   {
    "titulo": "Treasury Sec. Bessent, IRS crack down on ETF strategy the wealthy are using to avoid capital gains taxes",
@@ -402,58 +450,10 @@
    "fecha": "Fri, 02 Oct 2026 13:45:58 GMT"
   },
   {
-   "titulo": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
-   "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 13:45:00 GMT"
-  },
-  {
-   "titulo": "Nike shares tumble after weak revenue outlook and layoff plans underway",
-   "url": "https://www.cnbc.com/2026/10/02/nike-nke-stock-q1-earnings-layoffs.html",
+   "titulo": "Traders now see little chance of a Fed rate hike in October after weak jobs report",
+   "url": "https://www.cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 13:43:56 GMT"
-  },
-  {
-   "titulo": "Three reasons this Wall Street market-making powerhouse says investors should reload on stocks right now",
-   "url": "https://www.marketwatch.com/story/three-reasons-why-this-wall-street-market-making-powerhouse-says-investors-should-reload-on-stocks-now-8e19ecce?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 13:30:00 GMT"
-  },
-  {
-   "titulo": "‘I have $400,000 in equity’: I’m 80. Should I sell my house because of dangerous stairs — or spend thousands renovating?",
-   "url": "https://www.marketwatch.com/story/i-have-a-low-interest-rate-im-80-years-old-should-i-move-out-of-my-house-because-of-dangerous-stairs-389c3c7b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 13:30:00 GMT"
-  },
-  {
-   "titulo": "Tesla reports 486,532 vehicle deliveries for third quarter, topping expectation",
-   "url": "https://www.cnbc.com/2026/10/02/tesla-tsla-q3-2026-vehicle-delivery-production.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 13:20:46 GMT"
-  },
-  {
-   "titulo": "I’m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
-   "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 13:00:00 GMT"
-  },
-  {
-   "titulo": "Why Western Digital and Seagate are seeing big stock drops today",
-   "url": "https://www.marketwatch.com/story/why-western-digital-and-seagate-are-seeing-big-stock-drops-today-6b16d95e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 12:58:00 GMT"
-  },
-  {
-   "titulo": "A violent classroom revolt is becoming France's next big crisis",
-   "url": "https://www.cnbc.com/2026/10/02/france-student-protests-budget-debt.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 12:10:56 GMT"
-  },
-  {
-   "titulo": "A Brexit reversal is on the table 10 years on from the vote that changed Britain. Here’s what’s at stake",
-   "url": "https://www.cnbc.com/2026/10/02/brexit-uk-rejoin-eu-referendum.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 05:00:01 GMT"
+   "fecha": "Fri, 02 Oct 2026 13:29:27 GMT"
   }
  ],
  "videos": [
@@ -567,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-02T15:30:39Z",
+ "ts": "2026-10-02T20:07:25Z",
  "fallas": [
   "videos",
   "directos"
