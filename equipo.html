@@ -32,7 +32,9 @@
 .person p{font-size:17px;line-height:1.7;margin-bottom:14px;max-width:720px}
 .person blockquote{font:300 22px/1.4 var(--serif);color:var(--ink);border-left:3px solid var(--blue);padding-left:18px;margin:6px 0 22px}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
-.tags span{font:500 11px var(--sans);letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);padding:6px 10px;color:var(--muted)}
+.tags span,.tags a{font:500 11px var(--sans);letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);padding:6px 10px;color:var(--muted)}
+.tags a{color:var(--blue);border-color:var(--blue);text-decoration:none;transition:background .2s,color .2s}
+.tags a:hover,.tags a:focus-visible{background:var(--blue);color:#fff}
 .back{display:inline-flex;margin-top:28px;color:#fff;opacity:.75;text-decoration:none;font-size:14px}
 .back:hover{opacity:1}
 @media(max-width:900px){.person{grid-template-columns:1fr;gap:28px;padding:48px 0}.person .ph{max-width:320px}}
@@ -58,7 +60,7 @@
       <div class="role">Cofundador · Inversiones y protección patrimonial</div>
       
       <p>Cofundador de NORTHPOINT, donde encabeza la estrategia de inversión y la estructura patrimonial. Responsable del diseño y la gestión de carteras con horizonte de largo plazo: asignación entre activos tradicionales y digitales, construcción de posiciones y gestión de riesgo definida antes de cada operación.</p><p>Abogado especializado en derecho fiduciario y patrimonial. Asesora en fideicomisos, titularidad y protección de bienes, vehículos de tenencia y planeación sucesoria, con el objetivo de preservar el patrimonio familiar entre generaciones. Autor de los memos de mercado de NORTHPOINT.</p>
-      <div class="tags"><span>Derecho · Universidad Anáhuac Querétaro</span><span>MVDTrading Academy</span><span>Gestión de carteras</span><span>Derecho fiduciario</span><span>Querétaro · Michoacán</span></div>
+      <div class="tags"><span>Derecho · Universidad Anáhuac Querétaro</span><a href="https://www.mvdtrading.com/" target="_blank" rel="noopener">MVDTrading Academy ↗</a><span>Gestión de carteras</span><span>Derecho fiduciario</span><span>Querétaro · Michoacán</span></div>
     </div>
   </article>
   <article class="person" id="pablo">
