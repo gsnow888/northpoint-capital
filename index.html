@@ -217,17 +217,13 @@ canvas{width:100%;height:300px;display:block}
 /* perspectivas */
 .persp{background:var(--gray)}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-/* MEMOS (Gregorio, 3-oct-2026). Van entre el simulador (blanco) y Perspectivas
-   (gris): la sección se queda blanca y las tarjetas llevan contorno, para que
-   se distingan de las de Perspectivas, que son blancas sobre gris. Cada memo
-   es un <a> y no un desplegable: tiene su propia página. */
-.memos-sec .card{border:1px solid var(--line);border-bottom:4px solid var(--line);
-  text-decoration:none;color:inherit;cursor:pointer;transition:border-color .2s,transform .2s}
-.memos-sec .card:hover{border-color:var(--blue);transform:translateY(-2px)}
-.memos-sec .card .resumen{color:var(--text);margin-bottom:20px}
-.memos-sec .card .link{margin-top:auto}
-.memos-sec .card .fecha{border-top:1px solid var(--line);margin-top:16px}
-.memo-todos{background:var(--gray)}
+/* MEMOS (Gregorio, 3-oct-2026). Ocupan el lugar de Perspectivas, así que
+   heredan .persp (fondo gris) y .card (relleno blanco) de André. Lo único
+   propio: son enlaces, no desplegables. */
+.memo-card{text-decoration:none;color:inherit}
+.memo-card .resumen{color:var(--text);margin-bottom:20px}
+.memo-card .link{margin-top:auto}
+.memo-card:hover{border-bottom-color:var(--blue)}
 .memo-nota{margin-top:32px;font-size:14px;color:var(--muted);max-width:70ch}
 .memo-nota b{color:var(--ink);font-weight:500}
 .card{background:#fff;padding:32px;display:flex;flex-direction:column;cursor:pointer;border-bottom:4px solid transparent;transition:border-color .2s}
@@ -353,13 +349,19 @@ nav .links a{white-space:nowrap}
       <p class="lead">Sin mensualidades ni plazos forzosos. Abra su cuenta, elija su plan y vea en la app cómo trabaja su ahorro cada mes. Deposite más cuando quiera y retire cuando lo necesite.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="#registro">Apartar mi lugar</a><a class="btn line inv" href="#perfiles">Ver los planes</a></div>
     </div></div></div>
-    <div class="hs" data-i="2" data-href="family-office.html"><div class="hs-bg" style="background-image:url(img/privado.jpg);background-position:center"></div><div class="wrap"><div class="box">
-      <div class="hs-k"><span>NORTHPOINT Family Office</span></div>
-      <h2 class="serif">Para la familia que ya construyó.</h2>
-      <p class="lead">La oficina privada que administra todos los asuntos financieros de una familia: inversiones, inmuebles, negocio, impuestos y herencia. Todo en un solo lugar, con un trato directo con los socios.</p>
-      <a class="btn" href="family-office.html">Conocer el Family Office</a>
+    <div class="hs" data-i="2" data-href="memos.html"><div class="hs-bg" style="background-image:url(img/mesa.jpg);background-position:center 55%"></div><div class="wrap"><div class="box">
+      <div class="hs-k"><span>Memos de mercado</span><span class="hs-pill">Septiembre 2026</span></div>
+      <h2 class="serif">Lo que la mesa pone por escrito.</h2>
+      <p class="lead">Lecturas del mercado firmadas por los socios, con la tesis, los niveles y las invalidaciones sobre la mesa antes de operar. El último: <em style="font-style:normal;border-bottom:1px solid rgba(255,255,255,.4)">Cuatro activos, una exposición</em> — BTC, MSTR, COIN y CRCL son en la práctica una sola apuesta a Bitcoin.</p>
+      <a class="btn line inv" href="memos.html">Leer los memos</a>
     </div></div></div>
-    <div class="hs hs-fund" data-i="3" data-href="fundacion.html"><div class="hs-bg" style="background-image:url(img/fundacion-abierta.jpg);background-position:right 85%;inset:-1.5%"></div><div class="wrap"><div class="box">
+    <div class="hs" data-i="3" data-href="family-office.html"><div class="hs-bg" style="background-image:url(img/penthouse.jpg);background-position:center 60%"></div><div class="wrap"><div class="box">
+      <div class="hs-k"><span>NORTHPOINT Family Office</span></div>
+      <h2 class="serif">La oficina privada de su patrimonio.</h2>
+      <p class="lead">Inversiones, inmuebles, negocio, impuestos y herencia, con un solo equipo y una sola visión de largo plazo. Para familias que ya construyeron algo y quieren que dure.</p>
+      <a class="btn line inv" href="family-office.html">Conocer el family office</a>
+    </div></div></div>
+    <div class="hs hs-fund" data-i="4" data-href="fundacion.html"><div class="hs-bg" style="background-image:url(img/fundacion-abierta.jpg);background-position:right 85%;inset:-1.5%"></div><div class="wrap"><div class="box">
       <div class="hs-k"><span>Fundación NORTHPOINT</span><span class="hs-pill">En formación</span></div>
       <h2 class="serif">Ningún niño debería enfrentar la leucemia sin su familia al lado.</h2>
       <p class="lead">Una parte de cada resultado de la mesa acompaña a familias de niños con leucemia durante su tratamiento.</p>
@@ -369,8 +371,9 @@ nav .links a{white-space:nowrap}
   <div class="hs-index" aria-label="Divisiones de NORTHPOINT">
     <button data-i="0" class="on"><span>Ahorro</span><i><em></em></i></button>
     <button data-i="1"><span>Desde $100</span><i><em></em></i></button>
-    <button data-i="2"><span>Family Office</span><i><em></em></i></button>
-    <button data-i="3"><span>Fundación</span><i><em></em></i></button>
+    <button data-i="2"><span>Memos</span><i><em></em></i></button>
+    <button data-i="3"><span>Family Office</span><i><em></em></i></button>
+    <button data-i="4"><span>Fundación</span><i><em></em></i></button>
   </div>
   <div class="hs-arrows"><button type="button" data-d="-1" aria-label="Anterior">←</button><button type="button" data-d="1" aria-label="Siguiente">→</button></div>
   <div class="hs-cue">Siga bajando<i></i></div>
@@ -426,7 +429,7 @@ nav .links a{white-space:nowrap}
       <div class="eyebrow">La mesa</div>
       <h2 class="serif">Disciplina con propósito</h2>
       <p class="lead">Nuestra mesa opera futuros de los índices de Estados Unidos, como el Nasdaq 100 y el S&amp;P 500, con reglas escritas antes de cada sesión. Cada operación tiene una razón, un riesgo definido y un registro que usted puede consultar en la app.</p>
-      <p style="margin-top:28px"><a class="link" href="#perspectivas">Lea por qué no prometemos un rendimiento fijo</a></p>
+      <p style="margin-top:28px"><a class="link" href="#memos">Lea los memos de la mesa</a></p>
     </div>
   </div>
   <div class="flow-head">
@@ -491,16 +494,19 @@ nav .links a{white-space:nowrap}
   </div>
 </div></section>
 
-<!-- MEMOS DE MERCADO (Gregorio, 3-oct-2026). Los memos ya vivían en el sitio
-     (memos.html + memos/*.html); les faltaba puerta desde la portada nueva.
-     Mismo molde que Perspectivas: .sec-head + .cards. Son documentos con su
-     propia página, así que cada tarjeta es un <a>, no un desplegable. -->
-<section class="memos-sec" id="memos"><div class="wrap">
+<!-- MEMOS DE MERCADO (Gregorio, 3-oct-2026). Esta sección ERA «Perspectivas ·
+     Ideas de la mesa», con tres notas de André. Son los memos los que van aquí:
+     ya existían en el sitio (memos.html + memos/*.html), estaban publicados y
+     firmados, y tener las dos cosas repetía el mismo patrón de tres tarjetas.
+     Las notas de André siguen en CONFIG.perspectivas, sin pintar: para
+     devolverlas basta volver a poner un <div class="cards" id="cards"></div>
+     y su render. -->
+<section class="persp" id="memos"><div class="wrap">
   <div class="sec-head">
     <div><div class="eyebrow">Memos de mercado</div><h2 class="serif" style="margin-top:12px">Lo que la mesa pone por escrito.</h2></div>
     <p>Lecturas del mercado firmadas por los socios, con la tesis, los niveles y las invalidaciones puestas sobre la mesa antes de operar. Es el marco con el que NORTHPOINT toma sus propias decisiones, publicado tal cual.</p>
   </div>
-  <div class="cards memos-cards">
+  <div class="cards">
     <a class="card memo-card" href="memos/memo-bloque-cripto-sep-2026.html">
       <div class="tipo">Memo de mercado · Septiembre 2026</div>
       <h3>Cuatro activos, una exposición</h3>
@@ -515,23 +521,15 @@ nav .links a{white-space:nowrap}
       <span class="link">Leer el memo</span>
       <div class="fecha">Gregorio Sánchez Calderón · 23 sep 2026 · 7 min</div>
     </a>
-    <a class="card memo-card memo-todos" href="memos.html">
+    <a class="card memo-card" href="memos.html">
       <div class="tipo">Archivo</div>
       <h3>Todos los memos</h3>
-      <p class="resumen">El archivo completo, del más reciente al primero.</p>
+      <p class="resumen">El archivo completo, del más reciente al primero. Se publica uno nuevo cada que la mesa cambia de lectura.</p>
       <span class="link">Ver el archivo</span>
-      <div class="fecha">Se publica un memo nuevo cada que la mesa cambia de lectura</div>
+      <div class="fecha">Archivo completo · se actualiza con cada memo</div>
     </a>
   </div>
   <p class="memo-nota">Los memos <b>no son asesoría financiera</b>. Son un marco de análisis para la toma de decisiones propias.</p>
-</div></section>
-
-<section class="persp" id="perspectivas"><div class="wrap">
-  <div class="sec-head">
-    <div><div class="eyebrow">Perspectivas</div><h2 class="serif" style="margin-top:12px">Ideas de la mesa</h2></div>
-    <p>Cómo pensamos el riesgo, el rendimiento y la custodia. Escrito por la mesa, para quien quiere entender antes de ahorrar.</p>
-  </div>
-  <div class="cards" id="cards"></div>
 </div></section>
 
 <section class="comp"><div class="wrap grid">
@@ -667,18 +665,8 @@ $("#nivelesGrid").innerHTML = CONFIG.niveles.map(q => `
     <a class="btn ${q.dest?"":"line"}" href="#registro" data-nv="${q.id}" style="align-self:flex-start">Empezar en ${q.nombre}</a>
   </div>`).join("");
 
-$("#cards").innerHTML = CONFIG.perspectivas.map(c => `
-  <article class="card">
-    <div class="tipo">${c.tipo}</div>
-    <h3>${c.titulo}</h3>
-    <p class="resumen">${c.resumen}</p>
-    <div class="cuerpo">${c.cuerpo.map(t=>`<p>${t}</p>`).join("")}</div>
-    <span class="link mas">Leer</span>
-    <div class="fecha">${c.fecha}</div>
-  </article>`).join("");
-document.querySelectorAll(".card").forEach(c => c.addEventListener("click", () => {
-  c.classList.toggle("open"); c.querySelector(".mas").textContent = c.classList.contains("open") ? "Cerrar" : "Leer";
-}));
+/* El render de CONFIG.perspectivas se retiró con la sección: ya no hay #cards.
+   Los datos siguen arriba por si se quieren volver a publicar. */
 
 $("#oficina").innerHTML = CONFIG.oficina || "Dirección por anunciar";
 $("#contactoTxt").innerHTML = [CONFIG.whatsapp && `WhatsApp: +${CONFIG.whatsapp}`, CONFIG.email].filter(Boolean).join("<br>") || "Por medio del registro de esta página";
