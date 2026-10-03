@@ -164,6 +164,7 @@ html.menu-on .menu-in a:nth-child(2){transition-delay:.04s}html.menu-on .menu-in
 
 /* portada · "Empiece con $100": la app real en una MacBook y un iPhone, como foto de producto */
 .cien-bg{background:#051C2C url(img/ciudad.jpg) center/cover no-repeat!important}
+.cien-bg{background-image:image-set(url(img/ciudad.webp) type("image/webp"),url(img/ciudad.jpg) type("image/jpeg"))!important}
 .hs-cien:after{background:linear-gradient(90deg,rgba(5,28,44,.94) 0%,rgba(5,28,44,.7) 42%,rgba(5,28,44,.35) 70%,rgba(5,28,44,.6) 100%)}
 .devs{position:absolute;z-index:0;right:max(215px,calc((100vw - 1280px)/2 + 215px));top:50%;transform:translateY(-44%);width:min(38vw,640px);aspect-ratio:1.5/1;pointer-events:none}
 .devs:after{content:"";position:absolute;left:4%;right:-6%;bottom:-11%;height:12%;background:radial-gradient(50% 50% at 50% 50%,rgba(0,0,0,.75),transparent 70%);filter:blur(6px);z-index:-1}

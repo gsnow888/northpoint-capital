@@ -11,12 +11,18 @@
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="https://northpointcapital.io/img/hero.jpg">
+<link rel="canonical" href="https://northpointcapital.io/">
+<meta name="theme-color" content="#051C2C">
+<!-- La foto del hero es el LCP: se adelanta en WebP, una versión por ancho -->
+<link rel="preload" as="image" href="img/hero.webp" type="image/webp" media="(min-width:701px)">
+<link rel="preload" as="image" href="img/hero-m.webp" type="image/webp" media="(max-width:700px)">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"NORTHPOINT","url":"https://northpointcapital.io/","email":"hola@northpointcapital.io","address":{"@type":"PostalAddress","addressLocality":"Morelia","addressRegion":"Michoacán","addressCountry":"MX"}}</script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/fonts/ahorro/fonts.css">
 <style>
 :root{
   --navy:#051C2C; --navy2:#0B2A40; --blue:#2251FF; --blue-dk:#1F40E6; --cyan:#CCF2FF; --cyan-lt:#E6F8FF;
-  --ink:#000; --text:#333; --muted:#757575; --line:#D0D0D0; --gray:#F0F0F0; --white:#fff;
+  --ink:#000; --text:#333; --muted:#6B6B6B; --line:#D0D0D0; --gray:#F0F0F0; --white:#fff;   /* --muted: 6B6B6B da 5.1:1 sobre el gris F0F0F0 (AA); 757575 se quedaba en 4.0 */
   --loss:#C0392B; --gain:#1A7F5A;
   --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
   --sans:"Public Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -58,7 +64,7 @@ nav .links a:hover{opacity:1}
 @media(max-width:1240px){nav .links a:not(.btn){display:none}}
 
 /* hero */
-.hero{position:relative;min-height:760px;background:var(--navy) url(img/hero.jpg) center right/cover no-repeat;display:flex;align-items:flex-end;padding:0}
+.hero{position:relative;min-height:760px;background:var(--navy);display:flex;align-items:flex-end;padding:0}   /* la foto va en la diapositiva (.bg-hero), no aquí: evitaba bajar el JPG además del WebP */
 .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,28,44,.92) 0%,rgba(5,28,44,.55) 45%,rgba(5,28,44,0) 75%)}
 .hero .wrap{position:relative;width:100%;padding-bottom:96px}
 .hero .box{max-width:640px;color:#fff}
@@ -96,7 +102,7 @@ nav .links a:hover{opacity:1}
 .mesa .feature h2{margin:12px 0 20px}
 .roles{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:72px}
 .rol{background:#fff;padding:28px;border-top:4px solid var(--navy)}
-.rol h4{font:400 22px/1.3 var(--serif);color:var(--ink);margin-bottom:6px}
+.rol h3{font:400 22px/1.3 var(--serif);color:var(--ink);margin-bottom:6px}
 .rol .sub{font-size:14px;color:var(--muted);margin-bottom:14px}
 @media(max-width:980px){.mesa .feature{grid-template-columns:1fr;gap:32px}.roles{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.roles{grid-template-columns:1fr}}
@@ -127,6 +133,8 @@ nav .links a:hover{opacity:1}
 
 /* banda navy */
 .banda{position:relative;background:var(--navy) url(img/estratos.jpg) center/cover no-repeat;color:#fff;padding:140px 0}
+.banda{background-image:image-set(url(img/estratos.webp) type("image/webp"),url(img/estratos.jpg) type("image/jpeg"))}
+@media(max-width:700px){.banda{background-image:image-set(url(img/estratos-m.webp) type("image/webp"),url(img/estratos.jpg) type("image/jpeg"))}}
 .banda:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,28,44,.9),rgba(5,28,44,.35))}
 .banda .wrap{position:relative}
 .banda .eyebrow{color:#fff}
@@ -135,7 +143,7 @@ nav .links a:hover{opacity:1}
 /* perfiles · cada plan con su color (los mismos de la app), ícono y curva */
 .perfiles{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;align-items:stretch;max-width:920px;margin:0 auto}
 .perfil{--c:#2251FF;--c2:#1B3FCC;--tint:rgba(34,81,255,.06);position:relative;border:1px solid var(--line);cursor:pointer;background:#fff;display:flex;flex-direction:column;overflow:hidden;transition:border-color .25s,box-shadow .25s,transform .25s}
-.perfil[data-id="bas"]{--c:#0EA5A4;--c2:#0B7F7E;--tint:rgba(14,165,164,.07)}
+.perfil[data-id="bas"]{--c:#0B2A40;--c2:#051C2C;--tint:rgba(5,28,44,.05)}   /* Básico en navy, Moderado en azul: los dos colores del sistema (antes turquesa) */
 .perfil:hover{border-color:var(--c);box-shadow:0 24px 50px -30px var(--c)}
 .perfil.on{border-color:var(--c);box-shadow:0 0 0 1px var(--c),0 30px 60px -32px var(--c)}
 .pf-top{position:relative;background:linear-gradient(135deg,var(--c) 0%,var(--c2) 100%);color:#fff;padding:26px 28px 24px;overflow:hidden}
@@ -308,7 +316,7 @@ input:focus,select:focus{outline:none;border-bottom-color:var(--blue);border-bot
 
 /* oficinas + footer */
 .oficinas .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-top:40px}
-.oficinas h4{font:400 22px var(--serif);color:var(--ink);margin-bottom:12px}
+.oficinas h3{font:400 22px var(--serif);color:var(--ink);margin-bottom:12px}
 .oficinas p{font-size:15px;line-height:1.7}
 @media(max-width:900px){.oficinas .grid{grid-template-columns:1fr}}
 footer{background:var(--navy);color:rgba(255,255,255,.75);padding:56px 0 64px;font-size:14px;line-height:1.7}
@@ -317,11 +325,60 @@ footer p{max-width:900px;margin-bottom:12px}
 footer b{color:#fff;font-weight:500}
 nav .links a{white-space:nowrap}
 @media(min-width:1000px) and (max-width:1320px){nav .links{gap:16px}nav .links a{font-size:13.5px}}
+
+/* ── Accesibilidad, hero, rostros y planes (Gregorio, 3-oct-2026; auditoría 3·4·5·8·10) ── */
+.skip{position:absolute;left:16px;top:-80px;z-index:100;background:var(--blue);color:#fff;padding:12px 18px;font:500 15px var(--sans);text-decoration:none;transition:top .2s}
+.skip:focus{top:16px;outline:2px solid #fff;outline-offset:2px}
+a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-visible,footer :focus-visible,.pq.dest :focus-visible,.menu-panel :focus-visible{outline-color:#fff}
+/* hero: el h1 es la promesa, no la marca; un primario y un enlace */
+.hs h1.serif{font-size:clamp(32px,4.4vw,58px);line-height:1.08;max-width:15ch}
+@media(max-width:700px){.hs h1.serif{max-width:none}}   /* en móvil el ancho ya lo da la caja; con 15ch «mesa» se quedaba sola en una línea */
+.hs-cta{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.hs-cta .link{color:#fff}
+.hs-bg.bg-hero{background-image:url(img/hero.jpg);background-image:image-set(url(img/hero.webp) type("image/webp"),url(img/hero.jpg) type("image/jpeg"))}
+@media(max-width:700px){.hs-bg.bg-hero{background-image:image-set(url(img/hero-m.webp) type("image/webp"),url(img/hero.jpg) type("image/jpeg"))}}
+.comp picture{display:block}
+/* quiénes operan: cuatro rostros antes de los planes (las fichas completas viven en equipo.html) */
+.gente-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.persona{display:block;text-decoration:none;color:inherit}
+.persona img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;background:#0A2233;filter:grayscale(1);transition:filter .35s}
+.persona:hover img,.persona:focus-visible img{filter:none}
+.persona b{display:block;font:400 20px/1.3 var(--serif);color:var(--ink);margin:16px 0 4px}
+.persona span{font-size:14px;color:var(--muted);line-height:1.5}
+@media(max-width:900px){.gente-grid{grid-template-columns:1fr 1fr;gap:20px}}
+/* planes: objetivo y riesgo con el mismo peso; «meta, no garantía» junto a la cifra; aviso de riesgo a un clic */
+.obj-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:4px 0 14px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.perfil .obj{font:300 44px/1 var(--serif);color:var(--ink);margin:0 0 4px}
+.perfil .cap{font-size:13px;color:var(--muted);margin:0;line-height:1.4}
+.pf-aviso{display:inline-block;margin-top:14px;font-size:13px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.pf-aviso:hover{color:var(--ink)}
 </style>
-<link rel="stylesheet" href="anim.css?v=1790996209">
+<link rel="stylesheet" href="anim.css?v=20261003a">
+<style>
+/* Carrusel (auditoría A11Y-01/02): puntos con área de 24 px sin cambiar el punto visible, y botón de pausa.
+   Va después de anim.css porque sus reglas de .hs-index llevan !important. */
+.hs-index{gap:4px!important}
+.hs-index button{width:24px!important;height:24px!important;background:transparent!important;overflow:visible!important}
+.hs-index button i{inset:7.5px!important;border-radius:999px;background:rgba(255,255,255,.4)!important;overflow:hidden;transition:inset .35s cubic-bezier(.2,.7,.2,1),background .2s}
+.hs-index button em{background:#fff!important}
+.hs-index button.on{width:44px!important;background:transparent!important}
+.hs-index button.on i{background:rgba(255,255,255,.35)!important}
+.hs-index button:hover i,.hs-index button:focus-visible i{background:rgba(255,255,255,.75)!important}
+.hs-index button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.hs-pause{position:absolute;z-index:5;bottom:24px;left:calc(50% + 96px);width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.5);background:rgba(5,28,44,.35);color:#fff;cursor:pointer;display:grid;place-items:center;padding:0;transition:background .2s,color .2s}
+.hs-pause:hover{background:#fff;color:var(--navy)}
+.hs-pause svg{width:12px;height:12px;display:block;fill:currentColor}
+.hs-pause .play{display:none}
+.hs-pause.stopped .pause{display:none}
+.hs-pause.stopped .play{display:block}
+/* Las <img> ahora llevan width/height (evita saltos de layout); con aspect-ratio en CSS la altura debe volver a auto */
+.persona img,.comp img,.mac-scr img{height:auto}
+</style>
 <script>document.documentElement.classList.add("js-anim");setTimeout(function(){document.documentElement.classList.add("anim-ready")},3500)</script>
 </head>
 <body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
 
 <nav><div class="wrap">
   <a class="mark" href="#">NORTHPOINT</a>
@@ -333,35 +390,35 @@ nav .links a{white-space:nowrap}
 
 <header class="hero" id="top">
   <div class="hs-stage">
-    <div class="hs" data-i="0"><div class="hs-bg" style="background-image:url(img/hero.jpg)"></div><div class="wrap"><div class="box">
-      <div class="eyebrow">Bienvenido a</div>
-      <h1 class="serif">NORTHPOINT</h1>
-      <p class="lead">Somos una mesa de trading profesional que ayuda a personas de todo México a <a class="ul" href="#como">hacer que su ahorro trabaje</a>. Usted guarda su dinero, lo ve en la app y cada mes recibe el resultado de nuestra operación, dentro del riesgo que decide asumir.</p>
-      <a class="btn" href="#perfiles">Ver los planes</a>
+    <div class="hs" data-i="0"><div class="hs-bg bg-hero"></div><div class="wrap"><div class="box">
+      <div class="eyebrow">NORTHPOINT · Mesa de trading profesional</div>
+      <h1 class="serif">Su ahorro, operado por una mesa profesional.</h1>
+      <p class="lead">Desde $100 USD, a su nombre y con un freno de protección en cada plan. Usted guarda su dinero, lo ve en la app y cada mes recibe el resultado de la mesa, dentro del riesgo que decide asumir.</p>
+      <div class="hs-cta"><a class="btn" href="#registro">Apartar lugar</a><a class="link" href="#perfiles">Ver los planes</a></div>
     </div></div></div>
     <div class="hs hs-cien" data-i="1"><div class="hs-bg cien-bg"></div>
       <div class="devs" aria-hidden="true">
-        <div class="mac"><div class="mac-scr"><img src="img/app-desk.jpg" alt=""></div><div class="mac-base"></div></div>
-        <div class="iph"><i class="ib ib1"></i><i class="ib ib2"></i><i class="ib ib3"></i><i class="ib ib4"></i><div class="iph-bz"><div class="iph-in"><img src="img/app-cel.jpg" alt=""><span class="iph-isl"></span></div></div></div>
+        <div class="mac"><div class="mac-scr"><picture><source type="image/webp" srcset="img/app-desk.webp"><img src="img/app-desk.jpg" width="1800" height="1125" alt="" decoding="async"></picture></div><div class="mac-base"></div></div>
+        <div class="iph"><i class="ib ib1"></i><i class="ib ib2"></i><i class="ib ib3"></i><i class="ib ib4"></i><div class="iph-bz"><div class="iph-in"><picture><source type="image/webp" srcset="img/app-cel.webp"><img src="img/app-cel.jpg" width="640" height="1385" alt="" decoding="async"></picture><span class="iph-isl"></span></div></div></div>
       </div><div class="wrap"><div class="box">
       <div class="hs-k"><span>Ahorro NORTHPOINT</span><span class="hs-pill">Desde $100 USD</span></div>
       <h2 class="serif">Empiece a ahorrar con $100 dólares.</h2>
       <p class="lead">Sin mensualidades ni plazos forzosos. Abra su cuenta, elija su plan y vea en la app cómo trabaja su ahorro cada mes. Deposite más cuando quiera y retire cuando lo necesite.</p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="#registro">Apartar mi lugar</a><a class="btn line inv" href="#perfiles">Ver los planes</a></div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="#registro">Apartar lugar</a><a class="btn line inv" href="#perfiles">Ver los planes</a></div>
     </div></div></div>
-    <div class="hs" data-i="2" data-href="memos.html"><div class="hs-bg" style="background-image:url(img/mesa.jpg);background-position:center 55%"></div><div class="wrap"><div class="box">
+    <div class="hs" data-i="2" data-href="memos.html"><div class="hs-bg" data-bg="img/mesa" style="background-position:center 55%"></div><div class="wrap"><div class="box">
       <div class="hs-k"><span>Memos de mercado</span><span class="hs-pill">Septiembre 2026</span></div>
       <h2 class="serif">Lo que la mesa pone por escrito.</h2>
       <p class="lead">Lecturas del mercado firmadas por los socios, con la tesis, los niveles y las invalidaciones sobre la mesa antes de operar. El último: <em style="font-style:normal;border-bottom:1px solid rgba(255,255,255,.4)">Cuatro activos, una exposición</em> — BTC, MSTR, COIN y CRCL son en la práctica una sola apuesta a Bitcoin.</p>
       <a class="btn line inv" href="memos.html">Leer los memos</a>
     </div></div></div>
-    <div class="hs" data-i="3" data-href="family-office.html"><div class="hs-bg" style="background-image:url(img/family-office.jpg);background-position:center 60%"></div><div class="wrap"><div class="box">
+    <div class="hs" data-i="3" data-href="family-office.html"><div class="hs-bg" data-bg="img/family-office" style="background-position:center 60%"></div><div class="wrap"><div class="box">
       <div class="hs-k"><span>NORTHPOINT Family Office</span></div>
       <h2 class="serif">La oficina privada de su patrimonio.</h2>
       <p class="lead">Inversiones, inmuebles, negocio, impuestos y herencia, con un solo equipo y una sola visión de largo plazo. Para familias que ya construyeron algo y quieren que dure.</p>
       <a class="btn line inv" href="family-office.html">Conocer el family office</a>
     </div></div></div>
-    <div class="hs hs-fund" data-i="4" data-href="fundacion.html"><div class="hs-bg" style="background-image:url(img/fundacion-abierta.jpg);background-position:right 85%;inset:-1.5%"></div><div class="wrap"><div class="box">
+    <div class="hs hs-fund" data-i="4" data-href="fundacion.html"><div class="hs-bg" data-bg="img/fundacion-abierta" style="background-position:right 85%;inset:-1.5%"></div><div class="wrap"><div class="box">
       <div class="hs-k"><span>Fundación NORTHPOINT</span><span class="hs-pill">En formación</span></div>
       <h2 class="serif">Ningún niño debería enfrentar la leucemia sin su familia al lado.</h2>
       <p class="lead">Una parte de cada resultado de la mesa acompaña a familias de niños con leucemia durante su tratamiento.</p>
@@ -376,9 +433,11 @@ nav .links a{white-space:nowrap}
     <button data-i="4"><span>Fundación</span><i><em></em></i></button>
   </div>
   <div class="hs-arrows"><button type="button" data-d="-1" aria-label="Anterior">←</button><button type="button" data-d="1" aria-label="Siguiente">→</button></div>
+  <button type="button" class="hs-pause" aria-pressed="false" aria-label="Pausar el carrusel"><svg class="pause" viewBox="0 0 12 12" aria-hidden="true"><rect x="1.5" y="1" width="3" height="10"/><rect x="7.5" y="1" width="3" height="10"/></svg><svg class="play" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1l8 5-8 5z"/></svg></button>
   <div class="hs-cue">Siga bajando<i></i></div>
 </header>
 
+<main id="contenido">
 <section class="intro"><div class="wrap">
   <p class="lead serif" style="font-weight:300">Creemos que un ahorro no debería quedarse quieto. Por eso ponemos la disciplina de una mesa institucional al servicio de cualquier saldo, desde cien dólares, con un freno de protección en cada plan y transparencia total sobre cada operación.</p>
   <p class="lead">Durante años, la gestión profesional estuvo reservada para grandes fortunas. Nuestro compromiso es abrirla a quien quiera empezar, sin montos mínimos inalcanzables, sin plazos forzosos y sin letras pequeñas.</p>
@@ -387,7 +446,7 @@ nav .links a{white-space:nowrap}
 <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Custodia a su nombre</span><span>Freno de protección en cada plan</span><span>Desde $100 USD</span><span>Retiros cuando quiera</span><span>Cada operación visible</span><span>Sin cuota fija</span><span>Custodia a su nombre</span><span>Freno de protección en cada plan</span><span>Desde $100 USD</span><span>Retiros cuando quiera</span><span>Cada operación visible</span><span>Sin cuota fija</span></div></div>
 
 <div class="anuncio"><div class="wrap">
-  <h3 class="serif">Presentamos la app de ahorro NORTHPOINT, desde $100 USD</h3>
+  <h2 class="serif" style="font-size:clamp(24px,2.4vw,32px);line-height:1.25">Presentamos la app de ahorro NORTHPOINT, desde $100 USD</h2>
   <p>Abra su cuenta con cien dólares, siga su saldo en la app y vea cada mes lo que generó. Deposite más o retire cuando quiera.</p>
   <a class="btn line" href="ahorro-app.html">Pruebe la app</a>
 </div></div>
@@ -438,11 +497,25 @@ nav .links a{white-space:nowrap}
   </div>
   <div class="roles flow">
     <div class="flow-line" aria-hidden="true"><i></i></div>
-    <div class="rol"><div class="rol-top"><svg class="rol-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/><path d="M15 16l2 2 3-4"/></svg><span class="rol-t">07:30</span></div><div class="rol-n">01</div><h4>Dirección de la mesa</h4><div class="sub">Estrategia y supervisión</div><p>Define el plan de cada sesión y revisa que toda operación cumpla las reglas de la mesa.</p><div class="rol-more">Nada se opera sin un plan escrito antes de abrir.</div></div>
-    <div class="rol"><div class="rol-top"><svg class="rol-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg><span class="rol-t">En tiempo real</span></div><div class="rol-n">02</div><h4>Gestión de riesgo</h4><div class="sub">Límites por cuenta</div><p>Vigila en tiempo real cada cuenta y activa el freno del plan cuando el saldo llega a su riesgo mensual.</p><div class="rol-more">El freno es automático: no depende de una decisión en caliente.</div></div>
-    <div class="rol"><div class="rol-top"><svg class="rol-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 8-9"/><path d="M15 6h5v5"/></svg><span class="rol-t">07:30 – 14:00</span></div><div class="rol-n">03</div><h4>Operación</h4><div class="sub">Ejecución</div><p>Traders que ejecutan el plan con tamaños calculados según el plan y el saldo de cada cuenta.</p><div class="rol-more">Cada entrada queda registrada y visible en su app.</div></div>
-    <div class="rol"><div class="rol-top"><svg class="rol-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8M8 13h5"/></svg><span class="rol-t">Cada mes</span></div><div class="rol-n">04</div><h4>Atención a clientes</h4><div class="sub">Acompañamiento</div><p>Resumen mensual, cambios de plan y atención directa por WhatsApp para cada titular.</p><div class="rol-more">Una persona real, no un bot, responde sus dudas.</div></div>
+    <div class="rol"><div class="rol-top"><svg class="rol-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/><path d="M15 16l2 2 3-4"/></svg><span class="rol-t">07:30</span></div><div class="rol-n">01</div><h3>Dirección de la mesa</h3><div class="sub">Estrategia y supervisión</div><p>Define el plan de cada sesión y revisa que toda operación cumpla las reglas de la mesa.</p><div class="rol-more">Nada se opera sin un plan escrito antes de abrir.</div></div>
+    <div class="rol"><div class="rol-top"><svg class="rol-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg><span class="rol-t">En tiempo real</span></div><div class="rol-n">02</div><h3>Gestión de riesgo</h3><div class="sub">Límites por cuenta</div><p>Vigila en tiempo real cada cuenta y activa el freno del plan cuando el saldo llega a su riesgo mensual.</p><div class="rol-more">El freno es automático: no depende de una decisión en caliente.</div></div>
+    <div class="rol"><div class="rol-top"><svg class="rol-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 8-9"/><path d="M15 6h5v5"/></svg><span class="rol-t">07:30 – 14:00</span></div><div class="rol-n">03</div><h3>Operación</h3><div class="sub">Ejecución</div><p>Traders que ejecutan el plan con tamaños calculados según el plan y el saldo de cada cuenta.</p><div class="rol-more">Cada entrada queda registrada y visible en su app.</div></div>
+    <div class="rol"><div class="rol-top"><svg class="rol-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8M8 13h5"/></svg><span class="rol-t">Cada mes</span></div><div class="rol-n">04</div><h3>Atención a clientes</h3><div class="sub">Acompañamiento</div><p>Resumen mensual, cambios de plan y atención directa por WhatsApp para cada titular.</p><div class="rol-more">Una persona real, no un bot, responde sus dudas.</div></div>
 </div>
+</div></section>
+
+<!-- QUIÉNES OPERAN (auditoría CRO-05): rostros antes de pedir datos. Las fichas completas viven en equipo.html. -->
+<section class="gente" id="gente"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Quiénes operan</div><h2 class="serif" style="margin-top:12px">Las personas detrás de su ahorro.</h2></div>
+    <p>Fundador, socios y traders que operan con las mismas reglas que le pedimos a su ahorro: el riesgo se define antes de cada operación y todo queda registrado. <a class="link" href="equipo.html">Conocer al equipo</a></p>
+  </div>
+  <div class="gente-grid">
+    <a class="persona" href="equipo.html#goyo"><picture><source type="image/webp" srcset="img/goyo.webp"><img src="img/goyo.jpg" width="675" height="900" alt="Gregorio Sánchez Calderón" loading="lazy" decoding="async"></picture><b>Gregorio Sánchez Calderón</b><span>Cofundador · Inversiones y protección patrimonial</span></a>
+    <a class="persona" href="equipo.html#pablo"><picture><source type="image/webp" srcset="img/pablo.webp"><img src="img/pablo.jpg" width="473" height="644" alt="Pablo Ochoa Macouzet" loading="lazy" decoding="async"></picture><b>Pablo Ochoa Macouzet</b><span>Cofundador · Estrategia, operaciones y gestión de riesgo</span></a>
+    <a class="persona" href="equipo.html#andre"><picture><source type="image/webp" srcset="img/andre.webp"><img src="img/andre.jpg" width="716" height="900" alt="André Macouzet Ruiz" loading="lazy" decoding="async"></picture><b>André Macouzet Ruiz</b><span>Fundador · Mercados, datos y tecnología</span></a>
+    <a class="persona" href="equipo.html#gerardo"><picture><source type="image/webp" srcset="img/gerardo.webp"><img src="img/gerardo.jpg" width="675" height="900" alt="Gerardo Andaluz Contreras" loading="lazy" decoding="async"></picture><b>Gerardo Andaluz Contreras</b><span>Cofundador · Análisis técnico y futuros de índices</span></a>
+  </div>
 </div></section>
 
 <section class="banda"><div class="wrap">
@@ -533,7 +606,7 @@ nav .links a{white-space:nowrap}
 </div></section>
 
 <section class="comp"><div class="wrap grid">
-  <img src="img/ciudad.jpg" alt="Ciudad de México al amanecer" loading="lazy">
+  <picture><source type="image/webp" srcset="img/ciudad.webp"><img src="img/ciudad.jpg" width="1400" height="781" alt="Ciudad de México al amanecer" loading="lazy" decoding="async"></picture>
   <div>
     <div class="eyebrow">Nuestro compromiso</div>
     <h2 class="serif">Llevar la gestión profesional a más hogares de México</h2>
@@ -572,7 +645,7 @@ nav .links a{white-space:nowrap}
     <label>WhatsApp<input name="whatsapp" required inputmode="tel" autocomplete="tel"></label>
     <label>¿Con cuánto empezaría?<select name="nivel" id="fNivel"></select></label>
     <label>Plan<select name="perfil" id="fPerfil"></select></label>
-    <button class="btn" type="submit" style="justify-self:start;margin-top:8px">Apartar mi lugar</button>
+    <button class="btn" type="submit" style="justify-self:start;margin-top:8px">Apartar lugar</button>
     <p class="consent">Al enviar acepta nuestro <a href="privacidad.html">Aviso de privacidad</a>.</p>
     <div class="ok" id="ok">Gracias. Su registro quedó guardado y le contactaremos por WhatsApp.</div>
   </form>
@@ -582,11 +655,12 @@ nav .links a{white-space:nowrap}
   <div class="eyebrow">Contacto</div>
   <h2 class="serif" style="margin-top:12px">Contacto</h2>
   <div class="grid">
-    <div><h4>Oficina de la mesa</h4><p id="oficina"></p></div>
-    <div><h4>Atención a clientes</h4><p id="contactoTxt"></p></div>
-    <div><h4>Horario de la mesa</h4><p>Lunes a viernes<br>Sesión de Nueva York, 7:30 a 14:00 (hora del centro de México)</p></div>
+    <div><h3>Oficina de la mesa</h3><p id="oficina"></p></div>
+    <div><h3>Atención a clientes</h3><p id="contactoTxt"></p></div>
+    <div><h3>Horario de la mesa</h3><p>Lunes a viernes<br>Sesión de Nueva York, 7:30 a 14:00 (hora del centro de México)</p></div>
   </div>
 </div></section>
+</main>
 
 <footer><div class="wrap">
   <span class="mark">NORTHPOINT</span>
@@ -639,17 +713,18 @@ $("#perfilesGrid").innerHTML = CONFIG.perfiles.map(p => `
   <div class="perfil" data-id="${p.id}">
     <div class="pf-top"><div class="pf-row"><div><div class="eyebrow">Plan</div><h3>${p.nombre}</h3><div class="lema">${p.lema}</div></div><div class="pf-ico">${PF_ICO[p.id]||""}</div></div><span class="pf-badge">${PF_BADGE[p.id]||""}</span></div>
     <div class="pf-body">
-      <div class="obj">+${p.objetivo}%</div><div class="cap">Objetivo mensual</div>
+      <div class="obj-row"><div><div class="obj">+${p.objetivo}%</div><div class="cap">Objetivo mensual · meta, no garantía</div></div><div><div class="obj">−${p.riesgo}%</div><div class="cap">Riesgo mensual máximo · freno de protección</div></div></div>
       <div class="riesgo" aria-label="Nivel de riesgo ${p.nivel} de 5">${[1,2,3,4,5].map(i=>`<i class="${i<=p.nivel?"on":""}"></i>`).join("")}<span>Riesgo ${p.nivel} de 5</span></div>
       <p class="ideal">${p.ideal}</p>
       <dl>
-        <div><dt>Objetivo al año</dt><dd>+${+(p.objetivo*12).toFixed(1)}%</dd></div>
-        <div><dt>Riesgo mensual</dt><dd>${p.riesgo}%</dd></div>
+        <div><dt>Objetivo al año (meta)</dt><dd>+${+(p.objetivo*12).toFixed(1)}%</dd></div>
+        <div><dt>Puede haber meses negativos</dt><dd>Sí</dd></div>
         <div><dt>Horizonte sugerido</dt><dd>${p.horizonte}</dd></div>
         <div><dt>Actividad de la mesa</dt><dd>${p.freq}</dd></div>
         <div><dt>Freno de protección</dt><dd>Incluido</dd></div>
       </dl>
       <div class="pf-cta"><span>Elegir ${p.nombre}</span></div>
+      <a class="pf-aviso" href="legal/riesgo.html">Lea el aviso de riesgo</a>
     </div>
   </div>`).join("");
 $("#seg").innerHTML = CONFIG.perfiles.map(p => `<button type="button" data-id="${p.id}">${p.nombre}</button>`).join("");
@@ -753,13 +828,13 @@ function draw(serie, dep, upto){
   const x = i => pl + (i+.5)*(w/serie.length);
   const y = v => top + lh - ((v-lo)/(hi-lo||1))*lh;
   const fmt = v => v>=1e6?"$"+(v/1e6).toFixed(1)+"M":v>=1e4?"$"+Math.round(v/1000)+"k":"$"+Math.round(v).toLocaleString("en-US");
-  g.font = "300 12px 'Public Sans',sans-serif"; g.fillStyle = "#757575"; g.strokeStyle = "#E6E6E6"; g.lineWidth = 1;
+  g.font = "300 12px 'Public Sans',sans-serif"; g.fillStyle = "#6B6B6B"; g.strokeStyle = "#E6E6E6"; g.lineWidth = 1;
   for(let k=0;k<=3;k++){ const v=lo+(hi-lo)*k/3, yy=y(v); g.beginPath(); g.moveTo(pl,yy); g.lineTo(W-8,yy); g.stroke(); g.fillText(fmt(v), 4, yy+4); }
   // barras: resultado neto de cada mes (abajo)
   const mx = Math.max(...serie.map(s=>Math.abs(s[0])))||1, base = top+lh+gap+bh/2, bw = Math.max(1, w/serie.length-2);
   g.strokeStyle="#E6E6E6"; g.beginPath(); g.moveTo(pl,base); g.lineTo(W-8,base); g.stroke();
   serie.slice(0, upto).forEach((s,i)=>{ const hh=(s[0]/mx)*(bh/2); g.fillStyle = s[0]>=0 ? "#D0D0D0" : "#E8A99F"; g.fillRect(x(i)-bw/2, hh>=0?base-hh:base, bw, Math.abs(hh)); });
-  g.fillStyle="#757575"; g.fillText("por mes", 4, base+4);
+  g.fillStyle="#6B6B6B"; g.fillText("por mes", 4, base+4);
   // línea: saldo
   g.strokeStyle = "#2251FF"; g.lineWidth = 2.5; g.beginPath();
   g.moveTo(pl, y(dep)); serie.slice(0, upto).forEach((s,i)=> g.lineTo(x(i),y(s[1]))); g.stroke();
@@ -800,10 +875,23 @@ $("#form").addEventListener("submit", e => {
 
 (function(){ const b = document.getElementById("privBtn"); if(b && CONFIG.whatsapp){ b.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent("Hola, me interesa NORTHPOINT Privado. Quiero agendar una conversación sobre invertir un capital.")}`; b.target = "_blank"; } })();
 
+// Fondos de las diapositivas 2–4 (auditoría PERF-01): se cargan después de la primera pintura,
+// en WebP cuando el navegador lo soporta y en versión -m (1100 px) en pantallas angostas.
+// La primera diapositiva no pasa por aquí: su fondo va en CSS (.bg-hero) y se adelanta con <link rel=preload>.
+(function(){
+  const bgs = document.querySelectorAll(".hs-bg[data-bg]"); if(!bgs.length) return;
+  let hecho = false;
+  const set = () => { if(hecho) return; hecho = true;
+    const m = innerWidth <= 700 ? "-m" : "", iset = CSS.supports("background-image", 'image-set(url("a.webp") type("image/webp"))');
+    bgs.forEach(b => { const n = b.dataset.bg; b.style.backgroundImage = iset ? `image-set(url("${n}${m}.webp") type("image/webp"), url("${n}.jpg") type("image/jpeg"))` : `url("${n}.jpg")`; }); };
+  if(document.readyState === "complete") set(); else addEventListener("load", set);
+  setTimeout(set, 2500);   // por si la carga completa tarda más que el primer giro del carrusel
+})();
+
 </script>
 <script src="assets/vendor/gsap.min.js"></script>
 <script src="assets/vendor/ScrollTrigger.min.js"></script>
-<script src="anim.js?v=1790996209"></script>
+<script src="anim.js?v=20261003a"></script>
 <script src="menu.js?v=1790996209"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 :root{
   --navy:#051C2C; --navy2:#0B2A40; --blue:#2251FF; --blue-dk:#1F40E6; --cyan:#CCF2FF; --cyan-lt:#E6F8FF;
-  --ink:#000; --text:#333; --muted:#757575; --line:#D0D0D0; --gray:#F0F0F0; --white:#fff;
+  --ink:#000; --text:#333; --muted:#6B6B6B; --line:#D0D0D0; --gray:#F0F0F0; --white:#fff;   /* --muted: 6B6B6B pasa AA sobre el gris F0F0F0; 757575 no */
   --loss:#C0392B; --gain:#1A7F5A;
   --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
   --sans:"Public Sans","Helvetica Neue",Helvetica,Arial,sans-serif;

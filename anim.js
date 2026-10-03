@@ -43,7 +43,8 @@
   let heroEnd = 0;
   if(hero && $(".hs", hero)){
     const slides = $$(".hs", hero), idx = $$(".hs-index button", hero), first = slides[0];
-    const h1 = $("h1", first), chars = h1 ? split(h1, "ch") : [$("h2", first)], lw = split($(".lead", first));   // si la primera diapositiva no es la de NORTHPOINT, su título entra completo
+    // el h1 corto (la marca) entra letra por letra; uno largo (la promesa) entra por palabras para no tardar 2 s
+    const h1 = $("h1", first), chars = h1 ? (h1.textContent.trim().length > 16 ? split(h1) : split(h1, "ch")) : [$("h2", first)], lw = split($(".lead", first));   // si la primera diapositiva no es la de NORTHPOINT, su título entra completo
     ready();
     gsap.timeline({ defaults:{ ease: EASE } })
       .from($(".hs-bg", first), { scale: 1.18, duration: 2.4, ease: "power2.out" }, 0)
@@ -58,6 +59,9 @@
     const stage = $(".hs-stage", hero), n = slides.length;
     const clone = slides[0].cloneNode(true); clone.setAttribute("aria-hidden", "true"); clone.classList.add("hs-clone");
     clone.querySelectorAll("a,button").forEach(x => x.tabIndex = -1); stage.appendChild(clone);
+    // accesibilidad (3-oct-2026): las diapositivas que no se ven quedan inertes (ni Tab ni lector de pantalla)
+    const inertes = (i, r) => { slides.forEach((s, k) => s.toggleAttribute("inert", !(k === i && r !== n))); clone.toggleAttribute("inert", r !== n); };
+    inertes(0, 0);
     const W = () => stage.clientWidth || 1, pos = () => Math.round(stage.scrollLeft / W());
     let cur = 0, auto = null, pausa = null, settle = null;
     const go = i => { stage.classList.remove("drag"); stage.scrollTo({ left: Math.max(0, Math.min(n, i)) * W(), behavior: "smooth" }); };
@@ -65,7 +69,8 @@
                          gsap.fromTo($(".hs-bg", s), { scale: 1.15 }, { scale: 1, duration: 1.8, ease: "power2.out", overwrite: "auto" }); };
     const mark = () => {
       const r = pos(), i = r % n;
-      idx.forEach((b, k) => b.classList.toggle("on", k === i));
+      idx.forEach((b, k) => { b.classList.toggle("on", k === i); b.setAttribute("aria-current", k === i ? "true" : "false"); });
+      inertes(i, r);
       if(i !== cur){ cur = i; enter(r === n ? clone : slides[i]); }
       clearTimeout(settle);
       settle = setTimeout(() => { if(pos() === n){ stage.classList.add("drag"); stage.scrollLeft = 0; requestAnimationFrame(() => stage.classList.remove("drag")); } }, 160);
@@ -73,11 +78,22 @@
     stage.addEventListener("scroll", () => requestAnimationFrame(mark), { passive: true });
     // rota cada 5 s; si la persona toca, espera 6 s y sigue
     const DUR = 5;
-    const run = () => { if(auto) auto.kill(); idx.forEach(b => gsap.set($("em", b), { scaleX: 0 }));
+    // botón de pausa (WCAG 2.2.2, 3-oct-2026): detenido = no vuelve a girar hasta que la persona lo reanude
+    const pauseBtn = $(".hs-pause", hero); let stopped = false;
+    const run = () => { if(stopped) return; if(auto) auto.kill(); idx.forEach(b => gsap.set($("em", b), { scaleX: 0 }));
       auto = gsap.fromTo($("em", idx[cur]), { scaleX: 0 }, { scaleX: 1, duration: DUR, ease: "none", onComplete: () => { go(pos() + 1); gsap.delayedCall(1, run); } }); };
-    const pause = () => { if(auto){ auto.kill(); auto = null; } clearTimeout(pausa); pausa = setTimeout(run, 6000); };
+    const pause = () => { if(auto){ auto.kill(); auto = null; } clearTimeout(pausa); pausa = setTimeout(() => { if(!stopped) run(); }, 6000); };
+    const setStopped = s => { stopped = s;
+      if(pauseBtn){ pauseBtn.setAttribute("aria-pressed", String(s)); pauseBtn.setAttribute("aria-label", s ? "Reanudar el carrusel" : "Pausar el carrusel"); pauseBtn.classList.toggle("stopped", s); }
+      if(s){ if(auto){ auto.kill(); auto = null; } clearTimeout(pausa); idx.forEach(b => gsap.set($("em", b), { scaleX: 0 })); } else run(); };
+    if(pauseBtn) pauseBtn.addEventListener("click", () => setStopped(!stopped));
     gsap.delayedCall(2.4, run);
     document.addEventListener("visibilitychange", () => { if(!auto) return; document.hidden ? auto.pause() : auto.resume(); });
+    // se detiene mientras el puntero o el foco de teclado estén sobre la portada
+    hero.addEventListener("mouseenter", () => { if(auto) auto.pause(); });
+    hero.addEventListener("mouseleave", () => { if(auto && !stopped) auto.resume(); });
+    hero.addEventListener("focusin", () => { if(auto) auto.pause(); });
+    hero.addEventListener("focusout", e => { if(auto && !stopped && !hero.contains(e.relatedTarget)) auto.resume(); });
     idx.forEach((b, i) => b.addEventListener("click", () => { pause(); go(i); }));
     $$(".hs-arrows button", hero).forEach(b => b.addEventListener("click", () => { pause(); go(pos() + (+b.dataset.d)); }));
     ["touchstart", "pointerdown", "keydown"].forEach(ev => stage.addEventListener(ev, pause, { passive: true }));
@@ -117,7 +133,7 @@
   }
 
   // ── 6. títulos, eyebrows y párrafos entran al aparecer ──
-  $$("section h2.serif, .anuncio h3.serif").forEach(h => {
+  $$("section h2.serif, .anuncio h2.serif, .anuncio h3.serif").forEach(h => {
     if(h.closest(".banda") || h.closest(".hero")) return;
     const w = split(h);
     gsap.from(w, { yPercent: 105, duration: 1, stagger: .035, ease: EASE, scrollTrigger: { trigger: h, start: "top 88%", once: true } });
@@ -171,6 +187,7 @@
       rs.forEach((r, i) => r.classList.toggle("lit", i < n));
     }, onLeaveBack: () => rs.forEach(r => r.classList.remove("lit")) });
   }
+  stagger(".gente-grid", { y: 50, opacity: 0 });
   stagger("#perfilesGrid", { y: 50, opacity: 0 });
   stagger("#nivelesGrid", { y: 80, opacity: 0 });
   stagger("#cards", { y: 60, opacity: 0 });
@@ -203,7 +220,7 @@
   // ── 11. banda y compromiso: parallax y recorte ──
   const banda = $(".banda");
 
-  const cimg = $(".comp .grid>img");
+  const cimg = $(".comp .grid img");   // la imagen ahora va dentro de <picture> (WebP con respaldo JPG)
   if(cimg){
     gsap.fromTo(cimg, { clipPath: "inset(10% 8% 10% 8%)", opacity: 0 }, { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, duration: 1.4, ease: "power3.inOut",
       scrollTrigger: { trigger: cimg, start: "top 85%", once: true } });
