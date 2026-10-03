@@ -331,11 +331,6 @@ nav .links a{white-space:nowrap}
 .skip:focus{top:16px;outline:2px solid #fff;outline-offset:2px}
 a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
 nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-visible,footer :focus-visible,.pq.dest :focus-visible,.menu-panel :focus-visible{outline-color:#fff}
-/* hero: el h1 es la promesa, no la marca; un primario y un enlace */
-.hs h1.serif{font-size:clamp(32px,4.4vw,58px);line-height:1.08;max-width:15ch}
-@media(max-width:700px){.hs h1.serif{max-width:none}}   /* en móvil el ancho ya lo da la caja; con 15ch «mesa» se quedaba sola en una línea */
-.hs-cta{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
-.hs-cta .link{color:#fff}
 .hs-bg.bg-hero{background-image:url(img/hero.jpg);background-image:image-set(url(img/hero.webp) type("image/webp"),url(img/hero.jpg) type("image/jpeg"))}
 @media(max-width:700px){.hs-bg.bg-hero{background-image:image-set(url(img/hero-m.webp) type("image/webp"),url(img/hero.jpg) type("image/jpeg"))}}
 .comp picture{display:block}
@@ -391,10 +386,10 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
 <header class="hero" id="top">
   <div class="hs-stage">
     <div class="hs" data-i="0"><div class="hs-bg bg-hero"></div><div class="wrap"><div class="box">
-      <div class="eyebrow">NORTHPOINT · Mesa de trading profesional</div>
-      <h1 class="serif">Su ahorro, operado por una mesa profesional.</h1>
-      <p class="lead">Desde $100 USD, a su nombre y con un freno de protección en cada plan. Usted guarda su dinero, lo ve en la app y cada mes recibe el resultado de la mesa, dentro del riesgo que decide asumir.</p>
-      <div class="hs-cta"><a class="btn" href="#registro">Apartar lugar</a><a class="link" href="#perfiles">Ver los planes</a></div>
+      <div class="eyebrow">Bienvenido a</div>
+      <h1 class="serif">NORTHPOINT</h1>
+      <p class="lead">Somos una mesa de trading profesional que ayuda a personas de todo México a <a class="ul" href="#como">hacer que su ahorro trabaje</a>. Usted guarda su dinero, lo ve en la app y cada mes recibe el resultado de nuestra operación, dentro del riesgo que decide asumir.</p>
+      <a class="btn" href="#perfiles">Ver los planes</a>
     </div></div></div>
     <div class="hs hs-cien" data-i="1"><div class="hs-bg cien-bg"></div>
       <div class="devs" aria-hidden="true">
@@ -409,7 +404,7 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
     <div class="hs" data-i="2" data-href="memos.html"><div class="hs-bg" data-bg="img/mesa" style="background-position:center 55%"></div><div class="wrap"><div class="box">
       <div class="hs-k"><span>Memos de mercado</span><span class="hs-pill">Septiembre 2026</span></div>
       <h2 class="serif">Lo que la mesa pone por escrito.</h2>
-      <p class="lead">Lecturas del mercado firmadas por los socios, con la tesis, los niveles y las invalidaciones sobre la mesa antes de operar. El último: <em style="font-style:normal;border-bottom:1px solid rgba(255,255,255,.4)">Cuatro activos, una exposición</em> — BTC, MSTR, COIN y CRCL son en la práctica una sola apuesta a Bitcoin.</p>
+      <p class="lead">Lecturas del mercado firmadas por los socios: la tesis, los niveles y lo que la invalida, antes de operar.</p>
       <a class="btn line inv" href="memos.html">Leer los memos</a>
     </div></div></div>
     <div class="hs" data-i="3" data-href="family-office.html"><div class="hs-bg" data-bg="img/family-office" style="background-position:center 60%"></div><div class="wrap"><div class="box">
@@ -508,7 +503,7 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
 <section class="gente" id="gente"><div class="wrap">
   <div class="sec-head">
     <div><div class="eyebrow">Quiénes operan</div><h2 class="serif" style="margin-top:12px">Las personas detrás de su ahorro.</h2></div>
-    <p>Fundador, socios y traders que operan con las mismas reglas que le pedimos a su ahorro: el riesgo se define antes de cada operación y todo queda registrado. <a class="link" href="equipo.html">Conocer al equipo</a></p>
+    <p>Fundador, socios y traders. El riesgo se define antes de cada operación. <a class="link" href="equipo.html">Conocer al equipo</a></p>
   </div>
   <div class="gente-grid">
     <a class="persona" href="equipo.html#goyo"><picture><source type="image/webp" srcset="img/goyo.webp"><img src="img/goyo.jpg" width="675" height="900" alt="Gregorio Sánchez Calderón" loading="lazy" decoding="async"></picture><b>Gregorio Sánchez Calderón</b><span>Cofundador · Inversiones y protección patrimonial</span></a>
@@ -577,32 +572,32 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
 <section class="persp" id="memos"><div class="wrap">
   <div class="sec-head">
     <div><div class="eyebrow">Memos de mercado</div><h2 class="serif" style="margin-top:12px">Lo que la mesa pone por escrito.</h2></div>
-    <p>Lecturas del mercado firmadas por los socios, con la tesis, los niveles y las invalidaciones puestas sobre la mesa antes de operar. Es el marco con el que NORTHPOINT toma sus propias decisiones, publicado tal cual.</p>
+    <p>Cómo leemos el mercado antes de operar. Escrito por la mesa, para quien quiere entender antes de ahorrar.</p>
   </div>
   <div class="cards">
     <a class="card memo-card" href="memos/memo-bloque-cripto-sep-2026.html">
       <div class="tipo">Memo de mercado · Septiembre 2026</div>
       <h3>Cuatro activos, una exposición</h3>
-      <p class="resumen">BTC, MSTR, COIN y CRCL son en la práctica una sola exposición a Bitcoin. Sesgo alcista de fondo, pero ninguno en zona de entrada óptima: BTC rechazado en 87,300, MSTR esperando el retest de 130–146 y COIN sin confirmar por debajo de 216.</p>
+      <p class="resumen">BTC, MSTR, COIN y CRCL son una sola apuesta a Bitcoin. Ninguno está hoy en zona de entrada.</p>
       <span class="link">Leer el memo</span>
-      <div class="fecha">Gregorio Sánchez Calderón · 29 sep 2026 · 14 min</div>
+      <div class="fecha">29 sep 2026 · 14 min</div>
     </a>
     <a class="card memo-card" href="memos/memo-btc-sep-2026.html">
       <div class="tipo">Memo de mercado · Septiembre 2026</div>
       <h3>Bitcoin en septiembre</h3>
-      <p class="resumen">Sesgo de corrección técnica de 8–10 % dentro de una tendencia alcista intermedia. Zona de recompra 78,570–81,200, invalidación en 75,000.</p>
+      <p class="resumen">Corrección de 8–10 % dentro de una tendencia alcista. Recompra en 78,570–81,200.</p>
       <span class="link">Leer el memo</span>
-      <div class="fecha">Gregorio Sánchez Calderón · 23 sep 2026 · 7 min</div>
+      <div class="fecha">23 sep 2026 · 7 min</div>
     </a>
     <a class="card memo-card" href="memos.html">
       <div class="tipo">Archivo</div>
       <h3>Todos los memos</h3>
-      <p class="resumen">El archivo completo, del más reciente al primero. Se publica uno nuevo cada que la mesa cambia de lectura.</p>
+      <p class="resumen">Del más reciente al primero.</p>
       <span class="link">Ver el archivo</span>
-      <div class="fecha">Archivo completo · se actualiza con cada memo</div>
+      <div class="fecha">Se actualiza con cada memo</div>
     </a>
   </div>
-  <p class="memo-nota">Los memos <b>no son asesoría financiera</b>. Son un marco de análisis para la toma de decisiones propias.</p>
+  <p class="memo-nota">Los memos <b>no son asesoría financiera</b>.</p>
 </div></section>
 
 <section class="comp"><div class="wrap grid">
@@ -713,18 +708,17 @@ $("#perfilesGrid").innerHTML = CONFIG.perfiles.map(p => `
   <div class="perfil" data-id="${p.id}">
     <div class="pf-top"><div class="pf-row"><div><div class="eyebrow">Plan</div><h3>${p.nombre}</h3><div class="lema">${p.lema}</div></div><div class="pf-ico">${PF_ICO[p.id]||""}</div></div><span class="pf-badge">${PF_BADGE[p.id]||""}</span></div>
     <div class="pf-body">
-      <div class="obj-row"><div><div class="obj">+${p.objetivo}%</div><div class="cap">Objetivo mensual · meta, no garantía</div></div><div><div class="obj">−${p.riesgo}%</div><div class="cap">Riesgo mensual máximo · freno de protección</div></div></div>
+      <div class="obj-row"><div><div class="obj">+${p.objetivo}%</div><div class="cap">Objetivo mensual</div></div><div><div class="obj">−${p.riesgo}%</div><div class="cap">Riesgo mensual</div></div></div>
       <div class="riesgo" aria-label="Nivel de riesgo ${p.nivel} de 5">${[1,2,3,4,5].map(i=>`<i class="${i<=p.nivel?"on":""}"></i>`).join("")}<span>Riesgo ${p.nivel} de 5</span></div>
       <p class="ideal">${p.ideal}</p>
       <dl>
-        <div><dt>Objetivo al año (meta)</dt><dd>+${+(p.objetivo*12).toFixed(1)}%</dd></div>
-        <div><dt>Puede haber meses negativos</dt><dd>Sí</dd></div>
+        <div><dt>Objetivo al año</dt><dd>+${+(p.objetivo*12).toFixed(1)}%</dd></div>
         <div><dt>Horizonte sugerido</dt><dd>${p.horizonte}</dd></div>
         <div><dt>Actividad de la mesa</dt><dd>${p.freq}</dd></div>
         <div><dt>Freno de protección</dt><dd>Incluido</dd></div>
       </dl>
       <div class="pf-cta"><span>Elegir ${p.nombre}</span></div>
-      <a class="pf-aviso" href="legal/riesgo.html">Lea el aviso de riesgo</a>
+      <a class="pf-aviso" href="legal/riesgo.html">Aviso de riesgo</a>
     </div>
   </div>`).join("");
 $("#seg").innerHTML = CONFIG.perfiles.map(p => `<button type="button" data-id="${p.id}">${p.nombre}</button>`).join("");
