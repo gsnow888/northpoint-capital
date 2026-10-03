@@ -217,6 +217,19 @@ canvas{width:100%;height:300px;display:block}
 /* perspectivas */
 .persp{background:var(--gray)}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+/* MEMOS (Gregorio, 3-oct-2026). Van entre el simulador (blanco) y Perspectivas
+   (gris): la sección se queda blanca y las tarjetas llevan contorno, para que
+   se distingan de las de Perspectivas, que son blancas sobre gris. Cada memo
+   es un <a> y no un desplegable: tiene su propia página. */
+.memos-sec .card{border:1px solid var(--line);border-bottom:4px solid var(--line);
+  text-decoration:none;color:inherit;cursor:pointer;transition:border-color .2s,transform .2s}
+.memos-sec .card:hover{border-color:var(--blue);transform:translateY(-2px)}
+.memos-sec .card .resumen{color:var(--text);margin-bottom:20px}
+.memos-sec .card .link{margin-top:auto}
+.memos-sec .card .fecha{border-top:1px solid var(--line);margin-top:16px}
+.memo-todos{background:var(--gray)}
+.memo-nota{margin-top:32px;font-size:14px;color:var(--muted);max-width:70ch}
+.memo-nota b{color:var(--ink);font-weight:500}
 .card{background:#fff;padding:32px;display:flex;flex-direction:column;cursor:pointer;border-bottom:4px solid transparent;transition:border-color .2s}
 .card:hover{border-bottom-color:var(--blue)}
 .card .tipo{font-size:14px;color:var(--muted);margin-bottom:16px}
@@ -317,7 +330,7 @@ nav .links a{white-space:nowrap}
 <nav><div class="wrap">
   <a class="mark" href="#">NORTHPOINT</a>
   <div class="links">
-    <a href="#como">Cómo funciona</a><a href="#app">La app</a><a href="#perfiles">Planes</a><a href="equipo.html">Equipo</a><a href="activos.html">Activos</a><a href="academia.html">Academia</a><a href="fundacion.html">Fundación</a>
+    <a href="#como">Cómo funciona</a><a href="#app">La app</a><a href="#perfiles">Planes</a><a href="#memos">Memos</a><a href="family-office.html">Family Office</a><a href="equipo.html">Equipo</a><a href="academia.html">Academia</a><a href="fundacion.html">Fundación</a>
     <a class="btn" href="#registro">Apartar lugar</a>
   </div>
 </div></nav>
@@ -352,12 +365,19 @@ nav .links a{white-space:nowrap}
       <p class="lead">Una parte de cada resultado de la mesa acompaña a familias de niños con leucemia durante su tratamiento.</p>
       <a class="btn line inv" href="fundacion.html">Conocer la fundación</a>
     </div></div></div>
+    <div class="hs" data-i="4" data-href="family-office.html"><div class="hs-bg" style="background-image:url(img/penthouse.jpg);background-position:center 60%"></div><div class="wrap"><div class="box">
+      <div class="hs-k"><span>NORTHPOINT Family Office</span></div>
+      <h2 class="serif">La oficina privada de su patrimonio.</h2>
+      <p class="lead">Inversiones, inmuebles, negocio, impuestos y herencia, con un solo equipo y una sola visión de largo plazo. Para familias que ya construyeron algo y quieren que dure.</p>
+      <a class="btn line inv" href="family-office.html">Conocer el family office</a>
+    </div></div></div>
   </div>
   <div class="hs-index" aria-label="Divisiones de NORTHPOINT">
     <button data-i="0" class="on"><span>Ahorro</span><i><em></em></i></button>
     <button data-i="1"><span>Desde $100</span><i><em></em></i></button>
     <button data-i="2"><span>Family Office</span><i><em></em></i></button>
     <button data-i="3"><span>Fundación</span><i><em></em></i></button>
+    <button data-i="4"><span>Family Office</span><i><em></em></i></button>
   </div>
   <div class="hs-arrows"><button type="button" data-d="-1" aria-label="Anterior">←</button><button type="button" data-d="1" aria-label="Siguiente">→</button></div>
   <div class="hs-cue">Siga bajando<i></i></div>
@@ -476,6 +496,41 @@ nav .links a{white-space:nowrap}
       <p class="nota" id="nota"></p>
     </div>
   </div>
+</div></section>
+
+<!-- MEMOS DE MERCADO (Gregorio, 3-oct-2026). Los memos ya vivían en el sitio
+     (memos.html + memos/*.html); les faltaba puerta desde la portada nueva.
+     Mismo molde que Perspectivas: .sec-head + .cards. Son documentos con su
+     propia página, así que cada tarjeta es un <a>, no un desplegable. -->
+<section class="memos-sec" id="memos"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Memos de mercado</div><h2 class="serif" style="margin-top:12px">Lo que la mesa pone por escrito.</h2></div>
+    <p>Lecturas del mercado firmadas por los socios, con la tesis, los niveles y las invalidaciones puestas sobre la mesa antes de operar. Es el marco con el que NORTHPOINT toma sus propias decisiones, publicado tal cual.</p>
+  </div>
+  <div class="cards memos-cards">
+    <a class="card memo-card" href="memos/memo-bloque-cripto-sep-2026.html">
+      <div class="tipo">Memo de mercado · Septiembre 2026</div>
+      <h3>Cuatro activos, una exposición</h3>
+      <p class="resumen">BTC, MSTR, COIN y CRCL son en la práctica una sola exposición a Bitcoin. Sesgo alcista de fondo, pero ninguno en zona de entrada óptima: BTC rechazado en 87,300, MSTR esperando el retest de 130–146 y COIN sin confirmar por debajo de 216.</p>
+      <span class="link">Leer el memo</span>
+      <div class="fecha">Gregorio Sánchez Calderón · 29 sep 2026 · 14 min</div>
+    </a>
+    <a class="card memo-card" href="memos/memo-btc-sep-2026.html">
+      <div class="tipo">Memo de mercado · Septiembre 2026</div>
+      <h3>Bitcoin en septiembre</h3>
+      <p class="resumen">Sesgo de corrección técnica de 8–10 % dentro de una tendencia alcista intermedia. Zona de recompra 78,570–81,200, invalidación en 75,000.</p>
+      <span class="link">Leer el memo</span>
+      <div class="fecha">Gregorio Sánchez Calderón · 23 sep 2026 · 7 min</div>
+    </a>
+    <a class="card memo-card memo-todos" href="memos.html">
+      <div class="tipo">Archivo</div>
+      <h3>Todos los memos</h3>
+      <p class="resumen">El archivo completo, del más reciente al primero.</p>
+      <span class="link">Ver el archivo</span>
+      <div class="fecha">Se publica un memo nuevo cada que la mesa cambia de lectura</div>
+    </a>
+  </div>
+  <p class="memo-nota">Los memos <b>no son asesoría financiera</b>. Son un marco de análisis para la toma de decisiones propias.</p>
 </div></section>
 
 <section class="persp" id="perspectivas"><div class="wrap">
