@@ -26,25 +26,19 @@
   · Gráficas: había tres huecos marcados con "GRÁFICA" listos para un
     <figure class="fig"> (ver estilos .fig). Se rellenan cuando lleguen.
 -->
-<link rel="stylesheet" href="../css/memo-btc-sep-2026.css">
+<link rel="stylesheet" href="../assets/fonts/ahorro/fonts.css">
+<link rel="stylesheet" href="../base.css?v=1790996209">
+<link rel="stylesheet" href="../anim.css?v=1790996209">
+<link rel="stylesheet" href="../css/memo.css?v=1">
+<script>document.documentElement.classList.add("js-anim");setTimeout(function(){document.documentElement.classList.add("anim-ready")},3500)</script>
 </head>
 <body>
 
-<nav class="nav" id="nav" aria-label="Navegación principal">
-  <div class="nav-in">
-    <a href="../index.html" class="brand" aria-label="NORTHPOINT — inicio">
-      <span class="brand-t">
-        <span class="brand-name">NORTHPOINT</span>
-        <span class="brand-sub">Family Office · Terminal</span>
-      </span>
-    </a>
-    <div class="nav-r">
-      <span class="micro">Memo de mercado</span>
-      <button class="theme-btn" id="theme-btn" type="button" aria-label="Cambiar tema">Claro</button>
-    </div>
-  </div>
-</nav>
-<div class="progress" id="progress" aria-hidden="true"></div>
+<nav><div class="wrap">
+  <a class="mark" href="../index.html">NORTHPOINT<small>Memo de mercado</small></a>
+  <div class="links"><a href="../memos.html">Todos los memos</a><a href="../newsletter.html">Newsletter</a><a href="../equipo.html">Equipo</a><a href="../index.html">NORTHPOINT</a><a class="btn" href="../index.html#registro">Apartar lugar</a></div>
+</div></nav>
+<div class="lectura" id="lectura" aria-hidden="true"></div>
 
 <main>
 
@@ -298,7 +292,7 @@
 
         <p><strong>Diferencia principal:</strong> esperar a <span class="num">75,000</span> para cubrir implica aceptar una caída de ~14% desde el máximo. La gestión escalonada reduce ese costo:</p>
 
-        <ol class="pasos">
+        <ol class="pasos-memo">
           <li><span><b>Zona de 78,570–80,316</b> (caída de 8–10%): recompra con confirmación, como una vela de rechazo o la recuperación del 50%.</span></li>
           <li><span><b>Cierre de 4H por debajo de 78,500:</b> la corrección excedió lo esperado; cobertura parcial o toma de ganancias de 30–50%.</span></li>
           <li><span><b>Cierre diario por debajo de 75,000:</b> cobertura completa o salida.</span></li>
@@ -371,25 +365,19 @@
 
 </main>
 
-<footer class="pie-legal">
-  <div class="wrap">
-    <div class="pl-fila">
-      <div class="pl-marca">
-        <b>NORTHPOINT</b>
-        <span>Morelia, Michoacán · México</span>
-      </div>
-      <nav class="pl-links" aria-label="Enlaces legales">
-        <a href="../legal/terminos.html">Términos y condiciones</a>
-        <a href="../legal/privacidad.html">Aviso de privacidad</a>
-        <a href="../legal/riesgo.html">Aviso de riesgo</a>
-        <a href="mailto:hola@northpointcapital.io">hola@northpointcapital.io</a>
-      </nav>
-    </div>
-    <p class="pl-aviso">Operar futuros implica apalancamiento y <strong>puedes perder todo tu capital</strong>. NORTHPOINT no es asesor financiero registrado y nada de lo publicado aquí es una recomendación de inversión. Los resultados pasados no garantizan resultados futuros.</p>
-    <p class="pl-copy">© 2026 NORTHPOINT. Todos los derechos reservados.</p>
-  </div>
-</footer>
+<footer><div class="wrap">
+  <span class="mark">NORTHPOINT<small>Memos de mercado</small></span>
+  <p>Los memos <b>no son asesoría financiera</b>. Son el marco de análisis técnico con el que la mesa toma sus propias decisiones, publicado tal cual. Operar futuros implica apalancamiento y puede perder todo su capital. NORTHPOINT no es asesor financiero registrado y los resultados pasados no garantizan resultados futuros.</p>
+  <p><a href="../memos.html" style="color:#fff">← Todos los memos</a> · <a href="../index.html" style="color:#fff">NORTHPOINT</a> · <a href="../legal/terminos.html" style="color:#fff">Términos</a> · <a href="../privacidad.html" style="color:#fff">Aviso de privacidad</a> · <a href="../legal/riesgo.html" style="color:#fff">Aviso de riesgo</a> · <a href="mailto:hola@northpointcapital.io" style="color:#fff">hola@northpointcapital.io</a></p>
+</div></footer>
 
-<script src="../js/memo-btc-sep-2026.js"></script>
+<script src="../assets/vendor/gsap.min.js"></script>
+<script src="../assets/vendor/ScrollTrigger.min.js"></script>
+<script src="../anim.js?v=1790996209"></script>
+<script src="../menu.js?v=1790996209"></script>
+<script>
+/* Barra de lectura: avanza con el scroll del documento. */
+(function(){var b=document.getElementById('lectura');if(!b)return;var f=function(){var m=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(m>0?Math.min(1,scrollY/m):0)+')'};addEventListener('scroll',f,{passive:true});f()})();
+</script>
 </body>
 </html>

@@ -1,0 +1,210 @@
+/* ============================================================
+   css/memo.css — los memos de mercado en el sistema de la portada
+   (base.css: navy / azul / Source Serif 4 / Public Sans).
+   Sustituye a css/memo-btc-sep-2026.css y css/memo-bloque-cripto-sep-2026.css
+   (Dark Glass con tema claro/oscuro). El HTML de los memos no cambia:
+   los componentes (.tapa .ficha .sec .tabla .dl .esc .inv .pasos-memo
+   .callout .formula .fig .bloque .despedida) se vuelven a dibujar aquí.
+   Se carga DESPUÉS de base.css y anim.css.
+   ============================================================ */
+
+/* Alias de los tokens viejos que quedaron en estilos inline del HTML
+   (la leyenda de la barra de probabilidad usa var(--txt) etc.). */
+:root{
+  --txt:var(--navy);
+  --accent-deep:var(--blue);
+  --faint:#C9D3E0;
+  --dim:var(--muted);
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+
+body{background:#fff}
+main{display:block}
+
+/* Barra de lectura bajo la nav (la nav de anim.css mide 80px y es fija) */
+.lectura{position:fixed;left:0;right:0;top:0;height:3px;z-index:21;background:var(--blue);transform-origin:0 50%;transform:scaleX(0);pointer-events:none}
+
+/* Tipografía de apoyo */
+.micro{font:500 12px/1.5 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.num{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.nb{white-space:nowrap}
+.col{max-width:840px}
+.sec-b a,.callout a,.desp-t a{color:var(--blue);text-decoration:none;background-image:linear-gradient(var(--blue),var(--blue));background-size:100% 1px;background-repeat:no-repeat;background-position:0 100%}
+
+/* ============================================================
+   TAPA — cabecera navy, como .thead de equipo.html
+   ============================================================ */
+.tapa{background:radial-gradient(90% 80% at 75% 30%,#12324A 0%,#061A29 55%,#030D16 100%);color:#fff;padding:160px 0 72px;text-align:left}
+.tapa .wrap{display:block}
+.tapa .micro{display:block;color:rgba(255,255,255,.75);margin-bottom:18px}
+.tapa h1{font:300 clamp(40px,5.6vw,72px)/1.08 var(--serif);letter-spacing:-.01em;color:#fff;max-width:16ch;text-wrap:balance}
+.meta{margin-top:22px;font:300 15px/1.5 var(--sans);color:rgba(255,255,255,.8);display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.meta .sep{color:rgba(255,255,255,.45)}
+.ficha{margin-top:44px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.18)}
+.ficha>div{background:#07202F;padding:22px 22px 24px}
+.ficha .k{display:block;margin-bottom:10px;color:rgba(255,255,255,.65)}
+.ficha .v{display:block;font:300 24px/1.15 var(--serif);color:#fff;font-variant-numeric:tabular-nums}
+.ficha .v small{display:block;font:300 13px/1.5 var(--sans);color:rgba(255,255,255,.7);margin-top:8px}
+.aviso{margin-top:24px;padding:14px 18px;border:1px solid rgba(255,255,255,.18);font-size:14px;line-height:1.6;color:rgba(255,255,255,.75);display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+.aviso b{font:500 12px/1.5 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#fff;white-space:nowrap}
+@media(max-width:900px){.ficha{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.ficha{grid-template-columns:1fr}.tapa{padding:130px 0 56px}}
+
+/* ============================================================
+   SECCIONES — número azul, título serif, frase clave, columna de 760
+   ============================================================ */
+section.sec{padding:72px 0;border-top:1px solid var(--line)}
+section.sec:first-of-type{border-top:0}
+.sec-h{margin-bottom:32px}
+.sec-n{font:300 44px/1 var(--serif);color:var(--blue);margin-bottom:14px;font-variant-numeric:tabular-nums}
+.sec-t{font:300 clamp(28px,3.4vw,40px)/1.15 var(--serif);letter-spacing:-.01em;color:var(--ink);text-wrap:balance;max-width:22ch}
+.sec-h .lead{margin-top:18px;max-width:60ch;font:300 clamp(18px,1.7vw,21px)/1.55 var(--sans);color:var(--ink)}
+.sec-b p{font-size:17px;line-height:1.7;color:var(--text);margin-bottom:16px;max-width:70ch}
+.sec-b p:last-child{margin-bottom:0}
+.sec-b p strong{color:var(--ink);font-weight:500}
+.sec-b h3{font:500 12px/1.5 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:40px 0 12px}
+
+/* Callout: fondo gris y filete azul, como .nota del simulador */
+.callout{margin:28px 0;padding:22px 24px;background:var(--gray);border-left:3px solid var(--blue)}
+.callout .micro{display:block;margin-bottom:10px;color:var(--ink)}
+.callout p{margin-bottom:10px;max-width:none;font-size:16px}
+.callout p:last-child{margin-bottom:0}
+
+/* Gráficas */
+.fig{margin:32px 0 8px;border:1px solid var(--line);background:var(--gray);overflow:hidden}
+.fig a{display:block;cursor:zoom-in}
+.fig img{display:block;width:100%;height:auto}
+.fig figcaption{padding:12px 16px;font:400 13px/1.6 var(--sans);color:var(--muted);border-top:1px solid var(--line)}
+@media(min-width:900px){
+  .fig.ancha{width:min(1200px,calc(100vw - 80px));max-width:none;margin-left:50%;transform:translateX(-50%)}
+}
+
+/* ============================================================
+   TABLAS — como .doc table de privacidad.html
+   ============================================================ */
+.tabla{margin:20px 0 8px;overflow-x:auto}
+.tabla table{width:100%;border-collapse:collapse;font-size:15px}
+.tabla th{text-align:left;font:500 12px/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:12px 14px 12px 0;border-bottom:1px solid var(--ink)}
+.tabla td{padding:13px 14px 13px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--text);line-height:1.55}
+.tabla td:last-child,.tabla th:last-child{padding-right:0}
+.tabla td.n{color:var(--ink);font-weight:500;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tabla td.t{color:var(--ink)}
+.tabla tr.key td{background:var(--gray)}
+.tabla tr.key td:first-child{padding-left:12px}
+.tabla tr.key td:last-child{padding-right:12px}
+.chip{display:inline-block;font:500 11px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border:1px solid var(--blue);color:var(--blue);margin-left:10px;vertical-align:middle}
+.chip.on{color:#fff;background:var(--navy);border-color:var(--navy)}
+@media(max-width:640px){
+  .tabla{overflow:visible}
+  .tabla table,.tabla tbody,.tabla tr,.tabla td{display:block}
+  .tabla thead{display:none}
+  .tabla tr{padding:14px 0;border-bottom:1px solid var(--line)}
+  .tabla tr.key{background:var(--gray);padding:14px 12px;margin:0 -12px}
+  .tabla tr.key td{background:none;padding-left:0;padding-right:0}
+  .tabla td{border:0;padding:3px 0;display:grid;grid-template-columns:96px 1fr;gap:10px;align-items:baseline}
+  .tabla td::before{content:attr(data-l);font:500 11px/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .tabla td.n{white-space:normal}
+  .tabla td .chip{grid-column:2;justify-self:start;margin-left:0;margin-top:2px;white-space:nowrap}
+}
+
+/* Lista de definiciones (la tesis) */
+.dl{display:grid;grid-template-columns:200px 1fr;border-top:1px solid var(--ink);margin:20px 0 8px}
+.dl>div{padding:13px 16px 13px 0;border-bottom:1px solid var(--line)}
+.dl .k{font-size:15px;color:var(--ink);font-weight:500}
+.dl .v{color:var(--text);font-size:15px;line-height:1.55;padding-right:0}
+@media(max-width:560px){.dl{grid-template-columns:1fr}.dl .k{padding-bottom:2px;border-bottom:0}.dl .v{padding-top:0}}
+
+/* ============================================================
+   ESCENARIOS — barra de probabilidad + tarjetas
+   ============================================================ */
+.prob{margin:24px 0 0;max-width:640px}
+.prob-bar{display:flex;height:10px;gap:2px}
+.prob-bar span{display:block;height:100%}
+.prob-bar .pa{background:var(--navy)}
+.prob-bar .pb{background:var(--blue)}
+.prob-bar .pc{background:var(--faint)}
+.prob-leg{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font:500 12px/1.5 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.prob-leg i{display:inline-block;width:10px;height:10px;margin-right:8px;vertical-align:0}
+.esc{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:24px}
+.esc>div{background:#fff;padding:22px 22px 24px;display:flex;flex-direction:column;gap:16px}
+.esc>div.base{background:var(--gray)}
+.esc .eh small{display:block;font:500 11px/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.esc .eh b{display:block;font:400 20px/1.25 var(--serif);color:var(--ink)}
+.esc .pr{font:300 36px/1 var(--serif);color:var(--ink);font-variant-numeric:tabular-nums}
+.esc .pr small{font:500 11px/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-left:8px}
+.esc .k{display:block;font-size:11px;margin-bottom:4px}
+.esc .v{font-size:15px;color:var(--text);line-height:1.55}
+.cola{display:grid;grid-template-columns:200px 1fr 1fr;gap:24px;border:1px solid var(--line);border-top:0;padding:20px 22px}
+.cola .eh b{display:block;font:400 18px/1.25 var(--serif);color:var(--ink)}
+.cola .eh small{display:block;font:500 11px/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.cola .k{display:block;font-size:11px;margin-bottom:4px}
+.cola .v{font-size:15px;color:var(--text);line-height:1.55}
+@media(max-width:900px){.esc{grid-template-columns:1fr}.cola{grid-template-columns:1fr;gap:14px}}
+
+/* Pasos (gestión escalonada). Se llama .pasos-memo para no chocar con
+   .pasos de base.css, que es la rejilla de 4 pasos de la portada. */
+.pasos-memo{counter-reset:p;list-style:none;margin:20px 0 8px;border-top:1px solid var(--ink)}
+.pasos-memo li{display:grid;grid-template-columns:48px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);color:var(--text);font-size:16px;line-height:1.6}
+.pasos-memo li::before{counter-increment:p;content:counter(p,decimal-leading-zero);font:300 26px/1 var(--serif);color:var(--blue);padding-top:2px}
+.pasos-memo b{color:var(--ink);font-weight:500}
+
+/* Fórmula del contrato + invalidaciones */
+.formula{margin:24px 0;padding:22px 24px;background:var(--navy);color:#fff;font:300 clamp(16px,1.8vw,20px)/1.5 var(--serif);display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;font-variant-numeric:tabular-nums}
+.formula .eq{color:rgba(255,255,255,.55)}
+.inv{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin:24px 0 8px}
+.inv>div{background:#fff;padding:22px}
+.inv .k{display:block}
+.inv .n{font:300 32px/1.1 var(--serif);color:var(--ink);margin:10px 0 8px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.inv .n small{font:500 11px/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-left:8px}
+.inv p{font-size:15px;margin:0;max-width:none}
+@media(max-width:640px){.inv{grid-template-columns:1fr}}
+
+/* ============================================================
+   BLOQUE — las cuatro fichas de activo (memo de varios activos)
+   ============================================================ */
+.bloque{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:28px 0 8px}
+.bloque>div{background:#fff;padding:22px 22px 24px;display:flex;flex-direction:column;gap:18px}
+.bloque>div.ancla{background:var(--gray)}
+.bloque .bh{display:flex;align-items:baseline;justify-content:space-between;gap:8px 16px;flex-wrap:wrap}
+.bloque .tk{display:block;font:300 28px/1.1 var(--serif);color:var(--ink)}
+.bloque .tk small{display:block;margin-top:8px;font:500 11px/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.bloque .px{font:300 22px/1 var(--serif);color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.bloque .bd{display:flex;flex-direction:column;gap:13px}
+.bloque .k{display:block;font-size:11px;margin-bottom:4px}
+.bloque .v{font-size:15px;color:var(--text);line-height:1.55}
+@media(max-width:640px){.bloque{grid-template-columns:1fr}}
+
+/* ============================================================
+   DESPEDIDA — retrato, saludo y firma
+   ============================================================ */
+section.despedida{border-top:1px solid var(--line);padding:72px 0 0}
+.desp-g{display:grid;grid-template-columns:240px 1fr;gap:48px;align-items:start;max-width:840px}
+.retrato{position:relative;aspect-ratio:3/4;width:100%;max-width:240px;margin:0;background:var(--navy);overflow:hidden}
+.retrato img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1)}
+.retrato .esq{display:none}
+.desp-t .micro{display:block;margin-bottom:16px;color:var(--blue)}
+.desp-t p{color:var(--text);font-size:17px;line-height:1.7;margin:0 0 14px;max-width:60ch}
+.desp-t p.saludo{font:300 clamp(26px,3vw,36px)/1.2 var(--serif);color:var(--ink);letter-spacing:-.01em;margin-bottom:22px;text-wrap:balance}
+.firma{grid-column:2;margin-top:8px;padding-top:20px;border-top:1px solid var(--line)}
+.firma b{display:block;font:400 18px/1.3 var(--serif);color:var(--ink)}
+.firma span{display:block;margin-top:6px;font-size:14px;color:var(--muted)}
+.firma a{color:var(--blue);text-decoration:none}
+@media(max-width:700px){.desp-g{grid-template-columns:1fr;gap:28px}.firma{grid-column:1}}
+
+/* ============================================================
+   MOTION — entrada de la tapa; respeta prefers-reduced-motion
+   ============================================================ */
+.hup{opacity:0;transform:translateY(22px);animation:heroUp .95s cubic-bezier(.16,1,.3,1) forwards;animation-delay:var(--hd,0s)}
+@keyframes heroUp{to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hup{animation:none;opacity:1;transform:none}}
+
+/* ============================================================
+   PRINT
+   ============================================================ */
+@media print{
+  nav,.lectura,.menu-btn,.menu-panel,footer{display:none}
+  .tapa{background:#fff;color:#000;padding:0 0 24px}
+  .tapa h1,.ficha .v{color:#000}.ficha>div{background:#fff;border:1px solid #bbb}
+  .sec,.callout,.esc>div,.inv>div,.fig,.bloque>div{break-inside:avoid}
+  .hup{animation:none;opacity:1;transform:none}
+}

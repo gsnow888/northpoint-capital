@@ -1,114 +1,117 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es-MX">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Newsletter — NORTHPOINT</title>
-<meta name="description" content="Un correo a la semana con lo importante de la economía y de tu dinero, explicado en palabras simples. Cero ruido. Cero ventas.">
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/newsletter.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Newsletter · NORTHPOINT</title>
+<meta name="description" content="Un correo a la semana con lo importante de la economía y de su dinero, explicado en palabras simples. Cero ruido. Cero ventas.">
 <link rel="canonical" href="https://northpointcapital.io/newsletter.html">
-<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://northpointcapital.io/newsletter.html">
-<meta property="og:title" content="Newsletter — NORTHPOINT">
-<meta property="og:description" content="Un correo a la semana con lo importante de la economía y de tu dinero, explicado en palabras simples. Cero ruido. Cero ventas.">
-<meta property="og:image" content="https://northpointcapital.io/assets/images/og.png?v=2">
+<meta property="og:title" content="Newsletter · NORTHPOINT">
+<meta property="og:description" content="Un correo a la semana con lo importante de la economía y de su dinero, explicado en palabras simples. Cero ruido. Cero ventas.">
+<meta property="og:image" content="https://northpointcapital.io/img/mesa.jpg">
 <meta property="og:locale" content="es_MX">
 <meta property="og:site_name" content="NORTHPOINT">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Newsletter — NORTHPOINT">
-<meta name="twitter:description" content="Un correo a la semana con lo importante de la economía y de tu dinero, explicado en palabras simples. Cero ruido. Cero ventas.">
-<meta name="twitter:image" content="https://northpointcapital.io/assets/images/og.png?v=2">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/fonts/ahorro/fonts.css">
+<link rel="stylesheet" href="base.css?v=1790996209">
+<link rel="stylesheet" href="anim.css?v=1790996209">
+<script>document.documentElement.classList.add("js-anim");setTimeout(function(){document.documentElement.classList.add("anim-ready")},3500)</script>
+<style>
+.thead{background:radial-gradient(90% 80% at 75% 30%,#12324A 0%,#061A29 55%,#030D16 100%);color:#fff;padding:170px 0 90px}
+.thead .eyebrow{color:rgba(255,255,255,.75)}
+.thead h1{color:#fff;font-size:clamp(40px,5vw,68px);margin:14px 0 20px}
+.thead p{max-width:640px;opacity:.85;font-size:19px}
+.back{display:inline-flex;margin-top:28px;color:#fff;opacity:.75;text-decoration:none;font-size:14px}
+.back:hover{opacity:1}
+.nl-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:start}
+.panel{background:var(--gray);padding:40px}
+.panel .eyebrow{margin-bottom:20px}
+.panel form{background:transparent;padding:0;gap:20px}
+.panel .btn{justify-self:start}
+.panel .ok{margin-top:4px}
+.panel .nota-nl{font-size:14px;color:var(--muted);margin-top:4px}
+.panel .link{margin-top:24px}
+.puntos{list-style:none;border-top:1px solid var(--ink)}
+.puntos li{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:24px 0;border-bottom:1px solid var(--line)}
+.puntos i{font:300 36px/1 var(--serif);color:var(--blue);font-style:normal}
+.puntos b{display:block;font:400 22px/1.3 var(--serif);color:var(--ink);margin-bottom:8px}
+.puntos span{font-size:16px;line-height:1.65;color:var(--text)}
+.memo-nota{max-width:720px;margin-top:48px;font-size:15px;color:var(--muted);border-left:3px solid var(--blue);padding-left:16px}
+.memo-nota b{color:var(--ink);font-weight:500}
+@media(max-width:900px){.nl-grid{grid-template-columns:1fr;gap:40px}.panel{padding:28px 20px}}
+</style>
 </head>
-<body class="newsletter">
+<body>
+<nav><div class="wrap">
+  <a class="mark" href="index.html">NORTHPOINT<small>Newsletter</small></a>
+  <div class="links"><a href="memos.html">Memos</a><a href="equipo.html">Equipo</a><a href="index.html">NORTHPOINT</a><a class="btn" href="index.html#registro">Apartar lugar</a></div>
+</div></nav>
+<header class="thead"><div class="wrap">
+  <div class="eyebrow">Newsletter</div>
+  <h1 class="serif">Lo importante de la semana, en un correo.</h1>
+  <p>Un correo a la semana con lo importante de la economía y de su dinero, explicado en palabras simples. Cero ruido. Cero ventas.</p>
+  <a class="back" href="index.html">← Volver a NORTHPOINT</a>
+</div></header>
 
-<svg class="bg-arcs" viewBox="0 0 1600 560" fill="none" stroke="currentColor" stroke-width="1" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
-  <path d="M100 560 A700 700 0 0 1 1500 560"/>
-  <path d="M240 560 A560 560 0 0 1 1360 560" stroke-dasharray="2 12"/>
-  <path d="M380 560 A420 420 0 0 1 1220 560" opacity=".7"/>
-  <path d="M520 560 A280 280 0 0 1 1080 560" opacity=".5"/>
-  <line x1="0" y1="560" x2="1600" y2="560" opacity=".8"/>
-</svg>
-
-<nav class="nav" aria-label="Main navigation">
-  <div class="nav-in">
-    <a href="index.html" class="brand" aria-label="NORTHPOINT — portada">
-      <span class="brand-t">
-        <span class="brand-name">NORTHPOINT</span>
-        <span class="brand-sub">Family Office · Terminal</span>
-      </span>
-    </a>
-  </div>
-</nav>
-
-<main class="doc">
-  <header class="doc-head">
-    <p class="doc-num hup" style="--hd:.05s">/0.4 · Newsletter</p>
-    <h1 class="doc-t hup" style="--hd:.15s">Newsletter.</h1>
-    <p class="doc-lede hup" style="--hd:.3s">Un correo a la semana con lo importante de la economía y de tu dinero, explicado en palabras simples. Cero ruido. Cero ventas.</p>
-  </header>
-
-  <section class="doc-body">
-    <div class="wrap">
-      <div class="nl-g">
-        <div class="rv">
-          <p class="micro">Suscríbete</p>
-          <!-- EL FORMULARIO. Hoy no hay proveedor de correo: al enviar se abre
-               el cliente de correo del visitante con la solicitud (mismo
-               mecanismo que family-office.html). Cuando exista un proveedor
-               (Mailchimp, Beehiiv, Substack…), su formulario va aquí y se
-               borra el manejador de js/newsletter.js. -->
-          <form class="nl-form" id="nlForm">
-            <input type="email" name="email" class="nl-in" placeholder="tu correo" required aria-label="Correo electrónico">
-            <button type="submit" class="nl-btn">Suscribirme →</button>
-          </form>
-          <p class="nl-ok" id="nlOk" hidden>Listo — se abrió tu correo para confirmar la suscripción.</p>
-          <p class="nl-nota">Sin spam y sin venderte nada. Te das de baja con un correo.</p>
-          <a class="nl-memos" href="memos.html">Los memos son la versión larga →</a>
-        </div>
-        <ul class="nl-puntos rv" data-d="1">
-          <li><i>01</i><div><b>Lo que movió la semana</b><span>Los tres o cuatro datos que sí cambian algo para tu patrimonio, sin el ruido de todo lo demás.</span></div></li>
-          <li><i>02</i><div><b>Una lectura del mercado</b><span>Dónde está el precio, qué nivel importa y qué lo invalidaría. La misma disciplina de los memos, en corto.</span></div></li>
-          <li><i>03</i><div><b>Una idea para el largo plazo</b><span>Estructura, protección o paciencia: una decisión que vale más que cualquier trade de la semana.</span></div></li>
-        </ul>
-      </div>
-
-      <p class="doc-nota rv">El newsletter es <strong>educativo e informativo</strong>. No constituye recomendación de inversión ni oferta de valores.</p>
+<section><div class="wrap">
+  <div class="nl-grid">
+    <div class="panel">
+      <div class="eyebrow">Suscríbase</div>
+      <!-- EL FORMULARIO. Hoy no hay proveedor de correo: al enviar se abre
+           el cliente de correo del visitante con la solicitud ya escrita.
+           Cuando exista un proveedor (Mailchimp, Beehiiv, Substack…), su
+           formulario va aquí y se borra el manejador de abajo. -->
+      <form id="nlForm" novalidate>
+        <label>Su correo<input type="email" name="email" required autocomplete="email" inputmode="email" placeholder="nombre@correo.com" aria-describedby="nlErr"></label>
+        <p class="nota-nl" id="nlErr" role="alert" hidden style="color:var(--loss)">Escriba un correo válido, por ejemplo nombre@correo.com.</p>
+        <button class="btn" type="submit">Suscribirme</button>
+        <p class="ok" id="nlOk">Listo: se abrió su correo para confirmar la suscripción.</p>
+      </form>
+      <p class="nota-nl">Sin spam y sin venderle nada. Se da de baja con un correo.</p>
+      <a class="link" href="memos.html">Los memos son la versión larga</a>
     </div>
-  </section>
-</main>
-
-<footer class="pie-legal">
-  <div class="wrap">
-    <div class="pl-fila">
-      <div class="pl-marca">
-        <b>NORTHPOINT</b>
-        <span>Morelia, Michoacán · México</span>
-      </div>
-      <nav class="pl-links">
-        <a href="legal/terminos.html">Términos y condiciones</a>
-        <a href="legal/privacidad.html">Aviso de privacidad</a>
-        <a href="legal/riesgo.html">Aviso de riesgo</a>
-        <a href="mailto:hola@northpointcapital.io">hola@northpointcapital.io</a>
-      </nav>
-    </div>
-    <p class="pl-aviso">Operar futuros implica apalancamiento y <strong>puedes perder
-      todo tu capital</strong>. NORTHPOINT no es asesor financiero registrado y nada de
-      lo publicado aquí es una recomendación de inversión. Los resultados pasados no
-      garantizan resultados futuros.</p>
-    <p class="pl-copy">© 2026 André Macouzet Ruiz. Todos los derechos reservados.</p>
+    <ul class="puntos">
+      <li><i>01</i><div><b>Lo que movió la semana</b><span>Los tres o cuatro datos que sí cambian algo para su patrimonio, sin el ruido de todo lo demás.</span></div></li>
+      <li><i>02</i><div><b>Una lectura del mercado</b><span>Dónde está el precio, qué nivel importa y qué lo invalidaría. La misma disciplina de los memos, en corto.</span></div></li>
+      <li><i>03</i><div><b>Una idea para el largo plazo</b><span>Estructura, protección o paciencia: una decisión que vale más que cualquier operación de la semana.</span></div></li>
+    </ul>
   </div>
-</footer>
+  <p class="memo-nota">El newsletter es <b>educativo e informativo</b>. No constituye recomendación de inversión ni oferta de valores.</p>
+</div></section>
 
-<div class="deck" aria-hidden="false">
-  <span class="deck-sec">NORTHPOINT <em>// NEWSLETTER /0.4</em></span>
-  <div style="display:flex;gap:10px;align-items:center">
-    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">◐ CLARO</button>
-    <a class="deck-cta" href="index.html">Índice →</a>
-  </div>
-</div>
-<script src="js/portada.js"></script>
-<script src="js/newsletter.js"></script>
+<footer><div class="wrap">
+  <span class="mark">NORTHPOINT<small>Newsletter</small></span>
+  <p>NORTHPOINT no es asesor financiero registrado y nada de lo publicado aquí es una recomendación de inversión. Los resultados pasados no garantizan resultados futuros.</p>
+  <p><a href="index.html" style="color:#fff">← Volver a NORTHPOINT</a> · <a href="memos.html" style="color:#fff">Memos</a> · <a href="legal/terminos.html" style="color:#fff">Términos</a> · <a href="privacidad.html" style="color:#fff">Aviso de privacidad</a> · <a href="legal/riesgo.html" style="color:#fff">Aviso de riesgo</a> · <a href="mailto:hola@northpointcapital.io" style="color:#fff">hola@northpointcapital.io</a></p>
+</div></footer>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="anim.js?v=1790996209"></script>
+<script src="menu.js?v=1790996209"></script>
+<script>
+/* Suscripción: sin proveedor de correo todavía, se abre el cliente de
+   correo del visitante con la solicitud escrita (mismo mecanismo de antes). */
+(function(){
+  var form = document.getElementById('nlForm'); if (!form) return;
+  var err = document.getElementById('nlErr'), ok = document.getElementById('nlOk');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var mail = form.email.value.trim();
+    var valido = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(mail);
+    err.hidden = valido; form.email.setAttribute('aria-invalid', valido ? 'false' : 'true');
+    if (!valido) { form.email.focus(); return; }
+    location.href = 'mailto:andremacouzetruiz@gmail.com?subject=Newsletter%20NORTHPOINT&body=' +
+      encodeURIComponent('Quiero recibir el newsletter semanal de NORTHPOINT.\n\nMi correo: ' + mail);
+    ok.style.display = 'block';
+  });
+})();
+if(window.gsap && !matchMedia("(prefers-reduced-motion: reduce)").matches){
+  gsap.from(".thead .wrap > *", { y: 40, opacity: 0, stagger: .12, duration: 1, ease: "power3.out" });
+  gsap.from(".puntos li", { y: 30, opacity: 0, stagger: .1, duration: .9, ease: "power3.out", scrollTrigger: { trigger: ".puntos", start: "top 85%", once: true } });
+}
+</script>
 </body>
 </html>

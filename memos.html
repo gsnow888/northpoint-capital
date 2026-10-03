@@ -1,115 +1,98 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es-MX">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Memos de mercado — NORTHPOINT</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Memos de mercado · NORTHPOINT</title>
 <meta name="description" content="Los memos de mercado de NORTHPOINT: lecturas firmadas por los socios, con la tesis, los niveles y las invalidaciones puestas sobre la mesa antes de operar.">
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/memos.css">
 <link rel="canonical" href="https://northpointcapital.io/memos.html">
-<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://northpointcapital.io/memos.html">
-<meta property="og:title" content="Memos de mercado — NORTHPOINT">
+<meta property="og:title" content="Memos de mercado · NORTHPOINT">
 <meta property="og:description" content="Lecturas del mercado firmadas por los socios de NORTHPOINT, con tesis, niveles e invalidación sobre la mesa.">
-<meta property="og:image" content="https://northpointcapital.io/assets/images/og.png?v=2">
+<meta property="og:image" content="https://northpointcapital.io/img/mesa.jpg">
 <meta property="og:locale" content="es_MX">
 <meta property="og:site_name" content="NORTHPOINT">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Memos de mercado — NORTHPOINT">
-<meta name="twitter:description" content="Lecturas del mercado firmadas por los socios de NORTHPOINT, con tesis, niveles e invalidación sobre la mesa.">
-<meta name="twitter:image" content="https://northpointcapital.io/assets/images/og.png?v=2">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/fonts/ahorro/fonts.css">
+<link rel="stylesheet" href="base.css?v=1790996209">
+<link rel="stylesheet" href="anim.css?v=1790996209">
+<script>document.documentElement.classList.add("js-anim");setTimeout(function(){document.documentElement.classList.add("anim-ready")},3500)</script>
+<style>
+.thead{background:radial-gradient(90% 80% at 75% 30%,#12324A 0%,#061A29 55%,#030D16 100%);color:#fff;padding:170px 0 90px}
+.thead .eyebrow{color:rgba(255,255,255,.75)}
+.thead h1{color:#fff;font-size:clamp(40px,5vw,68px);margin:14px 0 20px}
+.thead p{max-width:640px;opacity:.85;font-size:19px}
+.back{display:inline-flex;margin-top:28px;color:#fff;opacity:.75;text-decoration:none;font-size:14px}
+.back:hover{opacity:1}
+/* La lista: las mismas tarjetas que la sección Memos de la portada */
+.lista{padding-top:72px}
+.cards.dos{grid-template-columns:repeat(2,1fr);max-width:980px}
+.memo-card{text-decoration:none;color:inherit;border:1px solid var(--line)}
+.memo-card .resumen{color:var(--text);margin-bottom:20px;font-size:16px;line-height:1.65}
+.memo-card .link{margin-top:auto}
+.memo-card .fecha{margin-top:0;padding-top:0;margin-bottom:18px}
+.memo-card:hover{border-bottom-color:var(--blue)}
+.memo-nota{max-width:720px;margin-top:40px;font-size:15px;color:var(--muted);border-left:3px solid var(--blue);padding-left:16px}
+.memo-nota b{color:var(--ink);font-weight:500}
+@media(max-width:900px){.cards.dos{grid-template-columns:1fr}}
+</style>
 </head>
-<body class="memos">
+<body>
+<nav><div class="wrap">
+  <a class="mark" href="index.html">NORTHPOINT<small>Memos</small></a>
+  <div class="links"><a href="newsletter.html">Newsletter</a><a href="equipo.html">Equipo</a><a href="index.html">NORTHPOINT</a><a class="btn" href="index.html#registro">Apartar lugar</a></div>
+</div></nav>
+<header class="thead"><div class="wrap">
+  <div class="eyebrow">Memos de mercado</div>
+  <h1 class="serif">Lo que la mesa pone por escrito.</h1>
+  <p>Lecturas del mercado firmadas por los socios, con la tesis, los niveles y las invalidaciones puestas sobre la mesa antes de operar. Es el marco con el que NORTHPOINT toma sus propias decisiones, publicado tal cual.</p>
+  <a class="back" href="index.html">← Volver a NORTHPOINT</a>
+</div></header>
 
-<svg class="bg-arcs" viewBox="0 0 1600 560" fill="none" stroke="currentColor" stroke-width="1" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
-  <path d="M100 560 A700 700 0 0 1 1500 560"/>
-  <path d="M240 560 A560 560 0 0 1 1360 560" stroke-dasharray="2 12"/>
-  <path d="M380 560 A420 420 0 0 1 1220 560" opacity=".7"/>
-  <path d="M520 560 A280 280 0 0 1 1080 560" opacity=".5"/>
-  <line x1="0" y1="560" x2="1600" y2="560" opacity=".8"/>
-</svg>
+<section class="lista"><div class="wrap">
+  <!-- LA LISTA DE MEMOS. Un memo = una tarjeta. Para agregar el siguiente,
+       copia la <a class="card memo-card"> completa, ponla ARRIBA (el más
+       reciente primero) y apunta el href a su archivo en memos/.
+       Repite la tarjeta nueva en la sección #memos de index.html. -->
+  <div class="cards dos">
 
-<nav class="nav" aria-label="Main navigation">
-  <div class="nav-in">
-    <a href="index.html" class="brand" aria-label="NORTHPOINT — portada">
-      <span class="brand-t">
-        <span class="brand-name">NORTHPOINT</span>
-        <span class="brand-sub">Family Office · Terminal</span>
-      </span>
+    <a class="card memo-card" href="memos/memo-bloque-cripto-sep-2026.html">
+      <div class="tipo">Memo de mercado · Septiembre 2026</div>
+      <h3>Cuatro activos, una exposición</h3>
+      <p class="resumen">BTC, MSTR, COIN y CRCL son en la práctica una sola exposición a Bitcoin. Sesgo alcista de fondo, pero ninguno en zona de entrada óptima: BTC rechazado en 87,300, MSTR esperando el retest de 130–146 y COIN sin confirmar por debajo de 216.</p>
+      <div class="fecha">Gregorio Sánchez Calderón · 29 sep 2026 · 14 min de lectura</div>
+      <span class="link">Leer el memo</span>
     </a>
+
+    <a class="card memo-card" href="memos/memo-btc-sep-2026.html">
+      <div class="tipo">Memo de mercado · Septiembre 2026</div>
+      <h3>Bitcoin en septiembre</h3>
+      <p class="resumen">Sesgo de corrección técnica de 8–10 % dentro de una tendencia alcista intermedia. Zona de recompra 78,570–81,200, invalidación en 75,000.</p>
+      <div class="fecha">Gregorio Sánchez Calderón · 23 sep 2026 · 7 min de lectura</div>
+      <span class="link">Leer el memo</span>
+    </a>
+
   </div>
-</nav>
 
-<main class="doc">
-  <header class="doc-head">
-    <p class="doc-num hup" style="--hd:.05s">/0.3 · Memos</p>
-    <h1 class="doc-t hup" style="--hd:.15s">Memos de mercado.</h1>
-    <p class="doc-lede hup" style="--hd:.3s">Lecturas del mercado firmadas por los socios, con la tesis, los niveles y las invalidaciones puestas sobre la mesa antes de operar. Es el marco con el que NORTHPOINT toma sus propias decisiones, publicado tal cual.</p>
-  </header>
+  <p class="memo-nota">Los memos <b>no son asesoría financiera</b>. Son un marco de análisis técnico para la toma de decisiones propias. Operar futuros implica apalancamiento y puede perder todo su capital.</p>
+</div></section>
 
-  <section class="doc-body">
-    <div class="wrap">
-      <!-- LA LISTA DE MEMOS. Un memo = una fila. Para agregar el siguiente,
-           copia la <a class="ix memo"> completa, ponla ARRIBA (el más
-           reciente primero) y apunta el href a su archivo en memos/. -->
-      <div class="index-list memo-list rv">
-
-        <a class="ix memo" href="memos/memo-bloque-cripto-sep-2026.html">
-          <span class="memo-k">Memo de mercado · Septiembre 2026</span>
-          <span class="nm"><em>Cuatro activos, una exposición</em></span>
-          <span class="fr">29 sep 2026 · 14 min</span>
-          <p class="memo-s">BTC, MSTR, COIN y CRCL son en la práctica una sola exposición a Bitcoin. Sesgo alcista de fondo, pero ninguno en zona de entrada óptima: BTC rechazado en 87,300, MSTR esperando el retest de 130–146 y COIN sin confirmar por debajo de 216.</p>
-          <span class="memo-a"><em>Gregorio Sánchez Calderón</em> · Cofundador</span>
-          <span class="memo-l">Leer el memo →</span>
-        </a>
-
-        <a class="ix memo" href="memos/memo-btc-sep-2026.html">
-          <span class="memo-k">Memo de mercado · Septiembre 2026</span>
-          <span class="nm"><em>Bitcoin en septiembre</em></span>
-          <span class="fr">23 sep 2026 · 7 min</span>
-          <p class="memo-s">Sesgo de corrección técnica de 8–10 % dentro de una tendencia alcista intermedia. Zona de recompra 78,570–81,200, invalidación en 75,000.</p>
-          <span class="memo-a"><em>Gregorio Sánchez Calderón</em> · Cofundador</span>
-          <span class="memo-l">Leer el memo →</span>
-        </a>
-
-      </div>
-
-      <p class="doc-nota rv">Los memos <strong>no son asesoría financiera</strong>. Son un marco de análisis técnico para la toma de decisiones propias. Operar futuros implica apalancamiento y puedes perder todo tu capital.</p>
-    </div>
-  </section>
-</main>
-
-<footer class="pie-legal">
-  <div class="wrap">
-    <div class="pl-fila">
-      <div class="pl-marca">
-        <b>NORTHPOINT</b>
-        <span>Morelia, Michoacán · México</span>
-      </div>
-      <nav class="pl-links">
-        <a href="legal/terminos.html">Términos y condiciones</a>
-        <a href="legal/privacidad.html">Aviso de privacidad</a>
-        <a href="legal/riesgo.html">Aviso de riesgo</a>
-        <a href="mailto:hola@northpointcapital.io">hola@northpointcapital.io</a>
-      </nav>
-    </div>
-    <p class="pl-aviso">Operar futuros implica apalancamiento y <strong>puedes perder
-      todo tu capital</strong>. NORTHPOINT no es asesor financiero registrado y nada de
-      lo publicado aquí es una recomendación de inversión. Los resultados pasados no
-      garantizan resultados futuros.</p>
-    <p class="pl-copy">© 2026 André Macouzet Ruiz. Todos los derechos reservados.</p>
-  </div>
-</footer>
-
-<div class="deck" aria-hidden="false">
-  <span class="deck-sec">NORTHPOINT <em>// MEMOS /0.3</em></span>
-  <div style="display:flex;gap:10px;align-items:center">
-    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">◐ CLARO</button>
-    <a class="deck-cta" href="index.html">Índice →</a>
-  </div>
-</div>
-<script src="js/portada.js"></script>
+<footer><div class="wrap">
+  <span class="mark">NORTHPOINT<small>Memos</small></span>
+  <p>NORTHPOINT no es asesor financiero registrado y nada de lo publicado aquí es una recomendación de inversión. Los resultados pasados no garantizan resultados futuros.</p>
+  <p><a href="index.html" style="color:#fff">← Volver a NORTHPOINT</a> · <a href="newsletter.html" style="color:#fff">Newsletter</a> · <a href="legal/terminos.html" style="color:#fff">Términos</a> · <a href="privacidad.html" style="color:#fff">Aviso de privacidad</a> · <a href="legal/riesgo.html" style="color:#fff">Aviso de riesgo</a> · <a href="mailto:hola@northpointcapital.io" style="color:#fff">hola@northpointcapital.io</a></p>
+</div></footer>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="anim.js?v=1790996209"></script>
+<script src="menu.js?v=1790996209"></script>
+<script>
+if(window.gsap && !matchMedia("(prefers-reduced-motion: reduce)").matches){
+  gsap.from(".thead .wrap > *", { y: 40, opacity: 0, stagger: .12, duration: 1, ease: "power3.out" });
+  gsap.from(".memo-card", { y: 40, opacity: 0, stagger: .12, duration: .9, ease: "power3.out", scrollTrigger: { trigger: ".lista", start: "top 80%", once: true } });
+}
+</script>
 </body>
 </html>
