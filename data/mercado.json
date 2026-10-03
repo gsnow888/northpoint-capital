@@ -105,51 +105,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 31049.0,
-   "cambio": 482.75,
-   "pct": 1.58
+   "precio": 31061.75,
+   "cambio": 495.5,
+   "pct": 1.62
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7776.5,
-   "cambio": 29.75,
-   "pct": 0.38
+   "precio": 7777.25,
+   "cambio": 30.5,
+   "pct": 0.39
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4172.1,
-   "cambio": 3.7,
-   "pct": 0.09
+   "precio": 4162.3,
+   "cambio": -6.1,
+   "pct": -0.15
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 91.26,
-   "cambio": -1.34,
-   "pct": -1.45
+   "precio": 91.11,
+   "cambio": -1.49,
+   "pct": -1.61
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2851.8,
-   "cambio": 11.7,
-   "pct": 0.41
+   "precio": 2850.9,
+   "cambio": 10.8,
+   "pct": 0.38
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51485.0,
-   "cambio": -352.0,
-   "pct": -0.68
+   "precio": 51477.0,
+   "cambio": -360.0,
+   "pct": -0.69
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84895.0,
-   "cambio": 1105.0,
-   "pct": 1.32
+   "precio": 84785.0,
+   "cambio": 995.0,
+   "pct": 1.19
   }
  ],
  "acciones": [
@@ -324,6 +324,12 @@
  ],
  "noticias": [
   {
+   "titulo": "America’s data center fight is a preview of what's to come for the rest of the world",
+   "url": "https://www.cnbc.com/2026/10/03/data-center-backlash-europe-asia-africa.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 03 Oct 2026 05:00:01 GMT"
+  },
+  {
    "titulo": "‘I don’t want to die on the sales floor’: I’m 67 and earn $19.50 an hour at a big-box store. When can I finally retire?",
    "url": "https://www.marketwatch.com/story/i-dont-want-to-die-on-the-sales-floor-im-67-and-earn-19-50-an-hour-at-a-big-box-store-when-can-i-finally-retire-369abcf9?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -402,6 +408,12 @@
    "fecha": "Fri, 02 Oct 2026 20:26:00 GMT"
   },
   {
+   "titulo": "Oil prices lower as G7 nations to release diesel stocks, Saudis reportedly plan attack on Houthis",
+   "url": "https://www.cnbc.com/2026/10/02/oil-wti-brent-diesel-stock-release-europe.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 02 Oct 2026 20:04:42 GMT"
+  },
+  {
    "titulo": "G7 nations to release diesel stocks as wars in Europe and Middle East constrain fuel supplies",
    "url": "https://www.cnbc.com/2026/10/02/diesel-oil-trump-europe-export-ban.html",
    "fuente": "CNBC",
@@ -414,12 +426,6 @@
    "fecha": "Fri, 02 Oct 2026 19:19:15 GMT"
   },
   {
-   "titulo": "Why Lilly and Novo are betting on amylin to power a new wave of obesity drugs after GLP-1s",
-   "url": "https://www.cnbc.com/2026/10/02/lilly-novo-amylin-obesity-drugs.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 17:55:26 GMT"
-  },
-  {
    "titulo": "Men are losing ground in the labor market. Here's why",
    "url": "https://www.cnbc.com/2026/10/02/men-labor-market-jobs-report.html",
    "fuente": "CNBC",
@@ -430,12 +436,6 @@
    "url": "https://www.cnbc.com/2026/10/02/ford-q3-sales.html",
    "fuente": "CNBC",
    "fecha": "Fri, 02 Oct 2026 17:20:33 GMT"
-  },
-  {
-   "titulo": "American starts letting customers mix cash and miles for tickets",
-   "url": "https://www.cnbc.com/2026/10/02/american-airlines-tickets-cash-miles.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 16:49:55 GMT"
   },
   {
    "titulo": "Your health insurance premiums may take a big jump in 2027 — here's why",
@@ -567,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-03T04:24:01Z",
+ "ts": "2026-10-03T10:02:38Z",
  "fallas": [
   "videos",
   "directos"
