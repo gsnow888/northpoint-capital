@@ -147,9 +147,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84760.0,
-   "cambio": 970.0,
-   "pct": 1.16
+   "precio": 84895.0,
+   "cambio": 1105.0,
+   "pct": 1.32
   }
  ],
  "acciones": [
@@ -324,6 +324,12 @@
  ],
  "noticias": [
   {
+   "titulo": "‘I don’t want to die on the sales floor’: I’m 67 and earn $19.50 an hour at a big-box store. When can I finally retire?",
+   "url": "https://www.marketwatch.com/story/i-dont-want-to-die-on-the-sales-floor-im-67-and-earn-19-50-an-hour-at-a-big-box-store-when-can-i-finally-retire-369abcf9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 03 Oct 2026 02:16:00 GMT"
+  },
+  {
    "titulo": "Why Western Digital and Seagate are seeing big stock drops today",
    "url": "https://www.marketwatch.com/story/why-western-digital-and-seagate-are-seeing-big-stock-drops-today-6b16d95e?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -394,12 +400,6 @@
    "url": "https://www.marketwatch.com/story/this-city-saw-1-in-3-home-sellers-slash-their-asking-price-in-september-to-attract-reluctant-buyers-7f16a0c3?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Fri, 02 Oct 2026 20:26:00 GMT"
-  },
-  {
-   "titulo": "Saving your retirement could come down to this simple writing exercise",
-   "url": "https://www.marketwatch.com/story/saving-your-retirement-could-come-down-to-this-simple-writing-exercise-c25734a9?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 02 Oct 2026 20:24:00 GMT"
   },
   {
    "titulo": "G7 nations to release diesel stocks as wars in Europe and Middle East constrain fuel supplies",
@@ -567,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-02T23:51:20Z",
+ "ts": "2026-10-03T04:24:01Z",
  "fallas": [
   "videos",
   "directos"
