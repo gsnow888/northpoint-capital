@@ -12,19 +12,9 @@
   const DESK = matchMedia("(min-width: 900px)");
   const EASE = "power3.out";
 
-  // ── scroll suave ──
-  let lenis = null;
-  if(window.Lenis){
-    lenis = new Lenis({ lerp: 0.14, smoothWheel: true, wheelMultiplier: 1 });
-    window.__lenis = lenis;   // para pruebas
-    lenis.on("scroll", ScrollTrigger.update);
-    gsap.ticker.add(t => lenis.raf(t * 1000));
-    gsap.ticker.lagSmoothing(0);
-    $$('a[href^="#"]').forEach(a => a.addEventListener("click", e => {
-      const id = a.getAttribute("href"); const el = id.length > 1 && $(id);
-      if(el){ e.preventDefault(); lenis.scrollTo(el, { offset: -8, duration: 1.4 }); }
-    }));
-  }
+  // ── scroll nativo (2-oct-2026: Lenis fuera; con mouse de rueda la página no bajaba) ──
+  // los enlaces #ancla bajan suave por html{scroll-behavior:smooth} en base.css
+  const lenis = null;
 
   // ── partir texto en palabras (respeta enlaces y negritas dentro) ──
   function split(el, mode="w"){
