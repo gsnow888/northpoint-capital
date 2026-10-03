@@ -1,474 +1,297 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-MX">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>NORTHPOINT Family Office · México</title>
-<meta name="description" content="NORTHPOINT Family Office México. La oficina privada que gestiona, protege y hace crecer el patrimonio de tu familia — inversiones, inmuebles, negocio, impuestos y herencia, con un solo equipo.">
+<meta name="description" content="NORTHPOINT Family Office: la oficina privada que ordena el patrimonio de una familia mexicana. Inversiones, empresa familiar, inmuebles, impuestos y sucesión, en un solo mapa y con reglas escritas.">
 <link rel="canonical" href="https://northpointcapital.io/family-office.html">
-<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://northpointcapital.io/family-office.html">
 <meta property="og:title" content="NORTHPOINT Family Office · México">
-<meta property="og:description" content="La oficina privada que gestiona, protege y hace crecer el patrimonio de tu familia.">
-<meta property="og:image" content="https://northpointcapital.io/assets/images/og.png?v=2">
-<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta property="og:locale" content="es_MX"><meta property="og:site_name" content="NORTHPOINT">
+<meta property="og:description" content="El patrimonio de su familia en un solo mapa y con reglas escritas: inversiones, empresa, inmuebles, impuestos y sucesión.">
+<meta property="og:image" content="https://northpointcapital.io/img/family-office.jpg">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="NORTHPOINT">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="NORTHPOINT Family Office · México">
-<meta name="twitter:description" content="La oficina privada que gestiona, protege y hace crecer el patrimonio de tu familia.">
-<meta name="twitter:image" content="https://northpointcapital.io/assets/images/og.png?v=2">
-
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/fonts/ahorro/fonts.css">
+<link rel="stylesheet" href="base.css?v=1790996209">
+<link rel="stylesheet" href="anim.css?v=1790996209">
+<script>document.documentElement.classList.add("js-anim");setTimeout(function(){document.documentElement.classList.add("anim-ready")},3500)</script>
 <!--
-  NORTHPOINT FAMILY OFFICE · 24-ago-2026
-  Estructura y diseño clonados de la referencia que pasó André (thebullground.com):
-  crema + negro + menta + oro, TomatoGrotesk/GeneralSans → Archivo/General Sans,
-  y el toro de partículas del hero reemplazado por la estrella del norte.
-
-  ⚠️ HONESTIDAD — REGLA DEL PROYECTO, NO SE NEGOCIA:
-  La referencia es una RIA registrada ante la SEC con AUM real. NORTHPOINT hoy NO
-  tiene registro (CNBV/SEC), NO tiene custodio y NO administra dinero de terceros.
-  Por eso: donde la referencia pone AUM, CRD y rendimientos, aquí van marcadores
-  honestos ("—", "en trámite", "se publicará con fecha"). Cuando existan datos
-  reales, van con fecha, como los payouts de la mesa. CERO CIFRAS INVENTADAS.
+  FAMILY OFFICE · 3-oct-2026 · rehecha desde cero (la anterior era una copia de otra página).
+  Sistema del sitio: base.css + estilo propio aquí. Reglas: cero terceros, cero cifras inventadas,
+  NORTHPOINT no custodia ni administra dinero de terceros (sin registro CNBV/SEC: estructura y consultoría).
+  La versión anterior está en el historial de git (css/family-office.css y js/family-office.js eran de ella).
 -->
-
-
-<link rel="stylesheet" href="css/family-office.css">
+<style>
+.fo-hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#061A29}
+.fo-hero .bg{position:absolute;inset:0;background:url(img/family-office.jpg) center 60%/cover;background-image:image-set(url(img/family-office.webp) type("image/webp"),url(img/family-office.jpg) type("image/jpeg"))}
+.fo-hero .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,13,22,.75) 0%,rgba(3,13,22,.35) 55%,rgba(3,13,22,0) 80%),linear-gradient(180deg,rgba(3,13,22,.5) 0%,rgba(3,13,22,.1) 35%,rgba(3,13,22,.85) 100%)}
+.fo-hero .wrap{position:relative;padding-bottom:96px;padding-top:160px}
+.fo-hero .eyebrow{color:rgba(255,255,255,.8)}
+.fo-hero h1{color:#fff;max-width:900px;margin:16px 0 22px}
+.fo-hero p{max-width:640px;font-size:clamp(18px,1.6vw,20px);line-height:1.6;font-weight:300;opacity:.9}
+.fo-hero .acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+@media(max-width:700px){.fo-hero .bg{background-image:image-set(url(img/family-office-m.webp) type("image/webp"),url(img/family-office.jpg) type("image/jpeg"))}}
+.gris{background:var(--gray)}
+.k{font:500 12px ui-monospace,"SF Mono",Menlo,monospace;letter-spacing:.06em;color:var(--blue)}
+/* para quién */
+.quien{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}
+.quien div{padding:28px 28px 28px 0;border-right:1px solid var(--line);margin-right:28px}
+.quien div:last-child{border-right:0;margin-right:0}
+.quien h3{font:400 22px/1.3 var(--serif);color:var(--ink);margin:14px 0 10px}
+.quien p{font-size:15px}
+/* servicios */
+.serv{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.sv{background:#fff;padding:32px;border-top:3px solid var(--navy)}
+.sv h3{font:400 24px/1.25 var(--serif);color:var(--ink);margin:14px 0 12px}
+.sv p{font-size:15px;margin-bottom:14px}
+.sv ul{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.sv li{font-size:14.5px;padding:9px 0 9px 18px;border-bottom:1px solid var(--line);position:relative;color:var(--text)}
+.sv li:before{content:"";position:absolute;left:0;top:17px;width:8px;height:1px;background:var(--blue)}
+/* capas */
+.capas{border-top:1px solid var(--ink)}
+.capa{display:grid;grid-template-columns:90px 1fr 1.2fr;gap:32px;padding:30px 0;border-bottom:1px solid var(--line);align-items:start}
+.capa .n{font:300 44px/1 var(--serif);color:#C9D0DB}
+.capa h3{font:400 26px var(--serif);color:var(--ink);margin-bottom:6px}
+.capa .q{font-size:15px;color:var(--muted)}
+.capa .mx{font-size:15.5px}
+.capa .mx b{font-weight:500;color:var(--ink)}
+.regla{margin-top:28px;font:300 clamp(22px,2.4vw,30px)/1.3 var(--serif);color:var(--ink);max-width:820px}
+/* proceso */
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:p}
+.paso{padding:30px 28px 0 0;border-top:3px solid var(--blue)}
+.paso + .paso{border-top-color:var(--navy)}
+.paso .k{color:var(--muted)}
+.paso h3{font:400 24px var(--serif);color:var(--ink);margin:12px 0 10px}
+.paso p{font-size:15px;padding-right:12px}
+/* claridad: lo que sí / lo que no */
+.claro{background:var(--navy);color:#fff}
+.claro .eyebrow{color:rgba(255,255,255,.75)}
+.claro h2{color:#fff}
+.sino{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:56px}
+.sino h3{font:400 24px var(--serif);color:#fff;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.3);margin-bottom:6px}
+.sino li{list-style:none;padding:14px 0 14px 30px;border-bottom:1px solid rgba(255,255,255,.12);font-size:16px;color:rgba(255,255,255,.85);position:relative;line-height:1.55}
+.sino ul{padding:0;margin:0}
+.sino .si li:before,.sino .no li:before{position:absolute;left:0;top:13px;font:500 15px var(--sans)}
+.sino .si li:before{content:"✓";color:#7EA2FF}
+.sino .no li:before{content:"✕";color:rgba(255,255,255,.5)}
+/* plataforma */
+.plat{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.plat figure{margin:0}
+.plat img{width:100%;display:block;border:1px solid var(--line)}
+.plat figcaption{font-size:13px;color:var(--muted);margin-top:10px}
+.plat ul{padding:0;margin:24px 0 28px;list-style:none;border-top:1px solid var(--line)}
+.plat li{padding:12px 0;border-bottom:1px solid var(--line);font-size:16px}
+.plat li b{font-weight:500;color:var(--ink)}
+/* socios */
+.socios{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:980px}
+.socio{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:center}
+.socio img{width:120px;height:150px;object-fit:cover;filter:grayscale(1)}
+.socio b{display:block;font:400 22px var(--serif);color:var(--ink)}
+.socio span{font-size:15px;color:var(--muted)}
+/* faq */
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:22px 40px 22px 0;font:400 20px/1.35 var(--serif);color:var(--ink);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:4px;top:18px;font:300 28px var(--sans);color:var(--blue)}
+.faq details[open] summary:after{content:"−"}
+.faq details p{padding:0 0 22px;max-width:820px;font-size:16px;line-height:1.7}
+.faq{border-top:1px solid var(--ink);max-width:980px}
+/* contacto */
+.cta{background:radial-gradient(90% 80% at 75% 30%,#12324A 0%,#061A29 55%,#030D16 100%);color:#fff}
+.cta .eyebrow{color:rgba(255,255,255,.75)}
+.cta h2{color:#fff}
+.cta-g{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.cta p.lead{color:rgba(255,255,255,.85);margin-top:18px}
+.cta textarea{border:0;border-bottom:1px solid var(--ink);background:transparent;padding:10px 0;font:300 17px var(--sans);color:var(--ink);border-radius:0;min-height:90px;resize:vertical}
+.cta textarea:focus{outline:none;border-bottom:2px solid var(--blue)}
+.cta form .btn{justify-self:start}
+.cta .ok{color:var(--gain);font-size:15px}
+.cta .fine{font-size:13px;color:rgba(255,255,255,.6)}
+footer .legal-l a{color:#fff}
+@media(max-width:1000px){.quien,.pasos{grid-template-columns:1fr 1fr}.quien div{margin-right:0;padding-right:20px}.quien div:nth-child(2){border-right:0}.serv{grid-template-columns:1fr 1fr}.plat,.cta-g,.sino{grid-template-columns:1fr}.capa{grid-template-columns:60px 1fr}.capa .mx{grid-column:2}.paso{margin-bottom:32px}}
+@media(max-width:640px){.quien,.pasos,.serv,.socios{grid-template-columns:1fr}.quien div{border-right:0}.socio{grid-template-columns:96px 1fr}.socio img{width:96px;height:120px}}
+</style>
 </head>
 <body>
+<nav><div class="wrap">
+  <a class="mark" href="index.html">NORTHPOINT<small>Family Office</small></a>
+  <div class="links"><a href="#que">Qué hacemos</a><a href="#metodo">Método</a><a href="#proceso">Cómo empezamos</a><a href="#oficina">La oficina</a><a href="#faq">Preguntas</a><a href="index.html">NORTHPOINT</a><a class="btn" href="#sesion">Sesión de Claridad</a></div>
+</div></nav>
 
-<header class="nav" id="nav">
-  <div class="nav-in">
-    <a class="nav-logo" aria-label="NORTHPOINT — inicio" href="index.html">
-      <svg class="nav-star" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
-      <span class="nav-brand">NORTHPOINT</span>
-    </a>
-    <nav>
-      <ul class="nav-ul" id="navUl">
-        <li><a href="#metodo" class="nav-a">Método</a></li>
-        <li><a href="#equipo" class="nav-a">Equipo</a></li>
-        <li><a href="oficina.html" class="nav-a">Plataforma</a></li>
-        <li><a href="#newsletter" class="nav-a">Newsletter</a></li>
-      </ul>
-    </nav>
-    <div class="nav-end">
-      <a href="mailto:andremacouzetruiz@gmail.com?subject=NORTHPOINT%20Family%20Office%20%C2%B7%20Sesi%C3%B3n%20de%20claridad&body=Cu%C3%A9ntame%20brevemente%3A%0A%0A%C2%BFQu%C3%A9%20construiste%3F%0A%0A%C2%BFD%C3%B3nde%20vive%20hoy%20el%20patrimonio%20(pa%C3%ADses%2C%20tipos%20de%20activo)%3F%0A%0A%C2%BFQu%C3%A9%20es%20lo%20que%20m%C3%A1s%20te%20preocupa%3F%0A%0A" class="btn btn-k nav-cta">Agenda tu Sesión de Claridad</a>
-      <button class="ham" id="ham" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
+<header class="fo-hero"><div class="bg" role="img" aria-label="Sala de juntas con vista a la Ciudad de México al atardecer"></div><div class="wrap">
+  <div class="eyebrow">NORTHPOINT Family Office · México</div>
+  <h1 class="serif">El patrimonio de su familia, en un solo mapa y con reglas escritas.</h1>
+  <p>Somos la oficina privada que ordena lo que su familia ya construyó: inversiones, empresa, inmuebles, impuestos y sucesión. Un solo equipo que ve el conjunto completo y trabaja junto con su contador, su notario y sus bancos.</p>
+  <div class="acts"><a class="btn" href="#sesion">Agendar Sesión de Claridad</a><a class="btn line inv" href="#que">Qué hacemos</a></div>
+</div></header>
+
+<section id="quien"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Para quién es</div><h2 class="serif" style="margin-top:12px">Para la familia que ya construyó.</h2></div>
+    <p>Y que ahora necesita que alguien vea todo junto. Si se reconoce en dos o más de estas, vale la pena platicar.</p>
   </div>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="w hero-g">
-    <div class="hero-txt">
-      <h1 class="hero-h1">
-        <span class="line"><span class="line-in">NORTHPOINT</span></span>
-        <span class="line"><span class="line-in"><em>Family Office.</em></span></span>
-      </h1>
-      <p class="hero-lede">Un family office es la oficina privada que administra todos los asuntos financieros de una familia — inversiones, inmuebles, negocio, impuestos y herencia.</p>
-      <div class="hero-ctas">
-        <a href="mailto:andremacouzetruiz@gmail.com?subject=NORTHPOINT%20Family%20Office%20%C2%B7%20Sesi%C3%B3n%20de%20claridad&body=Cu%C3%A9ntame%20brevemente%3A%0A%0A%C2%BFQu%C3%A9%20construiste%3F%0A%0A%C2%BFD%C3%B3nde%20vive%20hoy%20el%20patrimonio%20(pa%C3%ADses%2C%20tipos%20de%20activo)%3F%0A%0A%C2%BFQu%C3%A9%20es%20lo%20que%20m%C3%A1s%20te%20preocupa%3F%0A%0A" class="btn btn-k">Agenda tu Sesión de Claridad →</a>
-      </div>
-    </div>
-    <div class="hero-star" aria-hidden="true">
-      <canvas class="star-canvas" id="starCanvas" aria-hidden="true"></canvas>
-    </div>
+  <div class="quien">
+    <div><span class="k">01</span><h3>Tiene una empresa familiar</h3><p>El negocio creció más rápido que las reglas: el dinero de la empresa y el de la familia se mezclan, y no está escrito quién decide qué.</p></div>
+    <div><span class="k">02</span><h3>Su patrimonio vive en varios lados</h3><p>Cuentas en varios bancos y casas de bolsa, inmuebles, una cuenta en EE.UU. Nadie tiene la foto completa en un solo lugar.</p></div>
+    <div><span class="k">03</span><h3>Cada asesor ve solo su parte</h3><p>El banquero ve su banco, el contador ve impuestos, el notario ve escrituras. Ninguno ve el conjunto, y nadie coordina a los demás.</p></div>
+    <div><span class="k">04</span><h3>Quiere que llegue bien a sus hijos</h3><p>Como un legado con reglas claras, no como un pleito ni un trámite de años. Hoy la sucesión no está documentada.</p></div>
   </div>
-</section>
+</div></section>
 
-<!-- TICKER -->
-<div class="ticker" aria-hidden="true">
-  <div class="ticker-track">
-    <div class="tg" aria-hidden="true">
-      <span class="tg-item"><span>Estructura antes que rendimiento</span><b>◆</b></span>
-      <span class="tg-item"><span>Family Office · México</span><b>◆</b></span>
-      <span class="tg-item"><span>El escudo patrimonial</span><b>◆</b></span>
-      <span class="tg-item"><span>The NorthPoint Way</span><b>◆</b></span>
-      <span class="tg-item"><span>Honorarios alineados a tu patrimonio</span><b>◆</b></span>
-      <span class="tg-item"><span>Crecer · Proteger · Consolidar · Heredar</span><b>◆</b></span>
-    </div>
-    <div class="tg" aria-hidden="true">
-      <span class="tg-item"><span>Estructura antes que rendimiento</span><b>◆</b></span>
-      <span class="tg-item"><span>Family Office · México</span><b>◆</b></span>
-      <span class="tg-item"><span>El escudo patrimonial</span><b>◆</b></span>
-      <span class="tg-item"><span>The NorthPoint Way</span><b>◆</b></span>
-      <span class="tg-item"><span>Honorarios alineados a tu patrimonio</span><b>◆</b></span>
-      <span class="tg-item"><span>Crecer · Proteger · Consolidar · Heredar</span><b>◆</b></span>
-    </div>
+<section class="gris" id="que"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Qué hacemos</div><h2 class="serif" style="margin-top:12px">Seis frentes, un solo equipo.</h2></div>
+    <p>No vendemos productos financieros. Ordenamos, documentamos y coordinamos para que cada decisión de la familia se tome con la foto completa.</p>
   </div>
-</div>
-
-<!-- EL PROBLEMA -->
-<section class="problema">
-  <div class="w">
-    <p class="eyebrow" data-reveal>PARA QUIÉN ES</p>
-    <h2 class="sh2" data-reveal>Para la familia que ya construyó — y ahora necesita <em>quien lo cuide como propio.</em></h2>
-    <div class="pain-g" data-stagger>
-      <article class="pcard">
-        <span class="pnum">01</span>
-        <h3 class="ptitle">Construiste un negocio o un patrimonio serio.</h3>
-        <p class="pbody">Y creció más rápido que la estructura que lo sostiene.</p>
-      </article>
-      <article class="pcard">
-        <span class="pnum">02</span>
-        <h3 class="ptitle">Tu capital vive en varios lados.</h3>
-        <p class="pbody">Cuentas, inmuebles y negocio, en México y a veces en EE.UU. — sin un mapa único.</p>
-      </article>
-      <article class="pcard">
-        <span class="pnum">03</span>
-        <h3 class="ptitle">Nadie ve el conjunto completo.</h3>
-        <p class="pbody">Tu banquero ve su banco. Tu contador ve impuestos. Nadie ve todo — excepto tú, de noche.</p>
-      </article>
-      <article class="pcard">
-        <span class="pnum">04</span>
-        <h3 class="ptitle">Quieres que llegue a tus hijos.</h3>
-        <p class="pbody">Como un legado con reglas claras — no como un problema que heredar.</p>
-      </article>
-    </div>
-    <div class="villain" data-reveal>
-      <p class="villain-pre">Antes, tener tu propio family office requería como mínimo</p>
-      <p class="villain-num">$25M USD</p>
-      <p class="villain-sub">NORTHPOINT existe para traer esa misma estructura<br>a familias como la tuya.</p>
-    </div>
+  <div class="serv">
+    <div class="sv"><span class="k">01 · MAPA PATRIMONIAL</span><h3>Todo lo que tiene, en un solo lugar</h3><p>Inventario y valuación de cada activo y cada deuda, en pesos y en dólares, con un corte mensual.</p>
+      <ul><li>Cuentas bancarias y de inversión en México y EE.UU.</li><li>Inmuebles, empresa, seguros y créditos</li><li>Un tablero privado: La oficina</li></ul></div>
+    <div class="sv"><span class="k">02 · ESTRATEGIA</span><h3>Un plan de inversión por capas</h3><p>Diseñamos con usted el orden en que se construye el patrimonio. Las cuentas siguen a su nombre, en sus propias instituciones.</p>
+      <ul><li>Política de inversión familiar por escrito</li><li>Revisión mensual contra el plan</li><li>Diversificación entre peso y dólar</li></ul></div>
+    <div class="sv"><span class="k">03 · EMPRESA FAMILIAR</span><h3>Reglas para el negocio y la familia</h3><p>Separar lo que es de la empresa de lo que es de la familia, y dejar escrito cómo se decide.</p>
+      <ul><li>Protocolo familiar y consejo de familia</li><li>Acuerdos entre accionistas, con su abogado</li><li>Política de dividendos y de empleo de familiares</li></ul></div>
+    <div class="sv"><span class="k">04 · IMPUESTOS</span><h3>Con su contador en la mesa</h3><p>Cada capa se documenta para que la declaración anual deje de ser una búsqueda de papeles cada abril.</p>
+      <ul><li>Intereses, dividendos y ganancias en un solo expediente</li><li>Ingresos y cuentas del extranjero ordenados</li><li>Deducciones de retiro (PPR) dentro de la ley</li></ul></div>
+    <div class="sv"><span class="k">05 · SUCESIÓN Y PROTECCIÓN</span><h3>Que llegue a quien usted decida</h3><p>Coordinamos con su notario y su asegurador lo que hace falta para que el patrimonio cruce generaciones sin pleitos.</p>
+      <ul><li>Testamento, poderes y beneficiarios al día</li><li>Fideicomisos cuando convienen</li><li>Activos en EE.UU. revisados con un especialista</li></ul></div>
+    <div class="sv"><span class="k">06 · SIGUIENTE GENERACIÓN</span><h3>Preparar a quien va a heredar</h3><p>Los hijos entran a la conversación antes de recibir, no después.</p>
+      <ul><li>Educación financiera por etapas</li><li>Filantropía familiar y fundación</li><li>Acceso a la Academia NORTHPOINT</li></ul></div>
   </div>
-</section>
+</div></section>
 
-<!-- POR QUÉ EXISTE -->
-<section class="stmt">
-  <div class="w stmt-g">
-    <div data-reveal>
-      <p class="eyebrow" style="margin-bottom:28px">POR QUÉ EXISTE NORTHPOINT</p>
-      <div class="stmt-lines">
-        <p class="stmt-line">La primera generación lo construye.</p>
-        <p class="stmt-line stmt-mute">La segunda lo mantiene.</p>
-        <p class="stmt-line">La tercera lo <em>destruye</em>.</p>
-      </div>
-      <div class="genbars" aria-hidden="true">
-        <div class="gb"><i style="--h:100%"></i><span>1ª generación</span></div>
-        <div class="gb"><i style="--h:56%"></i><span>2ª generación</span></div>
-        <div class="gb"><i style="--h:15%"></i><span>3ª generación</span></div>
-      </div>
-      <p class="gb-note">El destino del patrimonio familiar cuando se construye sin estructura.</p>
-    </div>
-    <div class="stmt-body" data-reveal>
-      <p class="sbody" style="margin-bottom:0">La mayoría de las familias hereda problemas, no un legado: cuentas dispersas, decisiones improvisadas, nada documentado.</p>
-      <p class="sbody" style="margin-bottom:0">Y la industria no te lo va a decir: vive de venderte productos, no de darte claridad.</p>
-      <a href="mailto:andremacouzetruiz@gmail.com?subject=NORTHPOINT%20Family%20Office%20%C2%B7%20Sesi%C3%B3n%20de%20claridad" class="btn btn-k stmt-cta">Agenda tu Sesión de Claridad →</a>
-    </div>
+<section id="metodo"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Nuestro método</div><h2 class="serif" style="margin-top:12px">Cinco capas, un orden estricto.</h2></div>
+    <p>No pasamos a la siguiente capa hasta que la anterior está sólida. Así se construye el patrimonio en México, con instrumentos que existen aquí.</p>
   </div>
-</section>
-
-<!-- CALCULADORA -->
-<section class="calc-section">
-  <div class="w">
-    <p class="eyebrow" data-reveal>HERRAMIENTA EDUCATIVA</p>
-    <h2 class="sh2" data-reveal>Calculadora educativa de <em>interés compuesto.</em></h2>
-    <p class="sbody" data-reveal>Ingresa un capital y una tasa hipotética para ver el efecto del interés compuesto. Las tasas las eliges tú: no son rendimientos ni proyecciones de NORTHPOINT.</p>
-    <div class="calc-wrap" data-reveal>
-      <div class="calc-control">
-        <label class="calc-label" for="cap-slider">Capital inicial</label>
-        <p class="calc-display" id="capDisplay">$500K USD</p>
-        <input id="cap-slider" type="range" class="calc-slider" min="100000" max="3000000" step="50000" value="500000">
-        <div class="calc-range-labels"><span>$100K</span><span>$3M</span></div>
-        <label class="calc-label" for="rate-slider" style="margin-top:20px;display:block">Tasa anual hipotética (la eliges tú)</label>
-        <p class="calc-display" id="rateDisplay">5.0%</p>
-        <input id="rate-slider" type="range" class="calc-slider" min="1" max="15" step="0.5" value="5">
-        <div class="calc-range-labels"><span>1%</span><span>15%</span></div>
-      </div>
-      <div class="chart-wrap">
-        <svg viewBox="0 0 540 180" class="chart-svg" aria-hidden="true" id="calcChart">
-          <line x1="12" y1="110" x2="528" y2="110" stroke="rgba(9,10,7,0.05)" stroke-width="1"/>
-          <line x1="12" y1="68" x2="528" y2="68" stroke="rgba(9,10,7,0.05)" stroke-width="1"/>
-          <line x1="12" y1="26" x2="528" y2="26" stroke="rgba(9,10,7,0.05)" stroke-width="1"/>
-          <polyline id="calcLine" points="" fill="none" stroke="#1B1D18" stroke-width="2.5"/>
-          <circle id="calcDot" cx="528" cy="24" r="4" fill="#1B1D18"/>
-          <text x="12" y="172" text-anchor="middle" font-size="9" fill="#878D86" font-family="General Sans,sans-serif">Hoy</text>
-          <text x="141" y="172" text-anchor="middle" font-size="9" fill="#878D86" font-family="General Sans,sans-serif">5a</text>
-          <text x="270" y="172" text-anchor="middle" font-size="9" fill="#878D86" font-family="General Sans,sans-serif">10a</text>
-          <text x="399" y="172" text-anchor="middle" font-size="9" fill="#878D86" font-family="General Sans,sans-serif">15a</text>
-          <text x="528" y="172" text-anchor="middle" font-size="9" fill="#878D86" font-family="General Sans,sans-serif">20a</text>
-        </svg>
-        <div class="chart-results">
-          <div class="chart-result chart-result-bg">
-            <span class="cr-label" id="crLabel">A 20 años, con la tasa que elegiste (5.0%)</span>
-            <strong class="cr-val" id="crVal">$1.33M</strong>
-          </div>
-          <p class="chart-diff" style="grid-column:2/4">Valor hipotético, definido por tus propios supuestos. No es una proyección de NORTHPOINT.</p>
-        </div>
-      </div>
-    </div>
-    <p class="calc-disc">Herramienta educativa. No es una proyección, recomendación ni oferta de NORTHPOINT.</p>
-
-    <div class="hist" data-reveal>
-      <div class="hist-head">
-        <span class="hist-title">Histórico de las estrategias — <span style="color:var(--gold)">ejemplo ilustrativo</span></span>
-        <span class="hist-sub">Así se reportará cada estrategia: rendimiento neto de comisiones contra su índice de referencia, en el mismo periodo. Los valores de abajo son un ejemplo hipotético del formato — no son resultados de NORTHPOINT.</span>
-      </div>
-      <div class="hist-rows">
-        <div class="hist-row"><span class="hist-e">Conservadora</span><span class="hist-n">+8.5%<small>neto · ejemplo</small></span><span class="hist-i">FDLO +9.2%<small>índice · ejemplo</small></span></div>
-        <div class="hist-row"><span class="hist-e">Conservadora Moderada</span><span class="hist-n">+10.1%<small>neto · ejemplo</small></span><span class="hist-i">FDLO +9.2%<small>índice · ejemplo</small></span></div>
-        <div class="hist-row"><span class="hist-e">Moderada</span><span class="hist-n">+12.8%<small>neto · ejemplo</small></span><span class="hist-i">S&amp;P 500 +13.5%<small>índice · ejemplo</small></span></div>
-        <div class="hist-row"><span class="hist-e">Moderada Agresiva</span><span class="hist-n">+15.4%<small>neto · ejemplo</small></span><span class="hist-i">S&amp;P 500 +13.5%<small>índice · ejemplo</small></span></div>
-        <div class="hist-row"><span class="hist-e">Agresiva</span><span class="hist-n">+18.9%<small>neto · ejemplo</small></span><span class="hist-i">Nasdaq 100 +17.6%<small>índice · ejemplo</small></span></div>
-      </div>
-      <p class="hist-disc">Cifras hipotéticas, solo para mostrar el formato de reporte. No son rendimientos reales, pasados ni proyectados de NORTHPOINT, ni de los índices en ningún periodo específico. Los resultados reales se publicarán aquí con fecha y metodología desde el primer periodo completo de operación. Rendimientos pasados no garantizan resultados futuros.</p>
-    </div>
+  <div class="capas">
+    <div class="capa"><div class="n">01</div><div><h3>Liquidez</h3><div class="q">El punto de partida.</div></div><p class="mx">Los meses de gasto de la familia y de la empresa, cubiertos antes de cualquier otra cosa. En <b>CETES, fondos de deuda de corto plazo y pagarés</b>, repartidos para aprovechar la protección del IPAB por banco.</p></div>
+    <div class="capa"><div class="n">02</div><div><h3>Retiro</h3><div class="q">El dinero con fecha de uso a décadas.</div></div><p class="mx">Primero se ordena fiscalmente: <b>aportaciones voluntarias a la AFORE y Planes Personales de Retiro (PPR)</b>, deducibles dentro de los límites de la Ley del ISR.</p></div>
+    <div class="capa"><div class="n">03</div><div><h3>Ingresos pasivos</h3><div class="q">Activos que pagan sin que usted trabaje.</div></div><p class="mx"><b>Inmuebles en renta, FIBRAs y los dividendos de la empresa familiar.</b> La capa que cubre la vida de la familia sin tocar el capital.</p></div>
+    <div class="capa"><div class="n">04</div><div><h3>Acciones</h3><div class="q">El motor de crecimiento.</div></div><p class="mx">Renta variable diversificada y de largo plazo: <b>Bolsa Mexicana, BIVA y mercados globales a través del SIC</b>, para no depender solo del peso.</p></div>
+    <div class="capa"><div class="n">05</div><div><h3>Alternativos</h3><div class="q">Solo con las cuatro anteriores sólidas.</div></div><p class="mx"><b>Capital privado (CKDs y CERPIs), deuda privada y participaciones directas.</b> Nunca con dinero que la familia pueda necesitar en los próximos años.</p></div>
   </div>
-</section>
+  <p class="regla">Estructura antes que rendimiento.</p>
+</div></section>
 
-<!-- NORTHPOINT -->
-<section class="solution">
-  <div class="w">
-    <p class="eyebrow" data-reveal>CÓMO TE APOYAMOS</p>
-    <blockquote class="sol-quote" data-reveal>Nos sentamos del mismo lado de la mesa que tu familia. Sin comisiones por producto, sin nada que venderte — un solo trabajo: <strong>cuidar tu patrimonio como propio.</strong></blockquote>
-    <div class="sol-props" data-stagger>
-      <div class="sol-prop">
-        <p class="sp-title">Estrategia de inversión</p>
-        <p class="sp-body">un plan por capas para tu capital, diseñado contigo, con disciplina institucional y revisión mensual cara a cara.</p>
-      </div>
-      <div class="sol-prop">
-        <p class="sp-title">Consolidación y reporte</p>
-        <p class="sp-body">inversiones, inmuebles, negocio y seguros en un solo tablero, valuados y visibles en tiempo real.</p>
-      </div>
-      <div class="sol-prop">
-        <p class="sp-title">Gobierno y herencia</p>
-        <p class="sp-body">reglas escritas, poderes y sucesión documentada, para que el patrimonio cruce generaciones intacto.</p>
-      </div>
-    </div>
+<section class="gris" id="proceso"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Cómo empezamos</div><h2 class="serif" style="margin-top:12px">Cuatro pasos, sin compromiso hasta el tercero.</h2></div>
+    <p>Trabajamos con pocas familias a la vez. La primera conversación decide si tiene sentido para los dos.</p>
   </div>
-</section>
-
-<!-- LA PLATAFORMA -->
-<section class="product-strip">
-  <div class="w">
-    <p class="eyebrow" data-reveal>LA PLATAFORMA</p>
-    <h2 class="sh2" data-reveal>Todo en <em>una sola app.</em></h2>
-    <div class="tilt-stage">
-      <div class="tilt-obj" id="tiltObj">
-        <div class="glab">
-          <div class="mac">
-            <div class="mac-screen"><img src="assets/images/marca/plataforma/resumen.png"
-              alt="LA OFICINA — vista Resumen: patrimonio neto, evolución y EL SISTEMA" loading="lazy"></div>
-            <div class="mac-deck"></div>
-          </div>
-          <div class="gwin gwin-1"><div class="gwin-bar"><i></i><i></i><i></i></div>
-            <img src="assets/images/marca/plataforma/portafolio.png" alt="Portafolio — las cinco capas como vasos que se llenan hacia su meta" loading="lazy"></div>
-          <div class="gwin gwin-2"><div class="gwin-bar"><i></i><i></i><i></i></div>
-            <img src="assets/images/marca/plataforma/plan.png" alt="Plan mensual — la aportación fluye hacia las capas que van más lejos de su meta" loading="lazy"></div>
-        </div>
-      </div>
-    </div>
-    <div class="pstrip-g" data-stagger>
-      <div class="pscreen">
-        <div class="phone"><img src="assets/images/marca/plataforma/resumen-m.png" alt="LA OFICINA en el teléfono — Resumen con patrimonio neto y evolución" loading="lazy"></div>
-        <p class="pscreen-label">Patrimonio neto en tiempo real</p>
-        <p class="pscreen-sub">El corte del día, la evolución y cada capa en una sola pantalla.</p>
-      </div>
-      <div class="pscreen">
-        <div class="phone"><img src="assets/images/marca/plataforma/portafolio-m.png" alt="LA OFICINA en el teléfono — Portafolio con las cinco capas" loading="lazy"></div>
-        <p class="pscreen-label">El portafolio, capa por capa</p>
-        <p class="pscreen-sub">Lo que tienes contra la estrategia que tú decidiste.</p>
-      </div>
-      <div class="pscreen">
-        <div class="phone"><img src="assets/images/marca/plataforma/libertad-m.png" alt="LA OFICINA en el teléfono — Libertad financiera con el anillo de progreso" loading="lazy"></div>
-        <p class="pscreen-label">Libertad financiera</p>
-        <p class="pscreen-sub">Qué tan lejos estás y a qué ritmo vas — con tus números.</p>
-      </div>
-    </div>
-    <p class="pstrip-note">Capturas reales de LA OFICINA en modo demo — datos de ejemplo, no cifras de clientes.</p>
-    <div style="text-align:center;margin-top:26px">
-      <a href="oficina.html" class="btn" style="background:var(--cream);color:var(--black)">Entrar a la plataforma →</a>
-    </div>
+  <div class="pasos">
+    <div class="paso"><span class="k">PASO 01 · SIN COSTO</span><h3>Sesión de Claridad</h3><p>Una conversación con los socios: qué construyó, dónde vive su patrimonio y qué le preocupa. Sale con un diagnóstico aunque no trabajemos juntos.</p></div>
+    <div class="paso"><span class="k">PASO 02</span><h3>Mapa patrimonial</h3><p>Inventariamos y valuamos todo con usted y su contador. Por primera vez, la foto completa en una sola pantalla.</p></div>
+    <div class="paso"><span class="k">PASO 03</span><h3>Propuesta y honorario</h3><p>Le presentamos el plan por capas y un honorario fijo, por escrito, antes de empezar. Usted decide.</p></div>
+    <div class="paso"><span class="k">PASO 04 · CADA MES</span><h3>Revisión en persona</h3><p>Corte mensual del patrimonio, revisión contra el plan y una reunión cara a cara con los socios.</p></div>
   </div>
-</section>
+</div></section>
 
-<!-- MÉTODO · 5 CAPAS -->
-<section class="layers" id="metodo">
-  <div class="w">
-    <p class="eyebrow" data-reveal>NUESTRO MÉTODO · 5 CAPAS DE INVERSIÓN</p>
-    <h2 class="sh2" data-reveal>cinco capas, <em>un orden estricto.</em></h2>
-    <p class="sbody" data-reveal>No recomendamos el siguiente instrumento hasta que el anterior esté sólido. Así de simple. Así de terco.</p>
-    <div class="layers-g" data-stagger>
-      <article class="lcard" role="button" tabindex="0" aria-expanded="false">
-        <span class="lmore">+</span><span class="lnum">01</span>
-        <h3 class="lname">Liquidez</h3>
-        <p class="ldesc">Efectivo y equivalentes. El punto de partida.</p>
-        <p class="lextra">Meses de vida operativa cubiertos antes de hablar de cualquier otra cosa. Sin esta capa, todo lo demás se vende en el peor momento.</p>
-      </article>
-      <article class="lcard" role="button" tabindex="0" aria-expanded="false">
-        <span class="lmore">+</span><span class="lnum">02</span>
-        <h3 class="lname">Retiro</h3>
-        <p class="ldesc">Cuentas de retiro optimizadas fiscalmente.</p>
-        <p class="lextra">El dinero que tiene fecha de uso a décadas. Se blinda primero fiscalmente y después se piensa en rendimiento.</p>
-      </article>
-      <article class="lcard" role="button" tabindex="0" aria-expanded="false">
-        <span class="lmore">+</span><span class="lnum">03</span>
-        <h3 class="lname">Ingresos Pasivos</h3>
-        <p class="ldesc">Activos que generan flujo sin que trabajes.</p>
-        <p class="lextra">Rentas, regalías, flujo de negocio. La capa que compra libertad: cubre tu vida sin tocar el capital.</p>
-      </article>
-      <article class="lcard" role="button" tabindex="0" aria-expanded="false">
-        <span class="lmore">+</span><span class="lnum">04</span>
-        <h3 class="lname">Acciones</h3>
-        <p class="ldesc">Renta variable global. El motor de crecimiento.</p>
-        <p class="lextra">Diversificada, aburrida y de largo plazo. El crecimiento se construye encima de las capas 1–3, nunca en lugar de ellas.</p>
-      </article>
-      <article class="lcard lcard-dark" role="button" tabindex="0" aria-expanded="false">
-        <span class="lmore">+</span><span class="lnum">05</span>
-        <h3 class="lname">Alternativos</h3>
-        <p class="ldesc">Privados y activos reales. Para quien ya tiene 1–4.</p>
-        <p class="lextra">Capital privado, deuda privada, activos reales. Solo con las cuatro capas anteriores sólidas — y nunca con dinero que no puedas inmovilizar años.</p>
-      </article>
-    </div>
+<section class="claro"><div class="wrap">
+  <div class="eyebrow">Transparencia</div>
+  <h2 class="serif" style="margin-top:12px">Lo que sí hacemos y lo que no.</h2>
+  <div class="sino">
+    <div class="si"><h3>Sí</h3><ul>
+      <li>Ordenamos, valuamos y documentamos el patrimonio completo de la familia.</li>
+      <li>Diseñamos la estructura y el plan por capas, y lo revisamos cada mes.</li>
+      <li>Coordinamos a su contador, notario, abogado, asegurador y bancos.</li>
+      <li>Cobramos un honorario fijo, acordado por escrito antes de empezar.</li>
+    </ul></div>
+    <div class="no"><h3>No</h3><ul>
+      <li>No recibimos ni custodiamos su dinero: sus cuentas siguen a su nombre, en sus instituciones.</li>
+      <li>No cobramos comisiones por productos ni tenemos nada que venderle.</li>
+      <li>No estamos registrados ante la CNBV ni la SEC, así que no administramos capital de terceros. Lo diremos aquí, con fecha, el día que eso cambie.</li>
+      <li>No prometemos rendimientos. Invertir implica riesgo, incluida la pérdida del capital.</li>
+    </ul></div>
   </div>
-</section>
+</div></section>
 
-<!-- SIGBAR -->
-<div class="sigbar" aria-hidden="true">
-  <span class="sig-rule"></span>
-  <svg class="sig-star" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
-  <span class="sig-rule"></span>
-  <span class="sig-strap">ESTRUCTURA ANTES QUE RENDIMIENTO.</span>
-</div>
-
-<!-- EQUIPO -->
-<section class="equipo" id="equipo">
-  <div class="w">
-    <p class="eyebrow" data-reveal>NORTHPOINT</p>
-    <h2 class="sh2" data-reveal>el <em>equipo.</em></h2>
-    <div class="eq-g" data-stagger>
-      <div class="eq-card">
-        <img src="assets/images/marca/fotos/fundador.jpg" alt="André Macouzet" class="eq-img" loading="lazy">
-        <div>
-          <span class="eq-role">Cofundador · Mercados, datos y tecnología</span>
-          <p class="eq-name">André Macouzet</p>
-        </div>
-      </div>
-      <div class="eq-card">
-        <img src="assets/images/marca/fotos/goyo.jpg" alt="Gregorio Sánchez" class="eq-img" loading="lazy">
-        <div>
-          <span class="eq-role">Cofundador · Inversiones y protección patrimonial</span>
-          <p class="eq-name">Gregorio Sánchez</p>
-        </div>
-      </div>
-    </div>
-    <p style="margin-top:28px" data-reveal><a href="socios.html" class="eq-link">Ver a los socios →</a></p>
+<section id="oficina"><div class="wrap plat">
+  <div>
+    <div class="eyebrow">La oficina</div>
+    <h2 class="serif" style="margin-top:12px">Su patrimonio, en una sola pantalla.</h2>
+    <p class="lead" style="margin-top:18px">Cada familia tiene su tablero privado, donde ve lo mismo que vemos nosotros.</p>
+    <ul>
+      <li><b>Patrimonio neto</b> · el corte del mes, activos menos deudas, en pesos y dólares</li>
+      <li><b>Portafolio por capas</b> · lo que tiene contra el plan que decidió</li>
+      <li><b>Libertad financiera</b> · qué tan lejos está y a qué ritmo va</li>
+    </ul>
+    <a class="btn line" href="oficina.html?demo=1">Ver la demostración</a>
   </div>
-</section>
+  <figure><img src="assets/images/marca/plataforma/resumen.png" alt="Pantalla Resumen de La oficina en modo demostración" loading="lazy"><figcaption>Captura real de La oficina en modo demostración. Las cifras son datos de ejemplo, no de clientes.</figcaption></figure>
+</div></section>
 
-<!-- EDITORIAL / NEWSLETTER -->
-<section class="editorial" id="newsletter">
-  <div class="w ed-g">
-    <div class="ed-txt" data-stagger>
-      <p class="eyebrow">NEWSLETTER</p>
-      <h2 class="sh2">Finance <em>Newsletter.</em></h2>
-      <p class="sbody" style="margin-bottom:0">Un correo a la semana con lo importante de la economía y de tu dinero, explicado en palabras simples. Cero ruido. Cero ventas.</p>
-      <form class="nl-form" id="nlForm">
-        <input type="email" name="email" class="nl-in" placeholder="tu correo" required aria-label="Correo electrónico">
-        <button type="submit" class="btn btn-k">Suscribirme</button>
-      </form>
-      <p class="nl-ok" id="nlOk" hidden>Listo — se abrió tu correo para confirmar la suscripción.</p>
-    </div>
-    <div class="ed-pic" data-reveal>
-      <!-- (André, 31-ago-2026) Aquí había una foto de una persona frente a dos
-           monitores. Se fue por una razón simple: era él, y el newsletter no va
-           de quién lo escribe. Ahora es una toma cenital sin nadie dentro —
-           periódico doblado, café, pluma y lentes sobre nogal— generada en
-           Gemini y bajada a marca/generadas/. El master 2048 vive al lado por si
-           hace falta otro recorte. Antes de esto se probó un dibujo en SVG y
-           André lo rechazó: la quería foto de verdad. -->
-      <img src="assets/images/marca/generadas/newsletter.jpg" alt="Un periódico doblado, un café y unos lentes sobre el escritorio, a la luz de la mañana" class="ed-img" loading="lazy" width="1200" height="1200">
-    </div>
+<section class="gris" id="socios"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Quién lo atiende</div><h2 class="serif" style="margin-top:12px">Los socios, en persona.</h2></div>
+    <p>Su familia trata directamente con los socios de NORTHPOINT, no con un ejecutivo que cambia cada año.</p>
   </div>
-</section>
-
-<!-- FAQ -->
-<section class="faq" id="faq">
-  <div class="w">
-    <p class="eyebrow" data-reveal>PREGUNTAS FRECUENTES</p>
-    <h2 class="sh2" data-reveal>lo que <em>siempre</em> nos preguntan.</h2>
-    <div class="faq-list" role="list" data-stagger>
-      <div class="faq-item" role="listitem">
-        <button class="faq-q" aria-expanded="false"><span>¿Qué es exactamente un family office?</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="chevron" aria-hidden="true"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="faq-aw"><div class="faq-awi"><p class="faq-a">La oficina privada que administra todos los asuntos financieros de una familia — inversiones, inmuebles, negocio, impuestos y herencia — con un solo equipo y una sola estrategia, en lugar de cinco asesores que no se hablan entre sí.</p></div></div>
-      </div>
-      <div class="faq-item" role="listitem">
-        <button class="faq-q" aria-expanded="false"><span>¿Quién custodia mi dinero?</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="chevron" aria-hidden="true"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="faq-aw"><div class="faq-awi"><p class="faq-a">Tú. NORTHPOINT no toca el capital: tus cuentas permanecen a tu nombre, en tus propias instituciones.</p></div></div>
-      </div>
-      <div class="faq-item" role="listitem">
-        <button class="faq-q" aria-expanded="false"><span>¿NORTHPOINT está regulado?</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="chevron" aria-hidden="true"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="faq-aw"><div class="faq-awi"><p class="faq-a">Todavía no, y no vamos a fingir que sí. El registro (CNBV / SEC) está en nuestra ruta; mientras no exista, ofrecemos estructura y consultoría — no administración de dinero ajeno.</p></div></div>
-      </div>
-      <div class="faq-item" role="listitem">
-        <button class="faq-q" aria-expanded="false"><span>¿Cuál es el ticket mínimo?</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="chevron" aria-hidden="true"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="faq-aw"><div class="faq-awi"><p class="faq-a">No hay mínimo de patrimonio. Trabajamos con pocas familias a la vez y la Sesión de Claridad decide si tiene sentido.</p></div></div>
-      </div>
-      <div class="faq-item" role="listitem">
-        <button class="faq-q" aria-expanded="false"><span>¿Cómo cobran?</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="chevron" aria-hidden="true"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="faq-aw"><div class="faq-awi"><p class="faq-a">Un honorario fijo y transparente, acordado antes de empezar. Sin comisiones por producto ni costos ocultos.</p></div></div>
-      </div>
-      <div class="faq-item" role="listitem">
-        <button class="faq-q" aria-expanded="false"><span>Tengo capital en México y en EE.UU. ¿Aplica?</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="chevron" aria-hidden="true"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="faq-aw"><div class="faq-awi"><p class="faq-a">Sí — es el caso exacto para el que está diseñada la estructura: patrimonio en dos países que nunca se ha visto en un solo mapa.</p></div></div>
-      </div>
-      <div class="faq-item" role="listitem">
-        <button class="faq-q" aria-expanded="false"><span>¿Qué pasa con mis impuestos?</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="chevron" aria-hidden="true"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="faq-aw"><div class="faq-awi"><p class="faq-a">La estructura se diseña con tu contador en la mesa. Cada capa queda documentada para que declarar deje de ser una arqueología anual.</p></div></div>
-      </div>
-      <div class="faq-item" role="listitem">
-        <button class="faq-q" aria-expanded="false"><span>¿Cómo empiezo?</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="chevron" aria-hidden="true"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="faq-aw"><div class="faq-awi"><p class="faq-a">Con la Sesión de Claridad: una conversación sin costo. Sales con el diagnóstico aunque no trabajemos juntos.</p></div></div>
-      </div>
-    </div>
+  <div class="socios">
+    <div class="socio"><img src="img/goyo.jpg" alt="Gregorio Sánchez Calderón" loading="lazy"><div><b>Gregorio Sánchez Calderón</b><span>Cofundador · Inversiones y protección patrimonial</span></div></div>
+    <div class="socio"><img src="img/andre.jpg" alt="André Macouzet Ruiz" loading="lazy"><div><b>André Macouzet Ruiz</b><span>Cofundador · Mercados, datos y tecnología</span></div></div>
   </div>
-</section>
+  <p style="margin-top:32px"><a class="link" href="equipo.html">Conocer al equipo →</a></p>
+</div></section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="w">
-    <div class="footer-cols">
-      <div class="fcol">
-        <p class="fcol-label">Para ti</p>
-        <a href="family-office.html" class="flink">Familias</a>
-        <a href="index.html" class="flink">Traders · la mesa</a>
-      </div>
-      <div class="fcol">
-        <p class="fcol-label">Compañía</p>
-        <a href="index.html" class="flink">NORTHPOINT</a>
-        <a href="#newsletter" class="flink">Newsletter</a>
-        <a href="mailto:andremacouzetruiz@gmail.com?subject=NORTHPOINT%20Family%20Office" class="flink">Contacto</a>
-      </div>
-      <div class="fcol">
-        <p class="fcol-label">Recursos</p>
-        <a href="#metodo" class="flink">Método</a>
-        <a href="#equipo" class="flink">Equipo</a>
-        <a href="#faq" class="flink">FAQ</a>
-        <a href="oficina.html" class="flink">Plataforma</a>
-      </div>
-      <div class="fcol">
-        <p class="fcol-label">Legal</p>
-        <a href="legal/terminos.html" class="flink">Términos y Condiciones</a>
-        <a href="legal/privacidad.html" class="flink">Aviso de Privacidad</a>
-        <a href="legal/riesgo.html" class="flink">Aviso de Riesgo</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="fsig" aria-hidden="true">
-        <span class="frule"></span>
-        <svg class="fstar" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M32 1 37.2 26.8 63 32 37.2 37.2 32 63 26.8 37.2 1 32 26.8 26.8Z"/></svg>
-        <span class="frule"></span>
-      </div>
-      <p class="fstrap">ESTRUCTURA ANTES QUE RENDIMIENTO.</p>
-      <p class="ffirm">NORTHPOINT · Family Office & estructura patrimonial · Morelia, México. Sin registro ante la CNBV ni la SEC — hoy no administramos capital de terceros.</p>
-      <p class="flegal-row"><a class="flegal-a" href="legal/terminos.html">Términos y Condiciones</a><span aria-hidden="true">·</span><a class="flegal-a" href="legal/privacidad.html">Aviso de Privacidad</a></p>
-      <p class="fdisc">Sitio educativo e informativo. No constituye recomendación de inversión ni oferta de valores. Invertir implica riesgo, incluyendo la pérdida del capital. Todo registro, custodio o cifra se publicará con fecha el día que exista — nunca antes.</p>
-    </div>
+<section id="faq"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Preguntas frecuentes</div><h2 class="serif" style="margin-top:12px">Lo que siempre nos preguntan.</h2></div>
+    <p>Si su pregunta no está aquí, hágala en la Sesión de Claridad.</p>
   </div>
-</footer>
+  <div class="faq">
+    <details><summary>¿Qué es exactamente un family office?</summary><p>La oficina privada que ve y ordena todos los asuntos financieros de una familia: inversiones, empresa, inmuebles, impuestos y sucesión. En lugar de cinco asesores que no se hablan entre sí, un solo equipo con la foto completa que coordina a todos.</p></details>
+    <details><summary>¿Quién custodia mi dinero?</summary><p>Usted. NORTHPOINT nunca recibe ni toca el capital: sus cuentas siguen a su nombre, en los bancos y casas de bolsa que usted elija.</p></details>
+    <details><summary>¿NORTHPOINT está regulado?</summary><p>Todavía no, y no vamos a fingir que sí. Hoy ofrecemos estructura y consultoría patrimonial, no administración de dinero de terceros ni recomendaciones de inversión personalizadas, que en México requieren registro ante la CNBV. Cuando hace falta, trabajamos junto con los asesores e instituciones reguladas de la familia.</p></details>
+    <details><summary>¿Cuál es el patrimonio mínimo?</summary><p>No hay un mínimo. Trabajamos con pocas familias a la vez y la Sesión de Claridad decide si tiene sentido para ambos.</p></details>
+    <details><summary>¿Cómo cobran?</summary><p>Un honorario fijo, acordado por escrito antes de empezar. Sin comisiones por producto ni costos ocultos.</p></details>
+    <details><summary>Tengo patrimonio en México y en Estados Unidos. ¿Aplica?</summary><p>Sí, es uno de los casos más comunes. Además de ordenarlo en un solo mapa, se revisa algo que muchas familias desconocen: un mexicano con acciones o inmuebles en EE.UU. puede quedar sujeto al impuesto sucesorio estadounidense. Lo vemos con un especialista antes de que sea un problema.</p></details>
+    <details><summary>¿Qué pasa con mi contador y mi notario actuales?</summary><p>Se quedan. No los sustituimos: los coordinamos. Su contador sigue declarando y su notario sigue firmando; nosotros nos aseguramos de que todos trabajen con la misma información y el mismo plan.</p></details>
+    <details><summary>¿Cómo empiezo?</summary><p>Con la Sesión de Claridad: una conversación sin costo con los socios. Llene el formulario de abajo y le escribimos para agendarla.</p></details>
+  </div>
+</div></section>
 
-<script src="js/family-office.js"></script>
+<section class="cta" id="sesion"><div class="wrap cta-g">
+  <div>
+    <div class="eyebrow">Sesión de Claridad</div>
+    <h2 class="serif" style="margin-top:12px">Empecemos por una conversación.</h2>
+    <p class="lead">Sin costo y sin compromiso. Cuéntenos brevemente su situación y le escribimos para agendar con los socios, en persona o por videollamada.</p>
+    <p class="fine" style="margin-top:24px">Lo que nos comparta es confidencial y se trata conforme a nuestro <a href="privacidad.html" style="color:#fff">aviso de privacidad</a>.</p>
+  </div>
+  <form id="sesionForm">
+    <label>Nombre<input name="nombre" required autocomplete="name"></label>
+    <label>Ciudad<input name="ciudad" required autocomplete="address-level2"></label>
+    <label>¿Dónde vive hoy su patrimonio?<select name="donde"><option>Solo en México</option><option>En México y en EE.UU.</option><option>En México y otros países</option></select></label>
+    <label>¿Qué es lo que más le preocupa?<textarea name="mensaje" placeholder="Por ejemplo: ordenar la empresa familiar, la sucesión, tener todo en un solo lugar…"></textarea></label>
+    <button class="btn" type="submit">Solicitar mi Sesión de Claridad</button>
+    <div class="ok" id="sesionOk">Listo. Se abrió su correo con la solicitud; envíelo y le respondemos para agendar.</div>
+  </form>
+</div></section>
+
+<footer><div class="wrap">
+  <span class="mark">NORTHPOINT<small>Family Office</small></span>
+  <p><b>NORTHPOINT · Family Office y estructura patrimonial · Morelia, México.</b> NORTHPOINT no está registrado ante la CNBV ni la SEC, no administra ni custodia capital de terceros y no es una institución financiera. Este sitio es informativo y no constituye una recomendación de inversión ni una oferta de valores. Invertir implica riesgo, incluida la pérdida del capital.</p>
+  <p class="legal-l"><a href="index.html">← Volver a NORTHPOINT</a> · <a href="oficina.html">La oficina</a> · <a href="memos.html">Memos</a> · <a href="legal/terminos.html">Términos</a> · <a href="privacidad.html">Aviso de privacidad</a> · <a href="legal/riesgo.html">Aviso de riesgo</a></p>
+</div></footer>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="anim.js?v=1790996209"></script>
+<script src="menu.js?v=1790996209"></script>
+<script>
+if(window.gsap && window.ScrollTrigger && !matchMedia("(prefers-reduced-motion: reduce)").matches){
+  gsap.from(".fo-hero .wrap > *", { y: 40, opacity: 0, stagger: .12, duration: 1, ease: "power3.out" });
+  gsap.utils.toArray(".quien > div, .sv, .capa, .paso, .sino li, .socio").forEach(el => gsap.from(el, { y: 30, opacity: 0, duration: .8, ease: "power3.out", scrollTrigger: { trigger: el, start: "top 90%", once: true } }));
+}
+// la solicitud se manda por correo (el mismo buzón que usaba la página anterior)
+document.getElementById("sesionForm").addEventListener("submit", e => {
+  e.preventDefault(); const d = Object.fromEntries(new FormData(e.target));
+  const body = `Nombre: ${d.nombre}\nCiudad: ${d.ciudad}\nPatrimonio: ${d.donde}\n\nLo que más me preocupa:\n${d.mensaje || "—"}\n`;
+  location.href = "mailto:andremacouzetruiz@gmail.com?subject=" + encodeURIComponent("NORTHPOINT Family Office · Sesión de Claridad") + "&body=" + encodeURIComponent(body);
+  document.getElementById("sesionOk").style.display = "block";
+});
+</script>
 </body>
 </html>
