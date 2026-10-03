@@ -324,6 +324,30 @@
  ],
  "noticias": [
   {
+   "titulo": "Tesla’s Cybercab had a rocky first month in Austin. Now comes the hard part: expanding",
+   "url": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 03 Oct 2026 20:29:07 GMT"
+  },
+  {
+   "titulo": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
+   "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 03 Oct 2026 20:00:00 GMT"
+  },
+  {
+   "titulo": "‘I don’t want to die on the sales floor’: I’m 67 and earn $19.50 an hour at a big-box store. When can I finally retire?",
+   "url": "https://www.marketwatch.com/story/i-dont-want-to-die-on-the-sales-floor-im-67-and-earn-19-50-an-hour-at-a-big-box-store-when-can-i-finally-retire-369abcf9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 03 Oct 2026 19:30:00 GMT"
+  },
+  {
+   "titulo": "These bond strategies can help you get a safe 5% return on your cash",
+   "url": "https://www.marketwatch.com/story/these-bond-strategies-can-help-you-get-a-safe-5-return-on-your-cash-5fa45ccd?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 03 Oct 2026 18:49:00 GMT"
+  },
+  {
    "titulo": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
    "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -348,12 +372,6 @@
    "fecha": "Sat, 03 Oct 2026 16:42:00 GMT"
   },
   {
-   "titulo": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
-   "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 03 Oct 2026 16:30:00 GMT"
-  },
-  {
    "titulo": "‘I have $400,000 in equity’: I’m 80. Should I sell my house because of dangerous stairs — or spend thousands renovating?",
    "url": "https://www.marketwatch.com/story/i-have-a-low-interest-rate-im-80-years-old-should-i-move-out-of-my-house-because-of-dangerous-stairs-389c3c7b?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -376,18 +394,6 @@
    "url": "https://www.marketwatch.com/story/the-treasury-department-started-trump-accounts-for-60-million-kids-but-families-still-have-to-take-this-step-if-they-want-one-003d9282?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 03 Oct 2026 15:06:00 GMT"
-  },
-  {
-   "titulo": "‘I’d rather be on a beach in Bali’: My husband resents my $8 million net worth. Should I pay for his retirement?",
-   "url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 03 Oct 2026 15:00:00 GMT"
-  },
-  {
-   "titulo": "‘I don’t want to die on the sales floor’: I’m 67 and earn $19.50 an hour at a big-box store. When can I finally retire?",
-   "url": "https://www.marketwatch.com/story/i-dont-want-to-die-on-the-sales-floor-im-67-and-earn-19-50-an-hour-at-a-big-box-store-when-can-i-finally-retire-369abcf9?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 03 Oct 2026 15:00:00 GMT"
   },
   {
    "titulo": "Novig credits Sydney Sweeney-backed campaign for platform’s surge in growth",
@@ -430,12 +436,6 @@
    "url": "https://www.cnbc.com/2026/10/03/vehicle-repair-costs.html",
    "fuente": "CNBC",
    "fecha": "Sat, 03 Oct 2026 12:00:01 GMT"
-  },
-  {
-   "titulo": "Tesla’s Cybercab had a rocky first month in Austin. Now comes the hard part: expanding",
-   "url": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 03 Oct 2026 11:00:01 GMT"
   },
   {
    "titulo": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
@@ -567,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-03T18:34:52Z",
+ "ts": "2026-10-03T21:44:25Z",
  "fallas": [
   "videos",
   "directos"
