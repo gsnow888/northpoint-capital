@@ -324,6 +324,24 @@
  ],
  "noticias": [
   {
+   "titulo": "The government can take 15% of Social Security benefits to repay student loans. These proposals seek to stop it.",
+   "url": "https://www.marketwatch.com/story/the-government-can-take-15-of-social-security-benefits-to-repay-student-loans-these-proposals-seek-to-stop-it-102622fa?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 04 Oct 2026 00:02:00 GMT"
+  },
+  {
+   "titulo": "Falling wages, soaring energy prices and inflation: It’s beginning to look a lot like the 1970s",
+   "url": "https://www.marketwatch.com/story/falling-wages-soaring-energy-prices-and-inflation-its-beginning-to-look-a-lot-like-the-1970s-d645cbca?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 03 Oct 2026 23:58:00 GMT"
+  },
+  {
+   "titulo": "Trump taps Director of National Intelligence Jay Clayton as AI czar: WSJ reports",
+   "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 03 Oct 2026 23:37:23 GMT"
+  },
+  {
    "titulo": "Tesla’s Cybercab had a rocky first month in Austin. Now comes the hard part: expanding",
    "url": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
    "fuente": "CNBC",
@@ -384,18 +402,6 @@
    "fecha": "Sat, 03 Oct 2026 15:42:00 GMT"
   },
   {
-   "titulo": "‘I’m never selling’: I’m 47 and buy bitcoin with every dollar I earn. Am I crazy?",
-   "url": "https://www.marketwatch.com/story/im-never-selling-im-47-and-buy-bitcoin-with-every-dollar-i-earn-am-i-crazy-364d2a64?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 03 Oct 2026 15:30:00 GMT"
-  },
-  {
-   "titulo": "The Treasury Department started Trump accounts for 60 million kids — but families still have to take this step if they want one",
-   "url": "https://www.marketwatch.com/story/the-treasury-department-started-trump-accounts-for-60-million-kids-but-families-still-have-to-take-this-step-if-they-want-one-003d9282?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 03 Oct 2026 15:06:00 GMT"
-  },
-  {
    "titulo": "Novig credits Sydney Sweeney-backed campaign for platform’s surge in growth",
    "url": "https://www.cnbc.com/2026/10/03/novig-credits-sydney-sweeney-backed-campaign-for-platforms-surge-in-growth.html",
    "fuente": "CNBC",
@@ -442,12 +448,6 @@
    "url": "https://www.cnbc.com/2026/10/03/david-ellison-ynon-kreiz-skydance.html",
    "fuente": "CNBC",
    "fecha": "Sat, 03 Oct 2026 11:00:01 GMT"
-  },
-  {
-   "titulo": "Top McKinsey executive reveals Asian owner-CEOs' secrets to success",
-   "url": "https://www.cnbc.com/2026/10/03/mckinsey-asian-leaders-success-ambani-mahindra.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 03 Oct 2026 06:00:01 GMT"
   },
   {
    "titulo": "Ford fends off Hyundai to retain No. 3 U.S. sales position in third quarter",
@@ -567,7 +567,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-03T21:44:25Z",
+ "ts": "2026-10-04T00:23:44Z",
  "fallas": [
   "videos",
   "directos"
