@@ -45,51 +45,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 31061.75,
-   "cambio": 448.5,
-   "pct": 1.47
+   "precio": 31155.0,
+   "cambio": 541.75,
+   "pct": 1.77
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7777.25,
-   "cambio": 45.25,
-   "pct": 0.59
+   "precio": 7787.5,
+   "cambio": 55.5,
+   "pct": 0.72
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4162.3,
-   "cambio": -17.4,
-   "pct": -0.42
+   "precio": 4172.6,
+   "cambio": -7.1,
+   "pct": -0.17
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 91.11,
-   "cambio": 1.73,
-   "pct": 1.94
+   "precio": 91.07,
+   "cambio": 1.69,
+   "pct": 1.89
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2850.9,
-   "cambio": 21.7,
-   "pct": 0.77
+   "precio": 2857.3,
+   "cambio": 28.1,
+   "pct": 0.99
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51477.0,
-   "cambio": -225.0,
-   "pct": -0.44
+   "precio": 51528.0,
+   "cambio": -174.0,
+   "pct": -0.34
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84785.0,
-   "cambio": 845.0,
-   "pct": 1.01
+   "precio": 86815.0,
+   "cambio": 2875.0,
+   "pct": 3.43
   }
  ],
  "acciones": [
@@ -264,6 +264,30 @@
  ],
  "noticias": [
   {
+   "titulo": "Supreme Court Justice Alito said he's 'thought about' retirement as Senate control hangs in balance",
+   "url": "https://www.cnbc.com/2026/10/04/supreme-court-justice-alito-thought-about-retiring.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 04 Oct 2026 22:08:34 GMT"
+  },
+  {
+   "titulo": "All U.S. bombers leave UK air base on concerns of suspected terror plots; more tankers struck near Iran in the Middle East",
+   "url": "https://www.cnbc.com/2026/10/04/more-tankers-struck-in-gulf-waters-as-iran-reiterates-conditions.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 04 Oct 2026 21:46:15 GMT"
+  },
+  {
+   "titulo": "‘I’d rather be on a beach in Bali’: My husband resents my $8 million net worth. Should I pay for his retirement?",
+   "url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 04 Oct 2026 20:31:00 GMT"
+  },
+  {
+   "titulo": "Trump reiterates pledge to send $5,000 checks, and hands out smaller payments, as midterm elections loom",
+   "url": "https://www.cnbc.com/2026/10/04/trump-5000-checks-cash-payments-midterms.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 04 Oct 2026 20:28:47 GMT"
+  },
+  {
    "titulo": "I’m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
    "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -282,18 +306,6 @@
    "fecha": "Sun, 04 Oct 2026 19:08:00 GMT"
   },
   {
-   "titulo": "Trump reiterates pledge to send $5,000 checks, and hands out smaller payments, as midterm elections loom",
-   "url": "https://www.cnbc.com/2026/10/04/trump-5000-checks-cash-payments-midterms.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 04 Oct 2026 19:06:46 GMT"
-  },
-  {
-   "titulo": "Supreme Court Justice Alito said he's 'thought about' retirement as Senate control hangs in balance",
-   "url": "https://www.cnbc.com/2026/10/04/supreme-court-justice-alito-thought-about-retiring.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 04 Oct 2026 17:53:11 GMT"
-  },
-  {
    "titulo": "Corporate America has never been this upbeat about future profits",
    "url": "https://www.marketwatch.com/story/corporate-america-has-never-been-this-upbeat-about-future-profits-fbaf8cd9?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -304,12 +316,6 @@
    "url": "https://www.cnbc.com/2026/10/04/watch-collecting-beginners.html",
    "fuente": "CNBC",
    "fecha": "Sun, 04 Oct 2026 13:44:31 GMT"
-  },
-  {
-   "titulo": "Top Wall Street analysts are upbeat about the prospects for these 3 stocks",
-   "url": "https://www.cnbc.com/2026/10/04/top-analysts-are-upbeat-about-the-prospects-for-these-3-stocks.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 04 Oct 2026 13:24:16 GMT"
   },
   {
    "titulo": "A 'weird' IPO pull, a tainted reputation and the stalled breakout moment for AI wearables",
@@ -334,12 +340,6 @@
    "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
    "fuente": "CNBC",
    "fecha": "Sun, 04 Oct 2026 12:53:12 GMT"
-  },
-  {
-   "titulo": "Chick-fil-A wants to stay a family business even as it expands in the U.S. and abroad",
-   "url": "https://www.cnbc.com/2026/10/04/chick-fil-a-ceo-andrew-cathy-family-ownership-growth.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 04 Oct 2026 12:08:54 GMT"
   },
   {
    "titulo": "Why brands like E.l.f., Wendy's and Gap are branching out into original music",
@@ -378,16 +378,16 @@
    "fecha": "Sat, 03 Oct 2026 18:49:00 GMT"
   },
   {
-   "titulo": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
-   "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 03 Oct 2026 18:30:00 GMT"
-  },
-  {
    "titulo": "High mortgage rates are trapping homeowners in place, and making renovations harder to afford",
    "url": "https://www.cnbc.com/2026/10/03/mortgage-rates-home-equity-heloc-remodeling.html",
    "fuente": "CNBC",
    "fecha": "Sat, 03 Oct 2026 17:57:40 GMT"
+  },
+  {
+   "titulo": "Novig credits Sydney Sweeney-backed campaign for platform’s surge in growth",
+   "url": "https://www.cnbc.com/2026/10/03/novig-credits-sydney-sweeney-backed-campaign-for-platforms-surge-in-growth.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 03 Oct 2026 13:30:48 GMT"
   },
   {
    "titulo": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",
@@ -507,7 +507,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-04T20:13:52Z",
+ "ts": "2026-10-04T23:17:34Z",
  "fallas": [
   "videos",
   "directos"
