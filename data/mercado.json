@@ -1,104 +1,44 @@
 {
  "calendario": [
   {
-   "dia": "2026-09-28",
-   "hora": "22:30",
-   "hora_ny": "00:30",
-   "iso": "2026-09-29T00:30:00-04:00",
-   "titulo": "Cash Rate",
-   "pais": "AUD",
-   "previsto": "4.60%",
-   "previo": "4.35%"
-  },
-  {
-   "dia": "2026-09-28",
-   "hora": "22:30",
-   "hora_ny": "00:30",
-   "iso": "2026-09-29T00:30:00-04:00",
-   "titulo": "RBA Rate Statement",
-   "pais": "AUD",
+   "dia": "2026-10-06",
+   "hora": "00:35",
+   "hora_ny": "02:35",
+   "iso": "2026-10-06T02:35:00-04:00",
+   "titulo": "BOJ Gov Ueda Speaks",
+   "pais": "JPY",
    "previsto": "",
    "previo": ""
   },
   {
-   "dia": "2026-09-29",
-   "hora": "19:30",
-   "hora_ny": "21:30",
-   "iso": "2026-09-29T21:30:00-04:00",
-   "titulo": "CPI m/m",
-   "pais": "AUD",
-   "previsto": "0.5%",
-   "previo": "1.0%"
-  },
-  {
-   "dia": "2026-09-29",
-   "hora": "19:30",
-   "hora_ny": "21:30",
-   "iso": "2026-09-29T21:30:00-04:00",
-   "titulo": "CPI y/y",
-   "pais": "AUD",
-   "previsto": "4.1%",
-   "previo": "3.5%"
-  },
-  {
-   "dia": "2026-09-29",
-   "hora": "19:30",
-   "hora_ny": "21:30",
-   "iso": "2026-09-29T21:30:00-04:00",
-   "titulo": "Trimmed Mean CPI m/m",
-   "pais": "AUD",
-   "previsto": "0.3%",
-   "previo": "0.5%"
-  },
-  {
-   "dia": "2026-09-30",
-   "hora": "06:30",
-   "hora_ny": "08:30",
-   "iso": "2026-09-30T08:30:00-04:00",
-   "titulo": "Core PCE Price Index m/m",
+   "dia": "2026-10-07",
+   "hora": "12:00",
+   "hora_ny": "14:00",
+   "iso": "2026-10-07T14:00:00-04:00",
+   "titulo": "FOMC Meeting Minutes",
    "pais": "USD",
-   "previsto": "0.3%",
-   "previo": "0.2%"
+   "previsto": "",
+   "previo": ""
   },
   {
-   "dia": "2026-09-30",
+   "dia": "2026-10-09",
    "hora": "06:30",
    "hora_ny": "08:30",
-   "iso": "2026-09-30T08:30:00-04:00",
-   "titulo": "Final GDP q/q",
-   "pais": "USD",
-   "previsto": "1.5%",
-   "previo": "1.5%"
+   "iso": "2026-10-09T08:30:00-04:00",
+   "titulo": "Employment Change",
+   "pais": "CAD",
+   "previsto": "9.0K",
+   "previo": "-41.7K"
   },
   {
-   "dia": "2026-10-02",
+   "dia": "2026-10-09",
    "hora": "06:30",
    "hora_ny": "08:30",
-   "iso": "2026-10-02T08:30:00-04:00",
-   "titulo": "Average Hourly Earnings m/m",
-   "pais": "USD",
-   "previsto": "0.3%",
-   "previo": "0.3%"
-  },
-  {
-   "dia": "2026-10-02",
-   "hora": "06:30",
-   "hora_ny": "08:30",
-   "iso": "2026-10-02T08:30:00-04:00",
-   "titulo": "Non-Farm Employment Change",
-   "pais": "USD",
-   "previsto": "89K",
-   "previo": "162K"
-  },
-  {
-   "dia": "2026-10-02",
-   "hora": "06:30",
-   "hora_ny": "08:30",
-   "iso": "2026-10-02T08:30:00-04:00",
+   "iso": "2026-10-09T08:30:00-04:00",
    "titulo": "Unemployment Rate",
-   "pais": "USD",
-   "previsto": "4.1%",
-   "previo": "4.1%"
+   "pais": "CAD",
+   "previsto": "6.5%",
+   "previo": "6.4%"
   }
  ],
  "precios": [
@@ -106,50 +46,50 @@
    "sym": "NQ",
    "nombre": "Nasdaq 100",
    "precio": 31061.75,
-   "cambio": 495.5,
-   "pct": 1.62
+   "cambio": 448.5,
+   "pct": 1.47
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
    "precio": 7777.25,
-   "cambio": 30.5,
-   "pct": 0.39
+   "cambio": 45.25,
+   "pct": 0.59
   },
   {
    "sym": "GC",
    "nombre": "Oro",
    "precio": 4162.3,
-   "cambio": -6.1,
-   "pct": -0.15
+   "cambio": -17.4,
+   "pct": -0.42
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
    "precio": 91.11,
-   "cambio": -1.49,
-   "pct": -1.61
+   "cambio": 1.73,
+   "pct": 1.94
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
    "precio": 2850.9,
-   "cambio": 10.8,
-   "pct": 0.38
+   "cambio": 21.7,
+   "pct": 0.77
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
    "precio": 51477.0,
-   "cambio": -360.0,
-   "pct": -0.69
+   "cambio": -225.0,
+   "pct": -0.44
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84785.0,
-   "cambio": 995.0,
-   "pct": 1.19
+   "precio": 84975.0,
+   "cambio": 1035.0,
+   "pct": 1.23
   }
  ],
  "acciones": [
@@ -324,6 +264,12 @@
  ],
  "noticias": [
   {
+   "titulo": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
+   "url": "https://www.cnbc.com/2026/10/04/russia-ukraine-war-putin-zelenskyy-donbas-lyman.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 04 Oct 2026 05:00:01 GMT"
+  },
+  {
    "titulo": "The government can take 15% of Social Security benefits to repay student loans. These proposals seek to stop it.",
    "url": "https://www.marketwatch.com/story/the-government-can-take-15-of-social-security-benefits-to-repay-student-loans-these-proposals-seek-to-stop-it-102622fa?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -432,14 +378,14 @@
    "fecha": "Sat, 03 Oct 2026 12:34:59 GMT"
   },
   {
-   "titulo": "Private capital is reshaping Hollywood moviemaking",
-   "url": "https://www.cnbc.com/2026/10/03/private-capital-hollywood-film-financing.html",
+   "titulo": "High-tech vehicles are driving up auto repair costs for shops and consumers",
+   "url": "https://www.cnbc.com/2026/10/03/vehicle-repair-costs.html",
    "fuente": "CNBC",
    "fecha": "Sat, 03 Oct 2026 12:00:01 GMT"
   },
   {
-   "titulo": "High-tech vehicles are driving up auto repair costs for shops and consumers",
-   "url": "https://www.cnbc.com/2026/10/03/vehicle-repair-costs.html",
+   "titulo": "Private capital is reshaping Hollywood moviemaking",
+   "url": "https://www.cnbc.com/2026/10/03/private-capital-hollywood-film-financing.html",
    "fuente": "CNBC",
    "fecha": "Sat, 03 Oct 2026 12:00:01 GMT"
   },
@@ -448,12 +394,6 @@
    "url": "https://www.cnbc.com/2026/10/03/david-ellison-ynon-kreiz-skydance.html",
    "fuente": "CNBC",
    "fecha": "Sat, 03 Oct 2026 11:00:01 GMT"
-  },
-  {
-   "titulo": "Ford fends off Hyundai to retain No. 3 U.S. sales position in third quarter",
-   "url": "https://www.cnbc.com/2026/10/02/ford-q3-sales.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 02 Oct 2026 17:20:33 GMT"
   }
  ],
  "videos": [
@@ -567,7 +507,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-04T00:23:44Z",
+ "ts": "2026-10-04T06:19:23Z",
  "fallas": [
   "videos",
   "directos"
