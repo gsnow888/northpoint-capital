@@ -87,9 +87,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84975.0,
-   "cambio": 1035.0,
-   "pct": 1.23
+   "precio": 84785.0,
+   "cambio": 845.0,
+   "pct": 1.01
   }
  ],
  "acciones": [
@@ -264,6 +264,48 @@
  ],
  "noticias": [
   {
+   "titulo": "More tankers struck in the Middle East as Iran reiterates conditions for reopening the Strait of Hormuz",
+   "url": "https://www.cnbc.com/2026/10/04/more-tankers-struck-in-gulf-waters-as-iran-reiterates-conditions.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 04 Oct 2026 12:27:10 GMT"
+  },
+  {
+   "titulo": "Chick-fil-A wants to stay a family business even as it expands in the U.S. and abroad",
+   "url": "https://www.cnbc.com/2026/10/04/chick-fil-a-ceo-andrew-cathy-family-ownership-growth.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 04 Oct 2026 12:08:54 GMT"
+  },
+  {
+   "titulo": "A 'weird' IPO pull, a tainted reputation and the stalled breakout moment for AI wearables",
+   "url": "https://www.cnbc.com/2026/10/04//ai-wearables-oura-ipo-privacy.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 04 Oct 2026 12:00:01 GMT"
+  },
+  {
+   "titulo": "Why brands like E.l.f., Wendy's and Gap are branching out into original music",
+   "url": "https://www.cnbc.com/2026/10/04/elf-wendys-gap-music-marketing.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 04 Oct 2026 12:00:01 GMT"
+  },
+  {
+   "titulo": "Fed minutes coming this week could give markets important clues about future rate hikes",
+   "url": "https://www.marketwatch.com/story/fed-minutes-coming-this-week-could-give-markets-important-clues-about-future-rate-hikes-31bfba5b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 04 Oct 2026 12:00:00 GMT"
+  },
+  {
+   "titulo": "Berkshire buys more Lennar shares, but pace of purchases slows",
+   "url": "https://www.cnbc.com/2026/10/03/berkshire-buys-more-lennar-shares-but-pace-of-purchases-slows.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 04 Oct 2026 09:33:19 GMT"
+  },
+  {
+   "titulo": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
+   "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 04 Oct 2026 09:25:01 GMT"
+  },
+  {
    "titulo": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
    "url": "https://www.cnbc.com/2026/10/04/russia-ukraine-war-putin-zelenskyy-donbas-lyman.html",
    "fuente": "CNBC",
@@ -280,12 +322,6 @@
    "url": "https://www.marketwatch.com/story/falling-wages-soaring-energy-prices-and-inflation-its-beginning-to-look-a-lot-like-the-1970s-d645cbca?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 03 Oct 2026 23:58:00 GMT"
-  },
-  {
-   "titulo": "Trump taps Director of National Intelligence Jay Clayton as AI czar: WSJ reports",
-   "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 03 Oct 2026 23:37:23 GMT"
   },
   {
    "titulo": "Tesla’s Cybercab had a rocky first month in Austin. Now comes the hard part: expanding",
@@ -342,50 +378,14 @@
    "fecha": "Sat, 03 Oct 2026 16:00:00 GMT"
   },
   {
-   "titulo": "The No. 1 mistake beginners make with travel cards, according to The Points Guy",
-   "url": "https://www.marketwatch.com/story/the-no-1-mistake-beginners-make-with-travel-cards-according-to-the-points-guy-3502e859?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 03 Oct 2026 15:42:00 GMT"
-  },
-  {
-   "titulo": "Novig credits Sydney Sweeney-backed campaign for platform’s surge in growth",
-   "url": "https://www.cnbc.com/2026/10/03/novig-credits-sydney-sweeney-backed-campaign-for-platforms-surge-in-growth.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 03 Oct 2026 13:30:48 GMT"
-  },
-  {
    "titulo": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",
    "url": "https://www.cnbc.com/2026/10/03/lula-or-bolsonaro-wall-street-braces-for-two-wildly-different-results-in-brazil-election.html",
    "fuente": "CNBC",
    "fecha": "Sat, 03 Oct 2026 13:12:27 GMT"
   },
   {
-   "titulo": "Berkshire buys more Lennar shares, but pace of purchases slows",
-   "url": "https://www.cnbc.com/2026/10/03/berkshire-buys-more-lennar-shares-but-pace-of-purchases-slows.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 03 Oct 2026 12:55:31 GMT"
-  },
-  {
-   "titulo": "America’s data center fight is a preview of what's to come for the rest of the world",
-   "url": "https://www.cnbc.com/2026/10/03/data-center-backlash-europe-asia-africa.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 03 Oct 2026 12:39:29 GMT"
-  },
-  {
-   "titulo": "FlyDubai plane attack by co-pilot was an attempted 'terrorist' act, UAE says",
-   "url": "https://www.cnbc.com/2026/10/03/flydubai-co-pilot-attacked-pilot-with-axe-uae-says.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 03 Oct 2026 12:34:59 GMT"
-  },
-  {
    "titulo": "High-tech vehicles are driving up auto repair costs for shops and consumers",
    "url": "https://www.cnbc.com/2026/10/03/vehicle-repair-costs.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 03 Oct 2026 12:00:01 GMT"
-  },
-  {
-   "titulo": "Private capital is reshaping Hollywood moviemaking",
-   "url": "https://www.cnbc.com/2026/10/03/private-capital-hollywood-film-financing.html",
    "fuente": "CNBC",
    "fecha": "Sat, 03 Oct 2026 12:00:01 GMT"
   },
@@ -507,7 +507,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-04T06:19:23Z",
+ "ts": "2026-10-04T12:35:13Z",
  "fallas": [
   "videos",
   "directos"
