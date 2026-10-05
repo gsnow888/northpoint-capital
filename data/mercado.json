@@ -45,51 +45,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 31155.0,
-   "cambio": 541.75,
-   "pct": 1.77
+   "precio": 31193.75,
+   "cambio": 580.5,
+   "pct": 1.9
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7787.5,
-   "cambio": 55.5,
-   "pct": 0.72
+   "precio": 7788.5,
+   "cambio": 56.5,
+   "pct": 0.73
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4172.6,
-   "cambio": -7.1,
-   "pct": -0.17
+   "precio": 4188.5,
+   "cambio": 8.8,
+   "pct": 0.21
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 91.07,
-   "cambio": 1.69,
-   "pct": 1.89
+   "precio": 90.22,
+   "cambio": 0.84,
+   "pct": 0.94
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2857.3,
-   "cambio": 28.1,
-   "pct": 0.99
+   "precio": 2856.1,
+   "cambio": 26.9,
+   "pct": 0.95
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51528.0,
-   "cambio": -174.0,
-   "pct": -0.34
+   "precio": 51504.0,
+   "cambio": -198.0,
+   "pct": -0.38
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 86815.0,
-   "cambio": 2875.0,
-   "pct": 3.43
+   "precio": 86965.0,
+   "cambio": 3025.0,
+   "pct": 3.6
   }
  ],
  "acciones": [
@@ -264,6 +264,18 @@
  ],
  "noticias": [
   {
+   "titulo": "They survived World War II and lost decades, but not 2026. Japan's century-old businesses are disappearing at a record pace",
+   "url": "https://www.cnbc.com/2026/10/05/japan-old-business-kadoya-subeshoten-.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 01:08:10 GMT"
+  },
+  {
+   "titulo": "Trump tells South Korea to sign on to Alaska LNG deal or 'I'll just charge them more'",
+   "url": "https://www.cnbc.com/2026/10/05/trump-alaska-lng-south-korea-pay.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 00:47:47 GMT"
+  },
+  {
    "titulo": "Supreme Court Justice Alito said he's 'thought about' retirement as Senate control hangs in balance",
    "url": "https://www.cnbc.com/2026/10/04/supreme-court-justice-alito-thought-about-retiring.html",
    "fuente": "CNBC",
@@ -336,12 +348,6 @@
    "fecha": "Sun, 04 Oct 2026 12:57:45 GMT"
   },
   {
-   "titulo": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
-   "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 04 Oct 2026 12:53:12 GMT"
-  },
-  {
    "titulo": "Why brands like E.l.f., Wendy's and Gap are branching out into original music",
    "url": "https://www.cnbc.com/2026/10/04/elf-wendys-gap-music-marketing.html",
    "fuente": "CNBC",
@@ -388,12 +394,6 @@
    "url": "https://www.cnbc.com/2026/10/03/novig-credits-sydney-sweeney-backed-campaign-for-platforms-surge-in-growth.html",
    "fuente": "CNBC",
    "fecha": "Sat, 03 Oct 2026 13:30:48 GMT"
-  },
-  {
-   "titulo": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",
-   "url": "https://www.cnbc.com/2026/10/03/lula-or-bolsonaro-wall-street-braces-for-two-wildly-different-results-in-brazil-election.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 03 Oct 2026 13:12:27 GMT"
   }
  ],
  "videos": [
@@ -507,7 +507,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-04T23:17:34Z",
+ "ts": "2026-10-05T02:07:16Z",
  "fallas": [
   "videos",
   "directos"
