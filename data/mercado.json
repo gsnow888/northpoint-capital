@@ -21,6 +21,16 @@
    "previo": ""
   },
   {
+   "dia": "2026-10-08",
+   "hora": "06:15",
+   "hora_ny": "08:15",
+   "iso": "2026-10-08T08:15:00-04:00",
+   "titulo": "BOE Gov Bailey Speaks",
+   "pais": "GBP",
+   "previsto": "",
+   "previo": ""
+  },
+  {
    "dia": "2026-10-09",
    "hora": "06:30",
    "hora_ny": "08:30",
@@ -45,355 +55,355 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 31026.25,
-   "cambio": 327.5,
-   "pct": 1.07
+   "precio": 31300.5,
+   "cambio": 601.75,
+   "pct": 1.96
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7770.0,
-   "cambio": 54.5,
-   "pct": 0.71
+   "precio": 7830.25,
+   "cambio": 114.75,
+   "pct": 1.49
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4196.1,
-   "cambio": 9.4,
-   "pct": 0.22
+   "precio": 4161.9,
+   "cambio": -24.8,
+   "pct": -0.59
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 90.68,
-   "cambio": 0.26,
-   "pct": 0.29
+   "precio": 89.82,
+   "cambio": -0.6,
+   "pct": -0.66
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2850.7,
-   "cambio": 33.2,
-   "pct": 1.18
+   "precio": 2868.8,
+   "cambio": 51.3,
+   "pct": 1.82
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51447.0,
-   "cambio": 169.0,
-   "pct": 0.33
+   "precio": 51596.0,
+   "cambio": 318.0,
+   "pct": 0.62
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 86500.0,
-   "cambio": 2575.0,
-   "pct": 3.07
+   "precio": 85780.0,
+   "cambio": 1855.0,
+   "pct": 2.21
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 159.13,
-   "pct": -0.56,
+   "precio": 160.21,
+   "pct": 0.88,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 707.54,
-   "pct": -0.46,
+   "precio": 712.43,
+   "pct": 1.25,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 377.99,
-   "pct": -0.47,
+   "precio": 380.82,
+   "pct": 1.33,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 85.43,
-   "pct": -1.07,
+   "precio": 85.86,
+   "pct": 0.13,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 749.58,
-   "pct": 0.68,
+   "precio": 755.53,
+   "pct": 2.58,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 769.64,
-   "pct": -0.22,
+   "precio": 775.08,
+   "pct": 1.24,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 69.94,
-   "pct": -0.98,
+   "precio": 69.8,
+   "pct": -0.69,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 32.72,
-   "pct": -1.48,
+   "precio": 32.7,
+   "pct": -0.92,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 89.5,
-   "pct": -1.64,
+   "precio": 89.24,
+   "pct": -1.49,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 82.36,
-   "pct": -0.23,
+   "precio": 83.67,
+   "pct": 2.52,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 380.14,
-   "pct": -3.37,
+   "precio": 379.17,
+   "pct": 0.33,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 47.73,
-   "pct": 0.34,
+   "precio": 48.47,
+   "pct": 2.66,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 333.69,
-   "pct": -2.16,
+   "precio": 332.73,
+   "pct": -1.68,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 517.53,
-   "pct": 0.26,
+   "precio": 525.6,
+   "pct": 3.22,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 233.95,
-   "pct": 3.95,
+   "precio": 238.63,
+   "pct": 4.27,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 343.5,
-   "pct": -0.12,
+   "precio": 346.8,
+   "pct": 1.18,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 251.52,
-   "pct": 0.74,
+   "precio": 253.41,
+   "pct": 2.95,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 728.08,
-   "pct": -3.14,
+   "precio": 742.96,
+   "pct": 3.82,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 370.59,
-   "pct": -0.41,
+   "precio": 380.46,
+   "pct": 6.44,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 502.65,
-   "pct": -0.56,
+   "precio": 505.52,
+   "pct": 0.48,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 920.65,
-   "pct": -0.23,
+   "precio": 922.86,
+   "pct": -0.01,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 332.38,
-   "pct": -3.11,
+   "precio": 333.22,
+   "pct": -1.0,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 360.66,
-   "pct": -1.83,
+   "precio": 368.84,
+   "pct": 0.3,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 371.9,
-   "pct": -1.25,
+   "precio": 374.59,
+   "pct": -0.86,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "Larry Ellison to list Palm Beach property for $165 million",
-   "url": "https://www.marketwatch.com/story/larry-ellison-to-list-palm-beach-property-for-165-million-6a9c71d2?mod=mw_rss_topstories",
+   "titulo": "Fairshake crypto PAC network backs 32 House candidates in midterms",
+   "url": "https://www.cnbc.com/2026/10/05/fairshake-crypto-super-pac-house-races.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 18:12:16 GMT"
+  },
+  {
+   "titulo": "TNT Sports head Luis Silberwasser to depart Skydance as CBS Sports chief David Berson takes over combined global sports group",
+   "url": "https://www.cnbc.com/2026/10/05/cbs-sports-head-david-berson-takes-over-skydance-global-sports-group.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 18:05:14 GMT"
+  },
+  {
+   "titulo": "These are the cheapest and most expensive U.S. flights this November",
+   "url": "https://www.cnbc.com/2026/10/05/cheapest-most-expensive-us-flights-in-november.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 17:59:51 GMT"
+  },
+  {
+   "titulo": "Saudi Aramco’s CEO may be too downbeat about the road to restocking global oil supplies",
+   "url": "https://www.marketwatch.com/story/saudi-aramcos-ceo-may-be-too-downbeat-about-the-road-to-restocking-global-oil-supplies-1fdbb70b?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Mon, 05 Oct 2026 09:05:00 GMT"
+   "fecha": "Mon, 05 Oct 2026 17:54:00 GMT"
   },
   {
-   "titulo": "Tyler Perry lists huge Beverly Hills mansion for $57 million: ‘Yep, moving to Puerto Rico’",
-   "url": "https://www.marketwatch.com/story/tyler-perry-lists-huge-beverly-hills-mansion-for-57-million-yep-moving-to-puerto-rico-a080916b?mod=mw_rss_topstories",
+   "titulo": "AI chatbots recommend shopping at Walmart over just about anywhere else, analysts find",
+   "url": "https://www.marketwatch.com/story/ai-chatbots-recommend-shopping-at-walmart-over-just-about-anywhere-else-analysts-find-9483b266?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Mon, 05 Oct 2026 08:58:00 GMT"
+   "fecha": "Mon, 05 Oct 2026 17:53:00 GMT"
   },
   {
-   "titulo": "Cut spending to curb runaway borrowing costs, Goldman's Gutman tells governments",
-   "url": "https://www.cnbc.com/2026/10/05/goldman-sachs-fiscal-deficit-bond-yields.html",
+   "titulo": "AI researcher warns 'we are racing to build and grow our own adversary' in NYC hearing",
+   "url": "https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 08:52:24 GMT"
+   "fecha": "Mon, 05 Oct 2026 17:43:34 GMT"
   },
   {
-   "titulo": "Russia ramps up attacks on Kyiv infrastructure as U.S. makes fresh push for peace talks",
-   "url": "https://www.cnbc.com/2026/10/05/ukraine-war-russia-kyiv-putin-zelenskyy-trump.html",
+   "titulo": "Satya Nadella reinvented Microsoft once. Can he do it again in the AI era?",
+   "url": "https://www.cnbc.com/2026/10/05/satya-nadella-reinvented-microsoft-once-can-he-do-it-in-the-ai-era.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 08:12:21 GMT"
+   "fecha": "Mon, 05 Oct 2026 17:40:13 GMT"
   },
   {
-   "titulo": "Euro hits 17-month low as political uncertainty in Spain and France rattles markets",
-   "url": "https://www.cnbc.com/2026/10/05/euro-dollar-spain-france-risk.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 08:04:35 GMT"
-  },
-  {
-   "titulo": "This $23 billion software deal was struck at a decade-low valuation, as AI winner takes out loser",
-   "url": "https://www.marketwatch.com/story/this-23-billion-software-deal-was-struck-at-a-decade-low-valuation-as-ai-winner-takes-out-loser-aa18f477?mod=mw_rss_topstories",
+   "titulo": "Western Digital and Seagate shares bounce back as analysts downplay the Toshiba threat",
+   "url": "https://www.marketwatch.com/story/western-digital-and-seagate-shares-bounce-back-as-analysts-downplay-the-toshiba-threat-4979dbff?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Mon, 05 Oct 2026 07:53:00 GMT"
+   "fecha": "Mon, 05 Oct 2026 17:34:00 GMT"
   },
   {
-   "titulo": "Spain's PM Sanchez calls snap election after housing crisis protests",
-   "url": "https://www.cnbc.com/2026/10/05/spain-sanchez-snap-election-housing-protests.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 07:44:56 GMT"
-  },
-  {
-   "titulo": "Russia hospitalizes almost 200 people after researcher's death from plague: Reports",
-   "url": "https://www.cnbc.com/2026/10/05/suspected-plague-cases-reported-in-russias-irkutsk-region.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 05:34:17 GMT"
-  },
-  {
-   "titulo": "The 2029 tipping point: Western populations are about to start shrinking, piling pressure on public finances",
-   "url": "https://www.cnbc.com/2026/10/05/aging-population-moodys-public-finances.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 05:00:01 GMT"
-  },
-  {
-   "titulo": "Surging Treasury yields don’t signal a U.S. 'fiscal apocalypse' — yet",
-   "url": "https://www.cnbc.com/2026/10/05/treasury-yields-fiscal-concerns-not-crisis-yet.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 02:24:07 GMT"
-  },
-  {
-   "titulo": "Trump tells South Korea to sign on to Alaska LNG deal or 'I'll just charge them more'",
-   "url": "https://www.cnbc.com/2026/10/05/trump-alaska-lng-south-korea-pay.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 00:47:47 GMT"
-  },
-  {
-   "titulo": "Supreme Court Justice Alito said he's 'thought about' retirement as Senate control hangs in balance",
-   "url": "https://www.cnbc.com/2026/10/04/supreme-court-justice-alito-thought-about-retiring.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 04 Oct 2026 22:08:34 GMT"
-  },
-  {
-   "titulo": "All U.S. bombers leave UK air base on concerns of suspected terror plots; more tankers struck near Iran in the Middle East",
-   "url": "https://www.cnbc.com/2026/10/04/more-tankers-struck-in-gulf-waters-as-iran-reiterates-conditions.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 04 Oct 2026 21:46:15 GMT"
-  },
-  {
-   "titulo": "‘I’d rather be on a beach in Bali’: My husband resents my $8 million net worth. Should I pay for his retirement?",
-   "url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories",
+   "titulo": "Microsoft’s blazing stock comeback isn’t even close to being over, analyst says",
+   "url": "https://www.marketwatch.com/story/microsofts-blazing-stock-comeback-isnt-even-close-to-being-over-analyst-says-265f7b6d?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Sun, 04 Oct 2026 20:31:00 GMT"
-  },
-  {
-   "titulo": "Trump reiterates pledge to send $5,000 checks, and hands out smaller payments, as midterm elections loom",
-   "url": "https://www.cnbc.com/2026/10/04/trump-5000-checks-cash-payments-midterms.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 04 Oct 2026 20:28:47 GMT"
-  },
-  {
-   "titulo": "I’m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
-   "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 04 Oct 2026 20:00:00 GMT"
-  },
-  {
-   "titulo": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
-   "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 04 Oct 2026 19:30:00 GMT"
+   "fecha": "Mon, 05 Oct 2026 17:02:00 GMT"
   },
   {
    "titulo": "‘I don’t want to die on the sales floor’: I’m 67 and earn $19.50 an hour at a big-box store. When can I finally retire?",
    "url": "https://www.marketwatch.com/story/i-dont-want-to-die-on-the-sales-floor-im-67-and-earn-19-50-an-hour-at-a-big-box-store-when-can-i-finally-retire-369abcf9?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Sun, 04 Oct 2026 19:08:00 GMT"
+   "fecha": "Mon, 05 Oct 2026 17:00:00 GMT"
   },
   {
-   "titulo": "Corporate America has never been this upbeat about future profits",
-   "url": "https://www.marketwatch.com/story/corporate-america-has-never-been-this-upbeat-about-future-profits-fbaf8cd9?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 04 Oct 2026 14:00:00 GMT"
-  },
-  {
-   "titulo": "October can be a scary month for stocks. Here’s what investors need to watch this year.",
-   "url": "https://www.marketwatch.com/story/october-can-be-a-scary-month-for-stocks-heres-what-investors-need-to-watch-this-year-ac1da700?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 04 Oct 2026 13:00:00 GMT"
-  },
-  {
-   "titulo": "Why brands like E.l.f., Wendy's and Gap are branching out into original music",
-   "url": "https://www.cnbc.com/2026/10/04/elf-wendys-gap-music-marketing.html",
+   "titulo": "China shuts hundreds of banks as Beijing moves to shore up its financial system",
+   "url": "https://www.cnbc.com/2026/10/05/china-banks-consolidation-economy.html",
    "fuente": "CNBC",
-   "fecha": "Sun, 04 Oct 2026 12:00:01 GMT"
+   "fecha": "Mon, 05 Oct 2026 16:41:00 GMT"
   },
   {
-   "titulo": "Fed minutes coming this week could give markets important clues about future rate hikes",
-   "url": "https://www.marketwatch.com/story/fed-minutes-coming-this-week-could-give-markets-important-clues-about-future-rate-hikes-31bfba5b?mod=mw_rss_topstories",
+   "titulo": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
+   "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Sun, 04 Oct 2026 12:00:00 GMT"
+   "fecha": "Mon, 05 Oct 2026 16:31:00 GMT"
+  },
+  {
+   "titulo": "Starbucks recovery plan is working. Here's how Mike Khouw says to trade the coffee giant",
+   "url": "https://www.cnbc.com/2026/10/05/starbucks-recovery-plan-is-working-heres-how-mike-khouw-says-to-trade-the-coffee-giant.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 16:29:29 GMT"
+  },
+  {
+   "titulo": "‘The pain was excruciating’: A friend in her 80s fell down her basement stairs. Could it have been avoided?",
+   "url": "https://www.marketwatch.com/story/the-pain-was-excruciating-a-friend-in-her-80s-fell-down-her-basement-stairs-could-it-have-been-avoided-ce105db6?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 05 Oct 2026 16:00:00 GMT"
+  },
+  {
+   "titulo": "David Ellison and Ynon Kreiz announce Skydance leadership team",
+   "url": "https://www.cnbc.com/2026/10/05/david-ellison-ynon-kreiz-skydance-leadership-team.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 15:51:15 GMT"
+  },
+  {
+   "titulo": "Brazilian stocks jump as Bolsonaro now seen as heavy favorite to win presidency",
+   "url": "https://www.cnbc.com/2026/10/05/brazilian-stocks-jump-bolsonaro-now-heavy-favorite-to-win-presidency.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 15:47:42 GMT"
+  },
+  {
+   "titulo": "SpaceX’s stock could actually be a bargain, according to this metric",
+   "url": "https://www.marketwatch.com/story/spacexs-stock-could-actually-be-a-bargain-according-to-this-metric-ac3ddf45?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 05 Oct 2026 15:45:00 GMT"
+  },
+  {
+   "titulo": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
+   "url": "https://www.cnbc.com/2026/10/03/david-ellison-ynon-kreiz-skydance.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 15:29:13 GMT"
+  },
+  {
+   "titulo": "I’m in my 20s and keep getting laid off. Should I invest in my employer’s 401(k) or look into other options?",
+   "url": "https://www.marketwatch.com/story/im-in-my-20s-and-keep-getting-laid-off-should-i-invest-in-my-employers-401-k-or-look-into-other-options-387b34d3?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 05 Oct 2026 15:00:00 GMT"
+  },
+  {
+   "titulo": "‘People in the U.S. need to wake up’: As a mortgage loan officer, I rejected wealthy couples due to overspending. We’re all heading for trouble.",
+   "url": "https://www.marketwatch.com/story/people-in-the-u-s-need-to-wake-up-as-a-mortgage-loan-officer-i-rejected-wealthy-couples-due-to-overspending-were-all-heading-for-trouble-6a52e04e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 05 Oct 2026 15:00:00 GMT"
+  },
+  {
+   "titulo": "GM says hybrid vehicles are coming: 'We're not tone deaf to our customers'",
+   "url": "https://www.cnbc.com/2026/10/05/gm-hybrid-vehicles.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 12:30:01 GMT"
+  },
+  {
+   "titulo": "Why airfares could rise even more, but airline profits won't",
+   "url": "https://www.cnbc.com/2026/10/05/airfare-prices-airline-profits.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 12:06:44 GMT"
   }
  ],
  "videos": [
@@ -507,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-05T09:13:54Z",
+ "ts": "2026-10-05T18:34:24Z",
  "fallas": [
   "videos",
   "directos"
