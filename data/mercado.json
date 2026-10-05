@@ -45,51 +45,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 31193.75,
-   "cambio": 580.5,
-   "pct": 1.9
+   "precio": 31026.25,
+   "cambio": 327.5,
+   "pct": 1.07
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7788.5,
-   "cambio": 56.5,
-   "pct": 0.73
+   "precio": 7770.0,
+   "cambio": 54.5,
+   "pct": 0.71
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4188.5,
-   "cambio": 8.8,
-   "pct": 0.21
+   "precio": 4196.1,
+   "cambio": 9.4,
+   "pct": 0.22
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 90.22,
-   "cambio": 0.84,
-   "pct": 0.94
+   "precio": 90.68,
+   "cambio": 0.26,
+   "pct": 0.29
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2856.1,
-   "cambio": 26.9,
-   "pct": 0.95
+   "precio": 2850.7,
+   "cambio": 33.2,
+   "pct": 1.18
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51504.0,
-   "cambio": -198.0,
-   "pct": -0.38
+   "precio": 51447.0,
+   "cambio": 169.0,
+   "pct": 0.33
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 86965.0,
-   "cambio": 3025.0,
-   "pct": 3.6
+   "precio": 86500.0,
+   "cambio": 2575.0,
+   "pct": 3.07
   }
  ],
  "acciones": [
@@ -264,10 +264,64 @@
  ],
  "noticias": [
   {
-   "titulo": "They survived World War II and lost decades, but not 2026. Japan's century-old businesses are disappearing at a record pace",
-   "url": "https://www.cnbc.com/2026/10/05/japan-old-business-kadoya-subeshoten-.html",
+   "titulo": "Larry Ellison to list Palm Beach property for $165 million",
+   "url": "https://www.marketwatch.com/story/larry-ellison-to-list-palm-beach-property-for-165-million-6a9c71d2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 05 Oct 2026 09:05:00 GMT"
+  },
+  {
+   "titulo": "Tyler Perry lists huge Beverly Hills mansion for $57 million: ‘Yep, moving to Puerto Rico’",
+   "url": "https://www.marketwatch.com/story/tyler-perry-lists-huge-beverly-hills-mansion-for-57-million-yep-moving-to-puerto-rico-a080916b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 05 Oct 2026 08:58:00 GMT"
+  },
+  {
+   "titulo": "Cut spending to curb runaway borrowing costs, Goldman's Gutman tells governments",
+   "url": "https://www.cnbc.com/2026/10/05/goldman-sachs-fiscal-deficit-bond-yields.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 01:08:10 GMT"
+   "fecha": "Mon, 05 Oct 2026 08:52:24 GMT"
+  },
+  {
+   "titulo": "Russia ramps up attacks on Kyiv infrastructure as U.S. makes fresh push for peace talks",
+   "url": "https://www.cnbc.com/2026/10/05/ukraine-war-russia-kyiv-putin-zelenskyy-trump.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 08:12:21 GMT"
+  },
+  {
+   "titulo": "Euro hits 17-month low as political uncertainty in Spain and France rattles markets",
+   "url": "https://www.cnbc.com/2026/10/05/euro-dollar-spain-france-risk.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 08:04:35 GMT"
+  },
+  {
+   "titulo": "This $23 billion software deal was struck at a decade-low valuation, as AI winner takes out loser",
+   "url": "https://www.marketwatch.com/story/this-23-billion-software-deal-was-struck-at-a-decade-low-valuation-as-ai-winner-takes-out-loser-aa18f477?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 05 Oct 2026 07:53:00 GMT"
+  },
+  {
+   "titulo": "Spain's PM Sanchez calls snap election after housing crisis protests",
+   "url": "https://www.cnbc.com/2026/10/05/spain-sanchez-snap-election-housing-protests.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 07:44:56 GMT"
+  },
+  {
+   "titulo": "Russia hospitalizes almost 200 people after researcher's death from plague: Reports",
+   "url": "https://www.cnbc.com/2026/10/05/suspected-plague-cases-reported-in-russias-irkutsk-region.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 05:34:17 GMT"
+  },
+  {
+   "titulo": "The 2029 tipping point: Western populations are about to start shrinking, piling pressure on public finances",
+   "url": "https://www.cnbc.com/2026/10/05/aging-population-moodys-public-finances.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 05:00:01 GMT"
+  },
+  {
+   "titulo": "Surging Treasury yields don’t signal a U.S. 'fiscal apocalypse' — yet",
+   "url": "https://www.cnbc.com/2026/10/05/treasury-yields-fiscal-concerns-not-crisis-yet.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 05 Oct 2026 02:24:07 GMT"
   },
   {
    "titulo": "Trump tells South Korea to sign on to Alaska LNG deal or 'I'll just charge them more'",
@@ -324,28 +378,10 @@
    "fecha": "Sun, 04 Oct 2026 14:00:00 GMT"
   },
   {
-   "titulo": "Starting a watch collection? What beginners should know before buying",
-   "url": "https://www.cnbc.com/2026/10/04/watch-collecting-beginners.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 04 Oct 2026 13:44:31 GMT"
-  },
-  {
-   "titulo": "A 'weird' IPO pull, a tainted reputation and the stalled breakout moment for AI wearables",
-   "url": "https://www.cnbc.com/2026/10/04/ai-wearables-oura-ipo-privacy.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 04 Oct 2026 13:22:39 GMT"
-  },
-  {
    "titulo": "October can be a scary month for stocks. Here’s what investors need to watch this year.",
    "url": "https://www.marketwatch.com/story/october-can-be-a-scary-month-for-stocks-heres-what-investors-need-to-watch-this-year-ac1da700?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sun, 04 Oct 2026 13:00:00 GMT"
-  },
-  {
-   "titulo": "Sports betting is increasingly the norm for Gen Z.  Here’s why some financial and mental health experts are worried",
-   "url": "https://www.cnbc.com/2026/10/04/gen-z-sports-betting-financial-and-mental-health-risks.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 04 Oct 2026 12:57:45 GMT"
   },
   {
    "titulo": "Why brands like E.l.f., Wendy's and Gap are branching out into original music",
@@ -358,42 +394,6 @@
    "url": "https://www.marketwatch.com/story/fed-minutes-coming-this-week-could-give-markets-important-clues-about-future-rate-hikes-31bfba5b?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sun, 04 Oct 2026 12:00:00 GMT"
-  },
-  {
-   "titulo": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
-   "url": "https://www.cnbc.com/2026/10/04/russia-ukraine-war-putin-zelenskyy-donbas-lyman.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 04 Oct 2026 05:00:01 GMT"
-  },
-  {
-   "titulo": "The government can take 15% of Social Security benefits to repay student loans. These proposals seek to stop it.",
-   "url": "https://www.marketwatch.com/story/the-government-can-take-15-of-social-security-benefits-to-repay-student-loans-these-proposals-seek-to-stop-it-102622fa?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 04 Oct 2026 00:02:00 GMT"
-  },
-  {
-   "titulo": "Falling wages, soaring energy prices and inflation: It’s beginning to look a lot like the 1970s",
-   "url": "https://www.marketwatch.com/story/falling-wages-soaring-energy-prices-and-inflation-its-beginning-to-look-a-lot-like-the-1970s-d645cbca?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 03 Oct 2026 23:58:00 GMT"
-  },
-  {
-   "titulo": "These bond strategies can help you get a safe 5% return on your cash",
-   "url": "https://www.marketwatch.com/story/these-bond-strategies-can-help-you-get-a-safe-5-return-on-your-cash-5fa45ccd?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 03 Oct 2026 18:49:00 GMT"
-  },
-  {
-   "titulo": "High mortgage rates are trapping homeowners in place, and making renovations harder to afford",
-   "url": "https://www.cnbc.com/2026/10/03/mortgage-rates-home-equity-heloc-remodeling.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 03 Oct 2026 17:57:40 GMT"
-  },
-  {
-   "titulo": "Novig credits Sydney Sweeney-backed campaign for platform’s surge in growth",
-   "url": "https://www.cnbc.com/2026/10/03/novig-credits-sydney-sweeney-backed-campaign-for-platforms-surge-in-growth.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 03 Oct 2026 13:30:48 GMT"
   }
  ],
  "videos": [
@@ -507,7 +507,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-05T02:07:16Z",
+ "ts": "2026-10-05T09:13:54Z",
  "fallas": [
   "videos",
   "directos"
