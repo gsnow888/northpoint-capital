@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 31363.0,
-   "cambio": 664.25,
-   "pct": 2.16
+   "precio": 31390.5,
+   "cambio": 630.0,
+   "pct": 2.05
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7832.0,
-   "cambio": 116.5,
-   "pct": 1.51
+   "precio": 7841.5,
+   "cambio": 117.5,
+   "pct": 1.52
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4161.4,
-   "cambio": -25.3,
-   "pct": -0.6
+   "precio": 4157.0,
+   "cambio": -45.3,
+   "pct": -1.08
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 89.31,
-   "cambio": -1.11,
-   "pct": -1.23
+   "precio": 88.76,
+   "cambio": -4.11,
+   "pct": -4.43
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2867.7,
-   "cambio": 50.2,
-   "pct": 1.78
+   "precio": 2873.1,
+   "cambio": 46.2,
+   "pct": 1.63
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51605.0,
-   "cambio": 327.0,
-   "pct": 0.64
+   "precio": 51709.0,
+   "cambio": 468.0,
+   "pct": 0.91
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 86055.0,
-   "cambio": 2130.0,
-   "pct": 2.54
+   "precio": 85465.0,
+   "cambio": 440.0,
+   "pct": 0.52
   }
  ],
  "acciones": [
@@ -274,10 +274,46 @@
  ],
  "noticias": [
   {
-   "titulo": "CNBC's The China Connection newsletter: Starbucks enters Xinjiang in calculated geopolitical risk",
-   "url": "https://www.cnbc.com/2026/10/06/starbucks-luckin-china-xinjiang-forced-labour-export-trade-.html",
+   "titulo": "Trump allows cheaper, dyed diesel on highways to blunt historic fuel-cost spike ahead of midterms",
+   "url": "https://www.cnbc.com/2026/10/06/us-diesel-fuel-prices-iran-ukraine-energy-crisis-.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 23:41:11 GMT"
+   "fecha": "Tue, 06 Oct 2026 06:17:40 GMT"
+  },
+  {
+   "titulo": "How quant funds beat the market by being 'early, contrarian and right'",
+   "url": "https://www.cnbc.com/2026/10/06/trend-following-hedge-funds-beat-stock-market.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 06 Oct 2026 05:00:01 GMT"
+  },
+  {
+   "titulo": "World Bank warns of AI concentration risks as it lifts East Asia and Pacific growth outlook to 4.5%",
+   "url": "https://www.cnbc.com/2026/10/06/world-bank-east-asia-growth-inflation-ai-exports-.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 06 Oct 2026 04:07:24 GMT"
+  },
+  {
+   "titulo": "Little room for ‘giving and taking’: India’s finance minister confirms trade impasse with the U.S.",
+   "url": "https://www.cnbc.com/2026/10/06/india-us-trade-deal-deal-sitharaman.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 06 Oct 2026 02:39:19 GMT"
+  },
+  {
+   "titulo": "Pentagon says Trump approves Army firing squad execution of Fort Hood killer Nidal Hasan",
+   "url": "https://www.cnbc.com/2026/10/06/trump-execution-nidal-hasan-firing-squad-fort-hood.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 06 Oct 2026 02:23:18 GMT"
+  },
+  {
+   "titulo": "Trump says MAGA Inc. PAC will pay for controversial TV ads that government funded",
+   "url": "https://www.cnbc.com/2026/10/05/trump-ads-election.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 06 Oct 2026 01:55:50 GMT"
+  },
+  {
+   "titulo": "Trump offers U.S. help to Russia after plague death; WHO assesses the situation as low risk",
+   "url": "https://www.cnbc.com/2026/10/06/russia-plague-death-trump-offers-us-help.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 06 Oct 2026 01:47:32 GMT"
   },
   {
    "titulo": "‘People in the U.S. need to wake up’: As a mortgage loan officer, I rejected wealthy couples due to overspending. We’re all heading for trouble.",
@@ -292,22 +328,16 @@
    "fecha": "Mon, 05 Oct 2026 23:28:31 GMT"
   },
   {
-   "titulo": "Trump says he'll pay for TV ads that praised him and which government funded",
-   "url": "https://www.cnbc.com/2026/10/05/trump-ads-election.html",
+   "titulo": "Russian gold floods Hong Kong as Western sanctions redraw bullion trade",
+   "url": "https://www.cnbc.com/2026/10/06/russia-gold-hong-kong-china-western-sanctions.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 23:25:38 GMT"
+   "fecha": "Mon, 05 Oct 2026 23:14:39 GMT"
   },
   {
    "titulo": "‘The pain was excruciating’: A friend in her 80s fell down her basement stairs. Could it have been avoided?",
    "url": "https://www.marketwatch.com/story/the-pain-was-excruciating-a-friend-in-her-80s-fell-down-her-basement-stairs-could-it-have-been-avoided-ce105db6?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Mon, 05 Oct 2026 23:00:00 GMT"
-  },
-  {
-   "titulo": "Nokia CEO says data centers would be built '2x faster' without supply constraints",
-   "url": "https://www.cnbc.com/2026/10/05/nokia-ai-data-center-buildout.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 22:00:01 GMT"
   },
   {
    "titulo": "The case for Nvidia’s stock to march even higher after clinching its first record high in months",
@@ -334,22 +364,10 @@
    "fecha": "Mon, 05 Oct 2026 21:25:00 GMT"
   },
   {
-   "titulo": "House Democrat targets candidate prediction market trades after opponent’s Kalshi penalty",
-   "url": "https://www.cnbc.com/2026/10/05/don-davis-prediction-market-candidate-trading.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 21:24:25 GMT"
-  },
-  {
    "titulo": "This rare stock-market divide means an elevated chance of a big surge — or a deep plunge",
    "url": "https://www.marketwatch.com/story/this-rare-stock-market-divide-means-an-elevated-chance-of-a-big-surge-or-a-deep-plunge-cf2cb4e5?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Mon, 05 Oct 2026 21:12:00 GMT"
-  },
-  {
-   "titulo": "Lucid's Q3 deliveries fall 6.7% as EV maker cuts production to align with demand",
-   "url": "https://www.cnbc.com/2026/10/05/lucid-group-lcid-q3-2026-deliveries-production.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 21:04:17 GMT"
   },
   {
    "titulo": "'We had a threat': Trump explains U.S. moving long-range bombers from UK",
@@ -376,28 +394,10 @@
    "fecha": "Mon, 05 Oct 2026 20:14:00 GMT"
   },
   {
-   "titulo": "SpaceX stock climbs to highest since June, returning Musk to trillionaire status",
-   "url": "https://www.cnbc.com/2026/10/05/spacex-stock-climbs-highest-since-june-returning-musk-to-trillionaire.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 20:10:13 GMT"
-  },
-  {
    "titulo": "These are the cheapest and most expensive U.S. flights this November",
    "url": "https://www.cnbc.com/2026/10/05/cheapest-most-expensive-us-flights-in-november.html",
    "fuente": "CNBC",
    "fecha": "Mon, 05 Oct 2026 17:59:51 GMT"
-  },
-  {
-   "titulo": "Satya Nadella reinvented Microsoft once. Can he do it again in the AI era?",
-   "url": "https://www.cnbc.com/2026/10/05/satya-nadella-reinvented-microsoft-once-can-he-do-it-in-the-ai-era.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 17:40:13 GMT"
-  },
-  {
-   "titulo": "GM says hybrid vehicles are coming: 'We're not tone deaf to our customers'",
-   "url": "https://www.cnbc.com/2026/10/05/gm-hybrid-vehicles.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 05 Oct 2026 12:30:01 GMT"
   },
   {
    "titulo": "Why airfares could rise even more, but airline profits won't",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-06T00:19:11Z",
+ "ts": "2026-10-06T06:34:24Z",
  "fallas": [
   "videos",
   "directos"
