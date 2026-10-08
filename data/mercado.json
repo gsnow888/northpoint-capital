@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 31399.5,
-   "cambio": 337.75,
-   "pct": 1.09
+   "precio": 31263.25,
+   "cambio": -54.5,
+   "pct": -0.17
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7849.0,
-   "cambio": 71.75,
-   "pct": 0.92
+   "precio": 7831.0,
+   "cambio": 4.75,
+   "pct": 0.06
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4151.5,
-   "cambio": -10.8,
-   "pct": -0.26
+   "precio": 4152.8,
+   "cambio": -4.0,
+   "pct": -0.1
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 89.45,
-   "cambio": -1.66,
-   "pct": -1.82
+   "precio": 91.29,
+   "cambio": 1.86,
+   "pct": 2.08
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2807.2,
-   "cambio": -43.7,
-   "pct": -1.53
+   "precio": 2791.7,
+   "cambio": -76.1,
+   "pct": -2.65
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51370.0,
-   "cambio": -107.0,
-   "pct": -0.21
+   "precio": 51144.0,
+   "cambio": -414.0,
+   "pct": -0.8
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 83660.0,
-   "cambio": -930.0,
-   "pct": -1.1
+   "precio": 83420.0,
+   "cambio": -2585.0,
+   "pct": -3.01
   }
  ],
  "acciones": [
@@ -274,22 +274,52 @@
  ],
  "noticias": [
   {
+   "titulo": "AI startup Manus raises $500 million in first funding round since Meta breakup",
+   "url": "https://www.cnbc.com/2026/10/08/manus-fund-raise-meta-muse-tencent.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 08 Oct 2026 06:59:59 GMT"
+  },
+  {
+   "titulo": "TSMC’s September sales surge year-over-year as AI drives chip demand",
+   "url": "https://www.cnbc.com/2026/10/08/tsmc-september-sales-hit-another-record-as-ai-boom-rolls-on.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 08 Oct 2026 06:50:42 GMT"
+  },
+  {
+   "titulo": "America shut out Chinese EVs. Britain welcomed them — and now faces a difficult choice",
+   "url": "https://www.cnbc.com/2026/10/08/autos-china-evs-uk-tariffs-hybrid-cars.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 08 Oct 2026 05:30:49 GMT"
+  },
+  {
+   "titulo": "Elon Musk blames Indian 'oligarchs' for stalling Starlink launch",
+   "url": "https://www.cnbc.com/2026/10/08/elon-musk-starlink-spacex-jio-airtel-india.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 08 Oct 2026 05:28:40 GMT"
+  },
+  {
+   "titulo": "Trump says he is not keen on a deal with Iran as U.S. reportedly prepares for 'massive bombing'",
+   "url": "https://www.cnbc.com/2026/10/08/us-iran-war-trump-hormuz.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 08 Oct 2026 03:29:29 GMT"
+  },
+  {
+   "titulo": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
+   "url": "https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 08 Oct 2026 02:00:00 GMT"
+  },
+  {
+   "titulo": "‘He grew up wealthy’: My husband inherited $3 million. He wants a vacation home. I want to save for retirement. Who’s right?",
+   "url": "https://www.marketwatch.com/story/he-grew-up-wealthy-my-husband-inherited-3-million-he-wants-a-vacation-home-i-want-to-save-for-retirement-a240f0d8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 08 Oct 2026 01:45:00 GMT"
+  },
+  {
    "titulo": "Samsung forecasts record third-quarter profit of $80 billion as AI boom fuels chip demand",
    "url": "https://www.cnbc.com/2026/10/08/samsung-q3-earnings.html",
    "fuente": "CNBC",
    "fecha": "Thu, 08 Oct 2026 00:51:23 GMT"
-  },
-  {
-   "titulo": "Inside India newsletter: Food crisis, economic shock ahead as India braces for El Niño",
-   "url": "https://www.cnbc.com/2026/10/08/el-nino-food-economy-crisis-india.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 08 Oct 2026 00:14:40 GMT"
-  },
-  {
-   "titulo": "Trump trade chief Greer reports higher cash holdings as law firm pay topped $650K",
-   "url": "https://www.cnbc.com/2026/10/07/jamieson-greer-financial-disclosure-coupang.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 07 Oct 2026 23:10:54 GMT"
   },
   {
    "titulo": "Rising yields are quietly crashing the stock market’s earlier winners of 2026",
@@ -302,12 +332,6 @@
    "url": "https://www.cnbc.com/2026/10/07/anthropic-will-be-most-ridiculous-ipo-of-year-analyst-says.html",
    "fuente": "CNBC",
    "fecha": "Wed, 07 Oct 2026 22:29:41 GMT"
-  },
-  {
-   "titulo": "Levi Strauss hikes profit guidance after tariff refunds, but its sales outlook is less optimistic",
-   "url": "https://www.cnbc.com/2026/10/07/levi-strauss-levi-q3-2026-earnings.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 07 Oct 2026 21:31:40 GMT"
   },
   {
    "titulo": "Trump doesn't think Russia plague incident is bioweapon, plans Putin call Wednesday",
@@ -328,18 +352,6 @@
    "fecha": "Wed, 07 Oct 2026 20:36:00 GMT"
   },
   {
-   "titulo": "Supertanker chartered from Gulf Coast to China for $76 million, 10 times higher than pre-war level",
-   "url": "https://www.cnbc.com/2026/10/07/supertanker-from-us-to-china-chartered-for-76-million-source.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 07 Oct 2026 20:33:34 GMT"
-  },
-  {
-   "titulo": "Microsoft to sell $2,599 Surface Laptop Ultra containing Nvidia AI chip",
-   "url": "https://www.cnbc.com/2026/10/07/microsoft-starts-taking-preorders-for-2599-surface-laptop-ultra.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 07 Oct 2026 20:26:13 GMT"
-  },
-  {
    "titulo": "Americans grow more pessimistic about their finances, New York Fed finds — expert warns of ‘tough choices’ ahead",
    "url": "https://www.cnbc.com/2026/10/07/new-york-fed-financial-outlook-inflation.html",
    "fuente": "CNBC",
@@ -356,6 +368,12 @@
    "url": "https://www.marketwatch.com/story/microsoft-and-nvidia-are-teaming-up-on-a-supercharged-ai-laptop-f58b28d8?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Wed, 07 Oct 2026 19:12:00 GMT"
+  },
+  {
+   "titulo": "Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023",
+   "url": "https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 07 Oct 2026 18:44:36 GMT"
   },
   {
    "titulo": "Fed officials see another hike coming, but no sign as to when, minutes show",
@@ -376,28 +394,10 @@
    "fecha": "Wed, 07 Oct 2026 18:22:00 GMT"
   },
   {
-   "titulo": "‘He grew up wealthy’: My husband inherited $3 million. He wants a vacation home. I want to save for retirement. Who’s right?",
-   "url": "https://www.marketwatch.com/story/he-grew-up-wealthy-my-husband-inherited-3-million-he-wants-a-vacation-home-i-want-to-save-for-retirement-a240f0d8?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 07 Oct 2026 17:45:00 GMT"
-  },
-  {
    "titulo": "Washington and Wall Street chose to delay paying their bills — and to put them on your tab",
    "url": "https://www.marketwatch.com/story/washington-and-wall-street-chose-to-delay-paying-their-bills-and-to-put-them-on-your-tab-2eba83aa?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Wed, 07 Oct 2026 17:36:00 GMT"
-  },
-  {
-   "titulo": "The ‘Magnificent Seven’ are now big enough to move the economy. Why that could be a problem.",
-   "url": "https://www.marketwatch.com/story/the-magnificent-seven-are-now-big-enough-to-move-the-economy-why-that-could-be-a-problem-56d174db?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 07 Oct 2026 17:32:00 GMT"
-  },
-  {
-   "titulo": "Trading platform Webull's China ties create national security risk, congressional panel finds; stock drops 18%",
-   "url": "https://www.cnbc.com/2026/10/07/webull-china-national-security-risk-congress.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 07 Oct 2026 13:46:28 GMT"
   },
   {
    "titulo": "The SALT deduction limit is $40,400 for 2026. Here's how to maximize it",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-08T01:18:22Z",
+ "ts": "2026-10-08T07:33:25Z",
  "fallas": [
   "videos",
   "directos"
