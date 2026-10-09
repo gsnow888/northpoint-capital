@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 31007.0,
-   "cambio": -310.75,
-   "pct": -0.99
+   "precio": 30975.75,
+   "cambio": -342.0,
+   "pct": -1.09
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7822.75,
-   "cambio": -3.5,
-   "pct": -0.04
+   "precio": 7825.75,
+   "cambio": -0.5,
+   "pct": -0.01
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4160.1,
-   "cambio": 3.3,
-   "pct": 0.08
+   "precio": 4166.6,
+   "cambio": 9.8,
+   "pct": 0.24
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 90.74,
-   "cambio": 1.31,
-   "pct": 1.46
+   "precio": 91.11,
+   "cambio": 1.68,
+   "pct": 1.88
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2812.3,
-   "cambio": -55.5,
-   "pct": -1.94
+   "precio": 2818.2,
+   "cambio": -49.6,
+   "pct": -1.73
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51547.0,
-   "cambio": -11.0,
-   "pct": -0.02
+   "precio": 51562.0,
+   "cambio": 4.0,
+   "pct": 0.01
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81905.0,
-   "cambio": -4100.0,
-   "pct": -4.77
+   "precio": 81835.0,
+   "cambio": -4170.0,
+   "pct": -4.85
   }
  ],
  "acciones": [
@@ -274,22 +274,82 @@
  ],
  "noticias": [
   {
-   "titulo": "Should I put my nest egg in a 30-year Treasury bond?",
-   "url": "https://www.marketwatch.com/story/should-i-put-my-nest-egg-in-a-30-year-treasury-bond-89db6e09?mod=mw_rss_topstories",
+   "titulo": "How to downsize like a pro — and free yourself from being a ‘prisoner of your possessions’",
+   "url": "https://www.marketwatch.com/story/how-to-downsize-like-a-pro-and-free-yourself-from-being-a-prisoner-of-your-possessions-c4b5533e?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 08 Oct 2026 20:32:00 GMT"
+   "fecha": "Fri, 09 Oct 2026 00:03:00 GMT"
   },
   {
-   "titulo": "With mortgage rates soaring above 7.5%, the smart money rents in America",
-   "url": "https://www.marketwatch.com/story/with-mortgage-rates-soaring-above-7-5-the-smart-money-rents-in-america-ef0eb5aa?mod=mw_rss_topstories",
+   "titulo": "Feel like a pumpkin-spice burrito? Analysts try to wrap their heads around a possible Starbucks-Chipotle tie-up.",
+   "url": "https://www.marketwatch.com/story/feel-like-a-pumpkin-spice-burrito-analysts-try-to-wrap-their-heads-around-a-possible-starbucks-chipotle-tie-up-5b8519fd?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 08 Oct 2026 20:30:00 GMT"
+   "fecha": "Thu, 08 Oct 2026 23:14:00 GMT"
   },
   {
-   "titulo": "These decisions you make in your 20s — not your income — determine whether you’ll spend decades in debt or retire comfortably",
-   "url": "https://www.marketwatch.com/story/these-decisions-you-make-in-your-20s-not-your-income-determine-whether-youll-spend-decades-in-debt-or-retire-comfortably-7bbb28f9?mod=mw_rss_topstories",
+   "titulo": "SpaceX deal to acquire spectrum license hammers shares of AT&T, Verizon and T-Mobile",
+   "url": "https://www.cnbc.com/2026/10/08/spacex-spectrum-license-att-verizon-tmobile.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 08 Oct 2026 22:55:46 GMT"
+  },
+  {
+   "titulo": "Micron, Nvidia and AI chip stocks fall as report on OpenAI’s revenue causes ‘undue concern’",
+   "url": "https://www.marketwatch.com/story/micron-nvidia-and-ai-chip-stocks-fall-as-report-on-openais-revenue-causes-undue-concern-2a2bcf53?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 08 Oct 2026 20:25:00 GMT"
+   "fecha": "Thu, 08 Oct 2026 22:08:00 GMT"
+  },
+  {
+   "titulo": "My husband inherited $3 million. He wants a vacation home, but I want to save for retirement. Who’s right?",
+   "url": "https://www.marketwatch.com/story/he-grew-up-wealthy-my-husband-inherited-3-million-he-wants-a-vacation-home-i-want-to-save-for-retirement-a240f0d8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 08 Oct 2026 22:00:00 GMT"
+  },
+  {
+   "titulo": "Why a longtime skeptic of Palantir’s stock is finally saying it’s time to buy",
+   "url": "https://www.marketwatch.com/story/why-a-longtime-skeptic-of-palantirs-stock-is-finally-saying-its-time-to-buy-60cdeede?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 08 Oct 2026 21:56:00 GMT"
+  },
+  {
+   "titulo": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
+   "url": "https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 08 Oct 2026 21:45:00 GMT"
+  },
+  {
+   "titulo": "PepsiCo CEO’s message to employees: If you’re not producing growth, you’re out",
+   "url": "https://www.marketwatch.com/story/pepsico-ceos-message-to-employees-if-youre-not-producing-growth-youre-out-13af0335?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 08 Oct 2026 21:43:00 GMT"
+  },
+  {
+   "titulo": "Nvidia, Oracle, CoreWeave and other AI stocks sink on OpenAI revenue report",
+   "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 08 Oct 2026 21:19:14 GMT"
+  },
+  {
+   "titulo": "I’m a 68-year-old widow and give money to my two adult children. Am I putting my retirement at risk?",
+   "url": "https://www.marketwatch.com/story/im-a-68-year-old-widow-my-two-adult-children-keep-asking-me-for-money-are-they-taking-advantage-of-me-f725374e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 08 Oct 2026 21:15:00 GMT"
+  },
+  {
+   "titulo": "America shut out Chinese EVs. Britain welcomed them — and now faces a difficult choice",
+   "url": "https://www.cnbc.com/2026/10/08/autos-china-evs-uk-tariffs-hybrid-cars.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 08 Oct 2026 20:55:39 GMT"
+  },
+  {
+   "titulo": "Worse than taking away your parents’ car keys? Taking away their cell phone. How to protect your aging parents.",
+   "url": "https://www.marketwatch.com/story/worse-than-taking-away-your-parents-car-keys-taking-away-their-cellphone-how-to-protect-your-aging-parents-f01be6e6?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 08 Oct 2026 20:55:00 GMT"
+  },
+  {
+   "titulo": "A big AI super PAC tried to follow crypto’s playbook to influence the midterms. Critics say it’s not working out.",
+   "url": "https://www.marketwatch.com/story/a-big-ai-super-pac-tried-to-follow-cryptos-playbook-to-influence-the-midterms-critics-say-its-not-working-out-d27911e6?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 08 Oct 2026 20:44:00 GMT"
   },
   {
    "titulo": "Major League Baseball proposes shortening its regular season as it pushes for a salary cap",
@@ -314,66 +374,6 @@
    "url": "https://www.cnbc.com/2026/10/08/treasury-yields-david-zervos.html",
    "fuente": "CNBC",
    "fecha": "Thu, 08 Oct 2026 20:06:31 GMT"
-  },
-  {
-   "titulo": "Nvidia, Oracle, CoreWeave and other AI stocks sink on OpenAI revenue report",
-   "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 08 Oct 2026 19:49:23 GMT"
-  },
-  {
-   "titulo": "How to downsize like a pro — and free yourself from being a ‘prisoner of your possessions’",
-   "url": "https://www.marketwatch.com/story/how-to-downsize-like-a-pro-and-free-yourself-from-being-a-prisoner-of-your-possessions-c4b5533e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 08 Oct 2026 19:47:00 GMT"
-  },
-  {
-   "titulo": "Florida is voting on whether to slash property taxes. Here’s who it would benefit — and hurt.",
-   "url": "https://www.marketwatch.com/story/florida-is-voting-on-whether-to-slash-property-taxes-heres-who-it-would-benefit-and-hurt-6c34b470?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 08 Oct 2026 19:41:00 GMT"
-  },
-  {
-   "titulo": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
-   "url": "https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 08 Oct 2026 19:15:00 GMT"
-  },
-  {
-   "titulo": "My husband inherited $3 million. He wants a vacation home, but I want to save for retirement. Who’s right?",
-   "url": "https://www.marketwatch.com/story/he-grew-up-wealthy-my-husband-inherited-3-million-he-wants-a-vacation-home-i-want-to-save-for-retirement-a240f0d8?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 08 Oct 2026 19:00:00 GMT"
-  },
-  {
-   "titulo": "U.S. suspends Microsoft, Adobe from green card labor program in foreign worker crackdown",
-   "url": "https://www.cnbc.com/2026/10/08/microsoft-adobe-green-card-labor-suspension.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 08 Oct 2026 18:52:59 GMT"
-  },
-  {
-   "titulo": "The options market is reminding investors there’s a cure for rising bond yields — higher yields",
-   "url": "https://www.marketwatch.com/story/the-options-market-is-reminding-investors-theres-a-cure-for-rising-bond-yields-higher-yields-2dcac640?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 08 Oct 2026 18:51:00 GMT"
-  },
-  {
-   "titulo": "I’m a 68-year-old widow and give money to my two adult children. Am I putting my retirement at risk?",
-   "url": "https://www.marketwatch.com/story/im-a-68-year-old-widow-my-two-adult-children-keep-asking-me-for-money-are-they-taking-advantage-of-me-f725374e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 08 Oct 2026 18:30:00 GMT"
-  },
-  {
-   "titulo": "Bond yields fall as the Treasury market passes a crucial test of investor confidence",
-   "url": "https://www.marketwatch.com/story/the-treasury-market-is-facing-a-crucial-vote-of-investor-confidence-31fa8d41?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 08 Oct 2026 18:19:00 GMT"
-  },
-  {
-   "titulo": "America shut out Chinese EVs. Britain welcomed them — and now faces a difficult choice",
-   "url": "https://www.cnbc.com/2026/10/08/autos-china-evs-uk-tariffs-hybrid-cars.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 08 Oct 2026 18:04:08 GMT"
   },
   {
    "titulo": "Little relief expected for gas prices ahead of Election Day, according to prediction markets",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-08T20:34:37Z",
+ "ts": "2026-10-09T00:38:12Z",
  "fallas": [
   "videos",
   "directos"
