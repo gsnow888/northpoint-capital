@@ -55,50 +55,50 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 31132.25,
-   "cambio": -185.5,
-   "pct": -0.59
+   "precio": 31123.25,
+   "cambio": -194.5,
+   "pct": -0.62
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7868.25,
-   "cambio": 42.0,
-   "pct": 0.54
+   "precio": 7866.0,
+   "cambio": 39.75,
+   "pct": 0.51
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4221.1,
-   "cambio": 64.3,
-   "pct": 1.55
+   "precio": 4220.3,
+   "cambio": 63.5,
+   "pct": 1.53
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 91.19,
-   "cambio": 1.76,
-   "pct": 1.97
+   "precio": 91.66,
+   "cambio": 2.23,
+   "pct": 2.49
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2825.5,
-   "cambio": -42.3,
-   "pct": -1.47
+   "precio": 2823.5,
+   "cambio": -44.3,
+   "pct": -1.54
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51999.0,
-   "cambio": 441.0,
-   "pct": 0.86
+   "precio": 51976.0,
+   "cambio": 418.0,
+   "pct": 0.81
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 82640.0,
-   "cambio": -3365.0,
+   "precio": 82645.0,
+   "cambio": -3360.0,
    "pct": -3.91
   }
  ],
@@ -106,43 +106,43 @@
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 159.89,
-   "pct": 0.48,
+   "precio": 159.83,
+   "pct": 0.44,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 716.03,
-   "pct": 1.2,
+   "precio": 715.59,
+   "pct": 1.14,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 382.22,
-   "pct": 1.12,
+   "precio": 381.94,
+   "pct": 1.05,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 84.81,
-   "pct": -0.73,
+   "precio": 84.82,
+   "pct": -0.71,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 751.38,
-   "pct": 0.24,
+   "precio": 751.27,
+   "pct": 0.23,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 778.99,
-   "pct": 1.21,
+   "precio": 778.57,
+   "pct": 1.16,
    "moneda": "USD"
   },
   {
@@ -155,129 +155,207 @@
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 33.08,
-   "pct": 1.09,
+   "precio": 33.04,
+   "pct": 0.98,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 90.77,
-   "pct": 1.41,
+   "precio": 90.65,
+   "pct": 1.28,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 81.31,
-   "pct": -1.27,
+   "precio": 81.4,
+   "pct": -1.17,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 384.57,
+   "precio": 384.58,
    "pct": 1.17,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 46.66,
-   "pct": -2.25,
+   "precio": 46.55,
+   "pct": -2.47,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 336.84,
-   "pct": 0.94,
+   "precio": 336.64,
+   "pct": 0.88,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 535.61,
-   "pct": 3.49,
+   "precio": 535.07,
+   "pct": 3.39,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 229.87,
-   "pct": -1.74,
+   "precio": 229.28,
+   "pct": -2.0,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 351.35,
-   "pct": 2.29,
+   "precio": 351.66,
+   "pct": 2.38,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 261.94,
-   "pct": 4.14,
+   "precio": 262.43,
+   "pct": 4.34,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 719.13,
-   "pct": -1.23,
+   "precio": 718.67,
+   "pct": -1.29,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 383.98,
-   "pct": 3.61,
+   "precio": 382.7,
+   "pct": 3.27,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 515.28,
-   "pct": 2.51,
+   "precio": 515.62,
+   "pct": 2.58,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 947.3,
-   "pct": 2.89,
+   "precio": 946.92,
+   "pct": 2.85,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 333.26,
-   "pct": 0.26,
+   "precio": 332.99,
+   "pct": 0.18,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 385.74,
-   "pct": 6.95,
+   "precio": 385.45,
+   "pct": 6.87,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 381.84,
-   "pct": 2.67,
+   "precio": 379.3,
+   "pct": 1.99,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
+   "titulo": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
+   "url": "https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 09 Oct 2026 23:15:00 GMT"
+  },
+  {
+   "titulo": "How to provide guaranteed retirement income while paying no commissions",
+   "url": "https://www.marketwatch.com/story/how-to-provide-guaranteed-retirement-income-while-paying-no-commissions-b2085511?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 09 Oct 2026 22:41:00 GMT"
+  },
+  {
+   "titulo": "Cramer’s week ahead: Earnings kick off as banks and chipmakers face big tests",
+   "url": "https://www.cnbc.com/2026/10/09/jim-cramer-week-ahead-bank-earnings-ai-chips.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 09 Oct 2026 22:22:35 GMT"
+  },
+  {
+   "titulo": "Trump taps Russia to boost global diesel supplies ahead of midterms. It may be ‘too little, too late,’ says strategist.",
+   "url": "https://www.marketwatch.com/story/trump-taps-russia-to-boost-global-diesel-supplies-ahead-of-midterms-it-may-be-too-little-too-late-says-strategist-8c789030?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 09 Oct 2026 22:00:00 GMT"
+  },
+  {
+   "titulo": "Is iPhone 18 demand cooling off? Here’s how deep Apple reportedly is cutting component orders.",
+   "url": "https://www.marketwatch.com/story/is-iphone-18-demand-cooling-off-heres-how-deep-apple-reportedly-is-cutting-component-orders-a44244ee?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 09 Oct 2026 21:30:00 GMT"
+  },
+  {
+   "titulo": "AI chip stocks wobble even as investors get clarity on a key OpenAI issue",
+   "url": "https://www.marketwatch.com/story/nvidia-and-micron-shares-bounce-as-investors-get-clarity-on-a-key-openai-matter-ba76ed20?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 09 Oct 2026 21:27:00 GMT"
+  },
+  {
+   "titulo": "Microsoft is nearing a big milestone that solidifies its revival",
+   "url": "https://www.marketwatch.com/story/microsoft-is-nearing-a-big-milestone-that-solidifies-its-revival-580d1ba8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 09 Oct 2026 21:24:00 GMT"
+  },
+  {
+   "titulo": "‘I feel like a loser’: I check my ETFs every day. They’re up one minute, down the next. Should I be worried?",
+   "url": "https://www.marketwatch.com/story/i-feel-like-a-loser-my-etfs-go-up-one-day-and-crash-the-next-is-this-a-bad-sign-0c9848b2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 09 Oct 2026 21:15:00 GMT"
+  },
+  {
+   "titulo": "As AT&T, Verizon and T-Mobile shares fall, Wall Street assesses the growing SpaceX threat",
+   "url": "https://www.marketwatch.com/story/as-at-t-verizon-and-t-mobile-shares-fall-wall-street-assesses-the-growing-spacex-threat-e869ef9e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 09 Oct 2026 21:07:00 GMT"
+  },
+  {
+   "titulo": "I’m a 68-year-old widow and give money to my two adult children. Am I putting my retirement at risk?",
+   "url": "https://www.marketwatch.com/story/im-a-68-year-old-widow-my-two-adult-children-keep-asking-me-for-money-are-they-taking-advantage-of-me-f725374e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 09 Oct 2026 21:00:00 GMT"
+  },
+  {
+   "titulo": "Junk bonds are 'flashing yellow.' Watch these warning signs",
+   "url": "https://www.cnbc.com/2026/10/09/junk-bonds-are-flashing-yellow-watch-these-warning-signs.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 09 Oct 2026 20:51:25 GMT"
+  },
+  {
    "titulo": "Trump strikes deal with Putin to supply Russian diesel to U.S. and global markets",
    "url": "https://www.cnbc.com/2026/10/09/trump-putin-russian-diesel-us-global-markets.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 09 Oct 2026 19:33:46 GMT"
+   "fecha": "Fri, 09 Oct 2026 20:20:57 GMT"
+  },
+  {
+   "titulo": "Verizon posts worst day since 2002 as SpaceX U.S. network plans whack cell provider stocks",
+   "url": "https://www.cnbc.com/2026/10/09/verizon-att-tmobile-stocks-spacex-network.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 09 Oct 2026 20:16:58 GMT"
+  },
+  {
+   "titulo": "‘I have no children’: My aunt gave me $50,000 for a down payment. Now she wants me to leave my home to her two children.",
+   "url": "https://www.marketwatch.com/story/i-have-no-children-my-aunt-gave-me-50-000-for-a-down-payment-she-wants-me-to-leave-my-home-to-her-two-children-24fad94c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 09 Oct 2026 20:15:00 GMT"
   },
   {
    "titulo": "Trump Media advisor Katie Zacharia offered White House press secretary role",
@@ -304,94 +382,16 @@
    "fecha": "Fri, 09 Oct 2026 19:18:24 GMT"
   },
   {
-   "titulo": "Elon Musk is now richer than any American ever — and it’s not even close",
-   "url": "https://www.marketwatch.com/story/elon-musk-is-now-richer-than-any-american-ever-and-its-not-even-close-58f31401?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 09 Oct 2026 19:04:00 GMT"
-  },
-  {
-   "titulo": "My husband inherited $3 million. He wants a vacation home, but I want to save for retirement. Who’s right?",
-   "url": "https://www.marketwatch.com/story/he-grew-up-wealthy-my-husband-inherited-3-million-he-wants-a-vacation-home-i-want-to-save-for-retirement-a240f0d8?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 09 Oct 2026 19:00:00 GMT"
-  },
-  {
    "titulo": "Two massive trades just happened in Micron and Nvidia. What they could mean for chips",
    "url": "https://www.cnbc.com/2026/10/09/two-massive-trades-just-happened-in-micron-and-nvidia-what-they-could-mean-for-chips.html",
    "fuente": "CNBC",
    "fecha": "Fri, 09 Oct 2026 18:50:21 GMT"
   },
   {
-   "titulo": "Hurricane Isaias to ‘stress test’ oil markets already hobbled by tight fuel supplies",
-   "url": "https://www.marketwatch.com/story/hurricane-isaias-to-stress-test-oil-markets-already-hobbled-by-tight-fuel-supplies-ca90d4a5?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 09 Oct 2026 18:44:00 GMT"
-  },
-  {
-   "titulo": "Verizon stock heads for worst day since 2002 as SpaceX U.S. network plans whack telcos",
-   "url": "https://www.cnbc.com/2026/10/09/verizon-att-tmobile-stocks-spacex-network.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 09 Oct 2026 18:32:37 GMT"
-  },
-  {
-   "titulo": "‘I feel like a loser’: I check my ETFs every day. They’re up one minute, down the next. Should I be worried?",
-   "url": "https://www.marketwatch.com/story/i-feel-like-a-loser-my-etfs-go-up-one-day-and-crash-the-next-is-this-a-bad-sign-0c9848b2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 09 Oct 2026 18:30:00 GMT"
-  },
-  {
-   "titulo": "As AT&T, Verizon and T-Mobile shares fall, Wall Street assesses the growing SpaceX threat",
-   "url": "https://www.marketwatch.com/story/as-at-t-verizon-and-t-mobile-shares-fall-wall-street-assesses-the-growing-spacex-threat-e869ef9e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 09 Oct 2026 18:16:00 GMT"
-  },
-  {
-   "titulo": "Microsoft is nearing a big milestone that solidifies its revival",
-   "url": "https://www.marketwatch.com/story/microsoft-is-nearing-a-big-milestone-that-solidifies-its-revival-580d1ba8?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 09 Oct 2026 18:06:00 GMT"
-  },
-  {
-   "titulo": "Why you need to take a closer look at your favorite stock index",
-   "url": "https://www.marketwatch.com/story/why-you-need-to-take-a-closer-look-at-your-favorite-stock-index-479fb494?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 09 Oct 2026 18:04:00 GMT"
-  },
-  {
-   "titulo": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
-   "url": "https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 09 Oct 2026 18:00:00 GMT"
-  },
-  {
-   "titulo": "I’m a 68-year-old widow and give money to my two adult children. Am I putting my retirement at risk?",
-   "url": "https://www.marketwatch.com/story/im-a-68-year-old-widow-my-two-adult-children-keep-asking-me-for-money-are-they-taking-advantage-of-me-f725374e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 09 Oct 2026 18:00:00 GMT"
-  },
-  {
-   "titulo": "Trump appoints committee to investigate statements by the Fed's Lisa Cook",
-   "url": "https://www.cnbc.com/2026/10/09/fed-lisa-cook-trump.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 09 Oct 2026 17:56:24 GMT"
-  },
-  {
-   "titulo": "Trump ramps up battle to fire Fed’s Lisa Cook. Her lawyers say there’s no basis to remove her.",
-   "url": "https://www.marketwatch.com/story/trump-ramps-up-battle-to-fire-feds-lisa-cook-her-lawyers-say-theres-no-basis-to-remove-her-3a62c5cd?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 09 Oct 2026 17:50:00 GMT"
-  },
-  {
    "titulo": "Hurricane Isaias disrupts U.S. oil production in Gulf of Mexico, threatens refineries",
    "url": "https://www.cnbc.com/2026/10/09/hurricane-isaias-gulf-mexico-oil-refinery.html",
    "fuente": "CNBC",
    "fecha": "Fri, 09 Oct 2026 17:12:17 GMT"
-  },
-  {
-   "titulo": "Delta Air Lines cuts 2026 forecast on fuel surge, but CEO says demand is still strong",
-   "url": "https://www.cnbc.com/2026/10/09/delta-air-lines-dal-q3-2026-earnings.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 09 Oct 2026 15:07:46 GMT"
   },
   {
    "titulo": "Living with Mom and trading on margin. The regular investor gets in on Wall Street's record stock borrowing binge",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-09T19:34:36Z",
+ "ts": "2026-10-09T23:28:54Z",
  "fallas": [
   "videos",
   "directos"
