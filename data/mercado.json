@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30975.75,
-   "cambio": -342.0,
-   "pct": -1.09
+   "precio": 31169.75,
+   "cambio": -148.0,
+   "pct": -0.47
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7825.75,
-   "cambio": -0.5,
-   "pct": -0.01
+   "precio": 7838.0,
+   "cambio": 11.75,
+   "pct": 0.15
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4166.6,
-   "cambio": 9.8,
-   "pct": 0.24
+   "precio": 4216.9,
+   "cambio": 60.1,
+   "pct": 1.45
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 91.11,
-   "cambio": 1.68,
-   "pct": 1.88
+   "precio": 90.79,
+   "cambio": 1.36,
+   "pct": 1.52
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2818.2,
-   "cambio": -49.6,
-   "pct": -1.73
+   "precio": 2817.9,
+   "cambio": -49.9,
+   "pct": -1.74
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51562.0,
-   "cambio": 4.0,
-   "pct": 0.01
+   "precio": 51519.0,
+   "cambio": -39.0,
+   "pct": -0.08
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81835.0,
-   "cambio": -4170.0,
-   "pct": -4.85
+   "precio": 82685.0,
+   "cambio": -3320.0,
+   "pct": -3.86
   }
  ],
  "acciones": [
@@ -274,6 +274,42 @@
  ],
  "noticias": [
   {
+   "titulo": "Tokenization could unleash tens of billions of dollars in trapped capital, Nasdaq CEO says",
+   "url": "https://www.cnbc.com/2026/10/09/nasdaq-ceo-tokenization-could-unleash-billions-in-trapped-capital-.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 09 Oct 2026 06:30:01 GMT"
+  },
+  {
+   "titulo": "Ray Dalio warns the stock market's cushion against rising bond yields is shrinking",
+   "url": "https://www.cnbc.com/2026/10/08/ray-dalio-stocks-bond-yields.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 09 Oct 2026 06:16:19 GMT"
+  },
+  {
+   "titulo": "'Real boss of India?': Elon Musk takes aim at Indian billionaire Ambani as Starlink launch stalls",
+   "url": "https://www.cnbc.com/2026/10/09/musk-starlink-ambani-india-us.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 09 Oct 2026 04:11:59 GMT"
+  },
+  {
+   "titulo": "Nvidia-backed Aussie AI firm Firmus withdraws historic IPO, citing market volatility",
+   "url": "https://www.cnbc.com/2026/10/09/nvidia-ai-firmus-ipo-.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 09 Oct 2026 03:51:15 GMT"
+  },
+  {
+   "titulo": "U.S. East Asian envoy says investors are overpricing Taiwan conflict risk",
+   "url": "https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 09 Oct 2026 02:52:15 GMT"
+  },
+  {
+   "titulo": "SpaceX’s Starlink Mobile plans are pressuring AT&T and Verizon shares",
+   "url": "https://www.marketwatch.com/story/spacexs-starlink-mobile-plans-are-pressuring-at-t-and-verizon-shares-7cb56764?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 09 Oct 2026 00:52:00 GMT"
+  },
+  {
    "titulo": "How to downsize like a pro — and free yourself from being a ‘prisoner of your possessions’",
    "url": "https://www.marketwatch.com/story/how-to-downsize-like-a-pro-and-free-yourself-from-being-a-prisoner-of-your-possessions-c4b5533e?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -322,34 +358,16 @@
    "fecha": "Thu, 08 Oct 2026 21:43:00 GMT"
   },
   {
-   "titulo": "Nvidia, Oracle, CoreWeave and other AI stocks sink on OpenAI revenue report",
-   "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 08 Oct 2026 21:19:14 GMT"
-  },
-  {
    "titulo": "I’m a 68-year-old widow and give money to my two adult children. Am I putting my retirement at risk?",
    "url": "https://www.marketwatch.com/story/im-a-68-year-old-widow-my-two-adult-children-keep-asking-me-for-money-are-they-taking-advantage-of-me-f725374e?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 08 Oct 2026 21:15:00 GMT"
   },
   {
-   "titulo": "America shut out Chinese EVs. Britain welcomed them — and now faces a difficult choice",
-   "url": "https://www.cnbc.com/2026/10/08/autos-china-evs-uk-tariffs-hybrid-cars.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 08 Oct 2026 20:55:39 GMT"
-  },
-  {
    "titulo": "Worse than taking away your parents’ car keys? Taking away their cell phone. How to protect your aging parents.",
    "url": "https://www.marketwatch.com/story/worse-than-taking-away-your-parents-car-keys-taking-away-their-cellphone-how-to-protect-your-aging-parents-f01be6e6?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 08 Oct 2026 20:55:00 GMT"
-  },
-  {
-   "titulo": "A big AI super PAC tried to follow crypto’s playbook to influence the midterms. Critics say it’s not working out.",
-   "url": "https://www.marketwatch.com/story/a-big-ai-super-pac-tried-to-follow-cryptos-playbook-to-influence-the-midterms-critics-say-its-not-working-out-d27911e6?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 08 Oct 2026 20:44:00 GMT"
   },
   {
    "titulo": "Major League Baseball proposes shortening its regular season as it pushes for a salary cap",
@@ -374,24 +392,6 @@
    "url": "https://www.cnbc.com/2026/10/08/treasury-yields-david-zervos.html",
    "fuente": "CNBC",
    "fecha": "Thu, 08 Oct 2026 20:06:31 GMT"
-  },
-  {
-   "titulo": "Little relief expected for gas prices ahead of Election Day, according to prediction markets",
-   "url": "https://www.cnbc.com/2026/10/08/little-relief-expected-for-gas-prices-ahead-of-election-day.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 08 Oct 2026 17:51:51 GMT"
-  },
-  {
-   "titulo": "Trump says U.S. will not attack Iran before midterm election",
-   "url": "https://www.cnbc.com/2026/10/08/iran-war-trump-midterm-election.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 08 Oct 2026 17:41:20 GMT"
-  },
-  {
-   "titulo": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
-   "url": "https://www.cnbc.com/2026/10/08/inflation-tariffs-trump-fed-consumer-goods.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 08 Oct 2026 17:31:03 GMT"
   },
   {
    "titulo": "CNBC's Financial Advisor 100: Best financial advisors, top firms for 2026 ranked",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-09T00:38:12Z",
+ "ts": "2026-10-09T06:44:17Z",
  "fallas": [
   "videos",
   "directos"
