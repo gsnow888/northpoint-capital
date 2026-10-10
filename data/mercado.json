@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 31123.25,
-   "cambio": -194.5,
-   "pct": -0.62
+   "precio": 31108.75,
+   "cambio": -209.0,
+   "pct": -0.67
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7866.0,
-   "cambio": 39.75,
-   "pct": 0.51
+   "precio": 7859.75,
+   "cambio": 33.5,
+   "pct": 0.43
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4220.3,
-   "cambio": 63.5,
-   "pct": 1.53
+   "precio": 4216.3,
+   "cambio": 59.5,
+   "pct": 1.43
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 91.66,
-   "cambio": 2.23,
-   "pct": 2.49
+   "precio": 91.85,
+   "cambio": 2.42,
+   "pct": 2.71
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2823.5,
-   "cambio": -44.3,
-   "pct": -1.54
+   "precio": 2822.1,
+   "cambio": -45.7,
+   "pct": -1.59
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51976.0,
-   "cambio": 418.0,
-   "pct": 0.81
+   "precio": 51926.0,
+   "cambio": 368.0,
+   "pct": 0.71
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 82850.0,
-   "cambio": -3155.0,
-   "pct": -3.67
+   "precio": 82905.0,
+   "cambio": -3100.0,
+   "pct": -3.6
   }
  ],
  "acciones": [
@@ -274,6 +274,24 @@
  ],
  "noticias": [
   {
+   "titulo": "The world needs Ukraine’s grain. Its farmers are running out of reasons to plant",
+   "url": "https://www.cnbc.com/2026/10/10/ukraine-grain-exports-russia-harvest.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 10 Oct 2026 05:00:01 GMT"
+  },
+  {
+   "titulo": "AI is changing how lawyers work — and putting the billable hour under pressure",
+   "url": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 10 Oct 2026 05:00:01 GMT"
+  },
+  {
+   "titulo": "‘I feel like a loser’: My stock portfolio is swinging wildly. Should I be worried?",
+   "url": "https://www.marketwatch.com/story/i-feel-like-a-loser-my-etfs-go-up-one-day-and-crash-the-next-is-this-a-bad-sign-0c9848b2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 10 Oct 2026 03:15:00 GMT"
+  },
+  {
    "titulo": "Trump's diesel agreement with Putin accused of contradicting Russia sanctions law",
    "url": "https://www.cnbc.com/2026/10/09/trump-putin-diesel-russia-sanctions-ukraine.html",
    "fuente": "CNBC",
@@ -284,12 +302,6 @@
    "url": "https://www.marketwatch.com/story/i-have-no-children-my-aunt-gave-me-50-000-for-a-down-payment-she-wants-me-to-leave-my-home-to-her-two-children-24fad94c?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 10 Oct 2026 00:15:00 GMT"
-  },
-  {
-   "titulo": "‘I feel like a loser’: I check my ETFs every day. They’re up one minute, down the next. Should I be worried?",
-   "url": "https://www.marketwatch.com/story/i-feel-like-a-loser-my-etfs-go-up-one-day-and-crash-the-next-is-this-a-bad-sign-0c9848b2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 10 Oct 2026 00:00:00 GMT"
   },
   {
    "titulo": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
@@ -352,22 +364,10 @@
    "fecha": "Fri, 09 Oct 2026 20:51:25 GMT"
   },
   {
-   "titulo": "Verizon posts worst day since 2002 as SpaceX U.S. network plans whack cell provider stocks",
-   "url": "https://www.cnbc.com/2026/10/09/verizon-att-tmobile-stocks-spacex-network.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 09 Oct 2026 20:16:58 GMT"
-  },
-  {
    "titulo": "Trump Media advisor Katie Zacharia offered White House press secretary role",
    "url": "https://www.cnbc.com/2026/10/09/katie-zacharia-white-house-press-secretary.html",
    "fuente": "CNBC",
    "fecha": "Fri, 09 Oct 2026 19:25:28 GMT"
-  },
-  {
-   "titulo": "Tesla drops 'Full Self-Driving' brand name in Europe after regulator pushback",
-   "url": "https://www.cnbc.com/2026/10/09/tesla-full-self-driving-europe-regulator.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 09 Oct 2026 19:21:14 GMT"
   },
   {
    "titulo": "Trump created a committee to dig into the Fed's Lisa Cook. What is it and what comes next?",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-10T02:44:30Z",
+ "ts": "2026-10-10T09:33:54Z",
  "fallas": [
   "videos",
   "directos"
