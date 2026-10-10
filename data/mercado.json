@@ -97,9 +97,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 82645.0,
-   "cambio": -3360.0,
-   "pct": -3.91
+   "precio": 82850.0,
+   "cambio": -3155.0,
+   "pct": -3.67
   }
  ],
  "acciones": [
@@ -274,6 +274,24 @@
  ],
  "noticias": [
   {
+   "titulo": "Trump's diesel agreement with Putin accused of contradicting Russia sanctions law",
+   "url": "https://www.cnbc.com/2026/10/09/trump-putin-diesel-russia-sanctions-ukraine.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 10 Oct 2026 02:09:00 GMT"
+  },
+  {
+   "titulo": "‘I have no children’: My aunt gave me $50,000 for a down payment. Now she wants me to leave my home to her two children.",
+   "url": "https://www.marketwatch.com/story/i-have-no-children-my-aunt-gave-me-50-000-for-a-down-payment-she-wants-me-to-leave-my-home-to-her-two-children-24fad94c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 10 Oct 2026 00:15:00 GMT"
+  },
+  {
+   "titulo": "‘I feel like a loser’: I check my ETFs every day. They’re up one minute, down the next. Should I be worried?",
+   "url": "https://www.marketwatch.com/story/i-feel-like-a-loser-my-etfs-go-up-one-day-and-crash-the-next-is-this-a-bad-sign-0c9848b2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 10 Oct 2026 00:00:00 GMT"
+  },
+  {
    "titulo": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
    "url": "https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -316,12 +334,6 @@
    "fecha": "Fri, 09 Oct 2026 21:24:00 GMT"
   },
   {
-   "titulo": "‘I feel like a loser’: I check my ETFs every day. They’re up one minute, down the next. Should I be worried?",
-   "url": "https://www.marketwatch.com/story/i-feel-like-a-loser-my-etfs-go-up-one-day-and-crash-the-next-is-this-a-bad-sign-0c9848b2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 09 Oct 2026 21:15:00 GMT"
-  },
-  {
    "titulo": "As AT&T, Verizon and T-Mobile shares fall, Wall Street assesses the growing SpaceX threat",
    "url": "https://www.marketwatch.com/story/as-at-t-verizon-and-t-mobile-shares-fall-wall-street-assesses-the-growing-spacex-threat-e869ef9e?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -340,22 +352,10 @@
    "fecha": "Fri, 09 Oct 2026 20:51:25 GMT"
   },
   {
-   "titulo": "Trump strikes deal with Putin to supply Russian diesel to U.S. and global markets",
-   "url": "https://www.cnbc.com/2026/10/09/trump-putin-russian-diesel-us-global-markets.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 09 Oct 2026 20:20:57 GMT"
-  },
-  {
    "titulo": "Verizon posts worst day since 2002 as SpaceX U.S. network plans whack cell provider stocks",
    "url": "https://www.cnbc.com/2026/10/09/verizon-att-tmobile-stocks-spacex-network.html",
    "fuente": "CNBC",
    "fecha": "Fri, 09 Oct 2026 20:16:58 GMT"
-  },
-  {
-   "titulo": "‘I have no children’: My aunt gave me $50,000 for a down payment. Now she wants me to leave my home to her two children.",
-   "url": "https://www.marketwatch.com/story/i-have-no-children-my-aunt-gave-me-50-000-for-a-down-payment-she-wants-me-to-leave-my-home-to-her-two-children-24fad94c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 09 Oct 2026 20:15:00 GMT"
   },
   {
    "titulo": "Trump Media advisor Katie Zacharia offered White House press secretary role",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-09T23:28:54Z",
+ "ts": "2026-10-10T02:44:30Z",
  "fallas": [
   "videos",
   "directos"
