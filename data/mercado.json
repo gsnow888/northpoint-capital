@@ -274,16 +274,28 @@
  ],
  "noticias": [
   {
+   "titulo": "‘I feel like a loser’: My stock portfolio is swinging wildly. Is it finally time to worry?",
+   "url": "https://www.marketwatch.com/story/i-feel-like-a-loser-my-etfs-go-up-one-day-and-crash-the-next-is-this-a-bad-sign-0c9848b2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 10 Oct 2026 18:31:00 GMT"
+  },
+  {
+   "titulo": "Elon Musk is now richer than any American ever — and it’s not even close",
+   "url": "https://www.marketwatch.com/story/elon-musk-is-now-richer-than-any-american-ever-and-its-not-even-close-58f31401?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 10 Oct 2026 16:50:00 GMT"
+  },
+  {
+   "titulo": "A friend in her 80s fell down her basement stairs. Is this a hidden danger lurking in people’s home?",
+   "url": "https://www.marketwatch.com/story/the-pain-was-excruciating-a-friend-in-her-80s-fell-down-her-basement-stairs-could-it-have-been-avoided-ce105db6?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 10 Oct 2026 16:00:00 GMT"
+  },
+  {
    "titulo": "‘I have no children’: My aunt gave me $50,000 for a down payment. Now she wants me to leave my home to her two children.",
    "url": "https://www.marketwatch.com/story/i-have-no-children-my-aunt-gave-me-50-000-for-a-down-payment-she-wants-me-to-leave-my-home-to-her-two-children-24fad94c?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 10 Oct 2026 15:30:00 GMT"
-  },
-  {
-   "titulo": "‘I feel like a loser’: My stock portfolio is swinging wildly. Is it finally time to worry?",
-   "url": "https://www.marketwatch.com/story/i-feel-like-a-loser-my-etfs-go-up-one-day-and-crash-the-next-is-this-a-bad-sign-0c9848b2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 10 Oct 2026 15:05:00 GMT"
   },
   {
    "titulo": "JPMorgan makes bullish call in fixed income space, suggests it's a once in a generation opportunity",
@@ -296,6 +308,12 @@
    "url": "https://www.cnbc.com/2026/10/10/vance-microsoft-h1b-layoffs-visa-data.html",
    "fuente": "CNBC",
    "fecha": "Sat, 10 Oct 2026 14:22:23 GMT"
+  },
+  {
+   "titulo": "How de-extincting dire wolves and woolly mammoths may extend human life",
+   "url": "https://www.cnbc.com/2026/10/10/de-extincting-dire-wolves-woolly-mammoths-help-humans.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 10 Oct 2026 14:00:01 GMT"
   },
   {
    "titulo": "Putin relayed Iran war proposal to Trump, Kremlin says",
@@ -318,12 +336,6 @@
   {
    "titulo": "‘People in the U.S. need to wake up’: As a mortgage loan officer, I rejected applications from wealthy couples. Here’s why.",
    "url": "https://www.marketwatch.com/story/people-in-the-u-s-need-to-wake-up-as-a-mortgage-loan-officer-i-rejected-wealthy-couples-due-to-overspending-were-all-heading-for-trouble-6a52e04e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 10 Oct 2026 13:15:00 GMT"
-  },
-  {
-   "titulo": "‘The pain was excruciating’: A friend in her 80s fell down her basement stairs. What could we have done to prevent it?",
-   "url": "https://www.marketwatch.com/story/the-pain-was-excruciating-a-friend-in-her-80s-fell-down-her-basement-stairs-could-it-have-been-avoided-ce105db6?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 10 Oct 2026 13:15:00 GMT"
   },
@@ -358,12 +370,6 @@
    "fecha": "Sat, 10 Oct 2026 12:00:01 GMT"
   },
   {
-   "titulo": "Hollywood takes on Zuckerberg, Musk and Altman amid widespread anxiety over AI",
-   "url": "https://www.cnbc.com/2026/10/10/ai-movies-tech-ceos-hollywood.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 10 Oct 2026 12:00:01 GMT"
-  },
-  {
    "titulo": "‘What you don’t know is greater than anything you do know’: How Ray Dalio would build a portfolio to withstand a popping AI bubble",
    "url": "https://www.marketwatch.com/story/what-you-dont-know-is-greater-than-anything-you-do-know-how-ray-dalio-would-build-a-portfolio-to-withstand-a-popping-ai-bubble-2491ac6b?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -388,16 +394,10 @@
    "fecha": "Sat, 10 Oct 2026 02:09:00 GMT"
   },
   {
-   "titulo": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
-   "url": "https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 09 Oct 2026 23:15:00 GMT"
-  },
-  {
-   "titulo": "Cramer’s week ahead: Earnings kick off as banks and chipmakers face big tests",
-   "url": "https://www.cnbc.com/2026/10/09/jim-cramer-week-ahead-bank-earnings-ai-chips.html",
+   "titulo": "Trump created a committee to dig into the Fed's Lisa Cook. What is it and what comes next?",
+   "url": "https://www.cnbc.com/2026/10/09/trump-lisa-cook-fed-firing-committee-explained.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 09 Oct 2026 22:22:35 GMT"
+   "fecha": "Fri, 09 Oct 2026 19:19:00 GMT"
   },
   {
    "titulo": "Living with Mom and trading on margin. The regular investor gets in on Wall Street's record stock borrowing binge",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-10T15:33:55Z",
+ "ts": "2026-10-10T19:30:25Z",
  "fallas": [
   "videos",
   "directos"
