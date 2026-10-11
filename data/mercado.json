@@ -177,9 +177,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 83200.0,
-   "cambio": -2660.0,
-   "pct": -3.1
+   "precio": 83875.0,
+   "cambio": -1985.0,
+   "pct": -2.31
   }
  ],
  "acciones": [
@@ -354,10 +354,28 @@
  ],
  "noticias": [
   {
+   "titulo": "Justice Department opens antitrust probe as White House press-access fight escalates",
+   "url": "https://www.cnbc.com/2026/10/11/trump-doj-white-house-tv-press-pool-antitrust.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 11 Oct 2026 19:15:21 GMT"
+  },
+  {
+   "titulo": "From BJ’s to Lululemon, retailers are trimming assortments to boost business",
+   "url": "https://www.cnbc.com/2026/10/10/from-bjs-to-lululemon-retailers-are-trimming-assortments.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 11 Oct 2026 17:08:30 GMT"
+  },
+  {
+   "titulo": "Millions of Americans will have fewer options during Medicare open enrollment this year",
+   "url": "https://www.marketwatch.com/story/millions-of-americans-will-have-fewer-options-during-medicare-open-enrollment-this-year-6b56698b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 11 Oct 2026 16:35:00 GMT"
+  },
+  {
    "titulo": "Trump says he is 'going to look at' joining Saudi Arabia in the fight against Iran-backed Houthis after deadly airport strike",
    "url": "https://www.cnbc.com/2026/10/11/trump-saudi-arabia-iran-houthis.html",
    "fuente": "CNBC",
-   "fecha": "Sun, 11 Oct 2026 14:09:22 GMT"
+   "fecha": "Sun, 11 Oct 2026 16:29:55 GMT"
   },
   {
    "titulo": "AI’s quiet safety gatekeepers are stepping into the spotlight",
@@ -444,12 +462,6 @@
    "fecha": "Sat, 10 Oct 2026 19:44:00 GMT"
   },
   {
-   "titulo": "Rising interest rates: The good, the bad and the ugly for retirees",
-   "url": "https://www.marketwatch.com/story/the-good-the-bad-and-the-ugly-of-rising-interest-rates-ee465a81?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 10 Oct 2026 19:44:00 GMT"
-  },
-  {
    "titulo": "JPMorgan makes bullish call in fixed income space, suggests it's a once in a generation opportunity",
    "url": "https://www.cnbc.com/2026/10/10/jpmorgan-sees-once-in-a-generation-opportunity-in-fixed-income-space.html",
    "fuente": "CNBC",
@@ -466,18 +478,6 @@
    "url": "https://www.cnbc.com/2026/10/10/pokemon-card-values-grading-guide.html",
    "fuente": "CNBC",
    "fecha": "Sat, 10 Oct 2026 13:30:02 GMT"
-  },
-  {
-   "titulo": "How Supreme Court justices are leaning in major 401(k) case over private funds and underperformance",
-   "url": "https://www.cnbc.com/2026/10/10/supreme-court-case-401k-private-funds-intel.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 10 Oct 2026 13:00:01 GMT"
-  },
-  {
-   "titulo": "From BJ’s to Lululemon, retailers are trimming assortments to boost business",
-   "url": "https://www.cnbc.com/2026/10/10/from-bjs-to-lululemon-retailers-are-trimming-assortments.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 10 Oct 2026 12:00:01 GMT"
   },
   {
    "titulo": "Living with Mom and trading on margin. The regular investor gets in on Wall Street's record stock borrowing binge",
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-11T14:44:48Z",
+ "ts": "2026-10-11T19:23:39Z",
  "fallas": [
   "videos",
   "directos"
