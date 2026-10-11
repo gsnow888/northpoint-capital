@@ -1,54 +1,134 @@
 {
  "calendario": [
   {
-   "dia": "2026-10-06",
-   "hora": "00:35",
-   "hora_ny": "02:35",
-   "iso": "2026-10-06T02:35:00-04:00",
-   "titulo": "BOJ Gov Ueda Speaks",
-   "pais": "JPY",
-   "previsto": "",
-   "previo": ""
-  },
-  {
-   "dia": "2026-10-07",
-   "hora": "12:00",
-   "hora_ny": "14:00",
-   "iso": "2026-10-07T14:00:00-04:00",
-   "titulo": "FOMC Meeting Minutes",
+   "dia": "2026-10-14",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-14T08:30:00-04:00",
+   "titulo": "Core CPI m/m",
    "pais": "USD",
-   "previsto": "",
-   "previo": ""
+   "previsto": "0.2%",
+   "previo": "0.3%"
   },
   {
-   "dia": "2026-10-08",
-   "hora": "06:15",
-   "hora_ny": "08:15",
-   "iso": "2026-10-08T08:15:00-04:00",
+   "dia": "2026-10-14",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-14T08:30:00-04:00",
+   "titulo": "Core CPI y/y",
+   "pais": "USD",
+   "previsto": "2.5%",
+   "previo": "2.4%"
+  },
+  {
+   "dia": "2026-10-14",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-14T08:30:00-04:00",
+   "titulo": "CPI m/m",
+   "pais": "USD",
+   "previsto": "0.6%",
+   "previo": "0.4%"
+  },
+  {
+   "dia": "2026-10-14",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-14T08:30:00-04:00",
+   "titulo": "CPI y/y",
+   "pais": "USD",
+   "previsto": "3.6%",
+   "previo": "3.4%"
+  },
+  {
+   "dia": "2026-10-14",
+   "hora": "18:30",
+   "hora_ny": "20:30",
+   "iso": "2026-10-14T20:30:00-04:00",
+   "titulo": "Employment Change",
+   "pais": "AUD",
+   "previsto": "20.0K",
+   "previo": "39.5K"
+  },
+  {
+   "dia": "2026-10-14",
+   "hora": "18:30",
+   "hora_ny": "20:30",
+   "iso": "2026-10-14T20:30:00-04:00",
+   "titulo": "Unemployment Rate",
+   "pais": "AUD",
+   "previsto": "4.6%",
+   "previo": "4.6%"
+  },
+  {
+   "dia": "2026-10-15",
+   "hora": "00:00",
+   "hora_ny": "02:00",
+   "iso": "2026-10-15T02:00:00-04:00",
+   "titulo": "GDP m/m",
+   "pais": "GBP",
+   "previsto": "-0.1%",
+   "previo": "0.4%"
+  },
+  {
+   "dia": "2026-10-15",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-15T08:30:00-04:00",
+   "titulo": "Core PPI m/m",
+   "pais": "USD",
+   "previsto": "0.3%",
+   "previo": "0.2%"
+  },
+  {
+   "dia": "2026-10-15",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-15T08:30:00-04:00",
+   "titulo": "Core Retail Sales m/m",
+   "pais": "USD",
+   "previsto": "0.5%",
+   "previo": "1.4%"
+  },
+  {
+   "dia": "2026-10-15",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-15T08:30:00-04:00",
+   "titulo": "PPI m/m",
+   "pais": "USD",
+   "previsto": "0.5%",
+   "previo": "0.4%"
+  },
+  {
+   "dia": "2026-10-15",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-15T08:30:00-04:00",
+   "titulo": "Retail Sales m/m",
+   "pais": "USD",
+   "previsto": "0.3%",
+   "previo": "1.2%"
+  },
+  {
+   "dia": "2026-10-15",
+   "hora": "20:00",
+   "hora_ny": "22:00",
+   "iso": "2026-10-15T22:00:00-04:00",
    "titulo": "BOE Gov Bailey Speaks",
    "pais": "GBP",
    "previsto": "",
    "previo": ""
   },
   {
-   "dia": "2026-10-09",
-   "hora": "06:30",
-   "hora_ny": "08:30",
-   "iso": "2026-10-09T08:30:00-04:00",
-   "titulo": "Employment Change",
-   "pais": "CAD",
-   "previsto": "6.1K",
-   "previo": "-41.7K"
-  },
-  {
-   "dia": "2026-10-09",
-   "hora": "06:30",
-   "hora_ny": "08:30",
-   "iso": "2026-10-09T08:30:00-04:00",
-   "titulo": "Unemployment Rate",
-   "pais": "CAD",
-   "previsto": "6.5%",
-   "previo": "6.4%"
+   "dia": "2026-10-15",
+   "hora": "21:30",
+   "hora_ny": "23:30",
+   "iso": "2026-10-15T23:30:00-04:00",
+   "titulo": "Fed Chairman Warsh Speaks",
+   "pais": "USD",
+   "previsto": "",
+   "previo": ""
   }
  ],
  "precios": [
@@ -56,50 +136,50 @@
    "sym": "NQ",
    "nombre": "Nasdaq 100",
    "precio": 31108.75,
-   "cambio": -209.0,
-   "pct": -0.67
+   "cambio": -374.5,
+   "pct": -1.19
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
    "precio": 7859.75,
-   "cambio": 33.5,
-   "pct": 0.43
+   "cambio": -14.25,
+   "pct": -0.18
   },
   {
    "sym": "GC",
    "nombre": "Oro",
    "precio": 4216.3,
-   "cambio": 59.5,
-   "pct": 1.43
+   "cambio": 29.2,
+   "pct": 0.7
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
    "precio": 91.85,
-   "cambio": 2.42,
-   "pct": 2.71
+   "cambio": 2.41,
+   "pct": 2.69
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
    "precio": 2822.1,
-   "cambio": -45.7,
-   "pct": -1.59
+   "cambio": -26.1,
+   "pct": -0.92
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
    "precio": 51926.0,
-   "cambio": 368.0,
-   "pct": 0.71
+   "cambio": 110.0,
+   "pct": 0.21
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
    "precio": 82905.0,
-   "cambio": -3100.0,
-   "pct": -3.6
+   "cambio": -2955.0,
+   "pct": -3.44
   }
  ],
  "acciones": [
@@ -517,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-11T01:39:53Z",
+ "ts": "2026-10-11T07:50:42Z",
  "fallas": [
   "videos",
   "directos"
