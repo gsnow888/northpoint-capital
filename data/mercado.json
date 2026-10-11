@@ -177,9 +177,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 82905.0,
-   "cambio": -2955.0,
-   "pct": -3.44
+   "precio": 83200.0,
+   "cambio": -2660.0,
+   "pct": -3.1
   }
  ],
  "acciones": [
@@ -354,10 +354,70 @@
  ],
  "noticias": [
   {
-   "titulo": "Microsoft's Nadella says AI needs an ‘emergency brake’ that humans control",
-   "url": "https://www.cnbc.com/2026/10/10/microsoft-satya-nadella-ai-emergency-brake-safety.html",
+   "titulo": "Trump says he is 'going to look at' joining Saudi Arabia in the fight against Iran-backed Houthis after deadly airport strike",
+   "url": "https://www.cnbc.com/2026/10/11/trump-saudi-arabia-iran-houthis.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 10 Oct 2026 20:59:28 GMT"
+   "fecha": "Sun, 11 Oct 2026 14:09:22 GMT"
+  },
+  {
+   "titulo": "AI’s quiet safety gatekeepers are stepping into the spotlight",
+   "url": "https://www.cnbc.com/2026/10/11/ais-quiet-safety-gatekeepers-are-stepping-into-the-spotlight.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 11 Oct 2026 14:08:44 GMT"
+  },
+  {
+   "titulo": "We’re about to get a huge read on whether earnings can keep propping up the stock market",
+   "url": "https://www.marketwatch.com/story/were-about-to-get-a-huge-read-on-whether-earnings-can-keep-propping-up-the-stock-market-459b565b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 11 Oct 2026 14:00:00 GMT"
+  },
+  {
+   "titulo": "AI is automating coding. So why are software developer job postings on the rise?",
+   "url": "https://www.cnbc.com/2026/10/11/ai-software-developer-jobs.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 11 Oct 2026 13:30:01 GMT"
+  },
+  {
+   "titulo": "The bull market is turning 4 years old — but yields could crash the party",
+   "url": "https://www.marketwatch.com/story/the-bull-market-is-turning-4-years-old-but-yields-could-crash-the-party-1305fe6c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 11 Oct 2026 13:00:00 GMT"
+  },
+  {
+   "titulo": "NBA commissioner Adam Silver says league could introduce ‘smart ball’ technology as soon as next year",
+   "url": "https://www.cnbc.com/2026/10/11/commissioner-adam-silver-nba-could-launch-smart-ball-tech-next-year.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 11 Oct 2026 12:54:04 GMT"
+  },
+  {
+   "titulo": "I’m a psychologist who studies couples: The No. 1 way to end a fight before it escalates—it works ‘almost immediately’",
+   "url": "https://www.cnbc.com/make-it/2026/10/11/psychologist-couples-end-fight-before-escalates-partial-yield.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 11 Oct 2026 12:48:01 GMT"
+  },
+  {
+   "titulo": "‘I feel like a loser’: My stock portfolio is swinging wildly. Is it finally time to worry?",
+   "url": "https://www.marketwatch.com/story/i-feel-like-a-loser-my-etfs-go-up-one-day-and-crash-the-next-is-this-a-bad-sign-0c9848b2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 11 Oct 2026 12:30:00 GMT"
+  },
+  {
+   "titulo": "Bank earnings to shed the first light on how higher yields are affecting the economy",
+   "url": "https://www.marketwatch.com/story/bank-earnings-to-shed-the-first-light-on-how-higher-yields-are-affecting-the-economy-cf3763ef?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 11 Oct 2026 12:00:00 GMT"
+  },
+  {
+   "titulo": "‘I have no children’: My aunt gave me $50,000 for a down payment. Now she wants me to leave my home to her two children.",
+   "url": "https://www.marketwatch.com/story/i-have-no-children-my-aunt-gave-me-50-000-for-a-down-payment-she-wants-me-to-leave-my-home-to-her-two-children-24fad94c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 11 Oct 2026 12:00:00 GMT"
+  },
+  {
+   "titulo": "AI may change the price of your Big Mac and groceries — what this means for shoppers",
+   "url": "https://www.cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 11 Oct 2026 05:00:01 GMT"
   },
   {
    "titulo": "Should I put my nest egg in a 30-year Treasury bond?",
@@ -390,36 +450,6 @@
    "fecha": "Sat, 10 Oct 2026 19:44:00 GMT"
   },
   {
-   "titulo": "Taxing stocks, estates and employee benefits could keep Social Security from running out of money. Here’s who could pay the most.",
-   "url": "https://www.marketwatch.com/story/taxing-stocks-estates-and-employee-benefits-could-keep-social-security-from-running-out-of-money-heres-who-could-pay-the-most-616be82c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 10 Oct 2026 19:44:00 GMT"
-  },
-  {
-   "titulo": "Ken Paxton is right. Tax cuts will mean Social Security and Medicare cuts.",
-   "url": "https://www.marketwatch.com/story/ken-paxton-is-right-tax-cuts-will-mean-social-security-and-medicare-cuts-2befed72?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 10 Oct 2026 19:44:00 GMT"
-  },
-  {
-   "titulo": "Millions of Americans will have fewer options during Medicare open enrollment this year",
-   "url": "https://www.marketwatch.com/story/millions-of-americans-will-have-fewer-options-during-medicare-open-enrollment-this-year-6b56698b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 10 Oct 2026 19:44:00 GMT"
-  },
-  {
-   "titulo": "‘I feel like a loser’: My stock portfolio is swinging wildly. Is it finally time to worry?",
-   "url": "https://www.marketwatch.com/story/i-feel-like-a-loser-my-etfs-go-up-one-day-and-crash-the-next-is-this-a-bad-sign-0c9848b2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 10 Oct 2026 18:31:00 GMT"
-  },
-  {
-   "titulo": "Elon Musk is now richer than any American ever — and it’s not even close",
-   "url": "https://www.marketwatch.com/story/elon-musk-is-now-richer-than-any-american-ever-and-its-not-even-close-58f31401?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 10 Oct 2026 16:50:00 GMT"
-  },
-  {
    "titulo": "JPMorgan makes bullish call in fixed income space, suggests it's a once in a generation opportunity",
    "url": "https://www.cnbc.com/2026/10/10/jpmorgan-sees-once-in-a-generation-opportunity-in-fixed-income-space.html",
    "fuente": "CNBC",
@@ -430,12 +460,6 @@
    "url": "https://www.cnbc.com/2026/10/10/vance-microsoft-h1b-layoffs-visa-data.html",
    "fuente": "CNBC",
    "fecha": "Sat, 10 Oct 2026 14:22:23 GMT"
-  },
-  {
-   "titulo": "Putin relayed Iran war proposal to Trump, Kremlin says",
-   "url": "https://www.cnbc.com/2026/10/10/putin-trump-iran-war-russia-diesel.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 10 Oct 2026 13:42:36 GMT"
   },
   {
    "titulo": "Pokémon card values are soaring. What collectors should know before buying or selling",
@@ -450,34 +474,10 @@
    "fecha": "Sat, 10 Oct 2026 13:00:01 GMT"
   },
   {
-   "titulo": "Buffett's 'trips down YouTube rabbit hole' revealed",
-   "url": "https://www.cnbc.com/2026/10/10/buffetts-trips-down-youtube-rabbit-hole-revealed.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 10 Oct 2026 12:01:16 GMT"
-  },
-  {
    "titulo": "From BJ’s to Lululemon, retailers are trimming assortments to boost business",
    "url": "https://www.cnbc.com/2026/10/10/from-bjs-to-lululemon-retailers-are-trimming-assortments.html",
    "fuente": "CNBC",
    "fecha": "Sat, 10 Oct 2026 12:00:01 GMT"
-  },
-  {
-   "titulo": "Nvidia GPUs are everywhere. Here are the ways companies are accessing them",
-   "url": "https://www.cnbc.com/2026/10/10/nvidia-gpus-are-everywhere-heres-how-companies-access-them.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 10 Oct 2026 11:00:01 GMT"
-  },
-  {
-   "titulo": "Trump's diesel agreement with Putin accused of contradicting Russia sanctions law",
-   "url": "https://www.cnbc.com/2026/10/09/trump-putin-diesel-russia-sanctions-ukraine.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 10 Oct 2026 02:09:00 GMT"
-  },
-  {
-   "titulo": "Trump created a committee to dig into the Fed's Lisa Cook. What is it and what comes next?",
-   "url": "https://www.cnbc.com/2026/10/09/trump-lisa-cook-fed-firing-committee-explained.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 09 Oct 2026 19:19:00 GMT"
   },
   {
    "titulo": "Living with Mom and trading on margin. The regular investor gets in on Wall Street's record stock borrowing binge",
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-11T07:50:42Z",
+ "ts": "2026-10-11T14:44:48Z",
  "fallas": [
   "videos",
   "directos"
