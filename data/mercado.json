@@ -135,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 31181.75,
-   "cambio": -301.5,
-   "pct": -0.96
+   "precio": 31221.5,
+   "cambio": -261.75,
+   "pct": -0.83
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7867.5,
-   "cambio": -6.5,
-   "pct": -0.08
+   "precio": 7882.25,
+   "cambio": 8.25,
+   "pct": 0.1
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4209.1,
-   "cambio": 22.0,
-   "pct": 0.53
+   "precio": 4236.2,
+   "cambio": 49.1,
+   "pct": 1.17
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 92.43,
-   "cambio": 2.99,
-   "pct": 3.34
+   "precio": 90.13,
+   "cambio": 0.69,
+   "pct": 0.77
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2823.2,
-   "cambio": -25.0,
-   "pct": -0.88
+   "precio": 2831.5,
+   "cambio": -16.7,
+   "pct": -0.59
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51949.0,
-   "cambio": 133.0,
-   "pct": 0.26
+   "precio": 52094.0,
+   "cambio": 278.0,
+   "pct": 0.54
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 83755.0,
-   "cambio": -2105.0,
-   "pct": -2.45
+   "precio": 84100.0,
+   "cambio": -1760.0,
+   "pct": -2.05
   }
  ],
  "acciones": [
@@ -354,6 +354,24 @@
  ],
  "noticias": [
   {
+   "titulo": "Judge orders Trump administration to immediately stop taxpayer-funded TV ads",
+   "url": "https://www.cnbc.com/2026/10/11/trump-ads-dhs-judge-order.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 12 Oct 2026 02:28:54 GMT"
+  },
+  {
+   "titulo": "Why China is importing a record amount of gold — and what it means for prices",
+   "url": "https://www.cnbc.com/2026/10/12/china-gold-buying-interest-rate-.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 12 Oct 2026 00:51:10 GMT"
+  },
+  {
+   "titulo": "Plenty is working against this market. Here's why I'm staying invested anyway",
+   "url": "https://www.cnbc.com/investingclub/2026/10/11/plenty-is-working-against-this-market-why-im-staying-invested-anyway.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 12 Oct 2026 00:23:07 GMT"
+  },
+  {
    "titulo": "Trump says he is 'going to look at' joining Saudi Arabia in the fight against Iran-backed Houthis after deadly airport strike",
    "url": "https://www.cnbc.com/2026/10/11/trump-saudi-arabia-iran-houthis.html",
    "fuente": "CNBC",
@@ -420,22 +438,10 @@
    "fecha": "Sun, 11 Oct 2026 14:00:00 GMT"
   },
   {
-   "titulo": "AI is automating coding. So why are software developer job postings on the rise?",
-   "url": "https://www.cnbc.com/2026/10/11/ai-software-developer-jobs.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 11 Oct 2026 13:30:01 GMT"
-  },
-  {
    "titulo": "The bull market is turning 4 years old — but yields could crash the party",
    "url": "https://www.marketwatch.com/story/the-bull-market-is-turning-4-years-old-but-yields-could-crash-the-party-1305fe6c?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sun, 11 Oct 2026 13:00:00 GMT"
-  },
-  {
-   "titulo": "NBA commissioner Adam Silver says league could introduce ‘smart ball’ technology as soon as next year",
-   "url": "https://www.cnbc.com/2026/10/11/commissioner-adam-silver-nba-could-launch-smart-ball-tech-next-year.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 11 Oct 2026 12:54:04 GMT"
   },
   {
    "titulo": "Bank earnings to shed the first light on how higher yields are affecting the economy",
@@ -472,12 +478,6 @@
    "url": "https://www.cnbc.com/2026/10/10/pokemon-card-values-grading-guide.html",
    "fuente": "CNBC",
    "fecha": "Sat, 10 Oct 2026 13:30:02 GMT"
-  },
-  {
-   "titulo": "Hollywood takes on Zuckerberg, Musk and Altman amid widespread anxiety over AI",
-   "url": "https://www.cnbc.com/2026/10/10/ai-movies-tech-ceos-hollywood.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 10 Oct 2026 12:00:01 GMT"
   },
   {
    "titulo": "Living with Mom and trading on margin. The regular investor gets in on Wall Street's record stock borrowing binge",
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-11T23:08:21Z",
+ "ts": "2026-10-12T02:29:25Z",
  "fallas": [
   "videos",
   "directos"
