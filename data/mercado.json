@@ -135,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 31221.5,
-   "cambio": -261.75,
-   "pct": -0.83
+   "precio": 31095.0,
+   "cambio": -307.25,
+   "pct": -0.98
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7882.25,
-   "cambio": 8.25,
-   "pct": 0.1
+   "precio": 7870.0,
+   "cambio": 17.25,
+   "pct": 0.22
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4236.2,
-   "cambio": 49.1,
-   "pct": 1.17
+   "precio": 4198.3,
+   "cambio": 57.6,
+   "pct": 1.39
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 90.13,
-   "cambio": 0.69,
-   "pct": 0.77
+   "precio": 92.48,
+   "cambio": 4.2,
+   "pct": 4.76
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2831.5,
-   "cambio": -16.7,
-   "pct": -0.59
+   "precio": 2824.4,
+   "cambio": 12.2,
+   "pct": 0.43
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52094.0,
-   "cambio": 278.0,
-   "pct": 0.54
+   "precio": 51973.0,
+   "cambio": 524.0,
+   "pct": 1.02
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84100.0,
-   "cambio": -1760.0,
-   "pct": -2.05
+   "precio": 83585.0,
+   "cambio": -35.0,
+   "pct": -0.04
   }
  ],
  "acciones": [
@@ -354,6 +354,66 @@
  ],
  "noticias": [
   {
+   "titulo": "Oil turns higher amid skepticism Trump's 'energy ceasefire' between Russia and Ukraine will improve supply",
+   "url": "https://www.cnbc.com/2026/10/12/oil-prics-today-iran-us-saudi-arabia-crude-.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 12 Oct 2026 09:40:28 GMT"
+  },
+  {
+   "titulo": "Trump turns to Russian diesel ahead of midterms, but analysts see little price relief",
+   "url": "https://www.cnbc.com/2026/10/12/russia-ukraine-energy-ceasefire-diesel-prices.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 12 Oct 2026 09:31:22 GMT"
+  },
+  {
+   "titulo": "The bond market is doing the Fed’s job, and that could be good news for stocks, says Morgan Stanley strategist",
+   "url": "https://www.marketwatch.com/story/the-bond-market-is-doing-the-feds-job-and-that-could-be-good-news-for-stocks-says-morgan-stanley-strategist-ec57b81a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 12 Oct 2026 09:23:00 GMT"
+  },
+  {
+   "titulo": "My sister moved in with our widowed mother, 78, and says she deserves the family home. Is she right?",
+   "url": "https://www.marketwatch.com/story/my-sister-moved-in-with-our-widowed-mother-78-and-says-she-deserves-the-family-home-is-she-right-7981835d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 12 Oct 2026 09:15:00 GMT"
+  },
+  {
+   "titulo": "Here’s why Goldman Sachs just flipped bullish on stocks for the rest of the year",
+   "url": "https://www.marketwatch.com/story/heres-why-goldman-sachs-just-flipped-bullish-on-stocks-for-the-rest-of-the-year-dfa3b0af?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 12 Oct 2026 09:14:00 GMT"
+  },
+  {
+   "titulo": "Legal battle continues as Dolly Parton’s estate claims nephew put up barbed wire to avoid summons",
+   "url": "https://www.marketwatch.com/story/legal-battle-continues-as-dolly-partons-estate-claims-nephew-put-up-barbed-wire-to-avoid-summons-e4ed0f9a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 12 Oct 2026 09:05:00 GMT"
+  },
+  {
+   "titulo": "Dr. Phil lists his lavish Beverly Hills estate for a whopping $67.5 million",
+   "url": "https://www.marketwatch.com/story/dr-phil-lists-his-lavish-beverly-hills-estate-for-a-whopping-67-5-million-5992b370?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 12 Oct 2026 09:02:00 GMT"
+  },
+  {
+   "titulo": "Stellantis CEO urges incentives for carmakers who build in Europe as Chinese rivals gain ground",
+   "url": "https://www.cnbc.com/2026/10/12/stellantis-europe-cars-chinese-rivals-evs.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 12 Oct 2026 08:41:50 GMT"
+  },
+  {
+   "titulo": "Intel, Broadcom CEOs warn capital crunch could become AI's biggest bottleneck",
+   "url": "https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 12 Oct 2026 08:27:52 GMT"
+  },
+  {
+   "titulo": "AI may change the price of your Big Mac and groceries — what this means for shoppers",
+   "url": "https://www.cnbc.com/2026/10/11/ai-dynamic-pricing-shoppers-groceries.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 12 Oct 2026 06:02:18 GMT"
+  },
+  {
    "titulo": "Judge orders Trump administration to immediately stop taxpayer-funded TV ads",
    "url": "https://www.cnbc.com/2026/10/11/trump-ads-dhs-judge-order.html",
    "fuente": "CNBC",
@@ -366,22 +426,16 @@
    "fecha": "Mon, 12 Oct 2026 00:51:10 GMT"
   },
   {
-   "titulo": "Plenty is working against this market. Here's why I'm staying invested anyway",
-   "url": "https://www.cnbc.com/investingclub/2026/10/11/plenty-is-working-against-this-market-why-im-staying-invested-anyway.html",
+   "titulo": "Trump Media advisor Katie Zacharia named White House press secretary",
+   "url": "https://www.cnbc.com/2026/10/11/trump-katie-zacharia-white-house-press-secretary.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 12 Oct 2026 00:23:07 GMT"
+   "fecha": "Sun, 11 Oct 2026 22:16:40 GMT"
   },
   {
    "titulo": "Trump says he is 'going to look at' joining Saudi Arabia in the fight against Iran-backed Houthis after deadly airport strike",
    "url": "https://www.cnbc.com/2026/10/11/trump-saudi-arabia-iran-houthis.html",
    "fuente": "CNBC",
    "fecha": "Sun, 11 Oct 2026 21:30:45 GMT"
-  },
-  {
-   "titulo": "Justice Department investigates TV networks as White House press-access fight escalates",
-   "url": "https://www.cnbc.com/2026/10/11/trump-doj-white-house-tv-press-pool-antitrust.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 11 Oct 2026 20:18:38 GMT"
   },
   {
    "titulo": "‘I have no children’: My aunt gave me $50,000 for a down payment. Now she wants me to leave my home to her two children.",
@@ -396,12 +450,6 @@
    "fecha": "Sun, 11 Oct 2026 20:00:00 GMT"
   },
   {
-   "titulo": "Trump declares 'energy ceasefire' between Russia and Ukraine; Zelenskyy is waiting for details",
-   "url": "https://www.cnbc.com/2026/10/11/trump-energy-ceasefire-russia-ukraine-zelenskyy.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 11 Oct 2026 19:33:51 GMT"
-  },
-  {
    "titulo": "My brother-in-law convinced his parents to sign over their home and life savings to buy a $3 million compound. Do I intervene?",
    "url": "https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -414,52 +462,16 @@
    "fecha": "Sun, 11 Oct 2026 19:32:00 GMT"
   },
   {
-   "titulo": "From BJ’s to Lululemon, retailers are trimming assortments to boost business",
-   "url": "https://www.cnbc.com/2026/10/10/from-bjs-to-lululemon-retailers-are-trimming-assortments.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 11 Oct 2026 17:08:30 GMT"
-  },
-  {
    "titulo": "Millions of Americans will have fewer options during Medicare open enrollment this year",
    "url": "https://www.marketwatch.com/story/millions-of-americans-will-have-fewer-options-during-medicare-open-enrollment-this-year-6b56698b?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sun, 11 Oct 2026 16:35:00 GMT"
   },
   {
-   "titulo": "AI’s quiet safety gatekeepers are stepping into the spotlight",
-   "url": "https://www.cnbc.com/2026/10/11/ais-quiet-safety-gatekeepers-are-stepping-into-the-spotlight.html",
+   "titulo": "NBA commissioner Adam Silver says league could introduce ‘smart ball’ technology as soon as next year",
+   "url": "https://www.cnbc.com/2026/10/11/commissioner-adam-silver-nba-could-launch-smart-ball-tech-next-year.html",
    "fuente": "CNBC",
-   "fecha": "Sun, 11 Oct 2026 14:08:44 GMT"
-  },
-  {
-   "titulo": "We’re about to get a huge read on whether earnings can keep propping up the stock market",
-   "url": "https://www.marketwatch.com/story/were-about-to-get-a-huge-read-on-whether-earnings-can-keep-propping-up-the-stock-market-459b565b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 11 Oct 2026 14:00:00 GMT"
-  },
-  {
-   "titulo": "The bull market is turning 4 years old — but yields could crash the party",
-   "url": "https://www.marketwatch.com/story/the-bull-market-is-turning-4-years-old-but-yields-could-crash-the-party-1305fe6c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 11 Oct 2026 13:00:00 GMT"
-  },
-  {
-   "titulo": "Bank earnings to shed the first light on how higher yields are affecting the economy",
-   "url": "https://www.marketwatch.com/story/bank-earnings-to-shed-the-first-light-on-how-higher-yields-are-affecting-the-economy-cf3763ef?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 11 Oct 2026 12:00:00 GMT"
-  },
-  {
-   "titulo": "Should I put my nest egg in a 30-year Treasury bond?",
-   "url": "https://www.marketwatch.com/story/should-i-put-my-nest-egg-in-a-30-year-treasury-bond-89db6e09?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 10 Oct 2026 19:44:00 GMT"
-  },
-  {
-   "titulo": "Worse than taking away your parents’ car keys? Taking away their cell phone. How to protect your aging parents.",
-   "url": "https://www.marketwatch.com/story/worse-than-taking-away-your-parents-car-keys-taking-away-their-cellphone-how-to-protect-your-aging-parents-f01be6e6?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 10 Oct 2026 19:44:00 GMT"
+   "fecha": "Sun, 11 Oct 2026 12:54:04 GMT"
   },
   {
    "titulo": "JPMorgan makes bullish call in fixed income space, suggests it's a once in a generation opportunity",
@@ -468,22 +480,10 @@
    "fecha": "Sat, 10 Oct 2026 15:00:01 GMT"
   },
   {
-   "titulo": "Vance says Microsoft replaced laid-off workers with foreign hires. Here’s what the visa data shows",
-   "url": "https://www.cnbc.com/2026/10/10/vance-microsoft-h1b-layoffs-visa-data.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 10 Oct 2026 14:22:23 GMT"
-  },
-  {
    "titulo": "Pokémon card values are soaring. What collectors should know before buying or selling",
    "url": "https://www.cnbc.com/2026/10/10/pokemon-card-values-grading-guide.html",
    "fuente": "CNBC",
    "fecha": "Sat, 10 Oct 2026 13:30:02 GMT"
-  },
-  {
-   "titulo": "Living with Mom and trading on margin. The regular investor gets in on Wall Street's record stock borrowing binge",
-   "url": "https://www.cnbc.com/2026/10/09/margin-debt-stock-market-risk.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 09 Oct 2026 13:03:19 GMT"
   }
  ],
  "videos": [
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-12T02:29:25Z",
+ "ts": "2026-10-12T09:44:14Z",
  "fallas": [
   "videos",
   "directos"
