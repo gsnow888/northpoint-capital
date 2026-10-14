@@ -135,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30782.0,
-   "cambio": -187.5,
-   "pct": -0.61
+   "precio": 30824.75,
+   "cambio": -144.75,
+   "pct": -0.47
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7855.5,
-   "cambio": 39.25,
-   "pct": 0.5
+   "precio": 7860.0,
+   "cambio": 43.75,
+   "pct": 0.56
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4184.2,
-   "cambio": 27.2,
-   "pct": 0.65
+   "precio": 4179.2,
+   "cambio": 22.2,
+   "pct": 0.53
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 94.79,
-   "cambio": 3.3,
-   "pct": 3.61
+   "precio": 94.92,
+   "cambio": 3.43,
+   "pct": 3.75
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2800.9,
-   "cambio": -8.7,
-   "pct": -0.31
+   "precio": 2803.7,
+   "cambio": -5.9,
+   "pct": -0.21
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51922.0,
-   "cambio": 429.0,
-   "pct": 0.83
+   "precio": 51925.0,
+   "cambio": 432.0,
+   "pct": 0.84
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 83530.0,
-   "cambio": 1580.0,
-   "pct": 1.93
+   "precio": 83805.0,
+   "cambio": 1855.0,
+   "pct": 2.26
   }
  ],
  "acciones": [
@@ -354,16 +354,34 @@
  ],
  "noticias": [
   {
+   "titulo": "Singapore third-quarter GDP growth softens from four-year high but beats estimates",
+   "url": "https://www.cnbc.com/2026/10/14/singapore-gdp-q3.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 00:28:34 GMT"
+  },
+  {
    "titulo": "FBI arrests Saudi OpenAI employee who allegedly planted recording device in conference room",
    "url": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 13 Oct 2026 21:44:46 GMT"
+   "fecha": "Wed, 14 Oct 2026 00:13:45 GMT"
   },
   {
-   "titulo": "Six Flags shares decline following deadly roller coaster incident",
-   "url": "https://www.cnbc.com/2026/10/13/six-flags-shares-plunge-after-hours-deadly-roller-coaster-incident-goliath-georgia.html",
+   "titulo": "Goldman says investors are looking for 'profitable' Chinese business growth overseas",
+   "url": "https://www.cnbc.com/2026/10/14/goldman-says-investors-seek-profitable-chinese-business-growth-abroad.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 13 Oct 2026 21:18:03 GMT"
+   "fecha": "Tue, 13 Oct 2026 23:05:12 GMT"
+  },
+  {
+   "titulo": "Anthropic urges court in Washington, D.C. to rehear appeal of Pentagon blacklisting",
+   "url": "https://www.cnbc.com/2026/10/13/anthropic-wants-court-in-dc-to-rehear-appeal-of-pentagon-blacklist-.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 13 Oct 2026 22:54:21 GMT"
+  },
+  {
+   "titulo": "Here's where Jim Cramer stands on this newly public AI infrastructure stock",
+   "url": "https://www.cnbc.com/2026/10/13/jim-cramer-accelevation-stock.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 13 Oct 2026 22:47:07 GMT"
   },
   {
    "titulo": "Judge says Musk engaged in intimidation of ex-FEMA CFO Mary Comans, clears her name",
@@ -388,12 +406,6 @@
    "url": "https://www.cnbc.com/2026/10/13/inflation-hedge-tips-commodities-infrastructure.html",
    "fuente": "CNBC",
    "fecha": "Tue, 13 Oct 2026 20:52:22 GMT"
-  },
-  {
-   "titulo": "JPMorgan Chase blocks outside AI agents like Muse, Instinct from directly accessing accounts",
-   "url": "https://www.cnbc.com/2026/10/13/jpmorgan-ai-agents-account-access.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 13 Oct 2026 20:48:37 GMT"
   },
   {
    "titulo": "Bank of America fined $1.2 billion over money-laundering violations",
@@ -448,18 +460,6 @@
    "url": "https://www.marketwatch.com/story/my-sister-moved-in-with-our-widowed-mother-78-and-says-she-deserves-the-family-home-is-she-right-7981835d?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Tue, 13 Oct 2026 20:16:00 GMT"
-  },
-  {
-   "titulo": "Williams says Fed may not have to hike rates in 2027, at odds with traders",
-   "url": "https://www.cnbc.com/2026/10/13/john-williams-fed-rate-hikes-2027.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 13 Oct 2026 19:46:12 GMT"
-  },
-  {
-   "titulo": "Airport attacks put aviation in crosshairs of geopolitical conflicts",
-   "url": "https://www.cnbc.com/2026/10/13/riyadh-airport-attacks-aviation.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 13 Oct 2026 18:33:42 GMT"
   },
   {
    "titulo": "More Republicans come out against Trump's diesel deal with Putin",
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-13T21:53:28Z",
+ "ts": "2026-10-14T00:56:53Z",
  "fallas": [
   "videos",
   "directos"
