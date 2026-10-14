@@ -135,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30141.75,
-   "cambio": -967.0,
-   "pct": -3.11
+   "precio": 29976.75,
+   "cambio": -1132.0,
+   "pct": -3.64
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7765.25,
-   "cambio": -94.5,
-   "pct": -1.2
+   "precio": 7751.5,
+   "cambio": -108.25,
+   "pct": -1.38
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4121.2,
-   "cambio": -95.1,
-   "pct": -2.26
+   "precio": 4125.2,
+   "cambio": -91.1,
+   "pct": -2.16
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 95.13,
-   "cambio": 3.28,
-   "pct": 3.57
+   "precio": 94.79,
+   "cambio": 2.94,
+   "pct": 3.2
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2742.2,
-   "cambio": -79.9,
-   "pct": -2.83
+   "precio": 2744.1,
+   "cambio": -78.0,
+   "pct": -2.76
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51825.0,
-   "cambio": -101.0,
-   "pct": -0.19
+   "precio": 51859.0,
+   "cambio": -67.0,
+   "pct": -0.13
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81950.0,
-   "cambio": -520.0,
-   "pct": -0.63
+   "precio": 81665.0,
+   "cambio": -805.0,
+   "pct": -0.98
   }
  ],
  "acciones": [
@@ -354,22 +354,100 @@
  ],
  "noticias": [
   {
+   "titulo": "My sister moved in with our mother, 78, and says she deserves the $925,000 family home. Is she right?",
+   "url": "https://www.marketwatch.com/story/my-sister-moved-in-with-our-widowed-mother-78-and-says-she-deserves-the-family-home-is-she-right-7981835d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 22:45:00 GMT"
+  },
+  {
+   "titulo": "Rocket Lab’s stock slides as the company pushes back Neutron’s first launch",
+   "url": "https://www.marketwatch.com/story/rocket-labs-stock-slides-as-the-company-pushes-back-neutrons-first-launch-afd2932a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 22:33:00 GMT"
+  },
+  {
+   "titulo": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
+   "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 22:30:00 GMT"
+  },
+  {
+   "titulo": "You’re probably too invested in equities. Why a 60-40 portfolio is still the smart way to go.",
+   "url": "https://www.marketwatch.com/story/youre-probably-too-invested-in-equities-why-a-60-40-portfolio-is-still-the-smart-way-to-go-853daade?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 22:25:00 GMT"
+  },
+  {
+   "titulo": "Your Social Security check will rise an average of $75 a month — will it be able to keep up with inflation?",
+   "url": "https://www.marketwatch.com/story/social-securitys-cola-will-be-3-6-in-2027-as-inflation-persists-f7c9dff2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 22:24:00 GMT"
+  },
+  {
+   "titulo": "Big banks see risks in financing the AI boom, but are happy to keep writing the checks",
+   "url": "https://www.marketwatch.com/story/big-banks-see-risks-in-financing-the-ai-boom-but-are-happy-to-keep-writing-the-checks-e459a206?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 22:23:00 GMT"
+  },
+  {
+   "titulo": "CoreWeave’s AI bonds tumble, raising red flags for the wider market",
+   "url": "https://www.marketwatch.com/story/coreweave-sparks-worry-about-broader-credit-market-stress-as-its-bonds-tumble-887458e4?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 22:03:00 GMT"
+  },
+  {
+   "titulo": "From a record high to a 10% drop in just two months: Why small-cap stocks have unraveled so fast",
+   "url": "https://www.marketwatch.com/story/from-a-record-high-to-a-10-drop-in-just-two-months-why-small-cap-stocks-have-unraveled-so-fast-1cf0f4d5?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 21:54:00 GMT"
+  },
+  {
+   "titulo": "Bank of America adds a profit miss to the misery of a $1.2 billion government fine",
+   "url": "https://www.marketwatch.com/story/bank-of-america-adds-a-profit-miss-to-the-misery-of-a-1-2-billion-government-fine-d4420bfa?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 21:40:00 GMT"
+  },
+  {
+   "titulo": "Traders pile into 'bubble puts' on CoreWeave as neocloud stocks plunge",
+   "url": "https://www.cnbc.com/2026/10/14/coreweave-put-options-ai-trade.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 21:19:09 GMT"
+  },
+  {
+   "titulo": "The COLA wars are coming for Social Security",
+   "url": "https://www.marketwatch.com/story/the-cola-wars-are-coming-for-social-security-10c177f1?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 21:19:00 GMT"
+  },
+  {
+   "titulo": "Trump to appeal order blocking White House from banning MS NOW, CNN and Politico",
+   "url": "https://www.cnbc.com/2026/10/14/trump-appeals-white-house-ban-judge.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 21:18:46 GMT"
+  },
+  {
+   "titulo": "OpenAI bugging suspect booked one-way ticket to Saudi Arabia with family before arrest",
+   "url": "https://www.cnbc.com/2026/10/14/openai-alfozan-recording-raed-ventures.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 21:18:13 GMT"
+  },
+  {
+   "titulo": "OpenAI sued by 8 states over ChatGPT safety concerns",
+   "url": "https://www.cnbc.com/2026/10/14/openai-sued-by-8-states-over-chatgpt-safety-concerns-.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 21:09:20 GMT"
+  },
+  {
+   "titulo": "CoreWeave shares tumble as bond yields near 15% on concern about AI borrowing binge",
+   "url": "https://www.cnbc.com/2026/10/14/coreweave-stock-bond-yields-ai-debt.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 20:46:32 GMT"
+  },
+  {
    "titulo": "Anduril employee tender offer would value the defense tech startup at $90 billion",
    "url": "https://www.cnbc.com/2026/10/14/anduril-tender-offer-valuation.html",
    "fuente": "CNBC",
    "fecha": "Wed, 14 Oct 2026 20:24:13 GMT"
-  },
-  {
-   "titulo": "CoreWeave sparks worry about broader credit-market stress as its bonds tumble",
-   "url": "https://www.marketwatch.com/story/coreweave-sparks-worry-about-broader-credit-market-stress-as-its-bonds-tumble-887458e4?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 20:22:00 GMT"
-  },
-  {
-   "titulo": "Why Dell’s stock was one of the S&P 500’s biggest laggards on Wednesday",
-   "url": "https://www.marketwatch.com/story/why-dells-stock-was-one-of-the-s-p-500s-biggest-laggards-on-wednesday-70ce279e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 20:21:00 GMT"
   },
   {
    "titulo": "Dell stock plunges 11%, leading data center sell-off as fears mount about 'enterprise AI timing'",
@@ -378,82 +456,10 @@
    "fecha": "Wed, 14 Oct 2026 20:19:25 GMT"
   },
   {
-   "titulo": "CoreWeave shares tumble as bond yields near 15% on concern about AI borrowing binge",
-   "url": "https://www.cnbc.com/2026/10/14/coreweave-stock-bond-yields-ai-debt.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 20:12:14 GMT"
-  },
-  {
-   "titulo": "Bank of America hired 1,000 contractors to patch software flaws exposed by Anthropic's Mythos",
-   "url": "https://www.cnbc.com/2026/10/14/anthropic-mythos-bank-of-america-hiring-cost.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 20:06:28 GMT"
-  },
-  {
-   "titulo": "‘I am a pretty cautious person’: My financial adviser wants me to invest $350,000 in a UAE data center. Is this risky?",
-   "url": "https://www.marketwatch.com/story/the-prospectus-looks-impressive-my-financial-adviser-wants-me-to-invest-350-000-in-a-uae-data-center-is-this-risky-d5d3747c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 20:01:00 GMT"
-  },
-  {
-   "titulo": "My wife says we can’t afford to retire. I vetoed her $8,000 trip to Italy. We’re in our 60s and have $4 million. Do I keep working?",
-   "url": "https://www.marketwatch.com/story/my-wife-says-we-cant-afford-to-retire-we-have-4-million-do-i-just-keep-working-f1b6b085?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 19:30:00 GMT"
-  },
-  {
-   "titulo": "Container ship sinks in Strait of Hormuz as Iran steps up attacks",
-   "url": "https://www.cnbc.com/2026/10/14/container-ship-sinks-strait-hormuz-as-iran-war-attacks.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 19:22:00 GMT"
-  },
-  {
-   "titulo": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
-   "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 19:15:00 GMT"
-  },
-  {
-   "titulo": "What to expect at the next Fed meeting now that rate-hike odds are rising",
-   "url": "https://www.marketwatch.com/story/heres-what-the-fed-might-do-at-this-months-meeting-after-todays-hot-inflation-reading-087511b6?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 19:04:00 GMT"
-  },
-  {
-   "titulo": "Trump to appeal order blocking White House from banning MS NOW, CNN and Politico",
-   "url": "https://www.cnbc.com/2026/10/14/trump-appeals-white-house-ban-judge.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 19:01:39 GMT"
-  },
-  {
-   "titulo": "Did this year’s COLA beat inflation? Here’s how spending by American seniors stacks up so far in 2026.",
-   "url": "https://www.marketwatch.com/story/did-this-years-cola-beat-inflation-heres-how-spending-by-american-seniors-stacks-up-so-far-in-2026-917c400c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 18:53:00 GMT"
-  },
-  {
    "titulo": "Treasury says largest U.S. banks let politics influence who received banking services",
    "url": "https://www.cnbc.com/2026/10/14/treasury-banks-debanking-trump-reputation-risk.html",
    "fuente": "CNBC",
    "fecha": "Wed, 14 Oct 2026 18:51:42 GMT"
-  },
-  {
-   "titulo": "Rising bond yields and higher inflation leave the Fed trapped in a rate-hike dilemma",
-   "url": "https://www.marketwatch.com/story/rising-bond-yields-and-higher-inflation-leave-the-fed-trapped-in-a-rate-hike-dilemma-d34ba326?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 18:27:00 GMT"
-  },
-  {
-   "titulo": "These unpopular solutions could rescue Social Security’s finances. Here’s who could pay the most.",
-   "url": "https://www.marketwatch.com/story/taxing-stocks-estates-and-employee-benefits-could-keep-social-security-from-running-out-of-money-heres-who-could-pay-the-most-616be82c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 18:06:00 GMT"
-  },
-  {
-   "titulo": "Will mortgage rates stay above 7% in 2027?",
-   "url": "https://www.marketwatch.com/story/will-mortgage-rates-stay-above-7-in-2027-437873bd?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 18:01:00 GMT"
   },
   {
    "titulo": "How high inflation became a 'fact of life' in the U.S.",
@@ -472,12 +478,6 @@
    "url": "https://www.cnbc.com/2026/10/14/trumps-diesel-dilemma-by-the-numbers.html",
    "fuente": "CNBC",
    "fecha": "Wed, 14 Oct 2026 16:45:26 GMT"
-  },
-  {
-   "titulo": "Netflix to lay off roughly 1,000 employees, or 6% of workforce",
-   "url": "https://www.cnbc.com/2026/10/14/netflix-layoffs.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 15:03:59 GMT"
   },
   {
    "titulo": "Here's the inflation breakdown for September 2026 — in one chart",
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-14T20:30:09Z",
+ "ts": "2026-10-14T23:26:23Z",
  "fallas": [
   "videos",
   "directos"
