@@ -135,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30781.75,
-   "cambio": -327.0,
-   "pct": -1.05
+   "precio": 30747.5,
+   "cambio": -361.25,
+   "pct": -1.16
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7866.5,
-   "cambio": 6.75,
+   "precio": 7867.0,
+   "cambio": 7.25,
    "pct": 0.09
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4180.2,
-   "cambio": -36.1,
-   "pct": -0.86
+   "precio": 4162.1,
+   "cambio": -54.2,
+   "pct": -1.29
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 94.6,
-   "cambio": 2.75,
-   "pct": 2.99
+   "precio": 95.92,
+   "cambio": 4.07,
+   "pct": 4.43
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2806.3,
-   "cambio": -15.8,
-   "pct": -0.56
+   "precio": 2804.9,
+   "cambio": -17.2,
+   "pct": -0.61
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52035.0,
-   "cambio": 109.0,
-   "pct": 0.21
+   "precio": 52078.0,
+   "cambio": 152.0,
+   "pct": 0.29
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 83600.0,
-   "cambio": 1130.0,
-   "pct": 1.37
+   "precio": 83460.0,
+   "cambio": 990.0,
+   "pct": 1.2
   }
  ],
  "acciones": [
@@ -354,64 +354,124 @@
  ],
  "noticias": [
   {
-   "titulo": "ASML says it's getting order interest through 2030 as profit smashes expectations",
-   "url": "https://www.cnbc.com/2026/10/14/asml-3q-earnings-ai-demand-orders-capacity.html",
+   "titulo": "Morgan Stanley tops estimates as equities trading revenue exceeds expectations by $909 million",
+   "url": "https://www.cnbc.com/2026/10/14/morgan-stanley-ms-q3-2026-earnings.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 05:56:11 GMT"
+   "fecha": "Wed, 14 Oct 2026 11:38:34 GMT"
   },
   {
-   "titulo": "Judge extends block on Trump White House ban of MS NOW, CNN and Politico",
-   "url": "https://www.cnbc.com/2026/10/14/trump-white-house-msnow-cnn-politico-media-ban.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 05:19:36 GMT"
+   "titulo": "What analysts are watching with key semiconductor maker TSMC set to report results",
+   "url": "https://www.marketwatch.com/story/what-analysts-are-watching-with-key-semiconductor-maker-tsmc-set-to-report-results-c161e86b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 11:36:00 GMT"
   },
   {
-   "titulo": "Crypto bosses, CEOs and F1: Singapore's business events boom gathers pace",
-   "url": "https://www.cnbc.com/2026/10/14/crypto-bosses-ceos-and-f1-singapore-events-boom-gathers-pace-.html",
+   "titulo": "Bank of America posts third-quarter profit drop due to $1.2 billion Treasury fine; shares decline",
+   "url": "https://www.cnbc.com/2026/10/14/bank-of-america-bac-q3-2026-earnings.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 04:41:29 GMT"
+   "fecha": "Wed, 14 Oct 2026 11:28:19 GMT"
   },
   {
-   "titulo": "'Godzilla El Niño' is wreaking havoc with Philippine central bank's inflation forecasts",
-   "url": "https://www.cnbc.com/2026/10/14/godzilla-el-nino-asia-inflation-philippines.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 04:24:28 GMT"
+   "titulo": "Bank of America adds a profit miss to the misery of a $1.2 billion government fine",
+   "url": "https://www.marketwatch.com/story/bank-of-america-adds-a-profit-miss-to-the-misery-of-a-1-2-billion-government-fine-d4420bfa?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 11:28:00 GMT"
   },
   {
-   "titulo": "Oil rises amid growing Mideast tensions between Iran-backed Houthis and Saudi Arabia",
-   "url": "https://www.cnbc.com/2026/10/14/oil-rises-amid-growing-tensions-between-saudis-and-iran-backed-houthis.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 04:07:00 GMT"
-  },
-  {
-   "titulo": "China's producer prices rise at fastest pace since June 2022, beating expectations",
-   "url": "https://www.cnbc.com/2026/10/14/producer-prices-in-china-rise-fastest-since-june-2022-on-fuel-costs.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 03:14:48 GMT"
-  },
-  {
-   "titulo": "Taiwan agrees to buy 30% of gas from Alaska LNG project, Trump says",
-   "url": "https://www.cnbc.com/2026/10/14/taiwan-alaska-lng-project-trump-.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 02:09:00 GMT"
-  },
-  {
-   "titulo": "South Korean carmaker Hyundai plans 'strategic' investment of $15.5 billion in India by 2032",
-   "url": "https://www.cnbc.com/2026/10/14/korea-india-hyundai-cars-investment.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 02:04:47 GMT"
+   "titulo": "Here’s how much the AI boom is contributing to inflation, according to Goldman Sachs calculations",
+   "url": "https://www.marketwatch.com/story/heres-how-much-the-ai-boom-is-contributing-to-inflation-according-to-goldman-sachs-calculations-5ec717ff?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 11:18:00 GMT"
   },
   {
    "titulo": "‘I am a pretty cautious person’: My financial adviser wants me to invest $350,000 in a UAE data center. Is this risky?",
    "url": "https://www.marketwatch.com/story/the-prospectus-looks-impressive-my-financial-adviser-wants-me-to-invest-350-000-in-a-uae-data-center-is-this-risky-d5d3747c?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 01:31:00 GMT"
+   "fecha": "Wed, 14 Oct 2026 11:16:00 GMT"
   },
   {
-   "titulo": "My wife says we can’t afford to retire, yet she wants to take an $8,000 trip to Italy. We have $4 million. Do I keep working?",
+   "titulo": "Charles Schwab and DoorDash ranked among bargain stocks that could lead the market higher",
+   "url": "https://www.marketwatch.com/story/from-charles-schwab-to-doordash-why-these-bargain-stocks-could-lead-the-market-higher-4d99fb97?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 11:16:00 GMT"
+  },
+  {
+   "titulo": "Delta's business-class revamp: New seats, menus, plates and more Porsches",
+   "url": "https://www.cnbc.com/2026/10/14/delta-one-revamp.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 11:00:01 GMT"
+  },
+  {
+   "titulo": "Tech giants race to get AI gadgets on shelves for holiday rush",
+   "url": "https://www.cnbc.com/2026/10/14/tech-giants-race-to-get-ai-gadgets-on-shelves-for-holiday-rush.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 11:00:01 GMT"
+  },
+  {
+   "titulo": "Even more borrowers choose riskier mortgages, as higher interest rates crush affordability",
+   "url": "https://www.cnbc.com/2026/10/14/even-more-borrowers-choose-riskier-mortgages-as-higher-interest-rates-crush-affordability.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 11:00:01 GMT"
+  },
+  {
+   "titulo": "BlackRock’s assets equal half the size of the U.S. economy after 15% growth",
+   "url": "https://www.marketwatch.com/story/blackrock-now-has-assets-equal-to-half-the-size-of-the-u-s-economy-after-15-growth-c382b289?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 10:41:00 GMT"
+  },
+  {
+   "titulo": "Oil prices rise after IEA warns on market constraints; Saudi officials say Aramco facilities attacked",
+   "url": "https://www.cnbc.com/2026/10/14/oil-rises-amid-growing-tensions-between-saudis-and-iran-backed-houthis.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 10:33:13 GMT"
+  },
+  {
+   "titulo": "How Trump’s tariffs and Iran war are becoming liabilities in Michigan’s Senate race",
+   "url": "https://www.cnbc.com/2026/10/14/mike-rogers-trump-tariffs-michigan-senate-election.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 10:30:01 GMT"
+  },
+  {
+   "titulo": "My wife says we can’t afford to retire, so I vetoed her $8,000 trip to Italy. We have $4 million saved. Do I keep working?",
    "url": "https://www.marketwatch.com/story/my-wife-says-we-cant-afford-to-retire-we-have-4-million-do-i-just-keep-working-f1b6b085?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 01:25:00 GMT"
+   "fecha": "Wed, 14 Oct 2026 10:16:00 GMT"
+  },
+  {
+   "titulo": "South Texas Latino voters who flipped for Trump in 2024 are up for grabs in 2026",
+   "url": "https://www.cnbc.com/2026/10/14/texas-latino-voters-midterm-election-trump.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 10:00:01 GMT"
+  },
+  {
+   "titulo": "The truth about being a landlord in retirement",
+   "url": "https://www.marketwatch.com/story/the-truth-about-being-a-landlord-in-retirement-5d1daf4c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 10:00:00 GMT"
+  },
+  {
+   "titulo": "Investors have made big bets on tech stocks. Here’s why one strategist just downgraded the sector.",
+   "url": "https://www.marketwatch.com/story/investors-have-made-big-bets-on-tech-stocks-why-one-strategist-just-downgraded-the-sector-4c893077?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 10:00:00 GMT"
+  },
+  {
+   "titulo": "Ukraine warns Starlink limits are disrupting military operations as Russia pounds its energy infrastructure",
+   "url": "https://www.cnbc.com/2026/10/14/russia-ukraine-energy-ceasefire-power-outages.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 09:18:18 GMT"
+  },
+  {
+   "titulo": "‘I earn $110,000 a year’: I lost my home in the Great Recession. I’m renting in my 50s. Why is that judged as failure?",
+   "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 09:15:00 GMT"
+  },
+  {
+   "titulo": "ASML says it's getting order interest through 2030 as profit smashes expectations",
+   "url": "https://www.cnbc.com/2026/10/14/asml-3q-earnings-ai-demand-orders-capacity.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 08:45:13 GMT"
   },
   {
    "titulo": "FBI arrests Saudi OpenAI employee who allegedly planted recording device in conference room",
@@ -420,70 +480,10 @@
    "fecha": "Wed, 14 Oct 2026 00:13:45 GMT"
   },
   {
-   "titulo": "Here's where Jim Cramer stands on this newly public AI infrastructure stock",
-   "url": "https://www.cnbc.com/2026/10/13/jim-cramer-accelevation-stock.html",
+   "titulo": "The latest inflation data is expected to show price increases are accelerating",
+   "url": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 13 Oct 2026 22:47:07 GMT"
-  },
-  {
-   "titulo": "Chip stocks suffer worst stretch in 16 months as AI fatigue grips the market",
-   "url": "https://www.marketwatch.com/story/ai-fatigue-is-gripping-the-market-and-driving-chip-stocks-toward-their-worst-stretch-in-16-months-6dc78ece?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 13 Oct 2026 21:02:00 GMT"
-  },
-  {
-   "titulo": "The SpaceX threat could loom over AT&T’s stock for a prolonged stretch, analyst cautions",
-   "url": "https://www.marketwatch.com/story/the-spacex-threat-could-loom-over-at-ts-stock-for-a-prolonged-stretch-analyst-cautions-71436853?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 13 Oct 2026 20:42:00 GMT"
-  },
-  {
-   "titulo": "Six Flags’ stock slumps near 17-year low after fatal incident",
-   "url": "https://www.marketwatch.com/story/six-flags-stock-slumps-near-52-week-lows-after-fatal-accident-3f938112?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 13 Oct 2026 20:41:00 GMT"
-  },
-  {
-   "titulo": "AST SpaceMobile’s stock is feeling the heat from SpaceX’s wireless plans",
-   "url": "https://www.marketwatch.com/story/ast-spacemobiles-stock-is-feeling-the-heat-from-spacexs-wireless-plans-7e2fafb4?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 13 Oct 2026 20:32:00 GMT"
-  },
-  {
-   "titulo": "UnitedHealth keeps medical costs under control — and raises its outlook again",
-   "url": "https://www.marketwatch.com/story/unitedhealth-keeps-medical-costs-under-control-and-raises-its-outlook-again-71abc99c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 13 Oct 2026 20:29:00 GMT"
-  },
-  {
-   "titulo": "Was Broadcom CEO bullish or bearish on AI? ‘Gamblers’ comment creates storm.",
-   "url": "https://www.marketwatch.com/story/was-broadcom-ceo-bullish-or-bearish-on-ai-gamblers-comment-creates-storm-33f11787?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 13 Oct 2026 20:27:00 GMT"
-  },
-  {
-   "titulo": "Micron’s stock extends declines as China competition heats up",
-   "url": "https://www.marketwatch.com/story/microns-stock-extends-declines-as-china-competition-heats-up-b8ec25f0?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 13 Oct 2026 20:25:00 GMT"
-  },
-  {
-   "titulo": "My sister moved in with our mother, 78, and now says she deserves the $925,000 family home. Is she right?",
-   "url": "https://www.marketwatch.com/story/my-sister-moved-in-with-our-widowed-mother-78-and-says-she-deserves-the-family-home-is-she-right-7981835d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 13 Oct 2026 20:16:00 GMT"
-  },
-  {
-   "titulo": "In charts: How one of the world's biggest economies got trapped by debt",
-   "url": "https://www.cnbc.com/2026/10/13/france-2027-budget-debt.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 13 Oct 2026 15:52:24 GMT"
-  },
-  {
-   "titulo": "French supermarket fridges get hacked, heating to 122°F and sparking fires",
-   "url": "https://www.cnbc.com/2026/10/13/france-supermarket-hack-cyberattack-fridges-fires.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 13 Oct 2026 12:22:59 GMT"
+   "fecha": "Tue, 13 Oct 2026 18:05:57 GMT"
   }
  ],
  "videos": [
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-14T05:59:08Z",
+ "ts": "2026-10-14T11:40:58Z",
  "fallas": [
   "videos",
   "directos"
