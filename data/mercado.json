@@ -135,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30117.0,
-   "cambio": -781.25,
-   "pct": -2.53
+   "precio": 30031.75,
+   "cambio": -866.5,
+   "pct": -2.8
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7788.75,
-   "cambio": -69.25,
-   "pct": -0.88
+   "precio": 7783.75,
+   "cambio": -74.25,
+   "pct": -0.94
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4191.6,
-   "cambio": 1.0,
-   "pct": 0.02
+   "precio": 4186.2,
+   "cambio": -4.4,
+   "pct": -0.1
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 96.14,
-   "cambio": 2.4,
-   "pct": 2.56
+   "precio": 96.12,
+   "cambio": 2.38,
+   "pct": 2.54
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2781.9,
-   "cambio": -30.3,
-   "pct": -1.08
+   "precio": 2781.5,
+   "cambio": -30.7,
+   "pct": -1.09
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52435.0,
-   "cambio": 325.0,
-   "pct": 0.62
+   "precio": 52438.0,
+   "cambio": 328.0,
+   "pct": 0.63
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 82440.0,
-   "cambio": -485.0,
-   "pct": -0.58
+   "precio": 82340.0,
+   "cambio": -585.0,
+   "pct": -0.71
   }
  ],
  "acciones": [
@@ -354,10 +354,94 @@
  ],
  "noticias": [
   {
-   "titulo": "Nvidia and Cisco confirm multimillion-dollar donations to Trump's White House ballroom",
-   "url": "https://www.cnbc.com/2026/10/15/trump-ballroom-nvidia-cisco-donations.html",
+   "titulo": "Netflix Chief Content Officer Bela Bajaria is leaving, will be replaced by Peter Rice",
+   "url": "https://www.cnbc.com/2026/10/15/netflix-bela-bajaria-peter-rice.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 20:31:48 GMT"
+   "fecha": "Thu, 15 Oct 2026 23:08:05 GMT"
+  },
+  {
+   "titulo": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
+   "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 22:31:00 GMT"
+  },
+  {
+   "titulo": "I’m 64 years old, with two sons, but only one works in the family firm. Should I leave him 70% of the business?",
+   "url": "https://www.marketwatch.com/story/im-64-years-old-with-two-sons-but-only-one-works-in-the-family-firm-should-i-leave-him-70-of-the-business-2fe6c382?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 22:15:00 GMT"
+  },
+  {
+   "titulo": "How a midterm sweep by Democrats could turn this tech selloff into a tech crash",
+   "url": "https://www.marketwatch.com/story/how-a-midterm-sweep-by-democrats-could-turn-this-tech-selloff-into-a-tech-crash-a1d1a82f?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 21:56:00 GMT"
+  },
+  {
+   "titulo": "Trump says 'if Ken Paxton loses' Texas Senate race, blame Cornyn and Karl Rove",
+   "url": "https://www.cnbc.com/2026/10/15/trump-paxton-texas-talarico.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 21:42:14 GMT"
+  },
+  {
+   "titulo": "CoreWeave credit default swaps hit distress levels as investors sour on AI debt",
+   "url": "https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 21:33:24 GMT"
+  },
+  {
+   "titulo": "Tesla plans next-generation Roadster reveal after almost a decade of delays",
+   "url": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 21:26:05 GMT"
+  },
+  {
+   "titulo": "U.S. sues California in fight over checking citizenship of mail voters",
+   "url": "https://www.cnbc.com/2026/10/15/california-mail-ballots-voting-lawsuit.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 21:24:57 GMT"
+  },
+  {
+   "titulo": "Nvidia and other chip stocks face renewed pressure as AI fears swell",
+   "url": "https://www.marketwatch.com/story/micron-nvidia-and-other-chip-stocks-face-renewed-pressure-as-ai-fears-swell-4e0dc989?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 21:23:00 GMT"
+  },
+  {
+   "titulo": "Don’t ditch tech stocks just yet. Make these moves to take advantage of the latest AI reset.",
+   "url": "https://www.marketwatch.com/story/dont-ditch-tech-stocks-just-yet-make-these-moves-to-take-advantage-of-the-latest-ai-reset-cb70c7b2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 21:21:00 GMT"
+  },
+  {
+   "titulo": "KFC to switch to Coca-Cola beverages in U.S. restaurants for the first time in decades",
+   "url": "https://www.cnbc.com/2026/10/15/kfc-coca-cola-pepsi-switch.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 21:03:50 GMT"
+  },
+  {
+   "titulo": "CoreWeave’s polarizing stock rebounds as Wall Street squares off about AI spending",
+   "url": "https://www.marketwatch.com/story/coreweave-investors-are-feeling-spooked-as-the-companys-stock-and-bonds-see-fresh-pressure-ba39a931?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 21:03:00 GMT"
+  },
+  {
+   "titulo": "Investors are dumping AI stocks as ‘tech wreck’ worsens. Here’s where they’re turning now.",
+   "url": "https://www.marketwatch.com/story/traders-pile-into-bonds-and-defensive-stocks-as-the-tech-wreck-picks-up-steam-48c04374?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 20:40:00 GMT"
+  },
+  {
+   "titulo": "Anthropic taps nonprofits METR and SecureBio to help assess risks and safety practices",
+   "url": "https://www.cnbc.com/2026/10/15/anthropic-metr-securebio-ai-safety-evaluators.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 20:35:21 GMT"
+  },
+  {
+   "titulo": "Nvidia, AMD, Dell sink in global tech rout on AI funding worries",
+   "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 20:33:24 GMT"
   },
   {
    "titulo": "Porsche reveals Mission S concept car that previews new design identity",
@@ -372,58 +456,10 @@
    "fecha": "Thu, 15 Oct 2026 20:29:00 GMT"
   },
   {
-   "titulo": "CoreWeave credit default swaps hit distress levels as investors sour on AI debt",
-   "url": "https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 20:18:02 GMT"
-  },
-  {
-   "titulo": "KFC to switch to Coca-Cola beverages in U.S. restaurants for the first time in decades",
-   "url": "https://www.cnbc.com/2026/10/15/kfc-coca-cola-pepsi-switch.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 20:10:20 GMT"
-  },
-  {
-   "titulo": "Harvard’s endowment jumps 27% in fiscal 2026, lifted by SpaceX as top holding",
-   "url": "https://www.cnbc.com/2026/10/15/harvards-endowment-jumps-27percent-with-spacex-as-top-holding.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 19:53:49 GMT"
-  },
-  {
-   "titulo": "Brian Sullivan: Why the 'real' price of oil is likely $30-$40 higher than where it is now",
-   "url": "https://www.cnbc.com/2026/10/15/brian-sullivan-why-the-real-price-of-oil-is-likely-30-40-higher-than-where-it-is-now.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 19:53:29 GMT"
-  },
-  {
-   "titulo": "Tesla plans next-generation Roadster reveal after almost a decade of delays",
-   "url": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 19:29:21 GMT"
-  },
-  {
-   "titulo": "U.S. sues California in fight over checking citizenship of mail voters",
-   "url": "https://www.cnbc.com/2026/10/15/california-mail-ballots-voting-lawsuit.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 19:26:13 GMT"
-  },
-  {
-   "titulo": "CoreWeave’s polarizing stock rebounds as Wall Street squares off about AI spending",
-   "url": "https://www.marketwatch.com/story/coreweave-investors-are-feeling-spooked-as-the-companys-stock-and-bonds-see-fresh-pressure-ba39a931?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 15 Oct 2026 19:26:00 GMT"
-  },
-  {
    "titulo": "This one governor’s race could derail the AI trade that’s powered the stock market",
    "url": "https://www.marketwatch.com/story/this-one-governors-race-could-derail-the-ai-trade-thats-powered-the-stock-market-6bbf06f8?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 15 Oct 2026 19:00:00 GMT"
-  },
-  {
-   "titulo": "Democrat Talarico says he raised record $64 million over summer in Texas Senate race",
-   "url": "https://www.cnbc.com/2026/10/15/james-talarico-texas-senate-fundraising-ken-paxton.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 18:35:25 GMT"
   },
   {
    "titulo": "My wife says we can’t afford to retire. I vetoed her $8,000 trip to Italy. We’re in our 60s and have $4 million. Do I keep working?",
@@ -444,46 +480,10 @@
    "fecha": "Thu, 15 Oct 2026 17:53:35 GMT"
   },
   {
-   "titulo": "Apple and Meta team up to make Muse AI model run on Mac computers",
-   "url": "https://www.cnbc.com/2026/10/15/apple-meta-partner-ai.html",
+   "titulo": "The problem with 'good debt': Why borrowers should think twice about the label",
+   "url": "https://www.cnbc.com/2026/10/15/good-debt-vs-bad-debt-why-experts-say-rethink-labels.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 17:52:01 GMT"
-  },
-  {
-   "titulo": "Are we spending our retirement money in the right order? Our plan is: Social Security, annuities, cash — then IRA.",
-   "url": "https://www.marketwatch.com/story/are-we-spending-our-retirement-money-in-the-right-order-our-plan-is-social-security-annuities-cash-then-ira-02cec336?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 15 Oct 2026 17:52:00 GMT"
-  },
-  {
-   "titulo": "My sister moved in with our mother, 78, and says she deserves the $925,000 family home. Is she right?",
-   "url": "https://www.marketwatch.com/story/my-sister-moved-in-with-our-widowed-mother-78-and-says-she-deserves-the-family-home-is-she-right-7981835d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 15 Oct 2026 17:30:00 GMT"
-  },
-  {
-   "titulo": "‘I like the idea of a big return’: My financial adviser wants me to invest $350,000 in a UAE data center. Is this risky?",
-   "url": "https://www.marketwatch.com/story/the-prospectus-looks-impressive-my-financial-adviser-wants-me-to-invest-350-000-in-a-uae-data-center-is-this-risky-d5d3747c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 15 Oct 2026 17:15:00 GMT"
-  },
-  {
-   "titulo": "Did this year’s COLA beat inflation? Here’s how spending by American seniors stacks up so far in 2026.",
-   "url": "https://www.marketwatch.com/story/did-this-years-cola-beat-inflation-heres-how-spending-by-american-seniors-stacks-up-so-far-in-2026-917c400c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 15 Oct 2026 17:07:00 GMT"
-  },
-  {
-   "titulo": "The COLA wars are coming for Social Security",
-   "url": "https://www.marketwatch.com/story/the-cola-wars-are-coming-for-social-security-10c177f1?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 15 Oct 2026 17:07:00 GMT"
-  },
-  {
-   "titulo": "Your Social Security check will rise an average of $75 a month — will it be able to keep up with inflation?",
-   "url": "https://www.marketwatch.com/story/social-securitys-cola-will-be-3-6-in-2027-as-inflation-persists-f7c9dff2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 15 Oct 2026 17:06:00 GMT"
+   "fecha": "Thu, 15 Oct 2026 17:52:39 GMT"
   }
  ],
  "videos": [
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-15T20:32:56Z",
+ "ts": "2026-10-15T23:16:58Z",
  "fallas": [
   "videos",
   "directos"
