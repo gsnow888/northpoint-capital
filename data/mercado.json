@@ -135,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29913.5,
-   "cambio": -1195.25,
-   "pct": -3.84
+   "precio": 29769.5,
+   "cambio": -1128.75,
+   "pct": -3.65
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7744.5,
-   "cambio": -115.25,
-   "pct": -1.47
+   "precio": 7731.5,
+   "cambio": -126.5,
+   "pct": -1.61
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4164.6,
-   "cambio": -51.7,
-   "pct": -1.23
+   "precio": 4155.8,
+   "cambio": -34.8,
+   "pct": -0.83
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 94.29,
-   "cambio": 2.44,
-   "pct": 2.66
+   "precio": 94.26,
+   "cambio": 0.52,
+   "pct": 0.55
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2745.7,
-   "cambio": -76.4,
-   "pct": -2.71
+   "precio": 2749.4,
+   "cambio": -62.8,
+   "pct": -2.23
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51870.0,
-   "cambio": -56.0,
-   "pct": -0.11
+   "precio": 51876.0,
+   "cambio": -234.0,
+   "pct": -0.45
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81800.0,
-   "cambio": -670.0,
-   "pct": -0.81
+   "precio": 80890.0,
+   "cambio": -2035.0,
+   "pct": -2.45
   }
  ],
  "acciones": [
@@ -357,19 +357,61 @@
    "titulo": "SK Hynix shares plunge 10% amid Asia tech rout as Fed rate hike fears, AI funding worries mount",
    "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 01:07:01 GMT"
+   "fecha": "Thu, 15 Oct 2026 06:42:57 GMT"
+  },
+  {
+   "titulo": "UK economy grew 0.1% in August, beating expectations",
+   "url": "https://www.cnbc.com/2026/10/15/uk-gdp-august-2026-economy.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 06:37:10 GMT"
+  },
+  {
+   "titulo": "Inside India newsletter: Billionaire Ambani’s mega-IPO faces a valuation reality check amid Musk spat",
+   "url": "https://www.cnbc.com/2026/10/15/india-starlink-musk-jio-ambani-ipo.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 06:22:45 GMT"
+  },
+  {
+   "titulo": "India’s IDBI Bank falls 7% as government announces $5.5 billion stake sale to Canada's Fairfax",
+   "url": "https://www.cnbc.com/2026/10/15/india-canada-fairfax-idbi-fdi.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 06:12:04 GMT"
+  },
+  {
+   "titulo": "From 'Dune' to 'Wicker,' how this ‘tiny’ European country became a hub for Hollywood",
+   "url": "https://www.cnbc.com/2026/10/15/hungary-film-industry-hollywood-movies.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 06:09:01 GMT"
+  },
+  {
+   "titulo": "TSMC posts record profit for a sixth straight quarter, beating estimates on AI boom",
+   "url": "https://www.cnbc.com/2026/10/15/tsmc-third-quarter-profit-global-ai-.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 05:59:57 GMT"
+  },
+  {
+   "titulo": "Elon Musk says Trump is 'ultimately' responsible for any curbs on Ukraine's Starshield systems",
+   "url": "https://www.cnbc.com/2026/10/15/elon-musk-starlink-ukraine-trump-energy-ceasefire.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 04:11:52 GMT"
+  },
+  {
+   "titulo": "Oil falls as investors assess Mideast tensions, International Energy Agency's report",
+   "url": "https://www.cnbc.com/2026/10/15/oil-prices-today-brent-wti.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 04:09:18 GMT"
+  },
+  {
+   "titulo": "Anthropic's third-quarter revenue is said to hit $16.8 billion ahead of IPO",
+   "url": "https://www.cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 03:48:58 GMT"
   },
   {
    "titulo": "Anthropic’s slowing growth could be the AI trade’s latest red flag",
    "url": "https://www.marketwatch.com/story/anthropics-slowing-growth-could-be-the-ai-trades-latest-red-flag-292d0169?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 15 Oct 2026 01:07:00 GMT"
-  },
-  {
-   "titulo": "Inside India newsletter: Billionaire Ambani’s mega-IPO faces a valuation reality check amid Musk spat",
-   "url": "https://www.cnbc.com/2026/10/15/india-starlink-musk-jio-ambani-ipo.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 00:30:13 GMT"
   },
   {
    "titulo": "Rocket Lab’s stock slides as the company pushes back Neutron’s first launch",
@@ -432,58 +474,16 @@
    "fecha": "Wed, 14 Oct 2026 21:18:13 GMT"
   },
   {
-   "titulo": "OpenAI sued by 8 states over ChatGPT safety concerns",
-   "url": "https://www.cnbc.com/2026/10/14/openai-sued-by-8-states-over-chatgpt-safety-concerns-.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 21:09:20 GMT"
-  },
-  {
-   "titulo": "CoreWeave shares tumble as bond yields near 15% on concern about AI borrowing binge",
-   "url": "https://www.cnbc.com/2026/10/14/coreweave-stock-bond-yields-ai-debt.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 20:46:32 GMT"
-  },
-  {
-   "titulo": "Dell stock plunges 11%, leading data center sell-off as fears mount about 'enterprise AI timing'",
-   "url": "https://www.cnbc.com/2026/10/14/dell-stock-barclays-enterprise-ai.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 20:19:25 GMT"
-  },
-  {
-   "titulo": "Container ship sinks in Strait of Hormuz as Iran steps up attacks",
-   "url": "https://www.cnbc.com/2026/10/14/container-ship-sinks-strait-hormuz-as-iran-war-attacks.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 19:22:00 GMT"
-  },
-  {
    "titulo": "How high inflation became a 'fact of life' in the U.S.",
    "url": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
    "fuente": "CNBC",
    "fecha": "Wed, 14 Oct 2026 17:20:23 GMT"
   },
   {
-   "titulo": "Iran says it’s ‘counting the moments’ until it can strike U.S. warships; Saudi Aramco facilities attacked",
-   "url": "https://www.cnbc.com/2026/10/14/us-iran-war-trump-hormuz-saudi.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 17:12:20 GMT"
-  },
-  {
-   "titulo": "Fannie Mae sharply raises mortgage rate forecast for 2027",
-   "url": "https://www.cnbc.com/2026/10/14/fannie-mae-sharply-raises-mortgage-rate-forecast-for-2027-.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 17:08:07 GMT"
-  },
-  {
    "titulo": "Trump's diesel dilemma — by the numbers",
    "url": "https://www.cnbc.com/2026/10/14/trumps-diesel-dilemma-by-the-numbers.html",
    "fuente": "CNBC",
    "fecha": "Wed, 14 Oct 2026 16:45:26 GMT"
-  },
-  {
-   "titulo": "Here's the inflation breakdown for September 2026 — in one chart",
-   "url": "https://www.cnbc.com/2026/10/14/cpi-inflation-breakdown-september-2026.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 14:56:25 GMT"
   }
  ],
  "videos": [
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-15T01:49:35Z",
+ "ts": "2026-10-15T07:07:23Z",
  "fallas": [
   "videos",
   "directos"
