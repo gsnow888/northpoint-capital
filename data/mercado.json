@@ -135,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29769.5,
-   "cambio": -1128.75,
-   "pct": -3.65
+   "precio": 29820.25,
+   "cambio": -1078.0,
+   "pct": -3.49
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7731.5,
-   "cambio": -126.5,
-   "pct": -1.61
+   "precio": 7744.75,
+   "cambio": -113.25,
+   "pct": -1.44
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4155.8,
-   "cambio": -34.8,
-   "pct": -0.83
+   "precio": 4159.5,
+   "cambio": -31.1,
+   "pct": -0.74
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 94.26,
-   "cambio": 0.52,
-   "pct": 0.55
+   "precio": 93.72,
+   "cambio": -0.02,
+   "pct": -0.02
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2749.4,
-   "cambio": -62.8,
-   "pct": -2.23
+   "precio": 2744.5,
+   "cambio": -67.7,
+   "pct": -2.41
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51876.0,
-   "cambio": -234.0,
-   "pct": -0.45
+   "precio": 52008.0,
+   "cambio": -102.0,
+   "pct": -0.2
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 80890.0,
-   "cambio": -2035.0,
-   "pct": -2.45
+   "precio": 80730.0,
+   "cambio": -2195.0,
+   "pct": -2.65
   }
  ],
  "acciones": [
@@ -354,58 +354,124 @@
  ],
  "noticias": [
   {
-   "titulo": "SK Hynix shares plunge 10% amid Asia tech rout as Fed rate hike fears, AI funding worries mount",
-   "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html",
+   "titulo": "Wholesale prices jumped 6.3% annually in September, biggest gain since 2022",
+   "url": "https://www.cnbc.com/2026/10/15/september-producer-price-index-retail-sales-data.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 06:42:57 GMT"
+   "fecha": "Thu, 15 Oct 2026 12:41:14 GMT"
   },
   {
-   "titulo": "UK economy grew 0.1% in August, beating expectations",
-   "url": "https://www.cnbc.com/2026/10/15/uk-gdp-august-2026-economy.html",
+   "titulo": "U.S. Treasury dismisses IMF debt warning and 'messy' forecasting",
+   "url": "https://www.cnbc.com/2026/10/15/zervos-imf-us-debt-warning.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 06:37:10 GMT"
+   "fecha": "Thu, 15 Oct 2026 12:40:58 GMT"
   },
   {
-   "titulo": "Inside India newsletter: Billionaire Ambani’s mega-IPO faces a valuation reality check amid Musk spat",
-   "url": "https://www.cnbc.com/2026/10/15/india-starlink-musk-jio-ambani-ipo.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 06:22:45 GMT"
+   "titulo": "This 30-year market veteran is alarmed by a record-chasing S&P 500. Here’s where he’s investing instead.",
+   "url": "https://www.marketwatch.com/story/this-30-year-market-veteran-is-alarmed-by-a-near-record-s-p-500-heres-where-hes-investing-instead-c6611143?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 12:40:00 GMT"
   },
   {
-   "titulo": "India’s IDBI Bank falls 7% as government announces $5.5 billion stake sale to Canada's Fairfax",
-   "url": "https://www.cnbc.com/2026/10/15/india-canada-fairfax-idbi-fdi.html",
+   "titulo": "Nvidia CEO Jensen Huang urges U.S.-China dialogue on 'potentially dangerous' AI",
+   "url": "https://www.cnbc.com/2026/10/15/jensen-huang-nvidia-china-ai.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 06:12:04 GMT"
+   "fecha": "Thu, 15 Oct 2026 12:17:13 GMT"
   },
   {
-   "titulo": "From 'Dune' to 'Wicker,' how this ‘tiny’ European country became a hub for Hollywood",
-   "url": "https://www.cnbc.com/2026/10/15/hungary-film-industry-hollywood-movies.html",
+   "titulo": "Memory stocks are getting hammered. China and a 2029 oversupply are the big worries",
+   "url": "https://www.cnbc.com/2026/10/15/memory-stocks-micron-sk-hynix-samsung-china.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 06:09:01 GMT"
+   "fecha": "Thu, 15 Oct 2026 12:15:09 GMT"
   },
   {
-   "titulo": "TSMC posts record profit for a sixth straight quarter, beating estimates on AI boom",
-   "url": "https://www.cnbc.com/2026/10/15/tsmc-third-quarter-profit-global-ai-.html",
+   "titulo": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
+   "url": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 05:59:57 GMT"
+   "fecha": "Thu, 15 Oct 2026 12:11:15 GMT"
+  },
+  {
+   "titulo": "There’s a ‘monstrous bull market’ developing under the surface of the S&P 500. This hedge-fund manager tells you where it’s at.",
+   "url": "https://www.marketwatch.com/story/theres-a-monstrous-bull-market-developing-under-the-surface-of-the-s-p-500-this-hedge-fund-manager-tells-you-where-its-at-98450ef4?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 12:08:00 GMT"
+  },
+  {
+   "titulo": "Cboe to expand options trading hours for major stocks and ETFs",
+   "url": "https://www.cnbc.com/2026/10/15/cboe-stock-etf-options-extended-hours.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 12:01:59 GMT"
+  },
+  {
+   "titulo": "Amazon launches new Bee 'personal AI' devices that listen to conversations",
+   "url": "https://www.cnbc.com/2026/10/15/amazon-bee-frontier-eclipse-ai-devices.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 12:00:01 GMT"
+  },
+  {
+   "titulo": "What to know about Starshield, SpaceX's military-focused Starlink service",
+   "url": "https://www.cnbc.com/2026/10/15/what-is-starshield-spacex-starlink-military.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 11:54:43 GMT"
+  },
+  {
+   "titulo": "How lower fuel economy targets could boost pickups and V-8 engines",
+   "url": "https://www.cnbc.com/2026/10/15/cafe-fuel-economy-v8-trucks.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 11:30:01 GMT"
+  },
+  {
+   "titulo": "CoreWeave’s AI bonds tumble, raising red flags for the wider market",
+   "url": "https://www.marketwatch.com/story/coreweave-sparks-worry-about-broader-credit-market-stress-as-its-bonds-tumble-887458e4?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 11:17:00 GMT"
+  },
+  {
+   "titulo": "U.S. reportedly considers use of 'mother of all bombs' as Iran vows to fight on",
+   "url": "https://www.cnbc.com/2026/10/15/us-iran-war-trump-hormuz.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 10:44:57 GMT"
+  },
+  {
+   "titulo": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
+   "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 10:15:00 GMT"
+  },
+  {
+   "titulo": "Ukraine to resume strikes on Russian refineries, shattering hopes of an 'energy ceasefire'",
+   "url": "https://www.cnbc.com/2026/10/15/ukraine-russia-energy-ceasefire-zelenskyy.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 10:13:25 GMT"
+  },
+  {
+   "titulo": "I’m 64 years old, with two sons, but only one works in the family firm. Should I leave him 70% of the business?",
+   "url": "https://www.marketwatch.com/story/im-64-years-old-with-two-sons-but-only-one-works-in-the-family-firm-should-i-leave-him-70-of-the-business-2fe6c382?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 09:15:00 GMT"
+  },
+  {
+   "titulo": "‘New Girl’ star Jake Johnson lists lush and private Pasadena estate for $3.3 million",
+   "url": "https://www.marketwatch.com/story/new-girl-star-jake-johnson-lists-lush-and-private-pasadena-estate-for-3-3-million-b6788838?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 09:01:00 GMT"
+  },
+  {
+   "titulo": "Why the AI trade is not set up for a rebound like July’s, according to JPMorgan",
+   "url": "https://www.marketwatch.com/story/why-the-ai-trade-is-not-set-up-for-a-rebound-like-julys-according-to-jpmorgan-5ae511db?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 08:53:00 GMT"
+  },
+  {
+   "titulo": "TSMC’s CEO sees no sign of a slowdown as chip foundry reports record profit",
+   "url": "https://www.marketwatch.com/story/tsmc-ceo-sees-no-sign-of-a-slowdown-as-chip-foundry-reports-record-profit-17a065d3?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 15 Oct 2026 08:42:00 GMT"
   },
   {
    "titulo": "Elon Musk says Trump is 'ultimately' responsible for any curbs on Ukraine's Starshield systems",
    "url": "https://www.cnbc.com/2026/10/15/elon-musk-starlink-ukraine-trump-energy-ceasefire.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 04:11:52 GMT"
-  },
-  {
-   "titulo": "Oil falls as investors assess Mideast tensions, International Energy Agency's report",
-   "url": "https://www.cnbc.com/2026/10/15/oil-prices-today-brent-wti.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 04:09:18 GMT"
-  },
-  {
-   "titulo": "Anthropic's third-quarter revenue is said to hit $16.8 billion ahead of IPO",
-   "url": "https://www.cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 03:48:58 GMT"
+   "fecha": "Thu, 15 Oct 2026 07:51:22 GMT"
   },
   {
    "titulo": "Anthropic’s slowing growth could be the AI trade’s latest red flag",
@@ -418,72 +484,6 @@
    "url": "https://www.marketwatch.com/story/rocket-labs-stock-slides-as-the-company-pushes-back-neutrons-first-launch-afd2932a?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 15 Oct 2026 00:02:00 GMT"
-  },
-  {
-   "titulo": "The AI trade is splintering as inflation fears rattle hyped-up tech stocks",
-   "url": "https://www.marketwatch.com/story/the-ai-trade-is-splintering-as-inflation-fears-rattle-hyped-up-tech-stocks-dbf49369?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 23:36:00 GMT"
-  },
-  {
-   "titulo": "My sister moved in with our mother, 78, and says she deserves the $925,000 family home. Is she right?",
-   "url": "https://www.marketwatch.com/story/my-sister-moved-in-with-our-widowed-mother-78-and-says-she-deserves-the-family-home-is-she-right-7981835d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 22:45:00 GMT"
-  },
-  {
-   "titulo": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
-   "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 22:30:00 GMT"
-  },
-  {
-   "titulo": "You’re probably too invested in equities. Why a 60-40 portfolio is still the smart way to go.",
-   "url": "https://www.marketwatch.com/story/youre-probably-too-invested-in-equities-why-a-60-40-portfolio-is-still-the-smart-way-to-go-853daade?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 22:25:00 GMT"
-  },
-  {
-   "titulo": "Your Social Security check will rise an average of $75 a month — will it be able to keep up with inflation?",
-   "url": "https://www.marketwatch.com/story/social-securitys-cola-will-be-3-6-in-2027-as-inflation-persists-f7c9dff2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 22:24:00 GMT"
-  },
-  {
-   "titulo": "Big banks see risks in financing the AI boom, but are happy to keep writing the checks",
-   "url": "https://www.marketwatch.com/story/big-banks-see-risks-in-financing-the-ai-boom-but-are-happy-to-keep-writing-the-checks-e459a206?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 22:23:00 GMT"
-  },
-  {
-   "titulo": "CoreWeave’s AI bonds tumble, raising red flags for the wider market",
-   "url": "https://www.marketwatch.com/story/coreweave-sparks-worry-about-broader-credit-market-stress-as-its-bonds-tumble-887458e4?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 22:03:00 GMT"
-  },
-  {
-   "titulo": "From a record high to a 10% drop in just two months: Why small-cap stocks have unraveled so fast",
-   "url": "https://www.marketwatch.com/story/from-a-record-high-to-a-10-drop-in-just-two-months-why-small-cap-stocks-have-unraveled-so-fast-1cf0f4d5?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 21:54:00 GMT"
-  },
-  {
-   "titulo": "OpenAI bugging suspect booked one-way ticket to Saudi Arabia with family before arrest",
-   "url": "https://www.cnbc.com/2026/10/14/openai-alfozan-recording-raed-ventures.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 21:18:13 GMT"
-  },
-  {
-   "titulo": "How high inflation became a 'fact of life' in the U.S.",
-   "url": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 17:20:23 GMT"
-  },
-  {
-   "titulo": "Trump's diesel dilemma — by the numbers",
-   "url": "https://www.cnbc.com/2026/10/14/trumps-diesel-dilemma-by-the-numbers.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 16:45:26 GMT"
   }
  ],
  "videos": [
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-15T07:07:23Z",
+ "ts": "2026-10-15T12:43:03Z",
  "fallas": [
   "videos",
   "directos"
