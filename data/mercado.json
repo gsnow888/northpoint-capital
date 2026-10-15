@@ -135,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29976.75,
-   "cambio": -1132.0,
-   "pct": -3.64
+   "precio": 29913.5,
+   "cambio": -1195.25,
+   "pct": -3.84
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7751.5,
-   "cambio": -108.25,
-   "pct": -1.38
+   "precio": 7744.5,
+   "cambio": -115.25,
+   "pct": -1.47
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4125.2,
-   "cambio": -91.1,
-   "pct": -2.16
+   "precio": 4164.6,
+   "cambio": -51.7,
+   "pct": -1.23
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 94.79,
-   "cambio": 2.94,
-   "pct": 3.2
+   "precio": 94.29,
+   "cambio": 2.44,
+   "pct": 2.66
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2744.1,
-   "cambio": -78.0,
-   "pct": -2.76
+   "precio": 2745.7,
+   "cambio": -76.4,
+   "pct": -2.71
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51859.0,
-   "cambio": -67.0,
-   "pct": -0.13
+   "precio": 51870.0,
+   "cambio": -56.0,
+   "pct": -0.11
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81665.0,
-   "cambio": -805.0,
-   "pct": -0.98
+   "precio": 81800.0,
+   "cambio": -670.0,
+   "pct": -0.81
   }
  ],
  "acciones": [
@@ -354,16 +354,40 @@
  ],
  "noticias": [
   {
-   "titulo": "My sister moved in with our mother, 78, and says she deserves the $925,000 family home. Is she right?",
-   "url": "https://www.marketwatch.com/story/my-sister-moved-in-with-our-widowed-mother-78-and-says-she-deserves-the-family-home-is-she-right-7981835d?mod=mw_rss_topstories",
+   "titulo": "SK Hynix shares plunge 10% amid Asia tech rout as Fed rate hike fears, AI funding worries mount",
+   "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 01:07:01 GMT"
+  },
+  {
+   "titulo": "Anthropic’s slowing growth could be the AI trade’s latest red flag",
+   "url": "https://www.marketwatch.com/story/anthropics-slowing-growth-could-be-the-ai-trades-latest-red-flag-292d0169?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 22:45:00 GMT"
+   "fecha": "Thu, 15 Oct 2026 01:07:00 GMT"
+  },
+  {
+   "titulo": "Inside India newsletter: Billionaire Ambani’s mega-IPO faces a valuation reality check amid Musk spat",
+   "url": "https://www.cnbc.com/2026/10/15/india-starlink-musk-jio-ambani-ipo.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 00:30:13 GMT"
   },
   {
    "titulo": "Rocket Lab’s stock slides as the company pushes back Neutron’s first launch",
    "url": "https://www.marketwatch.com/story/rocket-labs-stock-slides-as-the-company-pushes-back-neutrons-first-launch-afd2932a?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 22:33:00 GMT"
+   "fecha": "Thu, 15 Oct 2026 00:02:00 GMT"
+  },
+  {
+   "titulo": "The AI trade is splintering as inflation fears rattle hyped-up tech stocks",
+   "url": "https://www.marketwatch.com/story/the-ai-trade-is-splintering-as-inflation-fears-rattle-hyped-up-tech-stocks-dbf49369?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 23:36:00 GMT"
+  },
+  {
+   "titulo": "My sister moved in with our mother, 78, and says she deserves the $925,000 family home. Is she right?",
+   "url": "https://www.marketwatch.com/story/my-sister-moved-in-with-our-widowed-mother-78-and-says-she-deserves-the-family-home-is-she-right-7981835d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 14 Oct 2026 22:45:00 GMT"
   },
   {
    "titulo": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
@@ -402,30 +426,6 @@
    "fecha": "Wed, 14 Oct 2026 21:54:00 GMT"
   },
   {
-   "titulo": "Bank of America adds a profit miss to the misery of a $1.2 billion government fine",
-   "url": "https://www.marketwatch.com/story/bank-of-america-adds-a-profit-miss-to-the-misery-of-a-1-2-billion-government-fine-d4420bfa?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 21:40:00 GMT"
-  },
-  {
-   "titulo": "Traders pile into 'bubble puts' on CoreWeave as neocloud stocks plunge",
-   "url": "https://www.cnbc.com/2026/10/14/coreweave-put-options-ai-trade.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 21:19:09 GMT"
-  },
-  {
-   "titulo": "The COLA wars are coming for Social Security",
-   "url": "https://www.marketwatch.com/story/the-cola-wars-are-coming-for-social-security-10c177f1?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 14 Oct 2026 21:19:00 GMT"
-  },
-  {
-   "titulo": "Trump to appeal order blocking White House from banning MS NOW, CNN and Politico",
-   "url": "https://www.cnbc.com/2026/10/14/trump-appeals-white-house-ban-judge.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 21:18:46 GMT"
-  },
-  {
    "titulo": "OpenAI bugging suspect booked one-way ticket to Saudi Arabia with family before arrest",
    "url": "https://www.cnbc.com/2026/10/14/openai-alfozan-recording-raed-ventures.html",
    "fuente": "CNBC",
@@ -444,28 +444,28 @@
    "fecha": "Wed, 14 Oct 2026 20:46:32 GMT"
   },
   {
-   "titulo": "Anduril employee tender offer would value the defense tech startup at $90 billion",
-   "url": "https://www.cnbc.com/2026/10/14/anduril-tender-offer-valuation.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 20:24:13 GMT"
-  },
-  {
    "titulo": "Dell stock plunges 11%, leading data center sell-off as fears mount about 'enterprise AI timing'",
    "url": "https://www.cnbc.com/2026/10/14/dell-stock-barclays-enterprise-ai.html",
    "fuente": "CNBC",
    "fecha": "Wed, 14 Oct 2026 20:19:25 GMT"
   },
   {
-   "titulo": "Treasury says largest U.S. banks let politics influence who received banking services",
-   "url": "https://www.cnbc.com/2026/10/14/treasury-banks-debanking-trump-reputation-risk.html",
+   "titulo": "Container ship sinks in Strait of Hormuz as Iran steps up attacks",
+   "url": "https://www.cnbc.com/2026/10/14/container-ship-sinks-strait-hormuz-as-iran-war-attacks.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 14 Oct 2026 18:51:42 GMT"
+   "fecha": "Wed, 14 Oct 2026 19:22:00 GMT"
   },
   {
    "titulo": "How high inflation became a 'fact of life' in the U.S.",
    "url": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
    "fuente": "CNBC",
    "fecha": "Wed, 14 Oct 2026 17:20:23 GMT"
+  },
+  {
+   "titulo": "Iran says it’s ‘counting the moments’ until it can strike U.S. warships; Saudi Aramco facilities attacked",
+   "url": "https://www.cnbc.com/2026/10/14/us-iran-war-trump-hormuz-saudi.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 14 Oct 2026 17:12:20 GMT"
   },
   {
    "titulo": "Fannie Mae sharply raises mortgage rate forecast for 2027",
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-14T23:26:23Z",
+ "ts": "2026-10-15T01:49:35Z",
  "fallas": [
   "videos",
   "directos"
