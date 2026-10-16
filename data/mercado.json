@@ -135,235 +135,337 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30067.5,
-   "cambio": -830.75,
-   "pct": -2.69
+   "precio": 29654.75,
+   "cambio": -1243.5,
+   "pct": -4.02
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7794.0,
-   "cambio": -64.0,
-   "pct": -0.81
+   "precio": 7742.75,
+   "cambio": -115.25,
+   "pct": -1.47
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4198.6,
-   "cambio": 8.0,
-   "pct": 0.19
+   "precio": 4187.9,
+   "cambio": -2.7,
+   "pct": -0.06
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 96.25,
-   "cambio": 2.51,
-   "pct": 2.68
+   "precio": 97.07,
+   "cambio": 3.33,
+   "pct": 3.55
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2784.9,
-   "cambio": -27.3,
-   "pct": -0.97
+   "precio": 2751.8,
+   "cambio": -60.4,
+   "pct": -2.15
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52428.0,
-   "cambio": 318.0,
-   "pct": 0.61
+   "precio": 52395.0,
+   "cambio": 285.0,
+   "pct": 0.55
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 82770.0,
-   "cambio": -155.0,
-   "pct": -0.19
+   "precio": 81390.0,
+   "cambio": -1535.0,
+   "pct": -1.85
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 158.31,
-   "pct": -0.26,
+   "precio": 157.63,
+   "pct": -1.38,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 709.43,
-   "pct": -0.26,
+   "precio": 705.77,
+   "pct": -1.37,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 378.42,
-   "pct": -0.3,
+   "precio": 376.24,
+   "pct": -1.49,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 83.84,
-   "pct": -0.31,
+   "precio": 83.75,
+   "pct": -1.27,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 728.0,
-   "pct": -2.62,
+   "precio": 717.27,
+   "pct": -4.53,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 771.79,
-   "pct": -0.28,
+   "precio": 767.7,
+   "pct": -1.4,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 70.81,
-   "pct": 0.84,
+   "precio": 70.75,
+   "pct": 0.75,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 34.1,
-   "pct": 2.87,
+   "precio": 34.36,
+   "pct": 4.0,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 91.44,
-   "pct": 2.34,
+   "precio": 91.81,
+   "pct": 1.27,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 78.09,
-   "pct": -2.99,
+   "precio": 77.24,
+   "pct": -5.11,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 382.71,
-   "pct": 1.08,
+   "precio": 381.9,
+   "pct": -0.7,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 46.59,
-   "pct": 0.71,
+   "precio": 46.14,
+   "pct": -0.88,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 342.0,
-   "pct": 0.46,
+   "precio": 344.75,
+   "pct": 2.41,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 539.44,
-   "pct": 3.22,
+   "precio": 529.16,
+   "pct": -1.1,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 217.23,
-   "pct": -5.75,
+   "precio": 217.53,
+   "pct": -5.12,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 349.22,
-   "pct": 0.27,
+   "precio": 343.73,
+   "pct": -2.26,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 254.76,
-   "pct": 0.28,
+   "precio": 253.13,
+   "pct": -3.54,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 736.72,
-   "pct": 2.2,
+   "precio": 720.2,
+   "pct": 0.21,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 362.44,
-   "pct": -3.35,
+   "precio": 358.33,
+   "pct": -6.37,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 525.68,
-   "pct": 2.86,
+   "precio": 529.56,
+   "pct": 2.7,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 978.01,
-   "pct": 3.17,
+   "precio": 989.34,
+   "pct": 4.48,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 335.53,
-   "pct": 1.24,
+   "precio": 340.54,
+   "pct": 2.27,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 399.75,
-   "pct": 6.57,
+   "precio": 402.35,
+   "pct": 4.38,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 406.67,
-   "pct": 9.63,
+   "precio": 400.85,
+   "pct": 5.68,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "I watched Nvidia's Jensen Huang work the room in London. He brought big checks — and a blunt message",
-   "url": "https://www.cnbc.com/2026/10/16/nvidia-jensen-huang-london.html",
+   "titulo": "Many of 2026’s hottest stocks have seen dramatic comedowns this week",
+   "url": "https://www.marketwatch.com/story/many-of-2026s-hottest-stocks-have-seen-dramatic-comedowns-this-week-e5ae5d06?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 16 Oct 2026 16:09:00 GMT"
+  },
+  {
+   "titulo": "Can a $55,000 robot load the dishwasher? Inside my afternoon with two humanoid housekeepers.",
+   "url": "https://www.marketwatch.com/story/can-a-55-000-plus-robot-load-the-dishwasher-inside-my-afternoon-with-two-humanoid-housekeepers-0a9569ab?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 16 Oct 2026 16:05:00 GMT"
+  },
+  {
+   "titulo": "Tesla unveils long-delayed Roadster developed with SpaceX, fueling merger speculation",
+   "url": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 11:33:44 GMT"
+   "fecha": "Fri, 16 Oct 2026 15:52:41 GMT"
+  },
+  {
+   "titulo": "Sickle cell gene therapies offer new hope, but access remains a major challenge",
+   "url": "https://www.cnbc.com/2026/10/16/sickle-cell-gene-therapies-offer-new-hope-accessing-them-is-hard.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 15:50:15 GMT"
+  },
+  {
+   "titulo": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
+   "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 15:46:07 GMT"
+  },
+  {
+   "titulo": "SpaceX AI policy leader grilled by NYC Council on Grok safety, sexualized images",
+   "url": "https://www.cnbc.com/2026/10/16/spacex-policy-manger-to-testify-in-nyc-council-ai-safety-investigation.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 15:44:51 GMT"
+  },
+  {
+   "titulo": "OpenAI Saudi national bugging case shows threat to U.S. leadership in AI: DNI Clayton",
+   "url": "https://www.cnbc.com/2026/10/16/ai-espionage-openai-jay-clayton.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 15:01:34 GMT"
+  },
+  {
+   "titulo": "I’m 64 with two sons, but only one works in the family firm. Should I leave him 70% of the business?",
+   "url": "https://www.marketwatch.com/story/im-64-years-old-with-two-sons-but-only-one-works-in-the-family-firm-should-i-leave-him-70-of-the-business-2fe6c382?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 16 Oct 2026 15:00:00 GMT"
+  },
+  {
+   "titulo": "Retiring abroad? Don’t cut these financial ties to the U.S.",
+   "url": "https://www.marketwatch.com/story/retiring-abroad-dont-cut-these-financial-ties-to-the-u-s-5e7e4fc2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 16 Oct 2026 15:00:00 GMT"
   },
   {
    "titulo": "‘It’s a wait-and-see situation’: I’m 63 and diagnosed with lymphoma. Should I take my Social Security next year?",
    "url": "https://www.marketwatch.com/story/its-a-wait-and-see-situation-im-63-and-diagnosed-with-lymphoma-should-i-take-my-social-security-next-year-ea88b419?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 11:30:00 GMT"
+   "fecha": "Fri, 16 Oct 2026 14:45:00 GMT"
+  },
+  {
+   "titulo": "Is Apple’s foldable iPhone Duo worth $2,000? See how it stacks up against other foldable phones.",
+   "url": "https://www.marketwatch.com/story/is-apples-foldable-iphone-duo-worth-2-000-see-how-it-stacks-up-against-other-foldable-phones-c9066b13?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 16 Oct 2026 14:40:00 GMT"
+  },
+  {
+   "titulo": "The stock market has already crashed: Why a Wall Street veteran says Nike is the ultimate turnaround trade.",
+   "url": "https://www.marketwatch.com/story/the-stock-market-has-already-crashed-why-a-wall-street-veteran-says-nike-is-the-ultimate-turnaround-trade-f4429eb3?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 16 Oct 2026 14:28:00 GMT"
+  },
+  {
+   "titulo": "Blue Origin plans $330 million Florida expansion to ramp New Glenn launches",
+   "url": "https://www.cnbc.com/2026/10/16/blue-origin-new-glenn-florida-expansion.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 14:26:05 GMT"
+  },
+  {
+   "titulo": "A stock-market ‘sell’ signal has been silenced — but these Bank of America strategists say it’s too early to buy",
+   "url": "https://www.marketwatch.com/story/a-stock-market-sell-signal-has-been-silenced-but-these-bank-of-america-strategists-say-its-too-early-to-buy-8cdf98c8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 16 Oct 2026 14:14:00 GMT"
+  },
+  {
+   "titulo": "Influencers and biohackers swear by fasting. Here’s what the science says.",
+   "url": "https://www.marketwatch.com/story/influencers-and-biohackers-swear-by-fasting-heres-what-the-science-says-3318191f?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 16 Oct 2026 14:00:00 GMT"
+  },
+  {
+   "titulo": "Here's how the CoreWeave sell-off is affecting OpenAI vs. Anthropic valuations",
+   "url": "https://www.cnbc.com/2026/10/16/coreweave-openai-anthropic-perps.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 13:43:53 GMT"
+  },
+  {
+   "titulo": "Fed's Warsh withholds rate signal, praises recent global tightening",
+   "url": "https://www.cnbc.com/2026/10/16/feds-warsh-says-ai-development-path-will-be-very-bumpy-.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 12:36:00 GMT"
+  },
+  {
+   "titulo": "Elon Musk cash infusion helps GOP Senate super PAC raise record $273 million",
+   "url": "https://www.cnbc.com/2026/10/15/elon-musk-senate-leadership-fund-fundraising.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 12:17:29 GMT"
+  },
+  {
+   "titulo": "I watched Nvidia's Jensen Huang work the room in London. He brought big checks — and a blunt message",
+   "url": "https://www.cnbc.com/2026/10/16/nvidia-jensen-huang-london.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 11:33:44 GMT"
   },
   {
    "titulo": "My wife says we can’t afford to retire. I vetoed her $8,000 trip to Italy. We’re in our 60s and have $4 million. Do I keep working?",
@@ -372,118 +474,16 @@
    "fecha": "Fri, 16 Oct 2026 11:15:00 GMT"
   },
   {
-   "titulo": "KFC to switch to Coca-Cola beverages in U.S. restaurants for the first time in decades",
-   "url": "https://www.cnbc.com/2026/10/15/kfc-coca-cola-pepsi-switch.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 11:02:24 GMT"
-  },
-  {
-   "titulo": "Nike's India campus is a long-term growth bet amid turnaround",
-   "url": "https://www.cnbc.com/2026/10/16/nike-india-campus-china-sales.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 11:00:01 GMT"
-  },
-  {
-   "titulo": "Can a $55,000-plus robot load the dishwasher? Inside my afternoon with two humanoid housekeepers.",
-   "url": "https://www.marketwatch.com/story/can-a-55-000-plus-robot-load-the-dishwasher-inside-my-afternoon-with-two-humanoid-housekeepers-0a9569ab?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 11:00:00 GMT"
-  },
-  {
-   "titulo": "Tesla reveals next-generation Roadster after almost a decade of delays",
-   "url": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 10:57:11 GMT"
-  },
-  {
-   "titulo": "Fed's Warsh withholds rate signal, praises recent global tightening with 'no free riders'",
-   "url": "https://www.cnbc.com/2026/10/16/feds-warsh-says-ai-development-path-will-be-very-bumpy-.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 10:56:50 GMT"
-  },
-  {
    "titulo": "Norway's $2 trillion wealth fund was frozen out of major defense companies. That may be about to change",
    "url": "https://www.cnbc.com/2026/10/16/norway-sovereign-wealth-fund-defense-investment.html",
    "fuente": "CNBC",
    "fecha": "Fri, 16 Oct 2026 10:56:47 GMT"
   },
   {
-   "titulo": "Nearly 40% of the S&P 500 is in a bear market. Here are 10 of those stocks that analysts say can gain up to 81%.",
-   "url": "https://www.marketwatch.com/story/nearly-40-of-the-s-p-500-is-in-a-bear-market-here-are-10-of-those-stocks-that-analysts-say-can-gain-up-to-81-93a51af6?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 10:56:00 GMT"
-  },
-  {
-   "titulo": "How a midterm sweep by Democrats could turn this tech selloff into a tech crash",
-   "url": "https://www.marketwatch.com/story/how-a-midterm-sweep-by-democrats-could-turn-this-tech-selloff-into-a-tech-crash-a1d1a82f?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 10:49:00 GMT"
-  },
-  {
-   "titulo": "Jefferies technical analyst finds an encouraging development in Thursday rebound, setting stage for rally into year-end",
-   "url": "https://www.marketwatch.com/story/jefferies-technical-analyst-finds-an-encouraging-development-in-thursday-rebound-setting-stage-for-rally-into-year-end-34ad6e31?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 10:38:00 GMT"
-  },
-  {
-   "titulo": "U.S. Starlink curbs embolden Russia to intensify attacks on Ukraine, minister tells CNBC",
-   "url": "https://www.cnbc.com/2026/10/16/zelenskyy-trump-eu-summit-russia-ukraine.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 10:25:46 GMT"
-  },
-  {
-   "titulo": "The best of the AI trade could be behind us. Here’s how to prepare, according to Barclays.",
-   "url": "https://www.marketwatch.com/story/the-best-of-the-ai-trade-could-be-behind-us-heres-how-to-prepare-according-to-barclays-725ab4dd?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 10:21:00 GMT"
-  },
-  {
-   "titulo": "I’m 64 with two sons, but only one works in the family firm. Should I leave him 70% of the business?",
-   "url": "https://www.marketwatch.com/story/im-64-years-old-with-two-sons-but-only-one-works-in-the-family-firm-should-i-leave-him-70-of-the-business-2fe6c382?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 10:16:00 GMT"
-  },
-  {
    "titulo": "Trump says he won't use nuclear weapons or send ground troops to Iran",
    "url": "https://www.cnbc.com/2026/10/16/us-iran-war-trump-hormuz.html",
    "fuente": "CNBC",
    "fecha": "Fri, 16 Oct 2026 09:46:54 GMT"
-  },
-  {
-   "titulo": "Here are the key things Fed Chairman Kevin Warsh said — and didn’t say — while Americans were sleeping Thursday night",
-   "url": "https://www.marketwatch.com/story/here-are-the-key-things-fed-chairman-kevin-warsh-said-and-didnt-say-while-americans-were-sleeping-thursday-night-b82238a1?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 09:16:00 GMT"
-  },
-  {
-   "titulo": "The pull of Nashville: A dozen celebrities who have moved to Tennessee, and why",
-   "url": "https://www.marketwatch.com/story/the-pull-of-nashville-a-dozen-celebrities-who-have-moved-to-tennessee-and-why-68446959?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 09:05:00 GMT"
-  },
-  {
-   "titulo": "Marco Rubio to visit Indian billionaire Ambani's refinery in Gujarat as U.S. diesel prices surge",
-   "url": "https://www.cnbc.com/2026/10/16/marco-rubio-reliance-jamnagar-refinery.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 06:45:02 GMT"
-  },
-  {
-   "titulo": "Russia returns to G20 table in Bangkok on U.S. invitation that angers Europe",
-   "url": "https://www.cnbc.com/2026/10/16/g20-russia-ukraine-trump-diesel-europe-.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 06:11:35 GMT"
-  },
-  {
-   "titulo": "Netflix Chief Content Officer Bela Bajaria is leaving, will be replaced by Peter Rice",
-   "url": "https://www.cnbc.com/2026/10/15/netflix-bela-bajaria-peter-rice.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 23:08:05 GMT"
-  },
-  {
-   "titulo": "The problem with 'good debt': Why borrowers should think twice about the label",
-   "url": "https://www.cnbc.com/2026/10/15/good-debt-vs-bad-debt-why-experts-say-rethink-labels.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 17:52:39 GMT"
   }
  ],
  "videos": [
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-16T11:53:32Z",
+ "ts": "2026-10-16T16:17:24Z",
  "fallas": [
   "videos",
   "directos"
