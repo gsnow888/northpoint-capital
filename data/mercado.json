@@ -135,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30061.5,
-   "cambio": -836.75,
-   "pct": -2.71
+   "precio": 30158.75,
+   "cambio": -739.5,
+   "pct": -2.39
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7788.5,
-   "cambio": -69.5,
-   "pct": -0.88
+   "precio": 7797.0,
+   "cambio": -61.0,
+   "pct": -0.78
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4177.4,
-   "cambio": -13.2,
-   "pct": -0.31
+   "precio": 4193.5,
+   "cambio": 2.9,
+   "pct": 0.07
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 95.86,
-   "cambio": 2.12,
-   "pct": 2.26
+   "precio": 95.73,
+   "cambio": 1.99,
+   "pct": 2.12
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2782.0,
-   "cambio": -30.2,
-   "pct": -1.07
+   "precio": 2785.4,
+   "cambio": -26.8,
+   "pct": -0.95
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52451.0,
-   "cambio": 341.0,
-   "pct": 0.65
+   "precio": 52480.0,
+   "cambio": 370.0,
+   "pct": 0.71
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 82525.0,
-   "cambio": -400.0,
-   "pct": -0.48
+   "precio": 82100.0,
+   "cambio": -825.0,
+   "pct": -0.99
   }
  ],
  "acciones": [
@@ -354,16 +354,40 @@
  ],
  "noticias": [
   {
-   "titulo": "India's rupee forecast to weaken toward 100-per-dollar level even as RBI pushes back",
-   "url": "https://www.cnbc.com/2026/10/16/india-rupee-rbi-dollar-iran-war.html",
+   "titulo": "Fed's Warsh withholds rate signal, praises recent global tightening with 'no free riders'",
+   "url": "https://www.cnbc.com/2026/10/16/feds-warsh-says-ai-development-path-will-be-very-bumpy-.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 00:54:25 GMT"
+   "fecha": "Fri, 16 Oct 2026 06:18:12 GMT"
   },
   {
-   "titulo": "Gasping for clean air: Singapore battles relentless haze as Prime Minister Wong warns of action",
-   "url": "https://www.cnbc.com/2026/10/16/singapore-haze-wong-warning-indonesia.html",
+   "titulo": "Russia returns to G20 table in Bangkok on U.S. invitation that angers Europe",
+   "url": "https://www.cnbc.com/2026/10/16/g20-russia-ukraine-trump-diesel-europe-.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 00:06:48 GMT"
+   "fecha": "Fri, 16 Oct 2026 06:11:35 GMT"
+  },
+  {
+   "titulo": "One Singapore ship was sunk, but here's why others are still transiting the Strait of Hormuz",
+   "url": "https://www.cnbc.com/2026/10/16/strait-hormuz-singapore-ships-attacked.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 05:56:28 GMT"
+  },
+  {
+   "titulo": "The IPO drought is driving private equity-owned companies to the debt market to pay investors",
+   "url": "https://www.cnbc.com/2026/10/16/private-equity-portfolios-ipo-debt.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 05:00:01 GMT"
+  },
+  {
+   "titulo": "Hybe shares jump 10% as K-pop sensation BTS' tour lifts earnings hopes",
+   "url": "https://www.cnbc.com/2026/10/16/bts-concerts-hybe-katseye-cortis.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 03:53:48 GMT"
+  },
+  {
+   "titulo": "Tesla finally delivers on its promise to create a flying car",
+   "url": "https://www.marketwatch.com/story/tesla-may-finally-debut-a-flying-car-today-after-testing-fans-patience-for-nearly-a-decade-9a23c8e8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 16 Oct 2026 02:42:00 GMT"
   },
   {
    "titulo": "Pepsi loses more ground in the soda wars, as KFC switches to Coke",
@@ -378,13 +402,19 @@
    "fecha": "Thu, 15 Oct 2026 23:08:05 GMT"
   },
   {
+   "titulo": "People in China are spending nearly as much of their income as Americans on healthcare",
+   "url": "https://www.cnbc.com/2026/10/15/chinese-spending-nearly-as-much-of-income-as-americans-on-healthcare.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 15 Oct 2026 23:00:01 GMT"
+  },
+  {
    "titulo": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
    "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 15 Oct 2026 22:31:00 GMT"
   },
   {
-   "titulo": "I’m 64 years old, with two sons, but only one works in the family firm. Should I leave him 70% of the business?",
+   "titulo": "I’m 64 with two sons, but only one works in the family firm. Should I leave him 70% of the business?",
    "url": "https://www.marketwatch.com/story/im-64-years-old-with-two-sons-but-only-one-works-in-the-family-firm-should-i-leave-him-70-of-the-business-2fe6c382?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 15 Oct 2026 22:15:00 GMT"
@@ -394,12 +424,6 @@
    "url": "https://www.marketwatch.com/story/how-a-midterm-sweep-by-democrats-could-turn-this-tech-selloff-into-a-tech-crash-a1d1a82f?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 15 Oct 2026 21:56:00 GMT"
-  },
-  {
-   "titulo": "Trump says 'if Ken Paxton loses' Texas Senate race, blame Cornyn and Karl Rove",
-   "url": "https://www.cnbc.com/2026/10/15/trump-paxton-texas-talarico.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 21:42:14 GMT"
   },
   {
    "titulo": "CoreWeave credit default swaps hit distress levels as investors sour on AI debt",
@@ -438,28 +462,10 @@
    "fecha": "Thu, 15 Oct 2026 20:40:00 GMT"
   },
   {
-   "titulo": "Nvidia, AMD, Dell sink in global tech rout on AI funding worries",
-   "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 20:33:24 GMT"
-  },
-  {
-   "titulo": "Porsche reveals Mission S concept car that previews new design identity",
-   "url": "https://www.cnbc.com/2026/10/15/porsche-mission-s-concept-car.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 20:30:01 GMT"
-  },
-  {
    "titulo": "Big pharma stocks close near all-time highs as tech selloff pushes investors toward safer bets",
    "url": "https://www.marketwatch.com/story/big-pharma-stocks-near-all-time-highs-as-tech-selloff-pushes-investors-toward-safer-bets-0a5d5d07?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 15 Oct 2026 20:29:00 GMT"
-  },
-  {
-   "titulo": "This one governor’s race could derail the AI trade that’s powered the stock market",
-   "url": "https://www.marketwatch.com/story/this-one-governors-race-could-derail-the-ai-trade-thats-powered-the-stock-market-6bbf06f8?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 15 Oct 2026 19:00:00 GMT"
   },
   {
    "titulo": "Who gets to have 'good debt'? A sociologist, theologian, philosopher and other experts weigh in",
@@ -478,12 +484,6 @@
    "url": "https://www.cnbc.com/2026/10/15/good-debt-vs-bad-debt-why-experts-say-rethink-labels.html",
    "fuente": "CNBC",
    "fecha": "Thu, 15 Oct 2026 17:52:39 GMT"
-  },
-  {
-   "titulo": "Inside India newsletter: Billionaire Ambani’s mega-IPO faces a valuation reality check amid Musk spat",
-   "url": "https://www.cnbc.com/2026/10/15/india-starlink-musk-jio-ambani-ipo.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 15 Oct 2026 06:22:45 GMT"
   }
  ],
  "videos": [
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-16T01:30:13Z",
+ "ts": "2026-10-16T06:20:46Z",
  "fallas": [
   "videos",
   "directos"
