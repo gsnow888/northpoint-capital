@@ -161,6 +161,13 @@
    "pct": 5.63
   },
   {
+   "sym": "RTY",
+   "nombre": "Russell 2000",
+   "precio": 2735.5,
+   "cambio": -76.7,
+   "pct": -2.73
+  },
+  {
    "sym": "YM",
    "nombre": "Dow 30",
    "precio": 52214.0,
@@ -170,9 +177,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81220.0,
-   "cambio": -1705.0,
-   "pct": -2.06
+   "precio": 81315.0,
+   "cambio": -1610.0,
+   "pct": -1.94
   }
  ],
  "acciones": [
@@ -324,6 +331,13 @@
    "moneda": "USD"
   },
   {
+   "tick": "JPM",
+   "nombre": "JPMorgan",
+   "precio": 339.72,
+   "pct": 2.02,
+   "moneda": "USD"
+  },
+  {
    "tick": "V",
    "nombre": "Visa",
    "precio": 402.61,
@@ -340,6 +354,36 @@
  ],
  "noticias": [
   {
+   "titulo": "Investing, not homeownership, is the No. 1 milestone that makes Gen Z renters feel successful",
+   "url": "https://www.marketwatch.com/story/gen-z-renters-are-the-only-group-more-likely-to-feel-successful-by-investing-than-buying-a-house-30ac5344?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 17 Oct 2026 18:40:00 GMT"
+  },
+  {
+   "titulo": "Is Apple’s foldable iPhone Duo worth $2,000? See how it stacks up against other foldable phones.",
+   "url": "https://www.marketwatch.com/story/is-apples-foldable-iphone-duo-worth-2-000-see-how-it-stacks-up-against-other-foldable-phones-c9066b13?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 17 Oct 2026 18:40:00 GMT"
+  },
+  {
+   "titulo": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
+   "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 17 Oct 2026 16:47:00 GMT"
+  },
+  {
+   "titulo": "Semiconductor market to remain solid ‘at least through next year,’ South Korea finance minister says",
+   "url": "https://www.cnbc.com/2026/10/17/south-korea-semiconductor-outlook-lee-hyoung-il.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 17 Oct 2026 16:45:15 GMT"
+  },
+  {
+   "titulo": "Investors are buying up vast tracts of timberland across U.S. in one of market's longest-term bets",
+   "url": "https://www.cnbc.com/2026/10/17/timberland-investing-returns-risk.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 17 Oct 2026 16:31:06 GMT"
+  },
+  {
    "titulo": "Software’s new consolidator gets big vote of confidence from Berkshire",
    "url": "https://www.cnbc.com/2026/10/17/bending-spoons-wants-to-revive-software-castoffs-berkshire-investing.html",
    "fuente": "CNBC",
@@ -352,12 +396,6 @@
    "fecha": "Sat, 17 Oct 2026 15:00:01 GMT"
   },
   {
-   "titulo": "Investors are buying up vast tracts of timberland across U.S. in one of market's longest-term bets",
-   "url": "https://www.cnbc.com/2026/10/17/timberland-investing-returns-risk.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 17 Oct 2026 13:47:59 GMT"
-  },
-  {
    "titulo": "Trump's student loan overhaul could lead to more bankruptcy filings, former judge says",
    "url": "https://www.cnbc.com/2026/10/17/trump-student-loans-bankruptcy.html",
    "fuente": "CNBC",
@@ -368,12 +406,6 @@
    "url": "https://www.cnbc.com/make-it/2026/10/17/great-pumpkin-farm-new-york-2-million-revenue.html",
    "fuente": "CNBC",
    "fecha": "Sat, 17 Oct 2026 13:00:01 GMT"
-  },
-  {
-   "titulo": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
-   "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 17 Oct 2026 13:00:00 GMT"
   },
   {
    "titulo": "Meet the home buyers totally unfazed by 7% mortgage rates",
@@ -424,28 +456,10 @@
    "fecha": "Sat, 17 Oct 2026 11:00:00 GMT"
   },
   {
-   "titulo": "Fed interest-rate decision this month is a closer call than markets think",
-   "url": "https://www.marketwatch.com/story/fed-interest-rate-decision-this-month-is-a-closer-call-than-markets-think-f96ccf95?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 17 Oct 2026 11:00:00 GMT"
-  },
-  {
    "titulo": "Trump waives broad new Russia sanctions and tariffs under Graham Act, citing national interest",
    "url": "https://www.cnbc.com/2026/10/17/trump-waives-russia-related-sanctions-tariffs-before-they-take-effect-.html",
    "fuente": "CNBC",
    "fecha": "Sat, 17 Oct 2026 10:20:44 GMT"
-  },
-  {
-   "titulo": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
-   "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 22:34:29 GMT"
-  },
-  {
-   "titulo": "Nowhere to hide: Tech selloff hits software and chip stocks alike",
-   "url": "https://www.marketwatch.com/story/nowhere-to-hide-tech-selloff-hits-software-and-chip-stocks-alike-6d96773c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 21:59:00 GMT"
   },
   {
    "titulo": "5 midterm money takeaways: Democrats have candidate cash. Republicans have Elon Musk",
@@ -571,7 +585,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-17T16:30:23Z",
+ "ts": "2026-10-17T18:48:38Z",
  "fallas": [
   "videos",
   "directos"
