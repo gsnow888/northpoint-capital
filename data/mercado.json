@@ -161,13 +161,6 @@
    "pct": 5.63
   },
   {
-   "sym": "RTY",
-   "nombre": "Russell 2000",
-   "precio": 2735.5,
-   "cambio": -76.7,
-   "pct": -2.73
-  },
-  {
    "sym": "YM",
    "nombre": "Dow 30",
    "precio": 52214.0,
@@ -177,9 +170,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81530.0,
-   "cambio": -1395.0,
-   "pct": -1.68
+   "precio": 81220.0,
+   "cambio": -1705.0,
+   "pct": -2.06
   }
  ],
  "acciones": [
@@ -331,13 +324,6 @@
    "moneda": "USD"
   },
   {
-   "tick": "JPM",
-   "nombre": "JPMorgan",
-   "precio": 339.72,
-   "pct": 2.02,
-   "moneda": "USD"
-  },
-  {
    "tick": "V",
    "nombre": "Visa",
    "precio": 402.61,
@@ -354,10 +340,46 @@
  ],
  "noticias": [
   {
+   "titulo": "Software’s new consolidator gets big vote of confidence from Berkshire",
+   "url": "https://www.cnbc.com/2026/10/17/bending-spoons-wants-to-revive-software-castoffs-berkshire-investing.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 17 Oct 2026 15:11:30 GMT"
+  },
+  {
+   "titulo": "'Dead money’ for a decade: Why this hedge fund approach may deliver an advantage over bonds",
+   "url": "https://www.cnbc.com/2026/10/17/dead-money-for-a-decade-hedge-fund-approach-that-may-trump-bonds.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 17 Oct 2026 15:00:01 GMT"
+  },
+  {
+   "titulo": "Investors are buying up vast tracts of timberland across U.S. in one of market's longest-term bets",
+   "url": "https://www.cnbc.com/2026/10/17/timberland-investing-returns-risk.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 17 Oct 2026 13:47:59 GMT"
+  },
+  {
+   "titulo": "Trump's student loan overhaul could lead to more bankruptcy filings, former judge says",
+   "url": "https://www.cnbc.com/2026/10/17/trump-student-loans-bankruptcy.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 17 Oct 2026 13:30:01 GMT"
+  },
+  {
    "titulo": "'Everyone laughed' when he started a pumpkin farm—now it brings in $2 million a year",
    "url": "https://www.cnbc.com/make-it/2026/10/17/great-pumpkin-farm-new-york-2-million-revenue.html",
    "fuente": "CNBC",
    "fecha": "Sat, 17 Oct 2026 13:00:01 GMT"
+  },
+  {
+   "titulo": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
+   "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 17 Oct 2026 13:00:00 GMT"
+  },
+  {
+   "titulo": "Meet the home buyers totally unfazed by 7% mortgage rates",
+   "url": "https://www.marketwatch.com/story/meet-the-home-buyers-totally-unfazed-by-7-mortgage-rates-7a9b1cc7?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 17 Oct 2026 13:00:00 GMT"
   },
   {
    "titulo": "Berkshire shares buck market sell-off, rally to highest since Buffett said he would step down as CEO",
@@ -382,12 +404,6 @@
    "url": "https://www.marketwatch.com/story/microsoft-shopify-and-3-more-ai-stocks-that-are-favorite-wall-street-earnings-plays-0bb61e81?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 17 Oct 2026 12:01:00 GMT"
-  },
-  {
-   "titulo": "Bending Spoons wants to revive software castoffs. Berkshire is backing the plan",
-   "url": "https://www.cnbc.com/2026/10/17/bending-spoons-wants-to-revive-software-castoffs-berkshire-investing.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 17 Oct 2026 12:00:01 GMT"
   },
   {
    "titulo": "I’m 64 with two sons, but only one works in the family firm. Should I leave him 70% of the business?",
@@ -420,22 +436,10 @@
    "fecha": "Sat, 17 Oct 2026 10:20:44 GMT"
   },
   {
-   "titulo": "Some companies give AI to everyone. This CEO is doing the opposite",
-   "url": "https://www.cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 17 Oct 2026 05:00:01 GMT"
-  },
-  {
    "titulo": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
    "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
    "fuente": "CNBC",
    "fecha": "Fri, 16 Oct 2026 22:34:29 GMT"
-  },
-  {
-   "titulo": "Apple’s $1,999 iPhone Duo puts the company's status-symbol power to the test",
-   "url": "https://www.cnbc.com/2026/10/16/apple-iphone-duo-demand-price.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 22:31:26 GMT"
   },
   {
    "titulo": "Nowhere to hide: Tech selloff hits software and chip stocks alike",
@@ -448,36 +452,6 @@
    "url": "https://www.cnbc.com/2026/10/16/midterm-election-fundraising-elon-musk.html",
    "fuente": "CNBC",
    "fecha": "Fri, 16 Oct 2026 21:49:13 GMT"
-  },
-  {
-   "titulo": "This Senate race where data centers are a crucial issue has more spending than any other midterm clash",
-   "url": "https://www.marketwatch.com/story/this-senate-race-where-data-centers-are-a-crucial-issue-has-more-spending-than-any-other-midterm-clash-5152b43d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 21:43:00 GMT"
-  },
-  {
-   "titulo": "Could an Anthropic IPO put your 401(k) at risk? The AI safety debate hits a new dimension.",
-   "url": "https://www.marketwatch.com/story/could-an-anthropic-ipo-put-your-401-k-at-risk-the-ai-safety-debate-hits-a-new-dimension-db3f09f7?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 21:35:00 GMT"
-  },
-  {
-   "titulo": "Katie Zacharia out as Trump's White House press secretary",
-   "url": "https://www.cnbc.com/2026/10/16/trump-katie-zacharia-white-house.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 21:26:15 GMT"
-  },
-  {
-   "titulo": "Prediction market odds on Tesla-SpaceX merger are above 50% for early 2027",
-   "url": "https://www.cnbc.com/2026/10/16/tesla-spacex-merger-odds-rise-on-kalshi.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 17:02:40 GMT"
-  },
-  {
-   "titulo": "Tesla unveils long-delayed Roadster developed with SpaceX, fueling merger speculation",
-   "url": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 15:52:41 GMT"
   },
   {
    "titulo": "KFC to switch to Coca-Cola beverages in U.S. restaurants for the first time in decades",
@@ -597,7 +571,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-17T13:01:55Z",
+ "ts": "2026-10-17T16:30:23Z",
  "fallas": [
   "videos",
   "directos"
