@@ -177,9 +177,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81620.0,
-   "cambio": -1305.0,
-   "pct": -1.57
+   "precio": 81530.0,
+   "cambio": -1395.0,
+   "pct": -1.68
   }
  ],
  "acciones": [
@@ -354,10 +354,70 @@
  ],
  "noticias": [
   {
-   "titulo": "Trump's Russia diesel deal may offer Putin more than money — and spell trouble for Ukraine",
-   "url": "https://www.cnbc.com/2026/10/17/trump-diesel-russia-ukraine-war.html",
+   "titulo": "'Everyone laughed' when he started a pumpkin farm—now it brings in $2 million a year",
+   "url": "https://www.cnbc.com/make-it/2026/10/17/great-pumpkin-farm-new-york-2-million-revenue.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 17 Oct 2026 05:46:20 GMT"
+   "fecha": "Sat, 17 Oct 2026 13:00:01 GMT"
+  },
+  {
+   "titulo": "Berkshire shares buck market sell-off, rally to highest since Buffett said he would step down as CEO",
+   "url": "https://www.cnbc.com/2026/10/17/berkshire-rally-to-highest-since-buffett-announcement.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 17 Oct 2026 12:46:21 GMT"
+  },
+  {
+   "titulo": "Influencers and biohackers swear by fasting. Here’s what the science says.",
+   "url": "https://www.marketwatch.com/story/influencers-and-biohackers-swear-by-fasting-heres-what-the-science-says-3318191f?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 17 Oct 2026 12:31:00 GMT"
+  },
+  {
+   "titulo": "Silver’s recent 50% drop from a record high hints that an economic slowdown looms",
+   "url": "https://www.marketwatch.com/story/silvers-recent-50-drop-from-a-record-high-hints-that-an-economic-slowdown-looms-e9fdfaf1?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 17 Oct 2026 12:30:00 GMT"
+  },
+  {
+   "titulo": "Microsoft, Shopify and 3 more AI stocks that are favorite Wall Street earnings plays",
+   "url": "https://www.marketwatch.com/story/microsoft-shopify-and-3-more-ai-stocks-that-are-favorite-wall-street-earnings-plays-0bb61e81?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 17 Oct 2026 12:01:00 GMT"
+  },
+  {
+   "titulo": "Bending Spoons wants to revive software castoffs. Berkshire is backing the plan",
+   "url": "https://www.cnbc.com/2026/10/17/bending-spoons-wants-to-revive-software-castoffs-berkshire-investing.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 17 Oct 2026 12:00:01 GMT"
+  },
+  {
+   "titulo": "I’m 64 with two sons, but only one works in the family firm. Should I leave him 70% of the business?",
+   "url": "https://www.marketwatch.com/story/im-64-years-old-with-two-sons-but-only-one-works-in-the-family-firm-should-i-leave-him-70-of-the-business-2fe6c382?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 17 Oct 2026 12:00:00 GMT"
+  },
+  {
+   "titulo": "It was another great week for the average stock as market leadership shifts away from tech",
+   "url": "https://www.marketwatch.com/story/it-was-another-great-week-for-the-average-stock-as-market-leadership-shifts-away-from-tech-8e8516da?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 17 Oct 2026 11:30:00 GMT"
+  },
+  {
+   "titulo": "I’m 63 and diagnosed with lymphoma. Should I take my Social Security next year?",
+   "url": "https://www.marketwatch.com/story/its-a-wait-and-see-situation-im-63-and-diagnosed-with-lymphoma-should-i-take-my-social-security-next-year-ea88b419?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 17 Oct 2026 11:00:00 GMT"
+  },
+  {
+   "titulo": "Fed interest-rate decision this month is a closer call than markets think",
+   "url": "https://www.marketwatch.com/story/fed-interest-rate-decision-this-month-is-a-closer-call-than-markets-think-f96ccf95?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 17 Oct 2026 11:00:00 GMT"
+  },
+  {
+   "titulo": "Trump waives broad new Russia sanctions and tariffs under Graham Act, citing national interest",
+   "url": "https://www.cnbc.com/2026/10/17/trump-waives-russia-related-sanctions-tariffs-before-they-take-effect-.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 17 Oct 2026 10:20:44 GMT"
   },
   {
    "titulo": "Some companies give AI to everyone. This CEO is doing the opposite",
@@ -384,6 +444,12 @@
    "fecha": "Fri, 16 Oct 2026 21:59:00 GMT"
   },
   {
+   "titulo": "5 midterm money takeaways: Democrats have candidate cash. Republicans have Elon Musk",
+   "url": "https://www.cnbc.com/2026/10/16/midterm-election-fundraising-elon-musk.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 21:49:13 GMT"
+  },
+  {
    "titulo": "This Senate race where data centers are a crucial issue has more spending than any other midterm clash",
    "url": "https://www.marketwatch.com/story/this-senate-race-where-data-centers-are-a-crucial-issue-has-more-spending-than-any-other-midterm-clash-5152b43d?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -396,76 +462,10 @@
    "fecha": "Fri, 16 Oct 2026 21:35:00 GMT"
   },
   {
-   "titulo": "The bond market shrugged off two inflation shocks. Why stock investors should pay attention.",
-   "url": "https://www.marketwatch.com/story/the-bond-market-shrugged-off-two-inflation-shocks-why-stock-investors-should-pay-attention-5da4f771?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 21:30:00 GMT"
-  },
-  {
    "titulo": "Katie Zacharia out as Trump's White House press secretary",
    "url": "https://www.cnbc.com/2026/10/16/trump-katie-zacharia-white-house.html",
    "fuente": "CNBC",
    "fecha": "Fri, 16 Oct 2026 21:26:15 GMT"
-  },
-  {
-   "titulo": "New SEC rules would fleece everyday investors to enrich Wall Street",
-   "url": "https://www.marketwatch.com/story/new-sec-rules-would-fleece-everyday-investors-to-enrich-wall-street-0a00fe03?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 21:21:00 GMT"
-  },
-  {
-   "titulo": "I’m 63 and diagnosed with lymphoma. Should I take my Social Security next year?",
-   "url": "https://www.marketwatch.com/story/its-a-wait-and-see-situation-im-63-and-diagnosed-with-lymphoma-should-i-take-my-social-security-next-year-ea88b419?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 21:15:00 GMT"
-  },
-  {
-   "titulo": "Don’t buy this dip: Several signs suggest there’s more pain ahead for tech stocks",
-   "url": "https://www.marketwatch.com/story/dont-buy-this-dip-several-signs-suggest-theres-more-pain-ahead-for-tech-stocks-83f971d7?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 20:58:00 GMT"
-  },
-  {
-   "titulo": "Trump says White House didn't order Starlink restrictions in Ukraine",
-   "url": "https://www.cnbc.com/2026/10/16/trump-denies-musk-claim-he-ordered-starlink-restrictions-in-ukraine.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 20:28:10 GMT"
-  },
-  {
-   "titulo": "EchoStar’s stock looks like a stealthy way to ride the SpaceX wave, J.P. Morgan says",
-   "url": "https://www.marketwatch.com/story/echostars-stock-looks-like-a-stealthy-way-to-ride-the-spacex-wave-j-p-morgan-says-c4effa5d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 20:05:00 GMT"
-  },
-  {
-   "titulo": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
-   "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 20:02:21 GMT"
-  },
-  {
-   "titulo": "Are we spending our retirement money in the right order? Our plan is: Social Security, annuities, cash — then IRA.",
-   "url": "https://www.marketwatch.com/story/are-we-spending-our-retirement-money-in-the-right-order-our-plan-is-social-security-annuities-cash-then-ira-02cec336?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 19:46:00 GMT"
-  },
-  {
-   "titulo": "Your Social Security check will rise an average of $75 a month — will it be able to keep up with inflation?",
-   "url": "https://www.marketwatch.com/story/social-securitys-cola-will-be-3-6-in-2027-as-inflation-persists-f7c9dff2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 16 Oct 2026 19:45:00 GMT"
-  },
-  {
-   "titulo": "Wall Street's fear gauge is ripping. Traders see it going even higher",
-   "url": "https://www.cnbc.com/2026/10/16/wall-streets-fear-gauge-is-ripping-traders-see-it-going-even-higher.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 19:28:10 GMT"
-  },
-  {
-   "titulo": "Why Trump and the GOP's billion-dollar midterm blitz isn’t working",
-   "url": "https://www.cnbc.com/2026/10/16/republicans-midterms-spending-trump-musk-2026.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 17:55:05 GMT"
   },
   {
    "titulo": "Prediction market odds on Tesla-SpaceX merger are above 50% for early 2027",
@@ -474,16 +474,16 @@
    "fecha": "Fri, 16 Oct 2026 17:02:40 GMT"
   },
   {
-   "titulo": "U.S. presses China on Mastercard, Citigroup market access in bilateral Bangkok talks, official says",
-   "url": "https://www.cnbc.com/2026/10/16/us-china-mastercard-citigroup-market-access.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 16:46:18 GMT"
-  },
-  {
    "titulo": "Tesla unveils long-delayed Roadster developed with SpaceX, fueling merger speculation",
    "url": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html",
    "fuente": "CNBC",
    "fecha": "Fri, 16 Oct 2026 15:52:41 GMT"
+  },
+  {
+   "titulo": "KFC to switch to Coca-Cola beverages in U.S. restaurants for the first time in decades",
+   "url": "https://www.cnbc.com/2026/10/15/kfc-coca-cola-pepsi-switch.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 11:02:24 GMT"
   }
  ],
  "videos": [
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-17T09:10:47Z",
+ "ts": "2026-10-17T13:01:55Z",
  "fallas": [
   "videos",
   "directos"
