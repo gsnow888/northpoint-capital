@@ -177,9 +177,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81665.0,
-   "cambio": -1260.0,
-   "pct": -1.52
+   "precio": 81345.0,
+   "cambio": -1580.0,
+   "pct": -1.91
   }
  ],
  "acciones": [
@@ -357,7 +357,7 @@
    "titulo": "Can a $55,000 robot load the dishwasher? Inside my afternoon with two humanoid housekeepers.",
    "url": "https://www.marketwatch.com/story/can-a-55-000-plus-robot-load-the-dishwasher-inside-my-afternoon-with-two-humanoid-housekeepers-0a9569ab?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Sat, 17 Oct 2026 20:43:00 GMT"
+   "fecha": "Sat, 17 Oct 2026 20:53:00 GMT"
   },
   {
    "titulo": "Trump waives broad new Russia sanctions, Zelenskyy condemns it as 'wrong'",
@@ -585,7 +585,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-17T21:19:29Z",
+ "ts": "2026-10-17T23:13:36Z",
  "fallas": [
   "videos",
   "directos"
