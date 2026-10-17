@@ -354,10 +354,22 @@
  ],
  "noticias": [
   {
-   "titulo": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
-   "url": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
+   "titulo": "Trump's Russia diesel deal may offer Putin more than money — and spell trouble for Ukraine",
+   "url": "https://www.cnbc.com/2026/10/17/trump-diesel-russia-ukraine-war.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 22:33:05 GMT"
+   "fecha": "Sat, 17 Oct 2026 05:46:20 GMT"
+  },
+  {
+   "titulo": "Some companies give AI to everyone. This CEO is doing the opposite",
+   "url": "https://www.cnbc.com/2026/10/17/ai-workplace-tokenmaxxing-paysend.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 17 Oct 2026 05:00:01 GMT"
+  },
+  {
+   "titulo": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
+   "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 22:34:29 GMT"
   },
   {
    "titulo": "Apple’s $1,999 iPhone Duo puts the company's status-symbol power to the test",
@@ -444,22 +456,10 @@
    "fecha": "Fri, 16 Oct 2026 19:45:00 GMT"
   },
   {
-   "titulo": "Here's who Netflix just brought in to run content — and what it means for the streamer",
-   "url": "https://www.cnbc.com/2026/10/16/netflix-peter-rice-chief-content-officer.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 19:40:00 GMT"
-  },
-  {
    "titulo": "Wall Street's fear gauge is ripping. Traders see it going even higher",
    "url": "https://www.cnbc.com/2026/10/16/wall-streets-fear-gauge-is-ripping-traders-see-it-going-even-higher.html",
    "fuente": "CNBC",
    "fecha": "Fri, 16 Oct 2026 19:28:10 GMT"
-  },
-  {
-   "titulo": "The Austin Powers steamroller: How to trade CoreWeave's slow moving crisis",
-   "url": "https://www.cnbc.com/2026/10/16/playing-the-coreweave-disconnect.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 18:24:35 GMT"
   },
   {
    "titulo": "Why Trump and the GOP's billion-dollar midterm blitz isn’t working",
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-17T04:58:00Z",
+ "ts": "2026-10-17T09:10:47Z",
  "fallas": [
   "videos",
   "directos"
