@@ -97,9 +97,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81630.0,
-   "cambio": -1755.0,
-   "pct": -2.1
+   "precio": 81910.0,
+   "cambio": -1475.0,
+   "pct": -1.77
   }
  ],
  "acciones": [
@@ -274,6 +274,24 @@
  ],
  "noticias": [
   {
+   "titulo": "Semiconductor market to remain solid ‘at least through next year,’ South Korea finance minister says",
+   "url": "https://www.cnbc.com/2026/10/17/south-korea-semiconductor-outlook-lee-hyoung-il.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 18 Oct 2026 11:10:44 GMT"
+  },
+  {
+   "titulo": "Trump's Russia diesel deal may offer Putin more than money — and spell trouble for Ukraine",
+   "url": "https://www.cnbc.com/2026/10/17/trump-diesel-russia-ukraine-war.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 18 Oct 2026 07:22:07 GMT"
+  },
+  {
+   "titulo": "Why hedge funds could be making a bond market shock more likely",
+   "url": "https://www.cnbc.com/2026/10/18/hedge-funds-bond-market-turmoil.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 18 Oct 2026 06:13:05 GMT"
+  },
+  {
    "titulo": "Can a $55,000 robot load the dishwasher? Inside my afternoon with two humanoid housekeepers.",
    "url": "https://www.marketwatch.com/story/can-a-55-000-plus-robot-load-the-dishwasher-inside-my-afternoon-with-two-humanoid-housekeepers-0a9569ab?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -308,12 +326,6 @@
    "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 17 Oct 2026 16:47:00 GMT"
-  },
-  {
-   "titulo": "Semiconductor market to remain solid ‘at least through next year,’ South Korea finance minister says",
-   "url": "https://www.cnbc.com/2026/10/17/south-korea-semiconductor-outlook-lee-hyoung-il.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 17 Oct 2026 16:45:15 GMT"
   },
   {
    "titulo": "Software’s new consolidator gets big vote of confidence from Berkshire",
@@ -374,12 +386,6 @@
    "url": "https://www.marketwatch.com/story/im-64-years-old-with-two-sons-but-only-one-works-in-the-family-firm-should-i-leave-him-70-of-the-business-2fe6c382?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 17 Oct 2026 12:00:00 GMT"
-  },
-  {
-   "titulo": "Trump's Russia diesel deal may offer Putin more than money — and spell trouble for Ukraine",
-   "url": "https://www.cnbc.com/2026/10/17/trump-diesel-russia-ukraine-war.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 17 Oct 2026 05:46:20 GMT"
   },
   {
    "titulo": "5 midterm money takeaways: Democrats have candidate cash. Republicans have Elon Musk",
@@ -511,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-18T06:02:59Z",
+ "ts": "2026-10-18T11:22:17Z",
  "fallas": [
   "videos",
   "directos"
