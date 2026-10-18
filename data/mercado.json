@@ -97,9 +97,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 80905.0,
-   "cambio": -2480.0,
-   "pct": -2.97
+   "precio": 80830.0,
+   "cambio": -2555.0,
+   "pct": -3.06
   }
  ],
  "acciones": [
@@ -274,16 +274,16 @@
  ],
  "noticias": [
   {
+   "titulo": "Bessent warns Zelenskyy to 'be very careful' about claims U.S. is throttling Starlink",
+   "url": "https://www.cnbc.com/2026/10/18/bessent-zelenskyy-starlink-ukarine-war.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 18 Oct 2026 19:37:28 GMT"
+  },
+  {
    "titulo": "My wife says we can’t afford to retire. I vetoed her $8,000 trip to Italy. We’re in our 60s and have $4 million. Do I keep working?",
    "url": "https://www.marketwatch.com/story/my-wife-says-we-cant-afford-to-retire-we-have-4-million-do-i-just-keep-working-f1b6b085?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sun, 18 Oct 2026 17:00:00 GMT"
-  },
-  {
-   "titulo": "Bessent warns Zelenskyy to 'be very careful' about claims U.S. is throttling Starlink",
-   "url": "https://www.cnbc.com/2026/10/18/bessent-zelenskyy-starlink-ukarine-war.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 18 Oct 2026 16:44:10 GMT"
   },
   {
    "titulo": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-18T17:52:54Z",
+ "ts": "2026-10-18T20:17:12Z",
  "fallas": [
   "videos",
   "directos"
