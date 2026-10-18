@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29391.5,
-   "cambio": -1400.0,
-   "pct": -4.55
+   "precio": 29519.25,
+   "cambio": -1272.25,
+   "pct": -4.13
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7704.25,
-   "cambio": -151.5,
-   "pct": -1.93
+   "precio": 7720.75,
+   "cambio": -135.0,
+   "pct": -1.72
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4181.1,
-   "cambio": 3.8,
-   "pct": 0.09
+   "precio": 4194.8,
+   "cambio": 17.5,
+   "pct": 0.42
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 99.02,
-   "cambio": 4.88,
-   "pct": 5.18
+   "precio": 98.36,
+   "cambio": 4.22,
+   "pct": 4.48
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2735.5,
-   "cambio": -64.6,
-   "pct": -2.31
+   "precio": 2748.9,
+   "cambio": -51.2,
+   "pct": -1.83
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52214.0,
-   "cambio": 279.0,
-   "pct": 0.54
+   "precio": 52335.0,
+   "cambio": 400.0,
+   "pct": 0.77
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 80830.0,
-   "cambio": -2555.0,
-   "pct": -3.06
+   "precio": 81490.0,
+   "cambio": -1895.0,
+   "pct": -2.27
   }
  ],
  "acciones": [
@@ -274,6 +274,12 @@
  ],
  "noticias": [
   {
+   "titulo": "Brent crude hovers near $109 a barrel as Ukraine resumes energy strikes, tankers attacked in Middle East",
+   "url": "https://www.cnbc.com/2026/10/18/oil-price-today-ukraine-russia-iran-strait-hormuz.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 18 Oct 2026 22:22:20 GMT"
+  },
+  {
    "titulo": "Bessent warns Zelenskyy to 'be very careful' about claims U.S. is throttling Starlink",
    "url": "https://www.cnbc.com/2026/10/18/bessent-zelenskyy-starlink-ukarine-war.html",
    "fuente": "CNBC",
@@ -326,12 +332,6 @@
    "url": "https://www.cnbc.com/2026/10/18/iran-us-war-rezaei-operational-plan-shipping-attacks.html",
    "fuente": "CNBC",
    "fecha": "Sun, 18 Oct 2026 13:52:24 GMT"
-  },
-  {
-   "titulo": "I've studied over 200 kids—parents who raise resilient, successful children teach them these 6 lessons early on",
-   "url": "https://www.cnbc.com/make-it/2026/10/18/parenting-lessons-resilient-successful-well-adjusted.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 18 Oct 2026 13:37:01 GMT"
   },
   {
    "titulo": "Roth conversions: When the ‘juice isn't really worth the squeeze,’ according to a top-ranked advisor",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-18T20:17:12Z",
+ "ts": "2026-10-18T22:28:47Z",
  "fallas": [
   "videos",
   "directos"
