@@ -177,9 +177,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81345.0,
-   "cambio": -1580.0,
-   "pct": -1.91
+   "precio": 81500.0,
+   "cambio": -1425.0,
+   "pct": -1.72
   }
  ],
  "acciones": [
@@ -585,7 +585,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-17T23:13:36Z",
+ "ts": "2026-10-18T01:11:13Z",
  "fallas": [
   "videos",
   "directos"
