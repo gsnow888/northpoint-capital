@@ -1,134 +1,54 @@
 {
  "calendario": [
   {
-   "dia": "2026-10-14",
+   "dia": "2026-10-19",
    "hora": "06:30",
    "hora_ny": "08:30",
-   "iso": "2026-10-14T08:30:00-04:00",
-   "titulo": "Core CPI m/m",
-   "pais": "USD",
-   "previsto": "0.2%",
-   "previo": "0.3%"
-  },
-  {
-   "dia": "2026-10-14",
-   "hora": "06:30",
-   "hora_ny": "08:30",
-   "iso": "2026-10-14T08:30:00-04:00",
-   "titulo": "Core CPI y/y",
-   "pais": "USD",
-   "previsto": "2.5%",
-   "previo": "2.4%"
-  },
-  {
-   "dia": "2026-10-14",
-   "hora": "06:30",
-   "hora_ny": "08:30",
-   "iso": "2026-10-14T08:30:00-04:00",
+   "iso": "2026-10-19T08:30:00-04:00",
    "titulo": "CPI m/m",
-   "pais": "USD",
-   "previsto": "0.6%",
-   "previo": "0.4%"
+   "pais": "CAD",
+   "previsto": "0.2%",
+   "previo": "-0.1%"
   },
   {
-   "dia": "2026-10-14",
+   "dia": "2026-10-19",
    "hora": "06:30",
    "hora_ny": "08:30",
-   "iso": "2026-10-14T08:30:00-04:00",
-   "titulo": "CPI y/y",
-   "pais": "USD",
-   "previsto": "3.6%",
-   "previo": "3.4%"
+   "iso": "2026-10-19T08:30:00-04:00",
+   "titulo": "Median CPI y/y",
+   "pais": "CAD",
+   "previsto": "2.0%",
+   "previo": "2.0%"
   },
   {
-   "dia": "2026-10-14",
-   "hora": "18:30",
-   "hora_ny": "20:30",
-   "iso": "2026-10-14T20:30:00-04:00",
-   "titulo": "Employment Change",
-   "pais": "AUD",
-   "previsto": "19.6K",
-   "previo": "39.5K"
+   "dia": "2026-10-19",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-19T08:30:00-04:00",
+   "titulo": "Trimmed CPI y/y",
+   "pais": "CAD",
+   "previsto": "1.9%",
+   "previo": "1.9%"
   },
   {
-   "dia": "2026-10-14",
-   "hora": "18:30",
-   "hora_ny": "20:30",
-   "iso": "2026-10-14T20:30:00-04:00",
-   "titulo": "Unemployment Rate",
-   "pais": "AUD",
-   "previsto": "4.6%",
-   "previo": "4.6%"
-  },
-  {
-   "dia": "2026-10-15",
+   "dia": "2026-10-21",
    "hora": "00:00",
    "hora_ny": "02:00",
-   "iso": "2026-10-15T02:00:00-04:00",
-   "titulo": "GDP m/m",
+   "iso": "2026-10-21T02:00:00-04:00",
+   "titulo": "CPI y/y",
    "pais": "GBP",
-   "previsto": "-0.1%",
-   "previo": "0.4%"
+   "previsto": "3.4%",
+   "previo": "3.1%"
   },
   {
-   "dia": "2026-10-15",
-   "hora": "06:30",
-   "hora_ny": "08:30",
-   "iso": "2026-10-15T08:30:00-04:00",
-   "titulo": "Core PPI m/m",
-   "pais": "USD",
-   "previsto": "0.3%",
-   "previo": "0.2%"
-  },
-  {
-   "dia": "2026-10-15",
-   "hora": "06:30",
-   "hora_ny": "08:30",
-   "iso": "2026-10-15T08:30:00-04:00",
-   "titulo": "Core Retail Sales m/m",
-   "pais": "USD",
-   "previsto": "0.6%",
-   "previo": "1.4%"
-  },
-  {
-   "dia": "2026-10-15",
-   "hora": "06:30",
-   "hora_ny": "08:30",
-   "iso": "2026-10-15T08:30:00-04:00",
-   "titulo": "PPI m/m",
-   "pais": "USD",
-   "previsto": "0.6%",
-   "previo": "0.4%"
-  },
-  {
-   "dia": "2026-10-15",
-   "hora": "06:30",
-   "hora_ny": "08:30",
-   "iso": "2026-10-15T08:30:00-04:00",
-   "titulo": "Retail Sales m/m",
-   "pais": "USD",
-   "previsto": "0.3%",
-   "previo": "1.2%"
-  },
-  {
-   "dia": "2026-10-15",
-   "hora": "20:00",
-   "hora_ny": "22:00",
-   "iso": "2026-10-15T22:00:00-04:00",
-   "titulo": "BOE Gov Bailey Speaks",
-   "pais": "GBP",
-   "previsto": "",
-   "previo": ""
-  },
-  {
-   "dia": "2026-10-15",
-   "hora": "21:30",
-   "hora_ny": "23:30",
-   "iso": "2026-10-15T23:30:00-04:00",
-   "titulo": "Fed Chairman Warsh Speaks",
-   "pais": "USD",
-   "previsto": "",
-   "previo": ""
+   "dia": "2026-10-21",
+   "hora": "15:45",
+   "hora_ny": "17:45",
+   "iso": "2026-10-21T17:45:00-04:00",
+   "titulo": "CPI q/q",
+   "pais": "NZD",
+   "previsto": "0.8%",
+   "previo": "1.5%"
   }
  ],
  "precios": [
@@ -136,50 +56,50 @@
    "sym": "NQ",
    "nombre": "Nasdaq 100",
    "precio": 29391.5,
-   "cambio": -1506.75,
-   "pct": -4.88
+   "cambio": -1400.0,
+   "pct": -4.55
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
    "precio": 7704.25,
-   "cambio": -153.75,
-   "pct": -1.96
+   "cambio": -151.5,
+   "pct": -1.93
   },
   {
    "sym": "GC",
    "nombre": "Oro",
    "precio": 4181.1,
-   "cambio": -9.5,
-   "pct": -0.23
+   "cambio": 3.8,
+   "pct": 0.09
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
    "precio": 99.02,
-   "cambio": 5.28,
-   "pct": 5.63
+   "cambio": 4.88,
+   "pct": 5.18
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
    "precio": 2735.5,
-   "cambio": -76.7,
-   "pct": -2.73
+   "cambio": -64.6,
+   "pct": -2.31
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
    "precio": 52214.0,
-   "cambio": 104.0,
-   "pct": 0.2
+   "cambio": 279.0,
+   "pct": 0.54
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81500.0,
-   "cambio": -1425.0,
-   "pct": -1.72
+   "precio": 81630.0,
+   "cambio": -1755.0,
+   "pct": -2.1
   }
  ],
  "acciones": [
@@ -396,12 +316,6 @@
    "fecha": "Sat, 17 Oct 2026 16:45:15 GMT"
   },
   {
-   "titulo": "Investors are buying up vast tracts of timberland across U.S. in one of market's longest-term bets",
-   "url": "https://www.cnbc.com/2026/10/17/timberland-investing-returns-risk.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 17 Oct 2026 16:31:06 GMT"
-  },
-  {
    "titulo": "Software’s new consolidator gets big vote of confidence from Berkshire",
    "url": "https://www.cnbc.com/2026/10/17/bending-spoons-wants-to-revive-software-castoffs-berkshire-investing.html",
    "fuente": "CNBC",
@@ -462,10 +376,22 @@
    "fecha": "Sat, 17 Oct 2026 12:00:00 GMT"
   },
   {
+   "titulo": "Trump's Russia diesel deal may offer Putin more than money — and spell trouble for Ukraine",
+   "url": "https://www.cnbc.com/2026/10/17/trump-diesel-russia-ukraine-war.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 17 Oct 2026 05:46:20 GMT"
+  },
+  {
    "titulo": "5 midterm money takeaways: Democrats have candidate cash. Republicans have Elon Musk",
    "url": "https://www.cnbc.com/2026/10/16/midterm-election-fundraising-elon-musk.html",
    "fuente": "CNBC",
    "fecha": "Fri, 16 Oct 2026 21:49:13 GMT"
+  },
+  {
+   "titulo": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
+   "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 16 Oct 2026 20:02:21 GMT"
   },
   {
    "titulo": "KFC to switch to Coca-Cola beverages in U.S. restaurants for the first time in decades",
@@ -585,7 +511,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-18T01:11:13Z",
+ "ts": "2026-10-18T06:02:59Z",
  "fallas": [
   "videos",
   "directos"
