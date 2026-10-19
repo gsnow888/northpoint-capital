@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29784.5,
-   "cambio": -398.25,
-   "pct": -1.32
+   "precio": 29736.75,
+   "cambio": -446.0,
+   "pct": -1.48
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7766.25,
-   "cambio": -4.0,
-   "pct": -0.05
+   "precio": 7747.25,
+   "cambio": -23.0,
+   "pct": -0.3
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4201.7,
-   "cambio": 93.8,
-   "pct": 2.28
+   "precio": 4184.3,
+   "cambio": 76.4,
+   "pct": 1.86
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 97.39,
-   "cambio": 2.3,
-   "pct": 2.42
+   "precio": 98.21,
+   "cambio": 3.12,
+   "pct": 3.28
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2757.4,
-   "cambio": 12.4,
-   "pct": 0.45
+   "precio": 2750.5,
+   "cambio": 5.5,
+   "pct": 0.2
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52490.0,
-   "cambio": 632.0,
-   "pct": 1.22
+   "precio": 52210.0,
+   "cambio": 352.0,
+   "pct": 0.68
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 82590.0,
-   "cambio": 765.0,
-   "pct": 0.93
+   "precio": 82370.0,
+   "cambio": 545.0,
+   "pct": 0.67
   }
  ],
  "acciones": [
@@ -274,46 +274,76 @@
  ],
  "noticias": [
   {
-   "titulo": "India’s Finance Minister says easy exits and excess liquidity fuel equity market's underperformance",
-   "url": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
+   "titulo": "French unrest compounds debt crisis fears. Paris-listed stocks, bonds and the euro fall",
+   "url": "https://www.cnbc.com/2026/10/19/france-protests-bond-yields-markets.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 04:46:26 GMT"
+   "fecha": "Mon, 19 Oct 2026 10:37:43 GMT"
   },
   {
-   "titulo": "China's third-quarter economic growth quickens to 4.5% as exports surge, beating estimates",
-   "url": "https://www.cnbc.com/2026/10/19/chinas-economic-growth-quickens-to-4point6percent-as-exports-surge-stimulus-rolls-out.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 04:36:39 GMT"
-  },
-  {
-   "titulo": "Putin reportedly suggests summit with Trump and Xi to decide fate of Ukraine",
+   "titulo": "Putin reportedly proposes three-way summit with Trump and Xi on Ukraine war — without Zelenskyy",
    "url": "https://www.cnbc.com/2026/10/19/putin-trump-xi-ukraine-war-energy.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 03:56:03 GMT"
+   "fecha": "Mon, 19 Oct 2026 10:36:47 GMT"
   },
   {
-   "titulo": "France hit by worst unrest in years as attempts to rein in government spending meet citizen ire",
-   "url": "https://www.cnbc.com/2026/10/19/france-protests-worst-in-years-unrest-macron-.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 03:18:51 GMT"
+   "titulo": "I’m 63 and diagnosed with lymphoma. Should I take my Social Security next year?",
+   "url": "https://www.marketwatch.com/story/its-a-wait-and-see-situation-im-63-and-diagnosed-with-lymphoma-should-i-take-my-social-security-next-year-ea88b419?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 19 Oct 2026 10:36:00 GMT"
   },
   {
-   "titulo": "Indonesian stocks plunge to six-year low as MSCI downgrade fears mount",
-   "url": "https://www.cnbc.com/2026/10/19/indonesian-stocks-msci-downgrade-fears-mount.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 03:00:33 GMT"
+   "titulo": "The S&P 500 is masking a hidden market pullback. Why Morgan Stanley says an index retreat would signal a buying opportunity.",
+   "url": "https://www.marketwatch.com/story/the-s-p-500-is-masking-a-hidden-market-pullback-why-morgan-stanley-says-an-index-retreat-would-signal-a-buying-opportunity-08d079c0?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 19 Oct 2026 10:23:00 GMT"
   },
   {
-   "titulo": "China's CXMT sees shares drop over 6% as investors look past chipmaker's profit turnaround",
-   "url": "https://www.cnbc.com/2026/10/19/china-cxmt-profit-outlook-shares.html",
+   "titulo": "Elon Musk says he'll give a SpaceX share to every child in America next year",
+   "url": "https://www.cnbc.com/2026/10/19/elon-musk-spacex-shares-giveaway-kids.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 01:56:34 GMT"
+   "fecha": "Mon, 19 Oct 2026 10:21:39 GMT"
   },
   {
-   "titulo": "Why I am taking the other side of the trade that crushed the market Friday",
-   "url": "https://www.cnbc.com/investingclub/2026/10/18/jim-cramer-why-i-am-taking-the-other-side-of-the-trade-that-crushed-the-market-friday.html",
+   "titulo": "Robot factories and hypersonic missiles: JPMorgan Chase’s first $5 billion of defense investments",
+   "url": "https://www.cnbc.com/2026/10/19/jpmorgan-security-defense-investments.html",
    "fuente": "CNBC",
-   "fecha": "Sun, 18 Oct 2026 22:23:08 GMT"
+   "fecha": "Mon, 19 Oct 2026 10:00:01 GMT"
+  },
+  {
+   "titulo": "Big tech is wobbling. Goldman Sachs says it’s time to buy these 23 unloved stocks instead.",
+   "url": "https://www.marketwatch.com/story/big-tech-is-wobbling-goldman-sachs-says-its-time-to-buy-these-23-unloved-stocks-instead-cff7a9e0?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 19 Oct 2026 09:58:00 GMT"
+  },
+  {
+   "titulo": "France and the U.S. share the same debt trap. Only one has a global lifeline.",
+   "url": "https://www.marketwatch.com/story/france-and-the-u-s-share-the-same-debt-trap-only-one-has-a-global-lifeline-3ae61b42?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 19 Oct 2026 09:30:00 GMT"
+  },
+  {
+   "titulo": "Kelly Clarkson’s expensive purchases: A multi-million dollar real-estate portfolio that spans the country",
+   "url": "https://www.marketwatch.com/story/kelly-clarksons-expensive-purchases-a-multi-million-dollar-real-estate-portfolio-that-spans-the-country-fe1d3bc7?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 19 Oct 2026 09:03:00 GMT"
+  },
+  {
+   "titulo": "The Beach Boys’ Mike Love goes the extra mile to protect the land around $43 million Lake Tahoe estate",
+   "url": "https://www.marketwatch.com/story/the-beach-boys-mike-love-goes-the-extra-mile-to-protect-the-land-around-43-million-lake-tahoe-estate-06c5606e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 19 Oct 2026 09:01:00 GMT"
+  },
+  {
+   "titulo": "OpenAI bugging suspect WhatsApp'ed Saudi royal days before arrest, feds reveal",
+   "url": "https://www.cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 19 Oct 2026 06:06:58 GMT"
+  },
+  {
+   "titulo": "Anthropic commits 5% of shares to new public benefit fund that could address AI job disruption",
+   "url": "https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 18 Oct 2026 23:36:11 GMT"
   },
   {
    "titulo": "My wife says we can’t afford to retire. I vetoed her $8,000 trip to Italy. We’re in our 60s and have $4 million. Do I keep working?",
@@ -340,22 +370,16 @@
    "fecha": "Sun, 18 Oct 2026 15:15:00 GMT"
   },
   {
-   "titulo": "I’m 63 and diagnosed with lymphoma. Should I take my Social Security next year?",
-   "url": "https://www.marketwatch.com/story/its-a-wait-and-see-situation-im-63-and-diagnosed-with-lymphoma-should-i-take-my-social-security-next-year-ea88b419?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 18 Oct 2026 15:00:00 GMT"
+   "titulo": "Roth conversions: When the ‘juice isn't really worth the squeeze,’ according to a top-ranked advisor",
+   "url": "https://www.cnbc.com/2026/10/18/roth-conversion-2026.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 18 Oct 2026 13:30:01 GMT"
   },
   {
-   "titulo": "These surprising stocks could be some of the biggest drivers of S&P 500 earnings growth",
-   "url": "https://www.marketwatch.com/story/these-surprising-stocks-could-be-some-of-the-biggest-drivers-of-s-p-500-earnings-growth-ea073a07?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 18 Oct 2026 14:00:00 GMT"
-  },
-  {
-   "titulo": "Stocks are heading for a high-stakes showdown, as strong earnings collide with rising borrowing costs",
-   "url": "https://www.marketwatch.com/story/stocks-are-heading-for-a-high-stakes-showdown-as-strong-earnings-collide-with-rising-borrowing-costs-6f8ea5b8?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 18 Oct 2026 13:00:00 GMT"
+   "titulo": "Boomers are buying into the promise of monthly income from options ETFs, but there's a tax catch",
+   "url": "https://www.cnbc.com/2026/10/18/retirement-income-funds-taxes.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 18 Oct 2026 13:10:33 GMT"
   },
   {
    "titulo": "Always on, always listening: New AI devices are pushing legal limits and could put users in jeopardy",
@@ -364,46 +388,22 @@
    "fecha": "Sun, 18 Oct 2026 12:00:01 GMT"
   },
   {
-   "titulo": "There is a silent market rotation inside the S&P 500 that’s warning of more weakness ahead",
-   "url": "https://www.marketwatch.com/story/there-is-a-silent-market-rotation-inside-the-s-p-500-thats-warning-of-more-weakness-ahead-549e7650?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 18 Oct 2026 12:00:00 GMT"
-  },
-  {
    "titulo": "Why hedge funds could be making a bond market shock more likely",
    "url": "https://www.cnbc.com/2026/10/18/hedge-funds-bond-market-turmoil.html",
    "fuente": "CNBC",
    "fecha": "Sun, 18 Oct 2026 06:13:05 GMT"
   },
   {
-   "titulo": "Can a $55,000 robot load the dishwasher? Inside my afternoon with two humanoid housekeepers.",
-   "url": "https://www.marketwatch.com/story/can-a-55-000-plus-robot-load-the-dishwasher-inside-my-afternoon-with-two-humanoid-housekeepers-0a9569ab?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 17 Oct 2026 20:53:00 GMT"
-  },
-  {
-   "titulo": "Fake shopping sprees and ‘happiness insurance’: The latest fintech apps reveal our financial anxieties",
-   "url": "https://www.marketwatch.com/story/fake-shopping-sprees-and-happiness-insurance-the-latest-fintech-apps-reveal-our-financial-anxieties-77770a46?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 17 Oct 2026 18:52:00 GMT"
+   "titulo": "Investors are buying up vast tracts of timberland across U.S. in one of market's longest-term bets",
+   "url": "https://www.cnbc.com/2026/10/17/timberland-investing-returns-risk.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 17 Oct 2026 16:31:06 GMT"
   },
   {
    "titulo": "'Everyone laughed' when he started a pumpkin farm—now it brings in $2 million a year",
    "url": "https://www.cnbc.com/make-it/2026/10/17/great-pumpkin-farm-new-york-2-million-revenue.html",
    "fuente": "CNBC",
    "fecha": "Sat, 17 Oct 2026 13:00:01 GMT"
-  },
-  {
-   "titulo": "U.S. presses China on Mastercard, Citigroup market access in bilateral Bangkok talks, official says",
-   "url": "https://www.cnbc.com/2026/10/16/us-china-mastercard-citigroup-market-access.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 16:46:18 GMT"
-  },
-  {
-   "titulo": "KFC to switch to Coca-Cola beverages in U.S. restaurants for the first time in decades",
-   "url": "https://www.cnbc.com/2026/10/15/kfc-coca-cola-pepsi-switch.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 16 Oct 2026 11:02:24 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-19T05:18:02Z",
+ "ts": "2026-10-19T10:57:58Z",
  "fallas": [
   "videos",
   "directos"
