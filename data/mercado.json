@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29627.5,
-   "cambio": -1164.0,
-   "pct": -3.78
+   "precio": 29784.5,
+   "cambio": -398.25,
+   "pct": -1.32
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7739.5,
-   "cambio": -116.25,
-   "pct": -1.48
+   "precio": 7766.25,
+   "cambio": -4.0,
+   "pct": -0.05
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4199.5,
-   "cambio": 22.2,
-   "pct": 0.53
+   "precio": 4201.7,
+   "cambio": 93.8,
+   "pct": 2.28
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 97.63,
-   "cambio": 3.49,
-   "pct": 3.71
+   "precio": 97.39,
+   "cambio": 2.3,
+   "pct": 2.42
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2749.3,
-   "cambio": -50.8,
-   "pct": -1.81
+   "precio": 2757.4,
+   "cambio": 12.4,
+   "pct": 0.45
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52329.0,
-   "cambio": 394.0,
-   "pct": 0.76
+   "precio": 52490.0,
+   "cambio": 632.0,
+   "pct": 1.22
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 82045.0,
-   "cambio": -1340.0,
-   "pct": -1.61
+   "precio": 82590.0,
+   "cambio": 765.0,
+   "pct": 0.93
   }
  ],
  "acciones": [
@@ -274,10 +274,40 @@
  ],
  "noticias": [
   {
-   "titulo": "India’s Finance Minister blames easy exits and excess liquidity for equity market's underperformance",
+   "titulo": "India’s Finance Minister says easy exits and excess liquidity fuel equity market's underperformance",
    "url": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
    "fuente": "CNBC",
-   "fecha": "Sun, 18 Oct 2026 23:00:01 GMT"
+   "fecha": "Mon, 19 Oct 2026 04:46:26 GMT"
+  },
+  {
+   "titulo": "China's third-quarter economic growth quickens to 4.5% as exports surge, beating estimates",
+   "url": "https://www.cnbc.com/2026/10/19/chinas-economic-growth-quickens-to-4point6percent-as-exports-surge-stimulus-rolls-out.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 19 Oct 2026 04:36:39 GMT"
+  },
+  {
+   "titulo": "Putin reportedly suggests summit with Trump and Xi to decide fate of Ukraine",
+   "url": "https://www.cnbc.com/2026/10/19/putin-trump-xi-ukraine-war-energy.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 19 Oct 2026 03:56:03 GMT"
+  },
+  {
+   "titulo": "France hit by worst unrest in years as attempts to rein in government spending meet citizen ire",
+   "url": "https://www.cnbc.com/2026/10/19/france-protests-worst-in-years-unrest-macron-.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 19 Oct 2026 03:18:51 GMT"
+  },
+  {
+   "titulo": "Indonesian stocks plunge to six-year low as MSCI downgrade fears mount",
+   "url": "https://www.cnbc.com/2026/10/19/indonesian-stocks-msci-downgrade-fears-mount.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 19 Oct 2026 03:00:33 GMT"
+  },
+  {
+   "titulo": "China's CXMT sees shares drop over 6% as investors look past chipmaker's profit turnaround",
+   "url": "https://www.cnbc.com/2026/10/19/china-cxmt-profit-outlook-shares.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 19 Oct 2026 01:56:34 GMT"
   },
   {
    "titulo": "Why I am taking the other side of the trade that crushed the market Friday",
@@ -316,40 +346,16 @@
    "fecha": "Sun, 18 Oct 2026 15:00:00 GMT"
   },
   {
-   "titulo": "The bloated workweek is coming for Sundays—as some embrace flexibility, others worry about job security",
-   "url": "https://www.cnbc.com/make-it/2026/10/18/why-people-are-working-sundays.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 18 Oct 2026 14:00:01 GMT"
-  },
-  {
    "titulo": "These surprising stocks could be some of the biggest drivers of S&P 500 earnings growth",
    "url": "https://www.marketwatch.com/story/these-surprising-stocks-could-be-some-of-the-biggest-drivers-of-s-p-500-earnings-growth-ea073a07?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sun, 18 Oct 2026 14:00:00 GMT"
   },
   {
-   "titulo": "Roth conversions: When the ‘juice isn't really worth the squeeze,’ according to a top-ranked advisor",
-   "url": "https://www.cnbc.com/2026/10/18/roth-conversion-2026.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 18 Oct 2026 13:30:01 GMT"
-  },
-  {
-   "titulo": "Boomers are buying into the promise of monthly income from options ETFs, but there's a tax catch",
-   "url": "https://www.cnbc.com/2026/10/18/retirement-income-funds-taxes.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 18 Oct 2026 13:10:33 GMT"
-  },
-  {
    "titulo": "Stocks are heading for a high-stakes showdown, as strong earnings collide with rising borrowing costs",
    "url": "https://www.marketwatch.com/story/stocks-are-heading-for-a-high-stakes-showdown-as-strong-earnings-collide-with-rising-borrowing-costs-6f8ea5b8?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sun, 18 Oct 2026 13:00:00 GMT"
-  },
-  {
-   "titulo": "Top Wall Street analysts are bullish on the growth potential of these 3 stocks",
-   "url": "https://www.cnbc.com/2026/10/18/top-analysts-are-bullish-on-the-growth-potential-of-these-3-stocks.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 18 Oct 2026 12:34:51 GMT"
   },
   {
    "titulo": "Always on, always listening: New AI devices are pushing legal limits and could put users in jeopardy",
@@ -380,12 +386,6 @@
    "url": "https://www.marketwatch.com/story/fake-shopping-sprees-and-happiness-insurance-the-latest-fintech-apps-reveal-our-financial-anxieties-77770a46?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 17 Oct 2026 18:52:00 GMT"
-  },
-  {
-   "titulo": "Software’s new consolidator gets big vote of confidence from Berkshire",
-   "url": "https://www.cnbc.com/2026/10/17/bending-spoons-wants-to-revive-software-castoffs-berkshire-investing.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 17 Oct 2026 15:11:30 GMT"
   },
   {
    "titulo": "'Everyone laughed' when he started a pumpkin farm—now it brings in $2 million a year",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-19T00:28:18Z",
+ "ts": "2026-10-19T05:18:02Z",
  "fallas": [
   "videos",
   "directos"
