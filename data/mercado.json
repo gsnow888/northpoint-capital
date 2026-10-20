@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29599.0,
-   "cambio": -544.75,
-   "pct": -1.81
+   "precio": 29589.0,
+   "cambio": -554.75,
+   "pct": -1.84
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7730.75,
-   "cambio": -60.25,
-   "pct": -0.77
+   "precio": 7726.75,
+   "cambio": -64.25,
+   "pct": -0.82
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4149.5,
-   "cambio": -20.6,
-   "pct": -0.49
+   "precio": 4138.6,
+   "cambio": -31.5,
+   "pct": -0.76
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 98.82,
-   "cambio": 0.85,
-   "pct": 0.87
+   "precio": 100.69,
+   "cambio": 2.72,
+   "pct": 2.78
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2741.8,
-   "cambio": -40.0,
-   "pct": -1.44
+   "precio": 2742.5,
+   "cambio": -39.3,
+   "pct": -1.41
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52264.0,
-   "cambio": -166.0,
-   "pct": -0.32
+   "precio": 52286.0,
+   "cambio": -144.0,
+   "pct": -0.27
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81880.0,
-   "cambio": -550.0,
-   "pct": -0.67
+   "precio": 81500.0,
+   "cambio": -930.0,
+   "pct": -1.13
   }
  ],
  "acciones": [
@@ -274,22 +274,94 @@
  ],
  "noticias": [
   {
-   "titulo": "The world’s finance chiefs see new risks — and less China angst",
-   "url": "https://www.cnbc.com/2026/10/20/imf-debt-yields-russia-china-takeaway-.html",
+   "titulo": "U.S. oil surges to top $107, Brent crude at five-month high amid Mideast tensions",
+   "url": "https://www.cnbc.com/2026/10/20/oil-price-wti-brent-crude.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 05:27:53 GMT"
+   "fecha": "Tue, 20 Oct 2026 10:48:27 GMT"
   },
   {
-   "titulo": "'Cannot play hide and seek': Minister's warning over haze sends Singapore agricultural stocks lower",
-   "url": "https://www.cnbc.com/2026/10/20/singapore-haze-shanmugam-indonesia-malaysia.html",
+   "titulo": "General Motors beats Wall Street's Q3 earnings expectations, narrows full-year guidance",
+   "url": "https://www.cnbc.com/2026/10/20/general-motors-gm-earnings-q3-2026.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 04:48:52 GMT"
+   "fecha": "Tue, 20 Oct 2026 10:46:05 GMT"
   },
   {
-   "titulo": "Bank Indonesia faces mounting pressure to hike after MSCI threat fuels market rout",
-   "url": "https://www.cnbc.com/2026/10/20/indonesia-msci-inflation-interest-rate-.html",
+   "titulo": "HSBC CEO warns the AI boom won’t make every data center a good bet",
+   "url": "https://www.cnbc.com/2026/10/20/data-center-financing-ai-debt-hsbc.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 03:59:35 GMT"
+   "fecha": "Tue, 20 Oct 2026 10:39:17 GMT"
+  },
+  {
+   "titulo": "Zelenskyy to meet with U.S. envoy as tensions with Trump mount",
+   "url": "https://www.cnbc.com/2026/10/20/zelenskyy-witkoff-trump-ukraine-russia.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 10:30:49 GMT"
+  },
+  {
+   "titulo": "Why smaller stocks face worse prospects than the S&P 500 in the coming years",
+   "url": "https://www.marketwatch.com/story/why-smaller-stocks-face-worse-prospects-than-the-s-p-500-in-the-coming-years-f9f703ae?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 10:30:00 GMT"
+  },
+  {
+   "titulo": "Strategist Tom Lee says he’s buying the AI stock dip, and Cisco holds the key",
+   "url": "https://www.marketwatch.com/story/strategist-tom-lee-says-hes-buying-the-ai-stock-dip-and-cisco-holds-the-key-33233a9d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 10:15:00 GMT"
+  },
+  {
+   "titulo": "France curfews calm unrest as Macron faces criticism over Gulf trip",
+   "url": "https://www.cnbc.com/2026/10/20/france-protests-curfews-macron-gulf-trip.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 10:02:57 GMT"
+  },
+  {
+   "titulo": "Walmart launches joint membership with Sam's Club as it leans into delivery, gas discounts",
+   "url": "https://www.cnbc.com/2026/10/20/walmart-sams-club-plus-membership.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 10:00:01 GMT"
+  },
+  {
+   "titulo": "‘I’m naturally skeptical’: I receive 10 calls a day offering me $15,000 loans at 8% interest. Is this a scam?",
+   "url": "https://www.marketwatch.com/story/im-naturally-skeptical-i-receive-10-calls-a-day-offering-me-15-000-loans-at-8-interest-is-this-a-scam-825c3431?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 10:00:00 GMT"
+  },
+  {
+   "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life — but here’s I’m still hopeful",
+   "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 09:30:00 GMT"
+  },
+  {
+   "titulo": "My unmarried partner of 17 years left me his $1.1 million home. His three children are livid. Should I share my inheritance?",
+   "url": "https://www.marketwatch.com/story/my-unmarried-partner-of-17-years-left-me-his-1-1-million-home-his-three-children-are-livid-should-i-share-my-inheritance-a11d593d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 09:30:00 GMT"
+  },
+  {
+   "titulo": "South Korean IPO flop is the latest in a string of disappointments for the global AI trade",
+   "url": "https://www.marketwatch.com/story/south-korean-ipo-flop-is-the-latest-in-a-string-of-disappointments-for-the-global-ai-trade-fc97748c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 09:30:00 GMT"
+  },
+  {
+   "titulo": "The multi-million dollar real estate portfolio of Buffalo Bills QB Josh Allen and actress Hailee Steinfeld",
+   "url": "https://www.marketwatch.com/story/the-multi-million-dollar-real-estate-portfolio-of-buffalo-bills-qb-josh-allen-and-actress-hailee-steinfeld-58a9bd62?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 09:02:00 GMT"
+  },
+  {
+   "titulo": "It’s a rough housing market. Goldman Sachs expects it to get worse.",
+   "url": "https://www.marketwatch.com/story/its-a-rough-housing-market-and-goldman-sachs-expects-it-to-get-worse-be2c5aac?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 08:13:00 GMT"
+  },
+  {
+   "titulo": "What’s making Europe so angry? The frustration behind the protests",
+   "url": "https://www.cnbc.com/2026/10/20/france-protests-europe-cost-living-violence.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 07:19:16 GMT"
   },
   {
    "titulo": "BlackRock, GIC among investors chasing Indian telecom major Jio's IPO as anchor bids top $26 billion",
@@ -298,22 +370,10 @@
    "fecha": "Tue, 20 Oct 2026 02:44:35 GMT"
   },
   {
-   "titulo": "‘Open your doors for AI’: German chancellor urges businesses to embrace AI as Nvidia announces new investments",
-   "url": "https://www.cnbc.com/2026/10/20/german-chancellor-urges-businesses-to-embrace-ai.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 02:16:25 GMT"
-  },
-  {
    "titulo": "JD Vance refrains from endorsing Israeli leader Netanyahu as Trump offers praise",
    "url": "https://www.cnbc.com/2026/10/20/vance-israel-netanyahu-midterms-election-.html",
    "fuente": "CNBC",
    "fecha": "Tue, 20 Oct 2026 01:53:34 GMT"
-  },
-  {
-   "titulo": "Top venture capitalist Jenny Lee says Asian startups are speeding toward IPOs",
-   "url": "https://www.cnbc.com/2026/10/20/venture-capital-jenny-lee-granite-asia-startups.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 01:52:05 GMT"
   },
   {
    "titulo": "Blood clots are ‘incredibly common,’ even for pro athletes like Jalen Hurts. Here’s what to know.",
@@ -328,52 +388,10 @@
    "fecha": "Mon, 19 Oct 2026 21:37:00 GMT"
   },
   {
-   "titulo": "Credit markets have entered uncharted territory as the riskiest junk bonds send a warning to investors",
-   "url": "https://www.marketwatch.com/story/credit-markets-have-entered-uncharted-territory-as-the-riskiest-junk-bonds-send-a-warning-to-investors-816a05d5?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 19 Oct 2026 21:36:00 GMT"
-  },
-  {
-   "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life — but here’s I’m still hopeful",
-   "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 19 Oct 2026 21:30:00 GMT"
-  },
-  {
-   "titulo": "‘I’m naturally skeptical’: I receive 10 calls a day offering me $15,000 loans at 8% interest. Is this a scam?",
-   "url": "https://www.marketwatch.com/story/im-naturally-skeptical-i-receive-10-calls-a-day-offering-me-15-000-loans-at-8-interest-is-this-a-scam-825c3431?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 19 Oct 2026 21:15:00 GMT"
-  },
-  {
-   "titulo": "Micron and other chip stocks spring back to life after bruising selloff",
-   "url": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-spring-back-to-life-after-bruising-selloff-16486541?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 19 Oct 2026 21:06:00 GMT"
-  },
-  {
-   "titulo": "SpaceX earnings will be all about AI — for better or for worse",
-   "url": "https://www.marketwatch.com/story/spacex-earnings-will-be-all-about-ai-for-better-or-for-worse-89bbc772?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 19 Oct 2026 21:02:00 GMT"
-  },
-  {
-   "titulo": "Trump says he'd meet with Putin and Xi, criticizes Zelenskyy",
-   "url": "https://www.cnbc.com/2026/10/19/trump-putin-xi-zelenskyy.html",
+   "titulo": "Stock investors are ready to move on from the AI rout. Credit investors are not",
+   "url": "https://www.cnbc.com/2026/10/19/coreweave-oracle-ai-credit-stress.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 21:00:02 GMT"
-  },
-  {
-   "titulo": "Why a former Intel skeptic is giving up his negative call on the stock after four years",
-   "url": "https://www.marketwatch.com/story/why-a-former-intel-skeptic-is-giving-up-his-negative-call-on-the-stock-after-four-years-47c2fab6?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 19 Oct 2026 21:00:00 GMT"
-  },
-  {
-   "titulo": "Why the midterm elections are likely to become a strong tailwind for the stock market",
-   "url": "https://www.marketwatch.com/story/why-the-midterm-elections-are-likely-to-become-a-strong-tailwind-for-the-stock-market-3edfca6c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 19 Oct 2026 21:00:00 GMT"
+   "fecha": "Mon, 19 Oct 2026 21:12:12 GMT"
   },
   {
    "titulo": "OpenAI bugging suspect Alfozan held without bail after Saudi government offers to pay",
@@ -382,28 +400,10 @@
    "fecha": "Mon, 19 Oct 2026 20:54:40 GMT"
   },
   {
-   "titulo": "Retiring abroad? Don’t cut these financial ties to the U.S.",
-   "url": "https://www.marketwatch.com/story/retiring-abroad-dont-cut-these-financial-ties-to-the-u-s-5e7e4fc2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 19 Oct 2026 20:33:00 GMT"
-  },
-  {
-   "titulo": "Crushed tech stocks bounce — plus, new doctor survey keeps us positive on Lilly",
-   "url": "https://www.cnbc.com/investingclub/2026/10/19/crushed-tech-stocks-bounce-new-doctor-survey-keeps-us-positive-on-lilly.html",
+   "titulo": "Apple announces product launch event for Oct. 28. Analysts expect touchscreen laptop",
+   "url": "https://www.cnbc.com/2026/10/19/apple-product-launch-event-oct-28-analysts-expect-touchscreen-laptop.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 19:13:00 GMT"
-  },
-  {
-   "titulo": "Boomers are buying into the promise of monthly income from options ETFs, but there's a tax catch",
-   "url": "https://www.cnbc.com/2026/10/18/retirement-income-funds-taxes.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 12:58:03 GMT"
-  },
-  {
-   "titulo": "Anthropic commits 5% of shares to new public benefit fund that could address AI job disruption",
-   "url": "https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 12:33:07 GMT"
+   "fecha": "Mon, 19 Oct 2026 19:46:07 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-20T05:52:07Z",
+ "ts": "2026-10-20T11:06:48Z",
  "fallas": [
   "videos",
   "directos"
