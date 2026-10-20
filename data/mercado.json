@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29657.0,
-   "cambio": -525.75,
-   "pct": -1.74
+   "precio": 29599.0,
+   "cambio": -544.75,
+   "pct": -1.81
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7736.5,
-   "cambio": -33.75,
-   "pct": -0.43
+   "precio": 7730.75,
+   "cambio": -60.25,
+   "pct": -0.77
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4151.8,
-   "cambio": 43.9,
-   "pct": 1.07
+   "precio": 4149.5,
+   "cambio": -20.6,
+   "pct": -0.49
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 98.49,
-   "cambio": 3.4,
-   "pct": 3.58
+   "precio": 98.82,
+   "cambio": 0.85,
+   "pct": 0.87
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2742.4,
-   "cambio": -2.6,
-   "pct": -0.09
+   "precio": 2741.8,
+   "cambio": -40.0,
+   "pct": -1.44
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52262.0,
-   "cambio": 404.0,
-   "pct": 0.78
+   "precio": 52264.0,
+   "cambio": -166.0,
+   "pct": -0.32
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81640.0,
-   "cambio": -185.0,
-   "pct": -0.23
+   "precio": 81880.0,
+   "cambio": -550.0,
+   "pct": -0.67
   }
  ],
  "acciones": [
@@ -274,6 +274,48 @@
  ],
  "noticias": [
   {
+   "titulo": "The world’s finance chiefs see new risks — and less China angst",
+   "url": "https://www.cnbc.com/2026/10/20/imf-debt-yields-russia-china-takeaway-.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 05:27:53 GMT"
+  },
+  {
+   "titulo": "'Cannot play hide and seek': Minister's warning over haze sends Singapore agricultural stocks lower",
+   "url": "https://www.cnbc.com/2026/10/20/singapore-haze-shanmugam-indonesia-malaysia.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 04:48:52 GMT"
+  },
+  {
+   "titulo": "Bank Indonesia faces mounting pressure to hike after MSCI threat fuels market rout",
+   "url": "https://www.cnbc.com/2026/10/20/indonesia-msci-inflation-interest-rate-.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 03:59:35 GMT"
+  },
+  {
+   "titulo": "BlackRock, GIC among investors chasing Indian telecom major Jio's IPO as anchor bids top $26 billion",
+   "url": "https://www.cnbc.com/2026/10/20/jio-ipo-gic-blackrock-.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 02:44:35 GMT"
+  },
+  {
+   "titulo": "‘Open your doors for AI’: German chancellor urges businesses to embrace AI as Nvidia announces new investments",
+   "url": "https://www.cnbc.com/2026/10/20/german-chancellor-urges-businesses-to-embrace-ai.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 02:16:25 GMT"
+  },
+  {
+   "titulo": "JD Vance refrains from endorsing Israeli leader Netanyahu as Trump offers praise",
+   "url": "https://www.cnbc.com/2026/10/20/vance-israel-netanyahu-midterms-election-.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 01:53:34 GMT"
+  },
+  {
+   "titulo": "Top venture capitalist Jenny Lee says Asian startups are speeding toward IPOs",
+   "url": "https://www.cnbc.com/2026/10/20/venture-capital-jenny-lee-granite-asia-startups.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 01:52:05 GMT"
+  },
+  {
    "titulo": "Blood clots are ‘incredibly common,’ even for pro athletes like Jalen Hurts. Here’s what to know.",
    "url": "https://www.marketwatch.com/story/blood-clots-are-incredibly-common-even-for-pro-athletes-like-jalen-hurts-heres-what-to-know-e20071ef?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -316,6 +358,12 @@
    "fecha": "Mon, 19 Oct 2026 21:02:00 GMT"
   },
   {
+   "titulo": "Trump says he'd meet with Putin and Xi, criticizes Zelenskyy",
+   "url": "https://www.cnbc.com/2026/10/19/trump-putin-xi-zelenskyy.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 19 Oct 2026 21:00:02 GMT"
+  },
+  {
    "titulo": "Why a former Intel skeptic is giving up his negative call on the stock after four years",
    "url": "https://www.marketwatch.com/story/why-a-former-intel-skeptic-is-giving-up-his-negative-call-on-the-stock-after-four-years-47c2fab6?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -328,58 +376,34 @@
    "fecha": "Mon, 19 Oct 2026 21:00:00 GMT"
   },
   {
+   "titulo": "OpenAI bugging suspect Alfozan held without bail after Saudi government offers to pay",
+   "url": "https://www.cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 19 Oct 2026 20:54:40 GMT"
+  },
+  {
    "titulo": "Retiring abroad? Don’t cut these financial ties to the U.S.",
    "url": "https://www.marketwatch.com/story/retiring-abroad-dont-cut-these-financial-ties-to-the-u-s-5e7e4fc2?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Mon, 19 Oct 2026 20:33:00 GMT"
   },
   {
-   "titulo": "India’s finance minister says market liquidity makes it easier for investors to exit",
-   "url": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
+   "titulo": "Crushed tech stocks bounce — plus, new doctor survey keeps us positive on Lilly",
+   "url": "https://www.cnbc.com/investingclub/2026/10/19/crushed-tech-stocks-bounce-new-doctor-survey-keeps-us-positive-on-lilly.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 08:23:33 GMT"
+   "fecha": "Mon, 19 Oct 2026 19:13:00 GMT"
   },
   {
-   "titulo": "China's CXMT shares fall nearly 8% as investors look past chipmaker's profit turnaround",
-   "url": "https://www.cnbc.com/2026/10/19/china-cxmt-profit-outlook-shares.html",
+   "titulo": "Boomers are buying into the promise of monthly income from options ETFs, but there's a tax catch",
+   "url": "https://www.cnbc.com/2026/10/18/retirement-income-funds-taxes.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 07:48:53 GMT"
+   "fecha": "Mon, 19 Oct 2026 12:58:03 GMT"
   },
   {
-   "titulo": "Japanese Prime Minister Takaichi rejects criticism around weak yen and high interest rates",
-   "url": "https://www.cnbc.com/2026/10/19/takaichi-weak-yen-jgb-yields.html",
+   "titulo": "Anthropic commits 5% of shares to new public benefit fund that could address AI job disruption",
+   "url": "https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 05:29:51 GMT"
-  },
-  {
-   "titulo": "China's third-quarter economic growth quickens to 4.5% as exports surge, beating estimates",
-   "url": "https://www.cnbc.com/2026/10/19/chinas-economic-growth-quickens-to-4point6percent-as-exports-surge-stimulus-rolls-out.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 04:36:39 GMT"
-  },
-  {
-   "titulo": "Indonesian stocks plunge to six-year low as MSCI downgrade fears mount",
-   "url": "https://www.cnbc.com/2026/10/19/indonesian-stocks-msci-downgrade-fears-mount.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 03:00:33 GMT"
-  },
-  {
-   "titulo": "Investors are buying up vast tracts of timberland across U.S. in one of market's longest-term bets",
-   "url": "https://www.cnbc.com/2026/10/17/timberland-investing-returns-risk.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 17 Oct 2026 16:31:06 GMT"
-  },
-  {
-   "titulo": "Trump's student loan overhaul could lead to more bankruptcy filings, former judge says",
-   "url": "https://www.cnbc.com/2026/10/17/trump-student-loans-bankruptcy.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 17 Oct 2026 13:30:01 GMT"
-  },
-  {
-   "titulo": "'Everyone laughed' when he started a pumpkin farm—now it brings in $2 million a year",
-   "url": "https://www.cnbc.com/make-it/2026/10/17/great-pumpkin-farm-new-york-2-million-revenue.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 17 Oct 2026 13:00:01 GMT"
+   "fecha": "Mon, 19 Oct 2026 12:33:07 GMT"
   }
  ],
  "videos": [
@@ -493,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-20T00:57:02Z",
+ "ts": "2026-10-20T05:52:07Z",
  "fallas": [
   "videos",
   "directos"
