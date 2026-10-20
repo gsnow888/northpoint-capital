@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29743.75,
-   "cambio": -439.0,
-   "pct": -1.45
+   "precio": 29657.0,
+   "cambio": -525.75,
+   "pct": -1.74
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7739.75,
-   "cambio": -30.5,
-   "pct": -0.39
+   "precio": 7736.5,
+   "cambio": -33.75,
+   "pct": -0.43
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4160.3,
-   "cambio": 52.4,
-   "pct": 1.28
+   "precio": 4151.8,
+   "cambio": 43.9,
+   "pct": 1.07
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 98.24,
-   "cambio": 3.15,
-   "pct": 3.31
+   "precio": 98.49,
+   "cambio": 3.4,
+   "pct": 3.58
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2744.7,
-   "cambio": -0.3,
-   "pct": -0.01
+   "precio": 2742.4,
+   "cambio": -2.6,
+   "pct": -0.09
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52227.0,
-   "cambio": 369.0,
-   "pct": 0.71
+   "precio": 52262.0,
+   "cambio": 404.0,
+   "pct": 0.78
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81960.0,
-   "cambio": 135.0,
-   "pct": 0.16
+   "precio": 81640.0,
+   "cambio": -185.0,
+   "pct": -0.23
   }
  ],
  "acciones": [
@@ -274,6 +274,12 @@
  ],
  "noticias": [
   {
+   "titulo": "Blood clots are ‘incredibly common,’ even for pro athletes like Jalen Hurts. Here’s what to know.",
+   "url": "https://www.marketwatch.com/story/blood-clots-are-incredibly-common-even-for-pro-athletes-like-jalen-hurts-heres-what-to-know-e20071ef?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 19 Oct 2026 21:58:00 GMT"
+  },
+  {
    "titulo": "When should you dump your target-date funds?",
    "url": "https://www.marketwatch.com/story/when-should-you-dump-your-target-date-funds-18082148?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -304,22 +310,10 @@
    "fecha": "Mon, 19 Oct 2026 21:06:00 GMT"
   },
   {
-   "titulo": "Google says it can build data centers the right way. Some experts and residents are skeptical",
-   "url": "https://www.cnbc.com/2026/10/19/how-data-centers-are-reshaping-americas-aging-grid-pine-island-minnesota-google.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 21:05:20 GMT"
-  },
-  {
    "titulo": "SpaceX earnings will be all about AI — for better or for worse",
    "url": "https://www.marketwatch.com/story/spacex-earnings-will-be-all-about-ai-for-better-or-for-worse-89bbc772?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Mon, 19 Oct 2026 21:02:00 GMT"
-  },
-  {
-   "titulo": "Trump says he'd meet with Putin and Xi, criticizes Zelenskyy",
-   "url": "https://www.cnbc.com/2026/10/19/trump-putin-xi-zelenskyy.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 21:00:02 GMT"
   },
   {
    "titulo": "Why a former Intel skeptic is giving up his negative call on the stock after four years",
@@ -334,76 +328,58 @@
    "fecha": "Mon, 19 Oct 2026 21:00:00 GMT"
   },
   {
-   "titulo": "Tech stocks had a nice oversold bounce on Monday. Earnings this week will determine if it's for real",
-   "url": "https://www.cnbc.com/2026/10/19/tech-stocks-rebound-meta-tesla-earnings.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 20:57:14 GMT"
-  },
-  {
-   "titulo": "OpenAI bugging suspect Alfozan held without bail after Saudi government offers to pay",
-   "url": "https://www.cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 20:54:40 GMT"
-  },
-  {
    "titulo": "Retiring abroad? Don’t cut these financial ties to the U.S.",
    "url": "https://www.marketwatch.com/story/retiring-abroad-dont-cut-these-financial-ties-to-the-u-s-5e7e4fc2?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Mon, 19 Oct 2026 20:33:00 GMT"
   },
   {
-   "titulo": "Colleges raced to build massive computer-science departments. Now the boom is turning to bust.",
-   "url": "https://www.marketwatch.com/story/colleges-raced-to-build-massive-computer-science-departments-now-the-boom-is-turning-to-bust-692cfe37?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 19 Oct 2026 19:56:00 GMT"
+   "titulo": "India’s finance minister says market liquidity makes it easier for investors to exit",
+   "url": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 19 Oct 2026 08:23:33 GMT"
   },
   {
-   "titulo": "Apple announces product launch event for Oct. 28. Analysts expect touchscreen laptop",
-   "url": "https://www.cnbc.com/2026/10/19/apple-product-launch-event-oct-28-analysts-expect-touchscreen-laptop.html",
+   "titulo": "China's CXMT shares fall nearly 8% as investors look past chipmaker's profit turnaround",
+   "url": "https://www.cnbc.com/2026/10/19/china-cxmt-profit-outlook-shares.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 19:46:07 GMT"
+   "fecha": "Mon, 19 Oct 2026 07:48:53 GMT"
   },
   {
-   "titulo": "Saudi Arabia postpones big investor conference to 2027 as Iran-backed Houthis escalate attacks on kingdom",
-   "url": "https://www.cnbc.com/2026/10/19/saudi-arabia-postpones-fii-investor-conference-to-2027.html",
+   "titulo": "Japanese Prime Minister Takaichi rejects criticism around weak yen and high interest rates",
+   "url": "https://www.cnbc.com/2026/10/19/takaichi-weak-yen-jgb-yields.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 19:37:51 GMT"
+   "fecha": "Mon, 19 Oct 2026 05:29:51 GMT"
   },
   {
-   "titulo": "Elon Musk says he'll give a SpaceX share to every child in America next year",
-   "url": "https://www.cnbc.com/2026/10/19/elon-musk-spacex-shares-giveaway-kids.html",
+   "titulo": "China's third-quarter economic growth quickens to 4.5% as exports surge, beating estimates",
+   "url": "https://www.cnbc.com/2026/10/19/chinas-economic-growth-quickens-to-4point6percent-as-exports-surge-stimulus-rolls-out.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 16:58:20 GMT"
+   "fecha": "Mon, 19 Oct 2026 04:36:39 GMT"
   },
   {
-   "titulo": "Gartner analyst behind tech rout: AI returns are not yet large enough to justify neocloud build-out",
-   "url": "https://www.cnbc.com/2026/10/19/gartner-analyst-warns-about-ai-neccloud-build-out.html",
+   "titulo": "Indonesian stocks plunge to six-year low as MSCI downgrade fears mount",
+   "url": "https://www.cnbc.com/2026/10/19/indonesian-stocks-msci-downgrade-fears-mount.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 16:57:16 GMT"
+   "fecha": "Mon, 19 Oct 2026 03:00:33 GMT"
   },
   {
-   "titulo": "Anthropic is AI trade's last big hope for a major IPO this year",
-   "url": "https://www.cnbc.com/2026/10/19/anthropic-ipo-ai-trade.html",
+   "titulo": "Investors are buying up vast tracts of timberland across U.S. in one of market's longest-term bets",
+   "url": "https://www.cnbc.com/2026/10/17/timberland-investing-returns-risk.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 16:42:14 GMT"
+   "fecha": "Sat, 17 Oct 2026 16:31:06 GMT"
   },
   {
-   "titulo": "NYSE becomes latest exchange to extend options hours as appetite for around-the-clock trading grows",
-   "url": "https://www.cnbc.com/2026/10/19/nyse-extends-options-trading-hours.html",
+   "titulo": "Trump's student loan overhaul could lead to more bankruptcy filings, former judge says",
+   "url": "https://www.cnbc.com/2026/10/17/trump-student-loans-bankruptcy.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 13:46:50 GMT"
+   "fecha": "Sat, 17 Oct 2026 13:30:01 GMT"
   },
   {
-   "titulo": "French unrest compounds debt crisis fears. Paris-listed stocks, bonds and the euro fall",
-   "url": "https://www.cnbc.com/2026/10/19/france-protests-bond-yields-markets.html",
+   "titulo": "'Everyone laughed' when he started a pumpkin farm—now it brings in $2 million a year",
+   "url": "https://www.cnbc.com/make-it/2026/10/17/great-pumpkin-farm-new-york-2-million-revenue.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 12:59:13 GMT"
-  },
-  {
-   "titulo": "In pictures: More than 500,000 took to the streets as France protests erupted into violence",
-   "url": "https://www.cnbc.com/2026/10/19/france-protests-paris-violence-pictures.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 08:10:26 GMT"
+   "fecha": "Sat, 17 Oct 2026 13:00:01 GMT"
   }
  ],
  "videos": [
@@ -517,7 +493,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-19T21:44:33Z",
+ "ts": "2026-10-20T00:57:02Z",
  "fallas": [
   "videos",
   "directos"
