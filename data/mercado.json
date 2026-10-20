@@ -55,94 +55,94 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29682.25,
-   "cambio": -461.5,
-   "pct": -1.53
+   "precio": 29922.75,
+   "cambio": -221.0,
+   "pct": -0.73
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7750.5,
-   "cambio": -40.5,
-   "pct": -0.52
+   "precio": 7777.5,
+   "cambio": -13.5,
+   "pct": -0.17
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4139.3,
-   "cambio": -30.8,
-   "pct": -0.74
+   "precio": 4140.7,
+   "cambio": -29.4,
+   "pct": -0.71
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 98.3,
-   "cambio": 0.33,
-   "pct": 0.34
+   "precio": 98.15,
+   "cambio": 0.18,
+   "pct": 0.18
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2789.4,
-   "cambio": 7.6,
-   "pct": 0.27
+   "precio": 2790.6,
+   "cambio": 8.8,
+   "pct": 0.32
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52655.0,
-   "cambio": 225.0,
-   "pct": 0.43
+   "precio": 52747.0,
+   "cambio": 317.0,
+   "pct": 0.6
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 82590.0,
-   "cambio": 160.0,
-   "pct": 0.19
+   "precio": 83035.0,
+   "cambio": 605.0,
+   "pct": 0.73
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 157.79,
+   "precio": 157.8,
    "pct": -1.23,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 706.31,
-   "pct": -1.24,
+   "precio": 706.8,
+   "pct": -1.17,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 376.88,
-   "pct": -1.16,
+   "precio": 377.09,
+   "pct": -1.11,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 83.72,
-   "pct": -0.96,
+   "precio": 83.74,
+   "pct": -0.95,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 717.3,
-   "pct": -3.53,
+   "precio": 717.63,
+   "pct": -3.49,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 768.42,
-   "pct": -1.23,
+   "precio": 769.05,
+   "pct": -1.15,
    "moneda": "USD"
   },
   {
@@ -155,36 +155,36 @@
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 34.68,
-   "pct": 3.93,
+   "precio": 34.69,
+   "pct": 3.96,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 92.25,
-   "pct": 1.22,
+   "precio": 92.28,
+   "pct": 1.25,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 77.41,
-   "pct": -3.51,
+   "precio": 77.37,
+   "pct": -3.55,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 377.82,
-   "pct": -1.01,
+   "precio": 377.65,
+   "pct": -1.05,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 46.73,
-   "pct": -0.84,
+   "precio": 46.71,
+   "pct": -0.89,
    "moneda": "USD"
   },
   {
@@ -197,93 +197,159 @@
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 531.78,
-   "pct": -2.15,
+   "precio": 531.87,
+   "pct": -2.13,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 216.42,
-   "pct": -5.29,
+   "precio": 216.47,
+   "pct": -5.27,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 338.75,
-   "pct": -4.25,
+   "precio": 340.27,
+   "pct": -3.82,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 262.25,
-   "pct": 1.42,
+   "precio": 262.63,
+   "pct": 1.57,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 690.86,
-   "pct": -9.4,
+   "precio": 694.25,
+   "pct": -8.95,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 374.06,
-   "pct": -0.31,
+   "precio": 373.71,
+   "pct": -0.41,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 538.97,
-   "pct": 3.53,
+   "precio": 539.82,
+   "pct": 3.69,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 992.36,
-   "pct": 3.95,
+   "precio": 994.61,
+   "pct": 4.19,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 335.15,
-   "pct": 1.12,
+   "precio": 335.26,
+   "pct": 1.16,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 406.98,
-   "pct": 2.76,
+   "precio": 406.57,
+   "pct": 2.65,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 420.04,
-   "pct": 11.19,
+   "precio": 419.26,
+   "pct": 10.99,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "Boeing wins FAA approval for 737 Max 10 after years of delays",
-   "url": "https://www.cnbc.com/2026/10/20/boeing-737-max-10-certification.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 19:41:23 GMT"
+   "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life — but here’s why I’m still hopeful",
+   "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 22:45:00 GMT"
   },
   {
-   "titulo": "Wall Street researchers just used Claude to design a drug. The experiment has spawned a new investment thesis.",
-   "url": "https://www.marketwatch.com/story/wall-street-researchers-just-used-claude-to-design-a-drug-the-experiment-has-spawned-a-new-investment-thesis-6a5c3710?mod=mw_rss_topstories",
+   "titulo": "Super Micro’s stock soars after surprise update — with Dell and HPE shares joining the rally",
+   "url": "https://www.marketwatch.com/story/super-micros-stock-soars-after-surprise-update-with-dell-and-hpe-shares-joining-the-rally-1837a69f?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 19:35:00 GMT"
+   "fecha": "Tue, 20 Oct 2026 22:37:00 GMT"
+  },
+  {
+   "titulo": "Tesla’s stock rises as Elon Musk drops new clues about a possible SpaceX merger",
+   "url": "https://www.marketwatch.com/story/teslas-stock-rises-as-elon-musk-drops-new-clues-about-a-possible-spacex-merger-8cc44fc2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 22:33:00 GMT"
+  },
+  {
+   "titulo": "My wife says we can’t afford to retire. I vetoed her $8,000 trip to Italy. We’re in our 60s and have $4 million. Do I keep working?",
+   "url": "https://www.marketwatch.com/story/my-wife-says-we-cant-afford-to-retire-we-have-4-million-do-i-just-keep-working-f1b6b085?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 22:30:00 GMT"
+  },
+  {
+   "titulo": "Netflix vows to revive viewership trends, but investors hit ‘sell’ on the stock",
+   "url": "https://www.marketwatch.com/story/netflix-vows-to-revive-viewership-trends-but-investors-hit-sell-on-the-stock-3e24420a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 22:30:00 GMT"
+  },
+  {
+   "titulo": "Netflix posts third-quarter earnings beat, but shares fall on advertising and revenue guidance",
+   "url": "https://www.cnbc.com/2026/10/20/netflix-nflx-earnings-q3-2026.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 22:29:45 GMT"
+  },
+  {
+   "titulo": "My partner of 17 years left me his $1 million home. His children say I influenced him to do so. Should I share my inheritance?",
+   "url": "https://www.marketwatch.com/story/my-unmarried-partner-of-17-years-left-me-his-1-1-million-home-his-three-children-are-livid-should-i-share-my-inheritance-a11d593d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 22:27:00 GMT"
+  },
+  {
+   "titulo": "Boeing wins FAA approval for 737 Max 10 after years of delays as Duffy says certification process should be faster",
+   "url": "https://www.cnbc.com/2026/10/20/boeing-737-max-10-certification.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 22:01:11 GMT"
+  },
+  {
+   "titulo": "Walmart takes aim at Amazon and Costco with new membership program — but is it a good deal?",
+   "url": "https://www.marketwatch.com/story/walmart-takes-aim-at-amazon-and-costco-with-new-membership-program-but-is-it-a-good-deal-8e2292ef?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 21:47:00 GMT"
+  },
+  {
+   "titulo": "It’s no secret what the best financial advice for retirement is — but most people ignore it anyway",
+   "url": "https://www.marketwatch.com/story/its-no-secret-what-the-best-financial-advice-for-retirement-is-but-most-people-ignore-it-anyway-7c9075c8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 20:57:00 GMT"
+  },
+  {
+   "titulo": "Bull markets tend to peak with a whimper, not a bang — but a 15% correction for the S&P 500 may be next",
+   "url": "https://www.marketwatch.com/story/bull-markets-tend-to-peak-with-a-whimper-not-a-bang-but-a-15-correction-for-the-s-p-500-may-be-next-dab40e2c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 20:45:00 GMT"
+  },
+  {
+   "titulo": "The Social Security Administration corrected millions of records, and says there’s more to fix",
+   "url": "https://www.marketwatch.com/story/the-social-security-administration-corrected-millions-of-records-and-says-theres-more-to-fix-e57185bd?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 20:26:00 GMT"
+  },
+  {
+   "titulo": "United Airlines slashes 2026 profit outlook on fuel prices, but travelers keep booking despite higher fares",
+   "url": "https://www.cnbc.com/2026/10/20/united-airlines-ual-3q-2026-earnings.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 20:23:58 GMT"
   },
   {
    "titulo": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
@@ -298,12 +364,6 @@
    "fecha": "Tue, 20 Oct 2026 18:30:53 GMT"
   },
   {
-   "titulo": "Here’s what matters most to Tesla investors heading into earnings",
-   "url": "https://www.marketwatch.com/story/heres-what-matters-most-to-tesla-investors-heading-into-earnings-6b9e5d27?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 18:15:00 GMT"
-  },
-  {
    "titulo": "Traders are betting Netflix's stock drama may be coming to an end",
    "url": "https://www.cnbc.com/2026/10/20/traders-are-betting-netflixs-stock-drama-may-be-coming-to-an-end.html",
    "fuente": "CNBC",
@@ -314,60 +374,6 @@
    "url": "https://www.cnbc.com/2026/10/20/trump-tariffs-canada-section-338-lawsuit.html",
    "fuente": "CNBC",
    "fecha": "Tue, 20 Oct 2026 18:06:13 GMT"
-  },
-  {
-   "titulo": "Investors’ search for safety has made toothpaste stocks more expensive than tech",
-   "url": "https://www.marketwatch.com/story/investors-search-for-safety-has-made-toothpaste-stocks-more-expensive-than-tech-57a75e56?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 17:38:00 GMT"
-  },
-  {
-   "titulo": "My partner of 17 years left me his $1 million home. His children say I influenced him to do so. Should I share my inheritance?",
-   "url": "https://www.marketwatch.com/story/my-unmarried-partner-of-17-years-left-me-his-1-1-million-home-his-three-children-are-livid-should-i-share-my-inheritance-a11d593d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 17:15:00 GMT"
-  },
-  {
-   "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life — but here’s why I’m still hopeful",
-   "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 17:00:00 GMT"
-  },
-  {
-   "titulo": "It’s not just California’s billionaire tax. Wealth is on the ballot in the midterm elections.",
-   "url": "https://www.marketwatch.com/story/its-not-just-californias-billionaire-tax-wealth-is-on-the-ballot-in-the-midterm-elections-a50fc12c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 16:55:00 GMT"
-  },
-  {
-   "titulo": "‘I’m naturally skeptical’: I receive 10 calls a day offering me $15,000 loans at 8% interest. Is this a scam?",
-   "url": "https://www.marketwatch.com/story/im-naturally-skeptical-i-receive-10-calls-a-day-offering-me-15-000-loans-at-8-interest-is-this-a-scam-825c3431?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 16:25:00 GMT"
-  },
-  {
-   "titulo": "Here's what to expect when Netflix reports earnings after the bell",
-   "url": "https://www.cnbc.com/2026/10/20/netflix-nflx-earnings-q3-2026.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 16:00:01 GMT"
-  },
-  {
-   "titulo": "Looking for AI stocks that are still cheap? Consider these two under-the-radar picks.",
-   "url": "https://www.marketwatch.com/story/looking-for-ai-stocks-that-are-still-cheap-consider-these-two-under-the-radar-picks-b4ca2b28?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 15:58:00 GMT"
-  },
-  {
-   "titulo": "It’s no secret what the best financial advice for retirement is — but most people ignore it anyway",
-   "url": "https://www.marketwatch.com/story/its-no-secret-what-the-best-financial-advice-for-retirement-is-but-most-people-ignore-it-anyway-7c9075c8?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 15:54:00 GMT"
-  },
-  {
-   "titulo": "Builders slash prices on new homes as buyer traffic drops to 14-year low",
-   "url": "https://www.marketwatch.com/story/builders-slash-prices-on-new-homes-as-buyer-traffic-drops-to-14-year-low-3dd8caea?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 15:35:00 GMT"
   },
   {
    "titulo": "France to deploy military as it braces for fresh unrest this weekend",
@@ -392,12 +398,6 @@
    "url": "https://www.cnbc.com/2026/10/20/santoli-key-sp-500-level-to-watch.html",
    "fuente": "CNBC",
    "fecha": "Tue, 20 Oct 2026 12:52:29 GMT"
-  },
-  {
-   "titulo": "Walmart launches joint membership with Sam's Club as it leans into delivery, gas discounts",
-   "url": "https://www.cnbc.com/2026/10/20/walmart-sams-club-plus-membership.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 10:00:01 GMT"
   },
   {
    "titulo": "What’s making Europe so angry? The frustration behind the protests",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-20T19:53:55Z",
+ "ts": "2026-10-20T22:59:54Z",
  "fallas": [
   "videos",
   "directos"
