@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29880.5,
-   "cambio": -263.25,
-   "pct": -0.87
+   "precio": 29824.75,
+   "cambio": 433.25,
+   "pct": 1.47
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7773.75,
-   "cambio": -17.25,
-   "pct": -0.22
+   "precio": 7771.75,
+   "cambio": 67.5,
+   "pct": 0.88
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4128.2,
-   "cambio": -41.9,
-   "pct": -1.0
+   "precio": 4130.8,
+   "cambio": -50.3,
+   "pct": -1.2
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 98.95,
-   "cambio": 0.98,
-   "pct": 1.0
+   "precio": 99.25,
+   "cambio": -2.16,
+   "pct": -2.13
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2786.5,
-   "cambio": 4.7,
-   "pct": 0.17
+   "precio": 2781.4,
+   "cambio": 45.9,
+   "pct": 1.68
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52722.0,
-   "cambio": 292.0,
-   "pct": 0.56
+   "precio": 52755.0,
+   "cambio": 541.0,
+   "pct": 1.04
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 82805.0,
-   "cambio": 375.0,
-   "pct": 0.45
+   "precio": 82675.0,
+   "cambio": 1075.0,
+   "pct": 1.32
   }
  ],
  "acciones": [
@@ -274,6 +274,30 @@
  ],
  "noticias": [
   {
+   "titulo": "UK inflation jumps to 3.5% — cementing rate hike expectations",
+   "url": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 06:30:27 GMT"
+  },
+  {
+   "titulo": "Oil prices climb as traders assess Middle East developments",
+   "url": "https://www.cnbc.com/2026/10/21/oil-price-today-wti-brent-rise-on-middle-east-worries.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 05:27:19 GMT"
+  },
+  {
+   "titulo": "U.S. eyes refining muscle of Indian billionaire Ambani's Reliance as Rubio visits Jamnagar plant",
+   "url": "https://www.cnbc.com/2026/10/21/rubio-reliance-venezuela-oil-diesel.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 04:47:43 GMT"
+  },
+  {
+   "titulo": "Australian data center operator NextDC's shares plunge 40% after it slashes earnings forecast",
+   "url": "https://www.cnbc.com/2026/10/21/australia-data-center-operator-nexdc-datacenter.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 02:55:38 GMT"
+  },
+  {
    "titulo": "Elice's huge stock swings show AI's spending boom is getting more investor scrutiny",
    "url": "https://www.cnbc.com/2026/10/21/ai-boom-spending-profit.html",
    "fuente": "CNBC",
@@ -310,19 +334,19 @@
    "fecha": "Wed, 21 Oct 2026 00:12:00 GMT"
   },
   {
-   "titulo": "Capital One's strong quarter and progressing Discover integration are rewarded on Wall Street",
-   "url": "https://www.cnbc.com/investingclub/2026/10/20/capital-one-strong-quarter-and-progressing-discover-integration-are-rewarded.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 23:34:14 GMT"
-  },
-  {
    "titulo": "Why SpaceX’s stock is surging — and lifting the broader AI universe along with it",
    "url": "https://www.marketwatch.com/story/why-spacexs-stock-is-surging-and-lifting-the-broader-ai-universe-along-with-it-0cd62f39?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Tue, 20 Oct 2026 23:10:00 GMT"
   },
   {
-   "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life — but here’s why I’m still hopeful",
+   "titulo": "Elon Musk ordered Starlink slowdown for Ukraine: Report",
+   "url": "https://www.cnbc.com/2026/10/20/trump-musk-starlink-ukraine-zelenskyy.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 23:06:56 GMT"
+  },
+  {
+   "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life. Is that so bad?",
    "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Tue, 20 Oct 2026 22:45:00 GMT"
@@ -364,28 +388,10 @@
    "fecha": "Tue, 20 Oct 2026 20:57:00 GMT"
   },
   {
-   "titulo": "United Airlines slashes 2026 profit outlook on fuel prices, but travelers keep booking despite higher fares",
-   "url": "https://www.cnbc.com/2026/10/20/united-airlines-ual-3q-2026-earnings.html",
+   "titulo": "If Elon Musk gifts SpaceX stock through Trump Accounts, it will come with a catch",
+   "url": "https://www.cnbc.com/2026/10/20/musk-spacex-trump-account-stock-rules.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 20:23:58 GMT"
-  },
-  {
-   "titulo": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
-   "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 19:28:43 GMT"
-  },
-  {
-   "titulo": "Mike Bloomberg spent $80M to boost Democrats in midterms: NYT",
-   "url": "https://www.cnbc.com/2026/10/20/mike-bloomberg-democrats-house-trump.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 18:30:53 GMT"
-  },
-  {
-   "titulo": "Trump sued over 50% tariffs on Canada in latest trade challenge",
-   "url": "https://www.cnbc.com/2026/10/20/trump-tariffs-canada-section-338-lawsuit.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 18:06:13 GMT"
+   "fecha": "Tue, 20 Oct 2026 19:11:36 GMT"
   },
   {
    "titulo": "France to deploy military as it braces for fresh unrest this weekend",
@@ -398,12 +404,6 @@
    "url": "https://www.cnbc.com/2026/10/20/france-protests-europe-cost-living-violence.html",
    "fuente": "CNBC",
    "fecha": "Tue, 20 Oct 2026 07:19:16 GMT"
-  },
-  {
-   "titulo": "CNBC's The China Connection newsletter: Navigating a tech-heavy world",
-   "url": "https://www.cnbc.com/2026/10/19/cnbcs-the-china-connection-newsletter-navigating-a-tech-heavy-world.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 19 Oct 2026 23:00:02 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-21T01:28:24Z",
+ "ts": "2026-10-21T06:33:17Z",
  "fallas": [
   "videos",
   "directos"
