@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 30018.25,
-   "cambio": 626.75,
-   "pct": 2.13
+   "precio": 29790.25,
+   "cambio": 398.75,
+   "pct": 1.36
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7803.0,
-   "cambio": 98.75,
-   "pct": 1.28
+   "precio": 7763.5,
+   "cambio": 59.25,
+   "pct": 0.77
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4154.7,
-   "cambio": -26.4,
-   "pct": -0.63
+   "precio": 4141.1,
+   "cambio": -40.0,
+   "pct": -0.96
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 97.52,
-   "cambio": -3.89,
-   "pct": -3.84
+   "precio": 97.9,
+   "cambio": -3.51,
+   "pct": -3.46
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2791.7,
-   "cambio": 56.2,
-   "pct": 2.05
+   "precio": 2780.8,
+   "cambio": 45.3,
+   "pct": 1.66
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 53105.0,
-   "cambio": 891.0,
-   "pct": 1.71
+   "precio": 52884.0,
+   "cambio": 670.0,
+   "pct": 1.28
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 84825.0,
-   "cambio": 3225.0,
-   "pct": 3.95
+   "precio": 84325.0,
+   "cambio": 2725.0,
+   "pct": 3.34
   }
  ],
  "acciones": [
@@ -274,46 +274,82 @@
  ],
  "noticias": [
   {
-   "titulo": "Trump denies ordering Starlink slowdown in Ukraine, says he doesn't know who did",
-   "url": "https://www.cnbc.com/2026/10/21/trump-starlink-ukraine-elon-musk.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 20:45:16 GMT"
-  },
-  {
    "titulo": "Tesla beats on earnings and sales even as auto revenue declines",
    "url": "https://www.cnbc.com/2026/10/21/tesla-tsla-q3-2026-earnings-report.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 20:43:00 GMT"
+   "fecha": "Wed, 21 Oct 2026 23:32:04 GMT"
+  },
+  {
+   "titulo": "Tesla’s stock falls as Elon Musk leaves investors wanting more",
+   "url": "https://www.marketwatch.com/story/teslas-stock-falls-as-elon-musk-leaves-investors-wanting-more-eb347f38?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 23:29:00 GMT"
+  },
+  {
+   "titulo": "Meta’s stock rises as investors glimpse an opportunity that could dwarf the ad business",
+   "url": "https://www.marketwatch.com/story/metas-stock-rises-as-investors-glimpse-an-opportunity-that-could-dwarf-the-ad-business-89369c6c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 23:07:00 GMT"
+  },
+  {
+   "titulo": "CoreWeave’s market confidence erodes as bond yields spike and stock sinks",
+   "url": "https://www.cnbc.com/2026/10/21/coreweaves-market-confidence-erodes-as-bond-yields-spike-stock-sinks.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 22:50:35 GMT"
+  },
+  {
+   "titulo": "IBM beats on top and bottom lines as CEO Krishna touts 'Super Intelligence' traction",
+   "url": "https://www.cnbc.com/2026/10/21/ibm-q3-earnings-report-2026.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 22:03:37 GMT"
+  },
+  {
+   "titulo": "Trump denies ordering Starlink slowdown in Ukraine, says he doesn't know who did",
+   "url": "https://www.cnbc.com/2026/10/21/trump-starlink-ukraine-elon-musk.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 21:48:02 GMT"
+  },
+  {
+   "titulo": "Why investors should be skeptical of a potential Tesla-SpaceX merger",
+   "url": "https://www.marketwatch.com/story/why-investors-should-be-skeptical-of-a-potential-tesla-spacex-merger-9e119d32?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 21:44:00 GMT"
   },
   {
    "titulo": "Trump says data centers should generate their own electricity — but experts say only states can mandate that",
    "url": "https://www.marketwatch.com/story/trump-says-data-centers-should-generate-their-own-electricity-but-experts-say-only-states-can-mandate-that-415dcaad?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 21 Oct 2026 20:37:00 GMT"
+   "fecha": "Wed, 21 Oct 2026 21:31:00 GMT"
+  },
+  {
+   "titulo": "Oil is now flowing out of the Persian Gulf like before the Iran war. Why prices may still not come down anytime soon.",
+   "url": "https://www.marketwatch.com/story/oil-is-now-flowing-out-of-the-persian-gulf-like-before-the-iran-war-why-prices-may-still-not-come-down-anytime-soon-56df2f48?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 21:14:00 GMT"
   },
   {
    "titulo": "Southwest Airlines cuts 2026 profit forecast on higher fuel",
    "url": "https://www.cnbc.com/2026/10/21/southwest-airlines-luv-3q-2026-earnings.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 20:36:43 GMT"
+   "fecha": "Wed, 21 Oct 2026 21:07:11 GMT"
   },
   {
-   "titulo": "Trump-aligned super PACs pour millions into once-safe GOP House seats",
-   "url": "https://www.cnbc.com/2026/10/21/trump-pac-spending-midterm-election-house-republicans.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 20:35:15 GMT"
+   "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life. Is that so bad?",
+   "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 21:00:00 GMT"
+  },
+  {
+   "titulo": "7 healthcare stocks that stand out as investors pay up for the sector",
+   "url": "https://www.marketwatch.com/story/7-healthcare-stocks-that-stand-out-as-investors-pay-up-for-the-sector-d9b0c173?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 20:59:00 GMT"
   },
   {
    "titulo": "My partner of 17 years left me his $1 million home. His children say I influenced him to do so. Should I share my inheritance?",
    "url": "https://www.marketwatch.com/story/my-unmarried-partner-of-17-years-left-me-his-1-1-million-home-his-three-children-are-livid-should-i-share-my-inheritance-a11d593d?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Wed, 21 Oct 2026 20:31:00 GMT"
-  },
-  {
-   "titulo": "IBM beats on top and bottom lines as CEO Krishna touts 'Super Intelligence' traction",
-   "url": "https://www.cnbc.com/2026/10/21/ibm-q3-earnings-report-2026.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 20:29:47 GMT"
   },
   {
    "titulo": "Moderna is about to release the trial results for its cancer vaccine. A lot is riding on this data.",
@@ -324,12 +360,6 @@
   {
    "titulo": "We have a $300,000 mortgage with a 2.75% interest rate. I want to pay it off. My husband says I’m crazy. Who’s right?",
    "url": "https://www.marketwatch.com/story/we-have-a-300-000-mortgage-with-a-2-75-interest-rate-i-want-to-pay-it-off-my-husband-says-im-crazy-whos-right-4ed15226?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 21 Oct 2026 20:15:00 GMT"
-  },
-  {
-   "titulo": "SpaceX’s massive AI targets will test the limits of reality",
-   "url": "https://www.marketwatch.com/story/spacexs-massive-ai-targets-will-test-the-limits-of-reality-4f23a624?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Wed, 21 Oct 2026 20:15:00 GMT"
   },
@@ -346,22 +376,10 @@
    "fecha": "Wed, 21 Oct 2026 20:04:07 GMT"
   },
   {
-   "titulo": "The Social Security Administration wants more babies signed up for ‘Trump accounts.’ But there’s still a catch.",
-   "url": "https://www.marketwatch.com/story/the-social-security-administration-wants-more-babies-signed-up-for-trump-accounts-but-theres-still-a-catch-4096f16e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 21 Oct 2026 20:01:00 GMT"
-  },
-  {
    "titulo": "BlackRock's Rick Rieder sees 'historic' opportunity in high-quality bonds",
    "url": "https://www.cnbc.com/2026/10/21/rick-rieder-investment-grade-bonds.html",
    "fuente": "CNBC",
    "fecha": "Wed, 21 Oct 2026 19:54:16 GMT"
-  },
-  {
-   "titulo": "‘Super’ El Niño may soon make your coffee super expensive",
-   "url": "https://www.marketwatch.com/story/super-el-nino-risks-driving-up-the-price-of-your-caffeine-fix-bb1d58b1?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 21 Oct 2026 19:24:00 GMT"
   },
   {
    "titulo": "How Ukraine’s drone strikes on Russia crippled the world’s second-largest diesel supplier",
@@ -370,28 +388,10 @@
    "fecha": "Wed, 21 Oct 2026 17:27:34 GMT"
   },
   {
-   "titulo": "Medicare is a bargain. What America can’t afford is private health insurance.",
-   "url": "https://www.marketwatch.com/story/medicare-is-a-bargain-what-america-cant-afford-is-private-health-insurance-8a834023?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 21 Oct 2026 16:34:00 GMT"
-  },
-  {
    "titulo": "SpaceX stock jumps 10% after earnings beat and Musk hints at Tesla tie-up",
    "url": "https://www.cnbc.com/2026/10/21/spacex-spcx-stock-musk-merger-tesla.html",
    "fuente": "CNBC",
    "fecha": "Wed, 21 Oct 2026 16:08:50 GMT"
-  },
-  {
-   "titulo": "Polymarket traders see a 10% chance the AI bubble bursts before New Year’s Day",
-   "url": "https://www.marketwatch.com/story/polymarket-traders-see-a-10-chance-the-ai-bubble-bursts-before-new-years-day-ad33258b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 21 Oct 2026 15:59:00 GMT"
-  },
-  {
-   "titulo": "Elon Musk promised a SpaceX share to every kid in America — don’t hold your breath",
-   "url": "https://www.marketwatch.com/story/elon-musk-promised-a-spacex-share-to-every-kid-in-america-dont-hold-your-breath-d6572cdf?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 21 Oct 2026 15:50:00 GMT"
   },
   {
    "titulo": "Mortgage rates drop for the first time in 2 months, but demand still falls further",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-21T20:54:01Z",
+ "ts": "2026-10-21T23:55:41Z",
  "fallas": [
   "videos",
   "directos"
