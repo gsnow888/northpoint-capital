@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29922.75,
-   "cambio": -221.0,
-   "pct": -0.73
+   "precio": 29880.5,
+   "cambio": -263.25,
+   "pct": -0.87
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7777.5,
-   "cambio": -13.5,
-   "pct": -0.17
+   "precio": 7773.75,
+   "cambio": -17.25,
+   "pct": -0.22
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4140.7,
-   "cambio": -29.4,
-   "pct": -0.71
+   "precio": 4128.2,
+   "cambio": -41.9,
+   "pct": -1.0
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 98.15,
-   "cambio": 0.18,
-   "pct": 0.18
+   "precio": 98.95,
+   "cambio": 0.98,
+   "pct": 1.0
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2790.6,
-   "cambio": 8.8,
-   "pct": 0.32
+   "precio": 2786.5,
+   "cambio": 4.7,
+   "pct": 0.17
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52747.0,
-   "cambio": 317.0,
-   "pct": 0.6
+   "precio": 52722.0,
+   "cambio": 292.0,
+   "pct": 0.56
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 83035.0,
-   "cambio": 605.0,
-   "pct": 0.73
+   "precio": 82805.0,
+   "cambio": 375.0,
+   "pct": 0.45
   }
  ],
  "acciones": [
@@ -274,32 +274,62 @@
  ],
  "noticias": [
   {
+   "titulo": "Elice's huge stock swings show AI's spending boom is getting more investor scrutiny",
+   "url": "https://www.cnbc.com/2026/10/21/ai-boom-spending-profit.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 01:02:36 GMT"
+  },
+  {
+   "titulo": "Japan exports post huge miss in September as growth slows to 16.7%",
+   "url": "https://www.cnbc.com/2026/10/21/japan-trade-exports-semiconductor-yen.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 00:44:16 GMT"
+  },
+  {
+   "titulo": "Bull markets tend to peak with a whimper, not a bang — but a 15% correction for the S&P 500 may be next",
+   "url": "https://www.marketwatch.com/story/bull-markets-tend-to-peak-with-a-whimper-not-a-bang-but-a-15-correction-for-the-s-p-500-may-be-next-dab40e2c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 00:24:00 GMT"
+  },
+  {
+   "titulo": "Super Micro’s stock soars after surprise update — with Dell and HPE shares joining the rally",
+   "url": "https://www.marketwatch.com/story/super-micros-stock-soars-after-surprise-update-with-dell-and-hpe-shares-joining-the-rally-1837a69f?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 00:15:00 GMT"
+  },
+  {
+   "titulo": "Tesla’s stock rises as Elon Musk drops new clues about a possible SpaceX merger",
+   "url": "https://www.marketwatch.com/story/teslas-stock-rises-as-elon-musk-drops-new-clues-about-a-possible-spacex-merger-8cc44fc2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 00:14:00 GMT"
+  },
+  {
+   "titulo": "Netflix vows to revive viewership trends, but investors hit ‘sell’ on the stock",
+   "url": "https://www.marketwatch.com/story/netflix-vows-to-revive-viewership-trends-but-investors-hit-sell-on-the-stock-3e24420a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 00:12:00 GMT"
+  },
+  {
+   "titulo": "Capital One's strong quarter and progressing Discover integration are rewarded on Wall Street",
+   "url": "https://www.cnbc.com/investingclub/2026/10/20/capital-one-strong-quarter-and-progressing-discover-integration-are-rewarded.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 20 Oct 2026 23:34:14 GMT"
+  },
+  {
+   "titulo": "Why SpaceX’s stock is surging — and lifting the broader AI universe along with it",
+   "url": "https://www.marketwatch.com/story/why-spacexs-stock-is-surging-and-lifting-the-broader-ai-universe-along-with-it-0cd62f39?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 20 Oct 2026 23:10:00 GMT"
+  },
+  {
    "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life — but here’s why I’m still hopeful",
    "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Tue, 20 Oct 2026 22:45:00 GMT"
   },
   {
-   "titulo": "Super Micro’s stock soars after surprise update — with Dell and HPE shares joining the rally",
-   "url": "https://www.marketwatch.com/story/super-micros-stock-soars-after-surprise-update-with-dell-and-hpe-shares-joining-the-rally-1837a69f?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 22:37:00 GMT"
-  },
-  {
-   "titulo": "Tesla’s stock rises as Elon Musk drops new clues about a possible SpaceX merger",
-   "url": "https://www.marketwatch.com/story/teslas-stock-rises-as-elon-musk-drops-new-clues-about-a-possible-spacex-merger-8cc44fc2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 22:33:00 GMT"
-  },
-  {
    "titulo": "My wife says we can’t afford to retire. I vetoed her $8,000 trip to Italy. We’re in our 60s and have $4 million. Do I keep working?",
    "url": "https://www.marketwatch.com/story/my-wife-says-we-cant-afford-to-retire-we-have-4-million-do-i-just-keep-working-f1b6b085?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 22:30:00 GMT"
-  },
-  {
-   "titulo": "Netflix vows to revive viewership trends, but investors hit ‘sell’ on the stock",
-   "url": "https://www.marketwatch.com/story/netflix-vows-to-revive-viewership-trends-but-investors-hit-sell-on-the-stock-3e24420a?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Tue, 20 Oct 2026 22:30:00 GMT"
   },
@@ -334,18 +364,6 @@
    "fecha": "Tue, 20 Oct 2026 20:57:00 GMT"
   },
   {
-   "titulo": "Bull markets tend to peak with a whimper, not a bang — but a 15% correction for the S&P 500 may be next",
-   "url": "https://www.marketwatch.com/story/bull-markets-tend-to-peak-with-a-whimper-not-a-bang-but-a-15-correction-for-the-s-p-500-may-be-next-dab40e2c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 20:45:00 GMT"
-  },
-  {
-   "titulo": "The Social Security Administration corrected millions of records, and says there’s more to fix",
-   "url": "https://www.marketwatch.com/story/the-social-security-administration-corrected-millions-of-records-and-says-theres-more-to-fix-e57185bd?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 20:26:00 GMT"
-  },
-  {
    "titulo": "United Airlines slashes 2026 profit outlook on fuel prices, but travelers keep booking despite higher fares",
    "url": "https://www.cnbc.com/2026/10/20/united-airlines-ual-3q-2026-earnings.html",
    "fuente": "CNBC",
@@ -364,12 +382,6 @@
    "fecha": "Tue, 20 Oct 2026 18:30:53 GMT"
   },
   {
-   "titulo": "Traders are betting Netflix's stock drama may be coming to an end",
-   "url": "https://www.cnbc.com/2026/10/20/traders-are-betting-netflixs-stock-drama-may-be-coming-to-an-end.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 18:10:13 GMT"
-  },
-  {
    "titulo": "Trump sued over 50% tariffs on Canada in latest trade challenge",
    "url": "https://www.cnbc.com/2026/10/20/trump-tariffs-canada-section-338-lawsuit.html",
    "fuente": "CNBC",
@@ -382,28 +394,16 @@
    "fecha": "Tue, 20 Oct 2026 15:01:38 GMT"
   },
   {
-   "titulo": "September data shows housing market in a deep freeze",
-   "url": "https://www.cnbc.com/2026/10/20/september-data-shows-housing-market-in-a-deep-freeze.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 14:18:58 GMT"
-  },
-  {
-   "titulo": "Anthropic in talks with neocloud Nscale over second multibillion-dollar deal, source tells CNBC",
-   "url": "https://www.cnbc.com/2026/10/20/anthropic-nscale-data-center-deal.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 14:12:38 GMT"
-  },
-  {
-   "titulo": "Investors look to earnings to reset the bull market. The key level to watch on the S&P 500",
-   "url": "https://www.cnbc.com/2026/10/20/santoli-key-sp-500-level-to-watch.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 12:52:29 GMT"
-  },
-  {
    "titulo": "What’s making Europe so angry? The frustration behind the protests",
    "url": "https://www.cnbc.com/2026/10/20/france-protests-europe-cost-living-violence.html",
    "fuente": "CNBC",
    "fecha": "Tue, 20 Oct 2026 07:19:16 GMT"
+  },
+  {
+   "titulo": "CNBC's The China Connection newsletter: Navigating a tech-heavy world",
+   "url": "https://www.cnbc.com/2026/10/19/cnbcs-the-china-connection-newsletter-navigating-a-tech-heavy-world.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 19 Oct 2026 23:00:02 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-20T22:59:54Z",
+ "ts": "2026-10-21T01:28:24Z",
  "fallas": [
   "videos",
   "directos"
