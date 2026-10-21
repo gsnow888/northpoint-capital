@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29824.75,
-   "cambio": 433.25,
-   "pct": 1.47
+   "precio": 29858.0,
+   "cambio": 466.5,
+   "pct": 1.59
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7771.75,
-   "cambio": 67.5,
-   "pct": 0.88
+   "precio": 7774.0,
+   "cambio": 69.75,
+   "pct": 0.91
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4130.8,
-   "cambio": -50.3,
-   "pct": -1.2
+   "precio": 4157.1,
+   "cambio": -24.0,
+   "pct": -0.57
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 99.25,
-   "cambio": -2.16,
-   "pct": -2.13
+   "precio": 98.4,
+   "cambio": -3.01,
+   "pct": -2.97
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2781.4,
-   "cambio": 45.9,
-   "pct": 1.68
+   "precio": 2793.2,
+   "cambio": 57.7,
+   "pct": 2.11
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52755.0,
-   "cambio": 541.0,
-   "pct": 1.04
+   "precio": 52816.0,
+   "cambio": 602.0,
+   "pct": 1.15
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 82675.0,
-   "cambio": 1075.0,
-   "pct": 1.32
+   "precio": 83630.0,
+   "cambio": 2030.0,
+   "pct": 2.49
   }
  ],
  "acciones": [
@@ -274,136 +274,136 @@
  ],
  "noticias": [
   {
-   "titulo": "UK inflation jumps to 3.5% — cementing rate hike expectations",
-   "url": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html",
+   "titulo": "OpenAI to bring AI models to Google's cloud, in further expansion beyond Microsoft",
+   "url": "https://www.cnbc.com/2026/10/21/openai-bring-its-ai-models-to-googles-cloud-expands-beyond-microsoft.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 06:30:27 GMT"
+   "fecha": "Wed, 21 Oct 2026 12:20:13 GMT"
   },
   {
-   "titulo": "Oil prices climb as traders assess Middle East developments",
-   "url": "https://www.cnbc.com/2026/10/21/oil-price-today-wti-brent-rise-on-middle-east-worries.html",
+   "titulo": "United Airlines set to open its biggest airport lounge in $2.6 billion overhaul at Houston hub",
+   "url": "https://www.cnbc.com/2026/10/21/united-airlines-biggest-airport-lounge-houston.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 05:27:19 GMT"
-  },
-  {
-   "titulo": "U.S. eyes refining muscle of Indian billionaire Ambani's Reliance as Rubio visits Jamnagar plant",
-   "url": "https://www.cnbc.com/2026/10/21/rubio-reliance-venezuela-oil-diesel.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 04:47:43 GMT"
-  },
-  {
-   "titulo": "Australian data center operator NextDC's shares plunge 40% after it slashes earnings forecast",
-   "url": "https://www.cnbc.com/2026/10/21/australia-data-center-operator-nexdc-datacenter.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 02:55:38 GMT"
-  },
-  {
-   "titulo": "Elice's huge stock swings show AI's spending boom is getting more investor scrutiny",
-   "url": "https://www.cnbc.com/2026/10/21/ai-boom-spending-profit.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 01:02:36 GMT"
-  },
-  {
-   "titulo": "Japan exports post huge miss in September as growth slows to 16.7%",
-   "url": "https://www.cnbc.com/2026/10/21/japan-trade-exports-semiconductor-yen.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 00:44:16 GMT"
-  },
-  {
-   "titulo": "Bull markets tend to peak with a whimper, not a bang — but a 15% correction for the S&P 500 may be next",
-   "url": "https://www.marketwatch.com/story/bull-markets-tend-to-peak-with-a-whimper-not-a-bang-but-a-15-correction-for-the-s-p-500-may-be-next-dab40e2c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 21 Oct 2026 00:24:00 GMT"
-  },
-  {
-   "titulo": "Super Micro’s stock soars after surprise update — with Dell and HPE shares joining the rally",
-   "url": "https://www.marketwatch.com/story/super-micros-stock-soars-after-surprise-update-with-dell-and-hpe-shares-joining-the-rally-1837a69f?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 21 Oct 2026 00:15:00 GMT"
-  },
-  {
-   "titulo": "Tesla’s stock rises as Elon Musk drops new clues about a possible SpaceX merger",
-   "url": "https://www.marketwatch.com/story/teslas-stock-rises-as-elon-musk-drops-new-clues-about-a-possible-spacex-merger-8cc44fc2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 21 Oct 2026 00:14:00 GMT"
-  },
-  {
-   "titulo": "Netflix vows to revive viewership trends, but investors hit ‘sell’ on the stock",
-   "url": "https://www.marketwatch.com/story/netflix-vows-to-revive-viewership-trends-but-investors-hit-sell-on-the-stock-3e24420a?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 21 Oct 2026 00:12:00 GMT"
+   "fecha": "Wed, 21 Oct 2026 12:09:51 GMT"
   },
   {
    "titulo": "Why SpaceX’s stock is surging — and lifting the broader AI universe along with it",
    "url": "https://www.marketwatch.com/story/why-spacexs-stock-is-surging-and-lifting-the-broader-ai-universe-along-with-it-0cd62f39?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 23:10:00 GMT"
+   "fecha": "Wed, 21 Oct 2026 12:06:00 GMT"
   },
   {
-   "titulo": "Elon Musk ordered Starlink slowdown for Ukraine: Report",
-   "url": "https://www.cnbc.com/2026/10/20/trump-musk-starlink-ukraine-zelenskyy.html",
+   "titulo": "Nvidia announces plug and play Vera Rubin racks that can be shipped on a truck",
+   "url": "https://www.cnbc.com/2026/10/21/nvidia-announces-vera-rubin-racks-that-can-be-shipped-on-a-truck-.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 23:06:56 GMT"
+   "fecha": "Wed, 21 Oct 2026 11:54:28 GMT"
+  },
+  {
+   "titulo": "SpaceX up over 8% in premarket after earnings beat and Musk hints at Tesla tie-up",
+   "url": "https://www.cnbc.com/2026/10/21/spacex-spcx-stock-musk-merger-tesla.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 11:51:56 GMT"
+  },
+  {
+   "titulo": "Musk says he’s exploring a SpaceX-Tesla megamerger. What would a combined company be worth?",
+   "url": "https://www.marketwatch.com/story/musk-says-hes-exploring-a-spacex-tesla-megamerger-what-would-a-combined-company-be-worth-f35566aa?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 11:39:00 GMT"
+  },
+  {
+   "titulo": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
+   "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 11:20:58 GMT"
   },
   {
    "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life. Is that so bad?",
    "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 22:45:00 GMT"
+   "fecha": "Wed, 21 Oct 2026 11:15:00 GMT"
   },
   {
-   "titulo": "My wife says we can’t afford to retire. I vetoed her $8,000 trip to Italy. We’re in our 60s and have $4 million. Do I keep working?",
-   "url": "https://www.marketwatch.com/story/my-wife-says-we-cant-afford-to-retire-we-have-4-million-do-i-just-keep-working-f1b6b085?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 22:30:00 GMT"
-  },
-  {
-   "titulo": "Netflix posts third-quarter earnings beat, but shares fall on advertising and revenue guidance",
-   "url": "https://www.cnbc.com/2026/10/20/netflix-nflx-earnings-q3-2026.html",
+   "titulo": "House committee says Webull messages point to China access to U.S. customer data",
+   "url": "https://www.cnbc.com/2026/10/21/webull-us-customer-data-china-access.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 22:29:45 GMT"
+   "fecha": "Wed, 21 Oct 2026 11:05:18 GMT"
+  },
+  {
+   "titulo": "Mortgage rates drop for the first time in 2 months, but demand still falls further",
+   "url": "https://www.cnbc.com/2026/10/21/mortgage-rates-drop-for-the-first-time-in-2-months-but-demand-falls.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 11:00:01 GMT"
+  },
+  {
+   "titulo": "I receive 10 calls a day promising me $15,000 loans at 8% interest. Are these legitimate offers?",
+   "url": "https://www.marketwatch.com/story/im-naturally-skeptical-i-receive-10-calls-a-day-offering-me-15-000-loans-at-8-interest-is-this-a-scam-825c3431?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 11:00:00 GMT"
+  },
+  {
+   "titulo": "Opposition to data centers will drive up inflation, says BlackRock’s Larry Fink",
+   "url": "https://www.marketwatch.com/story/opposition-to-data-centers-will-drive-up-inflation-says-blackrocks-larry-fink-831c25b9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 10:59:00 GMT"
+  },
+  {
+   "titulo": "AT&T shrugs off SpaceX fears with its own large haul of new internet subscribers",
+   "url": "https://www.marketwatch.com/story/at-t-shrugs-off-spacex-fears-with-its-own-large-haul-of-new-internet-subscribers-644f66a8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 10:58:00 GMT"
+  },
+  {
+   "titulo": "French 10-year bond yield hits 5% for first time since 2002 amid unrest",
+   "url": "https://www.cnbc.com/2026/10/21/france-protests-bonds-debt.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 10:40:01 GMT"
+  },
+  {
+   "titulo": "'MAKE DEALS': Trump says data centers should pay communities a 'dividend' to win support",
+   "url": "https://www.cnbc.com/2026/10/21/trump-data-centers-community-dividend.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 10:34:20 GMT"
+  },
+  {
+   "titulo": "Witkoff heads to Russia for Putin talks as Zelenskyy insists 'nothing about Ukraine without Ukraine'",
+   "url": "https://www.cnbc.com/2026/10/21/witkoff-russia-putin-ukraine-zelenskyy.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 21 Oct 2026 10:32:40 GMT"
   },
   {
    "titulo": "My partner of 17 years left me his $1 million home. His children say I influenced him to do so. Should I share my inheritance?",
    "url": "https://www.marketwatch.com/story/my-unmarried-partner-of-17-years-left-me-his-1-1-million-home-his-three-children-are-livid-should-i-share-my-inheritance-a11d593d?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 22:27:00 GMT"
+   "fecha": "Wed, 21 Oct 2026 10:15:00 GMT"
   },
   {
-   "titulo": "Boeing wins FAA approval for 737 Max 10 after years of delays as Duffy says certification process should be faster",
-   "url": "https://www.cnbc.com/2026/10/20/boeing-737-max-10-certification.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 22:01:11 GMT"
-  },
-  {
-   "titulo": "Walmart takes aim at Amazon and Costco with new membership program — but is it a good deal?",
-   "url": "https://www.marketwatch.com/story/walmart-takes-aim-at-amazon-and-costco-with-new-membership-program-but-is-it-a-good-deal-8e2292ef?mod=mw_rss_topstories",
+   "titulo": "In the battle for AI supremacy, China is only six months behind the U.S — but that means it’s winning, says former Google CEO",
+   "url": "https://www.marketwatch.com/story/in-the-battle-for-ai-supremacy-china-is-only-six-months-behind-the-u-s-but-that-means-theyre-winning-says-former-google-ceo-82d71e7a?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 21:47:00 GMT"
+   "fecha": "Wed, 21 Oct 2026 10:12:00 GMT"
   },
   {
-   "titulo": "It’s no secret what the best financial advice for retirement is — but most people ignore it anyway",
-   "url": "https://www.marketwatch.com/story/its-no-secret-what-the-best-financial-advice-for-retirement-is-but-most-people-ignore-it-anyway-7c9075c8?mod=mw_rss_topstories",
+   "titulo": "We have a $300,000 mortgage with a 2.75% interest rate. I want to pay it off. My husband says I’m crazy. Who’s right?",
+   "url": "https://www.marketwatch.com/story/we-have-a-300-000-mortgage-with-a-2-75-interest-rate-i-want-to-pay-it-off-my-husband-says-im-crazy-whos-right-4ed15226?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Tue, 20 Oct 2026 20:57:00 GMT"
+   "fecha": "Wed, 21 Oct 2026 09:15:00 GMT"
   },
   {
-   "titulo": "If Elon Musk gifts SpaceX stock through Trump Accounts, it will come with a catch",
-   "url": "https://www.cnbc.com/2026/10/20/musk-spacex-trump-account-stock-rules.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 19:11:36 GMT"
+   "titulo": "George Foreman’s lavish Texas estate with 50-car garage is listed for $6 million",
+   "url": "https://www.marketwatch.com/story/george-foremans-lavish-texas-estate-with-50-car-garage-is-listed-for-6-million-d464b764?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 21 Oct 2026 09:04:00 GMT"
   },
   {
-   "titulo": "France to deploy military as it braces for fresh unrest this weekend",
-   "url": "https://www.cnbc.com/2026/10/20/france-protests-curfews-macron-gulf-trip.html",
+   "titulo": "OpenAI's most powerful AI models disabled their own safety monitoring — and one lied about it",
+   "url": "https://www.cnbc.com/2026/10/21/openai-ai-models-safety-monitoring.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 15:01:38 GMT"
+   "fecha": "Wed, 21 Oct 2026 07:49:48 GMT"
   },
   {
-   "titulo": "What’s making Europe so angry? The frustration behind the protests",
-   "url": "https://www.cnbc.com/2026/10/20/france-protests-europe-cost-living-violence.html",
+   "titulo": "As homeownership gets harder, more buyers are getting down payment help. What parents should know",
+   "url": "https://www.cnbc.com/2026/10/20/giving-money-kids-buying-home.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 20 Oct 2026 07:19:16 GMT"
+   "fecha": "Tue, 20 Oct 2026 21:35:48 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-21T06:33:17Z",
+ "ts": "2026-10-21T12:22:55Z",
  "fallas": [
   "videos",
   "directos"
