@@ -55,253 +55,313 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29102.5,
-   "cambio": -620.0,
-   "pct": -2.09
+   "precio": 29126.5,
+   "cambio": -596.0,
+   "pct": -2.01
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7684.25,
-   "cambio": -50.25,
-   "pct": -0.65
+   "precio": 7707.25,
+   "cambio": -27.25,
+   "pct": -0.35
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4050.7,
-   "cambio": -109.4,
-   "pct": -2.63
+   "precio": 4040.8,
+   "cambio": -119.3,
+   "pct": -2.87
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 99.38,
-   "cambio": -4.28,
-   "pct": -4.13
+   "precio": 99.15,
+   "cambio": -4.51,
+   "pct": -4.35
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2786.4,
-   "cambio": 44.1,
-   "pct": 1.61
+   "precio": 2795.9,
+   "cambio": 53.6,
+   "pct": 1.95
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52941.0,
-   "cambio": 759.0,
-   "pct": 1.45
+   "precio": 53102.0,
+   "cambio": 920.0,
+   "pct": 1.76
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81200.0,
-   "cambio": -630.0,
-   "pct": -0.77
+   "precio": 81365.0,
+   "cambio": -465.0,
+   "pct": -0.57
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 156.2,
-   "pct": -1.33,
+   "precio": 156.52,
+   "pct": -1.13,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 700.49,
-   "pct": -1.26,
+   "precio": 702.3,
+   "pct": -1.01,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 373.96,
-   "pct": -1.18,
+   "precio": 374.9,
+   "pct": -0.93,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 82.67,
-   "pct": -1.39,
+   "precio": 82.73,
+   "pct": -1.32,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 703.54,
-   "pct": -3.36,
+   "precio": 704.47,
+   "pct": -3.23,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 762.08,
-   "pct": -1.26,
+   "precio": 763.96,
+   "pct": -1.01,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 71.39,
-   "pct": 0.83,
+   "precio": 71.36,
+   "pct": 0.78,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 35.33,
-   "pct": 3.59,
+   "precio": 35.4,
+   "pct": 3.81,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 92.4,
-   "pct": 1.05,
+   "precio": 92.65,
+   "pct": 1.32,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 75.35,
-   "pct": -3.51,
+   "precio": 75.44,
+   "pct": -3.39,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 369.4,
-   "pct": -3.48,
+   "precio": 369.0,
+   "pct": -3.58,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 45.97,
-   "pct": -1.34,
+   "precio": 46.06,
+   "pct": -1.14,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 346.39,
-   "pct": 1.29,
+   "precio": 348.22,
+   "pct": 1.82,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 521.85,
-   "pct": -3.26,
+   "precio": 521.08,
+   "pct": -3.4,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 212.22,
+   "precio": 212.21,
    "pct": -2.31,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 323.29,
-   "pct": -7.43,
+   "precio": 324.22,
+   "pct": -7.16,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 249.24,
-   "pct": -2.17,
+   "precio": 250.38,
+   "pct": -1.72,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 641.66,
-   "pct": -12.9,
+   "precio": 648.85,
+   "pct": -11.93,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 376.09,
-   "pct": 3.77,
+   "precio": 374.58,
+   "pct": 3.35,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 549.05,
-   "pct": 4.45,
+   "precio": 546.97,
+   "pct": 4.05,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 1013.75,
-   "pct": 3.65,
+   "precio": 1018.21,
+   "pct": 4.11,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 335.15,
-   "pct": -0.11,
+   "precio": 336.54,
+   "pct": 0.3,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 412.68,
-   "pct": 3.23,
+   "precio": 414.34,
+   "pct": 3.65,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 425.41,
-   "pct": 4.61,
+   "precio": 424.98,
+   "pct": 4.5,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "Moderna shares plunge after leak of cancer vaccine data despite positive results",
-   "url": "https://www.cnbc.com/2026/10/22/moderna-stock-cancer-vaccine-data-leak.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 18:49:11 GMT"
-  },
-  {
-   "titulo": "Musk's clash with Ukraine accelerates demand for Starlink alternatives. Few exist",
-   "url": "https://www.cnbc.com/2026/10/22/elon-musk-ukraine-starlink-alternatives.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 18:38:35 GMT"
-  },
-  {
-   "titulo": "Meta stock sinks 7% as AI spend pushes free cash flow negative",
-   "url": "https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 18:38:31 GMT"
+   "titulo": "Treasury yields log biggest drop since the 2023 banking crisis. Here’s what’s going on.",
+   "url": "https://www.marketwatch.com/story/treasury-yields-see-extreme-plunge-why-investors-are-ducking-for-cover-60044c66?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 22 Oct 2026 22:07:00 GMT"
   },
   {
    "titulo": "SpaceX and Tesla have high election stakes as Elon Musk pours $366 million into campaigns",
    "url": "https://www.cnbc.com/2026/10/22/elon-musk-midterm-election-spacex-tesla.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 18:37:18 GMT"
+   "fecha": "Thu, 22 Oct 2026 21:58:42 GMT"
   },
   {
-   "titulo": "Moderna’s stock tumbles after reported leak of data for cancer vaccine",
+   "titulo": "Moderna shares plunge after cancer vaccine data leaks — despite positive results",
+   "url": "https://www.cnbc.com/2026/10/22/moderna-stock-cancer-vaccine-data-leak.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 21:52:02 GMT"
+  },
+  {
+   "titulo": "Americans are having fewer babies — and pampering them with luxury diapers",
+   "url": "https://www.marketwatch.com/story/americans-are-having-fewer-babies-and-pampering-them-with-luxury-diapers-a84222cd?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 22 Oct 2026 21:28:00 GMT"
+  },
+  {
+   "titulo": "3 big reasons Micron and other chip stocks fell hard on Thursday",
+   "url": "https://www.marketwatch.com/story/two-big-reasons-micron-and-other-chip-stocks-are-falling-on-thursday-312f1fb2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 22 Oct 2026 21:19:00 GMT"
+  },
+  {
+   "titulo": "Trump asked Musk to lift Starlink slowdown, WSJ reports",
+   "url": "https://www.cnbc.com/2026/10/22/trump-musk-starlink-ukraine.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 21:02:07 GMT"
+  },
+  {
+   "titulo": "Meta’s deal to keep Zuckerberg in California adds fuel to wealth tax debate ahead of election",
+   "url": "https://www.cnbc.com/2026/10/22/meta-mark-zuckerberg-california-billionaire-tax.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 20:47:59 GMT"
+  },
+  {
+   "titulo": "Oil prices approach Iran-war highs as soaring tanker rates trigger a second energy squeeze",
+   "url": "https://www.marketwatch.com/story/oil-prices-approach-iran-war-highs-as-soaring-tanker-rates-trigger-a-second-energy-squeeze-2d726982?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 22 Oct 2026 20:46:00 GMT"
+  },
+  {
+   "titulo": "Disney’s multiplatform Super Bowl plan frustrates ABC affiliates",
+   "url": "https://www.cnbc.com/2026/10/22/disneys-multiplatform-super-bowl-plan-frustrates-abc-affiliates.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 20:44:26 GMT"
+  },
+  {
+   "titulo": "OpenAI nears up to $30 billion funding round at $1.25 trillion valuation led by UAE investors",
+   "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 20:41:37 GMT"
+  },
+  {
+   "titulo": "Trump defends Ramaswamy ad with Acton's estranged mom after bipartisan criticism",
+   "url": "https://www.cnbc.com/2026/10/22/trump-ramaswamy-ad-acton-mother-ad.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 20:26:48 GMT"
+  },
+  {
+   "titulo": "Moderna’s cancer vaccine hits its targets, but a data leak rattled investors and the stock tumbled",
    "url": "https://www.marketwatch.com/story/modernas-stock-tumbles-after-reported-leak-of-data-for-cancer-vaccine-dcc897c1?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 18:35:00 GMT"
+   "fecha": "Thu, 22 Oct 2026 20:14:00 GMT"
+  },
+  {
+   "titulo": "Reported fraud losses among older Americans hit $3 billion in 2025 as big losses surge: FTC report",
+   "url": "https://www.cnbc.com/2026/10/22/older-americans-fraud-losses-2025.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 19:39:51 GMT"
+  },
+  {
+   "titulo": "Elon Musk invests about $1 billion in Skydance",
+   "url": "https://www.cnbc.com/2026/10/22/elon-musk-skydance-investment.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 19:34:46 GMT"
+  },
+  {
+   "titulo": "Is getting a wedding band from Quince a bad idea? It’s a third of the price of a local jeweler.",
+   "url": "https://www.marketwatch.com/story/is-getting-a-wedding-band-from-quince-a-bad-idea-its-a-third-of-the-price-fa89c9b2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 22 Oct 2026 19:25:00 GMT"
   },
   {
    "titulo": "AI debt and French bonds face a stress test — why it may not be over",
@@ -310,22 +370,10 @@
    "fecha": "Thu, 22 Oct 2026 18:13:37 GMT"
   },
   {
-   "titulo": "Elon Musk invests about $1 billion in Skydance",
-   "url": "https://www.cnbc.com/2026/10/22/elon-musk-skydance-investment.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 18:02:05 GMT"
-  },
-  {
    "titulo": "Bill Ackman says 2027 will be an amazing year for stocks as wars, inflation ease",
    "url": "https://www.cnbc.com/2026/10/22/bill-ackman-talks-meta-and-markets-with-cnbc.html",
    "fuente": "CNBC",
    "fecha": "Thu, 22 Oct 2026 17:53:08 GMT"
-  },
-  {
-   "titulo": "Lawsuit accuses Trump of illegally profiting off foreign crypto deals",
-   "url": "https://www.cnbc.com/2026/10/22/trump-world-liberty-crypto-lawsuit-uae.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 17:49:53 GMT"
   },
   {
    "titulo": "Elon Musk promised a SpaceX share to every kid in America — don’t hold your breath",
@@ -352,58 +400,10 @@
    "fecha": "Thu, 22 Oct 2026 17:16:00 GMT"
   },
   {
-   "titulo": "Young Americans are giving up their cars. It’s a path to financial freedom, for some.",
-   "url": "https://www.marketwatch.com/story/young-americans-are-giving-up-their-cars-its-a-path-to-financial-freedom-for-some-3cce491c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 16:48:00 GMT"
-  },
-  {
-   "titulo": "Zuckerberg’s California tax move is a win for Meta — and for him",
-   "url": "https://www.marketwatch.com/story/zuckerbergs-california-tax-move-is-a-win-for-meta-and-for-him-aa049c94?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 16:48:00 GMT"
-  },
-  {
-   "titulo": "Cruise lines chase luxury travelers with suites for up to $25,000 a night",
-   "url": "https://www.cnbc.com/2026/10/22/luxury-cruise-suites-regent-seven-seas.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 16:46:29 GMT"
-  },
-  {
-   "titulo": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
-   "url": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 16:40:09 GMT"
-  },
-  {
-   "titulo": "Two big reasons Micron and other chip stocks are falling on Thursday",
-   "url": "https://www.marketwatch.com/story/two-big-reasons-micron-and-other-chip-stocks-are-falling-on-thursday-312f1fb2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 15:33:00 GMT"
-  },
-  {
-   "titulo": "Investors’ recent money moves show a preference for lowering risks over boosting rewards",
-   "url": "https://www.marketwatch.com/story/investors-recent-money-moves-show-a-preference-for-quality-over-momentum-within-the-s-p-500-ed6b5149?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 15:10:00 GMT"
-  },
-  {
-   "titulo": "Moderna has a plan to revolutionize how certain cancers are treated. We’re about to find out its potential in melanoma.",
-   "url": "https://www.marketwatch.com/story/moderna-is-about-to-release-the-trial-results-for-its-cancer-vaccine-a-lot-is-riding-on-this-data-ccbf8c9c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 15:03:00 GMT"
-  },
-  {
    "titulo": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
    "url": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html",
    "fuente": "CNBC",
    "fecha": "Thu, 22 Oct 2026 13:18:36 GMT"
-  },
-  {
-   "titulo": "American Express brings Airbnb bookings and rewards to Amex Travel platform",
-   "url": "https://www.cnbc.com/2026/10/22/american-express-airbnb-travel-platform.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 12:00:02 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-22T18:50:23Z",
+ "ts": "2026-10-22T22:11:42Z",
  "fallas": [
   "videos",
   "directos"
