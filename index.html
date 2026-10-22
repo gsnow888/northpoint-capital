@@ -334,8 +334,9 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
 .hs-bg.bg-hero{background-image:url(img/hero.jpg);background-image:image-set(url(img/hero.webp) type("image/webp"),url(img/hero.jpg) type("image/jpeg"))}
 @media(max-width:700px){.hs-bg.bg-hero{background-image:image-set(url(img/hero-m.webp) type("image/webp"),url(img/hero.jpg) type("image/jpeg"))}}
 .comp picture{display:block}
-/* quiénes operan: cuatro rostros antes de los planes (las fichas completas viven en equipo.html) */
-.gente-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+/* quiénes operan: dos rostros antes de los planes, Gregorio y André (22-oct-2026; las fichas completas viven en equipo.html).
+   Dos columnas con el mismo ancho de ficha que tenían las cuatro. */
+.gente-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:600px}
 .persona{display:block;text-decoration:none;color:inherit}
 .persona img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;background:#0A2233;filter:grayscale(1);transition:filter .35s}
 .persona:hover img,.persona:focus-visible img{filter:none}
@@ -549,9 +550,7 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
   </div>
   <div class="gente-grid">
     <a class="persona" href="equipo.html#gregorio"><picture><source type="image/webp" srcset="img/goyo.webp"><img src="img/goyo.jpg" width="675" height="900" alt="Gregorio Sánchez Calderón" loading="lazy" decoding="async"></picture><b>Gregorio Sánchez Calderón</b><span>Cofundador · Inversiones y protección patrimonial</span></a>
-    <a class="persona" href="equipo.html#pablo"><picture><source type="image/webp" srcset="img/pablo.webp"><img src="img/pablo.jpg" width="473" height="644" alt="Pablo Ochoa Macouzet" loading="lazy" decoding="async"></picture><b>Pablo Ochoa Macouzet</b><span>Cofundador · Estrategia, operaciones y gestión de riesgo</span></a>
     <a class="persona" href="equipo.html#andre"><picture><source type="image/webp" srcset="img/andre.webp"><img src="img/andre.jpg" width="716" height="900" alt="André Macouzet Ruiz" loading="lazy" decoding="async"></picture><b>André Macouzet Ruiz</b><span>Fundador · Mercados, datos y tecnología</span></a>
-    <a class="persona" href="equipo.html#gerardo"><picture><source type="image/webp" srcset="img/gerardo.webp"><img src="img/gerardo.jpg" width="675" height="900" alt="Gerardo Andaluz Contreras" loading="lazy" decoding="async"></picture><b>Gerardo Andaluz Contreras</b><span>Cofundador · Análisis técnico y futuros de índices</span></a>
   </div>
 </div></section>
 
