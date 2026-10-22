@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NORTHPOINT · Su ahorro, operado por una mesa profesional</title>
-<meta name="description" content="Ahorre en la app de NORTHPOINT desde $100 USD. Su saldo trabaja con nuestra mesa de trading y cada mes usted ve el resultado, dentro del riesgo que decide asumir.">
-<meta property="og:title" content="NORTHPOINT · Su ahorro trabaja cada mes">
-<meta property="og:description" content="Ahorre desde $100 USD. Vea cada mes el resultado de su saldo. Retire cuando quiera.">
+<title>NORTHPOINT · Proyectos con propósito</title>
+<meta name="description" content="Ahorro, patrimonio, tecnología, educación, ciudades y una fundación. Un grupo con sede en Morelia, México, y un solo propósito: que el progreso llegue a más personas.">
+<meta property="og:title" content="NORTHPOINT · Proyectos con propósito">
+<meta property="og:description" content="Ahorro, Family Office, Trading Journal, Academia, Northpoint Cities y Fundación. Un solo propósito.">
 <meta property="og:url" content="https://northpointcapital.io/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -370,6 +370,31 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
 .ventana img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;display:block}
 @media(max-width:980px){.tradesec .grid{grid-template-columns:1fr;gap:40px}}
 @media(max-width:560px){.tradesec li{grid-template-columns:1fr;gap:4px}}
+
+/* ── Portada del grupo (22-oct-2026): los proyectos, la fundación y agendar una sesión. Lo de ahorro vive en ahorro.html. ── */
+.rubros{background:var(--gray)}
+.rubros-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rubro{display:flex;flex-direction:column;background:#fff;text-decoration:none;color:inherit;border-bottom:4px solid transparent;transition:border-color .25s,translate .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.rubro:hover,.rubro:focus-visible{border-bottom-color:var(--blue);translate:0 -6px;box-shadow:0 24px 40px -24px rgba(5,28,44,.3)}
+.rubro img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;background:var(--navy)}
+.rubro-t{padding:26px 28px 28px;display:flex;flex-direction:column;flex:1}
+.rubro .tipo{font:500 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.rubro h3{font-size:clamp(22px,2vw,26px);margin-bottom:10px}
+.rubro p{font-size:15px;line-height:1.6;margin-bottom:18px}
+.rubro .link{margin-top:auto}
+.rubro.sin{cursor:default}
+.rubro.sin:hover{border-bottom-color:transparent;translate:none;box-shadow:none}
+.rubro .pill{margin-top:auto;align-self:flex-start;font:500 12px var(--sans);letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);padding:5px 10px;color:var(--muted)}
+.rubro .ec{font-size:12px;color:var(--muted);margin:-6px 0 12px}
+@media(max-width:900px){.rubros-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.rubros-grid{grid-template-columns:1fr}}
+.fundsec .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.fundsec h2{margin:12px 0 20px}
+.fundsec img{width:100%;height:auto;aspect-ratio:16/11;object-fit:cover;object-position:100% center;background:var(--navy)}   /* el niño está en el borde derecho de la foto */
+@media(max-width:900px){.fundsec .grid{grid-template-columns:1fr;gap:32px}}
+.sesion .link{color:#fff}
+.sesion textarea{border:0;border-bottom:1px solid var(--ink);background:transparent;padding:10px 0;font:300 17px var(--sans);color:var(--ink);resize:vertical;border-radius:0}
+.sesion textarea:focus{outline:none;border-bottom:2px solid var(--blue)}
 </style>
 <link rel="stylesheet" href="anim.css?v=20261003a">
 <style>
@@ -400,9 +425,9 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
 <nav><div class="wrap">
   <a class="mark" href="#">NORTHPOINT</a>
   <div class="links">
-    <!-- nav mínima (Gregorio, 22-oct-2026): solo las secciones de la portada. Las demás páginas se llegan por el carrusel y el pie. -->
-    <a href="#como">Cómo funciona</a><a href="#app">La app</a><a href="#perfiles">Planes</a><a href="#memos">Memos</a>
-    <a class="btn" href="#registro">Apartar lugar</a>
+    <!-- nav del grupo (22-oct-2026): los proyectos con página propia + agendar; el botón lleva a la lista de espera del ahorro -->
+    <a href="ahorro.html">App de ahorro</a><a href="trading.html">Journal</a><a href="family-office.html">Family Office</a><a href="fundacion.html">Fundación</a><a href="#sesion">Agendar sesión</a>
+    <a class="btn" href="ahorro.html#registro">Lista de espera</a>
   </div>
 </div></nav>
 
@@ -411,10 +436,10 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
     <div class="hs" data-i="0"><div class="hs-bg bg-hero"></div><div class="wrap"><div class="box">
       <div class="eyebrow">Bienvenido a</div>
       <h1 class="serif">NORTHPOINT</h1>
-      <p class="lead">Somos una mesa de trading profesional que ayuda a personas de todo México a <a class="ul" href="#como">hacer que su ahorro trabaje</a>. Usted guarda su dinero, lo ve en la app y cada mes recibe el resultado de nuestra operación, dentro del riesgo que decide asumir.</p>
-      <a class="btn" href="#perfiles">Ver los planes</a>
+      <p class="lead">Un grupo de proyectos con un solo propósito: que el progreso llegue a más personas y que lo construido dure. Ahorro, patrimonio, tecnología, educación, ciudades y una fundación.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="ahorro.html#registro">Unirme a la lista de espera</a><a class="btn line inv" href="#sesion">Agendar una sesión</a></div>
     </div></div></div>
-    <div class="hs hs-cien" data-i="1"><div class="hs-bg cien-bg"></div>
+    <div class="hs hs-cien" data-i="1" data-href="ahorro.html"><div class="hs-bg cien-bg"></div>
       <div class="devs" aria-hidden="true">
         <div class="mac"><div class="mac-scr"><picture><source type="image/webp" srcset="img/app-desk.webp"><img src="img/app-desk.jpg" width="1800" height="1125" alt="" decoding="async"></picture></div><div class="mac-base"></div></div>
         <div class="iph"><i class="ib ib1"></i><i class="ib ib2"></i><i class="ib ib3"></i><i class="ib ib4"></i><div class="iph-bz"><div class="iph-in"><picture><source type="image/webp" srcset="img/app-cel.webp"><img src="img/app-cel.jpg" width="640" height="1385" alt="" decoding="async"></picture><span class="iph-isl"></span></div></div></div>
@@ -422,7 +447,7 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
       <div class="hs-k"><span>Ahorro NORTHPOINT</span><span class="hs-pill">Desde $100 USD</span></div>
       <h2 class="serif">Empiece a ahorrar con $100 dólares.</h2>
       <p class="lead">Sin mensualidades ni plazos forzosos. Abra su cuenta, elija su plan y vea en la app cómo trabaja su ahorro cada mes. Deposite más cuando quiera y retire cuando lo necesite.</p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="#registro">Apartar lugar</a><a class="btn line inv" href="#perfiles">Ver los planes</a></div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="ahorro.html#registro">Unirme a la lista de espera</a><a class="btn line inv" href="ahorro.html">Conocer el ahorro</a></div>
     </div></div></div>
     <!-- TRADING (22-oct-2026): la app de escritorio de la mesa. Mockup de Mac (anim.css .devs/.mac) con la pantalla Log trade; fondo = estratos, ya cargado en la banda. -->
     <div class="hs hs-cien hs-trade" data-i="2" data-href="trading.html"><div class="hs-bg" data-bg="img/estratos" style="background-position:center 40%"></div>
@@ -452,8 +477,15 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
       <p class="lead">Una parte de cada resultado de la mesa acompaña a familias de niños con leucemia durante su tratamiento.</p>
       <a class="btn line inv" href="fundacion.html">Conocer la fundación</a>
     </div></div></div>
+    <!-- NORTHPOINT CITIES (22-oct-2026): solo tarjeta, sin enlace, bajo las Reglas de verdad (estudio conceptual, sin predio). Imagen = captura del estudio conceptual de anthropos-cities. -->
+    <div class="hs" data-i="6"><div class="hs-bg" data-bg="img/cities" style="background-position:center 45%"></div><div class="wrap"><div class="box">
+      <div class="hs-k"><span>Northpoint Cities</span><span class="hs-pill">En estudio</span></div>
+      <h2 class="serif">Un distrito concebido desde cero para la era de la inteligencia artificial.</h2>
+      <p class="lead">Estudio conceptual, sin predio elegido. Lo contaremos cuando haya algo que mostrar.</p>
+      <p style="margin-top:14px;font-size:13px;opacity:.7">Estudio conceptual. No es una oferta de inversión.</p>
+    </div></div></div>
     <!-- RONIN: la colección de André (studioamr/hakki). Imagen: pieza #002 «Silent Path» de THE LONE WANDERER. -->
-    <div class="hs" data-i="6" data-href="https://studioamr.github.io/hakki/"><div class="hs-bg" data-bg="img/ronin" style="background-position:center 62%"></div><div class="wrap"><div class="box">
+    <div class="hs" data-i="7" data-href="https://studioamr.github.io/hakki/"><div class="hs-bg" data-bg="img/ronin" style="background-position:center 62%"></div><div class="wrap"><div class="box">
       <div class="hs-k"><span>RONIN · 道</span><span class="hs-pill">Colección en Solana</span></div>
       <h2 class="serif">Sin maestro. Un camino.</h2>
       <p class="lead">Una colección de ronin. Elija el suyo o déjelo al destino.</p>
@@ -462,13 +494,14 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
     </div></div></div>
   </div>
   <div class="hs-index" aria-label="Divisiones de NORTHPOINT">
-    <button data-i="0" class="on"><span>Ahorro</span><i><em></em></i></button>
-    <button data-i="1"><span>Desde $100</span><i><em></em></i></button>
+    <button data-i="0" class="on"><span>NORTHPOINT</span><i><em></em></i></button>
+    <button data-i="1"><span>Ahorro</span><i><em></em></i></button>
     <button data-i="2"><span>Trading</span><i><em></em></i></button>
     <button data-i="3"><span>Memos</span><i><em></em></i></button>
     <button data-i="4"><span>Family Office</span><i><em></em></i></button>
     <button data-i="5"><span>Fundación</span><i><em></em></i></button>
-    <button data-i="6"><span>Ronin</span><i><em></em></i></button>
+    <button data-i="6"><span>Cities</span><i><em></em></i></button>
+    <button data-i="7"><span>Ronin</span><i><em></em></i></button>
   </div>
   <div class="hs-arrows"><button type="button" data-d="-1" aria-label="Anterior">←</button><button type="button" data-d="1" aria-label="Siguiente">→</button></div>
   <button type="button" class="hs-pause" aria-pressed="false" aria-label="Pausar el carrusel"><svg class="pause" viewBox="0 0 12 12" aria-hidden="true"><rect x="1.5" y="1" width="3" height="10"/><rect x="7.5" y="1" width="3" height="10"/></svg><svg class="play" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1l8 5-8 5z"/></svg></button>
@@ -477,75 +510,44 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
 
 <main id="contenido">
 <section class="intro"><div class="wrap">
-  <p class="lead serif" style="font-weight:300">Creemos que un ahorro no debería quedarse quieto. Por eso ponemos la disciplina de una mesa institucional al servicio de cualquier saldo, desde cien dólares, con un freno de protección en cada plan y transparencia total sobre cada operación.</p>
-  <p class="lead">Durante años, la gestión profesional estuvo reservada para grandes fortunas. Nuestro compromiso es abrirla a quien quiera empezar, sin montos mínimos inalcanzables, sin plazos forzosos y sin letras pequeñas.</p>
+  <p class="lead serif" style="font-weight:300">Creemos que el progreso se construye con disciplina y se comparte. Por eso cada proyecto de NORTHPOINT aporta al mismo fin, y una parte de cada resultado acompaña a la Fundación.</p>
+  <p class="lead">Reglas escritas, riesgo definido antes de operar y resultados que se pueden ver. Así se construye algo que dure.</p>
 </div></section>
 
-<div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Custodia a su nombre</span><span>Freno de protección en cada plan</span><span>Desde $100 USD</span><span>Retiros cuando quiera</span><span>Cada operación visible</span><span>Sin cuota fija</span><span>Custodia a su nombre</span><span>Freno de protección en cada plan</span><span>Desde $100 USD</span><span>Retiros cuando quiera</span><span>Cada operación visible</span><span>Sin cuota fija</span></div></div>
-
-<div class="anuncio"><div class="wrap">
-  <h2 class="serif" style="font-size:clamp(24px,2.4vw,32px);line-height:1.25">Presentamos la app de ahorro NORTHPOINT, desde $100 USD</h2>
-  <p>Abra su cuenta con cien dólares, siga su saldo en la app y vea cada mes lo que generó. Deposite más o retire cuando quiera.</p>
-  <a class="btn line" href="ahorro-app.html">Pruebe la app</a>
-</div></div>
-
-<section id="como"><div class="wrap">
+<section class="rubros" id="proyectos"><div class="wrap">
   <div class="sec-head">
-    <div><div class="eyebrow">Cómo funciona</div><h2 class="serif" style="margin-top:12px">Su dinero permanece a su nombre. Siempre.</h2></div>
-    <p>No recibimos transferencias ni custodiamos fondos de clientes. Cada saldo vive en una cuenta a nombre de su titular en un intermediario regulado; la mesa opera con un mandato limitado que no permite retiros.</p>
+    <div><div class="eyebrow">Los proyectos</div><h2 class="serif" style="margin-top:12px">Seis frentes, un propósito.</h2></div>
+    <p>Cada uno con sus reglas escritas y su propio equipo. Todos aportan al mismo fin.</p>
   </div>
-  <div class="pasos">
-    <div class="paso"><div class="n">01</div><h3>Abra su cuenta</h3><p>Desde $100 USD, a su nombre, en un intermediario regulado. Solo usted puede retirar.</p></div>
-    <div class="paso"><div class="n">02</div><h3>Elija su plan</h3><p>Básico o Moderado: cada plan tiene su objetivo mensual. Es la única decisión que tiene que tomar.</p></div>
-    <div class="paso"><div class="n">03</div><h3>Deje trabajar su ahorro</h3><p>La mesa opera su saldo. Deposite más cuando quiera y retire cuando lo necesite: no hay aportaciones obligatorias ni plazos.</p></div>
-    <div class="paso"><div class="n">04</div><h3>Resultado cada mes</h3><p>Al cierre de cada mes, la app le muestra lo que ganó o perdió su saldo. Si el mes se complica, el freno de su plan detiene la operación.</p></div>
+  <div class="rubros-grid">
+    <a class="rubro" href="ahorro.html"><picture><source type="image/webp" srcset="img/app-desk.webp"><img src="img/app-desk.jpg" width="1800" height="1125" alt="La app de ahorro NORTHPOINT en una computadora" loading="lazy" decoding="async"></picture><div class="rubro-t"><span class="tipo">Inversión</span><h3 class="serif">Ahorro NORTHPOINT</h3><p>Su ahorro, operado por una mesa profesional, desde $100 USD. Custodia a su nombre.</p><span class="link">Conocer el ahorro</span></div></a>
+    <a class="rubro" href="family-office.html#sesion"><picture><source type="image/webp" srcset="img/family-office.webp"><img src="img/family-office.jpg" width="1400" height="875" alt="Sala de juntas del Family Office" loading="lazy" decoding="async"></picture><div class="rubro-t"><span class="tipo">Patrimonio</span><h3 class="serif">Family Office</h3><p>La oficina privada que ordena lo que su familia ya construyó: inversiones, empresa, inmuebles, impuestos y sucesión.</p><span class="link">Agendar una sesión</span></div></a>
+    <a class="rubro" href="trading.html"><picture><source type="image/webp" srcset="img/trading/dash.webp"><img src="img/trading/dash.jpg" width="1800" height="1125" alt="Dashboard del Trading Journal" loading="lazy" decoding="async"></picture><div class="rubro-t"><span class="tipo">Tecnología</span><h3 class="serif">Trading Journal</h3><p>La app de escritorio que anota cada trade solo. Mac y Windows, 7 días gratis.</p><span class="link">Conocer la app</span></div></a>
+    <a class="rubro" href="academia.html"><picture><source type="image/webp" srcset="img/academia.webp"><img src="img/academia.jpg" width="1536" height="1536" alt="Academia NORTHPOINT" loading="lazy" decoding="async"></picture><div class="rubro-t"><span class="tipo">Educación</span><h3 class="serif">Academia</h3><p>Aprenda a operar como nuestra mesa. Clases a su ritmo y programas con certificado.</p><span class="link">Ver las clases</span></div></a>
+    <div class="rubro sin"><picture><source type="image/webp" srcset="img/cities.webp"><img src="img/cities.jpg" width="1440" height="650" alt="Estudio conceptual de un distrito de Northpoint Cities" loading="lazy" decoding="async"></picture><div class="rubro-t"><span class="tipo">Ciudades</span><h3 class="serif">Northpoint Cities</h3><span class="ec">Imagen: estudio conceptual.</span><p>Un distrito concebido desde cero para la era de la inteligencia artificial. Sin predio elegido todavía.</p><span class="pill">En estudio</span></div></div>
+    <a class="rubro" href="fundacion.html"><picture><source type="image/webp" srcset="img/fundacion-abierta.webp"><img src="img/fundacion-abierta.jpg" width="1600" height="1067" alt="Fundación NORTHPOINT" loading="lazy" decoding="async" style="object-position:100% center"></picture><div class="rubro-t"><span class="tipo">Filantropía</span><h3 class="serif">Fundación NORTHPOINT</h3><p>Ningún niño debería enfrentar la leucemia sin su familia al lado. En formación.</p><span class="link">Conocer la fundación</span></div></a>
   </div>
 </div></section>
 
-<section class="appsec" id="app" style="padding-top:0"><div class="wrap grid">
+<section class="banda"><div class="wrap">
+  <div class="eyebrow">Nuestro propósito</div>
+  <h2 class="serif">Que las personas progresen y los hogares prosperen.</h2>
+  <a class="btn line inv" href="#fundacion">Conocer la fundación</a>
+</div></section>
+
+<section class="fundsec" id="fundacion"><div class="wrap grid">
   <div>
-    <div class="eyebrow">La app</div>
-    <h2 class="serif">Su saldo y su resultado del mes, en una sola pantalla.</h2>
-    <p class="lead">Abra la app y sepa exactamente cuánto tiene, cuánto generó este mes y cómo va contra el objetivo de su plan.</p>
-    <ul>
-      <li><b>Saldo en vivo</b><span>El valor de su cuenta, actualizado con cada operación de la mesa.</span></li>
-      <li><b>Resultado mensual</b><span>Al cierre de cada mes, lo que ganó o perdió, en dólares y en porcentaje.</span></li>
-      <li><b>Depósitos y retiros</b><span>Directo a su propia cuenta, sin plazos ni penalizaciones.</span></li>
-      <li><b>Cada operación</b><span>Qué se operó, cuándo y con qué resultado. Sin cajas negras.</span></li>
-    </ul>
+    <div class="eyebrow">Brazo filantrópico · En formación</div>
+    <h2 class="serif">Una parte de cada resultado acompaña a una familia.</h2>
+    <p class="lead">La Fundación NORTHPOINT acompaña a familias de niños con leucemia para que ningún tratamiento se interrumpa por falta de recursos, de transporte o de un lugar dónde quedarse.</p>
+    <a class="btn" href="fundacion.html" style="margin-top:28px">Conocer la fundación</a>
   </div>
-  <div>
-    <div class="iphone"><div class="iph-screen"><iframe src="ahorro-app.html?muestra=1&v=1790996209" title="Demo de la app NORTHPOINT" loading="lazy"></iframe><div class="iph-island"></div></div></div>
-    <span class="demo">Pruébela aquí: es la app real en modo demostración, sin dinero real. <a class="link" href="ahorro-app.html" style="font-size:13px">Abrir en pantalla completa</a></span>
-  </div>
+  <picture><source type="image/webp" srcset="img/fundacion-abierta.webp"><img src="img/fundacion-abierta.jpg" width="1600" height="1067" alt="Fundación NORTHPOINT" loading="lazy" decoding="async"></picture>
 </div></section>
 
-<section class="mesa" id="mesa"><div class="wrap">
-  <div class="feature solo">
-    <div>
-      <div class="eyebrow">La mesa</div>
-      <h2 class="serif">Disciplina con propósito</h2>
-      <p class="lead">Nuestra mesa opera futuros de los índices de Estados Unidos, como el Nasdaq 100 y el S&amp;P 500, con reglas escritas antes de cada sesión. Cada operación tiene una razón, un riesgo definido y un registro que usted puede consultar en la app.</p>
-      <p style="margin-top:28px"><a class="link" href="#memos">Lea los memos de la mesa</a></p>
-    </div>
-  </div>
-  <div class="flow-head">
-    <div class="eyebrow">Así viaja una operación por la mesa</div>
-    <div class="live-mesa"><span class="ldot" id="ldot"></span><span id="mesaLive"></span></div>
-  </div>
-  <div class="roles flow">
-    <div class="flow-line" aria-hidden="true"><i></i></div>
-    <div class="rol"><div class="rol-top"><svg class="rol-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/><path d="M15 16l2 2 3-4"/></svg><span class="rol-t">07:30</span></div><div class="rol-n">01</div><h3>Dirección de la mesa</h3><div class="sub">Estrategia y supervisión</div><p>Define el plan de cada sesión y revisa que toda operación cumpla las reglas de la mesa.</p><div class="rol-more">Nada se opera sin un plan escrito antes de abrir.</div></div>
-    <div class="rol"><div class="rol-top"><svg class="rol-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg><span class="rol-t">En tiempo real</span></div><div class="rol-n">02</div><h3>Gestión de riesgo</h3><div class="sub">Límites por cuenta</div><p>Vigila en tiempo real cada cuenta y activa el freno del plan cuando el saldo llega a su riesgo mensual.</p><div class="rol-more">El freno es automático: no depende de una decisión en caliente.</div></div>
-    <div class="rol"><div class="rol-top"><svg class="rol-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 8-9"/><path d="M15 6h5v5"/></svg><span class="rol-t">07:30 – 14:00</span></div><div class="rol-n">03</div><h3>Operación</h3><div class="sub">Ejecución</div><p>Traders que ejecutan el plan con tamaños calculados según el plan y el saldo de cada cuenta.</p><div class="rol-more">Cada entrada queda registrada y visible en su app.</div></div>
-    <div class="rol"><div class="rol-top"><svg class="rol-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8M8 13h5"/></svg><span class="rol-t">Cada mes</span></div><div class="rol-n">04</div><h3>Atención a clientes</h3><div class="sub">Acompañamiento</div><p>Resumen mensual, cambios de plan y atención directa por WhatsApp para cada titular.</p><div class="rol-more">Una persona real, no un bot, responde sus dudas.</div></div>
-</div>
-</div></section>
-
-<!-- QUIÉNES OPERAN (auditoría CRO-05): rostros antes de pedir datos. Las fichas completas viven en equipo.html. -->
 <section class="gente" id="gente"><div class="wrap">
   <div class="sec-head">
-    <div><div class="eyebrow">Quiénes operan</div><h2 class="serif" style="margin-top:12px">Las personas detrás de su ahorro.</h2></div>
+    <div><div class="eyebrow">Quiénes operan</div><h2 class="serif" style="margin-top:12px">Las personas detrás de NORTHPOINT.</h2></div>
     <p>Fundador, socios y traders. El riesgo se define antes de cada operación. <a class="link" href="equipo.html">Conocer al equipo</a></p>
   </div>
   <div class="gente-grid">
@@ -554,62 +556,6 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
   </div>
 </div></section>
 
-<section class="banda"><div class="wrap">
-  <div class="eyebrow">Un ahorro que trabaja</div>
-  <h2 class="serif">Hacemos que el ahorro rinda, para que las personas progresen y los hogares prosperen.</h2>
-  <a class="btn line inv" href="#simulador">Vea cómo funcionaría</a>
-</div></section>
-
-<section id="perfiles"><div class="wrap">
-  <div class="sec-head">
-    <div><div class="eyebrow">Planes</div><h2 class="serif" style="margin-top:12px">Elija el objetivo de su ahorro.</h2></div>
-    <p>Dos planes: uno para la estabilidad y otro para crecer a buen ritmo. Cada uno tiene un objetivo mensual y un riesgo mensual máximo: la mesa busca el objetivo sin arriesgar más de lo que el plan permite. El objetivo es una meta, no un rendimiento garantizado.</p>
-  </div>
-  <div class="perfiles" id="perfilesGrid"></div>
-</div></section>
-
-<section class="paquetes-sec" id="niveles"><div class="wrap">
-  <div class="sec-head">
-    <div><div class="eyebrow">Niveles</div><h2 class="serif" style="margin-top:12px">Empiece con cien dólares. Crezca a su ritmo.</h2></div>
-    <p>Su nivel depende de su saldo, en dólares estadounidenses, y cambia solo conforme su ahorro crece. Sin cuota fija ni comisiones: el nivel solo cambia lo que recibe, no lo que paga.</p>
-  </div>
-  <div class="paquetes" id="nivelesGrid"></div>
-</div></section>
-
-<section id="simulador"><div class="wrap">
-  <div class="sec-head">
-    <div><div class="eyebrow">Simulador</div><h2 class="serif" style="margin-top:12px">Si deja su ahorro trabajando.</h2></div>
-    <p>El rendimiento lo elige usted: es un supuesto para hacer la cuenta, no una promesa. Llévelo a terreno negativo para ver cómo actúa el freno de protección en un periodo adverso.</p>
-  </div>
-  <div class="sim">
-    <div class="ctrl">
-      <label><div class="row"><span>Saldo que deja</span><b id="vSaldo"></b></div><input id="saldo" type="range" min="0" max="17" step="1" value="3"></label>
-      <label><div class="row"><span>Tiempo</span><b id="vMeses"></b></div><input id="meses" type="range" min="6" max="60" step="6" value="24"></label>
-      <label><div class="row"><span>Rendimiento mensual supuesto</span><b id="vRend"></b></div><input id="rend" type="range" min="-3" max="4" step="0.25" value="1"></label>
-      <div><div class="row"><span>Plan</span></div><div class="seg" id="seg"></div></div>
-    </div>
-    <div class="out">
-      <div class="kpis">
-        <div><span>Depositó</span><b id="kDep"></b></div>
-        <div><span>Saldo estimado</span><b id="kValor"></b></div>
-        <div><span>Ganancia neta</span><b id="kGan"></b></div>
-        <div><span>Crecimiento</span><b id="kFee"></b></div>
-      </div>
-      <div class="sim-play"><span id="simMes"></span></div>
-      <canvas id="chart"></canvas>
-      <div class="legend"><span><i style="background:#D0D0D0"></i>Resultado neto de cada mes</span><span><i style="background:var(--blue)"></i>Saldo estimado</span></div>
-      <p class="nota" id="nota"></p>
-    </div>
-  </div>
-</div></section>
-
-<!-- MEMOS DE MERCADO (Gregorio, 3-oct-2026). Esta sección ERA «Perspectivas ·
-     Ideas de la mesa», con tres notas de André. Son los memos los que van aquí:
-     ya existían en el sitio (memos.html + memos/*.html), estaban publicados y
-     firmados, y tener las dos cosas repetía el mismo patrón de tres tarjetas.
-     Las notas de André siguen en CONFIG.perspectivas, sin pintar: para
-     devolverlas basta volver a poner un <div class="cards" id="cards"></div>
-     y su render. -->
 <section class="persp" id="memos"><div class="wrap">
   <div class="sec-head">
     <div><div class="eyebrow">Memos de mercado</div><h2 class="serif" style="margin-top:12px">Lo que la mesa pone por escrito.</h2></div>
@@ -641,77 +587,24 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
   <p class="memo-nota">Los memos <b>no son asesoría financiera</b>.</p>
 </div></section>
 
-<!-- TRADING (22-oct-2026): la app de escritorio, promocionada después de los memos de la mesa. Copy corto e impersonal; la página completa es trading.html. -->
-<section class="tradesec" id="trading"><div class="wrap grid">
+<!-- AGENDAR UNA SESIÓN (22-oct-2026): mismo patrón que la Sesión de Claridad del Family Office, la solicitud sale por correo. -->
+<section class="registro sesion" id="sesion"><div class="wrap grid">
   <div>
-    <div class="eyebrow">NORTHPOINT Trading</div>
-    <h2 class="serif">El journal que anota cada trade solo.</h2>
-    <p class="lead">La app de escritorio de la mesa, para Mac y Windows.</p>
-    <ul>
-      <li><b>Registro automático</b><span>Entradas y salidas de Exness, con la emoción y la captura de cada trade.</span></li>
-      <li><b>Bias de la mesa</b><span>Hacia dónde se inclina el equipo antes de cada sesión.</span></li>
-      <li><b>Reto ALPHA KAIZEN WAY</b><span>Seis meses con una meta para cada día.</span></li>
-    </ul>
-    <div class="ctas"><a class="btn" href="trading.html">Conocer la app</a><a class="btn line inv" href="trading.html#descargar">Descargar · 7 días gratis</a></div>
+    <div class="eyebrow">Agendar una sesión</div>
+    <h2 class="serif">Se lo explicamos en una conversación.</h2>
+    <p>Sin costo y sin compromiso. Cuéntenos qué le interesa y le escribimos para agendar con los socios, en persona o por videollamada.</p>
+    <p style="margin-top:20px">¿Solo quiere lugar en la app de ahorro? <a class="link" href="ahorro.html#registro">Únase a la lista de espera</a></p>
   </div>
-  <div class="ventana"><div class="barra"><i></i><i></i><i></i><span>NORTHPOINT · Dashboard</span></div><picture><source type="image/webp" srcset="img/trading/dash.webp"><img src="img/trading/dash.jpg" width="1800" height="1125" alt="Dashboard de NORTHPOINT Trading: R del mes, win rate y curva de resultados" loading="lazy" decoding="async"></picture></div>
-</div></section>
-
-<section class="comp"><div class="wrap grid">
-  <picture><source type="image/webp" srcset="img/ciudad.webp"><img src="img/ciudad.jpg" width="1400" height="781" alt="Ciudad de México al amanecer" loading="lazy" decoding="async"></picture>
-  <div>
-    <div class="eyebrow">Nuestro compromiso</div>
-    <h2 class="serif">Llevar la gestión profesional a más hogares de México</h2>
-    <p>Estamos comprometidos con contribuir de manera significativa a la forma en que las familias mexicanas hacen crecer su ahorro. Eso empieza por tres principios que no negociamos: la custodia separada, el freno de protección en cada plan y la información completa para cada titular.</p>
-    <p>Preferimos crecer con miles de personas que empiezan con cien dólares que depender de unos cuantos grandes capitales. Un modelo así nos obliga a ser consistentes, transparentes y a merecer, cada mes, que usted deje ahí su ahorro.</p>
-  </div>
-</div></section>
-
-<section class="faq" id="faq"><div class="wrap">
-  <div class="sec-head">
-    <div><div class="eyebrow">Preguntas frecuentes</div><h2 class="serif" style="margin-top:12px">Lo que todos preguntan antes de empezar.</h2></div>
-    <p>Si su pregunta no está aquí, escríbanos. Preferimos que entienda todo antes de apartar su lugar.</p>
-  </div>
-  <div class="qas">
-    <details class="qa"><summary><span>¿Dónde está mi dinero?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p>En una cuenta a su nombre en un intermediario regulado. NORTHPOINT nunca recibe ni custodia su dinero: la mesa opera con un mandato limitado que permite operar, pero no retirar ni transferir.</p></div></details>
-    <details class="qa"><summary><span>¿El rendimiento está garantizado?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p>No. Cada plan tiene un objetivo mensual (1.5% o 3%), que es una meta de la mesa, no una promesa. Habrá meses por arriba del objetivo, meses por debajo y meses negativos.</p></div></details>
-    <details class="qa"><summary><span>¿Qué pasa si la mesa pierde?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p>Su saldo baja ese mes. Para eso existe el freno de cada plan: si la cuenta llega a su riesgo mensual, la mesa deja de operarla hasta el mes siguiente. Usted lo ve en tiempo real en la app.</p></div></details>
-    <details class="qa"><summary><span>¿Cuánto cobran?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p>No le cobramos comisión. Cada mes el resultado de su plan queda en su saldo, y el mes siguiente se vuelve a operar. Tampoco hay cuota de apertura ni por retiro.</p></div></details>
-    <details class="qa"><summary><span>¿Cuál es el monto mínimo?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p>$100 USD. Puede depositar más cuando quiera; no hay aportaciones obligatorias.</p></div></details>
-    <details class="qa"><summary><span>¿Puedo retirar cuando quiera?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p>Sí. Usted retira directo desde su propia cuenta, en los tiempos de operación del intermediario. NORTHPOINT no pone plazos forzosos ni penalizaciones.</p></div></details>
-    <details class="qa"><summary><span>¿Puedo cambiar de plan?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p>Sí. El cambio aplica desde la siguiente sesión de la mesa.</p></div></details>
-    <details class="qa"><summary><span>¿Qué pasa si NORTHPOINT deja de operar?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p>Su dinero sigue en su cuenta, a su nombre. Solo se revoca el mandato de la mesa y usted conserva el control total de su saldo.</p></div></details>
-    <details class="qa"><summary><span>¿Cómo sé qué hace la mesa con mi saldo?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p>Cada operación queda registrada en la app: qué se operó, cuándo y con qué resultado. También recibe un resumen al cierre de cada mes.</p></div></details>
-    <details class="qa"><summary><span>¿Ya puedo invertir?</span><i aria-hidden="true"></i></summary><div class="qa-a"><p>Todavía no. Estamos terminando la estructura legal y eligiendo al intermediario. Registre sus datos en la lista de espera y le avisaremos cuando abramos, en orden de registro.</p></div></details>
-  </div>
-</div></section>
-
-<section class="registro" id="registro"><div class="wrap grid">
-  <div>
-    <div class="eyebrow">Primera generación</div>
-    <h2 class="serif">Aparte su lugar</h2>
-    <p>Aún no aceptamos recursos. Estamos concluyendo la estructura legal y la selección del intermediario. Registre sus datos y le contactaremos, en orden de registro, cuando abramos las primeras cuentas.</p>
-  </div>
-  <form id="form">
-    <label>Nombre completo<input name="nombre" required autocomplete="name"></label>
-    <label>WhatsApp<input name="whatsapp" required inputmode="tel" autocomplete="tel"></label>
-    <label>¿Con cuánto empezaría?<select name="nivel" id="fNivel"></select></label>
-    <label>Plan<select name="perfil" id="fPerfil"></select></label>
-    <button class="btn" type="submit" style="justify-self:start;margin-top:8px">Apartar lugar</button>
-    <p class="consent">Al enviar acepta nuestro <a href="privacidad.html">Aviso de privacidad</a>.</p>
-    <div class="ok" id="ok">Gracias. Su registro quedó guardado y le contactaremos por WhatsApp.</div>
+  <form id="sesionForm">
+    <label>Nombre<input name="nombre" required autocomplete="name"></label>
+    <label>Correo o WhatsApp<input name="contacto" required autocomplete="email"></label>
+    <label>Me interesa<select name="interes"><option>Ahorro NORTHPOINT</option><option>Family Office</option><option>Trading Journal</option><option>Academia</option><option>Northpoint Cities</option><option>Fundación NORTHPOINT</option></select></label>
+    <label>Mensaje<textarea name="mensaje" rows="3" placeholder="Opcional"></textarea></label>
+    <button class="btn" type="submit">Agendar una sesión</button>
+    <div class="ok" id="sesionOk">Listo. Se abrió su correo con la solicitud; envíelo y le respondemos para agendar.</div>
   </form>
 </div></section>
 
-<section class="oficinas" id="contacto"><div class="wrap">
-  <div class="eyebrow">Contacto</div>
-  <h2 class="serif" style="margin-top:12px">Contacto</h2>
-  <div class="grid">
-    <div><h3>Oficina de la mesa</h3><p id="oficina"></p></div>
-    <div><h3>Atención a clientes</h3><p id="contactoTxt"></p></div>
-    <div><h3>Horario de la mesa</h3><p>Lunes a viernes<br>Sesión de Nueva York, 7:30 a 14:00 (hora del centro de México)</p></div>
-  </div>
-</div></section>
 </main>
 
 <footer><div class="wrap">
@@ -719,213 +612,10 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
   <p><b>NORTHPOINT no recibe ni custodia recursos de clientes y no es una institución de crédito.</b> Cada saldo vive en una cuenta a nombre de su titular en un intermediario regulado; la mesa opera con un mandato limitado, sin facultad de retiro.</p>
   <p>El rendimiento es variable, no está garantizado y puede ser negativo. Los rendimientos del simulador son supuestos elegidos por el usuario, no promesas ni resultados históricos. El freno de protección de cada plan se detalla en el contrato, se aplica al cierre de cada operación y puede rebasarse ante movimientos bruscos del mercado.</p>
   <p>Este sitio es una lista de espera y no constituye una oferta de inversión.</p>
-  <p class="mas-np" style="margin:22px 0 18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18)"><b style="color:#fff;font-weight:500">Más de NORTHPOINT</b> · <a href="trading.html" style="color:#fff">Trading Journal</a> · <a href="family-office.html" style="color:#fff">Family Office</a> · <a href="academia.html" style="color:#fff">Academia</a> · <a href="fundacion.html" style="color:#fff">Fundación</a> · <a href="terminal.html" style="color:#fff">Terminal</a> · <a href="northpoint-app.html" style="color:#fff">La app del Terminal</a> · <a href="oficina.html" style="color:#fff">La oficina</a> · <a href="memos.html" style="color:#fff">Memos</a> · <a href="socios.html" style="color:#fff">Socios</a> · <a href="newsletter.html" style="color:#fff">Newsletter</a> · <a href="kuro.html" style="color:#fff">Kuro</a></p>
-  <p><a href="privacidad.html" style="color:#fff">Aviso de privacidad</a> · <a href="legal/terminos.html" style="color:#fff">Términos</a> · <a href="legal/riesgo.html" style="color:#fff">Aviso de riesgo</a> · <a href="#faq" style="color:#fff">Preguntas frecuentes</a> · <a href="equipo.html" style="color:#fff">El equipo</a></p>
+  <p class="mas-np" style="margin:22px 0 18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18)"><b style="color:#fff;font-weight:500">Más de NORTHPOINT</b> · <a href="ahorro.html" style="color:#fff">Ahorro</a> · <a href="trading.html" style="color:#fff">Trading Journal</a> · <a href="family-office.html" style="color:#fff">Family Office</a> · <a href="academia.html" style="color:#fff">Academia</a> · <a href="fundacion.html" style="color:#fff">Fundación</a> · <a href="terminal.html" style="color:#fff">Terminal</a> · <a href="northpoint-app.html" style="color:#fff">La app del Terminal</a> · <a href="oficina.html" style="color:#fff">La oficina</a> · <a href="memos.html" style="color:#fff">Memos</a> · <a href="socios.html" style="color:#fff">Socios</a> · <a href="newsletter.html" style="color:#fff">Newsletter</a> · <a href="kuro.html" style="color:#fff">Kuro</a></p>
+  <p><a href="privacidad.html" style="color:#fff">Aviso de privacidad</a> · <a href="legal/terminos.html" style="color:#fff">Términos</a> · <a href="legal/riesgo.html" style="color:#fff">Aviso de riesgo</a> · <a href="ahorro.html#faq" style="color:#fff">Preguntas frecuentes</a> · <a href="equipo.html" style="color:#fff">El equipo</a></p>
 </div></footer>
-
 <script>
-const CONFIG = {
-  whatsapp: "",          // número de NORTHPOINT con lada, ej. 5214431234567 (vacío = el registro se guarda local)
-  oficina: "",           // dirección de la oficina de la mesa (vacío = "por anunciar")
-  email: "",
-  perfiles: [
-    // objetivo = meta mensual de la mesa (NO garantizada); riesgo = riesgo mensual del plan, también es el freno de protección
-    { id:"bas", nombre:"Básico",   lema:"Estabilidad primero",     nivel:1, objetivo:1.5, riesgo:1, horizonte:"6 meses o más",  freq:"1 a 2 sesiones al mes", ideal:"Para ver su saldo crecer con calma y moverse poco." },
-    { id:"mod", nombre:"Moderado", lema:"Crecimiento equilibrado", nivel:3, objetivo:3,   riesgo:1.5,   horizonte:"12 meses o más", freq:"3 a 4 sesiones por semana", ideal:"Para que su ahorro crezca a buen ritmo sin sobresaltos grandes." }
-  ],
-  // nivel por SALDO (no por aportación): cambia solo cuando el saldo cruza el mínimo
-  niveles: [
-    { id:"inicial", nombre:"Inicial", min:100,   max:999,  fee:0, items:["App con saldo y cada operación","Resultado mensual","Depósitos y retiros cuando quiera","Atención por WhatsApp"] },
-    { id:"plus",    nombre:"Plus",    min:1000,  max:9999, fee:0, dest:true, items:["Todo lo del nivel Inicial","Revisión trimestral con su trader","Cambio de plan cada mes"] },
-    { id:"privado", nombre:"Privado", min:10000, max:null, fee:0, items:["Todo lo del nivel Plus","Trader asignado","Visita a la oficina de la mesa"] }
-  ],
-  saldos: [100,200,300,500,750,1000,1500,2000,3000,5000,7500,10000,15000,20000,30000,50000,75000,100000],
-  perspectivas: [
-    { tipo:"Nota de la mesa", titulo:"Por qué no prometemos un rendimiento fijo", fecha:"29 de septiembre de 2026",
-      resumen:"Un rendimiento fijo sobre un ahorro que se opera en el mercado es una promesa que nadie puede cumplir. Explicamos qué ofrecemos en su lugar.",
-      cuerpo:["Los mercados no pagan lo mismo cada mes. Cualquiera que le prometa un porcentaje fijo sobre un dinero que se opera, o tiene una licencia bancaria y respalda ese pago con su propio capital, o está pagando rendimientos con el dinero de otros clientes.","En NORTHPOINT el resultado de cada mes es el que salió: a veces positivo, a veces negativo. Lo que sí comprometemos es el freno de protección de su plan y que usted vea cada operación en la app."] },
-    { tipo:"Artículo", titulo:"Dos planes, una misma disciplina", fecha:"22 de septiembre de 2026",
-      resumen:"Básico y Moderado no son dos mesas distintas: es la misma mesa, con el mismo plan de sesión, buscando dos objetivos distintos.",
-      cuerpo:["Cada sesión empieza con un plan escrito. Lo que cambia entre planes no es la estrategia sino el tamaño y la frecuencia: el Básico solo entra en las operaciones más claras; el Moderado participa en más sesiones con mayor exposición.","Cada plan tiene un riesgo mensual máximo: 1% en el Básico y 1.5% en el Moderado. Si el mes se complica y el saldo llega a ese riesgo, la mesa deja de operar esa cuenta hasta el mes siguiente. Elegir plan es elegir un objetivo con su riesgo a la vista."] },
-    { tipo:"Artículo", titulo:"Custodia separada: por qué su dinero nunca debería pasar por quien lo opera", fecha:"15 de septiembre de 2026",
-      resumen:"La separación entre quien custodia y quien opera es la protección más simple y más importante para cualquier ahorrador.",
-      cuerpo:["En NORTHPOINT usted abre su cuenta a su nombre en un intermediario regulado. La mesa recibe un mandato para operar, pero no para retirar ni transferir.","Si alguien le pide depositar en una cuenta a nombre de la persona o empresa que va a operar por usted, desconfíe. La custodia separada no es un detalle técnico: es la primera pregunta que debe hacer."] }
-  ]
-};
-
-const $ = s => document.querySelector(s);
-const usd = n => (n<0?"−":"") + "$" + Math.round(Math.abs(n)).toLocaleString("en-US");
-const state = { perfil:"mod" };
-
-const PF_ICO = {
-  bas:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.4-3 8.3-7 9.5C8 19.3 5 15.4 5 11V6z"/><path d="M9 12l2 2 4-4"/></svg>',
-  mod:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 7-8"/><path d="M15 7h4v4"/></svg>' };
-const PF_BADGE = { bas:"Para empezar", mod:"Recomendado" };
-$("#perfilesGrid").innerHTML = CONFIG.perfiles.map(p => `
-  <div class="perfil" data-id="${p.id}">
-    <div class="pf-top"><div class="pf-row"><div><div class="eyebrow">Plan</div><h3>${p.nombre}</h3><div class="lema">${p.lema}</div></div><div class="pf-ico">${PF_ICO[p.id]||""}</div></div><span class="pf-badge">${PF_BADGE[p.id]||""}</span></div>
-    <div class="pf-body">
-      <div class="obj-row"><div><div class="obj">+${p.objetivo}%</div><div class="cap">Objetivo mensual</div></div><div><div class="obj">−${p.riesgo}%</div><div class="cap">Riesgo mensual</div></div></div>
-      <div class="riesgo" aria-label="Nivel de riesgo ${p.nivel} de 5">${[1,2,3,4,5].map(i=>`<i class="${i<=p.nivel?"on":""}"></i>`).join("")}<span>Riesgo ${p.nivel} de 5</span></div>
-      <p class="ideal">${p.ideal}</p>
-      <dl>
-        <div><dt>Objetivo al año</dt><dd>+${+(p.objetivo*12).toFixed(1)}%</dd></div>
-        <div><dt>Horizonte sugerido</dt><dd>${p.horizonte}</dd></div>
-        <div><dt>Actividad de la mesa</dt><dd>${p.freq}</dd></div>
-        <div><dt>Freno de protección</dt><dd>Incluido</dd></div>
-      </dl>
-      <div class="pf-cta"><span>Elegir ${p.nombre}</span></div>
-      <a class="pf-aviso" href="legal/riesgo.html">Aviso de riesgo</a>
-    </div>
-  </div>`).join("");
-$("#seg").innerHTML = CONFIG.perfiles.map(p => `<button type="button" data-id="${p.id}">${p.nombre}</button>`).join("");
-
-const rango = q => usd(q.min) + (q.max ? " – " + usd(q.max) : " o más");
-$("#nivelesGrid").innerHTML = CONFIG.niveles.map(q => `
-  <div class="pq ${q.dest?"dest":""}">
-    <div class="eyebrow">${q.dest?"El nivel más elegido":"Nivel"}</div>
-    <h3 class="serif" style="margin-top:8px">${q.nombre}</h3>
-    <div class="rng">${rango(q)}</div><div class="cap">de saldo</div>
-    <ul>${q.items.map(i=>`<li>${i}</li>`).join("")}</ul>
-    <div style="height:8px"></div>
-    <a class="btn ${q.dest?"":"line"}" href="#registro" data-nv="${q.id}" style="align-self:flex-start">Empezar en ${q.nombre}</a>
-  </div>`).join("");
-
-/* El render de CONFIG.perspectivas se retiró con la sección: ya no hay #cards.
-   Los datos siguen arriba por si se quieren volver a publicar. */
-
-$("#oficina").innerHTML = CONFIG.oficina || "Dirección por anunciar";
-$("#contactoTxt").innerHTML = [CONFIG.whatsapp && `WhatsApp: +${CONFIG.whatsapp}`, CONFIG.email].filter(Boolean).join("<br>") || "Por medio del registro de esta página";
-
-$("#fNivel").innerHTML = CONFIG.niveles.map(q=>`<option value="${q.id}">${rango(q)} · nivel ${q.nombre}</option>`).join("");
-$("#fPerfil").innerHTML = CONFIG.perfiles.map(p=>`<option value="${p.id}">${p.nombre} · objetivo +${p.objetivo}% al mes</option>`).join("");
-document.querySelectorAll("[data-nv]").forEach(a => a.addEventListener("click", () => $("#fNivel").value = a.dataset.nv));
-
-function setPerfil(id){
-  state.perfil = id;
-  document.querySelectorAll(".perfil").forEach(e => e.classList.toggle("on", e.dataset.id===id));
-  document.querySelectorAll("#seg button").forEach(e => e.classList.toggle("on", e.dataset.id===id));
-  $("#fPerfil").value = id;
-  $("#rend").value = CONFIG.perfiles.find(x=>x.id===id).objetivo;   // el simulador arranca en el objetivo del plan
-  sim();
-}
-document.querySelectorAll(".perfil,#seg button").forEach(e => e.addEventListener("click", () => setPerfil(e.dataset.id)));
-
-const nivelDe = s => CONFIG.niveles.slice().reverse().find(q => s >= q.min) || CONFIG.niveles[0];
-
-// un depósito que se queda trabajando, mes a mes, sin comisión,
-// con el % del nivel que corresponde al saldo de ese mes
-function sim(){
-  const dep = CONFIG.saldos[+$("#saldo").value], meses = +$("#meses").value, r = +$("#rend").value;
-  const p = CONFIG.perfiles.find(x=>x.id===state.perfil);
-  const rEf = Math.max(r, -p.riesgo);
-  let bal = dep, hwm = dep, fees = 0; const serie = [], feeCum = [];
-  for(let m=1; m<=meses; m++){
-    const antes = bal;
-    bal *= 1 + rEf/100;
-    if(bal > hwm){ const f = (bal-hwm)*nivelDe(antes).fee/100; fees += f; bal -= f; hwm = bal; }
-    serie.push([bal-antes, bal]); feeCum.push(fees);
-  }
-  sim.last = { serie, feeCum, dep };
-  if(window.__simAnim){ cancelAnimationFrame(window.__simAnim); window.__simAnim = null; setPlayBtn(false); }
-  $("#simMes").innerHTML = `${meses} meses · saldo final <b>${usd(bal)}</b>`;
-  const gan = bal - dep, nv = nivelDe(dep);
-  $("#vSaldo").textContent = usd(dep);
-  $("#vMeses").textContent = meses<24 ? meses+" meses" : (meses/12)+" años";
-  $("#vRend").textContent = (r>0?"+":"")+r+"%";
-  $("#kDep").textContent = usd(dep);
-  $("#kValor").textContent = usd(bal);
-  $("#kGan").textContent = (gan>=0?"+":"")+usd(gan);
-  $("#kGan").className = gan>=0?"pos":"neg";
-  $("#kFee").textContent = (gan>=0?"+":"")+(gan/dep*100).toFixed(1)+"%";
-  const mes1 = serie[0][0];
-  $("#nota").innerHTML = (r < -p.riesgo
-    ? `En un mes así, el freno del plan ${p.nombre} detiene la operación al llegar a su riesgo mensual de ${p.riesgo}%. `
-    : r === p.objetivo
-    ? `Si la mesa cumple el objetivo del plan ${p.nombre} (+${p.objetivo}% al mes), el primer mes su saldo crecería ${usd(mes1)}. `
-    : `Con este supuesto, el primer mes su saldo cambiaría ${mes1>=0?"+":""}${usd(mes1)}. `)
-    + `Nivel al empezar: <b>${nv.nombre}</b>. El objetivo es una meta, no un rendimiento garantizado.`;
-  draw(serie, dep);
-}
-
-// ▶ reproduce el crecimiento mes a mes
-function setPlayBtn(on){ const b = $("#simPlay"); b.classList.toggle("playing", on); b.innerHTML = on ? '<span class="pi">❚❚</span> Pausar' : '<span class="pi">▶</span> Reproducir'; }
-function playSim(){
-  if(window.__simAnim){ cancelAnimationFrame(window.__simAnim); window.__simAnim = null; setPlayBtn(false); return; }
-  const { serie, feeCum, dep } = sim.last, N = serie.length, dur = Math.min(6500, Math.max(2800, N * 110));
-  let t0 = null; setPlayBtn(true);
-  const step = now => {
-    if(t0 === null) t0 = now;
-    const p = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - p, 2), k = Math.max(1, Math.round(e * N));
-    const bal = serie[k-1][1], gan = bal - dep;
-    draw(serie, dep, k);
-    $("#kValor").textContent = usd(bal);
-    $("#kGan").textContent = (gan>=0?"+":"")+usd(gan); $("#kGan").className = gan>=0?"pos":"neg";
-    $("#kFee").textContent = (gan>=0?"+":"")+(gan/dep*100).toFixed(1)+"%";
-    $("#simMes").innerHTML = `Mes <b>${k}</b> de ${N} · saldo <b>${usd(bal)}</b>`;
-    if(p < 1) window.__simAnim = requestAnimationFrame(step); else { window.__simAnim = null; setPlayBtn(false); }
-  };
-  window.__simAnim = requestAnimationFrame(step);
-}
-
-function draw(serie, dep, upto){
-  upto = upto || serie.length;
-  const c = $("#chart"), dpr = window.devicePixelRatio||1, W = c.clientWidth, H = c.clientHeight;
-  c.width = W*dpr; c.height = H*dpr;
-  const g = c.getContext("2d"); g.scale(dpr,dpr); g.clearRect(0,0,W,H);
-  const vals = serie.map(s=>s[1]).concat(dep);
-  const hi = Math.max(...vals)*1.05, lo = Math.min(...vals)*0.9;
-  const pl=64, top=8, bh=56, gap=14, lh=H-top-bh-gap-4, w=W-pl-8;
-  const x = i => pl + (i+.5)*(w/serie.length);
-  const y = v => top + lh - ((v-lo)/(hi-lo||1))*lh;
-  const fmt = v => v>=1e6?"$"+(v/1e6).toFixed(1)+"M":v>=1e4?"$"+Math.round(v/1000)+"k":"$"+Math.round(v).toLocaleString("en-US");
-  g.font = "300 12px 'Public Sans',sans-serif"; g.fillStyle = "#6B6B6B"; g.strokeStyle = "#E6E6E6"; g.lineWidth = 1;
-  for(let k=0;k<=3;k++){ const v=lo+(hi-lo)*k/3, yy=y(v); g.beginPath(); g.moveTo(pl,yy); g.lineTo(W-8,yy); g.stroke(); g.fillText(fmt(v), 4, yy+4); }
-  // barras: resultado neto de cada mes (abajo)
-  const mx = Math.max(...serie.map(s=>Math.abs(s[0])))||1, base = top+lh+gap+bh/2, bw = Math.max(1, w/serie.length-2);
-  g.strokeStyle="#E6E6E6"; g.beginPath(); g.moveTo(pl,base); g.lineTo(W-8,base); g.stroke();
-  serie.slice(0, upto).forEach((s,i)=>{ const hh=(s[0]/mx)*(bh/2); g.fillStyle = s[0]>=0 ? "#D0D0D0" : "#E8A99F"; g.fillRect(x(i)-bw/2, hh>=0?base-hh:base, bw, Math.abs(hh)); });
-  g.fillStyle="#6B6B6B"; g.fillText("por mes", 4, base+4);
-  // línea: saldo
-  g.strokeStyle = "#2251FF"; g.lineWidth = 2.5; g.beginPath();
-  g.moveTo(pl, y(dep)); serie.slice(0, upto).forEach((s,i)=> g.lineTo(x(i),y(s[1]))); g.stroke();
-  if(upto < serie.length){ const s = serie[upto-1]; g.fillStyle = "#2251FF"; g.beginPath(); g.arc(x(upto-1), y(s[1]), 5, 0, 6.283); g.fill(); }
-}
-
-["saldo","meses","rend"].forEach(id => $("#"+id).addEventListener("input", sim));
-window.addEventListener("resize", sim);
-setPerfil("mod");
-
-$("#form").addEventListener("submit", e => {
-  e.preventDefault();
-  const d = Object.fromEntries(new FormData(e.target));
-  const nv = CONFIG.niveles.find(q=>q.id===d.nivel), pf = CONFIG.perfiles.find(p=>p.id===d.perfil);
-  try{ const l = JSON.parse(localStorage.getItem("np-ahorro-espera")||"[]"); l.push({...d, fecha:new Date().toISOString()}); localStorage.setItem("np-ahorro-espera", JSON.stringify(l)); }catch(_){}
-  if(CONFIG.whatsapp){
-    const msg = `Hola NORTHPOINT, quiero apartar mi lugar en la app de ahorro.\nNombre: ${d.nombre}\nEmpezaría con: ${rango(nv)}\nPlan: ${pf.nombre}`;
-    window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`, "_blank");
-  }
-  $("#ok").style.display = "block"; e.target.reset(); setPerfil(state.perfil);
-});
-
-// estado de la mesa en vivo (hora del centro de México, lunes a viernes 7:30–14:00)
-(function(){
-  const el = document.getElementById("mesaLive"), d = document.getElementById("ldot"); if(!el) return;
-  const tick = () => {
-    const now = new Date(new Date().toLocaleString("en-US",{ timeZone:"America/Mexico_City" }));
-    const w = now.getDay(), m = now.getHours()*60 + now.getMinutes(), on = w>=1 && w<=5 && m>=450 && m<840;
-    const hh = String(now.getHours()).padStart(2,"0")+":"+String(now.getMinutes()).padStart(2,"0");
-    el.textContent = on ? `Mesa en sesión · ${hh} CDMX` : `Fuera de sesión · ${hh} CDMX · abre ${(w===5&&m>=840)||w===6?"el lunes":(w===0||m>=840)?"mañana":"hoy"} a las 7:30`;
-    d.classList.toggle("on", on);
-  };
-  tick(); setInterval(tick, 30000);
-})();
-
-// botón de la fundación: WhatsApp si ya está configurado
-(function(){ const b = document.getElementById("fundBtn"); if(b && CONFIG.whatsapp){ b.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent("Hola, quiero ayudar a la Fundación NORTHPOINT (niños con leucemia).")}`; b.target = "_blank"; } })();
-
-(function(){ const b = document.getElementById("privBtn"); if(b && CONFIG.whatsapp){ b.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent("Hola, me interesa NORTHPOINT Privado. Quiero agendar una conversación sobre invertir un capital.")}`; b.target = "_blank"; } })();
-
 // Fondos de las diapositivas 2–4 (auditoría PERF-01): se cargan después de la primera pintura,
 // en WebP cuando el navegador lo soporta y en versión -m (1100 px) en pantallas angostas.
 // La primera diapositiva no pasa por aquí: su fondo va en CSS (.bg-hero) y se adelanta con <link rel=preload>.
@@ -939,6 +629,16 @@ $("#form").addEventListener("submit", e => {
   setTimeout(set, 2500);   // por si la carga completa tarda más que el primer giro del carrusel
 })();
 
+
+// Agendar una sesión: la solicitud se manda por correo, al mismo buzón que la Sesión de Claridad del Family Office.
+// Cambiar aquí cuando exista el correo del grupo (hola@northpointcapital.io).
+const SESION_EMAIL = "andremacouzetruiz@gmail.com";
+document.getElementById("sesionForm").addEventListener("submit", e => {
+  e.preventDefault(); const d = Object.fromEntries(new FormData(e.target));
+  const body = `Nombre: ${d.nombre}\nContacto: ${d.contacto}\nMe interesa: ${d.interes}\n\nMensaje:\n${d.mensaje || "—"}\n`;
+  location.href = "mailto:" + SESION_EMAIL + "?subject=" + encodeURIComponent("NORTHPOINT · Agendar una sesión · " + d.interes) + "&body=" + encodeURIComponent(body);
+  document.getElementById("sesionOk").style.display = "block";
+});
 </script>
 <script src="assets/vendor/gsap.min.js"></script>
 <script src="assets/vendor/ScrollTrigger.min.js"></script>
