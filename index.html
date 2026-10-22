@@ -348,6 +348,27 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
 .perfil .cap{font-size:13px;color:var(--muted);margin:0;line-height:1.4}
 .pf-aviso{display:inline-block;margin-top:14px;font-size:13px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
 .pf-aviso:hover{color:var(--ink)}
+
+/* ── NORTHPOINT Trading (22-oct-2026): diapositiva, sección y ventana de la app (misma .ventana que trading.html) ── */
+.hs-trade .mac{width:100%}
+.hs.hs-trade .box{max-width:500px}   /* .hs-cien .box de anim.css carga después: hace falta más especificidad */
+@media(min-width:901px){.hs-trade .devs{right:max(150px,calc((100vw - 1280px)/2 + 150px))}}
+.tradesec{background:var(--navy);color:#fff}
+.tradesec .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:center}
+.tradesec .eyebrow,.tradesec .serif{color:#fff}
+.tradesec h2{margin:12px 0 20px}
+.tradesec .lead{opacity:.9}
+.tradesec ul{list-style:none;margin:28px 0 32px;border-top:1px solid rgba(255,255,255,.35)}
+.tradesec li{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.18);display:grid;grid-template-columns:200px 1fr;gap:16px;font-size:15px;color:rgba(255,255,255,.82)}
+.tradesec li b{font-weight:500;color:#fff}
+.tradesec .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.ventana{background:#0A1420;border:1px solid rgba(255,255,255,.14);box-shadow:0 50px 90px -40px rgba(0,0,0,.8)}
+.ventana .barra{display:flex;align-items:center;gap:6px;height:36px;padding:0 14px;border-bottom:1px solid rgba(255,255,255,.1);font:500 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.ventana .barra i{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.18)}
+.ventana .barra span{margin-left:10px}
+.ventana img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;display:block}
+@media(max-width:980px){.tradesec .grid{grid-template-columns:1fr;gap:40px}}
+@media(max-width:560px){.tradesec li{grid-template-columns:1fr;gap:4px}}
 </style>
 <link rel="stylesheet" href="anim.css?v=20261003a">
 <style>
@@ -378,7 +399,8 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
 <nav><div class="wrap">
   <a class="mark" href="#">NORTHPOINT</a>
   <div class="links">
-    <a href="#como">Cómo funciona</a><a href="#app">La app</a><a href="#perfiles">Planes</a><a href="#memos">Memos</a><a href="family-office.html">Family Office</a><a href="equipo.html">Equipo</a><a href="academia.html">Academia</a><a href="fundacion.html">Fundación</a>
+    <!-- nav mínima (Gregorio, 22-oct-2026): solo las secciones de la portada. Las demás páginas se llegan por el carrusel y el pie. -->
+    <a href="#como">Cómo funciona</a><a href="#app">La app</a><a href="#perfiles">Planes</a><a href="#memos">Memos</a>
     <a class="btn" href="#registro">Apartar lugar</a>
   </div>
 </div></nav>
@@ -401,26 +423,36 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
       <p class="lead">Sin mensualidades ni plazos forzosos. Abra su cuenta, elija su plan y vea en la app cómo trabaja su ahorro cada mes. Deposite más cuando quiera y retire cuando lo necesite.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="#registro">Apartar lugar</a><a class="btn line inv" href="#perfiles">Ver los planes</a></div>
     </div></div></div>
-    <div class="hs" data-i="2" data-href="memos.html"><div class="hs-bg" data-bg="img/mesa" style="background-position:center 55%"></div><div class="wrap"><div class="box">
+    <!-- TRADING (22-oct-2026): la app de escritorio de la mesa. Mockup de Mac (anim.css .devs/.mac) con la pantalla Log trade; fondo = estratos, ya cargado en la banda. -->
+    <div class="hs hs-cien hs-trade" data-i="2" data-href="trading.html"><div class="hs-bg" data-bg="img/estratos" style="background-position:center 40%"></div>
+      <div class="devs" aria-hidden="true">
+        <div class="mac"><div class="mac-scr"><picture><source type="image/webp" srcset="img/trading/log.webp"><img src="img/trading/log.jpg" width="1800" height="1125" alt="" decoding="async"></picture></div><div class="mac-base"></div></div>
+      </div><div class="wrap"><div class="box">
+      <div class="hs-k"><span>NORTHPOINT Trading</span><span class="hs-pill">Mac y Windows</span></div>
+      <h2 class="serif">El journal que anota cada trade solo.</h2>
+      <p class="lead">La app de escritorio de la mesa: detecta la operación, pide la emoción y la captura, y muestra los números honestos del mes.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="trading.html">Conocer la app</a><a class="btn line inv" href="trading.html#descargar">7 días gratis</a></div>
+    </div></div></div>
+    <div class="hs" data-i="3" data-href="memos.html"><div class="hs-bg" data-bg="img/mesa" style="background-position:center 55%"></div><div class="wrap"><div class="box">
       <div class="hs-k"><span>Memos de mercado</span><span class="hs-pill">Septiembre 2026</span></div>
       <h2 class="serif">Lo que la mesa pone por escrito.</h2>
       <p class="lead">Lecturas del mercado firmadas por los socios: la tesis, los niveles y lo que la invalida, antes de operar.</p>
       <a class="btn line inv" href="memos.html">Leer los memos</a>
     </div></div></div>
-    <div class="hs" data-i="3" data-href="family-office.html"><div class="hs-bg" data-bg="img/family-office" style="background-position:center 60%"></div><div class="wrap"><div class="box">
+    <div class="hs" data-i="4" data-href="family-office.html"><div class="hs-bg" data-bg="img/family-office" style="background-position:center 60%"></div><div class="wrap"><div class="box">
       <div class="hs-k"><span>NORTHPOINT Family Office</span></div>
       <h2 class="serif">La oficina privada de su patrimonio.</h2>
       <p class="lead">Inversiones, inmuebles, negocio, impuestos y herencia, con un solo equipo y una sola visión de largo plazo. Para familias que ya construyeron algo y quieren que dure.</p>
       <a class="btn line inv" href="family-office.html">Conocer el family office</a>
     </div></div></div>
-    <div class="hs hs-fund" data-i="4" data-href="fundacion.html"><div class="hs-bg" data-bg="img/fundacion-abierta" style="background-position:right 85%;inset:-1.5%"></div><div class="wrap"><div class="box">
+    <div class="hs hs-fund" data-i="5" data-href="fundacion.html"><div class="hs-bg" data-bg="img/fundacion-abierta" style="background-position:right 85%;inset:-1.5%"></div><div class="wrap"><div class="box">
       <div class="hs-k"><span>Fundación NORTHPOINT</span><span class="hs-pill">En formación</span></div>
       <h2 class="serif">Ningún niño debería enfrentar la leucemia sin su familia al lado.</h2>
       <p class="lead">Una parte de cada resultado de la mesa acompaña a familias de niños con leucemia durante su tratamiento.</p>
       <a class="btn line inv" href="fundacion.html">Conocer la fundación</a>
     </div></div></div>
     <!-- RONIN: la colección de André (studioamr/hakki). Imagen: pieza #002 «Silent Path» de THE LONE WANDERER. -->
-    <div class="hs" data-i="5" data-href="https://studioamr.github.io/hakki/"><div class="hs-bg" data-bg="img/ronin" style="background-position:center 62%"></div><div class="wrap"><div class="box">
+    <div class="hs" data-i="6" data-href="https://studioamr.github.io/hakki/"><div class="hs-bg" data-bg="img/ronin" style="background-position:center 62%"></div><div class="wrap"><div class="box">
       <div class="hs-k"><span>RONIN · 道</span><span class="hs-pill">Colección en Solana</span></div>
       <h2 class="serif">Sin maestro. Un camino.</h2>
       <p class="lead">Una colección de ronin. Elija el suyo o déjelo al destino.</p>
@@ -431,10 +463,11 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
   <div class="hs-index" aria-label="Divisiones de NORTHPOINT">
     <button data-i="0" class="on"><span>Ahorro</span><i><em></em></i></button>
     <button data-i="1"><span>Desde $100</span><i><em></em></i></button>
-    <button data-i="2"><span>Memos</span><i><em></em></i></button>
-    <button data-i="3"><span>Family Office</span><i><em></em></i></button>
-    <button data-i="4"><span>Fundación</span><i><em></em></i></button>
-    <button data-i="5"><span>Ronin</span><i><em></em></i></button>
+    <button data-i="2"><span>Trading</span><i><em></em></i></button>
+    <button data-i="3"><span>Memos</span><i><em></em></i></button>
+    <button data-i="4"><span>Family Office</span><i><em></em></i></button>
+    <button data-i="5"><span>Fundación</span><i><em></em></i></button>
+    <button data-i="6"><span>Ronin</span><i><em></em></i></button>
   </div>
   <div class="hs-arrows"><button type="button" data-d="-1" aria-label="Anterior">←</button><button type="button" data-d="1" aria-label="Siguiente">→</button></div>
   <button type="button" class="hs-pause" aria-pressed="false" aria-label="Pausar el carrusel"><svg class="pause" viewBox="0 0 12 12" aria-hidden="true"><rect x="1.5" y="1" width="3" height="10"/><rect x="7.5" y="1" width="3" height="10"/></svg><svg class="play" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1l8 5-8 5z"/></svg></button>
@@ -609,6 +642,22 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
   <p class="memo-nota">Los memos <b>no son asesoría financiera</b>.</p>
 </div></section>
 
+<!-- TRADING (22-oct-2026): la app de escritorio, promocionada después de los memos de la mesa. Copy corto e impersonal; la página completa es trading.html. -->
+<section class="tradesec" id="trading"><div class="wrap grid">
+  <div>
+    <div class="eyebrow">NORTHPOINT Trading</div>
+    <h2 class="serif">El journal que anota cada trade solo.</h2>
+    <p class="lead">La app de escritorio de la mesa, para Mac y Windows.</p>
+    <ul>
+      <li><b>Registro automático</b><span>Entradas y salidas de Exness, con la emoción y la captura de cada trade.</span></li>
+      <li><b>Bias de la mesa</b><span>Hacia dónde se inclina el equipo antes de cada sesión.</span></li>
+      <li><b>Reto ALPHA KAIZEN WAY</b><span>Seis meses con una meta para cada día.</span></li>
+    </ul>
+    <div class="ctas"><a class="btn" href="trading.html">Conocer la app</a><a class="btn line inv" href="trading.html#descargar">Descargar · 7 días gratis</a></div>
+  </div>
+  <div class="ventana"><div class="barra"><i></i><i></i><i></i><span>NORTHPOINT · Dashboard</span></div><picture><source type="image/webp" srcset="img/trading/dash.webp"><img src="img/trading/dash.jpg" width="1800" height="1125" alt="Dashboard de NORTHPOINT Trading: R del mes, win rate y curva de resultados" loading="lazy" decoding="async"></picture></div>
+</div></section>
+
 <section class="comp"><div class="wrap grid">
   <picture><source type="image/webp" srcset="img/ciudad.webp"><img src="img/ciudad.jpg" width="1400" height="781" alt="Ciudad de México al amanecer" loading="lazy" decoding="async"></picture>
   <div>
@@ -671,7 +720,7 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
   <p><b>NORTHPOINT no recibe ni custodia recursos de clientes y no es una institución de crédito.</b> Cada saldo vive en una cuenta a nombre de su titular en un intermediario regulado; la mesa opera con un mandato limitado, sin facultad de retiro.</p>
   <p>El rendimiento es variable, no está garantizado y puede ser negativo. Los rendimientos del simulador son supuestos elegidos por el usuario, no promesas ni resultados históricos. El freno de protección de cada plan se detalla en el contrato, se aplica al cierre de cada operación y puede rebasarse ante movimientos bruscos del mercado.</p>
   <p>Este sitio es una lista de espera y no constituye una oferta de inversión.</p>
-  <p class="mas-np" style="margin:22px 0 18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18)"><b style="color:#fff;font-weight:500">Más de NORTHPOINT</b> · <a href="terminal.html" style="color:#fff">Terminal</a> · <a href="northpoint-app.html" style="color:#fff">La app del Terminal</a> · <a href="family-office.html" style="color:#fff">Family Office</a> · <a href="oficina.html" style="color:#fff">La oficina</a> · <a href="memos.html" style="color:#fff">Memos</a> · <a href="socios.html" style="color:#fff">Socios</a> · <a href="newsletter.html" style="color:#fff">Newsletter</a> · <a href="kuro.html" style="color:#fff">Kuro</a></p>
+  <p class="mas-np" style="margin:22px 0 18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18)"><b style="color:#fff;font-weight:500">Más de NORTHPOINT</b> · <a href="trading.html" style="color:#fff">Trading Journal</a> · <a href="family-office.html" style="color:#fff">Family Office</a> · <a href="academia.html" style="color:#fff">Academia</a> · <a href="fundacion.html" style="color:#fff">Fundación</a> · <a href="terminal.html" style="color:#fff">Terminal</a> · <a href="northpoint-app.html" style="color:#fff">La app del Terminal</a> · <a href="oficina.html" style="color:#fff">La oficina</a> · <a href="memos.html" style="color:#fff">Memos</a> · <a href="socios.html" style="color:#fff">Socios</a> · <a href="newsletter.html" style="color:#fff">Newsletter</a> · <a href="kuro.html" style="color:#fff">Kuro</a></p>
   <p><a href="privacidad.html" style="color:#fff">Aviso de privacidad</a> · <a href="legal/terminos.html" style="color:#fff">Términos</a> · <a href="legal/riesgo.html" style="color:#fff">Aviso de riesgo</a> · <a href="#faq" style="color:#fff">Preguntas frecuentes</a> · <a href="equipo.html" style="color:#fff">El equipo</a></p>
 </div></footer>
 

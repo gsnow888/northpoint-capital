@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NORTHPOINT Trading · El journal que registra tus trades por ti</title>
+<meta name="description" content="Smart Trading Journal de NORTHPOINT: detecta tus trades, te pide emociones y captura, y te muestra tus números honestos. Bias de la mesa, comunidad, cursos y el reto ALPHA KAIZEN WAY. Mac y Windows, 7 días gratis.">
+<meta property="og:title" content="NORTHPOINT Trading · Tú operas. NORTHPOINT registra.">
+<meta property="og:description" content="El journal que anota tus trades solo. Mac y Windows, 7 días gratis.">
+<meta property="og:url" content="https://northpointcapital.io/trading.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://northpointcapital.io/img/trading/log.jpg">
+<link rel="canonical" href="https://northpointcapital.io/trading.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/fonts/ahorro/fonts.css">
+<link rel="stylesheet" href="base.css?v=1790996209">
+<link rel="stylesheet" href="anim.css?v=1790996209">
+<script>document.documentElement.classList.add("js-anim");setTimeout(function(){document.documentElement.classList.add("anim-ready")},3500)</script>
+<style>
+/* ── NORTHPOINT Trading (22-oct-2026). Contenido de la landing de André (studioamr/northpoint-trading)
+   vestido con el sistema de la portada: base.css + anim.css, navy/azul, Source Serif 4 + Public Sans. ── */
+
+/* cabecera */
+.thead{position:relative;overflow:hidden;background:radial-gradient(90% 80% at 75% 30%,#12324A 0%,#061A29 55%,#030D16 100%);color:#fff;padding:150px 0 96px}
+.thead .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:56px;align-items:center}
+.thead .eyebrow{color:rgba(255,255,255,.75)}
+.thead h1{color:#fff;font-size:clamp(40px,4.8vw,64px);margin:14px 0 18px}
+.thead .lead{color:#fff;opacity:.88;max-width:520px;margin-bottom:28px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.ok-list{display:flex;gap:18px;flex-wrap:wrap;margin-top:24px;list-style:none;font-size:14px;color:rgba(255,255,255,.75)}
+.ok-list li{display:flex;align-items:center;gap:8px}
+.ok-list li:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--cyan)}
+@media(max-width:980px){.thead{padding:130px 0 64px}.thead .wrap{grid-template-columns:1fr;gap:40px}}
+
+/* ventana de la app (marco oscuro con barra; el mismo en la portada) */
+.ventana{background:#0A1420;border:1px solid rgba(255,255,255,.14);box-shadow:0 50px 90px -40px rgba(0,0,0,.8)}
+.ventana .barra{display:flex;align-items:center;gap:6px;height:36px;padding:0 14px;border-bottom:1px solid rgba(255,255,255,.1);font:500 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.ventana .barra i{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.18)}
+.ventana .barra span{margin-left:10px}
+.ventana img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;display:block;transition:opacity .25s}
+.ventana img.fuera{opacity:0}   /* no usar .out: en base.css es el panel del simulador */
+.ventana.clara{box-shadow:0 40px 80px -40px rgba(5,28,44,.5);border-color:var(--line)}
+
+/* secciones */
+.gris{background:var(--gray)}
+.navy{background:var(--navy);color:#fff}
+.navy .eyebrow,.navy .serif{color:#fff}
+.navy .sec-head p{opacity:.85}
+.sec-head p{max-width:560px}
+
+/* galería por pestañas */
+.tabs{display:inline-flex;border:1px solid var(--line);margin-bottom:24px}
+.tabs button{background:none;border:0;border-right:1px solid var(--line);padding:12px 22px;min-height:44px;font:400 15px var(--sans);color:var(--ink);cursor:pointer;transition:background .2s,color .2s}
+.tabs button:last-child{border-right:0}
+.tabs button.on{background:var(--ink);color:#fff}
+.tabs button:hover:not(.on){background:#fff}
+.gal-cap{margin-top:18px;font-size:15px;color:var(--muted);max-width:72ch}
+.tabs button{white-space:nowrap}
+@media(max-width:560px){.tabs{display:grid;grid-template-columns:repeat(3,1fr);width:100%}.tabs button{padding:12px 6px;font-size:14px}}
+
+/* fichas (funciones, cursos) */
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.feat{background:#fff;padding:30px;border-top:3px solid var(--navy);transition:translate .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+.feat:hover{translate:0 -6px;box-shadow:0 24px 40px -24px rgba(5,28,44,.3);border-top-color:var(--blue)}
+.feat svg{width:36px;height:36px;color:var(--navy);margin-bottom:18px;display:block}
+.feat b{display:block;font:400 22px/1.3 var(--serif);color:var(--ink);margin-bottom:8px}
+.feat span{font-size:15px;line-height:1.6;color:var(--text)}
+@media(max-width:900px){.feats{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feats{grid-template-columns:1fr}}
+
+/* journal: dos columnas */
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.dos h3{font-size:clamp(24px,2.4vw,30px);margin:10px 0 12px}
+.dos .sub{font-size:16px;line-height:1.6}
+.tag{font:500 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.emos{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 26px}
+.emos span{font:500 12px var(--sans);letter-spacing:.06em;text-transform:uppercase;padding:7px 12px;border:1px solid var(--line);color:var(--muted)}
+.emos .bien{border-color:var(--gain);color:var(--gain)}   /* no usar .ok: base.css la oculta (mensaje del formulario) */
+.emos .mal{border-color:var(--loss);color:var(--loss)}
+.flujo{border-top:1px solid var(--ink)}
+.flujo div{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:16px;align-items:baseline}
+.flujo b{font:300 28px/1 var(--serif);color:var(--blue)}
+@media(max-width:900px){.dos{grid-template-columns:1fr;gap:40px}}
+
+/* filas de datos (4 o 3 columnas) */
+.datos{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:56px;border-top:1px solid var(--ink)}
+.datos.tres{grid-template-columns:repeat(3,1fr);margin-top:0}
+.datos div{padding-top:22px}
+.datos b{display:block;font:500 16px var(--sans);color:var(--ink);margin-bottom:6px}
+.datos span{font-size:15px;color:var(--text);line-height:1.6}
+.navy .datos{border-top-color:rgba(255,255,255,.4)}
+.navy .datos b{color:#fff}
+.navy .datos span{color:rgba(255,255,255,.8)}
+@media(max-width:900px){.datos,.datos.tres{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.datos,.datos.tres{grid-template-columns:1fr}}
+
+/* bias: la mesa y sus tres sesiones */
+.mesa-bias{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:22px 28px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.04);margin-bottom:24px}
+.mesa-bias b{font:300 30px var(--serif)}
+.mesa-bias span{font:500 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;opacity:.8}
+.ses{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.ses div{border:1px solid rgba(255,255,255,.18);padding:28px;transition:background .25s,border-color .25s}
+.ses div:hover{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.45)}
+.ses b{display:block;font:300 30px/1.1 var(--serif);margin-bottom:8px}
+.ses span{font-size:14px;opacity:.75}
+@media(max-width:700px){.ses{grid-template-columns:1fr}}
+
+/* cartas */
+.cartas{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.carta{position:relative;aspect-ratio:2/3;overflow:hidden;border:2px solid var(--rc);background:var(--navy)}
+.carta img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.carta:hover img{transform:scale(1.05)}
+.carta .inf{position:absolute;left:0;right:0;bottom:0;padding:28px 12px 10px;background:linear-gradient(transparent,rgba(5,28,44,.92));color:#fff}
+.carta .inf span{display:block;font:500 10px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--rc)}
+.carta .inf b{font:400 15px var(--serif)}
+.ley{display:flex;gap:22px;flex-wrap:wrap;margin-top:24px;font-size:14px;color:var(--muted)}
+.ley span{display:flex;align-items:center;gap:8px}
+.ley i{width:12px;height:12px;background:var(--c)}
+@media(max-width:900px){.cartas{grid-template-columns:repeat(3,1fr)}}
+
+/* cursos y sesiones en vivo */
+.cur{background:#fff;padding:36px;border-top:3px solid var(--navy);height:100%}
+.cur h3{margin:12px 0 10px}
+.cur ol,.cur ul{list-style:none;margin-top:22px;border-top:1px solid var(--ink)}
+.cur li{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}
+.cur li b{font-weight:500;color:var(--ink)}
+.cur.vivo .tag{display:inline-flex;align-items:center;gap:8px;color:var(--loss)}
+.cur.vivo .tag:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--loss);animation:ping 1.6s infinite}
+@media(max-width:560px){.cur li{grid-template-columns:1fr;gap:2px}}
+
+/* el reto */
+.reto-pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:0 32px;border-top:1px solid var(--ink)}
+.reto-paso{padding:28px 0 0}
+.reto-paso .n{font:500 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.reto-paso h3{font-size:clamp(22px,2.2vw,28px);margin:12px 0 6px}
+.reto-paso .r{font:300 clamp(28px,3vw,40px)/1.1 var(--serif);color:var(--ink);margin:0 0 14px;font-variant-numeric:tabular-nums}
+.reto-paso p{font-size:15px;line-height:1.6}
+.reto-paso ul{list-style:none;margin-top:16px}
+.reto-paso li{padding:8px 0;border-top:1px solid var(--line);font-size:14px;color:var(--text)}
+.reto-paso.meta .r{color:var(--blue)}
+.sem{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.sem div{border:1px solid var(--line);padding:18px 20px;background:#fff}
+.sem span{font:500 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.sem b{display:block;font:300 24px var(--serif);color:var(--ink);margin-top:6px;font-variant-numeric:tabular-nums}
+.meses{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:8px}
+.meses div{border-top:2px solid var(--line);padding-top:14px;min-height:92px}
+.meses span{font:500 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.meses b{display:block;font:300 26px var(--serif);color:var(--blue);margin-top:8px;font-variant-numeric:tabular-nums}
+.meses .hito{border-top-color:var(--blue)}
+.nota-reto{margin-top:32px;font-size:14px;color:var(--muted);max-width:70ch}
+.nota-reto b{color:var(--ink);font-weight:500}
+@media(max-width:900px){.reto-pasos{grid-template-columns:1fr}.reto-paso{padding:24px 0;border-bottom:1px solid var(--line)}.sem{grid-template-columns:1fr 1fr}.meses{grid-template-columns:repeat(3,1fr)}}
+
+/* la forja */
+.forja picture{display:block;margin-top:8px;border:1px solid rgba(255,255,255,.14)}
+.forja img{width:100%;height:auto;display:block}
+
+/* planes: .paquetes/.pq vienen de base.css */
+.pq .precio{font:300 44px/1 var(--serif);color:var(--ink);margin:18px 0 4px;font-variant-numeric:tabular-nums}
+.pq .precio small{font:300 15px var(--sans);color:var(--muted);margin-left:6px}
+.pq.dest .precio,.pq.dest .precio small{color:#fff}
+.pq .cap{font-size:15px;opacity:1;color:var(--text)}
+.pq.dest .cap{color:rgba(255,255,255,.85)}
+.pq li.no{color:var(--muted)}
+.pq li.no:before{content:"— ";}
+.pq .btn{margin-top:auto;text-align:center}
+.pq .eyebrow{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.pq .rec{font:500 11px var(--sans);letter-spacing:.1em;text-transform:uppercase;background:var(--blue);color:#fff;padding:4px 9px}
+.garan{display:flex;gap:28px;flex-wrap:wrap;margin-top:32px;font-size:14px;color:var(--muted)}
+.garan span{display:flex;align-items:center;gap:8px}
+.garan span:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue)}
+
+/* descargar */
+.dl .wrap{text-align:center;max-width:820px}
+.dl h2{margin:14px auto 28px}
+.dl .ctas{justify-content:center}
+.dl .fine{margin-top:22px;font-size:13px;opacity:.7;max-width:60ch;margin-left:auto;margin-right:auto}
+
+/* preguntas frecuentes (mismo componente que la portada) */
+.qas{border-top:1px solid var(--ink)}
+.qa{border-bottom:1px solid var(--line)}
+.qa summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;font:400 clamp(19px,1.9vw,24px)/1.35 var(--serif);color:var(--ink)}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary i{flex:0 0 20px;height:20px;position:relative}
+.qa summary i:before,.qa summary i:after{content:"";position:absolute;left:0;right:0;top:50%;height:1.5px;background:var(--blue);transition:transform .35s}
+.qa summary i:after{transform:rotate(90deg)}
+.qa[open] summary i:after{transform:rotate(0)}
+.qa summary:hover span{color:var(--blue)}
+.qa-a p{padding:0 48px 26px 0;font-size:17px;line-height:1.7;max-width:820px}
+
+.back{display:inline-flex;margin-top:28px;color:#fff;opacity:.75;text-decoration:none;font-size:14px}
+.back:hover{opacity:1}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+nav :focus-visible,.thead :focus-visible,.navy :focus-visible,footer :focus-visible,.pq.dest :focus-visible,.menu-panel :focus-visible{outline-color:#fff}
+.skip{position:absolute;left:16px;top:-80px;z-index:100;background:var(--blue);color:#fff;padding:12px 18px;font:500 15px var(--sans);text-decoration:none;transition:top .2s}
+.skip:focus{top:16px;outline:2px solid #fff;outline-offset:2px}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Ir al contenido</a>
+<nav><div class="wrap">
+  <a class="mark" href="index.html">NORTHPOINT<small>Trading</small></a>
+  <div class="links"><a href="#app">La app</a><a href="#incluye">Funciones</a><a href="#comunidad">Comunidad</a><a href="#cursos">Cursos</a><a href="#reto">El reto</a><a href="#planes">Planes</a><a href="index.html">NORTHPOINT</a><a class="btn" href="#descargar">Descargar</a></div>
+</div></nav>
+
+<header class="thead"><div class="wrap">
+  <div>
+    <div class="eyebrow">NORTHPOINT · Smart Trading Journal</div>
+    <h1 class="serif">Tú operas.<br>NORTHPOINT registra.</h1>
+    <p class="lead">El journal que anota tus trades solo.</p>
+    <div class="ctas"><a class="btn" href="#descargar">Pruébala gratis</a><a class="btn line inv" href="#app">Ver la app</a></div>
+    <ul class="ok-list"><li>7 días gratis</li><li>Mac y Windows</li><li>Cancela cuando quieras</li></ul>
+    <a class="back" href="index.html">← Volver a NORTHPOINT</a>
+  </div>
+  <div class="ventana"><div class="barra"><i></i><i></i><i></i><span>NORTHPOINT · Log trade</span></div>
+    <picture><source type="image/webp" srcset="img/trading/log.webp"><img src="img/trading/log.jpg" width="1800" height="1125" alt="Pantalla Log trade de NORTHPOINT: cada trade registrado con su emoción, duración y resultado en R" fetchpriority="high"></picture></div>
+</div></header>
+
+<main id="contenido">
+
+<section id="app"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">La app</div><h2 class="serif" style="margin-top:12px">Así se ve por dentro.</h2></div>
+    <p>Todo tu reto en una sola app: el registro de cada trade, tus números, tu calendario y tu avance.</p>
+  </div>
+  <div class="tabs" id="gaTabs" role="tablist" aria-label="Pantallas de la app"><button type="button" class="on" data-g="log" role="tab" aria-selected="true">Log trade</button><button type="button" data-g="dash" role="tab" aria-selected="false">Dashboard</button><button type="button" data-g="cal" role="tab" aria-selected="false">Calendario</button></div>
+  <div class="ventana clara"><div class="barra"><i></i><i></i><i></i><span id="gaTit">Log trade</span></div>
+    <picture><source id="gaSrc" type="image/webp" srcset="img/trading/log.webp"><img id="gaImg" src="img/trading/log.jpg" width="1800" height="1125" alt="Pantalla Log trade de NORTHPOINT" loading="lazy" decoding="async"></picture></div>
+  <p class="gal-cap" id="gaCap">Detecta tus trades, te pide emociones, motivo y captura, y te dice qué emociones te hacen ganar.</p>
+</div></section>
+
+<section class="gris" id="incluye"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Todo en una app</div><h2 class="serif" style="margin-top:12px">Lo que necesitas para operar mejor cada día.</h2></div>
+    <p>Registro automático, tus estadísticas, la comunidad y el entrenamiento, en el mismo lugar.</p>
+  </div>
+  <div class="feats">
+    <div class="feat"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="6" width="32" height="36" rx="2" stroke="currentColor" stroke-width="2.5" fill="none"/><path d="M15 16h18M15 24h18M15 32h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><b>Journal automático</b><span>Detecta tus trades y te pide emociones, motivo y captura. Tú solo operas.</span></div>
+    <div class="feat"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="16" cy="18" r="6" stroke="currentColor" stroke-width="2.5" fill="none"/><circle cx="32" cy="18" r="6" stroke="currentColor" stroke-width="2.5" fill="none"/><path d="M6 40c2-8 8-10 10-10s8 2 10 10M22 40c2-8 8-10 10-10s8 2 10 10" stroke="currentColor" stroke-width="2.5" fill="none"/></svg><b>Comunidad</b><span>Discord, ranking por balance real y el bias del equipo en cada sesión.</span></div>
+    <div class="feat"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 14l18-8 18 8-18 8z" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linejoin="round"/><path d="M14 18v12c0 3 4 6 10 6s10-3 10-6V18" stroke="currentColor" stroke-width="2.5" fill="none"/></svg><b>Cursos</b><span>Módulos en video: fundamentos, riesgo, psicología y fondeo.</span></div>
+    <div class="feat"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="10" width="36" height="24" rx="2" stroke="currentColor" stroke-width="2.5" fill="none"/><circle cx="24" cy="22" r="5" fill="currentColor"/><path d="M16 42h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><b>Sesiones en vivo</b><span>Ves el mercado con el equipo, preguntas en el momento y revisas tus trades.</span></div>
+    <div class="feat"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40L34 14M30 10l8 8M6 42l4-4" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="38" cy="10" r="3" fill="currentColor"/></svg><b>Reto incluido</b><span>ALPHA KAIZEN WAY: un reto de 6 meses con una meta para cada día, dentro de la app.</span></div>
+    <div class="feat"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 30Q24 4 42 30" stroke="currentColor" stroke-width="2.5" fill="none"/><path d="M14 34h20M18 40h12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><b>Tu katana</b><span>Te la entrega el herrero. Despierta 10 formas de respiración conforme avanzas.</span></div>
+  </div>
+</div></section>
+
+<section id="journal"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Smart Trading Journal</div><h2 class="serif" style="margin-top:12px">Cada trade, registrado con la cabeza fría.</h2></div>
+    <p>La app detecta tus trades de Exness. Al entrar y al salir te pide lo que importa: cómo te sientes, por qué entraste y la captura.</p>
+  </div>
+  <div class="dos">
+    <div>
+      <span class="tag">Log trade</span>
+      <h3 class="serif">Entrada y salida, en segundos.</h3>
+      <p class="sub">Emociones de riesgo en rojo, para que veas cuándo operas desde el FOMO o la prisa.</p>
+      <div class="emos" aria-label="Emociones que registra la app"><span class="bien">Tranquilo</span><span class="bien">Enfocado</span><span>Confiado</span><span class="mal">Con FOMO</span><span class="mal">Ansioso</span><span>Cansado</span><span class="mal">Con prisa</span></div>
+      <div class="flujo">
+        <div><b>01</b><span>Se detecta la entrada → emociones, por qué y captura</span></div>
+        <div><b>02</b><span>Se detecta la salida → ¿respetaste tu plan? y captura final</span></div>
+        <div><b>03</b><span>Todo queda en tu journal, con tu R y tu P&amp;L</span></div>
+      </div>
+    </div>
+    <div>
+      <span class="tag">Todo en un lugar</span>
+      <h3 class="serif">Tu trading, con números honestos.</h3>
+      <p class="sub" style="margin-bottom:22px">Dashboard, calendario, estadísticas por estrategia y la comunidad del equipo con ranking.</p>
+      <div class="ventana clara"><div class="barra"><i></i><i></i><i></i><span>NORTHPOINT · Dashboard</span></div>
+        <picture><source type="image/webp" srcset="img/trading/dash-resumen.webp"><img src="img/trading/dash-resumen.jpg" width="1290" height="1000" alt="Dashboard de NORTHPOINT: R del mes, win rate, expectancy, curva y disciplina" loading="lazy" decoding="async" style="aspect-ratio:1290/1000"></picture></div>
+    </div>
+  </div>
+  <div class="datos">
+    <div><b>Exness en vivo</b><span>Tus cuentas y trades entran solos</span></div>
+    <div><b>Mercado</b><span>Calendario económico y volatilidad por hora</span></div>
+    <div><b>Comunidad</b><span>Ranking y trades del equipo</span></div>
+    <div><b>100% local</b><span>Tus datos en tu computadora</span></div>
+  </div>
+</div></section>
+
+<section class="gris" id="tecnico"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Lo técnico</div><h2 class="serif" style="margin-top:12px">Hecha para tu escritorio.</h2></div>
+    <p>Entras al trade y el journal se abre solo: reloj, P&amp;L en vivo y tu registro. Cierras y queda guardado con tus emociones y tu captura.</p>
+  </div>
+  <div class="datos tres">
+    <div><b>Mac y Windows</b><span>App nativa. Se instala en un minuto y se actualiza sola.</span></div>
+    <div><b>Detección automática</b><span>Conecta tu cuenta de Exness y tus entradas y salidas se registran solas.</span></div>
+    <div><b>Tus datos son tuyos</b><span>Tus trades y capturas se guardan en tu computadora, no en un servidor ajeno.</span></div>
+    <div><b>Capturas en un pegado</b><span>⌘V o Ctrl+V y tu gráfica queda dentro del trade.</span></div>
+    <div><b>Ligera</b><span>Corre fluida aunque tengas tu plataforma abierta al mismo tiempo.</span></div>
+    <div><b>Español e inglés</b><span>Cambias de idioma desde Configuración.</span></div>
+  </div>
+</div></section>
+
+<section class="navy" id="bias"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Bias</div><h2 class="serif" style="margin-top:12px">Toros contra osos. Opera con la mesa.</h2></div>
+    <p>Antes de cada sesión, el equipo sube su bias: captura, dirección y análisis. Ves en vivo hacia dónde se inclina la mesa y qué espera cada quien.</p>
+  </div>
+  <div class="mesa-bias"><b>Longs only</b><span>3 toros · 0 osos</span></div>
+  <div class="ses">
+    <div><b>Asia</b><span>18:00 NY · su propia mesa</span></div>
+    <div><b>Londres</b><span>3:00 NY · su propia mesa</span></div>
+    <div><b>New York</b><span>9:30 NY · su propia mesa</span></div>
+  </div>
+</div></section>
+
+<section id="comunidad"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Comunidad</div><h2 class="serif" style="margin-top:12px">No operes solo.</h2></div>
+    <p>Tu equipo en la app y en Discord: ranking por balance real, trades compartidos y análisis diario de la mesa.</p>
+  </div>
+  <div class="datos tres">
+    <div><b>Ranking</b><span>Por balance real de Exness, sin inventos</span></div>
+    <div><b>Discord NORTHPOINT</b><span>Análisis, anuncios, lives y trades del equipo</span></div>
+    <div><b>Análisis a la mesa</b><span>Lo que el equipo publica en Discord aparece en el Bias</span></div>
+    <div><b>Mercado en vivo</b><span>Calendario económico, noticias y lives</span></div>
+    <div><b>Volatilidad por hora</b><span>Cuándo se mueve el NQ y el ES</span></div>
+    <div><b>Revisión del día</b><span>Lo que dijo cada uno contra lo que operó</span></div>
+  </div>
+</div></section>
+
+<section class="gris" id="cartas"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Premios</div><h2 class="serif" style="margin-top:12px">La disciplina se colecciona.</h2></div>
+    <p>Dentro de los retos, cada objetivo cumplido te da una carta. 30 en 4 rarezas.</p>
+  </div>
+  <div class="cartas">
+    <div class="carta" style="--rc:#ffc93d"><picture><source type="image/webp" srcset="img/trading/cartas/spec-wrath.webp"><img src="img/trading/cartas/spec-wrath.jpg" width="400" height="600" alt="Carta Ira" loading="lazy" decoding="async"></picture><div class="inf"><span>Legendaria</span><b>Ira</b></div></div>
+    <div class="carta" style="--rc:#c06bff"><picture><source type="image/webp" srcset="img/trading/cartas/summit.webp"><img src="img/trading/cartas/summit.jpg" width="400" height="600" alt="Carta Summit" loading="lazy" decoding="async"></picture><div class="inf"><span>Épica</span><b>Summit</b></div></div>
+    <div class="carta" style="--rc:#4fa3ff"><picture><source type="image/webp" srcset="img/trading/cartas/sakura-rain.webp"><img src="img/trading/cartas/sakura-rain.jpg" width="400" height="600" alt="Carta Sakura Rain" loading="lazy" decoding="async"></picture><div class="inf"><span>Rara</span><b>Sakura Rain</b></div></div>
+    <div class="carta" style="--rc:#ffc93d"><picture><source type="image/webp" srcset="img/trading/cartas/spec-pride.webp"><img src="img/trading/cartas/spec-pride.jpg" width="400" height="600" alt="Carta Orgullo" loading="lazy" decoding="async"></picture><div class="inf"><span>Legendaria</span><b>Orgullo</b></div></div>
+    <div class="carta" style="--rc:#c06bff"><picture><source type="image/webp" srcset="img/trading/cartas/the-duel.webp"><img src="img/trading/cartas/the-duel.jpg" width="400" height="600" alt="Carta The Duel" loading="lazy" decoding="async"></picture><div class="inf"><span>Épica</span><b>The Duel</b></div></div>
+    <div class="carta" style="--rc:#4fa3ff"><picture><source type="image/webp" srcset="img/trading/cartas/first-light.webp"><img src="img/trading/cartas/first-light.jpg" width="400" height="600" alt="Carta First Light" loading="lazy" decoding="async"></picture><div class="inf"><span>Rara</span><b>First Light</b></div></div>
+    <div class="carta" style="--rc:#c06bff"><picture><source type="image/webp" srcset="img/trading/cartas/cosmos-walk.webp"><img src="img/trading/cartas/cosmos-walk.jpg" width="400" height="600" alt="Carta Cosmos Walk" loading="lazy" decoding="async"></picture><div class="inf"><span>Épica</span><b>Cosmos Walk</b></div></div>
+    <div class="carta" style="--rc:#ffc93d"><picture><source type="image/webp" srcset="img/trading/cartas/spec-envy.webp"><img src="img/trading/cartas/spec-envy.jpg" width="400" height="600" alt="Carta Envidia" loading="lazy" decoding="async"></picture><div class="inf"><span>Legendaria</span><b>Envidia</b></div></div>
+    <div class="carta" style="--rc:#4fa3ff"><picture><source type="image/webp" srcset="img/trading/cartas/wanderer.webp"><img src="img/trading/cartas/wanderer.jpg" width="400" height="600" alt="Carta Wanderer" loading="lazy" decoding="async"></picture><div class="inf"><span>Rara</span><b>Wanderer</b></div></div>
+    <div class="carta" style="--rc:#c06bff"><picture><source type="image/webp" srcset="img/trading/cartas/above-clouds.webp"><img src="img/trading/cartas/above-clouds.jpg" width="400" height="600" alt="Carta Above Clouds" loading="lazy" decoding="async"></picture><div class="inf"><span>Épica</span><b>Above Clouds</b></div></div>
+    <div class="carta" style="--rc:#ffc93d"><picture><source type="image/webp" srcset="img/trading/cartas/spec-greed.webp"><img src="img/trading/cartas/spec-greed.jpg" width="400" height="600" alt="Carta Codicia" loading="lazy" decoding="async"></picture><div class="inf"><span>Legendaria</span><b>Codicia</b></div></div>
+    <div class="carta" style="--rc:#c06bff"><picture><source type="image/webp" srcset="img/trading/cartas/seventh-fall.webp"><img src="img/trading/cartas/seventh-fall.jpg" width="400" height="600" alt="Carta Seventh Fall" loading="lazy" decoding="async"></picture><div class="inf"><span>Épica</span><b>Seventh Fall</b></div></div>
+  </div>
+  <div class="ley"><span style="--c:#9fb3c8"><i></i>Común</span><span style="--c:#4fa3ff"><i></i>Rara</span><span style="--c:#c06bff"><i></i>Épica</span><span style="--c:#ffc93d"><i></i>Legendaria</span></div>
+</div></section>
+
+<section id="cursos"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Cursos · En vivo</div><h2 class="serif" style="margin-top:12px">Aprende con el equipo. Opera con el equipo.</h2></div>
+    <p>Cursos a tu ritmo y sesiones en vivo dentro de la comunidad NORTHPOINT. Lo que aprendes lo registras en tu journal el mismo día.</p>
+  </div>
+  <div class="dos">
+    <div class="cur"><span class="tag">Cursos</span><h3 class="serif">De cero a tu primera cuenta fondeada</h3><p class="sub">Módulos cortos, en video, que ves cuando quieras y en el orden que quieras.</p>
+      <ol><li><b>Fundamentos</b><span>Cómo se mueve el mercado y cómo leer una gráfica</span></li><li><b>Riesgo</b><span>Tamaño de posición y cómo proteger tu cuenta</span></li><li><b>Psicología</b><span>Emociones, rachas y disciplina</span></li><li><b>Fondeo</b><span>Cómo pasar una evaluación y cobrar</span></li><li><b>Tu journal</b><span>Sacarle el máximo a NORTHPOINT</span></li></ol></div>
+    <div class="cur vivo"><span class="tag">En vivo</span><h3 class="serif">Sesiones con el equipo</h3><p class="sub">Entras a la sala, ves el mercado con nosotros y preguntas en el momento.</p>
+      <ul><li><b>Antes de la apertura</b><span>Qué vigilar en la sesión</span></li><li><b>Mercado en vivo</b><span>Lectura en tiempo real, con chat</span></li><li><b>Revisión</b><span>Repasamos trades del día, con sus registros</span></li><li><b>Preguntas</b><span>Resuelve tus dudas directo con el equipo</span></li></ul></div>
+  </div>
+</div></section>
+
+<section class="gris" id="reto"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Incluido · ALPHA KAIZEN WAY</div><h2 class="serif" style="margin-top:12px">Y si quieres un reto, la app te lo lleva.</h2></div>
+    <p>Kaizen es mejorar un poco cada día. Aquí se mide: cada día tiene un objetivo, cada semana una meta y cada mes un hito.</p>
+  </div>
+  <div class="reto-pasos">
+    <div class="reto-paso"><span class="n">Paso 1</span><h3 class="serif">Doblar cada semana</h3><div class="r">$100 → $1,000</div><p>Cuatro semanas con una meta clara cada semana y un objetivo para cada día.</p><ul><li>Objetivo del día, siempre a la vista</li><li>Tu avance semana por semana</li><li>Cartas al cumplir</li></ul></div>
+    <div class="reto-paso"><span class="n">Paso 2</span><h3 class="serif">Construir la cuenta</h3><div class="r">$1,000 → $15,000</div><p>Se desbloquea al llegar a $1,000. Reglas fijas que la app te recuerda en cada trade.</p><ul><li>Riesgo calculado por la app</li><li>Tus reglas en cada registro</li><li>Hitos rumbo a $15,000</li></ul></div>
+    <div class="reto-paso meta"><span class="n">La meta</span><h3 class="serif">Cuenta live</h3><div class="r">$15,000</div><p>Seis meses de semanas limpias. La app lleva el camino semana por semana para que nunca pierdas de vista dónde vas.</p><ul><li>26 semanas, mes por mes</li><li>Hitos en $1k, $5k, $10k y $15k</li><li>Fecha meta desde el día que empiezas</li></ul></div>
+  </div>
+  <div class="sem"><div><span>Semana 1</span><b>$100 → $200</b></div><div><span>Semana 2</span><b>$200 → $400</b></div><div><span>Semana 3</span><b>$400 → $800</b></div><div><span>Semana 4</span><b>$800 → $1,000</b></div></div>
+  <div class="sec-head" style="margin:72px 0 32px">
+    <div><div class="eyebrow">6 meses</div><h2 class="serif" style="margin-top:12px">El camino, semana por semana.</h2></div>
+    <p>Eliges el día en que empiezas y la app arma tus 26 semanas. Siempre sabes en qué semana del mes vas.</p>
+  </div>
+  <div class="meses"><div class="hito"><span>Mes 1</span><b>$1,000</b></div><div class="hito"><span>Mes 2</span><b>$5,000</b></div><div><span>Mes 3</span></div><div class="hito"><span>Mes 4</span><b>$10,000</b></div><div><span>Mes 5</span></div><div class="hito"><span>Mes 6</span><b>$15,000</b></div></div>
+  <p class="nota-reto">Las cifras del reto son <b>metas de disciplina, no promesas de rendimiento</b>. El resultado depende de cómo operes.</p>
+</div></section>
+
+<section class="navy forja" id="forja"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">La forja · El camino</div><h2 class="serif" style="margin-top:12px">Tu reto tiene historia.</h2></div>
+    <p>Al empezar ALPHA KAIZEN WAY llega el herrero y te entrega tu katana. Al tocarla se enciende de un color, y ese color dice qué tipo de trader eres.</p>
+  </div>
+  <picture><source type="image/webp" srcset="img/trading/katana.webp"><img src="img/trading/katana.jpg" width="1710" height="280" alt="Tu katana en la app: Respiración del agua, forma V de diez, Danza del retroceso" loading="lazy" decoding="async"></picture>
+</div></section>
+
+<section class="paquetes-sec" id="planes"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Planes</div><h2 class="serif" style="margin-top:12px">Elige tu plan.</h2></div>
+    <p>7 días gratis en la app. Después, un pago mensual. Cancelas cuando quieras.</p>
+  </div>
+  <div class="paquetes">
+    <div class="pq"><div class="eyebrow">Starter</div><div class="precio">$9<small>USD / mes</small></div><p class="cap">Tu journal, ordenado y con números.</p>
+      <ul><li>Journal y Log trade ilimitados</li><li>Dashboard y calendario</li><li>1 cuenta conectada</li><li>Mercado en vivo</li><li class="no">Bias y comunidad</li><li class="no">Retos ALPHA KAIZEN WAY</li></ul>
+      <a class="btn line" href="#descargar">Probar 7 días gratis</a></div>
+    <div class="pq dest"><div class="eyebrow">Pro <span class="rec">Recomendado</span></div><div class="precio">$19<small>USD / mes</small></div><p class="cap">Todo NORTHPOINT: journal, comunidad, bias y retos.</p>
+      <ul><li>Todo lo de Starter</li><li>Todas tus cuentas conectadas</li><li>Bias por sesión: Asia, Londres y NY</li><li>Comunidad y Discord NORTHPOINT</li><li>Ranking del equipo</li><li>Retos ALPHA KAIZEN WAY</li></ul>
+      <a class="btn" href="#descargar">Probar 7 días gratis</a></div>
+    <div class="pq"><div class="eyebrow">Mesa</div><div class="precio">$49<small>USD / mes</small></div><p class="cap">Para oficinas y equipos de trading.</p>
+      <ul><li>Todo lo de Pro</li><li>Hasta 5 traders</li><li>Mesa privada con ranking</li><li>Soporte directo</li></ul>
+      <a class="btn line" href="#descargar">Probar 7 días gratis</a></div>
+  </div>
+  <div class="garan"><span>7 días gratis</span><span>Cancelas en un clic</span><span>Tus datos se quedan en tu computadora</span></div>
+</div></section>
+
+<section class="navy dl" id="descargar"><div class="wrap">
+  <div class="eyebrow">ALPHA KAIZEN WAY</div>
+  <h2 class="serif">Instala la app y empieza tus 7 días gratis.</h2>
+  <div class="ctas"><a class="btn" id="dlMac" href="https://studioamr.github.io/northpoint-trading/descargas/NORTHPOINT-Mac.dmg">Descargar para Mac</a><a class="btn line inv" id="dlWin" href="https://github.com/studioamr/northpoint-trading/releases/latest/download/NORTHPOINT-Windows-Instalador.exe">Descargar para Windows</a></div>
+  <p class="fine">Mac: si dice que no se puede abrir, clic derecho → Abrir. Windows: si aparece el aviso azul, «Más información» → «Ejecutar de todas formas».</p>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Preguntas</div><h2 class="serif" style="margin-top:12px">Lo que más nos preguntan.</h2></div>
+  </div>
+  <div class="qas">
+    <details class="qa"><summary><span>¿Qué incluye NORTHPOINT?</span><i></i></summary><div class="qa-a"><p>Journal con detección automática de trades, Log trade con emociones y capturas, Bias del equipo por sesión, comunidad con ranking, mercado en vivo y los retos ALPHA KAIZEN WAY.</p></div></details>
+    <details class="qa"><summary><span>¿Los retos garantizan resultados?</span><i></i></summary><div class="qa-a"><p>No. Son retos de disciplina con objetivos medibles. El resultado depende de cómo operes; la app te ayuda a medir y a respetar tus reglas.</p></div></details>
+    <details class="qa"><summary><span>¿Con qué broker funciona?</span><i></i></summary><div class="qa-a"><p>Exness entra en vivo: cuentas, saldo y trades. También puedes registrar cualquier trade a mano con Log trade.</p></div></details>
+    <details class="qa"><summary><span>¿Cómo se ganan las cartas?</span><i></i></summary><div class="qa-a"><p>Cumpliendo objetivos: el del día, la semana doblada, el mes completo y los hitos de tu cuenta. La rareza depende del objetivo.</p></div></details>
+    <details class="qa"><summary><span>¿Dónde quedan mis datos?</span><i></i></summary><div class="qa-a"><p>En tu computadora. Solo lo que decides compartir con la comunidad (tu bias y tus resultados) viaja al equipo.</p></div></details>
+    <details class="qa"><summary><span>¿Cómo cancelo?</span><i></i></summary><div class="qa-a"><p>Desde el correo de tu suscripción, en un clic. La app sigue funcionando hasta el final del periodo pagado.</p></div></details>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <span class="mark">NORTHPOINT<small>Trading</small></span>
+  <p><b>NORTHPOINT Trading es una herramienta de registro y análisis. No es asesoría financiera.</b> Operar futuros, forex y CFDs conlleva un riesgo alto de pérdida. Las metas de los retos son objetivos de disciplina, no promesas de rendimiento.</p>
+  <p><a href="index.html" style="color:#fff">← Volver a NORTHPOINT</a> · <a href="privacidad.html" style="color:#fff">Aviso de privacidad</a> · <a href="equipo.html" style="color:#fff">El equipo</a></p>
+</div></footer>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="anim.js?v=1790996209"></script>
+<script src="menu.js?v=1790996209"></script>
+<script>
+// galería por pestañas: rota sola cada 7 s; al elegir una, espera otros 7 s y sigue
+(() => {
+  const T = { log: ["Log trade", "Detecta tus trades, te pide emociones, motivo y captura, y te dice qué emociones te hacen ganar.", "Pantalla Log trade de NORTHPOINT"],
+              dash: ["Dashboard", "Tus números del mes: R, win rate, expectancy, curva y disciplina, sin hacer cuentas.", "Dashboard de NORTHPOINT"],
+              cal: ["Calendario", "Cada día en verde o en rojo, con sus trades. Ves tu mes de un vistazo.", "Calendario de NORTHPOINT"] };
+  const img = document.getElementById("gaImg"), src = document.getElementById("gaSrc"), tabs = [...document.querySelectorAll("#gaTabs button")];
+  if(!img) return;
+  const ks = Object.keys(T); let k = 0, tm = null;
+  const ir = g => { tabs.forEach(b => { const on = b.dataset.g === g; b.classList.toggle("on", on); b.setAttribute("aria-selected", on); });
+    img.classList.add("fuera");
+    setTimeout(() => { src.srcset = "img/trading/" + g + ".webp"; img.src = "img/trading/" + g + ".jpg"; img.alt = T[g][2]; img.onload = () => img.classList.remove("fuera"); }, 250);
+    document.getElementById("gaTit").textContent = "NORTHPOINT · " + T[g][0]; document.getElementById("gaCap").textContent = T[g][1]; k = ks.indexOf(g); };
+  const auto = () => { clearInterval(tm); tm = setInterval(() => { if(document.hidden) return; ir(ks[(k + 1) % ks.length]); }, 7000); };
+  tabs.forEach(b => b.addEventListener("click", () => { ir(b.dataset.g); auto(); }));
+  if(!matchMedia("(prefers-reduced-motion: reduce)").matches) auto();
+})();
+// en Windows, el botón principal es el instalador de Windows
+(() => { if(!/Windows/i.test(navigator.userAgent)) return; const w = document.getElementById("dlWin"), m = document.getElementById("dlMac"); if(!w || !m) return;
+  w.className = "btn"; m.className = "btn line inv"; w.parentNode.prepend(w); })();
+// entrada de la cabecera (como en equipo.html)
+if(window.gsap && !matchMedia("(prefers-reduced-motion: reduce)").matches){
+  gsap.from(".thead .wrap > div:first-child > *", { y: 40, opacity: 0, stagger: .1, duration: 1, ease: "power3.out" });
+  gsap.from(".thead .ventana", { y: 60, opacity: 0, duration: 1.2, delay: .3, ease: "power3.out" });
+  document.querySelectorAll(".feat, .carta, .pq, .cur, .ses div, .reto-paso").forEach((el, i) => {
+    gsap.from(el, { y: 40, opacity: 0, duration: .9, delay: (i % 6) * .06, ease: "power3.out", scrollTrigger: { trigger: el, start: "top 88%", once: true } });
+  });
+}
+</script>
+</body>
+</html>
