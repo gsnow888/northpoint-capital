@@ -390,7 +390,7 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
 @media(max-width:560px){.rubros-grid{grid-template-columns:1fr}}
 .fundsec .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .fundsec h2{margin:12px 0 20px}
-.fundsec img{width:100%;height:auto;aspect-ratio:16/11;object-fit:cover;object-position:100% center;background:var(--navy)}   /* el niño está en el borde derecho de la foto */
+.fundsec img{width:100%;height:auto;aspect-ratio:16/11;object-fit:cover;object-position:center;background:var(--navy)}
 @media(max-width:900px){.fundsec .grid{grid-template-columns:1fr;gap:32px}}
 .sesion .link{color:#fff}
 .sesion textarea{border:0;border-bottom:1px solid var(--ink);background:transparent;padding:10px 0;font:300 17px var(--sans);color:var(--ink);resize:vertical;border-radius:0}
@@ -471,10 +471,10 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
       <p class="lead">Inversiones, inmuebles, negocio, impuestos y herencia, con un solo equipo y una sola visión de largo plazo. Para familias que ya construyeron algo y quieren que dure.</p>
       <a class="btn line inv" href="family-office.html">Conocer el family office</a>
     </div></div></div>
-    <div class="hs hs-fund" data-i="5" data-href="fundacion.html"><div class="hs-bg" data-bg="img/fundacion-abierta" style="background-position:right 85%;inset:-1.5%"></div><div class="wrap"><div class="box">
+    <div class="hs" data-i="5" data-href="fundacion.html"><div class="hs-bg" data-bg="img/fundacion-mar" style="background-position:center 55%"></div><div class="wrap"><div class="box">
       <div class="hs-k"><span>Fundación NORTHPOINT</span><span class="hs-pill">En formación</span></div>
-      <h2 class="serif">Ningún niño debería enfrentar la leucemia sin su familia al lado.</h2>
-      <p class="lead">Una parte de cada resultado de la mesa acompaña a familias de niños con leucemia durante su tratamiento.</p>
+      <h2 class="serif">Rescatar el mar es rescatarnos.</h2>
+      <p class="lead">Una parte de cada resultado de la mesa financia el rescate del mar y la investigación oceánica en las costas de México.</p>
       <a class="btn line inv" href="fundacion.html">Conocer la fundación</a>
     </div></div></div>
     <!-- NORTHPOINT CITIES (22-oct-2026): solo tarjeta, sin enlace, bajo las Reglas de verdad (estudio conceptual, sin predio). Imagen = captura del estudio conceptual de anthropos-cities. -->
@@ -509,9 +509,21 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
 </header>
 
 <main id="contenido">
-<section class="intro"><div class="wrap">
-  <p class="lead serif" style="font-weight:300">Creemos que el progreso se construye con disciplina y se comparte. Por eso cada proyecto de NORTHPOINT aporta al mismo fin, y una parte de cada resultado acompaña a la Fundación.</p>
-  <p class="lead">Reglas escritas, riesgo definido antes de operar y resultados que se pueden ver. Así se construye algo que dure.</p>
+<!-- Introducción institucional + valores (Gregorio, 22-oct-2026). Los valores usan .pasos/.paso de base.css. -->
+<section class="intro" id="quienes"><div class="wrap">
+  <div class="eyebrow">Quiénes somos</div>
+  <p class="lead serif" style="font-weight:300;margin-top:16px">NORTHPOINT es un grupo con sede en Morelia, México, que reúne proyectos de inversión, patrimonio, tecnología, educación, ciudades y filantropía bajo una misma dirección y un mismo propósito: que el progreso llegue a más personas y que lo construido perdure.</p>
+  <p class="lead">Operamos con reglas escritas, riesgo definido antes de cada decisión y resultados que se pueden verificar. Así entendemos la gestión profesional.</p>
+  <div class="sec-head" style="margin:80px 0 48px">
+    <div><div class="eyebrow">Nuestros valores</div><h2 class="serif" style="margin-top:12px">Lo que no negociamos.</h2></div>
+    <p>Cuatro principios que rigen cada proyecto del grupo, del ahorro de cien dólares a una ciudad.</p>
+  </div>
+  <div class="pasos">
+    <div class="paso"><div class="n">01</div><h3>Disciplina</h3><p>El riesgo se define antes de cada operación y toda regla queda por escrito.</p></div>
+    <div class="paso"><div class="n">02</div><h3>Transparencia</h3><p>Cada operación, cada resultado y cada peso de la Fundación, a la vista.</p></div>
+    <div class="paso"><div class="n">03</div><h3>Paciencia</h3><p>Trabajamos con horizonte de décadas. Lo que dura se construye despacio.</p></div>
+    <div class="paso"><div class="n">04</div><h3>Propósito</h3><p>Una parte de cada resultado vuelve a la comunidad y al mar. El progreso se comparte.</p></div>
+  </div>
 </div></section>
 
 <section class="rubros" id="proyectos"><div class="wrap">
@@ -525,7 +537,7 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
     <a class="rubro" href="trading.html"><picture><source type="image/webp" srcset="img/trading/dash.webp"><img src="img/trading/dash.jpg" width="1800" height="1125" alt="Dashboard del Trading Journal" loading="lazy" decoding="async"></picture><div class="rubro-t"><span class="tipo">Tecnología</span><h3 class="serif">Trading Journal</h3><p>La app de escritorio que anota cada trade solo. Mac y Windows, 7 días gratis.</p><span class="link">Conocer la app</span></div></a>
     <a class="rubro" href="academia.html"><picture><source type="image/webp" srcset="img/academia.webp"><img src="img/academia.jpg" width="1536" height="1536" alt="Academia NORTHPOINT" loading="lazy" decoding="async"></picture><div class="rubro-t"><span class="tipo">Educación</span><h3 class="serif">Academia</h3><p>Aprenda a operar como nuestra mesa. Clases a su ritmo y programas con certificado.</p><span class="link">Ver las clases</span></div></a>
     <div class="rubro sin"><picture><source type="image/webp" srcset="img/cities.webp"><img src="img/cities.jpg" width="1440" height="650" alt="Estudio conceptual de un distrito de Northpoint Cities" loading="lazy" decoding="async"></picture><div class="rubro-t"><span class="tipo">Ciudades</span><h3 class="serif">Northpoint Cities</h3><span class="ec">Imagen: estudio conceptual.</span><p>Un distrito concebido desde cero para la era de la inteligencia artificial. Sin predio elegido todavía.</p><span class="pill">En estudio</span></div></div>
-    <a class="rubro" href="fundacion.html"><picture><source type="image/webp" srcset="img/fundacion-abierta.webp"><img src="img/fundacion-abierta.jpg" width="1600" height="1067" alt="Fundación NORTHPOINT" loading="lazy" decoding="async" style="object-position:100% center"></picture><div class="rubro-t"><span class="tipo">Filantropía</span><h3 class="serif">Fundación NORTHPOINT</h3><p>Ningún niño debería enfrentar la leucemia sin su familia al lado. En formación.</p><span class="link">Conocer la fundación</span></div></a>
+    <a class="rubro" href="fundacion.html"><picture><source type="image/webp" srcset="img/fundacion-ciencia.webp"><img src="img/fundacion-ciencia.jpg" width="1344" height="752" alt="Bióloga marina tomando una muestra de agua al amanecer" loading="lazy" decoding="async"></picture><div class="rubro-t"><span class="tipo">Filantropía</span><h3 class="serif">Fundación NORTHPOINT</h3><p>Rescate del mar e investigación oceánica en las costas de México. En formación.</p><span class="link">Conocer la fundación</span></div></a>
   </div>
 </div></section>
 
@@ -538,11 +550,11 @@ nav :focus-visible,.hero :focus-visible,.banda :focus-visible,.registro :focus-v
 <section class="fundsec" id="fundacion"><div class="wrap grid">
   <div>
     <div class="eyebrow">Brazo filantrópico · En formación</div>
-    <h2 class="serif">Una parte de cada resultado acompaña a una familia.</h2>
-    <p class="lead">La Fundación NORTHPOINT acompaña a familias de niños con leucemia para que ningún tratamiento se interrumpa por falta de recursos, de transporte o de un lugar dónde quedarse.</p>
+    <h2 class="serif">Una parte de cada resultado vuelve al mar.</h2>
+    <p class="lead">La Fundación NORTHPOINT nace para financiar el rescate de ecosistemas marinos y la investigación oceánica: limpieza de costas, restauración de arrecifes y ciencia abierta sobre el mar que nos sostiene.</p>
     <a class="btn" href="fundacion.html" style="margin-top:28px">Conocer la fundación</a>
   </div>
-  <picture><source type="image/webp" srcset="img/fundacion-abierta.webp"><img src="img/fundacion-abierta.jpg" width="1600" height="1067" alt="Fundación NORTHPOINT" loading="lazy" decoding="async"></picture>
+  <picture><source type="image/webp" srcset="img/fundacion-ciencia.webp"><img src="img/fundacion-ciencia.jpg" width="1344" height="752" alt="Bióloga marina tomando una muestra de agua al amanecer" loading="lazy" decoding="async"></picture>
 </div></section>
 
 <section class="gente" id="gente"><div class="wrap">
