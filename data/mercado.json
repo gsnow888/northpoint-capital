@@ -55,355 +55,355 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29454.0,
-   "cambio": -268.5,
-   "pct": -0.9
+   "precio": 29354.25,
+   "cambio": -368.25,
+   "pct": -1.24
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7717.25,
-   "cambio": -17.25,
-   "pct": -0.22
+   "precio": 7697.5,
+   "cambio": -37.0,
+   "pct": -0.48
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4098.6,
-   "cambio": -61.5,
-   "pct": -1.48
+   "precio": 4065.1,
+   "cambio": -95.0,
+   "pct": -2.28
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 99.52,
-   "cambio": -4.14,
-   "pct": -3.99
+   "precio": 98.73,
+   "cambio": -4.93,
+   "pct": -4.76
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2767.7,
-   "cambio": 25.4,
-   "pct": 0.93
+   "precio": 2780.0,
+   "cambio": 37.7,
+   "pct": 1.37
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52694.0,
-   "cambio": 512.0,
-   "pct": 0.98
+   "precio": 52775.0,
+   "cambio": 593.0,
+   "pct": 1.14
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81730.0,
-   "cambio": -100.0,
-   "pct": -0.12
+   "precio": 81675.0,
+   "cambio": -155.0,
+   "pct": -0.19
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 158.59,
-   "pct": 0.58,
+   "precio": 156.25,
+   "pct": -1.3,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 710.72,
-   "pct": 0.47,
+   "precio": 701.09,
+   "pct": -1.18,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 379.15,
-   "pct": 0.6,
+   "precio": 374.16,
+   "pct": -1.13,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 84.0,
-   "pct": 0.5,
+   "precio": 82.64,
+   "pct": -1.43,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 725.2,
-   "pct": -0.51,
+   "precio": 708.43,
+   "pct": -2.69,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 773.09,
-   "pct": 0.45,
+   "precio": 762.62,
+   "pct": -1.19,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 70.75,
+   "precio": 71.17,
    "pct": 0.5,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 34.66,
-   "pct": 2.82,
+   "precio": 35.05,
+   "pct": 2.79,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 91.49,
-   "pct": 1.26,
+   "precio": 92.08,
+   "pct": 0.71,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 77.68,
-   "pct": -1.22,
+   "precio": 75.56,
+   "pct": -3.23,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 378.95,
-   "pct": 0.79,
+   "precio": 371.45,
+   "pct": -2.94,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 47.84,
-   "pct": 3.46,
+   "precio": 46.22,
+   "pct": -0.79,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 343.99,
-   "pct": 0.3,
+   "precio": 343.0,
+   "pct": 0.29,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 532.95,
-   "pct": -0.14,
+   "precio": 523.44,
+   "pct": -2.97,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 221.97,
-   "pct": 0.3,
+   "precio": 214.28,
+   "pct": -1.36,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 334.76,
-   "pct": -3.7,
+   "precio": 326.93,
+   "pct": -6.38,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 262.37,
-   "pct": 3.26,
+   "precio": 252.22,
+   "pct": -1.0,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 697.52,
-   "pct": -5.43,
+   "precio": 651.93,
+   "pct": -11.51,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 386.47,
-   "pct": 5.26,
+   "precio": 385.94,
+   "pct": 6.48,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 538.99,
-   "pct": 2.4,
+   "precio": 545.14,
+   "pct": 3.7,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 998.31,
-   "pct": 1.66,
+   "precio": 1008.94,
+   "pct": 3.16,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 335.19,
-   "pct": -0.03,
+   "precio": 334.27,
+   "pct": -0.38,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 407.85,
-   "pct": 4.19,
+   "precio": 410.08,
+   "pct": 2.59,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 417.0,
-   "pct": 5.4,
+   "precio": 423.13,
+   "pct": 4.05,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "A top strategist has a warning for retail investors chasing the AI rally",
-   "url": "https://www.marketwatch.com/story/top-hsbc-strategist-has-a-warning-for-retail-investors-chasing-the-ai-rally-e0318ada?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 09:07:00 GMT"
-  },
-  {
-   "titulo": "Why a JPMorgan strategist says the stock market’s tailspin might have run its course",
-   "url": "https://www.marketwatch.com/story/why-a-jpmorgan-strategist-says-the-stock-markets-tailspin-might-have-run-its-course-71571335?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 09:04:00 GMT"
-  },
-  {
-   "titulo": "Football legend Peyton Manning has invested millions in real estate, including 2 Denver homes",
-   "url": "https://www.marketwatch.com/story/football-legend-peyton-manning-has-invested-millions-in-real-estate-including-2-denver-homes-2c4e355f?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 09:03:00 GMT"
-  },
-  {
-   "titulo": "World's largest wealth fund posts $30 billion loss after bond market turbulence",
-   "url": "https://www.cnbc.com/2026/10/22/norges-bank-nbim-wealth-fund-q3-results.html",
+   "titulo": "California's Proposition 40: What voters need to know about billionaire wealth tax battle",
+   "url": "https://www.cnbc.com/2026/10/22/california-proposition-40-billionaire-tax-wealth.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 08:49:18 GMT"
+   "fecha": "Thu, 22 Oct 2026 14:38:14 GMT"
   },
   {
-   "titulo": "Why a global bank is slashing thousands of jobs — and what the Fed says about AI replacing workers",
-   "url": "https://www.marketwatch.com/story/why-a-global-bank-is-slashing-thousands-of-jobs-and-what-the-fed-says-about-ai-replacing-workers-9529b6ca?mod=mw_rss_topstories",
+   "titulo": "Moderna is about to release the trial results for its cancer vaccine. A lot is riding on this data.",
+   "url": "https://www.marketwatch.com/story/moderna-is-about-to-release-the-trial-results-for-its-cancer-vaccine-a-lot-is-riding-on-this-data-ccbf8c9c?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 08:47:00 GMT"
+   "fecha": "Thu, 22 Oct 2026 14:37:00 GMT"
   },
   {
-   "titulo": "Tesla’s stock falls as Elon Musk leaves investors wanting more",
-   "url": "https://www.marketwatch.com/story/teslas-stock-falls-as-elon-musk-leaves-investors-wanting-more-eb347f38?mod=mw_rss_topstories",
+   "titulo": "Virginia state Sen. L. Louise Lucas, a Trump critic, charged in marijuana racketeering case",
+   "url": "https://www.cnbc.com/2026/10/22/lucas-trump-virginia-marijuana-racketeering.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 14:36:02 GMT"
+  },
+  {
+   "titulo": "We have a $300,000 mortgage with a 2.75% interest rate. I want to pay it off. My husband says I’m crazy. Who’s right?",
+   "url": "https://www.marketwatch.com/story/we-have-a-300-000-mortgage-with-a-2-75-interest-rate-i-want-to-pay-it-off-my-husband-says-im-crazy-whos-right-4ed15226?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 08:46:00 GMT"
+   "fecha": "Thu, 22 Oct 2026 14:30:00 GMT"
   },
   {
-   "titulo": "Brent crude tops $112 on Middle East worries as U.S., Israel reportedly weigh fresh Iran strikes",
-   "url": "https://www.cnbc.com/2026/10/22/oil-prices-today-wti-brent-saudi-arabia.html",
+   "titulo": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
+   "url": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 08:24:42 GMT"
+   "fecha": "Thu, 22 Oct 2026 14:28:10 GMT"
   },
   {
-   "titulo": "Barclays to slash 5,000 jobs in AI efficiency push",
-   "url": "https://www.cnbc.com/2026/10/22/barclays-ai-jobs-cuts.html",
+   "titulo": "France protests: Macron condemns 'stupid' comments from Trump, others as bond market pressure builds",
+   "url": "https://www.cnbc.com/2026/10/22/macron-trump-france-protests.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 08:17:07 GMT"
-  },
-  {
-   "titulo": "U.S. pulls diplomats from Saudi Arabia as it reportedly readies Iran strikes after midterms",
-   "url": "https://www.cnbc.com/2026/10/22/us-iran-trump-hormuz-.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 04:35:54 GMT"
+   "fecha": "Thu, 22 Oct 2026 14:21:56 GMT"
   },
   {
    "titulo": "My father-in-law, 81, sold his $75,000 home and paid off his daughter’s $50,000 debt. What happens to him now?",
    "url": "https://www.marketwatch.com/story/my-father-in-law-81-sold-his-75-000-home-and-paid-off-his-daughters-50-000-debt-what-happens-to-him-now-60e8fc72?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 03:15:00 GMT"
+   "fecha": "Thu, 22 Oct 2026 14:15:00 GMT"
   },
   {
-   "titulo": "The Social Security Administration wants more babies signed up for ‘Trump accounts.’ But there’s still a catch.",
-   "url": "https://www.marketwatch.com/story/the-social-security-administration-wants-more-babies-signed-up-for-trump-accounts-but-theres-still-a-catch-4096f16e?mod=mw_rss_topstories",
+   "titulo": "Blackstone's Jon Gray says CoreWeave can 'find a way through' financing pressure",
+   "url": "https://www.cnbc.com/2026/10/22/blackstone-jon-gray-coreweave-financing.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 14:11:14 GMT"
+  },
+  {
+   "titulo": "American Airlines forecasts bigger loss in 2026 on fuel spike, plans to slow growth next year",
+   "url": "https://www.cnbc.com/2026/10/22/american-airlines-aal-q3-2026-earnings.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 14:00:17 GMT"
+  },
+  {
+   "titulo": "I’m 58 and hate annuities. How can I get dependable income in retirement?",
+   "url": "https://www.marketwatch.com/story/im-58-and-hate-annuities-how-can-i-get-dependable-income-in-retirement-cd6040f4?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 01:50:00 GMT"
+   "fecha": "Thu, 22 Oct 2026 14:00:00 GMT"
   },
   {
-   "titulo": "James Talarico fires back at Elon Musk in Texas Senate race feud",
-   "url": "https://www.cnbc.com/2026/10/22/james-talarico-elon-musk-ken-paxton-texas-senate-race.html",
+   "titulo": "Trump’s tariffs loom over Maine Senate race between Collins and Jackson",
+   "url": "https://www.cnbc.com/2026/10/22/maine-senate-election-trump-tariffs.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 01:21:10 GMT"
+   "fecha": "Thu, 22 Oct 2026 13:53:23 GMT"
   },
   {
-   "titulo": "Critical web security flaws spark global alarm as Google, OpenAI and Amazon respond",
-   "url": "https://www.cnbc.com/2026/10/22/php-google-openai-and-amazon-cyber.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 01:05:15 GMT"
-  },
-  {
-   "titulo": "This wonky maneuver kept Mark Zuckerberg from fleeing a California billionaire tax",
-   "url": "https://www.marketwatch.com/story/this-wonky-maneuver-kept-mark-zuckerberg-from-fleeing-a-california-billionaire-tax-1de34562?mod=mw_rss_topstories",
+   "titulo": "The 3 questions every AI investor needs to ask right now",
+   "url": "https://www.marketwatch.com/story/the-3-questions-every-ai-investor-needs-to-ask-right-now-2d9399b9?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 00:48:00 GMT"
+   "fecha": "Thu, 22 Oct 2026 13:21:00 GMT"
   },
   {
-   "titulo": "Meta’s stock rises as investors glimpse an opportunity that could dwarf the ad business",
-   "url": "https://www.marketwatch.com/story/metas-stock-rises-as-investors-glimpse-an-opportunity-that-could-dwarf-the-ad-business-89369c6c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 21 Oct 2026 23:07:00 GMT"
-  },
-  {
-   "titulo": "CoreWeave’s market confidence erodes as bond yields spike and stock sinks",
-   "url": "https://www.cnbc.com/2026/10/21/coreweaves-market-confidence-erodes-as-bond-yields-spike-stock-sinks.html",
+   "titulo": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
+   "url": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 22:50:35 GMT"
+   "fecha": "Thu, 22 Oct 2026 13:18:36 GMT"
   },
   {
-   "titulo": "IBM beats on top and bottom lines as CEO Krishna touts 'Super Intelligence' traction",
-   "url": "https://www.cnbc.com/2026/10/21/ibm-q3-earnings-report-2026.html",
+   "titulo": "Nvidia's Jensen Huang says he sees no sign of a 2029 memory glut: 'You can always use more'",
+   "url": "https://www.cnbc.com/2026/10/22/jensen-huang-nvidia-memory-selloff-shortage.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 22:03:37 GMT"
-  },
-  {
-   "titulo": "Trump denies ordering Starlink slowdown in Ukraine, says he doesn't know who did",
-   "url": "https://www.cnbc.com/2026/10/21/trump-starlink-ukraine-elon-musk.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 21:48:02 GMT"
-  },
-  {
-   "titulo": "Why investors should be skeptical of a potential Tesla-SpaceX merger",
-   "url": "https://www.marketwatch.com/story/why-investors-should-be-skeptical-of-a-potential-tesla-spacex-merger-9e119d32?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 21 Oct 2026 21:44:00 GMT"
+   "fecha": "Thu, 22 Oct 2026 13:12:38 GMT"
   },
   {
    "titulo": "Southwest Airlines cuts 2026 profit forecast on higher fuel",
    "url": "https://www.cnbc.com/2026/10/21/southwest-airlines-luv-3q-2026-earnings.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 21:07:11 GMT"
+   "fecha": "Thu, 22 Oct 2026 12:42:01 GMT"
   },
   {
-   "titulo": "BlackRock's Rick Rieder sees 'historic' opportunity in high-quality bonds",
-   "url": "https://www.cnbc.com/2026/10/21/rick-rieder-investment-grade-bonds.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 19:54:16 GMT"
+   "titulo": "Markets are pricing in long-term AI winners. This veteran investor says history proves customers win more than innovators.",
+   "url": "https://www.marketwatch.com/story/markets-are-pricing-in-long-term-ai-winners-this-veteran-investor-says-history-proves-customers-win-more-than-innovators-f7043439?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 22 Oct 2026 12:40:00 GMT"
   },
   {
-   "titulo": "How Ukraine’s drone strikes on Russia crippled the world’s second-largest diesel supplier",
-   "url": "https://www.cnbc.com/2026/10/21/ukraine-russia-drone-diesel-refinery-trump-putin-zelenskyy.html",
+   "titulo": "Why governments pulled websites offline over the decades-old PHP programming language",
+   "url": "https://www.cnbc.com/2026/10/22/php2shell-vulnerability-what-is-it-and-is-your-data-at-risk.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 21 Oct 2026 17:27:34 GMT"
+   "fecha": "Thu, 22 Oct 2026 12:35:08 GMT"
+  },
+  {
+   "titulo": "Oil is now flowing out of the Persian Gulf like before the Iran war. Why prices may still not come down anytime soon.",
+   "url": "https://www.marketwatch.com/story/oil-is-now-flowing-out-of-the-persian-gulf-like-before-the-iran-war-why-prices-may-still-not-come-down-anytime-soon-56df2f48?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 22 Oct 2026 12:35:00 GMT"
+  },
+  {
+   "titulo": "IBM’s stock falls as investors struggle to shake off July earnings miss",
+   "url": "https://www.marketwatch.com/story/ibms-stock-falls-as-investors-struggle-to-shake-off-july-earnings-miss-0969b9e3?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 22 Oct 2026 12:04:00 GMT"
+  },
+  {
+   "titulo": "Why this JPMorgan strategist thinks the stock market’s tailspin might have run its course",
+   "url": "https://www.marketwatch.com/story/why-a-jpmorgan-strategist-says-the-stock-markets-tailspin-might-have-run-its-course-71571335?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 22 Oct 2026 11:57:00 GMT"
+  },
+  {
+   "titulo": "Mideast oil exports are recovering. Fresh attacks in Saudi Arabia show risks remain.",
+   "url": "https://www.marketwatch.com/story/mideast-oil-exports-are-recovering-fresh-attacks-in-saudi-arabia-show-risks-remain-1473391a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 22 Oct 2026 11:35:00 GMT"
+  },
+  {
+   "titulo": "Nvidia CEO Jensen Huang says neocloud demand is 'off the charts' but capital is scarce",
+   "url": "https://www.cnbc.com/2026/10/22/nvidia-jensen-huang-neocloud-demand-capital.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 10:49:16 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-22T09:20:39Z",
+ "ts": "2026-10-22T14:39:12Z",
  "fallas": [
   "videos",
   "directos"
