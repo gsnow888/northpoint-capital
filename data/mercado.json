@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29121.75,
-   "cambio": -600.75,
-   "pct": -2.02
+   "precio": 29158.0,
+   "cambio": -564.5,
+   "pct": -1.9
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7702.0,
-   "cambio": -32.5,
-   "pct": -0.42
+   "precio": 7697.0,
+   "cambio": -37.5,
+   "pct": -0.48
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4033.6,
-   "cambio": -126.5,
-   "pct": -3.04
+   "precio": 4036.9,
+   "cambio": -123.2,
+   "pct": -2.96
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 99.25,
-   "cambio": -4.41,
-   "pct": -4.25
+   "precio": 100.43,
+   "cambio": -3.23,
+   "pct": -3.12
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2793.8,
-   "cambio": 51.5,
-   "pct": 1.88
+   "precio": 2792.3,
+   "cambio": 50.0,
+   "pct": 1.82
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 53052.0,
-   "cambio": 870.0,
-   "pct": 1.67
+   "precio": 52911.0,
+   "cambio": 729.0,
+   "pct": 1.4
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81310.0,
-   "cambio": -520.0,
-   "pct": -0.64
+   "precio": 81625.0,
+   "cambio": -205.0,
+   "pct": -0.25
   }
  ],
  "acciones": [
@@ -274,10 +274,22 @@
  ],
  "noticias": [
   {
-   "titulo": "Japan core inflation in September surges to its highest this year at 2.1%",
-   "url": "https://www.cnbc.com/2026/10/23/japan-inflation-september-highest-in-2026.html",
+   "titulo": "SK Hynix shares rebound after initial drop on scrapped Solidigm IPO plans",
+   "url": "https://www.cnbc.com/2026/10/23/sk-hynix-solidigm-ipo-.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 23 Oct 2026 00:24:59 GMT"
+   "fecha": "Fri, 23 Oct 2026 05:01:31 GMT"
+  },
+  {
+   "titulo": "Wealthy Chinese move offshore money to U.S. banks as Beijing’s tax net widens",
+   "url": "https://www.cnbc.com/2026/10/23/wealthy-chinese-tax-offshore-trusts-capital-control-.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 04:55:59 GMT"
+  },
+  {
+   "titulo": "SpaceX records $561 million investment gain from stake in Elon Musk's Boring Co.",
+   "url": "https://www.cnbc.com/2026/10/22/spacex-records-561-million-investment-gain-from-stake-in-boring-co.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 00:46:09 GMT"
   },
   {
    "titulo": "Etsy bans AI-generated recipes and patterns from its online marketplace",
@@ -302,12 +314,6 @@
    "url": "https://www.marketwatch.com/story/coreweave-set-off-a-wave-of-anxiety-but-wall-streets-dire-prognosis-is-premature-edc3f5dd?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 22 Oct 2026 22:54:00 GMT"
-  },
-  {
-   "titulo": "Meta’s deal to keep Zuckerberg in California adds fuel to wealth tax debate ahead of election",
-   "url": "https://www.cnbc.com/2026/10/22/meta-mark-zuckerberg-california-billionaire-tax.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 22:21:08 GMT"
   },
   {
    "titulo": "The U.S. stock market is fracturing into two camps, and it’s leaving investors with a brutal case of whiplash",
@@ -364,12 +370,6 @@
    "fecha": "Thu, 22 Oct 2026 20:44:26 GMT"
   },
   {
-   "titulo": "OpenAI nears up to $30 billion funding round at $1.25 trillion valuation led by UAE investors",
-   "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 20:41:37 GMT"
-  },
-  {
    "titulo": "Trump defends Ramaswamy ad with Acton's estranged mom after bipartisan criticism",
    "url": "https://www.cnbc.com/2026/10/22/trump-ramaswamy-ad-acton-mother-ad.html",
    "fuente": "CNBC",
@@ -382,22 +382,22 @@
    "fecha": "Thu, 22 Oct 2026 20:14:00 GMT"
   },
   {
+   "titulo": "10-year Treasury yield tumbles below 5% to lowest level in nearly a month",
+   "url": "https://www.cnbc.com/2026/10/22/treasurys-bonds-ai-yields.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 20:05:13 GMT"
+  },
+  {
+   "titulo": "Meta stock sinks nearly 7% as AI spend pushes free cash flow negative",
+   "url": "https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 20:03:03 GMT"
+  },
+  {
    "titulo": "Is getting a wedding band from Quince a bad idea? It’s a third of the price of a local jeweler.",
    "url": "https://www.marketwatch.com/story/is-getting-a-wedding-band-from-quince-a-bad-idea-its-a-third-of-the-price-fa89c9b2?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 22 Oct 2026 19:25:00 GMT"
-  },
-  {
-   "titulo": "Musk's clash with Ukraine accelerates demand for Starlink alternatives. Few exist",
-   "url": "https://www.cnbc.com/2026/10/22/elon-musk-ukraine-starlink-alternatives.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 18:55:38 GMT"
-  },
-  {
-   "titulo": "Bill Ackman says 2027 will be an amazing year for stocks as wars, inflation ease",
-   "url": "https://www.cnbc.com/2026/10/22/bill-ackman-talks-meta-and-markets-with-cnbc.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 17:53:08 GMT"
   },
   {
    "titulo": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-23T00:43:50Z",
+ "ts": "2026-10-23T05:49:03Z",
  "fallas": [
   "videos",
   "directos"
