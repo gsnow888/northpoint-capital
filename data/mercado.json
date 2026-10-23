@@ -55,108 +55,108 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29130.0,
-   "cambio": -592.5,
-   "pct": -1.99
+   "precio": 29175.0,
+   "cambio": -547.5,
+   "pct": -1.84
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7664.0,
-   "cambio": -70.5,
-   "pct": -0.91
+   "precio": 7672.5,
+   "cambio": -62.0,
+   "pct": -0.8
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4012.4,
-   "cambio": -147.7,
-   "pct": -3.55
+   "precio": 4010.0,
+   "cambio": -150.1,
+   "pct": -3.61
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 103.82,
-   "cambio": 0.16,
-   "pct": 0.15
+   "precio": 103.44,
+   "cambio": -0.22,
+   "pct": -0.21
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2787.9,
-   "cambio": 45.6,
-   "pct": 1.66
+   "precio": 2788.7,
+   "cambio": 46.4,
+   "pct": 1.69
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52439.0,
-   "cambio": 257.0,
-   "pct": 0.49
+   "precio": 52451.0,
+   "cambio": 269.0,
+   "pct": 0.52
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81275.0,
-   "cambio": -555.0,
-   "pct": -0.68
+   "precio": 81100.0,
+   "cambio": -730.0,
+   "pct": -0.89
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 155.91,
-   "pct": -0.58,
+   "precio": 155.9,
+   "pct": -0.59,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 698.79,
-   "pct": -0.4,
+   "precio": 698.58,
+   "pct": -0.43,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 373.2,
-   "pct": -0.23,
+   "precio": 373.01,
+   "pct": -0.28,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 82.5,
-   "pct": -1.11,
+   "precio": 82.53,
+   "pct": -1.08,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 704.57,
-   "pct": -0.74,
+   "precio": 704.4,
+   "pct": -0.76,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 760.32,
-   "pct": -0.38,
+   "precio": 759.97,
+   "pct": -0.43,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 71.19,
-   "pct": 0.53,
+   "precio": 71.2,
+   "pct": 0.54,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
    "precio": 35.27,
-   "pct": 2.69,
+   "pct": 2.68,
    "moneda": "USD"
   },
   {
@@ -169,127 +169,211 @@
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 75.67,
-   "pct": -1.46,
+   "precio": 75.74,
+   "pct": -1.37,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 366.57,
-   "pct": -4.04,
+   "precio": 366.61,
+   "pct": -4.03,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 45.98,
-   "pct": -0.36,
+   "precio": 45.96,
+   "pct": -0.41,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 347.72,
+   "precio": 347.73,
    "pct": 1.24,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 524.52,
+   "precio": 524.51,
    "pct": -0.86,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 211.69,
-   "pct": -1.14,
+   "precio": 210.96,
+   "pct": -1.48,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 320.55,
-   "pct": -5.88,
+   "precio": 320.21,
+   "pct": -5.98,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 247.99,
+   "precio": 248.0,
    "pct": -0.8,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 641.47,
-   "pct": -9.57,
+   "precio": 642.62,
+   "pct": -9.4,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 372.8,
-   "pct": 5.1,
+   "precio": 372.22,
+   "pct": 4.93,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 542.07,
-   "pct": 1.89,
+   "precio": 542.19,
+   "pct": 1.91,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 1003.75,
-   "pct": 1.48,
+   "precio": 1003.32,
+   "pct": 1.44,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 332.33,
-   "pct": -2.17,
+   "precio": 331.58,
+   "pct": -2.4,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 407.75,
-   "pct": 1.28,
+   "precio": 407.92,
+   "pct": 1.32,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 417.78,
-   "pct": 4.07,
+   "precio": 418.09,
+   "pct": 4.15,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "Musk's SpaceX is still restricting Starlink in Ukraine and the toll is rising",
-   "url": "https://www.cnbc.com/2026/10/23/ukraine-says-starlink-restrictions-remain-despite-trump-assurances.html",
+   "titulo": "Moody's holds steady on France's credit rating as country grapples with turmoil and higher yields",
+   "url": "https://www.cnbc.com/2026/10/23/moodys-holds-steady-on-frances-credit-rating-as-country-grapples-with-turmoil-and-higher-yields.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 23 Oct 2026 19:50:26 GMT"
+   "fecha": "Fri, 23 Oct 2026 22:49:42 GMT"
   },
   {
-   "titulo": "Even the wealthy increasingly want all-inclusive resorts",
-   "url": "https://www.marketwatch.com/story/even-the-wealthy-increasingly-want-all-inclusive-resorts-118caa9b?mod=mw_rss_topstories",
+   "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life. Is that so bad?",
+   "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Fri, 23 Oct 2026 19:49:00 GMT"
+   "fecha": "Fri, 23 Oct 2026 22:49:00 GMT"
+  },
+  {
+   "titulo": "Trump's executive order targets mortgage insurance, refinance costs. What it means for borrowers",
+   "url": "https://www.cnbc.com/2026/10/23/trump-mortgage-executive-order-costs.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 22:27:06 GMT"
+  },
+  {
+   "titulo": "Will Anthropic pull off a November IPO? Time is running out to file key paperwork.",
+   "url": "https://www.marketwatch.com/story/will-anthropic-pull-off-a-november-ipo-time-is-running-out-to-file-key-paperwork-52677343?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 22:00:00 GMT"
+  },
+  {
+   "titulo": "Investors piled a record sum into a leveraged semiconductor ETF last week. Things didn’t work out.",
+   "url": "https://www.marketwatch.com/story/investors-piled-a-record-sum-into-a-leveraged-semiconductor-etf-last-week-things-didnt-work-out-4680b2f3?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 21:46:00 GMT"
+  },
+  {
+   "titulo": "Trump dropping some Canada tariffs but 'replacing' them with other products",
+   "url": "https://www.cnbc.com/2026/10/23/trump-tariffs-canada-susan-collins.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 21:26:59 GMT"
+  },
+  {
+   "titulo": "This hot AI-fueled stock has been in a rut. It just beat earnings expectations by 36%.",
+   "url": "https://www.marketwatch.com/story/this-hot-ai-fueled-stock-has-been-in-a-rut-it-just-beat-earnings-expectations-by-36-4a4188cb?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 21:13:00 GMT"
+  },
+  {
+   "titulo": "The mobile ambitions of SpaceX are hitting telecom stocks again. Here’s what the latest developments mean.",
+   "url": "https://www.marketwatch.com/story/the-mobile-ambitions-of-spacex-see-telecom-stocks-get-hit-again-what-the-latest-developments-mean-9a4159b5?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 21:11:00 GMT"
+  },
+  {
+   "titulo": "The real test for Moderna’s cancer vaccine isn’t about beating Keytruda. It’s keeping cancer from coming back in the long term.",
+   "url": "https://www.marketwatch.com/story/the-real-test-for-modernas-cancer-vaccine-isnt-about-beating-keytruda-its-keeping-cancer-from-coming-back-in-the-long-term-da9af99f?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 21:06:00 GMT"
+  },
+  {
+   "titulo": "In hunt for Starlink alternative, Ukraine partners with Nokia and satellite maker ICEYE",
+   "url": "https://www.cnbc.com/2026/10/23/ukraine-partners-with-nokia-and-iceye-for-starlink-alternative.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 20:52:23 GMT"
+  },
+  {
+   "titulo": "Some Republicans are opposing Trump on tariffs. Maine’s Susan Collins just got him to back down on Canadian levies.",
+   "url": "https://www.marketwatch.com/story/some-republicans-are-opposing-trump-on-tariffs-maines-susan-collins-just-got-him-to-back-down-on-canadian-levies-02b202ae?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 20:50:00 GMT"
+  },
+  {
+   "titulo": "The U.S. economy is great by this measure, and the good times aren’t over. So why are Americans so sour?",
+   "url": "https://www.marketwatch.com/story/the-u-s-economy-is-great-by-this-measure-and-the-good-times-arent-over-so-why-are-americans-so-sour-4be897db?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 20:19:00 GMT"
+  },
+  {
+   "titulo": "Oil markets are on edge ahead of the weekend, as midterm elections near and fresh U.S. strikes on Iran are predicted",
+   "url": "https://www.marketwatch.com/story/oil-markets-are-on-edge-ahead-of-the-weekend-as-midterm-elections-near-and-fresh-u-s-strikes-on-iran-are-predicted-8c27e634?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 20:19:00 GMT"
   },
   {
    "titulo": "Investors are starting to find opportunities in the battered bond market",
    "url": "https://www.cnbc.com/2026/10/23/investors-are-starting-to-find-opportunities-in-the-battered-bond-market.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 23 Oct 2026 19:31:12 GMT"
+   "fecha": "Fri, 23 Oct 2026 20:09:36 GMT"
+  },
+  {
+   "titulo": "Scalpers offer Apple iPhone Duo buyers hundreds extra outside Beijing launch",
+   "url": "https://www.cnbc.com/2026/10/23/apple-iphone-duo-china-launch.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 20:06:37 GMT"
+  },
+  {
+   "titulo": "I want to pay off $4,500 in credit-card debt in 2 months. Is this possible?",
+   "url": "https://www.marketwatch.com/story/i-want-to-pay-off-4-500-in-credit-card-debt-in-2-months-is-this-possible-059d9a21?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 20:02:00 GMT"
+  },
+  {
+   "titulo": "Musk's SpaceX is still restricting Starlink in Ukraine and the toll is rising",
+   "url": "https://www.cnbc.com/2026/10/23/ukraine-says-starlink-restrictions-remain-despite-trump-assurances.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 19:50:26 GMT"
   },
   {
    "titulo": "Meta shares are down 9% this week. Here's why Mike Khouw is buying now",
@@ -304,94 +388,10 @@
    "fecha": "Fri, 23 Oct 2026 19:19:08 GMT"
   },
   {
-   "titulo": "‘She’s living the dream’: My stepmother said I can buy my childhood home for $850,000. Is she taking advantage of me?",
-   "url": "https://www.marketwatch.com/story/shes-living-the-dream-my-stepmother-said-i-can-buy-my-childhood-home-for-850-000-is-she-taking-advantage-of-me-1fdda7b5?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 23 Oct 2026 19:16:00 GMT"
-  },
-  {
-   "titulo": "The real test for Moderna’s cancer vaccine isn’t about beating Keytruda. It’s keeping cancer from coming back in the long term.",
-   "url": "https://www.marketwatch.com/story/the-real-test-for-modernas-cancer-vaccine-isnt-about-beating-keytruda-its-keeping-cancer-from-coming-back-in-the-long-term-da9af99f?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 23 Oct 2026 18:58:00 GMT"
-  },
-  {
-   "titulo": "American Express is cutting 5% of its workforce to 'prepare for AI'",
-   "url": "https://www.cnbc.com/2026/10/23/american-express-job-cuts.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 23 Oct 2026 18:57:48 GMT"
-  },
-  {
-   "titulo": "U.S. dropping some Canada tariffs, Susan Collins says as trade war looms over Maine Senate race",
-   "url": "https://www.cnbc.com/2026/10/23/trump-tariffs-canada-susan-collins.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 23 Oct 2026 18:54:16 GMT"
-  },
-  {
-   "titulo": "In hunt for Starlink alternative, Ukraine partners with Nokia and satellite maker ICEYE",
-   "url": "https://www.cnbc.com/2026/10/23/ukraine-partners-with-nokia-and-iceye-for-starlink-alternative.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 23 Oct 2026 18:52:37 GMT"
-  },
-  {
-   "titulo": "Think annuities are a rip-off? Now might be the perfect time to reconsider.",
-   "url": "https://www.marketwatch.com/story/think-annuities-are-a-rip-off-now-might-be-the-perfect-time-to-reconsider-6b3a2f88?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 23 Oct 2026 18:43:00 GMT"
-  },
-  {
-   "titulo": "Oil markets are on edge ahead of the weekend, as midterm elections near and fresh U.S. strikes on Iran are predicted",
-   "url": "https://www.marketwatch.com/story/oil-markets-are-on-edge-ahead-of-the-weekend-as-midterm-elections-near-and-fresh-u-s-strikes-on-iran-are-predicted-8c27e634?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 23 Oct 2026 18:30:00 GMT"
-  },
-  {
-   "titulo": "Can Nvidia’s stock become a safe haven as Wall Street rethinks the AI trade?",
-   "url": "https://www.marketwatch.com/story/can-nvidias-stock-become-a-safe-haven-as-wall-street-rethinks-the-ai-trade-64862936?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 23 Oct 2026 18:19:00 GMT"
-  },
-  {
-   "titulo": "Doctors call Moderna, Merck cancer vaccine data a major advancement — despite Wall Street reaction",
-   "url": "https://www.cnbc.com/2026/10/23/moderna-merck-cancer-vaccine-data.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 23 Oct 2026 17:15:08 GMT"
-  },
-  {
-   "titulo": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
-   "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 23 Oct 2026 17:00:00 GMT"
-  },
-  {
    "titulo": "AI's 'Black October': Critical PHP flaws set off global security scramble",
    "url": "https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html",
    "fuente": "CNBC",
    "fecha": "Fri, 23 Oct 2026 16:55:37 GMT"
-  },
-  {
-   "titulo": "Walmart, Best Buy and other stores now use digital price tags. Critics say they could lead to different prices for different shoppers.",
-   "url": "https://www.marketwatch.com/story/walmart-best-buy-and-other-stores-now-use-digital-price-tags-critics-say-they-could-lead-to-different-prices-for-different-shoppers-19e2f4da?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 23 Oct 2026 16:41:00 GMT"
-  },
-  {
-   "titulo": "Retire on 8% a year with little or no risk? How to use annuities the right way.",
-   "url": "https://www.marketwatch.com/story/retire-on-8-a-year-with-little-or-no-risk-how-to-use-annuities-the-right-way-06ababc5?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 23 Oct 2026 15:56:00 GMT"
-  },
-  {
-   "titulo": "TikTok U.S. hunts for multiple gigawatts of computing capacity, sources tell CNBC",
-   "url": "https://www.cnbc.com/2026/10/23/tiktok-us-compute-capacity.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 23 Oct 2026 15:35:36 GMT"
-  },
-  {
-   "titulo": "My spouse was awarded $90,000 from my 401(k) in our divorce. How is that fair?",
-   "url": "https://www.marketwatch.com/story/my-spouse-was-awarded-90-000-from-my-401-k-in-our-divorce-how-is-that-fair-dc839aa3?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 23 Oct 2026 15:31:00 GMT"
   },
   {
    "titulo": "France is flashing euro crisis signals. This time, the fault lines are different",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-23T19:51:02Z",
+ "ts": "2026-10-23T22:57:28Z",
  "fallas": [
   "videos",
   "directos"
