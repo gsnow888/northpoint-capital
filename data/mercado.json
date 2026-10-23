@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29158.0,
-   "cambio": -564.5,
-   "pct": -1.9
+   "precio": 29085.5,
+   "cambio": -637.0,
+   "pct": -2.14
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7697.0,
-   "cambio": -37.5,
-   "pct": -0.48
+   "precio": 7681.5,
+   "cambio": -53.0,
+   "pct": -0.69
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4036.9,
-   "cambio": -123.2,
-   "pct": -2.96
+   "precio": 4039.0,
+   "cambio": -121.1,
+   "pct": -2.91
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 100.43,
-   "cambio": -3.23,
-   "pct": -3.12
+   "precio": 101.18,
+   "cambio": -2.48,
+   "pct": -2.39
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2792.3,
-   "cambio": 50.0,
-   "pct": 1.82
+   "precio": 2779.3,
+   "cambio": 37.0,
+   "pct": 1.35
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52911.0,
-   "cambio": 729.0,
-   "pct": 1.4
+   "precio": 52776.0,
+   "cambio": 594.0,
+   "pct": 1.14
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81625.0,
-   "cambio": -205.0,
-   "pct": -0.25
+   "precio": 81525.0,
+   "cambio": -305.0,
+   "pct": -0.37
   }
  ],
  "acciones": [
@@ -274,64 +274,118 @@
  ],
  "noticias": [
   {
-   "titulo": "SK Hynix shares rebound after initial drop on scrapped Solidigm IPO plans",
-   "url": "https://www.cnbc.com/2026/10/23/sk-hynix-solidigm-ipo-.html",
+   "titulo": "France is flashing euro crisis signals. This time, the fault lines are different",
+   "url": "https://www.cnbc.com/2026/10/23/france-debt-euro-zone-contagion.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 23 Oct 2026 05:01:31 GMT"
-  },
-  {
-   "titulo": "Wealthy Chinese move offshore money to U.S. banks as Beijing’s tax net widens",
-   "url": "https://www.cnbc.com/2026/10/23/wealthy-chinese-tax-offshore-trusts-capital-control-.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 23 Oct 2026 04:55:59 GMT"
-  },
-  {
-   "titulo": "SpaceX records $561 million investment gain from stake in Elon Musk's Boring Co.",
-   "url": "https://www.cnbc.com/2026/10/22/spacex-records-561-million-investment-gain-from-stake-in-boring-co.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 23 Oct 2026 00:46:09 GMT"
-  },
-  {
-   "titulo": "Etsy bans AI-generated recipes and patterns from its online marketplace",
-   "url": "https://www.cnbc.com/2026/10/22/etsy-bans-ai-generated-recipes-patterns-from-its-online-marketplace.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 23:45:50 GMT"
-  },
-  {
-   "titulo": "My partner of 17 years left me his $1 million home. His children are crying foul. Am I obliged to split it with them?",
-   "url": "https://www.marketwatch.com/story/my-unmarried-partner-of-17-years-left-me-his-1-1-million-home-his-three-children-are-livid-should-i-share-my-inheritance-a11d593d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 23:15:00 GMT"
-  },
-  {
-   "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life. Is that so bad?",
-   "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 23:00:00 GMT"
-  },
-  {
-   "titulo": "CoreWeave set off a wave of anxiety — but Wall Street’s dire prognosis is premature",
-   "url": "https://www.marketwatch.com/story/coreweave-set-off-a-wave-of-anxiety-but-wall-streets-dire-prognosis-is-premature-edc3f5dd?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 22:54:00 GMT"
-  },
-  {
-   "titulo": "The U.S. stock market is fracturing into two camps, and it’s leaving investors with a brutal case of whiplash",
-   "url": "https://www.marketwatch.com/story/the-u-s-stock-market-is-fracturing-into-two-camps-and-its-leaving-investors-with-a-brutal-case-of-whiplash-e8580a99?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 22:17:00 GMT"
+   "fecha": "Fri, 23 Oct 2026 11:12:38 GMT"
   },
   {
    "titulo": "Treasury yields log biggest drop since the 2023 banking crisis. Here’s what’s going on.",
    "url": "https://www.marketwatch.com/story/treasury-yields-see-extreme-plunge-why-investors-are-ducking-for-cover-60044c66?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 22:07:00 GMT"
+   "fecha": "Fri, 23 Oct 2026 11:01:00 GMT"
   },
   {
-   "titulo": "SpaceX and Tesla have high election stakes as Elon Musk pours $366 million into campaigns",
-   "url": "https://www.cnbc.com/2026/10/22/elon-musk-midterm-election-spacex-tesla.html",
+   "titulo": "With earnings in rearview mirror, SpaceX-Tesla merger chatter takes center stage",
+   "url": "https://www.cnbc.com/2026/10/23/spacex-tesla-merger-chatter-takes-center-stage-after-earnings.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 21:58:42 GMT"
+   "fecha": "Fri, 23 Oct 2026 11:00:01 GMT"
+  },
+  {
+   "titulo": "U.S. oil holds above $100, Brent at five-month high as Iran says it’s prepared for warfare",
+   "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 10:51:41 GMT"
+  },
+  {
+   "titulo": "France is getting its credit rating reviewed. What to expect as French debt turmoil has helped turn U.S. Treasury yields around.",
+   "url": "https://www.marketwatch.com/story/france-is-getting-its-credit-rating-reviewed-by-moodys-what-to-expect-as-french-debt-turmoil-spills-overseas-e39de111?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 10:45:00 GMT"
+  },
+  {
+   "titulo": "Democratic socialist set to become D.C. mayor — and face Trump's pushback",
+   "url": "https://www.cnbc.com/2026/10/23/janeese-lewis-george-democratic-socialist-washington-dc-mayor.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 10:30:01 GMT"
+  },
+  {
+   "titulo": "The U.S. stock market is fracturing into two camps, and it’s leaving investors with a brutal case of whiplash",
+   "url": "https://www.marketwatch.com/story/the-u-s-stock-market-is-fracturing-into-two-camps-and-its-leaving-investors-with-a-brutal-case-of-whiplash-e8580a99?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 10:29:00 GMT"
+  },
+  {
+   "titulo": "‘She’s living the dream’: My stepmother said I can buy my childhood home for $850,000. Is she taking advantage of me?",
+   "url": "https://www.marketwatch.com/story/shes-living-the-dream-my-stepmother-said-i-can-buy-my-childhood-home-for-850-000-is-she-taking-advantage-of-me-1fdda7b5?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 10:15:00 GMT"
+  },
+  {
+   "titulo": "Corruption is voters' top issue ahead of midterm election, CNBC survey shows",
+   "url": "https://www.cnbc.com/2026/10/23/corruption-midterm-election-cnbc-poll-trump.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 10:00:01 GMT"
+  },
+  {
+   "titulo": "Volvo Cars plunges 27% as CEO says China sales slump came 'faster than we thought'",
+   "url": "https://www.cnbc.com/2026/10/23/volvo-cars-q3-earnings-job-cuts.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 09:41:01 GMT"
+  },
+  {
+   "titulo": "This market signal just occurred for only the second time since 1999. Here’s what happened and what it means.",
+   "url": "https://www.marketwatch.com/story/this-market-signal-just-occurred-for-only-the-second-time-since-1999-heres-what-happened-and-what-it-means-a126cf31?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 09:35:00 GMT"
+  },
+  {
+   "titulo": "Nvidia's Huang heads to Kazakhstan for the first time — and he's not the only one with big plans",
+   "url": "https://www.cnbc.com/2026/10/23/nvidia-huang-investment-kazakhstan-.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 09:21:59 GMT"
+  },
+  {
+   "titulo": "This hot AI-fueled stock has been in a rut. It just beat earnings expectations by 36%.",
+   "url": "https://www.marketwatch.com/story/this-hot-ai-fueled-stock-has-been-in-a-rut-it-just-beat-earnings-expectations-by-36-4a4188cb?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 09:19:00 GMT"
+  },
+  {
+   "titulo": "My spouse was awarded $90,000 from my 401(k) in our divorce. How is that fair?",
+   "url": "https://www.marketwatch.com/story/my-spouse-was-awarded-90-000-from-my-401-k-in-our-divorce-how-is-that-fair-dc839aa3?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 09:15:00 GMT"
+  },
+  {
+   "titulo": "The mobile ambitions of SpaceX see telecom stocks get hit again. What the latest developments mean.",
+   "url": "https://www.marketwatch.com/story/the-mobile-ambitions-of-spacex-see-telecom-stocks-get-hit-again-what-the-latest-developments-mean-9a4159b5?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 09:01:00 GMT"
+  },
+  {
+   "titulo": "NBA star Precious Achiuwa signs on for $1.8 million condo in luxury Miami tower",
+   "url": "https://www.marketwatch.com/story/nba-star-precious-achiuwa-signs-on-for-1-8-million-condo-in-luxury-miami-tower-95d899c2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 08:59:00 GMT"
+  },
+  {
+   "titulo": "Defense giant Saab sees orders triple after Gripen fighter jet deal with Ukraine",
+   "url": "https://www.cnbc.com/2026/10/23/saab-q3-earnings-figther-jet-maker-beats-expectations-as-orders-triple.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 08:10:27 GMT"
+  },
+  {
+   "titulo": "My father-in-law, 81, sold his $75,000 home to pay his daughter’s $50,000 debt. How can I keep him from becoming destitute?",
+   "url": "https://www.marketwatch.com/story/my-father-in-law-81-sold-his-75-000-home-and-paid-off-his-daughters-50-000-debt-what-happens-to-him-now-60e8fc72?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 23 Oct 2026 07:15:00 GMT"
+  },
+  {
+   "titulo": "Meta’s deal to keep Zuckerberg in California adds fuel to wealth tax debate ahead of election",
+   "url": "https://www.cnbc.com/2026/10/22/meta-mark-zuckerberg-california-billionaire-tax.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 22:21:08 GMT"
   },
   {
    "titulo": "Moderna shares plunge after cancer vaccine data leaks — despite positive results",
@@ -340,70 +394,16 @@
    "fecha": "Thu, 22 Oct 2026 21:52:02 GMT"
   },
   {
-   "titulo": "Americans are having fewer babies — and pampering them with luxury diapers",
-   "url": "https://www.marketwatch.com/story/americans-are-having-fewer-babies-and-pampering-them-with-luxury-diapers-a84222cd?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 21:28:00 GMT"
-  },
-  {
-   "titulo": "3 big reasons Micron and other chip stocks fell hard on Thursday",
-   "url": "https://www.marketwatch.com/story/two-big-reasons-micron-and-other-chip-stocks-are-falling-on-thursday-312f1fb2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 21:19:00 GMT"
-  },
-  {
-   "titulo": "Trump asked Musk to lift Starlink slowdown, WSJ reports",
-   "url": "https://www.cnbc.com/2026/10/22/trump-musk-starlink-ukraine.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 21:02:07 GMT"
-  },
-  {
-   "titulo": "Oil prices approach Iran-war highs as soaring tanker rates trigger a second energy squeeze",
-   "url": "https://www.marketwatch.com/story/oil-prices-approach-iran-war-highs-as-soaring-tanker-rates-trigger-a-second-energy-squeeze-2d726982?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 20:46:00 GMT"
-  },
-  {
    "titulo": "Disney’s multiplatform Super Bowl plan frustrates ABC affiliates",
    "url": "https://www.cnbc.com/2026/10/22/disneys-multiplatform-super-bowl-plan-frustrates-abc-affiliates.html",
    "fuente": "CNBC",
    "fecha": "Thu, 22 Oct 2026 20:44:26 GMT"
   },
   {
-   "titulo": "Trump defends Ramaswamy ad with Acton's estranged mom after bipartisan criticism",
-   "url": "https://www.cnbc.com/2026/10/22/trump-ramaswamy-ad-acton-mother-ad.html",
+   "titulo": "Reported fraud losses among older Americans hit $3 billion in 2025 as big losses surge: FTC report",
+   "url": "https://www.cnbc.com/2026/10/22/older-americans-fraud-losses-2025.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 20:26:48 GMT"
-  },
-  {
-   "titulo": "Moderna’s cancer vaccine hits its targets, but a data leak rattled investors and the stock tumbled",
-   "url": "https://www.marketwatch.com/story/modernas-stock-tumbles-after-reported-leak-of-data-for-cancer-vaccine-dcc897c1?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 20:14:00 GMT"
-  },
-  {
-   "titulo": "10-year Treasury yield tumbles below 5% to lowest level in nearly a month",
-   "url": "https://www.cnbc.com/2026/10/22/treasurys-bonds-ai-yields.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 20:05:13 GMT"
-  },
-  {
-   "titulo": "Meta stock sinks nearly 7% as AI spend pushes free cash flow negative",
-   "url": "https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 20:03:03 GMT"
-  },
-  {
-   "titulo": "Is getting a wedding band from Quince a bad idea? It’s a third of the price of a local jeweler.",
-   "url": "https://www.marketwatch.com/story/is-getting-a-wedding-band-from-quince-a-bad-idea-its-a-third-of-the-price-fa89c9b2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 19:25:00 GMT"
-  },
-  {
-   "titulo": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
-   "url": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 13:18:36 GMT"
+   "fecha": "Thu, 22 Oct 2026 19:39:51 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-23T05:49:03Z",
+ "ts": "2026-10-23T11:13:02Z",
  "fallas": [
   "videos",
   "directos"
