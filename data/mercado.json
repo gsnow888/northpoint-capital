@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29126.5,
-   "cambio": -596.0,
-   "pct": -2.01
+   "precio": 29121.75,
+   "cambio": -600.75,
+   "pct": -2.02
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7707.25,
-   "cambio": -27.25,
-   "pct": -0.35
+   "precio": 7702.0,
+   "cambio": -32.5,
+   "pct": -0.42
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4040.8,
-   "cambio": -119.3,
-   "pct": -2.87
+   "precio": 4033.6,
+   "cambio": -126.5,
+   "pct": -3.04
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 99.15,
-   "cambio": -4.51,
-   "pct": -4.35
+   "precio": 99.25,
+   "cambio": -4.41,
+   "pct": -4.25
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2795.9,
-   "cambio": 53.6,
-   "pct": 1.95
+   "precio": 2793.8,
+   "cambio": 51.5,
+   "pct": 1.88
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 53102.0,
-   "cambio": 920.0,
-   "pct": 1.76
+   "precio": 53052.0,
+   "cambio": 870.0,
+   "pct": 1.67
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81365.0,
-   "cambio": -465.0,
-   "pct": -0.57
+   "precio": 81310.0,
+   "cambio": -520.0,
+   "pct": -0.64
   }
  ],
  "acciones": [
@@ -274,6 +274,48 @@
  ],
  "noticias": [
   {
+   "titulo": "Japan core inflation in September surges to its highest this year at 2.1%",
+   "url": "https://www.cnbc.com/2026/10/23/japan-inflation-september-highest-in-2026.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 00:24:59 GMT"
+  },
+  {
+   "titulo": "Etsy bans AI-generated recipes and patterns from its online marketplace",
+   "url": "https://www.cnbc.com/2026/10/22/etsy-bans-ai-generated-recipes-patterns-from-its-online-marketplace.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 23:45:50 GMT"
+  },
+  {
+   "titulo": "My partner of 17 years left me his $1 million home. His children are crying foul. Am I obliged to split it with them?",
+   "url": "https://www.marketwatch.com/story/my-unmarried-partner-of-17-years-left-me-his-1-1-million-home-his-three-children-are-livid-should-i-share-my-inheritance-a11d593d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 22 Oct 2026 23:15:00 GMT"
+  },
+  {
+   "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life. Is that so bad?",
+   "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 22 Oct 2026 23:00:00 GMT"
+  },
+  {
+   "titulo": "CoreWeave set off a wave of anxiety — but Wall Street’s dire prognosis is premature",
+   "url": "https://www.marketwatch.com/story/coreweave-set-off-a-wave-of-anxiety-but-wall-streets-dire-prognosis-is-premature-edc3f5dd?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 22 Oct 2026 22:54:00 GMT"
+  },
+  {
+   "titulo": "Meta’s deal to keep Zuckerberg in California adds fuel to wealth tax debate ahead of election",
+   "url": "https://www.cnbc.com/2026/10/22/meta-mark-zuckerberg-california-billionaire-tax.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 22 Oct 2026 22:21:08 GMT"
+  },
+  {
+   "titulo": "The U.S. stock market is fracturing into two camps, and it’s leaving investors with a brutal case of whiplash",
+   "url": "https://www.marketwatch.com/story/the-u-s-stock-market-is-fracturing-into-two-camps-and-its-leaving-investors-with-a-brutal-case-of-whiplash-e8580a99?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 22 Oct 2026 22:17:00 GMT"
+  },
+  {
    "titulo": "Treasury yields log biggest drop since the 2023 banking crisis. Here’s what’s going on.",
    "url": "https://www.marketwatch.com/story/treasury-yields-see-extreme-plunge-why-investors-are-ducking-for-cover-60044c66?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -310,12 +352,6 @@
    "fecha": "Thu, 22 Oct 2026 21:02:07 GMT"
   },
   {
-   "titulo": "Meta’s deal to keep Zuckerberg in California adds fuel to wealth tax debate ahead of election",
-   "url": "https://www.cnbc.com/2026/10/22/meta-mark-zuckerberg-california-billionaire-tax.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 20:47:59 GMT"
-  },
-  {
    "titulo": "Oil prices approach Iran-war highs as soaring tanker rates trigger a second energy squeeze",
    "url": "https://www.marketwatch.com/story/oil-prices-approach-iran-war-highs-as-soaring-tanker-rates-trigger-a-second-energy-squeeze-2d726982?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -346,58 +382,22 @@
    "fecha": "Thu, 22 Oct 2026 20:14:00 GMT"
   },
   {
-   "titulo": "Reported fraud losses among older Americans hit $3 billion in 2025 as big losses surge: FTC report",
-   "url": "https://www.cnbc.com/2026/10/22/older-americans-fraud-losses-2025.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 19:39:51 GMT"
-  },
-  {
-   "titulo": "Elon Musk invests about $1 billion in Skydance",
-   "url": "https://www.cnbc.com/2026/10/22/elon-musk-skydance-investment.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 19:34:46 GMT"
-  },
-  {
    "titulo": "Is getting a wedding band from Quince a bad idea? It’s a third of the price of a local jeweler.",
    "url": "https://www.marketwatch.com/story/is-getting-a-wedding-band-from-quince-a-bad-idea-its-a-third-of-the-price-fa89c9b2?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 22 Oct 2026 19:25:00 GMT"
   },
   {
-   "titulo": "AI debt and French bonds face a stress test — why it may not be over",
-   "url": "https://www.cnbc.com/2026/10/22/ai-debt-and-french-bonds-stress-test.html",
+   "titulo": "Musk's clash with Ukraine accelerates demand for Starlink alternatives. Few exist",
+   "url": "https://www.cnbc.com/2026/10/22/elon-musk-ukraine-starlink-alternatives.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 22 Oct 2026 18:13:37 GMT"
+   "fecha": "Thu, 22 Oct 2026 18:55:38 GMT"
   },
   {
    "titulo": "Bill Ackman says 2027 will be an amazing year for stocks as wars, inflation ease",
    "url": "https://www.cnbc.com/2026/10/22/bill-ackman-talks-meta-and-markets-with-cnbc.html",
    "fuente": "CNBC",
    "fecha": "Thu, 22 Oct 2026 17:53:08 GMT"
-  },
-  {
-   "titulo": "Elon Musk promised a SpaceX share to every kid in America — don’t hold your breath",
-   "url": "https://www.marketwatch.com/story/elon-musk-promised-a-spacex-share-to-every-kid-in-america-dont-hold-your-breath-d6572cdf?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 17:29:00 GMT"
-  },
-  {
-   "titulo": "The Social Security Administration wants more babies signed up for ‘Trump accounts.’ But there’s still a catch.",
-   "url": "https://www.marketwatch.com/story/the-social-security-administration-wants-more-babies-signed-up-for-trump-accounts-but-theres-still-a-catch-4096f16e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 17:24:00 GMT"
-  },
-  {
-   "titulo": "Young investors are betting on prediction markets and crypto. But this bestselling author says the boring money moves still work.",
-   "url": "https://www.marketwatch.com/story/young-investors-are-betting-on-prediction-markets-and-crypto-but-this-bestselling-author-says-the-boring-money-moves-still-work-cd9d350a?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 17:21:00 GMT"
-  },
-  {
-   "titulo": "‘AI is on trial’: Bond yields sink below 5% as investors look for safety",
-   "url": "https://www.marketwatch.com/story/ai-is-on-trial-bond-yields-sink-below-5-as-investors-look-for-safety-dbc86ee9?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 22 Oct 2026 17:16:00 GMT"
   },
   {
    "titulo": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-22T22:11:42Z",
+ "ts": "2026-10-23T00:43:50Z",
  "fallas": [
   "videos",
   "directos"
