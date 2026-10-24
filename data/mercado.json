@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29175.0,
-   "cambio": -547.5,
-   "pct": -1.84
+   "precio": 29117.75,
+   "cambio": -604.75,
+   "pct": -2.03
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7672.5,
-   "cambio": -62.0,
-   "pct": -0.8
+   "precio": 7659.75,
+   "cambio": -74.75,
+   "pct": -0.97
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4010.0,
-   "cambio": -150.1,
-   "pct": -3.61
+   "precio": 4007.9,
+   "cambio": -152.2,
+   "pct": -3.66
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 103.44,
-   "cambio": -0.22,
-   "pct": -0.21
+   "precio": 103.27,
+   "cambio": -0.39,
+   "pct": -0.38
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2788.7,
-   "cambio": 46.4,
-   "pct": 1.69
+   "precio": 2784.5,
+   "cambio": 42.2,
+   "pct": 1.54
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52451.0,
-   "cambio": 269.0,
-   "pct": 0.52
+   "precio": 52394.0,
+   "cambio": 212.0,
+   "pct": 0.41
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 80670.0,
-   "cambio": -1160.0,
-   "pct": -1.42
+   "precio": 80785.0,
+   "cambio": -1045.0,
+   "pct": -1.28
   }
  ],
  "acciones": [
@@ -274,16 +274,16 @@
  ],
  "noticias": [
   {
+   "titulo": "Turmoil hits AI buildout as neoclouds face pressure, credit risks mount and Solidigm pulls IPO",
+   "url": "https://www.cnbc.com/2026/10/23/ai-turmoil-neoclouds-struggle-credit-risks-jump-solidigm-pulls-ipo.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 24 Oct 2026 01:57:24 GMT"
+  },
+  {
    "titulo": "Moody's holds steady on France's credit rating as country grapples with turmoil and higher yields",
    "url": "https://www.cnbc.com/2026/10/23/moodys-holds-steady-on-frances-credit-rating-as-country-grapples-with-turmoil-and-higher-yields.html",
    "fuente": "CNBC",
    "fecha": "Fri, 23 Oct 2026 22:49:42 GMT"
-  },
-  {
-   "titulo": "Turmoil hits AI build-out as neoclouds face pressure, credit risks mount and Solidigm pulls IPO",
-   "url": "https://www.cnbc.com/2026/10/23/ai-turmoil-neoclouds-struggle-credit-risks-jump-solidigm-pulls-ipo.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 23 Oct 2026 22:49:04 GMT"
   },
   {
    "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life. Is that so bad?",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-24T01:28:24Z",
+ "ts": "2026-10-24T06:27:06Z",
  "fallas": [
   "videos",
   "directos"
