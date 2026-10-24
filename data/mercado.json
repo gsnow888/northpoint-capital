@@ -97,9 +97,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81100.0,
-   "cambio": -730.0,
-   "pct": -0.89
+   "precio": 80670.0,
+   "cambio": -1160.0,
+   "pct": -1.42
   }
  ],
  "acciones": [
@@ -280,6 +280,12 @@
    "fecha": "Fri, 23 Oct 2026 22:49:42 GMT"
   },
   {
+   "titulo": "Turmoil hits AI build-out as neoclouds face pressure, credit risks mount and Solidigm pulls IPO",
+   "url": "https://www.cnbc.com/2026/10/23/ai-turmoil-neoclouds-struggle-credit-risks-jump-solidigm-pulls-ipo.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 23 Oct 2026 22:49:04 GMT"
+  },
+  {
    "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life. Is that so bad?",
    "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -350,12 +356,6 @@
    "url": "https://www.marketwatch.com/story/oil-markets-are-on-edge-ahead-of-the-weekend-as-midterm-elections-near-and-fresh-u-s-strikes-on-iran-are-predicted-8c27e634?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Fri, 23 Oct 2026 20:19:00 GMT"
-  },
-  {
-   "titulo": "Investors are starting to find opportunities in the battered bond market",
-   "url": "https://www.cnbc.com/2026/10/23/investors-are-starting-to-find-opportunities-in-the-battered-bond-market.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 23 Oct 2026 20:09:36 GMT"
   },
   {
    "titulo": "Scalpers offer Apple iPhone Duo buyers hundreds extra outside Beijing launch",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-23T22:57:28Z",
+ "ts": "2026-10-24T01:28:24Z",
  "fallas": [
   "videos",
   "directos"
