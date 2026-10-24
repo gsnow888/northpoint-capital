@@ -97,9 +97,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 80785.0,
-   "cambio": -1045.0,
-   "pct": -1.28
+   "precio": 80330.0,
+   "cambio": -1500.0,
+   "pct": -1.83
   }
  ],
  "acciones": [
@@ -274,6 +274,18 @@
  ],
  "noticias": [
   {
+   "titulo": "American embassies tighten security as Iran threat warnings intensify ahead of U.S. midterm elections",
+   "url": "https://www.cnbc.com/2026/10/24/iran-threats-us-embassies-middle-east.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 24 Oct 2026 21:07:01 GMT"
+  },
+  {
+   "titulo": "After SpaceX restores high-speed service, Musk claims Ukraine violated Starlink agreement",
+   "url": "https://www.cnbc.com/2026/10/24/ukraine-starlink-starshield-service-restored.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 24 Oct 2026 20:38:30 GMT"
+  },
+  {
    "titulo": "My father-in-law, 81, sold his $75,000 home to pay his daughter’s $50,000 debt. How can I keep him from becoming destitute?",
    "url": "https://www.marketwatch.com/story/my-father-in-law-81-sold-his-75-000-home-and-paid-off-his-daughters-50-000-debt-what-happens-to-him-now-60e8fc72?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -296,12 +308,6 @@
    "url": "https://www.marketwatch.com/story/my-husband-wants-to-sell-our-1-5-million-home-and-invest-the-proceeds-but-this-is-where-we-raised-our-kids-and-i-cant-bear-to-leave-4feb46ed?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 24 Oct 2026 19:45:00 GMT"
-  },
-  {
-   "titulo": "Biotech stocks are surging. How investors can play the new drug innovation boom",
-   "url": "https://www.cnbc.com/2026/10/24/biotech-stocks-drug-innovation-rally.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 24 Oct 2026 18:56:29 GMT"
   },
   {
    "titulo": "Young Americans are giving up on car ownership. It’s a path to financial freedom for some.",
@@ -328,12 +334,6 @@
    "fecha": "Sat, 24 Oct 2026 17:23:00 GMT"
   },
   {
-   "titulo": "American embassies tighten security as Iran threat warnings intensify ahead of U.S. midterm elections",
-   "url": "https://www.cnbc.com/2026/10/24/iran-threats-us-embassies-middle-east.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 24 Oct 2026 17:22:21 GMT"
-  },
-  {
    "titulo": "Elon Musk promised a SpaceX share to every kid in America — don’t hold your breath",
    "url": "https://www.marketwatch.com/story/elon-musk-promised-a-spacex-share-to-every-kid-in-america-dont-hold-your-breath-d6572cdf?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -352,6 +352,12 @@
    "fecha": "Sat, 24 Oct 2026 16:18:00 GMT"
   },
   {
+   "titulo": "Fewer people are flying as airfare soars. Here's why airlines aren't worried",
+   "url": "https://www.cnbc.com/2026/10/23/airfare-airline-capacity.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 24 Oct 2026 15:53:30 GMT"
+  },
+  {
    "titulo": "Why popular airplanes are getting scrapped years early",
    "url": "https://www.cnbc.com/2026/10/24/spirit-airlines-planes-scrapped-engine-shortage.html",
    "fuente": "CNBC",
@@ -368,12 +374,6 @@
    "url": "https://www.cnbc.com/2026/10/24/amgen-imdelltra-lung-cancer-data.html",
    "fuente": "CNBC",
    "fecha": "Sat, 24 Oct 2026 14:30:01 GMT"
-  },
-  {
-   "titulo": "Berkshire shares shake the Buffett blues with new all-time highs",
-   "url": "https://www.cnbc.com/2026/10/24/berkshire-record-high-without-buffett.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 24 Oct 2026 12:48:32 GMT"
   },
   {
    "titulo": "Nvidia's role as AI financier faces first big test as neoclouds take market hit",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-24T20:34:21Z",
+ "ts": "2026-10-24T22:43:21Z",
  "fallas": [
   "videos",
   "directos"
