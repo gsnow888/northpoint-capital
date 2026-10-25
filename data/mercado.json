@@ -1,54 +1,234 @@
 {
  "calendario": [
   {
-   "dia": "2026-10-19",
-   "hora": "06:30",
-   "hora_ny": "08:30",
-   "iso": "2026-10-19T08:30:00-04:00",
+   "dia": "2026-10-27",
+   "hora": "18:30",
+   "hora_ny": "20:30",
+   "iso": "2026-10-27T20:30:00-04:00",
    "titulo": "CPI m/m",
-   "pais": "CAD",
-   "previsto": "0.2%",
-   "previo": "-0.1%"
+   "pais": "AUD",
+   "previsto": "0.7%",
+   "previo": "0.4%"
   },
   {
-   "dia": "2026-10-19",
-   "hora": "06:30",
-   "hora_ny": "08:30",
-   "iso": "2026-10-19T08:30:00-04:00",
-   "titulo": "Median CPI y/y",
-   "pais": "CAD",
-   "previsto": "2.0%",
-   "previo": "2.0%"
-  },
-  {
-   "dia": "2026-10-19",
-   "hora": "06:30",
-   "hora_ny": "08:30",
-   "iso": "2026-10-19T08:30:00-04:00",
-   "titulo": "Trimmed CPI y/y",
-   "pais": "CAD",
-   "previsto": "1.9%",
-   "previo": "1.9%"
-  },
-  {
-   "dia": "2026-10-21",
-   "hora": "00:00",
-   "hora_ny": "02:00",
-   "iso": "2026-10-21T02:00:00-04:00",
+   "dia": "2026-10-27",
+   "hora": "18:30",
+   "hora_ny": "20:30",
+   "iso": "2026-10-27T20:30:00-04:00",
    "titulo": "CPI y/y",
-   "pais": "GBP",
-   "previsto": "3.4%",
-   "previo": "3.1%"
+   "pais": "AUD",
+   "previsto": "4.2%",
+   "previo": "4.0%"
   },
   {
-   "dia": "2026-10-21",
-   "hora": "15:45",
-   "hora_ny": "17:45",
-   "iso": "2026-10-21T17:45:00-04:00",
-   "titulo": "CPI q/q",
+   "dia": "2026-10-27",
+   "hora": "18:30",
+   "hora_ny": "20:30",
+   "iso": "2026-10-27T20:30:00-04:00",
+   "titulo": "Trimmed Mean CPI m/m",
+   "pais": "AUD",
+   "previsto": "0.3%",
+   "previo": "0.2%"
+  },
+  {
+   "dia": "2026-10-27",
+   "hora": "19:00",
+   "hora_ny": "21:00",
+   "iso": "2026-10-27T21:00:00-04:00",
+   "titulo": "Official Cash Rate",
    "pais": "NZD",
-   "previsto": "0.8%",
+   "previsto": "3.00%",
+   "previo": "2.75%"
+  },
+  {
+   "dia": "2026-10-27",
+   "hora": "19:00",
+   "hora_ny": "21:00",
+   "iso": "2026-10-27T21:00:00-04:00",
+   "titulo": "RBNZ Rate Statement",
+   "pais": "NZD",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-10-27",
+   "hora": "20:00",
+   "hora_ny": "22:00",
+   "iso": "2026-10-27T22:00:00-04:00",
+   "titulo": "RBNZ Press Conference",
+   "pais": "NZD",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-10-28",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-28T08:30:00-04:00",
+   "titulo": "Annual Budget Release",
+   "pais": "GBP",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-10-28",
+   "hora": "07:45",
+   "hora_ny": "09:45",
+   "iso": "2026-10-28T09:45:00-04:00",
+   "titulo": "BOC Monetary Policy Report",
+   "pais": "CAD",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-10-28",
+   "hora": "07:45",
+   "hora_ny": "09:45",
+   "iso": "2026-10-28T09:45:00-04:00",
+   "titulo": "BOC Rate Statement",
+   "pais": "CAD",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-10-28",
+   "hora": "07:45",
+   "hora_ny": "09:45",
+   "iso": "2026-10-28T09:45:00-04:00",
+   "titulo": "Overnight Rate",
+   "pais": "CAD",
+   "previsto": "2.50%",
+   "previo": "2.25%"
+  },
+  {
+   "dia": "2026-10-28",
+   "hora": "08:30",
+   "hora_ny": "10:30",
+   "iso": "2026-10-28T10:30:00-04:00",
+   "titulo": "BOC Press Conference",
+   "pais": "CAD",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-10-28",
+   "hora": "12:00",
+   "hora_ny": "14:00",
+   "iso": "2026-10-28T14:00:00-04:00",
+   "titulo": "Federal Funds Rate",
+   "pais": "USD",
+   "previsto": "4.00%",
+   "previo": "4.00%"
+  },
+  {
+   "dia": "2026-10-28",
+   "hora": "12:00",
+   "hora_ny": "14:00",
+   "iso": "2026-10-28T14:00:00-04:00",
+   "titulo": "FOMC Statement",
+   "pais": "USD",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-10-28",
+   "hora": "12:30",
+   "hora_ny": "14:30",
+   "iso": "2026-10-28T14:30:00-04:00",
+   "titulo": "FOMC Press Conference",
+   "pais": "USD",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-10-29",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-29T08:30:00-04:00",
+   "titulo": "Advance GDP q/q",
+   "pais": "USD",
+   "previsto": "3.2%",
    "previo": "1.5%"
+  },
+  {
+   "dia": "2026-10-29",
+   "hora": "06:30",
+   "hora_ny": "08:30",
+   "iso": "2026-10-29T08:30:00-04:00",
+   "titulo": "Core PCE Price Index m/m",
+   "pais": "USD",
+   "previsto": "0.3%",
+   "previo": "0.2%"
+  },
+  {
+   "dia": "2026-10-29",
+   "hora": "07:15",
+   "hora_ny": "09:15",
+   "iso": "2026-10-29T09:15:00-04:00",
+   "titulo": "Main Refinancing Rate",
+   "pais": "EUR",
+   "previsto": "2.65%",
+   "previo": "2.65%"
+  },
+  {
+   "dia": "2026-10-29",
+   "hora": "07:15",
+   "hora_ny": "09:15",
+   "iso": "2026-10-29T09:15:00-04:00",
+   "titulo": "Monetary Policy Statement",
+   "pais": "EUR",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-10-29",
+   "hora": "07:45",
+   "hora_ny": "09:45",
+   "iso": "2026-10-29T09:45:00-04:00",
+   "titulo": "ECB Press Conference",
+   "pais": "EUR",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-10-29",
+   "hora": "20:30",
+   "hora_ny": "22:30",
+   "iso": "2026-10-29T22:30:00-04:00",
+   "titulo": "BOJ Policy Rate",
+   "pais": "JPY",
+   "previsto": "<1.25%",
+   "previo": "<1.25%"
+  },
+  {
+   "dia": "2026-10-29",
+   "hora": "20:30",
+   "hora_ny": "22:30",
+   "iso": "2026-10-29T22:30:00-04:00",
+   "titulo": "Monetary Policy Statement",
+   "pais": "JPY",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-10-29",
+   "hora": "20:31",
+   "hora_ny": "22:31",
+   "iso": "2026-10-29T22:31:00-04:00",
+   "titulo": "BOJ Outlook Report",
+   "pais": "JPY",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-10-29",
+   "hora": "23:30",
+   "hora_ny": "01:30",
+   "iso": "2026-10-30T01:30:00-04:00",
+   "titulo": "BOJ Press Conference",
+   "pais": "JPY",
+   "previsto": "",
+   "previo": ""
   }
  ],
  "precios": [
@@ -56,50 +236,50 @@
    "sym": "NQ",
    "nombre": "Nasdaq 100",
    "precio": 29117.75,
-   "cambio": -604.75,
-   "pct": -2.03
+   "cambio": -557.5,
+   "pct": -1.88
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
    "precio": 7659.75,
-   "cambio": -74.75,
-   "pct": -0.97
+   "cambio": -95.5,
+   "pct": -1.23
   },
   {
    "sym": "GC",
    "nombre": "Oro",
    "precio": 4007.9,
-   "cambio": -152.2,
-   "pct": -3.66
+   "cambio": -134.7,
+   "pct": -3.25
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
    "precio": 103.27,
-   "cambio": -0.39,
-   "pct": -0.38
+   "cambio": 1.48,
+   "pct": 1.45
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
    "precio": 2784.5,
-   "cambio": 42.2,
-   "pct": 1.54
+   "cambio": -2.4,
+   "pct": -0.09
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
    "precio": 52394.0,
-   "cambio": 212.0,
-   "pct": 0.41
+   "cambio": -325.0,
+   "pct": -0.62
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 80725.0,
-   "cambio": -1105.0,
-   "pct": -1.35
+   "precio": 80835.0,
+   "cambio": -1735.0,
+   "pct": -2.1
   }
  ],
  "acciones": [
@@ -517,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-25T00:54:29Z",
+ "ts": "2026-10-25T05:48:02Z",
  "fallas": [
   "videos",
   "directos"
