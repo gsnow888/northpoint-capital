@@ -277,9 +277,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 80835.0,
-   "cambio": -1735.0,
-   "pct": -2.1
+   "precio": 80090.0,
+   "cambio": -2480.0,
+   "pct": -3.0
   }
  ],
  "acciones": [
@@ -454,6 +454,12 @@
  ],
  "noticias": [
   {
+   "titulo": "What next for France as riots rattle markets? Three questions facing investors ahead of more protests",
+   "url": "https://www.cnbc.com/2026/10/24/france-riots-paris-unrest-debt-budget.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 25 Oct 2026 08:06:11 GMT"
+  },
+  {
    "titulo": "American embassies tighten security as Iran threat warnings intensify ahead of U.S. midterm elections",
    "url": "https://www.cnbc.com/2026/10/24/iran-threats-us-embassies-middle-east.html",
    "fuente": "CNBC",
@@ -574,12 +580,6 @@
    "fecha": "Sat, 24 Oct 2026 10:58:30 GMT"
   },
   {
-   "titulo": "What next for France as riots rattle markets? Three questions facing investors ahead of more protests",
-   "url": "https://www.cnbc.com/2026/10/24/france-riots-paris-unrest-debt-budget.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 24 Oct 2026 06:23:02 GMT"
-  },
-  {
    "titulo": "Trump's executive order targets mortgage insurance, refinance costs. What it means for borrowers",
    "url": "https://www.cnbc.com/2026/10/23/trump-mortgage-executive-order-costs.html",
    "fuente": "CNBC",
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-25T05:48:02Z",
+ "ts": "2026-10-25T10:57:23Z",
  "fallas": [
   "videos",
   "directos"
