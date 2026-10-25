@@ -277,9 +277,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 80650.0,
-   "cambio": -1920.0,
-   "pct": -2.33
+   "precio": 80345.0,
+   "cambio": -2225.0,
+   "pct": -2.69
   }
  ],
  "acciones": [
@@ -454,6 +454,36 @@
  ],
  "noticias": [
   {
+   "titulo": "Blanche defends Trump-ordered lawsuit over Alaska Senate election certification",
+   "url": "https://www.cnbc.com/2026/10/25/blanche-doj-alaska-senate-certification-lawsuit.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 25 Oct 2026 20:28:55 GMT"
+  },
+  {
+   "titulo": "‘She’s living the dream’: My stepmother said I can buy my childhood home for $850,000. Is she taking advantage of me?",
+   "url": "https://www.marketwatch.com/story/shes-living-the-dream-my-stepmother-said-i-can-buy-my-childhood-home-for-850-000-is-she-taking-advantage-of-me-1fdda7b5?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 25 Oct 2026 20:15:00 GMT"
+  },
+  {
+   "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life. Is that so bad?",
+   "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 25 Oct 2026 20:00:00 GMT"
+  },
+  {
+   "titulo": "We stopped helping our neighbors with free home repairs and our friendship cooled. Who’s to blame?",
+   "url": "https://www.marketwatch.com/story/we-stopped-helping-our-neighbors-with-free-home-repairs-and-our-friendship-cooled-whos-to-blame-d20b0720?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 25 Oct 2026 19:30:00 GMT"
+  },
+  {
+   "titulo": "Ukraine disputes Elon Musk’s claim that its military violated Starlink terms during drone operations",
+   "url": "https://www.cnbc.com/2026/10/25/ukraine-musk-starlink-terms-dispute.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 25 Oct 2026 18:18:49 GMT"
+  },
+  {
    "titulo": "My father-in-law, 81, sold his $75,000 home to pay his daughter’s $50,000 debt. How can I keep him from becoming destitute?",
    "url": "https://www.marketwatch.com/story/my-father-in-law-81-sold-his-75-000-home-and-paid-off-his-daughters-50-000-debt-what-happens-to-him-now-60e8fc72?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -472,18 +502,6 @@
    "fecha": "Sun, 25 Oct 2026 17:00:00 GMT"
   },
   {
-   "titulo": "We stopped helping our neighbors with free home repairs and our friendship cooled. Who’s to blame?",
-   "url": "https://www.marketwatch.com/story/we-stopped-helping-our-neighbors-with-free-home-repairs-and-our-friendship-cooled-whos-to-blame-d20b0720?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 25 Oct 2026 17:00:00 GMT"
-  },
-  {
-   "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life. Is that so bad?",
-   "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 25 Oct 2026 16:45:00 GMT"
-  },
-  {
    "titulo": "Audi defends plans for a $4 billion Georgia plant amid VW restructuring, tariffs",
    "url": "https://www.cnbc.com/2026/10/25/audi-georgia-us-plant-tariffs-volkswagen.html",
    "fuente": "CNBC",
@@ -500,12 +518,6 @@
    "url": "https://www.cnbc.com/2026/10/25/france-protests-paris-cost-of-living-inequality.html",
    "fuente": "CNBC",
    "fecha": "Sun, 25 Oct 2026 14:14:23 GMT"
-  },
-  {
-   "titulo": "‘She’s living the dream’: My stepmother said I can buy my childhood home for $850,000. Is she taking advantage of me?",
-   "url": "https://www.marketwatch.com/story/shes-living-the-dream-my-stepmother-said-i-can-buy-my-childhood-home-for-850-000-is-she-taking-advantage-of-me-1fdda7b5?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 25 Oct 2026 14:00:00 GMT"
   },
   {
    "titulo": "More than a third of S&P 500 companies are about to report earnings as market confidence cracks",
@@ -532,28 +544,16 @@
    "fecha": "Sun, 25 Oct 2026 13:00:00 GMT"
   },
   {
-   "titulo": "What Democrats and Republicans fear most about each other: CNBC survey has the answers",
-   "url": "https://www.cnbc.com/2026/10/25/cnbc-survey-midterm-election-voter-fears.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 25 Oct 2026 12:00:01 GMT"
-  },
-  {
    "titulo": "Marc Lore’s Wonder bets on Texas, automation and user-built restaurants as it mulls IPO",
    "url": "https://www.cnbc.com/2026/10/25/wonder-ipo-texas-automation.html",
    "fuente": "CNBC",
    "fecha": "Sun, 25 Oct 2026 12:00:01 GMT"
   },
   {
-   "titulo": "What next for France as riots rattle markets? Three questions facing investors ahead of more protests",
-   "url": "https://www.cnbc.com/2026/10/24/france-riots-paris-unrest-debt-budget.html",
+   "titulo": "What Democrats and Republicans fear most about each other: CNBC survey has the answers",
+   "url": "https://www.cnbc.com/2026/10/25/cnbc-survey-midterm-election-voter-fears.html",
    "fuente": "CNBC",
-   "fecha": "Sun, 25 Oct 2026 08:06:11 GMT"
-  },
-  {
-   "titulo": "Democrats, voting-rights groups challenge Trump's bid to block Alaska Senate certification",
-   "url": "https://www.cnbc.com/2026/10/24/alaska-senate-doj-certification-lawsuit.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 24 Oct 2026 19:57:24 GMT"
+   "fecha": "Sun, 25 Oct 2026 12:00:01 GMT"
   },
   {
    "titulo": "Biotech stocks are surging. How investors can play the new drug innovation boom",
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-25T18:14:00Z",
+ "ts": "2026-10-25T20:58:18Z",
  "fallas": [
   "videos",
   "directos"
