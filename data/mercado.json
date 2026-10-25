@@ -235,51 +235,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29117.75,
-   "cambio": -557.5,
-   "pct": -1.88
+   "precio": 29284.0,
+   "cambio": -391.25,
+   "pct": -1.32
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7659.75,
-   "cambio": -95.5,
-   "pct": -1.23
+   "precio": 7686.75,
+   "cambio": -68.5,
+   "pct": -0.88
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4007.9,
-   "cambio": -134.7,
-   "pct": -3.25
+   "precio": 4014.3,
+   "cambio": -128.3,
+   "pct": -3.1
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 103.27,
-   "cambio": 1.48,
-   "pct": 1.45
+   "precio": 102.13,
+   "cambio": 0.34,
+   "pct": 0.33
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2784.5,
-   "cambio": -2.4,
-   "pct": -0.09
+   "precio": 2795.5,
+   "cambio": 8.6,
+   "pct": 0.31
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52394.0,
-   "cambio": -325.0,
-   "pct": -0.62
+   "precio": 52518.0,
+   "cambio": -201.0,
+   "pct": -0.38
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 80345.0,
-   "cambio": -2225.0,
-   "pct": -2.69
+   "precio": 80490.0,
+   "cambio": -2080.0,
+   "pct": -2.52
   }
  ],
  "acciones": [
@@ -544,28 +544,28 @@
    "fecha": "Sun, 25 Oct 2026 13:00:00 GMT"
   },
   {
-   "titulo": "Marc Lore’s Wonder bets on Texas, automation and user-built restaurants as it mulls IPO",
-   "url": "https://www.cnbc.com/2026/10/25/wonder-ipo-texas-automation.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 25 Oct 2026 12:00:01 GMT"
-  },
-  {
    "titulo": "What Democrats and Republicans fear most about each other: CNBC survey has the answers",
    "url": "https://www.cnbc.com/2026/10/25/cnbc-survey-midterm-election-voter-fears.html",
    "fuente": "CNBC",
    "fecha": "Sun, 25 Oct 2026 12:00:01 GMT"
   },
   {
-   "titulo": "Biotech stocks are surging. How investors can play the new drug innovation boom",
-   "url": "https://www.cnbc.com/2026/10/24/biotech-stocks-drug-innovation-rally.html",
+   "titulo": "Marc Lore’s Wonder bets on Texas, automation and user-built restaurants as it mulls IPO",
+   "url": "https://www.cnbc.com/2026/10/25/wonder-ipo-texas-automation.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 24 Oct 2026 18:56:29 GMT"
+   "fecha": "Sun, 25 Oct 2026 12:00:01 GMT"
   },
   {
    "titulo": "Why popular airplanes are getting scrapped years early",
    "url": "https://www.cnbc.com/2026/10/24/spirit-airlines-planes-scrapped-engine-shortage.html",
    "fuente": "CNBC",
    "fecha": "Sat, 24 Oct 2026 15:18:30 GMT"
+  },
+  {
+   "titulo": "Nvidia's role as AI financier faces first big test as neoclouds take market hit",
+   "url": "https://www.cnbc.com/2026/10/24/nvidias-role-as-ai-financier-faces-first-big-test-as-neoclouds-take-market-hit.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 24 Oct 2026 11:00:01 GMT"
   },
   {
    "titulo": "Trump is pushing a massive AI buildout. His own voters are wary of what comes with it",
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-25T20:58:18Z",
+ "ts": "2026-10-25T23:09:13Z",
  "fallas": [
   "videos",
   "directos"
