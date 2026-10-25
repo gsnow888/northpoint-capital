@@ -277,9 +277,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 80170.0,
-   "cambio": -2400.0,
-   "pct": -2.91
+   "precio": 80650.0,
+   "cambio": -1920.0,
+   "pct": -2.33
   }
  ],
  "acciones": [
@@ -454,6 +454,42 @@
  ],
  "noticias": [
   {
+   "titulo": "My father-in-law, 81, sold his $75,000 home to pay his daughter’s $50,000 debt. How can I keep him from becoming destitute?",
+   "url": "https://www.marketwatch.com/story/my-father-in-law-81-sold-his-75-000-home-and-paid-off-his-daughters-50-000-debt-what-happens-to-him-now-60e8fc72?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 25 Oct 2026 18:00:00 GMT"
+  },
+  {
+   "titulo": "My partner of 17 years left me his $1 million home. His children are livid. Am I obliged to split it with them?",
+   "url": "https://www.marketwatch.com/story/my-unmarried-partner-of-17-years-left-me-his-1-1-million-home-his-three-children-are-livid-should-i-share-my-inheritance-a11d593d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 25 Oct 2026 17:00:00 GMT"
+  },
+  {
+   "titulo": "We have a $300,000 mortgage with a 2.75% interest rate. I want to pay it off. My husband says I’m crazy. Who’s right?",
+   "url": "https://www.marketwatch.com/story/we-have-a-300-000-mortgage-with-a-2-75-interest-rate-i-want-to-pay-it-off-my-husband-says-im-crazy-whos-right-4ed15226?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 25 Oct 2026 17:00:00 GMT"
+  },
+  {
+   "titulo": "We stopped helping our neighbors with free home repairs and our friendship cooled. Who’s to blame?",
+   "url": "https://www.marketwatch.com/story/we-stopped-helping-our-neighbors-with-free-home-repairs-and-our-friendship-cooled-whos-to-blame-d20b0720?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 25 Oct 2026 17:00:00 GMT"
+  },
+  {
+   "titulo": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life. Is that so bad?",
+   "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 25 Oct 2026 16:45:00 GMT"
+  },
+  {
+   "titulo": "Audi defends plans for a $4 billion Georgia plant amid VW restructuring, tariffs",
+   "url": "https://www.cnbc.com/2026/10/25/audi-georgia-us-plant-tariffs-volkswagen.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 25 Oct 2026 16:42:42 GMT"
+  },
+  {
    "titulo": "My spouse was awarded $90,000 from my 401(k) in our divorce. How is that fair?",
    "url": "https://www.marketwatch.com/story/my-spouse-was-awarded-90-000-from-my-401-k-in-our-divorce-how-is-that-fair-dc839aa3?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -496,12 +532,6 @@
    "fecha": "Sun, 25 Oct 2026 13:00:00 GMT"
   },
   {
-   "titulo": "‘Nonanswers’ aren’t working. This is what investors really need from the Fed.",
-   "url": "https://www.marketwatch.com/story/non-answers-arent-working-this-is-what-investors-really-need-from-the-fed-673a9dce?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 25 Oct 2026 12:44:00 GMT"
-  },
-  {
    "titulo": "What Democrats and Republicans fear most about each other: CNBC survey has the answers",
    "url": "https://www.cnbc.com/2026/10/25/cnbc-survey-midterm-election-voter-fears.html",
    "fuente": "CNBC",
@@ -514,34 +544,16 @@
    "fecha": "Sun, 25 Oct 2026 12:00:01 GMT"
   },
   {
-   "titulo": "Why economic health no longer dictates stock-market returns",
-   "url": "https://www.marketwatch.com/story/why-economic-health-no-longer-dictates-stock-market-returns-c44b88f2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 25 Oct 2026 12:00:00 GMT"
-  },
-  {
-   "titulo": "Here’s the real signal to watch for the Fed’s next move",
-   "url": "https://www.marketwatch.com/story/heres-the-real-signal-to-watch-for-the-feds-next-move-9189cb51?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 25 Oct 2026 11:30:00 GMT"
-  },
-  {
    "titulo": "What next for France as riots rattle markets? Three questions facing investors ahead of more protests",
    "url": "https://www.cnbc.com/2026/10/24/france-riots-paris-unrest-debt-budget.html",
    "fuente": "CNBC",
    "fecha": "Sun, 25 Oct 2026 08:06:11 GMT"
   },
   {
-   "titulo": "After SpaceX restores high-speed service, Musk claims Ukraine violated Starlink agreement",
-   "url": "https://www.cnbc.com/2026/10/24/ukraine-starlink-starshield-service-restored.html",
+   "titulo": "Democrats, voting-rights groups challenge Trump's bid to block Alaska Senate certification",
+   "url": "https://www.cnbc.com/2026/10/24/alaska-senate-doj-certification-lawsuit.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 24 Oct 2026 20:38:30 GMT"
-  },
-  {
-   "titulo": "My father-in-law, 81, sold his $75,000 home to pay his daughter’s $50,000 debt. How can I keep him from becoming destitute?",
-   "url": "https://www.marketwatch.com/story/my-father-in-law-81-sold-his-75-000-home-and-paid-off-his-daughters-50-000-debt-what-happens-to-him-now-60e8fc72?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 24 Oct 2026 20:15:00 GMT"
+   "fecha": "Sat, 24 Oct 2026 19:57:24 GMT"
   },
   {
    "titulo": "Biotech stocks are surging. How investors can play the new drug innovation boom",
@@ -550,28 +562,16 @@
    "fecha": "Sat, 24 Oct 2026 18:56:29 GMT"
   },
   {
-   "titulo": "Young Americans are giving up on car ownership. It’s a path to financial freedom for some.",
-   "url": "https://www.marketwatch.com/story/young-americans-are-giving-up-their-cars-its-a-path-to-financial-freedom-for-some-3cce491c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 24 Oct 2026 18:45:00 GMT"
-  },
-  {
    "titulo": "Why popular airplanes are getting scrapped years early",
    "url": "https://www.cnbc.com/2026/10/24/spirit-airlines-planes-scrapped-engine-shortage.html",
    "fuente": "CNBC",
    "fecha": "Sat, 24 Oct 2026 15:18:30 GMT"
   },
   {
-   "titulo": "Amgen says drug combo cuts risk of death by 58% in patients with aggressive lung cancer",
-   "url": "https://www.cnbc.com/2026/10/24/amgen-imdelltra-lung-cancer-data.html",
+   "titulo": "Trump is pushing a massive AI buildout. His own voters are wary of what comes with it",
+   "url": "https://www.cnbc.com/2026/10/24/trump-ai-data-centers-voter-backlash-midterms.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 24 Oct 2026 14:30:01 GMT"
-  },
-  {
-   "titulo": "Nvidia's role as AI financier faces first big test as neoclouds take market hit",
-   "url": "https://www.cnbc.com/2026/10/24/nvidias-role-as-ai-financier-faces-first-big-test-as-neoclouds-take-market-hit.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 24 Oct 2026 11:00:01 GMT"
+   "fecha": "Sat, 24 Oct 2026 10:59:16 GMT"
   },
   {
    "titulo": "America by the numbers: How voters feel about the economy, inflation, AI and Trump",
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-25T14:55:03Z",
+ "ts": "2026-10-25T18:14:00Z",
  "fallas": [
   "videos",
   "directos"
