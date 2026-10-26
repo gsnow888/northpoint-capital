@@ -17,6 +17,8 @@ const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const argv = process.argv.slice(2);
 const evalIdx = argv.indexOf('--eval');
 const evalFile = evalIdx > -1 ? argv.splice(evalIdx, 2)[1] : null;   // --eval script.js: ejecuta en la página y imprime el resultado
+const reduceIdx = argv.indexOf('--reduce');
+const reduceMotion = reduceIdx > -1 ? (argv.splice(reduceIdx, 1), true) : false;   // --reduce: emula prefers-reduced-motion: reduce
 const [url, salida, anchoArg, altoArg, modo] = argv;
 if (!url || !salida || !anchoArg) {
   console.error('uso: node tools/shot.js <url> <salida.png> <ancho> [alto] [--full|--fold]');
@@ -75,6 +77,7 @@ async function main() {
 
   await cmd('Page.enable');
   await cmd('Emulation.setDeviceMetricsOverride', { width: ancho, height: alto, deviceScaleFactor: 1, mobile: ancho < 700 });
+  if (reduceMotion) await cmd('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-reduced-motion', value: 'reduce' }] });
   await cmd('Page.navigate', { url });
   await esperaEvento('Page.loadEventFired', 15000);
   await new Promise(r => setTimeout(r, 2200));   // reveals .rv, fuentes, canvas
