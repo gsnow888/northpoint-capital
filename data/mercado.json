@@ -235,51 +235,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29284.0,
-   "cambio": -391.25,
-   "pct": -1.32
+   "precio": 29059.25,
+   "cambio": -616.0,
+   "pct": -2.08
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7686.75,
-   "cambio": -68.5,
-   "pct": -0.88
+   "precio": 7656.5,
+   "cambio": -98.75,
+   "pct": -1.27
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4014.3,
-   "cambio": -128.3,
-   "pct": -3.1
+   "precio": 4002.5,
+   "cambio": -140.1,
+   "pct": -3.38
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 102.13,
-   "cambio": 0.34,
-   "pct": 0.33
+   "precio": 101.56,
+   "cambio": -0.23,
+   "pct": -0.23
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2795.5,
-   "cambio": 8.6,
-   "pct": 0.31
+   "precio": 2789.5,
+   "cambio": 2.6,
+   "pct": 0.09
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52518.0,
-   "cambio": -201.0,
-   "pct": -0.38
+   "precio": 52411.0,
+   "cambio": -308.0,
+   "pct": -0.58
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 80490.0,
-   "cambio": -2080.0,
-   "pct": -2.52
+   "precio": 79855.0,
+   "cambio": -2715.0,
+   "pct": -3.29
   }
  ],
  "acciones": [
@@ -454,6 +454,36 @@
  ],
  "noticias": [
   {
+   "titulo": "Brazil's Lula wins presidential election in runoff vote",
+   "url": "https://www.cnbc.com/2026/10/26/brazil-lula-win-presidential-election-runoff-vote.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 26 Oct 2026 01:10:46 GMT"
+  },
+  {
+   "titulo": "SpaceX closes $40 billion debt deal for AI chips, Elon Musk says",
+   "url": "https://www.cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 26 Oct 2026 00:37:51 GMT"
+  },
+  {
+   "titulo": "Behind ‘Mad Money’ was a brilliant writer viewers never saw. We lost him too soon",
+   "url": "https://www.cnbc.com/investingclub/2026/10/25/jim-cramer-remembers-cliff-mason.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 26 Oct 2026 00:28:36 GMT"
+  },
+  {
+   "titulo": "‘Ticking time bomb’: The world's pension funds face an ageing crisis",
+   "url": "https://www.cnbc.com/2026/10/26/pension-funds-ageing-crisis-risk-investment.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 26 Oct 2026 00:03:20 GMT"
+  },
+  {
+   "titulo": "In pictures: Protests over inequality, rising living costs turn violent across France",
+   "url": "https://www.cnbc.com/2026/10/25/france-protests-paris-cost-of-living-inequality.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 25 Oct 2026 23:55:22 GMT"
+  },
+  {
    "titulo": "Blanche defends Trump-ordered lawsuit over Alaska Senate election certification",
    "url": "https://www.cnbc.com/2026/10/25/blanche-doj-alaska-senate-certification-lawsuit.html",
    "fuente": "CNBC",
@@ -514,12 +544,6 @@
    "fecha": "Sun, 25 Oct 2026 14:30:00 GMT"
   },
   {
-   "titulo": "In pictures: Initially peaceful protests across France over inequality again descend into violence",
-   "url": "https://www.cnbc.com/2026/10/25/france-protests-paris-cost-of-living-inequality.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 25 Oct 2026 14:14:23 GMT"
-  },
-  {
    "titulo": "More than a third of S&P 500 companies are about to report earnings as market confidence cracks",
    "url": "https://www.marketwatch.com/story/more-than-a-third-of-s-p-500-companies-are-about-to-report-earnings-as-market-confidence-cracks-03b7a8f1?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -532,12 +556,6 @@
    "fecha": "Sun, 25 Oct 2026 13:45:00 GMT"
   },
   {
-   "titulo": "Saudi Arabia says it intercepted missiles and drones from Iran-backed Houthis",
-   "url": "https://www.cnbc.com/2026/10/25/saudi-arabia-houthi-missile-drone-interceptions.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 25 Oct 2026 13:41:37 GMT"
-  },
-  {
    "titulo": "Worried about this stock-market selloff? Relief may be coming after the midterms — no matter who wins.",
    "url": "https://www.marketwatch.com/story/worried-about-this-stock-market-selloff-relief-may-be-coming-after-the-midterms-no-matter-who-wins-39322c07?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -546,12 +564,6 @@
   {
    "titulo": "What Democrats and Republicans fear most about each other: CNBC survey has the answers",
    "url": "https://www.cnbc.com/2026/10/25/cnbc-survey-midterm-election-voter-fears.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 25 Oct 2026 12:00:01 GMT"
-  },
-  {
-   "titulo": "Marc Lore’s Wonder bets on Texas, automation and user-built restaurants as it mulls IPO",
-   "url": "https://www.cnbc.com/2026/10/25/wonder-ipo-texas-automation.html",
    "fuente": "CNBC",
    "fecha": "Sun, 25 Oct 2026 12:00:01 GMT"
   },
@@ -568,22 +580,10 @@
    "fecha": "Sat, 24 Oct 2026 11:00:01 GMT"
   },
   {
-   "titulo": "Trump is pushing a massive AI buildout. His own voters are wary of what comes with it",
-   "url": "https://www.cnbc.com/2026/10/24/trump-ai-data-centers-voter-backlash-midterms.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 24 Oct 2026 10:59:16 GMT"
-  },
-  {
    "titulo": "America by the numbers: How voters feel about the economy, inflation, AI and Trump",
    "url": "https://www.cnbc.com/2026/10/23/america-by-the-numbers-how-voters-feel-about-the-economy-inflation-ai-and-trump.html",
    "fuente": "CNBC",
    "fecha": "Sat, 24 Oct 2026 10:58:30 GMT"
-  },
-  {
-   "titulo": "Trump's executive order targets mortgage insurance, refinance costs. What it means for borrowers",
-   "url": "https://www.cnbc.com/2026/10/23/trump-mortgage-executive-order-costs.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 23 Oct 2026 22:27:06 GMT"
   }
  ],
  "videos": [
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-25T23:09:13Z",
+ "ts": "2026-10-26T01:19:20Z",
  "fallas": [
   "videos",
   "directos"
