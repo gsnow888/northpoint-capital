@@ -235,51 +235,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29504.0,
-   "cambio": -503.0,
-   "pct": -1.68
+   "precio": 29331.5,
+   "cambio": 189.5,
+   "pct": 0.65
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7727.75,
-   "cambio": -72.5,
-   "pct": -0.93
+   "precio": 7706.75,
+   "cambio": 2.25,
+   "pct": 0.03
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4025.8,
-   "cambio": -124.2,
-   "pct": -2.99
+   "precio": 4016.0,
+   "cambio": -44.4,
+   "pct": -1.09
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 100.84,
-   "cambio": 3.69,
-   "pct": 3.8
+   "precio": 102.12,
+   "cambio": 2.65,
+   "pct": 2.66
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2801.7,
-   "cambio": 7.5,
-   "pct": 0.27
+   "precio": 2793.2,
+   "cambio": -2.9,
+   "pct": -0.1
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52641.0,
-   "cambio": -418.0,
-   "pct": -0.79
+   "precio": 52569.0,
+   "cambio": -499.0,
+   "pct": -0.94
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 79950.0,
-   "cambio": -4665.0,
-   "pct": -5.51
+   "precio": 79745.0,
+   "cambio": -1710.0,
+   "pct": -2.1
   }
  ],
  "acciones": [
@@ -454,10 +454,46 @@
  ],
  "noticias": [
   {
-   "titulo": "China industrial profits post strongest growth in three months, rising 14.4%",
+   "titulo": "Opinion: UK bond investors want spending cuts. John Healey’s first Budget may disappoint",
+   "url": "https://www.cnbc.com/2026/10/27/uk-budget-2026-john-healey-bond-market.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 27 Oct 2026 07:34:34 GMT"
+  },
+  {
+   "titulo": "The 'stablecoin sandwich': Why speeding up payments isn't so simple, according to Mastercard",
+   "url": "https://www.cnbc.com/2026/10/27/mastcard-stablecoin-bvnk-.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 27 Oct 2026 07:16:35 GMT"
+  },
+  {
+   "titulo": "HSBC announces share buyback of up to $1 billion as third-quarter profit meets estimates",
+   "url": "https://www.cnbc.com/2026/10/27/hsbc-third-quarter-profit-.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 27 Oct 2026 05:30:10 GMT"
+  },
+  {
+   "titulo": "Oil falls as renewed diplomatic efforts to end Mideast conflict ease supply concerns",
+   "url": "https://www.cnbc.com/2026/10/27/oil-today-iran-us-crude-wti-brent-trump.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 27 Oct 2026 05:09:59 GMT"
+  },
+  {
+   "titulo": "Judge fast-tracks DOJ's Alaska Senate lawsuit as Peltola seeks dismissal before Election Day",
+   "url": "https://www.cnbc.com/2026/10/26/alaska-senate-peltola-doj-lawsuit-election-sullivan.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 27 Oct 2026 04:40:30 GMT"
+  },
+  {
+   "titulo": "What gave this city its ‘best place to retire’ crown? You can actually afford to live there.",
+   "url": "https://www.marketwatch.com/story/what-gave-this-city-its-best-place-to-retire-crown-you-can-actually-afford-to-live-there-a06f8f4d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 27 Oct 2026 04:01:00 GMT"
+  },
+  {
+   "titulo": "China industrial profits post strongest growth in three months as tech boom widens economic divide",
    "url": "https://www.cnbc.com/2026/10/27/china-industrial-profits-september-ai-tech-exports-.html",
    "fuente": "CNBC",
-   "fecha": "Tue, 27 Oct 2026 01:45:58 GMT"
+   "fecha": "Tue, 27 Oct 2026 03:34:08 GMT"
   },
   {
    "titulo": "China and Russia are redrawing Arctic trade. Can Europe fight back?",
@@ -472,28 +508,22 @@
    "fecha": "Tue, 27 Oct 2026 01:05:06 GMT"
   },
   {
-   "titulo": "Bank of Japan is expected to hold rates this week — but stay hawkish: CNBC survey",
-   "url": "https://www.cnbc.com/2026/10/27/boj-october-meeting-rate-cnbc-survey.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 27 Oct 2026 00:17:44 GMT"
-  },
-  {
    "titulo": "From Wall Street to Silicon Valley, Anthropic IPO poised to have massive 'trickle-down effect'",
    "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-might-trigger-tech-reset-if-ipo-underperforms.html",
    "fuente": "CNBC",
    "fecha": "Mon, 26 Oct 2026 22:50:07 GMT"
   },
   {
+   "titulo": "Israeli election draws tens of thousands of citizens flying back to vote",
+   "url": "https://www.cnbc.com/2026/10/27/israeli-election-citizens-flying-back-vote.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 26 Oct 2026 22:46:35 GMT"
+  },
+  {
    "titulo": "‘You need only watch episodes of Judge Judy’: I’m in my 70s. Why do people keep making the same avoidable financial mistakes?",
    "url": "https://www.marketwatch.com/story/you-need-only-watch-episodes-of-judge-judy-im-in-my-70s-why-do-people-keep-making-the-same-avoidable-financial-mistakes-bbf60fe4?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Mon, 26 Oct 2026 22:30:00 GMT"
-  },
-  {
-   "titulo": "DOJ charges ex-FBI Director James Comey in new case",
-   "url": "https://www.cnbc.com/2026/10/26/james-comey-indictment-national-defense-doj-trump.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 26 Oct 2026 22:24:36 GMT"
   },
   {
    "titulo": "Dividend stocks are having an excellent October as tech sector struggles",
@@ -538,18 +568,6 @@
    "fecha": "Mon, 26 Oct 2026 21:44:00 GMT"
   },
   {
-   "titulo": "Bessent dines at Cheesecake Factory, slams Obama over Trump joke",
-   "url": "https://www.cnbc.com/2026/10/26/bessent-obama-cheesecake-trump-election.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 26 Oct 2026 21:38:17 GMT"
-  },
-  {
-   "titulo": "JetBlue posts bigger loss on fuel costs, but CEO says margins improving",
-   "url": "https://www.cnbc.com/2026/10/26/jetblue-jblu-3q-2026-earnings.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 26 Oct 2026 21:18:07 GMT"
-  },
-  {
    "titulo": "Why Lumentum’s stock led the S&P 500 higher on Monday",
    "url": "https://www.marketwatch.com/story/why-lumentums-stock-led-the-s-p-500-higher-on-monday-0dff125b?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -562,28 +580,10 @@
    "fecha": "Mon, 26 Oct 2026 20:50:00 GMT"
   },
   {
-   "titulo": "We stopped helping our neighbors with free home repairs and our friendship cooled. Who’s to blame?",
-   "url": "https://www.marketwatch.com/story/we-stopped-helping-our-neighbors-with-free-home-repairs-and-our-friendship-cooled-whos-to-blame-d20b0720?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 26 Oct 2026 20:15:00 GMT"
-  },
-  {
-   "titulo": "Federal Reserve is likely to hold interest rates steady in October. Here's what that means for consumers",
-   "url": "https://www.cnbc.com/2026/10/26/fed-decision-expectations-october-meeting.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 26 Oct 2026 18:51:23 GMT"
-  },
-  {
    "titulo": "Apple responds to user reports of broken iPhone Duo screens on new foldable phone",
    "url": "https://www.cnbc.com/2026/10/26/apple-responds-to-user-reports-of-broken-iphone-duo-screens.html",
    "fuente": "CNBC",
    "fecha": "Mon, 26 Oct 2026 18:43:25 GMT"
-  },
-  {
-   "titulo": "The arc of Trump: How the president lost the coalition that put him in the White House",
-   "url": "https://www.cnbc.com/2026/10/26/trump-approval-midterms-cnbc-survey.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 26 Oct 2026 17:36:55 GMT"
   }
  ],
  "videos": [
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-27T02:11:26Z",
+ "ts": "2026-10-27T08:00:18Z",
  "fallas": [
   "videos",
   "directos"
