@@ -454,6 +454,7 @@ html.fx .gbar{transform:scaleX(0)}
 /* ── revelados (GSAP con html.fx; visibles sin efectos) ── */
 html.fx .rv{opacity:0}
 html.fx .rvi{clip-path:inset(0 0 100% 0)}
+html.fx .sq{opacity:0}
 
 /* ── capas de efectos: intro, cursor, foco, grano, progreso ── */
 .boot{position:fixed;inset:0;z-index:120;background:var(--bg);display:grid;place-items:center;clip-path:inset(0 0 0 0);transition:clip-path .75s cubic-bezier(.76,0,.24,1)}
@@ -613,7 +614,7 @@ html.lenis{scroll-behavior:auto!important}
       <div class="st-prog"><i></i></div>
     </div>
     <div class="st-stage">
-      <div class="term"><div class="tb"><b>NQ</b> · 1 min <span class="lv">En vivo</span></div><canvas id="stCv" role="img" aria-label="Gráfica de velas del trade de ejemplo"></canvas><div class="st-badge" id="stBadge">Vigilando</div><div class="st-saved" id="stSaved">Guardado en tu journal</div></div>
+      <div class="term rvi"><div class="tb"><b>NQ</b> · 1 min <span class="lv">En vivo</span></div><canvas id="stCv" role="img" aria-label="Gráfica de velas del trade de ejemplo"></canvas><div class="st-badge" id="stBadge">Vigilando</div><div class="st-saved" id="stSaved">Guardado en tu journal</div></div>
       <div class="st-log" id="stLog" aria-hidden="true">
         <div class="lh"><b>NORTHPOINT</b><span>Log trade</span></div>
         <div class="bd">
@@ -858,8 +859,8 @@ if (window.Lenis && !REDUCE) {
 
 // ── nav: sombra al bajar; menú móvil ──
 const nav = $("#nav"); const onS = () => nav.classList.toggle("s", scrollY > 40); addEventListener("scroll", onS, { passive: true }); onS();
-const burger = $(".burger"); burger.addEventListener("click", () => { const on = !H.classList.contains("menu"); $("#menu").style.setProperty("--menu-top", Math.round(nav.getBoundingClientRect().bottom) + "px"); H.classList.toggle("menu", on); burger.setAttribute("aria-expanded", on); if (lenis) on ? lenis.stop() : lenis.start(); });
-$$("#menu a").forEach(a => a.addEventListener("click", () => { H.classList.remove("menu"); burger.setAttribute("aria-expanded", "false"); if (lenis) lenis.start(); }));
+const burger = $(".burger"); burger.addEventListener("click", () => { const on = !H.classList.contains("menu"); $("#menu").style.setProperty("--menu-top", Math.round(nav.getBoundingClientRect().bottom) + "px"); H.classList.toggle("menu", on); burger.setAttribute("aria-expanded", on); if (lenis) { if (on) lenis.stop(); else if (canStart()) lenis.start(); } });
+$$("#menu a").forEach(a => a.addEventListener("click", () => { H.classList.remove("menu"); burger.setAttribute("aria-expanded", "false"); if (lenis && canStart()) lenis.start(); }));
 
 // ── partir titulares en palabras (para que suban una a una) ──
 const split = el => { if (!el || el.dataset.split) return; el.dataset.split = "1"; const txt = el.textContent.trim().replace(/\s+/g, " "), out = [];
@@ -886,9 +887,9 @@ const hero = $("#hero"); let heroVisible = true, BOOTING = false, APP_OPEN = fal
 })();
 
 // ── intro de arranque + entrada del hero ──
-const introHero = delay => { if (!FX) return;
+const introHero = delay => { if (!FX) return; if (lenis) lenis.stop();   // nadie avanza hasta que el hero ha salido completo
   const h1 = $("#h1"); split(h1); const words = $$(".w > *", h1); gsap.set(words, { yPercent: 120 }); gsap.set(h1, { opacity: 1 });
-  const tl = gsap.timeline({ delay, defaults: { ease: "power4.out" } });
+  const tl = gsap.timeline({ delay, defaults: { ease: "power4.out" }, onComplete: () => { if (lenis && canStart()) lenis.start(); armGates(); } });
   tl.to(".nav .in", { opacity: 1, y: 0, duration: .8 }, 0).from(".nav .in", { y: -16, duration: .8 }, 0)
     .to("#dots", { opacity: 1, duration: 1.6, ease: "power2.out" }, 0)
     .to(".hero .pill", { opacity: 1, y: 0, duration: .9 }, .1).from(".hero .pill", { y: -18, duration: .9 }, .1)
@@ -901,7 +902,7 @@ const introHero = delay => { if (!FX) return;
   if (seen) { b.remove(); introHero(.05); return; }
   BOOTING = true; if (lenis) lenis.stop(); const n = $("b", b), line = $(".bl i", b), o = { v: 0 };
   gsap.to(o, { v: 100, duration: 1.1, ease: "power2.inOut", onUpdate: () => { n.textContent = String(Math.round(o.v)).padStart(3, "0"); line.style.transform = `scaleX(${o.v / 100})`; },
-    onComplete: () => { b.classList.add("out"); BOOTING = false; try { sessionStorage.setItem("npj-boot", "1"); } catch (_) {} if (lenis) lenis.start(); setTimeout(() => b.remove(), 900); introHero(.2); } });
+    onComplete: () => { b.classList.add("out"); BOOTING = false; try { sessionStorage.setItem("npj-boot", "1"); } catch (_) {} setTimeout(() => b.remove(), 900); introHero(.2); } });
 })();
 
 // ── cursor con mira, foco de luz y botones magnéticos (solo puntero fino): el bucle solo escribe cuando hay algo que mover ──
@@ -948,18 +949,56 @@ if (FINE) (() => {
     t.addEventListener("mouseleave", () => { rx(0); ry(0); setTimeout(() => { t.style.willChange = ""; }, 700); }); });
 })();
 
-// ── revelados al bajar: bloques, titulares palabra por palabra, imágenes con corte, barras, bandas ──
+// ── compuertas, como la referencia: al llegar a una sección el scroll se bloquea, la sección se acomoda en pantalla y
+//    salen todos sus efectos y todo su texto antes de poder seguir. Una vez por sección; subir y volver es libre. ──
+const GATE = { locked: false, pending: [], done: new Set(), list: [] };
+const canStart = () => !APP_OPEN && !H.classList.contains("menu") && !BOOTING && !GATE.locked;
+const gateReveal = (g, instant) => {
+  const roots = [g.el, ...(g.also || [])], q = sel => roots.flatMap(r => [...r.querySelectorAll(sel), ...(r.matches(sel) ? [r] : [])]);
+  const rvs = q(".rv"), words = q("h2.sw .w > *"), sqs = q(".sq"), rvis = q(".rvi"), gbars = q(".gbar");
+  const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+  if (rvs.length) tl.to(rvs, { opacity: 1, y: 0, duration: .7, stagger: .08 }, 0);
+  if (words.length) tl.to(words, { yPercent: 0, duration: .8, stagger: .035 }, .05);
+  if (rvis.length) tl.to(rvis, { clipPath: "inset(0 0 0% 0)", duration: .9, stagger: .1 }, .15);
+  if (gbars.length) tl.to(gbars, { scaleX: 1, duration: .8, stagger: .08 }, .2);
+  if (sqs.length) tl.to(sqs, { opacity: 1, y: 0, duration: .6, stagger: .06 }, .25);
+  if (instant) tl.progress(1);
+  return tl; };
+const gateUnlock = () => { GATE.locked = false; if (lenis && canStart()) lenis.start();
+  while (GATE.pending.length) { const g = GATE.pending.shift(); if (!GATE.done.has(g)) { gateRun(g); break; } } };
+const gateRun = g => { if (GATE.done.has(g)) return; GATE.done.add(g); GATE.locked = true;
+  const play = () => { if (lenis) lenis.stop(); gateReveal(g).eventCallback("onComplete", gateUnlock); };
+  if (g.snap && lenis) lenis.scrollTo(Math.round(g.el.getBoundingClientRect().top + scrollY - 70), { force: true, lock: true, duration: .85, easing: t => 1 - Math.pow(1 - t, 3), onComplete: play });
+  else play(); };
+const releaseUpTo = target => { const ty = target.getBoundingClientRect().top + scrollY; GATE.list.forEach(g => { if (GATE.done.has(g)) return; if (g.el.getBoundingClientRect().top + scrollY <= ty + 1) { GATE.done.add(g); gateReveal(g, true); } }); };
+let armGates = () => {};
 if (FX) (() => {
-  $$(".rv").forEach(el => { gsap.set(el, { y: 36 }); gsap.to(el, { opacity: 1, y: 0, duration: 1, ease: "power3.out", scrollTrigger: { trigger: el, start: "top 90%", once: true } }); });
-  $$("h2.sw").forEach(h => { split(h); const w = $$(".w > *", h); gsap.from(w, { yPercent: 120, duration: 1, stagger: .05, ease: "power4.out", scrollTrigger: { trigger: h, start: "top 90%", once: true } }); });
-  $$(".rvi").forEach(el => gsap.to(el, { clipPath: "inset(0 0 0% 0)", duration: 1.3, ease: "power4.out", scrollTrigger: { trigger: el, start: "top 88%", once: true } }));
-  $$(".gbar").forEach(el => gsap.to(el, { scaleX: 1, duration: 1.3, ease: "power3.inOut", scrollTrigger: { trigger: el, start: "top 92%", once: true } }));
+  $$(".acc .it, .nl li, .vs li, .plans > div, .faq .q, .card, .st-cap > *").forEach(e => e.classList.add("sq"));
+  $$("h2.sw").forEach(split);
+  gsap.set($$(".rv"), { y: 36 }); gsap.set($$(".sq"), { y: 14 }); gsap.set($$("h2.sw .w > *"), { yPercent: 120 });
+  const twoB = $$("section.two")[1], lts = $$(".lt section");
+  GATE.list = [
+    { el: $(".glow"), also: [$(".metrics")], snap: true },
+    { el: $("#historia"), snap: true }, { el: $("#ventajas"), snap: true }, { el: $("#porque"), snap: true }, { el: twoB, snap: true },
+    { el: lts[0], snap: true }, { el: lts[1], snap: true }, { el: $("#planes"), snap: true }, { el: $("#faq"), snap: true }, { el: $(".final"), snap: true },
+  ].filter(g => g.el);
+  // lo que queda fuera de toda compuerta se revela por elemento, como antes
+  const covered = new Set(); GATE.list.forEach(g => [g.el, ...(g.also || [])].forEach(r => { covered.add(r); r.querySelectorAll("*").forEach(e => covered.add(e)); }));
+  $$(".rv, .sq").filter(e => !covered.has(e)).forEach(el => gsap.to(el, { opacity: 1, y: 0, duration: .8, ease: "power3.out", scrollTrigger: { trigger: el, start: "top 90%", once: true } }));
+  $$(".rvi").filter(e => !covered.has(e)).forEach(el => gsap.to(el, { clipPath: "inset(0 0 0% 0)", duration: 1.1, ease: "power4.out", scrollTrigger: { trigger: el, start: "top 88%", once: true } }));
+  $$(".gbar").filter(e => !covered.has(e)).forEach(el => gsap.to(el, { scaleX: 1, duration: 1.1, ease: "power3.inOut", scrollTrigger: { trigger: el, start: "top 92%", once: true } }));
+  $$("h2.sw").filter(e => !covered.has(e)).forEach(h => gsap.to($$(".w > *", h), { yPercent: 0, duration: .9, stagger: .04, ease: "power4.out", scrollTrigger: { trigger: h, start: "top 90%", once: true } }));
+  armGates = () => { armGates = () => {};
+    GATE.list.forEach(g => { if (g.el.getBoundingClientRect().top < innerHeight * .75) { GATE.done.add(g); gateReveal(g); return; }   // ya está a la vista (pantallas altas): sale sin bloquear
+      ScrollTrigger.create({ trigger: g.el, start: "top 75%", once: true, onEnter: () => { if (GATE.done.has(g)) return; if (GATE.locked) { if (!GATE.pending.includes(g)) GATE.pending.push(g); } else gateRun(g); } }); }); };
+  // un ancla (menú, botones) libera de golpe todas las compuertas hasta su destino: el salto no se interrumpe
+  document.addEventListener("click", e => { const a = e.target.closest('a[href^="#"]'); if (!a) return; const t = document.querySelector(a.getAttribute("href")); if (t) releaseUpTo(t); }, true);
   $$(".band").forEach(b => ScrollTrigger.create({ trigger: b, start: "top 94%", once: true, onEnter: () => b.classList.add("on") }));
   // marco de la app bajo el hero: se endereza en 3D conforme entra
   const win = $(".glow .win"); gsap.fromTo(win, { rotateX: 16, scale: .92, y: 40 }, { rotateX: 0, scale: 1, y: 0, ease: "none", scrollTrigger: { trigger: ".glow", start: "top 85%", end: "top 30%", scrub: .4 } });
   // paralaje suave de ventanas e imágenes
   $$("[data-parallax]").forEach(el => gsap.to(el, { y: +el.dataset.parallax, ease: "none", scrollTrigger: { trigger: el, start: "top bottom", end: "bottom top", scrub: true } }));
-  // cajas de cifras del cierre flotan
+  // cajas de cifras del cierre flotan (solo mientras el cierre está a la vista)
   gsap.to(".stat", { y: -8, duration: 2.6, yoyo: true, repeat: -1, ease: "sine.inOut", stagger: .5, scrollTrigger: { trigger: ".final", start: "top bottom", end: "bottom top", toggleActions: "play pause resume pause" } });
   addEventListener("load", () => ScrollTrigger.refresh()); if (document.fonts) document.fonts.ready.then(() => ScrollTrigger.refresh());
 })();
@@ -1062,7 +1101,7 @@ const ABTN = (txt, href, cls = "white") => `<a class="btn ${cls}" href="${href}"
 const CHK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>';
 const INERT = () => $$("#nav, #menu, main, .ticker, .skip");
 const open = p => { plan = p || ""; i = 0; R = {}; lastFocus = document.activeElement; app.classList.add("open"); H.classList.add("app-open"); H.classList.remove("menu"); APP_OPEN = true; INERT().forEach(el => el.setAttribute("inert", "")); if (window.__curReset) __curReset(); if (lenis) lenis.stop(); render(); };
-const close = () => { app.classList.remove("open"); H.classList.remove("app-open"); APP_OPEN = false; INERT().forEach(el => el.removeAttribute("inert")); if (window.__curReset) __curReset(); if (lenis) lenis.start(); if (lastFocus) lastFocus.focus(); };
+const close = () => { app.classList.remove("open"); H.classList.remove("app-open"); APP_OPEN = false; INERT().forEach(el => el.removeAttribute("inert")); if (window.__curReset) __curReset(); if (lenis && canStart()) lenis.start(); if (lastFocus) lastFocus.focus(); };
 const setProg = (k, tot, label) => { prog.innerHTML = label ? `<b>${label}</b>` : `<b>${String(k).padStart(2, "0")}</b> / ${String(tot).padStart(2, "0")}`; track.style.width = Math.round(100 * k / tot) + "%"; };
 const swap = html => { scr.classList.remove("in"); scr.classList.add("out"); setTimeout(() => { scr.innerHTML = html; scr.classList.remove("out"); requestAnimationFrame(() => scr.classList.add("in")); const f = $("button.opt, input", scr) || $("h2", scr); if (f) { if (f.tagName === "H2") f.tabIndex = -1; f.focus({ preventScroll: true }); } }, REDUCE ? 0 : 220); };
 function render() {
