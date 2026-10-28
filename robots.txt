@@ -1,9 +1,8 @@
 # northpointcapital.io
+# Las páginas internas y de eras anteriores llevan <meta name="robots" content="noindex">:
+# Google tiene que poder leerlas para respetarlo, por eso aquí no se bloquean.
 User-agent: *
 Allow: /
-# el Terminal es de miembros y la página de gracias no aporta nada en buscador
-Disallow: /app.html
-Disallow: /gracias.html
-Disallow: /bootcamp.html
+Disallow: /tools/
 
 Sitemap: https://northpointcapital.io/sitemap.xml

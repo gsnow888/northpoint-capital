@@ -166,3 +166,12 @@ Alternativa: Se conservan las llamadas tal cual; funcionan igual que en el sitio
 ```
 
 Todo lo demás —textos, estructura, tipografía, colores, espaciados, animaciones CSS y canvas, hover, focus, reveals, tema claro/oscuro, formularios, iframes, acordeones, barras fijas, comportamiento responsive— está replicado con el código original.
+
+## 7. SEO (27-oct-2026)
+
+- Cada página vigente lleva su cabecera SEO entre `<!-- seo:inicio -->` y `<!-- seo:fin -->`: title, description, canonical, Open Graph/Twitter, icono iOS y un JSON-LD con `@graph` (Organization + WebSite + WebPage + BreadcrumbList, más SoftwareApplication/FAQPage en `trading.html`, FAQPage en `ahorro.html`, Service en `family-office.html`, Article en `memos/*`). Es el único bloque que hay que tocar para cambiar título, descripción o imagen.
+- Páginas internas o de eras anteriores (`app`, `oficina`, `despacho`, `centro`, `reporte`, `journal`, `dossier`, `respaldo`, `activos`, `ahorro-app`, `programa`, `trading/*`…) llevan `<meta name="robots" content="noindex,follow">`. Nunca bloquearlas en `robots.txt`: Google tiene que poder leerlas para respetar el noindex.
+- `sitemap.xml` lista solo las URL indexables, con `lastmod`. Página nueva = título único, description ≤ 160 caracteres, canonical absoluto y su fila en el sitemap.
+- Imagen para compartir (`img/og-northpoint.jpg`, 1200×630) y logo del schema (`img/logo-northpoint.png`, 512) se generan con las plantillas de `tools/og/` y `tools/shot.js` (ver comentario en cada plantilla).
+- `privacidad.html` es el aviso canónico; `legal/privacidad.html` apunta a él con canonical. `socios.html` e `inmobiliario.html` son redirecciones.
+- Lo que no vive en el código (Search Console, sitemap enviado, perfiles para `sameAs`) está en `NEXUS/CLIENTES/NP-001_NORTHPOINT/entregables/SEO/SEO-northpointcapital.md`.
