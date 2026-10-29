@@ -554,6 +554,30 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
 .stat::before{transition-delay:var(--sd)!important}
 .stat b{transition-delay:calc(var(--sd) + .15s)!important}
 .stat p{transition-delay:calc(var(--sd) + .45s)!important}
+
+/* escena: operas en el teléfono → se registra en NORTHPOINT */
+.duo{display:grid;grid-template-columns:auto 150px 1fr;align-items:center;gap:20px;max-width:1080px;margin:56px auto 0;text-align:left}
+.duo-c{margin-top:14px;text-align:center;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3)}
+.iph.sm{width:250px;height:510px;border-radius:44px;padding:10px;background:#0f1013;box-shadow:0 0 0 1.5px #34363c,0 40px 90px -30px rgba(61,123,255,.6)}
+.iph.sm .iph-in{border-radius:35px;padding:44px 10px 12px;background:#0b0e14;display:flex;flex-direction:column}
+.tv-h{display:flex;align-items:baseline;gap:8px;padding:0 6px 8px;border-bottom:1px solid #1e222d}
+.tv-h b{font-size:14px}.tv-h span{font-size:10.5px;color:#787b86;flex:1}.tv-h em{font-style:normal;font-family:var(--mono);font-size:12px;color:#26a69a}
+#tv{flex:1;width:100%;display:block}
+.tv-b{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding-top:8px}
+.tv-b button{height:40px;border:0;border-radius:8px;font-family:var(--mono);font-weight:700;font-size:12px;color:#fff;letter-spacing:.08em}
+.tv-b .s{background:#ef5350}.tv-b .b{background:#26a69a;transition:transform .15s,box-shadow .2s}
+.tv-b .b.tap{transform:scale(.94);box-shadow:0 0 0 6px rgba(38,166,154,.35)}
+.tv-t{position:absolute;left:14px;right:14px;top:72px;padding:10px 12px;border-radius:10px;background:rgba(38,166,154,.95);color:#fff;font-size:12.5px;font-weight:600;text-align:center;opacity:0;transform:translateY(-8px);transition:opacity .35s,transform .35s}
+.tv-t.on{opacity:1;transform:none}
+.duo-ar{display:flex;flex-direction:column;align-items:center;gap:8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ac2)}
+.duo-ar svg{width:120px;height:24px;overflow:visible}
+.duo-ar path:first-child{stroke-dasharray:6 8;animation:flow 1.1s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-28}}
+.dm-scr{border:9px solid #0f1013;border-bottom-width:14px;border-radius:14px 14px 4px 4px;overflow:hidden;background:#000;box-shadow:0 40px 110px -30px rgba(61,123,255,.6),0 0 0 1px rgba(160,185,255,.18)}
+.dm-scr video{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.dm-base{display:block;height:12px;margin:0 -6%;background:linear-gradient(180deg,#c9ccd2,#8b8f97 60%,#5d6067);border-radius:2px 2px 12px 12px}
+@media (max-width:960px){.duo{grid-template-columns:1fr;justify-items:center;gap:14px}.duo-ar{transform:rotate(90deg);margin:10px 0}.duo-ar span{transform:rotate(-90deg)}.duo-mac{width:100%}}
+@media (max-width:600px){.iph.sm{width:220px;height:450px}}
 </style>
 </head>
 <body>
@@ -582,6 +606,17 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
       <a href="#comunidad" class="btn btn-ol" data-red="discord">Únete al Discord <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
     <p class="micro rv d3">Cupos limitados · Aplicar toma 2 minutos · Mac y Windows</p>
+    
+    <div class="duo rv d4" id="duo">
+      <div class="duo-ph"><div class="iph sm"><div class="iph-in tvi"><i class="island"></i>
+        <div class="tv-h"><b>NQ1!</b><span>Nasdaq 100 · 1m</span><em id="tvPx">21,480.25</em></div>
+        <canvas id="tv"></canvas>
+        <div class="tv-b"><button class="s">SELL</button><button class="b" id="tvBuy">BUY</button></div>
+        <div class="tv-t" id="tvT">Take profit alcanzado · +2R</div>
+      </div></div><p class="duo-c">Operas en tu plataforma</p></div>
+      <div class="duo-ar"><svg viewBox="0 0 120 24"><path d="M2 12H112M104 4l10 8-10 8" fill="none" stroke="url(#dg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="dg" x1="0" x2="1"><stop offset="0" stop-color="#3d7bff" stop-opacity=".2"/><stop offset="1" stop-color="#8fb3ff"/></linearGradient></defs></svg><span>se registra solo</span></div>
+      <div class="duo-mac"><div class="dm-scr"><video src="assets/l/logtrade.mp4" poster="assets/l/logtrade.jpg" autoplay muted loop playsinline preload="metadata"></video></div><i class="dm-base"></i><p class="duo-c">NORTHPOINT lo registra con su R, emoción y notas</p></div>
+    </div>
     <div class="brk rv d4"><span>Se conecta con</span><b>Exness</b><b>Tradovate</b><b>MetaTrader 5</b><b>NinjaTrader</b><b>Archivo CSV</b></div>
   </div>
 </header>
@@ -964,6 +999,29 @@ const REDES = {
   $$('#faqL .fq').forEach(f => { io.observe(f); f.querySelector('button').onclick = () => f.classList.toggle('on'); });
 
   vigila();
+
+  // gráfica del teléfono: entra un long, sube al objetivo y lo cierra
+  { const cv = $('#tv'); if (cv) { const g = cv.getContext('2d'); let W, H, C = [], st = 0, t0 = 0, x = 3, ent = null;
+    const rnd = () => (x = (x * 16807) % 2147483647) / 2147483647;
+    const size = () => { const r = cv.getBoundingClientRect(), d = devicePixelRatio || 1; W = r.width; H = r.height; cv.width = W * d; cv.height = H * d; g.setTransform(d, 0, 0, d, 0, 0); };
+    const reset = () => { C = []; let p = 21480; for (let i = 0; i < 26; i++) { const o = p, c = o + (rnd() - .5) * 6, h = Math.max(o, c) + rnd() * 3, l = Math.min(o, c) - rnd() * 3; C.push([o, h, l, c]); p = c; } st = 0; ent = null; $('#tvT').classList.remove('on'); };
+    size(); reset(); addEventListener('resize', size);
+    const paso = () => { const u = C[C.length - 1][3]; let c;
+      if (st === 0) c = u + (rnd() - .55) * 5; else if (st === 1) c = u + (rnd() - .25) * 6; else c = u + (rnd() - .5) * 3;
+      const h = Math.max(u, c) + rnd() * 2.5, l = Math.min(u, c) - rnd() * 2.5; C.push([u, h, l, c]); if (C.length > 30) C.shift();
+      $('#tvPx').textContent = c.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      if (st === 0 && C.length >= 30 && rnd() < .25) { st = 1; ent = c; const b = $('#tvBuy'); b.classList.add('tap'); setTimeout(() => b.classList.remove('tap'), 250); }
+      else if (st === 1 && h >= ent + 24) { st = 2; $('#tvT').classList.add('on'); setTimeout(reset, 3200); } };
+    const draw = t => { if (t - t0 > 420) { t0 = t; paso(); }
+      const all = C.flatMap(k => [k[1], k[2]]).concat(ent ? [ent - 12, ent + 24] : []), mn = Math.min(...all) - 2, mx = Math.max(...all) + 2, Y = v => 8 + (mx - v) / (mx - mn) * (H - 16), cw = W / 31;
+      g.clearRect(0, 0, W, H); g.strokeStyle = '#1e222d'; g.lineWidth = 1; for (let i = 1; i < 5; i++) { g.beginPath(); g.moveTo(0, H * i / 5); g.lineTo(W, H * i / 5); g.stroke(); }
+      if (ent) { const x0 = W * .55; g.fillStyle = 'rgba(38,166,154,.22)'; g.fillRect(x0, Y(ent + 24), W - x0, Y(ent) - Y(ent + 24)); g.fillStyle = 'rgba(239,83,80,.22)'; g.fillRect(x0, Y(ent), W - x0, Y(ent - 12) - Y(ent));
+        g.strokeStyle = '#787b86'; g.setLineDash([3, 3]); g.beginPath(); g.moveTo(x0, Y(ent)); g.lineTo(W, Y(ent)); g.stroke(); g.setLineDash([]);
+        g.fillStyle = '#26a69a'; g.font = '600 10px Geist,sans-serif'; g.fillText('TP', x0 + 4, Y(ent + 24) + 12); g.fillStyle = '#ef5350'; g.fillText('SL', x0 + 4, Y(ent - 12) - 4); }
+      C.forEach((k, i) => { const X = i * cw + cw / 2, up = k[3] >= k[0]; g.fillStyle = up ? '#26a69a' : '#ef5350'; g.fillRect(X, Y(k[1]), 1, Y(k[2]) - Y(k[1])); g.fillRect(X - cw * .32, Y(Math.max(k[0], k[3])), cw * .64, Math.max(1, Math.abs(Y(k[0]) - Y(k[3])))); });
+      const last = C[C.length - 1][3]; g.fillStyle = '#26a69a'; g.fillRect(W - 46, Y(last) - 8, 46, 16); g.fillStyle = '#fff'; g.font = '600 9.5px Geist Mono,monospace'; g.fillText(last.toFixed(2), W - 43, Y(last) + 3);
+      requestAnimationFrame(draw); };
+    requestAnimationFrame(draw); } }
 
   // notificaciones del iPhone
   new IntersectionObserver((es, o) => es.forEach(e => { if (!e.isIntersecting) return; o.disconnect(); $$('#nts .nt').forEach((n, i) => setTimeout(() => n.classList.add('on'), 300 + i * 650)); }), { threshold: .35 }).observe($('#nts'));
