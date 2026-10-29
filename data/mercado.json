@@ -235,51 +235,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29715.25,
-   "cambio": 597.5,
-   "pct": 2.05
+   "precio": 29735.5,
+   "cambio": 617.75,
+   "pct": 2.12
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7758.0,
-   "cambio": 98.25,
-   "pct": 1.28
+   "precio": 7760.75,
+   "cambio": 101.0,
+   "pct": 1.32
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4078.8,
-   "cambio": 70.9,
-   "pct": 1.77
+   "precio": 4055.8,
+   "cambio": 47.9,
+   "pct": 1.2
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 101.99,
-   "cambio": -1.28,
-   "pct": -1.24
+   "precio": 102.09,
+   "cambio": -1.18,
+   "pct": -1.14
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2845.2,
-   "cambio": 60.7,
-   "pct": 2.18
+   "precio": 2852.1,
+   "cambio": 67.6,
+   "pct": 2.43
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52766.0,
-   "cambio": 372.0,
-   "pct": 0.71
+   "precio": 52746.0,
+   "cambio": 352.0,
+   "pct": 0.67
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 81025.0,
-   "cambio": -180.0,
-   "pct": -0.22
+   "precio": 81135.0,
+   "cambio": -70.0,
+   "pct": -0.09
   }
  ],
  "acciones": [
@@ -454,58 +454,118 @@
  ],
  "noticias": [
   {
-   "titulo": "Bessent says 'not necessarily' a mistake if the Fed hikes again",
-   "url": "https://www.cnbc.com/2026/10/28/scott-bessent-interview.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 28 Oct 2026 20:50:06 GMT"
-  },
-  {
-   "titulo": "Vertiv earnings just sent an upbeat signal about AI ahead of Big Tech results",
-   "url": "https://www.marketwatch.com/story/vertiv-earnings-just-sent-an-upbeat-signal-about-ai-ahead-of-big-tech-results-5714a105?mod=mw_rss_topstories",
+   "titulo": "Lumentum’s stock pops as investors cheer a possible sale to Marvell",
+   "url": "https://www.marketwatch.com/story/lumentums-stock-pops-as-investors-cheer-a-possible-sale-to-marvell-07c1d0e8?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 28 Oct 2026 20:49:00 GMT"
+   "fecha": "Thu, 29 Oct 2026 00:20:00 GMT"
   },
   {
-   "titulo": "Alphabet's free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade",
-   "url": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html",
+   "titulo": "Why Alphabet’s stock could see its worst drop in years after the latest results",
+   "url": "https://www.marketwatch.com/story/why-alphabets-stock-could-see-its-worst-drop-in-years-after-the-latest-results-6b64cf98?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 29 Oct 2026 00:17:00 GMT"
+  },
+  {
+   "titulo": "CoreWeave and other neocloud stocks drop after Microsoft capex comes in below expectations",
+   "url": "https://www.cnbc.com/2026/10/28/neocloud-stocks-drop-after-microsoft-revises-capex-down.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 28 Oct 2026 20:48:37 GMT"
+   "fecha": "Thu, 29 Oct 2026 00:16:39 GMT"
+  },
+  {
+   "titulo": "‘Just watch Judge Judy’: I’m in my 70s. Why do people keep making the same avoidable financial mistakes?",
+   "url": "https://www.marketwatch.com/story/you-need-only-watch-episodes-of-judge-judy-im-in-my-70s-why-do-people-keep-making-the-same-avoidable-financial-mistakes-bbf60fe4?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 29 Oct 2026 00:15:00 GMT"
+  },
+  {
+   "titulo": "The major reason Microsoft’s stock is heading higher after earnings",
+   "url": "https://www.marketwatch.com/story/the-major-reason-microsofts-stock-is-heading-higher-after-earnings-c019a036?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 29 Oct 2026 00:10:00 GMT"
+  },
+  {
+   "titulo": "One passport isn’t enough for some wealthy Chinese. Here’s where they’re looking next",
+   "url": "https://www.cnbc.com/2026/10/29/where-chinas-wealthy-are-turning-for-second-passports.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 28 Oct 2026 23:38:00 GMT"
+  },
+  {
+   "titulo": "Fortinet’s stock is taking a dive after earnings. Here’s why.",
+   "url": "https://www.marketwatch.com/story/fortinets-stock-is-taking-a-dive-after-earnings-heres-why-d407896e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 28 Oct 2026 23:18:00 GMT"
+  },
+  {
+   "titulo": "DoorDash's deal to buy Instacart coming as early as Thursday morning, sources tell CNBC",
+   "url": "https://www.cnbc.com/2026/10/28/doordash-instacart-maplebear.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 28 Oct 2026 23:17:17 GMT"
+  },
+  {
+   "titulo": "ServiceNow’s stock slides as earnings miss overshadows a raised AI outlook",
+   "url": "https://www.marketwatch.com/story/servicenows-stock-slides-as-earnings-miss-clouds-a-raised-ai-outlook-96e48385?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 28 Oct 2026 23:02:00 GMT"
+  },
+  {
+   "titulo": "Is it curtains for COLA? Saving Social Security could mean changing the cost-of-living adjustment.",
+   "url": "https://www.marketwatch.com/story/is-it-curtains-for-cola-saving-social-security-could-mean-changing-the-cost-of-living-adjustment-867c6bd8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 28 Oct 2026 22:41:00 GMT"
+  },
+  {
+   "titulo": "Hands-on with Apple's first touchscreen laptop: Touch is totally optional",
+   "url": "https://www.cnbc.com/2026/10/28/apple-touchscreen-macbook-pro-hands-on.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 28 Oct 2026 22:38:41 GMT"
   },
   {
    "titulo": "Microsoft stock jumps 4% as cloud growth drives earnings and revenue beat",
    "url": "https://www.cnbc.com/2026/10/28/microsoft-msft-q1-earnings-report-2027.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 28 Oct 2026 20:48:34 GMT"
+   "fecha": "Wed, 28 Oct 2026 22:34:56 GMT"
   },
   {
-   "titulo": "Micron’s stock rises after SK Hynix earnings. Here’s its next major test.",
-   "url": "https://www.marketwatch.com/story/microns-stock-rises-after-sk-hynix-earnings-heres-its-next-major-test-99853d0e?mod=mw_rss_topstories",
+   "titulo": "Chipotle now has more demand from lower-income diners than higher-income ones",
+   "url": "https://www.marketwatch.com/story/chipotle-expects-modestly-higher-sales-this-year-as-drive-thru-chipotlanes-come-to-more-stores-4f255bbc?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 28 Oct 2026 20:45:00 GMT"
+   "fecha": "Wed, 28 Oct 2026 22:25:00 GMT"
   },
   {
-   "titulo": "Here’s what just sent Oracle’s stock soaring",
-   "url": "https://www.marketwatch.com/story/heres-what-just-sent-oracles-stock-soaring-7a1a91e2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 28 Oct 2026 20:38:00 GMT"
-  },
-  {
-   "titulo": "FedEx beats expectations, raises outlook in first report since calendar adjustment",
-   "url": "https://www.cnbc.com/2026/10/28/fedex-fdx-sept-2026-earnings.html",
+   "titulo": "Chipotle shares rise 7% after CEO says same-store sales growth will continue",
+   "url": "https://www.cnbc.com/2026/10/28/chipotle-mexican-grill-cmg-q3-2026-earnings.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 28 Oct 2026 20:35:33 GMT"
+   "fecha": "Wed, 28 Oct 2026 22:12:28 GMT"
   },
   {
-   "titulo": "Nvidia's $12.9 billion Hugging Face deal draws DOJ scrutiny",
-   "url": "https://www.cnbc.com/2026/10/28/doj-questions-nvidias-12point9-billion-hugging-face-deal.html",
+   "titulo": "Alphabet sinks 10% as it holds 2026 capex unchanged, expects significant increase in 2027",
+   "url": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 28 Oct 2026 20:23:00 GMT"
+   "fecha": "Wed, 28 Oct 2026 22:07:17 GMT"
   },
   {
-   "titulo": "ServiceNow’s stock slides as earnings miss clouds a raised AI outlook",
-   "url": "https://www.marketwatch.com/story/servicenows-stock-slides-as-earnings-miss-clouds-a-raised-ai-outlook-96e48385?mod=mw_rss_topstories",
+   "titulo": "We stopped helping our neighbors with free home repairs and our friendship cooled. Who’s to blame?",
+   "url": "https://www.marketwatch.com/story/we-stopped-helping-our-neighbors-with-free-home-repairs-and-our-friendship-cooled-whos-to-blame-d20b0720?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 28 Oct 2026 20:22:00 GMT"
+   "fecha": "Wed, 28 Oct 2026 22:00:00 GMT"
+  },
+  {
+   "titulo": "My wife cried when I found out she had only $80,000 in her 401(k). I have $2.2 million. Am I wrong to be shocked?",
+   "url": "https://www.marketwatch.com/story/my-wife-has-only-80-000-saved-for-retirement-i-have-2-2-million-am-i-wrong-to-be-shocked-3e27b490?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 28 Oct 2026 21:45:00 GMT"
+  },
+  {
+   "titulo": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
+   "url": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 28 Oct 2026 21:31:46 GMT"
+  },
+  {
+   "titulo": "Bessent says 'not necessarily' a mistake if the Fed hikes again",
+   "url": "https://www.cnbc.com/2026/10/28/scott-bessent-interview.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 28 Oct 2026 21:06:37 GMT"
   },
   {
    "titulo": "Three media outlets seek full White House access in amended lawsuit",
@@ -514,76 +574,16 @@
    "fecha": "Wed, 28 Oct 2026 20:21:03 GMT"
   },
   {
-   "titulo": "Caregivers are now spending more than $11,000 a year out of pocket—up 60% in five years",
-   "url": "https://www.marketwatch.com/story/were-spending-more-than-11-000-a-year-of-our-own-money-caring-for-our-aging-parents-and-loved-ones-8fc5b2dc?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 28 Oct 2026 20:18:00 GMT"
-  },
-  {
    "titulo": "10-year Treasury yield creeps higher even as Fed keeps rates the same",
    "url": "https://www.cnbc.com/2026/10/28/us-treasurys-bonds-yields-federal-reserve.html",
    "fuente": "CNBC",
    "fecha": "Wed, 28 Oct 2026 20:17:19 GMT"
   },
   {
-   "titulo": "U.S. oil-refinery stocks are up roughly 150% this year. How long could this historic run last?",
-   "url": "https://www.marketwatch.com/story/u-s-oil-refinery-stocks-are-up-roughly-150-this-year-how-long-could-this-historic-run-last-f01c590f?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 28 Oct 2026 20:16:00 GMT"
-  },
-  {
-   "titulo": "The cost of money itself is on the ballot as voters struggle with pricey car loans, mortgages and credit-card debt",
-   "url": "https://www.marketwatch.com/story/the-cost-of-money-itself-is-on-the-ballot-as-voters-struggle-with-pricey-car-loans-mortgages-and-credit-card-debt-c2cd83a0?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 28 Oct 2026 20:11:00 GMT"
-  },
-  {
-   "titulo": "The U.S. government will no longer penalize American companies for making six popular peptides",
-   "url": "https://www.marketwatch.com/story/trump-administration-clears-the-way-for-production-of-peptides-like-bpc-157-and-tb-500-28ac2d11?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 28 Oct 2026 20:07:00 GMT"
-  },
-  {
-   "titulo": "Ford reports mixed third-quarter results, says 2027 earnings will be in line with this year",
-   "url": "https://www.cnbc.com/2026/10/28/ford-motor-f-earnings-q3-2026.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 28 Oct 2026 20:06:21 GMT"
-  },
-  {
-   "titulo": "Oracle stock pops 11% as long-term revenue forecast and clarity on financing ease debt concerns",
-   "url": "https://www.cnbc.com/2026/10/28/oracle-forecast-growth-2030.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 28 Oct 2026 20:00:44 GMT"
-  },
-  {
-   "titulo": "Why did the Fed hold off on raising interest rates? Warsh says it’s because an ‘information rich’ period is coming.",
-   "url": "https://www.marketwatch.com/story/why-did-the-fed-hold-off-on-raising-interest-rates-warsh-says-its-because-an-information-rich-period-is-coming-098ced8d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 28 Oct 2026 19:56:00 GMT"
-  },
-  {
-   "titulo": "Wendy’s buyout offer suggests the burger chain’s overhaul could be very expensive",
-   "url": "https://www.marketwatch.com/story/wendys-buyout-offer-suggests-the-burger-chains-overhaul-could-be-very-expensive-ff2c92bb?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 28 Oct 2026 19:54:00 GMT"
-  },
-  {
    "titulo": "Bond investor Jeff Gundlach on Fed's rate pause: 'What are you waiting for?'",
    "url": "https://www.cnbc.com/2026/10/28/bond-investor-jeff-gundlach-talks-feds-rate-pause-with-cnbc.html",
    "fuente": "CNBC",
    "fecha": "Wed, 28 Oct 2026 19:53:50 GMT"
-  },
-  {
-   "titulo": "Fed leaves rates unchanged: What it means for credit cards, mortgages, auto loans and savings accounts",
-   "url": "https://www.cnbc.com/2026/10/28/fed-rate-decision-consumer-borrowing-costs.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 28 Oct 2026 18:01:17 GMT"
-  },
-  {
-   "titulo": "Wendy's shares jump 15% as Nelson Peltz's Trian offers $1.4 billion to buy burger chain",
-   "url": "https://www.cnbc.com/2026/10/28/nelson-peltz-trian-wendys-1point4-billion.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 28 Oct 2026 14:35:51 GMT"
   }
  ],
  "videos": [
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-28T20:51:10Z",
+ "ts": "2026-10-29T00:39:34Z",
  "fallas": [
   "videos",
   "directos"
