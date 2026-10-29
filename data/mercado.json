@@ -235,349 +235,349 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29586.75,
-   "cambio": 149.5,
-   "pct": 0.51
+   "precio": 29444.5,
+   "cambio": 7.25,
+   "pct": 0.02
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7750.25,
-   "cambio": 35.75,
-   "pct": 0.46
+   "precio": 7733.25,
+   "cambio": 18.75,
+   "pct": 0.24
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4037.3,
-   "cambio": -1.1,
-   "pct": -0.03
+   "precio": 4021.8,
+   "cambio": -16.6,
+   "pct": -0.41
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 100.31,
-   "cambio": -1.45,
-   "pct": -1.42
+   "precio": 102.31,
+   "cambio": 0.55,
+   "pct": 0.54
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2856.4,
-   "cambio": 58.9,
-   "pct": 2.11
+   "precio": 2858.7,
+   "cambio": 61.2,
+   "pct": 2.19
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52504.0,
-   "cambio": -46.0,
-   "pct": -0.09
+   "precio": 52380.0,
+   "cambio": -170.0,
+   "pct": -0.32
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 80320.0,
-   "cambio": 420.0,
-   "pct": 0.53
+   "precio": 81050.0,
+   "cambio": 1150.0,
+   "pct": 1.44
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 157.63,
-   "pct": 0.71,
+   "precio": 157.68,
+   "pct": 0.74,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 705.93,
-   "pct": 0.52,
+   "precio": 706.11,
+   "pct": 0.54,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 377.39,
-   "pct": 0.66,
+   "precio": 377.59,
+   "pct": 0.72,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 83.42,
-   "pct": 0.83,
+   "precio": 83.5,
+   "pct": 0.92,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 713.0,
-   "pct": 1.21,
+   "precio": 713.61,
+   "pct": 1.3,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 767.95,
-   "pct": 0.52,
+   "precio": 768.18,
+   "pct": 0.55,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 71.42,
-   "pct": 0.09,
+   "precio": 71.37,
+   "pct": 0.02,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 35.48,
-   "pct": 0.21,
+   "precio": 35.53,
+   "pct": 0.37,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 93.34,
-   "pct": 0.74,
+   "precio": 93.8,
+   "pct": 1.24,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 75.94,
-   "pct": 0.66,
+   "precio": 76.13,
+   "pct": 0.91,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 369.4,
-   "pct": 0.11,
+   "precio": 367.9,
+   "pct": -0.3,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 45.24,
-   "pct": -1.78,
+   "precio": 45.7,
+   "pct": -0.78,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 349.73,
-   "pct": 0.43,
+   "precio": 350.21,
+   "pct": 0.57,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 534.44,
-   "pct": 2.56,
+   "precio": 528.52,
+   "pct": 1.43,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 213.03,
-   "pct": 0.39,
+   "precio": 212.97,
+   "pct": 0.36,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 281.68,
-   "pct": -13.12,
+   "precio": 283.14,
+   "pct": -12.67,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 244.46,
-   "pct": -2.36,
+   "precio": 244.7,
+   "pct": -2.27,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 619.67,
-   "pct": -4.5,
+   "precio": 628.32,
+   "pct": -3.16,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 403.15,
-   "pct": 7.63,
+   "precio": 404.45,
+   "pct": 7.97,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 547.53,
-   "pct": 0.1,
+   "precio": 543.12,
+   "pct": -0.7,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 989.95,
-   "pct": -2.78,
+   "precio": 994.58,
+   "pct": -2.32,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 344.27,
-   "pct": 2.3,
+   "precio": 343.25,
+   "pct": 1.99,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 410.2,
-   "pct": -1.0,
+   "precio": 410.33,
+   "pct": -0.97,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 408.25,
-   "pct": -3.94,
+   "precio": 407.15,
+   "pct": -4.2,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "President of the European Central Bank Christine Lagarde to step down. Here's who is tipped to replace her",
-   "url": "https://www.cnbc.com/2026/10/29/lagarde-ecb-stand-down.html",
+   "titulo": "Some Polymarket user funds stolen by hackers, exchange referring matter to U.K. authorities",
+   "url": "https://www.cnbc.com/2026/10/29/polymarket-reports-outage-on-international-exchange-halts-trading.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 13:32:02 GMT"
+   "fecha": "Thu, 29 Oct 2026 19:26:14 GMT"
   },
   {
-   "titulo": "European Central Bank keeps key interest rate on hold at 2.5%",
-   "url": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html",
+   "titulo": "Nvidia responds to report Jensen Huang was target of Chinese asset, says diversion allegations were 'investigated and debunked'",
+   "url": "https://www.cnbc.com/2026/10/29/nvidia-jensen-huang-chinese-intelligence-asset.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 13:30:06 GMT"
+   "fecha": "Thu, 29 Oct 2026 19:16:32 GMT"
   },
   {
-   "titulo": "DoorDash to acquire Instacart for $17 billion",
-   "url": "https://www.cnbc.com/2026/10/28/doordash-instacart-maplebear.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 13:17:33 GMT"
-  },
-  {
-   "titulo": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates",
-   "url": "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 13:08:00 GMT"
-  },
-  {
-   "titulo": "Marvell is reportedly close to buying Lumentum. Analysts say they see logic in a potential deal.",
-   "url": "https://www.marketwatch.com/story/marvell-is-reportedly-close-to-buying-lumentum-analysts-say-they-see-logic-in-a-potential-deal-d7539c59?mod=mw_rss_topstories",
+   "titulo": "‘The $100 level is ours for awhile’: Oil won’t be getting cheap anytime soon, no matter what happens in the Gulf",
+   "url": "https://www.marketwatch.com/story/the-100-level-is-ours-for-awhile-oil-wont-be-getting-cheap-anytime-soon-no-matter-what-happens-in-the-gulf-99d628bf?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 29 Oct 2026 13:05:00 GMT"
+   "fecha": "Thu, 29 Oct 2026 19:12:00 GMT"
   },
   {
-   "titulo": "Consumer spending flattens out after inflation surge",
-   "url": "https://www.marketwatch.com/story/consumer-spending-flattens-out-after-inflation-surge-e7761d25?mod=mw_rss_topstories",
+   "titulo": "Alphabet’s stock just triggered a ‘death cross.’ Could the worst of the selloff be over?",
+   "url": "https://www.marketwatch.com/story/alphabets-stock-just-triggered-a-death-cross-could-the-worst-of-the-selloff-be-over-9f70d765?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 29 Oct 2026 13:01:00 GMT"
+   "fecha": "Thu, 29 Oct 2026 19:09:00 GMT"
   },
   {
-   "titulo": "We stopped helping our neighbors with free home repairs and our friendship cooled. Who’s to blame?",
-   "url": "https://www.marketwatch.com/story/we-stopped-helping-our-neighbors-with-free-home-repairs-and-our-friendship-cooled-whos-to-blame-d20b0720?mod=mw_rss_topstories",
+   "titulo": "Rare Stanley Druckenmiller post sends crypto-linked stock surging",
+   "url": "https://www.cnbc.com/2026/10/29/druckenmiller-hyperliquid-surge.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 29 Oct 2026 18:53:50 GMT"
+  },
+  {
+   "titulo": "Why Alphabet’s stock is on track for its worst day ever after the latest results",
+   "url": "https://www.marketwatch.com/story/why-alphabets-stock-could-see-its-worst-drop-in-years-after-the-latest-results-6b64cf98?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 29 Oct 2026 13:00:00 GMT"
+   "fecha": "Thu, 29 Oct 2026 18:50:00 GMT"
+  },
+  {
+   "titulo": "It’s the strangest job market the U.S. has ever seen. The low-hire, low-fire economy turns 3 years old.",
+   "url": "https://www.marketwatch.com/story/its-the-strangest-job-market-the-u-s-has-ever-seen-the-low-hire-low-fire-economy-turns-3-years-old-ce8d0dfe?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 29 Oct 2026 18:42:00 GMT"
+  },
+  {
+   "titulo": "Alaska Gov. orders probe of Peltola Senate campaign's alleged recruitment of 2nd Sullivan",
+   "url": "https://www.cnbc.com/2026/10/29/alaska-senate-governor-investigation-sullivan-peltola-doj.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 29 Oct 2026 18:32:08 GMT"
   },
   {
    "titulo": "Our church has a $1.5 million bequest earning 3.75% in a bank account. Is inflation eroding it?",
    "url": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 29 Oct 2026 13:00:00 GMT"
-  },
-  {
-   "titulo": "DoorDash and Instacart want to join forces. Will the U.S. government get in their way?",
-   "url": "https://www.marketwatch.com/story/doordash-and-instacart-want-to-join-forces-will-the-u-s-government-get-in-their-way-0c065bee?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 29 Oct 2026 12:58:00 GMT"
+   "fecha": "Thu, 29 Oct 2026 18:30:00 GMT"
   },
   {
    "titulo": "‘Fancy cars hold no appeal’: We have a 99% chance of outliving our life savings. Why not spend, spend, spend?",
    "url": "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 29 Oct 2026 12:45:00 GMT"
+   "fecha": "Thu, 29 Oct 2026 18:16:00 GMT"
   },
   {
-   "titulo": "Analysis: Kevin Warsh is keeping his options open — and Wall Street guessing",
-   "url": "https://www.cnbc.com/2026/10/29/kevin-warsh-fed-october-rate-decision-december-hike.html",
+   "titulo": "Big Oil earnings are set to surge. Why investors may want to be cautious",
+   "url": "https://www.cnbc.com/2026/10/29/big-oil-earnings-are-set-to-surge-why-investors-may-want-to-be-cautious.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 12:38:18 GMT"
+   "fecha": "Thu, 29 Oct 2026 18:13:32 GMT"
   },
   {
-   "titulo": "Inflation surges, PCE shows. Fed pause on rate hikes unlikely to last long with prices still rising.",
-   "url": "https://www.marketwatch.com/story/inflation-surges-pce-shows-fed-pause-on-rate-hikes-unlikely-to-last-long-with-prices-still-rising-79128886?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 29 Oct 2026 12:36:00 GMT"
-  },
-  {
-   "titulo": "Economy grows at fastest pace in a year, GDP shows, and shows little sign of slowing",
-   "url": "https://www.marketwatch.com/story/u-s-economy-grows-at-fastest-pace-in-almost-three-years-third-quarter-gdp-shows-0e15b810?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 29 Oct 2026 12:35:00 GMT"
-  },
-  {
-   "titulo": "Caterpillar’s stock heads for worst day in 7 years — and what that means for the Dow",
-   "url": "https://www.marketwatch.com/story/caterpillars-stock-heads-for-worst-day-in-7-years-and-what-that-means-for-the-dow-d67f1fb7?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 29 Oct 2026 12:25:00 GMT"
-  },
-  {
-   "titulo": "AI build-out hits snag as Google and Microsoft put off raising capex forecasts",
-   "url": "https://www.cnbc.com/2026/10/29/microsoft-google-ai-capex-estimates.html",
+   "titulo": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates",
+   "url": "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 12:10:29 GMT"
+   "fecha": "Thu, 29 Oct 2026 18:06:31 GMT"
+  },
+  {
+   "titulo": "Did the Fed make a mistake with its October rate pause? The Treasury could help save the day.",
+   "url": "https://www.marketwatch.com/story/did-the-fed-make-a-mistake-with-its-october-rate-pause-the-treasury-could-help-save-the-day-77d84993?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 29 Oct 2026 17:59:00 GMT"
+  },
+  {
+   "titulo": "Cruise companies aim to keep fuel costs down. Their strategies for doing so differ",
+   "url": "https://www.cnbc.com/2026/10/29/royal-caribbean-carnival-norwegian-fuel-costs.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 29 Oct 2026 17:45:01 GMT"
+  },
+  {
+   "titulo": "Medicare used AI to pre-approve patient care, and it immediately led to a large drop in medical services",
+   "url": "https://www.marketwatch.com/story/medicare-used-ai-to-pre-approve-patient-care-and-it-immediately-led-to-a-large-drop-in-medical-services-dc38a210?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 29 Oct 2026 17:10:00 GMT"
+  },
+  {
+   "titulo": "All the reasons Marvell investors are ‘freaking out’ as Lumentum deal rumors swirl",
+   "url": "https://www.marketwatch.com/story/marvell-is-reportedly-close-to-buying-lumentum-analysts-say-they-see-logic-in-a-potential-deal-d7539c59?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 29 Oct 2026 17:08:00 GMT"
+  },
+  {
+   "titulo": "This credit card is the ‘best weapon’ to fight debt while interest rates keep climbing",
+   "url": "https://www.marketwatch.com/story/this-credit-card-is-the-best-weapon-to-fight-debt-while-interest-rates-keep-climbing-8378fcf2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 29 Oct 2026 16:49:00 GMT"
   },
   {
    "titulo": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
    "url": "https://www.cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 12:09:47 GMT"
+   "fecha": "Thu, 29 Oct 2026 16:25:40 GMT"
   },
   {
-   "titulo": "Hegseth reportedly fires U.S. top military planner as Trump downplays Iran peace talks",
-   "url": "https://www.cnbc.com/2026/10/29/us-iran-war-trump-hormuz.html",
+   "titulo": "IRS CEO Bisignano donates to Trump Accounts in his childhood Brooklyn ZIP code",
+   "url": "https://www.cnbc.com/2026/10/29/trump-accounts-frank-bisignano-brooklyn.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 12:06:03 GMT"
+   "fecha": "Thu, 29 Oct 2026 16:06:02 GMT"
   },
   {
-   "titulo": "Lilly raised sales guidance for third time this year as Zepbound sales soar. Its stock is rallying.",
-   "url": "https://www.marketwatch.com/story/lilly-raises-outlook-for-third-time-this-year-as-zepbound-sales-soar-6d987407?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 29 Oct 2026 12:03:00 GMT"
-  },
-  {
-   "titulo": "Weil, Gotshal & Manges, longtime Wall Street law firm, plans wind down",
-   "url": "https://www.cnbc.com/2026/10/28/weil-gotshal-law-firm-wall-street-wind-down.html",
+   "titulo": "Amazon to report Q3 earnings after the bell with AI spend under scrutiny",
+   "url": "https://www.cnbc.com/2026/10/29/amazon-amzn-q3-earnings-report-2026.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 11:56:23 GMT"
+   "fecha": "Thu, 29 Oct 2026 16:00:01 GMT"
   },
   {
-   "titulo": "Eli Lilly blows past estimates, hikes sales outlook as Zepbound and Mounjaro demand surge again",
-   "url": "https://www.cnbc.com/2026/10/29/eli-lilly-lly-earnings-q3-2026.html",
+   "titulo": "Steve Eisman gets more conservative with portfolio as AI trade nears 'tipping point'",
+   "url": "https://www.cnbc.com/2026/10/29/steve-eisman-gets-more-conservative-with-portfolio-as-ai-trade-nears-tipping-point.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 11:44:57 GMT"
-  },
-  {
-   "titulo": "Restaurant Brands reports mixed results as Burger King's U.S. turnaround shows signs of success",
-   "url": "https://www.cnbc.com/2026/10/29/restaurant-brands-international-qsr-q3-2026-earnings.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 10:33:14 GMT"
+   "fecha": "Thu, 29 Oct 2026 14:15:43 GMT"
   },
   {
    "titulo": "It's a 'socialist' bank — and North Dakota Republicans love it",
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-29T13:41:37Z",
+ "ts": "2026-10-29T19:27:05Z",
  "fallas": [
   "videos",
   "directos"
