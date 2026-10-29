@@ -631,16 +631,6 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
     </div>
     <p class="micro rv d3">Cupos limitados · Aplicar toma 2 minutos · Mac y Windows</p>
     
-    <div class="duo rv d4" id="duo">
-      <div class="duo-ph"><div class="iph sm"><div class="iph-in tvi"><i class="island"></i>
-        <div class="tv-h"><b>NQ1!</b><span>Nasdaq 100 · 1m</span><em id="tvPx">21,480.25</em></div>
-        <canvas id="tv"></canvas>
-        <div class="tv-b"><button class="s">SELL</button><button class="b" id="tvBuy">BUY</button></div>
-        <div class="tv-t" id="tvT">Take profit alcanzado · +2R</div>
-      </div></div><p class="duo-c">Operas en tu plataforma</p></div>
-      <div class="duo-ar"><svg viewBox="0 0 120 24"><path d="M2 12H112M104 4l10 8-10 8" fill="none" stroke="url(#dg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="dg" x1="0" x2="1"><stop offset="0" stop-color="#3d7bff" stop-opacity=".2"/><stop offset="1" stop-color="#8fb3ff"/></linearGradient></defs></svg><span>se registra solo</span></div>
-      <div class="duo-mac"><div class="dm-scr"><video src="assets/l/logtrade.mp4" poster="assets/l/logtrade.jpg" autoplay muted loop playsinline preload="metadata"></video></div><i class="dm-base"></i><p class="duo-c">NORTHPOINT lo registra con su R, emoción y notas</p></div>
-    </div>
     <div class="brk rv d4"><span>Se conecta con</span><b>Exness</b><b>Tradovate</b><b>MetaTrader 5</b><b>NinjaTrader</b><b>Archivo CSV</b></div>
   </div>
 </header>
@@ -768,7 +758,7 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
     <span class="ctag rv">Comunidad NORTHPOINT</span>
     <h2 class="rv d1">No operes solo.<br>El mercado no espera.</h2>
     <div class="comu-st rv d2">
-      <div class="ipad-w"><svg class="hand l" viewBox="0 0 200 300" aria-hidden="true"><defs><linearGradient id="hgl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2d34"/><stop offset="1" stop-color="#0c0d10"/></linearGradient></defs><path d="M22 300C8 236 16 190 42 160C58 140 70 118 78 94C84 72 102 68 110 84C116 98 112 122 104 142C122 128 142 128 148 142C152 156 142 168 128 178C140 184 142 198 130 208C142 216 140 232 124 238C112 264 102 284 98 300Z" fill="url(#hgl)" stroke="rgba(96,165,250,.35)" stroke-width="1.5"/><path d="M84 100C92 112 96 128 92 146" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2"/></svg><svg class="hand r" viewBox="0 0 200 300" aria-hidden="true"><defs><linearGradient id="hgr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2d34"/><stop offset="1" stop-color="#0c0d10"/></linearGradient></defs><path d="M22 300C8 236 16 190 42 160C58 140 70 118 78 94C84 72 102 68 110 84C116 98 112 122 104 142C122 128 142 128 148 142C152 156 142 168 128 178C140 184 142 198 130 208C142 216 140 232 124 238C112 264 102 284 98 300Z" fill="url(#hgr)" stroke="rgba(96,165,250,.35)" stroke-width="1.5"/><path d="M84 100C92 112 96 128 92 146" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2"/></svg><div class="ipad"><i class="cam"></i>
+      <div class="ipad-w"><div class="ipad"><i class="cam"></i>
       <div class="dcapp">
         <div class="dc-sv"><i class="on">NP</i><i>+</i></div>
         <div class="dc-ch"><h5>NORTHPOINT</h5><small>Información</small><div>bienvenida</div><div>anuncios</div><small>Trading</small><div class="on">plan-del-día</div><div>operaciones</div><div>batallas</div><div>resultados</div><small>Voz</small><div class="vz live">sesión-ny</div></div>
@@ -981,7 +971,7 @@ const REDES = {
     w.querySelectorAll('[data-w]').forEach(b => b.style.width = b.dataset.w + '%'); w.querySelectorAll('[data-h]').forEach(b => b.style.height = b.dataset.h + '%'); w.querySelectorAll('path[stroke-dasharray]').forEach(p => p.style.strokeDashoffset = 0); }), { threshold: .3 });
   const vigila = () => $$('.wg:not(.go)').forEach(w => wio.observe(w));
   // muro
-  const MU = [['calor'], ['q', 'Tus operaciones entran solas desde tu bróker. Tú solo les pones la estrategia y cómo te sentiste.', 'Registro automático'], ['ballenas'], ['reglas'], ['q', 'El mismo día del mercado para todos. Gana quien opera mejor, no quien tiene suerte.', 'Batallas'], ['tabla'], ['racha'], ['toasts'], ['q', 'Ocho temas y fondos animados. La herramienta que abres todos los días tiene que gustarte.', 'Hazla tuya'], ['curva']];
+  const MU = [['calor'], ['q', 'Tus operaciones entran solas desde tu bróker. Tú solo les pones la estrategia y cómo te sentiste.', 'Registro automático'], ['ballenas'], ['reglas'], ['q', 'El mismo día del mercado para todos. Gana quien opera mejor, no quien tiene suerte.', 'Batallas'], ['tabla'], ['racha'], ['toasts'], ['q', 'Tu panel, tu calendario y tus estadísticas se actualizan solos con cada operación.', 'Siempre al día'], ['curva']];
   $('#muro').innerHTML = MU.map((m, i) => m[0] === 'q' ? `<figure class="q rv d${i % 3}"><p>${m[1]}</p><small>${m[2]}</small></figure>` : `<figure class="w rv d${i % 3}">${wg(m[0])}</figure>`).join('');
   $$('#muro .rv').forEach(el => io.observe(el));
   // velas del hero
@@ -1074,7 +1064,7 @@ const REDES = {
   vigila();
 
   // gráfica del teléfono: entra un long, sube al objetivo y lo cierra
-  { const cv = $('#tv'); if (cv) { const g = cv.getContext('2d'); let W, H, C = [], st = 0, t0 = 0, x = 3, ent = null;
+  { const cv = null; if (cv) { const g = cv.getContext('2d'); let W, H, C = [], st = 0, t0 = 0, x = 3, ent = null;
     const rnd = () => (x = (x * 16807) % 2147483647) / 2147483647;
     const size = () => { const r = cv.getBoundingClientRect(), d = devicePixelRatio || 1; W = r.width; H = r.height; cv.width = W * d; cv.height = H * d; g.setTransform(d, 0, 0, d, 0, 0); };
     const reset = () => { C = []; let p = 21480; for (let i = 0; i < 26; i++) { const o = p, c = o + (rnd() - .5) * 6, h = Math.max(o, c) + rnd() * 3, l = Math.min(o, c) - rnd() * 3; C.push([o, h, l, c]); p = c; } st = 0; ent = null; $('#tvT').classList.remove('on'); };
