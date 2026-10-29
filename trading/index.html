@@ -651,6 +651,7 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
 /* MacBook sin recorte */
 .zdev{width:min(1100px,88vw,calc(74vh * 1.6))!important}
 .zframe{max-height:none!important}
+.zframe video{object-fit:cover;object-position:center top}
 </style>
 </head>
 <body>
@@ -688,10 +689,10 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
   <div class="zoom-in">
     <i class="glow l"></i><i class="glow r"></i>
     <div class="zdev" id="zf"><div class="zframe">
-      <video src="assets/l/recorrido.mp4" poster="assets/l/recorrido.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <video src="assets/l/tour.mp4" poster="assets/l/tour.jpg" autoplay muted loop playsinline preload="metadata"></video>
       
       <div class="ztit"><span>Bienvenido a</span><b>NORTHPOINT</b></div>
-      <button class="play" data-video="assets/l/recorrido.mp4" aria-label="Ver el recorrido"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+      <button class="play" data-video="assets/l/tour.mp4" aria-label="Ver el recorrido"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
     </div><i class="mb-base"></i></div>
   </div>
 </section>
