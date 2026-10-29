@@ -3,159 +3,142 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NORTHPOINT · Agenda tu llamada</title>
-<meta name="description" content="Agenda una llamada de 20 minutos por Zoom con NORTHPOINT.">
+<title>NORTHPOINT · Aplica por un lugar</title>
+<meta name="description" content="Aplica por un lugar en NORTHPOINT. Revisamos tu solicitud y te invitamos a una llamada por Zoom.">
 <meta name="robots" content="noindex">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%233d7bff%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22Arial%22 font-weight=%22900%22 font-size=%2215%22 text-anchor=%22middle%22 fill=%22white%22%3ENP%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#05070d;--bg2:#0a0f1c;--line:rgba(148,170,220,.12);--line2:rgba(148,170,220,.22);--tx:#f3f5fa;--tx2:#a3acc2;--tx3:#6b7590;--ac:#3d7bff;--ac2:#8fb3ff;--grad:linear-gradient(135deg,#3d7bff 0%,#6f8dff 55%,#a9c8ff 100%);--mono:'Geist Mono',ui-monospace,monospace}
+:root{--bg:#05070d;--line:rgba(148,170,220,.14);--line2:rgba(148,170,220,.26);--tx:#f3f5fa;--tx2:#a3acc2;--tx3:#6b7590;--ac:#3d7bff;--ac2:#8fb3ff;--grad:linear-gradient(135deg,#3d7bff 0%,#6f8dff 55%,#a9c8ff 100%);--mono:'Geist Mono',ui-monospace,monospace}
 *{box-sizing:border-box;margin:0;padding:0}
 [hidden]{display:none!important}
-body{min-height:100vh;font-family:Geist,system-ui,sans-serif;color:var(--tx);background:radial-gradient(1000px 600px at 80% -10%,rgba(61,123,255,.16),transparent 60%),radial-gradient(800px 500px at -10% 60%,rgba(111,141,255,.08),transparent 60%),var(--bg);-webkit-font-smoothing:antialiased}
-a{color:inherit}
-.top{max-width:1100px;margin:0 auto;padding:22px 20px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:800;letter-spacing:.14em;font-size:15px;text-decoration:none}
-.back{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tx2);text-decoration:none}
-.wrap{max-width:720px;margin:0 auto;padding:30px 20px 80px}
-.tag{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border:1px solid var(--line2);border-radius:4px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--tx2)}
-.tag::before{content:'';width:6px;height:6px;background:var(--grad)}
-h1{font-size:clamp(32px,5vw,48px);line-height:1.08;letter-spacing:-.04em;font-weight:600;margin:18px 0 12px}
-h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.lead{color:var(--tx2);font-size:16.5px;line-height:1.65}
-.perks{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--tx3)}
-.perks span::before{content:'';display:inline-block;width:6px;height:6px;background:var(--ac);margin-right:8px;vertical-align:1px}
-.card{margin-top:30px;border-radius:16px;padding:30px;background:linear-gradient(180deg,rgba(18,26,46,.9),rgba(8,12,22,.9)) padding-box,linear-gradient(180deg,rgba(160,185,255,.3),rgba(160,185,255,.04) 60%) border-box;border:1px solid transparent;box-shadow:0 40px 100px -40px rgba(61,123,255,.5)}
-.prog{display:flex;gap:6px;margin-bottom:24px}.prog i{flex:1;height:3px;border-radius:2px;background:var(--line2);overflow:hidden}.prog i.on{background:var(--grad)}
-.step{display:none}.step.on{display:block;animation:in .4s}
-@keyframes in{from{opacity:0;transform:translateY(10px)}}
-.sh{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ac2)}
-.step h2{font-size:22px;font-weight:600;letter-spacing:-.02em;margin:6px 0 20px}
-.f{margin-bottom:18px}
-.f>label{display:block;font-size:14px;font-weight:500;margin-bottom:8px}
-.f>label small{color:var(--tx3);font-weight:400}
-input[type=text],input[type=email],input[type=tel],textarea,select{width:100%;padding:13px 14px;border-radius:10px;border:1px solid var(--line2);background:rgba(5,7,13,.6);color:var(--tx);font:inherit;font-size:15px;outline:none;transition:border-color .2s,box-shadow .2s}
-input:focus,textarea:focus,select:focus{border-color:var(--ac);box-shadow:0 0 0 3px rgba(61,123,255,.2)}
-textarea{min-height:96px;resize:vertical}
-.ops{display:flex;flex-wrap:wrap;gap:8px}
-.ops label{cursor:pointer}
-.ops input{position:absolute;opacity:0;pointer-events:none}
-.ops span{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid var(--line2);background:rgba(255,255,255,.02);font-size:14px;transition:all .2s}
-.ops input:checked+span{border-color:var(--ac);background:rgba(61,123,255,.18);color:#fff}
-.ops input:focus-visible+span{box-shadow:0 0 0 3px rgba(61,123,255,.3)}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.err{color:#f87171;font-size:13px;margin-top:6px;display:none}
-.f.bad .err{display:block}.f.bad input,.f.bad textarea{border-color:#f87171}
-.nav{display:flex;justify-content:space-between;gap:10px;margin-top:26px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:50px;padding:0 24px;border-radius:6px;border:1px solid transparent;font-family:var(--mono);font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;text-decoration:none}
-.btn-ac{background:var(--grad);color:#fff;box-shadow:0 12px 40px -12px rgba(61,123,255,.75);flex:1}
-.btn-ol{background:transparent;color:var(--tx2);border-color:var(--line2)}
+html,body{height:100%}
+body{font-family:Geist,system-ui,sans-serif;color:var(--tx);background:radial-gradient(1000px 600px at 80% -10%,rgba(61,123,255,.16),transparent 60%),radial-gradient(800px 500px at -10% 70%,rgba(111,141,255,.08),transparent 60%),var(--bg);-webkit-font-smoothing:antialiased;overflow:hidden}
+.bar{position:fixed;top:0;left:0;right:0;height:3px;background:var(--line);z-index:5}.bar i{display:block;height:100%;width:0;background:var(--grad);transition:width .5s}
+.top{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:20px 26px;z-index:4}
+.logo{font-weight:800;letter-spacing:.14em;font-size:15px;color:var(--tx);text-decoration:none}
+.top a.x{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--tx3);text-decoration:none}
+.stage{position:relative;height:100%;max-width:760px;margin:0 auto;padding:0 24px}
+.q{position:absolute;inset:0;padding:0 24px;display:flex;flex-direction:column;justify-content:center;opacity:0;pointer-events:none;transform:translateY(40px);transition:opacity .45s,transform .45s}
+.q.on{opacity:1;pointer-events:auto;transform:none}
+.q.up{transform:translateY(-40px)}
+.n{font-family:var(--mono);font-size:13px;color:var(--ac2);display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.n::after{content:'→';opacity:.7}
+.q h1{font-size:clamp(30px,4.6vw,46px);line-height:1.1;letter-spacing:-.035em;font-weight:600}
+.q h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.q h2{font-size:clamp(22px,3vw,30px);line-height:1.25;letter-spacing:-.02em;font-weight:500}
+.q .h{color:var(--tx2);font-size:16px;line-height:1.6;margin-top:10px}
+.q input,.q textarea{margin-top:26px;width:100%;background:none;border:0;border-bottom:2px solid var(--line2);color:var(--tx);font:inherit;font-size:clamp(20px,2.6vw,26px);padding:8px 2px;outline:none;transition:border-color .2s}
+.q textarea{min-height:90px;resize:none}
+.q input:focus,.q textarea:focus{border-color:var(--ac)}
+.q input::placeholder,.q textarea::placeholder{color:var(--tx3)}
+.ops{display:grid;gap:10px;margin-top:24px;max-width:460px}
+.op{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:8px;border:1px solid var(--line2);background:rgba(61,123,255,.06);cursor:pointer;font-size:17px;text-align:left;color:var(--tx);font-family:inherit;transition:background .2s,border-color .2s}
+.op:hover{background:rgba(61,123,255,.14)}
+.op b{width:24px;height:24px;flex:none;border-radius:4px;border:1px solid var(--line2);display:grid;place-items:center;font-family:var(--mono);font-size:12px;font-weight:600;color:var(--ac2)}
+.op.on{border-color:var(--ac);background:rgba(61,123,255,.22)}.op.on b{background:var(--ac);border-color:var(--ac);color:#fff}
+.go{display:flex;align-items:center;gap:14px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 24px;border-radius:6px;border:0;background:var(--grad);color:#fff;font-family:var(--mono);font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;box-shadow:0 12px 40px -12px rgba(61,123,255,.75)}
 .btn[disabled]{opacity:.6;pointer-events:none}
-#cal{min-height:700px;border-radius:12px;overflow:hidden;background:#fff}
-.done{text-align:center;padding:10px 0}
-.done b{display:block;font-size:22px;margin:10px 0}
-.done p{color:var(--tx2);line-height:1.6}
-.legal{margin-top:22px;color:var(--tx3);font-size:12.5px;line-height:1.6;text-align:center}
-@media (max-width:600px){.card{padding:22px 18px}.two{grid-template-columns:1fr}#cal{min-height:900px}}
+.go small{font-size:12.5px;color:var(--tx3)}.go small kbd{font-family:var(--mono);font-weight:600;color:var(--tx2)}
+.err{color:#f87171;font-size:14px;margin-top:12px;min-height:18px}
+.perks{display:flex;gap:18px;flex-wrap:wrap;margin-top:20px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--tx3)}
+.perks span::before{content:'';display:inline-block;width:6px;height:6px;background:var(--ac);margin-right:8px;vertical-align:1px}
+.nav{position:fixed;right:22px;bottom:22px;display:flex;gap:2px;z-index:4}
+.nav button{width:40px;height:36px;border:0;background:var(--ac);color:#fff;cursor:pointer;font-size:16px}
+.nav button:first-child{border-radius:6px 0 0 6px}.nav button:last-child{border-radius:0 6px 6px 0}
+.ok{width:64px;height:64px;border-radius:50%;background:var(--grad);display:grid;place-items:center;margin-bottom:24px;box-shadow:0 0 50px rgba(61,123,255,.6)}
+.ok svg{width:30px;height:30px}
+.steps{display:grid;gap:12px;margin-top:26px;max-width:520px}
+.steps div{display:grid;grid-template-columns:28px 1fr;gap:12px;color:var(--tx2);font-size:15.5px;line-height:1.5}
+.steps b{width:28px;height:28px;border-radius:6px;display:grid;place-items:center;background:rgba(61,123,255,.16);border:1px solid rgba(61,123,255,.4);color:var(--ac2);font-family:var(--mono);font-size:12px}
+.legal{position:fixed;left:24px;bottom:24px;font-size:11.5px;color:var(--tx3);max-width:420px;line-height:1.5}
+@media (max-width:600px){.top{padding:16px}.q{padding:0 18px}.op{font-size:16px}.legal{display:none}.nav{right:14px;bottom:14px}.go small{display:none}}
 </style>
 </head>
 <body>
-<header class="top"><a class="logo" href="./">NORTHPOINT</a><a class="back" href="./">← Volver</a></header>
-<main class="wrap">
-  <span class="tag">Llamada de 20 minutos por Zoom</span>
-  <h1>Agenda tu llamada con <em>NORTHPOINT</em></h1>
-  <p class="lead">Responde 3 preguntas rápidas y elige el día y la hora. Te llega la confirmación con el link de Zoom a tu correo.</p>
-  <div class="perks"><span>Sin compromiso</span><span>Toma 1 minuto</span><span>Confirmación por correo</span></div>
-
-  <form class="card" id="fm" novalidate>
-    <div class="prog"><i class="on"></i><i></i><i></i><i></i></div>
-
-    <section class="step on" data-s="0">
-      <div class="sh">Paso 1 de 4</div><h2>Tus datos</h2>
-      <div class="f"><label for="nombre">Nombre completo</label><input type="text" id="nombre" autocomplete="name" required><p class="err">Escribe tu nombre.</p></div>
-      <div class="f"><label for="correo">Correo</label><input type="email" id="correo" autocomplete="email" required><p class="err">Escribe un correo válido.</p></div>
-      <div class="two">
-        <div class="f"><label for="wa">WhatsApp <small>con lada</small></label><input type="tel" id="wa" autocomplete="tel" placeholder="+52 ..." required><p class="err">Escribe tu WhatsApp.</p></div>
-        <div class="f"><label for="pais">País</label><input type="text" id="pais" autocomplete="country-name" required><p class="err">Escribe tu país.</p></div>
-      </div>
-    </section>
-
-    <section class="step" data-s="1">
-      <div class="sh">Paso 2 de 4</div><h2>Tu trading</h2>
-      <div class="f" data-g="exp"><label>¿Cuánto tiempo llevas operando?</label><div class="ops">
-        <label><input type="radio" name="exp" value="Empezando"><span>Empezando</span></label><label><input type="radio" name="exp" value="Menos de 1 año"><span>Menos de 1 año</span></label><label><input type="radio" name="exp" value="1 a 3 años"><span>1 a 3 años</span></label><label><input type="radio" name="exp" value="Más de 3 años"><span>Más de 3 años</span></label></div><p class="err">Elige una opción.</p></div>
-      <div class="f" data-g="mer"><label>¿Qué operas? <small>puedes elegir varios</small></label><div class="ops">
-        <label><input type="checkbox" name="mer" value="Futuros"><span>Futuros</span></label><label><input type="checkbox" name="mer" value="Forex"><span>Forex</span></label><label><input type="checkbox" name="mer" value="Índices / CFDs"><span>Índices / CFDs</span></label><label><input type="checkbox" name="mer" value="Cripto"><span>Cripto</span></label></div><p class="err">Elige al menos uno.</p></div>
-      <div class="f" data-g="cta"><label>¿Con qué cuenta operas hoy?</label><div class="ops">
-        <label><input type="radio" name="cta" value="Cuenta propia"><span>Cuenta propia</span></label><label><input type="radio" name="cta" value="Fondeo (prop firm)"><span>Fondeo (prop firm)</span></label><label><input type="radio" name="cta" value="Ambas"><span>Ambas</span></label><label><input type="radio" name="cta" value="Aún no opero en real"><span>Aún no opero en real</span></label></div><p class="err">Elige una opción.</p></div>
-      <div class="f" data-g="tam"><label>Tamaño de la cuenta que manejas</label><div class="ops">
-        <label><input type="radio" name="tam" value="Menos de $1,000"><span>Menos de $1,000</span></label><label><input type="radio" name="tam" value="$1,000 a $10,000"><span>$1,000 a $10,000</span></label><label><input type="radio" name="tam" value="$10,000 a $50,000"><span>$10,000 a $50,000</span></label><label><input type="radio" name="tam" value="Más de $50,000"><span>Más de $50,000</span></label></div><p class="err">Elige una opción.</p></div>
-    </section>
-
-    <section class="step" data-s="2">
-      <div class="sh">Paso 3 de 4</div><h2>Tu objetivo</h2>
-      <div class="f"><label for="obj">¿Qué quieres resolver en tu trading?</label><textarea id="obj" placeholder="Ej. dejar de romper mis reglas, pasar mi cuenta de fondeo, llevar mejor registro…" required></textarea><p class="err">Cuéntanos en una línea.</p></div>
-      <div class="f" data-g="plan"><label>Plan que te interesa</label><div class="ops">
-        <label><input type="radio" name="plan" value="Starter"><span>Starter</span></label><label><input type="radio" name="plan" value="Pro"><span>Pro</span></label><label><input type="radio" name="plan" value="Mesa"><span>Mesa (equipos)</span></label><label><input type="radio" name="plan" value="Aún no sé"><span>Aún no sé</span></label></div><p class="err">Elige una opción.</p></div>
-      <div class="f"><label for="ori">¿Cómo nos conociste?</label><select id="ori"><option value="">Elige una opción</option><option>TikTok</option><option>YouTube</option><option>Instagram</option><option>Kick</option><option>Discord</option><option>X</option><option>Recomendación</option><option>Otro</option></select></div>
-    </section>
-
-    <section class="step" data-s="3">
-      <div class="sh">Paso 4 de 4</div><h2>Elige día y hora</h2>
-      <div id="cal"></div>
-      <div class="done" id="sinCal" hidden>
-        <b>¡Listo! Ya tenemos tus datos.</b>
-        <p>Te escribimos por WhatsApp o correo en menos de 24 horas para agendar tu llamada.</p>
-        <div class="nav" style="justify-content:center"><a class="btn btn-ac" id="mail" style="flex:none">Enviar mis datos por correo</a></div>
-      </div>
-    </section>
-
-    <div class="nav" id="navb"><button type="button" class="btn btn-ol" id="atras" hidden>Atrás</button><button type="button" class="btn btn-ac" id="sig">Continuar</button></div>
-  </form>
-  <p class="legal">Tus datos solo se usan para agendar y preparar tu llamada. NORTHPOINT es una herramienta de registro y análisis; no da señales ni asesoría de inversión.</p>
-</main>
+<div class="bar"><i id="bar"></i></div>
+<header class="top"><a class="logo" href="./">NORTHPOINT</a><a class="x" href="./">Salir</a></header>
+<form class="stage" id="fm" novalidate></form>
+<div class="nav"><button type="button" id="up" aria-label="Anterior">↑</button><button type="button" id="dn" aria-label="Siguiente">↓</button></div>
+<p class="legal">Tus datos solo se usan para revisar tu solicitud. NORTHPOINT es una herramienta de registro y análisis; no da señales ni asesoría de inversión.</p>
 
 <script>
-/* ── CONFIGURACIÓN ──
-   CALENDLY: pega aquí el link de tu evento (ej. https://calendly.com/northpoint/llamada).
-   En Calendly crea estas preguntas en este orden para que lleguen llenas: 1 WhatsApp · 2 País · 3 Experiencia · 4 Mercados · 5 Cuenta · 6 Tamaño · 7 Objetivo · 8 Plan · 9 Cómo nos conoció.
-   Mientras esté vacío, el último paso guarda los datos y abre un correo prellenado a CONTACTO. */
-const CALENDLY = '';
-const CONTACTO = 'hola@northpointcapital.io';
+/* ── A DÓNDE LLEGAN LAS SOLICITUDES ──
+   FormSubmit manda cada solicitud a este correo. La PRIMERA solicitud dispara un correo de activación:
+   ábrelo y confirma. Después FormSubmit te da un código (ej. 3f9a...); pégalo aquí en lugar del correo
+   para que tu dirección no quede visible en la página. */
+const DESTINO = 'andremacouzetruiz@gmail.com';
 (() => {
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
-  const steps = $$('.step'), bars = $$('.prog i'); let k = 0;
-  const plan = new URLSearchParams(location.search).get('plan');
-  if (plan) { const r = $(`input[name=plan][value="${{ starter: 'Starter', pro: 'Pro', mesa: 'Mesa' }[plan] || ''}"]`); if (r) r.checked = true; }
-  const val = n => (($('#' + n) || {}).value || '').trim();
-  const sel = n => $$(`input[name=${n}]:checked`).map(x => x.value).join(', ');
-  const mal = (el, b) => { const f = el.closest('.f'); f.classList.toggle('bad', b); return b; };
-  const ok = i => { let bad = false;
-    if (i === 0) { bad = mal($('#nombre'), val('nombre').length < 2) | bad; bad = mal($('#correo'), !/^\S+@\S+\.\S+$/.test(val('correo'))) | bad; bad = mal($('#wa'), val('wa').replace(/\D/g, '').length < 8) | bad; bad = mal($('#pais'), val('pais').length < 2) | bad; }
-    if (i === 1) ['exp', 'mer', 'cta', 'tam'].forEach(g => { bad = mal($(`[data-g=${g}] .ops`), !sel(g)) | bad; });
-    if (i === 2) { bad = mal($('#obj'), val('obj').length < 3) | bad; bad = mal($('[data-g=plan] .ops'), !sel('plan')) | bad; }
-    return !bad; };
-  const datos = () => ({ nombre: val('nombre'), correo: val('correo'), wa: val('wa'), pais: val('pais'), exp: sel('exp'), mer: sel('mer'), cta: sel('cta'), tam: sel('tam'), obj: val('obj'), plan: sel('plan'), ori: val('ori') });
-  const ir = i => { k = i; steps.forEach((s, j) => s.classList.toggle('on', j === i)); bars.forEach((b, j) => b.classList.toggle('on', j <= i)); $('#atras').hidden = i === 0 || i === 3; $('#navb').hidden = i === 3; $('#sig').textContent = i === 2 ? 'Elegir día y hora' : 'Continuar'; scrollTo({ top: $('#fm').offsetTop - 20, behavior: 'smooth' }); if (i === 3) agenda(); };
-  $('#sig').onclick = () => { if (ok(k)) ir(k + 1); };
-  $('#atras').onclick = () => ir(k - 1);
-  $$('input,textarea').forEach(el => el.addEventListener('input', () => el.closest('.f')?.classList.remove('bad')));
-  $$('.ops input').forEach(el => el.addEventListener('change', () => el.closest('.f')?.classList.remove('bad')));
-  function agenda() {
-    const d = datos(); try { localStorage.setItem('np.aplicacion', JSON.stringify({ ...d, t: Date.now() })); } catch (_) {}
-    if (CALENDLY) {
-      const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = 'https://assets.calendly.com/assets/external/widget.css'; document.head.append(css);
-      const sc = document.createElement('script'); sc.src = 'https://assets.calendly.com/assets/external/widget.js'; sc.async = true;
-      sc.onload = () => Calendly.initInlineWidget({ url: CALENDLY + (CALENDLY.includes('?') ? '&' : '?') + 'hide_gdpr_banner=1&primary_color=3d7bff', parentElement: $('#cal'),
-        prefill: { name: d.nombre, email: d.correo, customAnswers: { a1: d.wa, a2: d.pais, a3: d.exp, a4: d.mer, a5: d.cta, a6: d.tam, a7: d.obj, a8: d.plan, a9: d.ori } }, utm: { utmSource: 'landing', utmCampaign: 'trading' } });
-      document.body.append(sc);
-    } else {
-      $('#cal').hidden = true; $('#sinCal').hidden = false;
-      const cuerpo = `Nombre: ${d.nombre}\nCorreo: ${d.correo}\nWhatsApp: ${d.wa}\nPaís: ${d.pais}\nExperiencia: ${d.exp}\nMercados: ${d.mer}\nCuenta: ${d.cta}\nTamaño: ${d.tam}\nObjetivo: ${d.obj}\nPlan: ${d.plan}\nNos conoció por: ${d.ori || '-'}`;
-      $('#mail').href = `mailto:${CONTACTO}?subject=${encodeURIComponent('Quiero agendar mi llamada · ' + d.nombre)}&body=${encodeURIComponent(cuerpo)}`;
+  const plan = { starter: 'Starter', pro: 'Pro', mesa: 'Mesa' }[new URLSearchParams(location.search).get('plan')] || '';
+  // [id, tipo, pregunta, ayuda, opciones]
+  const Q = [
+    ['intro'],
+    ['nombre', 'text', '¿Cómo te llamas?', 'Nombre y apellido.'],
+    ['correo', 'email', 'Hola {nombre}. ¿A qué correo te enviamos la invitación?', 'Ahí te llega la llamada por Zoom si tu solicitud es aprobada.'],
+    ['wa', 'tel', '¿Tu WhatsApp?', 'Con lada de tu país, por si necesitamos confirmar algo.'],
+    ['pais', 'text', '¿Desde qué país operas?', ''],
+    ['exp', 'one', '¿Cuánto tiempo llevas operando?', '', ['Estoy empezando', 'Menos de 1 año', '1 a 3 años', 'Más de 3 años']],
+    ['mer', 'many', '¿Qué mercados operas?', 'Puedes elegir varios.', ['Futuros', 'Forex', 'Índices / CFDs', 'Cripto']],
+    ['cta', 'one', '¿Con qué cuenta operas hoy?', '', ['Cuenta propia', 'Fondeo (prop firm)', 'Ambas', 'Aún no opero en real']],
+    ['tam', 'one', '¿De qué tamaño es la cuenta que manejas?', '', ['Menos de $1,000', '$1,000 a $10,000', '$10,000 a $50,000', 'Más de $50,000']],
+    ['obj', 'long', '¿Qué es lo que más quieres resolver en tu trading?', 'Una o dos líneas está perfecto.'],
+    ['plan', 'one', '¿Qué plan te interesa?', '', ['Starter', 'Pro', 'Mesa (equipos)', 'Aún no sé']],
+    ['ori', 'one', '¿Cómo nos conociste?', '', ['TikTok', 'YouTube', 'Instagram', 'Kick', 'Discord', 'Recomendación', 'Otro']],
+    ['fin']];
+  const A = { plan: plan === 'Mesa' ? 'Mesa (equipos)' : plan };
+  const L = 'ABCDEFGHIJ';
+  const fm = $('#fm');
+  fm.innerHTML = Q.map(([id, t, q, h, ops], i) => {
+    if (id === 'intro') return `<section class="q" data-i="${i}"><h1>Aplica por un lugar en <em>NORTHPOINT</em></h1><p class="h">Son 11 preguntas rápidas. Revisamos cada solicitud y, si encajas, te enviamos por correo la invitación a una llamada de 20 minutos por Zoom.</p><div class="perks"><span>Cupos limitados</span><span>Toma 2 minutos</span><span>Respuesta en 24 a 48 h</span></div><div class="go"><button type="button" class="btn" data-next>Empezar</button><small>o presiona <kbd>Enter ↵</kbd></small></div></section>`;
+    if (id === 'fin') return `<section class="q" data-i="${i}"><div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></div><h1>Recibimos tu solicitud.</h1><p class="h" id="finTx">Gracias. Esto es lo que sigue:</p><div class="steps"><div><b>1</b>Revisamos tu solicitud en las próximas 24 a 48 horas.</div><div><b>2</b>Si encajas, te llega a tu correo la invitación formal a una llamada por Zoom.</div><div><b>3</b>En la llamada vemos cómo operas y te mostramos NORTHPOINT con tus brókers.</div></div><div class="go"><a class="btn" href="./" style="text-decoration:none">Volver a la página</a></div></section>`;
+    const campo = t === 'one' || t === 'many' ? `<div class="ops" data-g="${id}">${ops.map((o, k) => `<button type="button" class="op ${A[id] === o ? 'on' : ''}" data-v="${o}"><b>${L[k]}</b>${o}</button>`).join('')}</div>`
+      : t === 'long' ? `<textarea id="f-${id}" placeholder="Escribe tu respuesta aquí…" rows="3"></textarea>` : `<input id="f-${id}" type="${t}" placeholder="Escribe tu respuesta aquí…" autocomplete="${{ nombre: 'name', correo: 'email', wa: 'tel', pais: 'country-name' }[id] || 'off'}">`;
+    return `<section class="q" data-i="${i}"><div class="n">${i}</div><h2 data-q="${q}">${q}</h2>${h ? `<p class="h">${h}</p>` : ''}${campo}<p class="err"></p><div class="go"><button type="button" class="btn" data-next>${i === Q.length - 2 ? 'Enviar solicitud' : 'OK'}</button><small>${t === 'many' ? 'elige y presiona' : 'presiona'} <kbd>Enter ↵</kbd></small></div></section>`;
+  }).join('');
+  const S = $$('.q'); let k = 0, enviando = false;
+  const val = id => { const q = Q.find(x => x[0] === id); if (q[1] === 'one' || q[1] === 'many') return A[id] || ''; return ($('#f-' + id)?.value || '').trim(); };
+  const valida = i => { const [id, t] = Q[i]; if (!t) return '';
+    const v = val(id);
+    if (!v) return t === 'one' || t === 'many' ? 'Elige una opción.' : 'Escribe tu respuesta.';
+    if (t === 'email' && !/^\S+@\S+\.\S+$/.test(v)) return 'Escribe un correo válido.';
+    if (t === 'tel' && v.replace(/\D/g, '').length < 8) return 'Escribe tu número con lada.';
+    return ''; };
+  const ir = i => { if (i < 0 || i >= S.length) return; S.forEach((s, j) => { s.classList.toggle('on', j === i); s.classList.toggle('up', j < i); });
+    k = i; $('#bar').style.width = (i / (S.length - 1) * 100) + '%';
+    const h2 = S[i].querySelector('h2[data-q]'); if (h2) h2.textContent = h2.dataset.q.replace('{nombre}', (val('nombre') || '').split(' ')[0]);
+    $('.nav').hidden = i === S.length - 1;
+    setTimeout(() => S[i].querySelector('input,textarea')?.focus({ preventScroll: true }), 420); };
+  const sig = async () => { if (enviando) return; const e = valida(k); const er = S[k].querySelector('.err'); if (er) er.textContent = e; if (e) return;
+    if (k === Q.length - 2) return enviar(); ir(k + 1); };
+  async function enviar() {
+    enviando = true; const b = S[k].querySelector('[data-next]'); b.disabled = true; b.textContent = 'Enviando…';
+    const d = {}; Q.forEach(([id, t, q]) => { if (t) d[q.replace('{nombre}', '').replace(/^Hola \. /, '')] = val(id); });
+    const nom = val('nombre');
+    try {
+      const r = await fetch('https://formsubmit.co/ajax/' + DESTINO, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ _subject: `Nueva solicitud NORTHPOINT · ${nom}`, _template: 'table', _replyto: val('correo'), Nombre: nom, Correo: val('correo'), WhatsApp: val('wa'), País: val('pais'), Experiencia: val('exp'), Mercados: val('mer'), Cuenta: val('cta'), Tamaño: val('tam'), Objetivo: val('obj'), Plan: val('plan'), 'Nos conoció por': val('ori'), Enviada: new Date().toLocaleString('es-MX') }) });
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      ir(k + 1);
+    } catch (e) {
+      b.disabled = false; b.textContent = 'Reintentar'; enviando = false;
+      S[k].querySelector('.err').textContent = 'No se pudo enviar. Revisa tu conexión e intenta otra vez.';
     }
   }
+  fm.addEventListener('click', e => {
+    const op = e.target.closest('.op'); if (op) { const g = op.parentElement.dataset.g, many = Q.find(x => x[0] === g)[1] === 'many';
+      if (many) { op.classList.toggle('on'); A[g] = [...op.parentElement.querySelectorAll('.op.on')].map(x => x.dataset.v).join(', '); }
+      else { op.parentElement.querySelectorAll('.op').forEach(x => x.classList.toggle('on', x === op)); A[g] = op.dataset.v; setTimeout(sig, 280); }
+      S[k].querySelector('.err').textContent = ''; return; }
+    if (e.target.closest('[data-next]')) sig(); });
+  addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !(e.target.tagName === 'TEXTAREA' && e.shiftKey)) { e.preventDefault(); sig(); return; }
+    const g = S[k].querySelector('.ops'); if (g && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') { const n = L.indexOf(e.key.toUpperCase()); const op = g.querySelectorAll('.op')[n]; if (op) op.click(); } });
+  $('#up').onclick = () => ir(k - 1); $('#dn').onclick = sig;
+  fm.onsubmit = e => e.preventDefault();
+  ir(0);
 })();
 </script>
 </body>
