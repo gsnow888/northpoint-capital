@@ -66,7 +66,7 @@ svg#ln{position:fixed;inset:0;width:100vw;height:100vh;z-index:8;pointer-events:
   <div class="wm"><b>NORTHPOINT</b><span>// Copyright © 2026</span><span style="margin-top:2px">NORTHPOINT.<br>Todos los derechos reservados.</span></div>
   <div class="mf"><b>////// Manifiesto</b>Todo trader necesita un norte. Te damos los datos, las herramientas y la tripulación para llegar.</div>
   <div class="bl">Desliza para<br>zarpar.<button type="button" id="snd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4z"/><path id="sw" d="M22 9l-6 6M16 9l6 6"/></svg><span id="sndT">Sonido: Off</span></button></div>
-  <div class="br"><a href="../aplicar.html">Aplicar</a></div>
+  <div class="br"><a href="aplicar.html">Aplicar</a></div>
   <div class="prog" id="prog"></div>
 </div>
 
@@ -74,7 +74,7 @@ svg#ln{position:fixed;inset:0;width:100vw;height:100vh;z-index:8;pointer-events:
 <section class="cap r" data-a=".32" data-b=".48"><div class="n">02 ////// Tripulación</div><h2>Nadie cruza solo.</h2><p>Comunidad en Discord con el plan del día y la sesión de Nueva York en vivo.</p></section>
 <section class="cap l" data-a=".50" data-b=".66"><div class="n">03 ////// Simulador</div><h2>Entrena en aguas reales.</h2><p>Días reales del mercado, contra otros traders y sin arriesgar tu cuenta.</p></section>
 <section class="cap r" data-a=".68" data-b=".82"><div class="n">04 ////// Radar</div><h2>Lee el mar antes de zarpar.</h2><p>Dónde están los hedge funds y los bancos, con datos oficiales de la CFTC.</p></section>
-<section class="cap fin" data-a=".86" data-b="1.1"><div class="n">////// Cupos limitados</div><h2>Encuentra tu norte.</h2><a href="../aplicar.html">Aplica por un lugar</a><small>Revisamos tu solicitud y te invitamos a una llamada por Zoom.</small></section>
+<section class="cap fin" data-a=".86" data-b="1.1"><div class="n">////// Cupos limitados</div><h2>Encuentra tu norte.</h2><a href="aplicar.html">Aplica por un lugar</a><small>Revisamos tu solicitud y te invitamos a una llamada por Zoom.</small></section>
 
 <div class="scroll"></div>
 
@@ -238,7 +238,7 @@ function frame() {
   const k = back * back * (3 - 2 * back), ox = Math.cos(ang) * rad, oz = Math.sin(ang) * rad;
   cam.position.set(ox * (1 - k) + 6 * k, hgt * (1 - k) + 11 * k, oz * (1 - k) + 36 * k); cam.lookAt(0, 2.4 + k * 7.5, -k * 70);
   star.material.opacity = .35 + .65 * k + .1 * Math.sin(t * 2); star.scale.setScalar(22 + k * 14 + Math.sin(t * 2) * 1.5);
-  { v.copy(star.position).project(cam); starLbl.style.left = (v.x * .5 + .5) * innerWidth + 'px'; starLbl.style.top = ((-v.y * .5 + .5) * innerHeight + 54) + 'px'; starLbl.classList.toggle('on', k > .6); }
+  { v.copy(star.position).project(cam); starLbl.style.left = (v.x * .5 + .5) * innerWidth + 'px'; starLbl.style.top = ((-v.y * .5 + .5) * innerHeight + 54) + 'px'; starLbl.classList.toggle('on', false); }
   const a = snow.geometry.attributes.position; for (let i = 0; i < NS; i++) { let y = a.getY(i) - .03 - (i % 7) * .002; if (y < 0) y = 35; a.setY(i, y); } a.needsUpdate = true;
   R.render(S, cam);
   const show = p < .12 || p > .86, pts = [];

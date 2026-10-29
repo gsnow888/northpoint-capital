@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NORTHPOINT · Aplica por un lugar</title>
+<meta name="description" content="Aplica por un lugar en NORTHPOINT. Revisamos tu solicitud y te invitamos a una llamada por Zoom.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%233d7bff%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22Arial%22 font-weight=%22900%22 font-size=%2215%22 text-anchor=%22middle%22 fill=%22white%22%3ENP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Unbounded:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#a3a8b3;--line:rgba(255,255,255,.35);--line2:rgba(255,255,255,.55);--tx:#fff;--tx2:rgba(255,255,255,.88);--tx3:rgba(255,255,255,.7);--ac:#ffffff;--ac2:#ffffff;--grad:linear-gradient(135deg,#ffffff,#e8edf4);--mono:'Geist Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{font-family:var(--mono);color:var(--tx);background:linear-gradient(180deg,#b9bec8,#a3a8b3 55%,#8f95a0);-webkit-font-smoothing:antialiased;overflow:hidden;text-shadow:0 1px 10px rgba(60,66,80,.3)}
+#nv{position:fixed;inset:0;pointer-events:none}
+.bar{position:fixed;top:0;left:0;right:0;height:2px;background:var(--line);z-index:5}.bar i{display:block;height:100%;width:0;background:#fff;transition:width .5s}
+.top{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:20px 26px;z-index:4}
+.logo{font-family:Unbounded,sans-serif;font-weight:800;font-size:20px;color:#fff;text-decoration:none}
+.top a.x{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--tx3);text-decoration:none}
+.stage{position:relative;height:100%;max-width:760px;margin:0 auto;padding:0 24px}
+.q{position:absolute;inset:0;padding:0 24px;display:flex;flex-direction:column;justify-content:center;opacity:0;pointer-events:none;transform:translateY(40px);transition:opacity .45s,transform .45s}
+.q.on{opacity:1;pointer-events:auto;transform:none}
+.q.up{transform:translateY(-40px)}
+.n{font-family:var(--mono);font-size:13px;color:var(--ac2);display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.n::after{content:'→';opacity:.7}
+.q h1{font-family:Unbounded,sans-serif;font-size:clamp(28px,4.2vw,44px);line-height:1.08;letter-spacing:-.02em;font-weight:800}
+.q h1 em{font-style:normal}
+.q h2{font-family:Unbounded,sans-serif;font-size:clamp(20px,2.6vw,28px);line-height:1.25;letter-spacing:-.01em;font-weight:700}
+.q .h{color:var(--tx2);font-size:16px;line-height:1.6;margin-top:10px}
+.q input,.q textarea{margin-top:26px;width:100%;background:none;border:0;border-bottom:2px solid var(--line2);color:var(--tx);font:inherit;font-size:clamp(20px,2.6vw,26px);padding:8px 2px;outline:none;transition:border-color .2s}
+.q textarea{min-height:90px;resize:none}
+.q input:focus,.q textarea:focus{border-color:var(--ac)}
+.q input::placeholder,.q textarea::placeholder{color:var(--tx3)}
+.ops{display:grid;gap:10px;margin-top:24px;max-width:460px}
+.op{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:0;border:1px solid var(--line2);background:rgba(255,255,255,.08);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);cursor:pointer;font-size:17px;text-align:left;color:var(--tx);font-family:inherit;transition:background .2s,border-color .2s}
+.op:hover{background:rgba(255,255,255,.2)}
+.op b{width:24px;height:24px;flex:none;border-radius:0;border:1px solid var(--line2);display:grid;place-items:center;font-family:var(--mono);font-size:12px;font-weight:600;color:var(--ac2)}
+.op.on{border-color:#fff;background:rgba(255,255,255,.28)}.op.on b{background:#fff;border-color:#fff;color:#4b515c}
+.go{display:flex;align-items:center;gap:14px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 24px;border-radius:0;border:0;background:#fff;color:#4b515c;text-shadow:none;font-family:var(--mono);font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;}
+.btn[disabled]{opacity:.6;pointer-events:none}
+.go small{font-size:12.5px;color:var(--tx3)}.go small kbd{font-family:var(--mono);font-weight:600;color:var(--tx2)}
+.err{color:#f87171;font-size:14px;margin-top:12px;min-height:18px}
+.perks{display:flex;gap:18px;flex-wrap:wrap;margin-top:20px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--tx3)}
+.perks span::before{content:'';display:inline-block;width:6px;height:6px;background:#fff;margin-right:8px;vertical-align:1px}
+.nav{position:fixed;right:22px;bottom:22px;display:flex;gap:2px;z-index:4}
+.nav button{width:40px;height:36px;border:1px solid #fff;background:rgba(255,255,255,.15);color:#fff;cursor:pointer;font-size:16px}
+.nav button:first-child{border-radius:6px 0 0 6px}.nav button:last-child{border-radius:0 6px 6px 0}
+.ok{width:64px;height:64px;border-radius:50%;border:1px solid #fff;display:grid;place-items:center;margin-bottom:24px;box-shadow:0 0 50px rgba(255,255,255,.6)}
+.ok svg{width:30px;height:30px}
+.steps{display:grid;gap:12px;margin-top:26px;max-width:520px}
+.steps div{display:grid;grid-template-columns:28px 1fr;gap:12px;color:var(--tx2);font-size:15.5px;line-height:1.5}
+.steps b{width:28px;height:28px;border-radius:0;display:grid;place-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.6);color:#fff;font-family:var(--mono);font-size:12px}
+.legal{position:fixed;left:24px;bottom:24px;font-size:11.5px;color:var(--tx3);max-width:420px;line-height:1.5}
+@media (max-width:600px){.top{padding:16px}.q{padding:0 18px}.op{font-size:16px}.legal{display:none}.nav{right:14px;bottom:14px}.go small{display:none}}
+</style>
+</head>
+<body>
+<canvas id="nv"></canvas>
+<div class="bar"><i id="bar"></i></div>
+<header class="top"><a class="logo" href="./">NORTHPOINT</a><a class="x" href="./">Salir</a></header>
+<form class="stage" id="fm" novalidate></form>
+<div class="nav"><button type="button" id="up" aria-label="Anterior">↑</button><button type="button" id="dn" aria-label="Siguiente">↓</button></div>
+<p class="legal">Tus datos solo se usan para revisar tu solicitud. NORTHPOINT es una herramienta de registro y análisis; no da señales ni asesoría de inversión.</p>
+
+<script>
+/* ── A DÓNDE LLEGAN LAS SOLICITUDES ──
+   FormSubmit manda cada solicitud a este correo. La PRIMERA solicitud dispara un correo de activación:
+   ábrelo y confirma. Después FormSubmit te da un código (ej. 3f9a...); pégalo aquí en lugar del correo
+   para que tu dirección no quede visible en la página. */
+const DESTINO = 'andremacouzetruiz@gmail.com';
+/* ── INVITACIÓN AUTOMÁTICA ──
+   Cada persona que aplica recibe al instante este correo. Pega aquí tu link de Calendly (evento de 20 min con Zoom):
+   al elegir horario, Calendly crea la reunión de Zoom y la manda a su calendario y al tuyo. */
+const LINK_LLAMADA = '';
+(() => { const c = document.getElementById('nv'), g = c.getContext('2d'); let W, H; const P = Array.from({ length: 140 }, () => ({ x: Math.random(), y: Math.random(), v: .02 + Math.random() * .05, s: .6 + Math.random() * 1.8, f: Math.random() * 6 }));
+  const sz = () => { W = c.width = innerWidth; H = c.height = innerHeight; }; sz(); addEventListener('resize', sz);
+  const fr = t => { g.clearRect(0, 0, W, H); g.fillStyle = 'rgba(255,255,255,.8)'; P.forEach(p => { p.y += p.v / 60; if (p.y > 1) p.y = 0; g.fillRect((p.x + Math.sin(t / 2000 + p.f) * .01) * W, p.y * H, p.s, p.s); }); requestAnimationFrame(fr); }; requestAnimationFrame(fr); })();
+(() => {
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const plan = { starter: 'Starter', pro: 'Pro', mesa: 'Mesa' }[new URLSearchParams(location.search).get('plan')] || '';
+  // [id, tipo, pregunta, ayuda, opciones]
+  const Q = [
+    ['intro'],
+    ['nombre', 'text', '¿Cómo te llamas?', 'Nombre y apellido.'],
+    ['correo', 'email', 'Hola {nombre}. ¿A qué correo te enviamos la invitación?', 'Ahí te llega la llamada por Zoom si tu solicitud es aprobada.'],
+    ['wa', 'tel', '¿Tu WhatsApp?', 'Con lada de tu país, por si necesitamos confirmar algo.'],
+    ['pais', 'text', '¿Desde qué país operas?', ''],
+    ['exp', 'one', '¿Cuánto tiempo llevas operando?', '', ['Estoy empezando', 'Menos de 1 año', '1 a 3 años', 'Más de 3 años']],
+    ['mer', 'many', '¿Qué mercados operas?', 'Puedes elegir varios.', ['Futuros', 'Forex', 'Índices / CFDs', 'Cripto']],
+    ['cta', 'one', '¿Con qué cuenta operas hoy?', '', ['Cuenta propia', 'Fondeo (prop firm)', 'Ambas', 'Aún no opero en real']],
+    ['tam', 'one', '¿De qué tamaño es la cuenta que manejas?', '', ['Menos de $1,000', '$1,000 a $10,000', '$10,000 a $50,000', 'Más de $50,000']],
+    ['obj', 'long', '¿Qué es lo que más quieres resolver en tu trading?', 'Una o dos líneas está perfecto.'],
+    ['plan', 'one', '¿Qué plan te interesa?', '', ['Starter', 'Pro', 'Mesa (equipos)', 'Aún no sé']],
+    ['ori', 'one', '¿Cómo nos conociste?', '', ['TikTok', 'YouTube', 'Instagram', 'Kick', 'Discord', 'Recomendación', 'Otro']],
+    ['fin']];
+  const A = { plan: plan === 'Mesa' ? 'Mesa (equipos)' : plan };
+  const L = 'ABCDEFGHIJ';
+  const fm = $('#fm');
+  fm.innerHTML = Q.map(([id, t, q, h, ops], i) => {
+    if (id === 'intro') return `<section class="q" data-i="${i}"><h1>Aplica por un lugar en <em>NORTHPOINT</em></h1><p class="h">Son 11 preguntas rápidas. Al terminar te llega a tu correo la invitación formal a una llamada de 20 minutos por Zoom.</p><div class="perks"><span>Cupos limitados</span><span>Toma 2 minutos</span><span>Invitación al instante</span></div><div class="go"><button type="button" class="btn" data-next>Empezar</button><small>o presiona <kbd>Enter ↵</kbd></small></div></section>`;
+    if (id === 'fin') return `<section class="q" data-i="${i}"><div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></div><h1>Recibimos tu solicitud.</h1><p class="h" id="finTx">Gracias. Esto es lo que sigue:</p><div class="steps"><div><b>1</b>Tu solicitud ya está con nuestro equipo.</div><div><b>2</b>Revisa tu correo: te enviamos la invitación formal a una llamada por Zoom.</div><div><b>3</b>En la llamada vemos cómo operas y te mostramos NORTHPOINT con tus brókers.</div></div><div class="go"><a class="btn" href="./" style="text-decoration:none">Volver a la página</a></div></section>`;
+    const campo = t === 'one' || t === 'many' ? `<div class="ops" data-g="${id}">${ops.map((o, k) => `<button type="button" class="op ${A[id] === o ? 'on' : ''}" data-v="${o}"><b>${L[k]}</b>${o}</button>`).join('')}</div>`
+      : t === 'long' ? `<textarea id="f-${id}" placeholder="Escribe tu respuesta aquí…" rows="3"></textarea>` : `<input id="f-${id}" type="${t}" placeholder="Escribe tu respuesta aquí…" autocomplete="${{ nombre: 'name', correo: 'email', wa: 'tel', pais: 'country-name' }[id] || 'off'}">`;
+    return `<section class="q" data-i="${i}"><div class="n">${i}</div><h2 data-q="${q}">${q}</h2>${h ? `<p class="h">${h}</p>` : ''}${campo}<p class="err"></p><div class="go"><button type="button" class="btn" data-next>${i === Q.length - 2 ? 'Enviar solicitud' : 'OK'}</button><small>${t === 'many' ? 'elige y presiona' : 'presiona'} <kbd>Enter ↵</kbd></small></div></section>`;
+  }).join('');
+  const S = $$('.q'); let k = 0, enviando = false;
+  const val = id => { const q = Q.find(x => x[0] === id); if (q[1] === 'one' || q[1] === 'many') return A[id] || ''; return ($('#f-' + id)?.value || '').trim(); };
+  const valida = i => { const [id, t] = Q[i]; if (!t) return '';
+    const v = val(id);
+    if (!v) return t === 'one' || t === 'many' ? 'Elige una opción.' : 'Escribe tu respuesta.';
+    if (t === 'email' && !/^\S+@\S+\.\S+$/.test(v)) return 'Escribe un correo válido.';
+    if (t === 'tel' && v.replace(/\D/g, '').length < 8) return 'Escribe tu número con lada.';
+    return ''; };
+  const ir = i => { if (i < 0 || i >= S.length) return; S.forEach((s, j) => { s.classList.toggle('on', j === i); s.classList.toggle('up', j < i); });
+    k = i; $('#bar').style.width = (i / (S.length - 1) * 100) + '%';
+    const h2 = S[i].querySelector('h2[data-q]'); if (h2) h2.textContent = h2.dataset.q.replace('{nombre}', (val('nombre') || '').split(' ')[0]);
+    $('.nav').hidden = i === S.length - 1;
+    setTimeout(() => S[i].querySelector('input,textarea')?.focus({ preventScroll: true }), 420); };
+  const sig = async () => { if (enviando) return; const e = valida(k); const er = S[k].querySelector('.err'); if (er) er.textContent = e; if (e) return;
+    if (k === Q.length - 2) return enviar(); ir(k + 1); };
+  function invitacion(nom) {
+    const n = (nom || '').split(' ')[0];
+    return `Hola ${n},
+
+Gracias por aplicar a NORTHPOINT. Revisamos tu solicitud y nos gustaría conocerte.
+
+Te invitamos a una llamada de 20 minutos por Zoom. En ella:
+- Vemos cómo operas hoy y qué quieres mejorar.
+- Te mostramos NORTHPOINT funcionando con tus brókers.
+- Te recomendamos el plan que mejor se adapta a ti.
+
+` + (LINK_LLAMADA ? `Elige el día y la hora que te acomoden aquí:
+${LINK_LLAMADA}
+
+Al confirmar te llega a tu correo el link de Zoom y la invitación a tu calendario.` : `En las próximas horas te enviamos el día, la hora y el link de Zoom.`) + `
+
+Los cupos son limitados, así que te recomendamos agendar pronto.
+
+Nos vemos,
+Equipo NORTHPOINT
+De traders, para traders.
+
+NORTHPOINT es una herramienta de registro y análisis. No da señales ni asesoría de inversión.`; }
+  async function enviar() {
+    enviando = true; const b = S[k].querySelector('[data-next]'); b.disabled = true; b.textContent = 'Enviando…';
+    const d = {}; Q.forEach(([id, t, q]) => { if (t) d[q.replace('{nombre}', '').replace(/^Hola \. /, '')] = val(id); });
+    const nom = val('nombre');
+    try {
+      const r = await fetch('https://formsubmit.co/ajax/' + DESTINO, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ _subject: `Nueva solicitud NORTHPOINT · ${nom}`, _template: 'table', _replyto: val('correo'), email: val('correo'), _autoresponse: invitacion(nom), Nombre: nom, Correo: val('correo'), WhatsApp: val('wa'), País: val('pais'), Experiencia: val('exp'), Mercados: val('mer'), Cuenta: val('cta'), Tamaño: val('tam'), Objetivo: val('obj'), Plan: val('plan'), 'Nos conoció por': val('ori'), Enviada: new Date().toLocaleString('es-MX') }) });
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      ir(k + 1);
+    } catch (e) {
+      b.disabled = false; b.textContent = 'Reintentar'; enviando = false;
+      S[k].querySelector('.err').textContent = 'No se pudo enviar. Revisa tu conexión e intenta otra vez.';
+    }
+  }
+  fm.addEventListener('click', e => {
+    const op = e.target.closest('.op'); if (op) { const g = op.parentElement.dataset.g, many = Q.find(x => x[0] === g)[1] === 'many';
+      if (many) { op.classList.toggle('on'); A[g] = [...op.parentElement.querySelectorAll('.op.on')].map(x => x.dataset.v).join(', '); }
+      else { op.parentElement.querySelectorAll('.op').forEach(x => x.classList.toggle('on', x === op)); A[g] = op.dataset.v; setTimeout(sig, 280); }
+      S[k].querySelector('.err').textContent = ''; return; }
+    if (e.target.closest('[data-next]')) sig(); });
+  addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !(e.target.tagName === 'TEXTAREA' && e.shiftKey)) { e.preventDefault(); sig(); return; }
+    const g = S[k].querySelector('.ops'); if (g && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') { const n = L.indexOf(e.key.toUpperCase()); const op = g.querySelectorAll('.op')[n]; if (op) op.click(); } });
+  $('#up').onclick = () => ir(k - 1); $('#dn').onclick = sig;
+  fm.onsubmit = e => e.preventDefault();
+  ir(0);
+})();
+</script>
+</body>
+</html>

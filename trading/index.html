@@ -641,6 +641,15 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
   .ztit span{font-size:20px}.ztit b{font-size:30px}
   .float{display:none}
 }
+
+/* capturas reales en Funciones y El problema */
+.adv-img,#por-que .shot{border:1px solid var(--line2)!important;box-shadow:0 30px 90px -30px rgba(61,123,255,.55)!important;background:#07090e!important;border-radius:12px;overflow:hidden}
+#ventajas .adv-img,#por-que .shot{aspect-ratio:16/10!important}
+.shot-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top left;opacity:0;transform:scale(1.03);transition:opacity .6s,transform 1s}
+.shot-img.on{opacity:1;transform:none}
+/* MacBook sin recorte */
+.zdev{width:min(1100px,88vw,calc(74vh * 1.6))!important}
+.zframe{max-height:none!important}
 </style>
 </head>
 <body>
@@ -704,11 +713,11 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
     <h2>Todo lo que necesitas para operar mejor</h2></div>
     <div class="adv">
       <div class="adv-img" data-imgs>
-        <div class="iso-w on" data-iso="journal"></div>
-        <div class="iso-w" data-iso="metricas"></div>
-        <div class="iso-w" data-iso="batallas"></div>
-        <div class="iso-w" data-iso="ballenas"></div>
-        <div class="iso-w" data-iso="constancia"></div>
+        <img class="shot-img on" src="assets/l/s-operaciones.jpg" alt="Operaciones registradas solas" width="1600" height="1000" loading="lazy">
+        <img class="shot-img" src="assets/l/s-panel.jpg" alt="Panel con tus métricas" width="1600" height="1000" loading="lazy">
+        <img class="shot-img" src="assets/l/s-batalla.jpg" alt="Batalla en replay" width="1600" height="1000" loading="lazy">
+        <img class="shot-img" src="assets/l/s-ballenas.jpg" alt="Posiciones de la CFTC" width="1600" height="1000" loading="lazy">
+        <img class="shot-img" src="assets/l/s-kaizen.jpg" alt="Kaizen Way" width="1600" height="1000" loading="lazy">
       </div>
       <div class="acc" data-items>
         <div class="acc-i on"><div class="acc-h"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h7"/></svg></i>Cada trade entra solo</div><div class="acc-b"><div><p>Conecta Exness, Tradovate, MT5 o NinjaTrader una sola vez. Cada operación se registra con hora, R y duración.</p></div></div><i class="acc-p"></i></div>
@@ -736,7 +745,7 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
       </div>
       <div class="steps" data-bars><i><b></b></i><i><b></b></i><i><b></b></i></div>
     </div>
-    <div class="win"><div class="shot" data-imgs><div class="iso-w on" data-iso="errores"></div><div class="iso-w" data-iso="emocion"></div><div class="iso-w" data-iso="solo"></div></div></div>
+    <div class="win"><div class="shot" data-imgs><img class="shot-img on" src="assets/l/s-dia.jpg" alt="Detalle de un día" width="1600" height="1000" loading="lazy"><img class="shot-img" src="assets/l/s-registro.jpg" alt="Registro con emociones" width="1600" height="1000" loading="lazy"><img class="shot-img" src="assets/l/discord.jpg" alt="Comunidad en Discord" width="1600" height="1000" loading="lazy"></div></div>
   </div></div>
 </section>
 
