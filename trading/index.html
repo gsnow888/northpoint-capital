@@ -508,6 +508,27 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
 .ipad .dcapp{min-width:0}.ipad .dc-m{min-width:0}.ipad .dm>div{min-width:0}.ipad .dm p,.ipad .emb{overflow-wrap:anywhere}
 @media (max-width:1280px){.ipad .dcapp{grid-template-columns:1fr!important;height:470px}.ipad .dc-ch{display:none!important}}
 @media (max-width:600px){.ipad .dcapp{grid-template-columns:1fr;height:440px}.ipad-w{padding:0 5% 6%}}
+
+/* redes: texto + iPhone que cabe en pantalla */
+#redes{padding:100px 0}
+#redes .redes-g{grid-template-columns:1fr 360px;gap:60px;margin-top:0;align-items:center}
+#redes .redes-t h2{margin-top:18px}
+.rd-l{list-style:none;margin-top:26px;display:grid;gap:12px}
+.rd-l li{display:flex;align-items:center;gap:12px;font-size:15px;color:var(--tx2)}
+.rd-l i{width:10px;height:10px;border-radius:3px;flex:none}
+#redes .iph{width:290px;height:min(590px,78vh);margin:0 auto}
+#redes .lock{margin-top:34px}#redes .lock b{font-size:56px}
+#redes .nts{margin-top:18px}
+/* antes y después: tarjeta compacta */
+#casos{padding:100px 0}
+#casos .case{min-height:0}
+#casos .case-l{padding:32px;gap:18px}
+#casos .case-l q{font-size:20px}
+#casos .wg-box{min-height:275px}
+#casos .case-big{padding:14px 20px}#casos .case-big b{font-size:32px}
+#casos .case-k div{padding:8px 20px}
+@media (max-width:960px){#redes .redes-g{grid-template-columns:1fr;gap:36px}#redes .redes-t{text-align:center}.rd-l{justify-items:center}}
+@media (max-width:600px){#redes{padding:80px 0}#redes .iph{width:250px;height:510px}#redes .lock b{font-size:46px}#casos .case-l{padding:22px}#casos .case-l q{font-size:17px}}
 </style>
 </head>
 <body>
@@ -696,10 +717,11 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
 <section class="sec" id="redes">
   <div class="rails"></div>
   <div class="wrap">
-    <div class="center"><span class="tag rv">Síguenos</span>
-    <h2 class="rv d1">Estamos donde estás</h2>
-    <p class="lead rv d2">Contenido, transmisiones en vivo y novedades.</p></div>
     <div class="redes-g">
+      <div class="redes-t"><span class="tag rv">Síguenos</span>
+        <h2 class="rv d1">Estamos donde estás</h2>
+        <p class="lead rv d2">Torneos, transmisiones en vivo y avisos de la comunidad, directo a tu teléfono.</p>
+        <ul class="rd-l rv d3"><li><i style="background:#5865f2"></i>Discord · comunidad y sesión en vivo</li><li><i style="background:#53fc18"></i>Kick · apertura de Nueva York</li><li><i style="background:#ff0033"></i>YouTube · videos y recorridos</li><li><i style="background:#3d7bff"></i>NORTHPOINT · tus operaciones al instante</li></ul></div>
       <div class="iph rv"><div class="iph-in"><i class="island"></i><div class="lock"><small>martes 29 de octubre</small><b>9:31</b></div>
         <div class="nts" id="nts">
           <div class="nt"><i style="background:#5865f2">D</i><div><b>Discord · #plan-del-día</b><span>Torneo de la sesión abierto. Entra desde Batallas.</span></div><em>ahora</em></div>
@@ -708,7 +730,7 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
           <div class="nt"><i style="background:#ff0033">Y</i><div><b>YouTube</b><span>Nuevo video: cómo revisar tu día en 5 minutos</span></div><em>1 h</em></div>
         </div></div></div>
     </div>
-    <p class="dc-note" style="margin-top:20px">Ilustración</p>
+
   </div>
 </section>
 
