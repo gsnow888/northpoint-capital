@@ -545,6 +545,15 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
 @keyframes stpop{40%{transform:scale(1.08)}}
 .stat:hover{background:rgba(61,123,255,.07)}
 .stat:hover b{transform:translateY(-3px)}
+
+/* cifras: sin recorte y en secuencia */
+.stat b{padding:0 .12em .06em 0;margin-right:-.12em;line-height:1.15;overflow:visible}
+.stat b em{font-style:normal}
+.stats .stat{transition-delay:0s!important}
+.stat:nth-child(1){--sd:0s}.stat:nth-child(2){--sd:.45s}.stat:nth-child(3){--sd:.9s}.stat:nth-child(4){--sd:1.35s}
+.stat::before{transition-delay:var(--sd)!important}
+.stat b{transition-delay:calc(var(--sd) + .15s)!important}
+.stat p{transition-delay:calc(var(--sd) + .45s)!important}
 </style>
 </head>
 <body>
@@ -870,7 +879,7 @@ const REDES = {
 
   // aparición
   const io = new IntersectionObserver(es => es.forEach(e => { if (!e.isIntersecting) return; e.target.classList.add('in'); io.unobserve(e.target);
-    e.target.querySelectorAll('[data-n]').forEach(n => { const to = +n.dataset.n, t0 = performance.now(); const f = t => { const k = Math.min(1, (t - t0) / 1800); n.textContent = Math.round(to * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(f); else { const b = n.closest('b'); b && b.classList.add('pop'); } }; requestAnimationFrame(f); }); }), { threshold: .15 });
+    e.target.querySelectorAll('[data-n]').forEach(n => { const to = +n.dataset.n, sd = parseFloat(getComputedStyle(e.target).getPropertyValue('--sd')) || 0, t0 = performance.now() + sd * 1000 + 150; const f = t => { const k = Math.max(0, Math.min(1, (t - t0) / 1800)); n.textContent = Math.round(to * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(f); else { const b = n.closest('b'); b && b.classList.add('pop'); } }; requestAnimationFrame(f); }); }), { threshold: .15 });
   $$('.rv').forEach(el => io.observe(el));
   const ya = () => $$('.rv:not(.in)').forEach(el => { const r = el.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) { el.classList.add('in'); el.querySelectorAll('[data-n]').forEach(n => n.textContent = n.dataset.n); } });
   setTimeout(ya, 1800);
