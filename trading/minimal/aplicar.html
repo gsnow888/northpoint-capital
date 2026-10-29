@@ -154,9 +154,11 @@ NORTHPOINT es una herramienta de registro y análisis. No da señales ni asesor�
         body: JSON.stringify({ _subject: `Nueva solicitud NORTHPOINT · ${nom}`, _template: 'table', _replyto: val('correo'), email: val('correo'), _autoresponse: invitacion(nom), Nombre: nom, Correo: val('correo'), WhatsApp: val('wa'), País: val('pais'), Experiencia: val('exp'), Mercados: val('mer'), Cuenta: val('cta'), Tamaño: val('tam'), Objetivo: val('obj'), Plan: val('plan'), 'Nos conoció por': val('ori'), Enviada: new Date().toLocaleString('es-MX') }) });
       if (!r.ok) throw new Error('HTTP ' + r.status);
       ir(k + 1);
-    } catch (e) {
-      b.disabled = false; b.textContent = 'Reintentar'; enviando = false;
-      S[k].querySelector('.err').textContent = 'No se pudo enviar. Revisa tu conexión e intenta otra vez.';
+    } catch (e) {   // 29-oct-2026: si el servicio de correo falla, la solicitud sale por el correo de la persona (no se pierde ningún interesado)
+      enviando = false; b.disabled = false; b.textContent = 'Enviar solicitud';
+      const cuerpo = `Nombre: ${nom}\nCorreo: ${val('correo')}\nWhatsApp: ${val('wa')}\nPaís: ${val('pais')}\nExperiencia: ${val('exp')}\nMercados: ${val('mer')}\nCuenta: ${val('cta')}\nTamaño: ${val('tam')}\nObjetivo: ${val('obj')}\nPlan: ${val('plan')}\nNos conoció por: ${val('ori')}`;
+      const mail = `mailto:${DESTINO.includes('@') ? DESTINO : 'andremacouzetruiz@gmail.com'}?subject=${encodeURIComponent('Solicitud NORTHPOINT · ' + nom)}&body=${encodeURIComponent(cuerpo)}`;
+      S[k].querySelector('.err').innerHTML = `Nuestro formulario tiene un problema en este momento. <a href="${mail}" style="color:inherit;font-weight:700;text-decoration:underline">Envía tu solicitud por correo aquí</a> y te respondemos con la invitación.`;
     }
   }
   fm.addEventListener('click', e => {
