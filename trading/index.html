@@ -644,7 +644,7 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
     <i class="glow l"></i><i class="glow r"></i>
     <div class="zdev" id="zf"><div class="zframe">
       <video src="assets/l/tour.mp4" poster="assets/l/tour.jpg" autoplay muted loop playsinline preload="metadata"></video>
-      <div class="toasts" id="toasts"><div class="ts"><i class="g"></i><div><b>Operación registrada sola</b><span>NQ · Long · +1.50R · 10:05</span></div></div><div class="ts"><i class="r"></i><div><b>Regla rota detectada</b><span>Tercera operación del día · −0.50R</span></div></div><div class="ts"><i class="b"></i><div><b>Nuevo logro</b><span>Tres días limpios seguidos</span></div></div></div>
+      
       <div class="ztit"><span>Bienvenido a</span><b>NORTHPOINT</b></div>
       <button class="play" data-video="assets/l/tour.mp4" aria-label="Ver el recorrido"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
     </div><i class="mb-base"></i></div>
@@ -988,36 +988,37 @@ const REDES = {
   function iso(kind) {
     const P = (x, y, z) => [400 + (x - y) * .866, 285 + (x + y) * .5 - z], pt = a => a.map(p => p.join(',')).join(' ');
     const poly = (pts, f, st, op = 1) => `<polygon points="${pt(pts)}" fill="${f}" stroke="${st || 'none'}" stroke-width="1.2" opacity="${op}"/>`;
-    let o = `<defs><linearGradient id="hx" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fb0ff"/><stop offset=".5" stop-color="#3d7bff"/><stop offset="1" stop-color="#1e3a9a"/></linearGradient><radialGradient id="gl" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3d7bff" stop-opacity=".35"/><stop offset="1" stop-color="#3d7bff" stop-opacity="0"/></radialGradient></defs>`;
-    o += `<ellipse cx="400" cy="300" rx="330" ry="150" fill="url(#gl)"/>`;
+    const C = { journal: ['#a5f3fc', '#06b6d4', '#155e75'], metricas: ['#a7f3d0', '#10b981', '#065f46'], batallas: ['#fde68a', '#f59e0b', '#92400e'], ballenas: ['#ddd6fe', '#8b5cf6', '#4c1d95'], constancia: ['#fbcfe8', '#ec4899', '#831843'], errores: ['#fecaca', '#ef4444', '#7f1d1d'], emocion: ['#fed7aa', '#f97316', '#7c2d12'], solo: ['#bfdbfe', '#3b82f6', '#1e3a8a'] }[kind] || ['#bfdbfe', '#3b82f6', '#1e3a8a'], ac = C[1];
+    let o = `<defs><linearGradient id="hx-${kind}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${C[0]}"/><stop offset=".5" stop-color="${C[1]}"/><stop offset="1" stop-color="${C[2]}"/></linearGradient><radialGradient id="gl-${kind}" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="${ac}" stop-opacity=".45"/><stop offset="1" stop-color="${ac}" stop-opacity="0"/></radialGradient><filter id="bl-${kind}"><feGaussianBlur stdDeviation="10"/></filter></defs>`;
+    o += `<ellipse cx="400" cy="300" rx="340" ry="160" fill="url(#gl-${kind})"/>`;
     // plataforma
     const S = 175, T = 16;
     o += poly([P(S, -S, 0), P(S, S, 0), P(S, S, -T), P(S, -S, -T)], '#04060b', 'rgba(120,150,220,.18)');
     o += poly([P(-S, S, 0), P(S, S, 0), P(S, S, -T), P(-S, S, -T)], '#070a12', 'rgba(120,150,220,.18)');
-    o += poly([P(-S, -S, 0), P(S, -S, 0), P(S, S, 0), P(-S, S, 0)], '#0a0e18', 'rgba(140,170,255,.28)');
-    o += poly([P(-S + 22, -S + 22, 0), P(S - 22, -S + 22, 0), P(S - 22, S - 22, 0), P(-S + 22, S - 22, 0)], 'none', 'rgba(140,170,255,.12)');
+    o += poly([P(-S, -S, 0), P(S, -S, 0), P(S, S, 0), P(-S, S, 0)], '#0a0e18', ac + '66');
+    o += poly([P(-S + 22, -S + 22, 0), P(S - 22, -S + 22, 0), P(S - 22, S - 22, 0), P(-S + 22, S - 22, 0)], 'none', ac + '33');
     // panel vertical en el plano y = c (de x0 a x1, z0 a z1) o x = c
     const panel = (pl, c, a0, a1, z0, z1, fill = '#0b1020') => { const Q = (a, z) => pl === 'y' ? P(a, c, z) : P(c, a, z);
-      return { q: Q, s: poly([Q(a0, z0), Q(a1, z0), Q(a1, z1), Q(a0, z1)], fill, 'rgba(140,170,255,.5)') + poly([Q(a0, z1 - 14), Q(a1, z1 - 14), Q(a1, z1), Q(a0, z1)], 'rgba(61,123,255,.12)') }; };
+      return { q: Q, s: poly([Q(a0, z0), Q(a1, z0), Q(a1, z1), Q(a0, z1)], fill, ac + 'aa') + poly([Q(a0, z1 - 14), Q(a1, z1 - 14), Q(a1, z1), Q(a0, z1)], ac + '33') }; };
     const linea = (Q, a, z, len, col = 'rgba(230,236,255,.85)', h = 5) => poly([Q(a, z), Q(a + len, z), Q(a + len, z - h), Q(a, z - h)], col);
     const ICON = { check: 'M5 12l5 5L20 7', list: 'M5 7h14M5 12h14M5 17h9', chart: 'M4 18l5-6 4 3 7-9', bars: 'M6 20V10M12 20V4M18 20v-7', trophy: 'M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z', swords: 'M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6-6M16 16l4 4', eye: 'M2 12c3-5 7-7 10-7s7 2 10 7c-3 5-7 7-10 7s-7-2-10-7zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6', bank: 'M3 10l9-6 9 6M5 10v8M10 10v8M14 10v8M19 10v8M3 20h18', star: 'M12 3l2.7 5.6 6.2.9-4.5 4.4 1 6.1L12 17l-5.5 2.9 1-6.1L3 9.5l6.2-.9z', flame: 'M12 3c2 4 6 5 6 10a6 6 0 0 1-12 0c0-3 2-5 3-7 1 2 2 3 3 3 0-2-1-4 0-6z', alert: 'M12 4l9 16H3zM12 10v4M12 17v.5', users: 'M9 5a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 20a6 6 0 0 1 12 0M16 4a3 3 0 0 1 0 6M21 20a6 6 0 0 0-3-5', chat: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z', code: 'M8 6l-6 6 6 6M16 6l6 6-6 6', wave: 'M3 12c3-6 5 6 9 0s6 6 9 0' };
     const hexP = (cx, cy, r) => Array.from({ length: 6 }, (_, i) => { const a = Math.PI / 6 + i * Math.PI / 3; return [cx + r * Math.cos(a), cy + r * Math.sin(a)]; });
-    const badge = ([sx, sy], ic, d = 0, r = 34) => `<g class="bdg" style="animation-delay:${d}s">${poly(hexP(sx + 5, sy + 7, r), '#132a6b')}${poly(hexP(sx, sy, r), 'url(#hx)', 'rgba(220,232,255,.6)')}<path d="${ICON[ic]}" transform="translate(${sx - 15.6},${sy - 15.6}) scale(1.3)" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>`;
+    const badge = ([sx, sy], ic, d = 0, r = 40) => `<g class="bdg" style="animation-delay:${d}s"><circle cx="${sx}" cy="${sy}" r="${r * 1.1}" fill="${ac}" opacity=".55" filter="url(#bl-${kind})"/>${poly(hexP(sx + 5, sy + 7, r), C[2])}${poly(hexP(sx, sy, r), `url(#hx-${kind})`, 'rgba(255,255,255,.7)')}<path d="${ICON[ic]}" transform="translate(${sx - r * .46},${sy - r * .46}) scale(${r / 26})" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>`;
     let a, b;
     if (kind === 'journal') {
       a = panel('y', -70, -130, 50, 30, 240); b = panel('y', 30, -40, 140, 20, 180);
-      o += a.s; for (let i = 0; i < 9; i++) o += linea(a.q, -115 + (i % 3) * 8, 210 - i * 19, 60 + (i * 37) % 90, i % 4 ? 'rgba(230,236,255,.8)' : 'rgba(96,165,250,.95)');
+      o += a.s; for (let i = 0; i < 9; i++) o += linea(a.q, -115 + (i % 3) * 8, 210 - i * 19, 60 + (i * 37) % 90, i % 4 ? 'rgba(230,236,255,.8)' : ac);
       o += b.s; for (let i = 0; i < 6; i++) o += linea(b.q, -25, 150 - i * 21, 40 + (i * 29) % 80) + linea(b.q, 95, 150 - i * 21, 22, i % 3 ? 'rgba(74,222,128,.9)' : 'rgba(248,113,113,.9)');
       o += badge(P(-150, -70, 260), 'list', 0) + badge(P(150, 30, 200), 'check', 1.2) + badge(P(-40, 140, 70), 'code', .6, 26);
     } else if (kind === 'metricas') {
       a = panel('y', -60, -140, 60, 25, 235); b = panel('x', 110, -100, 90, 20, 160);
-      o += a.s; [60, 95, 75, 130, 110, 160, 140].forEach((h, i) => { const x = -125 + i * 26; o += poly([a.q(x, 40), a.q(x + 14, 40), a.q(x + 14, 40 + h), a.q(x, 40 + h)], i === 5 ? 'rgba(96,165,250,.95)' : 'rgba(230,236,255,.75)'); });
+      o += a.s; [60, 95, 75, 130, 110, 160, 140].forEach((h, i) => { const x = -125 + i * 26; o += poly([a.q(x, 40), a.q(x + 14, 40), a.q(x + 14, 40 + h), a.q(x, 40 + h)], i === 5 ? ac : 'rgba(230,236,255,.75)'); });
       o += b.s; let pts = []; [0, 18, 10, 35, 28, 52, 60, 80, 74, 100].forEach((v, i) => pts.push(b.q(-85 + i * 18, 40 + v))); o += `<polyline points="${pt(pts)}" fill="none" stroke="#60a5fa" stroke-width="3"/>`;
       o += badge(P(-160, -60, 265), 'chart', 0) + badge(P(110, 120, 190), 'bars', 1.1) + badge(P(10, 120, 60), 'check', .5, 26);
     } else if (kind === 'batallas') {
       a = panel('y', -50, -140, 60, 25, 235); b = panel('x', 100, -90, 80, 20, 175);
       o += a.s; let p = 110; for (let i = 0; i < 9; i++) { const c = p + (i % 3 === 1 ? -14 : 18), x = -128 + i * 21; o += poly([a.q(x, Math.min(p, c)), a.q(x + 11, Math.min(p, c)), a.q(x + 11, Math.max(p, c)), a.q(x, Math.max(p, c))], c > p ? 'rgba(74,222,128,.95)' : 'rgba(248,113,113,.95)'); p = c; }
-      o += b.s; for (let i = 0; i < 4; i++) o += linea(b.q, -75, 150 - i * 30, 22, 'rgba(96,165,250,.95)', 10) + linea(b.q, -45, 148 - i * 30, 90 - i * 18);
+      o += b.s; for (let i = 0; i < 4; i++) o += linea(b.q, -75, 150 - i * 30, 22, ac, 10) + linea(b.q, -45, 148 - i * 30, 90 - i * 18);
       o += badge(P(-160, -50, 265), 'swords', 0) + badge(P(100, 100, 205), 'trophy', 1.1) + badge(P(-20, 130, 60), 'chart', .5, 26);
     } else if (kind === 'ballenas') {
       a = panel('y', -40, -140, 70, 25, 225); b = panel('x', 115, -80, 80, 20, 150);
@@ -1081,7 +1082,7 @@ const REDES = {
       g.globalCompositeOperation = 'source-over'; };
     requestAnimationFrame(frame);
   }
-  $$('#ventajas [data-imgs], #por-que [data-imgs]').forEach(particulas);
+  $$('[data-iso]').forEach(el => el.innerHTML = iso(el.dataset.iso));
   vigila();
 
   // gráfica del teléfono: entra un long, sube al objetivo y lo cierra
