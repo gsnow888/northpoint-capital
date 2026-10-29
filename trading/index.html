@@ -578,6 +578,30 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
 .dm-base{display:block;height:12px;margin:0 -6%;background:linear-gradient(180deg,#c9ccd2,#8b8f97 60%,#5d6067);border-radius:2px 2px 12px 12px}
 @media (max-width:960px){.duo{grid-template-columns:1fr;justify-items:center;gap:14px}.duo-ar{transform:rotate(90deg);margin:10px 0}.duo-ar span{transform:rotate(-90deg)}.duo-mac{width:100%}}
 @media (max-width:600px){.iph.sm{width:220px;height:450px}}
+
+/* ilustraciones isométricas */
+.iso-w{position:absolute;inset:0;opacity:0;transform:scale(1.04);transition:opacity .6s,transform 1s;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 60%,rgba(61,123,255,.10),transparent 65%)}
+.iso-w.on{opacity:1;transform:none}
+.iso{width:100%;height:100%}
+.iso .bdg{animation:bdg 4.5s ease-in-out infinite}
+@keyframes bdg{50%{transform:translateY(-10px)}}
+.adv-img,#por-que .shot{border-color:transparent!important;box-shadow:none!important;background:none!important}
+/* comunidad estilo cartel */
+.comu{position:relative;padding:110px 0 100px;overflow:hidden;background:linear-gradient(180deg,#e9f0ff 0%,#a9c4ff 22%,#3d6fe8 52%,#132a6b 78%,var(--bg) 100%)}
+.comu h2{color:#05070d;font-size:clamp(34px,5vw,62px);letter-spacing:-.04em;margin-top:22px}
+.ctag{display:inline-flex;align-items:center;gap:10px;padding:9px 14px;background:#05070d;color:#fff;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.ctag::before{content:'';width:8px;height:8px;background:var(--ac)}
+.comu-st{position:relative;max-width:900px;margin:50px auto 0}
+.comu .ipad-w{transform:none;padding:0 6% 6%}
+.comu .dm{opacity:1!important;transform:none!important}
+.fc{position:absolute;z-index:3;display:flex;align-items:center;gap:16px;padding:20px 24px;background:#05070d;color:#fff;text-align:left;box-shadow:0 30px 60px -20px rgba(0,0,0,.7);animation:bdg 5s ease-in-out infinite}
+.fc b{font-size:46px;font-weight:600;letter-spacing:-.03em;line-height:1;white-space:nowrap}.fc b span{color:var(--ac)}
+.fc p{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;line-height:1.45;max-width:190px}
+.fc1{left:-4%;bottom:22%}.fc2{right:-4%;top:20%;animation-delay:1.4s}
+.btn-wh2{background:#fff;color:#05070d}
+.comu .ctas{margin-top:34px}
+@media (max-width:960px){.fc{padding:14px 16px;gap:10px}.fc b{font-size:32px}.fc p{font-size:11px;max-width:150px}.fc1{left:0;bottom:8%}.fc2{right:0;top:6%}}
+@media (max-width:600px){.comu{padding:80px 0 70px}.fc{position:relative;inset:auto;margin:10px auto 0;width:max-content;max-width:92%;animation:none}.fc1,.fc2{left:auto;right:auto;top:auto;bottom:auto}}
 </style>
 </head>
 <body>
@@ -651,11 +675,11 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
     <h2>Todo lo que necesitas para operar mejor</h2></div>
     <div class="adv">
       <div class="adv-img" data-imgs>
-        <video src="assets/l/operaciones.mp4" poster="assets/l/operaciones.jpg" muted loop playsinline preload="none" class=on></video>
-        <img width="1600" height="1000" src="assets/l/s-panel.jpg" alt="Panel con la curva del mes" loading="lazy">
-        <video src="assets/l/crear.mp4" poster="assets/l/crear.jpg" muted loop playsinline preload="none"></video>
-        <video src="assets/l/ballenas.mp4" poster="assets/l/ballenas.jpg" muted loop playsinline preload="none"></video>
-        <video src="assets/l/logros.mp4" poster="assets/l/logros.jpg" muted loop playsinline preload="none"></video>
+        <div class="iso-w on" data-iso="journal"></div>
+        <div class="iso-w" data-iso="metricas"></div>
+        <div class="iso-w" data-iso="batallas"></div>
+        <div class="iso-w" data-iso="ballenas"></div>
+        <div class="iso-w" data-iso="constancia"></div>
       </div>
       <div class="acc" data-items>
         <div class="acc-i on"><div class="acc-h"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h7"/></svg></i>Cada trade entra solo</div><div class="acc-b"><div><p>Conecta Exness, Tradovate, MT5 o NinjaTrader una sola vez. Cada operación se registra con hora, R y duración.</p></div></div><i class="acc-p"></i></div>
@@ -683,8 +707,7 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
       </div>
       <div class="steps" data-bars><i><b></b></i><i><b></b></i><i><b></b></i></div>
     </div>
-    <div class="win"><div class="shot" data-imgs><img width="1600" height="1000" src="assets/l/s-dia.jpg" alt="Detalle de un día" class="on"><video src="assets/l/calendario.mp4" poster="assets/l/calendario.jpg" muted loop playsinline preload="none"></video><img width="1600" height="1000" src="assets/l/s-registro.jpg" alt="Registro del día" loading="lazy"></div>
-      <div class="float l"><small><i></i>Día · miércoles</small><b>+1.00R</b><div><span>2 operaciones</span><span>50%</span></div></div></div>
+    <div class="win"><div class="shot" data-imgs><div class="iso-w on" data-iso="errores"></div><div class="iso-w" data-iso="emocion"></div><div class="iso-w" data-iso="solo"></div></div></div>
   </div></div>
 </section>
 
@@ -740,21 +763,11 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
   <div class="wrap"><div class="ctas"><a href="aplicar.html" class="btn btn-ac">Aplicar <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
 </section>
 
-<section class="pin" id="comunidad" data-steps="4">
-  <div class="rails"></div>
-  <div class="pin-in"><div class="wrap dcw">
-    <div>
-      <span class="tag">Comunidad NORTHPOINT</span>
-      <h2>No operes solo.<br><span class="em">Únete al Discord.</span></h2>
-      <p class="lead">Comparte tu plan, revisa tus operaciones y aprende con otros traders.</p>
-      <div class="perks">
-        <div class="perk"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></i><div><b>Bias antes de Nueva York</b><p>Planes compartidos antes de la apertura y sesión en vivo por voz.</p></div></div>
-        <div class="perk"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></i><div><b>Torneos entre la comunidad</b><p>Retos 1v1 y torneos con días reales, con tabla en la app.</p></div></div>
-        <div class="perk"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></i><div><b>Traders reales</b><p>De futuros, forex y cripto. Una comunidad sin venta de señales.</p></div></div>
-      </div>
-      <div class="ctas" style="justify-content:flex-start"><a href="#comunidad" class="btn btn-dc" data-red="discord"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.4 18.4 0 0 0-5.6 0L8.6 3a19.7 19.7 0 0 0-4.9 1.4C.5 9.1-.3 13.6.1 18.1a19.9 19.9 0 0 0 6 3l1.3-2a13 13 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.8-9.7-3.6-13.7zM8 15.4c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.6 8 10.6s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg>Entrar al Discord</a></div>
-    </div>
-    <div>
+<section class="comu" id="comunidad">
+  <div class="wrap center">
+    <span class="ctag rv">Comunidad NORTHPOINT</span>
+    <h2 class="rv d1">No operes solo.<br>El mercado no espera.</h2>
+    <div class="comu-st rv d2">
       <div class="ipad-w"><svg class="hand l" viewBox="0 0 200 300" aria-hidden="true"><defs><linearGradient id="hgl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2d34"/><stop offset="1" stop-color="#0c0d10"/></linearGradient></defs><path d="M22 300C8 236 16 190 42 160C58 140 70 118 78 94C84 72 102 68 110 84C116 98 112 122 104 142C122 128 142 128 148 142C152 156 142 168 128 178C140 184 142 198 130 208C142 216 140 232 124 238C112 264 102 284 98 300Z" fill="url(#hgl)" stroke="rgba(96,165,250,.35)" stroke-width="1.5"/><path d="M84 100C92 112 96 128 92 146" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2"/></svg><svg class="hand r" viewBox="0 0 200 300" aria-hidden="true"><defs><linearGradient id="hgr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2d34"/><stop offset="1" stop-color="#0c0d10"/></linearGradient></defs><path d="M22 300C8 236 16 190 42 160C58 140 70 118 78 94C84 72 102 68 110 84C116 98 112 122 104 142C122 128 142 128 148 142C152 156 142 168 128 178C140 184 142 198 130 208C142 216 140 232 124 238C112 264 102 284 98 300Z" fill="url(#hgr)" stroke="rgba(96,165,250,.35)" stroke-width="1.5"/><path d="M84 100C92 112 96 128 92 146" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2"/></svg><div class="ipad"><i class="cam"></i>
       <div class="dcapp">
         <div class="dc-sv"><i class="on">NP</i><i>+</i></div>
@@ -769,9 +782,11 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
         </div><div class="dc-in">Envía un mensaje a #plan-del-día</div></div>
       </div>
       </div></div>
-      <p class="dc-note">Ilustración de cómo se usa el servidor</p>
+      <div class="fc fc1"><b>24<span>/7</span></b><p>Acceso a la comunidad y al plan del día</p></div>
+      <div class="fc fc2"><b>En <span>vivo</span></b><p>Sesión de Nueva York por voz</p></div>
     </div>
-  </div></div>
+    <div class="ctas rv d3"><a href="#comunidad" class="btn btn-dc" data-red="discord"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.4 18.4 0 0 0-5.6 0L8.6 3a19.7 19.7 0 0 0-4.9 1.4C.5 9.1-.3 13.6.1 18.1a19.9 19.9 0 0 0 6 3l1.3-2a13 13 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.8-9.7-3.6-13.7zM8 15.4c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.6 8 10.6s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg>Únete al Discord</a><a href="aplicar.html" class="btn btn-wh2">Cupos limitados <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
 </section>
 
 
@@ -998,6 +1013,64 @@ const REDES = {
   $('#faqL').innerHTML = F.map(([q, a], i) => `<div class="fq rv ${i ? '' : 'on'}"><button>${q}<i><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></i></button><div class="a"><div><p>${a}</p></div></div></div>`).join('');
   $$('#faqL .fq').forEach(f => { io.observe(f); f.querySelector('button').onclick = () => f.classList.toggle('on'); });
 
+  // ── ilustraciones isométricas (en vez de mostrar la app): plataforma, paneles y emblemas ──
+  function iso(kind) {
+    const P = (x, y, z) => [400 + (x - y) * .866, 285 + (x + y) * .5 - z], pt = a => a.map(p => p.join(',')).join(' ');
+    const poly = (pts, f, st, op = 1) => `<polygon points="${pt(pts)}" fill="${f}" stroke="${st || 'none'}" stroke-width="1.2" opacity="${op}"/>`;
+    let o = `<defs><linearGradient id="hx" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fb0ff"/><stop offset=".5" stop-color="#3d7bff"/><stop offset="1" stop-color="#1e3a9a"/></linearGradient><radialGradient id="gl" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3d7bff" stop-opacity=".35"/><stop offset="1" stop-color="#3d7bff" stop-opacity="0"/></radialGradient></defs>`;
+    o += `<ellipse cx="400" cy="300" rx="330" ry="150" fill="url(#gl)"/>`;
+    // plataforma
+    const S = 175, T = 16;
+    o += poly([P(S, -S, 0), P(S, S, 0), P(S, S, -T), P(S, -S, -T)], '#04060b', 'rgba(120,150,220,.18)');
+    o += poly([P(-S, S, 0), P(S, S, 0), P(S, S, -T), P(-S, S, -T)], '#070a12', 'rgba(120,150,220,.18)');
+    o += poly([P(-S, -S, 0), P(S, -S, 0), P(S, S, 0), P(-S, S, 0)], '#0a0e18', 'rgba(140,170,255,.28)');
+    o += poly([P(-S + 22, -S + 22, 0), P(S - 22, -S + 22, 0), P(S - 22, S - 22, 0), P(-S + 22, S - 22, 0)], 'none', 'rgba(140,170,255,.12)');
+    // panel vertical en el plano y = c (de x0 a x1, z0 a z1) o x = c
+    const panel = (pl, c, a0, a1, z0, z1, fill = '#0b1020') => { const Q = (a, z) => pl === 'y' ? P(a, c, z) : P(c, a, z);
+      return { q: Q, s: poly([Q(a0, z0), Q(a1, z0), Q(a1, z1), Q(a0, z1)], fill, 'rgba(140,170,255,.5)') + poly([Q(a0, z1 - 14), Q(a1, z1 - 14), Q(a1, z1), Q(a0, z1)], 'rgba(61,123,255,.12)') }; };
+    const linea = (Q, a, z, len, col = 'rgba(230,236,255,.85)', h = 5) => poly([Q(a, z), Q(a + len, z), Q(a + len, z - h), Q(a, z - h)], col);
+    const ICON = { check: 'M5 12l5 5L20 7', list: 'M5 7h14M5 12h14M5 17h9', chart: 'M4 18l5-6 4 3 7-9', bars: 'M6 20V10M12 20V4M18 20v-7', trophy: 'M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z', swords: 'M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6-6M16 16l4 4', eye: 'M2 12c3-5 7-7 10-7s7 2 10 7c-3 5-7 7-10 7s-7-2-10-7zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6', bank: 'M3 10l9-6 9 6M5 10v8M10 10v8M14 10v8M19 10v8M3 20h18', star: 'M12 3l2.7 5.6 6.2.9-4.5 4.4 1 6.1L12 17l-5.5 2.9 1-6.1L3 9.5l6.2-.9z', flame: 'M12 3c2 4 6 5 6 10a6 6 0 0 1-12 0c0-3 2-5 3-7 1 2 2 3 3 3 0-2-1-4 0-6z', alert: 'M12 4l9 16H3zM12 10v4M12 17v.5', users: 'M9 5a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 20a6 6 0 0 1 12 0M16 4a3 3 0 0 1 0 6M21 20a6 6 0 0 0-3-5', chat: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z', code: 'M8 6l-6 6 6 6M16 6l6 6-6 6', wave: 'M3 12c3-6 5 6 9 0s6 6 9 0' };
+    const hexP = (cx, cy, r) => Array.from({ length: 6 }, (_, i) => { const a = Math.PI / 6 + i * Math.PI / 3; return [cx + r * Math.cos(a), cy + r * Math.sin(a)]; });
+    const badge = ([sx, sy], ic, d = 0, r = 34) => `<g class="bdg" style="animation-delay:${d}s">${poly(hexP(sx + 5, sy + 7, r), '#132a6b')}${poly(hexP(sx, sy, r), 'url(#hx)', 'rgba(220,232,255,.6)')}<path d="${ICON[ic]}" transform="translate(${sx - 15.6},${sy - 15.6}) scale(1.3)" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>`;
+    let a, b;
+    if (kind === 'journal') {
+      a = panel('y', -70, -130, 50, 30, 240); b = panel('y', 30, -40, 140, 20, 180);
+      o += a.s; for (let i = 0; i < 9; i++) o += linea(a.q, -115 + (i % 3) * 8, 210 - i * 19, 60 + (i * 37) % 90, i % 4 ? 'rgba(230,236,255,.8)' : 'rgba(96,165,250,.95)');
+      o += b.s; for (let i = 0; i < 6; i++) o += linea(b.q, -25, 150 - i * 21, 40 + (i * 29) % 80) + linea(b.q, 95, 150 - i * 21, 22, i % 3 ? 'rgba(74,222,128,.9)' : 'rgba(248,113,113,.9)');
+      o += badge(P(-150, -70, 260), 'list', 0) + badge(P(150, 30, 200), 'check', 1.2) + badge(P(-40, 140, 70), 'code', .6, 26);
+    } else if (kind === 'metricas') {
+      a = panel('y', -60, -140, 60, 25, 235); b = panel('x', 110, -100, 90, 20, 160);
+      o += a.s; [60, 95, 75, 130, 110, 160, 140].forEach((h, i) => { const x = -125 + i * 26; o += poly([a.q(x, 40), a.q(x + 14, 40), a.q(x + 14, 40 + h), a.q(x, 40 + h)], i === 5 ? 'rgba(96,165,250,.95)' : 'rgba(230,236,255,.75)'); });
+      o += b.s; let pts = []; [0, 18, 10, 35, 28, 52, 60, 80, 74, 100].forEach((v, i) => pts.push(b.q(-85 + i * 18, 40 + v))); o += `<polyline points="${pt(pts)}" fill="none" stroke="#60a5fa" stroke-width="3"/>`;
+      o += badge(P(-160, -60, 265), 'chart', 0) + badge(P(110, 120, 190), 'bars', 1.1) + badge(P(10, 120, 60), 'check', .5, 26);
+    } else if (kind === 'batallas') {
+      a = panel('y', -50, -140, 60, 25, 235); b = panel('x', 100, -90, 80, 20, 175);
+      o += a.s; let p = 110; for (let i = 0; i < 9; i++) { const c = p + (i % 3 === 1 ? -14 : 18), x = -128 + i * 21; o += poly([a.q(x, Math.min(p, c)), a.q(x + 11, Math.min(p, c)), a.q(x + 11, Math.max(p, c)), a.q(x, Math.max(p, c))], c > p ? 'rgba(74,222,128,.95)' : 'rgba(248,113,113,.95)'); p = c; }
+      o += b.s; for (let i = 0; i < 4; i++) o += linea(b.q, -75, 150 - i * 30, 22, 'rgba(96,165,250,.95)', 10) + linea(b.q, -45, 148 - i * 30, 90 - i * 18);
+      o += badge(P(-160, -50, 265), 'swords', 0) + badge(P(100, 100, 205), 'trophy', 1.1) + badge(P(-20, 130, 60), 'chart', .5, 26);
+    } else if (kind === 'ballenas') {
+      a = panel('y', -40, -140, 70, 25, 225); b = panel('x', 115, -80, 80, 20, 150);
+      o += a.s; [[90, 1], [60, 0], [120, 1], [40, 0], [75, 1]].forEach(([w, l], i) => { const z = 190 - i * 30; o += linea(a.q, -125, z, 70, 'rgba(230,236,255,.6)', 6) + linea(a.q, -45, z + 2, w * .9, l ? 'rgba(74,222,128,.95)' : 'rgba(248,113,113,.95)', 10); });
+      o += b.s; for (let i = 0; i < 4; i++) o += linea(b.q, -65, 125 - i * 24, 120 - i * 20);
+      o += badge(P(-160, -40, 255), 'eye', 0) + badge(P(115, 100, 180), 'bank', 1.1) + badge(P(-30, 140, 60), 'bars', .5, 26);
+    } else if (kind === 'constancia') {
+      for (let r = 0; r < 3; r++) for (let c = 0; c < 4; c++) { const x = -120 + c * 62, y = -110 + r * 72, lit = r * 4 + c < 7; o += poly([P(x, y, 6), P(x + 44, y, 6), P(x + 44, y + 56, 6), P(x, y + 56, 6)], lit ? 'rgba(61,123,255,.55)' : '#0d1322', 'rgba(140,170,255,.45)'); }
+      a = panel('y', -150, -60, 100, 30, 200); o += a.s; for (let i = 0; i < 5; i++) o += linea(a.q, -45, 175 - i * 26, 80 + (i * 23) % 50);
+      o += badge(P(-90, -150, 235), 'star', 0) + badge(P(150, 60, 120), 'flame', 1.1) + badge(P(-150, 120, 80), 'check', .5, 26);
+    } else if (kind === 'errores') {
+      a = panel('y', -60, -130, 70, 25, 230); o += a.s;
+      for (let i = 0; i < 7; i++) o += linea(a.q, -115, 205 - i * 25, 90 + (i * 31) % 60) + linea(a.q, 45, 205 - i * 25, 14, i % 2 ? 'rgba(248,113,113,.95)' : 'rgba(230,236,255,.5)', 10);
+      o += badge(P(-150, -60, 255), 'alert', 0) + badge(P(140, 40, 170), 'list', 1.1) + badge(P(0, 130, 60), 'eye', .5, 26);
+    } else if (kind === 'emocion') {
+      a = panel('y', -50, -140, 60, 25, 225); o += a.s; let pts = []; [150, 140, 155, 120, 135, 95, 110, 70, 80, 45].forEach((v, i) => pts.push(a.q(-128 + i * 20, v))); o += `<polyline points="${pt(pts)}" fill="none" stroke="#f87171" stroke-width="3"/>`;
+      o += badge(P(-160, -50, 255), 'flame', 0) + badge(P(120, 50, 170), 'wave', 1.1) + badge(P(-10, 130, 60), 'alert', .5, 26);
+    } else {
+      a = panel('y', -60, -120, 80, 25, 220); o += a.s; for (let i = 0; i < 4; i++) { const r = i % 2; o += linea(a.q, r ? -20 : -105, 195 - i * 40, 80, r ? 'rgba(96,165,250,.9)' : 'rgba(230,236,255,.75)', 18); }
+      o += badge(P(-150, -60, 250), 'users', 0) + badge(P(140, 40, 180), 'chat', 1.1) + badge(P(-20, 130, 60), 'check', .5, 26);
+    }
+    return `<svg class="iso" viewBox="0 0 800 520" preserveAspectRatio="xMidYMid meet" aria-hidden="true">${o}</svg>`;
+  }
+  $$('[data-iso]').forEach(el => el.innerHTML = iso(el.dataset.iso));
   vigila();
 
   // gráfica del teléfono: entra un long, sube al objetivo y lo cierra
@@ -1026,7 +1099,7 @@ const REDES = {
   // notificaciones del iPhone
   new IntersectionObserver((es, o) => es.forEach(e => { if (!e.isIntersecting) return; o.disconnect(); $$('#nts .nt').forEach((n, i) => setTimeout(() => n.classList.add('on'), 300 + i * 650)); }), { threshold: .35 }).observe($('#nts'));
   // Polar: la estrella que te guía por la página
-  { const G = [['top', 'Hola, soy Polar. Te muestro la app en un minuto.'], ['zoom', 'Así se ve NORTHPOINT por dentro.'], ['ventajas', 'Cinco funciones clave. Desliza para verlas una por una.'], ['por-que', 'Los tres errores más comunes.'], ['practica', 'Aquí practicas tu setup sin tocar tu cuenta.'], ['diferencia', 'Compara cómo operas con y sin NORTHPOINT.'], ['como', 'Toca cualquier video para verlo en grande.'], ['comunidad', 'Únete a la comunidad en Discord.'], ['casos', 'Así cambia tu rutina de trading.'], ['planes', 'Aplica y te contactamos por correo.'], ['faq', '¿Dudas? Aquí están las respuestas.'], ['redes', 'Contenido y transmisiones en vivo.'], ['final', 'Aplica ahora. Los cupos son limitados.']];
+  { const G = [['top', 'Hola, soy Polar. Te muestro la app en un minuto.'], ['zoom', 'Así se ve NORTHPOINT por dentro.'], ['ventajas', 'Cinco funciones clave. Desliza para verlas una por una.'], ['por-que', 'Los tres errores más comunes.'], ['practica', 'Aquí practicas tu setup sin tocar tu cuenta.'], ['diferencia', 'Compara cómo operas con y sin NORTHPOINT.'], ['como', 'Toca cualquier video para verlo en grande.'], ['comunidad', 'La comunidad está en Discord. Entra.'], ['casos', 'Así cambia tu rutina de trading.'], ['planes', 'Aplica y te contactamos por correo.'], ['faq', '¿Dudas? Aquí están las respuestas.'], ['redes', 'Contenido y transmisiones en vivo.'], ['final', 'Aplica ahora. Los cupos son limitados.']];
     const P = $('#polar'), box = $('#pbx'), tx = $('#ptx'), nx = $('#pnx'); let cur = -1;
     try { if (sessionStorage.getItem('np.polar') === 'off') P.classList.add('off'); } catch (_) {}
     const el = k => k === 'top' ? document.body : document.getElementById(k);
