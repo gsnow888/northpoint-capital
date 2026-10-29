@@ -606,6 +606,8 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
 #ventajas .adv-img,#por-que .shot{aspect-ratio:16/11}
 .ipad .dcimg{display:block;width:100%;height:auto;border-radius:16px}
 .comu .ipad{border-width:14px;border-radius:30px}
+.iso .flt{animation:bdg 5s ease-in-out infinite}
+.iso-w{overflow:visible}
 </style>
 </head>
 <body>
@@ -986,101 +988,54 @@ const REDES = {
 
   // ── ilustraciones isométricas (en vez de mostrar la app): plataforma, paneles y emblemas ──
   function iso(kind) {
-    const P = (x, y, z) => [400 + (x - y) * .866, 285 + (x + y) * .5 - z], pt = a => a.map(p => p.join(',')).join(' ');
-    const poly = (pts, f, st, op = 1) => `<polygon points="${pt(pts)}" fill="${f}" stroke="${st || 'none'}" stroke-width="1.2" opacity="${op}"/>`;
     const C = { journal: ['#a5f3fc', '#06b6d4', '#155e75'], metricas: ['#a7f3d0', '#10b981', '#065f46'], batallas: ['#fde68a', '#f59e0b', '#92400e'], ballenas: ['#ddd6fe', '#8b5cf6', '#4c1d95'], constancia: ['#fbcfe8', '#ec4899', '#831843'], errores: ['#fecaca', '#ef4444', '#7f1d1d'], emocion: ['#fed7aa', '#f97316', '#7c2d12'], solo: ['#bfdbfe', '#3b82f6', '#1e3a8a'] }[kind] || ['#bfdbfe', '#3b82f6', '#1e3a8a'], ac = C[1];
-    let o = `<defs><linearGradient id="hx-${kind}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${C[0]}"/><stop offset=".5" stop-color="${C[1]}"/><stop offset="1" stop-color="${C[2]}"/></linearGradient><radialGradient id="gl-${kind}" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="${ac}" stop-opacity=".45"/><stop offset="1" stop-color="${ac}" stop-opacity="0"/></radialGradient><filter id="bl-${kind}"><feGaussianBlur stdDeviation="10"/></filter></defs>`;
-    o += `<ellipse cx="400" cy="300" rx="340" ry="160" fill="url(#gl-${kind})"/>`;
-    // plataforma
-    const S = 175, T = 16;
-    o += poly([P(S, -S, 0), P(S, S, 0), P(S, S, -T), P(S, -S, -T)], '#04060b', 'rgba(120,150,220,.18)');
-    o += poly([P(-S, S, 0), P(S, S, 0), P(S, S, -T), P(-S, S, -T)], '#070a12', 'rgba(120,150,220,.18)');
-    o += poly([P(-S, -S, 0), P(S, -S, 0), P(S, S, 0), P(-S, S, 0)], '#0a0e18', ac + '66');
-    o += poly([P(-S + 22, -S + 22, 0), P(S - 22, -S + 22, 0), P(S - 22, S - 22, 0), P(-S + 22, S - 22, 0)], 'none', ac + '33');
-    // panel vertical en el plano y = c (de x0 a x1, z0 a z1) o x = c
-    const panel = (pl, c, a0, a1, z0, z1, fill = '#0b1020') => { const Q = (a, z) => pl === 'y' ? P(a, c, z) : P(c, a, z);
-      return { q: Q, s: poly([Q(a0, z0), Q(a1, z0), Q(a1, z1), Q(a0, z1)], fill, ac + 'aa') + poly([Q(a0, z1 - 14), Q(a1, z1 - 14), Q(a1, z1), Q(a0, z1)], ac + '33') }; };
-    const linea = (Q, a, z, len, col = 'rgba(230,236,255,.85)', h = 5) => poly([Q(a, z), Q(a + len, z), Q(a + len, z - h), Q(a, z - h)], col);
-    const ICON = { check: 'M5 12l5 5L20 7', list: 'M5 7h14M5 12h14M5 17h9', chart: 'M4 18l5-6 4 3 7-9', bars: 'M6 20V10M12 20V4M18 20v-7', trophy: 'M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z', swords: 'M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6-6M16 16l4 4', eye: 'M2 12c3-5 7-7 10-7s7 2 10 7c-3 5-7 7-10 7s-7-2-10-7zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6', bank: 'M3 10l9-6 9 6M5 10v8M10 10v8M14 10v8M19 10v8M3 20h18', star: 'M12 3l2.7 5.6 6.2.9-4.5 4.4 1 6.1L12 17l-5.5 2.9 1-6.1L3 9.5l6.2-.9z', flame: 'M12 3c2 4 6 5 6 10a6 6 0 0 1-12 0c0-3 2-5 3-7 1 2 2 3 3 3 0-2-1-4 0-6z', alert: 'M12 4l9 16H3zM12 10v4M12 17v.5', users: 'M9 5a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 20a6 6 0 0 1 12 0M16 4a3 3 0 0 1 0 6M21 20a6 6 0 0 0-3-5', chat: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z', code: 'M8 6l-6 6 6 6M16 6l6 6-6 6', wave: 'M3 12c3-6 5 6 9 0s6 6 9 0' };
+    const P = (x, y, z) => [400 + (x - y) * .866, 330 + (x + y) * .5 - z], pt = a => a.map(p => p.map(v => v.toFixed(1)).join(',')).join(' ');
+    const poly = (pts, f, st, op = 1, sw = 1.2) => `<polygon points="${pt(pts)}" fill="${f}" stroke="${st || 'none'}" stroke-width="${sw}" opacity="${op}" stroke-linejoin="round"/>`;
+    const mix = (h, t) => { const n = parseInt(h.slice(1), 16), r = n >> 16, g = n >> 8 & 255, b = n & 255; return `rgb(${r * t | 0},${g * t | 0},${b * t | 0})`; };
+    const box = (x, y, z, w, d, h, col = ac, op = 1) => poly([P(x + w, y, z), P(x + w, y + d, z), P(x + w, y + d, z + h), P(x + w, y, z + h)], mix(col, .45), mix(col, .9), op) + poly([P(x, y + d, z), P(x + w, y + d, z), P(x + w, y + d, z + h), P(x, y + d, z + h)], mix(col, .3), mix(col, .8), op) + poly([P(x, y, z + h), P(x + w, y, z + h), P(x + w, y + d, z + h), P(x, y + d, z + h)], mix(col, .75), '#fff', op, .8);
+    const dark = (x, y, z, w, d, h, op = 1) => poly([P(x + w, y, z), P(x + w, y + d, z), P(x + w, y + d, z + h), P(x + w, y, z + h)], '#070a12', ac + '66', op) + poly([P(x, y + d, z), P(x + w, y + d, z), P(x + w, y + d, z + h), P(x, y + d, z + h)], '#05070d', ac + '55', op) + poly([P(x, y, z + h), P(x + w, y, z + h), P(x + w, y + d, z + h), P(x, y + d, z + h)], '#0c111d', ac + '88', op);
+    const base = (s = 175, op = 1) => dark(-s, -s, -16, s * 2, s * 2, 16, op) + poly([P(-s + 22, -s + 22, 0), P(s - 22, -s + 22, 0), P(s - 22, s - 22, 0), P(-s + 22, s - 22, 0)], 'none', ac + '30', op);
+    const ICON = { check: 'M5 12l5 5L20 7', chart: 'M4 18l5-6 4 3 7-9', trophy: 'M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3', eye: 'M2 12c3-5 7-7 10-7s7 2 10 7c-3 5-7 7-10 7s-7-2-10-7zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6', star: 'M12 3l2.7 5.6 6.2.9-4.5 4.4 1 6.1L12 17l-5.5 2.9 1-6.1L3 9.5l6.2-.9z', flame: 'M12 3c2 4 6 5 6 10a6 6 0 0 1-12 0c0-3 2-5 3-7 1 2 2 3 3 3 0-2-1-4 0-6z', alert: 'M12 4l9 16H3zM12 10v4M12 17v.5', users: 'M9 5a3 3 0 1 0 0 6 3 3 0 0 0 0-6M3 20a6 6 0 0 1 12 0M16 4a3 3 0 0 1 0 6M21 20a6 6 0 0 0-3-5' };
     const hexP = (cx, cy, r) => Array.from({ length: 6 }, (_, i) => { const a = Math.PI / 6 + i * Math.PI / 3; return [cx + r * Math.cos(a), cy + r * Math.sin(a)]; });
-    const badge = ([sx, sy], ic, d = 0, r = 40) => `<g class="bdg" style="animation-delay:${d}s"><circle cx="${sx}" cy="${sy}" r="${r * 1.1}" fill="${ac}" opacity=".55" filter="url(#bl-${kind})"/>${poly(hexP(sx + 5, sy + 7, r), C[2])}${poly(hexP(sx, sy, r), `url(#hx-${kind})`, 'rgba(255,255,255,.7)')}<path d="${ICON[ic]}" transform="translate(${sx - r * .46},${sy - r * .46}) scale(${r / 26})" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>`;
-    let a, b;
+    const badge = ([sx, sy], ic, d = 0, r = 40) => `<g class="bdg" style="animation-delay:${d}s"><circle cx="${sx}" cy="${sy}" r="${r * 1.15}" fill="${ac}" opacity=".5" filter="url(#bl-${kind})"/>${poly(hexP(sx + 5, sy + 7, r), C[2])}${poly(hexP(sx, sy, r), `url(#hx-${kind})`, 'rgba(255,255,255,.75)')}<path d="${ICON[ic]}" transform="translate(${sx - r * .46},${sy - r * .46}) scale(${r / 26})" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>`;
+    const ell = (cx, cy, z, r) => { const L = []; for (let i = 0; i < 36; i++) { const a = i / 36 * Math.PI * 2; L.push(P(cx + Math.cos(a) * r, cy + Math.sin(a) * r, z)); } return L; };
+    let o = `<defs><linearGradient id="hx-${kind}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${C[0]}"/><stop offset=".5" stop-color="${C[1]}"/><stop offset="1" stop-color="${C[2]}"/></linearGradient><radialGradient id="gl-${kind}" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="${ac}" stop-opacity=".5"/><stop offset="1" stop-color="${ac}" stop-opacity="0"/></radialGradient><filter id="bl-${kind}" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12"/></filter></defs><ellipse cx="400" cy="345" rx="330" ry="150" fill="url(#gl-${kind})"/>`;
     if (kind === 'journal') {
-      a = panel('y', -70, -130, 50, 30, 240); b = panel('y', 30, -40, 140, 20, 180);
-      o += a.s; for (let i = 0; i < 9; i++) o += linea(a.q, -115 + (i % 3) * 8, 210 - i * 19, 60 + (i * 37) % 90, i % 4 ? 'rgba(230,236,255,.8)' : ac);
-      o += b.s; for (let i = 0; i < 6; i++) o += linea(b.q, -25, 150 - i * 21, 40 + (i * 29) % 80) + linea(b.q, 95, 150 - i * 21, 22, i % 3 ? 'rgba(74,222,128,.9)' : 'rgba(248,113,113,.9)');
-      o += badge(P(-150, -70, 260), 'list', 0) + badge(P(150, 30, 200), 'check', 1.2) + badge(P(-40, 140, 70), 'code', .6, 26);
+      o += base(150);
+      for (let k = 0; k < 4; k++) { const z = 30 + k * 46, dx = k * 10; o += `<g class="flt" style="animation-delay:${k * .3}s">` + dark(-95 + dx, -70 - dx, z, 190, 140, 8) + [0, 1, 2, 3].map(r => poly([P(-80 + dx, -55 - dx + r * 30, z + 8.5), P(-80 + dx + 60 + r * 25 % 90, -55 - dx + r * 30, z + 8.5), P(-80 + dx + 60 + r * 25 % 90, -45 - dx + r * 30, z + 8.5), P(-80 + dx, -45 - dx + r * 30, z + 8.5)], r === 0 ? ac : 'rgba(230,240,255,.75)')).join('') + '</g>'; }
+      o += badge(P(110, -110, 230), 'check');
     } else if (kind === 'metricas') {
-      a = panel('y', -60, -140, 60, 25, 235); b = panel('x', 110, -100, 90, 20, 160);
-      o += a.s; [60, 95, 75, 130, 110, 160, 140].forEach((h, i) => { const x = -125 + i * 26; o += poly([a.q(x, 40), a.q(x + 14, 40), a.q(x + 14, 40 + h), a.q(x, 40 + h)], i === 5 ? ac : 'rgba(230,236,255,.75)'); });
-      o += b.s; let pts = []; [0, 18, 10, 35, 28, 52, 60, 80, 74, 100].forEach((v, i) => pts.push(b.q(-85 + i * 18, 40 + v))); o += `<polyline points="${pt(pts)}" fill="none" stroke="#60a5fa" stroke-width="3"/>`;
-      o += badge(P(-160, -60, 265), 'chart', 0) + badge(P(110, 120, 190), 'bars', 1.1) + badge(P(10, 120, 60), 'check', .5, 26);
+      o += base(170); [60, 95, 80, 135, 120, 175].forEach((h, i) => { o += box(-140 + i * 48, -20, 0, 30, 30, h, i === 5 ? C[0] : ac, .55 + i * .08); });
+      const L = [60, 95, 80, 135, 120, 175].map((h, i) => P(-125 + i * 48, -5, h + 40)); o += `<polyline points="${pt(L)}" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round" opacity=".9"/>` + L.map(p => `<circle cx="${p[0]}" cy="${p[1]}" r="5" fill="${C[0]}"/>`).join('');
+      o += badge(P(-150, 120, 120), 'chart', .6, 34);
     } else if (kind === 'batallas') {
-      a = panel('y', -50, -140, 60, 25, 235); b = panel('x', 100, -90, 80, 20, 175);
-      o += a.s; let p = 110; for (let i = 0; i < 9; i++) { const c = p + (i % 3 === 1 ? -14 : 18), x = -128 + i * 21; o += poly([a.q(x, Math.min(p, c)), a.q(x + 11, Math.min(p, c)), a.q(x + 11, Math.max(p, c)), a.q(x, Math.max(p, c))], c > p ? 'rgba(74,222,128,.95)' : 'rgba(248,113,113,.95)'); p = c; }
-      o += b.s; for (let i = 0; i < 4; i++) o += linea(b.q, -75, 150 - i * 30, 22, ac, 10) + linea(b.q, -45, 148 - i * 30, 90 - i * 18);
-      o += badge(P(-160, -50, 265), 'swords', 0) + badge(P(100, 100, 205), 'trophy', 1.1) + badge(P(-20, 130, 60), 'chart', .5, 26);
+      o += base(165); o += box(-150, -45, 0, 90, 90, 70, C[2]) + box(60, -45, 0, 90, 90, 45, C[0]) ;
+      o += box(-45, -45, 0, 90, 90, 115, ac);
+      o += `<text x="${P(0, 45, 60)[0]}" y="${P(0, 45, 60)[1]}" fill="#fff" font-family="Geist,sans-serif" font-weight="700" font-size="34" text-anchor="middle">1</text>`;
+      o += badge(P(0, 0, 210), 'trophy', 0, 46);
     } else if (kind === 'ballenas') {
-      a = panel('y', -40, -140, 70, 25, 225); b = panel('x', 115, -80, 80, 20, 150);
-      o += a.s; [[90, 1], [60, 0], [120, 1], [40, 0], [75, 1]].forEach(([w, l], i) => { const z = 190 - i * 30; o += linea(a.q, -125, z, 70, 'rgba(230,236,255,.6)', 6) + linea(a.q, -45, z + 2, w * .9, l ? 'rgba(74,222,128,.95)' : 'rgba(248,113,113,.95)', 10); });
-      o += b.s; for (let i = 0; i < 4; i++) o += linea(b.q, -65, 125 - i * 24, 120 - i * 20);
-      o += badge(P(-160, -40, 255), 'eye', 0) + badge(P(115, 100, 180), 'bank', 1.1) + badge(P(-30, 140, 60), 'bars', .5, 26);
+      o += base(165);
+      for (let k = 0; k < 7; k++) { const z = k * 16, r = 120 - k * 4; o += poly(ell(0, 0, z, r).concat(ell(0, 0, z + 12, r).reverse()), mix(ac, .35 + k * .05), ac + 'aa') + poly(ell(0, 0, z + 12, r), mix(ac, .55 + k * .05), C[0] + '99'); }
+      o += poly(ell(0, 0, 124, 95), 'none', '#fff', .35, 1.5);
+      o += badge(P(0, 0, 230), 'eye', 0, 46);
     } else if (kind === 'constancia') {
-      for (let r = 0; r < 3; r++) for (let c = 0; c < 4; c++) { const x = -120 + c * 62, y = -110 + r * 72, lit = r * 4 + c < 7; o += poly([P(x, y, 6), P(x + 44, y, 6), P(x + 44, y + 56, 6), P(x, y + 56, 6)], lit ? 'rgba(61,123,255,.55)' : '#0d1322', 'rgba(140,170,255,.45)'); }
-      a = panel('y', -150, -60, 100, 30, 200); o += a.s; for (let i = 0; i < 5; i++) o += linea(a.q, -45, 175 - i * 26, 80 + (i * 23) % 50);
-      o += badge(P(-90, -150, 235), 'star', 0) + badge(P(150, 60, 120), 'flame', 1.1) + badge(P(-150, 120, 80), 'check', .5, 26);
+      o += base(170); for (let k = 0; k < 6; k++) o += box(-150 + k * 50, 100 - k * 50, 0, 60, 60, 25 + k * 30, k === 5 ? C[0] : ac, .6 + k * .07);
+      o += badge(P(110, -150, 250), 'star', 0, 44);
     } else if (kind === 'errores') {
-      a = panel('y', -60, -130, 70, 25, 230); o += a.s;
-      for (let i = 0; i < 7; i++) o += linea(a.q, -115, 205 - i * 25, 90 + (i * 31) % 60) + linea(a.q, 45, 205 - i * 25, 14, i % 2 ? 'rgba(248,113,113,.95)' : 'rgba(230,236,255,.5)', 10);
-      o += badge(P(-150, -60, 255), 'alert', 0) + badge(P(140, 40, 170), 'list', 1.1) + badge(P(0, 130, 60), 'eye', .5, 26);
+      o += base(160);
+      const sh = [[-110, 0, 30, 240, 0, 0], [-10, 0, 30, 170, 18, 12], [70, 0, 30, 210, -14, 26]];
+      sh.forEach(([x, y, z0, z1, dz, dy], i) => { const w = i === 0 ? 100 : 80; o += poly([P(x, y + dy, z0 + dz), P(x + w, y + dy, z0 + dz + (i === 1 ? 20 : 0)), P(x + w, y + dy, z1 + dz), P(x, y + dy, z1 + dz - (i === 2 ? 30 : 0))], '#0c111d', ac, 1, 1.6) + [0, 1, 2, 3, 4].map(r => poly([P(x + 12, y + dy, z1 + dz - 30 - r * 34), P(x + w - 18, y + dy, z1 + dz - 30 - r * 34), P(x + w - 18, y + dy, z1 + dz - 37 - r * 34), P(x + 12, y + dy, z1 + dz - 37 - r * 34)], r % 2 ? ac : 'rgba(230,240,255,.5)')).join(''); });
+      o += badge(P(-150, 60, 160), 'alert', 0, 44);
     } else if (kind === 'emocion') {
-      a = panel('y', -50, -140, 60, 25, 225); o += a.s; let pts = []; [150, 140, 155, 120, 135, 95, 110, 70, 80, 45].forEach((v, i) => pts.push(a.q(-128 + i * 20, v))); o += `<polyline points="${pt(pts)}" fill="none" stroke="#f87171" stroke-width="3"/>`;
-      o += badge(P(-160, -50, 255), 'flame', 0) + badge(P(120, 50, 170), 'wave', 1.1) + badge(P(-10, 130, 60), 'alert', .5, 26);
+      o += base(170); const N = 14; for (let i = 0; i < N; i++) { const t = i / (N - 1), x = -160 + t * 300, h = 30 + Math.max(0, Math.sin(t * Math.PI * 1.6 + .4)) * 150 * (1 - t * .6); o += box(x, -15, 0, 18, 30, h, t > .55 ? C[0] : ac, .55 + t * .4); }
+      o += badge(P(150, -120, 150), 'flame', 0, 42);
     } else {
-      a = panel('y', -60, -120, 80, 25, 220); o += a.s; for (let i = 0; i < 4; i++) { const r = i % 2; o += linea(a.q, r ? -20 : -105, 195 - i * 40, 80, r ? 'rgba(96,165,250,.9)' : 'rgba(230,236,255,.75)', 18); }
-      o += badge(P(-150, -60, 250), 'users', 0) + badge(P(140, 40, 180), 'chat', 1.1) + badge(P(-20, 130, 60), 'check', .5, 26);
+      o += base(110, .9);
+      [[-230, -40], [190, -150], [150, 180]].forEach(([x, y]) => { o += dark(x - 35, y - 35, -10, 70, 70, 10, .4) + box(x - 8, y - 8, 0, 16, 16, 40, '#475569', .35) + `<circle cx="${P(x, y, 62)[0]}" cy="${P(x, y, 62)[1]}" r="11" fill="#334155" opacity=".45"/>`; });
+      o += box(-14, -14, 0, 28, 28, 70, ac) + `<circle cx="${P(0, 0, 104)[0]}" cy="${P(0, 0, 104)[1]}" r="19" fill="${C[0]}" stroke="#fff" stroke-width="1.5"/>`;
+      o += badge(P(-60, 80, 180), 'users', .4, 36);
     }
-    return `<svg class="iso" viewBox="0 0 800 520" preserveAspectRatio="xMidYMid meet" aria-hidden="true">${o}</svg>`;
-  }
-  // ── partículas 3D que se juntan en cada forma (sustituyen las ilustraciones) ──
-  function particulas(box) {
-    const kinds = [...box.querySelectorAll('[data-iso]')].map(e => e.dataset.iso); if (!kinds.length) return;
-    const N = innerWidth < 700 ? 650 : 1000, cv = document.createElement('canvas'); cv.className = 'pcv'; box.append(cv);
-    const g = cv.getContext('2d'); let W = 0, H = 0, vis = false, cur = -1, rot = 0;
-    const R = (a, b) => a + Math.random() * (b - a);
-    // muestreo de formas (coordenadas aprox. -1..1)
-    const seg = (L, a, b, n) => { for (let i = 0; i < n; i++) { const t = Math.random(); L.push([a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t]); } };
-    const caja = (L, x0, y0, z0, x1, y1, z1, n) => { const V = [[x0, y0, z0], [x1, y0, z0], [x1, y1, z0], [x0, y1, z0], [x0, y0, z1], [x1, y0, z1], [x1, y1, z1], [x0, y1, z1]], E = [[0, 1], [1, 2], [2, 3], [3, 0], [4, 5], [5, 6], [6, 7], [7, 4], [0, 4], [1, 5], [2, 6], [3, 7]]; E.forEach(([a, b]) => seg(L, V[a], V[b], n)); };
-    const plano = (L, x0, y0, x1, y1, z, n) => { for (let i = 0; i < n; i++) L.push([R(x0, x1), R(y0, y1), z]); };
-    const F = {
-      journal: () => { const L = []; for (let k = 0; k < 3; k++) { const z = -.45 + k * .45, dx = k * .12, dy = -k * .1; caja(L, -.55 + dx, -.75 + dy, z, .55 + dx, .75 + dy, z, 22); for (let r = 0; r < 7; r++) seg(L, [-.42 + dx, .55 - r * .17 + dy, z], [(.2 + (r * 37 % 30) / 100) + dx, .55 - r * .17 + dy, z], 9); } return L; },
-      metricas: () => { const L = [], h = [.5, .8, .6, 1.1, .9, 1.4]; h.forEach((v, i) => caja(L, -.9 + i * .32, -.8, -.12, -.72 + i * .32, -.8 + v, .12, 9)); seg(L, [-.95, -.8, 0], [.95, -.8, 0], 40); return L; },
-      batallas: () => { const L = [], C = [[-.2, .3], [.3, -.1], [-.1, .5], [.5, .2], [.2, .8]]; C.forEach(([o, c], i) => { const x = -.8 + i * .4; caja(L, x - .1, Math.min(o, c), -.1, x + .1, Math.max(o, c), .1, 10); seg(L, [x, Math.min(o, c) - .25, 0], [x, Math.max(o, c) + .25, 0], 14); }); return L; },
-      ballenas: () => { const L = []; for (let i = 0; i < 520; i++) { const u = R(0, Math.PI * 2), v = R(-Math.PI / 2, Math.PI / 2); L.push([Math.cos(v) * Math.cos(u) * .85 - .1, Math.sin(v) * .38, Math.cos(v) * Math.sin(u) * .38]); }
-        for (let i = 0; i < 120; i++) { const t = Math.random(), s = R(-1, 1); L.push([.75 + t * .35, t * .45 * s, 0]); } seg(L, [.75, 0, 0], [1.1, .45, 0], 30); seg(L, [.75, 0, 0], [1.1, -.45, 0], 30); for (let i = 0; i < 40; i++) L.push([-.6, .12 + R(-.03, .03), .36]); return L; },
-      constancia: () => { const L = [], P = Array.from({ length: 10 }, (_, i) => { const a = -Math.PI / 2 + i * Math.PI / 5, r = i % 2 ? .4 : 1; return [Math.cos(a) * r, -Math.sin(a) * r]; });
-        [-.15, .15].forEach(z => P.forEach((p, i) => seg(L, [...p, z], [...P[(i + 1) % 10], z], 26))); P.forEach(p => seg(L, [...p, -.15], [...p, .15], 6)); return L; },
-      errores: () => { const L = [], V = [[0, .95], [.95, -.7], [-.95, -.7]]; [-.12, .12].forEach(z => V.forEach((p, i) => seg(L, [...p, z], [...V[(i + 1) % 3], z], 60))); seg(L, [0, .45, 0], [0, -.2, 0], 40); for (let i = 0; i < 30; i++) L.push([R(-.04, .04), R(-.42, -.36), R(-.04, .04)]); return L; },
-      emocion: () => { const L = []; for (let i = 0; i < 700; i++) { const x = R(-1, 1), z = R(-.6, .6); L.push([x, Math.sin(x * 5) * .18 - x * .55 + Math.cos(z * 4) * .05, z]); } return L; },
-      solo: () => { const L = []; for (let i = 0; i < 260; i++) { const u = R(0, 6.28), v = R(-1.57, 1.57); L.push([Math.cos(v) * Math.cos(u) * .28, .55 + Math.sin(v) * .28, Math.cos(v) * Math.sin(u) * .28]); }
-        for (let i = 0; i < 420; i++) { const u = R(0, Math.PI), r = R(.25, .7); L.push([Math.cos(u) * r * 1.1 - 0, -.75 + Math.sin(u) * r * .9, R(-.25, .25)]); } return L; } };
-    const T = kinds.map(k => { const L = (F[k] || F.journal)(); const out = []; for (let i = 0; i < N; i++) out.push(L[i % L.length].map(v => v + R(-.012, .012))); return out.sort(() => Math.random() - .5); });
-    const P = Array.from({ length: N }, () => ({ x: R(-2, 2), y: R(-2, 2), z: R(-2, 2), d: R(0, 25), s: R(.7, 1.6) }));
-    const size = () => { const r = box.getBoundingClientRect(), dp = Math.min(2, devicePixelRatio || 1); W = r.width; H = r.height; cv.width = W * dp; cv.height = H * dp; g.setTransform(dp, 0, 0, dp, 0, 0); };
-    size(); addEventListener('resize', size);
-    new IntersectionObserver(es => es.forEach(e => vis = e.isIntersecting)).observe(box);
-    const frame = () => { requestAnimationFrame(frame); if (!vis || !W) return;
-      const k = Math.max(0, [...box.children].findIndex(c => c.classList.contains('on') && c.dataset.iso));
-      if (k !== cur) { cur = k; P.forEach(p => { p.d = R(0, 22); p.x += R(-.5, .5); p.y += R(-.5, .5); p.z += R(-.5, .5); }); }
-      rot += .006; const cs = Math.cos(rot), sn = Math.sin(rot), ct = Math.cos(.32), st = Math.sin(.32), S = Math.min(W, H) * .43, cx = W / 2, cy = H / 2, tg = T[cur];
-      g.clearRect(0, 0, W, H); g.globalCompositeOperation = 'lighter';
-      for (let i = 0; i < N; i++) { const p = P[i], t = tg[i];
-        if (p.d > 0) p.d--; else { p.x += (t[0] - p.x) * .075; p.y += (t[1] - p.y) * .075; p.z += (t[2] - p.z) * .075; }
-        let x = p.x * cs + p.z * sn, z = -p.x * sn + p.z * cs, y = p.y; const y2 = y * ct - z * st, z2 = y * st + z * ct;
-        const f = 3 / (3 + z2), X = cx + x * S * f, Y = cy - y2 * S * f, a = Math.max(.15, Math.min(1, .75 - z2 * .35));
-        g.fillStyle = `rgba(${120 + 60 * a | 0},${160 + 50 * a | 0},255,${a})`; const r = p.s * f * 1.45; g.fillRect(X - r / 2, Y - r / 2, r, r); }
-      g.globalCompositeOperation = 'source-over'; };
-    requestAnimationFrame(frame);
+    return `<svg class="iso" viewBox="0 -40 800 600" preserveAspectRatio="xMidYMid meet" aria-hidden="true">${o}</svg>`;
   }
   $$('[data-iso]').forEach(el => el.innerHTML = iso(el.dataset.iso));
   vigila();
