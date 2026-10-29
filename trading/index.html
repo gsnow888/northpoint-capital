@@ -643,8 +643,9 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
 }
 
 /* capturas reales en Funciones y El problema */
-.adv-img,#por-que .shot{border:1px solid var(--line2)!important;box-shadow:0 30px 90px -30px rgba(61,123,255,.55)!important;background:#07090e!important;border-radius:12px;overflow:hidden}
-#ventajas .adv-img,#por-que .shot{aspect-ratio:16/10!important}
+.adv-img{border:1px solid var(--line2)!important;box-shadow:0 30px 90px -30px rgba(61,123,255,.55)!important;background:#07090e!important;border-radius:12px;overflow:hidden}
+#por-que .shot{border:0!important;box-shadow:none!important;background:none!important;overflow:visible}
+#ventajas .adv-img{aspect-ratio:16/10!important}#por-que .shot{aspect-ratio:16/11!important}
 .shot-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top left;opacity:0;transform:scale(1.03);transition:opacity .6s,transform 1s}
 .shot-img.on{opacity:1;transform:none}
 /* MacBook sin recorte */
@@ -745,7 +746,7 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
       </div>
       <div class="steps" data-bars><i><b></b></i><i><b></b></i><i><b></b></i></div>
     </div>
-    <div class="win"><div class="shot" data-imgs><img class="shot-img on" src="assets/l/s-dia.jpg" alt="Detalle de un día" width="1600" height="1000" loading="lazy"><img class="shot-img" src="assets/l/s-registro.jpg" alt="Registro con emociones" width="1600" height="1000" loading="lazy"><img class="shot-img" src="assets/l/discord.jpg" alt="Comunidad en Discord" width="1600" height="1000" loading="lazy"></div></div>
+    <div class="win"><div class="shot" data-imgs><div class="iso-w on" data-iso="errores"></div><div class="iso-w" data-iso="emocion"></div><div class="iso-w" data-iso="solo"></div></div></div>
   </div></div>
 </section>
 
