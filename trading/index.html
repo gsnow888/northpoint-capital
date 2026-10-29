@@ -652,6 +652,9 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
 .zdev{width:min(1100px,88vw,calc(74vh * 1.6))!important}
 .zframe{max-height:none!important}
 .zframe video{object-fit:cover;object-position:center top}
+.ft-soc{display:flex;gap:14px;margin-right:auto;margin-left:22px}.ft-soc a{color:var(--tx2);display:grid;place-items:center;width:30px;height:30px;border-radius:8px;border:1px solid var(--line);transition:color .2s,border-color .2s}.ft-soc a:hover{color:#fff;border-color:var(--line2)}.ft-soc svg{width:15px;height:15px}
+.rd-l a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}.rd-l a:hover{color:#fff;border-color:var(--line2)}
+@media (max-width:600px){.ft-soc{margin-left:0;width:100%}}
 </style>
 </head>
 <body>
@@ -867,7 +870,7 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
       <div class="redes-t"><span class="tag rv">Síguenos</span>
         <h2 class="rv d1">Estamos donde estás</h2>
         <p class="lead rv d2">Torneos, transmisiones en vivo y avisos de la comunidad, directo a tu teléfono.</p>
-        <ul class="rd-l rv d3"><li><i style="background:#5865f2"></i>Discord · comunidad y sesión en vivo</li><li><i style="background:#53fc18"></i>Kick · apertura de Nueva York</li><li><i style="background:#ff0033"></i>YouTube · videos y recorridos</li><li><i style="background:#3d7bff"></i>NORTHPOINT · tus operaciones al instante</li></ul></div>
+        <ul class="rd-l rv d3"><li><i style="background:#5865f2"></i><a data-red="discord" href="#" target="_blank" rel="noopener">Discord · comunidad y sesión en vivo</a></li><li><i style="background:#53fc18"></i><a data-red="kick" href="#" target="_blank" rel="noopener">Kick · en vivo en la apertura de Nueva York</a></li><li><i style="background:#ff0033"></i><a data-red="youtube" href="#" target="_blank" rel="noopener">YouTube · videos y recorridos</a></li><li><i style="background:#25f4ee"></i><a data-red="tiktok" href="#" target="_blank" rel="noopener">TikTok · clips de trading</a></li><li><i style="background:#e1306c"></i><a data-red="instagram" href="#" target="_blank" rel="noopener">Instagram · día a día de la comunidad</a></li></ul></div>
       <div class="iph rv"><div class="iph-in"><i class="island"></i><div class="lock"><small>martes 29 de octubre</small><b>9:31</b></div>
         <div class="nts" id="nts">
           <div class="nt"><i style="background:#5865f2">D</i><div><b>Discord · #plan-del-día</b><span>Torneo de la sesión abierto. Entra desde Batallas.</span></div><em>ahora</em></div>
@@ -891,7 +894,7 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
 </section>
 
 <footer><div class="wrap">
-  <div class="ft2"><a href="./" class="logo">NORTHPOINT</a><nav><a href="#ventajas">Funciones</a><a href="#comunidad">Comunidad</a><a href="#planes">Planes</a><a href="#faq">Preguntas</a><a href="aplicar.html">Aplicar</a><a href="/legal/privacidad.html">Privacidad</a><a href="/legal/terminos.html">Términos</a></nav></div>
+  <div class="ft2"><a href="./" class="logo">NORTHPOINT</a><div class="ft-soc"><a data-red="discord" href="#" target="_blank" rel="noopener" aria-label="discord"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.4 18.4 0 0 0-5.6 0L8.6 3a19.7 19.7 0 0 0-4.9 1.4C.5 9.1-.3 13.6.1 18.1a19.9 19.9 0 0 0 6 3l1.3-2a13 13 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.8-9.7-3.6-13.7zM8 15.4c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.6 8 10.6s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></a><a data-red="youtube" href="#" target="_blank" rel="noopener" aria-label="youtube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6z"/></svg></a><a data-red="tiktok" href="#" target="_blank" rel="noopener" aria-label="tiktok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 6.7a4.8 4.8 0 0 1-3.8-4.2V2h-3.4v13.4a2.9 2.9 0 1 1-2-2.7V9.2a6.3 6.3 0 1 0 5.4 6.2V8.6a8.2 8.2 0 0 0 4.8 1.5V6.7z"/></svg></a><a data-red="kick" href="#" target="_blank" rel="noopener" aria-label="kick"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 2h5v6h2V5h2V2h7v7h-2v2h-2v2h2v2h2v7h-7v-3h-2v-3H8v6H3z"/></svg></a><a data-red="instagram" href="#" target="_blank" rel="noopener" aria-label="instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></a></div><nav><a href="#ventajas">Funciones</a><a href="#comunidad">Comunidad</a><a href="#planes">Planes</a><a href="#faq">Preguntas</a><a href="aplicar.html">Aplicar</a><a href="/legal/privacidad.html">Privacidad</a><a href="/legal/terminos.html">Términos</a></nav></div>
   <p class="disc">NORTHPOINT es una herramienta de registro y análisis. No da señales ni asesoría financiera o de inversión. Operar futuros, forex, CFDs y criptomonedas conlleva un riesgo alto de pérdida, incluso de todo tu capital. Los resultados pasados, en replay o de ejemplo no garantizan resultados futuros. Las capturas usan datos de ejemplo.</p>
   <div class="copy"><span>© 2026 NORTHPOINT · Todos los derechos reservados</span><span>Hecho en México</span></div>
 </div></footer>
@@ -916,11 +919,11 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
    Discord: usa un enlace de invitación que NUNCA caduque (Servidor → Invitar a gente → Editar enlace → Expira: Nunca). */
 const REDES = {
   discord:   'https://discord.gg/qFcNvGDy7n',
-  youtube:   '',
-  tiktok:    '',
-  kick:      'https://kick.com/rorropirrorro69',
+  youtube:   'https://www.youtube.com/@alphakaizendaytrading',
+  tiktok:    'https://www.tiktok.com/@alpha_kaizen0',
+  kick:      'https://kick.com/alphakaizen',
   x:         '',
-  instagram: ''
+  instagram: 'https://www.instagram.com/northpoint.latam/'
 };
 (() => {
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
@@ -940,6 +943,8 @@ const REDES = {
   const SO = [['discord', 'Discord', '#5865f2', 'Comunidad', 'Plan del día, operaciones, torneos y voz durante la sesión.'], ['youtube', 'YouTube', '#ff0033', 'Videos', 'Recorridos de la app y clips de trading.'], ['tiktok', 'TikTok', '#25f4ee', 'Clips', 'Lo mejor de la semana en un minuto.'], ['kick', 'Kick', '#53fc18', 'En vivo', 'Sesiones en vivo con la comunidad.'], ['x', 'X', '#e7e9ea', 'Al momento', 'Noticias que mueven el mercado y avisos.'], ['instagram', 'Instagram', '#e1306c', 'Día a día', 'Resultados de torneos y la comunidad.']];
   if ($('#soc')) $('#soc').innerHTML = SO.map(([k, n, c, s, p], i) => { const u = REDES[k]; return `<a class="so rv d${i % 4} ${u ? '' : 'off'}" style="--c:${c}" ${u ? `href="${u}" target="_blank" rel="noopener"` : ''}><svg viewBox="0 0 24 24" fill="currentColor"><path d="${IC[k]}"/></svg><div><b>${n}</b><br><small>${s}</small></div><p>${p}</p><span class="go">${u ? 'Seguir' : 'Muy pronto'}${u ? ' <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>' : ''}</span></a>`; }).join('');
   if ($('#ftRedes')) $('#ftRedes').innerHTML = SO.map(([k, n]) => `<a class="l ${REDES[k] ? '' : 'off'}" ${REDES[k] ? `href="${REDES[k]}" target="_blank" rel="noopener"` : ''}>${n}</a>`).join('');
+  $$('.rd-l [data-red]').forEach(a => { const u = REDES[a.dataset.red]; if (u) a.href = u; });
+  $$('.ft-soc [data-red]').forEach(a => { const u = REDES[a.dataset.red]; if (u) a.href = u; });
   if (REDES.discord) $$('[data-red=discord]').forEach(a => { a.href = REDES.discord; a.target = '_blank'; a.rel = 'noopener'; });
   else $$('#comunidad [data-red=discord], .final [data-red=discord]').forEach(a => { a.classList.add('dis'); const t = [...a.childNodes].find(n => n.nodeType === 3 && n.textContent.trim()); if (t) t.textContent = 'Discord: enlace muy pronto '; a.removeAttribute('href'); });   // sin enlace vigente, no mandamos a nadie a una invitación caducada
 
