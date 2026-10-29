@@ -45,14 +45,14 @@ svg#ln{position:fixed;inset:0;width:100vw;height:100vh;z-index:8;pointer-events:
 .cap h2{font-family:Unbounded,sans-serif;font-weight:800;font-size:clamp(26px,3.2vw,42px);line-height:1.05;letter-spacing:-.02em;margin-bottom:16px}
 .cap p{font-size:13px;line-height:1.6;opacity:.95}
 .cap.l{left:32px;top:50%;margin-top:-90px}.cap.r{right:80px;top:50%;margin-top:-90px;text-align:right}
-.fin{left:50%!important;top:50%!important;transform:translate(-50%,-40%)!important;text-align:center;max-width:520px}
-.fin.on{transform:translate(-50%,-50%)!important}
-.fin{padding:34px 36px;background:rgba(70,76,90,.28);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.35)}
-.fin h2{font-size:clamp(30px,4.4vw,56px)}
+.fin{left:32px!important;top:auto!important;bottom:90px;transform:translateY(16px)!important;text-align:left;max-width:400px}
+.fin.on{transform:none!important}
+.fin{padding:24px 28px;background:rgba(70,76,90,.28);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.35)}
+.fin h2{font-size:clamp(28px,3.6vw,48px)}
 .fin a{display:inline-block;margin-top:22px;padding:14px 22px;background:#fff;color:#4b515c;text-decoration:none;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:12px}
 .fin small{display:block;margin-top:14px;opacity:.8;font-size:11px}
 .scroll{height:700vh}
-@media (max-width:700px){.mf{display:none}.fin{padding:24px 20px;width:calc(100% - 36px)}.ui{padding:18px}.wm{left:18px;top:18px}.wm b{font-size:20px}.mf{right:18px;top:18px;max-width:160px;font-size:10px}.bl{left:18px;bottom:18px}.br{right:18px;bottom:18px}.prog{display:none}
+@media (max-width:700px){.mf{display:none}.fin{padding:20px 18px;left:18px!important;right:18px;bottom:70px;max-width:none}.ui{padding:18px}.wm{left:18px;top:18px}.wm b{font-size:20px}.mf{right:18px;top:18px;max-width:160px;font-size:10px}.bl{left:18px;bottom:18px}.br{right:18px;bottom:18px}.prog{display:none}
   .cap.l,.cap.r{left:18px;right:18px;top:auto;bottom:90px;margin:0;text-align:left;max-width:none}.cap h2{font-size:26px}.cap p{font-size:12.5px}}
 </style>
 </head>
@@ -64,17 +64,17 @@ svg#ln{position:fixed;inset:0;width:100vw;height:100vh;z-index:8;pointer-events:
 
 <div class="ui">
   <div class="wm"><b>NORTHPOINT</b><span>// Copyright © 2026</span><span style="margin-top:2px">NORTHPOINT.<br>Todos los derechos reservados.</span></div>
-  <div class="mf"><b>////// Manifiesto</b>Nuestra misión es darle a cada trader las herramientas, los datos y la comunidad para operar como profesional.</div>
-  <div class="bl">Desliza para<br>descubrir.<button type="button" id="snd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4z"/><path id="sw" d="M22 9l-6 6M16 9l6 6"/></svg><span id="sndT">Sonido: Off</span></button></div>
+  <div class="mf"><b>////// Manifiesto</b>Todo trader necesita un norte. Te damos los datos, las herramientas y la tripulación para llegar.</div>
+  <div class="bl">Desliza para<br>zarpar.<button type="button" id="snd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4z"/><path id="sw" d="M22 9l-6 6M16 9l6 6"/></svg><span id="sndT">Sonido: Off</span></button></div>
   <div class="br"><a href="../aplicar.html">Aplicar</a></div>
   <div class="prog" id="prog"></div>
 </div>
 
-<section class="cap l" data-a=".14" data-b=".30"><div class="n">01 ////// Journal</div><h2>Cada trade entra solo.</h2><p>Conecta tu bróker una vez. Cada operación se registra con su R, tu emoción y tus notas.</p></section>
-<section class="cap r" data-a=".32" data-b=".48"><div class="n">02 ////// Comunidad</div><h2>No operes solo.</h2><p>Discord con el plan del día y la sesión de Nueva York en vivo.</p></section>
-<section class="cap l" data-a=".50" data-b=".66"><div class="n">03 ////// Batallas</div><h2>Practica con presión.</h2><p>El mismo día real del mercado para todos. Gana quien ejecuta mejor.</p></section>
-<section class="cap r" data-a=".68" data-b=".82"><div class="n">04 ////// Ballenas</div><h2>Ve el dinero grande.</h2><p>Posiciones de hedge funds y bancos con datos oficiales de la CFTC.</p></section>
-<section class="cap fin" data-a=".86" data-b="1.1"><div class="n">////// Cupos limitados</div><h2>Opera con datos, no con intuición.</h2><a href="../aplicar.html">Aplica por un lugar</a><small>Revisamos tu solicitud y te invitamos a una llamada por Zoom.</small></section>
+<section class="cap l" data-a=".14" data-b=".30"><div class="n">01 ////// Bitácora</div><h2>Cada trade, registrado.</h2><p>Tu journal se llena solo: el R, la emoción y las notas de cada operación.</p></section>
+<section class="cap r" data-a=".32" data-b=".48"><div class="n">02 ////// Tripulación</div><h2>Nadie cruza solo.</h2><p>Comunidad en Discord con el plan del día y la sesión de Nueva York en vivo.</p></section>
+<section class="cap l" data-a=".50" data-b=".66"><div class="n">03 ////// Simulador</div><h2>Entrena en aguas reales.</h2><p>Días reales del mercado, contra otros traders y sin arriesgar tu cuenta.</p></section>
+<section class="cap r" data-a=".68" data-b=".82"><div class="n">04 ////// Radar</div><h2>Lee el mar antes de zarpar.</h2><p>Dónde están los hedge funds y los bancos, con datos oficiales de la CFTC.</p></section>
+<section class="cap fin" data-a=".86" data-b="1.1"><div class="n">////// Cupos limitados</div><h2>Encuentra tu norte.</h2><a href="../aplicar.html">Aplica por un lugar</a><small>Revisamos tu solicitud y te invitamos a una llamada por Zoom.</small></section>
 
 <div class="scroll"></div>
 
@@ -178,6 +178,15 @@ for (let i = 0; i < NSM; i++) { const s = new THREE.Sprite(new THREE.SpriteMater
 const wake = new THREE.Mesh(new THREE.PlaneGeometry(5, 40), new THREE.MeshBasicMaterial({ color: '#e9eef4', transparent: true, opacity: .22, depthWrite: false }));
 wake.rotation.x = -Math.PI / 2; wake.position.set(0, .03, 27); S.add(wake);
 
+// ── la estrella del norte, al frente del rumbo ──
+const starTex = (() => { const c = document.createElement('canvas'); c.width = c.height = 512; const x = c.getContext('2d'), m = 256;
+  let g = x.createRadialGradient(m, m, 0, m, m, m); g.addColorStop(0, 'rgba(255,255,255,1)'); g.addColorStop(.06, 'rgba(235,243,255,.9)'); g.addColorStop(.22, 'rgba(200,220,255,.25)'); g.addColorStop(1, 'rgba(200,220,255,0)'); x.fillStyle = g; x.fillRect(0, 0, 512, 512);
+  x.globalCompositeOperation = 'lighter'; [[256, 6, 1], [150, 3, .7]].forEach(([L, w, a], k) => { x.save(); x.translate(m, m); x.rotate(k * Math.PI / 4); for (let i = 0; i < 4; i++) { x.rotate(Math.PI / 2); const lg = x.createLinearGradient(0, 0, 0, -L); lg.addColorStop(0, `rgba(255,255,255,${a})`); lg.addColorStop(1, 'rgba(255,255,255,0)'); x.fillStyle = lg; x.beginPath(); x.moveTo(-w, 0); x.lineTo(0, -L); x.lineTo(w, 0); x.fill(); } x.restore(); });
+  return new THREE.CanvasTexture(c); })();
+const star = new THREE.Sprite(new THREE.SpriteMaterial({ map: starTex, transparent: true, depthWrite: false, fog: false, blending: THREE.AdditiveBlending }));
+star.position.set(0, 34, -150); star.scale.setScalar(26); S.add(star);
+const starLbl = document.createElement('div'); starLbl.className = 'lbl'; starLbl.textContent = 'N · NORTHPOINT'; document.getElementById('labels').append(starLbl);
+
 // ── nieve ──
 const NS = mob ? 1200 : 3000, sg = new THREE.BufferGeometry(), sp = new Float32Array(NS * 3);
 for (let i = 0; i < NS; i++) { sp[i * 3] = (Math.random() - .5) * 90; sp[i * 3 + 1] = Math.random() * 35; sp[i * 3 + 2] = (Math.random() - .5) * 90; }
@@ -187,7 +196,7 @@ const snow = new THREE.Points(sg, new THREE.PointsMaterial({ color: '#fff', size
 // ── datos sobre el barco y el hielo, unidos con líneas ──
 const LABP = [[0, 8.1, 1.1, '24/7'], [0, 5.6, 4.2, '13'], [0, 2.4, -6.2, '+2R'], [-1.9, 4.3, 1.4, '1:1'], [1.9, 2.2, 6.5, '4']], labs = document.getElementById('labels'), ln = document.getElementById('ln');
 LABP.forEach(l => { const d = document.createElement('div'); d.className = 'lbl'; d.textContent = l[3]; labs.append(d); });
-const lbls = [...labs.children];
+const lbls = [...labs.children].filter(e => e.textContent !== 'N · NORTHPOINT');
 
 // ── capítulos y scroll ──
 const caps = [...document.querySelectorAll('.cap')], prog = document.getElementById('prog');
@@ -226,7 +235,10 @@ function frame() {
   smoke.forEach(s => { const k = (s.userData.t + t * .07) % 1; s.position.set(Math.sin(k * 9) * .3, 5.6 + k * 7, 4.2 + k * 9); s.scale.setScalar(.8 + k * 6); s.material.opacity = (1 - k) * .32; });
   // cámara: de lejos y de frente → rodea el barco → se aleja al final
   const back = Math.max(0, (p - .84) / .16), ang = -2.2 + p * 3.4 + mx * .2, rad = 34 - p * 14 + back * 26, hgt = 10 - p * 4 + back * 8 + my * 1.5;
-  cam.position.set(Math.cos(ang) * rad, hgt, Math.sin(ang) * rad); cam.lookAt(0, 2.4, 0);
+  const k = back * back * (3 - 2 * back), ox = Math.cos(ang) * rad, oz = Math.sin(ang) * rad;
+  cam.position.set(ox * (1 - k) + 6 * k, hgt * (1 - k) + 11 * k, oz * (1 - k) + 36 * k); cam.lookAt(0, 2.4 + k * 7.5, -k * 70);
+  star.material.opacity = .35 + .65 * k + .1 * Math.sin(t * 2); star.scale.setScalar(22 + k * 14 + Math.sin(t * 2) * 1.5);
+  { v.copy(star.position).project(cam); starLbl.style.left = (v.x * .5 + .5) * innerWidth + 'px'; starLbl.style.top = ((-v.y * .5 + .5) * innerHeight + 54) + 'px'; starLbl.classList.toggle('on', k > .6); }
   const a = snow.geometry.attributes.position; for (let i = 0; i < NS; i++) { let y = a.getY(i) - .03 - (i % 7) * .002; if (y < 0) y = 35; a.setY(i, y); } a.needsUpdate = true;
   R.render(S, cam);
   const show = p < .12 || p > .86, pts = [];
