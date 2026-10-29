@@ -608,6 +608,39 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
 .comu .ipad{border-width:14px;border-radius:30px}
 .iso .flt{animation:bdg 5s ease-in-out infinite}
 .iso-w{overflow:visible}
+
+/* sin estrella guía */
+.polar{display:none!important}
+/* iOS: nunca mostrar el botón de play nativo en videos de fondo */
+video::-webkit-media-controls,video::-webkit-media-controls-start-playback-button,video::-webkit-media-controls-panel{display:none!important;-webkit-appearance:none}
+.hero-v{pointer-events:none}
+/* iPhone: todo más compacto */
+@media (max-width:600px){
+  .marq{height:26px}.marq-t{font-size:10px;letter-spacing:.1em}
+  .nav{top:26px}.nav .wrap{height:58px}.logo{font-size:13px}
+  .btn-dc.sm{height:36px;padding:0 12px;font-size:10.5px}.burger{width:36px;height:36px}
+  .hero{padding:118px 0 30px}
+  .pill{font-size:9.5px;padding:5px 10px}
+  h1{font-size:34px;margin:16px auto 14px}
+  .sub{font-size:14.5px;line-height:1.6}
+  .chip{font-size:9.5px;padding:2px 6px;margin:2px 1px}
+  .ctas{margin-top:22px;gap:10px}
+  .btn{height:44px;font-size:11px;padding:0 16px}
+  .micro{font-size:9.5px;margin-top:12px}
+  .brk{margin-top:28px;padding-top:18px;gap:6px 16px}.brk b{font-size:13.5px}
+  h2{font-size:27px}
+  .lead{font-size:15px}
+  .sec{padding:70px 0}
+  .stat b{font-size:28px}.stat p{font-size:12.5px}.stat{padding:18px 14px}
+  .acc-h{font-size:15px;padding:12px 2px}.acc-b p{font-size:13.5px}
+  .nl h3{font-size:16px}.nl p{font-size:13.5px}
+  .cmp-c h3{font-size:17px}.cmp-c li b{font-size:14.5px}.cmp-c li p{font-size:13.5px}
+  .tier{padding:24px 20px}.tier h3{font-size:22px}.tier .pr{font-size:38px}.tier li{font-size:13.5px}
+  .fq button{font-size:15px;padding:16px 18px}.fq .a p{font-size:14px}
+  .comu h2{font-size:30px}.fc b{font-size:26px}.fc p{font-size:10px}
+  .ztit span{font-size:20px}.ztit b{font-size:30px}
+  .float{display:none}
+}
 </style>
 </head>
 <body>
@@ -645,10 +678,10 @@ h1 em,.em{background:var(--grad);background-size:200% 100%;-webkit-background-cl
   <div class="zoom-in">
     <i class="glow l"></i><i class="glow r"></i>
     <div class="zdev" id="zf"><div class="zframe">
-      <video src="assets/l/tour.mp4" poster="assets/l/tour.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <video src="assets/l/recorrido.mp4" poster="assets/l/recorrido.jpg" autoplay muted loop playsinline preload="metadata"></video>
       
       <div class="ztit"><span>Bienvenido a</span><b>NORTHPOINT</b></div>
-      <button class="play" data-video="assets/l/tour.mp4" aria-label="Ver el recorrido"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+      <button class="play" data-video="assets/l/recorrido.mp4" aria-label="Ver el recorrido"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
     </div><i class="mb-base"></i></div>
   </div>
 </section>
