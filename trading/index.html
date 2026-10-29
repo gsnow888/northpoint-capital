@@ -911,7 +911,7 @@ const REDES = {
   const zf = $('#zf'), zs = $('#zoom');
   const tick = () => {
     const vh = innerHeight;
-    { const r = zs.getBoundingClientRect(), p = Math.min(1, Math.max(0, -r.top / (r.height - vh))); zf.style.setProperty('--z', (.82 + .18 * Math.min(1, p * 1.6)).toFixed(3)); zf.style.setProperty('--o', Math.max(0, 1 - p * 2.2).toFixed(3)); $$('#toasts .ts').forEach((x, k) => x.classList.toggle('on', p > .35 + k * .17)); }
+    { const r = zs.getBoundingClientRect(), p = Math.min(1, Math.max(0, -r.top / (r.height - vh))); zf.style.setProperty('--z', (.82 + .18 * Math.min(1, p * 1.6)).toFixed(3)); zf.style.setProperty('--o', Math.max(0, 1 - p * 2.2).toFixed(3)); }
     PINS.forEach(P => { const r = P.s.getBoundingClientRect(), span = r.height - vh, p = Math.min(.9999, Math.max(0, -r.top / span)), f = p * P.n, i = Math.floor(f), fr = f - i;
       if (P.items[0]?.classList.contains('dm')) P.items.forEach((x, k) => x.classList.toggle('on', k < Math.ceil(f + .01) || p > .98));   // chat: los mensajes van llegando
       else if (i !== P.last) { P.items.forEach((x, k) => x.classList.toggle('on', k === i)); P.imgs.forEach((x, k) => { x.classList.toggle('on', k === Math.min(i, P.imgs.length - 1)); if (x.tagName === 'VIDEO') { if (k === i) x.play().catch(() => {}); else x.pause(); } }); }
