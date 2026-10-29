@@ -70,6 +70,10 @@ body{font-family:Geist,system-ui,sans-serif;color:var(--tx);background:radial-gr
    ábrelo y confirma. Después FormSubmit te da un código (ej. 3f9a...); pégalo aquí en lugar del correo
    para que tu dirección no quede visible en la página. */
 const DESTINO = 'andremacouzetruiz@gmail.com';
+/* ── INVITACIÓN AUTOMÁTICA ──
+   Cada persona que aplica recibe al instante este correo. Pega aquí tu link de Calendly (evento de 20 min con Zoom):
+   al elegir horario, Calendly crea la reunión de Zoom y la manda a su calendario y al tuyo. */
+const LINK_LLAMADA = '';
 (() => {
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
   const plan = { starter: 'Starter', pro: 'Pro', mesa: 'Mesa' }[new URLSearchParams(location.search).get('plan')] || '';
@@ -92,8 +96,8 @@ const DESTINO = 'andremacouzetruiz@gmail.com';
   const L = 'ABCDEFGHIJ';
   const fm = $('#fm');
   fm.innerHTML = Q.map(([id, t, q, h, ops], i) => {
-    if (id === 'intro') return `<section class="q" data-i="${i}"><h1>Aplica por un lugar en <em>NORTHPOINT</em></h1><p class="h">Son 11 preguntas rápidas. Revisamos cada solicitud y, si encajas, te enviamos por correo la invitación a una llamada de 20 minutos por Zoom.</p><div class="perks"><span>Cupos limitados</span><span>Toma 2 minutos</span><span>Respuesta en 24 a 48 h</span></div><div class="go"><button type="button" class="btn" data-next>Empezar</button><small>o presiona <kbd>Enter ↵</kbd></small></div></section>`;
-    if (id === 'fin') return `<section class="q" data-i="${i}"><div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></div><h1>Recibimos tu solicitud.</h1><p class="h" id="finTx">Gracias. Esto es lo que sigue:</p><div class="steps"><div><b>1</b>Revisamos tu solicitud en las próximas 24 a 48 horas.</div><div><b>2</b>Si encajas, te llega a tu correo la invitación formal a una llamada por Zoom.</div><div><b>3</b>En la llamada vemos cómo operas y te mostramos NORTHPOINT con tus brókers.</div></div><div class="go"><a class="btn" href="./" style="text-decoration:none">Volver a la página</a></div></section>`;
+    if (id === 'intro') return `<section class="q" data-i="${i}"><h1>Aplica por un lugar en <em>NORTHPOINT</em></h1><p class="h">Son 11 preguntas rápidas. Al terminar te llega a tu correo la invitación formal a una llamada de 20 minutos por Zoom.</p><div class="perks"><span>Cupos limitados</span><span>Toma 2 minutos</span><span>Invitación al instante</span></div><div class="go"><button type="button" class="btn" data-next>Empezar</button><small>o presiona <kbd>Enter ↵</kbd></small></div></section>`;
+    if (id === 'fin') return `<section class="q" data-i="${i}"><div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></div><h1>Recibimos tu solicitud.</h1><p class="h" id="finTx">Gracias. Esto es lo que sigue:</p><div class="steps"><div><b>1</b>Tu solicitud ya está con nuestro equipo.</div><div><b>2</b>Revisa tu correo: te enviamos la invitación formal a una llamada por Zoom.</div><div><b>3</b>En la llamada vemos cómo operas y te mostramos NORTHPOINT con tus brókers.</div></div><div class="go"><a class="btn" href="./" style="text-decoration:none">Volver a la página</a></div></section>`;
     const campo = t === 'one' || t === 'many' ? `<div class="ops" data-g="${id}">${ops.map((o, k) => `<button type="button" class="op ${A[id] === o ? 'on' : ''}" data-v="${o}"><b>${L[k]}</b>${o}</button>`).join('')}</div>`
       : t === 'long' ? `<textarea id="f-${id}" placeholder="Escribe tu respuesta aquí…" rows="3"></textarea>` : `<input id="f-${id}" type="${t}" placeholder="Escribe tu respuesta aquí…" autocomplete="${{ nombre: 'name', correo: 'email', wa: 'tel', pais: 'country-name' }[id] || 'off'}">`;
     return `<section class="q" data-i="${i}"><div class="n">${i}</div><h2 data-q="${q}">${q}</h2>${h ? `<p class="h">${h}</p>` : ''}${campo}<p class="err"></p><div class="go"><button type="button" class="btn" data-next>${i === Q.length - 2 ? 'Enviar solicitud' : 'OK'}</button><small>${t === 'many' ? 'elige y presiona' : 'presiona'} <kbd>Enter ↵</kbd></small></div></section>`;
@@ -113,13 +117,36 @@ const DESTINO = 'andremacouzetruiz@gmail.com';
     setTimeout(() => S[i].querySelector('input,textarea')?.focus({ preventScroll: true }), 420); };
   const sig = async () => { if (enviando) return; const e = valida(k); const er = S[k].querySelector('.err'); if (er) er.textContent = e; if (e) return;
     if (k === Q.length - 2) return enviar(); ir(k + 1); };
+  function invitacion(nom) {
+    const n = (nom || '').split(' ')[0];
+    return `Hola ${n},
+
+Gracias por aplicar a NORTHPOINT. Revisamos tu solicitud y nos gustaría conocerte.
+
+Te invitamos a una llamada de 20 minutos por Zoom. En ella:
+- Vemos cómo operas hoy y qué quieres mejorar.
+- Te mostramos NORTHPOINT funcionando con tus brókers.
+- Te recomendamos el plan que mejor se adapta a ti.
+
+` + (LINK_LLAMADA ? `Elige el día y la hora que te acomoden aquí:
+${LINK_LLAMADA}
+
+Al confirmar te llega a tu correo el link de Zoom y la invitación a tu calendario.` : `En las próximas horas te enviamos el día, la hora y el link de Zoom.`) + `
+
+Los cupos son limitados, así que te recomendamos agendar pronto.
+
+Nos vemos,
+Equipo NORTHPOINT
+De traders, para traders.
+
+NORTHPOINT es una herramienta de registro y análisis. No da señales ni asesoría de inversión.`; }
   async function enviar() {
     enviando = true; const b = S[k].querySelector('[data-next]'); b.disabled = true; b.textContent = 'Enviando…';
     const d = {}; Q.forEach(([id, t, q]) => { if (t) d[q.replace('{nombre}', '').replace(/^Hola \. /, '')] = val(id); });
     const nom = val('nombre');
     try {
       const r = await fetch('https://formsubmit.co/ajax/' + DESTINO, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ _subject: `Nueva solicitud NORTHPOINT · ${nom}`, _template: 'table', _replyto: val('correo'), Nombre: nom, Correo: val('correo'), WhatsApp: val('wa'), País: val('pais'), Experiencia: val('exp'), Mercados: val('mer'), Cuenta: val('cta'), Tamaño: val('tam'), Objetivo: val('obj'), Plan: val('plan'), 'Nos conoció por': val('ori'), Enviada: new Date().toLocaleString('es-MX') }) });
+        body: JSON.stringify({ _subject: `Nueva solicitud NORTHPOINT · ${nom}`, _template: 'table', _replyto: val('correo'), email: val('correo'), _autoresponse: invitacion(nom), Nombre: nom, Correo: val('correo'), WhatsApp: val('wa'), País: val('pais'), Experiencia: val('exp'), Mercados: val('mer'), Cuenta: val('cta'), Tamaño: val('tam'), Objetivo: val('obj'), Plan: val('plan'), 'Nos conoció por': val('ori'), Enviada: new Date().toLocaleString('es-MX') }) });
       if (!r.ok) throw new Error('HTTP ' + r.status);
       ir(k + 1);
     } catch (e) {
