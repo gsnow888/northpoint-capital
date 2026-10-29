@@ -43,7 +43,8 @@ svg#ln{position:fixed;inset:0;width:100vw;height:100vh;z-index:8;pointer-events:
 .cap.on{opacity:1;transform:none;pointer-events:auto}
 .cap .n{font-size:11px;opacity:.85;margin-bottom:14px}
 .cap h2{font-family:Unbounded,sans-serif;font-weight:800;font-size:clamp(26px,3.2vw,42px);line-height:1.05;letter-spacing:-.02em;margin-bottom:16px}
-.cap p{font-size:13px;line-height:1.6;opacity:.95}
+.cap p{font-size:13px;line-height:1.6;text-shadow:0 1px 3px rgba(40,46,58,.55),0 2px 18px rgba(40,46,58,.55)}
+.cap h2,.cap .n{text-shadow:0 2px 24px rgba(40,46,58,.45)}
 .cap.l{left:32px;top:50%;margin-top:-90px}.cap.r{right:80px;top:50%;margin-top:-90px;text-align:right}
 .fin{left:32px!important;top:auto!important;bottom:90px;transform:translateY(16px)!important;text-align:left;max-width:400px}
 .fin.on{transform:none!important}
@@ -52,8 +53,8 @@ svg#ln{position:fixed;inset:0;width:100vw;height:100vh;z-index:8;pointer-events:
 .fin a{display:inline-block;margin-top:22px;padding:14px 22px;background:#fff;color:#4b515c;text-decoration:none;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:12px}
 .fin small{display:block;margin-top:14px;opacity:.8;font-size:11px}
 .scroll{height:700vh}
-@media (max-width:700px){.mf{display:none}.fin{padding:20px 18px;left:18px!important;right:18px;bottom:70px;max-width:none}.ui{padding:18px}.wm{left:18px;top:18px}.wm b{font-size:20px}.mf{right:18px;top:18px;max-width:160px;font-size:10px}.bl{left:18px;bottom:18px}.br{right:18px;bottom:18px}.prog{display:none}
-  .cap.l,.cap.r{left:18px;right:18px;top:auto;bottom:90px;margin:0;text-align:left;max-width:none}.cap h2{font-size:26px}.cap p{font-size:12.5px}}
+@media (max-width:700px){.mf{display:none}.fin{padding:20px 18px;left:18px!important;right:18px;bottom:120px;max-width:none}.ui{padding:18px}.wm{left:18px;top:18px}.wm b{font-size:20px}.mf{right:18px;top:18px;max-width:160px;font-size:10px}.bl{left:18px;bottom:18px}.br{right:18px;bottom:18px}.prog{display:none}
+  .cap.l,.cap.r{left:18px;right:18px;top:auto;bottom:130px;margin:0;text-align:left;max-width:none}.cap h2{font-size:26px}.cap p{font-size:12.5px}}
 </style>
 </head>
 <body>
@@ -234,7 +235,7 @@ function frame() {
   water.material.uniforms.time.value += dt * .55;
   smoke.forEach(s => { const k = (s.userData.t + t * .07) % 1; s.position.set(Math.sin(k * 9) * .3, 5.6 + k * 7, 4.2 + k * 9); s.scale.setScalar(.8 + k * 6); s.material.opacity = (1 - k) * .32; });
   // cámara: de lejos y de frente → rodea el barco → se aleja al final
-  const back = Math.max(0, (p - .84) / .16), ang = -2.2 + p * 3.4 + mx * .2, rad = 34 - p * 14 + back * 26, hgt = 10 - p * 4 + back * 8 + my * 1.5;
+  const back = Math.max(0, (p - .84) / .16), ang = -2.2 + p * 3.4 + mx * .2, rad = (34 - p * 14) * (mob ? 1.45 : 1) + back * 26, hgt = 10 - p * 4 + back * 8 + my * 1.5;
   const k = back * back * (3 - 2 * back), ox = Math.cos(ang) * rad, oz = Math.sin(ang) * rad;
   cam.position.set(ox * (1 - k) + 6 * k, hgt * (1 - k) + 11 * k, oz * (1 - k) + 36 * k); cam.lookAt(0, 2.4 + k * 7.5, -k * 70);
   star.material.opacity = .35 + .65 * k + .1 * Math.sin(t * 2); star.scale.setScalar(22 + k * 14 + Math.sin(t * 2) * 1.5);
