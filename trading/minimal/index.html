@@ -81,56 +81,115 @@ svg#ln{position:fixed;inset:0;width:100vw;height:100vh;z-index:8;pointer-events:
 <script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
 <script type="module">
 import * as THREE from 'three';
-import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+import { Water } from 'three/addons/objects/Water.js';
+import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 
 const cv = document.getElementById('gl'), mob = innerWidth < 700;
 const R = new THREE.WebGLRenderer({ canvas: cv, antialias: !mob });
 R.setPixelRatio(Math.min(devicePixelRatio, mob ? 1.5 : 2)); R.setSize(innerWidth, innerHeight);
-R.toneMapping = THREE.ACESFilmicToneMapping; R.toneMappingExposure = 1.05; R.outputColorSpace = THREE.SRGBColorSpace;
-const S = new THREE.Scene(), FOG = new THREE.Color('#a3a8b3'); S.background = FOG; S.fog = new THREE.Fog(FOG, 26, 120);
-const cam = new THREE.PerspectiveCamera(mob ? 50 : 38, innerWidth / innerHeight, .1, 300);
+R.toneMapping = THREE.ACESFilmicToneMapping; R.toneMappingExposure = 1.0; R.outputColorSpace = THREE.SRGBColorSpace;
+R.shadowMap.enabled = !mob; R.shadowMap.type = THREE.PCFSoftShadowMap;
+const S = new THREE.Scene(), FOG = new THREE.Color('#a3a8b3'); S.background = FOG; S.fog = new THREE.FogExp2(FOG, .016);
+const cam = new THREE.PerspectiveCamera(mob ? 52 : 36, innerWidth / innerHeight, .1, 600);
 
-S.add(new THREE.HemisphereLight('#e9eef6', '#7d838f', 1.1));
-const sun = new THREE.DirectionalLight('#ffffff', 1.4); sun.position.set(-20, 30, 15); S.add(sun);
+S.add(new THREE.HemisphereLight('#e6ebf3', '#5d636e', 1.0));
+const sun = new THREE.DirectionalLight('#ffffff', 1.6); sun.position.set(-30, 40, 20); sun.castShadow = !mob;
+sun.shadow.mapSize.set(2048, 2048); Object.assign(sun.shadow.camera, { left: -30, right: 30, top: 30, bottom: -30, far: 120 }); S.add(sun);
 
-// montañas: plano con ruido
+// ── agua real (oleaje con mapa de normales) ──
+const normals = new THREE.TextureLoader().load('https://unpkg.com/three@0.160.0/examples/textures/waternormals.jpg', t => { t.wrapS = t.wrapT = THREE.RepeatWrapping; });
+const water = new Water(new THREE.PlaneGeometry(900, 900), { textureWidth: mob ? 256 : 512, textureHeight: mob ? 256 : 512, waterNormals: normals, sunDirection: sun.position.clone().normalize(), sunColor: 0xffffff, waterColor: 0x151b22, distortionScale: 2.2, fog: true });
+water.rotation.x = -Math.PI / 2; S.add(water);
+
+// ── cordilleras al horizonte ──
 const hash = (x, y) => { const s = Math.sin(x * 127.1 + y * 311.7) * 43758.5453; return s - Math.floor(s); };
 const noise = (x, y) => { const xi = Math.floor(x), yi = Math.floor(y), xf = x - xi, yf = y - yi, u = xf * xf * (3 - 2 * xf), v = yf * yf * (3 - 2 * yf);
   const a = hash(xi, yi), b = hash(xi + 1, yi), c = hash(xi, yi + 1), d = hash(xi + 1, yi + 1); return a + (b - a) * u + (c - a) * v + (a - b - c + d) * u * v; };
-const fbm = (x, y) => { let s = 0, a = .5, f = 1; for (let i = 0; i < 5; i++) { s += a * noise(x * f, y * f); f *= 2; a *= .5; } return s; };
-const seg = mob ? 110 : 180, tg = new THREE.PlaneGeometry(220, 220, seg, seg); tg.rotateX(-Math.PI / 2);
-const pos = tg.attributes.position;
-for (let i = 0; i < pos.count; i++) { const x = pos.getX(i), z = pos.getZ(i), d = Math.hypot(x, z + 4);
-  let h = fbm(x * .035, z * .035) * 16 - 4; h += Math.max(0, d - 14) * .22 * fbm(x * .02 + 5, z * .02); h *= Math.min(1, Math.max(.15, (d - 5) / 18)); pos.setY(i, h); }
-tg.computeVertexNormals();
-S.add(new THREE.Mesh(tg, new THREE.MeshStandardMaterial({ color: '#c9cdd5', roughness: .95, metalness: 0 })));
+const fbm = (x, y) => { let s = 0, a = .5, f = 1; for (let i = 0; i < 6; i++) { s += a * noise(x * f, y * f); f *= 2.03; a *= .5; } return s; };
+{ const g = new THREE.RingGeometry(170, 420, 220, 30); g.rotateX(-Math.PI / 2); const p = g.attributes.position;
+  for (let i = 0; i < p.count; i++) { const x = p.getX(i), z = p.getZ(i), d = Math.hypot(x, z); p.setY(i, Math.pow(fbm(x * .012, z * .012), 1.6) * 120 * Math.min(1, (d - 170) / 70) - 6); }
+  g.computeVertexNormals(); S.add(new THREE.Mesh(g, new THREE.MeshStandardMaterial({ color: '#d3d7de', roughness: 1 }))); }
 
-// el pico de bloques de hielo, iluminado por dentro
-const G = new THREE.Group(); S.add(G);
-const glow = new THREE.PointLight('#dfe9ff', 60, 22, 1.6); glow.position.set(0, 3, 0); G.add(glow);
-const bmat = new THREE.MeshStandardMaterial({ color: '#c7cdd6', roughness: .5, metalness: 0, emissive: '#cfe0ff', emissiveIntensity: .1 });
-const geo = new RoundedBoxGeometry(2.1, 1.05, 1.25, 3, .16);
-const BL = [], filas = [[7, 4.2], [6, 3.6], [5, 3.0], [4, 2.35], [3, 1.7], [2, 1.1], [1, .2]];
-filas.forEach(([n, r], f) => { for (let i = 0; i < n; i++) { const a = i / n * Math.PI * 2 + f * .4, m = new THREE.Mesh(geo, bmat.clone());
-  const base = new THREE.Vector3(Math.cos(a) * r, .55 + f * 1.07, Math.sin(a) * r); m.position.copy(base); m.rotation.y = -a + Math.PI / 2 + (Math.random() - .5) * .25; m.rotation.z = (Math.random() - .5) * .14 * (f + 1) / 3;
-  m.userData = { base, dir: base.clone().setY(base.y * .6).normalize(), sp: .6 + Math.random() };
-  const e = new THREE.LineSegments(new THREE.EdgesGeometry(geo, 30), new THREE.LineBasicMaterial({ color: '#ffffff', transparent: true, opacity: .55 })); m.add(e);
-  G.add(m); BL.push(m); } });
-// resplandor interior
-const halo = new THREE.Mesh(new THREE.SphereGeometry(3.6, 32, 32), new THREE.MeshBasicMaterial({ color: '#eef4ff', transparent: true, opacity: .18, depthWrite: false })); halo.position.y = 2.6; G.add(halo);
+// ── placas de hielo (varias formas, instanciadas) ──
+const floeGeo = k => { const r = new THREE.Shape(), n = 14 + (k % 7) * 2, rr = []; for (let i = 0; i < n; i++) rr.push(.55 + hash(k * 7.3, i * 1.7) * .55 + (i % 3 ? 0 : .12));
+  for (let i = 0; i <= n; i++) { const a = i / n * Math.PI * 2, q = rr[i % n]; i ? r.lineTo(Math.cos(a) * q, Math.sin(a) * q) : r.moveTo(Math.cos(a) * q, Math.sin(a) * q); }
+  const g = new THREE.ExtrudeGeometry(r, { depth: .18, bevelEnabled: true, bevelThickness: .06, bevelSize: .1, bevelSegments: 3, curveSegments: 1 }); g.rotateX(-Math.PI / 2);
+  const p = g.attributes.position; for (let i = 0; i < p.count; i++) if (p.getY(i) > .15) p.setY(i, p.getY(i) + (hash(p.getX(i) * 3, p.getZ(i) * 3) - .5) * .07); g.computeVertexNormals(); return g; };
+const iceMat = new THREE.MeshStandardMaterial({ color: '#ffffff', roughness: .7, metalness: 0, emissive: '#9fb2c9', emissiveIntensity: .04 });
+const NF = mob ? 360 : 820, KINDS = 10, per = Math.ceil(NF / KINDS), F = [], IM = [];
+const cc = new THREE.Color(); for (let k = 0; k < KINDS; k++) { const im = new THREE.InstancedMesh(floeGeo(k), iceMat, per); im.castShadow = im.receiveShadow = !mob; for (let i = 0; i < per; i++) { const r = Math.random(); im.setColorAt(i, cc.setRGB(.86 + r * .12, .89 + r * .1, .93 + r * .07)); } S.add(im); IM.push(im); }
+const W = 70, ZF = -110, ZB = 50, CH = 3.4;
+const nuevo = (f, z) => { f.x = (Math.random() * 2 - 1) * W; if (Math.abs(f.x) < CH + 1 && z !== undefined && z < 0) f.x = Math.sign(f.x || 1) * (CH + 1 + Math.random() * 3); f.z = z ?? ZF; f.s = Math.random() < .25 ? .5 + Math.random() * 1 : 1.6 + Math.random() * 4.2; f.r = Math.random() * 6.28; f.y = -.12 + Math.random() * .06; f.tilt = (Math.random() - .5) * .05; };
+for (let i = 0; i < NF; i++) { const f = { k: i % KINDS, j: Math.floor(i / KINDS) }; nuevo(f, ZF + Math.random() * (ZB - ZF)); if (f.z > 0 && Math.abs(f.x) < CH) f.x = Math.sign(f.x || 1) * (CH + 2 + Math.random() * 4); F.push(f); }
+// pedacitos de hielo roto que flotan en el canal
+const NB = mob ? 120 : 260, bits = new THREE.InstancedMesh(new THREE.DodecahedronGeometry(.18, 0), iceMat, NB), BT = [];
+for (let i = 0; i < NB; i++) BT.push({ x: (Math.random() * 2 - 1) * CH, z: Math.random() * ZB, s: .5 + Math.random() * 1.6, r: Math.random() * 6 }); S.add(bits);
 
-// nieve
-const NS = mob ? 900 : 2200, sg = new THREE.BufferGeometry(), sp = new Float32Array(NS * 3);
-for (let i = 0; i < NS; i++) { sp[i * 3] = (Math.random() - .5) * 80; sp[i * 3 + 1] = Math.random() * 30; sp[i * 3 + 2] = (Math.random() - .5) * 80; }
+// ── el barco rompehielos ──
+const ship = new THREE.Group(); S.add(ship);
+const M = (c, o = {}) => new THREE.MeshStandardMaterial(Object.assign({ color: c, roughness: .55, metalness: .25 }, o));
+const add = (geo, mat, x, y, z, rx = 0, ry = 0, rz = 0) => { const m = new THREE.Mesh(geo, mat); m.position.set(x, y, z); m.rotation.set(rx, ry, rz); m.castShadow = m.receiveShadow = !mob; ship.add(m); return m; };
+// casco: contorno con proa en punta, afinando hacia la quilla
+{ const L = 16, B = 1.9, sh = new THREE.Shape(); sh.moveTo(0, -L * .5); sh.bezierCurveTo(B * .95, -L * .32, B, -L * .1, B, L * .2); sh.lineTo(B * .92, L * .47); sh.lineTo(-B * .92, L * .47); sh.lineTo(-B, L * .2); sh.bezierCurveTo(-B, -L * .1, -B * .95, -L * .32, 0, -L * .5);
+  const g = new THREE.ExtrudeGeometry(sh, { depth: 2.6, bevelEnabled: true, bevelThickness: .12, bevelSize: .12, bevelSegments: 3, curveSegments: 24 }); g.rotateX(Math.PI / 2); g.translate(0, 1.6, 0);
+  const p = g.attributes.position; for (let i = 0; i < p.count; i++) { const y = p.getY(i), k = Math.min(1, Math.max(0, (1.6 - y) / 2.6)); p.setX(i, p.getX(i) * (1 - k * .42)); if (p.getZ(i) < -L * .3) p.setY(i, y + Math.pow((-p.getZ(i) - L * .3) / (L * .2), 2) * .35 * (1 - k)); }
+  g.computeVertexNormals(); add(g, M('#23272e', { roughness: .42, metalness: .4 }), 0, 0, 0);
+  // franja roja de línea de flotación
+  const st = new THREE.ExtrudeGeometry(sh, { depth: .28, bevelEnabled: false, curveSegments: 24 }); st.rotateX(Math.PI / 2); st.scale(1.012, 1, 1.004); st.translate(0, .02, 0); add(st, M('#7d2622', { roughness: .6, metalness: .1 }), 0, 0, 0);
+  // cubierta
+  const dk = new THREE.ShapeGeometry(sh, 24); dk.rotateX(Math.PI / 2); add(dk, M('#6b6f76', { roughness: .9, metalness: 0, side: THREE.DoubleSide }), 0, 1.66, 0); }
+const white = M('#e8ebef', { roughness: .5, metalness: .1 }), win = new THREE.MeshStandardMaterial({ color: '#2b2016', emissive: '#ffcf8a', emissiveIntensity: 1.6, roughness: .3 }), glass = M('#0d1117', { roughness: .15, metalness: .6 });
+add(new THREE.BoxGeometry(3.3, 1.1, 5.2), white, 0, 2.25, 2.2);
+add(new THREE.BoxGeometry(2.9, 1.0, 3.6), white, 0, 3.3, 2.6);
+add(new THREE.BoxGeometry(3.6, .85, 2.0), white, 0, 4.22, 1.4);
+add(new THREE.BoxGeometry(3.62, .32, 2.02), glass, 0, 4.32, 1.4);
+for (let i = 0; i < 6; i++) { add(new THREE.BoxGeometry(.32, .2, .02), win, -1.3 + i * .52, 2.35, -.42); add(new THREE.BoxGeometry(.02, .2, .32), win, 1.66, 2.35, .8 + i * .52); add(new THREE.BoxGeometry(.02, .2, .32), win, -1.66, 2.35, .8 + i * .52); }
+for (let i = 0; i < 4; i++) add(new THREE.BoxGeometry(.3, .18, .02), win, -.85 + i * .56, 3.4, .79);
+add(new THREE.CylinderGeometry(.55, .62, 1.9, 24), M('#e8ebef'), 0, 4.55, 4.2);
+add(new THREE.CylinderGeometry(.57, .57, .45, 24), M('#7d2622'), 0, 5.2, 4.2);
+add(new THREE.CylinderGeometry(.5, .5, .2, 24), M('#121418'), 0, 5.5, 4.2);
+add(new THREE.CylinderGeometry(.05, .07, 3.4, 8), M('#cfd3d9'), 0, 6.3, 1.1);
+add(new THREE.BoxGeometry(1.6, .05, .05), M('#cfd3d9'), 0, 7.2, 1.1);
+add(new THREE.CylinderGeometry(.04, .04, 1.4, 8), M('#cfd3d9'), 0, 2.6, -5.6, .5, 0, 0);
+for (let i = 0; i < 2; i++) add(new THREE.BoxGeometry(.9, .35, .55), M('#c46a22', { roughness: .7 }), (i ? 1 : -1) * 1.15, 2.95, 4.9);
+// detalle del casco y la cubierta
+const port = new THREE.CircleGeometry(.09, 16), pm = new THREE.MeshStandardMaterial({ color: '#0b0e12', emissive: '#ffcf8a', emissiveIntensity: .35 });
+for (let i = 0; i < 14; i++) { const z = -4.2 + i * .62; [-1, 1].forEach(sd => { const m = add(port, pm, sd * 1.86, 1.15, z, 0, sd * Math.PI / 2, 0); }); }
+const rail = M('#d6dade', { metalness: .6, roughness: .4 });
+for (let i = 0; i < 26; i++) { const z = -6.6 + i * .5, w = Math.min(1.85, .4 + (z + 8) * .35); [-1, 1].forEach(sd => add(new THREE.CylinderGeometry(.018, .018, .45, 6), rail, sd * w, 1.9, z)); }
+[-1, 1].forEach(sd => { const pts = []; for (let i = 0; i <= 26; i++) { const z = -6.6 + i * .5; pts.push(new THREE.Vector3(sd * Math.min(1.85, .4 + (z + 8) * .35), 2.1, z)); } ship.add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts), 60, .02, 6), rail)); });
+[-1, 1].forEach(sd => add(new THREE.CapsuleGeometry(.32, 1.4, 6, 12), M('#e0702a', { roughness: .6, metalness: 0 }), sd * 1.95, 3.0, 3.2, Math.PI / 2, 0, 0));
+add(new THREE.SphereGeometry(.28, 20, 16), M('#f2f4f6', { roughness: .4 }), 0, 7.6, 1.1);
+add(new THREE.BoxGeometry(1.4, .08, .3), M('#2a2e34'), 0, 6.9, 1.1);
+for (let i = 0; i < 3; i++) add(new THREE.BoxGeometry(1.1, .7, 1.5), M(['#3c5a78', '#7b3a2c', '#5a6066'][i], { roughness: .8, metalness: .2 }), (i - 1) * 1.15 * .8, 2.0, -2.6);
+const snowM = new THREE.MeshStandardMaterial({ color: '#f6f8fb', roughness: .95 });
+[[0, 1.7, -4.6, 2.2, 1.6], [-.7, 1.7, -1.2, 1.2, 1.4], [.8, 1.7, 5.6, 1.4, 1.6], [0, 4.66, 1.4, 3.4, 1.8], [0, 3.82, 2.6, 2.6, 3.2]].forEach(([x, y, z, w, d]) => add(new THREE.BoxGeometry(w, .04, d), snowM, x, y, z));
+// luces de navegación y reflector que corta la niebla
+const lamp = (c, x, y, z) => { add(new THREE.SphereGeometry(.09, 12, 12), new THREE.MeshBasicMaterial({ color: c }), x, y, z); const l = new THREE.PointLight(c, 3, 6, 2); l.position.set(x, y, z); ship.add(l); };
+lamp('#ff3b30', -1.85, 4.3, 1.4); lamp('#34c759', 1.85, 4.3, 1.4); lamp('#ffffff', 0, 7.95, 1.1);
+const deckL = new THREE.PointLight('#ffd7a3', 12, 14, 1.8); deckL.position.set(0, 3.2, -.8); ship.add(deckL);
+const spot = new THREE.SpotLight('#fff3dc', 90, 60, .32, .6, 1.2); spot.position.set(0, 4.6, .4); spot.target.position.set(0, 0, -26); ship.add(spot, spot.target);
+const beam = new THREE.Mesh(new THREE.ConeGeometry(4.2, 24, 32, 1, true), new THREE.MeshBasicMaterial({ color: '#fff6e6', transparent: true, opacity: .07, depthWrite: false, side: THREE.DoubleSide }));
+beam.rotation.x = Math.PI / 2 - .17; beam.position.set(0, 2.6, -11.6); ship.add(beam);
+// humo de la chimenea
+const NSM = 40, smoke = []; const smTex = (() => { const c = document.createElement('canvas'); c.width = c.height = 64; const x = c.getContext('2d'), g = x.createRadialGradient(32, 32, 0, 32, 32, 32); g.addColorStop(0, 'rgba(200,204,212,.55)'); g.addColorStop(1, 'rgba(200,204,212,0)'); x.fillStyle = g; x.fillRect(0, 0, 64, 64); return new THREE.CanvasTexture(c); })();
+for (let i = 0; i < NSM; i++) { const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: smTex, transparent: true, depthWrite: false, fog: true })); s.userData.t = i / NSM; ship.add(s); smoke.push(s); }
+// estela de espuma
+const wake = new THREE.Mesh(new THREE.PlaneGeometry(5, 40), new THREE.MeshBasicMaterial({ color: '#e9eef4', transparent: true, opacity: .22, depthWrite: false }));
+wake.rotation.x = -Math.PI / 2; wake.position.set(0, .03, 27); S.add(wake);
+
+// ── nieve ──
+const NS = mob ? 1200 : 3000, sg = new THREE.BufferGeometry(), sp = new Float32Array(NS * 3);
+for (let i = 0; i < NS; i++) { sp[i * 3] = (Math.random() - .5) * 90; sp[i * 3 + 1] = Math.random() * 35; sp[i * 3 + 2] = (Math.random() - .5) * 90; }
 sg.setAttribute('position', new THREE.BufferAttribute(sp, 3));
-const snow = new THREE.Points(sg, new THREE.PointsMaterial({ color: '#fff', size: mob ? .09 : .07, transparent: true, opacity: .85, depthWrite: false })); S.add(snow);
+const snow = new THREE.Points(sg, new THREE.PointsMaterial({ color: '#fff', size: mob ? .1 : .08, transparent: true, opacity: .85, depthWrite: false })); S.add(snow);
 
-// datos sobre los bloques, unidos con líneas
-const LAB = [[3, '13'], [9, '24'], [16, '+2R'], [21, '1:1'], [25, '4']], labs = document.getElementById('labels'), ln = document.getElementById('ln');
-LAB.forEach(([k, t]) => { const d = document.createElement('div'); d.className = 'lbl'; d.textContent = t; labs.append(d); });
+// ── datos sobre el barco y el hielo, unidos con líneas ──
+const LABP = [[0, 8.1, 1.1, '24/7'], [0, 5.6, 4.2, '13'], [0, 2.4, -6.2, '+2R'], [-1.9, 4.3, 1.4, '1:1'], [1.9, 2.2, 6.5, '4']], labs = document.getElementById('labels'), ln = document.getElementById('ln');
+LABP.forEach(l => { const d = document.createElement('div'); d.className = 'lbl'; d.textContent = l[3]; labs.append(d); });
 const lbls = [...labs.children];
 
-// capítulos y progreso
+// ── capítulos y scroll ──
 const caps = [...document.querySelectorAll('.cap')], prog = document.getElementById('prog');
 prog.innerHTML = caps.map(() => '<i></i>').join('');
 let p = 0, pt = 0, mx = 0, my = 0;
@@ -139,35 +198,45 @@ addEventListener('scroll', upd, { passive: true }); upd();
 addEventListener('pointermove', e => { mx = e.clientX / innerWidth - .5; my = e.clientY / innerHeight - .5; });
 addEventListener('resize', () => { R.setSize(innerWidth, innerHeight); cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix(); });
 
-// sonido de viento (generado, sin archivos)
+// sonido: viento y mar (generado)
 let ac = null, gn = null;
 document.getElementById('snd').onclick = () => {
-  if (!ac) { ac = new AudioContext(); const len = ac.sampleRate * 3, b = ac.createBuffer(1, len, ac.sampleRate), d = b.getChannelData(0); let l = 0; for (let i = 0; i < len; i++) { l = (l + .02 * (Math.random() * 2 - 1)) / 1.02; d[i] = l * 3.5; }
-    const src = ac.createBufferSource(); src.buffer = b; src.loop = true; const f = ac.createBiquadFilter(); f.type = 'lowpass'; f.frequency.value = 500; gn = ac.createGain(); gn.gain.value = 0; src.connect(f).connect(gn).connect(ac.destination); src.start(); }
-  const on = gn.gain.value < .1; gn.gain.setTargetAtTime(on ? .5 : 0, ac.currentTime, .4);
+  if (!ac) { ac = new AudioContext(); const len = ac.sampleRate * 4, b = ac.createBuffer(1, len, ac.sampleRate), d = b.getChannelData(0); let l = 0; for (let i = 0; i < len; i++) { l = (l + .02 * (Math.random() * 2 - 1)) / 1.02; d[i] = l * 3.5; }
+    const src = ac.createBufferSource(); src.buffer = b; src.loop = true; const f = ac.createBiquadFilter(); f.type = 'lowpass'; f.frequency.value = 420; gn = ac.createGain(); gn.gain.value = 0; src.connect(f).connect(gn).connect(ac.destination); src.start(); }
+  const on = gn.gain.value < .1; gn.gain.setTargetAtTime(on ? .55 : 0, ac.currentTime, .4);
   document.getElementById('sndT').textContent = on ? 'Sonido: On' : 'Sonido: Off'; document.getElementById('sw').style.display = on ? 'none' : ''; };
 
-const clk = new THREE.Clock(), v = new THREE.Vector3();
+const clk = new THREE.Clock(), v = new THREE.Vector3(), mtx = new THREE.Matrix4(), q = new THREE.Quaternion(), e = new THREE.Euler(), sc = new THREE.Vector3();
+let last = 0, vo = 0;
 function frame() {
-  requestAnimationFrame(frame); const t = clk.getElapsedTime(); p += (pt - p) * .06;
-  // cámara: lejos → se acerca y rodea el pico
-  const back = Math.max(0, (p - .84) / .16), ang = .6 + p * 2.6 + mx * .25, rad = 30 - p * 15 + back * 22, hgt = 9 - p * 3.5 + back * 6 + my * 1.5;
-  cam.position.set(Math.cos(ang) * rad, hgt, Math.sin(ang) * rad); cam.lookAt(0, 2.8 + p * .8, 0);
-  // los bloques se separan en medio del recorrido y vuelven al final
-  const ex = Math.sin(Math.min(1, Math.max(0, (p - .3) / .55)) * Math.PI) * 2.2;
-  BL.forEach((m, i) => { const u = m.userData; m.position.copy(u.base).addScaledVector(u.dir, ex * u.sp); m.position.y += Math.sin(t * .8 + i) * .04 * (1 + ex); m.material.emissiveIntensity = .08 + .07 * Math.sin(t * 1.3 + i * .7); });
-  glow.intensity = 55 + 12 * Math.sin(t * .9); halo.material.opacity = .14 + .05 * Math.sin(t * .9);
-  const a = snow.geometry.attributes.position; for (let i = 0; i < NS; i++) { let y = a.getY(i) - .025 - (i % 7) * .002; if (y < 0) y = 30; a.setY(i, y); a.setX(i, a.getX(i) + Math.sin(t * .5 + i) * .004); } a.needsUpdate = true;
+  requestAnimationFrame(frame); const t = clk.getElapsedTime(), dt = Math.min(.05, t - last); last = t; p += (pt - p) * .05;
+  const SPD = 2.2;
+  // el barco se mece
+  ship.rotation.z = Math.sin(t * .7) * .018; ship.rotation.x = Math.sin(t * .5 + 1) * .012; ship.position.y = -.25 + Math.sin(t * .9) * .05;
+  // el hielo avanza hacia atrás y se abre al paso de la proa
+  const cnt = new Array(KINDS).fill(0);
+  for (const f of F) { f.z += SPD * dt;
+    if (f.z > -9 && f.z < 4 && Math.abs(f.x) < CH + f.s * .6) { const sgn = Math.sign(f.x || 1); f.x += sgn * 3.2 * dt; f.r += sgn * .4 * dt; f.tilt += (sgn * .08 - f.tilt) * .05; }
+    if (f.z > ZB) nuevo(f);
+    e.set(f.tilt, f.r, f.tilt * .5); q.setFromEuler(e); sc.set(f.s, 1, f.s * (.7 + (f.j % 5) * .1)); v.set(f.x, f.y + Math.sin(t * .8 + f.x) * .015, f.z);
+    mtx.compose(v, q, sc); IM[f.k].setMatrixAt(cnt[f.k]++, mtx); }
+  IM.forEach(im => im.instanceMatrix.needsUpdate = true);
+  BT.forEach((b, i) => { b.z += SPD * dt; if (b.z > ZB) { b.z = 2; b.x = (Math.random() * 2 - 1) * CH; } b.x += Math.sin(t + i) * .002; e.set(b.r, b.r * 2, 0); q.setFromEuler(e); v.set(b.x, .02, b.z); sc.setScalar(b.s); mtx.compose(v, q, sc); bits.setMatrixAt(i, mtx); }); bits.instanceMatrix.needsUpdate = true;
+  water.material.uniforms.time.value += dt * .55;
+  smoke.forEach(s => { const k = (s.userData.t + t * .07) % 1; s.position.set(Math.sin(k * 9) * .3, 5.6 + k * 7, 4.2 + k * 9); s.scale.setScalar(.8 + k * 6); s.material.opacity = (1 - k) * .32; });
+  // cámara: de lejos y de frente → rodea el barco → se aleja al final
+  const back = Math.max(0, (p - .84) / .16), ang = -2.2 + p * 3.4 + mx * .2, rad = 34 - p * 14 + back * 26, hgt = 10 - p * 4 + back * 8 + my * 1.5;
+  cam.position.set(Math.cos(ang) * rad, hgt, Math.sin(ang) * rad); cam.lookAt(0, 2.4, 0);
+  const a = snow.geometry.attributes.position; for (let i = 0; i < NS; i++) { let y = a.getY(i) - .03 - (i % 7) * .002; if (y < 0) y = 35; a.setY(i, y); } a.needsUpdate = true;
   R.render(S, cam);
-  // etiquetas y líneas
   const show = p < .12 || p > .86, pts = [];
-  LAB.forEach(([k], j) => { v.copy(BL[k].position); BL[k].parent.localToWorld(v); v.project(cam); const x = (v.x * .5 + .5) * innerWidth, y = (-v.y * .5 + .5) * innerHeight; pts.push([x, y]); const el = lbls[j]; el.style.left = x + 'px'; el.style.top = y + 'px'; el.classList.toggle('on', show); });
+  LABP.forEach((l, j) => { v.set(l[0], l[1], l[2]); ship.localToWorld(v); v.project(cam); const x = (v.x * .5 + .5) * innerWidth, y = (-v.y * .5 + .5) * innerHeight; pts.push([x, y]); const el = lbls[j]; el.style.left = x + 'px'; el.style.top = y + 'px'; el.classList.toggle('on', show && v.z < 1); });
   ln.innerHTML = show ? `<polyline points="${pts.map(q => q.join(',')).join(' ')}" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1"/>` + pts.map(q => `<circle cx="${q[0]}" cy="${q[1]}" r="2.5" fill="#fff"/>`).join('') : '';
-  // capítulos
-  caps.forEach((c, i) => { const on = p >= +c.dataset.a && p < +c.dataset.b; c.classList.toggle('on', on); prog.children[i].classList.toggle('on', on); });
+  let lado = 0; caps.forEach((c, i) => { const on = p >= +c.dataset.a && p < +c.dataset.b; c.classList.toggle('on', on); prog.children[i].classList.toggle('on', on); if (on && !mob) lado = c.classList.contains('l') ? -1 : c.classList.contains('r') ? 1 : 0; });
+  vo += (lado * innerWidth * .2 - vo) * .05; cam.setViewOffset(innerWidth, innerHeight, vo, 0, innerWidth, innerHeight);
 }
 frame();
-setTimeout(() => document.getElementById('load').classList.add('off'), 600);
+setTimeout(() => document.getElementById('load').classList.add('off'), 900);
 </script>
 </body>
 </html>
