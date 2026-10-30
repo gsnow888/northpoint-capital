@@ -235,51 +235,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 29083.0,
-   "cambio": -354.25,
-   "pct": -1.2
+   "precio": 28902.25,
+   "cambio": -535.0,
+   "pct": -1.82
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7704.5,
-   "cambio": -10.0,
-   "pct": -0.13
+   "precio": 7676.25,
+   "cambio": -38.25,
+   "pct": -0.5
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4025.8,
-   "cambio": -12.6,
-   "pct": -0.31
+   "precio": 4010.6,
+   "cambio": -27.8,
+   "pct": -0.69
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 102.75,
-   "cambio": 0.99,
-   "pct": 0.97
+   "precio": 103.55,
+   "cambio": 1.79,
+   "pct": 1.76
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2867.6,
-   "cambio": 70.1,
-   "pct": 2.51
+   "precio": 2856.8,
+   "cambio": 59.3,
+   "pct": 2.12
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52532.0,
-   "cambio": -18.0,
-   "pct": -0.03
+   "precio": 52430.0,
+   "cambio": -120.0,
+   "pct": -0.23
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 78770.0,
-   "cambio": -1130.0,
-   "pct": -1.41
+   "precio": 77305.0,
+   "cambio": -2595.0,
+   "pct": -3.25
   }
  ],
  "acciones": [
@@ -454,40 +454,76 @@
  ],
  "noticias": [
   {
+   "titulo": "DOJ escalates Alaska Senate lawsuit over dueling Sullivan candidacies",
+   "url": "https://www.cnbc.com/2026/10/29/alaska-senate-governor-investigation-sullivan-peltola-doj.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 01:34:32 GMT"
+  },
+  {
+   "titulo": "Intel plunges on a major guidance miss. What went wrong — and how to proceed",
+   "url": "https://www.cnbc.com/investingclub/2026/10/29/intel-plunges-on-a-major-guidance-miss-what-went-wrong-how-to-proceed.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 01:06:07 GMT"
+  },
+  {
+   "titulo": "Intel stock plunges 21% as chipmaker blames PC slowdown for weak guidance",
+   "url": "https://www.cnbc.com/2026/10/29/intel-intc-q3-earnings-report-2026-.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 00:39:52 GMT"
+  },
+  {
+   "titulo": "Microsoft plans to raise $25 billion in debt as it pursues AI buildout",
+   "url": "https://www.cnbc.com/2026/10/29/microsoft-25-billion-debt-offering.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 00:38:13 GMT"
+  },
+  {
+   "titulo": "Amazon’s stock drops — even in the face of a bold new cloud forecast",
+   "url": "https://www.marketwatch.com/story/amazons-bold-cloud-forecast-isnt-enough-to-stave-off-a-stock-drop-ee23c1bb?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 00:15:00 GMT"
+  },
+  {
+   "titulo": "A Starbucks turnaround is brewing — but perhaps not quickly enough for investors",
+   "url": "https://www.marketwatch.com/story/a-starbucks-turnaround-is-brewing-but-perhaps-not-quickly-enough-3b5f57ac?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 00:14:00 GMT"
+  },
+  {
+   "titulo": "How elections worldwide are testing Trump’s influence abroad",
+   "url": "https://www.cnbc.com/2026/10/30/election-trump-brazil-serbia-hungary.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 00:13:22 GMT"
+  },
+  {
+   "titulo": "Sandisk sees revenue nearly quintuple — and a stock split is on the way",
+   "url": "https://www.marketwatch.com/story/sandisk-sees-revenue-nearly-quintuple-and-its-stock-is-heading-higher-b9318916?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 00:06:00 GMT"
+  },
+  {
+   "titulo": "Our church has a $1.5 million bequest earning 3.75% in a bank account. Is inflation eroding it?",
+   "url": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 00:05:00 GMT"
+  },
+  {
+   "titulo": "Binance 'potential security issue' sees $2.54 billion frozen by the likes of Circle, Tether",
+   "url": "https://www.cnbc.com/2026/10/29/circle-tether-freeze-funds-impacted-by-potential-binance-security-issue.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 29 Oct 2026 23:56:02 GMT"
+  },
+  {
    "titulo": "Why Intel’s stock is sinking toward its worst drop in two years",
    "url": "https://www.marketwatch.com/story/why-intels-stock-is-sinking-toward-its-worst-drop-in-two-years-492d71a7?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 29 Oct 2026 23:21:00 GMT"
   },
   {
-   "titulo": "DOJ amends Alaska Senate suit to suggest Peltola campaign misled court over Sullivan candidacy",
-   "url": "https://www.cnbc.com/2026/10/29/alaska-senate-governor-investigation-sullivan-peltola-doj.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 23:08:12 GMT"
-  },
-  {
-   "titulo": "Reddit shares sink on weak sales guidance and plans login requirement test as Google search traffic shrinks",
-   "url": "https://www.cnbc.com/2026/10/29/reddit-rddt-q3-2026.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 23:01:02 GMT"
-  },
-  {
-   "titulo": "Circle, Tether freeze funds impacted by potential Binance 'security issue'",
-   "url": "https://www.cnbc.com/2026/10/29/circle-tether-freeze-funds-impacted-by-potential-binance-security-issue.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 22:47:32 GMT"
-  },
-  {
    "titulo": "My abusive ex-husband promised $20,000 for our kids’ education. Now he refuses to pay. Is he legally obligated?",
    "url": "https://www.marketwatch.com/story/my-abusive-ex-husband-promised-20-000-for-our-kids-education-now-he-refuses-to-pay-is-he-legally-obligated-325ef50f?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 29 Oct 2026 22:45:00 GMT"
-  },
-  {
-   "titulo": "Intel stock plunges 21% as chipmaker blames PC slowdown for weak guidance",
-   "url": "https://www.cnbc.com/2026/10/29/intel-intc-q3-earnings-report-2026-.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 22:37:54 GMT"
   },
   {
    "titulo": "Amazon posts negative free cash flow of $42.4 billion, holds 2026 capex unchanged",
@@ -502,10 +538,10 @@
    "fecha": "Thu, 29 Oct 2026 22:01:00 GMT"
   },
   {
-   "titulo": "Our church has a $1.5 million bequest earning 3.75% in a bank account. Is inflation eroding it?",
-   "url": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 29 Oct 2026 22:00:00 GMT"
+   "titulo": "Amazon AWS posts 39% revenue growth as cloud rivals also accelerate",
+   "url": "https://www.cnbc.com/2026/10/29/aws-q3-earnings-report-2026.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 29 Oct 2026 21:59:31 GMT"
   },
   {
    "titulo": "IRS CEO Bisignano donates to Trump Accounts in his childhood Brooklyn ZIP code",
@@ -514,28 +550,10 @@
    "fecha": "Thu, 29 Oct 2026 21:55:42 GMT"
   },
   {
-   "titulo": "Rivian third-quarter earnings beat estimates as software revenue, R2 deliveries rise",
-   "url": "https://www.cnbc.com/2026/10/29/rivian-rivn-earnings-q3-2026.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 21:52:27 GMT"
-  },
-  {
    "titulo": "Is it curtains for COLA? Saving Social Security could mean changing the cost-of-living adjustment.",
    "url": "https://www.marketwatch.com/story/is-it-curtains-for-cola-saving-social-security-could-mean-changing-the-cost-of-living-adjustment-867c6bd8?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 29 Oct 2026 21:52:00 GMT"
-  },
-  {
-   "titulo": "A Starbucks turnaround is brewing — but perhaps not quickly enough",
-   "url": "https://www.marketwatch.com/story/a-starbucks-turnaround-is-brewing-but-perhaps-not-quickly-enough-3b5f57ac?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 29 Oct 2026 21:36:00 GMT"
-  },
-  {
-   "titulo": "Sandisk sees revenue nearly quintuple — and a stock split is on the way",
-   "url": "https://www.marketwatch.com/story/sandisk-sees-revenue-nearly-quintuple-and-its-stock-is-heading-higher-b9318916?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 29 Oct 2026 21:35:00 GMT"
   },
   {
    "titulo": "‘Fancy cars hold no appeal’: We have a 99% chance of outliving our life savings. Why not spend, spend, spend?",
@@ -544,22 +562,10 @@
    "fecha": "Thu, 29 Oct 2026 21:31:00 GMT"
   },
   {
-   "titulo": "Starbucks sales miss expectations, but its U.S. turnaround is gaining steam",
-   "url": "https://www.cnbc.com/2026/10/29/starbucks-sbux-q4-2026-earnings.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 21:29:59 GMT"
-  },
-  {
    "titulo": "My wife cried when I found out she had only $80,000 in her 401(k). I have $2.2 million. Am I wrong to be shocked?",
    "url": "https://www.marketwatch.com/story/my-wife-has-only-80-000-saved-for-retirement-i-have-2-2-million-am-i-wrong-to-be-shocked-3e27b490?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 29 Oct 2026 20:45:00 GMT"
-  },
-  {
-   "titulo": "The S&P 500 isn’t the big winner you may think it is",
-   "url": "https://www.marketwatch.com/story/you-cant-rely-on-the-s-p-500-as-much-as-you-may-think-a3ac0cb7?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 29 Oct 2026 20:39:00 GMT"
   },
   {
    "titulo": "Alphabet tanks nearly 13% for worst day ever, losing $500 billion in value",
@@ -572,12 +578,6 @@
    "url": "https://www.cnbc.com/2026/10/29/servicenow-now-earnings-q3-2026.html",
    "fuente": "CNBC",
    "fecha": "Thu, 29 Oct 2026 20:02:32 GMT"
-  },
-  {
-   "titulo": "Nvidia responds to report Jensen Huang was target of Chinese asset, says diversion allegations were 'investigated and debunked'",
-   "url": "https://www.cnbc.com/2026/10/29/nvidia-jensen-huang-chinese-intelligence-asset.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 29 Oct 2026 19:16:32 GMT"
   },
   {
    "titulo": "It's a 'socialist' bank — and North Dakota Republicans love it",
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-29T23:34:26Z",
+ "ts": "2026-10-30T02:56:12Z",
  "fallas": [
   "videos",
   "directos"
