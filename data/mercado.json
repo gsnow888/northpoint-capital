@@ -235,349 +235,349 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 28584.25,
-   "cambio": -853.0,
-   "pct": -2.9
+   "precio": 28533.25,
+   "cambio": -904.0,
+   "pct": -3.07
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7625.75,
-   "cambio": -88.75,
-   "pct": -1.15
+   "precio": 7614.25,
+   "cambio": -100.25,
+   "pct": -1.3
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3906.6,
-   "cambio": -131.8,
-   "pct": -3.26
+   "precio": 3882.8,
+   "cambio": -155.6,
+   "pct": -3.85
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 104.36,
-   "cambio": 2.6,
-   "pct": 2.56
+   "precio": 102.85,
+   "cambio": 1.09,
+   "pct": 1.07
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2818.3,
-   "cambio": 20.8,
-   "pct": 0.74
+   "precio": 2822.9,
+   "cambio": 25.4,
+   "pct": 0.91
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52087.0,
-   "cambio": -463.0,
-   "pct": -0.88
+   "precio": 51928.0,
+   "cambio": -622.0,
+   "pct": -1.18
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 77565.0,
-   "cambio": -2335.0,
-   "pct": -2.92
+   "precio": 76995.0,
+   "cambio": -2905.0,
+   "pct": -3.64
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 155.43,
-   "pct": -0.3,
+   "precio": 155.33,
+   "pct": -0.37,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 696.21,
-   "pct": -0.34,
+   "precio": 694.81,
+   "pct": -0.54,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 372.26,
-   "pct": -0.2,
+   "precio": 371.57,
+   "pct": -0.39,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 82.33,
-   "pct": -0.24,
+   "precio": 82.37,
+   "pct": -0.19,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 692.38,
-   "pct": -1.71,
+   "precio": 690.49,
+   "pct": -1.97,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 757.38,
-   "pct": -0.34,
+   "precio": 755.72,
+   "pct": -0.56,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 71.45,
-   "pct": 0.35,
+   "precio": 71.56,
+   "pct": 0.51,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 35.88,
-   "pct": 1.74,
+   "precio": 35.78,
+   "pct": 1.45,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 94.23,
-   "pct": 1.67,
+   "precio": 93.94,
+   "pct": 1.35,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 74.36,
-   "pct": -1.83,
+   "precio": 74.25,
+   "pct": -1.97,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 357.33,
-   "pct": -2.53,
+   "precio": 355.78,
+   "pct": -2.95,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 43.74,
-   "pct": -4.83,
+   "precio": 43.36,
+   "pct": -5.66,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 347.0,
-   "pct": -0.21,
+   "precio": 344.63,
+   "pct": -0.89,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 522.91,
-   "pct": -0.31,
+   "precio": 521.91,
+   "pct": -0.5,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 204.43,
-   "pct": -3.1,
+   "precio": 204.64,
+   "pct": -3.0,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 280.41,
-   "pct": -12.43,
+   "precio": 279.84,
+   "pct": -12.61,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 239.59,
-   "pct": -3.39,
+   "precio": 240.35,
+   "pct": -3.08,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 620.78,
-   "pct": -3.4,
+   "precio": 614.99,
+   "pct": -4.3,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 400.89,
-   "pct": 7.7,
+   "precio": 399.81,
+   "pct": 7.41,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 546.97,
-   "pct": 0.88,
+   "precio": 542.49,
+   "pct": 0.06,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 1018.29,
-   "pct": 1.49,
+   "precio": 1012.28,
+   "pct": 0.89,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 338.76,
-   "pct": 2.17,
+   "precio": 337.04,
+   "pct": 1.65,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 415.31,
-   "pct": 1.81,
+   "precio": 413.59,
+   "pct": 1.39,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 407.21,
-   "pct": -2.6,
+   "precio": 406.97,
+   "pct": -2.66,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "Binance's $6.3 billion hack: What we know and what comes next",
-   "url": "https://www.cnbc.com/2026/10/30/billions-in-crypto-frozen-in-binance-hack-heres-what-happens-next-.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 16:31:36 GMT"
+   "titulo": "In a wild October for markets, these stocks were the biggest winners and losers",
+   "url": "https://www.marketwatch.com/story/in-a-wild-october-for-markets-these-stocks-were-the-biggest-winners-and-losers-3736f043?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 20:52:00 GMT"
   },
   {
-   "titulo": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
-   "url": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html",
+   "titulo": "Why Intel’s stock saw its worst day in decades — and a $140 billion wipeout",
+   "url": "https://www.marketwatch.com/story/why-intels-stock-is-sinking-toward-its-worst-drop-in-two-years-492d71a7?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 20:48:00 GMT"
+  },
+  {
+   "titulo": "Criminal investigation of Alaska Senate race is 'ongoing,' U.S. Attorney says",
+   "url": "https://www.cnbc.com/2026/10/30/alaska-senate-election-doj-lawsuit-sullivan-peltola.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 16:31:15 GMT"
+   "fecha": "Fri, 30 Oct 2026 20:46:04 GMT"
+  },
+  {
+   "titulo": "Reddit’s stock logs its biggest one-day drop ever. It’s not the last of the bad news, analysts say.",
+   "url": "https://www.marketwatch.com/story/reddit-shares-on-track-for-largest-ever-one-day-drop-and-analysts-say-the-bad-news-hasnt-ended-25d46284?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 20:42:00 GMT"
+  },
+  {
+   "titulo": "Intel stock has worst day since 1970s, wiping about $12 billion off government's stake",
+   "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 20:30:57 GMT"
+  },
+  {
+   "titulo": "Microsoft is winning the cloud wars and becoming Wall Street’s new golden child",
+   "url": "https://www.marketwatch.com/story/microsoft-is-winning-the-cloud-wars-and-becoming-wall-streets-new-golden-child-62eecbbd?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 20:29:00 GMT"
+  },
+  {
+   "titulo": "AMD’s stock slides after Intel earnings reveal two big issues",
+   "url": "https://www.marketwatch.com/story/amds-stock-slides-after-intel-earnings-reveal-two-big-issues-d3afed91?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 20:28:00 GMT"
+  },
+  {
+   "titulo": "The selloff in tech stocks is shifting into overdrive",
+   "url": "https://www.marketwatch.com/story/the-selloff-in-tech-stocks-is-shifting-into-overdrive-afb50975?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 20:26:00 GMT"
+  },
+  {
+   "titulo": "After Intel’s historic stock drop, analysts say there’s no reason to buy the dip",
+   "url": "https://www.marketwatch.com/story/after-intels-historic-stock-drop-analysts-say-theres-no-reason-to-buy-the-dip-068446af?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 20:23:00 GMT"
   },
   {
    "titulo": "Trump administration is illegally delaying student-debt forgiveness for tens of thousands of public servants, lawsuit alleges",
    "url": "https://www.marketwatch.com/story/trump-administration-is-illegally-delaying-student-debt-forgiveness-for-tens-of-thousands-of-public-servants-lawsuit-alleges-e4d31e59?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 16:20:00 GMT"
+   "fecha": "Fri, 30 Oct 2026 20:23:00 GMT"
   },
   {
-   "titulo": "Class action lawsuit blames Trump officials for student loan forgiveness delays",
-   "url": "https://www.cnbc.com/2026/10/30/lawsuit-blames-trump-officials-for-student-loan-forgiveness-delays.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 16:04:59 GMT"
-  },
-  {
-   "titulo": "$6.3 billion Binance hack is largest crypto theft on record",
-   "url": "https://www.cnbc.com/2026/10/29/circle-tether-freeze-funds-impacted-by-potential-binance-security-issue.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 16:01:51 GMT"
-  },
-  {
-   "titulo": "My wife cried when I found out she had only $80,000 in her 401(k). I have $2.2 million. Am I wrong to be shocked?",
-   "url": "https://www.marketwatch.com/story/my-wife-has-only-80-000-saved-for-retirement-i-have-2-2-million-am-i-wrong-to-be-shocked-3e27b490?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 16:00:00 GMT"
-  },
-  {
-   "titulo": "Private equity in your 401(k)? Heed Warren Buffett’s warning.",
-   "url": "https://www.marketwatch.com/story/private-equity-in-your-401-k-heed-warren-buffetts-warning-6f318cd0?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 15:53:00 GMT"
-  },
-  {
-   "titulo": "Trump rallies in Kansas and Iowa are back on after RNC said they were canceled: Source",
-   "url": "https://www.cnbc.com/2026/10/30/trump-vance-rally-midterm-elections-.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 15:52:35 GMT"
-  },
-  {
-   "titulo": "'Bad time to troll': Binance cofounder Changpeng Zhao asks Elon Musk for 'respect' after post about bitcoin hack",
+   "titulo": "'Bad time to troll': Binance co-founder Zhao asks Musk for support after hack",
    "url": "https://www.cnbc.com/2026/10/30/binance-hack-elon-musk-tesla-spacex.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 15:44:23 GMT"
+   "fecha": "Fri, 30 Oct 2026 20:02:45 GMT"
   },
   {
-   "titulo": "Intel heads for worst day on Wall Street in more than 50 years on weak guidance",
-   "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 15:43:48 GMT"
+   "titulo": "‘Showy jewelry and fancy cars hold no appeal’: We have a 99% chance of outliving our life savings. Why not spend it all?",
+   "url": "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 19:45:00 GMT"
   },
   {
-   "titulo": "Cheaper cars are selling considerably faster than at the beginning of the year",
-   "url": "https://www.cnbc.com/2026/10/30/cheap-cars-selling-fast.html",
+   "titulo": "The Fed held interest rates steady, but these officials see more hikes coming soon",
+   "url": "https://www.marketwatch.com/story/the-fed-held-interest-rates-steady-but-these-officials-see-more-hikes-coming-soon-2098bbd8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 19:44:00 GMT"
+  },
+  {
+   "titulo": "Binance loses $6.3 billion in crypto heist—what happens to your money when an exchange gets hacked",
+   "url": "https://www.cnbc.com/make-it/2026/10/30/binance-crypto-hack-customer-funds.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 15:37:21 GMT"
+   "fecha": "Fri, 30 Oct 2026 19:39:46 GMT"
+  },
+  {
+   "titulo": "Binance hack: Investigators in a 'cat and mouse game' to recover $6.3 billion in stolen funds",
+   "url": "https://www.cnbc.com/2026/10/30/binance-hack-stolen-crypto-recovery.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 19:27:03 GMT"
+  },
+  {
+   "titulo": "Reid Hoffman gives millions to Dems in late spending spree as Epstein fight spills into election",
+   "url": "https://www.cnbc.com/2026/10/30/reid-hoffman-democrats-epstein-midterms-2026.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 18:32:17 GMT"
+  },
+  {
+   "titulo": "Tankers defy sharp escalation of Iranian attacks to keep crude oil flowing through Strait of Hormuz",
+   "url": "https://www.cnbc.com/2026/10/30/tanker-attack-strait-hormuz-iran-war-oil.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 18:28:09 GMT"
+  },
+  {
+   "titulo": "Why bitcoin held up better after the record Binance hack",
+   "url": "https://www.cnbc.com/2026/10/30/binance-hack-bitcoin-price.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 18:07:00 GMT"
+  },
+  {
+   "titulo": "Treasury Department announces new Series I bond rate of 5.51% for the next six months",
+   "url": "https://www.cnbc.com/2026/10/30/treasury-i-bond-rate-through-april-2027.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 17:15:53 GMT"
+  },
+  {
+   "titulo": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
+   "url": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 16:44:31 GMT"
   },
   {
    "titulo": "Gamble on democracy: Inside suspicious election-contracts trading on prediction markets",
    "url": "https://www.cnbc.com/2026/10/30/gamble-on-democracy-inside-suspicious-election-contracts-trading-on-prediction-markets-.html",
    "fuente": "CNBC",
    "fecha": "Fri, 30 Oct 2026 15:33:00 GMT"
-  },
-  {
-   "titulo": "Our church has a $1.5 million bequest earning 3.75% in a savings account. Are we throwing money away?",
-   "url": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 15:30:00 GMT"
-  },
-  {
-   "titulo": "In a wild October for markets, these stocks were the biggest winners and losers",
-   "url": "https://www.marketwatch.com/story/in-a-wild-october-for-markets-these-stocks-were-the-biggest-winners-and-losers-3736f043?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 15:26:00 GMT"
-  },
-  {
-   "titulo": "We stopped helping our neighbors with free home repairs and our friendship cooled. Who’s to blame?",
-   "url": "https://www.marketwatch.com/story/we-stopped-helping-our-neighbors-with-free-home-repairs-and-our-friendship-cooled-whos-to-blame-d20b0720?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 15:15:00 GMT"
-  },
-  {
-   "titulo": "Data centers are a political third rail. West Virginia is grabbing it anyway.",
-   "url": "https://www.marketwatch.com/story/data-centers-are-a-political-third-rail-west-virginia-is-grabbing-it-anyway-80d129b5?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 15:14:00 GMT"
-  },
-  {
-   "titulo": "Treasury Department announces new Series I bond rate of 5.51% for the next six months",
-   "url": "https://www.cnbc.com/2026/10/30/treasury-i-bond-rate-through-april-2027.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 14:53:12 GMT"
-  },
-  {
-   "titulo": "Reddit shares on track for biggest-ever one-day drop. It’s not the last of the bad news, analysts say.",
-   "url": "https://www.marketwatch.com/story/reddit-shares-on-track-for-largest-ever-one-day-drop-and-analysts-say-the-bad-news-hasnt-ended-25d46284?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 14:43:00 GMT"
-  },
-  {
-   "titulo": "This strategist correctly recommended shorting Big Tech debt last year. Now he says the yields make it attractive.",
-   "url": "https://www.marketwatch.com/story/this-strategist-correctly-recommended-shorting-big-tech-debt-last-year-now-he-says-the-yields-make-it-attractive-3ec2e0fe?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 14:30:00 GMT"
-  },
-  {
-   "titulo": "It’s the strangest job market the U.S. has ever seen. The low-hire, low-fire economy turns 3 years old.",
-   "url": "https://www.marketwatch.com/story/its-the-strangest-job-market-the-u-s-has-ever-seen-the-low-hire-low-fire-economy-turns-3-years-old-ce8d0dfe?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 14:22:00 GMT"
-  },
-  {
-   "titulo": "Wall Street braces for Democratic gains as 2026 midterm election nears",
-   "url": "https://www.cnbc.com/2026/10/30/2026-midterm-election-wall-street-prepares-for-democratic-gains.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 11:12:17 GMT"
   },
   {
    "titulo": "Gen Z is ditching bars for run clubs — and finding more than friends along the way",
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-30T16:34:55Z",
+ "ts": "2026-10-30T21:01:52Z",
  "fallas": [
   "videos",
   "directos"
