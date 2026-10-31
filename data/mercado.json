@@ -277,9 +277,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 77745.0,
-   "cambio": -2155.0,
-   "pct": -2.7
+   "precio": 77700.0,
+   "cambio": -2200.0,
+   "pct": -2.75
   }
  ],
  "acciones": [
@@ -454,28 +454,76 @@
  ],
  "noticias": [
   {
-   "titulo": "Google taught the world how to search. Now it faces a revolution it can’t afford to lose.",
-   "url": "https://www.marketwatch.com/story/google-taught-the-world-how-to-search-now-it-faces-a-revolution-it-cant-afford-to-lose-b7a01394?mod=mw_rss_topstories",
+   "titulo": "Medicare used AI to pre-approve patient care, and it immediately led to a large drop in medical services",
+   "url": "https://www.marketwatch.com/story/medicare-used-ai-to-pre-approve-patient-care-and-it-immediately-led-to-a-large-drop-in-medical-services-dc38a210?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Sat, 31 Oct 2026 13:15:00 GMT"
+   "fecha": "Sat, 31 Oct 2026 17:26:00 GMT"
+  },
+  {
+   "titulo": "80% of workers make this 401(k)  mistake when they retire",
+   "url": "https://www.marketwatch.com/story/whats-the-first-thing-most-people-do-with-their-401-k-after-they-retire-nothing-8a606518?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 16:46:00 GMT"
+  },
+  {
+   "titulo": "Binance says 90% of $6.3 billion hack losses are now covered, plans to resume withdrawals Sunday",
+   "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 16:06:44 GMT"
+  },
+  {
+   "titulo": "Want guaranteed income in retirement without an annuity? Try laddering I bonds.",
+   "url": "https://www.marketwatch.com/story/how-to-use-i-bonds-to-create-guaranteed-inflation-proof-income-in-retirement-50753fea?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 16:02:00 GMT"
+  },
+  {
+   "titulo": "We’re in our 70s. Should we pay off our 2.5% mortgage — or put the money in a high-yield savings account?",
+   "url": "https://www.marketwatch.com/story/we-are-in-our-70s-should-we-pay-off-our-2-5-mortgage-or-build-up-our-savings-5a35e9c1?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 16:00:00 GMT"
+  },
+  {
+   "titulo": "Our church has a $1.5 million bequest earning 3.75% in a savings account. Are we throwing money away?",
+   "url": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 15:30:00 GMT"
+  },
+  {
+   "titulo": "What gave this city its ‘best place to retire’ crown? You can actually afford to live there.",
+   "url": "https://www.marketwatch.com/story/what-gave-this-city-its-best-place-to-retire-crown-you-can-actually-afford-to-live-there-a06f8f4d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 15:25:00 GMT"
+  },
+  {
+   "titulo": "My father has Alzheimer’s and his caregiver is using his debit card for DoorDash. Do I intervene?",
+   "url": "https://www.marketwatch.com/story/theres-a-lot-of-hurt-between-us-my-fathers-caregiver-is-using-his-debit-card-for-doordash-orders-what-can-i-do-714de7a5?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 15:00:00 GMT"
+  },
+  {
+   "titulo": "The S&P 500 isn’t the big winner you may think it is",
+   "url": "https://www.marketwatch.com/story/you-cant-rely-on-the-s-p-500-as-much-as-you-may-think-a3ac0cb7?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 14:54:00 GMT"
+  },
+  {
+   "titulo": "Social Security’s fate — and your benefits — are in the hands of the candidates elected this year",
+   "url": "https://www.marketwatch.com/story/the-midterms-are-crucial-to-the-future-of-social-security-no-matter-how-old-you-are-0f080a9c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 14:35:00 GMT"
+  },
+  {
+   "titulo": "‘He was heartbroken’: My husband’s kids abandoned him when he was dying. Was he right to leave everything to me?",
+   "url": "https://www.marketwatch.com/story/he-was-heartbroken-my-husbands-kids-never-helped-when-he-was-gravely-ill-was-he-right-to-leave-everything-to-me-1ad0616b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 14:26:00 GMT"
   },
   {
    "titulo": "Crypto industry pours more than $200 million into 2026 midterms to pressure Congress on favorable rules",
    "url": "https://www.cnbc.com/2026/10/31/crypto-industry-spends-more-than-200-million-to-sway-the-midterms.html",
    "fuente": "CNBC",
    "fecha": "Sat, 31 Oct 2026 13:04:29 GMT"
-  },
-  {
-   "titulo": "The stock market’s front-runners stumbled in October. Here’s where the smart money is moving now.",
-   "url": "https://www.marketwatch.com/story/the-stock-markets-front-runners-stumbled-in-october-heres-where-the-smart-money-is-moving-now-f901472a?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 31 Oct 2026 13:01:00 GMT"
-  },
-  {
-   "titulo": "If you really want to help your adult kids and grandkids, give them money while you’re still alive",
-   "url": "https://www.marketwatch.com/story/if-you-really-want-to-help-your-adult-kids-and-grandkids-give-them-money-while-youre-still-alive-bef6b056?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 31 Oct 2026 13:00:00 GMT"
   },
   {
    "titulo": "Trump promised to slash energy costs  — but gasoline, diesel and jet fuel all soared instead",
@@ -490,28 +538,10 @@
    "fecha": "Sat, 31 Oct 2026 12:47:08 GMT"
   },
   {
-   "titulo": "This Halloween, are full-size candy bars a better deal than fun-sized ones?",
-   "url": "https://www.marketwatch.com/story/this-halloween-are-king-sized-candy-bars-a-better-deal-than-fun-sized-ones-992da0d9?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 31 Oct 2026 12:37:00 GMT"
-  },
-  {
-   "titulo": "Nvidia’s Megaspeed ties show potential blind spots in the U.S. effort to block China from accessing advanced chips",
-   "url": "https://www.marketwatch.com/story/nvidias-megaspeed-ties-show-potential-blind-spots-in-the-u-s-effort-to-block-china-from-accessing-advanced-chips-e75d541a?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 31 Oct 2026 12:30:00 GMT"
-  },
-  {
    "titulo": "Berkshire ekes out some new highs, but October rally stalls",
    "url": "https://www.cnbc.com/2026/10/31/berkshire-ekes-out-some-new-highs-but-october-rally-stalls.html",
    "fuente": "CNBC",
    "fecha": "Sat, 31 Oct 2026 12:26:00 GMT"
-  },
-  {
-   "titulo": "Qatari mediators held talks in Tehran aimed at restarting direct U.S.-Iran negotiations, source says",
-   "url": "https://www.cnbc.com/2026/10/31/qatar-iran-us-talks-mediation.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 31 Oct 2026 12:11:12 GMT"
   },
   {
    "titulo": "‘Pop-up’ super PACs pour $637 million into 2026 midterm races",
@@ -526,10 +556,10 @@
    "fecha": "Sat, 31 Oct 2026 12:00:01 GMT"
   },
   {
-   "titulo": "These 10 megadonors have spent a total of $1 billion on the midterm elections",
-   "url": "https://www.marketwatch.com/story/these-10-megadonors-have-spent-a-total-of-1-billion-on-the-midterm-elections-0dc279cf?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 31 Oct 2026 12:00:00 GMT"
+   "titulo": "Humans are still doing the work behind some AI agents",
+   "url": "https://www.cnbc.com/2026/10/31/ai-agents-humans-dazzle-duckbill-meta.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 12:00:01 GMT"
   },
   {
    "titulo": "Anthropic's path to the Nasdaq just got a lot bumpier",
@@ -544,40 +574,10 @@
    "fecha": "Sat, 31 Oct 2026 10:27:19 GMT"
   },
   {
-   "titulo": "Grand Theft Callout: ‘GTA 6’ fans are missing work on the game’s release day because they ‘don’t want to wait’ anymore",
-   "url": "https://www.marketwatch.com/story/grand-theft-callout-gta-6-fans-are-missing-work-on-the-games-release-day-because-they-dont-want-to-wait-anymore-5f2fa2e3?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 31 Oct 2026 04:30:00 GMT"
-  },
-  {
-   "titulo": "Has the tech bubble burst? Why the Nasdaq’s rough ride looks eerily like 2000.",
-   "url": "https://www.marketwatch.com/story/has-the-tech-bubble-burst-why-the-nasdaqs-rough-ride-looks-eerily-like-2000-5bcefcb2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 23:14:00 GMT"
-  },
-  {
-   "titulo": "Meta outlook revised downward by S&P on cash flow and capex concerns",
-   "url": "https://www.cnbc.com/2026/10/30/meta-outlook-to-revised-to-negative-by-sp-after-cash-flow-negative.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 22:42:26 GMT"
-  },
-  {
-   "titulo": "This cybersecurity stock will be the next to join the S&P 500",
-   "url": "https://www.marketwatch.com/story/this-cybersecurity-stock-will-be-the-next-to-join-the-s-p-500-dc976803?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 22:20:00 GMT"
-  },
-  {
    "titulo": "Gamble on democracy: Inside suspicious election-contracts trading on prediction markets",
    "url": "https://www.cnbc.com/2026/10/30/gamble-on-democracy-inside-suspicious-election-contracts-trading-on-prediction-markets-.html",
    "fuente": "CNBC",
    "fecha": "Fri, 30 Oct 2026 22:00:53 GMT"
-  },
-  {
-   "titulo": "Why gold plunged to its lowest price in a year despite renewed Iran jitters",
-   "url": "https://www.marketwatch.com/story/why-gold-plunged-to-its-lowest-price-in-a-year-despite-renewed-iran-jitters-365be0e2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 21:30:00 GMT"
   },
   {
    "titulo": "Halloween gets pricier as chocolate costs climb — Hershey may feel the pinch",
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-31T13:25:46Z",
+ "ts": "2026-10-31T17:55:20Z",
  "fallas": [
   "videos",
   "directos"
