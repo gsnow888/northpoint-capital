@@ -277,8 +277,8 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 77700.0,
-   "cambio": -2200.0,
+   "precio": 77705.0,
+   "cambio": -2195.0,
    "pct": -2.75
   }
  ],
@@ -454,6 +454,72 @@
  ],
  "noticias": [
   {
+   "titulo": "Trump defamation suit against Murdoch, WSJ over Epstein letter dismissed with prejudice",
+   "url": "https://www.cnbc.com/2026/10/31/trump-murdoch-wsj-epstein-defamation-lawsuit-dismissed.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 21:05:53 GMT"
+  },
+  {
+   "titulo": "My abusive ex-husband promised $20,000 for our kids’ education. Now he refuses to pay. Is he legally obligated?",
+   "url": "https://www.marketwatch.com/story/my-abusive-ex-husband-promised-20-000-for-our-kids-education-now-he-refuses-to-pay-is-he-legally-obligated-325ef50f?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 20:15:00 GMT"
+  },
+  {
+   "titulo": "SpaceX loses bid to toss NAACP lawsuit over Memphis data center air pollution",
+   "url": "https://www.cnbc.com/2026/10/31/xai-naacp-clean-air-act-lawsuit-dismissal.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 20:12:37 GMT"
+  },
+  {
+   "titulo": "OpenAI pares fundraising goal, now seeking up to $20 billion in latest round",
+   "url": "https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 19:56:23 GMT"
+  },
+  {
+   "titulo": "‘Showy jewelry and fancy cars hold no appeal’: We have a 99% chance of outliving our life savings. Why not spend it all?",
+   "url": "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 19:30:00 GMT"
+  },
+  {
+   "titulo": "Binance says 90% of $6.3 billion hack losses are now covered, plans to resume withdrawals Sunday",
+   "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 19:16:25 GMT"
+  },
+  {
+   "titulo": "This is where most people go wrong in their 30s and 40s",
+   "url": "https://www.marketwatch.com/story/the-house-the-kids-college-and-the-raise-where-people-in-their-30s-and-40s-go-wrong-69ec6c90?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 19:02:00 GMT"
+  },
+  {
+   "titulo": "We’re in our 70s. Should we pay off our 2.5% mortgage — or put the money in a high-yield savings account?",
+   "url": "https://www.marketwatch.com/story/we-are-in-our-70s-should-we-pay-off-our-2-5-mortgage-or-build-up-our-savings-5a35e9c1?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 19:00:00 GMT"
+  },
+  {
+   "titulo": "‘He was heartbroken’: My husband’s kids abandoned him when he was dying. Was he right to leave everything to me?",
+   "url": "https://www.marketwatch.com/story/he-was-heartbroken-my-husbands-kids-never-helped-when-he-was-gravely-ill-was-he-right-to-leave-everything-to-me-1ad0616b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 18:50:00 GMT"
+  },
+  {
+   "titulo": "Is it curtains for COLA? Saving Social Security could mean changing the cost-of-living adjustment.",
+   "url": "https://www.marketwatch.com/story/is-it-curtains-for-cola-saving-social-security-could-mean-changing-the-cost-of-living-adjustment-867c6bd8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 18:33:00 GMT"
+  },
+  {
+   "titulo": "Caregivers are now spending more than $11,000 a year out of pocket—up 60% in five years",
+   "url": "https://www.marketwatch.com/story/were-spending-more-than-11-000-a-year-of-our-own-money-caring-for-our-aging-parents-and-loved-ones-8fc5b2dc?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 18:10:00 GMT"
+  },
+  {
    "titulo": "Medicare used AI to pre-approve patient care, and it immediately led to a large drop in medical services",
    "url": "https://www.marketwatch.com/story/medicare-used-ai-to-pre-approve-patient-care-and-it-immediately-led-to-a-large-drop-in-medical-services-dc38a210?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -466,82 +532,22 @@
    "fecha": "Sat, 31 Oct 2026 16:46:00 GMT"
   },
   {
-   "titulo": "Binance says 90% of $6.3 billion hack losses are now covered, plans to resume withdrawals Sunday",
-   "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 31 Oct 2026 16:06:44 GMT"
-  },
-  {
    "titulo": "Want guaranteed income in retirement without an annuity? Try laddering I bonds.",
    "url": "https://www.marketwatch.com/story/how-to-use-i-bonds-to-create-guaranteed-inflation-proof-income-in-retirement-50753fea?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 31 Oct 2026 16:02:00 GMT"
   },
   {
-   "titulo": "We’re in our 70s. Should we pay off our 2.5% mortgage — or put the money in a high-yield savings account?",
-   "url": "https://www.marketwatch.com/story/we-are-in-our-70s-should-we-pay-off-our-2-5-mortgage-or-build-up-our-savings-5a35e9c1?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 31 Oct 2026 16:00:00 GMT"
-  },
-  {
-   "titulo": "Our church has a $1.5 million bequest earning 3.75% in a savings account. Are we throwing money away?",
-   "url": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 31 Oct 2026 15:30:00 GMT"
-  },
-  {
-   "titulo": "What gave this city its ‘best place to retire’ crown? You can actually afford to live there.",
-   "url": "https://www.marketwatch.com/story/what-gave-this-city-its-best-place-to-retire-crown-you-can-actually-afford-to-live-there-a06f8f4d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 31 Oct 2026 15:25:00 GMT"
-  },
-  {
-   "titulo": "My father has Alzheimer’s and his caregiver is using his debit card for DoorDash. Do I intervene?",
-   "url": "https://www.marketwatch.com/story/theres-a-lot-of-hurt-between-us-my-fathers-caregiver-is-using-his-debit-card-for-doordash-orders-what-can-i-do-714de7a5?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 31 Oct 2026 15:00:00 GMT"
-  },
-  {
-   "titulo": "The S&P 500 isn’t the big winner you may think it is",
-   "url": "https://www.marketwatch.com/story/you-cant-rely-on-the-s-p-500-as-much-as-you-may-think-a3ac0cb7?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 31 Oct 2026 14:54:00 GMT"
-  },
-  {
-   "titulo": "Social Security’s fate — and your benefits — are in the hands of the candidates elected this year",
-   "url": "https://www.marketwatch.com/story/the-midterms-are-crucial-to-the-future-of-social-security-no-matter-how-old-you-are-0f080a9c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 31 Oct 2026 14:35:00 GMT"
-  },
-  {
-   "titulo": "‘He was heartbroken’: My husband’s kids abandoned him when he was dying. Was he right to leave everything to me?",
-   "url": "https://www.marketwatch.com/story/he-was-heartbroken-my-husbands-kids-never-helped-when-he-was-gravely-ill-was-he-right-to-leave-everything-to-me-1ad0616b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 31 Oct 2026 14:26:00 GMT"
-  },
-  {
-   "titulo": "Crypto industry pours more than $200 million into 2026 midterms to pressure Congress on favorable rules",
-   "url": "https://www.cnbc.com/2026/10/31/crypto-industry-spends-more-than-200-million-to-sway-the-midterms.html",
+   "titulo": "Qatari mediators held talks in Tehran aimed at restarting direct U.S.-Iran negotiations, source says",
+   "url": "https://www.cnbc.com/2026/10/31/qatar-iran-us-talks-mediation.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 31 Oct 2026 13:04:29 GMT"
+   "fecha": "Sat, 31 Oct 2026 13:47:03 GMT"
   },
   {
    "titulo": "Trump promised to slash energy costs  — but gasoline, diesel and jet fuel all soared instead",
    "url": "https://www.cnbc.com/2026/10/31/trump-gas-diesel-price-midterm-election.html",
    "fuente": "CNBC",
    "fecha": "Sat, 31 Oct 2026 12:49:58 GMT"
-  },
-  {
-   "titulo": "Binance’s $6.3 billion hack raises questions about crypto wallet safety",
-   "url": "https://www.cnbc.com/2026/10/31/binance-hack-crypto-wallet-safety.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 31 Oct 2026 12:47:08 GMT"
-  },
-  {
-   "titulo": "Berkshire ekes out some new highs, but October rally stalls",
-   "url": "https://www.cnbc.com/2026/10/31/berkshire-ekes-out-some-new-highs-but-october-rally-stalls.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 31 Oct 2026 12:26:00 GMT"
   },
   {
    "titulo": "‘Pop-up’ super PACs pour $637 million into 2026 midterm races",
@@ -552,12 +558,6 @@
   {
    "titulo": "Automakers like Rivian and Ford are ‘democratizing 3D printing’ to reduce costs and increase speed",
    "url": "https://www.cnbc.com/2026/10/31/automakers-3d-printing-ford-rivian-gm.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 31 Oct 2026 12:00:01 GMT"
-  },
-  {
-   "titulo": "Humans are still doing the work behind some AI agents",
-   "url": "https://www.cnbc.com/2026/10/31/ai-agents-humans-dazzle-duckbill-meta.html",
    "fuente": "CNBC",
    "fecha": "Sat, 31 Oct 2026 12:00:01 GMT"
   },
@@ -574,10 +574,10 @@
    "fecha": "Sat, 31 Oct 2026 10:27:19 GMT"
   },
   {
-   "titulo": "Gamble on democracy: Inside suspicious election-contracts trading on prediction markets",
-   "url": "https://www.cnbc.com/2026/10/30/gamble-on-democracy-inside-suspicious-election-contracts-trading-on-prediction-markets-.html",
+   "titulo": "Trump called out Big Oil profits. Here’s how much their refining earnings have surged since",
+   "url": "https://www.cnbc.com/2026/10/31/trump-big-oil-refining-profits.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 22:00:53 GMT"
+   "fecha": "Sat, 31 Oct 2026 06:00:02 GMT"
   },
   {
    "titulo": "Halloween gets pricier as chocolate costs climb — Hershey may feel the pinch",
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-31T17:55:20Z",
+ "ts": "2026-10-31T21:11:24Z",
  "fallas": [
   "videos",
   "directos"
