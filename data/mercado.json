@@ -235,37 +235,37 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 28533.25,
-   "cambio": -904.0,
-   "pct": -3.07
+   "precio": 28543.0,
+   "cambio": -894.25,
+   "pct": -3.04
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7614.25,
-   "cambio": -100.25,
+   "precio": 7614.5,
+   "cambio": -100.0,
    "pct": -1.3
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3882.8,
-   "cambio": -155.6,
-   "pct": -3.85
+   "precio": 3884.9,
+   "cambio": -153.5,
+   "pct": -3.8
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 102.85,
-   "cambio": 1.09,
-   "pct": 1.07
+   "precio": 102.95,
+   "cambio": 1.19,
+   "pct": 1.17
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2822.9,
-   "cambio": 25.4,
-   "pct": 0.91
+   "precio": 2821.9,
+   "cambio": 24.4,
+   "pct": 0.87
   },
   {
    "sym": "YM",
@@ -277,9 +277,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 76995.0,
-   "cambio": -2905.0,
-   "pct": -3.64
+   "precio": 77380.0,
+   "cambio": -2520.0,
+   "pct": -3.15
   }
  ],
  "acciones": [
@@ -454,6 +454,60 @@
  ],
  "noticias": [
   {
+   "titulo": "Has the tech bubble burst? Why the Nasdaq’s rough ride looks eerily like 2000.",
+   "url": "https://www.marketwatch.com/story/has-the-tech-bubble-burst-why-the-nasdaqs-rough-ride-looks-eerily-like-2000-5bcefcb2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 23:14:00 GMT"
+  },
+  {
+   "titulo": "Alaska Senate election: DOJ wants to 'segregate' all ballots for 2nd Sullivan candidate",
+   "url": "https://www.cnbc.com/2026/10/30/alaska-senate-election-doj-lawsuit-sullivan-peltola.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 22:57:55 GMT"
+  },
+  {
+   "titulo": "Jim Cramer says it's time to look beyond tech. Here are 4 consumer stocks he likes",
+   "url": "https://www.cnbc.com/2026/10/30/jim-cramer-consumer-staples-stocks.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 22:52:04 GMT"
+  },
+  {
+   "titulo": "Meta outlook revised downward by S&P on cash flow and capex concerns",
+   "url": "https://www.cnbc.com/2026/10/30/meta-outlook-to-revised-to-negative-by-sp-after-cash-flow-negative.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 22:42:26 GMT"
+  },
+  {
+   "titulo": "This cybersecurity stock will be the next to join the S&P 500",
+   "url": "https://www.marketwatch.com/story/this-cybersecurity-stock-will-be-the-next-to-join-the-s-p-500-dc976803?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 22:20:00 GMT"
+  },
+  {
+   "titulo": "Cramer’s week ahead: Expect more volatility as tech earnings, midterms loom",
+   "url": "https://www.cnbc.com/2026/10/30/jim-cramer-week-ahead-apple-amd-jobs-report.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 22:17:13 GMT"
+  },
+  {
+   "titulo": "Binance loses $6.3 billion in crypto heist—what happens to your money when an exchange gets hacked",
+   "url": "https://www.cnbc.com/make-it/2026/10/30/binance-crypto-hack-customer-funds.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 30 Oct 2026 21:45:52 GMT"
+  },
+  {
+   "titulo": "Why gold plunged to its lowest price in a year despite renewed Iran jitters",
+   "url": "https://www.marketwatch.com/story/why-gold-plunged-to-its-lowest-price-in-a-year-despite-renewed-iran-jitters-365be0e2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 21:30:00 GMT"
+  },
+  {
+   "titulo": "Warsh wants the Fed to say less. Two officials are pushing for more transparency.",
+   "url": "https://www.marketwatch.com/story/the-fed-held-interest-rates-steady-but-these-officials-see-more-hikes-coming-soon-2098bbd8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 30 Oct 2026 21:23:00 GMT"
+  },
+  {
    "titulo": "In a wild October for markets, these stocks were the biggest winners and losers",
    "url": "https://www.marketwatch.com/story/in-a-wild-october-for-markets-these-stocks-were-the-biggest-winners-and-losers-3736f043?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -464,12 +518,6 @@
    "url": "https://www.marketwatch.com/story/why-intels-stock-is-sinking-toward-its-worst-drop-in-two-years-492d71a7?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Fri, 30 Oct 2026 20:48:00 GMT"
-  },
-  {
-   "titulo": "Criminal investigation of Alaska Senate race is 'ongoing,' U.S. Attorney says",
-   "url": "https://www.cnbc.com/2026/10/30/alaska-senate-election-doj-lawsuit-sullivan-peltola.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 20:46:04 GMT"
   },
   {
    "titulo": "Reddit’s stock logs its biggest one-day drop ever. It’s not the last of the bad news, analysts say.",
@@ -502,40 +550,10 @@
    "fecha": "Fri, 30 Oct 2026 20:26:00 GMT"
   },
   {
-   "titulo": "After Intel’s historic stock drop, analysts say there’s no reason to buy the dip",
-   "url": "https://www.marketwatch.com/story/after-intels-historic-stock-drop-analysts-say-theres-no-reason-to-buy-the-dip-068446af?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 20:23:00 GMT"
-  },
-  {
-   "titulo": "Trump administration is illegally delaying student-debt forgiveness for tens of thousands of public servants, lawsuit alleges",
-   "url": "https://www.marketwatch.com/story/trump-administration-is-illegally-delaying-student-debt-forgiveness-for-tens-of-thousands-of-public-servants-lawsuit-alleges-e4d31e59?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 20:23:00 GMT"
-  },
-  {
    "titulo": "'Bad time to troll': Binance co-founder Zhao asks Musk for support after hack",
    "url": "https://www.cnbc.com/2026/10/30/binance-hack-elon-musk-tesla-spacex.html",
    "fuente": "CNBC",
    "fecha": "Fri, 30 Oct 2026 20:02:45 GMT"
-  },
-  {
-   "titulo": "‘Showy jewelry and fancy cars hold no appeal’: We have a 99% chance of outliving our life savings. Why not spend it all?",
-   "url": "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 19:45:00 GMT"
-  },
-  {
-   "titulo": "The Fed held interest rates steady, but these officials see more hikes coming soon",
-   "url": "https://www.marketwatch.com/story/the-fed-held-interest-rates-steady-but-these-officials-see-more-hikes-coming-soon-2098bbd8?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 19:44:00 GMT"
-  },
-  {
-   "titulo": "Binance loses $6.3 billion in crypto heist—what happens to your money when an exchange gets hacked",
-   "url": "https://www.cnbc.com/make-it/2026/10/30/binance-crypto-hack-customer-funds.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 19:39:46 GMT"
   },
   {
    "titulo": "Binance hack: Investigators in a 'cat and mouse game' to recover $6.3 billion in stolen funds",
@@ -550,12 +568,6 @@
    "fecha": "Fri, 30 Oct 2026 18:32:17 GMT"
   },
   {
-   "titulo": "Tankers defy sharp escalation of Iranian attacks to keep crude oil flowing through Strait of Hormuz",
-   "url": "https://www.cnbc.com/2026/10/30/tanker-attack-strait-hormuz-iran-war-oil.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 18:28:09 GMT"
-  },
-  {
    "titulo": "Why bitcoin held up better after the record Binance hack",
    "url": "https://www.cnbc.com/2026/10/30/binance-hack-bitcoin-price.html",
    "fuente": "CNBC",
@@ -568,22 +580,10 @@
    "fecha": "Fri, 30 Oct 2026 17:15:53 GMT"
   },
   {
-   "titulo": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
-   "url": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html",
+   "titulo": "Halloween gets pricier as chocolate costs climb — Hershey may feel the pinch",
+   "url": "https://www.cnbc.com/2026/10/30/halloween-gets-pricier-as-chocolate-costs-rise-hershey-could-feel-it.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 16:44:31 GMT"
-  },
-  {
-   "titulo": "Gamble on democracy: Inside suspicious election-contracts trading on prediction markets",
-   "url": "https://www.cnbc.com/2026/10/30/gamble-on-democracy-inside-suspicious-election-contracts-trading-on-prediction-markets-.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 15:33:00 GMT"
-  },
-  {
-   "titulo": "Gen Z is ditching bars for run clubs — and finding more than friends along the way",
-   "url": "https://www.cnbc.com/2026/10/30/gen-z-diplo-run-club.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 10:32:46 GMT"
+   "fecha": "Fri, 30 Oct 2026 16:55:41 GMT"
   }
  ],
  "videos": [
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-30T21:01:52Z",
+ "ts": "2026-10-31T00:52:26Z",
  "fallas": [
   "videos",
   "directos"
