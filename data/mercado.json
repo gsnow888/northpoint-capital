@@ -277,9 +277,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 77255.0,
-   "cambio": -2645.0,
-   "pct": -3.31
+   "precio": 77745.0,
+   "cambio": -2155.0,
+   "pct": -2.7
   }
  ],
  "acciones": [
@@ -454,16 +454,94 @@
  ],
  "noticias": [
   {
-   "titulo": "Trump called out Big Oil profits. Here’s how much their refining earnings have surged since",
-   "url": "https://www.cnbc.com/2026/10/31/trump-big-oil-refining-profits.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 31 Oct 2026 06:00:02 GMT"
+   "titulo": "Google taught the world how to search. Now it faces a revolution it can’t afford to lose.",
+   "url": "https://www.marketwatch.com/story/google-taught-the-world-how-to-search-now-it-faces-a-revolution-it-cant-afford-to-lose-b7a01394?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 13:15:00 GMT"
   },
   {
-   "titulo": "AI is coming to construction sites. But does it make workers safer?",
-   "url": "https://www.cnbc.com/2026/10/31/ai-construction-worker-safety.html",
+   "titulo": "Crypto industry pours more than $200 million into 2026 midterms to pressure Congress on favorable rules",
+   "url": "https://www.cnbc.com/2026/10/31/crypto-industry-spends-more-than-200-million-to-sway-the-midterms.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 31 Oct 2026 06:00:02 GMT"
+   "fecha": "Sat, 31 Oct 2026 13:04:29 GMT"
+  },
+  {
+   "titulo": "The stock market’s front-runners stumbled in October. Here’s where the smart money is moving now.",
+   "url": "https://www.marketwatch.com/story/the-stock-markets-front-runners-stumbled-in-october-heres-where-the-smart-money-is-moving-now-f901472a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 13:01:00 GMT"
+  },
+  {
+   "titulo": "If you really want to help your adult kids and grandkids, give them money while you’re still alive",
+   "url": "https://www.marketwatch.com/story/if-you-really-want-to-help-your-adult-kids-and-grandkids-give-them-money-while-youre-still-alive-bef6b056?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 13:00:00 GMT"
+  },
+  {
+   "titulo": "Trump promised to slash energy costs  — but gasoline, diesel and jet fuel all soared instead",
+   "url": "https://www.cnbc.com/2026/10/31/trump-gas-diesel-price-midterm-election.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 12:49:58 GMT"
+  },
+  {
+   "titulo": "Binance’s $6.3 billion hack raises questions about crypto wallet safety",
+   "url": "https://www.cnbc.com/2026/10/31/binance-hack-crypto-wallet-safety.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 12:47:08 GMT"
+  },
+  {
+   "titulo": "This Halloween, are full-size candy bars a better deal than fun-sized ones?",
+   "url": "https://www.marketwatch.com/story/this-halloween-are-king-sized-candy-bars-a-better-deal-than-fun-sized-ones-992da0d9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 12:37:00 GMT"
+  },
+  {
+   "titulo": "Nvidia’s Megaspeed ties show potential blind spots in the U.S. effort to block China from accessing advanced chips",
+   "url": "https://www.marketwatch.com/story/nvidias-megaspeed-ties-show-potential-blind-spots-in-the-u-s-effort-to-block-china-from-accessing-advanced-chips-e75d541a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 12:30:00 GMT"
+  },
+  {
+   "titulo": "Berkshire ekes out some new highs, but October rally stalls",
+   "url": "https://www.cnbc.com/2026/10/31/berkshire-ekes-out-some-new-highs-but-october-rally-stalls.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 12:26:00 GMT"
+  },
+  {
+   "titulo": "Qatari mediators held talks in Tehran aimed at restarting direct U.S.-Iran negotiations, source says",
+   "url": "https://www.cnbc.com/2026/10/31/qatar-iran-us-talks-mediation.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 12:11:12 GMT"
+  },
+  {
+   "titulo": "‘Pop-up’ super PACs pour $637 million into 2026 midterm races",
+   "url": "https://www.cnbc.com/2026/10/31/2026-midterm-election-super-pacs-donor-disclosure.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 12:00:01 GMT"
+  },
+  {
+   "titulo": "Automakers like Rivian and Ford are ‘democratizing 3D printing’ to reduce costs and increase speed",
+   "url": "https://www.cnbc.com/2026/10/31/automakers-3d-printing-ford-rivian-gm.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 12:00:01 GMT"
+  },
+  {
+   "titulo": "These 10 megadonors have spent a total of $1 billion on the midterm elections",
+   "url": "https://www.marketwatch.com/story/these-10-megadonors-have-spent-a-total-of-1-billion-on-the-midterm-elections-0dc279cf?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 31 Oct 2026 12:00:00 GMT"
+  },
+  {
+   "titulo": "Anthropic's path to the Nasdaq just got a lot bumpier",
+   "url": "https://www.cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 11:00:01 GMT"
+  },
+  {
+   "titulo": "The rise of the 15-foot skeleton—how a viral novelty became a Halloween staple",
+   "url": "https://www.cnbc.com/make-it/2026/10/23/giant-halloween-skeleton-decorations.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 10:27:19 GMT"
   },
   {
    "titulo": "Grand Theft Callout: ‘GTA 6’ fans are missing work on the game’s release day because they ‘don’t want to wait’ anymore",
@@ -478,18 +556,6 @@
    "fecha": "Fri, 30 Oct 2026 23:14:00 GMT"
   },
   {
-   "titulo": "Alaska Senate election: DOJ wants to 'segregate' all ballots for 2nd Sullivan candidate",
-   "url": "https://www.cnbc.com/2026/10/30/alaska-senate-election-doj-lawsuit-sullivan-peltola.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 22:57:55 GMT"
-  },
-  {
-   "titulo": "Jim Cramer says it's time to look beyond tech. Here are 4 consumer stocks he likes",
-   "url": "https://www.cnbc.com/2026/10/30/jim-cramer-consumer-staples-stocks.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 22:52:04 GMT"
-  },
-  {
    "titulo": "Meta outlook revised downward by S&P on cash flow and capex concerns",
    "url": "https://www.cnbc.com/2026/10/30/meta-outlook-to-revised-to-negative-by-sp-after-cash-flow-negative.html",
    "fuente": "CNBC",
@@ -502,82 +568,16 @@
    "fecha": "Fri, 30 Oct 2026 22:20:00 GMT"
   },
   {
-   "titulo": "Binance loses $6.3 billion in crypto heist—what happens to your money when an exchange gets hacked",
-   "url": "https://www.cnbc.com/make-it/2026/10/30/binance-crypto-hack-customer-funds.html",
+   "titulo": "Gamble on democracy: Inside suspicious election-contracts trading on prediction markets",
+   "url": "https://www.cnbc.com/2026/10/30/gamble-on-democracy-inside-suspicious-election-contracts-trading-on-prediction-markets-.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 21:45:52 GMT"
+   "fecha": "Fri, 30 Oct 2026 22:00:53 GMT"
   },
   {
    "titulo": "Why gold plunged to its lowest price in a year despite renewed Iran jitters",
    "url": "https://www.marketwatch.com/story/why-gold-plunged-to-its-lowest-price-in-a-year-despite-renewed-iran-jitters-365be0e2?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Fri, 30 Oct 2026 21:30:00 GMT"
-  },
-  {
-   "titulo": "Warsh wants the Fed to say less. Two officials are pushing for more transparency.",
-   "url": "https://www.marketwatch.com/story/the-fed-held-interest-rates-steady-but-these-officials-see-more-hikes-coming-soon-2098bbd8?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 21:23:00 GMT"
-  },
-  {
-   "titulo": "In a wild October for markets, these stocks were the biggest winners and losers",
-   "url": "https://www.marketwatch.com/story/in-a-wild-october-for-markets-these-stocks-were-the-biggest-winners-and-losers-3736f043?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 20:52:00 GMT"
-  },
-  {
-   "titulo": "Why Intel’s stock saw its worst day in decades — and a $140 billion wipeout",
-   "url": "https://www.marketwatch.com/story/why-intels-stock-is-sinking-toward-its-worst-drop-in-two-years-492d71a7?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 20:48:00 GMT"
-  },
-  {
-   "titulo": "Reddit’s stock logs its biggest one-day drop ever. It’s not the last of the bad news, analysts say.",
-   "url": "https://www.marketwatch.com/story/reddit-shares-on-track-for-largest-ever-one-day-drop-and-analysts-say-the-bad-news-hasnt-ended-25d46284?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 20:42:00 GMT"
-  },
-  {
-   "titulo": "Intel stock has worst day since 1970s, wiping about $12 billion off government's stake",
-   "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 20:30:57 GMT"
-  },
-  {
-   "titulo": "Microsoft is winning the cloud wars and becoming Wall Street’s new golden child",
-   "url": "https://www.marketwatch.com/story/microsoft-is-winning-the-cloud-wars-and-becoming-wall-streets-new-golden-child-62eecbbd?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 20:29:00 GMT"
-  },
-  {
-   "titulo": "AMD’s stock slides after Intel earnings reveal two big issues",
-   "url": "https://www.marketwatch.com/story/amds-stock-slides-after-intel-earnings-reveal-two-big-issues-d3afed91?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 30 Oct 2026 20:28:00 GMT"
-  },
-  {
-   "titulo": "'Bad time to troll': Binance co-founder Zhao asks Musk for support after hack",
-   "url": "https://www.cnbc.com/2026/10/30/binance-hack-elon-musk-tesla-spacex.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 20:02:45 GMT"
-  },
-  {
-   "titulo": "Binance hack: Investigators in a 'cat and mouse game' to recover $6.3 billion in stolen funds",
-   "url": "https://www.cnbc.com/2026/10/30/binance-hack-stolen-crypto-recovery.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 19:27:03 GMT"
-  },
-  {
-   "titulo": "Reid Hoffman gives millions to Dems in late spending spree as Epstein fight spills into election",
-   "url": "https://www.cnbc.com/2026/10/30/reid-hoffman-democrats-epstein-midterms-2026.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 18:32:17 GMT"
-  },
-  {
-   "titulo": "Treasury Department announces new Series I bond rate of 5.51% for the next six months",
-   "url": "https://www.cnbc.com/2026/10/30/treasury-i-bond-rate-through-april-2027.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 17:15:53 GMT"
   },
   {
    "titulo": "Halloween gets pricier as chocolate costs climb — Hershey may feel the pinch",
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-31T06:45:42Z",
+ "ts": "2026-10-31T13:25:46Z",
  "fallas": [
   "videos",
   "directos"
