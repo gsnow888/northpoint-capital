@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>NORTHPOINT · Aplica por un lugar</title>
-<meta name="description" content="Aplica por un lugar en NORTHPOINT. Revisamos tu solicitud y te invitamos a una llamada por Zoom.">
+<meta name="description" content="Aplica por un lugar en NORTHPOINT. Revisamos tu solicitud y te invitamos a una llamada por videollamada.">
 <meta name="robots" content="noindex">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%233d7bff%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22Arial%22 font-weight=%22900%22 font-size=%2215%22 text-anchor=%22middle%22 fill=%22white%22%3ENP%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,9 +72,9 @@ body{font-family:Geist,system-ui,sans-serif;color:var(--tx);background:radial-gr
 const DESTINO = 'andremacouzetruiz@gmail.com';
 const W3F_KEY = '93ddaacd-47f4-412d-acc7-39c3c1b80a59';   // clave de acceso de Web3Forms (pública por diseño): con ella las solicitudes llegan a tu Gmail sin depender de FormSubmit
 /* ── INVITACIÓN AUTOMÁTICA ──
-   Cada persona que aplica recibe al instante este correo. Pega aquí tu link de Calendly (evento de 20 min con Zoom):
-   al elegir horario, Calendly crea la reunión de Zoom y la manda a su calendario y al tuyo. */
-const LINK_LLAMADA = '';
+   Cada persona que aplica recibe al instante este correo. Pega aquí tu link de Calendly (evento de 30 min con Zoom):
+   al elegir horario, Calendly crea la reunión de la videollamada y la manda a su calendario y al tuyo. */
+const LINK_LLAMADA = 'https://calendly.com/andremacouzetruiz/30min';
 (() => {
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
   const plan = { starter: 'Starter', pro: 'Pro', mesa: 'Mesa' }[new URLSearchParams(location.search).get('plan')] || '';
@@ -82,7 +82,7 @@ const LINK_LLAMADA = '';
   const Q = [
     ['intro'],
     ['nombre', 'text', '¿Cómo te llamas?', 'Nombre y apellido.'],
-    ['correo', 'email', 'Hola {nombre}. ¿A qué correo te enviamos la invitación?', 'Ahí te llega la llamada por Zoom si tu solicitud es aprobada.'],
+    ['correo', 'email', 'Hola {nombre}. ¿A qué correo te enviamos la invitación?', 'Ahí te llega la llamada por videollamada si tu solicitud es aprobada.'],
     ['wa', 'tel', '¿Tu WhatsApp?', 'Con lada de tu país, por si necesitamos confirmar algo.'],
     ['pais', 'text', '¿Desde qué país operas?', ''],
     ['exp', 'one', '¿Cuánto tiempo llevas operando?', '', ['Estoy empezando', 'Menos de 1 año', '1 a 3 años', 'Más de 3 años']],
@@ -97,8 +97,8 @@ const LINK_LLAMADA = '';
   const L = 'ABCDEFGHIJ';
   const fm = $('#fm');
   fm.innerHTML = Q.map(([id, t, q, h, ops], i) => {
-    if (id === 'intro') return `<section class="q" data-i="${i}"><h1>Aplica por un lugar en <em>NORTHPOINT</em></h1><p class="h">Son 11 preguntas rápidas. Al terminar revisamos tu solicitud y te invitamos por correo a una llamada de 20 minutos por Zoom, en menos de 24 horas.</p><div class="perks"><span>Cupos limitados</span><span>Toma 2 minutos</span><span>Respuesta en 24 h</span></div><div class="go"><button type="button" class="btn" data-next>Empezar</button><small>o presiona <kbd>Enter ↵</kbd></small></div></section>`;
-    if (id === 'fin') return `<section class="q" data-i="${i}"><div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></div><h1>Recibimos tu solicitud.</h1><p class="h" id="finTx">Gracias. Esto es lo que sigue:</p><div class="steps"><div><b>1</b>Tu solicitud ya está con nuestro equipo.</div><div><b>2</b>Revisa tu correo: te enviamos la invitación formal a una llamada por Zoom.</div><div><b>3</b>En la llamada vemos cómo operas y te mostramos NORTHPOINT con tus brókers.</div></div><div class="go"><a class="btn" href="./" style="text-decoration:none">Volver a la página</a></div></section>`;
+    if (id === 'intro') return `<section class="q" data-i="${i}"><h1>Aplica por un lugar en <em>NORTHPOINT</em></h1><p class="h">Son 11 preguntas rápidas. Al terminar revisamos tu solicitud y te invitamos por correo a una llamada de 30 minutos por videollamada, en menos de 24 horas.</p><div class="perks"><span>Cupos limitados</span><span>Toma 2 minutos</span><span>Respuesta en 24 h</span></div><div class="go"><button type="button" class="btn" data-next>Empezar</button><small>o presiona <kbd>Enter ↵</kbd></small></div></section>`;
+    if (id === 'fin') return `<section class="q" data-i="${i}"><div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></div><h1>Recibimos tu solicitud.</h1><p class="h" id="finTx">Gracias. Esto es lo que sigue:</p><div class="steps"><div><b>1</b>Tu solicitud ya está con nuestro equipo.</div><div><b>2</b>Agenda ahora tu llamada de 30 minutos: elige el día y la hora que te acomoden.</div><div><b>3</b>En la llamada vemos cómo operas y te mostramos NORTHPOINT con tus brókers.</div></div><div class="go"><a class="btn" href="${LINK_LLAMADA}" target="_blank" rel="noopener" style="text-decoration:none">Agendar mi llamada</a><a href="./" style="color:inherit;opacity:.6;margin-left:14px">Volver a la página</a></div></section>`;
     const campo = t === 'one' || t === 'many' ? `<div class="ops" data-g="${id}">${ops.map((o, k) => `<button type="button" class="op ${A[id] === o ? 'on' : ''}" data-v="${o}"><b>${L[k]}</b>${o}</button>`).join('')}</div>`
       : t === 'long' ? `<textarea id="f-${id}" placeholder="Escribe tu respuesta aquí…" rows="3"></textarea>` : `<input id="f-${id}" type="${t}" placeholder="Escribe tu respuesta aquí…" autocomplete="${{ nombre: 'name', correo: 'email', wa: 'tel', pais: 'country-name' }[id] || 'off'}">`;
     return `<section class="q" data-i="${i}"><div class="n">${i}</div><h2 data-q="${q}">${q}</h2>${h ? `<p class="h">${h}</p>` : ''}${campo}<p class="err"></p><div class="go"><button type="button" class="btn" data-next>${i === Q.length - 2 ? 'Enviar solicitud' : 'OK'}</button><small>${t === 'many' ? 'elige y presiona' : 'presiona'} <kbd>Enter ↵</kbd></small></div></section>`;
@@ -124,7 +124,7 @@ const LINK_LLAMADA = '';
 
 Gracias por aplicar a NORTHPOINT. Revisamos tu solicitud y nos gustaría conocerte.
 
-Te invitamos a una llamada de 20 minutos por Zoom. En ella:
+Te invitamos a una llamada de 30 minutos por videollamada. En ella:
 - Vemos cómo operas hoy y qué quieres mejorar.
 - Te mostramos NORTHPOINT funcionando con tus brókers.
 - Te recomendamos el plan que mejor se adapta a ti.
@@ -132,7 +132,7 @@ Te invitamos a una llamada de 20 minutos por Zoom. En ella:
 ` + (LINK_LLAMADA ? `Elige el día y la hora que te acomoden aquí:
 ${LINK_LLAMADA}
 
-Al confirmar te llega a tu correo el link de Zoom y la invitación a tu calendario.` : `En las próximas horas te enviamos el día, la hora y el link de Zoom.`) + `
+Al confirmar te llega a tu correo el link de la videollamada y la invitación a tu calendario.` : `En las próximas horas te enviamos el día, la hora y el link de la videollamada.`) + `
 
 Los cupos son limitados, así que te recomendamos agendar pronto.
 
