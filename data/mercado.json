@@ -277,9 +277,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 77705.0,
-   "cambio": -2195.0,
-   "pct": -2.75
+   "precio": 77805.0,
+   "cambio": -2095.0,
+   "pct": -2.62
   }
  ],
  "acciones": [
@@ -457,7 +457,13 @@
    "titulo": "Trump defamation suit against Murdoch, WSJ over Epstein letter dismissed with prejudice",
    "url": "https://www.cnbc.com/2026/10/31/trump-murdoch-wsj-epstein-defamation-lawsuit-dismissed.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 31 Oct 2026 21:05:53 GMT"
+   "fecha": "Sat, 31 Oct 2026 23:56:40 GMT"
+  },
+  {
+   "titulo": "Binance says 90% of $6.3 billion hack losses are now covered, plans to resume withdrawals Sunday",
+   "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 22:27:56 GMT"
   },
   {
    "titulo": "My abusive ex-husband promised $20,000 for our kids’ education. Now he refuses to pay. Is he legally obligated?",
@@ -482,12 +488,6 @@
    "url": "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 31 Oct 2026 19:30:00 GMT"
-  },
-  {
-   "titulo": "Binance says 90% of $6.3 billion hack losses are now covered, plans to resume withdrawals Sunday",
-   "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 31 Oct 2026 19:16:25 GMT"
   },
   {
    "titulo": "This is where most people go wrong in their 30s and 40s",
@@ -544,6 +544,12 @@
    "fecha": "Sat, 31 Oct 2026 13:47:03 GMT"
   },
   {
+   "titulo": "Automatic 401(k) rollovers reduce cash-outs, research finds — but few accounts reach new employer plans",
+   "url": "https://www.cnbc.com/2026/10/31/401k-cash-outs-automatic-rollovers.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 31 Oct 2026 13:30:01 GMT"
+  },
+  {
    "titulo": "Trump promised to slash energy costs  — but gasoline, diesel and jet fuel all soared instead",
    "url": "https://www.cnbc.com/2026/10/31/trump-gas-diesel-price-midterm-election.html",
    "fuente": "CNBC",
@@ -568,22 +574,16 @@
    "fecha": "Sat, 31 Oct 2026 11:00:01 GMT"
   },
   {
-   "titulo": "The rise of the 15-foot skeleton—how a viral novelty became a Halloween staple",
-   "url": "https://www.cnbc.com/make-it/2026/10/23/giant-halloween-skeleton-decorations.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 31 Oct 2026 10:27:19 GMT"
-  },
-  {
    "titulo": "Trump called out Big Oil profits. Here’s how much their refining earnings have surged since",
    "url": "https://www.cnbc.com/2026/10/31/trump-big-oil-refining-profits.html",
    "fuente": "CNBC",
    "fecha": "Sat, 31 Oct 2026 06:00:02 GMT"
   },
   {
-   "titulo": "Halloween gets pricier as chocolate costs climb — Hershey may feel the pinch",
-   "url": "https://www.cnbc.com/2026/10/30/halloween-gets-pricier-as-chocolate-costs-rise-hershey-could-feel-it.html",
+   "titulo": "Treasury Department announces new Series I bond rate of 5.51% for the next six months",
+   "url": "https://www.cnbc.com/2026/10/30/treasury-i-bond-rate-through-april-2027.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 30 Oct 2026 16:55:41 GMT"
+   "fecha": "Fri, 30 Oct 2026 17:15:53 GMT"
   }
  ],
  "videos": [
@@ -697,7 +697,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-10-31T21:11:24Z",
+ "ts": "2026-11-01T00:12:09Z",
  "fallas": [
   "videos",
   "directos"
