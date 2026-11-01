@@ -151,7 +151,7 @@ NORTHPOINT es una herramienta de registro y análisis. No da señales ni asesor�
     const d = {}; Q.forEach(([id, t, q]) => { if (t) d[q.replace('{nombre}', '').replace(/^Hola \. /, '')] = val(id); });
     const nom = val('nombre');
     try {
-      const campos = { Nombre: nom, Correo: val('correo'), WhatsApp: val('wa'), 'País': val('pais'), Experiencia: val('exp'), Mercados: val('mer'), Cuenta: val('cta'), 'Tamaño': val('tam'), Objetivo: val('obj'), Plan: val('plan'), 'Nos conoció por': val('ori') };
+      const campos = { Nombre: nom, Correo: val('correo'), WhatsApp: val('wa'), 'País': val('pais'), Experiencia: val('exp'), Mercados: val('mer'), Cuenta: val('cta'), 'Tamaño': val('tam'), Objetivo: val('obj'), Plan: val('plan'), 'Nos conoció por': val('ori'), Canal: (()=>{try{return localStorage.getItem('np-utm')||'directo'}catch(e){return ''}})(), Referencia: (()=>{try{return localStorage.getItem('np-ref')||''}catch(e){return ''}})() };
       if (W3F_KEY) { const r = await fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify({ access_key: W3F_KEY, subject: `Nueva solicitud NORTHPOINT · ${nom}`, from_name: 'NORTHPOINT · Aplicar', replyto: val('correo'), ...campos }) });
         const j = await r.json().catch(() => ({})); if (!r.ok || j.success === false) throw new Error('W3F ' + r.status); ir(k + 1); return; }
@@ -180,5 +180,6 @@ NORTHPOINT es una herramienta de registro y análisis. No da señales ni asesor�
   ir(0);
 })();
 </script>
+<script>/* guarda de qué canal llegó la visita (utm_*) para que viaje en la solicitud */try{const q=new URLSearchParams(location.search),u=["utm_source","utm_medium","utm_campaign"].map(k=>q.get(k)).filter(Boolean).join(" / ");if(u)localStorage.setItem("np-utm",u);if(!localStorage.getItem("np-ref")&&document.referrer&&!document.referrer.includes(location.host))localStorage.setItem("np-ref",document.referrer)}catch(e){}</script>
 </body>
 </html>

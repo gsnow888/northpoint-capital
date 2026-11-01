@@ -1134,5 +1134,6 @@ const REDES = {
   $$('video').forEach(v => { if (v.id !== 'mvV') vo.observe(v); });
 })();
 </script>
+<script>/* guarda de qué canal llegó la visita (utm_*) para que viaje en la solicitud */try{const q=new URLSearchParams(location.search),u=["utm_source","utm_medium","utm_campaign"].map(k=>q.get(k)).filter(Boolean).join(" / ");if(u)localStorage.setItem("np-utm",u);if(!localStorage.getItem("np-ref")&&document.referrer&&!document.referrer.includes(location.host))localStorage.setItem("np-ref",document.referrer)}catch(e){}</script>
 </body>
 </html>
