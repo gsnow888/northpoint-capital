@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Drawdown trailing EOD vs intradía: cuál te conviene · NORTHPOINT</title>
+<meta name="description" content="Diferencia entre el drawdown trailing al cierre del día (EOD) y el intradía, con ejemplos numéricos en una cuenta de 50K y una calculadora para ver tu límite real.">
+<link rel="canonical" href="https://northpointcapital.io/trading/guias/drawdown-eod-vs-intradia.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Drawdown trailing EOD vs intradía: cuál te conviene">
+<meta property="og:description" content="Ejemplos con una cuenta de 50K y calculadora para ver tu límite real.">
+<meta property="og:url" content="https://northpointcapital.io/trading/guias/drawdown-eod-vs-intradia.html">
+<meta property="og:image" content="https://northpointcapital.io/trading/assets/l/s-panel.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#030303">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Drawdown trailing EOD vs intradía: cuál te conviene","inLanguage":"es","datePublished":"2026-11-01","dateModified":"2026-11-01","author":{"@type":"Organization","name":"NORTHPOINT"},"publisher":{"@type":"Organization","name":"NORTHPOINT"},"mainEntityOfPage":"https://northpointcapital.io/trading/guias/drawdown-eod-vs-intradia.html","image":"https://northpointcapital.io/trading/assets/l/s-panel.jpg"}</script>
+<style>
+:root{--bg:#030303;--p:#0a0b0e;--l:rgba(255,255,255,.08);--l2:rgba(255,255,255,.14);--t:#f4f5f7;--t2:#a1a6b0;--t3:#6b7079;--ac:#3b82f6;--ac2:#60a5fa;--mono:'Geist Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--t);font-family:Geist,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.7}
+a{color:var(--ac2)}
+.nav{border-bottom:1px solid var(--l)}
+.nav .w{display:flex;justify-content:space-between;align-items:center;height:64px}
+.w{max-width:720px;margin:0 auto;padding:0 16px}
+.logo{color:var(--t);text-decoration:none;font-weight:800;letter-spacing:.14em;font-size:14px}
+.btn{display:inline-flex;align-items:center;height:42px;padding:0 18px;border-radius:4px;background:var(--ac);color:#fff;text-decoration:none;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+.kick{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--t3);margin:56px 0 14px}
+h1{font-size:clamp(30px,6vw,44px);line-height:1.12;letter-spacing:-.02em;font-weight:700}
+.lead{color:var(--t2);font-size:18px;margin:18px 0 8px}
+h2{font-size:24px;letter-spacing:-.01em;margin:52px 0 14px;line-height:1.25}
+h3{font-size:17px;margin:26px 0 8px}
+p,li{color:#d4d7dd;font-size:16.5px}
+p+p{margin-top:14px}
+ul,ol{padding-left:22px;margin:12px 0}
+li{margin:6px 0}
+strong{color:var(--t)}
+.box{border:1px solid var(--l2);background:var(--p);border-radius:10px;padding:18px 20px;margin:22px 0}
+.box p{font-size:15.5px}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--l)}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--t3);font-weight:500}
+td{color:#d4d7dd;font-family:var(--mono);font-size:14px}
+.scroll{overflow-x:auto}
+.cta{margin:60px 0;border:1px solid rgba(59,130,246,.4);border-radius:12px;padding:28px;background:linear-gradient(180deg,rgba(59,130,246,.08),transparent)}
+.cta h2{margin-top:0}
+.cta p{margin-bottom:18px}
+footer{border-top:1px solid var(--l);padding:28px 0 60px;color:var(--t3);font-size:13px}
+footer p{color:var(--t3);font-size:13px}
+.calc .fila{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:8px}.calc label{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);display:flex;flex-direction:column;gap:6px}.calc input{width:120px;background:#000;border:1px solid var(--l2);color:var(--t);border-radius:5px;padding:8px;font-family:var(--mono);font-size:14px}.calc td input{width:100%;min-width:90px}.mal{color:#f87171}.nota{color:var(--t3)!important;font-size:13px!important;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="nav"><div class="w"><a class="logo" href="/trading/">NORTHPOINT</a><a class="btn" href="/trading/aplicar.html?utm_source=guia&utm_medium=articulo&utm_campaign=drawdown-eod">Aplicar</a></div></div>
+<main class="w">
+  <div class="kick">Guía · Fondeo · 7 min</div>
+  <h1>Drawdown trailing EOD vs intradía: cuál te conviene</h1>
+  <p class="lead">Dos cuentas de 50,000 con el mismo drawdown de 2,000 pueden ser muy distintas. Todo depende de cuándo sube tu límite.</p>
+
+  <h2>La diferencia en una frase</h2>
+  <p>En los dos casos el límite de pérdida <strong>sigue a tu saldo hacia arriba</strong> y nunca baja. Lo que cambia es el momento en que se ajusta:</p>
+  <ul>
+    <li><strong>Intradía:</strong> se ajusta con el punto más alto de tu saldo en cualquier momento, incluso con ganancias abiertas que todavía no cierras.</li>
+    <li><strong>EOD (end of day):</strong> se ajusta solo con tu saldo al cierre de cada día. Lo que pase dentro del día no lo mueve.</li>
+  </ul>
+
+  <h2>El mismo día, con los dos drawdowns</h2>
+  <p>Cuenta de 50,000, drawdown de 2,000. Ambos empiezan con el límite en 48,000.</p>
+  <p>Abres una operación que llega a <strong>+800</strong> de ganancia abierta. No la cierras, el precio regresa y terminas el día en <strong>+100</strong>.</p>
+  <div class="scroll"><table>
+    <tr><th></th><th>Intradía</th><th>EOD</th></tr>
+    <tr><td>Saldo más alto del día</td><td>50,800</td><td>50,800</td></tr>
+    <tr><td>Saldo al cierre</td><td>50,100</td><td>50,100</td></tr>
+    <tr><td>Nuevo límite</td><td>48,800</td><td>48,100</td></tr>
+    <tr><td>Margen para mañana</td><td>1,300</td><td>2,000</td></tr>
+  </table></div>
+  <p>Ganaste 100 en los dos casos. Pero con el intradía <strong>perdiste 700 de margen</strong>, porque el límite subió con una ganancia que nunca cobraste. Con el EOD, tu margen sigue completo.</p>
+
+  <h2>Calcula tu caso</h2>
+  <p>Pon tu saldo inicial, tu drawdown y, para cada día, el saldo más alto que tocaste (contando lo abierto) y el saldo al cierre.</p>
+  <div class="box calc">
+    <div class="fila"><label>Saldo inicial<input id="ini" type="number" value="50000"></label><label>Drawdown<input id="dd" type="number" value="2000"></label></div>
+    <div class="scroll"><table id="dias">
+      <tr><th>Día</th><th>Máximo del día</th><th>Cierre</th></tr>
+      <tr><td>1</td><td><input type="number" value="50800"></td><td><input type="number" value="50100"></td></tr>
+      <tr><td>2</td><td><input type="number" value="51200"></td><td><input type="number" value="50400"></td></tr>
+      <tr><td>3</td><td><input type="number" value="50600"></td><td><input type="number" value="50300"></td></tr>
+    </table></div>
+    <div class="scroll"><table id="res"></table></div>
+    <p class="nota">Simplificado: no incluye el nivel donde algunas empresas dejan de subir el trailing, ni límites de pérdida diaria aparte.</p>
+  </div>
+
+  <h2>Cómo operar con cada uno</h2>
+  <h3>Con intradía</h3>
+  <ul>
+    <li><strong>Protege las ganancias abiertas.</strong> Cada punto a favor que dejas ir te cuesta margen. Mueve el stop o toma parciales.</li>
+    <li>Las operaciones que buscan recorridos largos con mucho retroceso en medio son caras: el retroceso no te saca, pero el máximo ya te subió el límite.</li>
+    <li>Revisa tu margen real <strong>durante</strong> el día, no solo al final.</li>
+  </ul>
+  <h3>Con EOD</h3>
+  <ul>
+    <li>Tienes más espacio para que una operación respire dentro del día.</li>
+    <li>El riesgo es confiarse: si cierras el día en verde y muy arriba, el límite sube todo de golpe al día siguiente.</li>
+    <li>Muchas empresas que usan EOD también tienen un <strong>límite de pérdida diaria</strong> aparte. Ese sí cuenta dentro del día.</li>
+  </ul>
+
+  <h2>¿Cuál conviene?</h2>
+  <p>Para la mayoría de los traders, sobre todo si dejan correr las operaciones, el <strong>EOD es más amable</strong>: no te castiga por ganancias que no cobraste. El intradía suele funcionar mejor para quien toma ganancias rápido y opera con stops ajustados.</p>
+  <p>Más importante que cuál escoges: <strong>sabe cuál tienes</strong> y lleva tu límite actualizado cada día. La mayoría de las cuentas que se pierden "por sorpresa" se pierden porque el trader calculaba con el límite del primer día.</p>
+  <div class="box"><p>Antes de comprar una evaluación, revisa en las reglas oficiales qué tipo de trailing usa, en qué nivel deja de subir y si hay límite diario aparte. Cambian seguido y son distintas en cada plan.</p></div>
+  <p>¿Todavía no tienes claro cómo pasar la evaluación completa? Lee <a href="pasar-evaluacion-fondeo.html">Cómo pasar una evaluación de fondeo sin quemar la cuenta</a>.</p>
+
+  <div class="cta">
+    <h2>Tu límite real, calculado solo</h2>
+    <p>NORTHPOINT importa tus operaciones y te muestra cada día cuánto drawdown te queda, con tu tipo de trailing. Para Mac y Windows, con comunidad en Discord. Entrada por invitación.</p>
+    <a class="btn" href="/trading/aplicar.html?utm_source=guia&utm_medium=articulo&utm_campaign=drawdown-eod">Aplicar por un lugar</a>
+  </div>
+</main>
+<footer><div class="w"><p>Contenido educativo, no es asesoría financiera. Operar futuros y otros instrumentos apalancados implica riesgo de pérdida. Revisa siempre las reglas vigentes de tu empresa de fondeo.</p><p style="margin-top:10px"><a href="/trading/">NORTHPOINT</a></p></div></footer>
+<script>
+const $=id=>document.getElementById(id),f=n=>Math.round(n).toLocaleString('es-MX');
+function calc(){
+  const ini=+$('ini').value||0,dd=+$('dd').value||0;
+  let pI=ini,pE=ini,h='<tr><th>Día</th><th>Límite intradía</th><th>Margen</th><th>Límite EOD</th><th>Margen</th></tr>';
+  [...$('dias').querySelectorAll('tr')].slice(1).forEach((r,i)=>{
+    const [mx,cl]=[...r.querySelectorAll('input')].map(x=>+x.value||0);
+    pI=Math.max(pI,mx,cl);pE=Math.max(pE,cl);
+    const lI=pI-dd,lE=pE-dd,mI=cl-lI,mE=cl-lE;
+    h+=`<tr><td>${i+1}</td><td>${f(lI)}</td><td class="${mI<=0?'mal':''}">${mI<=0?'Cuenta perdida':f(mI)}</td><td>${f(lE)}</td><td class="${mE<=0?'mal':''}">${mE<=0?'Cuenta perdida':f(mE)}</td></tr>`;
+  });
+  $('res').innerHTML=h;
+}
+document.querySelector('.calc').addEventListener('input',calc);calc();
+</script>
+</body>
+</html>
