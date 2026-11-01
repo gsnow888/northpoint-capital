@@ -70,6 +70,7 @@ body{font-family:Geist,system-ui,sans-serif;color:var(--tx);background:radial-gr
    ábrelo y confirma. Después FormSubmit te da un código (ej. 3f9a...); pégalo aquí en lugar del correo
    para que tu dirección no quede visible en la página. */
 const DESTINO = 'andremacouzetruiz@gmail.com';
+const W3F_KEY = '';   // clave de acceso de Web3Forms (pública por diseño): con ella las solicitudes llegan a tu Gmail sin depender de FormSubmit
 /* ── INVITACIÓN AUTOMÁTICA ──
    Cada persona que aplica recibe al instante este correo. Pega aquí tu link de Calendly (evento de 20 min con Zoom):
    al elegir horario, Calendly crea la reunión de Zoom y la manda a su calendario y al tuyo. */
@@ -145,6 +146,10 @@ NORTHPOINT es una herramienta de registro y análisis. No da señales ni asesor�
     const d = {}; Q.forEach(([id, t, q]) => { if (t) d[q.replace('{nombre}', '').replace(/^Hola \. /, '')] = val(id); });
     const nom = val('nombre');
     try {
+      const campos = { Nombre: nom, Correo: val('correo'), WhatsApp: val('wa'), 'País': val('pais'), Experiencia: val('exp'), Mercados: val('mer'), Cuenta: val('cta'), 'Tamaño': val('tam'), Objetivo: val('obj'), Plan: val('plan'), 'Nos conoció por': val('ori') };
+      if (W3F_KEY) { const r = await fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({ access_key: W3F_KEY, subject: `Nueva solicitud NORTHPOINT · ${nom}`, from_name: 'NORTHPOINT · Aplicar', replyto: val('correo'), ...campos }) });
+        const j = await r.json().catch(() => ({})); if (!r.ok || j.success === false) throw new Error('W3F ' + r.status); ir(k + 1); return; }
       const r = await fetch('https://formsubmit.co/ajax/' + DESTINO, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({ _subject: `Nueva solicitud NORTHPOINT · ${nom}`, _template: 'table', _replyto: val('correo'), email: val('correo'), _autoresponse: invitacion(nom), Nombre: nom, Correo: val('correo'), WhatsApp: val('wa'), País: val('pais'), Experiencia: val('exp'), Mercados: val('mer'), Cuenta: val('cta'), Tamaño: val('tam'), Objetivo: val('obj'), Plan: val('plan'), 'Nos conoció por': val('ori'), Enviada: new Date().toLocaleString('es-MX') }) });
       if (!r.ok) throw new Error('HTTP ' + r.status);
