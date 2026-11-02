@@ -195,51 +195,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 28534.0,
-   "cambio": -1278.0,
-   "pct": -4.29
+   "precio": 28766.5,
+   "cambio": -1045.5,
+   "pct": -3.51
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7614.0,
-   "cambio": -144.25,
-   "pct": -1.86
+   "precio": 7645.0,
+   "cambio": -113.25,
+   "pct": -1.46
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3898.9,
-   "cambio": -175.7,
-   "pct": -4.31
+   "precio": 3918.0,
+   "cambio": -156.6,
+   "pct": -3.84
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 104.12,
-   "cambio": 4.22,
-   "pct": 4.22
+   "precio": 101.68,
+   "cambio": 1.78,
+   "pct": 1.78
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2821.3,
-   "cambio": -7.2,
-   "pct": -0.25
+   "precio": 2836.8,
+   "cambio": 8.3,
+   "pct": 0.29
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51918.0,
-   "cambio": -661.0,
-   "pct": -1.26
+   "precio": 52111.0,
+   "cambio": -468.0,
+   "pct": -0.89
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 77805.0,
-   "cambio": -2940.0,
-   "pct": -3.64
+   "precio": 78785.0,
+   "cambio": -1960.0,
+   "pct": -2.43
   }
  ],
  "acciones": [
@@ -414,16 +414,28 @@
  ],
  "noticias": [
   {
-   "titulo": "Everything changed for the oil, AI and bond trades over the past month",
-   "url": "https://www.cnbc.com/2026/11/01/oil-bond-yields-ai-market.html",
+   "titulo": "This is the biggest threat to the AI-powered bull market",
+   "url": "https://www.marketwatch.com/story/this-is-the-biggest-threat-to-the-ai-powered-bull-market-e757ca37?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 02 Nov 2026 00:22:00 GMT"
+  },
+  {
+   "titulo": "Apple’s new earnings era begins at a critical time for Big Tech",
+   "url": "https://www.marketwatch.com/story/apples-new-earnings-era-begins-at-a-critical-time-for-big-tech-2236a44e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 02 Nov 2026 00:21:00 GMT"
+  },
+  {
+   "titulo": "Binance sees $3.64 billion in net outflows as withdrawals resume after massive hack",
+   "url": "https://www.cnbc.com/2026/11/02/binance-outflow-hack-bitcoin.html",
    "fuente": "CNBC",
-   "fecha": "Sun, 01 Nov 2026 22:27:40 GMT"
+   "fecha": "Mon, 02 Nov 2026 00:11:37 GMT"
   },
   {
    "titulo": "Judge dismisses Alaska Senate election lawsuit; DOJ vows appeal",
    "url": "https://www.cnbc.com/2026/11/01/alaska-senate-doj-lawsuit-dismissed-sullivan-peltola.html",
    "fuente": "CNBC",
-   "fecha": "Sun, 01 Nov 2026 21:25:03 GMT"
+   "fecha": "Sun, 01 Nov 2026 23:17:57 GMT"
   },
   {
    "titulo": "Democratic Rep. Stevens endorses Republican Rogers over rival El-Sayed in Michigan Senate election",
@@ -442,6 +454,12 @@
    "url": "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sun, 01 Nov 2026 19:20:00 GMT"
+  },
+  {
+   "titulo": "Connecticut Sen. Chris Murphy has stroke and is in the hospital, office says",
+   "url": "https://www.cnbc.com/2026/11/01/chris-murphy-stroke-senate-hospital.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 01 Nov 2026 19:10:12 GMT"
   },
   {
    "titulo": "My father has Alzheimer’s and his caregiver is using his debit card for DoorDash. Do I intervene?",
@@ -474,22 +492,16 @@
    "fecha": "Sun, 01 Nov 2026 15:20:06 GMT"
   },
   {
-   "titulo": "Apple’s new earnings era begins at a critical time for Big Tech",
-   "url": "https://www.marketwatch.com/story/apples-new-earnings-era-begins-at-a-critical-time-for-big-tech-2236a44e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 01 Nov 2026 15:00:00 GMT"
+   "titulo": "Social Security may have to cut retirement benefits in six years. Here's how much money is at stake for beneficiaries",
+   "url": "https://www.cnbc.com/2026/11/01/social-security-benefit-cuts-2032.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 01 Nov 2026 15:18:38 GMT"
   },
   {
    "titulo": "Why AI is boosting Meta's ad business while hurting Google search",
    "url": "https://www.cnbc.com/2026/11/01/ai-meta-ads-google-search.html",
    "fuente": "CNBC",
    "fecha": "Sun, 01 Nov 2026 14:31:29 GMT"
-  },
-  {
-   "titulo": "This is the biggest threat to the AI-powered bull market",
-   "url": "https://www.marketwatch.com/story/this-is-the-biggest-threat-to-the-ai-powered-bull-market-e757ca37?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 01 Nov 2026 14:00:00 GMT"
   },
   {
    "titulo": "America is doing better than you think. Your algorithm is just hiding it.",
@@ -502,18 +514,6 @@
    "url": "https://www.marketwatch.com/story/who-really-wins-under-trumps-economy-coastal-liberal-elites-who-hate-him-d74c63cb?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sun, 01 Nov 2026 13:00:00 GMT"
-  },
-  {
-   "titulo": "The midterm election could reshape the muni bond market. Here’s what investors need to know",
-   "url": "https://www.cnbc.com/2026/11/01/election-municipal-bonds.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 01 Nov 2026 12:30:48 GMT"
-  },
-  {
-   "titulo": "Binance resumes withdrawals following $6.3 billion hack, says 90% of stolen user assets are covered",
-   "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 01 Nov 2026 12:19:33 GMT"
   },
   {
    "titulo": "Trump defamation suit against Murdoch, WSJ over Epstein letter dismissed with prejudice",
@@ -657,7 +657,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-01T22:37:08Z",
+ "ts": "2026-11-02T01:48:58Z",
  "fallas": [
   "videos",
   "directos"
