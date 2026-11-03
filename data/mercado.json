@@ -195,51 +195,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 28240.5,
-   "cambio": -1739.0,
-   "pct": -5.8
+   "precio": 28158.25,
+   "cambio": -1403.75,
+   "pct": -4.75
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7579.25,
-   "cambio": -204.0,
-   "pct": -2.62
+   "precio": 7561.75,
+   "cambio": -192.5,
+   "pct": -2.48
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3960.4,
-   "cambio": -91.2,
-   "pct": -2.25
+   "precio": 3906.3,
+   "cambio": -125.1,
+   "pct": -3.1
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 96.55,
-   "cambio": -6.23,
-   "pct": -6.06
+   "precio": 98.15,
+   "cambio": -3.85,
+   "pct": -3.77
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2819.7,
-   "cambio": -19.8,
-   "pct": -0.7
+   "precio": 2812.2,
+   "cambio": -55.1,
+   "pct": -1.92
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52031.0,
-   "cambio": -665.0,
-   "pct": -1.26
+   "precio": 51798.0,
+   "cambio": -714.0,
+   "pct": -1.36
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 77355.0,
-   "cambio": -4170.0,
-   "pct": -5.11
+   "precio": 76715.0,
+   "cambio": -4030.0,
+   "pct": -4.99
   }
  ],
  "acciones": [
@@ -414,6 +414,36 @@
  ],
  "noticias": [
   {
+   "titulo": "Brookfield targets $27 billion AI data center at power station. Energy firm Drax surges 8%",
+   "url": "https://www.cnbc.com/2026/11/03/brookfield-ai-data-center-yorkshire-drax.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 03 Nov 2026 08:28:31 GMT"
+  },
+  {
+   "titulo": "U.S. strikes Iran’s Qeshm Island as Vance hopes for ‘negotiated settlement’ with Tehran",
+   "url": "https://www.cnbc.com/2026/11/03/iran-us-vance-trump-strikes.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 03 Nov 2026 08:27:23 GMT"
+  },
+  {
+   "titulo": "North Korea denies links to Binance hack as researchers trace stolen billions",
+   "url": "https://www.cnbc.com/2026/11/03/north-korea-binance-elliptic-chainalysis.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 03 Nov 2026 06:32:10 GMT"
+  },
+  {
+   "titulo": "Australia hikes rates to 18-year high to fight inflation",
+   "url": "https://www.cnbc.com/2026/11/03/australia-hikes-rates-18-year-high-finflation.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 03 Nov 2026 03:46:20 GMT"
+  },
+  {
+   "titulo": "OpenAI hires former U.S. Army Secretary Dan Driscoll for national security role",
+   "url": "https://www.cnbc.com/2026/11/03/openai-hires-dan-driscoll-national-security.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 03 Nov 2026 02:47:57 GMT"
+  },
+  {
    "titulo": "Supreme Court rejects DOJ's bid to block California from counting disputed ballots",
    "url": "https://www.cnbc.com/2026/11/02/supreme-court-california-mail-ballots-election.html",
    "fuente": "CNBC",
@@ -436,12 +466,6 @@
    "url": "https://www.marketwatch.com/story/nasdaq-100-tumbles-into-its-third-correction-this-year-as-ai-worries-mount-abee4c0d?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Tue, 03 Nov 2026 00:03:00 GMT"
-  },
-  {
-   "titulo": "Jim Cramer says these six fashion stocks are buys beyond the AI trade",
-   "url": "https://www.cnbc.com/2026/11/02/jim-cramer-fashion-stocks.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 02 Nov 2026 23:54:27 GMT"
   },
   {
    "titulo": "Marvell and Lumentum shareholders unite in panning merger deal: ‘It’s a trash offer’",
@@ -516,34 +540,10 @@
    "fecha": "Mon, 02 Nov 2026 21:09:00 GMT"
   },
   {
-   "titulo": "I bonds now pay 5.51% — but there are trade-offs. What to know before buying",
-   "url": "https://www.cnbc.com/2026/11/02/i-bonds-rate.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 02 Nov 2026 20:57:50 GMT"
-  },
-  {
-   "titulo": "Prediction market traders now see nearly 75% chance of Democrats winning the Senate",
-   "url": "https://www.cnbc.com/2026/11/02/prediction-market-traders-now-see-nearly-75percent-chance-of-democrats-winning-the-senate.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 02 Nov 2026 20:48:21 GMT"
-  },
-  {
-   "titulo": "Crude oil prices sell off more than 7% on Iran peace talk hopes ahead of U.S. midterms",
-   "url": "https://www.cnbc.com/2026/11/02/oil-prices-fall-as-iran-us-pursue-diplomacy.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 02 Nov 2026 20:19:25 GMT"
-  },
-  {
    "titulo": "Trump Account holders to receive SpaceX stock from Gwynne Shotwell in December",
    "url": "https://www.cnbc.com/2026/11/02/trump-accounts-spacex-shares-shotwell.html",
    "fuente": "CNBC",
    "fecha": "Mon, 02 Nov 2026 19:46:47 GMT"
-  },
-  {
-   "titulo": "Anthropic reports $17 billion in Q3 revenue, purchase commitments of $895.4 billion in revised S-1",
-   "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 02 Nov 2026 17:52:01 GMT"
   }
  ],
  "videos": [
@@ -657,7 +657,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-03T01:46:39Z",
+ "ts": "2026-11-03T09:09:52Z",
  "fallas": [
   "videos",
   "directos"
