@@ -6,3 +6,4 @@ Allow: /
 Disallow: /tools/
 
 Sitemap: https://northpointcapital.io/sitemap.xml
+Sitemap: https://northpointcapital.io/trading/sitemap.xml
