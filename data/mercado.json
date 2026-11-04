@@ -195,355 +195,355 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 28749.0,
-   "cambio": 215.0,
-   "pct": 0.75
+   "precio": 28557.25,
+   "cambio": 23.25,
+   "pct": 0.08
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7742.75,
-   "cambio": 128.75,
-   "pct": 1.69
+   "precio": 7727.25,
+   "cambio": 113.25,
+   "pct": 1.49
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4076.2,
-   "cambio": 177.3,
-   "pct": 4.55
+   "precio": 4072.3,
+   "cambio": 173.4,
+   "pct": 4.45
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 88.2,
-   "cambio": -15.92,
-   "pct": -15.29
+   "precio": 88.15,
+   "cambio": -15.97,
+   "pct": -15.34
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2868.4,
-   "cambio": 47.1,
-   "pct": 1.67
+   "precio": 2869.8,
+   "cambio": 48.5,
+   "pct": 1.72
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 53449.0,
-   "cambio": 1531.0,
-   "pct": 2.95
+   "precio": 53570.0,
+   "cambio": 1652.0,
+   "pct": 3.18
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 80950.0,
-   "cambio": 3481.0,
-   "pct": 4.49
+   "precio": 80810.0,
+   "cambio": 3341.0,
+   "pct": 4.31
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 158.0,
-   "pct": -0.19,
+   "precio": 157.81,
+   "pct": -0.3,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 706.54,
-   "pct": -0.47,
+   "precio": 704.78,
+   "pct": -0.72,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 377.75,
-   "pct": -0.37,
+   "precio": 376.92,
+   "pct": -0.59,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 83.92,
-   "pct": 0.2,
+   "precio": 83.88,
+   "pct": 0.16,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 695.5,
-   "pct": -4.15,
+   "precio": 691.95,
+   "pct": -4.64,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 768.58,
-   "pct": -0.48,
+   "precio": 766.81,
+   "pct": -0.71,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 71.43,
-   "pct": 0.34,
+   "precio": 71.5,
+   "pct": 0.44,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 36.11,
-   "pct": 2.92,
+   "precio": 36.21,
+   "pct": 3.19,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 97.54,
-   "pct": 6.26,
+   "precio": 98.03,
+   "pct": 6.8,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 75.23,
-   "pct": -2.71,
+   "precio": 74.94,
+   "pct": -3.09,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 372.79,
-   "pct": -0.19,
+   "precio": 372.49,
+   "pct": -0.27,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 45.6,
-   "pct": -1.17,
+   "precio": 45.33,
+   "pct": -1.76,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 353.94,
-   "pct": 2.94,
+   "precio": 349.51,
+   "pct": 1.65,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 555.43,
-   "pct": 4.6,
+   "precio": 555.8,
+   "pct": 4.67,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 203.96,
-   "pct": -5.3,
+   "precio": 200.13,
+   "pct": -7.08,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 292.23,
-   "pct": -10.05,
+   "precio": 288.93,
+   "pct": -11.07,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 269.97,
-   "pct": 6.04,
+   "precio": 266.03,
+   "pct": 4.49,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 639.23,
-   "pct": 4.37,
+   "precio": 630.0,
+   "pct": 2.86,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 389.47,
-   "pct": -3.65,
+   "precio": 385.19,
+   "pct": -4.71,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 573.36,
-   "pct": 6.11,
+   "precio": 579.09,
+   "pct": 7.17,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 1046.84,
-   "pct": 6.52,
+   "precio": 1046.47,
+   "pct": 6.49,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 351.42,
-   "pct": 3.57,
+   "precio": 352.11,
+   "pct": 3.78,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 432.6,
-   "pct": 7.99,
+   "precio": 436.57,
+   "pct": 8.98,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 408.53,
-   "pct": 0.35,
+   "precio": 409.38,
+   "pct": 0.56,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "These 12 stocks are good bets to beat the 10-year Treasury over the next decade",
-   "url": "https://www.marketwatch.com/story/these-12-stocks-are-good-bets-to-beat-the-10-year-treasury-over-the-next-decade-cc4f308b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 18:03:00 GMT"
-  },
-  {
-   "titulo": "CVS to split off drugstore business in major breakup of healthcare giant; shares fall 10%",
-   "url": "https://www.cnbc.com/2026/11/04/cvs-to-split-off-drugstore-business.html",
+   "titulo": "Democrats flip dozens of GOP seats. Republicans haven't flipped a single one",
+   "url": "https://www.cnbc.com/2026/11/04/democrats-2026-midterm-election-results.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 17:49:47 GMT"
+   "fecha": "Wed, 04 Nov 2026 23:44:18 GMT"
   },
   {
-   "titulo": "Watch out for Big Tech companies like Meta and Alphabet issuing more shares and diluting your stock ownership",
-   "url": "https://www.marketwatch.com/story/watch-out-for-big-tech-companies-like-meta-and-alphabet-issuing-more-shares-and-diluting-your-stock-ownership-283e8c96?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 17:44:00 GMT"
+   "titulo": "Qualcomm stock drops 7% on weak earnings forecast as memory shortage weighs on smartphone sales",
+   "url": "https://www.cnbc.com/2026/11/04/qualcomm-qcom-earnings-report-q4-2026.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 04 Nov 2026 23:38:11 GMT"
+  },
+  {
+   "titulo": "A 'demand decade' ahead for energy? BP, Baker Hughes CEOs weigh the investment outlook",
+   "url": "https://www.cnbc.com/2026/11/05/energy-leaders-investment-outlook.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 04 Nov 2026 23:23:03 GMT"
+  },
+  {
+   "titulo": "What Wall Street billionaires are saying about Democrats' midterm sweep",
+   "url": "https://www.cnbc.com/2026/11/04/billionaires-musk-branson-democrats-midterms-ai-wall-street.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 04 Nov 2026 23:17:56 GMT"
+  },
+  {
+   "titulo": "Democrats take Congress in a blue wave. Here's what it means for your money",
+   "url": "https://www.cnbc.com/2026/11/04/blue-wave-democrats-control-congress-your-money.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 04 Nov 2026 23:11:48 GMT"
+  },
+  {
+   "titulo": "What was really behind Wednesday's monster rally? Trump quickly making peace",
+   "url": "https://www.cnbc.com/2026/11/04/stock-market-rally-trump-midterms.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 04 Nov 2026 22:55:22 GMT"
   },
   {
    "titulo": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
    "url": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 17:32:26 GMT"
+   "fecha": "Wed, 04 Nov 2026 22:46:43 GMT"
   },
   {
-   "titulo": "Hospital stocks rally while drugmakers brace for scrutiny. Here’s what the Democratic wave means for healthcare.",
-   "url": "https://www.marketwatch.com/story/hospital-stocks-rally-while-drugmakers-brace-for-scrutiny-heres-what-the-democratic-wave-means-for-healthcare-625b79f3?mod=mw_rss_topstories",
+   "titulo": "This year’s worst-performing S&P 500 stock is finally seeing some major relief",
+   "url": "https://www.marketwatch.com/story/this-years-worst-performing-s-p-500-stock-is-finally-seeing-some-major-relief-fff3fa85?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 17:19:00 GMT"
+   "fecha": "Wed, 04 Nov 2026 22:46:00 GMT"
   },
   {
-   "titulo": "What Trump can achieve without approval from a Democratic-led Congress",
-   "url": "https://www.marketwatch.com/story/what-trump-can-achieve-without-approval-from-a-democratic-led-congress-3401de75?mod=mw_rss_topstories",
+   "titulo": "‘It seems bizarre’: We’re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
+   "url": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 17:13:00 GMT"
+   "fecha": "Wed, 04 Nov 2026 22:15:00 GMT"
   },
   {
-   "titulo": "Uber beats on revenue, CEO tells CNBC the company is 'investing significantly' to add drivers",
-   "url": "https://www.cnbc.com/2026/11/04/uber-stock-q3-2026-earnings.html",
+   "titulo": "How do Americans feel about the midterm results? It depends on how much money they make.",
+   "url": "https://www.marketwatch.com/story/how-do-americans-feel-about-the-midterm-results-it-depends-on-how-much-money-they-make-e2a43f08?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 04 Nov 2026 22:06:00 GMT"
+  },
+  {
+   "titulo": "Qualcomm’s stock falls as twin forces pressure sales",
+   "url": "https://www.marketwatch.com/story/qualcomms-stock-falls-as-twin-forces-pressure-sales-fa161159?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 04 Nov 2026 22:03:00 GMT"
+  },
+  {
+   "titulo": "Prediction markets cement their status after forecasting Democratic sweep of Congress",
+   "url": "https://www.cnbc.com/2026/11/04/prediction-markets-2026-midterms-election-results.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 17:04:32 GMT"
-  },
-  {
-   "titulo": "What Republicans' huge loss means for Trump",
-   "url": "https://www.cnbc.com/2026/11/04/trump-midterm-election-results-congress.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 16:44:04 GMT"
-  },
-  {
-   "titulo": "Medicare prescription drug costs will jump 50% in 2027. Doing nothing could cost you.",
-   "url": "https://www.marketwatch.com/story/medicare-prescription-drug-costs-will-jump-50-in-2027-doing-nothing-could-cost-you-b701dfb7?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 16:38:00 GMT"
-  },
-  {
-   "titulo": "The U.S. economy is barreling ahead — but there’s one big problem",
-   "url": "https://www.marketwatch.com/story/the-u-s-economy-is-barreling-ahead-but-theres-one-big-problem-6d62e3b3?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 16:05:00 GMT"
-  },
-  {
-   "titulo": "Trump hammers Fox News, blaming network for GOP losses as ratings slide",
-   "url": "https://www.cnbc.com/2026/11/04/trump-fox-news-gop-midterm-losses.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 15:45:51 GMT"
-  },
-  {
-   "titulo": "Depressing, but true: If you want to get ahead at work, embrace virtue signaling",
-   "url": "https://www.marketwatch.com/story/depressing-but-true-if-you-want-to-get-ahead-at-work-embrace-virtue-signaling-b4e72f0a?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 15:33:00 GMT"
-  },
-  {
-   "titulo": "Elon Musk’s record election bet backfired. The backlash may reach beyond one billionaire",
-   "url": "https://www.cnbc.com/2026/11/04/elon-musk-midterms-ai-data-centers.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 15:29:01 GMT"
+   "fecha": "Wed, 04 Nov 2026 21:57:39 GMT"
   },
   {
    "titulo": "Micron and other chip stocks slip as election results strike at the core of data-center optimism",
    "url": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-slip-as-election-results-strike-at-the-core-of-data-center-optimism-b55d19b3?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 15:17:00 GMT"
+   "fecha": "Wed, 04 Nov 2026 21:55:00 GMT"
   },
   {
-   "titulo": "Datadog’s stock extends steep declines in the wake of earnings",
-   "url": "https://www.marketwatch.com/story/datadogs-stock-extends-steep-declines-in-the-wake-of-earnings-af412874?mod=mw_rss_topstories",
+   "titulo": "These stocks soared the most today after the Democrats trounced Trump",
+   "url": "https://www.marketwatch.com/story/these-stocks-have-soared-the-most-today-after-the-democrats-trounced-trump-9d785314?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 15:16:00 GMT"
+   "fecha": "Wed, 04 Nov 2026 21:55:00 GMT"
   },
   {
-   "titulo": "Qualcomm sat out the semiconductor rally. Can a SpaceX partnership change that?",
-   "url": "https://www.marketwatch.com/story/qualcomm-sat-out-the-semiconductor-rally-can-a-spacex-partnership-change-that-5bb4c0b2?mod=mw_rss_topstories",
+   "titulo": "What Republicans' huge loss means for Trump",
+   "url": "https://www.cnbc.com/2026/11/04/trump-midterm-election-results-congress.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 04 Nov 2026 21:50:05 GMT"
+  },
+  {
+   "titulo": "Every stock that moved because of the election",
+   "url": "https://www.cnbc.com/2026/11/04/every-stock-thats-moving-as-a-result-of-the-election.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 04 Nov 2026 21:48:51 GMT"
+  },
+  {
+   "titulo": "Figma’s stock falls as investors worry that AI momentum is coming at a high price",
+   "url": "https://www.marketwatch.com/story/figmas-stock-falls-as-investors-worry-that-ai-momentum-is-coming-at-a-high-price-1aa2134d?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 15:13:00 GMT"
+   "fecha": "Wed, 04 Nov 2026 21:48:00 GMT"
   },
   {
-   "titulo": "McDonald's stock rises as earnings beat, U.S. restaurants show improvement",
-   "url": "https://www.cnbc.com/2026/11/04/mcdonalds-is-about-to-report-earnings-heres-what-to-expect.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 15:05:28 GMT"
+   "titulo": "Microsoft and Amazon combined to see a $424 billion market-cap boost — and these factors show why",
+   "url": "https://www.marketwatch.com/story/microsoft-and-amazon-combine-for-a-400-billion-market-cap-boost-and-these-factors-show-why-6655d1a9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 04 Nov 2026 21:33:00 GMT"
   },
   {
-   "titulo": "AI data center stocks and Musk's SpaceX decline as Texas governor result raises risks of a slowdown",
-   "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 14:43:57 GMT"
+   "titulo": "Big Tech is driving a historic divide in the S&P 500. Why investors need to take notice.",
+   "url": "https://www.marketwatch.com/story/wall-street-veteran-says-these-are-some-of-the-most-unbelievable-charts-he-has-ever-seen-2c78e677?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 04 Nov 2026 21:33:00 GMT"
   },
   {
-   "titulo": "SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service",
-   "url": "https://www.cnbc.com/2026/11/04/spacex-strikes-deal-with-qualcomm-for-mobile-network-infrastructure.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 13:53:54 GMT"
+   "titulo": "‘It’s good to be old’: I’ve been invited to a dozen free meals that turn into annuity sales pitches. Should I stop going?",
+   "url": "https://www.marketwatch.com/story/its-good-to-be-old-ive-been-invited-to-a-dozen-free-meals-that-turn-into-annuity-sales-pitches-should-i-stop-going-63df67ca?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 04 Nov 2026 21:30:00 GMT"
   },
   {
-   "titulo": "Americans have said 'NO TO WAR,' Iran speaker says as Democrats take Congress",
-   "url": "https://www.cnbc.com/2026/11/04/us-midterm-elections-iran-war-speaker.html",
+   "titulo": "Democrats map out an agenda to address affordability and corruption after midterm sweep",
+   "url": "https://www.cnbc.com/2026/11/04/congressional-democrats-affordability-oversight.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 13:43:31 GMT"
+   "fecha": "Wed, 04 Nov 2026 20:53:19 GMT"
   },
   {
-   "titulo": "5 midterm election takeaways: Tech billionaires suffer as Democrats drub Republicans",
-   "url": "https://www.cnbc.com/2026/11/04/midterm-election-blue-wave-trump-billionaires.html",
+   "titulo": "Crude oil prices fall below $90 a barrel as Vance blames GOP election defeat on Iran war",
+   "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 12:51:00 GMT"
-  },
-  {
-   "titulo": "What Trump losing power over Congress means for Iran, Ukraine and foreign policy",
-   "url": "https://www.cnbc.com/2026/11/04/democrats-congress-trump-foreign-policy.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 12:07:08 GMT"
+   "fecha": "Wed, 04 Nov 2026 20:14:52 GMT"
   }
  ],
  "videos": [
@@ -657,7 +657,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-04T18:13:47Z",
+ "ts": "2026-11-04T23:45:40Z",
  "fallas": [
   "videos",
   "directos"
