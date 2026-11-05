@@ -428,34 +428,34 @@ gsap.to(".news",{y:-6,duration:2.4,ease:"sine.inOut",yoyo:true,repeat:-1,stagger
 const mm=gsap.matchMedia();
 mm.add("(prefers-reduced-motion: no-preference)",()=>{
   /* hero: content flies up and shrinks, lego zooms in */
-  gsap.to(".hero h1,.hero p,.hero .ctas",{yPercent:-120,scale:.7,autoAlpha:0,ease:"none",stagger:.04,scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:true}});
-  gsap.to("#lego",{scale:1.45,yPercent:18,ease:"none",scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:true}});
+  gsap.to(".hero h1,.hero p,.hero .ctas",{yPercent:-50,scale:.9,autoAlpha:0,ease:"none",stagger:.04,scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:true}});
+  gsap.to("#lego",{scale:1.15,yPercent:8,ease:"none",scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:true}});
   /* sticky frame grows in */
-  gsap.from(".frame",{scale:.72,rotateX:24,y:160,borderRadius:40,ease:"none",transformPerspective:1200,scrollTrigger:{trigger:"#stack",start:"top bottom",end:"top top",scrub:true}});
+  gsap.from(".frame",{scale:.9,rotateX:8,y:60,borderRadius:16,ease:"none",transformPerspective:1200,scrollTrigger:{trigger:"#stack",start:"top bottom",end:"top top",scrub:true}});
   /* hubs swing in from the sides */
-  gsap.utils.toArray(".hub").forEach((h,i)=>gsap.from(h,{x:i?260:-260,y:180,rotate:i?8:-8,autoAlpha:0,ease:"none",scrollTrigger:{trigger:h,start:"top bottom",end:"top 45%",scrub:true}}));
+  gsap.utils.toArray(".hub").forEach((h,i)=>gsap.from(h,{x:i?80:-80,y:80,rotate:i?2:-2,autoAlpha:0,ease:"none",scrollTrigger:{trigger:h,start:"top bottom",end:"top 45%",scrub:true}}));
   /* big headings: letters rain down */
   document.querySelectorAll(".who h2,.white h2,.ag-head h2").forEach(h=>{const sp=SplitText.create(h,{type:"chars"});
-    gsap.from(sp.chars,{yPercent:-180,rotate:()=>gsap.utils.random(-40,40),autoAlpha:0,stagger:.025,ease:"none",scrollTrigger:{trigger:h,start:"top 95%",end:"top 45%",scrub:true}})});
+    gsap.from(sp.chars,{yPercent:-60,rotate:()=>gsap.utils.random(-10,10),autoAlpha:0,stagger:.015,ease:"none",scrollTrigger:{trigger:h,start:"top 95%",end:"top 45%",scrub:true}})});
   /* mac: tilts up from flat */
-  gsap.from(".tour",{rotateX:55,scale:.7,y:200,transformPerspective:1400,transformOrigin:"50% 100%",ease:"none",scrollTrigger:{trigger:".tour",start:"top bottom",end:"center 55%",scrub:true}});
+  gsap.from(".tour",{rotateX:20,scale:.9,y:80,transformPerspective:1400,transformOrigin:"50% 100%",ease:"none",scrollTrigger:{trigger:".tour",start:"top bottom",end:"center 55%",scrub:true}});
   /* manifesto: block slides, lego tower parallax */
-  gsap.from(".manif .t",{x:-200,ease:"none",scrollTrigger:{trigger:".manif",start:"top bottom",end:"top 30%",scrub:true}});
-  gsap.to("[data-loop=tower]",{y:-180,rotate:-6,ease:"none",scrollTrigger:{trigger:".manif",start:"top bottom",end:"bottom top",scrub:true}});
+  gsap.from(".manif .t",{x:-60,ease:"none",scrollTrigger:{trigger:".manif",start:"top bottom",end:"top 30%",scrub:true}});
+  gsap.to("[data-loop=tower]",{y:-70,rotate:-2,ease:"none",scrollTrigger:{trigger:".manif",start:"top bottom",end:"bottom top",scrub:true}});
   /* stats: tiles shoot up one after another */
-  gsap.from(".stat",{y:320,rotate:(i)=>[-6,4,-3,6][i],ease:"none",stagger:.12,scrollTrigger:{trigger:".stats",start:"top bottom",end:"top 40%",scrub:true}});
+  gsap.from(".stat",{y:120,rotate:(i)=>[-2,1.5,-1,2][i],ease:"none",stagger:.12,scrollTrigger:{trigger:".stats",start:"top bottom",end:"top 40%",scrub:true}});
   /* white section: calendar spins in */
-  gsap.from(".cal",{rotate:-14,scale:.6,x:220,ease:"none",scrollTrigger:{trigger:".white",start:"top bottom",end:"center 60%",scrub:true}});
+  gsap.from(".cal",{rotate:-4,scale:.88,x:70,ease:"none",scrollTrigger:{trigger:".white",start:"top bottom",end:"center 60%",scrub:true}});
   /* agents: dashboard rises flat -> upright */
-  gsap.from(".ag-stage",{rotateX:62,scale:.62,y:240,transformOrigin:"50% 100%",ease:"none",scrollTrigger:{trigger:".ag-stage",start:"top bottom",end:"center 55%",scrub:true}});
-  gsap.from(".ag-feats div",{y:200,autoAlpha:0,stagger:.15,ease:"none",scrollTrigger:{trigger:".ag-feats",start:"top bottom",end:"top 60%",scrub:true}});
+  gsap.from(".ag-stage",{rotateX:22,scale:.88,y:90,transformOrigin:"50% 100%",ease:"none",scrollTrigger:{trigger:".ag-stage",start:"top bottom",end:"center 55%",scrub:true}});
+  gsap.from(".ag-feats div",{y:60,autoAlpha:0,stagger:.12,ease:"none",scrollTrigger:{trigger:".ag-feats",start:"top bottom",end:"top 60%",scrub:true}});
   gsap.from(".ag-head p",{y:80,autoAlpha:0,ease:"none",scrollTrigger:{trigger:".ag-head",start:"top 80%",end:"top 30%",scrub:true}});
   /* final: title slams down, side legos fly in */
-  gsap.from(".final h2",{scale:2.2,autoAlpha:0,ease:"none",scrollTrigger:{trigger:".final",start:"top bottom",end:"top 20%",scrub:true}});
-  gsap.from(".loop-l",{xPercent:-160,rotate:-30,ease:"none",scrollTrigger:{trigger:".final",start:"top bottom",end:"top 20%",scrub:true}});
-  gsap.from(".loop-r",{xPercent:160,rotate:30,ease:"none",scrollTrigger:{trigger:".final",start:"top bottom",end:"top 20%",scrub:true}});
+  gsap.from(".final h2",{scale:1.3,autoAlpha:0,ease:"none",scrollTrigger:{trigger:".final",start:"top bottom",end:"top 20%",scrub:true}});
+  gsap.from(".loop-l",{xPercent:-50,rotate:-8,ease:"none",scrollTrigger:{trigger:".final",start:"top bottom",end:"top 20%",scrub:true}});
+  gsap.from(".loop-r",{xPercent:50,rotate:8,ease:"none",scrollTrigger:{trigger:".final",start:"top bottom",end:"top 20%",scrub:true}});
   /* footer wordmark letters spread */
-  const wc=SplitText.create(".word",{type:"chars"});gsap.from(wc.chars,{yPercent:120,stagger:.04,ease:"none",scrollTrigger:{trigger:"footer",start:"top 90%",end:"bottom bottom",scrub:true}});
+  const wc=SplitText.create(".word",{type:"chars"});gsap.from(wc.chars,{yPercent:60,stagger:.03,ease:"none",scrollTrigger:{trigger:"footer",start:"top 90%",end:"bottom bottom",scrub:true}});
 });
 /* rolling counters */
 document.querySelectorAll(".num").forEach(el=>{el.innerHTML=[...el.dataset.v].map(ch=>{if(!/\d/.test(ch))return`<span>${ch}</span>`;
