@@ -655,6 +655,55 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
 .ft-soc{display:flex;gap:14px;margin-right:auto;margin-left:22px}.ft-soc a{color:var(--tx2);display:grid;place-items:center;width:30px;height:30px;border-radius:8px;border:1px solid var(--line);transition:color .2s,border-color .2s}.ft-soc a:hover{color:#fff;border-color:var(--line2)}.ft-soc svg{width:15px;height:15px}
 .rd-l a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}.rd-l a:hover{color:#fff;border-color:var(--line2)}
 @media (max-width:600px){.ft-soc{margin-left:0;width:100%}}
+
+/* 5-nov-2026 · apoyos visuales animados de "El problema" */
+.viz{position:absolute;inset:0;display:grid;place-items:center;opacity:0;transform:scale(1.03);transition:opacity .6s,transform 1s;background:radial-gradient(ellipse at 50% 55%,rgba(61,123,255,.13),transparent 65%)}
+.viz.on{opacity:1;transform:none}
+.vz-card{width:min(420px,84%);background:rgba(10,14,24,.9);border:1px solid rgba(140,170,255,.16);border-radius:16px;padding:18px 18px 14px;box-shadow:0 30px 80px -30px rgba(61,123,255,.55);font-family:'JetBrains Mono',ui-monospace,monospace}
+.vz-h{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.14em;color:#7d8bb0;text-transform:uppercase;margin-bottom:12px}
+.vz-h b{color:#ff6b6b;font-weight:600}
+.vz-r{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;padding:9px 10px;border-radius:9px;font-size:12px;color:#c9d3ee;opacity:0;transform:translateY(8px);animation:vzIn 6s infinite}
+.vz-r small{color:#6b7896}.vz-r em{font-style:normal;text-align:right}
+.vz-r .up{color:#3ee0c4}.vz-r .dn{color:#ff6b6b}
+.vz-r.err{background:rgba(255,90,90,.08);box-shadow:inset 0 0 0 1px rgba(255,90,90,.28)}
+.vz-r.err span{color:#ff9b9b}
+.vz-r:nth-child(2){animation-delay:.2s}.vz-r:nth-child(3){animation-delay:.6s}.vz-r:nth-child(4){animation-delay:1s}.vz-r:nth-child(5){animation-delay:1.4s}.vz-r:nth-child(6){animation-delay:1.8s}
+@keyframes vzIn{0%{opacity:0;transform:translateY(8px)}8%,85%{opacity:1;transform:none}100%{opacity:0;transform:none}}
+.vz-r.err{animation-name:vzErr}
+@keyframes vzErr{0%{opacity:0;transform:translateY(8px)}8%{opacity:1;transform:none}14%{box-shadow:inset 0 0 0 1px rgba(255,90,90,.9),0 0 24px rgba(255,90,90,.35)}24%,85%{opacity:1;box-shadow:inset 0 0 0 1px rgba(255,90,90,.28)}100%{opacity:0}}
+.vz-f{margin-top:10px;padding-top:10px;border-top:1px dashed rgba(140,170,255,.18);display:flex;justify-content:space-between;font-size:11px;color:#8b97b8;opacity:0;animation:vzIn 6s 2.4s infinite}
+.vz-f b{color:#ff6b6b}
+.vz-chart{width:min(460px,88%)}
+.vz-chart svg{width:100%;height:auto;overflow:visible}
+.vz-line{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:900;stroke-dashoffset:900;animation:vzDraw 5s infinite}
+@keyframes vzDraw{0%{stroke-dashoffset:900}55%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:0;opacity:0}}
+.vz-tag{opacity:0;animation:vzTag 5s infinite}
+.vz-tag.t1{animation-delay:1.9s}.vz-tag.t2{animation-delay:2.3s}.vz-tag.t3{animation-delay:2.7s}
+@keyframes vzTag{0%{opacity:0;transform:translateY(-6px)}10%,50%{opacity:1;transform:none}70%,100%{opacity:0}}
+.vz-pulse{transform-origin:center;animation:vzPulse 1.2s infinite}
+@keyframes vzPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+.vz-net{width:min(440px,86%);aspect-ratio:1.25}
+.vz-net svg{width:100%;height:100%;overflow:visible}
+.vz-ln{stroke:rgba(110,150,255,.55);stroke-width:1.5;stroke-dasharray:240;stroke-dashoffset:240;animation:vzLn 7s infinite}
+@keyframes vzLn{0%,22%{stroke-dashoffset:240}45%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:0;opacity:0}}
+.vz-nd{opacity:0;transform-box:fill-box;transform-origin:center;animation:vzNd 7s infinite}
+@keyframes vzNd{0%,18%{opacity:0;transform:scale(.3)}30%,85%{opacity:1;transform:none}100%{opacity:0}}
+.vz-me{transform-box:fill-box;transform-origin:center;animation:vzMe 7s infinite}
+@keyframes vzMe{0%,20%{fill:#5b6478}35%,100%{fill:#5b8cff}}
+.vz-ring{fill:none;stroke:#5b8cff;transform-box:fill-box;transform-origin:center;animation:vzRing 2.4s infinite}
+@keyframes vzRing{0%{opacity:.7;transform:scale(1)}100%{opacity:0;transform:scale(3)}}
+.vz-lbl{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;fill:#8b97b8}
+.vz-cap{position:absolute;bottom:7%;left:0;right:0;text-align:center;font:500 11px 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#7d8bb0}
+.vz-cap b{color:#5b8cff;font-weight:600}
+@media (prefers-reduced-motion:reduce){.viz *{animation:none!important;opacity:1!important;stroke-dashoffset:0!important}}
+/* la app en una Mac completa */
+.lap{position:relative}
+#ventajas .lap .adv-img{border:11px solid #0f1013!important;border-bottom-width:20px!important;border-radius:18px 18px 4px 4px!important;aspect-ratio:16/10!important;background:#000!important;box-shadow:0 40px 120px -30px rgba(61,123,255,.6),0 0 0 1px rgba(160,185,255,.18)!important}
+#ventajas .lap .adv-img video{object-fit:contain!important;object-position:center!important}
+#ventajas .lap .mb-base{margin:0 -6%}
+/* iPad de la comunidad */
+.comu .ipad{border:14px solid #121418;border-radius:34px;background:#121418;box-shadow:0 0 0 2px #3a3e46,0 0 0 4px #15171b,0 50px 120px -30px rgba(88,101,242,.7)}
+.comu .ipad .dcimg{border-radius:14px;aspect-ratio:4/3;object-fit:cover;object-position:left top}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "NORTHPOINT", "url": "https://northpointcapital.io/trading/", "description": "Diario de trading que se llena solo, con tus números reales y práctica con días reales del mercado. Para", "applicationCategory": "FinanceApplication", "inLanguage": "es", "image": "https://northpointcapital.io/trading/assets/l/s-panel.jpg", "offers": [{"@type": "Offer", "name": "Starter", "price": "9", "priceCurrency": "USD", "url": "https://northpointcapital.io/trading/aplicar.html"}, {"@type": "Offer", "name": "Pro", "price": "19", "priceCurrency": "USD", "url": "https://northpointcapital.io/trading/aplicar.html"}, {"@type": "Offer", "name": "Mesa", "price": "49", "priceCurrency": "USD", "url": "https://northpointcapital.io/trading/aplicar.html"}]}</script>
 </head>
@@ -728,7 +777,23 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
       </div>
       <div class="steps" data-bars><i><b></b></i><i><b></b></i><i><b></b></i></div>
     </div>
-    <div class="win"><div class="shot" data-imgs><video class="on" src="assets/l/v-disc.mp4" poster="assets/l/v-disc.jpg" autoplay muted loop playsinline preload="metadata"></video><video src="assets/l/v-panel.mp4" poster="assets/l/v-panel.jpg" autoplay muted loop playsinline preload="metadata"></video><img src="assets/l/discord.jpg" alt="La comunidad en Discord" width="1600" height="843" loading="lazy" style="object-position:left top"></div></div>
+    <div class="win"><div class="shot" data-imgs><div class="viz on"><div class="vz-card"><div class="vz-h"><span>Tus últimas operaciones</span><b>sin registro</b></div>
+<div class="vz-r"><small>08:12</small><span>NQ · Long</span><em class="up">+1.2R</em></div>
+<div class="vz-r err"><small>08:41</small><span>Moví el stop</span><em class="dn">−1.5R</em></div>
+<div class="vz-r"><small>09:05</small><span>ES · Short</span><em class="up">+0.8R</em></div>
+<div class="vz-r err"><small>09:20</small><span>Moví el stop</span><em class="dn">−1.4R</em></div>
+<div class="vz-r err"><small>10:02</small><span>Moví el stop</span><em class="dn">−1.3R</em></div>
+<div class="vz-f"><span>Mismo error ×3</span><b>−4.2R sin verlo</b></div></div></div><div class="viz"><div class="vz-chart"><svg viewBox="0 0 460 300">
+<defs><linearGradient id="vzg" x1="0" x2="1"><stop offset="0" stop-color="#5b8cff"/><stop offset=".55" stop-color="#5b8cff"/><stop offset=".62" stop-color="#ff6b6b"/><stop offset="1" stop-color="#ff6b6b"/></linearGradient></defs>
+<g stroke="rgba(140,170,255,.08)"><line x1="0" y1="60" x2="460" y2="60"/><line x1="0" y1="130" x2="460" y2="130"/><line x1="0" y1="200" x2="460" y2="200"/><line x1="0" y1="270" x2="460" y2="270"/></g>
+<path class="vz-line" stroke="url(#vzg)" d="M10 200 L50 185 L85 192 L120 160 L160 150 L200 120 L235 105 L260 112 L280 140 L300 128 L318 175 L336 165 L356 220 L380 210 L405 262 L450 275"/>
+<g class="vz-tag t1"><rect x="262" y="70" width="104" height="26" rx="7" fill="rgba(255,90,90,.12)" stroke="rgba(255,90,90,.5)"/><text x="314" y="87" text-anchor="middle" class="vz-lbl" fill="#ff9b9b">PÉRDIDA</text></g>
+<g class="vz-tag t2"><rect x="300" y="118" width="128" height="26" rx="7" fill="rgba(255,90,90,.12)" stroke="rgba(255,90,90,.5)"/><text x="364" y="135" text-anchor="middle" class="vz-lbl" fill="#ff9b9b">REVENGE TRADE</text></g>
+<g class="vz-tag t3"><rect x="330" y="168" width="110" height="26" rx="7" fill="rgba(255,90,90,.12)" stroke="rgba(255,90,90,.5)"/><text x="385" y="185" text-anchor="middle" class="vz-lbl" fill="#ff9b9b">DOBLAS EL LOTE</text></g>
+<circle class="vz-pulse" cx="450" cy="275" r="6" fill="#ff6b6b"/>
+</svg></div><div class="vz-cap">El mes que ibas ganando <b>se va en un día</b></div></div><div class="viz"><div class="vz-net"><svg viewBox="0 0 460 360"><line class="vz-ln" x1="230" y1="180" x2="70" y2="60" style="animation-delay:0.00s"/><line class="vz-ln" x1="230" y1="180" x2="370" y2="50" style="animation-delay:0.12s"/><line class="vz-ln" x1="230" y1="180" x2="420" y2="200" style="animation-delay:0.24s"/><line class="vz-ln" x1="230" y1="180" x2="300" y2="310" style="animation-delay:0.36s"/><line class="vz-ln" x1="230" y1="180" x2="90" y2="290" style="animation-delay:0.48s"/><line class="vz-ln" x1="230" y1="180" x2="30" y2="170" style="animation-delay:0.60s"/><line class="vz-ln" x1="230" y1="180" x2="210" y2="30" style="animation-delay:0.72s"/><circle class="vz-nd" cx="70" cy="60" r="9" fill="#2a3a66" stroke="#5b8cff" stroke-width="1.5" style="animation-delay:0.00s"/><circle class="vz-nd" cx="370" cy="50" r="9" fill="#2a3a66" stroke="#5b8cff" stroke-width="1.5" style="animation-delay:0.12s"/><circle class="vz-nd" cx="420" cy="200" r="9" fill="#2a3a66" stroke="#5b8cff" stroke-width="1.5" style="animation-delay:0.24s"/><circle class="vz-nd" cx="300" cy="310" r="9" fill="#2a3a66" stroke="#5b8cff" stroke-width="1.5" style="animation-delay:0.36s"/><circle class="vz-nd" cx="90" cy="290" r="9" fill="#2a3a66" stroke="#5b8cff" stroke-width="1.5" style="animation-delay:0.48s"/><circle class="vz-nd" cx="30" cy="170" r="9" fill="#2a3a66" stroke="#5b8cff" stroke-width="1.5" style="animation-delay:0.60s"/><circle class="vz-nd" cx="210" cy="30" r="9" fill="#2a3a66" stroke="#5b8cff" stroke-width="1.5" style="animation-delay:0.72s"/>
+<circle class="vz-ring" cx="230" cy="180" r="16" stroke-width="2"/><circle class="vz-me" cx="230" cy="180" r="16"/>
+<text x="230" y="230" text-anchor="middle" class="vz-lbl">TÚ</text></svg></div><div class="vz-cap">De operar solo a operar <b>con la comunidad</b></div></div></div></div>
   </div></div>
 </section>
 
@@ -762,11 +827,11 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
     <div class="center"><span class="tag">La cereza: la app</span>
     <h2>Y una app que ordena todo tu trading</h2></div>
     <div class="adv">
-      <div class="adv-img" data-imgs>
+      <div class="lap"><div class="adv-img" data-imgs>
         <video class="shot-img on" src="assets/l/v-trades.mp4" poster="assets/l/v-trades.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Operaciones registradas solas"></video>
         <video class="shot-img" src="assets/l/v-panel.mp4" poster="assets/l/v-panel.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Panel con tus números"></video>
         <video class="shot-img" src="assets/l/v-multi.mp4" poster="assets/l/v-multi.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Multichart por sesión"></video>
-      </div>
+      </div><i class="mb-base"></i></div>
       <div class="acc" data-items>
         <div class="acc-i on"><div class="acc-h"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h7"/></svg></i>Cada trade entra solo</div><div class="acc-b"><div><p>Conectas tu cuenta una vez y cada operación aparece con hora, R y duración. Sin capturar nada.</p></div></div><i class="acc-p"></i></div>
         <div class="acc-i"><div class="acc-h"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/></svg></i>Ves dónde se te va el dinero</div><div class="acc-b"><div><p>Winrate, expectancy, drawdown y profit factor. Y lo que te cuesta cada vez que rompes tu plan.</p></div></div><i class="acc-p"></i></div>
