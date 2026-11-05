@@ -195,355 +195,355 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 28270.75,
-   "cambio": 143.25,
-   "pct": 0.51
+   "precio": 26754.25,
+   "cambio": -1373.25,
+   "pct": -4.88
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7720.0,
-   "cambio": 145.5,
-   "pct": 1.92
+   "precio": 7387.0,
+   "cambio": -187.5,
+   "pct": -2.48
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4133.8,
-   "cambio": 164.2,
-   "pct": 4.14
+   "precio": 4107.8,
+   "cambio": 138.2,
+   "pct": 3.48
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 89.43,
-   "cambio": -7.03,
-   "pct": -7.29
+   "precio": 90.66,
+   "cambio": -5.8,
+   "pct": -6.01
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2869.8,
-   "cambio": 52.0,
-   "pct": 1.85
+   "precio": 2737.5,
+   "cambio": -80.3,
+   "pct": -2.85
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 53830.0,
-   "cambio": 1697.0,
-   "pct": 3.26
+   "precio": 51638.0,
+   "cambio": -495.0,
+   "pct": -0.95
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 79850.0,
-   "cambio": 3010.0,
-   "pct": 3.92
+   "precio": 76230.0,
+   "cambio": -610.0,
+   "pct": -0.79
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 157.81,
-   "pct": -0.3,
+   "precio": 151.37,
+   "pct": -4.18,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 704.78,
-   "pct": -0.72,
+   "precio": 673.82,
+   "pct": -4.74,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 376.92,
-   "pct": -0.59,
+   "precio": 360.59,
+   "pct": -4.67,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 83.88,
-   "pct": 0.16,
+   "precio": 80.8,
+   "pct": -3.41,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 691.95,
-   "pct": -4.64,
+   "precio": 647.05,
+   "pct": -9.55,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 766.81,
-   "pct": -0.71,
+   "precio": 733.15,
+   "pct": -4.71,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 71.5,
-   "pct": 0.44,
+   "precio": 71.65,
+   "pct": 0.38,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 36.21,
-   "pct": 3.19,
+   "precio": 35.41,
+   "pct": -0.56,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 98.03,
-   "pct": 6.8,
+   "precio": 96.24,
+   "pct": 2.52,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 74.94,
-   "pct": -3.09,
+   "precio": 70.71,
+   "pct": -7.4,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 372.49,
-   "pct": -0.27,
+   "precio": 375.51,
+   "pct": 1.88,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 45.33,
-   "pct": -1.76,
+   "precio": 43.03,
+   "pct": -5.86,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 349.51,
-   "pct": 1.65,
+   "precio": 344.17,
+   "pct": -1.36,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 555.8,
-   "pct": 4.67,
+   "precio": 535.93,
+   "pct": 1.09,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 200.13,
-   "pct": -7.08,
+   "precio": 181.6,
+   "pct": -15.01,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 288.93,
-   "pct": -11.07,
+   "precio": 282.57,
+   "pct": -0.44,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 266.03,
-   "pct": 4.49,
+   "precio": 260.21,
+   "pct": 6.74,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 630.0,
-   "pct": 2.86,
+   "precio": 605.08,
+   "pct": -3.11,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 385.19,
-   "pct": -4.71,
+   "precio": 343.69,
+   "pct": -14.78,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 579.09,
-   "pct": 7.17,
+   "precio": 571.74,
+   "pct": 5.49,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 1046.47,
-   "pct": 6.49,
+   "precio": 1065.59,
+   "pct": 6.98,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 352.11,
-   "pct": 3.78,
+   "precio": 337.19,
+   "pct": -1.86,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 436.57,
-   "pct": 8.98,
+   "precio": 422.33,
+   "pct": 2.87,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 409.38,
-   "pct": 0.56,
+   "precio": 395.37,
+   "pct": -3.78,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "Three things that explain what’s changing with Obamacare in 2027",
-   "url": "https://www.marketwatch.com/story/three-things-that-explain-whats-changing-with-obamacare-in-2027-7c94585b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 14:04:00 GMT"
-  },
-  {
-   "titulo": "My wife cried when I found out she had only $80,000 in her 401(k). I have $2.2 million. Am I wrong to be shocked?",
-   "url": "https://www.marketwatch.com/story/my-wife-has-only-80-000-saved-for-retirement-i-have-2-2-million-am-i-wrong-to-be-shocked-3e27b490?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 14:00:00 GMT"
-  },
-  {
-   "titulo": "Banks are turning cautious on lending, according to the Fed. What it means for the economy",
-   "url": "https://www.cnbc.com/2026/11/05/fed-bank-lending-standards-small-business.html",
+   "titulo": "IRS announces bigger estate and gift tax exemption for 2027",
+   "url": "https://www.cnbc.com/2026/11/05/2027-estate-and-gift-tax-exemption-irs-raises-limit.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 13:52:38 GMT"
+   "fecha": "Thu, 05 Nov 2026 20:51:57 GMT"
   },
   {
-   "titulo": "Qualcomm’s stock falls as twin forces pressure sales",
-   "url": "https://www.marketwatch.com/story/qualcomms-stock-falls-as-twin-forces-pressure-sales-fa161159?mod=mw_rss_topstories",
+   "titulo": "‘I have no financial safety net’: I’m 66, rely on Social Security and have just $500 in savings. What hope do I have?",
+   "url": "https://www.marketwatch.com/story/i-have-no-financial-safety-net-im-66-rely-on-social-security-and-have-500-in-savings-what-politician-speaks-for-me-be2126cb?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 13:47:00 GMT"
+   "fecha": "Thu, 05 Nov 2026 20:45:00 GMT"
   },
   {
-   "titulo": "World's largest olive oil company plummets 20% after rivals agree to takeover deal",
-   "url": "https://www.cnbc.com/2026/11/05/deoleo-olive-oil-takeover-dcoop-acesur.html",
+   "titulo": "IRS announces new federal income tax brackets for 2027",
+   "url": "https://www.cnbc.com/2026/11/05/2027-federal-tax-brackets.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 13:45:49 GMT"
+   "fecha": "Thu, 05 Nov 2026 20:37:22 GMT"
   },
   {
-   "titulo": "OpenAI pledges to halt NDAs in new data center policy proposal after election rebuke",
-   "url": "https://www.cnbc.com/2026/11/05/openai-to-pay-for-data-center-power-after-election-shows-ai-concern.html",
+   "titulo": "The 2027 tax brackets are out. See what the standard deduction and SALT tax breaks will be.",
+   "url": "https://www.marketwatch.com/story/the-2027-tax-brackets-are-out-see-what-the-standard-deduction-and-salt-tax-breaks-will-be-5dd1d293?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 20:22:00 GMT"
+  },
+  {
+   "titulo": "Bloom Energy’s stock is one of the S&P 500’s biggest losers amid fears of data-center delays",
+   "url": "https://www.marketwatch.com/story/bloom-energys-stock-is-one-of-the-s-p-500s-biggest-losers-amid-fears-of-data-center-delays-a44c96bb?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 20:21:00 GMT"
+  },
+  {
+   "titulo": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
+   "url": "https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 13:44:45 GMT"
+   "fecha": "Thu, 05 Nov 2026 20:17:16 GMT"
+  },
+  {
+   "titulo": "AI meltdown: Chip stocks and neoclouds plunge, pushing Nasdaq to worst day since April 2025",
+   "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 20:08:49 GMT"
+  },
+  {
+   "titulo": "After tech-stock rout, October jobs report could bring relief — or more pain",
+   "url": "https://www.marketwatch.com/story/after-tech-stock-rout-october-jobs-report-could-bring-relief-or-more-pain-db93357e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 19:46:00 GMT"
+  },
+  {
+   "titulo": "This pancreatic cancer treatment is on track for ‘one of the best drug launches of all time’",
+   "url": "https://www.marketwatch.com/story/this-pancreatic-cancer-treatment-is-on-track-for-one-of-the-best-drug-launches-of-all-time-37bf86ce?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 19:32:00 GMT"
+  },
+  {
+   "titulo": "Trump’s Iran war has changed the future of Social Security",
+   "url": "https://www.marketwatch.com/story/trumps-iran-war-has-changed-the-future-of-social-security-7a500f9f?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 19:32:00 GMT"
+  },
+  {
+   "titulo": "The ‘Musk selloff’ deepens as Tesla and SpaceX combine for $450 billion two-day wipeout",
+   "url": "https://www.marketwatch.com/story/the-musk-selloff-deepens-as-tesla-and-spacex-combine-for-450-billion-two-day-wipeout-d300ab4f?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 19:29:00 GMT"
+  },
+  {
+   "titulo": "Wall Street's fear gauge surges the most since April. Why traders think it should be even higher",
+   "url": "https://www.cnbc.com/2026/11/05/wall-streets-fear-gauge-surges-the-most-since-april-why-traders-think-it-should-be-even-higher.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 19:20:21 GMT"
+  },
+  {
+   "titulo": "Trump's energy deals are about to face a wave of investigations by Democrats",
+   "url": "https://www.cnbc.com/2026/11/05/trump-election-energy-venezuela-critical-mineral-renewable-iran.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 19:13:06 GMT"
+  },
+  {
+   "titulo": "Blue Origin pushes launch to January 2027 as it races to rebuild damaged launch pad",
+   "url": "https://www.cnbc.com/2026/11/05/blue-origin-launch-new-glenn.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 19:02:32 GMT"
+  },
+  {
+   "titulo": "As Nvidia’s stock heads for a bear market, bargain hunters see a golden buying opportunity",
+   "url": "https://www.marketwatch.com/story/as-nvidias-stock-heads-for-a-bear-market-bargain-hunters-see-a-golden-buying-opportunity-1a5917e6?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 18:59:00 GMT"
+  },
+  {
+   "titulo": "Micron, Sandisk and other AI stocks are falling hard: ‘Investors don’t like uncertainty’",
+   "url": "https://www.marketwatch.com/story/micron-sandisk-and-other-ai-stocks-are-falling-hard-investors-dont-like-uncertainty-94d2a3b9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 18:18:00 GMT"
+  },
+  {
+   "titulo": "My 93-year-old father changed his will at the 11th hour, leaving my brother his entire $500,000 estate. Can I challenge it?",
+   "url": "https://www.marketwatch.com/story/my-93-year-old-father-changed-his-will-at-the-11th-hour-leaving-my-brother-his-entire-500-000-estate-can-i-challenge-it-ecfc63d2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 18:15:00 GMT"
+  },
+  {
+   "titulo": "Democrats to probe JPMorgan's relationship with Jeffrey Epstein when they take Senate control",
+   "url": "https://www.cnbc.com/2026/11/05/jpmorgan-epstein-democrats-erdoes-midterm-election.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 17:42:29 GMT"
+  },
+  {
+   "titulo": "California’s billionaire tax faces defeat, but Democrats plan higher taxes on the wealthy",
+   "url": "https://www.cnbc.com/2026/11/05/as-california-billionaire-tax-fizzles-democrats-plan-taxes-on-wealthy.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 16:19:21 GMT"
+  },
+  {
+   "titulo": "Voters say the economy drove them to the polls — and blame Trump for their troubles",
+   "url": "https://www.cnbc.com/2026/11/04/2026-midterms-trump-economy-iran-war.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 16:07:59 GMT"
+  },
+  {
+   "titulo": "Here's what the Democratic election rout could mean for the U.S. economy",
+   "url": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 14:33:32 GMT"
   },
   {
    "titulo": "What Wall Street billionaires are saying about Democrats' midterm sweep",
    "url": "https://www.cnbc.com/2026/11/04/billionaires-musk-branson-democrats-midterms-ai-wall-street.html",
    "fuente": "CNBC",
    "fecha": "Thu, 05 Nov 2026 13:44:27 GMT"
-  },
-  {
-   "titulo": "Chinese AI lab Moonshot turned to Europe for Nvidia Blackwell access amid U.S. China curbs, sources tell CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/moonshot-ai-nvidia-chips-europe-china.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 13:34:14 GMT"
-  },
-  {
-   "titulo": "Wendy's rejects $1.4 billion takeover proposal from Nelson Peltz’s Trian",
-   "url": "https://www.cnbc.com/2026/11/05/wendys-rejects-takeover-proposal.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 13:26:28 GMT"
-  },
-  {
-   "titulo": "‘It seems bizarre’: We’re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
-   "url": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 13:15:00 GMT"
-  },
-  {
-   "titulo": "A prolonged war in Iran is the market’s real ‘black swan,’ says this strategist",
-   "url": "https://www.marketwatch.com/story/a-prolonged-war-in-iran-is-the-markets-real-black-swan-says-this-strategist-65d105c7?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 13:07:00 GMT"
-  },
-  {
-   "titulo": "‘He was heartbroken’: My husband’s kids abandoned him when he was dying. Was he right to leave everything to me?",
-   "url": "https://www.marketwatch.com/story/he-was-heartbroken-my-husbands-kids-never-helped-when-he-was-gravely-ill-was-he-right-to-leave-everything-to-me-1ad0616b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 13:01:00 GMT"
-  },
-  {
-   "titulo": "Voters rejected AI data centers over resource concerns. Here's why measuring water usage is hard",
-   "url": "https://www.cnbc.com/2026/11/05/meta-spacex-ai-data-centers-use-millions-of-gallons-of-water-a-day.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 13:00:01 GMT"
-  },
-  {
-   "titulo": "What the Democratic midterms sweep changes for U.S.-China relations",
-   "url": "https://www.cnbc.com/2026/11/05/what-the-democrat-midterms-sweep-changes-for-us-china-tech-rivalry.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 12:57:10 GMT"
-  },
-  {
-   "titulo": "Here's what the Democratic election rout could mean for the U.S. economy",
-   "url": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 12:53:14 GMT"
-  },
-  {
-   "titulo": "Robot maker Agility starts trading today — but its steep losses are raising red flags",
-   "url": "https://www.marketwatch.com/story/robot-maker-agility-starts-trading-today-but-its-steep-losses-are-raising-red-flags-f97c2cee?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 12:43:00 GMT"
-  },
-  {
-   "titulo": "Interest rates could go ‘significantly higher’ if oil prices keep climbing — even if the Iran war ends soon",
-   "url": "https://www.marketwatch.com/story/interest-rates-could-go-significantly-higher-if-oil-prices-keep-climbing-even-if-the-iran-war-ends-soon-e3493498?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 12:33:00 GMT"
-  },
-  {
-   "titulo": "The real test for the artificial-intelligence buildout is what happens in 2028, analysts say",
-   "url": "https://www.marketwatch.com/story/the-real-test-for-the-artificial-intelligence-build-out-is-what-happens-in-2028-analysts-say-c5978e48?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 12:23:00 GMT"
-  },
-  {
-   "titulo": "An Anthropic IPO when the AI trade is this turbulent? Godspeed!",
-   "url": "https://www.marketwatch.com/story/an-anthropic-ipo-when-the-ai-trade-is-this-turbulent-godspeed-08ca0496?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 12:16:00 GMT"
-  },
-  {
-   "titulo": "How the midterms could fuel the K-shaped AI trade",
-   "url": "https://www.cnbc.com/2026/11/05/ai-data-centers-midterms-capacity.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 11:01:39 GMT"
-  },
-  {
-   "titulo": "Nintendo Switch 2 sales plunge 41% as price hikes and memory crunch bite",
-   "url": "https://www.cnbc.com/2026/11/05/nintendo-earnings-switch-2-sales.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 07:30:58 GMT"
-  },
-  {
-   "titulo": "LIV Golf faces liquidation after BC Partners scraps rescue plan",
-   "url": "https://www.cnbc.com/2026/11/05/liv-golf-liquidation-bc-partners.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 03:11:58 GMT"
   }
  ],
  "videos": [
@@ -657,7 +657,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-05T14:15:21Z",
+ "ts": "2026-11-05T21:07:53Z",
  "fallas": [
   "videos",
   "directos"
