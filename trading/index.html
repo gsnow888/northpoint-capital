@@ -148,17 +148,6 @@ nav .lk:hover{background:#2a2a2e}
 @media(max-width:820px){.loop-l,.loop-r{display:none}}
 .final .mid{z-index:2}
 .hero h1>div,.who h2>div,.white h2>div,.final h2>div,.manif .t>div{padding-bottom:.14em;margin-bottom:-.14em}
-.agents{padding:140px 24px 120px;text-align:center;overflow:hidden;perspective:1400px}
-.ag-head h2{font-size:clamp(56px,10vw,160px);font-weight:500;letter-spacing:-.05em;line-height:.9;margin-top:14px}
-.ag-head p{color:#b8bcc8;max-width:560px;margin:26px auto 0;font-size:clamp(16px,1.3vw,19px);line-height:1.5}
-.ag-stage{max-width:1180px;margin:70px auto 0;transform-style:preserve-3d}
-.ag-stage img{display:block;width:100%;border-radius:16px;border:1px solid #23283a;box-shadow:0 60px 160px rgba(37,99,255,.35)}
-.ag-feats{max-width:1180px;margin:4px auto 0;display:grid;grid-template-columns:repeat(2,1fr);gap:4px}
-.ag-feats div{background:#0a0a0c;border:1px solid var(--line);border-radius:4px;padding:26px;text-align:left}
-.ag-feats b{display:block;font-size:clamp(30px,3.4vw,52px);font-weight:500;letter-spacing:-.04em}
-.ag-feats span{color:#9aa0ae;font-size:15px}
-.ag-note{display:block;color:#5d6270;font-size:12px;margin-top:16px}
-@media(max-width:700px){.ag-feats{grid-template-columns:1fr}}
 /* final */
 .final{position:relative;min-height:90vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 16px;overflow:hidden}
 .final .bars{position:absolute;inset:0;display:flex;justify-content:space-between;align-items:stretch;pointer-events:none}
@@ -184,13 +173,13 @@ footer{background:var(--blue);padding:56px 24px 0;overflow:hidden}
 </head>
 <body>
 
-<div class="bar">Cupos limitados para la próxima generación de NORTHPOINT. <b>Aplica hoy</b> &rarr;</div>
+<div class="bar">Cupos limitados. <b>Aplica hoy</b> &rarr;</div>
 
 <nav>
   <a class="logo" href="#"><svg viewBox="0 0 20 20"><path d="M3 17V3l14 14V3" fill="none" stroke="#2563ff" stroke-width="3"/></svg>NORTHPOINT</a>
   <a class="lk" href="#stack">La app</a>
   <a class="lk" href="#hubs">Comunidad</a>
-  <a class="lk" href="#numeros">En números</a><a class="lk" href="#agents">Agents</a>
+  <a class="lk" href="#numeros">En números</a>
   <a class="btn b" href="aplicar.html">Aplicar</a>
 </nav>
 
@@ -277,20 +266,6 @@ footer{background:var(--blue);padding:56px 24px 0;overflow:hidden}
       <div class="cf"><span><i class="g"></i>Días verdes <b id="calGd">0</b></span><span><i class="r"></i>Días rojos <b id="calRd">0</b></span><span>Racha <b id="calSt">0</b></span></div>
     </div>
   </div>
-</section>
-
-<section class="agents" id="agents">
-  <div class="ag-head">
-    <div class="mono" style="color:var(--blue)">Próximamente</div>
-    <h2>NORTHPOINT<br>Agents</h2>
-    <p>Muy pronto: once agentes vigilando el mercado al mismo tiempo, cada uno en su instrumento, transmitiéndote lo que ven en tiempo real.</p>
-  </div>
-  <div class="ag-stage"><img src="assets/l/np-agentes.jpg" alt="NORTHPOINT Agents en cuenta demo: once agentes vigilando instrumentos alrededor del resultado abierto" loading="lazy"></div>
-  <div class="ag-feats">
-    <div><b>11</b><span>Agentes activos a la vez</span></div>
-    <div><b>En vivo</b><span>Transmisiones de cada movimiento</span></div>
-  </div>
-  <small class="ag-note">Vista previa en cuenta demo. Disponible próximamente.</small>
 </section>
 
 <section class="final">
@@ -435,7 +410,7 @@ mm.add("(prefers-reduced-motion: no-preference)",()=>{
   /* hubs swing in from the sides */
   gsap.utils.toArray(".hub").forEach((h,i)=>gsap.from(h,{x:i?80:-80,y:80,rotate:i?2:-2,autoAlpha:0,ease:"none",scrollTrigger:{trigger:h,start:"top bottom",end:"top 45%",scrub:true}}));
   /* big headings: letters rain down */
-  document.querySelectorAll(".who h2,.white h2,.ag-head h2").forEach(h=>{const sp=SplitText.create(h,{type:"chars"});
+  document.querySelectorAll(".who h2,.white h2").forEach(h=>{const sp=SplitText.create(h,{type:"chars"});
     gsap.from(sp.chars,{yPercent:-60,rotate:()=>gsap.utils.random(-10,10),autoAlpha:0,stagger:.015,ease:"none",scrollTrigger:{trigger:h,start:"top 95%",end:"top 45%",scrub:true}})});
   /* mac: tilts up from flat */
   gsap.from(".tour",{rotateX:20,scale:.9,y:80,transformPerspective:1400,transformOrigin:"50% 100%",ease:"none",scrollTrigger:{trigger:".tour",start:"top bottom",end:"center 55%",scrub:true}});
@@ -446,10 +421,6 @@ mm.add("(prefers-reduced-motion: no-preference)",()=>{
   gsap.from(".stat",{y:120,rotate:(i)=>[-2,1.5,-1,2][i],ease:"none",stagger:.12,scrollTrigger:{trigger:".stats",start:"top bottom",end:"top 40%",scrub:true}});
   /* white section: calendar spins in */
   gsap.from(".cal",{rotate:-4,scale:.88,x:70,ease:"none",scrollTrigger:{trigger:".white",start:"top bottom",end:"center 60%",scrub:true}});
-  /* agents: dashboard rises flat -> upright */
-  gsap.from(".ag-stage",{rotateX:22,scale:.88,y:90,transformOrigin:"50% 100%",ease:"none",scrollTrigger:{trigger:".ag-stage",start:"top bottom",end:"center 55%",scrub:true}});
-  gsap.from(".ag-feats div",{y:60,autoAlpha:0,stagger:.12,ease:"none",scrollTrigger:{trigger:".ag-feats",start:"top bottom",end:"top 60%",scrub:true}});
-  gsap.from(".ag-head p",{y:80,autoAlpha:0,ease:"none",scrollTrigger:{trigger:".ag-head",start:"top 80%",end:"top 30%",scrub:true}});
   /* final: title slams down, side legos fly in */
   gsap.from(".final h2",{scale:1.3,autoAlpha:0,ease:"none",scrollTrigger:{trigger:".final",start:"top bottom",end:"top 20%",scrub:true}});
   gsap.from(".loop-l",{xPercent:-50,rotate:-8,ease:"none",scrollTrigger:{trigger:".final",start:"top bottom",end:"top 20%",scrub:true}});
