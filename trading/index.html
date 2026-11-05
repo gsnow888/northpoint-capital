@@ -975,7 +975,7 @@ const REDES = {
   PINS.forEach(P => P.items.forEach((x, k) => x.addEventListener('click', () => { const top = P.s.getBoundingClientRect().top + scrollY, span = P.s.offsetHeight - innerHeight; scrollTo({ top: top + span * (k + .3) / P.n, behavior: 'smooth' }); })));
 
   // carrusel de videos
-  const V = [['tour', 'Recorrido', 'Toda la <em>app</em>', 'Un minuto por toda la app', 'Panel, calendario, y operaciones, en el orden en que los usas.', 'curva'],
+  const V = [['tour', 'Recorrido', 'Toda la <em>app</em>', 'Un minuto por toda la app', 'Panel, calendario y operaciones, en el orden en que los usas.', 'curva'],
     ['calendario', 'Calendario', 'Tu mes <em>en un vistazo</em>', 'Cada día pintado por su resultado', 'Verde, rojo y la intensidad de cada día. Toca uno y ves sus operaciones.', 'calor'],
     ['crear', 'Torneos', 'Arma tu <em>torneo</em>', 'Crea una batalla en segundos', 'Balance desde $10, sesión de Asia, Londres o Nueva York e invita a quien quieras.', 'tabla'],
     ['operaciones', 'Disciplina', 'Lo que <em>cuesta</em>', 'Con reglas contra sin reglas', 'Cuánto ganas cuando las respetas y cuánto pierdes cuando no.', 'reglas']];
