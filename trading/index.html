@@ -30,7 +30,7 @@ nav .lk:hover{background:#2a2a2e}
 /* hero */
 .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;text-align:center;padding:0 16px 14vh;position:relative;overflow:hidden}
 .hero #lego{position:absolute;inset:0}.hero #lego canvas{display:block;width:100%!important;height:100%!important}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,#000 4%,rgba(0,0,0,.55) 34%,transparent 62%),radial-gradient(ellipse at 50% 30%,transparent 50%,rgba(0,0,0,.6));pointer-events:none}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,#000 2%,rgba(0,0,0,.75) 22%,transparent 46%);pointer-events:none}
 .hero h1,.hero p,.hero .ctas{z-index:2}
 .hero h1{position:relative;font-size:clamp(44px,8.4vw,120px);font-weight:500;letter-spacing:-.04em;line-height:.95}
 .hero p{position:relative;color:#cfcfd4;margin:22px 0 28px;font-size:16px}
@@ -42,21 +42,26 @@ nav .lk:hover{background:#2a2a2e}
 .left{background:var(--blue);position:relative;display:flex;align-items:center;justify-content:center;padding:40px;text-align:center}
 .left .k{position:absolute;top:28px;left:0;right:0;font-size:12px;opacity:.9}
 .left .n{position:absolute;bottom:62px;left:0;right:0;font-size:11px;opacity:.7}
-.left h2{font-size:clamp(24px,3.1vw,42px);font-weight:500;letter-spacing:-.025em;line-height:1.12;max-width:520px;transition:opacity .35s,transform .35s}
+.left h2{font-size:clamp(24px,3.1vw,42px);font-weight:500;letter-spacing:-.025em;line-height:1.12;max-width:520px}
 .left h2.out{opacity:0;transform:translateY(10px)}
 .left .sub{position:absolute;bottom:96px;left:40px;right:40px;font-size:14px;opacity:.85;line-height:1.45;transition:opacity .35s}
 .dots{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;gap:4px;background:rgba(0,0,0,.18);padding:6px 8px;border-radius:20px}
-.dots i{width:6px;height:4px;border-radius:2px;background:rgba(255,255,255,.4);transition:width .3s,background .3s}
-.dots i.on{width:22px;background:#fff}
+.dots i{width:5px;height:4px;border-radius:2px;background:rgba(255,255,255,.35)}
 .plus{position:absolute;width:9px;height:9px;opacity:.7}
 .plus:before,.plus:after{content:"";position:absolute;background:#fff}
 .plus:before{left:4px;top:0;width:1px;height:9px}.plus:after{top:4px;left:0;height:1px;width:9px}
 .right{position:relative;background-color:#000;background-image:radial-gradient(#3a3a40 1px,transparent 1px);background-size:44px 44px;display:flex;align-items:center;justify-content:center}
-.card{width:86%;aspect-ratio:16/10;background:#0b0b0e;border:1px solid #2e2e34;border-radius:10px;overflow:hidden;position:relative;box-shadow:0 30px 80px rgba(37,99,255,.18)}
+.card{width:68%;aspect-ratio:1/1;background:#fff;position:relative;display:flex;align-items:center;justify-content:center}.card svg{width:92%;height:92%;overflow:visible}
 .card video,.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s}
 .card .on{opacity:1}
-.card .tag{position:absolute;left:10px;bottom:10px;z-index:2;background:rgba(0,0,0,.7);border:1px solid #2e2e34;border-radius:6px;padding:5px 8px;font-size:11px;color:#cfcfd4}
-@media(max-width:820px){.frame{grid-template-columns:1fr;grid-template-rows:1fr 1fr;height:84vh}.card{width:92%;height:auto}.left .sub{display:none}}
+.card .tag{position:absolute;left:12px;top:12px;font-size:10px;color:#2563ff}
+.slides{position:relative;width:100%;max-width:540px}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;visibility:hidden}
+.slide .t{font-size:11px;opacity:.75;margin-bottom:18px}
+.slide h2{font-size:clamp(24px,3.1vw,42px);font-weight:500;letter-spacing:-.025em;line-height:1.12}
+.slide p{margin-top:18px;font-size:15px;line-height:1.45;opacity:.85}
+.dots i{position:relative;overflow:hidden}.dots i b{position:absolute;inset:0;background:#fff;transform-origin:left;transform:scaleX(0)}
+@media(max-width:820px){.frame{grid-template-columns:1fr;grid-template-rows:1fr 1fr;height:84vh}.card{width:auto;height:86%}.left .sub{display:none}}
 /* two hubs */
 .hubs{max-width:1240px;margin:0 auto;padding:40px 24px 120px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .hub{background:var(--g1);border:1px solid var(--line);padding:18px}
@@ -96,6 +101,11 @@ nav .lk:hover{background:#2a2a2e}
 .white p{color:#55555c;margin:22px 0 26px;max-width:380px;line-height:1.5}
 .kz{border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.25)}.kz video{display:block;width:100%}
 @media(max-width:820px){.white .in{grid-template-columns:1fr}}
+.loop{width:100%;max-width:380px;display:block;margin-top:30px}
+.loop-l,.loop-r{position:absolute;width:26vw;max-width:360px;top:50%;transform:translateY(-50%);z-index:1;margin:0}.loop-l{left:2vw}.loop-r{right:2vw}
+@media(max-width:820px){.loop-l,.loop-r{display:none}}
+.final .mid{z-index:2}
+.hero h1>div,.who h2>div,.white h2>div,.final h2>div,.manif .t>div{padding-bottom:.14em;margin-bottom:-.14em}
 /* final */
 .final{position:relative;min-height:90vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 16px;overflow:hidden}
 .final .bars{position:absolute;inset:0;display:flex;justify-content:space-between;align-items:stretch;pointer-events:none}
@@ -111,9 +121,13 @@ footer{background:var(--blue);padding:56px 24px 0;overflow:hidden}
 .fg svg{width:44px}
 .word{font-size:21vw;font-weight:500;letter-spacing:-.06em;line-height:.78;margin-top:120px;white-space:nowrap;text-align:center;transform:translateY(8%)}
 @media(max-width:640px){.fg{grid-template-columns:1fr 1fr}}
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
-.reveal.in{opacity:1;transform:none}
+
 </style>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+<script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
 </head>
 <body>
 
@@ -140,13 +154,11 @@ footer{background:var(--blue);padding:56px 24px 0;overflow:hidden}
       <div class="left">
         <span class="plus" style="top:14px;left:14px"></span><span class="plus" style="top:14px;right:14px"></span>
         <span class="plus" style="bottom:14px;left:14px"></span><span class="plus" style="bottom:14px;right:14px"></span>
-        <div class="k">El sistema NORTHPOINT</div>
-        <h2 id="st-t"></h2>
-        <div class="sub" id="st-s"></div>
-        <div class="n mono" id="st-n"></div>
+        <div class="k">Un día con NORTHPOINT</div>
+        <div class="slides" id="slides"></div>
         <div class="dots" id="dots"></div>
       </div>
-      <div class="right"><div class="card" id="card"><span class="tag mono" id="tag"></span></div></div>
+      <div class="right"><div class="card"><svg id="build" viewBox="0 0 400 400"></svg><span class="tag mono" id="tag"></span></div></div>
     </div>
   </div>
 </section>
@@ -175,7 +187,7 @@ footer{background:var(--blue);padding:56px 24px 0;overflow:hidden}
 </section>
 
 <section class="manif">
-  <div class="mono" style="color:var(--blue)">Hecho para traders</div>
+  <div><div class="mono" style="color:var(--blue)">Hecho para traders</div><svg class="loop" data-loop="tower" viewBox="0 0 400 420"></svg></div>
   <div>
     <div class="t" id="manif">Los traders de aquí dejaron de adivinar, dejaron de operar solos y empezaron a medir cada día.</div>
     <p>El resultado: más constancia, menos errores repetidos y un progreso que por fin se puede ver.</p>
@@ -203,6 +215,7 @@ footer{background:var(--blue);padding:56px 24px 0;overflow:hidden}
 
 <section class="final">
   <div class="bars" id="bars"></div>
+  <svg class="loop loop-l" data-loop="rain" viewBox="0 0 400 420"></svg><svg class="loop loop-r" data-loop="stairs" viewBox="0 0 400 420"></svg>
   <div class="mid">
     <div class="mono" style="color:var(--blue);margin-bottom:18px">Manifiesto</div>
     <h2>Donde empieza<br>tu trading</h2>
@@ -222,82 +235,133 @@ footer{background:var(--blue);padding:56px 24px 0;overflow:hidden}
 </footer>
 
 <script>
-/* ---------- isometric block engine ---------- */
+/* ================= iso lego engine (SVG) ================= */
 const C={blue:["#2563ff","#1a4fd6","#123cad"],white:["#fff","#e9e9ee","#cfcfd8"],black:["#2a2a2e","#141416","#0a0a0b"],grey:["#8a8f99","#6c717b","#545862"]};
 const S=Math.cos(Math.PI/6);
-function P(x,y,z,o){return[o[0]+(x-y)*S*o[2],o[1]+(x+y)*.5*o[2]-z*o[2]]}
-function poly(pts,f){return`<polygon points="${pts.map(p=>p.join(',')).join(' ')}" fill="${f}" stroke="#000" stroke-width="1.4" stroke-linejoin="round"/>`}
+const P=(x,y,z,o)=>[o[0]+(x-y)*S*o[2],o[1]+(x+y)*.5*o[2]-z*o[2]];
+const poly=(pts,f)=>`<polygon points="${pts.map(p=>p[0].toFixed(1)+','+p[1].toFixed(1)).join(' ')}" fill="${f}" stroke="#000" stroke-width="1.4" stroke-linejoin="round"/>`;
 function box(x,y,z,w,d,h,col,o,studs=true){
   const c=C[col],q=(a,b,cz)=>P(a,b,cz,o);let s="";
   s+=poly([q(x,y+d,z),q(x+w,y+d,z),q(x+w,y+d,z+h),q(x,y+d,z+h)],c[1]);
   s+=poly([q(x+w,y,z),q(x+w,y+d,z),q(x+w,y+d,z+h),q(x+w,y,z+h)],c[2]);
   s+=poly([q(x,y,z+h),q(x+w,y,z+h),q(x+w,y+d,z+h),q(x,y+d,z+h)],c[0]);
   if(studs)for(let i=0;i<w;i++)for(let j=0;j<d;j++){
-    const [cx,cy]=q(x+i+.5,y+j+.5,z+h),r=o[2]*.3,hh=o[2]*.18;
-    s+=`<g stroke="#000" stroke-width="1.2"><rect x="${cx-r*S*1.15}" y="${cy-hh}" width="${r*S*2.3}" height="${hh}" fill="${c[1]}" stroke="none"/><ellipse cx="${cx}" cy="${cy}" rx="${r*S*1.15}" ry="${r*.6}" fill="${c[1]}"/><line x1="${cx-r*S*1.15}" y1="${cy}" x2="${cx-r*S*1.15}" y2="${cy-hh}"/><line x1="${cx+r*S*1.15}" y1="${cy}" x2="${cx+r*S*1.15}" y2="${cy-hh}"/><ellipse cx="${cx}" cy="${cy-hh}" rx="${r*S*1.15}" ry="${r*.6}" fill="${c[0]}"/></g>`}
+    const [cx,cy]=q(x+i+.5,y+j+.5,z+h),r=o[2]*.3,hh=o[2]*.18,rx=r*S*1.15,ry=r*.6;
+    s+=`<g stroke="#000" stroke-width="1.2"><rect x="${(cx-rx).toFixed(1)}" y="${(cy-hh).toFixed(1)}" width="${(2*rx).toFixed(1)}" height="${hh.toFixed(1)}" fill="${c[1]}" stroke="none"/><ellipse cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" rx="${rx.toFixed(1)}" ry="${ry.toFixed(1)}" fill="${c[1]}"/><line x1="${(cx-rx).toFixed(1)}" y1="${cy.toFixed(1)}" x2="${(cx-rx).toFixed(1)}" y2="${(cy-hh).toFixed(1)}"/><line x1="${(cx+rx).toFixed(1)}" y1="${cy.toFixed(1)}" x2="${(cx+rx).toFixed(1)}" y2="${(cy-hh).toFixed(1)}"/><ellipse cx="${cx.toFixed(1)}" cy="${(cy-hh).toFixed(1)}" rx="${rx.toFixed(1)}" ry="${ry.toFixed(1)}" fill="${c[0]}"/></g>`}
   return s}
-/* scenes: each = list of boxes [x,y,z,w,d,h,col] drawn back-to-front */
-const scenes=[
-  [[0,0,0,4,4,1,"blue"],[0,0,1,1,1,1,"white"],[3,0,1,1,1,1,"white"],[0,3,1,1,1,1,"white"],[3,3,1,1,1,1,"white"],[1.5,1.5,1,1,1,1,"black"]],
-  [[0,0,0,5,3,1,"black"],[1,1,1,3,1,2,"blue"],[1,1,3,3,1,.6,"white"]],
-  [[0,0,0,4,4,.4,"white"],[0,0,.4,1,4,.6,"blue"],[1,0,.4,1,4,1.2,"blue"],[2,0,.4,1,4,1.9,"blue"],[3,0,.4,1,4,2.6,"blue"]],
-  [[0,0,0,4,4,1,"grey"],[0,0,1,4,1,1,"blue"],[0,2,1,2,2,.4,"black"],[3,2,1,1,2,2,"white"]],
-  [[0,0,0,2,2,1,"white"],[2,0,0,2,2,1,"black"],[0,2,0,2,2,1,"black"],[2,2,0,2,2,1,"blue"],[2,2,1,2,2,1,"blue"],[2,2,2,2,2,1,"blue"]],
-  [[0,0,0,2,2,1,"blue"],[2.6,0,0,2,2,1.6,"grey"],[0,2.6,0,2,2,.6,"black"],[2.6,2.6,0,2,2,2.4,"blue"]],
-  [[0,0,0,5,5,.5,"white",false],[1,1,.5,3,3,1,"black"],[1.5,1.5,1.5,2,2,1,"blue"]],
-  [[0,0,0,1,4,1,"white"],[1,0,0,1,4,2,"white"],[2,0,0,1,4,3,"blue"],[3,0,0,1,4,4,"blue"]],
+const order=(a,b)=>(a.x+a.y+a.z*1.01+(a.w+a.d)/2)-(b.x+b.y+b.z*1.01+(b.w+b.d)/2);
+/* draw list of {x,y,z,w,d,h,col,studs,a(0..1)} with drop-in */
+const backOut=t=>{const c=1.7;return 1+(c+1)*Math.pow(t-1,3)+c*Math.pow(t-1,2)};
+function drawList(svg,list,o){
+  svg.innerHTML=list.filter(b=>b.a>0).sort(order).map(b=>{
+    const e=backOut(Math.min(1,b.a)),dz=(1-e)*5;
+    return `<g opacity="${Math.min(1,b.a*2.5).toFixed(2)}">${box(b.x,b.y,b.z+dz,b.w,b.d,b.h,b.col,o,b.studs!==false)}</g>`}).join("")}
+const B=(x,y,z,w,d,h,col,studs)=>({x,y,z,w,d,h,col,studs});
+
+/* ================= the day (8 steps) ================= */
+const DAY=[
+ ["Antes de abrir","Nunca operas solo.","Abres Discord y la comunidad ya está revisando el mercado. Preguntas, compartes y nadie te deja solo.","Comunidad",[B(0,0,0,6,6,.4,"white")]],
+ ["Premercado","Todo el mercado, una pantalla.","Varias gráficas a la vez: qué sube, qué baja, qué va sin rumbo. Y la app te avisa cuál está lista.","Multigráfica",[B(0,0,.4,2,3,1,"black"),B(0,3,.4,2,3,1,"black")]],
+ ["Apertura de Nueva York","Operamos en vivo contigo.","Nos conectamos y explicamos cada decisión en el momento. Tú ves, preguntas y aprendes en tiempo real.","En vivo",[B(2,0,.4,2,2,1,"blue"),B(4,0,.4,2,2,1,"blue")]],
+ ["En la operación","Tu libreta se llena sola.","Cada trade aparece en la app con la hora y cuánto ganaste o perdiste. No anotas nada.","Operaciones",[B(2,2,.4,2,2,1,"white"),B(4,2,.4,2,2,1,"white"),B(2,4,.4,2,2,1,"white"),B(4,4,.4,2,2,1,"grey")]],
+ ["Al cerrar","Ves en qué eres bueno.","Cuántas veces aciertas, cuánto ganas en promedio y cuáles son tus mejores días. En segundos.","Panel",[B(0,0,1.4,2,2,1,"grey"),B(0,0,2.4,2,2,1,"grey"),B(0,4,1.4,2,2,1,"grey")]],
+ ["La revisión","Tus errores tienen precio.","Si rompiste una regla, la app te enseña cuánto te costó. Así dejas de repetirlo.","Registro",[B(4,4,1.4,2,2,1,"black"),B(4,2,1.4,2,2,1,"black")]],
+ ["Por la tarde","Practica sin arriesgar.","Compites contra otros traders en días reales del mercado, con presión de verdad y sin tocar tu cuenta.","Simulador",[B(2,0,1.4,4,2,1,"blue"),B(2,2,1.4,2,2,1,"blue")]],
+ ["Por la noche","Tu progreso, día a día.","Tu constancia se vuelve logros y metas que desbloqueas. Mañana, una pieza más.","Logros",[B(2,0,2.4,2,2,1,"blue"),B(2,0,3.4,2,2,1,"blue"),B(2.5,.5,4.4,1,1,1,"white")]],
 ];
-function render(svg,list,o){svg.innerHTML=list.map(b=>box(b[0],b[1],b[2],b[3],b[4],b[5],b[6],o,b[7]!==false)).join("")}
-/* ---------- sticky stack copy (the 8 features) ---------- */
-const F=[
- ["Nunca operas solo.","Un grupo de traders en Discord donde preguntas, compartes y te ayudan a revisar tu día."],
- ["Operamos en vivo contigo.","Cuando abre Nueva York nos conectamos y explicamos todo en el momento. Ves, preguntas, aprendes."],
- ["Tu libreta se llena sola.","Cada operación aparece en la app con la hora y cuánto ganaste o perdiste. No anotas nada."],
- ["Ves en qué eres bueno.","Cuántas veces aciertas, cuánto ganas en promedio y tus mejores días. En segundos."],
- ["Tus errores tienen precio.","Cada vez que rompes tus reglas, la app te enseña cuánto te costó. Así dejas de repetirlo."],
- ["Todo el mercado, una pantalla.","Varias gráficas a la vez: qué sube, qué baja, qué va sin rumbo. Y cuál está lista."],
- ["Practica sin arriesgar.","Compite contra otros traders en días reales del mercado, con presión de verdad y sin tocar tu cuenta."],
- ["Tu progreso, día a día.","Tu constancia se vuelve logros y metas que desbloqueas. Ves que sí estás avanzando."],
-];
-const MED=[["discord.jpg","Discord de la comunidad"],["grafica.mp4","Sesión de Nueva York"],["operaciones.mp4","Operaciones"],["v-panel.mp4","Panel"],["logtrade.mp4","Registro y reglas"],["v-multi.mp4","Multigráfica"],["replay.mp4","Simulador"],["logros.mp4","Logros"]];
-const card=document.getElementById("card"),tag=document.getElementById("tag");
-const els=MED.map(([f])=>{const v=f.endsWith(".mp4");const e=document.createElement(v?"video":"img");e.src="assets/l/"+f;if(v){e.muted=true;e.loop=true;e.playsInline=true;e.preload="none";e.poster="assets/l/"+f.replace(".mp4",".jpg")}card.appendChild(e);return e});
-const iso=null,T=document.getElementById("st-t"),Sb=document.getElementById("st-s"),N=document.getElementById("st-n"),dots=document.getElementById("dots");
-dots.innerHTML=F.map(()=>"<i></i>").join("");
-let cur=-1;
-function setStep(i){if(i===cur)return;cur=i;T.classList.add("out");
-  setTimeout(()=>{T.textContent=F[i][0];Sb.textContent=F[i][1];T.classList.remove("out")},cur<0?0:200);
-  N.textContent=String(i+1).padStart(2,"0")+" / 08";
-  [...dots.children].forEach((d,k)=>d.classList.toggle("on",k===i));
-  els.forEach((e,k)=>{e.classList.toggle("on",k===i);if(e.tagName==="VIDEO"){if(k===i){e.preload="auto";e.play().catch(()=>{})}else e.pause()}});tag.textContent=MED[i][1]}
-const stack=document.getElementById("stack");
-function onScroll(){const r=stack.getBoundingClientRect(),p=Math.min(.999,Math.max(0,-r.top/(r.height-innerHeight)));setStep(Math.floor(p*F.length))}
-addEventListener("scroll",onScroll,{passive:true});setStep(0);
-/* other iso scenes */
-//[[0,0,0,3,3,1,"grey"],[3,0,0,3,3,1,"blue"],[0,3,0,3,3,1,"black"],[3,3,0,3,3,1,"black"]],[280,90,34]);
-//[[0,0,0,6,6,.5,"white",false],[0,0,.5,1,6,.8,"black"],[1,0,.5,1,6,1.4,"black"],[2,0,.5,1,6,2,"grey"],[3,0,.5,1,6,2.7,"grey"],[4,0,.5,1,6,3.4,"blue"],[5,0,.5,1,6,4.2,"blue"]],[260,150,30]);
-/* ---------- manifesto word lighting ---------- */
-const m=document.getElementById("manif");m.innerHTML=m.textContent.split(" ").map(w=>`<span>${w}</span>`).join(" ");
-const ws=[...m.children];
-addEventListener("scroll",()=>{const r=m.getBoundingClientRect(),p=(innerHeight*.8-r.top)/(r.height+innerHeight*.3);ws.forEach((w,i)=>w.classList.toggle("lit",i/ws.length<p))},{passive:true});
-/* ---------- rolling counters ---------- */
+const ALL=[];DAY.forEach((d,si)=>d[4].forEach((b,k)=>ALL.push({...b,step:si,k})));
+const buildSvg=document.getElementById("build"),tag=document.getElementById("tag");
+function renderBuild(f){ /* f = continuous step 0..8 */
+  ALL.forEach(b=>b.a=Math.max(0,Math.min(1,(f-b.step-b.k*.1)/.5)));
+  drawList(buildSvg,ALL,[200,175,26])}
+
+/* ================= GSAP + Lenis ================= */
+gsap.registerPlugin(ScrollTrigger,SplitText,CustomEase);
+CustomEase.create("np","M0,0 C0.65,0 0.35,1 1,1");gsap.defaults({ease:"np"});
+const lenis=new Lenis({lerp:.1});
+lenis.on("scroll",ScrollTrigger.update);gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0);
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{const t=document.querySelector(a.getAttribute("href"));if(t){e.preventDefault();lenis.scrollTo(t)}}));
+
+/* slides with masked words (same mechanic as reference) */
+const slidesEl=document.getElementById("slides"),dotsEl=document.getElementById("dots");
+slidesEl.innerHTML=DAY.map(d=>`<div class="slide"><div class="t mono">${d[0]}</div><h2>${d[1]}</h2><p>${d[2]}</p></div>`).join("");
+dotsEl.innerHTML=DAY.map(()=>"<i><b></b></i>").join("");
+const slides=[...slidesEl.children],dots=[...dotsEl.children],bars=dots.map(d=>d.firstChild);
+const splits=slides.map(s=>SplitText.create(s.querySelectorAll(".t,h2,p"),{type:"words",mask:"words",wordsClass:"sw"}));
+function sizeSlides(){gsap.set(slides,{position:"static",autoAlpha:1});let m=0;slides.forEach(s=>m=Math.max(m,s.offsetHeight));gsap.set(slides,{clearProps:"position"});slidesEl.style.height=m+"px"}
+sizeSlides();
+splits.forEach(s=>gsap.set(s.words,{yPercent:110}));gsap.set(slides,{autoAlpha:0});
+let cur=0;gsap.set(slides[0],{autoAlpha:1});gsap.set(splits[0].words,{yPercent:0});gsap.set(dots[0],{width:"2.9em"});tag.textContent=DAY[0][3];
+function go(n){if(n===cur)return;const p=cur;cur=n;
+  slides.forEach((s,i)=>{if(i!==p&&i!==n){gsap.killTweensOf(splits[i].words);gsap.set(s,{autoAlpha:0});gsap.set(splits[i].words,{yPercent:110});gsap.set(dots[i],{width:5})}});
+  gsap.set(slides[n],{autoAlpha:1});
+  gsap.to(splits[p].words,{yPercent:-110,stagger:.01,duration:.35,onComplete:()=>{if(cur!==p)gsap.set(slides[p],{autoAlpha:0})}});
+  gsap.fromTo(splits[n].words,{yPercent:110},{yPercent:0,stagger:.01,duration:.35,delay:.1});
+  gsap.to(dots[p],{width:5,duration:.4});gsap.to(dots[n],{width:"2.9em",duration:.4});
+  tag.textContent=DAY[n][3]}
+ScrollTrigger.create({trigger:"#stack",start:"top top",end:"bottom bottom",scrub:true,onUpdate:self=>{
+  const p=self.progress,f=p*DAY.length,i=Math.min(DAY.length-1,Math.floor(f));
+  bars.forEach((b,k)=>gsap.set(b,{scaleX:k<i?1:k>i?0:f-i}));
+  renderBuild(Math.min(8,f*1.15+.6));go(i)}});
+renderBuild(.6);
+
+/* headings: masked line reveal */
+document.querySelectorAll(".who h2,.white h2,.final h2,.manif .t,.hero h1").forEach(h=>{
+  const sp=SplitText.create(h,{type:"lines",mask:"lines"});
+  if(h.closest(".hero")){gsap.from(sp.lines,{yPercent:110,duration:1.1,stagger:.1,delay:.2});return}
+  gsap.from(sp.lines,{yPercent:110,duration:1,stagger:.08,scrollTrigger:{trigger:h,start:"top 85%"}})});
+gsap.from(".hero p,.hero .ctas",{y:20,autoAlpha:0,duration:.9,stagger:.1,delay:.6});
+gsap.from("nav",{y:-30,autoAlpha:0,duration:.9,delay:.3});
+/* hubs + rows */
+document.querySelectorAll(".hub").forEach(h=>gsap.from(h.querySelectorAll(".row,.btn,h3"),{y:30,autoAlpha:0,duration:.8,stagger:.08,scrollTrigger:{trigger:h,start:"top 80%"}}));
+gsap.from(".tour",{y:80,scale:.94,autoAlpha:0,duration:1.2,scrollTrigger:{trigger:".tour",start:"top 90%"}});
+gsap.from(".chips span",{y:16,autoAlpha:0,stagger:.04,duration:.6,scrollTrigger:{trigger:".chips",start:"top 90%"}});
+gsap.from(".white p,.white .ctas,.kz",{y:30,autoAlpha:0,duration:.9,stagger:.1,scrollTrigger:{trigger:".white",start:"top 70%"}});
+gsap.from(".final p,.final .ctas,.final .mono",{y:20,autoAlpha:0,duration:.8,stagger:.08,scrollTrigger:{trigger:".final",start:"top 60%"}});
+/* manifesto word lighting (scrubbed) */
+const ws=SplitText.create("#manif",{type:"words"}).words;gsap.set(ws,{color:"#3a3a40"});
+gsap.to(ws,{color:"#fff",stagger:.05,ease:"none",scrollTrigger:{trigger:"#manif",start:"top 80%",end:"bottom 45%",scrub:true}});
+/* footer word rises */
+gsap.from(".word",{yPercent:40,ease:"none",scrollTrigger:{trigger:"footer",start:"top bottom",end:"bottom bottom",scrub:true}});
+
+/* rolling counters */
 document.querySelectorAll(".num").forEach(el=>{el.innerHTML=[...el.dataset.v].map(ch=>{if(!/\d/.test(ch))return`<span>${ch}</span>`;
   let s="";for(let k=0;k<20;k++)s+=`<span>${k%10}</span>`;return`<div class="reel" data-t="${10+ +ch}">${s}</div>`}).join("")});
-/* ---------- reveal + counters observer ---------- */
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add("in");
-  e.target.querySelectorAll?.(".reel").forEach((r,i)=>setTimeout(()=>r.style.transform=`translateY(-${r.dataset.t}em)`,i*120));io.unobserve(e.target)}),{threshold:.3});
-document.querySelectorAll(".reveal,.stat").forEach(e=>io.observe(e));
-/* ---------- final bars ---------- */
-document.getElementById("bars").innerHTML=Array.from({length:60},(_,i)=>`<i style="animation-delay:${(Math.random()*4).toFixed(2)}s;margin-top:${Math.random()*30}vh;margin-bottom:${Math.random()*30}vh"></i>`).join("");
+ScrollTrigger.create({trigger:".stats",start:"top 80%",once:true,onEnter:()=>document.querySelectorAll(".reel").forEach((r,i)=>setTimeout(()=>r.style.transform=`translateY(-${r.dataset.t}em)`,i*120))});
+
+/* ================= infinite lego loops ================= */
+const LOOPS={
+ tower:{o:[200,260,32],dur:7,list:()=>[B(0,0,0,4,4,.4,"white"),B(0,0,.4,2,2,1,"black"),B(2,0,.4,2,2,2,"grey"),B(0,2,.4,2,2,2.6,"blue"),B(2,2,.4,2,2,3.6,"blue"),B(2.5,2.5,4,1,1,1,"white")]},
+ rain:{o:[200,240,24],dur:6,list:()=>{const L=[B(0,0,0,6,6,.4,"black")];const P=[[0,0],[2,0],[4,0],[0,2],[2,2],[4,2],[0,4],[2,4],[4,4]];
+   P.forEach(([x,y],i)=>L.push(B(x,y,.4,2,2,1,["blue","white","grey"][i%3])));P.slice(0,5).forEach(([x,y],i)=>L.push(B(x,y,1.4,2,2,1,i%2?"blue":"white")));return L}},
+ stairs:{o:[200,260,26],dur:6,list:()=>{const L=[B(0,0,0,5,4,.4,"white")];for(let i=0;i<5;i++)L.push(B(i,0,.4,1,4,1+i*.9,i>2?"blue":i>0?"grey":"black"));return L}},
+};
+document.querySelectorAll("[data-loop]").forEach(svg=>{
+  const cfg=LOOPS[svg.dataset.loop],list=cfg.list().map((b,i,arr)=>({...b,i,n:arr.length}));
+  let vis=false;new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(svg);
+  const t0=performance.now()/1000+Math.random();
+  (function tick(){requestAnimationFrame(tick);if(!vis)return;
+    const t=((performance.now()/1000-t0)%cfg.dur)/cfg.dur; /* 0..1: build 0-.6, hold, lift away .85-1 */
+    list.forEach(b=>{const st=b.i/b.n*.55;b.a=Math.max(0,Math.min(1,(t-st)/.12));
+      if(t>.86){const out=(t-.86)/.14-(b.n-b.i)/b.n*.3;b.a=Math.max(0,Math.min(b.a,1-out*1.6))}});
+    drawList(svg,list,cfg.o)})()});
+
+/* ================= final CTA: bars that compress near the cursor ================= */
+const barsEl=document.getElementById("bars");
+barsEl.innerHTML=Array.from({length:60},()=>`<i style="margin-top:${Math.random()*30}vh;margin-bottom:${Math.random()*30}vh"></i>`).join("");
+const fb=[...barsEl.children].map(el=>({el,s:1}));let fx=-999;
+document.querySelector(".final").addEventListener("pointermove",e=>fx=e.clientX);
+document.querySelector(".final").addEventListener("pointerleave",()=>fx=-999);
+gsap.ticker.add(()=>fb.forEach(b=>{const r=b.el.getBoundingClientRect(),d=Math.abs(r.left-fx),k=d<160?.35+.65*(d/160)**2:1;b.s+=(k-b.s)*.12;b.el.style.transform=`scaleY(${b.s.toFixed(3)})`}));
 </script>
 <script type="module">
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js";
 const host=document.getElementById("lego");
 const R=new THREE.WebGLRenderer({antialias:true,alpha:false});
-R.setPixelRatio(Math.min(devicePixelRatio,2));R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;
+R.setPixelRatio(Math.max(2,Math.min(devicePixelRatio,3)));R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;
 R.outputColorSpace=THREE.SRGBColorSpace;R.toneMapping=THREE.ACESFilmicToneMapping;R.toneMappingExposure=1.05;
 host.appendChild(R.domElement);
-const scene=new THREE.Scene();scene.background=new THREE.Color(0x000000);scene.fog=new THREE.Fog(0x000000,38,70);
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x000000);
 const cam=new THREE.OrthographicCamera(-1,1,1,-1,.1,200);
 scene.add(new THREE.HemisphereLight(0xdfe6ff,0x080810,.9));
 const sun=new THREE.DirectionalLight(0xffffff,2.4);sun.position.set(-14,30,18);sun.castShadow=true;
@@ -334,7 +398,7 @@ function spawn(t){
 const ease=t=>{if(t>=1)return 1;const n1=7.5625,d1=2.75;return t<1/d1?n1*t*t:t<2/d1?n1*(t-=1.5/d1)*t+.75:t<2.5/d1?n1*(t-=2.25/d1)*t+.9375:n1*(t-=2.625/d1)*t+.984375};
 for(let i=0;i<N;i++)spawn(start-10+i*.0);  /* pre-built wall */
 bricks.forEach(b=>b.t0=start+b.col*.06+b.y*.05+Math.random()*.1);
-let mx=0,my=0;addEventListener("pointermove",e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+
 function size(){const w=host.clientWidth,h=host.clientHeight,a=w/h,v=mob?16:14.5;R.setSize(w,h,false);
   cam.left=-v*a;cam.right=v*a;cam.top=v;cam.bottom=-v;cam.updateProjectionMatrix()}
 size();addEventListener("resize",size);
@@ -352,8 +416,8 @@ function frame(){
     if(s<=.01)continue;
     put(b.kind,x,y,b.z,s);put(b.kind+"S",x,y+BH/2+.08,b.z,s)}
   for(const key in IM){IM[key].count=cnt[key];IM[key].instanceMatrix.needsUpdate=true}
-  const a=.62+Math.sin(t*.08)*.12+mx*.25;
-  cam.position.set(Math.sin(a)*40,24-my*6,Math.cos(a)*40);cam.lookAt(0,9,0);
+  const a=.62+Math.sin(t*.05)*.06;
+  cam.position.set(Math.sin(a)*40,24,Math.cos(a)*40);cam.lookAt(0,9,0);
   R.render(scene,cam);requestAnimationFrame(frame)}
 frame();
 </script>
