@@ -754,6 +754,7 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
 <section class="pin" id="practica" data-steps="3">
   <div class="rails"></div>
   <div class="pin-in"><div class="wrap two">
+    <div class="win"><div class="shot"><img class="on" width="1600" height="843" src="assets/l/discord.jpg" alt="El Discord de NORTHPOINT" loading="lazy" style="object-fit:cover;object-position:left top"></div>
       <div class="float"><small><i></i>Discord · En vivo</small><b>Apertura NY</b><div><span>#plan-del-día</span><span>9:30</span></div><div><span>Voz</span><span>Comunidad</span></div></div></div>
     <div>
       <span class="tag">La comunidad</span>
@@ -921,7 +922,7 @@ const REDES = {
 };
 (() => {
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
-  const M = ['Cupos limitados', 'Comunidad en Discord', 'Tus trades se registran solos', 'Batallas con días reales del mercado'];
+  const M = ['Comunidad en Discord', 'Lives en la apertura de Nueva York', 'Plan del día', 'Cupos limitados'];
   $('#marq').innerHTML = Array(6).fill(M.map(t => `<span>${t}</span>`).join('')).join('');
   const nav = $('#nav'); addEventListener('scroll', () => nav.classList.toggle('sc', scrollY > 30), { passive: true });
   $('#burger').onclick = () => $('#links').classList.toggle('open');
