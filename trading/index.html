@@ -728,7 +728,7 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
       </div>
       <div class="steps" data-bars><i><b></b></i><i><b></b></i><i><b></b></i></div>
     </div>
-    <div class="win"><div class="shot" data-imgs><div class="iso-w on" data-iso="errores"></div><div class="iso-w" data-iso="emocion"></div><div class="iso-w" data-iso="solo"></div></div></div>
+    <div class="win"><div class="shot" data-imgs><video class="on" src="assets/l/v-disc.mp4" poster="assets/l/v-disc.jpg" autoplay muted loop playsinline preload="metadata"></video><video src="assets/l/v-panel.mp4" poster="assets/l/v-panel.jpg" autoplay muted loop playsinline preload="metadata"></video><img src="assets/l/discord.jpg" alt="La comunidad en Discord" width="1600" height="843" loading="lazy" style="object-position:left top"></div></div>
   </div></div>
 </section>
 
@@ -763,9 +763,9 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
     <h2>Y una app que ordena todo tu trading</h2></div>
     <div class="adv">
       <div class="adv-img" data-imgs>
-        <img class="shot-img on" src="assets/l/z-trades.jpg" alt="Operaciones registradas solas" width="1600" height="1000" loading="lazy">
-        <img class="shot-img" src="assets/l/z-panel.jpg" alt="Panel con tus números" width="1600" height="1000" loading="lazy">
-        <img class="shot-img" src="assets/l/z-multi.jpg" alt="Multichart por sesión" width="1600" height="1000" loading="lazy">
+        <video class="shot-img on" src="assets/l/v-trades.mp4" poster="assets/l/v-trades.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Operaciones registradas solas"></video>
+        <video class="shot-img" src="assets/l/v-panel.mp4" poster="assets/l/v-panel.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Panel con tus números"></video>
+        <video class="shot-img" src="assets/l/v-multi.mp4" poster="assets/l/v-multi.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Multichart por sesión"></video>
       </div>
       <div class="acc" data-items>
         <div class="acc-i on"><div class="acc-h"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h7"/></svg></i>Cada trade entra solo</div><div class="acc-b"><div><p>Conectas tu cuenta una vez y cada operación aparece con hora, R y duración. Sin capturar nada.</p></div></div><i class="acc-p"></i></div>
@@ -802,16 +802,6 @@ video::-webkit-media-controls,video::-webkit-media-controls-start-playback-butto
 
 <div class="sep"></div>
 
-<section class="sec" id="casos">
-  <div class="rails"></div>
-  <div class="wrap">
-    <div class="center"><span class="tag rv">De la hoja de cálculo al sistema</span>
-    <h2 class="rv d1">Tu día de trading, antes y después</h2>
-    <p class="lead rv d2">Así cambia tu rutina de trading.</p></div>
-    <div id="cases" class="rv d2"></div>
-    <div class="case-nav"><button id="cPrev" aria-label="Anterior"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button><div class="case-dots" id="cDots"></div><button id="cNext" aria-label="Siguiente"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button></div>
-  </div>
-</section>
 
 <div class="sep"></div>
 
@@ -995,10 +985,12 @@ const REDES = {
   const C = [['Terminas la sesión sin saber cómo te fue', 'Notas sueltas y una hoja de cálculo sin actualizar.', 'Tus operaciones ya están registradas con su R. Agregas setup y emoción en dos clics.', 'toasts', ['AUTO', 'registro de cada operación'], [['Captura', 'Automática'], ['Tiempo al día', '2 min'], ['Operaciones perdidas', '0']]],
     ['Las reglas rotas no se ven... hasta fin de mes', 'Los errores se mezclan con el resto de las operaciones.', 'El panel separa lo que ganas con tu plan de lo que pierdes sin él.', 'reglas', ['R', 'el costo de cada regla rota'], [['Reglas medidas', 'Sí'], ['Costo del error', 'En R'], ['Sorpresas', '0']]],
     ['Practicas solo y sin presión', 'Una cuenta demo sin contexto ni rivales.', 'Un torneo en un día real, con ORB, liquidez marcada y otros traders en la tabla.', 'tabla', ['$0', 'de riesgo para practicar'], [['Datos', 'Reales'], ['Rivales', '1v1 o torneo'], ['Desde', '$10 de balance']]]];
-  $('#cases').innerHTML = C.map(([q, a, d, img, big, k], i) => `<div class="case ${i ? '' : 'on'}"><div class="case-l"><q>${q}</q><div class="ba"><div><small>ANTES</small><p>${a}</p></div><div><small>CON NORTHPOINT</small><p>${d}</p></div></div><div class="case-who"><span>Caso de uso ${i + 1} de ${C.length}</span><span>Ejemplo, no testimonio</span></div></div><div class="case-r"><div class="wg-box">${wg(img)}</div><div class="case-big"><b>${big[0].replace(/^(\$?)(.*)$/, '<span>$1</span>$2')}</b><p>${big[1]}</p></div><div class="case-k">${k.map(([a2, b]) => `<div><span>${a2}</span><b>${b}</b></div>`).join('')}</div></div></div>`).join('');
-  $('#cDots').innerHTML = C.map((_, i) => `<i class="${i ? '' : 'on'}"></i>`).join('');
+  if ($('#cases')) $('#cases').innerHTML = C.map(([q, a, d, img, big, k], i) => `<div class="case ${i ? '' : 'on'}"><div class="case-l"><q>${q}</q><div class="ba"><div><small>ANTES</small><p>${a}</p></div><div><small>CON NORTHPOINT</small><p>${d}</p></div></div><div class="case-who"><span>Caso de uso ${i + 1} de ${C.length}</span><span>Ejemplo, no testimonio</span></div></div><div class="case-r"><div class="wg-box">${wg(img)}</div><div class="case-big"><b>${big[0].replace(/^(\$?)(.*)$/, '<span>$1</span>$2')}</b><p>${big[1]}</p></div><div class="case-k">${k.map(([a2, b]) => `<div><span>${a2}</span><b>${b}</b></div>`).join('')}</div></div></div>`).join('');
+  if ($('#cDots')) $('#cDots').innerHTML = C.map((_, i) => `<i class="${i ? '' : 'on'}"></i>`).join('');
+  if ($('#cases')) {
   let ci = 0; const caso = i => { ci = (i + C.length) % C.length; $$('#cases .case').forEach((x, k) => x.classList.toggle('on', k === ci)); $$('#cDots i').forEach((x, k) => x.classList.toggle('on', k === ci)); };
   $('#cPrev').onclick = () => caso(ci - 1); $('#cNext').onclick = () => caso(ci + 1);
+  }
 
   // preguntas
   const F = [['¿Qué pasa después de aplicar?', 'Al terminar tu solicitud agendas en el momento una videollamada de 30 minutos: vemos cómo operas, te mostramos la app con tus brókers y te recomendamos el plan.'], ['¿Para quién es NORTHPOINT?', 'Para cualquier trader de futuros, forex, índices o cripto que quiera ver sus números reales y mejorar: desde quien empieza, hasta quien va por su cuenta fondeada o ya opera su propio capital.'],
@@ -1090,7 +1082,7 @@ const REDES = {
   // notificaciones del iPhone
   new IntersectionObserver((es, o) => es.forEach(e => { if (!e.isIntersecting) return; o.disconnect(); $$('#nts .nt').forEach((n, i) => setTimeout(() => n.classList.add('on'), 300 + i * 650)); }), { threshold: .35 }).observe($('#nts'));
   // Polar: la estrella que te guía por la página
-  { const G = [['top', 'Hola, soy Polar. Te muestro la app en un minuto.'], ['zoom', 'Así se ve NORTHPOINT por dentro.'], ['ventajas', 'Cinco funciones clave. Desliza para verlas una por una.'], ['por-que', 'Los tres errores más comunes.'], ['practica', 'Aquí practicas tu setup sin tocar tu cuenta.'], ['diferencia', 'Compara cómo operas con y sin NORTHPOINT.'], ['como', 'Toca cualquier video para verlo en grande.'], ['comunidad', 'La comunidad está en Discord. Entra.'], ['casos', 'Así cambia tu rutina de trading.'], ['planes', 'Aplica y te contactamos por correo.'], ['faq', '¿Dudas? Aquí están las respuestas.'], ['redes', 'Contenido y transmisiones en vivo.'], ['final', 'Aplica ahora. Los cupos son limitados.']];
+  { const G = [['top', 'Hola, soy Polar. Te muestro NORTHPOINT en un minuto.'], ['zoom', 'Así se ve la app por dentro.'], ['por-que', 'Por qué la mayoría se pierde.'], ['comunidad', 'La comunidad está en Discord. Entra.'], ['ventajas', 'La app que ordena todo tu trading.'], ['diferencia', 'Con guía o a ciegas.'], ['planes', 'Aplica y agenda tu llamada.'], ['faq', '¿Dudas? Aquí están las respuestas.'], ['redes', 'Contenido y transmisiones en vivo.'], ['final', 'Aplica ahora.']];
     const P = $('#polar'), box = $('#pbx'), tx = $('#ptx'), nx = $('#pnx'); let cur = -1;
     try { if (sessionStorage.getItem('np.polar') === 'off') P.classList.add('off'); } catch (_) {}
     const el = k => k === 'top' ? document.body : document.getElementById(k);
