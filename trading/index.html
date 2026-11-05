@@ -52,9 +52,11 @@ nav .lk:hover{background:#2a2a2e}
 .plus:before,.plus:after{content:"";position:absolute;background:#fff}
 .plus:before{left:4px;top:0;width:1px;height:9px}.plus:after{top:4px;left:0;height:1px;width:9px}
 .right{position:relative;background-color:#000;background-image:radial-gradient(#3a3a40 1px,transparent 1px);background-size:44px 44px;display:flex;align-items:center;justify-content:center}
-.card{width:68%;aspect-ratio:1/1;background:#fff;display:flex;align-items:center;justify-content:center}
-.card svg{width:88%;height:88%}
-@media(max-width:820px){.frame{grid-template-columns:1fr;grid-template-rows:1fr 1fr;height:84vh}.card{width:auto;height:84%}.left .sub{display:none}}
+.card{width:86%;aspect-ratio:16/10;background:#0b0b0e;border:1px solid #2e2e34;border-radius:10px;overflow:hidden;position:relative;box-shadow:0 30px 80px rgba(37,99,255,.18)}
+.card video,.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s}
+.card .on{opacity:1}
+.card .tag{position:absolute;left:10px;bottom:10px;z-index:2;background:rgba(0,0,0,.7);border:1px solid #2e2e34;border-radius:6px;padding:5px 8px;font-size:11px;color:#cfcfd4}
+@media(max-width:820px){.frame{grid-template-columns:1fr;grid-template-rows:1fr 1fr;height:84vh}.card{width:92%;height:auto}.left .sub{display:none}}
 /* two hubs */
 .hubs{max-width:1240px;margin:0 auto;padding:40px 24px 120px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .hub{background:var(--g1);border:1px solid var(--line);padding:18px}
@@ -66,7 +68,10 @@ nav .lk:hover{background:#2a2a2e}
 /* who */
 .who{text-align:center;padding:40px 16px 0}
 .who h2{font-size:clamp(48px,9vw,128px);font-weight:500;letter-spacing:-.045em;line-height:.92}
-.who svg{width:min(560px,90%);margin:-10px auto 0;display:block}
+.tour{max-width:1100px;margin:48px auto 0;border:1px solid #2e2e34;border-radius:14px;overflow:hidden;box-shadow:0 40px 120px rgba(37,99,255,.22)}
+.tour video{display:block;width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:24px auto 0;max-width:800px}
+.chips span{border:1px solid var(--line);background:var(--g1);padding:7px 12px;border-radius:20px;font-size:13px;color:#d6d6db}
 .manif{max-width:1240px;margin:0 auto;padding:80px 24px 120px;display:grid;grid-template-columns:1fr 1.4fr;gap:40px}
 .manif .t{font-size:clamp(34px,5.4vw,76px);font-weight:500;letter-spacing:-.035em;line-height:1}
 .manif .t span{color:#3a3a40;transition:color .4s}
@@ -89,7 +94,7 @@ nav .lk:hover{background:#2a2a2e}
 .white .in{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .white h2{font-size:clamp(44px,6.4vw,92px);font-weight:500;letter-spacing:-.04em;line-height:.95}
 .white p{color:#55555c;margin:22px 0 26px;max-width:380px;line-height:1.5}
-.white svg{width:100%}
+.kz{border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.25)}.kz video{display:block;width:100%}
 @media(max-width:820px){.white .in{grid-template-columns:1fr}}
 /* final */
 .final{position:relative;min-height:90vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 16px;overflow:hidden}
@@ -118,14 +123,14 @@ footer{background:var(--blue);padding:56px 24px 0;overflow:hidden}
   <a class="logo" href="#"><svg viewBox="0 0 20 20"><path d="M3 17V3l14 14V3" fill="none" stroke="#2563ff" stroke-width="3"/></svg>NORTHPOINT</a>
   <a class="lk" href="#stack">La app</a>
   <a class="lk" href="#hubs">Comunidad</a>
-  <a class="lk" href="#numeros">En números</a>
+  <a class="lk" href="#numeros">En números</a><a class="lk" href="precios.html">Precios</a>
   <a class="btn b" href="aplicar.html">Aplicar</a>
 </nav>
 
 <section class="hero">
   <div id="lego"></div>
   <h1>Donde empieza<br>tu trading</h1>
-  <p>Comunidad. Sesiones en vivo. Una app que trabaja por ti.</p>
+  <p>Comunidad, sesiones en vivo, app y más.</p>
   <div class="ctas"><a class="btn b" href="aplicar.html">Aplicar ahora</a><a class="btn w" href="#stack">Ver la app</a></div>
 </section>
 
@@ -141,7 +146,7 @@ footer{background:var(--blue);padding:56px 24px 0;overflow:hidden}
         <div class="n mono" id="st-n"></div>
         <div class="dots" id="dots"></div>
       </div>
-      <div class="right"><div class="card"><svg id="iso" viewBox="0 0 400 400"></svg></div></div>
+      <div class="right"><div class="card" id="card"><span class="tag mono" id="tag"></span></div></div>
     </div>
   </div>
 </section>
@@ -164,8 +169,9 @@ footer{background:var(--blue);padding:56px 24px 0;overflow:hidden}
 </section>
 
 <section class="who">
-  <h2 class="reveal">Quién opera<br>con NORTHPOINT</h2>
-  <svg id="iso2" viewBox="0 0 560 360"></svg>
+  <h2 class="reveal">Una sola app.<br>Todo tu trading.</h2>
+  <div class="tour reveal"><video src="assets/l/tour2.mp4" poster="assets/l/tour2.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
+  <div class="chips reveal"><span>Panel</span><span>Operaciones</span><span>Calendario</span><span>Multigráfica</span><span>Simulador</span><span>Logros</span><span>Kaizen Way</span><span>Comunidad</span></div>
 </section>
 
 <section class="manif">
@@ -188,10 +194,10 @@ footer{background:var(--blue);padding:56px 24px 0;overflow:hidden}
   <div class="in">
     <div class="reveal">
       <h2>Progreso que<br>se puede ver</h2>
-      <p>Tu constancia se convierte en logros y metas que vas desbloqueando. Cada día cuenta, y lo ves.</p>
+      <p>Kaizen Way convierte tu constancia en un camino: metas, logros y cartas que vas desbloqueando. Cada día cuenta, y lo ves.</p>
       <div class="ctas" style="justify-content:flex-start"><a class="btn b" href="aplicar.html">Aplicar ahora</a><a class="btn k" href="#hubs">Cómo funciona</a></div>
     </div>
-    <svg id="iso3" viewBox="0 0 520 420"></svg>
+    <div class="kz"><video src="assets/l/kaizen.mp4" poster="assets/l/kaizen.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
   </div>
 </section>
 
@@ -210,7 +216,7 @@ footer{background:var(--blue);padding:56px 24px 0;overflow:hidden}
     <div><svg viewBox="0 0 20 20"><path d="M3 17V3l14 14V3" fill="none" stroke="#fff" stroke-width="3"/></svg></div>
     <div><h4>Comunidad</h4><a href="#hubs">Discord</a><a href="#hubs">Sesiones en vivo</a><a href="#hubs">Competencias</a></div>
     <div><h4>App</h4><a href="#stack">Diario automático</a><a href="#stack">Estadísticas</a><a href="#stack">Mercado</a></div>
-    <div><h4>NORTHPOINT</h4><a href="aplicar.html">Aplicar</a><a href="#numeros">En números</a></div>
+    <div><h4>NORTHPOINT</h4><a href="aplicar.html">Aplicar</a><a href="precios.html">Precios</a><a href="descargar.html">Descargar</a><a href="miembros.html">Miembros</a></div>
   </div>
   <div class="word">NORTHPOINT</div>
 </footer>
@@ -253,20 +259,23 @@ const F=[
  ["Practica sin arriesgar.","Compite contra otros traders en días reales del mercado, con presión de verdad y sin tocar tu cuenta."],
  ["Tu progreso, día a día.","Tu constancia se vuelve logros y metas que desbloqueas. Ves que sí estás avanzando."],
 ];
-const iso=document.getElementById("iso"),T=document.getElementById("st-t"),Sb=document.getElementById("st-s"),N=document.getElementById("st-n"),dots=document.getElementById("dots");
+const MED=[["discord.jpg","Discord de la comunidad"],["grafica.mp4","Sesión de Nueva York"],["operaciones.mp4","Operaciones"],["v-panel.mp4","Panel"],["logtrade.mp4","Registro y reglas"],["v-multi.mp4","Multigráfica"],["replay.mp4","Simulador"],["logros.mp4","Logros"]];
+const card=document.getElementById("card"),tag=document.getElementById("tag");
+const els=MED.map(([f])=>{const v=f.endsWith(".mp4");const e=document.createElement(v?"video":"img");e.src="assets/l/"+f;if(v){e.muted=true;e.loop=true;e.playsInline=true;e.preload="none";e.poster="assets/l/"+f.replace(".mp4",".jpg")}card.appendChild(e);return e});
+const iso=null,T=document.getElementById("st-t"),Sb=document.getElementById("st-s"),N=document.getElementById("st-n"),dots=document.getElementById("dots");
 dots.innerHTML=F.map(()=>"<i></i>").join("");
 let cur=-1;
 function setStep(i){if(i===cur)return;cur=i;T.classList.add("out");
   setTimeout(()=>{T.textContent=F[i][0];Sb.textContent=F[i][1];T.classList.remove("out")},cur<0?0:200);
   N.textContent=String(i+1).padStart(2,"0")+" / 08";
   [...dots.children].forEach((d,k)=>d.classList.toggle("on",k===i));
-  render(iso,scenes[i],[200,150,34])}
+  els.forEach((e,k)=>{e.classList.toggle("on",k===i);if(e.tagName==="VIDEO"){if(k===i){e.preload="auto";e.play().catch(()=>{})}else e.pause()}});tag.textContent=MED[i][1]}
 const stack=document.getElementById("stack");
 function onScroll(){const r=stack.getBoundingClientRect(),p=Math.min(.999,Math.max(0,-r.top/(r.height-innerHeight)));setStep(Math.floor(p*F.length))}
 addEventListener("scroll",onScroll,{passive:true});setStep(0);
 /* other iso scenes */
-render(document.getElementById("iso2"),[[0,0,0,3,3,1,"grey"],[3,0,0,3,3,1,"blue"],[0,3,0,3,3,1,"black"],[3,3,0,3,3,1,"black"]],[280,90,34]);
-render(document.getElementById("iso3"),[[0,0,0,6,6,.5,"white",false],[0,0,.5,1,6,.8,"black"],[1,0,.5,1,6,1.4,"black"],[2,0,.5,1,6,2,"grey"],[3,0,.5,1,6,2.7,"grey"],[4,0,.5,1,6,3.4,"blue"],[5,0,.5,1,6,4.2,"blue"]],[260,150,30]);
+//[[0,0,0,3,3,1,"grey"],[3,0,0,3,3,1,"blue"],[0,3,0,3,3,1,"black"],[3,3,0,3,3,1,"black"]],[280,90,34]);
+//[[0,0,0,6,6,.5,"white",false],[0,0,.5,1,6,.8,"black"],[1,0,.5,1,6,1.4,"black"],[2,0,.5,1,6,2,"grey"],[3,0,.5,1,6,2.7,"grey"],[4,0,.5,1,6,3.4,"blue"],[5,0,.5,1,6,4.2,"blue"]],[260,150,30]);
 /* ---------- manifesto word lighting ---------- */
 const m=document.getElementById("manif");m.innerHTML=m.textContent.split(" ").map(w=>`<span>${w}</span>`).join(" ");
 const ws=[...m.children];
