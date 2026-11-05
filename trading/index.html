@@ -83,8 +83,25 @@ nav .lk:hover{background:#2a2a2e}
 /* who */
 .who{text-align:center;padding:40px 16px 0}
 .who h2{font-size:clamp(48px,9vw,128px);font-weight:500;letter-spacing:-.045em;line-height:.92}
-.tour{max-width:1100px;margin:48px auto 0;border:1px solid #2e2e34;border-radius:14px;overflow:hidden;box-shadow:0 40px 120px rgba(37,99,255,.22)}
-.tour video{display:block;width:100%}
+.tour{max-width:1060px;margin:56px auto 0;padding:0 16px}
+.lid{background:#1c1c1f;border-radius:22px 22px 0 0;padding:14px 14px 18px;border:1px solid #33333a;border-bottom:none;position:relative}
+.lid:before{content:"";position:absolute;top:6px;left:50%;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:#0b0b0d}
+.scr{position:relative;aspect-ratio:16/10;background:radial-gradient(ellipse at 50% 60%,#071434,#020308 70%);border-radius:6px;overflow:hidden;text-align:left}
+.scr .top{position:absolute;top:0;left:0;right:0;height:7%;display:flex;align-items:center;gap:6%;padding:0 3%;border-bottom:1px solid rgba(255,255,255,.06);font-size:clamp(7px,.9vw,11px);color:#8b93a7}
+.scr .top b{color:#fff;font-weight:600;letter-spacing:.06em}
+.scr .top .u{margin-left:auto;display:flex;align-items:center;gap:6px;color:#dfe3ee}.scr .top .u i{width:1.6em;height:1.6em;border-radius:50%;background:linear-gradient(135deg,#2563ff,#7aa2ff)}
+.scr .gm{position:absolute;left:5%;top:14%;z-index:3}
+.scr .gm small{display:block;font-size:clamp(8px,1vw,12px);color:#7f8aa3;letter-spacing:.1em;text-transform:uppercase;font-family:"JetBrains Mono",monospace}
+.scr .gm h4{font-size:clamp(20px,3.6vw,46px);font-weight:500;letter-spacing:-.03em;color:#fff;margin-top:.25em;line-height:1}
+.scr .gm span{display:block;color:#9aa4ba;font-size:clamp(9px,1.1vw,14px);margin-top:.6em}
+.scr video{position:absolute;left:50%;top:56%;height:120%;transform:translate(-50%,-50%);mix-blend-mode:screen}
+.news{position:absolute;z-index:3;width:30%;background:rgba(10,14,28,.78);backdrop-filter:blur(8px);border:1px solid rgba(120,150,255,.18);border-radius:8px;padding:1.1% 1.4%;font-size:clamp(7px,.85vw,11px);color:#dfe5f3;line-height:1.35}
+.news em{display:block;font-style:normal;color:#5b8cff;font-family:"JetBrains Mono",monospace;font-size:.85em;letter-spacing:.06em;margin-bottom:.3em}
+.news:after{content:"";position:absolute;width:6px;height:6px;border-radius:50%;background:#2563ff;box-shadow:0 0 0 4px rgba(37,99,255,.25)}
+.n1{right:4%;top:15%}.n1:after{left:-16px;top:40%}.n2{right:6%;top:46%}.n2:after{left:-16px;top:40%}.n3{left:5%;bottom:10%}.n3:after{right:-16px;top:40%}.n4{right:4%;bottom:9%}.n4:after{left:-16px;top:40%}
+.base{height:16px;background:linear-gradient(#cfd0d5,#8e9097);border-radius:0 0 18px 18px;margin:0 -5%;position:relative}
+.base:before{content:"";position:absolute;left:50%;top:0;width:14%;height:6px;margin-left:-7%;background:#76787f;border-radius:0 0 8px 8px}
+.reel,.num>span{user-select:none}
 .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:24px auto 0;max-width:800px}
 .chips span{border:1px solid var(--line);background:var(--g1);padding:7px 12px;border-radius:20px;font-size:13px;color:#d6d6db}
 .manif{max-width:1240px;margin:0 auto;padding:80px 24px 120px;display:grid;grid-template-columns:1fr 1.4fr;gap:40px}
@@ -193,34 +210,42 @@ footer{background:var(--blue);padding:56px 24px 0;overflow:hidden}
 
 <section class="who">
   <h2 class="reveal">Una sola app.<br>Todo tu trading.</h2>
-  <div class="tour reveal"><video src="assets/l/tour2.mp4" poster="assets/l/tour2.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
-  <div class="chips reveal"><span>Panel</span><span>Operaciones</span><span>Calendario</span><span>Multigráfica</span><span>Simulador</span><span>Logros</span><span>Kaizen Way</span><span>Comunidad</span></div>
+  <div class="tour reveal"><div class="lid"><div class="scr">
+      <div class="top"><b>NORTHPOINT</b><span>Inicio</span><span>Mercado</span><span>Diario</span><span>Comunidad</span><div class="u"><i></i>Daniel Ortega</div></div>
+      <div class="gm"><small id="gmDate">Martes</small><h4 id="gmHi">Buenos días,<br>Daniel</h4><span>Esto es lo que mueve al mundo hoy.</span></div>
+      <video src="assets/l/mundo.mp4" autoplay muted loop playsinline></video>
+      <div class="news n1"><em>EE.UU. · 07:00</em>Futuros de índices abren la semana con cautela antes de los datos de inflación.</div>
+      <div class="news n2"><em>Europa · 03:00</em>Londres abre y el euro se mueve frente al dólar.</div>
+      <div class="news n3"><em>Calendario</em>Hoy: discurso de la Fed y datos de empleo. La app te avisa antes.</div>
+      <div class="news n4"><em>Asia · 20:00</em>Tokio cierra la sesión; el oro se mantiene firme.</div>
+    </div></div><div class="base"></div></div>
+  <div class="chips reveal" style="display:none"><span>Panel</span><span>Operaciones</span><span>Calendario</span><span>Multigráfica</span><span>Simulador</span><span>Logros</span><span>Kaizen Way</span><span>Comunidad</span></div>
 </section>
 
 <section class="manif">
-  <div><div class="mono" style="color:var(--blue)">Hecho para traders</div><svg class="loop" data-loop="tower" viewBox="0 0 400 420"></svg></div>
+  <div><div class="mono" style="color:var(--blue)">Por qué existe</div><svg class="loop" data-loop="tower" viewBox="0 0 400 420"></svg></div>
   <div>
-    <div class="t" id="manif">Los traders de aquí dejaron de adivinar, dejaron de operar solos y empezaron a medir cada día.</div>
-    <p>El resultado: más constancia, menos errores repetidos y un progreso que por fin se puede ver.</p>
+    <div class="t" id="manif">Hecho por traders, para traders. Lo construimos porque nos hacía falta.</div>
+    <p>Operábamos solos, anotábamos todo en hojas de cálculo y repetíamos los mismos errores sin saber cuánto nos costaban. Nadie nos enseñaba en vivo. Así que hicimos lo que queríamos tener: una comunidad para no operar solo, sesiones en vivo para aprender viendo y una app que mide cada día por ti.</p>
     <div class="ctas" style="justify-content:flex-start"><a class="btn b" href="aplicar.html">Aplicar ahora</a><a class="btn w" href="#stack">Ver la app</a></div>
   </div>
 </section>
 
 <section class="stats" id="numeros">
-  <div class="stat"><i class="t"></i><i class="b"></i><div class="num" data-v="8"></div><div class="l">Herramientas en un solo lugar</div></div>
-  <div class="stat"><i class="t"></i><i class="b"></i><div class="num" data-v="1"></div><div class="l">Pantalla para todo el mercado</div></div>
-  <div class="stat"><i class="t"></i><i class="b"></i><div class="num" data-v="0"></div><div class="l">Trades que anotas a mano</div></div>
-  <div class="stat"><i class="t"></i><i class="b"></i><div class="num" data-v="9:30"></div><div class="l">Nueva York, en vivo contigo</div></div>
+  <div class="stat"><i class="t"></i><i class="b"></i><div class="num" data-v="100" aria-label="100%"></div><div class="l">De tus trades se registran solos</div></div>
+  <div class="stat"><i class="t"></i><i class="b"></i><div class="num" data-v="3" aria-label="3"></div><div class="l">Pasos para entrar: aplicas, Zoom y tu clave</div></div>
+  <div class="stat"><i class="t"></i><i class="b"></i><div class="num" data-v="1" aria-label="1"></div><div class="l">Comunidad privada en Discord</div></div>
+  <div class="stat"><i class="t"></i><i class="b"></i><div class="num" data-v="0" aria-label="0"></div><div class="l">Hojas de cálculo por llenar</div></div>
 </section>
 
 <section class="white">
   <div class="in">
     <div class="reveal">
       <h2>Progreso que<br>se puede ver</h2>
-      <p>Kaizen Way convierte tu constancia en un camino: metas, logros y cartas que vas desbloqueando. Cada día cuenta, y lo ves.</p>
+      <p>Cada día queda en tu calendario, en verde o en rojo, con su resultado. Ves de un vistazo tu semana, tu mes y lo constante que has sido.</p>
       <div class="ctas" style="justify-content:flex-start"><a class="btn b" href="aplicar.html">Aplicar ahora</a><a class="btn k" href="#hubs">Cómo funciona</a></div>
     </div>
-    <div class="kz"><video src="assets/l/kaizen.mp4" poster="assets/l/kaizen.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
+    <div class="kz"><img src="assets/l/calendario.jpg" alt="Calendario de NORTHPOINT con los días en verde y rojo" style="display:block;width:100%"></div>
   </div>
 </section>
 
@@ -337,9 +362,13 @@ gsap.from(".word",{yPercent:40,ease:"none",scrollTrigger:{trigger:"footer",start
 
 gsap.from(".stat i",{scale:0,duration:.5,stagger:.05,ease:"back.out(2)",scrollTrigger:{trigger:".stats",start:"top 80%"}});
 gsap.from(".stat .l",{yPercent:100,autoAlpha:0,duration:.7,stagger:.1,scrollTrigger:{trigger:".stats",start:"top 80%"}});
+{const d=new Date(),h=d.getHours(),g=h<12?"Buenos días":h<19?"Buenas tardes":"Buenas noches";
+ document.getElementById("gmHi").innerHTML=g+",<br>Daniel";document.getElementById("gmDate").textContent=d.toLocaleDateString("es-MX",{weekday:"long",day:"numeric",month:"long"});}
+gsap.from(".news",{y:20,autoAlpha:0,duration:.8,stagger:.25,scrollTrigger:{trigger:".tour",start:"top 60%"}});
+gsap.to(".news",{y:-6,duration:2.4,ease:"sine.inOut",yoyo:true,repeat:-1,stagger:{each:.6}});
 /* rolling counters */
 document.querySelectorAll(".num").forEach(el=>{el.innerHTML=[...el.dataset.v].map(ch=>{if(!/\d/.test(ch))return`<span>${ch}</span>`;
-  let s="";for(let k=0;k<40;k++)s+=`<span>${k%10}</span>`;return`<div class="reel" data-t="${30+ +ch}">${s}</div>`}).join("")});
+  let s="";for(let k=0;k<40;k++)s+=`<span>${k%10}</span>`;return`<div class="reel" aria-hidden="true" data-t="${30+ +ch}">${s}</div>`}).join("")+(el.dataset.v==="100"?"<span>%</span>":"")});
 ScrollTrigger.create({trigger:".stats",start:"top 80%",once:true,onEnter:()=>document.querySelectorAll(".reel").forEach((r,i)=>setTimeout(()=>r.style.transform=`translateY(-${r.dataset.t}em)`,i*120))});
 
 /* ================= infinite lego loops ================= */
