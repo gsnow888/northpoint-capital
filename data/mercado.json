@@ -195,51 +195,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 28211.0,
-   "cambio": 83.5,
-   "pct": 0.3
+   "precio": 28270.75,
+   "cambio": 143.25,
+   "pct": 0.51
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7695.0,
-   "cambio": 120.5,
-   "pct": 1.59
+   "precio": 7720.0,
+   "cambio": 145.5,
+   "pct": 1.92
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4123.2,
-   "cambio": 153.6,
-   "pct": 3.87
+   "precio": 4133.8,
+   "cambio": 164.2,
+   "pct": 4.14
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 87.27,
-   "cambio": -9.19,
-   "pct": -9.53
+   "precio": 89.43,
+   "cambio": -7.03,
+   "pct": -7.29
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2865.3,
-   "cambio": 47.5,
-   "pct": 1.69
+   "precio": 2869.8,
+   "cambio": 52.0,
+   "pct": 1.85
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 53635.0,
-   "cambio": 1502.0,
-   "pct": 2.88
+   "precio": 53830.0,
+   "cambio": 1697.0,
+   "pct": 3.26
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 80720.0,
-   "cambio": 3880.0,
-   "pct": 5.05
+   "precio": 79850.0,
+   "cambio": 3010.0,
+   "pct": 3.92
   }
  ],
  "acciones": [
@@ -414,136 +414,136 @@
  ],
  "noticias": [
   {
-   "titulo": "Russia, China may be more aggressive if they feel Trump is on \"his way out\": Brookings",
-   "url": "https://www.cnbc.com/2026/11/05/trump-russia-china-summit-apec-midterms.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 05:30:27 GMT"
+   "titulo": "Three things that explain what’s changing with Obamacare in 2027",
+   "url": "https://www.marketwatch.com/story/three-things-that-explain-whats-changing-with-obamacare-in-2027-7c94585b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 14:04:00 GMT"
   },
   {
-   "titulo": "Inside the chip talent war: Trade secrets and rising Chinese rivals",
-   "url": "https://www.cnbc.com/2026/11/05/semiconductor-china-korea-talents-rivalry.html",
+   "titulo": "My wife cried when I found out she had only $80,000 in her 401(k). I have $2.2 million. Am I wrong to be shocked?",
+   "url": "https://www.marketwatch.com/story/my-wife-has-only-80-000-saved-for-retirement-i-have-2-2-million-am-i-wrong-to-be-shocked-3e27b490?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 14:00:00 GMT"
+  },
+  {
+   "titulo": "Banks are turning cautious on lending, according to the Fed. What it means for the economy",
+   "url": "https://www.cnbc.com/2026/11/05/fed-bank-lending-standards-small-business.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 03:53:18 GMT"
+   "fecha": "Thu, 05 Nov 2026 13:52:38 GMT"
+  },
+  {
+   "titulo": "Qualcomm’s stock falls as twin forces pressure sales",
+   "url": "https://www.marketwatch.com/story/qualcomms-stock-falls-as-twin-forces-pressure-sales-fa161159?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 13:47:00 GMT"
+  },
+  {
+   "titulo": "World's largest olive oil company plummets 20% after rivals agree to takeover deal",
+   "url": "https://www.cnbc.com/2026/11/05/deoleo-olive-oil-takeover-dcoop-acesur.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 13:45:49 GMT"
+  },
+  {
+   "titulo": "OpenAI pledges to halt NDAs in new data center policy proposal after election rebuke",
+   "url": "https://www.cnbc.com/2026/11/05/openai-to-pay-for-data-center-power-after-election-shows-ai-concern.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 13:44:45 GMT"
+  },
+  {
+   "titulo": "What Wall Street billionaires are saying about Democrats' midterm sweep",
+   "url": "https://www.cnbc.com/2026/11/04/billionaires-musk-branson-democrats-midterms-ai-wall-street.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 13:44:27 GMT"
+  },
+  {
+   "titulo": "Chinese AI lab Moonshot turned to Europe for Nvidia Blackwell access amid U.S. China curbs, sources tell CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/moonshot-ai-nvidia-chips-europe-china.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 13:34:14 GMT"
+  },
+  {
+   "titulo": "Wendy's rejects $1.4 billion takeover proposal from Nelson Peltz’s Trian",
+   "url": "https://www.cnbc.com/2026/11/05/wendys-rejects-takeover-proposal.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 13:26:28 GMT"
+  },
+  {
+   "titulo": "‘It seems bizarre’: We’re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
+   "url": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 13:15:00 GMT"
+  },
+  {
+   "titulo": "A prolonged war in Iran is the market’s real ‘black swan,’ says this strategist",
+   "url": "https://www.marketwatch.com/story/a-prolonged-war-in-iran-is-the-markets-real-black-swan-says-this-strategist-65d105c7?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 13:07:00 GMT"
+  },
+  {
+   "titulo": "‘He was heartbroken’: My husband’s kids abandoned him when he was dying. Was he right to leave everything to me?",
+   "url": "https://www.marketwatch.com/story/he-was-heartbroken-my-husbands-kids-never-helped-when-he-was-gravely-ill-was-he-right-to-leave-everything-to-me-1ad0616b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 13:01:00 GMT"
+  },
+  {
+   "titulo": "Voters rejected AI data centers over resource concerns. Here's why measuring water usage is hard",
+   "url": "https://www.cnbc.com/2026/11/05/meta-spacex-ai-data-centers-use-millions-of-gallons-of-water-a-day.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 13:00:01 GMT"
+  },
+  {
+   "titulo": "What the Democratic midterms sweep changes for U.S.-China relations",
+   "url": "https://www.cnbc.com/2026/11/05/what-the-democrat-midterms-sweep-changes-for-us-china-tech-rivalry.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 12:57:10 GMT"
+  },
+  {
+   "titulo": "Here's what the Democratic election rout could mean for the U.S. economy",
+   "url": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 12:53:14 GMT"
+  },
+  {
+   "titulo": "Robot maker Agility starts trading today — but its steep losses are raising red flags",
+   "url": "https://www.marketwatch.com/story/robot-maker-agility-starts-trading-today-but-its-steep-losses-are-raising-red-flags-f97c2cee?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 12:43:00 GMT"
+  },
+  {
+   "titulo": "Interest rates could go ‘significantly higher’ if oil prices keep climbing — even if the Iran war ends soon",
+   "url": "https://www.marketwatch.com/story/interest-rates-could-go-significantly-higher-if-oil-prices-keep-climbing-even-if-the-iran-war-ends-soon-e3493498?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 12:33:00 GMT"
+  },
+  {
+   "titulo": "The real test for the artificial-intelligence buildout is what happens in 2028, analysts say",
+   "url": "https://www.marketwatch.com/story/the-real-test-for-the-artificial-intelligence-build-out-is-what-happens-in-2028-analysts-say-c5978e48?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 12:23:00 GMT"
+  },
+  {
+   "titulo": "An Anthropic IPO when the AI trade is this turbulent? Godspeed!",
+   "url": "https://www.marketwatch.com/story/an-anthropic-ipo-when-the-ai-trade-is-this-turbulent-godspeed-08ca0496?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 05 Nov 2026 12:16:00 GMT"
+  },
+  {
+   "titulo": "How the midterms could fuel the K-shaped AI trade",
+   "url": "https://www.cnbc.com/2026/11/05/ai-data-centers-midterms-capacity.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 11:01:39 GMT"
+  },
+  {
+   "titulo": "Nintendo Switch 2 sales plunge 41% as price hikes and memory crunch bite",
+   "url": "https://www.cnbc.com/2026/11/05/nintendo-earnings-switch-2-sales.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 05 Nov 2026 07:30:58 GMT"
   },
   {
    "titulo": "LIV Golf faces liquidation after BC Partners scraps rescue plan",
    "url": "https://www.cnbc.com/2026/11/05/liv-golf-liquidation-bc-partners.html",
    "fuente": "CNBC",
    "fecha": "Thu, 05 Nov 2026 03:11:58 GMT"
-  },
-  {
-   "titulo": "White House panel delays hearing on Fed's Lisa Cook to Dec. 14",
-   "url": "https://www.cnbc.com/2026/11/04/trump-federal-reserve-lisa-cook-hearing.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 01:11:26 GMT"
-  },
-  {
-   "titulo": "Qualcomm’s stock falls as twin forces pressure sales",
-   "url": "https://www.marketwatch.com/story/qualcomms-stock-falls-as-twin-forces-pressure-sales-fa161159?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 01:06:00 GMT"
-  },
-  {
-   "titulo": "This year’s worst-performing S&P 500 stock is finally seeing some major relief",
-   "url": "https://www.marketwatch.com/story/this-years-worst-performing-s-p-500-stock-is-finally-seeing-some-major-relief-fff3fa85?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 01:05:00 GMT"
-  },
-  {
-   "titulo": "Figma’s stock dips as investors worry that AI momentum is coming at a high price",
-   "url": "https://www.marketwatch.com/story/figmas-stock-falls-as-investors-worry-that-ai-momentum-is-coming-at-a-high-price-1aa2134d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 01:03:00 GMT"
-  },
-  {
-   "titulo": "McDonald’s tests new value menu as fast-food discount wars heat up",
-   "url": "https://www.marketwatch.com/story/mcdonalds-tests-new-value-menu-as-fast-food-discount-wars-heat-up-bfc57caf?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 01:01:00 GMT"
-  },
-  {
-   "titulo": "As Vistra and other energy stocks slide, some analysts warn of an ‘excessive knee-jerk’ reaction",
-   "url": "https://www.marketwatch.com/story/as-vistra-and-other-energy-stocks-slide-some-analysts-warn-of-an-excessive-knee-jerk-reaction-aece0737?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 05 Nov 2026 00:38:00 GMT"
-  },
-  {
-   "titulo": "Inside India newsletter: India weighs a tax cut to win over foreign investors. Will it work?",
-   "url": "https://www.cnbc.com/2026/11/05/india-tax-foreign-investors-nifty.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 05 Nov 2026 00:04:36 GMT"
-  },
-  {
-   "titulo": "‘My life could be cut short’: I’m 55, married with $4.3 million and have a brain tumor. Should I buy a $210,000 custom Porsche?",
-   "url": "https://www.marketwatch.com/story/my-life-could-be-cut-short-im-55-married-with-4-3-million-and-have-a-brain-tumor-should-i-buy-a-210-000-custom-porsche-ed825ada?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 23:45:00 GMT"
-  },
-  {
-   "titulo": "Democrats flip dozens of GOP seats. Republicans haven't flipped a single one",
-   "url": "https://www.cnbc.com/2026/11/04/democrats-2026-midterm-election-results.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 23:44:18 GMT"
-  },
-  {
-   "titulo": "A 'demand decade' ahead for energy? BP, Baker Hughes CEOs weigh the investment outlook",
-   "url": "https://www.cnbc.com/2026/11/05/energy-leaders-investment-outlook.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 23:23:03 GMT"
-  },
-  {
-   "titulo": "Jim Cramer warns investors may be reading too much into Wall Street's post-election rally",
-   "url": "https://www.cnbc.com/2026/11/04/cramer-midterms-ai-stocks.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 23:18:56 GMT"
-  },
-  {
-   "titulo": "What Wall Street billionaires are saying about Democrats' midterm sweep",
-   "url": "https://www.cnbc.com/2026/11/04/billionaires-musk-branson-democrats-midterms-ai-wall-street.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 23:17:56 GMT"
-  },
-  {
-   "titulo": "What was really behind Wednesday's monster rally? Trump quickly making peace",
-   "url": "https://www.cnbc.com/2026/11/04/stock-market-rally-trump-midterms.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 22:55:22 GMT"
-  },
-  {
-   "titulo": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
-   "url": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 22:46:43 GMT"
-  },
-  {
-   "titulo": "‘It seems bizarre’: We’re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
-   "url": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 22:15:00 GMT"
-  },
-  {
-   "titulo": "How do Americans feel about the midterm results? It depends on how much money they make.",
-   "url": "https://www.marketwatch.com/story/how-do-americans-feel-about-the-midterm-results-it-depends-on-how-much-money-they-make-e2a43f08?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 22:06:00 GMT"
-  },
-  {
-   "titulo": "Micron and other chip stocks slip as election results strike at the core of data-center optimism",
-   "url": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-slip-as-election-results-strike-at-the-core-of-data-center-optimism-b55d19b3?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 21:55:00 GMT"
-  },
-  {
-   "titulo": "These stocks soared the most today after the Democrats trounced Trump",
-   "url": "https://www.marketwatch.com/story/these-stocks-have-soared-the-most-today-after-the-democrats-trounced-trump-9d785314?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 04 Nov 2026 21:55:00 GMT"
-  },
-  {
-   "titulo": "What Republicans' huge loss means for Trump",
-   "url": "https://www.cnbc.com/2026/11/04/trump-midterm-election-results-congress.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 04 Nov 2026 21:50:05 GMT"
   }
  ],
  "videos": [
@@ -657,7 +657,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-05T05:43:28Z",
+ "ts": "2026-11-05T14:15:21Z",
  "fallas": [
   "videos",
   "directos"
