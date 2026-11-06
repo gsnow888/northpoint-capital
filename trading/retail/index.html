@@ -22,7 +22,7 @@ nav .lk{font-weight:800;font-size:13px;padding:8px 10px}
 nav .btn{padding:9px 16px;box-shadow:none}
 @media(max-width:640px){nav .lk{display:none}}
 /* hero */
-.hero{position:relative;height:100vh;min-height:640px;overflow:hidden;background:linear-gradient(#dfe8fb 0%,#eef2fa 30%,var(--paper) 46%)}
+.hero{position:relative;height:100vh;min-height:640px;overflow:hidden;background:linear-gradient(#cfdcf7 0%,#e6edfb 46%,var(--paper) 46%)}
 #crowd{position:absolute;inset:0;width:100%;height:100%;cursor:crosshair}
 .city{position:absolute;left:0;right:0;top:70px;height:calc(46% - 70px);pointer-events:none;z-index:2}
 .city svg{width:100%;height:100%;display:block;overflow:visible}
@@ -90,7 +90,7 @@ footer{border-top:2.5px solid var(--ink);padding:28px 20px;display:flex;justify-
   <div class="hud hud2"><span>Ya en NORTHPOINT</span><b id="hudJ" style="color:var(--blue)">0</b><small>Los azules ya no operan solos.</small></div>
   <div class="hcopy">
     <h1 class="big" id="title"><span>No</span> <span>seas</span> <span>la</span><br><span>liquidez</span></h1>
-    <p>Arriba, las instituciones.  Abajo, miles de traders retail operando solos, sin registro y repitiendo los mismos errores.</p>
+    <p>Arriba, las instituciones en sus torres.  Abajo, miles de traders retail operando solos, sin registro y repitiendo los mismos errores.</p>
     <div class="ctas"><a class="btn k" href="https://northpointcapital.io/trading/aplicar.html">Aplicar</a><a class="btn w" href="#problema">Cómo salir de ahí</a></div>
   </div>
   <div class="hint">Mueve el mouse sobre la multitud</div>
@@ -156,48 +156,15 @@ document.getElementById("strip").innerHTML=[...PH,...PH].map((p,i)=>`<span class
 
 /* ---------- detailed street (static, redrawn on resize) ---------- */
 function drawGround(g,W,H){
-  const R=(a,b)=>a+Math.random()*(b-a),ink="#151515",T=H*.46;
-  g.clearRect(0,0,W,H);g.lineCap="round";g.lineJoin="round";
-  const sk=(f)=>{g.strokeStyle=ink;g.lineWidth=1.5;f();g.stroke()};
-  /* sidewalk */
-  const sw=T+38;g.fillStyle="#dde2ec";g.fillRect(0,T,W,sw-T);
-  g.strokeStyle="rgba(21,21,21,.18)";g.lineWidth=1;for(let x=0;x<W;x+=34){g.beginPath();g.moveTo(x,T);g.lineTo(x+R(-1,1),sw);g.stroke()}
-  g.fillStyle="#c3cad8";g.fillRect(0,sw,W,6);sk(()=>{g.beginPath();g.moveTo(0,sw);g.lineTo(W,sw)});
-  /* road */
-  const rd=sw+6,re=rd+H*.13;g.fillStyle="#9aa3b5";g.fillRect(0,rd,W,re-rd);
-  for(let i=0;i<W*1.5;i++){g.fillStyle=`rgba(255,255,255,${R(.03,.09)})`;g.fillRect(R(0,W),R(rd,re),1.4,1.4)}
-  g.strokeStyle="#eef2fa";g.lineWidth=3;g.setLineDash([26,18]);g.beginPath();g.moveTo(0,(rd+re)/2);g.lineTo(W,(rd+re)/2);g.stroke();g.setLineDash([]);
-  /* crosswalk */
-  const cw=W*.5;for(let k=-5;k<=5;k++){g.fillStyle="#f4f6fb";g.fillRect(cw+k*22-7,rd+6,14,re-rd-12)}
-  /* parked cars (NP palette) */
-  const carC=["#2563ff","#1c2a4a","#e9edf6","#7aa2ff","#4a5568"];
-  for(let x=R(20,80);x<W-90;x+=R(170,300)){if(Math.abs(x-cw)<140)continue;const y=rd+8,c=carC[(Math.random()*5)|0];
-    g.fillStyle="rgba(0,0,0,.15)";g.beginPath();g.ellipse(x+40,y+30,44,6,0,0,7);g.fill();
-    g.fillStyle=c;g.beginPath();g.roundRect(x,y+8,82,18,6);g.fill();sk(()=>{g.beginPath();g.roundRect(x,y+8,82,18,6)});
-    g.fillStyle="#cfdcf8";g.beginPath();g.moveTo(x+16,y+8);g.lineTo(x+24,y-2);g.lineTo(x+58,y-2);g.lineTo(x+68,y+8);g.closePath();g.fill();sk(()=>{g.beginPath();g.moveTo(x+16,y+8);g.lineTo(x+24,y-2);g.lineTo(x+58,y-2);g.lineTo(x+68,y+8)});
-    sk(()=>{g.beginPath();g.moveTo(x+41,y-2);g.lineTo(x+41,y+8)});
-    for(const wx of[x+18,x+64]){g.fillStyle=ink;g.beginPath();g.arc(wx,y+26,6,0,7);g.fill();g.fillStyle="#c3cad8";g.beginPath();g.arc(wx,y+26,2.4,0,7);g.fill()}}
-  /* far curb + plaza */
-  g.fillStyle="#c3cad8";g.fillRect(0,re,W,6);sk(()=>{g.beginPath();g.moveTo(0,re+6);g.lineTo(W,re+6)});
-  const pz=re+6;g.fillStyle="#ebeae5";g.fillRect(0,pz,W,H-pz);
-  g.strokeStyle="rgba(21,21,21,.07)";g.lineWidth=1;for(let y=pz+28;y<H;y+=28){g.beginPath();g.moveTo(0,y);g.lineTo(W,y);g.stroke()}
-  for(let y=pz,r=0;y<H;y+=28,r++)for(let x=(r%2)*28;x<W;x+=56){g.beginPath();g.moveTo(x,y);g.lineTo(x,y+28);g.stroke()}
-  for(let i=0;i<40;i++){g.fillStyle="rgba(37,99,255,.05)";g.fillRect(((R(0,W)/28)|0)*28,pz+((R(0,H-pz)/28)|0)*28,28,28)}
-  /* lamp posts + trees on the far curb */
-  for(let x=60;x<W;x+=220){sk(()=>{g.beginPath();g.moveTo(x,pz+8);g.lineTo(x,pz-40);g.quadraticCurveTo(x,pz-52,x+14,pz-52)});
-    g.fillStyle="#1c2a4a";g.beginPath();g.roundRect(x+10,pz-56,18,7,3);g.fill();g.fillStyle="rgba(122,162,255,.35)";g.beginPath();g.moveTo(x+12,pz-49);g.lineTo(x+26,pz-49);g.lineTo(x+34,pz-24);g.lineTo(x+4,pz-24);g.fill()}
-  /* trees in planters on sidewalk */
-  for(let x=170;x<W;x+=220){const y=pz+14;g.fillStyle="rgba(0,0,0,.12)";g.beginPath();g.ellipse(x+6,y+14,22,5,0,0,7);g.fill();
-    g.fillStyle="#b8c2d6";g.beginPath();g.roundRect(x-14,y,28,14,3);g.fill();sk(()=>{g.beginPath();g.roundRect(x-14,y,28,14,3)});
-    sk(()=>{g.beginPath();g.moveTo(x,y);g.lineTo(x,y-26)});
-    [["#5b7fc9",0,-44,20],["#4268b8",-12,-36,14],["#6f93dc",12,-38,14]].forEach(([c,dx,dy,r])=>{g.fillStyle=c;g.beginPath();g.arc(x+dx,y+dy,r,0,7);g.fill();sk(()=>{g.beginPath();g.arc(x+dx,y+dy,r,0,7)})})}
-  /* plaza furniture: benches, NP kiosk, manholes, hydrants */
-  for(let x=R(40,120);x<W-60;x+=R(260,380)){const y=R(pz+40,H-60);
-    g.fillStyle="#7aa2ff";g.fillRect(x,y,56,8);sk(()=>{g.beginPath();g.rect(x,y,56,8);g.moveTo(x+6,y+8);g.lineTo(x+6,y+16);g.moveTo(x+50,y+8);g.lineTo(x+50,y+16)})}
-  for(let i=0;i<4;i++){const x=R(20,W-20),y=R(pz+20,H-20);g.fillStyle="#9aa3b5";g.beginPath();g.ellipse(x,y,14,6,0,0,7);g.fill();sk(()=>{g.beginPath();g.ellipse(x,y,14,6,0,0,7)})}
-  const kx=W*.84,ky=pz+30;g.fillStyle="#1c2a4a";g.beginPath();g.roundRect(kx,ky,70,44,6);g.fill();sk(()=>{g.beginPath();g.roundRect(kx,ky,70,44,6)});
-  g.fillStyle="#2563ff";g.fillRect(kx-4,ky-10,78,12);sk(()=>{g.beginPath();g.rect(kx-4,ky-10,78,12)});g.fillStyle="#fff";g.font="900 9px Nunito";g.fillText("NORTHPOINT",kx+6,ky-1);
-  g.fillStyle="#bcd0ff";g.fillRect(kx+8,ky+8,54,16);
+  const R=(a,b)=>a+Math.random()*(b-a),T=H*.46;
+  g.clearRect(0,0,W,H);
+  const gr=g.createLinearGradient(0,T,0,H);gr.addColorStop(0,"#cfc8b8");gr.addColorStop(1,"#e4dfd3");g.fillStyle=gr;g.fillRect(0,T,W,H-T);
+  g.strokeStyle="#151515";g.lineWidth=2;g.beginPath();g.moveTo(0,T);g.lineTo(W,T);g.stroke();
+  /* cracks */
+  g.strokeStyle="rgba(21,21,21,.35)";g.lineWidth=1.2;
+  for(let i=0;i<Math.round(W/160);i++){let x=R(0,W),y=R(T+20,H-10);g.beginPath();g.moveTo(x,y);for(let k=0;k<4;k++){x+=R(-22,22);y+=R(4,16);g.lineTo(x,y)}g.stroke()}
+  /* puddles */
+  for(let i=0;i<Math.round(W/300);i++){const x=R(0,W),y=R(T+40,H-20);g.fillStyle="rgba(120,130,150,.25)";g.beginPath();g.ellipse(x,y,R(20,40),R(5,9),0,0,7);g.fill()}
 }
 /* ---------- crowd of retail traders (hand-drawn stick people) ---------- */
 const SAY=["¿por qué siempre a mí?","una más y recupero","compré el techo","me sacó el stop","hoy sí","ya merito","¿alguien más ve esto?","promedio a la baja","sin plan, con fe"];
@@ -206,7 +173,7 @@ function crowdSim(cv,{n,legs=false,hover=true,onCount}){
   const G=document.createElement("canvas"),gx=G.getContext("2d");
   function size(){W=cv.clientWidth;H=cv.clientHeight;cv.width=W*D;cv.height=H*D;cx.setTransform(D,0,0,D,0,0);G.width=W*D;G.height=H*D;gx.setTransform(D,0,0,D,0,0);if(legs)drawGround(gx,W,H)}
   size();addEventListener("resize",size);
-  for(let i=0;i<n;i++)P.push({x:Math.random()*W,y:(legs?.5:.12)*H+Math.random()*H*(legs?.47:.85),vx:(Math.random()-.5)*.6,vy:(Math.random()-.5)*.3,ph:Math.random()*6,s:.8+Math.random()*.5,hx:0,hy:0,hair:Math.random()<.35,tone:["#ffffff","#f3f5fa","#e8edf7","#f6f4ef"][(Math.random()*4)|0],blue:false,say:null,sayT:0,flee:0});
+  for(let i=0;i<n;i++)P.push({x:Math.random()*W,y:(legs?.5:.12)*H+Math.random()*H*(legs?.47:.85),vx:(Math.random()-.5)*.6,vy:(Math.random()-.5)*.3,ph:Math.random()*6,s:.8+Math.random()*.5,hx:0,hy:0,hair:Math.random()<.35,tone:["#f1ede4","#e8e2d6","#f6f3ec","#ddd6c8"][(Math.random()*4)|0],blue:false,say:null,sayT:0,flee:0});
   P.forEach(p=>{p.hx=p.x;p.hy=p.y});
   cv.addEventListener("pointermove",e=>{const r=cv.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top});
   cv.addEventListener("pointerleave",()=>{mx=my=-999});
@@ -249,42 +216,32 @@ function crowdSim(cv,{n,legs=false,hover=true,onCount}){
       const top=legs?H*.5:H*.12;if(p.x<10)p.vx+=.3;if(p.x>W-10)p.vx-=.3;if(p.y<top)p.vy+=.2;if(p.y>H-12)p.vy-=.2;
       person(p,t)}
   })(performance.now());
-  return {stomp(x,y){stomp=60;stompX=x;stompY=y;P.forEach(p=>{const d=p.x-x;if(Math.abs(d)<200&&!p.blue){p.vx+=Math.sign(d||1)*3;p.flee=1;if(Math.random()<.3){p.say="¡ay!";p.sayT=80}}})},P};
+  return {stomp(x,y){stomp=60;stompX=x;stompY=y;P.forEach(p=>{const d=p.x-x;if(Math.abs(d)<200&&!p.blue){p.vx+=Math.sign(d||1)*3;p.flee=1;if(Math.random()<.1){p.say="¡ay!";p.sayT=80}}})},P};
 }
 const hero=crowdSim(document.getElementById("crowd"),{n:innerWidth<700?55:120,legs:true,onCount:(n,j)=>{document.getElementById("hudN").textContent=n-j;document.getElementById("hudJ").textContent=j}});
 
 
 /* ---------- pencil-sketch skyline with institutional traders on rooftops ---------- */
 const SMART=["gracias por la liquidez","stops arriba de 4,820","que compren el techo","ahí van otra vez","siguiente barrido","no tienen plan","cobramos el spread"];
+function heli(c){return `<g stroke="#151515" stroke-width="1.6" stroke-linejoin="round"><path d="M10 22 Q4 10 22 8 L44 8 Q56 10 56 20 L54 26 L14 26Z" fill="${c}"/><path d="M40 10 Q50 12 52 20 L40 20Z" fill="#bcd0ff"/><path d="M14 18 L-14 14 L-16 8 L-12 8 L-6 14" fill="${c}"/><path d="M18 30 H50 M24 26 v4 M44 26 v4"/><path d="M33 8 V3"/><path class="rotor" d="M5 2 H61" stroke-width="2.2"/></g>`}
 (function(){
   const svg=document.getElementById("citySvg"),rnd=(a,b)=>a+Math.random()*(b-a);
   const wob=(x1,y1,x2,y2,j=1)=>{let d=`M${x1.toFixed(1)} ${y1.toFixed(1)}`;for(let i=1;i<=6;i++){const t=i/6;d+=` L${(x1+(x2-x1)*t+rnd(-j,j)).toFixed(1)} ${(y1+(y2-y1)*t+rnd(-j,j)).toFixed(1)}`}return d};
-  const B=460;let out="",roofs=[],x=-20;
-  while(x<1420){const w=rnd(90,170),h=rnd(150,300),top=B-h;
-    const tone=["#e4eaf6","#dbe3f3","#eceff5","#d3dcee","#e9e7e2","#cfd9ef"][(Math.random()*6)|0];
-    out+=`<path d="M${x} ${B} L${x} ${top} L${x+w} ${top} L${x+w} ${B}Z" fill="${tone}"/>`;
-    out+=`<rect x="${x+w*.68}" y="${top}" width="${w*.32}" height="${h}" fill="#1c2a4a" opacity=".09"/>`;
-    for(let ly=top+52;ly<B-20;ly+=78)out+=`<path d="${wob(x-3,ly,x+w+3,ly,.6)}" stroke="#151515" stroke-width="1.6"/><rect x="${x-3}" y="${ly}" width="${w+6}" height="4" fill="#c3cad8" opacity=".7"/>`;
-    out+=`<rect x="${x-5}" y="${top-6}" width="${w+10}" height="8" fill="#c3cad8" stroke="#151515" stroke-width="1.6"/>`;
-    out+=`<rect x="${x+w/2-11}" y="${B-30}" width="22" height="30" fill="#1c2a4a" stroke="#151515" stroke-width="1.4"/><rect x="${x+w/2-20}" y="${B-36}" width="40" height="6" fill="#2563ff" stroke="#151515" stroke-width="1.2"/>`;
-    /* hatch shading on right third */
-    for(let k=0;k<12;k++){const hx=x+w*.68+k*w*.026;out+=`<path d="${wob(hx,top+4,hx,B,.6)}" stroke="#151515" stroke-opacity="${rnd(.08,.22).toFixed(2)}" stroke-width=".8"/>`}
-    /* windows grid */
-    const cols=Math.max(3,Math.round(w/24)),rows=Math.round(h/26);
-    for(let r=0;r<rows;r++)for(let c=0;c<cols;c++){if(Math.random()<.12)continue;const wx=x+10+c*(w-20)/cols,wy=top+16+r*26;
-      out+=`<rect x="${wx.toFixed(1)}" y="${wy.toFixed(1)}" width="${((w-20)/cols-6).toFixed(1)}" height="12" stroke="#151515" stroke-opacity="${rnd(.25,.5).toFixed(2)}" stroke-width=".9" fill="${(q=>q<.22?'#bcd0ff':q<.32?'#7aa2ff':q<.5?'#9aa6bd':'#f2f5fb')(Math.random())}"/>`}
-    /* outlines, double sketch */
-    for(let k=0;k<2;k++){const o=k?.45:1,sw=k?1:2;
-      out+=`<path d="${wob(x,B,x,top,1.2)} ${wob(x,top,x+w,top,1.2).replace('M','L')} ${wob(x+w,top,x+w,B,1.2).replace('M','L')}" stroke="#151515" stroke-width="${sw}" stroke-opacity="${o}"/>`}
-    /* rooftop details */
-    if(Math.random()<.5)out+=`<path d="M${x+w*.2} ${top-6} v-18 h${w*.18} v18" stroke="#151515" stroke-width="1.6" fill="#c3cad8"/>`;
-    else if(Math.random()<.5){const tx=x+w*.15;out+=`<path d="M${tx} ${top-6} l4 -16 M${tx+22} ${top-6} l-4 -16" stroke="#151515" stroke-width="1.4"/><rect x="${tx-2}" y="${top-40}" width="26" height="20" rx="4" fill="#8a6f55" stroke="#151515" stroke-width="1.5"/><path d="M${tx-4} ${top-40} l15 -8 l15 8" fill="#6b5442" stroke="#151515" stroke-width="1.5"/>`}
-    if(Math.random()<.22&&w>120){const bx=x+w*.12,by=top-58;out+=`<path d="M${bx+10} ${top-6} v-14 M${bx+w*.66} ${top-6} v-14" stroke="#151515" stroke-width="1.4"/><rect x="${bx}" y="${by}" width="${w*.76}" height="38" rx="3" fill="#0f1830" stroke="#151515" stroke-width="1.6"/><text x="${bx+w*.38}" y="${by+24}" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="13" fill="#7aa2ff">${["NQ ▲","ES ▼","LIQUIDEZ","SPREAD","NP"][(Math.random()*5)|0]}</text>`}
-    if(Math.random()<.35)out+=`<path d="M${x+w*.75} ${top} v-34" stroke="#151515" stroke-width="1.4"/><circle cx="${x+w*.75}" cy="${top-36}" r="2.5" fill="#151515"/>`;
-    roofs.push({x,w,top});x+=w+rnd(6,22)}
+  const B=460;let out=`<defs><linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b6fe6"/><stop offset=".55" stop-color="#1c3f9e"/><stop offset="1" stop-color="#0f1f4d"/></linearGradient><linearGradient id="glass2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7aa2ff"/><stop offset="1" stop-color="#2a4fb8"/></linearGradient></defs>`,roofs=[];
+  const n=Math.max(4,Math.round(1400/260));let x=30;
+  for(let i=0;i<n;i++){const w=rnd(150,200),h=rnd(250,360),top=B-h,gid=i%2?"glass2":"glass";
+    out+=`<rect x="${x}" y="${top}" width="${w}" height="${h}" fill="url(#${gid})" stroke="#151515" stroke-width="2.2"/>`;
+    for(let m=1;m<5;m++)out+=`<path d="M${x+w*m/5} ${top} V${B}" stroke="#fff" stroke-opacity=".18" stroke-width="1.2"/>`;
+    for(let k=0;k<3;k++){const o=rnd(.1,.8);out+=`<path d="M${x+w*o} ${top+20} L${x+w*o+40} ${top-20+h*.4}" stroke="#fff" stroke-opacity=".22" stroke-width="${rnd(4,10).toFixed(1)}"/>`}
+    out+=`<rect x="${x-6}" y="${top-8}" width="${w+12}" height="10" fill="#0f1f4d" stroke="#151515" stroke-width="2"/>`;
+    const kind=i%3;
+    if(kind===0){const hx=x+w*.62,hy=top-8;out+=`<ellipse cx="${hx}" cy="${hy}" rx="34" ry="8" fill="#e9edf6" stroke="#151515" stroke-width="1.6"/><text x="${hx}" y="${hy+4}" text-anchor="middle" font-family="Luckiest Guy" font-size="11" fill="#2563ff">H</text>`;
+      out+=`<g transform="translate(${hx-30} ${hy-30})">${heli("#fff")}</g>`}
+    if(kind===1){const px=x+w*.5,py=top-8;out+=`<path d="M${px} ${py} v-34" stroke="#151515" stroke-width="1.6"/><path d="M${px-24} ${py-30} Q${px} ${py-46} ${px+24} ${py-30}Z" fill="#fff" stroke="#151515" stroke-width="1.6"/><rect x="${x+8}" y="${py-4}" width="${w*.36}" height="4" fill="#7aa2ff"/>`}
+    roofs.push({x,w,top,kind});x+=w+rnd(60,110)}
   /* institutional traders: dark suits, white shirt + tie */
   let ppl="",id=0;
-  roofs.forEach(r=>{const n=Math.random()<.85?(Math.random()<.5?2:1):0;for(let i=0;i<n;i++){const px=r.x+r.w*(.35+i*.3)+rnd(-8,8),py=r.top;
+  roofs.forEach(r=>{const n=r.kind===0?1:2;for(let i=0;i<n;i++){const px=r.x+r.w*(r.kind===0?.22:(.28+i*.44)),py=r.top-8;
     ppl+=`<g data-i="${id++}" transform="translate(${px.toFixed(1)} ${py})"><g class="rt" style="animation-delay:${rnd(0,2.6).toFixed(2)}s">
       <ellipse cx="3" cy="1" rx="9" ry="2.6" fill="#000" opacity=".12"/>
       <rect x="-6.5" y="-19" width="13" height="19" rx="5" fill="#1d1d1f" stroke="#151515" stroke-width="1.3"/>
@@ -293,7 +250,10 @@ const SMART=["gracias por la liquidez","stops arriba de 4,820","que compren el t
       <path d="M-5.6 -24.5 A5.6 5.6 0 0 1 5.6 -24.5 Q0 -27 -5.6 -24.5Z" fill="#151515"/>
       <path d="M-3 -21.5 h2 M1 -21.5 h2" stroke="#151515" stroke-width="1.2"/>
     </g></g>`}});
-  svg.innerHTML=out+`<path d="M-40 ${B} H1440" stroke="#151515" stroke-width="2"/>`+ppl+`<g id="rtSay"></g>`;
+  svg.innerHTML=out+ppl+`<g id="fly">${heli("#2563ff")}</g><g id="rtSay"></g>`;
+  const fly=svg.querySelector("#fly");let t0=performance.now();
+  (function f(t){requestAnimationFrame(f);const k=((t-t0)/16000)%1,X=-120+k*1640,Y=60+Math.sin(k*Math.PI*4)*14;fly.setAttribute("transform",`translate(${X.toFixed(1)} ${Y.toFixed(1)})`);
+    svg.querySelectorAll(".rotor").forEach(r=>r.setAttribute("d",Math.floor(t/60)%2?"M5 2 H61":"M20 2 H46"))})(t0);
   window.__roofPeople=[...svg.querySelectorAll("g[data-i]")];
 })();
 /* rooftop chatter + "sweep" of the crowd */
