@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#f4f3ef;--ink:#151515;--mut:#6d6a63;--blue:#2563ff;--yel:#ffd23f;--red:#ff5a4f}
+:root{--paper:#f4f3ef;--ink:#151515;--mut:#6d6a63;--blue:#2563ff;--yel:#7aa2ff;--red:#ff5a4f}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--paper);color:var(--ink);font-family:Nunito,ui-rounded,system-ui,sans-serif;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
@@ -22,7 +22,7 @@ nav .lk{font-weight:800;font-size:13px;padding:8px 10px}
 nav .btn{padding:9px 16px;box-shadow:none}
 @media(max-width:640px){nav .lk{display:none}}
 /* hero */
-.hero{position:relative;height:100vh;min-height:640px;overflow:hidden}
+.hero{position:relative;height:100vh;min-height:640px;overflow:hidden;background:linear-gradient(#dfe8fb 0%,#eef2fa 30%,var(--paper) 46%)}
 #crowd{position:absolute;inset:0;width:100%;height:100%;cursor:crosshair}
 .city{position:absolute;left:0;right:0;top:70px;height:calc(46% - 70px);pointer-events:none;z-index:2}
 .city svg{width:100%;height:100%;display:block;overflow:visible}
@@ -106,7 +106,7 @@ footer{border-top:2.5px solid var(--ink);padding:28px 20px;display:flex;justify-
     <div class="card red rv" style="--r:-2deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><circle cx="42" cy="26" r="10" fill="#fff"/><path d="M42 36v22M42 44l-12 8M42 44l12 8M42 58l-9 16M42 58l9 16"/><path d="M14 20h10M60 20h10M18 12l6 4M66 12l-6 4" opacity=".4"/></svg><h3>Opera solo</h3><p>Nadie revisa sus trades. Nadie le dice que ya rompió su regla tres veces esta semana.</p></div>
     <div class="card red rv" style="--r:1.5deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><rect x="18" y="14" width="48" height="58" rx="6" fill="#fff"/><path d="M28 30h28M28 42h18M28 54h24" stroke-dasharray="4 6"/><path d="M58 60l12 12M70 60L58 72" stroke="#ff5a4f"/></svg><h3>Sin registro</h3><p>No sabe cuánto gana en promedio ni cuáles son sus mejores días. Opera de memoria.</p></div>
     <div class="card red rv" style="--r:-1deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><path d="M16 56c10-20 18-20 26 0s16 20 26 0" /><path d="M16 36c10-20 18-20 26 0s16 20 26 0" opacity=".4"/><path d="M62 18l8 4-4 8"/></svg><h3>Repite errores</h3><p>El mismo error, la misma pérdida, cada semana. Sin saber cuánto le cuesta.</p></div>
-    <div class="card red rv" style="--r:2deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><path d="M12 66L30 44l12 10 22-30"/><path d="M58 20h10v10"/><circle cx="66" cy="22" r="7" fill="#ffd23f"/><path d="M40 70h30" opacity=".4"/></svg><h3>Compra el techo</h3><p>Entra por FOMO cuando todos ya están adentro. Sale por miedo justo antes del rebote.</p></div>
+    <div class="card red rv" style="--r:2deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><path d="M12 66L30 44l12 10 22-30"/><path d="M58 20h10v10"/><circle cx="66" cy="22" r="7" fill="#7aa2ff"/><path d="M40 70h30" opacity=".4"/></svg><h3>Compra el techo</h3><p>Entra por FOMO cuando todos ya están adentro. Sale por miedo justo antes del rebote.</p></div>
   </div>
 </section>
 
@@ -134,7 +134,7 @@ footer{border-top:2.5px solid var(--ink);padding:28px 20px;display:flex;justify-
     <div class="card blue rv" style="--r:1.5deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><rect x="18" y="14" width="48" height="58" rx="6" fill="#fff"/><path d="M28 30h28M28 42h28M28 54h18" stroke="#2563ff"/><circle cx="62" cy="64" r="10" fill="#2563ff"/><path d="M57 64l4 4 6-7" stroke="#fff"/></svg><h3>Libreta que se llena sola</h3><p>Cada trade aparece con su hora y resultado. No anotas nada.</p></div>
     <div class="card blue rv" style="--r:-1.5deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><rect x="14" y="44" width="12" height="24" fill="#fff"/><rect x="36" y="30" width="12" height="38" fill="#2563ff"/><rect x="58" y="18" width="12" height="50" fill="#fff"/></svg><h3>En qué eres bueno</h3><p>Aciertos, promedio y tus mejores días, en segundos.</p></div>
     <div class="card blue rv" style="--r:1deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><circle cx="42" cy="42" r="26" fill="#fff"/><path d="M42 26v32M50 32c-4-3-16-3-16 4s16 5 16 12-12 7-16 4"/><path d="M14 14l56 56" stroke="#ff5a4f"/></svg><h3>El precio del error</h3><p>Cada regla rota te dice cuánto te costó. Así dejas de repetirla.</p></div>
-    <div class="card blue rv" style="--r:-2deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><path d="M42 12l8 18 20 2-15 13 5 20-18-11-18 11 5-20-15-13 20-2z" fill="#ffd23f"/></svg><h3>Progreso visible</h3><p>Tu constancia se vuelve logros y metas que desbloqueas.</p></div>
+    <div class="card blue rv" style="--r:-2deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><path d="M42 12l8 18 20 2-15 13 5 20-18-11-18 11 5-20-15-13 20-2z" fill="#7aa2ff"/></svg><h3>Progreso visible</h3><p>Tu constancia se vuelve logros y metas que desbloqueas.</p></div>
   </div>
 </section>
 
@@ -153,13 +153,60 @@ footer{border-top:2.5px solid var(--ink);padding:28px 20px;display:flex;justify-
 const PH=["Una más y recupero","Compré el techo","Me sacó el stop y luego subió","Hoy sí voy con todo","Sin plan, pero con fe","Promedio a la baja","Ya merito"];
 document.getElementById("strip").innerHTML=[...PH,...PH].map((p,i)=>`<span class="${i%2?'b':''}">${p}</span><span>·</span>`).join("");
 
+
+/* ---------- detailed street (static, redrawn on resize) ---------- */
+function drawGround(g,W,H){
+  const R=(a,b)=>a+Math.random()*(b-a),ink="#151515",T=H*.46;
+  g.clearRect(0,0,W,H);g.lineCap="round";g.lineJoin="round";
+  const sk=(f)=>{g.strokeStyle=ink;g.lineWidth=1.5;f();g.stroke()};
+  /* sidewalk */
+  const sw=T+38;g.fillStyle="#dde2ec";g.fillRect(0,T,W,sw-T);
+  g.strokeStyle="rgba(21,21,21,.18)";g.lineWidth=1;for(let x=0;x<W;x+=34){g.beginPath();g.moveTo(x,T);g.lineTo(x+R(-1,1),sw);g.stroke()}
+  g.fillStyle="#c3cad8";g.fillRect(0,sw,W,6);sk(()=>{g.beginPath();g.moveTo(0,sw);g.lineTo(W,sw)});
+  /* road */
+  const rd=sw+6,re=rd+H*.13;g.fillStyle="#9aa3b5";g.fillRect(0,rd,W,re-rd);
+  for(let i=0;i<W*1.5;i++){g.fillStyle=`rgba(255,255,255,${R(.03,.09)})`;g.fillRect(R(0,W),R(rd,re),1.4,1.4)}
+  g.strokeStyle="#eef2fa";g.lineWidth=3;g.setLineDash([26,18]);g.beginPath();g.moveTo(0,(rd+re)/2);g.lineTo(W,(rd+re)/2);g.stroke();g.setLineDash([]);
+  /* crosswalk */
+  const cw=W*.5;for(let k=-5;k<=5;k++){g.fillStyle="#f4f6fb";g.fillRect(cw+k*22-7,rd+6,14,re-rd-12)}
+  /* parked cars (NP palette) */
+  const carC=["#2563ff","#1c2a4a","#e9edf6","#7aa2ff","#4a5568"];
+  for(let x=R(20,80);x<W-90;x+=R(170,300)){if(Math.abs(x-cw)<140)continue;const y=rd+8,c=carC[(Math.random()*5)|0];
+    g.fillStyle="rgba(0,0,0,.15)";g.beginPath();g.ellipse(x+40,y+30,44,6,0,0,7);g.fill();
+    g.fillStyle=c;g.beginPath();g.roundRect(x,y+8,82,18,6);g.fill();sk(()=>{g.beginPath();g.roundRect(x,y+8,82,18,6)});
+    g.fillStyle="#cfdcf8";g.beginPath();g.moveTo(x+16,y+8);g.lineTo(x+24,y-2);g.lineTo(x+58,y-2);g.lineTo(x+68,y+8);g.closePath();g.fill();sk(()=>{g.beginPath();g.moveTo(x+16,y+8);g.lineTo(x+24,y-2);g.lineTo(x+58,y-2);g.lineTo(x+68,y+8)});
+    sk(()=>{g.beginPath();g.moveTo(x+41,y-2);g.lineTo(x+41,y+8)});
+    for(const wx of[x+18,x+64]){g.fillStyle=ink;g.beginPath();g.arc(wx,y+26,6,0,7);g.fill();g.fillStyle="#c3cad8";g.beginPath();g.arc(wx,y+26,2.4,0,7);g.fill()}}
+  /* far curb + plaza */
+  g.fillStyle="#c3cad8";g.fillRect(0,re,W,6);sk(()=>{g.beginPath();g.moveTo(0,re+6);g.lineTo(W,re+6)});
+  const pz=re+6;g.fillStyle="#ebeae5";g.fillRect(0,pz,W,H-pz);
+  g.strokeStyle="rgba(21,21,21,.07)";g.lineWidth=1;for(let y=pz+28;y<H;y+=28){g.beginPath();g.moveTo(0,y);g.lineTo(W,y);g.stroke()}
+  for(let y=pz,r=0;y<H;y+=28,r++)for(let x=(r%2)*28;x<W;x+=56){g.beginPath();g.moveTo(x,y);g.lineTo(x,y+28);g.stroke()}
+  for(let i=0;i<40;i++){g.fillStyle="rgba(37,99,255,.05)";g.fillRect(((R(0,W)/28)|0)*28,pz+((R(0,H-pz)/28)|0)*28,28,28)}
+  /* lamp posts + trees on the far curb */
+  for(let x=60;x<W;x+=220){sk(()=>{g.beginPath();g.moveTo(x,pz+8);g.lineTo(x,pz-40);g.quadraticCurveTo(x,pz-52,x+14,pz-52)});
+    g.fillStyle="#1c2a4a";g.beginPath();g.roundRect(x+10,pz-56,18,7,3);g.fill();g.fillStyle="rgba(122,162,255,.35)";g.beginPath();g.moveTo(x+12,pz-49);g.lineTo(x+26,pz-49);g.lineTo(x+34,pz-24);g.lineTo(x+4,pz-24);g.fill()}
+  /* trees in planters on sidewalk */
+  for(let x=170;x<W;x+=220){const y=pz+14;g.fillStyle="rgba(0,0,0,.12)";g.beginPath();g.ellipse(x+6,y+14,22,5,0,0,7);g.fill();
+    g.fillStyle="#b8c2d6";g.beginPath();g.roundRect(x-14,y,28,14,3);g.fill();sk(()=>{g.beginPath();g.roundRect(x-14,y,28,14,3)});
+    sk(()=>{g.beginPath();g.moveTo(x,y);g.lineTo(x,y-26)});
+    [["#5b7fc9",0,-44,20],["#4268b8",-12,-36,14],["#6f93dc",12,-38,14]].forEach(([c,dx,dy,r])=>{g.fillStyle=c;g.beginPath();g.arc(x+dx,y+dy,r,0,7);g.fill();sk(()=>{g.beginPath();g.arc(x+dx,y+dy,r,0,7)})})}
+  /* plaza furniture: benches, NP kiosk, manholes, hydrants */
+  for(let x=R(40,120);x<W-60;x+=R(260,380)){const y=R(pz+40,H-60);
+    g.fillStyle="#7aa2ff";g.fillRect(x,y,56,8);sk(()=>{g.beginPath();g.rect(x,y,56,8);g.moveTo(x+6,y+8);g.lineTo(x+6,y+16);g.moveTo(x+50,y+8);g.lineTo(x+50,y+16)})}
+  for(let i=0;i<4;i++){const x=R(20,W-20),y=R(pz+20,H-20);g.fillStyle="#9aa3b5";g.beginPath();g.ellipse(x,y,14,6,0,0,7);g.fill();sk(()=>{g.beginPath();g.ellipse(x,y,14,6,0,0,7)})}
+  const kx=W*.84,ky=pz+30;g.fillStyle="#1c2a4a";g.beginPath();g.roundRect(kx,ky,70,44,6);g.fill();sk(()=>{g.beginPath();g.roundRect(kx,ky,70,44,6)});
+  g.fillStyle="#2563ff";g.fillRect(kx-4,ky-10,78,12);sk(()=>{g.beginPath();g.rect(kx-4,ky-10,78,12)});g.fillStyle="#fff";g.font="900 9px Nunito";g.fillText("NORTHPOINT",kx+6,ky-1);
+  g.fillStyle="#bcd0ff";g.fillRect(kx+8,ky+8,54,16);
+}
 /* ---------- crowd of retail traders (hand-drawn stick people) ---------- */
 const SAY=["¿por qué siempre a mí?","una más y recupero","compré el techo","me sacó el stop","hoy sí","ya merito","¿alguien más ve esto?","promedio a la baja","sin plan, con fe"];
 function crowdSim(cv,{n,legs=false,hover=true,onCount}){
   const cx=cv.getContext("2d");let W,H,D=Math.min(devicePixelRatio,2),P=[],mx=-999,my=-999,stomp=0,stompX=0,stompY=0,joined=0;
-  function size(){W=cv.clientWidth;H=cv.clientHeight;cv.width=W*D;cv.height=H*D;cx.setTransform(D,0,0,D,0,0)}
+  const G=document.createElement("canvas"),gx=G.getContext("2d");
+  function size(){W=cv.clientWidth;H=cv.clientHeight;cv.width=W*D;cv.height=H*D;cx.setTransform(D,0,0,D,0,0);G.width=W*D;G.height=H*D;gx.setTransform(D,0,0,D,0,0);if(legs)drawGround(gx,W,H)}
   size();addEventListener("resize",size);
-  for(let i=0;i<n;i++)P.push({x:Math.random()*W,y:(legs?.5:.12)*H+Math.random()*H*(legs?.47:.85),vx:(Math.random()-.5)*.6,vy:(Math.random()-.5)*.3,ph:Math.random()*6,s:.8+Math.random()*.5,hx:0,hy:0,hair:Math.random()<.35,blue:false,say:null,sayT:0,flee:0});
+  for(let i=0;i<n;i++)P.push({x:Math.random()*W,y:(legs?.5:.12)*H+Math.random()*H*(legs?.47:.85),vx:(Math.random()-.5)*.6,vy:(Math.random()-.5)*.3,ph:Math.random()*6,s:.8+Math.random()*.5,hx:0,hy:0,hair:Math.random()<.35,tone:["#ffffff","#f3f5fa","#e8edf7","#f6f4ef"][(Math.random()*4)|0],blue:false,say:null,sayT:0,flee:0});
   P.forEach(p=>{p.hx=p.x;p.hy=p.y});
   cv.addEventListener("pointermove",e=>{const r=cv.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top});
   cv.addEventListener("pointerleave",()=>{mx=my=-999});
@@ -173,7 +220,7 @@ function crowdSim(cv,{n,legs=false,hover=true,onCount}){
     cx.save();cx.translate(p.x,p.y);cx.scale(s,s);
     cx.fillStyle="rgba(0,0,0,.10)";cx.beginPath();cx.ellipse(3,1,7,2.6,0,0,7);cx.fill();      /* soft shadow */
     cx.translate(0,-bob);
-    const fill=p.blue?"#2563ff":hov?"#ffd23f":"#fff";
+    const fill=p.blue?"#2563ff":hov?"#bcd0ff":p.tone;
     cx.lineWidth=1.25;cx.strokeStyle="#2a2a2a";
     cx.beginPath();cx.roundRect(-5,-15,10,15,[5,5,3.5,3.5]);cx.fillStyle=fill;cx.fill();cx.stroke();   /* bean body */
     cx.beginPath();cx.arc(0,-17.5,4.6,0,7);cx.fill();cx.stroke();                                         /* head */
@@ -186,7 +233,7 @@ function crowdSim(cv,{n,legs=false,hover=true,onCount}){
       cx.fillStyle="#2a2a2a";cx.fillText(p.say,bx+7,by)}
   }
   let last=performance.now();
-  (function tick(t){requestAnimationFrame(tick);cx.clearRect(0,0,W,H);
+  (function tick(t){requestAnimationFrame(tick);cx.clearRect(0,0,W,H);if(legs)cx.drawImage(G,0,0,W,H);
     if(stomp>0){stomp-=1;cx.strokeStyle="rgba(0,0,0,"+(stomp/60*.4)+")";cx.lineWidth=2;cx.beginPath();cx.ellipse(stompX,stompY,(60-stomp)*6,(60-stomp)*2,0,0,7);cx.stroke()}
     P.sort((a,b)=>a.y-b.y);
     for(const p of P){
@@ -214,18 +261,25 @@ const SMART=["gracias por la liquidez","stops arriba de 4,820","que compren el t
   const wob=(x1,y1,x2,y2,j=1)=>{let d=`M${x1.toFixed(1)} ${y1.toFixed(1)}`;for(let i=1;i<=6;i++){const t=i/6;d+=` L${(x1+(x2-x1)*t+rnd(-j,j)).toFixed(1)} ${(y1+(y2-y1)*t+rnd(-j,j)).toFixed(1)}`}return d};
   const B=460;let out="",roofs=[],x=-20;
   while(x<1420){const w=rnd(90,170),h=rnd(150,300),top=B-h;
-    out+=`<path d="M${x} ${B} L${x} ${top} L${x+w} ${top} L${x+w} ${B}Z" fill="#f7f7f5"/>`;
+    const tone=["#e4eaf6","#dbe3f3","#eceff5","#d3dcee","#e9e7e2","#cfd9ef"][(Math.random()*6)|0];
+    out+=`<path d="M${x} ${B} L${x} ${top} L${x+w} ${top} L${x+w} ${B}Z" fill="${tone}"/>`;
+    out+=`<rect x="${x+w*.68}" y="${top}" width="${w*.32}" height="${h}" fill="#1c2a4a" opacity=".09"/>`;
+    for(let ly=top+52;ly<B-20;ly+=78)out+=`<path d="${wob(x-3,ly,x+w+3,ly,.6)}" stroke="#151515" stroke-width="1.6"/><rect x="${x-3}" y="${ly}" width="${w+6}" height="4" fill="#c3cad8" opacity=".7"/>`;
+    out+=`<rect x="${x-5}" y="${top-6}" width="${w+10}" height="8" fill="#c3cad8" stroke="#151515" stroke-width="1.6"/>`;
+    out+=`<rect x="${x+w/2-11}" y="${B-30}" width="22" height="30" fill="#1c2a4a" stroke="#151515" stroke-width="1.4"/><rect x="${x+w/2-20}" y="${B-36}" width="40" height="6" fill="#2563ff" stroke="#151515" stroke-width="1.2"/>`;
     /* hatch shading on right third */
     for(let k=0;k<12;k++){const hx=x+w*.68+k*w*.026;out+=`<path d="${wob(hx,top+4,hx,B,.6)}" stroke="#151515" stroke-opacity="${rnd(.08,.22).toFixed(2)}" stroke-width=".8"/>`}
     /* windows grid */
     const cols=Math.max(3,Math.round(w/24)),rows=Math.round(h/26);
     for(let r=0;r<rows;r++)for(let c=0;c<cols;c++){if(Math.random()<.12)continue;const wx=x+10+c*(w-20)/cols,wy=top+16+r*26;
-      out+=`<rect x="${wx.toFixed(1)}" y="${wy.toFixed(1)}" width="${((w-20)/cols-6).toFixed(1)}" height="12" stroke="#151515" stroke-opacity="${rnd(.25,.5).toFixed(2)}" stroke-width=".9" fill="${Math.random()<.18?'#e9e8e3':'none'}"/>`}
+      out+=`<rect x="${wx.toFixed(1)}" y="${wy.toFixed(1)}" width="${((w-20)/cols-6).toFixed(1)}" height="12" stroke="#151515" stroke-opacity="${rnd(.25,.5).toFixed(2)}" stroke-width=".9" fill="${(q=>q<.22?'#bcd0ff':q<.32?'#7aa2ff':q<.5?'#9aa6bd':'#f2f5fb')(Math.random())}"/>`}
     /* outlines, double sketch */
     for(let k=0;k<2;k++){const o=k?.45:1,sw=k?1:2;
       out+=`<path d="${wob(x,B,x,top,1.2)} ${wob(x,top,x+w,top,1.2).replace('M','L')} ${wob(x+w,top,x+w,B,1.2).replace('M','L')}" stroke="#151515" stroke-width="${sw}" stroke-opacity="${o}"/>`}
     /* rooftop details */
-    if(Math.random()<.5)out+=`<path d="M${x+w*.2} ${top} v-18 h${w*.18} v18" stroke="#151515" stroke-width="1.6" fill="#f7f7f5"/>`;
+    if(Math.random()<.5)out+=`<path d="M${x+w*.2} ${top-6} v-18 h${w*.18} v18" stroke="#151515" stroke-width="1.6" fill="#c3cad8"/>`;
+    else if(Math.random()<.5){const tx=x+w*.15;out+=`<path d="M${tx} ${top-6} l4 -16 M${tx+22} ${top-6} l-4 -16" stroke="#151515" stroke-width="1.4"/><rect x="${tx-2}" y="${top-40}" width="26" height="20" rx="4" fill="#8a6f55" stroke="#151515" stroke-width="1.5"/><path d="M${tx-4} ${top-40} l15 -8 l15 8" fill="#6b5442" stroke="#151515" stroke-width="1.5"/>`}
+    if(Math.random()<.22&&w>120){const bx=x+w*.12,by=top-58;out+=`<path d="M${bx+10} ${top-6} v-14 M${bx+w*.66} ${top-6} v-14" stroke="#151515" stroke-width="1.4"/><rect x="${bx}" y="${by}" width="${w*.76}" height="38" rx="3" fill="#0f1830" stroke="#151515" stroke-width="1.6"/><text x="${bx+w*.38}" y="${by+24}" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="13" fill="#7aa2ff">${["NQ ▲","ES ▼","LIQUIDEZ","SPREAD","NP"][(Math.random()*5)|0]}</text>`}
     if(Math.random()<.35)out+=`<path d="M${x+w*.75} ${top} v-34" stroke="#151515" stroke-width="1.4"/><circle cx="${x+w*.75}" cy="${top-36}" r="2.5" fill="#151515"/>`;
     roofs.push({x,w,top});x+=w+rnd(6,22)}
   /* institutional traders: dark suits, white shirt + tie */
