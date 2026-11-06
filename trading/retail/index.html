@@ -24,7 +24,7 @@ nav .btn{padding:9px 16px;box-shadow:none}
 /* hero */
 .hero{position:relative;height:100vh;min-height:640px;overflow:hidden}
 #crowd{position:absolute;inset:0;width:100%;height:100%;cursor:crosshair}
-.legs{position:absolute;left:50%;top:-4%;width:min(560px,70vw);transform:translateX(-50%);pointer-events:none;z-index:2}
+.legs{position:absolute;left:50%;top:-2%;width:min(680px,80vw);transform:translateX(-50%);pointer-events:none;z-index:2}
 .legs svg{width:100%;display:block;overflow:visible}
 .hcopy{position:absolute;left:50%;transform:translateX(-50%);width:min(1100px,100%);bottom:4vh;text-align:center;z-index:3;padding:30px 16px;pointer-events:none;background:radial-gradient(closest-side,rgba(244,243,239,.96) 55%,rgba(244,243,239,0))}
 .hcopy h1{font-size:clamp(64px,13vw,190px)}
@@ -84,25 +84,7 @@ footer{border-top:2.5px solid var(--ink);padding:28px 20px;display:flex;justify-
 
 <header class="hero">
   <canvas id="crowd"></canvas>
-  <div class="legs" id="legs">
-    <svg viewBox="0 0 560 520" fill="none" stroke="#151515" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-      <!-- left leg (suit) -->
-      <g id="legL">
-        <path d="M150 -40 L140 330 Q150 352 200 352 L250 352 Q262 340 260 320 L262 -40" fill="#fff"/>
-        <path d="M205 -40 L203 320" stroke-width="2.5" opacity=".5"/>
-        <path d="M140 330 Q146 356 200 356 L258 352" stroke-width="3"/>
-        <path d="M120 360 Q108 410 150 420 L290 422 Q326 418 318 392 Q312 372 270 362 Q246 356 236 344 L150 344 Q132 346 120 360Z" fill="#151515"/>
-        <path d="M168 396 Q200 404 268 398" stroke="#fff" stroke-width="2.5" opacity=".7"/>
-      </g>
-      <!-- right leg -->
-      <g id="legR">
-        <path d="M300 -40 L310 300 Q312 322 330 324 L392 324 Q404 314 404 296 L414 -40" fill="#fff"/>
-        <path d="M357 -40 L362 296" stroke-width="2.5" opacity=".5"/>
-        <path d="M302 330 Q290 380 330 392 L478 394 Q512 390 504 364 Q498 344 456 334 Q432 328 420 316 L330 316 Q310 318 302 330Z" fill="#151515"/>
-        <path d="M348 368 Q392 376 456 370" stroke="#fff" stroke-width="2.5" opacity=".7"/>
-      </g>
-    </svg>
-  </div>
+  <div class="legs" id="legs"><svg id="legSvg" viewBox="0 0 560 560" fill="none"></svg></div>
   <div class="hud"><span>Traders retail en pantalla</span><b id="hudN">0</b><small>Toca a uno para traerlo a la comunidad.</small></div>
   <div class="hud hud2"><span>Ya en NORTHPOINT</span><b id="hudJ" style="color:var(--blue)">0</b><small>Los azules ya no operan solos.</small></div>
   <div class="hcopy">
@@ -173,10 +155,10 @@ document.getElementById("strip").innerHTML=[...PH,...PH].map((p,i)=>`<span class
 /* ---------- crowd of retail traders (hand-drawn stick people) ---------- */
 const SAY=["¿por qué siempre a mí?","una más y recupero","compré el techo","me sacó el stop","hoy sí","ya merito","¿alguien más ve esto?","promedio a la baja","sin plan, con fe"];
 function crowdSim(cv,{n,legs=false,hover=true,onCount}){
-  const cx=cv.getContext("2d");let W,H,D=Math.min(devicePixelRatio,2),P=[],mx=-999,my=-999,stomp=0,stompX=0,joined=0;
+  const cx=cv.getContext("2d");let W,H,D=Math.min(devicePixelRatio,2),P=[],mx=-999,my=-999,stomp=0,stompX=0,stompY=0,joined=0;
   function size(){W=cv.clientWidth;H=cv.clientHeight;cv.width=W*D;cv.height=H*D;cx.setTransform(D,0,0,D,0,0)}
   size();addEventListener("resize",size);
-  for(let i=0;i<n;i++)P.push({x:Math.random()*W,y:(legs?.38:.12)*H+Math.random()*H*(legs?.6:.85),vx:(Math.random()-.5)*.6,vy:(Math.random()-.5)*.3,ph:Math.random()*6,s:.8+Math.random()*.5,hx:0,hy:0,blue:false,say:null,sayT:0,flee:0});
+  for(let i=0;i<n;i++)P.push({x:Math.random()*W,y:(legs?.38:.12)*H+Math.random()*H*(legs?.6:.85),vx:(Math.random()-.5)*.6,vy:(Math.random()-.5)*.3,ph:Math.random()*6,s:.8+Math.random()*.5,hx:0,hy:0,hair:Math.random()<.35,blue:false,say:null,sayT:0,flee:0});
   P.forEach(p=>{p.hx=p.x;p.hy=p.y});
   cv.addEventListener("pointermove",e=>{const r=cv.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top});
   cv.addEventListener("pointerleave",()=>{mx=my=-999});
@@ -185,29 +167,26 @@ function crowdSim(cv,{n,legs=false,hover=true,onCount}){
     if(best){best.blue=true;best.say="¡ya no opero solo!";best.sayT=160;joined++;onCount&&onCount(P.length,joined)}});
   onCount&&onCount(P.length,0);
   function person(p,t){
-    const s=p.s*(W<700?.8:1),bob=Math.abs(Math.sin(t*.008*(1+p.flee)+p.ph))*2.4*s;
-    cx.save();cx.translate(p.x,p.y-bob);cx.scale(s,s);
-    const hov=Math.hypot(p.x-mx,p.y-10-my)<36;
-    cx.lineWidth=2.4;cx.lineCap="round";cx.strokeStyle="#151515";
-    const col=p.blue?"#2563ff":hov?"#ffd23f":"#fff";
-    const sw=Math.sin(t*.01*(1+p.flee*2)+p.ph)*5;
-    cx.beginPath();cx.moveTo(0,-6);cx.lineTo(-3+sw*.4,6);cx.moveTo(0,-6);cx.lineTo(3-sw*.4,6);cx.stroke();          // legs
-    cx.beginPath();cx.moveTo(0,-18);cx.lineTo(0,-6);cx.moveTo(0,-15);cx.lineTo(-6,-9+sw*.3);cx.moveTo(0,-15);cx.lineTo(6,-9-sw*.3);cx.stroke(); // body+arms
-    // phone (retail stares at chart) unless blue
-    if(!p.blue){cx.fillStyle="#151515";cx.fillRect(4,-12-sw*.3,4,6)}
-    cx.beginPath();cx.ellipse(0,-24,6,6.5,0,0,7);cx.fillStyle=col;cx.fill();cx.stroke();                           // head
-    cx.fillStyle="#151515";cx.beginPath();cx.arc(-2,p.blue?-26:-23,1,0,7);cx.arc(2,p.blue?-26:-23,1,0,7);cx.fill(); // eyes (blue look up)
+    const s=p.s*(W<700?.85:1.05),walk=Math.hypot(p.vx,p.vy),bob=Math.abs(Math.sin(t*.012*(.6+walk)+p.ph))*1.6*Math.min(1,walk*3+.2);
+    const hov=Math.hypot(p.x-mx,p.y-8-my)<30;
+    cx.save();cx.translate(p.x,p.y);cx.scale(s,s);
+    cx.fillStyle="rgba(0,0,0,.10)";cx.beginPath();cx.ellipse(3,1,7,2.6,0,0,7);cx.fill();      /* soft shadow */
+    cx.translate(0,-bob);
+    const fill=p.blue?"#2563ff":hov?"#ffd23f":"#fff";
+    cx.lineWidth=1.25;cx.strokeStyle="#2a2a2a";
+    cx.beginPath();cx.roundRect(-5,-15,10,15,[5,5,3.5,3.5]);cx.fillStyle=fill;cx.fill();cx.stroke();   /* bean body */
+    cx.beginPath();cx.arc(0,-17.5,4.6,0,7);cx.fill();cx.stroke();                                         /* head */
+    if(p.hair){cx.fillStyle="#2a2a2a";cx.beginPath();cx.arc(0,-18.4,4.6,Math.PI*1.05,Math.PI*1.95);cx.fill()}
+    if(p.blue||hov){cx.fillStyle="#2a2a2a";cx.fillRect(-2,-18.5,1.1,1.6);cx.fillRect(1,-18.5,1.1,1.6)}
+    else if(!p.blue){cx.strokeStyle="rgba(0,0,0,.35)";cx.beginPath();cx.moveTo(-2.6,-9);cx.lineTo(2.6,-9);cx.stroke()} /* arms holding phone */
     cx.restore();
-    if(p.say&&p.sayT>0){const tw=cx.measureText(p.say).width;cx.font="800 11px Nunito";const bx=p.x+8,by=p.y-48*s;
-      cx.fillStyle="#fff";cx.strokeStyle="#151515";cx.lineWidth=2;cx.beginPath();cx.roundRect(bx,by-14,tw+16,20,9);cx.fill();cx.stroke();
-      cx.fillStyle="#151515";cx.fillText(p.say,bx+8,by)}
+    if(p.say&&p.sayT>0){cx.font="700 11px Nunito";const tw=cx.measureText(p.say).width,bx=p.x+7,by=p.y-30*s;
+      cx.fillStyle="#fff";cx.strokeStyle="#2a2a2a";cx.lineWidth=1.3;cx.beginPath();cx.roundRect(bx,by-14,tw+14,19,9);cx.fill();cx.stroke();
+      cx.fillStyle="#2a2a2a";cx.fillText(p.say,bx+7,by)}
   }
   let last=performance.now();
   (function tick(t){requestAnimationFrame(tick);cx.clearRect(0,0,W,H);
-    // shadows of the shoes
-    if(legs){const lx=W/2,ly=Math.min(W*.7,560)*.76-H*.04;cx.fillStyle="rgba(0,0,0,.07)";
-      cx.beginPath();cx.ellipse(lx-Math.min(W*.7,560)*.12,ly+12,Math.min(W*.7,560)*.18,18,0,0,7);cx.ellipse(lx+Math.min(W*.7,560)*.2,ly-2,Math.min(W*.7,560)*.18,18,0,0,7);cx.fill()}
-    if(stomp>0){stomp-=1;cx.strokeStyle="rgba(0,0,0,"+(stomp/60*.4)+")";cx.lineWidth=2;cx.beginPath();cx.ellipse(stompX,H*.5,(60-stomp)*6,(60-stomp)*2,0,0,7);cx.stroke()}
+    if(stomp>0){stomp-=1;cx.strokeStyle="rgba(0,0,0,"+(stomp/60*.4)+")";cx.lineWidth=2;cx.beginPath();cx.ellipse(stompX,stompY,(60-stomp)*6,(60-stomp)*2,0,0,7);cx.stroke()}
     P.sort((a,b)=>a.y-b.y);
     for(const p of P){
       const dx=p.x-mx,dy=p.y-my,d=Math.hypot(dx,dy);
@@ -222,16 +201,42 @@ function crowdSim(cv,{n,legs=false,hover=true,onCount}){
       const top=legs?H*.42:H*.12;if(p.x<10)p.vx+=.3;if(p.x>W-10)p.vx-=.3;if(p.y<top)p.vy+=.2;if(p.y>H-12)p.vy-=.2;
       person(p,t)}
   })(performance.now());
-  return {stomp(x){stomp=60;stompX=x;P.forEach(p=>{const d=p.x-x;if(Math.abs(d)<200&&!p.blue){p.vx+=Math.sign(d||1)*3;p.flee=1;if(Math.random()<.3){p.say="¡ay!";p.sayT=80}}})},P};
+  return {stomp(x,y){stomp=60;stompX=x;stompY=y;P.forEach(p=>{const d=p.x-x;if(Math.abs(d)<200&&!p.blue){p.vx+=Math.sign(d||1)*3;p.flee=1;if(Math.random()<.3){p.say="¡ay!";p.sayT=80}}})},P};
 }
 const hero=crowdSim(document.getElementById("crowd"),{n:innerWidth<700?55:120,legs:true,onCount:(n,j)=>{document.getElementById("hudN").textContent=n-j;document.getElementById("hudJ").textContent=j}});
 
+
+/* ---------- pencil-sketch legs ---------- */
+(function(){
+  const svg=document.getElementById("legSvg"),rnd=(a,b)=>a+Math.random()*(b-a);
+  const wob=(x1,y1,x2,y2,j=1.2)=>{let d=`M${x1.toFixed(1)} ${y1.toFixed(1)}`;const n=8;for(let i=1;i<=n;i++){const t=i/n;d+=` L${(x1+(x2-x1)*t+rnd(-j,j)).toFixed(1)} ${(y1+(y2-y1)*t+rnd(-j,j)).toFixed(1)}`}return d};
+  function leg(cx,id){
+    const top=-30,bot=430,wt=78,wb=50;let g=`<g id="${id}"><g class="lg">`;
+    const L=(t)=>cx-wt+(wt-wb)*t, Rr=(t)=>cx+wt-(wt-wb)*t;
+    g+=`<path d="M${L(0)} ${top} L${L(1)} ${bot} L${Rr(1)} ${bot} L${Rr(0)} ${top}Z" fill="#f7f7f5"/>`;
+    for(let k=0;k<26;k++){const u=k/25,x1=L(0)+(Rr(0)-L(0))*u,x2=L(1)+(Rr(1)-L(1))*u;
+      g+=`<path d="${wob(x1+rnd(-2,2),top,x2+rnd(-2,2),bot,1)}" stroke="#151515" stroke-opacity="${rnd(.10,.32).toFixed(2)}" stroke-width="${rnd(.6,1.3).toFixed(2)}"/>`}
+    for(let k=0;k<3;k++){g+=`<path d="${wob(L(0)+rnd(-2,2),top,L(1)+rnd(-1.5,1.5),bot,1.6)}" stroke="#151515" stroke-width="${k?1:2.2}" stroke-opacity="${k?.45:1}"/>`;
+      g+=`<path d="${wob(Rr(0)+rnd(-2,2),top,Rr(1)+rnd(-1.5,1.5),bot,1.6)}" stroke="#151515" stroke-width="${k?1:2.2}" stroke-opacity="${k?.45:1}"/>`}
+    /* cuff */
+    g+=`<path d="M${L(1)-4} ${bot} Q${cx} ${bot+16} ${Rr(1)+4} ${bot} L${Rr(1)+2} ${bot+18} Q${cx} ${bot+32} ${L(1)-2} ${bot+18}Z" fill="#fbfbfa" stroke="#151515" stroke-width="1.6"/>`;
+    g+=`</g><g class="sh">`;
+    /* sneaker (white, sketch) */
+    const sy=bot+22;
+    g+=`<path d="M${cx-46} ${sy+8} Q${cx-54} ${sy+44} ${cx-20} ${sy+50} L${cx+58} ${sy+52} Q${cx+86} ${sy+48} ${cx+76} ${sy+28} Q${cx+66} ${sy+14} ${cx+34} ${sy+8} Q${cx+12} ${sy+2} ${cx-46} ${sy+8}Z" fill="#fff" stroke="#151515" stroke-width="2"/>`;
+    g+=`<path d="${wob(cx-50,sy+38,cx+80,sy+40,.8)}" stroke="#151515" stroke-width="1.4" stroke-opacity=".7"/>`;
+    for(let k=0;k<4;k++)g+=`<path d="M${cx+4+k*9} ${sy+10+k} l8 6" stroke="#151515" stroke-width="1.2" stroke-opacity=".6"/>`;
+    g+=`</g></g>`;return g}
+  svg.innerHTML=`<defs><filter id="blur"><feGaussianBlur stdDeviation="8"/></filter></defs>
+    <ellipse id="shL" cx="236" cy="512" rx="80" ry="14" fill="#000" opacity=".10" filter="url(#blur)"/>
+    <ellipse id="shR" cx="396" cy="512" rx="80" ry="14" fill="#000" opacity=".10" filter="url(#blur)"/>`+leg(190,"legL")+leg(350,"legR");
+})();
 /* giant legs shift & stomp */
 const legL=document.getElementById("legL"),legR=document.getElementById("legR");
 let side=0;
 setInterval(()=>{const g=side?legR:legL;side^=1;
   g.animate([{transform:"translateY(0)"},{transform:"translateY(-46px)",offset:.45},{transform:"translateY(4px)",offset:.8},{transform:"translateY(0)"}],{duration:900,easing:"cubic-bezier(.5,0,.3,1)"});
-  setTimeout(()=>{const r=document.getElementById("legs").getBoundingClientRect();hero.stomp(r.left+r.width*(side?.32:.7));
+  setTimeout(()=>{const r=document.getElementById("legs").getBoundingClientRect();hero.stomp(r.left+r.width*(side?.36:.64),r.top+r.height*.93);
     document.getElementById("legs").animate([{transform:"translateX(-50%)"},{transform:"translateX(calc(-50% + 3px)) translateY(2px)"},{transform:"translateX(-50%)"}],{duration:160})},720)},3200);
 
 /* title letters wobble in */
