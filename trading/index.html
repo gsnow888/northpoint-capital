@@ -24,7 +24,7 @@
 :root{--blue:#2563ff;--bk:#000;--g1:#0d0d0f;--g2:#1a1a1d;--line:#26262a;--w:#fff;--mut:#9a9aa2}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}html,body{overflow-x:clip}
-body{background:var(--bk);color:var(--w);font-family:"Inter Tight",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{background:var(--bk);color:var(--w);font-family:"Inter Tight",system-ui,sans-serif;-webkit-font-smoothing:antialiased}   /* 5-nov-2026: sin overflow-x:hidden en body — con html,body{overflow-x:clip} lo volvía contenedor de scroll y rompía el sticky de "Un día con NORTHPOINT" */
 a{color:inherit;text-decoration:none}
 .mono{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
 /* announce + nav */
