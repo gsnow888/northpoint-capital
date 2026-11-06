@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NORTHPOINT | No seas la liquidez</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f4f3ef;--ink:#151515;--mut:#6d6a63;--blue:#2563ff;--yel:#ffd23f;--red:#ff5a4f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:Nunito,ui-rounded,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.big{font-family:"Luckiest Guy",ui-rounded,sans-serif;font-weight:400;letter-spacing:.01em;line-height:.88;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:900;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:12px 22px;border-radius:999px;border:2.5px solid var(--ink);box-shadow:0 4px 0 var(--ink);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(2px);box-shadow:0 2px 0 var(--ink)}
+.btn:active{transform:translateY(4px);box-shadow:0 0 0 var(--ink)}
+.btn.k{background:var(--ink);color:#fff}.btn.w{background:#fff}.btn.b{background:var(--blue);color:#fff}
+nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:50;display:flex;gap:6px;align-items:center;background:#fff;border:2.5px solid var(--ink);border-radius:999px;padding:6px 6px 6px 18px;box-shadow:0 4px 0 var(--ink);width:min(760px,calc(100% - 32px))}
+nav .lg{font-family:"Luckiest Guy";font-size:18px;margin-right:auto;padding-top:3px}
+nav .lk{font-weight:800;font-size:13px;padding:8px 10px}
+nav .btn{padding:9px 16px;box-shadow:none}
+@media(max-width:640px){nav .lk{display:none}}
+/* hero */
+.hero{position:relative;height:100vh;min-height:640px;overflow:hidden}
+#crowd{position:absolute;inset:0;width:100%;height:100%;cursor:crosshair}
+.legs{position:absolute;left:50%;top:-4%;width:min(560px,70vw);transform:translateX(-50%);pointer-events:none;z-index:2}
+.legs svg{width:100%;display:block;overflow:visible}
+.hcopy{position:absolute;left:50%;transform:translateX(-50%);width:min(1100px,100%);bottom:4vh;text-align:center;z-index:3;padding:30px 16px;pointer-events:none;background:radial-gradient(closest-side,rgba(244,243,239,.96) 55%,rgba(244,243,239,0))}
+.hcopy h1{font-size:clamp(64px,13vw,190px)}
+.hcopy h1 span{display:inline-block}
+.hcopy p{font-weight:700;font-size:clamp(15px,1.4vw,19px);margin:18px auto 22px;max-width:560px}
+.hcopy .ctas{display:flex;gap:12px;justify-content:center;pointer-events:auto}
+.hud{position:absolute;top:84px;left:20px;z-index:4;background:#fff;border:2.5px solid var(--ink);border-radius:16px;box-shadow:0 4px 0 var(--ink);padding:12px 16px;font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase;min-width:210px}
+.hud b{display:block;font-family:"Luckiest Guy";font-size:34px;letter-spacing:0;margin-top:4px;color:var(--blue)}
+.hud small{display:block;color:var(--mut);font-size:10px;margin-top:6px;text-transform:none;letter-spacing:0;font-weight:700}
+.hud2{left:auto;right:20px}.hud2 b{color:var(--red)}
+@media(max-width:700px){.hud{top:auto;bottom:16px;min-width:0;padding:8px 10px}.hud b{font-size:22px}.hud small{display:none}.hcopy{bottom:110px}}
+.hint{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);z-index:4;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+/* sections */
+section.s{padding:120px 20px;max-width:1180px;margin:0 auto}
+.kick{font-weight:900;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+h2.big{font-size:clamp(46px,7.4vw,108px)}
+.lead{font-weight:700;font-size:clamp(16px,1.5vw,20px);color:#3a3833;max-width:600px;margin-top:20px;line-height:1.45}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:56px}
+.card{background:#fff;border:2.5px solid var(--ink);border-radius:22px;box-shadow:0 6px 0 var(--ink);padding:22px;transform:rotate(var(--r,0deg));transition:transform .3s}
+.card:hover{transform:rotate(0) translateY(-4px)}
+.card svg{width:84px;height:84px;display:block;margin-bottom:14px}
+.card h3{font-family:"Luckiest Guy";font-weight:400;font-size:24px;line-height:1;margin-bottom:8px}
+.card p{font-weight:700;font-size:14px;color:#47443e;line-height:1.4}
+.card.red{background:#fff3f1}.card.blue{background:#eef3ff}
+@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+@media(max-width:860px){.split{grid-template-columns:1fr}}
+.bubble{position:relative;display:inline-block;background:#fff;border:2.5px solid var(--ink);border-radius:18px;padding:10px 14px;font-weight:800;font-size:14px;box-shadow:0 3px 0 var(--ink)}
+.bubble:after{content:"";position:absolute;left:22px;bottom:-11px;width:16px;height:16px;background:#fff;border-right:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink);transform:rotate(45deg)}
+.room{position:relative;background:#fff;border:2.5px solid var(--ink);border-radius:28px;box-shadow:0 8px 0 var(--ink);aspect-ratio:4/3;overflow:hidden}
+.room canvas{width:100%;height:100%;display:block}
+.room .tag{position:absolute;left:16px;top:14px;font-weight:900;font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:var(--red);color:#fff;border:2px solid var(--ink);border-radius:999px;padding:4px 10px}
+.room .tag.on{background:var(--blue)}
+.list{list-style:none;margin-top:28px;display:grid;gap:12px}
+.list li{display:flex;gap:14px;align-items:flex-start;font-weight:800;font-size:17px;line-height:1.35}
+.list li i{flex:none;width:28px;height:28px;border:2.5px solid var(--ink);border-radius:50%;background:var(--blue);display:grid;place-items:center;margin-top:-2px}
+.list li i svg{width:14px;height:14px}
+/* ticker strip */
+.strip{background:var(--ink);color:#fff;overflow:hidden;white-space:nowrap;padding:16px 0;border-top:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink)}
+.strip div{display:inline-block;animation:mq 40s linear infinite}
+.strip span{font-family:"Luckiest Guy";font-size:30px;margin:0 26px}.strip span.b{color:var(--yel)}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* final */
+.final{position:relative;text-align:center;padding:140px 20px 160px;overflow:hidden}
+.final h2{font-size:clamp(60px,11vw,170px)}
+.final p{font-weight:700;font-size:19px;margin:22px auto 30px;max-width:520px}
+.foot{position:absolute;top:-30px;left:50%;width:260px;transform:translateX(-50%);opacity:.12;pointer-events:none}
+footer{border-top:2.5px solid var(--ink);padding:28px 20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-weight:700;font-size:12px;color:var(--mut);max-width:1180px;margin:0 auto}
+.rv{opacity:0;transform:translateY(40px) rotate(-2deg);transition:opacity .7s,transform .7s cubic-bezier(.2,1.4,.4,1)}
+.rv.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav><a class="lg" href="#">NORTHPOINT</a><a class="lk" href="#problema">El problema</a><a class="lk" href="#comunidad">La comunidad</a><a class="lk" href="#app">La app</a><a class="btn k" href="https://northpointcapital.io/trading/aplicar.html">Aplicar</a></nav>
+
+<header class="hero">
+  <canvas id="crowd"></canvas>
+  <div class="legs" id="legs">
+    <svg viewBox="0 0 560 520" fill="none" stroke="#151515" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <!-- left leg (suit) -->
+      <g id="legL">
+        <path d="M150 -40 L140 330 Q150 352 200 352 L250 352 Q262 340 260 320 L262 -40" fill="#fff"/>
+        <path d="M205 -40 L203 320" stroke-width="2.5" opacity=".5"/>
+        <path d="M140 330 Q146 356 200 356 L258 352" stroke-width="3"/>
+        <path d="M120 360 Q108 410 150 420 L290 422 Q326 418 318 392 Q312 372 270 362 Q246 356 236 344 L150 344 Q132 346 120 360Z" fill="#151515"/>
+        <path d="M168 396 Q200 404 268 398" stroke="#fff" stroke-width="2.5" opacity=".7"/>
+      </g>
+      <!-- right leg -->
+      <g id="legR">
+        <path d="M300 -40 L310 300 Q312 322 330 324 L392 324 Q404 314 404 296 L414 -40" fill="#fff"/>
+        <path d="M357 -40 L362 296" stroke-width="2.5" opacity=".5"/>
+        <path d="M302 330 Q290 380 330 392 L478 394 Q512 390 504 364 Q498 344 456 334 Q432 328 420 316 L330 316 Q310 318 302 330Z" fill="#151515"/>
+        <path d="M348 368 Q392 376 456 370" stroke="#fff" stroke-width="2.5" opacity=".7"/>
+      </g>
+    </svg>
+  </div>
+  <div class="hud"><span>Traders retail en pantalla</span><b id="hudN">0</b><small>Toca a uno para traerlo a la comunidad.</small></div>
+  <div class="hud hud2"><span>Ya en NORTHPOINT</span><b id="hudJ" style="color:var(--blue)">0</b><small>Los azules ya no operan solos.</small></div>
+  <div class="hcopy">
+    <h1 class="big" id="title"><span>No</span> <span>seas</span> <span>la</span><br><span>liquidez</span></h1>
+    <p>Arriba están los grandes jugadores. Abajo, miles de traders retail operando solos, sin registro y repitiendo los mismos errores.</p>
+    <div class="ctas"><a class="btn k" href="https://northpointcapital.io/trading/aplicar.html">Aplicar</a><a class="btn w" href="#problema">Cómo salir de ahí</a></div>
+  </div>
+  <div class="hint">Mueve el mouse sobre la multitud</div>
+</header>
+
+<div class="strip"><div id="strip"></div></div>
+
+<section class="s" id="problema">
+  <div class="kick">El problema</div>
+  <h2 class="big rv">Así opera<br>el retail</h2>
+  <p class="lead rv">No es falta de ganas. Es operar solo, sin datos y sin nadie que te diga lo que no quieres ver.</p>
+  <div class="cards">
+    <div class="card red rv" style="--r:-2deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><circle cx="42" cy="26" r="10" fill="#fff"/><path d="M42 36v22M42 44l-12 8M42 44l12 8M42 58l-9 16M42 58l9 16"/><path d="M14 20h10M60 20h10M18 12l6 4M66 12l-6 4" opacity=".4"/></svg><h3>Opera solo</h3><p>Nadie revisa sus trades. Nadie le dice que ya rompió su regla tres veces esta semana.</p></div>
+    <div class="card red rv" style="--r:1.5deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><rect x="18" y="14" width="48" height="58" rx="6" fill="#fff"/><path d="M28 30h28M28 42h18M28 54h24" stroke-dasharray="4 6"/><path d="M58 60l12 12M70 60L58 72" stroke="#ff5a4f"/></svg><h3>Sin registro</h3><p>No sabe cuánto gana en promedio ni cuáles son sus mejores días. Opera de memoria.</p></div>
+    <div class="card red rv" style="--r:-1deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><path d="M16 56c10-20 18-20 26 0s16 20 26 0" /><path d="M16 36c10-20 18-20 26 0s16 20 26 0" opacity=".4"/><path d="M62 18l8 4-4 8"/></svg><h3>Repite errores</h3><p>El mismo error, la misma pérdida, cada semana. Sin saber cuánto le cuesta.</p></div>
+    <div class="card red rv" style="--r:2deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><path d="M12 66L30 44l12 10 22-30"/><path d="M58 20h10v10"/><circle cx="66" cy="22" r="7" fill="#ffd23f"/><path d="M40 70h30" opacity=".4"/></svg><h3>Compra el techo</h3><p>Entra por FOMO cuando todos ya están adentro. Sale por miedo justo antes del rebote.</p></div>
+  </div>
+</section>
+
+<section class="s" id="comunidad">
+  <div class="split">
+    <div class="room rv"><span class="tag" id="roomTag">Operando solo</span><canvas id="room"></canvas></div>
+    <div>
+      <div class="kick">La comunidad</div>
+      <h2 class="big rv">Nunca<br>operas solo</h2>
+      <ul class="list">
+        <li class="rv"><i><svg viewBox="0 0 14 14" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M2 7.5l3 3 7-7"/></svg></i>Un grupo de traders en Discord para preguntar, compartir y revisar tu día.</li>
+        <li class="rv"><i><svg viewBox="0 0 14 14" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M2 7.5l3 3 7-7"/></svg></i>Operamos en vivo contigo cuando abre Nueva York, explicando cada decisión.</li>
+        <li class="rv"><i><svg viewBox="0 0 14 14" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M2 7.5l3 3 7-7"/></svg></i>Practicas contra otros traders en días reales, sin tocar tu cuenta.</li>
+      </ul>
+      <div style="margin-top:30px"><span class="bubble">Pasa el mouse por la sala</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="app">
+  <div class="kick">La app</div>
+  <h2 class="big rv">Deja de operar<br>de memoria</h2>
+  <p class="lead rv">Todo lo que el retail no mide, NORTHPOINT lo mide por ti.</p>
+  <div class="cards">
+    <div class="card blue rv" style="--r:1.5deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><rect x="18" y="14" width="48" height="58" rx="6" fill="#fff"/><path d="M28 30h28M28 42h28M28 54h18" stroke="#2563ff"/><circle cx="62" cy="64" r="10" fill="#2563ff"/><path d="M57 64l4 4 6-7" stroke="#fff"/></svg><h3>Libreta que se llena sola</h3><p>Cada trade aparece con su hora y resultado. No anotas nada.</p></div>
+    <div class="card blue rv" style="--r:-1.5deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><rect x="14" y="44" width="12" height="24" fill="#fff"/><rect x="36" y="30" width="12" height="38" fill="#2563ff"/><rect x="58" y="18" width="12" height="50" fill="#fff"/></svg><h3>En qué eres bueno</h3><p>Aciertos, promedio y tus mejores días, en segundos.</p></div>
+    <div class="card blue rv" style="--r:1deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><circle cx="42" cy="42" r="26" fill="#fff"/><path d="M42 26v32M50 32c-4-3-16-3-16 4s16 5 16 12-12 7-16 4"/><path d="M14 14l56 56" stroke="#ff5a4f"/></svg><h3>El precio del error</h3><p>Cada regla rota te dice cuánto te costó. Así dejas de repetirla.</p></div>
+    <div class="card blue rv" style="--r:-2deg"><svg viewBox="0 0 84 84" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"><path d="M42 12l8 18 20 2-15 13 5 20-18-11-18 11 5-20-15-13 20-2z" fill="#ffd23f"/></svg><h3>Progreso visible</h3><p>Tu constancia se vuelve logros y metas que desbloqueas.</p></div>
+  </div>
+</section>
+
+<section class="final">
+  <svg class="foot" viewBox="0 0 260 120" fill="#151515"><path d="M20 40Q4 90 50 100L220 102Q258 98 250 70Q244 50 196 40Q168 34 156 20L50 20Q30 22 20 40Z"/></svg>
+  <div class="kick">Por invitación</div>
+  <h2 class="big rv">Sal de<br>abajo</h2>
+  <p>Aplica, platicamos por Zoom y, si hay match, entras a la comunidad.</p>
+  <a class="btn b" href="https://northpointcapital.io/trading/aplicar.html">Aplicar a NORTHPOINT</a>
+</section>
+
+<footer><span>NORTHPOINT · Hecho por traders, para traders</span><span>Herramienta de registro y análisis. No es asesoría financiera. Operar conlleva riesgo de pérdida.</span></footer>
+
+<script>
+/* ---------- strip ---------- */
+const PH=["Una más y recupero","Compré el techo","Me sacó el stop y luego subió","Hoy sí voy con todo","Sin plan, pero con fe","Promedio a la baja","Ya merito"];
+document.getElementById("strip").innerHTML=[...PH,...PH].map((p,i)=>`<span class="${i%2?'b':''}">${p}</span><span>·</span>`).join("");
+
+/* ---------- crowd of retail traders (hand-drawn stick people) ---------- */
+const SAY=["¿por qué siempre a mí?","una más y recupero","compré el techo","me sacó el stop","hoy sí","ya merito","¿alguien más ve esto?","promedio a la baja","sin plan, con fe"];
+function crowdSim(cv,{n,legs=false,hover=true,onCount}){
+  const cx=cv.getContext("2d");let W,H,D=Math.min(devicePixelRatio,2),P=[],mx=-999,my=-999,stomp=0,stompX=0,joined=0;
+  function size(){W=cv.clientWidth;H=cv.clientHeight;cv.width=W*D;cv.height=H*D;cx.setTransform(D,0,0,D,0,0)}
+  size();addEventListener("resize",size);
+  for(let i=0;i<n;i++)P.push({x:Math.random()*W,y:(legs?.38:.12)*H+Math.random()*H*(legs?.6:.85),vx:(Math.random()-.5)*.6,vy:(Math.random()-.5)*.3,ph:Math.random()*6,s:.8+Math.random()*.5,hx:0,hy:0,blue:false,say:null,sayT:0,flee:0});
+  P.forEach(p=>{p.hx=p.x;p.hy=p.y});
+  cv.addEventListener("pointermove",e=>{const r=cv.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top});
+  cv.addEventListener("pointerleave",()=>{mx=my=-999});
+  cv.addEventListener("click",e=>{const r=cv.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+    let best=null,bd=40;P.forEach(p=>{const d=Math.hypot(p.x-x,p.y-y-10);if(d<bd&&!p.blue){bd=d;best=p}});
+    if(best){best.blue=true;best.say="¡ya no opero solo!";best.sayT=160;joined++;onCount&&onCount(P.length,joined)}});
+  onCount&&onCount(P.length,0);
+  function person(p,t){
+    const s=p.s*(W<700?.8:1),bob=Math.abs(Math.sin(t*.008*(1+p.flee)+p.ph))*2.4*s;
+    cx.save();cx.translate(p.x,p.y-bob);cx.scale(s,s);
+    const hov=Math.hypot(p.x-mx,p.y-10-my)<36;
+    cx.lineWidth=2.4;cx.lineCap="round";cx.strokeStyle="#151515";
+    const col=p.blue?"#2563ff":hov?"#ffd23f":"#fff";
+    const sw=Math.sin(t*.01*(1+p.flee*2)+p.ph)*5;
+    cx.beginPath();cx.moveTo(0,-6);cx.lineTo(-3+sw*.4,6);cx.moveTo(0,-6);cx.lineTo(3-sw*.4,6);cx.stroke();          // legs
+    cx.beginPath();cx.moveTo(0,-18);cx.lineTo(0,-6);cx.moveTo(0,-15);cx.lineTo(-6,-9+sw*.3);cx.moveTo(0,-15);cx.lineTo(6,-9-sw*.3);cx.stroke(); // body+arms
+    // phone (retail stares at chart) unless blue
+    if(!p.blue){cx.fillStyle="#151515";cx.fillRect(4,-12-sw*.3,4,6)}
+    cx.beginPath();cx.ellipse(0,-24,6,6.5,0,0,7);cx.fillStyle=col;cx.fill();cx.stroke();                           // head
+    cx.fillStyle="#151515";cx.beginPath();cx.arc(-2,p.blue?-26:-23,1,0,7);cx.arc(2,p.blue?-26:-23,1,0,7);cx.fill(); // eyes (blue look up)
+    cx.restore();
+    if(p.say&&p.sayT>0){const tw=cx.measureText(p.say).width;cx.font="800 11px Nunito";const bx=p.x+8,by=p.y-48*s;
+      cx.fillStyle="#fff";cx.strokeStyle="#151515";cx.lineWidth=2;cx.beginPath();cx.roundRect(bx,by-14,tw+16,20,9);cx.fill();cx.stroke();
+      cx.fillStyle="#151515";cx.fillText(p.say,bx+8,by)}
+  }
+  let last=performance.now();
+  (function tick(t){requestAnimationFrame(tick);cx.clearRect(0,0,W,H);
+    // shadows of the shoes
+    if(legs){const lx=W/2,ly=Math.min(W*.7,560)*.76-H*.04;cx.fillStyle="rgba(0,0,0,.07)";
+      cx.beginPath();cx.ellipse(lx-Math.min(W*.7,560)*.12,ly+12,Math.min(W*.7,560)*.18,18,0,0,7);cx.ellipse(lx+Math.min(W*.7,560)*.2,ly-2,Math.min(W*.7,560)*.18,18,0,0,7);cx.fill()}
+    if(stomp>0){stomp-=1;cx.strokeStyle="rgba(0,0,0,"+(stomp/60*.4)+")";cx.lineWidth=2;cx.beginPath();cx.ellipse(stompX,H*.5,(60-stomp)*6,(60-stomp)*2,0,0,7);cx.stroke()}
+    P.sort((a,b)=>a.y-b.y);
+    for(const p of P){
+      const dx=p.x-mx,dy=p.y-my,d=Math.hypot(dx,dy);
+      if(hover&&d<90&&!p.blue){p.vx+=dx/d*.12;p.vy+=dy/d*.06;p.flee=1}
+      if(!p.blue){p.vx+=(p.hx-p.x)*.0004;p.vy+=(p.hy-p.y)*.0004}
+      if(p.blue){ // blue ones walk together to the bottom-right huddle
+        const tx=W*.82+((p.ph*37)%80)-40,ty=H*.85+((p.ph*53)%50)-25;p.vx+=(tx-p.x)*.0009;p.vy+=(ty-p.y)*.0009}
+      if(Math.random()<.0006&&!p.say&&P.filter(q=>q.say).length<5){p.say=p.blue?"aquí revisamos juntos":SAY[(Math.random()*SAY.length)|0];p.sayT=200}
+      if(p.sayT>0&&--p.sayT===0)p.say=null;
+      p.vx*=.96;p.vy*=.96;p.vx+=(Math.random()-.5)*.05;p.vy+=(Math.random()-.5)*.03;p.flee*=.97;
+      p.x+=p.vx;p.y+=p.vy;
+      const top=legs?H*.42:H*.12;if(p.x<10)p.vx+=.3;if(p.x>W-10)p.vx-=.3;if(p.y<top)p.vy+=.2;if(p.y>H-12)p.vy-=.2;
+      person(p,t)}
+  })(performance.now());
+  return {stomp(x){stomp=60;stompX=x;P.forEach(p=>{const d=p.x-x;if(Math.abs(d)<200&&!p.blue){p.vx+=Math.sign(d||1)*3;p.flee=1;if(Math.random()<.3){p.say="¡ay!";p.sayT=80}}})},P};
+}
+const hero=crowdSim(document.getElementById("crowd"),{n:innerWidth<700?55:120,legs:true,onCount:(n,j)=>{document.getElementById("hudN").textContent=n-j;document.getElementById("hudJ").textContent=j}});
+
+/* giant legs shift & stomp */
+const legL=document.getElementById("legL"),legR=document.getElementById("legR");
+let side=0;
+setInterval(()=>{const g=side?legR:legL;side^=1;
+  g.animate([{transform:"translateY(0)"},{transform:"translateY(-46px)",offset:.45},{transform:"translateY(4px)",offset:.8},{transform:"translateY(0)"}],{duration:900,easing:"cubic-bezier(.5,0,.3,1)"});
+  setTimeout(()=>{const r=document.getElementById("legs").getBoundingClientRect();hero.stomp(r.left+r.width*(side?.32:.7));
+    document.getElementById("legs").animate([{transform:"translateX(-50%)"},{transform:"translateX(calc(-50% + 3px)) translateY(2px)"},{transform:"translateX(-50%)"}],{duration:160})},720)},3200);
+
+/* title letters wobble in */
+document.querySelectorAll("#title span").forEach((s,i)=>s.animate([{transform:"translateY(120px) rotate(-12deg)",opacity:0},{transform:"translateY(-10px) rotate(3deg)",opacity:1,offset:.7},{transform:"none",opacity:1}],{duration:900,delay:200+i*110,easing:"cubic-bezier(.2,1.2,.4,1)",fill:"backwards"}));
+
+/* ---------- the room: alone (red) vs community (blue) ---------- */
+const room=document.getElementById("room"),rc=room.getContext("2d"),tag=document.getElementById("roomTag");
+let rW,rH,RD=Math.min(devicePixelRatio,2),inside=false,mix=0;
+function rs(){rW=room.clientWidth;rH=room.clientHeight;room.width=rW*RD;room.height=rH*RD;rc.setTransform(RD,0,0,RD,0,0)}rs();addEventListener("resize",rs);
+room.parentElement.addEventListener("pointerenter",()=>{inside=true;tag.textContent="En la comunidad";tag.classList.add("on")});
+room.parentElement.addEventListener("pointerleave",()=>{inside=false;tag.textContent="Operando solo";tag.classList.remove("on")});
+const R=[...Array(9)].map((_,i)=>({a:i/9*Math.PI*2,ph:Math.random()*6,hx:Math.random(),hy:Math.random()}));
+(function rt(t){requestAnimationFrame(rt);mix+=((inside?1:0)-mix)*.06;rc.clearRect(0,0,rW,rH);
+  const cxm=rW/2,cym=rH/2+10;
+  if(mix>.05){rc.strokeStyle=`rgba(37,99,255,${mix*.5})`;rc.lineWidth=2;rc.setLineDash([4,6]);rc.beginPath();rc.arc(cxm,cym,Math.min(rW,rH)*.3,0,7);rc.stroke();rc.setLineDash([])}
+  R.forEach((p,i)=>{const ax=rW*(.12+p.hx*.76),ay=rH*(.2+p.hy*.65),bx=cxm+Math.cos(p.a+t*.0002)*Math.min(rW,rH)*.3,by=cym+Math.sin(p.a+t*.0002)*Math.min(rW,rH)*.3;
+    const x=ax+(bx-ax)*mix,y=ay+(by-ay)*mix,s=1.4;rc.save();rc.translate(x,y);rc.scale(s,s);rc.lineWidth=2.2;rc.lineCap="round";rc.strokeStyle="#151515";
+    const sw=Math.sin(t*.006+p.ph)*3;rc.beginPath();rc.moveTo(0,-6);rc.lineTo(-3,6);rc.moveTo(0,-6);rc.lineTo(3,6);rc.moveTo(0,-18);rc.lineTo(0,-6);rc.moveTo(0,-15);rc.lineTo(-6,-9+sw*(1-mix));rc.moveTo(0,-15);rc.lineTo(6,-9-sw*(1-mix));rc.stroke();
+    rc.beginPath();rc.ellipse(0,-24,6,6.5,0,0,7);rc.fillStyle=mix>.5?"#2563ff":"#fff";rc.fill();rc.stroke();
+    if(mix<.5){rc.fillStyle="#151515";rc.fillRect(4,-12,4,6)}rc.restore();
+    if(mix<.3&&i%3===0){rc.font="800 12px Nunito";rc.fillStyle="#ff5a4f";rc.fillText("?",x+10,y-40-Math.sin(t*.004+p.ph)*3)}});
+  if(mix>.6){rc.font="900 13px Nunito";rc.fillStyle="#2563ff";rc.textAlign="center";rc.fillText("REVISIÓN DEL DÍA · EN VIVO",cxm,cym+4);rc.textAlign="left"}
+})(performance.now());
+
+/* ---------- reveal ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.2});
+document.querySelectorAll(".rv").forEach((e,i)=>{e.style.transitionDelay=(i%4)*90+"ms";io.observe(e)});
+</script>
+</body>
+</html>
