@@ -237,9 +237,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 75895.0,
-   "cambio": -945.0,
-   "pct": -1.23
+   "precio": 75815.0,
+   "cambio": -1025.0,
+   "pct": -1.33
   }
  ],
  "acciones": [
@@ -414,40 +414,106 @@
  ],
  "noticias": [
   {
-   "titulo": "Berkshire shares surge as Wall Street swoons amid AI fears",
-   "url": "https://www.cnbc.com/2026/11/07/berkshire-shares-surge-as-wall-street-swoons-amid-ai-fears.html",
+   "titulo": "My adviser recommended an annuity. Is it the right move in this market environment?",
+   "url": "https://www.marketwatch.com/story/my-adviser-recommended-an-annuity-is-it-the-right-move-in-this-market-environment-00edbbf6?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 18:36:00 GMT"
+  },
+  {
+   "titulo": "Meta chief strategy officer Dave Wehner leaves to join AI infrastructure startup Fireworks as CFO",
+   "url": "https://www.cnbc.com/2026/11/07/dave-wehner-meta-fireworks-cfo.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 07 Nov 2026 14:06:20 GMT"
+   "fecha": "Sat, 07 Nov 2026 17:51:16 GMT"
+  },
+  {
+   "titulo": "Democrats’ big election win revives a difficult Social Security question: Who pays?",
+   "url": "https://www.marketwatch.com/story/democrats-big-election-win-revives-a-difficult-social-security-question-who-pays-17ba9448?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 17:43:00 GMT"
+  },
+  {
+   "titulo": "I’m 65 and worth more than $5.6 million. Can I afford a $200,000 camper?",
+   "url": "https://www.marketwatch.com/story/im-65-and-worth-more-than-5-6-million-can-i-buy-a-200-000-camper-even-though-the-price-feels-crazy-high-55f668f8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 17:33:00 GMT"
+  },
+  {
+   "titulo": "The wealthiest 10% of Americans are pulling ahead of everyone else. This is what’s making them richer.",
+   "url": "https://www.marketwatch.com/story/the-wealthiest-10-of-americans-are-pulling-ahead-of-everyone-else-this-is-whats-making-them-richer-bd83c2f6?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 17:04:00 GMT"
+  },
+  {
+   "titulo": "‘It feels like he’s quietly building a separate life’: My husband inherited $500,000, but he refuses to spend it on our home",
+   "url": "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 17:01:00 GMT"
+  },
+  {
+   "titulo": "The S&P 500 could be dangerously exposed to AI. Here are some simple alternatives.",
+   "url": "https://www.marketwatch.com/story/the-s-p-500-has-become-a-big-ai-bet-here-are-some-simple-alternatives-3c7574a4?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 16:40:00 GMT"
+  },
+  {
+   "titulo": "The 2027 tax brackets are out. See what the standard deduction and SALT tax breaks will be.",
+   "url": "https://www.marketwatch.com/story/the-2027-tax-brackets-are-out-see-what-the-standard-deduction-and-salt-tax-breaks-will-be-5dd1d293?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 16:30:00 GMT"
+  },
+  {
+   "titulo": "I attend free meals hosted by people promoting annuities. I’ve no intention of buying any. Should I stop going?",
+   "url": "https://www.marketwatch.com/story/its-good-to-be-old-ive-been-invited-to-a-dozen-free-meals-that-turn-into-annuity-sales-pitches-should-i-stop-going-63df67ca?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 16:30:00 GMT"
+  },
+  {
+   "titulo": "Why the prognosis for healthcare stocks is uncertain ahead of Congress’ new makeup",
+   "url": "https://www.cnbc.com/2026/11/07/healthcare-stocks-may-face-trouble-due-to-midterm-results.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 16:02:33 GMT"
+  },
+  {
+   "titulo": "My 93-year-old father changed his will at the 11th hour, leaving my brother his entire $500,000 estate. Can I challenge it?",
+   "url": "https://www.marketwatch.com/story/my-93-year-old-father-changed-his-will-at-the-11th-hour-leaving-my-brother-his-entire-500-000-estate-can-i-challenge-it-ecfc63d2?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 16:00:00 GMT"
+  },
+  {
+   "titulo": "You follow the rules for smart stock trading. But are they the right rules?",
+   "url": "https://www.marketwatch.com/story/you-follow-the-rules-for-smart-stock-trading-but-are-they-the-right-rules-9bfe5846?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 16:00:00 GMT"
   },
   {
    "titulo": "Berkshire Hathaway more than doubles buybacks in third quarter as earnings decline",
    "url": "https://www.cnbc.com/2026/11/07/berkshire-hathaway-q3-2026-earnings-buybacks.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 07 Nov 2026 14:02:49 GMT"
+   "fecha": "Sat, 07 Nov 2026 15:23:46 GMT"
+  },
+  {
+   "titulo": "What midterm election blue wave rebuke of Trump means for renewable energy",
+   "url": "https://www.cnbc.com/2026/11/07/midterm-election-blue-wave-trump-renewable-energy.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 14:33:32 GMT"
+  },
+  {
+   "titulo": "31-year-old dumpster diver brought in $140,000 in 12 months: I 'did much more than I thought was possible'",
+   "url": "https://www.cnbc.com/make-it/2026/11/07/dumpster-diver-resale-business.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 14:15:01 GMT"
+  },
+  {
+   "titulo": "Mark Cuban says he doesn’t ‘give a f---' about growing his net worth—a healthy mindset for non-billionaires too, a financial therapist says",
+   "url": "https://www.cnbc.com/make-it/2026/11/07/mark-cuban-net-worth-money-mindset.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 14:05:01 GMT"
   },
   {
    "titulo": "Will this week's blue wave election usher in a Democratic president in 2028?",
    "url": "https://www.cnbc.com/2026/11/07/2026-midterm-election-blue-wave-2028-president.html",
    "fuente": "CNBC",
    "fecha": "Sat, 07 Nov 2026 14:00:01 GMT"
-  },
-  {
-   "titulo": "This retired professor has reinvented himself — as a Taylor Swift scholar",
-   "url": "https://www.marketwatch.com/story/this-retired-professor-has-reinvented-himself-as-a-taylor-swift-scholar-88456c8d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 07 Nov 2026 14:00:00 GMT"
-  },
-  {
-   "titulo": "Democrat shaping AI policy bought chip stocks despite backing congressional trading ban",
-   "url": "https://www.cnbc.com/2026/11/07/josh-gottheimer-ai-stocks-congress-trading-ban.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 07 Nov 2026 13:30:01 GMT"
-  },
-  {
-   "titulo": "The AI trade is now counting on Anthropic’s IPO — but it couldn’t be happening at a worse time",
-   "url": "https://www.marketwatch.com/story/the-ai-trade-is-now-counting-on-anthropics-ipo-but-it-couldnt-be-happening-at-a-worse-time-8bd0f1c4?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 07 Nov 2026 13:30:00 GMT"
   },
   {
    "titulo": "Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections",
@@ -468,82 +534,16 @@
    "fecha": "Sat, 07 Nov 2026 13:00:01 GMT"
   },
   {
-   "titulo": "Cosm rides premium moviegoing wave with more immersive screenings and a wider library",
-   "url": "https://www.cnbc.com/2026/11/07/cosm-immersive-movie-screenings.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 07 Nov 2026 13:00:01 GMT"
-  },
-  {
    "titulo": "Tech companies face mounting child safety lawsuits while pushing AI into schools",
    "url": "https://www.cnbc.com/2026/11/07/snap-social-media-teen-safety-lawsuits.html",
    "fuente": "CNBC",
    "fecha": "Sat, 07 Nov 2026 12:00:01 GMT"
   },
   {
-   "titulo": "Why a wave of bomb threats is proving so difficult for Europe's aviation authorities to contain",
-   "url": "https://www.cnbc.com/2026/11/07/hoax-bomb-threats-flights-europe.html",
+   "titulo": "Trump says U.S. carried out ‘minor strikes’ on Iran as missiles hit Qeshm Island",
+   "url": "https://www.cnbc.com/2026/11/07/trump-us-minor-strikes-iran-qeshm-island.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 07 Nov 2026 09:01:57 GMT"
-  },
-  {
-   "titulo": "‘I have no financial safety net’: I’m 66, rely on Social Security and have just $500 in savings. What hope do I have?",
-   "url": "https://www.marketwatch.com/story/i-have-no-financial-safety-net-im-66-rely-on-social-security-and-have-500-in-savings-what-politician-speaks-for-me-be2126cb?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 06 Nov 2026 21:45:00 GMT"
-  },
-  {
-   "titulo": "Elon Musk opens the door for a big SpaceX acquisition",
-   "url": "https://www.marketwatch.com/story/elon-musk-opens-the-door-for-a-big-spacex-acquisition-4f62bcad?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 06 Nov 2026 21:45:00 GMT"
-  },
-  {
-   "titulo": "Data centers run on debt. That was a problem for bonds this year — and it’s only going to get worse.",
-   "url": "https://www.marketwatch.com/story/data-centers-run-on-debt-that-was-a-problem-for-bonds-this-year-and-its-only-going-to-get-worse-09c03be6?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 06 Nov 2026 21:37:00 GMT"
-  },
-  {
-   "titulo": "Nvidia, AMD and other chip stocks rebound — but is relief from the ‘violent’ selloff only temporary?",
-   "url": "https://www.marketwatch.com/story/nvidia-amd-and-other-chip-stocks-rebound-is-the-violent-ai-selloff-over-8f7df533?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 06 Nov 2026 21:24:00 GMT"
-  },
-  {
-   "titulo": "‘It seems bizarre’: We’re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
-   "url": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 06 Nov 2026 21:15:00 GMT"
-  },
-  {
-   "titulo": "‘It feels like he’s quietly building a separate life’: My husband inherited $500,000, but he refuses to spend it on our home",
-   "url": "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 06 Nov 2026 21:15:00 GMT"
-  },
-  {
-   "titulo": "Micron’s stock is dirt cheap — and that’s igniting a fierce online debate",
-   "url": "https://www.marketwatch.com/story/microns-stock-is-dirt-cheap-and-thats-igniting-a-fierce-online-debate-0626791d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 06 Nov 2026 20:58:00 GMT"
-  },
-  {
-   "titulo": "My 93-year-old father changed his will at the 11th hour, leaving my brother his entire $500,000 estate. Can I challenge it?",
-   "url": "https://www.marketwatch.com/story/my-93-year-old-father-changed-his-will-at-the-11th-hour-leaving-my-brother-his-entire-500-000-estate-can-i-challenge-it-ecfc63d2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 06 Nov 2026 20:15:00 GMT"
-  },
-  {
-   "titulo": "Data center double-down: Hassett says blue wave won't stop AI build-out",
-   "url": "https://www.cnbc.com/2026/11/06/data-centers-ai-elections-hassett.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 18:54:22 GMT"
-  },
-  {
-   "titulo": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
-   "url": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 18:40:58 GMT"
+   "fecha": "Sat, 07 Nov 2026 07:37:36 GMT"
   }
  ],
  "videos": [
@@ -657,7 +657,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-07T14:11:19Z",
+ "ts": "2026-11-07T18:51:09Z",
  "fallas": [
   "videos",
   "directos"
