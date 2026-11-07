@@ -195,51 +195,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 27082.75,
-   "cambio": -1044.75,
-   "pct": -3.71
+   "precio": 27107.5,
+   "cambio": -1020.0,
+   "pct": -3.63
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7403.0,
-   "cambio": -171.5,
-   "pct": -2.26
+   "precio": 7404.0,
+   "cambio": -170.5,
+   "pct": -2.25
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4072.3,
-   "cambio": 102.7,
-   "pct": 2.59
+   "precio": 4079.5,
+   "cambio": 109.9,
+   "pct": 2.77
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 90.52,
-   "cambio": -5.94,
-   "pct": -6.16
+   "precio": 90.34,
+   "cambio": -6.12,
+   "pct": -6.34
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2760.7,
-   "cambio": -57.1,
-   "pct": -2.03
+   "precio": 2761.2,
+   "cambio": -56.6,
+   "pct": -2.01
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51380.0,
-   "cambio": -753.0,
-   "pct": -1.44
+   "precio": 51390.0,
+   "cambio": -743.0,
+   "pct": -1.43
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 75930.0,
-   "cambio": -910.0,
-   "pct": -1.18
+   "precio": 75895.0,
+   "cambio": -945.0,
+   "pct": -1.23
   }
  ],
  "acciones": [
@@ -414,6 +414,42 @@
  ],
  "noticias": [
   {
+   "titulo": "OpenAI will keep investing in AI data centers despite election results, CFO tells CNBC",
+   "url": "https://www.cnbc.com/2026/11/06/open-ai-data-centers-election.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 06 Nov 2026 22:25:58 GMT"
+  },
+  {
+   "titulo": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff",
+   "url": "https://www.cnbc.com/2026/11/06/trump-stephen-miller-wiles-chief-of-staff.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 06 Nov 2026 22:22:53 GMT"
+  },
+  {
+   "titulo": "‘I have no financial safety net’: I’m 66, rely on Social Security and have just $500 in savings. What hope do I have?",
+   "url": "https://www.marketwatch.com/story/i-have-no-financial-safety-net-im-66-rely-on-social-security-and-have-500-in-savings-what-politician-speaks-for-me-be2126cb?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 06 Nov 2026 21:45:00 GMT"
+  },
+  {
+   "titulo": "Elon Musk opens the door for a big SpaceX acquisition",
+   "url": "https://www.marketwatch.com/story/elon-musk-opens-the-door-for-a-big-spacex-acquisition-4f62bcad?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 06 Nov 2026 21:45:00 GMT"
+  },
+  {
+   "titulo": "Sen. Chris Murphy released from hospital after stroke, will miss votes for 'several weeks' as he rehabs",
+   "url": "https://www.cnbc.com/2026/11/06/chris-murphy-stroke-hospital-senate.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 06 Nov 2026 21:40:09 GMT"
+  },
+  {
+   "titulo": "Data centers run on debt. That was a problem for bonds this year — and it’s only going to get worse.",
+   "url": "https://www.marketwatch.com/story/data-centers-run-on-debt-that-was-a-problem-for-bonds-this-year-and-its-only-going-to-get-worse-09c03be6?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 06 Nov 2026 21:37:00 GMT"
+  },
+  {
    "titulo": "Nvidia, AMD and other chip stocks rebound — but is relief from the ‘violent’ selloff only temporary?",
    "url": "https://www.marketwatch.com/story/nvidia-amd-and-other-chip-stocks-rebound-is-the-violent-ai-selloff-over-8f7df533?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -448,18 +484,6 @@
    "url": "https://www.marketwatch.com/story/microns-stock-is-dirt-cheap-and-thats-igniting-a-fierce-online-debate-0626791d?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Fri, 06 Nov 2026 20:58:00 GMT"
-  },
-  {
-   "titulo": "Sen. Chris Murphy released from hospital after stroke, will miss votes for 'several weeks' as he rehabs",
-   "url": "https://www.cnbc.com/2026/11/06/chris-murphy-stroke-hospital-senate.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 20:53:13 GMT"
-  },
-  {
-   "titulo": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff",
-   "url": "https://www.cnbc.com/2026/11/06/trump-stephen-miller-wiles-chief-of-staff.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 20:42:07 GMT"
   },
   {
    "titulo": "My 93-year-old father changed his will at the 11th hour, leaving my brother his entire $500,000 estate. Can I challenge it?",
@@ -520,30 +544,6 @@
    "url": "https://www.cnbc.com/2026/11/06/ai-crush-is-powering-one-stock-to-sky-high-valuations.html",
    "fuente": "CNBC",
    "fecha": "Fri, 06 Nov 2026 18:15:44 GMT"
-  },
-  {
-   "titulo": "You’re fired! But you can keep the laptop and insurance. And here’s $10,000.",
-   "url": "https://www.marketwatch.com/story/layoffs-with-dignity-why-these-tech-firms-are-offering-free-laptops-and-linkedin-premium-28750d39?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 06 Nov 2026 18:03:00 GMT"
-  },
-  {
-   "titulo": "I’m 65 and worth more than $5.6 million. Can I afford a $200,000 camper?",
-   "url": "https://www.marketwatch.com/story/im-65-and-worth-more-than-5-6-million-can-i-buy-a-200-000-camper-even-though-the-price-feels-crazy-high-55f668f8?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 06 Nov 2026 18:00:00 GMT"
-  },
-  {
-   "titulo": "DraftKings’ expensive bet on prediction markets is crushing its stock",
-   "url": "https://www.marketwatch.com/story/draftkings-expensive-bet-on-prediction-markets-is-crushing-its-stock-277bee0d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 06 Nov 2026 17:51:00 GMT"
-  },
-  {
-   "titulo": "OpenAI will keep investing in AI data centers despite election results, CFO tells CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/open-ai-data-centers-election.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 17:24:48 GMT"
   }
  ],
  "videos": [
@@ -657,7 +657,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-06T21:36:08Z",
+ "ts": "2026-11-07T01:11:52Z",
  "fallas": [
   "videos",
   "directos"
