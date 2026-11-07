@@ -237,9 +237,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 75815.0,
-   "cambio": -1025.0,
-   "pct": -1.33
+   "precio": 75850.0,
+   "cambio": -990.0,
+   "pct": -1.29
   }
  ],
  "acciones": [
@@ -414,16 +414,46 @@
  ],
  "noticias": [
   {
-   "titulo": "My adviser recommended an annuity. Is it the right move in this market environment?",
-   "url": "https://www.marketwatch.com/story/my-adviser-recommended-an-annuity-is-it-the-right-move-in-this-market-environment-00edbbf6?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 07 Nov 2026 18:36:00 GMT"
+   "titulo": "Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections",
+   "url": "https://www.cnbc.com/2026/11/07/iran-war-midterm-election-oil-price-trump.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 22:17:52 GMT"
   },
   {
-   "titulo": "Meta chief strategy officer Dave Wehner leaves to join AI infrastructure startup Fireworks as CFO",
-   "url": "https://www.cnbc.com/2026/11/07/dave-wehner-meta-fireworks-cfo.html",
+   "titulo": "Trump offers UFC chief Dana White press secretary job",
+   "url": "https://www.cnbc.com/2026/11/07/trump-ufc-dana-white-press-secretary-offer.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 07 Nov 2026 17:51:16 GMT"
+   "fecha": "Sat, 07 Nov 2026 22:03:06 GMT"
+  },
+  {
+   "titulo": "Trump targets Slotkin in call for DOJ probe of alleged Democratic threats to Republicans",
+   "url": "https://www.cnbc.com/2026/11/07/trump-doj-democrats-alleged-threats-slotkin.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 21:59:10 GMT"
+  },
+  {
+   "titulo": "This retired professor has reinvented himself — as a Taylor Swift scholar",
+   "url": "https://www.marketwatch.com/story/this-retired-professor-has-reinvented-himself-as-a-taylor-swift-scholar-88456c8d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 20:48:00 GMT"
+  },
+  {
+   "titulo": "Second-guessing my adviser: Is an annuity the right move in this market?",
+   "url": "https://www.marketwatch.com/story/my-adviser-recommended-an-annuity-is-it-the-right-move-in-this-market-environment-00edbbf6?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 20:36:00 GMT"
+  },
+  {
+   "titulo": "Here are the 2027 capital-gains tax rates for each income level",
+   "url": "https://www.marketwatch.com/story/here-are-the-2027-capital-gains-tax-rates-for-each-income-level-166fc306?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 19:48:00 GMT"
+  },
+  {
+   "titulo": "Medicare prescription drug costs will jump 50% in 2027. Doing nothing could cost you.",
+   "url": "https://www.marketwatch.com/story/medicare-prescription-drug-costs-will-jump-50-in-2027-doing-nothing-could-cost-you-b701dfb7?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 19:20:00 GMT"
   },
   {
    "titulo": "Democrats’ big election win revives a difficult Social Security question: Who pays?",
@@ -462,28 +492,10 @@
    "fecha": "Sat, 07 Nov 2026 16:30:00 GMT"
   },
   {
-   "titulo": "I attend free meals hosted by people promoting annuities. I’ve no intention of buying any. Should I stop going?",
-   "url": "https://www.marketwatch.com/story/its-good-to-be-old-ive-been-invited-to-a-dozen-free-meals-that-turn-into-annuity-sales-pitches-should-i-stop-going-63df67ca?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 07 Nov 2026 16:30:00 GMT"
-  },
-  {
    "titulo": "Why the prognosis for healthcare stocks is uncertain ahead of Congress’ new makeup",
    "url": "https://www.cnbc.com/2026/11/07/healthcare-stocks-may-face-trouble-due-to-midterm-results.html",
    "fuente": "CNBC",
    "fecha": "Sat, 07 Nov 2026 16:02:33 GMT"
-  },
-  {
-   "titulo": "My 93-year-old father changed his will at the 11th hour, leaving my brother his entire $500,000 estate. Can I challenge it?",
-   "url": "https://www.marketwatch.com/story/my-93-year-old-father-changed-his-will-at-the-11th-hour-leaving-my-brother-his-entire-500-000-estate-can-i-challenge-it-ecfc63d2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 07 Nov 2026 16:00:00 GMT"
-  },
-  {
-   "titulo": "You follow the rules for smart stock trading. But are they the right rules?",
-   "url": "https://www.marketwatch.com/story/you-follow-the-rules-for-smart-stock-trading-but-are-they-the-right-rules-9bfe5846?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 07 Nov 2026 16:00:00 GMT"
   },
   {
    "titulo": "Berkshire Hathaway more than doubles buybacks in third quarter as earnings decline",
@@ -492,16 +504,16 @@
    "fecha": "Sat, 07 Nov 2026 15:23:46 GMT"
   },
   {
-   "titulo": "What midterm election blue wave rebuke of Trump means for renewable energy",
-   "url": "https://www.cnbc.com/2026/11/07/midterm-election-blue-wave-trump-renewable-energy.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 07 Nov 2026 14:33:32 GMT"
-  },
-  {
    "titulo": "31-year-old dumpster diver brought in $140,000 in 12 months: I 'did much more than I thought was possible'",
    "url": "https://www.cnbc.com/make-it/2026/11/07/dumpster-diver-resale-business.html",
    "fuente": "CNBC",
    "fecha": "Sat, 07 Nov 2026 14:15:01 GMT"
+  },
+  {
+   "titulo": "Berkshire shares surge as Wall Street swoons amid AI fears",
+   "url": "https://www.cnbc.com/2026/11/07/berkshire-shares-surge-as-wall-street-swoons-amid-ai-fears.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 14:06:20 GMT"
   },
   {
    "titulo": "Mark Cuban says he doesn’t ‘give a f---' about growing his net worth—a healthy mindset for non-billionaires too, a financial therapist says",
@@ -516,12 +528,6 @@
    "fecha": "Sat, 07 Nov 2026 14:00:01 GMT"
   },
   {
-   "titulo": "Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections",
-   "url": "https://www.cnbc.com/2026/11/07/iran-war-midterm-election-oil-price-trump.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 07 Nov 2026 13:03:12 GMT"
-  },
-  {
    "titulo": "America doesn't like socialism. So why are socialists winning?",
    "url": "https://www.cnbc.com/2026/11/07/socialism-elections-economy.html",
    "fuente": "CNBC",
@@ -532,12 +538,6 @@
    "url": "https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html",
    "fuente": "CNBC",
    "fecha": "Sat, 07 Nov 2026 13:00:01 GMT"
-  },
-  {
-   "titulo": "Tech companies face mounting child safety lawsuits while pushing AI into schools",
-   "url": "https://www.cnbc.com/2026/11/07/snap-social-media-teen-safety-lawsuits.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 07 Nov 2026 12:00:01 GMT"
   },
   {
    "titulo": "Trump says U.S. carried out ‘minor strikes’ on Iran as missiles hit Qeshm Island",
@@ -657,7 +657,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-07T18:51:09Z",
+ "ts": "2026-11-07T22:31:07Z",
  "fallas": [
   "videos",
   "directos"
