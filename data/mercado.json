@@ -195,51 +195,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 27107.5,
-   "cambio": -1020.0,
-   "pct": -3.63
+   "precio": 27085.25,
+   "cambio": -1042.25,
+   "pct": -3.71
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7404.0,
-   "cambio": -170.5,
-   "pct": -2.25
+   "precio": 7402.0,
+   "cambio": -172.5,
+   "pct": -2.28
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4079.5,
-   "cambio": 109.9,
-   "pct": 2.77
+   "precio": 4074.9,
+   "cambio": 105.3,
+   "pct": 2.65
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 90.34,
-   "cambio": -6.12,
-   "pct": -6.34
+   "precio": 90.83,
+   "cambio": -5.63,
+   "pct": -5.84
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2761.2,
-   "cambio": -56.6,
-   "pct": -2.01
+   "precio": 2760.5,
+   "cambio": -57.3,
+   "pct": -2.03
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51390.0,
-   "cambio": -743.0,
+   "precio": 51385.0,
+   "cambio": -748.0,
    "pct": -1.43
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 75895.0,
-   "cambio": -945.0,
-   "pct": -1.23
+   "precio": 76150.0,
+   "cambio": -690.0,
+   "pct": -0.9
   }
  ],
  "acciones": [
@@ -657,7 +657,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-07T01:11:52Z",
+ "ts": "2026-11-07T07:17:46Z",
  "fallas": [
   "videos",
   "directos"
