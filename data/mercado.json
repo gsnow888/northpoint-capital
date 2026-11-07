@@ -237,9 +237,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 76150.0,
-   "cambio": -690.0,
-   "pct": -0.9
+   "precio": 75895.0,
+   "cambio": -945.0,
+   "pct": -1.23
   }
  ],
  "acciones": [
@@ -414,16 +414,76 @@
  ],
  "noticias": [
   {
-   "titulo": "OpenAI will keep investing in AI data centers despite election results, CFO tells CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/open-ai-data-centers-election.html",
+   "titulo": "Berkshire shares surge as Wall Street swoons amid AI fears",
+   "url": "https://www.cnbc.com/2026/11/07/berkshire-shares-surge-as-wall-street-swoons-amid-ai-fears.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 22:25:58 GMT"
+   "fecha": "Sat, 07 Nov 2026 14:06:20 GMT"
   },
   {
-   "titulo": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff",
-   "url": "https://www.cnbc.com/2026/11/06/trump-stephen-miller-wiles-chief-of-staff.html",
+   "titulo": "Berkshire Hathaway more than doubles buybacks in third quarter as earnings decline",
+   "url": "https://www.cnbc.com/2026/11/07/berkshire-hathaway-q3-2026-earnings-buybacks.html",
    "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 22:22:53 GMT"
+   "fecha": "Sat, 07 Nov 2026 14:02:49 GMT"
+  },
+  {
+   "titulo": "Will this week's blue wave election usher in a Democratic president in 2028?",
+   "url": "https://www.cnbc.com/2026/11/07/2026-midterm-election-blue-wave-2028-president.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 14:00:01 GMT"
+  },
+  {
+   "titulo": "This retired professor has reinvented himself — as a Taylor Swift scholar",
+   "url": "https://www.marketwatch.com/story/this-retired-professor-has-reinvented-himself-as-a-taylor-swift-scholar-88456c8d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 14:00:00 GMT"
+  },
+  {
+   "titulo": "Democrat shaping AI policy bought chip stocks despite backing congressional trading ban",
+   "url": "https://www.cnbc.com/2026/11/07/josh-gottheimer-ai-stocks-congress-trading-ban.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 13:30:01 GMT"
+  },
+  {
+   "titulo": "The AI trade is now counting on Anthropic’s IPO — but it couldn’t be happening at a worse time",
+   "url": "https://www.marketwatch.com/story/the-ai-trade-is-now-counting-on-anthropics-ipo-but-it-couldnt-be-happening-at-a-worse-time-8bd0f1c4?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 07 Nov 2026 13:30:00 GMT"
+  },
+  {
+   "titulo": "Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections",
+   "url": "https://www.cnbc.com/2026/11/07/iran-war-midterm-election-oil-price-trump.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 13:03:12 GMT"
+  },
+  {
+   "titulo": "America doesn't like socialism. So why are socialists winning?",
+   "url": "https://www.cnbc.com/2026/11/07/socialism-elections-economy.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 13:01:01 GMT"
+  },
+  {
+   "titulo": "Anthropic IPO meets AI backlash after midterms show stinging rebuke of data centers",
+   "url": "https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 13:00:01 GMT"
+  },
+  {
+   "titulo": "Cosm rides premium moviegoing wave with more immersive screenings and a wider library",
+   "url": "https://www.cnbc.com/2026/11/07/cosm-immersive-movie-screenings.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 13:00:01 GMT"
+  },
+  {
+   "titulo": "Tech companies face mounting child safety lawsuits while pushing AI into schools",
+   "url": "https://www.cnbc.com/2026/11/07/snap-social-media-teen-safety-lawsuits.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 12:00:01 GMT"
+  },
+  {
+   "titulo": "Why a wave of bomb threats is proving so difficult for Europe's aviation authorities to contain",
+   "url": "https://www.cnbc.com/2026/11/07/hoax-bomb-threats-flights-europe.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 09:01:57 GMT"
   },
   {
    "titulo": "‘I have no financial safety net’: I’m 66, rely on Social Security and have just $500 in savings. What hope do I have?",
@@ -438,12 +498,6 @@
    "fecha": "Fri, 06 Nov 2026 21:45:00 GMT"
   },
   {
-   "titulo": "Sen. Chris Murphy released from hospital after stroke, will miss votes for 'several weeks' as he rehabs",
-   "url": "https://www.cnbc.com/2026/11/06/chris-murphy-stroke-hospital-senate.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 21:40:09 GMT"
-  },
-  {
    "titulo": "Data centers run on debt. That was a problem for bonds this year — and it’s only going to get worse.",
    "url": "https://www.marketwatch.com/story/data-centers-run-on-debt-that-was-a-problem-for-bonds-this-year-and-its-only-going-to-get-worse-09c03be6?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -454,12 +508,6 @@
    "url": "https://www.marketwatch.com/story/nvidia-amd-and-other-chip-stocks-rebound-is-the-violent-ai-selloff-over-8f7df533?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Fri, 06 Nov 2026 21:24:00 GMT"
-  },
-  {
-   "titulo": "OpenAI bugging suspect Alfozan pleads not guilty",
-   "url": "https://www.cnbc.com/2026/11/06/openai-bugging-alfozan-saudi.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 21:15:47 GMT"
   },
   {
    "titulo": "‘It seems bizarre’: We’re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
@@ -474,12 +522,6 @@
    "fecha": "Fri, 06 Nov 2026 21:15:00 GMT"
   },
   {
-   "titulo": "Investors brace for lower Anthropic valuation, calling $1.5 trillion a 'stretch'",
-   "url": "https://www.cnbc.com/2026/11/06/investors-brace-for-anthropic-valuation-1point5-trillion-a-stretch.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 21:07:07 GMT"
-  },
-  {
    "titulo": "Micron’s stock is dirt cheap — and that’s igniting a fierce online debate",
    "url": "https://www.marketwatch.com/story/microns-stock-is-dirt-cheap-and-thats-igniting-a-fierce-online-debate-0626791d?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -492,58 +534,16 @@
    "fecha": "Fri, 06 Nov 2026 20:15:00 GMT"
   },
   {
-   "titulo": "A disturbing employment trend is hiding beneath the latest strong job numbers",
-   "url": "https://www.cnbc.com/2026/11/06/long-term-unemployment-october-jobs-report.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 20:11:17 GMT"
-  },
-  {
-   "titulo": "Mississippi Senate: Longshot Ty Pinkins says he aimed to spoil Hyde-Smith, boost Colom vote",
-   "url": "https://www.cnbc.com/2026/11/06/mississippi-senate-ty-pinkins-colom-hyde-smith.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 19:44:33 GMT"
-  },
-  {
-   "titulo": "Top House Oversight Democrat warns Trump family to 'lawyer up'",
-   "url": "https://www.cnbc.com/2026/11/06/robert-garcia-trump-congress-oversight-investigations.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 19:42:36 GMT"
-  },
-  {
    "titulo": "Data center double-down: Hassett says blue wave won't stop AI build-out",
    "url": "https://www.cnbc.com/2026/11/06/data-centers-ai-elections-hassett.html",
    "fuente": "CNBC",
    "fecha": "Fri, 06 Nov 2026 18:54:22 GMT"
   },
   {
-   "titulo": "Cybertruck’s run comes to an end as Musk kills off pricey pet project",
-   "url": "https://www.marketwatch.com/story/is-it-the-end-of-the-cybertruck-elon-musk-announces-factory-will-shift-production-3e33cafd?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 06 Nov 2026 18:54:00 GMT"
-  },
-  {
-   "titulo": "My adviser recommended an annuity. Is it the right move in this market environment?",
-   "url": "https://www.marketwatch.com/story/my-adviser-recommended-an-annuity-is-it-the-right-move-in-this-market-environment-00edbbf6?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 06 Nov 2026 18:53:00 GMT"
-  },
-  {
    "titulo": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
    "url": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html",
    "fuente": "CNBC",
    "fecha": "Fri, 06 Nov 2026 18:40:58 GMT"
-  },
-  {
-   "titulo": "OpenAI, Arm and Qualcomm executives react to post-midterm AI sell-off",
-   "url": "https://www.cnbc.com/2026/11/06/tech-executives-ai-data-center-selloff-midterms.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 18:35:08 GMT"
-  },
-  {
-   "titulo": "AI crush is powering one stock to sky-high valuations",
-   "url": "https://www.cnbc.com/2026/11/06/ai-crush-is-powering-one-stock-to-sky-high-valuations.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 06 Nov 2026 18:15:44 GMT"
   }
  ],
  "videos": [
@@ -657,7 +657,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-07T07:17:46Z",
+ "ts": "2026-11-07T14:11:19Z",
  "fallas": [
   "videos",
   "directos"
