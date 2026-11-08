@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 27085.25,
-   "cambio": -1220.5,
-   "pct": -4.31
+   "precio": 27036.75,
+   "cambio": -1269.0,
+   "pct": -4.48
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7402.0,
-   "cambio": -194.75,
-   "pct": -2.56
+   "precio": 7404.0,
+   "cambio": -192.75,
+   "pct": -2.54
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4074.9,
-   "cambio": 134.5,
-   "pct": 3.41
+   "precio": 4071.6,
+   "cambio": 131.2,
+   "pct": 3.33
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 90.83,
-   "cambio": -5.26,
-   "pct": -5.47
+   "precio": 90.47,
+   "cambio": -5.62,
+   "pct": -5.85
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2760.5,
-   "cambio": -64.5,
-   "pct": -2.28
+   "precio": 2763.2,
+   "cambio": -61.8,
+   "pct": -2.19
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51385.0,
-   "cambio": -510.0,
-   "pct": -0.98
+   "precio": 51497.0,
+   "cambio": -398.0,
+   "pct": -0.77
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 76025.0,
-   "cambio": -2055.0,
-   "pct": -2.63
+   "precio": 75255.0,
+   "cambio": -2825.0,
+   "pct": -3.62
   }
  ],
  "acciones": [
@@ -274,16 +274,40 @@
  ],
  "noticias": [
   {
+   "titulo": "This retired professor has reinvented himself — as a Taylor Swift scholar",
+   "url": "https://www.marketwatch.com/story/this-retired-professor-has-reinvented-himself-as-a-taylor-swift-scholar-88456c8d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 08 Nov 2026 23:35:00 GMT"
+  },
+  {
+   "titulo": "You follow the rules for smart stock trading. But are they the right rules?",
+   "url": "https://www.marketwatch.com/story/you-follow-the-rules-for-smart-stock-trading-but-are-they-the-right-rules-9bfe5846?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 08 Nov 2026 23:15:00 GMT"
+  },
+  {
+   "titulo": "A new setback for the AI trade: Nvidia’s board is probing CEO Huang’s relationship with alleged spy",
+   "url": "https://www.marketwatch.com/story/nvidias-board-will-probe-ceo-jensen-huangs-relationship-with-an-alleged-spy-heres-what-to-know-86656cd9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 08 Nov 2026 23:05:00 GMT"
+  },
+  {
+   "titulo": "Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy",
+   "url": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 08 Nov 2026 22:53:57 GMT"
+  },
+  {
+   "titulo": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike",
+   "url": "https://www.cnbc.com/2026/11/08/trump-iran-strikes-unlikely-talks-hormuz.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 08 Nov 2026 21:53:02 GMT"
+  },
+  {
    "titulo": "Democrats amp up Trump investigation threats, Blanche counters he may probe lawmakers",
    "url": "https://www.cnbc.com/2026/11/08/democrats-trump-oversight-blanche-doj-investigations.html",
    "fuente": "CNBC",
    "fecha": "Sun, 08 Nov 2026 18:57:56 GMT"
-  },
-  {
-   "titulo": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy link",
-   "url": "https://www.cnbc.com/2026/11/08/jensen-huang-nvidia-china-spy-congress.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 08 Nov 2026 18:18:30 GMT"
   },
   {
    "titulo": "‘It seems bizarre’: We’re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
@@ -340,22 +364,10 @@
    "fecha": "Sun, 08 Nov 2026 14:14:11 GMT"
   },
   {
-   "titulo": "‘We’re losing to cottage cheese’: The protein-maxxing craze is hurting cream-cheese sales",
-   "url": "https://www.marketwatch.com/story/were-losing-to-cottage-cheese-the-protein-maxxing-craze-is-hurting-cream-cheese-sales-40ae94f3?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 08 Nov 2026 14:13:00 GMT"
-  },
-  {
    "titulo": "Poppi founders are going after PepsiCo's Gatorade with new beverage startup Jetty",
    "url": "https://www.cnbc.com/2026/11/08/poppi-founders-jetty-hydration-gatorade.html",
    "fuente": "CNBC",
    "fecha": "Sun, 08 Nov 2026 14:00:01 GMT"
-  },
-  {
-   "titulo": "Stocks are moving in sync again for the first time in a while. There’s just one problem.",
-   "url": "https://www.marketwatch.com/story/stocks-are-moving-in-sync-again-for-the-first-time-in-a-while-theres-just-one-problem-c953bf72?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 08 Nov 2026 14:00:00 GMT"
   },
   {
    "titulo": "Using miles to fly for Thanksgiving? These are the most expensive and cheapest routes",
@@ -368,18 +380,6 @@
    "url": "https://www.cnbc.com/2026/11/08/amazon-home-robot-fauna-sprout.html",
    "fuente": "CNBC",
    "fecha": "Sun, 08 Nov 2026 13:00:01 GMT"
-  },
-  {
-   "titulo": "This market signal called the tech selloff. Now it’s sending another warning.",
-   "url": "https://www.marketwatch.com/story/this-market-signal-called-the-tech-selloff-now-its-sending-another-warning-f7f8eb9b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 08 Nov 2026 12:00:00 GMT"
-  },
-  {
-   "titulo": "In pictures: France protests draw 146,000 as clashes erupt for fourth straight weekend",
-   "url": "https://www.cnbc.com/2026/11/08/france-protests-clashes-arrests.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 08 Nov 2026 09:29:04 GMT"
   },
   {
    "titulo": "Cathie Wood 'always feels better when the market is worried' — here's why",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-08T20:16:09Z",
+ "ts": "2026-11-08T23:48:56Z",
  "fallas": [
   "videos",
   "directos"
