@@ -1,194 +1,54 @@
 {
  "calendario": [
   {
-   "dia": "2026-11-02",
-   "hora": "21:30",
-   "hora_ny": "22:30",
-   "iso": "2026-11-02T22:30:00-05:00",
-   "titulo": "Cash Rate",
-   "pais": "AUD",
-   "previsto": "4.85%",
-   "previo": "4.60%"
-  },
-  {
-   "dia": "2026-11-02",
-   "hora": "21:30",
-   "hora_ny": "22:30",
-   "iso": "2026-11-02T22:30:00-05:00",
-   "titulo": "RBA Monetary Policy Statement",
-   "pais": "AUD",
-   "previsto": "",
-   "previo": ""
-  },
-  {
-   "dia": "2026-11-02",
-   "hora": "21:30",
-   "hora_ny": "22:30",
-   "iso": "2026-11-02T22:30:00-05:00",
-   "titulo": "RBA Rate Statement",
-   "pais": "AUD",
-   "previsto": "",
-   "previo": ""
-  },
-  {
-   "dia": "2026-11-02",
-   "hora": "22:30",
-   "hora_ny": "23:30",
-   "iso": "2026-11-02T23:30:00-05:00",
-   "titulo": "RBA Press Conference",
-   "pais": "AUD",
-   "previsto": "",
-   "previo": ""
-  },
-  {
-   "dia": "2026-11-03",
-   "hora": "09:16",
-   "hora_ny": "10:16",
-   "iso": "2026-11-03T10:16:00-05:00",
-   "titulo": "Congressional Elections",
+   "dia": "2026-11-10",
+   "hora": "07:30",
+   "hora_ny": "08:30",
+   "iso": "2026-11-10T08:30:00-05:00",
+   "titulo": "Core CPI m/m",
    "pais": "USD",
-   "previsto": "",
-   "previo": ""
+   "previsto": "0.2%",
+   "previo": "0.3%"
   },
   {
-   "dia": "2026-11-03",
-   "hora": "15:45",
-   "hora_ny": "16:45",
-   "iso": "2026-11-03T16:45:00-05:00",
-   "titulo": "Employment Change q/q",
-   "pais": "NZD",
-   "previsto": "0.4%",
-   "previo": "0.5%"
-  },
-  {
-   "dia": "2026-11-03",
-   "hora": "15:45",
-   "hora_ny": "16:45",
-   "iso": "2026-11-03T16:45:00-05:00",
-   "titulo": "Unemployment Rate",
-   "pais": "NZD",
-   "previsto": "5.5%",
-   "previo": "5.6%"
-  },
-  {
-   "dia": "2026-11-05",
-   "hora": "06:00",
-   "hora_ny": "07:00",
-   "iso": "2026-11-05T07:00:00-05:00",
-   "titulo": "BOE Monetary Policy Report",
-   "pais": "GBP",
-   "previsto": "",
-   "previo": ""
-  },
-  {
-   "dia": "2026-11-05",
-   "hora": "06:00",
-   "hora_ny": "07:00",
-   "iso": "2026-11-05T07:00:00-05:00",
-   "titulo": "Monetary Policy Summary",
-   "pais": "GBP",
-   "previsto": "",
-   "previo": ""
-  },
-  {
-   "dia": "2026-11-05",
-   "hora": "06:00",
-   "hora_ny": "07:00",
-   "iso": "2026-11-05T07:00:00-05:00",
-   "titulo": "MPC Official Bank Rate Votes",
-   "pais": "GBP",
-   "previsto": "7-0-2",
-   "previo": "3-0-6"
-  },
-  {
-   "dia": "2026-11-05",
-   "hora": "06:00",
-   "hora_ny": "07:00",
-   "iso": "2026-11-05T07:00:00-05:00",
-   "titulo": "Official Bank Rate",
-   "pais": "GBP",
-   "previsto": "4.00%",
-   "previo": "3.75%"
-  },
-  {
-   "dia": "2026-11-05",
-   "hora": "06:30",
-   "hora_ny": "07:30",
-   "iso": "2026-11-05T07:30:00-05:00",
-   "titulo": "BOE Gov Bailey Speaks",
-   "pais": "GBP",
-   "previsto": "",
-   "previo": ""
-  },
-  {
-   "dia": "2026-11-06",
+   "dia": "2026-11-10",
    "hora": "07:30",
    "hora_ny": "08:30",
-   "iso": "2026-11-06T08:30:00-05:00",
-   "titulo": "Employment Change",
-   "pais": "CAD",
-   "previsto": "14.6K",
-   "previo": "-68.3K"
-  },
-  {
-   "dia": "2026-11-06",
-   "hora": "07:30",
-   "hora_ny": "08:30",
-   "iso": "2026-11-06T08:30:00-05:00",
-   "titulo": "Unemployment Rate",
-   "pais": "CAD",
-   "previsto": "6.5%",
-   "previo": "6.5%"
-  },
-  {
-   "dia": "2026-11-06",
-   "hora": "07:30",
-   "hora_ny": "08:30",
-   "iso": "2026-11-06T08:30:00-05:00",
-   "titulo": "Average Hourly Earnings m/m",
+   "iso": "2026-11-10T08:30:00-05:00",
+   "titulo": "CPI m/m",
    "pais": "USD",
    "previsto": "0.3%",
+   "previo": "0.6%"
+  },
+  {
+   "dia": "2026-11-12",
+   "hora": "01:00",
+   "hora_ny": "02:00",
+   "iso": "2026-11-12T02:00:00-05:00",
+   "titulo": "GDP m/m",
+   "pais": "GBP",
+   "previsto": "0.0%",
    "previo": "0.1%"
   },
   {
-   "dia": "2026-11-06",
+   "dia": "2026-11-13",
    "hora": "07:30",
    "hora_ny": "08:30",
-   "iso": "2026-11-06T08:30:00-05:00",
-   "titulo": "Non-Farm Employment Change",
+   "iso": "2026-11-13T08:30:00-05:00",
+   "titulo": "Core PPI m/m",
    "pais": "USD",
-   "previsto": "65K",
-   "previo": "29K"
+   "previsto": "0.3%",
+   "previo": "0.7%"
   },
   {
-   "dia": "2026-11-06",
+   "dia": "2026-11-13",
    "hora": "07:30",
    "hora_ny": "08:30",
-   "iso": "2026-11-06T08:30:00-05:00",
-   "titulo": "Unemployment Rate",
+   "iso": "2026-11-13T08:30:00-05:00",
+   "titulo": "PPI m/m",
    "pais": "USD",
-   "previsto": "4.2%",
-   "previo": "4.2%"
-  },
-  {
-   "dia": "2026-11-06",
-   "hora": "10:00",
-   "hora_ny": "11:00",
-   "iso": "2026-11-06T11:00:00-05:00",
-   "titulo": "BOJ Gov Ueda Speaks",
-   "pais": "JPY",
-   "previsto": "",
-   "previo": ""
-  },
-  {
-   "dia": "2026-11-06",
-   "hora": "15:45",
-   "hora_ny": "16:45",
-   "iso": "2026-11-06T16:45:00-05:00",
-   "titulo": "Parliamentary Elections",
-   "pais": "NZD",
-   "previsto": "",
-   "previo": ""
+   "previsto": "0.4%",
+   "previo": "1.3%"
   }
  ],
  "precios": [
@@ -196,50 +56,50 @@
    "sym": "NQ",
    "nombre": "Nasdaq 100",
    "precio": 27085.25,
-   "cambio": -1042.25,
-   "pct": -3.71
+   "cambio": -1220.5,
+   "pct": -4.31
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
    "precio": 7402.0,
-   "cambio": -172.5,
-   "pct": -2.28
+   "cambio": -194.75,
+   "pct": -2.56
   },
   {
    "sym": "GC",
    "nombre": "Oro",
    "precio": 4074.9,
-   "cambio": 105.3,
-   "pct": 2.65
+   "cambio": 134.5,
+   "pct": 3.41
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
    "precio": 90.83,
-   "cambio": -5.63,
-   "pct": -5.84
+   "cambio": -5.26,
+   "pct": -5.47
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
    "precio": 2760.5,
-   "cambio": -57.3,
-   "pct": -2.03
+   "cambio": -64.5,
+   "pct": -2.28
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
    "precio": 51385.0,
-   "cambio": -748.0,
-   "pct": -1.43
+   "cambio": -510.0,
+   "pct": -0.98
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
    "precio": 75860.0,
-   "cambio": -980.0,
-   "pct": -1.28
+   "cambio": -2220.0,
+   "pct": -2.84
   }
  ],
  "acciones": [
@@ -414,6 +274,12 @@
  ],
  "noticias": [
   {
+   "titulo": "Cathie Wood 'always feels better when the market is worried' — here's why",
+   "url": "https://www.cnbc.com/2026/11/08/cathie-wood-ai-selloff.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 08 Nov 2026 06:00:01 GMT"
+  },
+  {
    "titulo": "Trump offers UFC chief Dana White press secretary job",
    "url": "https://www.cnbc.com/2026/11/07/trump-ufc-dana-white-press-secretary-offer.html",
    "fuente": "CNBC",
@@ -424,6 +290,12 @@
    "url": "https://www.cnbc.com/2026/11/07/iran-war-midterm-election-oil-price-trump.html",
    "fuente": "CNBC",
    "fecha": "Sat, 07 Nov 2026 22:17:52 GMT"
+  },
+  {
+   "titulo": "Meta chief strategy officer Dave Wehner leaves to join AI infrastructure startup Fireworks as CFO",
+   "url": "https://www.cnbc.com/2026/11/07/dave-wehner-meta-fireworks-cfo.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 22:01:17 GMT"
   },
   {
    "titulo": "Trump targets Slotkin in call for DOJ probe of alleged Democratic threats to Republicans",
@@ -492,12 +364,6 @@
    "fecha": "Sat, 07 Nov 2026 16:30:00 GMT"
   },
   {
-   "titulo": "Why the prognosis for healthcare stocks is uncertain ahead of Congress’ new makeup",
-   "url": "https://www.cnbc.com/2026/11/07/healthcare-stocks-may-face-trouble-due-to-midterm-results.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 07 Nov 2026 16:02:33 GMT"
-  },
-  {
    "titulo": "Berkshire Hathaway more than doubles buybacks in third quarter as earnings decline",
    "url": "https://www.cnbc.com/2026/11/07/berkshire-hathaway-q3-2026-earnings-buybacks.html",
    "fuente": "CNBC",
@@ -520,12 +386,6 @@
    "url": "https://www.cnbc.com/make-it/2026/11/07/mark-cuban-net-worth-money-mindset.html",
    "fuente": "CNBC",
    "fecha": "Sat, 07 Nov 2026 14:05:01 GMT"
-  },
-  {
-   "titulo": "Will this week's blue wave election usher in a Democratic president in 2028?",
-   "url": "https://www.cnbc.com/2026/11/07/2026-midterm-election-blue-wave-2028-president.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 07 Nov 2026 14:00:01 GMT"
   },
   {
    "titulo": "America doesn't like socialism. So why are socialists winning?",
@@ -657,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-08T01:47:39Z",
+ "ts": "2026-11-08T08:43:17Z",
  "fallas": [
   "videos",
   "directos"
