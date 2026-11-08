@@ -237,9 +237,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 75850.0,
-   "cambio": -990.0,
-   "pct": -1.29
+   "precio": 75860.0,
+   "cambio": -980.0,
+   "pct": -1.28
   }
  ],
  "acciones": [
@@ -414,16 +414,16 @@
  ],
  "noticias": [
   {
+   "titulo": "Trump offers UFC chief Dana White press secretary job",
+   "url": "https://www.cnbc.com/2026/11/07/trump-ufc-dana-white-press-secretary-offer.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 23:13:38 GMT"
+  },
+  {
    "titulo": "Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections",
    "url": "https://www.cnbc.com/2026/11/07/iran-war-midterm-election-oil-price-trump.html",
    "fuente": "CNBC",
    "fecha": "Sat, 07 Nov 2026 22:17:52 GMT"
-  },
-  {
-   "titulo": "Trump offers UFC chief Dana White press secretary job",
-   "url": "https://www.cnbc.com/2026/11/07/trump-ufc-dana-white-press-secretary-offer.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 07 Nov 2026 22:03:06 GMT"
   },
   {
    "titulo": "Trump targets Slotkin in call for DOJ probe of alleged Democratic threats to Republicans",
@@ -657,7 +657,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-07T22:31:07Z",
+ "ts": "2026-11-08T01:47:39Z",
  "fallas": [
   "videos",
   "directos"
