@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 27036.75,
-   "cambio": -1269.0,
-   "pct": -4.48
+   "precio": 27185.75,
+   "cambio": -1381.0,
+   "pct": -4.83
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7404.0,
-   "cambio": -192.75,
-   "pct": -2.54
+   "precio": 7439.75,
+   "cambio": -280.75,
+   "pct": -3.64
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4071.6,
-   "cambio": 131.2,
-   "pct": 3.33
+   "precio": 4132.4,
+   "cambio": 59.4,
+   "pct": 1.46
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 90.47,
-   "cambio": -5.62,
-   "pct": -5.85
+   "precio": 91.04,
+   "cambio": 2.92,
+   "pct": 3.31
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2763.2,
-   "cambio": -61.8,
-   "pct": -2.19
+   "precio": 2780.6,
+   "cambio": -85.3,
+   "pct": -2.98
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51497.0,
-   "cambio": -398.0,
-   "pct": -0.77
+   "precio": 51751.0,
+   "cambio": -1752.0,
+   "pct": -3.27
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 75255.0,
-   "cambio": -2825.0,
-   "pct": -3.62
+   "precio": 74665.0,
+   "cambio": -5670.0,
+   "pct": -7.06
   }
  ],
  "acciones": [
@@ -274,6 +274,60 @@
  ],
  "noticias": [
   {
+   "titulo": "From supermarket fridges to passenger flights, a wave of threats is testing Europe's defenses",
+   "url": "https://www.cnbc.com/2026/11/09/europe-fridge-hacks-bomb-threats-cyberattack.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 09 Nov 2026 05:00:01 GMT"
+  },
+  {
+   "titulo": "China wholesale inflation hits highest in more than four years as consumer measure slows",
+   "url": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 09 Nov 2026 02:50:22 GMT"
+  },
+  {
+   "titulo": "‘My life could be cut short’: I’m 55, married and have a brain tumor. Should I splash out on a $210,000 Porsche?",
+   "url": "https://www.marketwatch.com/story/my-life-could-be-cut-short-im-55-married-with-4-3-million-and-have-a-brain-tumor-should-i-buy-a-210-000-custom-porsche-ed825ada?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 09 Nov 2026 01:21:00 GMT"
+  },
+  {
+   "titulo": "The S&P 500 could be dangerously exposed to AI. Here are some simple alternatives.",
+   "url": "https://www.marketwatch.com/story/the-s-p-500-has-become-a-big-ai-bet-here-are-some-simple-alternatives-3c7574a4?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 09 Nov 2026 00:40:00 GMT"
+  },
+  {
+   "titulo": "I’m second-guessing my adviser: Is an annuity the right move in this market?",
+   "url": "https://www.marketwatch.com/story/my-adviser-recommended-an-annuity-is-it-the-right-move-in-this-market-environment-00edbbf6?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 09 Nov 2026 00:30:00 GMT"
+  },
+  {
+   "titulo": "‘It feels like he’s quietly building a separate life’: My husband inherited $500,000, but he refuses to spend it on our home",
+   "url": "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 09 Nov 2026 00:02:00 GMT"
+  },
+  {
+   "titulo": "Funeral homes are finding new life hosting weddings and golf outings, as the traditional burial business dies out",
+   "url": "https://www.marketwatch.com/story/funeral-homes-are-finding-new-life-hosting-weddings-and-golf-outings-as-the-traditional-burial-business-dies-out-15831d13?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 09 Nov 2026 00:00:00 GMT"
+  },
+  {
+   "titulo": "How much in Roth conversions can you do in 2027 with the new tax brackets?",
+   "url": "https://www.marketwatch.com/story/how-much-roth-conversion-can-you-do-in-2027-with-the-new-tax-brackets-a2f940c8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 08 Nov 2026 23:50:00 GMT"
+  },
+  {
+   "titulo": "I’m 65 and worth more than $5.6 million. Can I afford a $200,000 camper?",
+   "url": "https://www.marketwatch.com/story/im-65-and-worth-more-than-5-6-million-can-i-buy-a-200-000-camper-even-though-the-price-feels-crazy-high-55f668f8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 08 Nov 2026 23:49:00 GMT"
+  },
+  {
    "titulo": "This retired professor has reinvented himself — as a Taylor Swift scholar",
    "url": "https://www.marketwatch.com/story/this-retired-professor-has-reinvented-himself-as-a-taylor-swift-scholar-88456c8d?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -310,64 +364,10 @@
    "fecha": "Sun, 08 Nov 2026 18:57:56 GMT"
   },
   {
-   "titulo": "‘It seems bizarre’: We’re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
-   "url": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 08 Nov 2026 18:00:00 GMT"
-  },
-  {
-   "titulo": "Two months after my father’s funeral, my stepmother asked me to repay his $40,000 wedding gift. Should I do what she says?",
-   "url": "https://www.marketwatch.com/story/shes-a-type-a-personality-my-stepmother-wants-me-to-repay-my-late-fathers-40-000-wedding-gift-should-i-oblige-51fc64f7?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 08 Nov 2026 17:30:00 GMT"
-  },
-  {
-   "titulo": "Funeral homes are finding new life hosting weddings and golf outings, as the traditional burial business dies out",
-   "url": "https://www.marketwatch.com/story/funeral-homes-are-finding-new-life-hosting-weddings-and-golf-outings-as-the-traditional-burial-business-dies-out-15831d13?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 08 Nov 2026 17:23:00 GMT"
-  },
-  {
-   "titulo": "‘It feels like he’s quietly building a separate life’: My husband inherited $500,000, but he refuses to spend it on our home",
-   "url": "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 08 Nov 2026 16:00:00 GMT"
-  },
-  {
    "titulo": "How Democrats will try to end Trump's tariffs",
    "url": "https://www.cnbc.com/2026/11/08/trump-tariffs-democrats-congress-canada.html",
    "fuente": "CNBC",
    "fecha": "Sun, 08 Nov 2026 15:36:39 GMT"
-  },
-  {
-   "titulo": "‘I have no financial safety net’: I’m 66, rely on Social Security and have just $500 in savings. What hope do I have?",
-   "url": "https://www.marketwatch.com/story/i-have-no-financial-safety-net-im-66-rely-on-social-security-and-have-500-in-savings-what-politician-speaks-for-me-be2126cb?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 08 Nov 2026 15:30:00 GMT"
-  },
-  {
-   "titulo": "My 93-year-old father changed his will at the 11th hour, leaving my brother his entire $500,000 estate. Can I challenge it?",
-   "url": "https://www.marketwatch.com/story/my-93-year-old-father-changed-his-will-at-the-11th-hour-leaving-my-brother-his-entire-500-000-estate-can-i-challenge-it-ecfc63d2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 08 Nov 2026 15:16:00 GMT"
-  },
-  {
-   "titulo": "Corporate America’s profit numbers are just barely beating Wall Street’s expectations",
-   "url": "https://www.marketwatch.com/story/corporate-americas-profit-numbers-are-just-barely-beating-wall-streets-expectations-eaa67fe2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 08 Nov 2026 15:00:00 GMT"
-  },
-  {
-   "titulo": "Recent AI agent experiments reveal a risky future of machine 'teamwork' inside corporations",
-   "url": "https://www.cnbc.com/2026/11/08/ai-agents-risks.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 08 Nov 2026 14:14:11 GMT"
-  },
-  {
-   "titulo": "Poppi founders are going after PepsiCo's Gatorade with new beverage startup Jetty",
-   "url": "https://www.cnbc.com/2026/11/08/poppi-founders-jetty-hydration-gatorade.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 08 Nov 2026 14:00:01 GMT"
   },
   {
    "titulo": "Using miles to fly for Thanksgiving? These are the most expensive and cheapest routes",
@@ -388,12 +388,6 @@
    "fecha": "Sun, 08 Nov 2026 06:00:01 GMT"
   },
   {
-   "titulo": "Trump offers UFC chief Dana White press secretary job",
-   "url": "https://www.cnbc.com/2026/11/07/trump-ufc-dana-white-press-secretary-offer.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 07 Nov 2026 23:13:38 GMT"
-  },
-  {
    "titulo": "31-year-old dumpster diver brought in $140,000 in 12 months: I 'did much more than I thought was possible'",
    "url": "https://www.cnbc.com/make-it/2026/11/07/dumpster-diver-resale-business.html",
    "fuente": "CNBC",
@@ -404,6 +398,12 @@
    "url": "https://www.cnbc.com/make-it/2026/11/07/mark-cuban-net-worth-money-mindset.html",
    "fuente": "CNBC",
    "fecha": "Sat, 07 Nov 2026 14:05:01 GMT"
+  },
+  {
+   "titulo": "World’s No. 1 restaurant crowned as contest comes under increasing scrutiny",
+   "url": "https://www.cnbc.com/2026/11/07/worlds-50-best-restaurants-2026-asador-etxebarri.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 07 Nov 2026 13:38:44 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-08T23:48:56Z",
+ "ts": "2026-11-09T05:15:50Z",
  "fallas": [
   "videos",
   "directos"
