@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 28060.5,
-   "cambio": -506.25,
-   "pct": -1.77
+   "precio": 27951.25,
+   "cambio": -615.5,
+   "pct": -2.15
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7581.75,
-   "cambio": -138.75,
-   "pct": -1.8
+   "precio": 7580.0,
+   "cambio": -140.5,
+   "pct": -1.82
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 4155.0,
-   "cambio": 82.0,
-   "pct": 2.01
+   "precio": 4124.5,
+   "cambio": 51.5,
+   "pct": 1.26
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 86.2,
-   "cambio": -1.92,
-   "pct": -2.18
+   "precio": 85.83,
+   "cambio": -2.29,
+   "pct": -2.6
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2847.4,
-   "cambio": -18.5,
-   "pct": -0.65
+   "precio": 2851.3,
+   "cambio": -14.6,
+   "pct": -0.51
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52543.0,
-   "cambio": -960.0,
-   "pct": -1.79
+   "precio": 52678.0,
+   "cambio": -825.0,
+   "pct": -1.54
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 75180.0,
-   "cambio": -5155.0,
-   "pct": -6.42
+   "precio": 74715.0,
+   "cambio": -5620.0,
+   "pct": -7.0
   }
  ],
  "acciones": [
@@ -274,6 +274,48 @@
  ],
  "noticias": [
   {
+   "titulo": "SoftBank Group shares surge 13% as Asian tech stocks track Wall Street rebound",
+   "url": "https://www.cnbc.com/2026/11/10/ai-softbank-sk-hynix-samsung-wall-street-tech-stocks.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 10 Nov 2026 03:58:46 GMT"
+  },
+  {
+   "titulo": "China exports, imports soar past expectations in October — surplus narrows sharply",
+   "url": "https://www.cnbc.com/2026/11/10/china-trade-october-exports-imports-surplus-.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 10 Nov 2026 03:56:15 GMT"
+  },
+  {
+   "titulo": "‘We had the worst fight’: I want my husband to retire at 65, but I don’t want to lose his $280,000 salary. Is that unreasonable?",
+   "url": "https://www.marketwatch.com/story/we-had-the-worst-fight-weve-ever-had-i-want-my-husband-to-retire-at-65-but-i-dont-want-to-lose-his-280-000-salary-48511469?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 10 Nov 2026 03:38:00 GMT"
+  },
+  {
+   "titulo": "Trump says Jensen Huang told him Monday he didn't know paramour 'was a spy'",
+   "url": "https://www.cnbc.com/2026/11/09/trump-jensen-huang-nvidia-chinese-spy.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 10 Nov 2026 01:43:47 GMT"
+  },
+  {
+   "titulo": "The short seller who saw signs of Nvidia’s China scandal months ago claims Megaspeed isn’t the only company helping China access chips",
+   "url": "https://www.marketwatch.com/story/the-short-seller-who-saw-signs-of-nvidias-china-scandal-months-ago-claims-megaspeed-isnt-the-ony-company-helping-china-access-chips-9877f544?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 10 Nov 2026 00:48:00 GMT"
+  },
+  {
+   "titulo": "This retired professor has reinvented himself — as a Taylor Swift scholar",
+   "url": "https://www.marketwatch.com/story/this-retired-professor-has-reinvented-himself-as-a-taylor-swift-scholar-88456c8d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 09 Nov 2026 23:52:00 GMT"
+  },
+  {
+   "titulo": "PepsiCo to cut about 1,000 jobs as North American business struggles",
+   "url": "https://www.cnbc.com/2026/11/09/pepsico-north-america-job-cuts.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 09 Nov 2026 23:31:17 GMT"
+  },
+  {
    "titulo": "Skydance outlines its $6 billion in planned cost savings. Here's the breakdown",
    "url": "https://www.cnbc.com/2026/11/09/skydance-cost-savings-breakdown.html",
    "fuente": "CNBC",
@@ -316,12 +358,6 @@
    "fecha": "Mon, 09 Nov 2026 22:40:09 GMT"
   },
   {
-   "titulo": "Nvidia’s Trump ties draw scrutiny after reports Huang was targeted by Chinese intelligence",
-   "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-china-spy-trump-lobbying.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 09 Nov 2026 22:40:04 GMT"
-  },
-  {
    "titulo": "3 unexpected reasons the October jobs report was so strong",
    "url": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html",
    "fuente": "CNBC",
@@ -340,22 +376,10 @@
    "fecha": "Mon, 09 Nov 2026 21:52:00 GMT"
   },
   {
-   "titulo": "‘We had the worst fight’: I want my husband to retire at 65, but I don’t want to lose his $280,000 salary. Is that unreasonable?",
-   "url": "https://www.marketwatch.com/story/we-had-the-worst-fight-weve-ever-had-i-want-my-husband-to-retire-at-65-but-i-dont-want-to-lose-his-280-000-salary-48511469?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 09 Nov 2026 21:45:00 GMT"
-  },
-  {
    "titulo": "Are AMD and Broadcom the real winners of the Nvidia spy scandal?",
    "url": "https://www.marketwatch.com/story/are-amd-and-broadcom-the-real-winners-of-the-nvidia-spy-scandal-d2343072?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Mon, 09 Nov 2026 21:43:00 GMT"
-  },
-  {
-   "titulo": "Tokenization platform Securitize gains 10% postmarket on Q3 results, move into asset-backed finance",
-   "url": "https://www.cnbc.com/2026/11/09/tokenization-platform-securitize-reports-gains-expands-into-asset-backed-finance.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 09 Nov 2026 21:24:13 GMT"
   },
   {
    "titulo": "The stock-market rally keeps spreading beyond Big Tech. October inflation data could put it to the test.",
@@ -370,34 +394,10 @@
    "fecha": "Mon, 09 Nov 2026 21:21:00 GMT"
   },
   {
-   "titulo": "Why prediction markets and Wall Street pros so often fail to see what’s coming",
-   "url": "https://www.marketwatch.com/story/why-prediction-markets-and-wall-street-pros-so-often-fail-to-see-whats-coming-c516b6e3?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 09 Nov 2026 21:14:00 GMT"
-  },
-  {
    "titulo": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
    "url": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
    "fuente": "CNBC",
    "fecha": "Mon, 09 Nov 2026 21:03:55 GMT"
-  },
-  {
-   "titulo": "I’m 53 and not sure how to handle merging finances with my long-term partner.",
-   "url": "https://www.marketwatch.com/story/his-mine-or-ours-im-53-and-not-sure-how-to-handle-merging-finances-with-my-long-term-partner-4c34c914?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 09 Nov 2026 21:02:00 GMT"
-  },
-  {
-   "titulo": "Children’s Place files for bankruptcy protection, seeks buyer",
-   "url": "https://www.cnbc.com/2026/11/09/childrens-place-chapter-11-sale.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 09 Nov 2026 20:57:46 GMT"
-  },
-  {
-   "titulo": "PepsiCo to cut about 1,000 jobs as North American business struggles",
-   "url": "https://www.cnbc.com/2026/11/09/pepsico-north-america-job-cuts.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 09 Nov 2026 20:41:38 GMT"
   },
   {
    "titulo": "Nvidia's CEO turmoil gives newly empowered Democrats fresh ammunition in pursuit of oversight",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-09T23:28:08Z",
+ "ts": "2026-11-10T04:47:16Z",
  "fallas": [
   "videos",
   "directos"
