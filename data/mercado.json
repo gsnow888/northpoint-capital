@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 28307.0,
-   "cambio": 1221.75,
-   "pct": 4.51
+   "precio": 28264.5,
+   "cambio": 250.0,
+   "pct": 0.89
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7619.75,
-   "cambio": 217.75,
-   "pct": 2.94
+   "precio": 7612.75,
+   "cambio": 38.5,
+   "pct": 0.51
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3985.6,
-   "cambio": -89.3,
-   "pct": -2.19
+   "precio": 3954.0,
+   "cambio": -160.5,
+   "pct": -3.9
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 85.69,
-   "cambio": -5.14,
-   "pct": -5.66
+   "precio": 85.81,
+   "cambio": -1.04,
+   "pct": -1.2
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2857.5,
-   "cambio": 97.0,
-   "pct": 3.51
+   "precio": 2853.8,
+   "cambio": 5.1,
+   "pct": 0.18
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52658.0,
-   "cambio": 1273.0,
-   "pct": 2.48
+   "precio": 52611.0,
+   "cambio": 113.0,
+   "pct": 0.22
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 73840.0,
-   "cambio": -2115.0,
-   "pct": -2.78
+   "precio": 73375.0,
+   "cambio": -1565.0,
+   "pct": -2.09
   }
  ],
  "acciones": [
@@ -274,16 +274,82 @@
  ],
  "noticias": [
   {
-   "titulo": "What we know so far about Nvidia partner Megaspeed’s Asia footprint",
-   "url": "https://www.cnbc.com/2026/11/12/nvidia-megaspeed-alice-huang-jensen-.html",
+   "titulo": "Nvidia stock falls 7% as investors await Jensen Huang’s fate",
+   "url": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 12 Nov 2026 03:02:03 GMT"
+   "fecha": "Thu, 12 Nov 2026 11:25:09 GMT"
+  },
+  {
+   "titulo": "Ukraine warns of fresh Starshield disruptions as U.S. envoys arrive in Moscow for talks with Putin",
+   "url": "https://www.cnbc.com/2026/11/12/starlink-starshield-ukraine-restrictions-spacex.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 12 Nov 2026 11:23:04 GMT"
+  },
+  {
+   "titulo": "Here’s what Megaspeed, the company at the forefront of the Nvidia scandal, is now saying",
+   "url": "https://www.marketwatch.com/story/heres-what-megaspeed-the-company-at-the-forefront-of-the-nvidia-scandal-is-now-saying-b73f8d0b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 12 Nov 2026 10:57:00 GMT"
+  },
+  {
+   "titulo": "I inherited $1.4 million from my father. Am I wrong to ask my husband of 25 years for a postnuptial agreement?",
+   "url": "https://www.marketwatch.com/story/i-inherited-1-4-million-from-my-father-am-i-wrong-to-ask-my-husband-of-25-years-for-a-postnuptial-agreement-b739c51d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 12 Nov 2026 10:15:00 GMT"
   },
   {
    "titulo": "Nvidia’s stock drops as the board reportedly prepares to remove CEO Jensen Huang",
    "url": "https://www.marketwatch.com/story/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang-9edee58d?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 12 Nov 2026 02:52:00 GMT"
+   "fecha": "Thu, 12 Nov 2026 10:07:00 GMT"
+  },
+  {
+   "titulo": "Prince Harry and Meghan Markle move into new home in Cotswolds",
+   "url": "https://www.marketwatch.com/story/prince-harry-and-meghan-markle-move-into-new-home-in-cotswolds-e9bb0739?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 12 Nov 2026 10:03:00 GMT"
+  },
+  {
+   "titulo": "Lutnick should ban Chinese memory maker CXMT from U.S., Sen. Cotton says",
+   "url": "https://www.cnbc.com/2026/11/12/lutnick-cxmt-china-cotton.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 12 Nov 2026 10:00:01 GMT"
+  },
+  {
+   "titulo": "Ukrainian defense tech startup hits $6 billion valuation as investors bet on battle-tested drones",
+   "url": "https://www.cnbc.com/2026/11/12/uforce-defense-tech-drones-warfare-ukraine.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 12 Nov 2026 09:05:22 GMT"
+  },
+  {
+   "titulo": "Jensen Huang built Nvidia into a behemoth. His scandal puts the entire AI boom in jeopardy.",
+   "url": "https://www.marketwatch.com/story/jensen-huang-built-nvidia-into-a-behemoth-his-scandal-puts-the-entire-ai-boom-in-jeopardy-c374b079?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 12 Nov 2026 07:30:00 GMT"
+  },
+  {
+   "titulo": "Nasdaq futures fall as Nvidia sinks 8% after hours on report board may oust Huang",
+   "url": "https://www.marketwatch.com/story/nasdaq-futures-fall-as-nvidia-sinks-8-after-hours-on-report-board-may-oust-huang-e99b898d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 12 Nov 2026 04:41:00 GMT"
+  },
+  {
+   "titulo": "Elon Musk says it would be an 'honor' to hire Nvidia's Jensen Huang",
+   "url": "https://www.cnbc.com/2026/11/12/elon-musk-jensen-huang-nvidia-tesla.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 12 Nov 2026 03:25:05 GMT"
+  },
+  {
+   "titulo": "‘The thought of living to 100 terrifies me’: Is Social Security a giant Ponzi scheme?",
+   "url": "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 12 Nov 2026 03:15:00 GMT"
+  },
+  {
+   "titulo": "Here’s how Bernie Sanders wants to keep Social Security solvent ‘for generations’",
+   "url": "https://www.marketwatch.com/story/heres-how-bernie-sanders-wants-to-keep-social-security-solvent-for-generations-f5666a38?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 12 Nov 2026 03:10:00 GMT"
   },
   {
    "titulo": "‘I’m sick of flying’: I paid for priority boarding, but the overhead bins were full. Was I duped?",
@@ -298,22 +364,16 @@
    "fecha": "Thu, 12 Nov 2026 02:31:00 GMT"
   },
   {
-   "titulo": "Cramer's stance on Nvidia's stock amid reports that CEO Jensen Huang may be ousted",
-   "url": "https://www.cnbc.com/investingclub/2026/11/11/jim-cramer-jensen-huang-nvidia-stock-advice.html",
+   "titulo": "Meta head of infrastructure will leave and be succeeded by former AWS cloud exec",
+   "url": "https://www.cnbc.com/2026/11/11/meta-infrastructure-departure-aws-cloud.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 12 Nov 2026 01:14:21 GMT"
+   "fecha": "Thu, 12 Nov 2026 00:46:08 GMT"
   },
   {
-   "titulo": "Nasdaq futures fall as Nvidia sinks 8% after hours on report board may oust Huang",
-   "url": "https://www.marketwatch.com/story/nasdaq-futures-fall-as-nvidia-sinks-8-after-hours-on-report-board-may-oust-huang-e99b898d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 12 Nov 2026 01:12:00 GMT"
-  },
-  {
-   "titulo": "Nvidia prepares to oust Jensen Huang, WSJ reports — stock sinks",
-   "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html",
+   "titulo": "Jim Cramer says investors need to pay attention to CoreWeave. Here's why",
+   "url": "https://www.cnbc.com/2026/11/11/jim-cramer-coreweave-earnings-ceo-interview.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 12 Nov 2026 00:21:27 GMT"
+   "fecha": "Wed, 11 Nov 2026 23:41:46 GMT"
   },
   {
    "titulo": "Scott Colom wins Mississippi Senate election over incumbent Republican Hyde-Smith",
@@ -322,10 +382,10 @@
    "fecha": "Wed, 11 Nov 2026 23:31:37 GMT"
   },
   {
-   "titulo": "Your holiday credit-card bills are going up. What you can do to ease the pain.",
-   "url": "https://www.marketwatch.com/story/your-holiday-credit-card-bills-are-going-up-what-you-can-do-to-ease-the-pain-5ddeb446?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 11 Nov 2026 23:30:00 GMT"
+   "titulo": "Analysis: Is Nvidia too big to fail? Its AI financing web raises the stakes",
+   "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 11 Nov 2026 22:59:33 GMT"
   },
   {
    "titulo": "Feds arrest top official of healthcare company, alleging illegal drug importation",
@@ -344,66 +404,6 @@
    "url": "https://www.cnbc.com/2026/11/11/canada-ambassador-trump-tariffs-investments.html",
    "fuente": "CNBC",
    "fecha": "Wed, 11 Nov 2026 22:30:57 GMT"
-  },
-  {
-   "titulo": "American Airlines brings fresh food back to NY-Chicago first class for first time since 2019",
-   "url": "https://www.cnbc.com/2026/11/11/american-airlines-first-class-chicago-new-york.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 11 Nov 2026 22:20:58 GMT"
-  },
-  {
-   "titulo": "CoreWeave just gave a shot in the arm to Micron, Lumentum and the rest of the AI trade",
-   "url": "https://www.marketwatch.com/story/micron-and-other-ai-stocks-surge-as-coreweave-calms-wall-streets-worst-fears-0a18152a?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 11 Nov 2026 22:05:00 GMT"
-  },
-  {
-   "titulo": "Opening trading-card packs has become a $2 billion market. New apps are trying to cash in.",
-   "url": "https://www.marketwatch.com/story/opening-trading-card-packs-has-become-a-2-billion-market-new-apps-are-trying-to-cash-in-b7ba11f5?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 11 Nov 2026 21:55:00 GMT"
-  },
-  {
-   "titulo": "Falling oil prices are no longer enough to bring down borrowing costs in the world’s most important bond market",
-   "url": "https://www.marketwatch.com/story/falling-oil-prices-are-no-longer-enough-to-bring-down-borrowing-costs-in-the-worlds-most-important-bond-market-3176d25a?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 11 Nov 2026 21:42:00 GMT"
-  },
-  {
-   "titulo": "Sandisk’s stock just staged a big gain. Here’s how it could march even higher.",
-   "url": "https://www.marketwatch.com/story/sandisks-stock-is-soaring-and-these-three-trends-could-send-it-even-higher-b0d7d5ec?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 11 Nov 2026 21:40:00 GMT"
-  },
-  {
-   "titulo": "Why this ‘big idea’ to fix Social Security relies on a massive stock-market gamble",
-   "url": "https://www.marketwatch.com/story/why-this-big-idea-to-fix-social-security-relies-on-a-massive-stock-market-gamble-5423f50f?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 11 Nov 2026 21:21:00 GMT"
-  },
-  {
-   "titulo": "CoreWeave soars more than 24% for best day since April 2025 after strong Q3 report",
-   "url": "https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 11 Nov 2026 21:11:26 GMT"
-  },
-  {
-   "titulo": "Mississippi Senate: Scott Colom lead over Hyde-Smith pops to more than 4,400 votes",
-   "url": "https://www.cnbc.com/2026/11/10/mississippi-senate-scott-colom-hyde-smith.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 11 Nov 2026 19:55:39 GMT"
-  },
-  {
-   "titulo": "Social Security could pay full benefits until 2059 if taxable payroll kept pace with GDP: AARP report",
-   "url": "https://www.cnbc.com/2026/11/11/social-security-benefits-taxable-payroll-gdp.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 11 Nov 2026 19:54:27 GMT"
-  },
-  {
-   "titulo": "Prediction markets tied to clinical trials and drug approvals draw lawmakers' ire",
-   "url": "https://www.cnbc.com/2026/11/11/kalsi-polymarket-prediction-market-senators-hhs-drug-approval.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 11 Nov 2026 19:16:23 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-12T03:08:23Z",
+ "ts": "2026-11-12T11:29:33Z",
  "fallas": [
   "videos",
   "directos"
