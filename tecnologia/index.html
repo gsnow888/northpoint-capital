@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tecnología NORTHPOINT · El ecosistema</title>
+<meta name="description" content="Las herramientas de NORTHPOINT para aprender, analizar, operar y administrar patrimonio: Terminal, DEPTH, Alpha Agents, KURO, Academia y Family Office.">
+<link rel="canonical" href="https://northpointcapital.io/tecnologia/">
+<meta property="og:title" content="Tecnología NORTHPOINT · El ecosistema">
+<meta property="og:description" content="Herramientas para aprender, analizar, operar y administrar patrimonio, conectadas entre sí.">
+<meta property="og:url" content="https://northpointcapital.io/tecnologia/">
+<link rel="icon" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#02050b;--surf:rgba(13,22,40,.6);--line:rgba(148,180,255,.1);--line2:rgba(148,180,255,.18);--tx:#eef5ff;--tx2:#bccadf;--mut:#8193ae;--mut2:#5b6c86;
+  --rey:#3d5afe;--cielo:#5ab0ff;--cian:#22d3ee;--hielo:#bfe3ff;--grad:linear-gradient(135deg,#3d5afe,#5ab0ff);
+  --h:Outfit,system-ui,sans-serif;--b:Inter,system-ui,sans-serif;--m:"JetBrains Mono",ui-monospace,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 var(--b);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.w{max-width:1180px;margin:0 auto;padding:0 22px}
+/* navegación */
+.navw{position:sticky;top:12px;z-index:30}
+nav{display:flex;align-items:center;gap:10px;height:58px;padding:0 10px 0 20px;border:1px solid var(--line);border-radius:14px;background:rgba(5,10,22,.72);backdrop-filter:blur(18px);box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+.logo{font:700 14px var(--h);letter-spacing:.18em;display:flex;align-items:center;gap:10px}
+.logo i{width:22px;height:18px;display:inline-block;background:linear-gradient(#3d5afe,#3d5afe) 12px 0/6px 3px no-repeat,linear-gradient(#3d5afe,#3d5afe) 12px 4px/10px 3px no-repeat,linear-gradient(#5ab0ff,#5ab0ff) 0 7px/22px 2px no-repeat,linear-gradient(#22d3ee,#22d3ee) 1px 11px/10px 3px no-repeat,linear-gradient(#22d3ee,#22d3ee) 5px 15px/6px 3px no-repeat}
+.lk{display:flex;gap:26px;margin:0 auto;font:400 14px var(--h);color:var(--tx2)}.lk a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:9px;font:500 15px var(--h);color:#fff;padding:13px 26px;border-radius:10px;background:var(--grad);box-shadow:0 0 0 1px rgba(90,176,255,.35),0 10px 34px rgba(61,90,254,.35);transition:transform .2s,box-shadow .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-1px);box-shadow:0 0 0 1px rgba(90,176,255,.5),0 14px 44px rgba(61,90,254,.5)}
+.btn.o{background:rgba(255,255,255,.03);box-shadow:inset 0 0 0 1px var(--line2)}
+.btn.sm{padding:9px 16px;font-size:14px}
+.btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* portada */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;margin-top:-70px;padding-top:70px;overflow:hidden}
+#net{position:absolute;inset:0;width:100%;height:100%}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(60% 55% at 30% 50%,rgba(2,5,11,.15),rgba(2,5,11,.85) 85%);pointer-events:none}
+.hero .w{position:relative;z-index:2;width:100%}
+.eye{display:inline-flex;align-items:center;gap:10px;font:500 12px var(--m);letter-spacing:.08em;color:var(--hielo);border:1px solid var(--line2);border-radius:99px;padding:7px 14px;background:rgba(10,20,40,.6)}
+.eye i{width:7px;height:7px;border-radius:50%;background:var(--cian);box-shadow:0 0 10px var(--cian);animation:p 2.4s infinite}@keyframes p{50%{opacity:.35}}
+h1{font:600 clamp(42px,7vw,92px)/1 var(--h);letter-spacing:-.045em;margin:24px 0 22px;max-width:820px;text-wrap:balance}
+h1 em{font-style:normal;background:linear-gradient(120deg,#5ab0ff 10%,#22d3ee 60%,#bfe3ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{font:400 clamp(16px,1.6vw,20px)/1.55 var(--h);color:var(--tx2);max-width:560px;margin:0 0 34px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:44px;font:500 12px var(--m);color:var(--mut)}
+.legend span{display:flex;align-items:center;gap:8px}.legend b{width:9px;height:9px;border-radius:50%}
+/* secciones */
+section{padding:110px 0}
+.kick{font:600 12px var(--m);letter-spacing:.16em;color:var(--cielo);text-transform:uppercase}
+h2{font:600 clamp(32px,4.4vw,54px)/1.08 var(--h);letter-spacing:-.04em;margin:14px 0 14px;max-width:820px;text-wrap:balance}
+.lead{font:400 18px/1.6 var(--h);color:var(--tx2);max-width:620px;margin:0 0 50px}
+/* productos */
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.card{position:relative;grid-column:span 2;border:1px solid var(--line);border-radius:20px;padding:26px;background:linear-gradient(180deg,rgba(16,28,52,.55),rgba(7,13,26,.55));overflow:hidden;display:flex;flex-direction:column;min-height:300px;transition:transform .35s cubic-bezier(.2,.8,.3,1),border-color .3s}
+.card.big{grid-column:span 3;min-height:360px}
+.card:hover{transform:translateY(-4px);border-color:var(--line2)}
+.card::before{content:"";position:absolute;inset:-1px;border-radius:20px;padding:1px;background:radial-gradient(400px 200px at var(--mx,50%) var(--my,0%),rgba(90,176,255,.45),transparent 60%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover::before{opacity:1}
+.card canvas{position:absolute;right:0;top:0;width:62%;height:62%;opacity:.9;pointer-events:none;-webkit-mask-image:radial-gradient(80% 80% at 80% 20%,#000 30%,transparent 75%);mask-image:radial-gradient(80% 80% at 80% 20%,#000 30%,transparent 75%)}
+.tag{display:inline-flex;align-self:flex-start;align-items:center;gap:7px;font:600 11px var(--m);letter-spacing:.08em;color:var(--hielo);border:1px solid var(--line2);border-radius:99px;padding:5px 11px;background:rgba(8,16,32,.75);position:relative;z-index:1}
+.tag i{width:6px;height:6px;border-radius:50%}
+.card h3{font:600 26px/1.15 var(--h);letter-spacing:-.025em;margin:auto 0 8px;position:relative;z-index:1}
+.card p{color:var(--tx2);font:400 15px/1.55 var(--h);margin:0 0 18px;position:relative;z-index:1;max-width:440px}
+.card .go{display:inline-flex;align-items:center;gap:8px;font:500 14px var(--h);color:var(--cielo);position:relative;z-index:1}
+.card .go svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;transition:transform .25s}.card:hover .go svg{transform:translateX(4px)}
+/* flujo */
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:rgba(8,15,30,.5)}
+.st{padding:30px 26px;border-right:1px solid var(--line);position:relative}
+.st:last-child{border-right:0}
+.st .n{font:600 13px var(--m);color:var(--cielo)}
+.st h4{font:600 22px var(--h);margin:12px 0 8px;letter-spacing:-.02em}
+.st p{color:var(--tx2);font:400 14.5px/1.55 var(--h);margin:0 0 14px}
+.st .ch{display:flex;flex-wrap:wrap;gap:6px}.st .ch a{font:500 12px var(--m);border:1px solid var(--line2);border-radius:99px;padding:4px 10px;color:var(--hielo)}.st .ch a:hover{background:rgba(90,176,255,.12)}
+.st::after{content:"";position:absolute;right:-7px;top:38px;width:12px;height:12px;border-top:1px solid var(--line2);border-right:1px solid var(--line2);transform:rotate(45deg);background:#060c19;z-index:1}
+.st:last-child::after{display:none}
+/* principios */
+.pr{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pr div{border:1px solid var(--line);border-radius:18px;padding:26px;background:var(--surf)}
+.pr svg{width:26px;height:26px;stroke:var(--cielo);fill:none;stroke-width:1.6;margin-bottom:14px}
+.pr h4{font:600 19px var(--h);margin:0 0 8px}.pr p{color:var(--tx2);font:400 14.5px/1.55 var(--h);margin:0}
+.end{text-align:center;border:1px solid var(--line);border-radius:26px;padding:80px 22px;background:radial-gradient(600px 280px at 50% 0,rgba(61,90,254,.25),transparent 70%),rgba(8,15,30,.6);position:relative;overflow:hidden}
+.end h2{margin:0 auto 14px}.end .lead{margin:0 auto 30px}.end .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:40px 0 54px;color:var(--mut);font:400 13px var(--h)}
+footer .w{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a:hover{color:#fff}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.8,.3,1),transform .8s cubic-bezier(.2,.8,.3,1)}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media(max-width:960px){.lk{display:none}nav .btn{margin-left:auto}.grid{grid-template-columns:1fr}.card,.card.big{grid-column:auto;min-height:280px}.flow{grid-template-columns:1fr 1fr}.st:nth-child(2){border-right:0}.st:nth-child(-n+2){border-bottom:1px solid var(--line)}.st::after{display:none}.pr{grid-template-columns:1fr}section{padding:76px 0}}
+@media(max-width:560px){.flow{grid-template-columns:1fr}.st{border-right:0;border-bottom:1px solid var(--line)}}
+</style>
+</head>
+<body>
+<div class="navw"><div class="w"><nav>
+  <a class="logo" href="../"><i></i>NORTHPOINT</a>
+  <div class="lk"><a href="#productos">Productos</a><a href="#flujo">Cómo encajan</a><a href="#principios">Principios</a><a href="../">Grupo NORTHPOINT</a></div>
+  <a class="btn sm" href="#productos">Explorar <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav></div></div>
+
+<header class="hero"><canvas id="net" aria-hidden="true"></canvas><div class="w">
+  <span class="eye"><i></i>TECNOLOGÍA NORTHPOINT</span>
+  <h1>Un solo ecosistema para <em>cada decisión</em> con tu dinero</h1>
+  <p class="sub">Herramientas para aprender, leer el mercado, operar y cuidar tu patrimonio. Cada una funciona sola; juntas, se completan.</p>
+  <div class="cta"><a class="btn" href="#productos">Conocer las herramientas <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn o" href="#flujo">Cómo encajan</a></div>
+  <div class="legend"><span><b style="background:#22d3ee"></b>Aprender</span><span><b style="background:#5ab0ff"></b>Analizar</span><span><b style="background:#3d5afe"></b>Operar</span><span><b style="background:#bfe3ff"></b>Patrimonio</span></div>
+</div></header>
+
+<section id="productos"><div class="w">
+  <div class="kick rv">Productos</div>
+  <h2 class="rv">Seis herramientas, un mismo criterio</h2>
+  <p class="lead rv">Hechas por traders, para traders y para quienes administran el patrimonio de su familia.</p>
+  <div class="grid">
+    <a class="card big rv" href="../trading/"><canvas data-art="journal"></canvas><span class="tag"><i style="background:#3d5afe"></i>OPERAR · MAC Y WINDOWS</span><h3>NORTHPOINT Terminal</h3><p>Tu diario de trading que registra cada operación por ti. Cuentas de fondeo, drawdown a la vista y sesiones en vivo de la apertura de Nueva York.</p><span class="go">Ver el Terminal <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <a class="card big rv" href="../depth/"><canvas data-art="depth"></canvas><span class="tag"><i style="background:#5ab0ff"></i>ANALIZAR · TICK A TICK</span><h3>NORTHPOINT DEPTH</h3><p>Order flow con datos reales: clusters, liquidez del libro, icebergs y trades grandes. Más de 120 mercados entre cripto, índices, oro y acciones.</p><span class="go">Ver DEPTH <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <a class="card rv" href="../trading/alpha/"><canvas data-art="agents"></canvas><span class="tag"><i style="background:#5ab0ff"></i>ANALIZAR · IA</span><h3>Alpha Agents</h3><p>Agentes de IA que vigilan Nasdaq, S&amp;P 500, oro y forex en tiempo real, avisan cuando se forma un setup y miden cómo rindió cada estrategia.</p><span class="go">Conocer los agentes <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <a class="card rv" href="../kuro.html"><canvas data-art="kuro"></canvas><span class="tag"><i style="background:#22d3ee"></i>APRENDER · JUEGO</span><h3>KURO</h3><p>El juego de trading de NORTHPOINT: nueve maestros juzgan tus operaciones reales contra su objetivo, su drawdown y su tope de entradas.</p><span class="go">Jugar KURO <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <a class="card rv" href="../academia.html"><canvas data-art="academia"></canvas><span class="tag"><i style="background:#22d3ee"></i>APRENDER · CERTIFICADO</span><h3>Academia</h3><p>Clases y programas con certificado de trading, inteligencia artificial aplicada a mercados y finanzas.</p><span class="go">Ver programas <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <a class="card big rv" href="../family-office.html" style="grid-column:span 6;min-height:300px"><canvas data-art="oficina" style="width:48%;height:100%"></canvas><span class="tag"><i style="background:#bfe3ff"></i>PATRIMONIO · FAMILY OFFICE</span><h3>La Oficina</h3><p>La plataforma del family office NORTHPOINT: inversiones, empresa familiar, inmuebles, impuestos y sucesión en un solo mapa, con reglas escritas.</p><span class="go">Conocer el family office <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+  </div>
+</div></section>
+
+<section id="flujo" style="padding-top:40px"><div class="w">
+  <div class="kick rv">Cómo encajan</div>
+  <h2 class="rv">Del primer trade al patrimonio de tu familia</h2>
+  <p class="lead rv">Cada etapa tiene su herramienta, y lo que aprendes en una te sirve en la siguiente.</p>
+  <div class="flow rv">
+    <div class="st"><span class="n">01</span><h4>Aprende</h4><p>Bases sólidas y práctica sin arriesgar capital, con juicio real sobre cada operación.</p><div class="ch"><a href="../academia.html">Academia</a><a href="../kuro.html">KURO</a></div></div>
+    <div class="st"><span class="n">02</span><h4>Analiza</h4><p>Lee quién compra, quién vende y dónde está la liquidez, con agentes que vigilan por ti.</p><div class="ch"><a href="../depth/">DEPTH</a><a href="../trading/alpha/">Alpha Agents</a></div></div>
+    <div class="st"><span class="n">03</span><h4>Opera</h4><p>Registra cada operación sin esfuerzo, cuida tus cuentas de fondeo y opera en comunidad.</p><div class="ch"><a href="../trading/">Terminal</a></div></div>
+    <div class="st"><span class="n">04</span><h4>Consolida</h4><p>Ordena lo que construyes: inversiones, inmuebles, empresa y sucesión en un solo mapa.</p><div class="ch"><a href="../family-office.html">La Oficina</a></div></div>
+  </div>
+</div></section>
+
+<section id="principios"><div class="w">
+  <div class="kick rv">Principios</div>
+  <h2 class="rv">Lo que no negociamos</h2>
+  <div class="pr" style="margin-top:40px">
+    <div class="rv"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><h4>Datos antes que opiniones</h4><p>Las herramientas muestran lo que pasó, con su fuente. La decisión siempre es tuya.</p></div>
+    <div class="rv"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg><h4>Tu información es tuya</h4><p>Tus llaves, cuentas y diarios se quedan contigo. Lo que compartes, lo eliges tú.</p></div>
+    <div class="rv"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"/></svg><h4>Hecho por traders</h4><p>Construido por quienes operan todos los días, para resolver lo que de verdad estorba.</p></div>
+  </div>
+</div></section>
+
+<section style="padding-top:20px"><div class="w"><div class="end rv">
+  <div class="kick">Empieza por donde estés</div>
+  <h2>Elige tu primera herramienta</h2>
+  <p class="lead">Si apenas empiezas, la Academia. Si ya operas, el Terminal y DEPTH. Si administras patrimonio, La Oficina.</p>
+  <div class="cta"><a class="btn" href="../trading/">Ver el Terminal <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn o" href="../depth/">Ver DEPTH</a><a class="btn o" href="../academia.html">Ver la Academia</a></div>
+</div></div></section>
+
+<footer><div class="w"><span>NORTHPOINT Capital © 2026 · Morelia, México</span><span><a href="../">Inicio</a> · <a href="../privacidad.html">Privacidad</a></span></div>
+<div class="w" style="margin-top:14px;font-size:12px;color:var(--mut2);display:block">Operar en mercados financieros implica riesgo. Ninguna herramienta de NORTHPOINT es una recomendación de inversión.</div></footer>
+
+<script>
+(() => {
+  const C = ['#22d3ee', '#5ab0ff', '#3d5afe', '#bfe3ff'];
+  const rnd = (s => () => { s = (s * 16807) % 2147483647; return s / 2147483647; })(7);
+  const red = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* ---- portada: red viva del ecosistema ---- */
+  const cv = document.getElementById('net'), x = cv.getContext('2d'); let W, H, P = [], hubs = [];
+  const NAMES = ['TERMINAL', 'DEPTH', 'ALPHA AGENTS', 'KURO', 'ACADEMIA', 'LA OFICINA'], HC = [2, 1, 1, 0, 0, 3];
+  function size() {
+    const d = devicePixelRatio || 1; W = cv.clientWidth; H = cv.clientHeight; cv.width = W * d; cv.height = H * d; x.setTransform(d, 0, 0, d, 0, 0);
+    const cx = W * (W > 960 ? 0.75 : 0.5), cy = H * 0.5, R = Math.min(W, H) * (W > 960 ? 0.27 : 0.36);
+    hubs = NAMES.map((n, i) => { const a = i / NAMES.length * Math.PI * 2 - Math.PI / 2; return { n, c: C[HC[i]], x: cx + Math.cos(a) * R, y: cy + Math.sin(a) * R * 0.82, a }; });
+    P = []; const N = Math.round(W * H / 9000);
+    for (let i = 0; i < N; i++) { const h = hubs[i % hubs.length], r = 30 + rnd() * R * 0.75, a = rnd() * Math.PI * 2; P.push({ h, x: h.x + Math.cos(a) * r, y: h.y + Math.sin(a) * r, r, a, s: (rnd() - 0.5) * 0.004, z: 0.6 + rnd() * 1.4 }); }
+  }
+  let t = 0;
+  function frame() {
+    t += 1; x.clearRect(0, 0, W, H);
+    // conexiones entre centros
+    for (let i = 0; i < hubs.length; i++) for (let j = i + 1; j < hubs.length; j++) {
+      const a = hubs[i], b = hubs[j], g = x.createLinearGradient(a.x, a.y, b.x, b.y); g.addColorStop(0, a.c + '55'); g.addColorStop(1, b.c + '55');
+      x.strokeStyle = g; x.lineWidth = 1; x.beginPath(); x.moveTo(a.x, a.y); x.lineTo(b.x, b.y); x.stroke();
+      const k = ((t * 0.004 + i * 0.17 + j * 0.31) % 1); x.fillStyle = '#fff'; x.globalAlpha = 0.7; x.beginPath(); x.arc(a.x + (b.x - a.x) * k, a.y + (b.y - a.y) * k, 1.6, 0, 7); x.fill(); x.globalAlpha = 1;   // pulso que viaja
+    }
+    // partículas que orbitan
+    for (const p of P) { if (!red) p.a += p.s; const px = p.h.x + Math.cos(p.a) * p.r, py = p.h.y + Math.sin(p.a) * p.r * 0.8; x.fillStyle = p.h.c; x.globalAlpha = 0.35; x.beginPath(); x.arc(px, py, p.z, 0, 7); x.fill(); }
+    x.globalAlpha = 1;
+    // centros
+    for (const h of hubs) {
+      const pul = 1 + Math.sin(t * 0.03 + h.a) * 0.12, gr = x.createRadialGradient(h.x, h.y, 0, h.x, h.y, 46 * pul); gr.addColorStop(0, h.c + 'aa'); gr.addColorStop(1, h.c + '00');
+      x.fillStyle = gr; x.beginPath(); x.arc(h.x, h.y, 46 * pul, 0, 7); x.fill();
+      x.fillStyle = h.c; x.beginPath(); x.arc(h.x, h.y, 5, 0, 7); x.fill();
+      if (W > 760) { x.font = '600 11px "JetBrains Mono",monospace'; x.fillStyle = '#eef5ff'; x.textAlign = 'center'; x.fillText(h.n, h.x, h.y - 16); }   // en móvil, sin nombres detrás del titular
+    }
+    if (!red) requestAnimationFrame(frame);
+  }
+  size(); frame(); addEventListener('resize', () => { size(); if (red) frame(); });
+
+  /* ---- ilustraciones de cada tarjeta ---- */
+  const art = {
+    journal(g, w, h) { let y = h * 0.62, e = []; for (let i = 0; i < 40; i++) { y -= (rnd() - 0.38) * 9; e.push(Math.max(14, Math.min(h * 0.8, y))); }
+      const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, 'rgba(61,90,254,.5)'); gr.addColorStop(1, 'rgba(61,90,254,0)');
+      g.beginPath(); e.forEach((v, i) => { const px = i / 39 * w; i ? g.lineTo(px, v) : g.moveTo(px, v); }); g.lineTo(w, h); g.lineTo(0, h); g.fillStyle = gr; g.fill();
+      g.beginPath(); e.forEach((v, i) => { const px = i / 39 * w; i ? g.lineTo(px, v) : g.moveTo(px, v); }); g.strokeStyle = '#5ab0ff'; g.lineWidth = 2; g.stroke(); },
+    depth(g, w, h) { const n = 14, rh = h / n / 1.2; for (let i = 0; i < n; i++) { const ask = i < n / 2, L = (0.2 + rnd() * 0.75) * w * 0.45, y = 10 + i * (rh + 3) + (ask ? 0 : 8);
+        g.fillStyle = ask ? 'rgba(61,90,254,.75)' : 'rgba(34,211,238,.75)'; g.beginPath(); if (g.roundRect) g.roundRect(ask ? w / 2 + 4 : w / 2 - 4 - L, y, L, rh, 3); else g.rect(ask ? w / 2 + 4 : w / 2 - 4 - L, y, L, rh); g.fill(); }
+      g.fillStyle = '#5ab0ff'; g.fillRect(w * 0.1, h / 2 + 2, w * 0.8, 2); },
+    agents(g, w, h) { const pts = []; for (let i = 0; i < 9; i++) pts.push([w * (0.15 + rnd() * 0.75), h * (0.12 + rnd() * 0.7)]);
+      g.strokeStyle = 'rgba(90,176,255,.35)'; for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) if (Math.hypot(pts[i][0] - pts[j][0], pts[i][1] - pts[j][1]) < w * 0.35) { g.beginPath(); g.moveTo(...pts[i]); g.lineTo(...pts[j]); g.stroke(); }
+      pts.forEach((p, i) => { g.fillStyle = i % 3 ? '#5ab0ff' : '#22d3ee'; g.beginPath(); g.arc(p[0], p[1], i % 3 ? 3 : 5, 0, 7); g.fill(); }); },
+    kuro(g, w, h) { for (let i = 0; i < 9; i++) { const a = i / 9 * Math.PI * 2, r = Math.min(w, h) * 0.32, cx = w * 0.6, cy = h * 0.45; g.strokeStyle = 'rgba(34,211,238,.45)'; g.beginPath(); g.moveTo(cx, cy); g.lineTo(cx + Math.cos(a) * r, cy + Math.sin(a) * r); g.stroke(); g.fillStyle = '#22d3ee'; g.beginPath(); g.arc(cx + Math.cos(a) * r, cy + Math.sin(a) * r, 4, 0, 7); g.fill(); }
+      g.fillStyle = '#bfe3ff'; g.beginPath(); g.arc(w * 0.6, h * 0.45, 7, 0, 7); g.fill(); },
+    academia(g, w, h) { for (let i = 0; i < 6; i++) { const bw = w * 0.1, bh = h * (0.15 + i * 0.1); g.fillStyle = i === 5 ? '#22d3ee' : 'rgba(34,211,238,' + (0.2 + i * 0.1) + ')'; g.fillRect(w * 0.25 + i * (bw + 8), h * 0.85 - bh, bw, bh); } },
+    oficina(g, w, h) { const cx = w * 0.55, cy = h * 0.5; [0.42, 0.3, 0.18].forEach((r, i) => { g.strokeStyle = 'rgba(191,227,255,' + (0.18 + i * 0.12) + ')'; g.lineWidth = 1.5; g.beginPath(); g.arc(cx, cy, Math.min(w, h) * r, 0, 7); g.stroke(); });
+      const seg = [0.34, 0.22, 0.18, 0.14, 0.12], cs = ['#3d5afe', '#5ab0ff', '#22d3ee', '#bfe3ff', '#7c8fff']; let a0 = -Math.PI / 2;
+      seg.forEach((v, i) => { const a1 = a0 + v * Math.PI * 2; g.strokeStyle = cs[i]; g.lineWidth = 10; g.beginPath(); g.arc(cx, cy, Math.min(w, h) * 0.3, a0 + 0.03, a1 - 0.03); g.stroke(); a0 = a1; }); }
+  };
+  document.querySelectorAll('canvas[data-art]').forEach(c => { const d = devicePixelRatio || 1, w = c.clientWidth, h = c.clientHeight; c.width = w * d; c.height = h * d; const g = c.getContext('2d'); g.setTransform(d, 0, 0, d, 0, 0); art[c.dataset.art](g, w, h); });
+  /* brillo que sigue al cursor en las tarjetas */
+  document.querySelectorAll('.card').forEach(c => c.addEventListener('pointermove', e => { const r = c.getBoundingClientRect(); c.style.setProperty('--mx', (e.clientX - r.left) + 'px'); c.style.setProperty('--my', (e.clientY - r.top) + 'px'); }));
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
+  document.querySelectorAll('.rv').forEach(e => io.observe(e));
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<script>if(location.hostname==='studioamr.github.io')location.replace('https://northpointcapital.io/depth/'+location.pathname.replace(/^\/northpoint-depth\/?/,'')+location.search+location.hash)</script>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marca NORTHPOINT DEPTH</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#03060c;--card:#07101e;--line:rgba(255,255,255,.09);--tx:#eef5ff;--mut:#8ea0bd}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.55 Inter,system-ui,sans-serif}
+.w{max-width:1040px;margin:0 auto;padding:56px 20px 80px}
+h1{font:700 44px/1.1 Outfit,sans-serif;letter-spacing:-.03em;margin:0 0 8px}h2{font:600 22px Outfit,sans-serif;margin:56px 0 16px}
+p{color:var(--mut);margin:0 0 12px;max-width:640px}
+.logo{display:flex;align-items:center;gap:14px;font:700 30px Outfit,sans-serif;letter-spacing:.14em}
+.logo span{color:#5ab0ff}
+.mk{width:44px;height:36px;background:linear-gradient(#3d5afe,#3d5afe) 24px 0/12px 6px no-repeat,linear-gradient(#3d5afe,#3d5afe) 24px 8px/20px 6px no-repeat,linear-gradient(#5ab0ff,#5ab0ff) 0 15px/44px 4px no-repeat,linear-gradient(#22d3ee,#22d3ee) 2px 22px/20px 6px no-repeat,linear-gradient(#22d3ee,#22d3ee) 10px 30px/12px 6px no-repeat}
+.box{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:28px}
+.sw{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.sw div{border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.sw i{display:block;height:96px}.sw b{display:block;padding:10px 12px 2px;font:600 14px Outfit}.sw small{display:block;padding:0 12px 12px;font:12px "JetBrains Mono",monospace;color:var(--mut)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+canvas{display:block;width:100%;height:260px}
+.ty b{font:700 40px Outfit;letter-spacing:-.03em;display:block}.ty span{display:block;font:15px Inter;color:var(--mut);margin-top:8px}.ty code{display:block;font:14px "JetBrains Mono";color:#7cc4ff;margin-top:12px}
+ul{color:var(--mut);padding-left:18px;margin:0}li{margin:6px 0}li b{color:var(--tx)}
+@media(max-width:820px){.sw{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body><div class="w">
+<div class="logo"><i class="mk"></i>NORTHPOINT<span>DEPTH</span></div>
+<h1 style="margin-top:34px">Marca</h1>
+<p>Todo en azul: del marino profundo al cian. El cian es la compra, el azul rey es la venta, el azul cielo es el acento de la marca y el hielo marca el precio y el punto de control.</p>
+
+<h2>Símbolo</h2>
+<div class="box"><p style="margin:0">Una escalera de profundidad: órdenes de venta en azul rey arriba, órdenes de compra en cian abajo y el precio en azul cielo al centro. Es el libro de órdenes, que es lo que la plataforma deja ver.</p></div>
+
+<h2>Paleta</h2>
+<div class="sw">
+  <div><i style="background:#03060c"></i><b>Abismo</b><small>#03060C · fondo</small></div>
+  <div><i style="background:#061a3d"></i><b>Marino</b><small>#061A3D · superficies</small></div>
+  <div><i style="background:#3d5afe"></i><b>Azul rey</b><small>#3D5AFE · venta</small></div>
+  <div><i style="background:#5ab0ff"></i><b>Azul cielo</b><small>#5AB0FF · acento</small></div>
+  <div><i style="background:#22d3ee"></i><b>Cian</b><small>#22D3EE · compra</small></div>
+  <div><i style="background:#bfe3ff"></i><b>Hielo</b><small>#BFE3FF · precio, POC</small></div>
+</div>
+
+<h2>Velas y clusters</h2>
+<div class="two">
+  <div class="box" style="padding:12px"><canvas id="c1"></canvas></div>
+  <div class="box" style="padding:12px"><canvas id="c2"></canvas></div>
+</div>
+
+<h2>Tipografía</h2>
+<div class="two">
+  <div class="box ty"><b>Outfit</b><span>Titulares y logotipo. Seminegrita, interletrado apretado.</span><code>600 · -0.04em</code></div>
+  <div class="box ty"><b style="font-family:'JetBrains Mono';font-weight:500;letter-spacing:0">68,420.5</b><span>Inter para el texto; JetBrains Mono para precios, volumen y tiempos.</span><code>Inter 400 · Mono 500</code></div>
+</div>
+
+<h2>Reglas</h2>
+<div class="box"><ul>
+  <li><b>Compra siempre cian, venta siempre azul rey.</b> Nunca verde ni rojo en la marca.</li>
+  <li><b>Un solo acento:</b> el azul cielo en botones, enlaces y la palabra DEPTH.</li>
+  <li><b>Fondo oscuro siempre.</b> El brillo azul se usa poco, detrás de lo importante.</li>
+  <li><b>Colores de función:</b> el ámbar de los dibujos y alertas y el naranja de las liquidaciones solo viven dentro del gráfico.</li>
+</ul></div>
+</div>
+<script>
+const UP='#22d3ee',DN='#3d5afe',ICE='#bfe3ff';
+function rng(s){return()=>{s|=0;s=s+0x6D2B79F5|0;let t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function fit(c){const d=devicePixelRatio||1,w=c.clientWidth,h=c.clientHeight;c.width=w*d;c.height=h*d;const x=c.getContext('2d');x.setTransform(d,0,0,d,0,0);return[x,w,h]}
+function velas(){const[x,w,h]=fit(document.getElementById('c1')),r=rng(4),S=[];let p=100;for(let i=0;i<Math.floor(w/14);i++){const o=p;p+=(r()-.46)*3;S.push({o,c:p,h:Math.max(o,p)+r()*1.4,l:Math.min(o,p)-r()*1.4})}
+ let lo=1e9,hi=-1e9;S.forEach(b=>{lo=Math.min(lo,b.l);hi=Math.max(hi,b.h)});const Y=v=>16+(hi-v)/(hi-lo)*(h-32);
+ S.forEach((b,i)=>{x.fillStyle=b.c>=b.o?UP:DN;x.fillRect(i*14+6.5,Y(b.h),1,Y(b.l)-Y(b.h));x.fillRect(i*14+2,Math.min(Y(b.o),Y(b.c)),10,Math.max(1.5,Math.abs(Y(b.c)-Y(b.o))))});
+ x.setLineDash([4,4]);x.strokeStyle=ICE;x.beginPath();x.moveTo(0,Y(S[S.length-1].c));x.lineTo(w,Y(S[S.length-1].c));x.stroke()}
+function clusters(){const[x,w,h]=fit(document.getElementById('c2')),r=rng(9),rh=20,n=Math.floor((h-10)/rh),cols=Math.max(2,Math.floor(w/150));x.font='11px "JetBrains Mono",monospace';x.textBaseline='middle';x.textAlign='center';
+ for(let c=0;c<cols;c++){const cx=c*(w/cols)+(w/cols)/2,poc=Math.floor(n*(.3+r()*.4));for(let i=0;i<n;i++){const k=1-Math.abs(i-poc)/n,b=Math.round((5+r()*120)*k*k+2),a=Math.round((5+r()*120)*k*k+2),y=5+i*rh,d=a-b;
+  x.fillStyle=(d>=0?'rgba(34,211,238,':'rgba(61,90,254,')+Math.min(.85,.12+Math.abs(d)/90)+')';x.fillRect(cx-60,y,120,rh-2);
+  if(i===poc){x.strokeStyle=ICE;x.strokeRect(cx-59.5,y+.5,119,rh-3)}x.fillStyle='#eef5ff';x.fillText(b,cx-28,y+rh/2);x.fillText(a,cx+28,y+rh/2)}}}
+velas();clusters();addEventListener('resize',()=>{velas();clusters()});
+</script>
+</body>
+</html>
