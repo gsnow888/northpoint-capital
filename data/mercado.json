@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 28542.25,
-   "cambio": 527.75,
-   "pct": 1.88
+   "precio": 28342.5,
+   "cambio": 328.0,
+   "pct": 1.17
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7642.0,
-   "cambio": 67.75,
-   "pct": 0.89
+   "precio": 7613.25,
+   "cambio": 39.0,
+   "pct": 0.51
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3888.7,
-   "cambio": -225.8,
-   "pct": -5.49
+   "precio": 3904.2,
+   "cambio": -210.3,
+   "pct": -5.11
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 88.43,
-   "cambio": 1.58,
-   "pct": 1.82
+   "precio": 88.86,
+   "cambio": 2.01,
+   "pct": 2.31
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2813.5,
-   "cambio": -35.2,
-   "pct": -1.24
+   "precio": 2805.2,
+   "cambio": -43.5,
+   "pct": -1.53
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52515.0,
-   "cambio": 17.0,
-   "pct": 0.03
+   "precio": 52377.0,
+   "cambio": -121.0,
+   "pct": -0.23
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 71415.0,
-   "cambio": -3525.0,
-   "pct": -4.7
+   "precio": 69230.0,
+   "cambio": -5710.0,
+   "pct": -7.62
   }
  ],
  "acciones": [
@@ -274,22 +274,58 @@
  ],
  "noticias": [
   {
-   "titulo": "Cramer says Jensen Huang betrayed Nvidia shareholders. How to pick up the pieces",
-   "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-exit-cramer.html",
+   "titulo": "Why Singapore keeps turning up in the fight over Nvidia chips and China",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 12 Nov 2026 23:14:56 GMT"
+   "fecha": "Fri, 13 Nov 2026 07:15:01 GMT"
+  },
+  {
+   "titulo": "Widespread Microsoft outage takes down Outlook and other 365 services",
+   "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 13 Nov 2026 06:42:27 GMT"
+  },
+  {
+   "titulo": "Nvidia on track for longest weekly losing streak since 2012 as market value sinks by $1.6 trillion",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 13 Nov 2026 05:51:34 GMT"
+  },
+  {
+   "titulo": "‘The thought of living to 100 terrifies me’: Is Social Security a giant Ponzi scheme?",
+   "url": "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 13 Nov 2026 04:46:00 GMT"
+  },
+  {
+   "titulo": "Nvidia: Ex-prosecutor Joon Kim and Wachtell, Lipton bring big track record to investigation",
+   "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-joon-kim-wachtell-china-spy.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 13 Nov 2026 04:07:44 GMT"
+  },
+  {
+   "titulo": "As Nvidia reels from Huang's affairs, who stands to gain?",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-affairs-amd-broadcom-tsmc.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 13 Nov 2026 03:59:40 GMT"
+  },
+  {
+   "titulo": "Cerebras surges 17% after beating on quarterly revenue and announcing Microsoft deal",
+   "url": "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 13 Nov 2026 02:43:26 GMT"
+  },
+  {
+   "titulo": "The world's super-rich are piling into alternative investments. Here's why",
+   "url": "https://www.cnbc.com/2026/11/12/rich-wealth-alternative-assets-.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 13 Nov 2026 02:25:02 GMT"
   },
   {
    "titulo": "Who can replace Jensen Huang as Nvidia CEO? These four names are buzzing in AI circles.",
    "url": "https://www.marketwatch.com/story/who-can-replace-jensen-huang-as-nvidia-ceo-these-four-names-are-buzzing-in-ai-circles-66c31ec2?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 12 Nov 2026 22:57:00 GMT"
-  },
-  {
-   "titulo": "Cerebras surges 17% after beating on quarterly revenue and announcing Microsoft deal",
-   "url": "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 12 Nov 2026 22:48:26 GMT"
   },
   {
    "titulo": "Alice Huang tied to Nvidia’s biggest Chinese competitor",
@@ -302,18 +338,6 @@
    "url": "https://www.marketwatch.com/story/opening-trading-card-packs-has-become-a-2-billion-market-new-apps-are-trying-to-cash-in-b7ba11f5?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Thu, 12 Nov 2026 22:38:00 GMT"
-  },
-  {
-   "titulo": "Widespread Microsoft outage takes down Outlook and other 365 services",
-   "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 12 Nov 2026 22:24:12 GMT"
-  },
-  {
-   "titulo": "Scout Motors has 212,000 vehicle reservations as $2 billion South Carolina plant nears completion",
-   "url": "https://www.cnbc.com/2026/11/12/scout-motors-reservations-south-carolina-plant.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 12 Nov 2026 22:17:05 GMT"
   },
   {
    "titulo": "Bond yields just saw their biggest surge since 2022 as expectations grow for more Fed rate hikes",
@@ -346,12 +370,6 @@
    "fecha": "Thu, 12 Nov 2026 21:30:00 GMT"
   },
   {
-   "titulo": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year",
-   "url": "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 12 Nov 2026 21:20:35 GMT"
-  },
-  {
    "titulo": "The S&P 500 is shrugging off Nvidia’s selloff this week. Here’s what’s keeping the rest of the market afloat.",
    "url": "https://www.marketwatch.com/story/the-s-p-500-is-shrugging-off-nvidias-selloff-heres-whats-keeping-the-rest-of-the-market-afloat-7cdf2f05?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -370,28 +388,10 @@
    "fecha": "Thu, 12 Nov 2026 20:34:31 GMT"
   },
   {
-   "titulo": "I’m 17 and will be a first-generation college student. Is law school worth being $200,000 in debt?",
-   "url": "https://www.marketwatch.com/story/im-17-and-will-be-a-first-generation-college-student-is-law-school-worth-being-200-000-in-debt-df9b23c3?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 12 Nov 2026 20:17:00 GMT"
-  },
-  {
-   "titulo": "Donald Trump Jr. exits advisory role at Kalshi prediction market",
-   "url": "https://www.cnbc.com/2026/11/12/donald-trump-jr-exits-kalshi-advisory-role.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 12 Nov 2026 20:03:57 GMT"
-  },
-  {
    "titulo": "Jensen Huang is out and Nvidia stock is down—what market pros say about buying dips",
    "url": "https://www.cnbc.com/make-it/2026/11/12/nvidia-what-market-pros-say-about-buying-dips.html",
    "fuente": "CNBC",
    "fecha": "Thu, 12 Nov 2026 20:01:29 GMT"
-  },
-  {
-   "titulo": "Nvidia: Ex-prosecutor Joon Kim and Wachtell, Lipton bring big track record to investigation",
-   "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-joon-kim-wachtell-china-spy.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 12 Nov 2026 19:58:11 GMT"
   },
   {
    "titulo": "Here's what Nvidia interim CEO Colette Kress and board chair Harvey Jones wrote to Nvidia employees",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-13T00:33:54Z",
+ "ts": "2026-11-13T07:15:46Z",
  "fallas": [
   "videos",
   "directos"
