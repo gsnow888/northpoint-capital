@@ -305,25 +305,38 @@
     /* perfil de volumen de los ticks cargados */
     const h1 = Math.max(1, rh - 1), fz0 = Math.max(9, Math.min(11, rh - 4));
     if (I.prof) {
-      const ps = eng.profStats(), pClean = num && cfg.mode === 'ba' && PR > 200;
+      /* perfil de TODO lo visible: exacto donde hay ticks; en la historia sin ticks, el volumen comprador y vendedor
+         de cada vela del exchange se reparte parejo entre su mínimo y su máximo (estimado) */
+      const VP = new Map(); let vpMax = 0, vpPoc = 0, vpTot = 0, vkl = Infinity, vkh = -Infinity;
+      const vpAdd = (k, sb, sa) => { let e = VP.get(k); if (!e) VP.set(k, e = [0, 0]); e[0] += sb; e[1] += sa; const t = e[0] + e[1]; vpTot += sb + sa; if (t > vpMax) { vpMax = t; vpPoc = k; } if (k < vkl) vkl = k; if (k > vkh) vkh = k; };
+      const d0 = Math.floor(last.t0 / 864e5) * 864e5; let i0 = nb - 1; while (i0 > 0 && A[i0 - 1].t0 >= d0) i0--;   // sesión del día (UTC)
+      for (let i = i0; i < nb; i++) {
+        const b = A[i];
+        if (b.lv) { for (const [k, e] of b.lv) vpAdd(k, e[0], e[1]); continue; }
+        const kl = Math.floor(b.l / g) * g, kh = Math.floor(b.h / g) * g, n = (kh - kl) / g + 1, sb = (b.sell || 0) / n, sa = (b.buy || 0) / n;
+        if (n > 0 && n < 5000) for (let k = kl; k <= kh; k += g) vpAdd(k, sb, sa);
+      }
+      let ps = null;
+      if (VP.size) { const V = k => { const e = VP.get(k); return e ? e[0] + e[1] : 0; }; const [val, vah] = Engine.valueArea(V, vpPoc, vpMax, vpTot, eng.o.va, g, vkl, vkh); ps = { poc: vpPoc, val, vah }; }
+      const pClean = num && cfg.mode === 'ba' && PR > 200;
       if (pClean) {   // como el footprint: barra gris hacia la izquierda, línea de color por fila y bid x ask en números
-        const xd = cw - 112, bwM = xd - xR - 12, cm = xd + 2 + 54, P = eng.prof, r = eng.o.ratio, mn = eng.o.minImb || 0;
+        const xd = cw - 112, bwM = xd - xR - 12, cm = xd + 2 + 54, P = VP, r = eng.o.ratio, mn = eng.o.minImb || 0;
         x.font = fz0 + 'px ' + MONO;
         for (const [k, e] of P) {
           const yT = Y(k + g); if (yT > ch || yT + rh < 0) continue;
           const tot = e[0] + e[1], d = e[1] - e[0], ty = yT + h1 / 2 + 0.5, isPoc = ps && k === ps.poc;
           const lo = P.get(k - g), hi = P.get(k + g);
           let im = 0; if (e[1] > 0 && e[1] >= mn && lo && e[1] >= r * lo[0]) im = 1; if (e[0] > 0 && e[0] >= mn && hi && e[0] >= r * hi[1]) im = im ? 0 : -1;
-          x.fillStyle = 'rgba(255,255,255,.07)'; const w = tot / eng.pmax * bwM; x.fillRect(xd - w, yT, w, h1);
+          x.fillStyle = 'rgba(255,255,255,.07)'; const w = tot / vpMax * bwM; x.fillRect(xd - w, yT, w, h1);
           x.fillStyle = d >= 0 ? C.up : C.dn; x.fillRect(xd, yT, 2, h1);
           x.fillStyle = 'rgba(255,255,255,.045)'; x.fillRect(xd + 3, yT, cw - xd - 5, h1);
           x.textAlign = 'right'; x.font = (im < 0 ? '600 ' : '') + fz0 + 'px ' + MONO; x.fillStyle = im < 0 ? '#7f97ff' : 'rgba(232,236,243,.8)'; x.fillText(fv(e[0]), cm - 4, ty);
           x.textAlign = 'left'; x.font = (im > 0 ? '600 ' : '') + fz0 + 'px ' + MONO; x.fillStyle = im > 0 ? '#3ee0f7' : 'rgba(232,236,243,.8)'; x.fillText(fv(e[1]), cm + 4, ty);
           if (isPoc) { x.strokeStyle = 'rgba(191,227,255,.7)'; x.lineWidth = 1; x.strokeRect(xd - bwM + 0.5, yT + 0.5, cw - 2 - (xd - bwM), h1 - 1); }
         }
-      } else for (const [k, e] of eng.prof) {
+      } else for (const [k, e] of VP) {
         const yT = Y(k + g); if (yT > ch || yT + rh < 0) continue;
-        const tot = e[0] + e[1], w = tot / eng.pmax * (PR - 14), ws = w * e[0] / tot;
+        const tot = e[0] + e[1], w = tot / vpMax * (PR - 14), ws = w * e[0] / tot;
         x.fillStyle = dn(0.38); x.fillRect(xR + 8, yT, ws, h1); x.fillStyle = up(0.38); x.fillRect(xR + 8 + ws, yT, w - ws, h1);
       }
       if (ps) {
@@ -774,7 +787,7 @@
   $('aud').onclick = () => toggle('audP', showAudit);
 
   /* ---------- panel de indicadores ---------- */
-  const INDS = [['PRECIO'], ['vwap', 'VWAP diario', 'Precio promedio ponderado desde las 00:00 UTC.'], ['bands', 'Bandas de VWAP', 'Una y dos desviaciones estándar.'], ['ema1', 'Media móvil rápida', 'Exponencial; elige el periodo.', 'e1'], ['ema2', 'Media móvil lenta', 'Exponencial; elige el periodo.', 'e2'], ['day', 'Niveles del día anterior', 'Máximo, mínimo, cierre y apertura de hoy.'], ['prof', 'Perfil de volumen', 'Punto de control y área de valor de la sesión cargada.'],
+  const INDS = [['PRECIO'], ['vwap', 'VWAP diario', 'Precio promedio ponderado desde las 00:00 UTC.'], ['bands', 'Bandas de VWAP', 'Una y dos desviaciones estándar.'], ['ema1', 'Media móvil rápida', 'Exponencial; elige el periodo.', 'e1'], ['ema2', 'Media móvil lenta', 'Exponencial; elige el periodo.', 'e2'], ['day', 'Niveles del día anterior', 'Máximo, mínimo, cierre y apertura de hoy.'], ['prof', 'Perfil de volumen', 'Toda la sesión del día (UTC): exacto donde hay ticks, estimado con las velas del exchange donde aún no.'],
     ['FLUJO DE ÓRDENES'], ['imb', 'Desbalances', 'Resalta los niveles donde un lado domina.'], ['zones', 'Zonas apiladas', 'Tres o más desbalances seguidos; viven hasta que el precio las cruza.'], ['poc', 'Punto de control por vela', 'El nivel con más volumen de cada vela.'], ['big', 'Órdenes de gran tamaño', 'Las agresiones más grandes, en su precio exacto.'], ['liq', 'Liquidaciones', 'Posiciones cerradas a la fuerza por el exchange.'], ['ice', 'Icebergs y muros retirados', 'Órdenes ocultas que se recargan y muros que se retiran antes de tocarse.'], ['cvds', 'CVD por tamaño', 'Separa la presión de las órdenes grandes de la de las chicas.'],
     ['CONTEXTO'], ['sess', 'Perfil por sesión', 'Asia, Londres y Nueva York.'], ['cal', 'Agenda económica', 'Datos de alto impacto sobre el gráfico (app de escritorio).'], ['heat', 'Liquidez de fondo', 'El libro de órdenes en el tiempo, detrás de las velas.'], ['stats', 'Estadística por vela', 'Volumen, delta y extremos debajo del gráfico.']];
   function showInd() {
