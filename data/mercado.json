@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 27927.25,
-   "cambio": -87.25,
-   "pct": -0.31
+   "precio": 28034.75,
+   "cambio": 20.25,
+   "pct": 0.07
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7561.0,
-   "cambio": -13.25,
-   "pct": -0.17
+   "precio": 7583.0,
+   "cambio": 8.75,
+   "pct": 0.12
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3887.6,
-   "cambio": -226.9,
-   "pct": -5.51
+   "precio": 3886.3,
+   "cambio": -228.2,
+   "pct": -5.55
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 88.92,
-   "cambio": 2.07,
-   "pct": 2.38
+   "precio": 88.56,
+   "cambio": 1.71,
+   "pct": 1.97
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2791.2,
-   "cambio": -57.5,
-   "pct": -2.02
+   "precio": 2797.5,
+   "cambio": -51.2,
+   "pct": -1.8
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52347.0,
-   "cambio": -151.0,
-   "pct": -0.29
+   "precio": 52418.0,
+   "cambio": -80.0,
+   "pct": -0.15
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 68420.0,
-   "cambio": -6520.0,
-   "pct": -8.7
+   "precio": 67430.0,
+   "cambio": -7510.0,
+   "pct": -10.02
   }
  ],
  "acciones": [
@@ -274,10 +274,40 @@
  ],
  "noticias": [
   {
-   "titulo": "FAA lifts ground stop after four hours, but flight cancellations will stretch into the weekend",
+   "titulo": "Microsoft apologizes for massive outage that took down Outlook and other 365 services",
+   "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 14 Nov 2026 08:11:28 GMT"
+  },
+  {
+   "titulo": "Analysis: Companies love a ‘rockstar’ CEO. Until they depend on one",
+   "url": "https://www.cnbc.com/2026/11/14/nvidia-jensen-huang-ceo-succession-risk.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 14 Nov 2026 07:08:45 GMT"
+  },
+  {
+   "titulo": "Ecuador wants to monetize its biodiversity — while still drilling for oil",
+   "url": "https://www.cnbc.com/2026/11/14/ecuador-biodiversity-green-finance-oil.html",
+   "fuente": "CNBC",
+   "fecha": "Sat, 14 Nov 2026 06:00:01 GMT"
+  },
+  {
+   "titulo": "FAA lifts ground stop after more than four hours, but flight cancellations will stretch into the weekend",
    "url": "https://www.cnbc.com/2026/11/13/faa-ground-stop.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 14 Nov 2026 01:44:39 GMT"
+   "fecha": "Sat, 14 Nov 2026 05:08:24 GMT"
+  },
+  {
+   "titulo": "FAA lifts rare nationwide ground stop on flights; air travel may take days to recover",
+   "url": "https://www.marketwatch.com/story/faa-declares-rare-widespread-ground-outage-bdc46393?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 14 Nov 2026 02:42:00 GMT"
+  },
+  {
+   "titulo": "14 dividend stocks selected for long-term growth",
+   "url": "https://www.marketwatch.com/story/14-dividend-stocks-selected-for-long-term-growth-0a095c0d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 14 Nov 2026 01:58:00 GMT"
   },
   {
    "titulo": "Trump doesn’t plan to raise Nvidia, spy issue during China trip: U.S. officials",
@@ -286,22 +316,10 @@
    "fecha": "Sat, 14 Nov 2026 01:34:11 GMT"
   },
   {
-   "titulo": "FAA declares rare nationwide ground stop on flights, with more than 10,000 delayed or canceled",
-   "url": "https://www.marketwatch.com/story/faa-declares-rare-widespread-ground-outage-bdc46393?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 14 Nov 2026 01:28:00 GMT"
-  },
-  {
    "titulo": "SpaceX launches Starship in key test flight of massive rocket",
    "url": "https://www.cnbc.com/2026/11/13/spacex-launches-starship-in-key-test-flight-of-massive-rocket.html",
    "fuente": "CNBC",
    "fecha": "Sat, 14 Nov 2026 01:18:51 GMT"
-  },
-  {
-   "titulo": "Nvidia is done with Jensen Huang. The fallout in Washington is just beginning",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 13 Nov 2026 23:54:36 GMT"
   },
   {
    "titulo": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has deep ties to the chipmaker",
@@ -370,10 +388,10 @@
    "fecha": "Fri, 13 Nov 2026 21:10:00 GMT"
   },
   {
-   "titulo": "The trillion-dollar mistake corporate America is making about retirement",
-   "url": "https://www.marketwatch.com/story/corporate-america-is-making-a-trillion-dollar-mistake-about-retirement-234c8996?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 13 Nov 2026 21:09:00 GMT"
+   "titulo": "They train people to avoid 'honeypot' scams—here are the common red flags they spot: 'It feels so good to be wanted'",
+   "url": "https://www.cnbc.com/make-it/2026/11/13/honeypot-scam-red-flags.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 13 Nov 2026 21:06:25 GMT"
   },
   {
    "titulo": "Hassett denies report he's leaving White House: 'Not true'",
@@ -386,24 +404,6 @@
    "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-advisors-jensen-huang-exit-exclusive-poll.html",
    "fuente": "CNBC",
    "fecha": "Fri, 13 Nov 2026 19:53:38 GMT"
-  },
-  {
-   "titulo": "A trading strategy to ride out the Nvidia uncertainty and generate income in the process",
-   "url": "https://www.cnbc.com/2026/11/13/a-trading-strategy-to-ride-out-the-nvidia-uncertainty-and-generate-income-in-the-process.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 13 Nov 2026 19:30:36 GMT"
-  },
-  {
-   "titulo": "Retirees sometimes tap savings for one-off expenses. Here’s what advisors say to consider first",
-   "url": "https://www.cnbc.com/2026/11/13/retirement-401k-ira-withdrawal-taxes.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 13 Nov 2026 19:01:12 GMT"
-  },
-  {
-   "titulo": "Microsoft apologizes for massive outage that took down Outlook and other 365 services",
-   "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 13 Nov 2026 18:18:28 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-14T01:46:36Z",
+ "ts": "2026-11-14T08:44:28Z",
  "fallas": [
   "videos",
   "directos"
