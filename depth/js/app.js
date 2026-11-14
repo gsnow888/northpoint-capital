@@ -331,10 +331,30 @@
         }
       }
     }
+    /* footprint limpio (Bid x Ask): celdas neutras, números, la vela como línea central y solo lo importante en color */
+    const cleanBar = (bx, b, s) => {
+      const x0 = bx + 2, w = v.barW - 4, mid = x0 + w / 2, isUp = b.c >= b.o;
+      const bt = Math.max(b.o, b.c), bb = Math.min(b.o, b.c);
+      x.font = fz + 'px ' + MONO;
+      for (const [k, e] of b.lv) {
+        const yT = Y(k + g); if (yT > ch || yT + rh < 0) continue;
+        const im = I.imb ? s.imb.get(k) || 0 : 0, tot = e[0] + e[1], ty = yT + h1 / 2 + 0.5, isPoc = I.poc && k === s.poc;
+        x.fillStyle = isPoc ? 'rgba(90,176,255,.24)' : 'rgba(255,255,255,.045)'; x.fillRect(x0, yT, w, h1);
+        const inBody = k <= bt && k >= bb;
+        x.fillStyle = inBody ? (isUp ? C.up : C.dn) : 'rgba(255,255,255,.16)'; x.fillRect(Math.round(mid) - (inBody ? 1 : 0), yT, inBody ? 2 : 1, h1 + 1);
+        x.textAlign = 'right'; x.font = (im < 0 ? '600 ' : '') + fz + 'px ' + MONO;
+        x.fillStyle = im < 0 ? '#7f97ff' : e[0] ? 'rgba(232,236,243,.8)' : 'rgba(232,236,243,.28)'; x.fillText(fv(e[0]), mid - 5, ty);
+        x.textAlign = 'left'; x.font = (im > 0 ? '600 ' : '') + fz + 'px ' + MONO;
+        x.fillStyle = im > 0 ? '#3ee0f7' : e[1] ? 'rgba(232,236,243,.8)' : 'rgba(232,236,243,.28)'; x.fillText(fv(e[1]), mid + 5, ty);
+        if (im === 2 || im === -2) { x.fillStyle = im > 0 ? C.up : C.dn; x.fillRect(im > 0 ? x0 + w - 2 : x0, yT, 2, h1); }
+        if (srch && tot >= srch) { x.strokeStyle = '#fff'; x.lineWidth = 1.5; x.strokeRect(x0 + 1, yT + 1, w - 2, Math.max(1, h1 - 2)); }
+      }
+    };
     /* barras */
     const fz = Math.max(9, Math.min(11, rh - 4)), mode = cfg.mode, srch = +cfg.srch || 0;
     for (let i = iHi; i >= iLo; i--) {
-      const bx = X(i), b = A[i], hasLv = cells && b.lv;
+      const bx = X(i), b = A[i], hasLv = cells && b.lv, clean = hasLv && num && mode === 'ba';
+      if (clean) { cleanBar(bx, b, eng.stats(b)); continue; }
       const cwd = hasLv ? 3 : Math.max(1, cells ? v.barW * 0.5 : v.barW > 3 ? v.barW - 1.5 : v.barW), cx = hasLv ? bx + 3 : bx + (v.barW - cwd) / 2;
       x.fillStyle = b.c >= b.o ? C.up : C.dn;
       const yh = Y(b.h + 0.5), yl = Y(b.l + 0.5), yo = Y(b.o + 0.5), yc = Y(b.c + 0.5);
@@ -383,7 +403,7 @@
     if (I.ema1) path(e1, 0, '#f0b35e', 1.25);
     if (I.ema2) path(e2, 0, '#c7d2fe', 1.25);
     /* trades grandes */
-    if (I.big && v.barW >= 6) {
+    if (I.big && v.barW >= 6 && !(num && mode === 'ba')) {   // en Bid x Ask con números, los números ya dicen el tamaño
       const tMin = A[iLo].t0, bigMin = sym.big * Math.max(1, +cfg.bigX || 1);
       for (let j = bigs.length - 1; j >= 0; j--) {
         const b = bigs[j]; if (b.t > tNow || b.q < bigMin) continue; if (b.t < tMin) break;
