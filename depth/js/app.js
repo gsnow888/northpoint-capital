@@ -10,9 +10,9 @@
   if (PANE) document.body.classList.add('pane');
   const MONO = '"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace';
   const REST = 'https://fapi.binance.com/fapi/v1/';
-  const C = { up: '#b4e61e', dn: '#ff5a36', ac: '#5ab0ff', tx: '#e8ecf3', mut: '#7c8696', line: 'rgba(255,255,255,.06)' };
-  const FPC = { bg: '#1e1e1e', cell: '#2a2a2a', tx: '#d8d8d8', z: '#6c6c6c', b: '#b4e61e', s: '#ff5a36', poc: '#2d4a5d', bar: '#3b3b3b', bd: '#6e8f1c', sd: '#a33a24' };   // Bid x Ask con números: el look del footprint clásico
-  const up = a => `rgba(180,230,30,${a})`, dn = a => `rgba(255,90,54,${a})`, bl = a => `rgba(90,176,255,${a})`;
+  const C = { up: '#22d3ee', dn: '#3d5afe', ac: '#5ab0ff', tx: '#e8ecf3', mut: '#7c8696', line: 'rgba(255,255,255,.06)' };
+  const FPC = { bg: '#04080f', cell: 'rgba(148,180,255,.06)', tx: '#e3e9f3', z: '#4a5568', b: '#22d3ee', s: '#6f88ff', poc: 'rgba(90,176,255,.28)', bar: 'rgba(148,180,255,.09)', bd: '#22d3ee', sd: '#3d5afe' };   // Bid x Ask con números, en los colores NORTHPOINT
+  const up = a => `rgba(34,211,238,${a})`, dn = a => `rgba(61,90,254,${a})`, bl = a => `rgba(90,176,255,${a})`;
 
   /* ---------- mercados ---------- */
   /* tick = tamaño real del tick · groups/hg/rng en ticks · qd = decimales de cantidad (respaldo si falla la lista) */
@@ -286,7 +286,7 @@
     } else if (!wide) rh = v.rh;
     else if (v.follow) { const yl = ch / 2 - (last.c - v.cK) / g * rh; if (yl < ch * 0.18 || yl > ch * 0.82) v.cK = last.c; }
     v.rh = rh;
-    const num = wide && rh >= 11, Y = p => ch / 2 - (p - v.cK) / g * rh, CLS = num && cfg.mode === 'ba';
+    const num = wide && rh >= 11 && v.barW >= 84, Y = p => ch / 2 - (p - v.cK) / g * rh, CLS = num && cfg.mode === 'ba';
     x.fillStyle = FPC.bg; x.fillRect(0, 0, W, H);
     Object.assign(G, { A, nb, xR, ch, cw, rh, g });
     const kTop = v.cK + ch / 2 / rh * g, kBot = v.cK - ch / 2 / rh * g, stepK = num ? g * Math.ceil(24 / rh) : niceStep(28 / rh * g);
@@ -401,8 +401,8 @@
         } else if (num) {
           const a = Math.min(0.4, 0.05 + tot / s.mx * 0.35);
           x.fillStyle = d >= 0 ? up(a) : dn(a); x.fillRect(x0, yT, w, h1);
-          x.textAlign = 'right'; x.font = (im < 0 ? '700 ' : '') + fz + 'px ' + MONO; x.fillStyle = im < 0 ? '#ff8a6e' : 'rgba(232,236,243,.7)'; x.fillText(fv(e[0]), mid - 5, ty);
-          x.textAlign = 'left'; x.font = (im > 0 ? '700 ' : '') + fz + 'px ' + MONO; x.fillStyle = im > 0 ? '#d4f56b' : 'rgba(232,236,243,.7)'; x.fillText(fv(e[1]), mid + 5, ty);
+          x.textAlign = 'right'; x.font = (im < 0 ? '700 ' : '') + fz + 'px ' + MONO; x.fillStyle = im < 0 ? '#a8b6ff' : 'rgba(232,236,243,.7)'; x.fillText(fv(e[0]), mid - 5, ty);
+          x.textAlign = 'left'; x.font = (im > 0 ? '700 ' : '') + fz + 'px ' + MONO; x.fillStyle = im > 0 ? '#a5f3fc' : 'rgba(232,236,243,.7)'; x.fillText(fv(e[1]), mid + 5, ty);
           x.fillStyle = 'rgba(255,255,255,.12)'; x.fillRect(mid, yT + 2, 1, h1 - 4);
         } else {
           x.fillStyle = dn(Math.min(0.9, e[0] / s.mxs)); x.fillRect(x0, yT, w / 2, h1);
@@ -428,14 +428,19 @@
     if (I.ema1) path(e1, 0, '#f0b35e', 1.25);
     if (I.ema2) path(e2, 0, '#c7d2fe', 1.25);
     /* trades grandes */
-    if (I.big && v.barW >= 6 && !(num && mode === 'ba')) {   // en Bid x Ask con números, los números ya dicen el tamaño
-      const tMin = A[iLo].t0, bigMin = sym.big * Math.max(1, +cfg.bigX || 1);
+    if (I.big && v.barW >= 6) {   // burbujas: tamaño según la orden, cian compra y azul rey venta
+      const tMin = A[iLo].t0, bigMin = sym.big * Math.max(1, +cfg.bigX || 1), rMax = Math.max(12, Math.min(34, v.barW * 0.55));
       for (let j = bigs.length - 1; j >= 0; j--) {
         const b = bigs[j]; if (b.t > tNow || b.q < bigMin) continue; if (b.t < tMin) break;
         const a = idxAt(A, b.t); if (a > iHi) continue;
-        const r = Math.max(2.5, Math.min(Math.max(4, v.barW * 0.42), Math.sqrt(b.q / bigMin) * (cells ? 5 : 3)));
-        x.beginPath(); x.arc(X(a) + v.barW / 2 + (cells ? 4 : 0), Y(b.pv / b.q + 0.5), r, 0, 6.2832);
-        x.fillStyle = b.s ? dn(0.18) : up(0.18); x.fill(); x.strokeStyle = b.s ? C.dn : C.up; x.lineWidth = 1.25; x.stroke();
+        const r = Math.max(3, Math.min(rMax, Math.sqrt(b.q / bigMin) * (cells ? 7 : 4))), bx = X(a) + v.barW / 2, by = Y(b.pv / b.q + 0.5);
+        const gr = x.createRadialGradient(bx - r * 0.35, by - r * 0.35, r * 0.1, bx, by, r);
+        if (b.s) { gr.addColorStop(0, 'rgba(150,170,255,.95)'); gr.addColorStop(0.55, 'rgba(61,90,254,.75)'); gr.addColorStop(1, 'rgba(40,60,200,.45)'); }
+        else { gr.addColorStop(0, 'rgba(200,250,255,.95)'); gr.addColorStop(0.55, 'rgba(34,211,238,.75)'); gr.addColorStop(1, 'rgba(10,150,190,.45)'); }
+        x.globalAlpha = num ? 0.5 : 1; x.beginPath(); x.arc(bx, by, r, 0, 6.2832); x.fillStyle = gr; x.fill();
+        x.strokeStyle = b.s ? 'rgba(160,180,255,.9)' : 'rgba(170,245,255,.9)'; x.lineWidth = 1; x.stroke();
+        x.globalAlpha = 1;
+        if (r >= 13 && !num) { x.font = '600 ' + Math.min(12, Math.round(r * 0.55)) + 'px ' + MONO; x.textAlign = 'center'; x.fillStyle = '#03101a'; x.fillText(fv(b.q), bx, by + 0.5); }
       }
     }
     /* posición simulada */
