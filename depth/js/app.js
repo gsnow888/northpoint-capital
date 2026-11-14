@@ -11,6 +11,7 @@
   const MONO = '"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace';
   const REST = 'https://fapi.binance.com/fapi/v1/';
   const C = { up: '#22d3ee', dn: '#3d5afe', ac: '#5ab0ff', tx: '#e8ecf3', mut: '#7c8696', line: 'rgba(255,255,255,.06)' };
+  const FPC = { bg: '#1e1e1e', cell: '#2a2a2a', tx: '#d8d8d8', z: '#6c6c6c', b: '#b4e61e', s: '#ff5a36', poc: '#2d4a5d', bar: '#3b3b3b', bd: '#6e8f1c', sd: '#a33a24' };   // Bid x Ask con números: el look del footprint clásico
   const up = a => `rgba(34,211,238,${a})`, dn = a => `rgba(61,90,254,${a})`, bl = a => `rgba(90,176,255,${a})`;
 
   /* ---------- mercados ---------- */
@@ -284,7 +285,8 @@
     } else if (!wide) rh = v.rh;
     else if (v.follow) { const yl = ch / 2 - (last.c - v.cK) / g * rh; if (yl < ch * 0.18 || yl > ch * 0.82) v.cK = last.c; }
     v.rh = rh;
-    const num = wide && rh >= 11, Y = p => ch / 2 - (p - v.cK) / g * rh;
+    const num = wide && rh >= 11, Y = p => ch / 2 - (p - v.cK) / g * rh, CLS = num && cfg.mode === 'ba';
+    if (CLS) { x.fillStyle = FPC.bg; x.fillRect(0, 0, W, ch); }
     Object.assign(G, { A, nb, xR, ch, cw, rh, g });
     const kTop = v.cK + ch / 2 / rh * g, kBot = v.cK - ch / 2 / rh * g, stepK = num ? g * Math.ceil(24 / rh) : niceStep(28 / rh * g);
     const size = eng.o.size, tNow = rep ? eng.lastT : Math.max(eng.lastT || 0, feed && feed.bookT || 0);
@@ -301,7 +303,7 @@
       paintHeat('fp', x, iw, ih, tx, rowOf, 0.85);
     }
     x.fillStyle = C.line;
-    for (let k = Math.ceil(kBot / stepK) * stepK; k <= kTop; k += stepK) x.fillRect(0, Math.round(Y(k)), cw, 1);
+    if (!CLS) for (let k = Math.ceil(kBot / stepK) * stepK; k <= kTop; k += stepK) x.fillRect(0, Math.round(Y(k)), cw, 1);
     /* perfil de volumen de los ticks cargados */
     const h1 = Math.max(1, rh - 1), fz0 = Math.max(9, Math.min(11, rh - 4));
     if (I.prof) {
@@ -319,27 +321,24 @@
       let ps = null;
       if (VP.size) { const V = k => { const e = VP.get(k); return e ? e[0] + e[1] : 0; }; const [val, vah] = Engine.valueArea(V, vpPoc, vpMax, vpTot, eng.o.va, g, vkl, vkh); ps = { poc: vpPoc, val, vah }; }
       const pClean = num && cfg.mode === 'ba' && PR > 200;
-      if (pClean) {   // como el footprint: barra gris hacia la izquierda, línea de color por fila y bid x ask en números
-        const xd = cw - 112, bwM = xd - xR - 12, cm = xd + 2 + 54, P = VP, r = eng.o.ratio, mn = eng.o.minImb || 0;
-        x.font = fz0 + 'px ' + MONO;
-        for (const [k, e] of P) {
+      if (pClean) {   // como la captura: barra gris a la izquierda, línea de color, y el número del lado que gana en su color
+        const xd = cw - 112, bwM = xd - xR - 12, cm = xd + 2 + 54, f = Math.min(12, fz0 + 1);
+        for (const [k, e] of VP) {
           const yT = Y(k + g); if (yT > ch || yT + rh < 0) continue;
-          const tot = e[0] + e[1], d = e[1] - e[0], ty = yT + h1 / 2 + 0.5, isPoc = ps && k === ps.poc;
-          const lo = P.get(k - g), hi = P.get(k + g);
-          let im = 0; if (e[1] > 0 && e[1] >= mn && lo && e[1] >= r * lo[0]) im = 1; if (e[0] > 0 && e[0] >= mn && hi && e[0] >= r * hi[1]) im = im ? 0 : -1;
-          x.fillStyle = 'rgba(255,255,255,.07)'; const w = tot / vpMax * bwM; x.fillRect(xd - w, yT, w, h1);
-          x.fillStyle = d >= 0 ? C.up : C.dn; x.fillRect(xd, yT, 2, h1);
-          x.fillStyle = 'rgba(255,255,255,.045)'; x.fillRect(xd + 3, yT, cw - xd - 5, h1);
-          x.textAlign = 'right'; x.font = (im < 0 ? '600 ' : '') + fz0 + 'px ' + MONO; x.fillStyle = im < 0 ? '#7f97ff' : 'rgba(232,236,243,.8)'; x.fillText(fv(e[0]), cm - 4, ty);
-          x.textAlign = 'left'; x.font = (im > 0 ? '600 ' : '') + fz0 + 'px ' + MONO; x.fillStyle = im > 0 ? '#3ee0f7' : 'rgba(232,236,243,.8)'; x.fillText(fv(e[1]), cm + 4, ty);
-          if (isPoc) { x.strokeStyle = 'rgba(191,227,255,.7)'; x.lineWidth = 1; x.strokeRect(xd - bwM + 0.5, yT + 0.5, cw - 2 - (xd - bwM), h1 - 1); }
+          const tot = e[0] + e[1], d = e[1] - e[0], ty = yT + h1 / 2 + 0.5, isPoc = ps && k === ps.poc, w = tot / vpMax * bwM;
+          x.fillStyle = FPC.bar; x.fillRect(xd - w, yT, w, h1);
+          x.fillStyle = d >= 0 ? FPC.bd : FPC.sd; x.fillRect(xd, yT, 3, h1);
+          x.fillStyle = FPC.cell; x.fillRect(xd + 3, yT, cw - xd - 5, h1);
+          x.textAlign = 'right'; x.font = (d < 0 ? '700 ' : '') + f + 'px ' + MONO; x.fillStyle = d < 0 ? FPC.s : FPC.tx; x.fillText(fv(e[0]), cm - 4, ty);
+          x.textAlign = 'left'; x.font = (d >= 0 ? '700 ' : '') + f + 'px ' + MONO; x.fillStyle = d >= 0 ? FPC.b : FPC.tx; x.fillText(fv(e[1]), cm + 4, ty);
+          if (isPoc) { x.strokeStyle = '#5d7f96'; x.lineWidth = 1; x.strokeRect(xd - bwM + 0.5, yT + 0.5, cw - 2 - (xd - bwM), h1 - 1); }
         }
       } else for (const [k, e] of VP) {
         const yT = Y(k + g); if (yT > ch || yT + rh < 0) continue;
         const tot = e[0] + e[1], w = tot / vpMax * (PR - 14), ws = w * e[0] / tot;
         x.fillStyle = dn(0.38); x.fillRect(xR + 8, yT, ws, h1); x.fillStyle = up(0.38); x.fillRect(xR + 8 + ws, yT, w - ws, h1);
       }
-      if (ps) {
+      if (ps && !CLS) {
         hline(x, Y(ps.vah + g), cw, 'rgba(255,255,255,.22)', [2, 4], 'VAH');
         hline(x, Y(ps.val), cw, 'rgba(255,255,255,.22)', [2, 4], 'VAL');
         hline(x, Y(ps.poc) - rh / 2, cw, 'rgba(90,176,255,.55)', [6, 4], 'POC');
@@ -347,7 +346,7 @@
     }
     if (I.day && day) for (const [nm, p] of day) { const y = Y(p + 0.5); if (y > 0 && y < ch) hline(x, y, cw, 'rgba(232,236,243,.3)', [8, 5], nm + ' ' + fp(p), true); }
     /* zonas de desbalance apilado: se extienden hasta que el precio las atraviesa */
-    if (I.zones && cells) {
+    if (I.zones && cells && !CLS) {
       for (let i = Math.max(iLo, nb - 240); i <= iHi; i++) {
         const b = A[i]; if (!b.lv) continue; const zs = eng.stats(b).zones; if (!zs.length) continue;
         for (const [k1, k2, sd2] of zs) {
@@ -361,20 +360,17 @@
     }
     /* footprint limpio (Bid x Ask): celdas neutras, números, la vela como línea central y solo lo importante en color */
     const cleanBar = (bx, b, s) => {
-      const x0 = bx + 2, w = v.barW - 4, mid = x0 + w / 2, isUp = b.c >= b.o;
-      const bt = Math.max(b.o, b.c), bb = Math.min(b.o, b.c);
-      x.font = fz + 'px ' + MONO;
+      const x0 = bx + 2, w = v.barW - 4, mid = Math.round(x0 + w / 2), isUp = b.c >= b.o, f = Math.min(12, fz + 1);
       for (const [k, e] of b.lv) {
         const yT = Y(k + g); if (yT > ch || yT + rh < 0) continue;
         const im = I.imb ? s.imb.get(k) || 0 : 0, tot = e[0] + e[1], ty = yT + h1 / 2 + 0.5, isPoc = I.poc && k === s.poc;
-        x.fillStyle = isPoc ? 'rgba(90,150,200,.28)' : 'rgba(255,255,255,.045)'; x.fillRect(x0, yT, w, h1);
-        const inBody = k <= bt && k >= bb;
-        x.fillStyle = isUp ? C.up : C.dn; x.fillRect(Math.round(mid) - (inBody ? 1 : 0), yT, inBody ? 2 : 1, h1 + 1);
-        x.textAlign = 'right'; x.font = (im < 0 ? '600 ' : '') + fz + 'px ' + MONO;
-        x.fillStyle = im < 0 ? '#7f97ff' : e[0] ? 'rgba(232,236,243,.8)' : 'rgba(232,236,243,.28)'; x.fillText(fv(e[0]), mid - 5, ty);
-        x.textAlign = 'left'; x.font = (im > 0 ? '600 ' : '') + fz + 'px ' + MONO;
-        x.fillStyle = im > 0 ? '#3ee0f7' : e[1] ? 'rgba(232,236,243,.8)' : 'rgba(232,236,243,.28)'; x.fillText(fv(e[1]), mid + 5, ty);
-        if (im) { x.fillStyle = im > 0 ? C.up : C.dn; x.fillRect(im > 0 ? x0 + w - 2 : x0, yT, 2, h1); }
+        x.fillStyle = isPoc ? FPC.poc : FPC.cell; x.fillRect(x0, yT, w, h1);
+        x.fillStyle = isUp ? FPC.b : FPC.s; x.fillRect(mid - 1, yT, 2, h1 + 1);   // la vela: línea central
+        x.textAlign = 'right'; x.font = (im < 0 ? '700 ' : '') + f + 'px ' + MONO;
+        x.fillStyle = im < 0 ? FPC.s : e[0] ? FPC.tx : FPC.z; x.fillText(fv(e[0]), mid - 5, ty);
+        x.textAlign = 'left'; x.font = (im > 0 ? '700 ' : '') + f + 'px ' + MONO;
+        x.fillStyle = im > 0 ? FPC.b : e[1] ? FPC.tx : FPC.z; x.fillText(fv(e[1]), mid + 5, ty);
+        if (im) { x.fillStyle = im > 0 ? FPC.b : FPC.s; x.fillRect(im > 0 ? x0 + w - 3 : x0, yT, 3, h1); }   // lado remarcado
         if (srch && tot >= srch) { x.strokeStyle = '#fff'; x.lineWidth = 1.5; x.strokeRect(x0 + 1, yT + 1, w - 2, Math.max(1, h1 - 2)); }
       }
     };
