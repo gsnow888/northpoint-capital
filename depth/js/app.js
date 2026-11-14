@@ -360,20 +360,33 @@
       }
     }
     /* footprint limpio (Bid x Ask): celdas neutras, números, la vela como línea central y solo lo importante en color */
+    /* vela de footprint en caja: el cuerpo (apertura→cierre) es una caja de color con sus números dentro, las mechas
+       solo números; arriba una etiqueta con el delta y abajo otra con el volumen */
     const cleanBar = (bx, b, s) => {
-      const x0 = bx + 2, w = v.barW - 4, mid = Math.round(x0 + w / 2), isUp = b.c >= b.o, f = Math.min(12, fz + 1);
+      const x0 = bx + 4, w = v.barW - 8, mid = Math.round(x0 + w / 2), isUp = b.c >= b.o, f = Math.min(12, fz + 1);
+      const kT = Math.floor(Math.max(b.o, b.c) / g) * g, kB = Math.floor(Math.min(b.o, b.c) / g) * g;
+      const yBT = Y(kT + g), yBB = Y(kB);
+      x.fillStyle = isUp ? up(0.13) : dn(0.2); x.fillRect(x0, yBT, w, yBB - yBT);
       for (const [k, e] of b.lv) {
         const yT = Y(k + g); if (yT > ch || yT + rh < 0) continue;
-        const im = I.imb ? s.imb.get(k) || 0 : 0, tot = e[0] + e[1], ty = yT + h1 / 2 + 0.5, isPoc = I.poc && k === s.poc;
-        x.fillStyle = isPoc ? FPC.poc : FPC.cell; x.fillRect(x0, yT, w, h1);
-        x.fillStyle = isUp ? FPC.b : FPC.s; x.fillRect(mid - 1, yT, 2, h1 + 1);   // la vela: línea central
-        x.textAlign = 'right'; x.font = (im < 0 ? '700 ' : '') + f + 'px ' + MONO;
-        x.fillStyle = im < 0 ? FPC.s : e[0] ? FPC.tx : FPC.z; x.fillText(fv(e[0]), mid - 5, ty);
-        x.textAlign = 'left'; x.font = (im > 0 ? '700 ' : '') + f + 'px ' + MONO;
-        x.fillStyle = im > 0 ? FPC.b : e[1] ? FPC.tx : FPC.z; x.fillText(fv(e[1]), mid + 5, ty);
-        if (im) { x.fillStyle = im > 0 ? FPC.b : FPC.s; x.fillRect(im > 0 ? x0 + w - 3 : x0, yT, 3, h1); }   // lado remarcado
+        const im = I.imb ? s.imb.get(k) || 0 : 0, tot = e[0] + e[1], ty = yT + h1 / 2 + 0.5, inB = k <= kT && k >= kB;
+        if (I.poc && k === s.poc) { x.fillStyle = FPC.poc; x.fillRect(x0 + 1, yT, w - 2, h1); }
+        if (inB) { x.fillStyle = 'rgba(255,255,255,.14)'; x.fillRect(mid, yT + 2, 1, h1 - 4); }
+        x.textAlign = 'right'; x.font = (im < 0 ? 'italic 700 ' : '') + f + 'px ' + MONO;
+        x.fillStyle = im < 0 ? FPC.s : e[0] ? FPC.tx : FPC.z; x.fillText(fv(e[0]), mid - 4, ty);
+        x.textAlign = 'left'; x.font = (im > 0 ? 'italic 700 ' : '') + f + 'px ' + MONO;
+        x.fillStyle = im > 0 ? FPC.b : e[1] ? FPC.tx : FPC.z; x.fillText(fv(e[1]), mid + 4, ty);
+        if (im === 2 || im === -2) { x.fillStyle = im > 0 ? FPC.b : FPC.s; x.fillRect(im > 0 ? x0 + w - 3 : x0 + 1, yT + 1, 2, h1 - 2); }
         if (srch && tot >= srch) { x.strokeStyle = '#fff'; x.lineWidth = 1.5; x.strokeRect(x0 + 1, yT + 1, w - 2, Math.max(1, h1 - 2)); }
       }
+      x.strokeStyle = isUp ? C.up : C.dn; x.lineWidth = 1.25; x.strokeRect(x0 + 0.5, yBT + 0.5, w - 1, yBB - yBT - 1);
+      /* etiquetas */
+      const kH = Math.floor(b.h / g) * g, kL = Math.floor(b.l / g) * g, lw = Math.min(w, 64), lx = x0 + (w - lw) / 2, lh = 15, d = b.buy - b.sell;
+      x.font = '700 ' + Math.min(11, f) + 'px ' + MONO; x.textAlign = 'center';
+      const yTop = Y(kH + g) - lh - 4, yBot = Y(kL) + 4;
+      x.fillStyle = d >= 0 ? C.up : C.dn; x.fillRect(lx, yTop, lw, lh); x.fillStyle = d >= 0 ? '#03101a' : '#fff'; x.fillText(fs(d), lx + lw / 2, yTop + lh / 2 + 0.5);
+      x.fillStyle = 'rgba(148,180,255,.16)'; x.fillRect(lx, yBot, lw, lh); x.strokeStyle = 'rgba(148,180,255,.35)'; x.lineWidth = 1; x.strokeRect(lx + 0.5, yBot + 0.5, lw - 1, lh - 1);
+      x.fillStyle = FPC.tx; x.fillText(fv(b.vol), lx + lw / 2, yBot + lh / 2 + 0.5);
     };
     /* barras */
     const fz = Math.max(9, Math.min(11, rh - 4)), mode = cfg.mode, srch = +cfg.srch || 0;
