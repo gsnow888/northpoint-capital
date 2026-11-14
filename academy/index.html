@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NorthPoint Academy</title>
+<meta name="description" content="NorthPoint Academy: academia de trading e inteligencia artificial para la nueva generación.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0F18;--surface:#0F1622;--raised:#141D2C;--line:#1F2B3E;--fg:#E9EEF7;--muted:#8D99AF;--faint:#5E6A80;--acc:#4F7DFF;--acc-soft:rgba(79,125,255,.14);--pos:#34D399;--neg:#F87171;--wa:#25D366;--gold:#E0B03A;--teal:#2DD4BF;--vio:#A78BFA;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font:400 16px/1.6 Montserrat,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:clamp(16px,4vw,32px)}
+section{padding-block:clamp(56px,7vw,96px)}
+.bt{border-top:1px solid var(--line)}
+h1,h2,h3{text-wrap:balance}
+h1{font-weight:800;font-size:clamp(36px,5.6vw,60px);line-height:1.04;letter-spacing:-.025em}
+h1 strong,h2 em{font-style:normal;color:var(--acc);font-weight:800}
+h2{font-weight:800;font-size:clamp(26px,3.6vw,38px);line-height:1.12;letter-spacing:-.02em}
+h3{font-weight:700;font-size:17px;line-height:1.3}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin-bottom:14px}
+.lede{color:var(--muted);font-size:clamp(16px,1.6vw,18px);max-width:58ch}
+.lede b{color:var(--fg);font-weight:600}
+.head{display:grid;gap:14px;max-width:760px;margin-bottom:40px}
+.head.c{margin-inline:auto;text-align:center;justify-items:center}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 22px;border-radius:12px;font-weight:700;font-size:15px;line-height:1.2;transition:filter .15s,transform .15s}
+.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn-p{background:var(--acc);color:#fff;box-shadow:0 10px 24px -12px rgba(79,125,255,.9)}
+.btn-g{box-shadow:inset 0 0 0 1px var(--line)}
+.btn-wa{background:var(--wa);color:#06281a}
+.btn svg{width:18px;height:18px}
+.lnk{color:var(--acc);font-weight:700;font-size:14px;display:inline-flex;gap:6px;align-items:center}
+.lnk:hover{text-decoration:underline}
+/* header */
+header{position:sticky;top:0;z-index:50;background:#fff;color:#111;border-bottom:1px solid #e8e8e8}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo .mk{font-weight:800;font-size:26px;letter-spacing:-.04em;line-height:1;border:3px solid #111;padding:2px 7px;border-radius:6px}
+.logo .tx{font-weight:700;font-size:13px;line-height:1.05;letter-spacing:.02em}
+.logo .tx small{display:block;font-weight:500;font-size:9px;letter-spacing:.42em}
+.menu{display:flex;gap:28px;font-size:14px;font-weight:600}
+.menu a:hover{color:var(--acc)}
+.campus{background:#376BFF;color:#fff;padding:10px 20px;border-radius:999px;font-weight:700;font-size:13.5px;box-shadow:0 10px 24px -12px rgba(55,107,255,.8)}
+.burger{display:none;width:26px}
+/* hero */
+.hero-bg{background:radial-gradient(70% 60% at 30% 20%,rgba(79,125,255,.16),transparent 60%),var(--bg)}
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(28px,5vw,56px);align-items:center;padding-block:clamp(48px,6vw,80px)}
+.hero .lede{margin:18px 0 28px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{font-size:12px;font-weight:500;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted)}
+.chip:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--pos);margin-right:7px;vertical-align:1px}
+.hcard{background:linear-gradient(165deg,var(--raised),var(--surface));border:1px solid var(--line);border-radius:18px;padding:12px;display:grid;gap:12px}
+.pic{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:3/2;background:#060A14}
+.pic svg{width:100%;height:100%;display:block}
+.cap{position:absolute;left:14px;right:14px;bottom:12px;display:flex;justify-content:space-between;align-items:end}
+.tag{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:rgba(10,15,24,.78);color:var(--acc);border:1px solid rgba(79,125,255,.4)}
+.cap i{font-style:normal;font-family:var(--mono);font-size:11px;background:rgba(10,15,24,.78);padding:5px 10px;border-radius:8px;border:1px solid var(--line)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.facts div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px}
+.facts b{display:block;font-family:var(--mono);font-size:19px;font-weight:600;line-height:1.1;color:#fff}
+.facts span{display:block;font-size:11px;color:var(--muted);line-height:1.3;margin-top:3px}
+/* trust */
+.trust{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.trust div{padding:24px 20px;display:grid;gap:4px}
+.trust div+div{border-left:1px solid var(--line)}
+.trust b{font-family:var(--mono);font-size:24px;font-weight:600;letter-spacing:-.02em}
+.trust span{font-size:13px;color:var(--muted)}
+/* dif */
+.dif{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,56px);align-items:center}
+.vid{border-radius:16px;background:#fff;padding:6px}
+.vid .in{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#060A14}
+.vid svg{width:100%;height:100%;display:block}
+.play{position:absolute;inset:0;margin:auto;width:78px;height:52px;border-radius:12px;background:#111;display:grid;place-items:center}
+.play:after{content:"";border-left:18px solid #fff;border-block:11px solid transparent;margin-left:4px}
+.vcap{font-size:13px;color:var(--muted);margin:14px 0}
+.real{display:inline-flex;gap:8px;align-items:center;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--pos);border:1px solid rgba(52,211,153,.4);background:rgba(52,211,153,.08);padding:8px 14px;border-radius:999px}
+.real svg{width:14px}
+.quote{margin-top:16px;border-left:3px solid var(--acc);background:var(--surface);border-radius:0 12px 12px 0;padding:16px 18px;font-size:15px}
+.prose{color:var(--muted);display:grid;gap:14px;margin:16px 0 26px}
+/* niveles */
+.lvls{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.lv{--c:var(--acc);position:relative;border-radius:16px;padding:24px;border:1px solid color-mix(in srgb,var(--c) 45%,var(--line));background:linear-gradient(160deg,color-mix(in srgb,var(--c) 14%,var(--surface)),var(--surface) 70%);transition:transform .25s}
+.lv:hover{transform:translateY(-3px)}
+.lv:before{content:"";position:absolute;inset:0 0 auto;height:3px;border-radius:16px 16px 0 0;background:linear-gradient(90deg,var(--c),transparent)}
+.lv .k{font-size:10.5px;font-weight:700;letter-spacing:.16em;color:var(--c)}
+.lv .n{position:absolute;top:18px;right:22px;font-family:var(--mono);font-size:38px;font-weight:600;color:var(--c);line-height:1}
+.lv h3{font-size:19px;margin:6px 0 8px;padding-right:60px}
+.lv p{color:var(--muted);font-size:14.5px;margin-bottom:14px}
+.lv .lnk{color:var(--c)}
+/* pilares */
+.pils{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pil{display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px}
+.pil svg{width:120px;height:110px}
+.pil h3{font-size:19px}
+.pil .sub{font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin:6px 0 8px}
+.pil p{color:var(--muted);font-size:14px}
+/* mercados */
+.mks{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mkt{--c:var(--acc);position:relative;overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;transition:transform .25s,border-color .25s}
+.mkt:after{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--c),transparent)}
+.mkt:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--c) 50%,var(--line))}
+.ico{width:46px;height:46px;border-radius:11px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 16%,transparent);border:1px solid color-mix(in srgb,var(--c) 38%,transparent);color:var(--c);margin-bottom:14px}
+.ico svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.mkt p{color:var(--muted);font-size:14.5px;margin-top:8px}
+.warn{margin-top:20px;display:flex;gap:14px;align-items:center;background:var(--acc-soft);border:1px solid rgba(79,125,255,.4);border-radius:14px;padding:16px 18px;font-size:15px}
+.warn svg{width:22px;flex:none;color:var(--acc)}
+/* fundador */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,56px);align-items:center}
+.photo{border-radius:18px;border:1px solid var(--line);background:linear-gradient(165deg,var(--raised),var(--surface));padding:12px}
+.photo .in{aspect-ratio:4/5;border-radius:12px;background:radial-gradient(60% 50% at 50% 35%,#1b2a48,transparent 70%),#0b1120;position:relative;overflow:hidden}
+.photo svg{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:72%;color:#24324d}
+.photo .cap{bottom:14px}
+.about .prose b{color:var(--fg);font-weight:600}
+.eff{margin-top:6px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.eff h3{display:flex;gap:10px;align-items:center;margin-bottom:6px}
+.eff h3 svg{width:20px;color:var(--pos)}
+.eff p{color:var(--muted);font-size:14.5px}
+/* testimonios */
+.tests{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.t{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:16px}
+.stars{color:var(--gold);letter-spacing:2px;font-size:14px}
+.t p{color:var(--muted);font-size:14.5px;flex:1}
+.who{display:flex;gap:12px;align-items:center;font-size:14px;font-weight:600}
+.av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;background:var(--acc-soft);color:var(--acc)}
+.who span{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+/* pasos */
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;counter-reset:s}
+.step{display:grid;grid-template-columns:40px 1fr;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:var(--acc-soft);color:var(--acc);font:600 16px var(--mono)}
+.step p{color:var(--muted);font-size:14.5px;margin-top:4px}
+/* faq */
+.faq{max-width:820px;margin:0 auto;display:grid;gap:10px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font-weight:700}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--acc);font-size:22px;line-height:1;transition:.25s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{color:var(--muted);font-size:15px;margin-top:10px}
+/* cta */
+.cta{text-align:center;border-radius:22px;border:1px solid var(--line);padding:clamp(36px,6vw,64px) 24px;background:radial-gradient(90% 120% at 0% 0%,rgba(79,125,255,.2),transparent 60%),radial-gradient(70% 90% at 100% 100%,rgba(79,125,255,.12),transparent 60%),var(--surface)}
+.cta h2{font-size:clamp(30px,4.4vw,48px)}
+.cta .lede{margin:16px auto 28px}
+.cta .btns{justify-content:center}
+footer{border-top:1px solid var(--line);padding:40px 0;font-size:13px;color:var(--muted)}
+.fl{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:22px}
+.fl nav{display:flex;gap:20px}
+.fl a:hover{color:var(--fg)}
+.risk{font-size:12px;line-height:1.7;color:var(--faint);border-top:1px solid var(--line);padding-top:20px}
+.wa-fab{position:fixed;right:18px;bottom:18px;z-index:60;width:56px;height:56px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(37,211,102,.6)}
+.wa-fab svg{width:28px;color:#fff}
+.rv{opacity:0;transform:translateY(18px);transition:.7s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+@media(max-width:900px){.menu,.campus{display:none}.burger{display:block}.hero,.dif,.about{grid-template-columns:1fr}.lvls,.pils,.mks,.tests,.steps{grid-template-columns:1fr}.trust{grid-template-columns:1fr 1fr}.trust div:nth-child(3){border-left:0}.trust div:nth-child(n+3){border-top:1px solid var(--line)}}
+@media(max-width:520px){.pil{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<style>
+:root{--grad:linear-gradient(90deg,#4F7DFF,#A78BFA 50%,#2DD4BF)}
+h1 strong,h2 em{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-bg{position:relative;overflow:hidden;background:radial-gradient(60% 60% at 20% 10%,rgba(79,125,255,.22),transparent 60%),radial-gradient(50% 50% at 90% 30%,rgba(167,139,250,.18),transparent 60%),var(--bg)}
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(ellipse at 50% 0%,#000 20%,transparent 70%);opacity:.5}
+.hero{position:relative}
+.ai{background:#060A14;border-radius:12px;padding:16px;font-size:13.5px;display:grid;gap:12px;min-height:290px}
+.msg{max-width:88%;padding:10px 14px;border-radius:12px;line-height:1.45}
+.msg.u{justify-self:end;background:var(--acc);color:#fff;border-bottom-right-radius:4px}
+.msg.b{background:var(--raised);border:1px solid var(--line);color:var(--fg);border-bottom-left-radius:4px}
+.msg.b b{color:#A78BFA}
+.typing:after{content:"▍";animation:bl 1s steps(1) infinite;color:#A78BFA}
+@keyframes bl{50%{opacity:0}}
+.aihead{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);padding:2px 4px}
+.aihead span:first-child{display:flex;gap:8px;align-items:center;color:var(--fg);font-weight:600}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--pos);box-shadow:0 0 10px var(--pos)}
+.marq{overflow:hidden;border-block:1px solid var(--line);background:var(--surface);padding:16px 0;white-space:nowrap}
+.marq div{display:inline-block;animation:mq 30s linear infinite}
+.marq span{margin:0 26px;font-weight:700;font-size:15px;color:var(--muted)}
+.marq span i{font-style:normal;color:#A78BFA;margin-right:26px}
+@keyframes mq{to{transform:translateX(-50%)}}
+.esc{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ec{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;position:relative;overflow:hidden}
+.ec:after{content:"";position:absolute;inset:0 0 auto;height:3px;background:var(--grad)}
+.ec .big{font-family:var(--mono);font-size:13px;color:#A78BFA;letter-spacing:.08em}
+.ec h3{font-size:19px;margin:8px 0}
+.ec p{color:var(--muted);font-size:14.5px}
+.ec ul{list-style:none;margin-top:14px;display:grid;gap:8px;font-size:14px;color:var(--muted)}
+.ec li:before{content:"";display:inline-block;width:12px;height:7px;border-left:2px solid var(--pos);border-bottom:2px solid var(--pos);transform:rotate(-45deg);margin-right:10px;vertical-align:3px}
+.gen{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.g{border-radius:16px;padding:22px;border:1px solid var(--line);background:var(--surface)}
+.g b{display:block;font-size:34px;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.1}
+.g span{color:var(--muted);font-size:13.5px}
+.cta{background:radial-gradient(80% 120% at 0% 0%,rgba(79,125,255,.25),transparent 60%),radial-gradient(70% 100% at 100% 100%,rgba(167,139,250,.22),transparent 60%),var(--surface)}
+@media(max-width:900px){.gen{grid-template-columns:1fr 1fr}.esc{grid-template-columns:1fr}}
+@media(max-width:560px){.esc,.gen{grid-template-columns:1fr}}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}.duo .photo{padding:8px}.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}.photo .in:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,15,24,.85))}.photo .cap{z-index:2}.duo .cap{flex-direction:column;align-items:flex-start;gap:6px}
+</style>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="ar" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></symbol>
+<symbol id="ok" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+
+<header><div class="wrap">
+  <a class="logo" href="#"><span class="mk">NP</span><span class="tx">NORTHPOINT<small>ACADEMY</small></span></a>
+  <nav class="menu"><a href="#programas">Programas</a><a href="#escuelas">Escuelas</a><a href="#modalidades">Modalidades</a><a href="#ofrecemos">Método</a><a href="#nosotros">Nosotros</a><a href="#faq">FAQ</a></nav>
+  <a class="campus" href="#aplicar">Ir al CAMPUS</a>
+  <svg class="burger" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="#111" stroke-width="2.4" stroke-linecap="round"/></svg>
+</div></header>
+
+<div class="hero-bg"><div class="grid-bg"></div><div class="wrap hero">
+  <div>
+    <div class="eyebrow">Trading · Inteligencia Artificial · Finanzas</div>
+    <h1>La academia de trading <strong>e inteligencia artificial</strong> de tu generación</h1>
+    <p class="lede">En la escuela te enseñan a sacar diez. Aquí aprendes lo que nadie te enseña: <b>cómo funciona el dinero, cómo se mueven los mercados y cómo usar la IA para entenderlos.</b></p>
+    <div class="btns">
+      <a class="btn btn-p" href="#programas">Ver programas</a>
+      <a class="btn btn-g" href="#escuelas">Llévalo a tu escuela</a>
+      <a class="btn btn-wa" href="#aplicar"><svg><use href="#wa"/></svg>WhatsApp</a>
+    </div>
+    <div class="chips"><span class="chip">Primaria · Secundaria · Prepa</span><span class="chip">100% práctico</span><span class="chip">Simulador, cero dinero real</span><span class="chip">En línea y presencial</span></div>
+  </div>
+  <div class="hcard rv">
+    <div class="ai">
+      <div class="aihead"><span><i class="dot"></i>NP Coach · IA</span><span>en vivo</span></div>
+      <div class="msg u">¿Por qué subió Nvidia hoy?</div>
+      <div class="msg b">Reportó ventas mayores a lo esperado. Te enseño a leer ese reporte en <b>3 pasos</b> y a medir el riesgo antes de opinar.</div>
+      <div class="msg u">¿Y cómo uso la IA para analizar el mercado?</div>
+      <div class="msg b typing" id="ty"></div>
+    </div>
+    <div class="facts">
+      <div><b>4</b><span>programas</span></div>
+      <div><b>IA</b><span>coach en cada clase</span></div>
+      <div><b>$0</b><span>dinero real en riesgo</span></div>
+      <div><b>3</b><span>modalidades</span></div>
+    </div>
+  </div>
+</div></div>
+
+<div class="marq"><div id="mq"></div></div>
+
+<section><div class="wrap">
+  <div class="trust rv">
+    <div><b>IA</b><span>Aprendes con herramientas que se usan hoy</span></div>
+    <div><b>Sim</b><span>Practicas en simulador, sin arriesgar dinero</span></div>
+    <div><b>Escuelas</b><span>Programa para prepas y universidades</span></div>
+    <div><b>MX</b><span>Hecha en México, en español</span></div>
+  </div>
+</div></section>
+
+<section class="bt"><div class="wrap dif">
+  <div class="rv">
+    <div class="vid"><div class="in">
+      <svg viewBox="0 0 640 360" preserveAspectRatio="none"><defs><linearGradient id="vg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A78BFA" stop-opacity=".35"/><stop offset="1" stop-color="#4F7DFF" stop-opacity="0"/></linearGradient></defs><rect width="640" height="360" fill="#0b1120"/><g stroke="#1F2B3E"><path d="M0 90h640M0 180h640M0 270h640M160 0v360M320 0v360M480 0v360"/></g><path d="M0 280 L60 250 L110 262 L170 200 L230 214 L290 160 L350 176 L410 120 L470 138 L530 92 L590 104 L640 70 V360 H0Z" fill="url(#vg)"/><path d="M0 280 L60 250 L110 262 L170 200 L230 214 L290 160 L350 176 L410 120 L470 138 L530 92 L590 104 L640 70" fill="none" stroke="#A78BFA" stroke-width="3"/></svg>
+      <div class="play"></div>
+    </div></div>
+    <p class="vcap"><b style="color:#fff">¿Qué nos diferencia?</b> · Enseñan quienes lo hacen.</p>
+    <div class="real"><svg><use href="#ok"/></svg>Traders reales + IA real</div>
+    <p class="quote">Muchos venden cursos de "hazte rico". Nosotros enseñamos a pensar como profesional: datos, riesgo y disciplina.</p>
+  </div>
+  <div class="rv">
+    <div class="eyebrow">La educación que faltaba</div>
+    <h2>El dinero y la IA cambiaron. <em>La escuela todavía no.</em></h2>
+    <div class="prose">
+      <p>Tu generación va a trabajar con inteligencia artificial y a manejar su propio dinero desde muy joven. Casi nadie te prepara para ninguna de las dos.</p>
+      <p>NorthPoint Academy une <b style="color:var(--fg)">mercados financieros, trading e inteligencia artificial</b> en un programa práctico, visual y hecho para cómo aprendes hoy.</p>
+    </div>
+    <div class="btns"><a class="btn btn-p" href="#programas">Ver programas</a><a class="btn btn-g" href="#escuelas">Para escuelas</a></div>
+  </div>
+</div></section>
+
+<section class="bt" id="programas"><div class="wrap">
+  <div class="head c rv"><div class="eyebrow">Programas</div><h2>Un camino de <em>4 niveles</em></h2><p class="lede">De no saber qué es una acción a construir tu propio asistente de análisis con IA. Cada nivel se puede tomar por separado.</p></div>
+  <div class="lvls">
+    <div class="lv rv" style="--c:var(--teal)"><div class="k">NIVEL 1</div><div class="n">01</div><h3>Dinero y Mercados</h3><p>Cómo funciona el dinero, el interés compuesto, las acciones, el dólar y las criptomonedas. La base que nadie te explicó.</p><a class="lnk" href="#aplicar">Ver el programa <svg width="14" height="14"><use href="#ar"/></svg></a></div>
+    <div class="lv rv" style="--c:var(--acc)"><div class="k">NIVEL 2</div><div class="n">02</div><h3>Trading</h3><p>Gráficos, análisis técnico, gestión de riesgo y psicología. Operas en simulador como un trader profesional, sin arriesgar dinero.</p><a class="lnk" href="#aplicar">Ver el programa <svg width="14" height="14"><use href="#ar"/></svg></a></div>
+    <div class="lv rv" style="--c:var(--vio)"><div class="k">NIVEL 3</div><div class="n">03</div><h3>Inteligencia Artificial aplicada</h3><p>Usa la IA para investigar empresas, resumir noticias, analizar datos y probar ideas. Prompts, automatización y pensamiento crítico.</p><a class="lnk" href="#aplicar">Ver el programa <svg width="14" height="14"><use href="#ar"/></svg></a></div>
+    <div class="lv rv" style="--c:var(--gold)"><div class="k">NIVEL 4</div><div class="n">04</div><h3>Proyecto Final: tu fondo con IA</h3><p>Construyes y presentas tu propio portafolio simulado con un asistente de IA. Lo defiendes frente a un jurado y obtienes tu certificado.</p><a class="lnk" href="#aplicar">Ver el programa <svg width="14" height="14"><use href="#ar"/></svg></a></div>
+  </div>
+</div></section>
+
+<section class="bt" id="escuelas"><div class="wrap">
+  <div class="head c rv"><div class="eyebrow">Para escuelas</div><h2>Programas para <em>cada etapa escolar</em></h2><p class="lede">Educación financiera, trading e inteligencia artificial adaptados a cada edad, listos para integrarse al plan de estudios de tu escuela.</p></div>
+  <div class="esc">
+    <div class="ec rv"><div class="big">PRIMARIA · 8 a 12 años</div><h3>Pequeños Inversionistas</h3><p>El valor del dinero, el ahorro y la tecnología, con juegos, retos y una tiendita simulada.</p><ul><li>Ahorro e interés compuesto</li><li>Qué es una empresa y una acción</li><li>Primeros pasos con IA, de forma segura</li></ul></div>
+    <div class="ec rv"><div class="big">SECUNDARIA · 12 a 15 años</div><h3>Mercados y Tecnología</h3><p>Cómo funcionan los mercados y cómo usar la IA para investigar, con un simulador para cada alumno.</p><ul><li>Bolsa, divisas y cripto</li><li>Simulador y retos semanales</li><li>IA para investigar y crear</li></ul></div>
+    <div class="ec rv"><div class="big">PREPARATORIA · 15 a 18 años</div><h3>Trading e IA</h3><p>Análisis, trading en simulador y proyecto final con un asistente de IA, defendido frente a jurado.</p><ul><li>Análisis técnico y riesgo</li><li>IA aplicada a datos y mercados</li><li>Certificado NorthPoint</li></ul></div>
+  </div>
+  <div class="center" style="display:flex;justify-content:center;margin-top:28px"><a class="btn btn-p" href="#aplicar">Agendar una presentación para mi escuela</a></div>
+</div></section>
+
+<section class="bt" id="modalidades"><div class="wrap">
+  <div class="head c rv"><div class="eyebrow">Modalidades</div><h2>Aprende <em>donde quieras</em></h2><p class="lede">Elige cómo tomar NorthPoint Academy: desde tu casa, en nuestras aulas o dentro de tu escuela.</p></div>
+  <div class="mks">
+    <div class="mkt rv" style="--c:var(--acc)"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><h3>Cursos en línea</h3><p>Clases cortas desde tu celular o computadora, sesiones en vivo, coach de IA y comunidad. A tu ritmo, desde cualquier lugar de México.</p></div>
+    <div class="mkt rv" style="--c:var(--vio)"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div><h3>Escuela presencial</h3><p>Grupos reducidos en nuestras aulas, con pantallas, simuladores y un instructor guiándote en cada clase.</p></div>
+    <div class="mkt rv" style="--c:var(--teal)"><div class="ico"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 2 12 2 12 0v-5"/></svg></div><h3>En tu escuela</h3><p>Llevamos el programa a primarias, secundarias y preparatorias como taller, materia o bootcamp, con material para el profesor.</p></div>
+  </div>
+</div></section>
+
+<section class="bt" id="ofrecemos"><div class="wrap">
+  <div class="head c rv"><div class="eyebrow">¿Qué te ofrecemos?</div><h2>Educación real, <em>sin promesas vacías</em></h2></div>
+  <div class="pils">
+    <div class="pil rv"><svg viewBox="0 0 120 110"><ellipse cx="60" cy="98" rx="46" ry="8" fill="#141D2C"/><path d="M20 44L60 22l40 22z" fill="#E9EEF7"/><rect x="24" y="44" width="72" height="6" fill="#c9d3e6"/><g fill="#E9EEF7"><rect x="30" y="52" width="8" height="34"/><rect x="48" y="52" width="8" height="34"/><rect x="66" y="52" width="8" height="34"/><rect x="82" y="52" width="8" height="34"/></g><rect x="22" y="86" width="76" height="8" fill="#c9d3e6"/><circle cx="60" cy="36" r="4" fill="#4F7DFF"/></svg><div><h3>Profesionalismo</h3><div class="sub">Lo que se usa en el mundo real</div><p>Las mismas plataformas, datos y herramientas de IA que usan analistas y traders hoy. Nada de teoría vieja.</p></div></div>
+    <div class="pil rv"><svg viewBox="0 0 120 110"><ellipse cx="60" cy="98" rx="46" ry="8" fill="#141D2C"/><rect x="18" y="26" width="84" height="62" rx="8" fill="#E9EEF7"/><rect x="26" y="34" width="68" height="46" rx="4" fill="#0b1120"/><g fill="#34D399"><rect x="34" y="58" width="6" height="16"/><rect x="58" y="48" width="6" height="22"/><rect x="82" y="40" width="6" height="18"/></g><g fill="#F87171"><rect x="46" y="54" width="6" height="14"/><rect x="70" y="52" width="6" height="12"/></g><circle cx="98" cy="28" r="12" fill="#A78BFA"/><path d="M93 28l4 4 7-8" stroke="#fff" stroke-width="2.4" fill="none"/></svg><div><h3>Aprender haciendo</h3><div class="sub">Simulador desde el día uno</div><p>Operas, te equivocas y aprendes con dinero simulado. Tu progreso se mide con datos, no con exámenes de memoria.</p></div></div>
+    <div class="pil rv"><svg viewBox="0 0 120 110"><ellipse cx="60" cy="98" rx="46" ry="8" fill="#141D2C"/><rect x="30" y="26" width="60" height="56" rx="14" fill="#E9EEF7"/><circle cx="48" cy="52" r="6" fill="#4F7DFF"/><circle cx="72" cy="52" r="6" fill="#4F7DFF"/><path d="M50 68h20" stroke="#4F7DFF" stroke-width="3" stroke-linecap="round"/><path d="M60 26V14" stroke="#c9d3e6" stroke-width="3"/><circle cx="60" cy="12" r="4" fill="#A78BFA"/></svg><div><h3>IA como copiloto</h3><div class="sub">No te reemplaza, te potencia</div><p>Aprendes a usar la IA para investigar y decidir mejor, y a detectar cuándo se equivoca. Pensamiento crítico ante todo.</p></div></div>
+    <div class="pil rv"><svg viewBox="0 0 120 110"><ellipse cx="60" cy="98" rx="46" ry="8" fill="#141D2C"/><path d="M60 16l34 14v24c0 20-14 34-34 40-20-6-34-20-34-40V30z" fill="#E9EEF7"/><path d="M60 26l24 10v18c0 14-10 24-24 29-14-5-24-15-24-29V36z" fill="#4F7DFF"/><path d="M48 56l8 8 16-17" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/></svg><div><h3>Seriedad</h3><div class="sub">Cero estafas, cero "hazte rico"</div><p>Hablamos del riesgo antes que de la ganancia. Enseñamos a reconocer fraudes, esquemas piramidales y gurús falsos.</p></div></div>
+  </div>
+</div></section>
+
+<section class="bt"><div class="wrap">
+  <div class="head c rv"><div class="eyebrow">Qué vas a aprender</div><h2>Habilidades <em>para los próximos 50 años</em></h2></div>
+  <div class="mks">
+    <div class="mkt rv" style="--c:var(--acc)"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></div><h3>Mercados financieros</h3><p>Acciones, índices, divisas, materias primas y cripto: qué son y por qué se mueven.</p></div>
+    <div class="mkt rv" style="--c:var(--vio)"><div class="ico"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4"/></svg></div><h3>Inteligencia artificial</h3><p>Prompts, análisis de datos, agentes y automatización aplicados a casos reales.</p></div>
+    <div class="mkt rv" style="--c:var(--teal)"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>Análisis y datos</h3><p>Gráficos, estadística básica y cómo tomar decisiones con evidencia.</p></div>
+    <div class="mkt rv" style="--c:var(--gold)"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 9.5c0-1.4 1.3-2.5 3-2.5s3 1 3 2.3c0 3-6 1.6-6 4.6 0 1.4 1.3 2.6 3 2.6s3-1.1 3-2.5"/></svg></div><h3>Finanzas personales</h3><p>Ahorro, interés compuesto, tarjetas y cómo hacer crecer tu primer dinero.</p></div>
+    <div class="mkt rv" style="--c:var(--pos)"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div><h3>Psicología y disciplina</h3><p>Manejo de emociones, constancia y decisiones bajo presión.</p></div>
+    <div class="mkt rv" style="--c:var(--neg)"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M12 8v5M12 16h.01"/></svg></div><h3>Riesgo y fraudes</h3><p>Cómo proteger tu dinero y detectar estafas antes de que te alcancen.</p></div>
+  </div>
+</div></section>
+
+<section class="bt"><div class="wrap">
+  <div class="head c rv"><div class="eyebrow">Hecho para tu generación</div><h2>Aprender ya no tiene que <em>ser aburrido</em></h2></div>
+  <div class="gen">
+    <div class="g rv"><b>Clips</b><span>Lecciones cortas que ves desde el celular, como un feed.</span></div>
+    <div class="g rv"><b>Ligas</b><span>Torneos de trading simulado entre alumnos y escuelas.</span></div>
+    <div class="g rv"><b>Coach IA</b><span>Un asistente que responde tus dudas a cualquier hora.</span></div>
+    <div class="g rv"><b>Comunidad</b><span>Discord privado con alumnos de todo México.</span></div>
+  </div>
+</div></section>
+
+<section class="bt" id="nosotros"><div class="wrap about">
+  <div class="duo rv">
+    <div class="photo"><div class="in"><img src="img/andre.jpg" alt="André Macouzet"><div class="cap"><span class="tag">Fundador</span><i>André Macouzet</i></div></div></div>
+    <div class="photo"><div class="in"><img src="img/goyo.jpg" alt="Gregorio"><div class="cap"><span class="tag">Cofundador</span><i>Gregorio</i></div></div></div>
+  </div>
+  <div class="rv">
+    <div class="eyebrow">Quién está detrás</div>
+    <h2>André y Gregorio, <em>fundadores de NorthPoint</em></h2>
+    <div class="prose">
+      <p>Somos traders y construimos herramientas con inteligencia artificial. Aprendimos a prueba y error lo que debió enseñarnos la escuela.</p>
+      <p>NorthPoint Academy existe para que tu generación aprenda <b>lo que realmente funciona</b>, con método y sin promesas falsas.</p>
+    </div>
+    <div class="eff"><h3><svg viewBox="0 0 24 24"><use href="#ok"/></svg>Enseñamos lo que usamos</h3><p>Cada herramienta y cada idea del programa la usamos primero nosotros. Si no funciona en la práctica, no llega al aula.</p></div>
+    <div class="btns" style="margin-top:22px"><a class="btn btn-p" href="#aplicar">Nuestra historia</a><a class="btn btn-g" href="#aplicar">Conoce al equipo</a></div>
+  </div>
+</div></section>
+
+<section class="bt"><div class="wrap">
+  <div class="head c rv"><div class="eyebrow">Cómo empiezas</div><h2>De cero <em>a tu certificado</em></h2></div>
+  <div class="steps">
+    <div class="step rv"><div><h3>Te inscribes</h3><p>Tú solo o con tu escuela. Una llamada corta para ubicarte.</p></div></div>
+    <div class="step rv"><div><h3>Entras al campus</h3><p>Clases cortas, coach de IA y tu cuenta de simulador.</p></div></div>
+    <div class="step rv"><div><h3>Practicas y compites</h3><p>Retos semanales y ligas contra otros alumnos.</p></div></div>
+    <div class="step rv"><div><h3>Presentas tu proyecto</h3><p>Defiendes tu portafolio con IA y obtienes tu certificado.</p></div></div>
+  </div>
+</div></section>
+
+<section class="bt" id="testimonios"><div class="wrap">
+  <div class="head c rv"><div class="eyebrow">Testimonios</div><h2>Qué dicen <em>nuestros alumnos</em></h2><p class="lede">Ejemplos de muestra: se reemplazan por reseñas reales de la primera generación.</p></div>
+  <div class="tests">
+    <div class="t rv"><div class="stars">★★★★★</div><p>Pensé que las finanzas eran aburridas. Ahora le explico a mis papás por qué se mueve el dólar.</p><div class="who"><div class="av">SV</div><div>Alumna, 17 años<span>Preparatoria · ejemplo</span></div></div></div>
+    <div class="t rv"><div class="stars">★★★★★</div><p>Lo de usar la IA para investigar empresas me cambió la forma de estudiar todo, no solo finanzas.</p><div class="who"><div class="av">DM</div><div>Alumno, 20 años<span>Universidad · ejemplo</span></div></div></div>
+    <div class="t rv"><div class="stars">★★★★★</div><p>El torneo entre grupos fue lo mejor del semestre. Los alumnos pedían más clases.</p><div class="who"><div class="av">LR</div><div>Profesora<span>Escuela aliada · ejemplo</span></div></div></div>
+  </div>
+</div></section>
+
+<section class="bt" id="faq"><div class="wrap">
+  <div class="head c rv"><div class="eyebrow">Preguntas frecuentes</div><h2>Resolvemos <em>tus dudas</em></h2></div>
+  <div class="faq">
+    <details><summary>¿Desde qué edad se puede entrar?</summary><p>Desde primaria (8 años). Hay un programa para primaria, uno para secundaria y uno para preparatoria. Todo se practica en simulador, sin dinero real.</p></details><details><summary>¿Es en línea o presencial?</summary><p>Las dos. Puedes tomar los cursos en línea, venir a la escuela presencial o llevar el programa a tu escuela.</p></details>
+    <details><summary>¿Necesito saber de finanzas o programación?</summary><p>No. El Nivel 1 empieza desde cero y la IA se enseña sin necesidad de programar.</p></details>
+    <details><summary>¿Cómo funciona para escuelas?</summary><p>Adaptamos el programa como taller, materia o bootcamp. Agenda una presentación y armamos la propuesta para tu institución.</p></details>
+    <details><summary>¿Prometen que voy a ganar dinero?</summary><p>No, y desconfía de quien lo haga. Enseñamos habilidades, método y gestión de riesgo.</p></details>
+    <details><summary>¿Recibo certificado?</summary><p>Sí, al terminar y presentar tu proyecto final recibes el certificado de NorthPoint Academy.</p></details>
+  </div>
+</div></section>
+
+<section id="aplicar" style="padding-top:0"><div class="wrap">
+  <div class="cta rv">
+    <div class="eyebrow">Tu turno</div>
+    <h2>El futuro no espera. <em>Tú tampoco.</em></h2>
+    <p class="lede">Inscríbete o lleva NorthPoint Academy a tu escuela. Te respondemos en menos de 24 horas.</p>
+    <div class="btns"><a class="btn btn-p" href="https://northpointcapital.io/">Inscribirme</a><a class="btn btn-g" href="#escuelas">Soy una escuela</a><a class="btn btn-wa" href="#"><svg><use href="#wa"/></svg>WhatsApp</a></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fl"><span>© 2026 NorthPoint Academy · Trading e Inteligencia Artificial · México</span><nav><a href="#">Términos y condiciones</a><a href="#">Aviso legal</a><a href="#">Privacidad</a></nav></div>
+  <p class="risk">NorthPoint Academy es una institución educativa. No es broker, no ofrece asesoría de inversión personalizada y no administra dinero de terceros. Las prácticas se realizan en simulador. Invertir en mercados financieros implica riesgo y los resultados pasados no garantizan resultados futuros.</p>
+</div></footer>
+
+<a class="wa-fab" href="#" aria-label="WhatsApp"><svg><use href="#wa"/></svg></a>
+
+<script>
+const W=["Trading","Inteligencia Artificial","Finanzas personales","Análisis de datos","Mercados","Pensamiento crítico","Cripto","Emprendimiento"];
+const m=W.map(w=>`<span><i>/</i>${w}</span>`).join("");document.getElementById("mq").innerHTML=m+m;
+(function(){const t="Le pides que resuma noticias, compare empresas y te diga qué riesgos ve. Luego tú verificas con datos. Eso lo vemos en el Nivel 3.",el=document.getElementById("ty");let i=0;(function s(){if(i<=t.length){el.textContent=t.slice(0,i++);setTimeout(s,28)}else setTimeout(()=>{i=0;s()},4000)})()})();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+</script>
+</body>
+</html>
