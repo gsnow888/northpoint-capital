@@ -270,7 +270,7 @@
   /* ---------- GRÁFICO DE CLUSTERS ---------- */
   function drawFP() {
     const c = $('fp'), x = fit(c), W = c.clientWidth, H = c.clientHeight; x.clearRect(0, 0, W, H);
-    const I = cfg.ind, AX = 68, TB = 18, PR = I.prof ? 118 : 30, g = eng.o.group, A = build(), nb = A.length, isT = eng.o.type === 'time';
+    const I = cfg.ind, AX = 68, TB = 18, PR = I.prof ? (cfg.mode === 'ba' && v.barW >= 64 ? 250 : 118) : 30, g = eng.o.group, A = build(), nb = A.length, isT = eng.o.type === 'time';
     x.textBaseline = 'middle'; x.font = '11px ' + MONO;
     if (!nb) { x.fillStyle = C.mut; x.textAlign = 'center'; x.fillText('Cargando mercado…', W / 2, H / 2); G.nb = 0; return; }
     const wide = v.barW >= 64, cells = v.barW >= 18, statsOn = I.stats && v.barW >= 46;
@@ -303,14 +303,29 @@
     x.fillStyle = C.line;
     for (let k = Math.ceil(kBot / stepK) * stepK; k <= kTop; k += stepK) x.fillRect(0, Math.round(Y(k)), cw, 1);
     /* perfil de volumen de los ticks cargados */
-    const h1 = Math.max(1, rh - 1);
+    const h1 = Math.max(1, rh - 1), fz0 = Math.max(9, Math.min(11, rh - 4));
     if (I.prof) {
-      for (const [k, e] of eng.prof) {
+      const ps = eng.profStats(), pClean = num && cfg.mode === 'ba' && PR > 200;
+      if (pClean) {   // como el footprint: barra gris hacia la izquierda, línea de color por fila y bid x ask en números
+        const xd = cw - 112, bwM = xd - xR - 12, cm = xd + 2 + 54, P = eng.prof, r = eng.o.ratio, mn = eng.o.minImb || 0;
+        x.font = fz0 + 'px ' + MONO;
+        for (const [k, e] of P) {
+          const yT = Y(k + g); if (yT > ch || yT + rh < 0) continue;
+          const tot = e[0] + e[1], d = e[1] - e[0], ty = yT + h1 / 2 + 0.5, isPoc = ps && k === ps.poc;
+          const lo = P.get(k - g), hi = P.get(k + g);
+          let im = 0; if (e[1] > 0 && e[1] >= mn && lo && e[1] >= r * lo[0]) im = 1; if (e[0] > 0 && e[0] >= mn && hi && e[0] >= r * hi[1]) im = im ? 0 : -1;
+          x.fillStyle = 'rgba(255,255,255,.07)'; const w = tot / eng.pmax * bwM; x.fillRect(xd - w, yT, w, h1);
+          x.fillStyle = d >= 0 ? C.up : C.dn; x.fillRect(xd, yT, 2, h1);
+          x.fillStyle = 'rgba(255,255,255,.045)'; x.fillRect(xd + 3, yT, cw - xd - 5, h1);
+          x.textAlign = 'right'; x.font = (im < 0 ? '600 ' : '') + fz0 + 'px ' + MONO; x.fillStyle = im < 0 ? '#7f97ff' : 'rgba(232,236,243,.8)'; x.fillText(fv(e[0]), cm - 4, ty);
+          x.textAlign = 'left'; x.font = (im > 0 ? '600 ' : '') + fz0 + 'px ' + MONO; x.fillStyle = im > 0 ? '#3ee0f7' : 'rgba(232,236,243,.8)'; x.fillText(fv(e[1]), cm + 4, ty);
+          if (isPoc) { x.strokeStyle = 'rgba(191,227,255,.7)'; x.lineWidth = 1; x.strokeRect(xd - bwM + 0.5, yT + 0.5, cw - 2 - (xd - bwM), h1 - 1); }
+        }
+      } else for (const [k, e] of eng.prof) {
         const yT = Y(k + g); if (yT > ch || yT + rh < 0) continue;
         const tot = e[0] + e[1], w = tot / eng.pmax * (PR - 14), ws = w * e[0] / tot;
         x.fillStyle = dn(0.38); x.fillRect(xR + 8, yT, ws, h1); x.fillStyle = up(0.38); x.fillRect(xR + 8 + ws, yT, w - ws, h1);
       }
-      const ps = eng.profStats();
       if (ps) {
         hline(x, Y(ps.vah + g), cw, 'rgba(255,255,255,.22)', [2, 4], 'VAH');
         hline(x, Y(ps.val), cw, 'rgba(255,255,255,.22)', [2, 4], 'VAL');
@@ -339,14 +354,14 @@
       for (const [k, e] of b.lv) {
         const yT = Y(k + g); if (yT > ch || yT + rh < 0) continue;
         const im = I.imb ? s.imb.get(k) || 0 : 0, tot = e[0] + e[1], ty = yT + h1 / 2 + 0.5, isPoc = I.poc && k === s.poc;
-        x.fillStyle = isPoc ? 'rgba(90,176,255,.24)' : 'rgba(255,255,255,.045)'; x.fillRect(x0, yT, w, h1);
+        x.fillStyle = isPoc ? 'rgba(90,150,200,.28)' : 'rgba(255,255,255,.045)'; x.fillRect(x0, yT, w, h1);
         const inBody = k <= bt && k >= bb;
-        x.fillStyle = inBody ? (isUp ? C.up : C.dn) : 'rgba(255,255,255,.16)'; x.fillRect(Math.round(mid) - (inBody ? 1 : 0), yT, inBody ? 2 : 1, h1 + 1);
+        x.fillStyle = isUp ? C.up : C.dn; x.fillRect(Math.round(mid) - (inBody ? 1 : 0), yT, inBody ? 2 : 1, h1 + 1);
         x.textAlign = 'right'; x.font = (im < 0 ? '600 ' : '') + fz + 'px ' + MONO;
         x.fillStyle = im < 0 ? '#7f97ff' : e[0] ? 'rgba(232,236,243,.8)' : 'rgba(232,236,243,.28)'; x.fillText(fv(e[0]), mid - 5, ty);
         x.textAlign = 'left'; x.font = (im > 0 ? '600 ' : '') + fz + 'px ' + MONO;
         x.fillStyle = im > 0 ? '#3ee0f7' : e[1] ? 'rgba(232,236,243,.8)' : 'rgba(232,236,243,.28)'; x.fillText(fv(e[1]), mid + 5, ty);
-        if (im === 2 || im === -2) { x.fillStyle = im > 0 ? C.up : C.dn; x.fillRect(im > 0 ? x0 + w - 2 : x0, yT, 2, h1); }
+        if (im) { x.fillStyle = im > 0 ? C.up : C.dn; x.fillRect(im > 0 ? x0 + w - 2 : x0, yT, 2, h1); }
         if (srch && tot >= srch) { x.strokeStyle = '#fff'; x.lineWidth = 1.5; x.strokeRect(x0 + 1, yT + 1, w - 2, Math.max(1, h1 - 2)); }
       }
     };
