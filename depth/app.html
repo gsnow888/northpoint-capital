@@ -15,7 +15,7 @@
   --line:rgba(148,180,255,.09);--line2:rgba(148,180,255,.16);--hi:inset 0 1px 0 rgba(255,255,255,.045);
   --tx:#eaf2ff;--tx2:#b9c7dd;--mut:#7d8fab;--mut2:#56677f;
   --ac:#5ab0ff;--ac2:#3d5afe;--grad:linear-gradient(135deg,#3d5afe 0%,#5ab0ff 100%);--glow:0 0 0 1px rgba(90,176,255,.35),0 8px 28px rgba(61,90,254,.28);
-  --up:#22d3ee;--dn:#3d5afe;--warn:#ffd166;
+  --up:#b4e61e;--dn:#ff5a36;--warn:#ffd166;
   --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;--sans:Inter,-apple-system,"Helvetica Neue",sans-serif;--disp:Outfit,Inter,sans-serif;
   --r:12px;--r2:9px;
 }
@@ -100,8 +100,11 @@ input[type=range]{width:74px;accent-color:#5ab0ff}
 #domW{flex:1;position:relative;min-height:170px}#domW canvas{position:absolute;inset:0;width:100%;height:100%}
 #spd{display:block;width:100%;height:46px}
 #tape{min-height:150px;overflow:hidden;font:11px var(--mono)}
-#tape .r{display:grid;grid-template-columns:76px 1fr 72px;padding:3px 14px}
-#tape .r span:last-child{text-align:right}
+#tape .r{display:grid;grid-template-columns:62px 1fr 54px 26px 58px;gap:4px;padding:3px 14px}
+#tape .r span:nth-child(n+3){text-align:right}
+#tape .r.th{color:var(--mut);font:600 9.5px var(--sans,Inter);letter-spacing:.08em;text-transform:uppercase;background:none!important;padding-bottom:5px}
+#tape .r.big{font-weight:700;background:rgba(255,255,255,.07)!important;color:#fff}
+#tape .r.u span:nth-child(4){color:var(--up)}#tape .r.d span:nth-child(4){color:var(--dn)}
 #tape .r:nth-child(odd){background:rgba(148,180,255,.025)}
 .list{flex:1;overflow:auto;font:12px var(--mono)}
 .list h6{margin:0;padding:12px 14px 5px;font:600 10px var(--sans);letter-spacing:.14em;color:var(--mut2);position:sticky;top:0;background:#060c19;text-transform:uppercase;z-index:1}
@@ -148,9 +151,9 @@ input[type=range]{width:74px;accent-color:#5ab0ff}
 .termW .h{padding-top:6px}
 .term{padding:0 12px 12px}.term .row{display:grid;grid-template-columns:70px 1fr 1fr 62px;gap:6px}
 .term input{width:100%;font:500 12px var(--mono);text-align:center}
-.term .b{background:linear-gradient(135deg,rgba(34,211,238,.32),rgba(34,211,238,.14));border-color:rgba(34,211,238,.45);color:#c9f7ff;font-weight:700;letter-spacing:.04em}
-.term .s{background:linear-gradient(135deg,rgba(61,90,254,.5),rgba(61,90,254,.22));border-color:rgba(61,90,254,.6);color:#dde4ff;font-weight:700;letter-spacing:.04em}
-.term .b:hover{box-shadow:0 0 16px rgba(34,211,238,.3)}.term .s:hover{box-shadow:0 0 16px rgba(61,90,254,.4)}
+.term .b{background:linear-gradient(135deg,rgba(180,230,30,.32),rgba(180,230,30,.14));border-color:rgba(180,230,30,.5);color:#efffc4;font-weight:700;letter-spacing:.04em}
+.term .s{background:linear-gradient(135deg,rgba(255,90,54,.45),rgba(255,90,54,.2));border-color:rgba(255,90,54,.6);color:#ffe2da;font-weight:700;letter-spacing:.04em}
+.term .b:hover{box-shadow:0 0 16px rgba(180,230,30,.3)}.term .s:hover{box-shadow:0 0 16px rgba(255,90,54,.4)}
 .kp{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;margin-top:10px;font:11.5px var(--mono);padding:10px;border:1px solid var(--line);border-radius:10px;background:rgba(6,12,24,.55)}
 .kp div{display:flex;justify-content:space-between}.kp span{color:var(--mut);font-family:var(--sans)}.kp b{font-weight:500}
 .mini{height:24px;padding:0 9px;font-size:10.5px;letter-spacing:0}
@@ -237,7 +240,7 @@ body.pane .top{padding:6px 8px}body.pane .top::after{display:none}
   <button id="indB" class="one nopane pri">Indicadores</button>
   <button id="fol" class="one nopane" title="Volver a seguir el precio (F)">Seguir</button>
   <button id="rpB" class="one nopane">Replay</button>
-  <select id="depSel" class="one nopane" title="Cuánta historia tick a tick se carga"><option value="0.5">Ticks 30 min</option><option value="2" selected>Ticks 2 h</option><option value="6">Ticks 6 h</option></select>
+  <select id="depSel" class="one nopane" title="Cuánta historia tick a tick se carga"><option value="0.5">Ticks 30 min</option><option value="2">Ticks 2 h</option><option value="6" selected>Ticks 6 h</option></select>
   <select id="tplSel" class="one nopane" title="Plantillas del gráfico"></select>
   <button id="shot" class="one nopane" title="Guardar imagen del gráfico">Captura</button>
   <div class="seg nopane" id="lay" title="Cuántos gráficos a la vez">

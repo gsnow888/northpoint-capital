@@ -90,7 +90,7 @@
     }
 
     /* Historia profunda: los ids son consecutivos, así que pedir los 1000 anteriores al más viejo es exacto.
-       Va hacia atrás, una petición por segundo, hasta llegar a untilT. */
+       Va hacia atrás, una petición cada 0.6 s, hasta llegar a untilT. */
     async deepen(untilT) {
       if (this.deep) return; this.deep = true; let err = 0;
       const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -103,7 +103,7 @@
           if (!this.alive) return; if (!b.length) break;
           this.firstId = b[0].a; this.firstT = b[0].T; this.cb.older(b); err = 0;
         } catch (e) { if (++err > 4) break; await sleep(6000); continue; }
-        await sleep(1000);
+        await sleep(600);   // ~100 peticiones/min: dentro del límite de Binance (2,400 de peso/min, cada una pesa 20)
       }
       this.deep = false; this.deepEnd = true;
     }

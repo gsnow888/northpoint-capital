@@ -10,9 +10,9 @@
   if (PANE) document.body.classList.add('pane');
   const MONO = '"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace';
   const REST = 'https://fapi.binance.com/fapi/v1/';
-  const C = { up: '#22d3ee', dn: '#3d5afe', ac: '#5ab0ff', tx: '#e8ecf3', mut: '#7c8696', line: 'rgba(255,255,255,.06)' };
+  const C = { up: '#b4e61e', dn: '#ff5a36', ac: '#5ab0ff', tx: '#e8ecf3', mut: '#7c8696', line: 'rgba(255,255,255,.06)' };
   const FPC = { bg: '#1e1e1e', cell: '#2a2a2a', tx: '#d8d8d8', z: '#6c6c6c', b: '#b4e61e', s: '#ff5a36', poc: '#2d4a5d', bar: '#3b3b3b', bd: '#6e8f1c', sd: '#a33a24' };   // Bid x Ask con números: el look del footprint clásico
-  const up = a => `rgba(34,211,238,${a})`, dn = a => `rgba(61,90,254,${a})`, bl = a => `rgba(90,176,255,${a})`;
+  const up = a => `rgba(180,230,30,${a})`, dn = a => `rgba(255,90,54,${a})`, bl = a => `rgba(90,176,255,${a})`;
 
   /* ---------- mercados ---------- */
   /* tick = tamaño real del tick · groups/hg/rng en ticks · qd = decimales de cantidad (respaldo si falla la lista) */
@@ -53,17 +53,17 @@
   /* ---------- ajustes guardados por usuario ---------- */
   const CK = 'npd.cfg2.' + ses.email;
   const IND0 = { prof: 1, vwap: 1, bands: 0, ema1: 0, ema2: 0, big: 1, imb: 1, zones: 1, poc: 1, heat: 0, stats: 1, day: 1, liq: 1, sess: 0, ice: 1, cvds: 0, cal: 1 };
-  const cfg = { sym: 'BTCUSDT', bar: 'time:60000', mode: 'ba', imb: '3', dep: '2', e1: 20, e2: 50, srch: 0, bigX: 2, alSnd: 1, alBig: 0, ind: Object.assign({}, IND0) };
+  const cfg = { sym: 'BTCUSDT', bar: 'time:60000', mode: 'ba', imb: '3', dep: '6', e1: 20, e2: 50, srch: 0, bigX: 2, alSnd: 1, alBig: 0, ind: Object.assign({}, IND0) };
   try { const s = JSON.parse(localStorage.getItem(CK)); if (s && !DEMO) { Object.assign(cfg, s); cfg.ind = Object.assign({}, IND0, s.ind); } } catch (e) {}
   const saveCfg = () => { if (DEMO) return; try { localStorage.setItem(CK, JSON.stringify(cfg)); } catch (e) {} };
 
   /* ---------- estado ---------- */
   /* eng = motor que se dibuja (en vivo o replay) · live = siempre el de en vivo */
   let sym = SY[0], eng, live, feed, rep = null, view = 'fp', st = 'conectando', dirty = true, mouse = null;
-  const v = { barW: 30, rowH: 16, rh: 16, offX: 0, cK: null, follow: true, autoY: true };
+  const v = { barW: 96, rowH: 16, rh: 16, offX: 0, cK: null, follow: true, autoY: true };
   const hv = { pps: 8, rowPx: 4, cK: null, follow: true, tR: 0, ref: 1 };
   const HR = 600, HMS = 500, HMAX = 4000;
-  let heat = [], tape = [], cur = null, tapeMin = 1, domC = null, bigs = [], pend = [];
+  let heat = [], tape = [], cur = null, tapeAcc = 0, tapeMin = 1, domC = null, bigs = [], pend = [];
   let hist = [], histTok = 0, day = null;                 // velas históricas del exchange y niveles del día
   let D = [], tool = 'cur', draft = null, ruler = null;   // dibujos
   let sim = { pos: 0, avg: 0, real: 0, sl: null, tp: null }, grab = null;
@@ -113,10 +113,10 @@
     live = eng = new Engine(barCfg());
     const f = feed = new BinanceFeed(sym, {
       trade: onTrade, status: s => { st = s; },
-      reset: () => { live.clear(); tape = []; bigs = []; pend = []; },
+      reset: () => { live.clear(); tape = []; tapeAcc = 0; bigs = []; pend = []; },
       older: b => { if (f === feed) pend.push(b); },
       liq: o => { if (f !== feed) return; liqs.push(o); if (liqs.length > 400) liqs.shift(); tape.unshift({ t: o.t, s: o.s, q: o.q, pv: o.p * o.q, liq: 1 }); dirty = true; }
-    }, 3);
+    }, PANE ? 3 : 30);
     f.until = PANE ? Date.now() : Date.now() - (+cfg.dep) * 3600e3; // los gráficos de la cuadrícula no cargan historia profunda (límite de peticiones)
     f.start(); loadHist(); loadDay(); loadDraw(); loadAL(); INFO.id = null; dirty = true;
   }
@@ -126,10 +126,11 @@
     if (!rep && sim.pos) bracket(p);
     if (E) { spdAdd(s, q); checkAlerts(p); }
     if (E) { const l = Math.max(0, Date.now() - skew - E); stat.lat = stat.lat ? stat.lat * 0.9 + l * 0.1 : l; }
-    if (cur && cur.t === t && cur.s === s) { cur.q += q; cur.pv += p * q; }
+    tapeAcc += s ? -q : q;   // acumulado de la cinta: compras menos ventas desde que abriste el mercado
+    if (cur && cur.t === t && cur.s === s) { cur.q += q; cur.pv += p * q; cur.acc = tapeAcc; }
     else {
       if (cur) { if (cur.q >= tapeMin) { tape.unshift(cur); if (tape.length > 40) tape.pop(); } if (cur.q >= sym.big) { bigs.push(cur); if (bigs.length > 20000) bigs.shift(); if (E && cfg.alBig && cur.q >= sym.big * Math.max(1, +cfg.bigX || 1) * 3) ping('Trade grande · ' + sym.id, (cur.s ? 'Venta' : 'Compra') + ' de ' + fv(cur.q) + ' en ' + fp(Math.round(cur.pv / cur.q))); } }
-      cur = { t, s, q, pv: p * q };
+      cur = { t, s, q, pv: p * q, acc: tapeAcc };
     }
     dirty = true;
   }
@@ -271,7 +272,7 @@
   /* ---------- GRÁFICO DE CLUSTERS ---------- */
   function drawFP() {
     const c = $('fp'), x = fit(c), W = c.clientWidth, H = c.clientHeight; x.clearRect(0, 0, W, H);
-    const I = cfg.ind, AX = 68, TB = 18, PR = I.prof ? (cfg.mode === 'ba' && v.barW >= 64 ? 250 : 118) : 30, g = eng.o.group, A = build(), nb = A.length, isT = eng.o.type === 'time';
+    const I = cfg.ind, AX = 68, TB = 18, PR = I.prof ? (cfg.mode === 'ba' && v.barW >= 64 ? Math.max(160, Math.min(250, Math.round((W - 68) * 0.3))) : 118) : 30, g = eng.o.group, A = build(), nb = A.length, isT = eng.o.type === 'time';
     x.textBaseline = 'middle'; x.font = '11px ' + MONO;
     if (!nb) { x.fillStyle = C.mut; x.textAlign = 'center'; x.fillText('Cargando mercado…', W / 2, H / 2); G.nb = 0; return; }
     const wide = v.barW >= 64, cells = v.barW >= 18, statsOn = I.stats && v.barW >= 46;
@@ -286,7 +287,7 @@
     else if (v.follow) { const yl = ch / 2 - (last.c - v.cK) / g * rh; if (yl < ch * 0.18 || yl > ch * 0.82) v.cK = last.c; }
     v.rh = rh;
     const num = wide && rh >= 11, Y = p => ch / 2 - (p - v.cK) / g * rh, CLS = num && cfg.mode === 'ba';
-    if (CLS) { x.fillStyle = FPC.bg; x.fillRect(0, 0, W, ch); }
+    x.fillStyle = FPC.bg; x.fillRect(0, 0, W, H);
     Object.assign(G, { A, nb, xR, ch, cw, rh, g });
     const kTop = v.cK + ch / 2 / rh * g, kBot = v.cK - ch / 2 / rh * g, stepK = num ? g * Math.ceil(24 / rh) : niceStep(28 / rh * g);
     const size = eng.o.size, tNow = rep ? eng.lastT : Math.max(eng.lastT || 0, feed && feed.bookT || 0);
@@ -320,7 +321,7 @@
       }
       let ps = null;
       if (VP.size) { const V = k => { const e = VP.get(k); return e ? e[0] + e[1] : 0; }; const [val, vah] = Engine.valueArea(V, vpPoc, vpMax, vpTot, eng.o.va, g, vkl, vkh); ps = { poc: vpPoc, val, vah }; }
-      const pClean = num && cfg.mode === 'ba' && PR > 200;
+      const pClean = num && cfg.mode === 'ba' && PR >= 160;
       if (pClean) {   // como la captura: barra gris a la izquierda, línea de color, y el número del lado que gana en su color
         const xd = cw - 112, bwM = xd - xR - 12, cm = xd + 2 + 54, f = Math.min(12, fz0 + 1);
         for (const [k, e] of VP) {
@@ -400,8 +401,8 @@
         } else if (num) {
           const a = Math.min(0.4, 0.05 + tot / s.mx * 0.35);
           x.fillStyle = d >= 0 ? up(a) : dn(a); x.fillRect(x0, yT, w, h1);
-          x.textAlign = 'right'; x.font = (im < 0 ? '700 ' : '') + fz + 'px ' + MONO; x.fillStyle = im < 0 ? '#a8b6ff' : 'rgba(232,236,243,.7)'; x.fillText(fv(e[0]), mid - 5, ty);
-          x.textAlign = 'left'; x.font = (im > 0 ? '700 ' : '') + fz + 'px ' + MONO; x.fillStyle = im > 0 ? '#a5f3fc' : 'rgba(232,236,243,.7)'; x.fillText(fv(e[1]), mid + 5, ty);
+          x.textAlign = 'right'; x.font = (im < 0 ? '700 ' : '') + fz + 'px ' + MONO; x.fillStyle = im < 0 ? '#ff8a6e' : 'rgba(232,236,243,.7)'; x.fillText(fv(e[0]), mid - 5, ty);
+          x.textAlign = 'left'; x.font = (im > 0 ? '700 ' : '') + fz + 'px ' + MONO; x.fillStyle = im > 0 ? '#d4f56b' : 'rgba(232,236,243,.7)'; x.fillText(fv(e[1]), mid + 5, ty);
           x.fillStyle = 'rgba(255,255,255,.12)'; x.fillRect(mid, yT + 2, 1, h1 - 4);
         } else {
           x.fillStyle = dn(Math.min(0.9, e[0] / s.mxs)); x.fillRect(x0, yT, w / 2, h1);
@@ -647,7 +648,7 @@
     if (PANE) { drawSlowPane(); return; }
     for (const f of HOOK.slow) try { f(); } catch (e) { console.error(e); }
     if (!$('pBook').hidden) { drawDOM(); drawSpd();
-      $('tape').innerHTML = tape.slice(0, 9).map(t => `<div class="r ${t.s ? 'd' : 'u'}"${t.liq ? ' style="color:#ff9a2e"' : ''}><span style="color:var(--mut)">${ft(t.t, 1)}</span><span>${t.liq ? 'LIQ ' : ''}${fp(Math.round(t.pv / t.q))}</span><span>${fv(t.q)}</span></div>`).join(''); }
+      $('tape').innerHTML = '<div class="r th"><span>Hora</span><span>Precio</span><span>Tamaño</span><span>Lado</span><span>Acum.</span></div>' + tape.slice(0, 12).map(t => `<div class="r ${t.s ? 'd' : 'u'}${!t.liq && t.q >= sym.big ? ' big' : ''}"${t.liq ? ' style="color:#ff9a2e"' : ''}><span style="color:var(--mut)">${ft(t.t, 1)}</span><span>${t.liq ? 'LIQ ' : ''}${fp(Math.round(t.pv / t.q))}</span><span>${fv(t.q)}</span><span>${t.s ? '▼' : '▲'}</span><span class="${(t.acc || 0) >= 0 ? 'u' : 'd'}">${t.acc == null ? '' : fs(t.acc)}</span></div>`).join(''); }
     drawInfo();
     const pl = sim.pos ? (eng.last - sim.avg) * sym.tick * sim.pos : 0, sg = n => (n >= 0 ? '+' : '') + n.toFixed(2);
     $('sPos').textContent = sim.pos ? (sim.pos > 0 ? '+' : '') + +sim.pos.toFixed(4) : '0'; $('sAvg').textContent = sim.pos ? (sim.avg * sym.tick).toFixed(sym.dec) : '-';
