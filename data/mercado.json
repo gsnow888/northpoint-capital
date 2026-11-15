@@ -1,54 +1,144 @@
 {
  "calendario": [
   {
-   "dia": "2026-11-10",
+   "dia": "2026-11-16",
    "hora": "07:30",
    "hora_ny": "08:30",
-   "iso": "2026-11-10T08:30:00-05:00",
-   "titulo": "Core CPI m/m",
-   "pais": "USD",
-   "previsto": "0.2%",
-   "previo": "0.3%"
-  },
-  {
-   "dia": "2026-11-10",
-   "hora": "07:30",
-   "hora_ny": "08:30",
-   "iso": "2026-11-10T08:30:00-05:00",
+   "iso": "2026-11-16T08:30:00-05:00",
    "titulo": "CPI m/m",
-   "pais": "USD",
+   "pais": "CAD",
    "previsto": "0.3%",
-   "previo": "0.6%"
-  },
-  {
-   "dia": "2026-11-12",
-   "hora": "01:00",
-   "hora_ny": "02:00",
-   "iso": "2026-11-12T02:00:00-05:00",
-   "titulo": "GDP m/m",
-   "pais": "GBP",
-   "previsto": "0.0%",
    "previo": "0.1%"
   },
   {
-   "dia": "2026-11-13",
+   "dia": "2026-11-16",
    "hora": "07:30",
    "hora_ny": "08:30",
-   "iso": "2026-11-13T08:30:00-05:00",
-   "titulo": "Core PPI m/m",
-   "pais": "USD",
-   "previsto": "0.3%",
-   "previo": "0.7%"
+   "iso": "2026-11-16T08:30:00-05:00",
+   "titulo": "Median CPI y/y",
+   "pais": "CAD",
+   "previsto": "2.0%",
+   "previo": "1.9%"
   },
   {
-   "dia": "2026-11-13",
+   "dia": "2026-11-16",
    "hora": "07:30",
    "hora_ny": "08:30",
-   "iso": "2026-11-13T08:30:00-05:00",
-   "titulo": "PPI m/m",
+   "iso": "2026-11-16T08:30:00-05:00",
+   "titulo": "Trimmed CPI y/y",
+   "pais": "CAD",
+   "previsto": "1.9%",
+   "previo": "1.8%"
+  },
+  {
+   "dia": "2026-11-16",
+   "hora": "11:00",
+   "hora_ny": "12:00",
+   "iso": "2026-11-16T12:00:00-05:00",
+   "titulo": "Fed Chairman Warsh Speaks",
+   "pais": "USD",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-11-16",
+   "hora": "16:50",
+   "hora_ny": "17:50",
+   "iso": "2026-11-16T17:50:00-05:00",
+   "titulo": "RBA Gov Bullock Speaks",
+   "pais": "AUD",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-11-16",
+   "hora": "20:00",
+   "hora_ny": "21:00",
+   "iso": "2026-11-16T21:00:00-05:00",
+   "titulo": "Inflation Expectations q/q",
+   "pais": "NZD",
+   "previsto": "",
+   "previo": "2.34%"
+  },
+  {
+   "dia": "2026-11-17",
+   "hora": "07:30",
+   "hora_ny": "08:30",
+   "iso": "2026-11-17T08:30:00-05:00",
+   "titulo": "Core Retail Sales m/m",
    "pais": "USD",
    "previsto": "0.4%",
-   "previo": "1.3%"
+   "previo": "0.9%"
+  },
+  {
+   "dia": "2026-11-17",
+   "hora": "07:30",
+   "hora_ny": "08:30",
+   "iso": "2026-11-17T08:30:00-05:00",
+   "titulo": "Retail Sales m/m",
+   "pais": "USD",
+   "previsto": "0.2%",
+   "previo": "0.8%"
+  },
+  {
+   "dia": "2026-11-18",
+   "hora": "01:00",
+   "hora_ny": "02:00",
+   "iso": "2026-11-18T02:00:00-05:00",
+   "titulo": "CPI y/y",
+   "pais": "GBP",
+   "previsto": "3.6%",
+   "previo": "3.5%"
+  },
+  {
+   "dia": "2026-11-18",
+   "hora": "01:30",
+   "hora_ny": "02:30",
+   "iso": "2026-11-18T02:30:00-05:00",
+   "titulo": "BOE Gov Bailey Speaks",
+   "pais": "GBP",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-11-18",
+   "hora": "09:00",
+   "hora_ny": "10:00",
+   "iso": "2026-11-18T10:00:00-05:00",
+   "titulo": "BOE Gov Bailey Speaks",
+   "pais": "GBP",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-11-18",
+   "hora": "13:00",
+   "hora_ny": "14:00",
+   "iso": "2026-11-18T14:00:00-05:00",
+   "titulo": "FOMC Meeting Minutes",
+   "pais": "USD",
+   "previsto": "",
+   "previo": ""
+  },
+  {
+   "dia": "2026-11-18",
+   "hora": "18:30",
+   "hora_ny": "19:30",
+   "iso": "2026-11-18T19:30:00-05:00",
+   "titulo": "Employment Change",
+   "pais": "AUD",
+   "previsto": "25.2K",
+   "previo": "-39.3K"
+  },
+  {
+   "dia": "2026-11-18",
+   "hora": "18:30",
+   "hora_ny": "19:30",
+   "iso": "2026-11-18T19:30:00-05:00",
+   "titulo": "Unemployment Rate",
+   "pais": "AUD",
+   "previsto": "4.7%",
+   "previo": "4.7%"
   }
  ],
  "precios": [
@@ -56,50 +146,50 @@
    "sym": "NQ",
    "nombre": "Nasdaq 100",
    "precio": 28034.75,
-   "cambio": 20.25,
-   "pct": 0.07
+   "cambio": 199.5,
+   "pct": 0.72
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
    "precio": 7583.0,
-   "cambio": 8.75,
-   "pct": 0.12
+   "cambio": 38.75,
+   "pct": 0.51
   },
   {
    "sym": "GC",
    "nombre": "Oro",
    "precio": 3886.3,
-   "cambio": -228.2,
-   "pct": -5.55
+   "cambio": -143.9,
+   "pct": -3.57
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
    "precio": 88.56,
-   "cambio": 1.71,
-   "pct": 1.97
+   "cambio": 2.52,
+   "pct": 2.93
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
    "precio": 2797.5,
-   "cambio": -51.2,
-   "pct": -1.8
+   "cambio": -31.4,
+   "pct": -1.11
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
    "precio": 52418.0,
-   "cambio": -80.0,
-   "pct": -0.15
+   "cambio": 103.0,
+   "pct": 0.2
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 64000.0,
-   "cambio": -10940.0,
-   "pct": -14.6
+   "precio": 64340.0,
+   "cambio": -9465.0,
+   "pct": -12.82
   }
  ],
  "acciones": [
@@ -274,16 +364,22 @@
  ],
  "noticias": [
   {
-   "titulo": "SpaceX successfully catches Starship rocket in huge milestone for the space industry",
-   "url": "https://www.marketwatch.com/story/spacex-successfully-catches-starship-rocket-in-huge-milestone-for-the-space-industry-f42c136c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 14 Nov 2026 23:34:00 GMT"
+   "titulo": "Could Budapest be the next digital nomad hotspot?",
+   "url": "https://www.cnbc.com/2026/11/15/budapest-europes-next-digital-nomad-hotspot.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 15 Nov 2026 06:00:01 GMT"
   },
   {
    "titulo": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
    "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 14 Nov 2026 23:21:21 GMT"
+   "fecha": "Sun, 15 Nov 2026 02:53:59 GMT"
+  },
+  {
+   "titulo": "SpaceX successfully catches Starship rocket in huge milestone for the space industry",
+   "url": "https://www.marketwatch.com/story/spacex-successfully-catches-starship-rocket-in-huge-milestone-for-the-space-industry-f42c136c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 15 Nov 2026 00:33:00 GMT"
   },
   {
    "titulo": "SpaceX catches upper stage of Starship rocket in historic first",
@@ -380,12 +476,6 @@
    "url": "https://www.cnbc.com/2026/11/14/heating-oil-price-spike-household-budgets.html",
    "fuente": "CNBC",
    "fecha": "Sat, 14 Nov 2026 14:30:01 GMT"
-  },
-  {
-   "titulo": "Juice your growth and save on taxes in this workplace investment account",
-   "url": "https://www.cnbc.com/2026/11/14/hsa-investing-tax-benefits.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 14 Nov 2026 14:08:17 GMT"
   },
   {
    "titulo": "Berkshire breaks out to record high with fourth-quarter rally reaching 19%",
@@ -517,7 +607,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-14T23:58:50Z",
+ "ts": "2026-11-15T06:11:51Z",
  "fallas": [
   "videos",
   "directos"
