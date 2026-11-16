@@ -92,16 +92,6 @@
   },
   {
    "dia": "2026-11-18",
-   "hora": "01:30",
-   "hora_ny": "02:30",
-   "iso": "2026-11-18T02:30:00-05:00",
-   "titulo": "BOE Gov Bailey Speaks",
-   "pais": "GBP",
-   "previsto": "",
-   "previo": ""
-  },
-  {
-   "dia": "2026-11-18",
    "hora": "09:00",
    "hora_ny": "10:00",
    "iso": "2026-11-18T10:00:00-05:00",
@@ -145,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 28254.75,
-   "cambio": 419.5,
-   "pct": 1.51
+   "precio": 27793.5,
+   "cambio": -679.75,
+   "pct": -2.39
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7611.0,
-   "cambio": 66.75,
-   "pct": 0.88
+   "precio": 7549.75,
+   "cambio": -90.75,
+   "pct": -1.19
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3892.2,
-   "cambio": -138.0,
-   "pct": -3.42
+   "precio": 3873.3,
+   "cambio": -127.2,
+   "pct": -3.18
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 88.5,
-   "cambio": 2.46,
-   "pct": 2.86
+   "precio": 88.3,
+   "cambio": 1.77,
+   "pct": 2.05
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2807.4,
-   "cambio": -21.5,
-   "pct": -0.76
+   "precio": 2785.1,
+   "cambio": -68.6,
+   "pct": -2.4
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 52536.0,
-   "cambio": 221.0,
-   "pct": 0.42
+   "precio": 52332.0,
+   "cambio": -246.0,
+   "pct": -0.47
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 65395.0,
-   "cambio": -8410.0,
-   "pct": -11.39
+   "precio": 64675.0,
+   "cambio": -10050.0,
+   "pct": -13.45
   }
  ],
  "acciones": [
@@ -364,6 +354,48 @@
  ],
  "noticias": [
   {
+   "titulo": "China confirms Xi-Trump-Putin historic summit. What will be on the agenda?",
+   "url": "https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 16 Nov 2026 04:34:00 GMT"
+  },
+  {
+   "titulo": "My older brother, who has no children, cut our only sister out of his will. I’ll get everything. Do I tell her?",
+   "url": "https://www.marketwatch.com/story/she-has-a-history-of-financial-mismanagement-my-brother-cut-my-sister-out-of-his-will-im-getting-everything-do-i-tell-her-3e537851?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 16 Nov 2026 04:15:00 GMT"
+  },
+  {
+   "titulo": "China’s slowdown deepens in October as industrial output, retail sales, investment miss estimates",
+   "url": "https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 16 Nov 2026 03:53:59 GMT"
+  },
+  {
+   "titulo": "Tech world's calls for Jensen Huang to return to Nvidia are growing",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 16 Nov 2026 03:35:09 GMT"
+  },
+  {
+   "titulo": "A big chunk of your 401(k) is likely invested in Nvidia",
+   "url": "https://www.marketwatch.com/story/the-scandal-at-nvidia-is-exactly-whats-wrong-with-the-s-p-500-7307457e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 16 Nov 2026 03:11:00 GMT"
+  },
+  {
+   "titulo": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
+   "url": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 16 Nov 2026 02:56:24 GMT"
+  },
+  {
+   "titulo": "$180 million Van Gogh tests the art market and collector confidence",
+   "url": "https://www.cnbc.com/2026/11/14/180-million-van-gogh-tests-the-art-market-and-collector-confidence-.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 16 Nov 2026 02:22:04 GMT"
+  },
+  {
    "titulo": "‘It leaves me with a sour taste’: My elderly mother gave our cousin $800 for a car repair. Should I be worried?",
    "url": "https://www.marketwatch.com/story/it-leaves-me-with-a-sour-taste-my-elderly-mother-gave-our-cousin-800-for-a-car-repair-should-i-be-worried-88dbd188?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -380,12 +412,6 @@
    "url": "https://www.cnbc.com/2026/11/15/flight-delays-ground-faa-stop.html",
    "fuente": "CNBC",
    "fecha": "Sun, 15 Nov 2026 22:33:26 GMT"
-  },
-  {
-   "titulo": "My older brother, who has no children, cut our only sister out of his will. I’ll get everything. Do I tell her?",
-   "url": "https://www.marketwatch.com/story/she-has-a-history-of-financial-mismanagement-my-brother-cut-my-sister-out-of-his-will-im-getting-everything-do-i-tell-her-3e537851?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 15 Nov 2026 22:15:00 GMT"
   },
   {
    "titulo": "Nvidia is gearing up for one of Wall Street’s most anticipated earnings calls in years",
@@ -412,10 +438,10 @@
    "fecha": "Sun, 15 Nov 2026 20:00:00 GMT"
   },
   {
-   "titulo": "Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO",
-   "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
+   "titulo": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has ties to the chipmaker",
+   "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
    "fuente": "CNBC",
-   "fecha": "Sun, 15 Nov 2026 18:10:18 GMT"
+   "fecha": "Sun, 15 Nov 2026 19:58:21 GMT"
   },
   {
    "titulo": "Trump breaks silence about FAA nationwide ground stop, blames Biden administration",
@@ -436,24 +462,6 @@
    "fecha": "Sun, 15 Nov 2026 15:22:00 GMT"
   },
   {
-   "titulo": "‘I’m sick of flying’: I paid for priority boarding, but the overhead bins were full. Was I duped?",
-   "url": "https://www.marketwatch.com/story/im-sick-of-flying-i-paid-for-priority-boarding-but-the-overhead-bins-were-full-was-i-duped-0badcc80?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 15 Nov 2026 15:00:00 GMT"
-  },
-  {
-   "titulo": "Social Security and the blue wave: What could happen to payroll taxes and senior tax breaks",
-   "url": "https://www.cnbc.com/2026/11/15/social-security-tax-changes-midterm-election.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 15 Nov 2026 14:30:01 GMT"
-  },
-  {
-   "titulo": "Rivian, Lucid, Scout CEOs aren’t counting on Democrats to restore EV federal support after midterm wins",
-   "url": "https://www.cnbc.com/2026/11/15/rivian-lucid-scout-arent-counting-on-dems-to-restore-ev-incentives.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 15 Nov 2026 13:00:02 GMT"
-  },
-  {
    "titulo": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
    "url": "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html",
    "fuente": "CNBC",
@@ -466,28 +474,10 @@
    "fecha": "Sat, 14 Nov 2026 23:10:14 GMT"
   },
   {
-   "titulo": "$180 million Van Gogh tests the art market and collector confidence",
-   "url": "https://www.cnbc.com/2026/11/14/180-million-van-gogh-tests-the-art-market-and-collector-confidence-.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 14 Nov 2026 22:34:07 GMT"
-  },
-  {
-   "titulo": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
-   "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 14 Nov 2026 17:46:06 GMT"
-  },
-  {
    "titulo": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
    "url": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
    "fuente": "CNBC",
    "fecha": "Sat, 14 Nov 2026 14:54:22 GMT"
-  },
-  {
-   "titulo": "Retailers are turning to entertainment to win shoppers’ attention",
-   "url": "https://www.cnbc.com/2026/11/14/retailers-invest-entertainment.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 14 Nov 2026 13:00:01 GMT"
   },
   {
    "titulo": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
@@ -607,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-15T23:50:20Z",
+ "ts": "2026-11-16T05:27:27Z",
  "fallas": [
   "videos",
   "directos"
