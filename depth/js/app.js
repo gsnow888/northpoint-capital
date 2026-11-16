@@ -272,7 +272,7 @@
   /* ---------- GRÁFICO DE CLUSTERS ---------- */
   function drawFP() {
     const c = $('fp'), x = fit(c), W = c.clientWidth, H = c.clientHeight; x.clearRect(0, 0, W, H);
-    const I = cfg.ind, AX = 68, TB = 18, PR = I.prof ? Math.max(140, Math.min(260, Math.round((W - 68) * 0.24))) : 30, g = eng.o.group, A = build(), nb = A.length, isT = eng.o.type === 'time';
+    const I = cfg.ind, AX = 68, TB = 18, PR = I.prof ? (cfg.mode === 'ba' && v.barW >= 64 ? Math.max(160, Math.min(250, Math.round((W - 68) * 0.3))) : 118) : 30, g = eng.o.group, A = build(), nb = A.length, isT = eng.o.type === 'time';
     x.textBaseline = 'middle'; x.font = '11px ' + MONO;
     if (!nb) { x.fillStyle = C.mut; x.textAlign = 'center'; x.fillText('Cargando mercado…', W / 2, H / 2); G.nb = 0; return; }
     const wide = v.barW >= 64, cells = v.barW >= 18, statsOn = I.stats && v.barW >= 46;
@@ -307,10 +307,43 @@
     if (!CLS) for (let k = Math.ceil(kBot / stepK) * stepK; k <= kTop; k += stepK) x.fillRect(0, Math.round(Y(k)), cw, 1);
     /* perfil de volumen de los ticks cargados */
     const h1 = Math.max(1, rh - 1), fz0 = Math.max(9, Math.min(11, rh - 4));
-    if (I.prof) {   // perfil del día pegado al eje de precio, creciendo hacia la izquierda
+    if (I.prof) {
+      /* perfil de TODO lo visible: exacto donde hay ticks; en la historia sin ticks, el volumen comprador y vendedor
+         de cada vela del exchange se reparte parejo entre su mínimo y su máximo (estimado) */
+      const VP = new Map(); let vpMax = 0, vpPoc = 0, vpTot = 0, vkl = Infinity, vkh = -Infinity;
+      const vpAdd = (k, sb, sa) => { let e = VP.get(k); if (!e) VP.set(k, e = [0, 0]); e[0] += sb; e[1] += sa; const t = e[0] + e[1]; vpTot += sb + sa; if (t > vpMax) { vpMax = t; vpPoc = k; } if (k < vkl) vkl = k; if (k > vkh) vkh = k; };
       const d0 = Math.floor(last.t0 / 864e5) * 864e5; let i0 = nb - 1; while (i0 > 0 && A[i0 - 1].t0 >= d0) i0--;   // sesión del día (UTC)
-      const P = profOf(A, i0, nb - 1, g);
-      if (P) { vpLines(x, P, Y, g, rh, cw - 2, PR - 10, -1, ch); vpLevels(x, P, Y, g, rh, 0, cw); }
+      for (let i = i0; i < nb; i++) {
+        const b = A[i];
+        if (b.lv) { for (const [k, e] of b.lv) vpAdd(k, e[0], e[1]); continue; }
+        const kl = Math.floor(b.l / g) * g, kh = Math.floor(b.h / g) * g, n = (kh - kl) / g + 1, sb = (b.sell || 0) / n, sa = (b.buy || 0) / n;
+        if (n > 0 && n < 5000) for (let k = kl; k <= kh; k += g) vpAdd(k, sb, sa);
+      }
+      let ps = null;
+      if (VP.size) { const V = k => { const e = VP.get(k); return e ? e[0] + e[1] : 0; }; const [val, vah] = Engine.valueArea(V, vpPoc, vpMax, vpTot, eng.o.va, g, vkl, vkh); ps = { poc: vpPoc, val, vah }; }
+      const pClean = num && cfg.mode === 'ba' && PR >= 160;
+      if (pClean) {   // como la captura: barra gris a la izquierda, línea de color, y el número del lado que gana en su color
+        const xd = cw - 112, bwM = xd - xR - 12, cm = xd + 2 + 54, f = Math.min(12, fz0 + 1);
+        for (const [k, e] of VP) {
+          const yT = Y(k + g); if (yT > ch || yT + rh < 0) continue;
+          const tot = e[0] + e[1], d = e[1] - e[0], ty = yT + h1 / 2 + 0.5, isPoc = ps && k === ps.poc, w = tot / vpMax * bwM;
+          x.fillStyle = FPC.bar; x.fillRect(xd - w, yT, w, h1);
+          x.fillStyle = d >= 0 ? FPC.bd : FPC.sd; x.fillRect(xd, yT, 3, h1);
+          x.fillStyle = FPC.cell; x.fillRect(xd + 3, yT, cw - xd - 5, h1);
+          x.textAlign = 'right'; x.font = (d < 0 ? '700 ' : '') + f + 'px ' + MONO; x.fillStyle = d < 0 ? FPC.s : FPC.tx; x.fillText(fv(e[0]), cm - 4, ty);
+          x.textAlign = 'left'; x.font = (d >= 0 ? '700 ' : '') + f + 'px ' + MONO; x.fillStyle = d >= 0 ? FPC.b : FPC.tx; x.fillText(fv(e[1]), cm + 4, ty);
+          if (isPoc) { x.strokeStyle = '#5d7f96'; x.lineWidth = 1; x.strokeRect(xd - bwM + 0.5, yT + 0.5, cw - 2 - (xd - bwM), h1 - 1); }
+        }
+      } else for (const [k, e] of VP) {
+        const yT = Y(k + g); if (yT > ch || yT + rh < 0) continue;
+        const tot = e[0] + e[1], w = tot / vpMax * (PR - 14), ws = w * e[0] / tot;
+        x.fillStyle = dn(0.38); x.fillRect(xR + 8, yT, ws, h1); x.fillStyle = up(0.38); x.fillRect(xR + 8 + ws, yT, w - ws, h1);
+      }
+      if (ps && !CLS) {
+        hline(x, Y(ps.vah + g), cw, 'rgba(255,255,255,.22)', [2, 4], 'VAH');
+        hline(x, Y(ps.val), cw, 'rgba(255,255,255,.22)', [2, 4], 'VAL');
+        hline(x, Y(ps.poc) - rh / 2, cw, 'rgba(90,176,255,.55)', [6, 4], 'POC');
+      }
     }
     if (I.day && day) for (const [nm, p] of day) { const y = Y(p + 0.5); if (y > 0 && y < ch) hline(x, y, cw, 'rgba(232,236,243,.3)', [8, 5], nm + ' ' + fp(p), true); }
     /* zonas de desbalance apilado: se extienden hasta que el precio las atraviesa */
@@ -489,58 +522,6 @@
       (rb.lv ? ` &nbsp; POC <b>${fp(eng.stats(rb).poc)}</b>` : '') + ` &nbsp; Trades <b>${rb.n}</b> &nbsp; VWAP <b>${fp(Math.round(vw[ri]))}</b> &nbsp; ${nb.toLocaleString('es-MX')} barras · ${rb.lv ? 'tick a tick' : 'vela del exchange'}`;
   }
 
-  /* ---------- perfil de volumen de un tramo de barras: exacto donde hay ticks; donde no, el volumen comprador y
-     vendedor de cada vela del exchange se reparte parejo entre su mínimo y su máximo (estimado) ---------- */
-  function profOf(A, i0, i1, g) {
-    const M = new Map(); let mx = 0, poc = 0, tot = 0, kl = Infinity, kh = -Infinity, est = false;
-    const add = (k, sb, sa) => { let e = M.get(k); if (!e) M.set(k, e = [0, 0]); e[0] += sb; e[1] += sa; const t = e[0] + e[1]; tot += sb + sa; if (t > mx) { mx = t; poc = k; } if (k < kl) kl = k; if (k > kh) kh = k; };
-    for (let i = Math.max(0, i0); i <= i1 && i < A.length; i++) {
-      const b = A[i];
-      if (b.lv) { for (const [k, e] of b.lv) add(k, e[0], e[1]); continue; }
-      const a = Math.floor(b.l / g) * g, z = Math.floor(b.h / g) * g, n = (z - a) / g + 1; if (!(n > 0 && n < 5000)) continue; est = true;
-      const sb = (b.sell || 0) / n, sa = (b.buy || 0) / n; for (let k = a; k <= z; k += g) add(k, sb, sa);
-    }
-    if (!M.size) return null;
-    const V = k => { const e = M.get(k); return e ? e[0] + e[1] : 0; };
-    const [val, vah] = Engine.valueArea(V, poc, mx, tot, eng.o.va, g, kl, kh);
-    return { M, mx, poc, tot, kl, kh, val, vah, est };
-  }
-  /* el perfil en líneas finas blancas (más brillantes dentro del área de valor), como los programas de perfil */
-  function vpLines(x, P, Y, g, rh, x0, wMax, dir, ch, al) {
-    al = al || 1;
-    // cada fila se dibuja como varias líneas de ~2 px; el ancho pasa suave de una fila a la siguiente
-    const W = k => { const e = P.M.get(k); return e ? (e[0] + e[1]) / P.mx * wMax : 0; };
-    const m = Math.max(1, Math.floor(rh / 2.2)), sh = rh / m, lh = Math.max(0.7, sh - (sh > 1.6 ? 0.7 : 0.15));
-    for (let k = P.kl; k <= P.kh; k += g) {
-      const yT = Y(k + g); if (yT > ch || yT + rh < 0) continue;
-      const w0 = W(k), inVA = k >= P.val && k <= P.vah;
-      x.fillStyle = inVA ? `rgba(34,211,238,${0.85 * al})` : `rgba(90,176,255,${0.45 * al})`;   // área de valor cian, resto azul cielo
-      for (let j = 0; j < m; j++) {
-        const t = (j + 0.5) / m, nb2 = t < 0.5 ? W(k + g) : W(k - g), f = Math.abs(t - 0.5);   // arriba se mezcla con la fila de arriba
-        const w = m > 1 ? w0 * (1 - f) + (w0 + nb2) / 2 * f : w0;
-        x.fillRect(dir > 0 ? x0 : x0 - w, yT + j * sh, w, lh);
-      }
-    }
-  }
-  const VPPOC = '#bfe3ff';   // POC color hielo
-  /* POC en magenta y área de valor en punteado blanco, de xa a xb */
-  function vpLevels(x, P, Y, g, rh, xa, xb, lab) {
-    const ln = (y, col, dash, w) => { x.save(); x.setLineDash(dash); x.strokeStyle = col; x.lineWidth = w; x.beginPath(); x.moveTo(xa, Math.round(y) + 0.5); x.lineTo(xb, Math.round(y) + 0.5); x.stroke(); x.restore(); };
-    const yH = Y(P.vah + g), yL = Y(P.val), yP = Y(P.poc + g) + rh / 2;
-    ln(yH, 'rgba(90,176,255,.75)', [2, 3], 1); ln(yL, 'rgba(90,176,255,.75)', [2, 3], 1); ln(yP, VPPOC, [], 1.5);
-    if (lab) { x.font = '10px ' + MONO; x.textAlign = 'right'; x.fillStyle = VPPOC; x.fillText('POC ' + fp(P.poc), xb - 4, yP - 7); x.fillStyle = 'rgba(90,176,255,.95)'; x.fillText('VAH ' + fp(P.vah), xb - 4, yH - 7); x.fillText('VAL ' + fp(P.val), xb - 4, yL + 8); }
-  }
-  /* perfil que tú pones: arrastra sobre un tramo y sale su perfil, con POC y área de valor extendidos a la derecha */
-  function drawRP(x, d) {
-    const A = G.A, g = G.g, ia = Math.min(idxAt(A, d.t1), idxAt(A, d.t2)), ib = Math.max(idxAt(A, d.t1), idxAt(A, d.t2));
-    const P = profOf(A, ia, ib, g); if (!P) return;
-    const xa = Math.min(xOf(d.t1), xOf(d.t2)) - v.barW / 2, xb = Math.max(xOf(d.t1), xOf(d.t2)) + v.barW / 2, Y = p => yOf(p - 0.5);
-    x.fillStyle = 'rgba(90,176,255,.04)'; x.fillRect(xa, Y(P.kh + g), xb - xa, Y(P.kl) - Y(P.kh + g));
-    x.fillStyle = 'rgba(90,176,255,.7)'; x.fillRect(Math.round(xa), Y(P.kh + g), 1, Y(P.kl) - Y(P.kh + g));   // base del perfil
-    vpLines(x, P, Y, g, G.rh, xa + 1, Math.max(40, xb - xa), 1, G.ch, 0.6);
-    vpLevels(x, P, Y, g, G.rh, xa, G.cw, true);
-  }
-
   /* ---------- DIBUJOS: línea horizontal, tendencia, zona, regla ---------- */
   const DKEY = () => 'npd.draw.' + ses.email + '.' + sym.id;
   function loadDraw() { try { D = JSON.parse(localStorage.getItem(DKEY())) || []; } catch (e) { D = []; } }
@@ -561,7 +542,6 @@
     const xa = xOf(d.t1), xb = xOf(d.t2), ya = yOf(d.p1), yb = yOf(d.p2);
     if (d.type === 'line') { x.strokeStyle = col; x.lineWidth = 1.5; x.beginPath(); x.moveTo(xa, ya); x.lineTo(xb, yb); x.stroke(); return; }
     const rx = Math.min(xa, xb), ry = Math.min(ya, yb), rw = Math.abs(xb - xa), rhh = Math.abs(yb - ya);
-    if (d.type === 'rprof') { drawRP(x, d); return; }
     if (d.type === 'rect') { x.fillStyle = 'rgba(240,179,94,.1)'; x.fillRect(rx, ry, rw, rhh); x.strokeStyle = 'rgba(240,179,94,.7)'; x.lineWidth = 1; x.strokeRect(rx + 0.5, ry + 0.5, rw, rhh); return; }
     /* regla: mide precio, %, barras, tiempo y el volumen y delta negociados en el tramo */
     const A = G.A, ia = Math.min(idxAt(A, d.t1), idxAt(A, d.t2)), ib = Math.max(idxAt(A, d.t1), idxAt(A, d.t2)); let vol = 0, del = 0;
@@ -578,7 +558,7 @@
       const d = D[i];
       if (d.type === 'h') { if (Math.abs(yOf(d.p1) - m.y) < 5) return i; continue; }
       const xa = xOf(d.t1), xb = xOf(d.t2), ya = yOf(d.p1), yb = yOf(d.p2);
-      if (d.type === 'rect' || d.type === 'rprof') { if (m.x > Math.min(xa, xb) - 4 && m.x < Math.max(xa, xb) + 4 && m.y > Math.min(ya, yb) - 4 && m.y < Math.max(ya, yb) + 4) return i; continue; }
+      if (d.type === 'rect') { if (m.x > Math.min(xa, xb) - 4 && m.x < Math.max(xa, xb) + 4 && m.y > Math.min(ya, yb) - 4 && m.y < Math.max(ya, yb) + 4) return i; continue; }
       const L2 = (xb - xa) ** 2 + (yb - ya) ** 2, tt = L2 ? Math.max(0, Math.min(1, ((m.x - xa) * (xb - xa) + (m.y - ya) * (yb - ya)) / L2)) : 0;
       if (Math.hypot(m.x - (xa + tt * (xb - xa)), m.y - (ya + tt * (yb - ya))) < 5) return i;
     }
@@ -1032,7 +1012,7 @@
   $('helpB').onclick = () => toggle('helpP', () => { $('helpP').innerHTML = '<h4>Atajos de teclado</h4><p>Todo sin soltar el mouse del gráfico.</p>' + KEYS.map(k => `<div><kbd>${k[0]}</kbd>${k[1]}</div>`).join('') + '<p style="margin-top:10px">Rueda = zoom · Shift + rueda = zoom del precio · doble clic = seguir · clic derecho sobre un dibujo o alerta = borrarlo.</p>'; });
   window.addEventListener('keydown', e => {
     if (e.metaKey || e.ctrlKey || e.altKey || /INPUT|SELECT|TEXTAREA/.test(e.target.tagName) || document.body.classList.contains('multi')) return;
-    const k = e.key.toLowerCase(), z = { 1: 7, 2: 30, 3: 96 }[k], tl = { h: 'h', t: 'line', r: 'rect', m: 'ruler', a: 'alert', p: 'rprof' }[k];
+    const k = e.key.toLowerCase(), z = { 1: 7, 2: 30, 3: 96 }[k], tl = { h: 'h', t: 'line', r: 'rect', m: 'ruler', a: 'alert' }[k];
     if (z) { v.barW = z; v.offX = 0; v.autoY = true; v.rowH = 16; v.follow = true; zoomUI(); dirty = true; }
     else if (tl) setTool(tl); else if (k === 'f') follow(); else if (k === 'g') setView(view === 'fp' ? 'hm' : 'fp');
     else if (k === ' ' && rep) { e.preventDefault(); $('rpP').onclick(); }
