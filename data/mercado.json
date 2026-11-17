@@ -135,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 27320.25,
-   "cambio": -1153.0,
-   "pct": -4.05
+   "precio": 27397.0,
+   "cambio": -987.5,
+   "pct": -3.48
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7445.75,
-   "cambio": -194.75,
-   "pct": -2.55
+   "precio": 7441.0,
+   "cambio": -174.25,
+   "pct": -2.29
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3858.9,
-   "cambio": -141.6,
-   "pct": -3.54
+   "precio": 3877.6,
+   "cambio": -7.7,
+   "pct": -0.2
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 85.3,
-   "cambio": -1.23,
-   "pct": -1.42
+   "precio": 85.02,
+   "cambio": -3.72,
+   "pct": -4.19
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2751.3,
-   "cambio": -102.4,
-   "pct": -3.59
+   "precio": 2742.8,
+   "cambio": -64.5,
+   "pct": -2.3
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 51701.0,
-   "cambio": -877.0,
-   "pct": -1.67
+   "precio": 51548.0,
+   "cambio": -842.0,
+   "pct": -1.61
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 65330.0,
-   "cambio": -9395.0,
-   "pct": -12.57
+   "precio": 65100.0,
+   "cambio": -6405.0,
+   "pct": -8.96
   }
  ],
  "acciones": [
@@ -354,16 +354,46 @@
  ],
  "noticias": [
   {
-   "titulo": "United Airlines suffers system outage amid lingering FAA ground-stop delays",
-   "url": "https://www.marketwatch.com/story/united-airlines-suffers-system-outage-amid-lingering-faa-ground-stop-delays-5e33f94c?mod=mw_rss_topstories",
+   "titulo": "Third U.S. carrier arrives, stoking concerns about renewed conflicts with Iran",
+   "url": "https://www.cnbc.com/2026/11/17/iran-war-trump-hormuz-oil-.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 17 Nov 2026 04:50:19 GMT"
+  },
+  {
+   "titulo": "I’m in my 40s. Should I accept a lower pension in exchange for naming my husband or child as a beneficiary?",
+   "url": "https://www.marketwatch.com/story/im-in-my-40s-should-i-accept-a-lower-pension-in-exchange-for-naming-my-husband-or-child-as-a-beneficiary-b2352059?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Mon, 16 Nov 2026 23:10:00 GMT"
+   "fecha": "Tue, 17 Nov 2026 02:30:00 GMT"
+  },
+  {
+   "titulo": "Analysis: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
+   "url": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 17 Nov 2026 00:42:33 GMT"
   },
   {
    "titulo": "United Airlines resolves system outage that affected departing flights",
    "url": "https://www.cnbc.com/2026/11/16/united-airlines-outage-faa.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 16 Nov 2026 23:08:01 GMT"
+   "fecha": "Tue, 17 Nov 2026 00:00:49 GMT"
+  },
+  {
+   "titulo": "United Airlines resolves system outage that delayed flights Monday",
+   "url": "https://www.marketwatch.com/story/united-airlines-suffers-system-outage-amid-lingering-faa-ground-stop-delays-5e33f94c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 16 Nov 2026 23:42:00 GMT"
+  },
+  {
+   "titulo": "Stanley Druckenmiller dumped these chip stocks while buying into SpaceX and Palantir",
+   "url": "https://www.marketwatch.com/story/stanley-druckenmiller-dumped-these-chip-stocks-while-buying-into-spacex-and-palantir-9ae1f078?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 16 Nov 2026 23:28:00 GMT"
+  },
+  {
+   "titulo": "Jim Cramer says Nvidia’s leadership shake-up won’t derail the AI trade",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-cramer-ai-trade-leadership-change.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 16 Nov 2026 23:23:47 GMT"
   },
   {
    "titulo": "Aschenbrenner’s Situational Awareness made AI bets again before October rout",
@@ -426,22 +456,10 @@
    "fecha": "Mon, 16 Nov 2026 22:21:00 GMT"
   },
   {
-   "titulo": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
-   "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 16 Nov 2026 22:19:02 GMT"
-  },
-  {
    "titulo": "JPMorgan Chase says temporary software bug is affecting consumer banking",
    "url": "https://www.cnbc.com/2026/11/16/jpmorgan-chase-technical-issue.html",
    "fuente": "CNBC",
    "fecha": "Mon, 16 Nov 2026 22:14:47 GMT"
-  },
-  {
-   "titulo": "California sues OpenAI over Hugging Face, other AI model loss of control",
-   "url": "https://www.cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 16 Nov 2026 22:11:09 GMT"
   },
   {
    "titulo": "‘It leaves me with a sour taste’: My elderly mother gave our cousin $800 for a car repair. Should I be worried?",
@@ -450,28 +468,10 @@
    "fecha": "Mon, 16 Nov 2026 22:08:00 GMT"
   },
   {
-   "titulo": "Nvidia’s stock extends decline following harsh words from the U.S. government",
-   "url": "https://www.marketwatch.com/story/nvidias-stock-extends-declines-following-harsh-words-from-the-u-s-government-d721188e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 16 Nov 2026 21:53:00 GMT"
-  },
-  {
-   "titulo": "Chase says ‘software bug’ could be causing disruptions at major U.S. banks",
-   "url": "https://www.marketwatch.com/story/customers-of-chase-bank-of-america-and-other-u-s-banks-report-service-outages-18fe23b8?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 16 Nov 2026 21:49:00 GMT"
-  },
-  {
    "titulo": "Kalshi plans to launch stock trading soon",
    "url": "https://www.cnbc.com/2026/11/16/kalshi-plans-to-launch-stock-trading-soon.html",
    "fuente": "CNBC",
    "fecha": "Mon, 16 Nov 2026 21:23:34 GMT"
-  },
-  {
-   "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
-   "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 16 Nov 2026 18:46:07 GMT"
   },
   {
    "titulo": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-16T23:18:55Z",
+ "ts": "2026-11-17T05:07:56Z",
  "fallas": [
   "videos",
   "directos"
