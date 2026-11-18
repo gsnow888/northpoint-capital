@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Thrive Terminal</title>
+<title>Thrive by NorthPoint · Terminal</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23060510'/%3E%3Cpath fill='%23fff' d='M12 3l1.6 7.4L21 12l-7.4 1.6L12 21l-1.6-7.4L3 12l7.4-1.6z'/%3E%3C/svg%3E">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#060510">
@@ -266,12 +266,14 @@ tr.cl:hover td{background:rgba(203,208,235,.03)}
  .kpis{grid-template-columns:repeat(2,1fr)}
  .drop{right:8px;left:8px;width:auto}
 }
+.logo .by{font-family:"Geist Mono",monospace;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:#aab4ff;font-weight:500;align-self:flex-end;margin-bottom:2px}
+@media (max-width:820px){.logo .hideM{display:none}}
 </style>
 </head>
 <body>
 <div class="app">
   <header class="top">
-    <a class="logo" href="./"><svg viewBox="0 0 24 24"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg><span>thrive</span></a>
+    <a class="logo" href="./"><svg viewBox="0 0 24 24"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg><span>thrive</span><small class="by hideM">by northpoint</small></a>
     <span class="live">LIVE</span>
     <div class="searchw">
       <div class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" placeholder="search tokens, perps or traders (0x…)" autocomplete="off"><span class="kbd">/</span></div>
