@@ -280,6 +280,7 @@ body.resizing{cursor:col-resize;user-select:none}body.resizing.rowr{cursor:row-r
 .gate .wl{display:inline-block;margin-top:16px;color:var(--mut);font-size:12px;cursor:pointer}.gate .wl:hover{color:#fff}
 .gate .legal{color:var(--dim);font-size:10.5px;margin-top:14px;line-height:1.5}.gate .legal a{color:var(--mut);text-decoration:underline}
 .gate .sent svg{width:44px;height:44px;stroke:#4ade80;margin-bottom:10px}
+.folw{padding:8px 12px 12px;border-bottom:1px solid var(--line)}.folf{display:grid;grid-template-columns:1fr;gap:6px}.folf .field{height:34px;font-size:12px}
 .kbdl{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;margin:12px 0 16px;font-size:12px}
 .kbdl b{font-family:'Geist Mono',monospace;background:var(--card);border:1px solid var(--line2);border-radius:6px;padding:1px 7px;text-align:center;font-weight:500}
 .pane{display:flex;flex-direction:column;min-height:0;border-right:1px solid var(--line)}
@@ -608,13 +609,14 @@ const lbRow=a=>S.lb?.rows.find(r=>r.a.toLowerCase()===String(a||'').toLowerCase(
 let ALIAS=store.get('aliases',null);
 async function loadAliases(){try{if(ALIAS&&Date.now()-ALIAS.t<864e5)return;const d=await fetch('https://api.hypurrscan.io/globalAliases').then(r=>r.json());const m={};for(const k in d)m[k.toLowerCase()]=d[k];ALIAS={t:Date.now(),m};store.set('aliases',ALIAS)}catch(e){}}
 const aliasOf=a=>ALIAS?.m?.[String(a||'').toLowerCase()]||'';
-const nameOf=a=>{const r=lbRow(a);return r&&r.n?r.n:aliasOf(a)||shortA(a)};
+const LABELS=store.get('labels',{});
+const nameOf=a=>{const r=lbRow(a);return r&&r.n?r.n:LABELS[String(a).toLowerCase()]||aliasOf(a)||shortA(a)};
 const isEntity=a=>{const r=lbRow(a);return r?!!r.x:!!aliasOf(a)};
 const dirEs=d=>({'Open Long':'opened long','Close Long':'closed long','Open Short':'opened short','Close Short':'closed short','Buy':'bought','Sell':'sold','Long > Short':'flipped short','Short > Long':'flipped long'}[d]||d||'traded');
 
 // ---------- lista izquierda ----------
 const FILTERS={tokens:[['trend','trending'],['new','new'],['top','top volume'],['grad','graduated'],['fav','favorites']],perps:[['vol','volume'],['gain','gainers'],['lose','losers'],['lev','leverage'],['fav','favorites']],
- mercados:[['stk','stocks'],['idx','indices & ETFs'],['comm','commodities'],['pre','pre-IPO'],['rates','rates'],['fx','forex']],rank:[['day','24h'],['week','7 days'],['month','30 days'],['allTime','all time'],['thrive','thrive traders']],feed:[['all','following'],['top','top today']]};
+ mercados:[['stk','stocks'],['idx','indices & ETFs'],['comm','commodities'],['pre','pre-IPO'],['rates','rates'],['fx','forex']],rank:[['day','24h'],['week','7 days'],['month','30 days'],['allTime','all time'],['fol','following'],['thrive','thrive traders']],feed:[['all','following'],['top','top today']]};
 function renderFilt(){$('#filt').innerHTML=FILTERS[S.tab].map(([k,l])=>`<button data-f="${k}" class="${S.filt[S.tab]===k?'on':''}">${l}</button>`).join('');$$('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===S.tab))}
 function mrow(m){const extra=m.kind==='tok'?sh(m.mc)+' MC':sh(m.vol)+' vol';
  return `<div class="it ${S.cur&&S.cur.id===m.id?'on':''}" data-m="${m.kind}|${esc(m.id)}">${icon(m,30)}<div class="g"><div class="n">${esc(m.sym)}</div><div class="sm m mut">$${px(m.px)}</div></div><div class="r"><div class="sm m">${extra}</div><div class="sm m ${m.ch>=0?'up':'dn'}">${pc(m.ch)}</div></div></div>`}
@@ -797,7 +799,7 @@ function ticket(soft){const m=S.cur;if(!m)return;const perp=m.kind==='perp';$('#
  try{trenchUI(m,perp,soft)}catch(e){}
  if(RS.on){return ticketReal(soft)}
  if(!soft){$('#bs').innerHTML=perp?`<button class="buy ${S.side==='buy'?'on':''}" data-side="buy">up<small>long</small></button><button class="sell ${S.side==='sell'?'on':''}" data-side="sell">down<small>short</small></button>`:`<button class="buy ${S.side==='buy'?'on':''}" data-side="buy">buy</button><button class="sell ${S.side==='sell'?'on':''}" data-side="sell">sell</button>`;
-  $('#levw').style.display=perp?'block':'none';$('#lev').max=m.maxLev||10;if(S.lev>m.maxLev)S.lev=m.maxLev;$('#lev').value=S.lev;$('#levV').textContent='×'+S.lev;
+  $('#levw').style.display=perp?'block':'none';$('#lev').max=m.maxLev||10;if(S.lev>m.maxLev||!S.levTouched)S.lev=m.maxLev||S.lev;$('#lev').value=S.lev;$('#levV').textContent='×'+S.lev+(S.lev>=(+$('#lev').max||0)?' max':'');
   $('#amtL').textContent=perp?'margin':S.side==='sell'?'to sell':'to buy'}
  const v=parseFloat($('#amt').value)||0,p=m.px,g=$('#go');let ok=v>0,lines=[];
  if(perp){const not=v*S.lev,q=not/p,liq=S.side==='buy'?p*(1-.9/S.lev):p*(1+.9/S.lev);ok=ok&&v<=S.paper.cash;
@@ -809,7 +811,7 @@ function ticket(soft){const m=S.cur;if(!m)return;const perp=m.kind==='perp';$('#
  g.className='go '+S.side;g.disabled=!ok;$('#est').innerHTML=lines.map(([k,v])=>`<div><span>${k}</span><span class="m">${v}</span></div>`).join('')}
 function ticketReal(soft){const m=S.cur,perp=m.kind==='perp',g=$('#go');
  if(!soft){$('#bs').innerHTML=perp?`<button class="buy ${S.side==='buy'?'on':''}" data-side="buy">up<small>long</small></button><button class="sell ${S.side==='sell'?'on':''}" data-side="sell">down<small>short</small></button>`:`<button class="buy on" data-side="buy">buy</button><button class="sell" data-side="sell">sell</button>`;
-  $('#levw').style.display=perp?'block':'none';$('#lev').max=m.maxLev||10;if(S.lev>m.maxLev)S.lev=m.maxLev;$('#lev').value=S.lev;$('#levV').textContent='×'+S.lev;$('#amtL').textContent='USDC margin'}
+  $('#levw').style.display=perp?'block':'none';$('#lev').max=m.maxLev||10;if(S.lev>m.maxLev||!S.levTouched)S.lev=m.maxLev||S.lev;$('#lev').value=S.lev;$('#levV').textContent='×'+S.lev+(S.lev>=(+$('#lev').max||0)?' max':'');$('#amtL').textContent='USDC margin'}
  if(!perp){if(!soft){$('#amtL').textContent=S.side==='sell'?'to sell (USD)':'to buy (USD)'}
   const v=parseFloat($('#amt').value)||0,buy=S.side==='buy',solUi=+(RS.solBal?.SOL?.uiAmount||0),solUsd=solUi*RS.solPx,h=solHave(m.token),haveUsd=h?h.ui*m.px:0;
   $('#est').innerHTML=(RS.sol?[['wallet',shortA(RS.sol)],['SOL balance',`${solUi.toFixed(4)} SOL · ${usd(solUsd)}`],[`your ${m.sym}`,h?`${h.ui.toLocaleString('en-US',{maximumFractionDigits:2})} · ${usd(haveUsd)}`:'none'],['slippage',(REAL.solSlippageBps/100)+'%'],['route','jupiter (best price)']]:[['solana wallet','not connected']]).map(([k,x])=>`<div><span>${k}</span><span class="m">${x}</span></div>`).join('');
@@ -1014,7 +1016,7 @@ async function loadClans(){try{CLANS=await sbRest('clan_list?order=members.desc&
 const clanPnl=(c,w='day')=>(c.addresses||[]).reduce((a,ad)=>{const r=lbRow(ad);return a+(r?r[w][0]:0)},0);
 function holdIcons(a){const st=S.states[String(a).toLowerCase()];if(!st)return'';const P=(st.assetPositions||[]).map(p=>p.position).sort((x,y)=>Math.abs(y.positionValue)-Math.abs(x.positionValue));if(!P.length)return'';
  return `<div class="hold">${P.slice(0,3).map(q=>{const mk=allPerps().find(x=>x.id===q.coin)||{id:q.coin,sym:q.coin.replace(/^\w+:/,''),img:'https://app.hyperliquid.xyz/coins/'+encodeURIComponent(q.coin)+'.svg'};return icon(mk,16)}).join('')}${P.length>3?`<span class="more">${P.length-3}+</span>`:''}</div>`}
-async function renderRank(g,f){const el=$('#list');if(f==='thrive')return renderThriveRank(g);if(!S.lb)await loadLB();await Promise.all([loadVaults(),loadClans()]);if(g!==listGen)return;
+async function renderRank(g,f){const el=$('#list');if(f==='thrive')return renderThriveRank(g);if(f==='fol')return renderFollowing(g);if(!S.lb)await loadLB();await Promise.all([loadVaults(),loadClans()]);if(g!==listGen)return;
  const R=[...S.lb.rows].sort((a,b)=>b[f][0]-a[f][0]);const top=R.slice(0,100);
  const cl=(CLANS||[]).map(c=>({kind:'clan',id:c.id,n:c.name,tag:c.tag,p:clanPnl(c,f),m:c.members})).concat((VAULTS.rows||[]).slice().sort((a,b)=>(b[f]||0)-(a[f]||0)).slice(0,6).map(v=>({kind:'vault',id:v.a,n:v.n,tag:'V',p:v[f]||0}))).slice(0,6);
  const my=AC.profile&&/^0x/.test(AC.profile.address||'')?AC.profile.address:null,myIdx=my?R.findIndex(r=>r.a===my):-1;
@@ -1024,6 +1026,17 @@ async function renderRank(g,f){const el=$('#list');if(f==='thrive')return render
  <div class="dim sm" style="padding:0 12px 6px">real PnL on Hyperliquid${S.lb.updated?' · updated '+ago(S.lb.updated*1000)+' ago':''}</div>`+
  top.map((r,i)=>`<div class="rrow" data-u="${r.a}" style="--rc:${i<3?MED[i]:'transparent'}">${i<3?MEDAL(MED[i]):`<span class="rk">${i+1}</span>`}<span class="ava"><img src="${avOf(r.a)}" alt="" loading="lazy"><span class="ring"></span></span><div class="g"><div class="n">${esc(r.n||shortA(r.a))}${r.x?'<span class="fol" style="color:#fbbf24">entity</span>':''}</div><button class="fpill ${isFol(r.a)?'on':''}" data-follow="${r.a}">${isFol(r.a)?'following':'follow'}</button></div><div class="r"><div class="pn ${r[f][0]>=0?'up':'dn'}">${r[f][0]>=0?'+':''}${usd(r[f][0])}</div>${holdIcons(r.a)}</div></div>`).join('');
  if(Date.now()-S.statesAt>60000){refreshStates().then(()=>{if(S.tab==='rank'&&S.filt.rank===f&&g===listGen)renderRank(g,f)})}}
+
+// ---------- a quién sigues ----------
+async function renderFollowing(g){const el=$('#list');if(!S.lb)await loadLB();if(g!==listGen)return;
+ const F=S.follow.filter(a=>/^0x[0-9a-f]{40}$/.test(a));
+ el.innerHTML=`<div class="folw"><div class="sm mut" style="margin-bottom:6px">follow any trader by wallet</div><div class="folf"><input class="field" id="folA" placeholder="paste a wallet (0x…)" spellcheck="false"><input class="field" id="folN" placeholder="name (optional)" maxlength="24"><button class="btn" data-folAdd>follow</button></div></div>`+
+ (F.length?F.map(a=>{const r=lbRow(a),st=S.states[a],v=st?+st.marginSummary.accountValue:r?r.v:null,m=r?r.month[0]:null;return`<div class="rrow" data-u="${a}"><span class="ava"><img src="${avOf(a)}" alt="" loading="lazy"></span><div class="g"><div class="n">${esc(nameOf(a))}</div><div class="sm mut">${v!=null?'account '+sh(v):'loading…'}${m!=null?` · 30d <span class="${m>=0?'up':'dn'}">${m>=0?'+':''}${sh(m)}</span>`:''}</div></div><div class="r">${holdIcons(a)||'<span class="dim sm">no open positions</span>'}<button class="fpill on" data-follow="${a}" style="margin-top:4px">following</button></div></div>`}).join('')
+ :'<div class="load">you’re not following anyone yet.<br>tap <b>follow</b> on any trader in the leaderboard, or paste their wallet above.</div>');
+ const miss=F.filter(a=>!S.states[a]).slice(0,12);if(miss.length){await Promise.all(miss.map(a=>hl({type:'clearinghouseState',user:a},3).then(st=>{S.states[a]=st}).catch(()=>{})));if(S.tab==='rank'&&S.filt.rank==='fol'&&g===listGen)renderFollowing(g)}}
+function folAdd(){const a=($('#folA').value||'').trim().toLowerCase(),n=($('#folN').value||'').trim();
+ if(!/^0x[0-9a-f]{40}$/.test(a))return toast('paste a valid wallet address (0x + 40 characters)');
+ if(n){LABELS[a]=n;store.set('labels',LABELS)}if(!isFol(a))toggleFollow(a);else renderList();toast(`following <b>${esc(nameOf(a))}</b>`)}
 
 // ---------- clanes ----------
 async function openClans(){const el=$('#prof');el.dataset.u='clans';el.classList.add('on');setMobile('chart');
@@ -1321,6 +1334,7 @@ document.addEventListener('click',e=>{const T=e.target;
  if(T.closest('[data-gauth]')){gateGoogle();return}
  if(T.closest('[data-gback]')){showGate();return}
  if(T.closest('[data-gwallet]')){signInModal();return}
+ if(T.closest('[data-folAdd]')){folAdd();return}
  if(T.closest('[data-clans]')){openClans();return}
  const clb=T.closest('[data-clan]');if(clb){openClans();return}
  if(T.closest('[data-mkclan]')){clanAction('mk');return}
@@ -1361,7 +1375,7 @@ $('#go').addEventListener('click',()=>RS.on?(S.cur&&S.cur.kind==='tok'?solSwap()
 $('#amt').addEventListener('input',()=>ticket(true));
 $('#amtR').addEventListener('input',e=>{const mx=availNow(S.cur),v=mx*(+e.target.value)/100;$('#amt').value=v>0?(v>=100?Math.floor(v):v.toFixed(2)):'';ticket(true)});
 document.addEventListener('input',e=>{if(e.target.id==='thBody'){$('#thCnt').textContent=e.target.value.length+'/500'}});
-$('#lev').addEventListener('input',e=>{S.lev=+e.target.value;$('#levV').textContent='×'+S.lev;ticket(true)});
+$('#lev').addEventListener('input',e=>{S.levTouched=true;S.lev=+e.target.value;$('#levV').textContent='×'+S.lev+(S.lev>=(+$('#lev').max||0)?' max':'');ticket(true)});
 $('#q').addEventListener('input',e=>{clearTimeout(qT);qT=setTimeout(()=>search(e.target.value),350)});
 $('#q').addEventListener('keydown',e=>{if(e.key==='Enter'){const f=$('#sres .r');if(f)f.click()}if(e.key==='Escape'){$('#sres').classList.remove('on');e.target.blur()}});
 addEventListener('keydown',e=>{if(e.key==='/'&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){e.preventDefault();$('#q').focus()}});
