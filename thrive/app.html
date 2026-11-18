@@ -383,7 +383,20 @@ const COL=['#516af6','#7a5cff','#00b894','#e17055','#d63384','#0984e3','#e0a100'
 const store={get(k,d){try{const v=localStorage.getItem('np.'+k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem('np.'+k,JSON.stringify(v))}catch(e){}}};
 
 // ---------- red ----------
-async function hl(body){const r=await fetch(HL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw new Error('Hyperliquid returned '+r.status);return r.json()}
+// Hyperliquid permite 1200 de "peso" por minuto por IP. Cola con prioridad: lo que abre el usuario va primero,
+// los historiales en segundo plano esperan su turno; si aun así responde 429, esperamos y reintentamos.
+const HLW={l2Book:2,allMids:2,clearinghouseState:2,spotClearinghouseState:2,orderStatus:2,exchangeStatus:2,userRole:60};
+const HLQ={tokens:900,last:Date.now(),q:[],busy:false,pause:0};
+function hlRefill(){const n=Date.now();HLQ.tokens=Math.min(900,HLQ.tokens+(n-HLQ.last)*0.015);HLQ.last=n}
+async function hlPump(){if(HLQ.busy)return;HLQ.busy=true;
+ while(HLQ.q.length){hlRefill();const it=HLQ.q[0];const w=HLW[it.body.type]||20;
+  if(Date.now()<HLQ.pause||HLQ.tokens<w){await new Promise(r=>setTimeout(r,Math.max(120,HLQ.pause-Date.now(),(w-HLQ.tokens)/0.015)));continue}
+  HLQ.q.shift();HLQ.tokens-=w;
+  fetch(HL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(it.body)}).then(async r=>{
+   if(r.status===429&&it.tries<3){it.tries++;HLQ.pause=Date.now()+4000*it.tries;HLQ.tokens=0;HLQ.q.unshift(it);hlPump();return}
+   if(!r.ok)return it.ko(new Error(r.status===429?'Hyperliquid is busy, retry in a moment':'Hyperliquid returned '+r.status));it.ok(await r.json())}).catch(it.ko)}
+ HLQ.busy=false}
+function hl(body,prio=1){return new Promise((ok,ko)=>{const it={body,ok,ko,prio,tries:0};const k=HLQ.q.findIndex(x=>x.prio<prio);if(k<0)HLQ.q.push(it);else HLQ.q.splice(k,0,it);hlPump()})}
 const gtCache=new Map();let gtChain=Promise.resolve(),gtLast=0;
 // GeckoTerminal permite ~30 consultas por minuto por IP; vamos a 1 cada 2.6 s y, si responde 429 (llega sin CORS), esperamos y reintentamos.
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
@@ -424,7 +437,7 @@ const IDX=['XYZ100','SP500','JP225','KR200','EWY','EWJ','EWZ','XLE','URNM','DRAM
 const NAMES={COHR:'coherent',AAOI:'applied optoelectronics',IREN:'iris energy',CIFR:'cipher mining',SMH:'semiconductor ETF',CRDO:'credo',SMCI:'supermicro',LRCX:'lam research',VST:'vistra',AVGO:'broadcom',GDX:'gold miners ETF',STX:'seagate',TER:'teradyne',GLW:'corning',CRWD:'crowdstrike',NET:'cloudflare',RDDT:'reddit',MELI:'mercadolibre',CIEN:'ciena',SOFI:'sofi',IONQ:'ionq',TCNT:'tencent',GPRO:'gopro',XIAOMI:'xiaomi',OAI:'openai (pre-IPO)',ANTH:'anthropic (pre-IPO)',ANT:'ant group (pre-IPO)',SPCX:'spacex (pre-IPO)',UNITREE:'unitree (pre-IPO)',ZHIPU:'zhipu ai (pre-IPO)',CXMT:'changxin memory (pre-IPO)',CBRS:'cerebras (pre-IPO)',NBIS:'nebius',SKHX:'sk hynix',SKHY:'sk hynix',SNDK:'sandisk',SOXL:'semiconductors 3× ETF',KORU:'south korea 3× ETF',MU:'micron',IGV:'software ETF','2Y':'US 2-year treasury','10Y':'US 10-year treasury','30Y':'US 30-year treasury',TOTAL2:'crypto market cap ex-BTC',OTHERS:'altcoins index',BTCD:'bitcoin dominance',BVIV:'bitcoin volatility index',KIOXIA:'kioxia',TTWO:'take-two',CRWV:'coreweave',MRVL:'marvell',TSM:'tsmc',XYZ100:'nasdaq 100',SP500:'s&p 500',JP225:'nikkei 225',KR200:'kospi 200',GOLD:'gold',SILVER:'silver',CL:'WTI crude',BRENTOIL:'brent crude',COPPER:'copper',NATGAS:'natural gas',PLATINUM:'platinum',PALLADIUM:'palladium',JPY:'japanese yen',EUR:'euro',NVDA:'nvidia',TSLA:'tesla',AAPL:'apple',MSFT:'microsoft',GOOGL:'alphabet (google)',AMZN:'amazon',META:'meta',AMD:'amd',NFLX:'netflix',COIN:'coinbase',HOOD:'robinhood',PLTR:'palantir',MSTR:'strategy',ORCL:'oracle',INTC:'intel',TSM:'tsmc',BABA:'alibaba',GME:'gamestop',COST:'costco',LLY:'eli lilly',MU:'micron',CRCL:'circle',RIVN:'rivian',SMSN:'samsung',SOFTBANK:'softbank',HYUNDAI:'hyundai',RKLB:'rocket lab',DKNG:'draftkings',HIMS:'hims & hers',MRVL:'marvell',BTC:'bitcoin',ETH:'ethereum',SOL:'solana',HYPE:'hyperliquid'};
 function perpObj(u,c,dex,asset){const id=u.name,sym=id.replace(/^\w+:/,''),p=+c.markPx||+c.midPx||0,prev=+c.prevDayPx||p;
  return{kind:'perp',dex,id,sym,name:NAMES[sym]||(dex?sym.toLowerCase():sym+' perpetual'),img:'https://app.hyperliquid.xyz/coins/'+encodeURIComponent(id)+'.svg',px:p,prev,ch:prev?(p/prev-1)*100:0,vol:+c.dayNtlVlm||0,oi:(+c.openInterest||0)*p,fund:+c.funding||0,maxLev:u.maxLeverage||10,asset,szDec:u.szDecimals}}
-let DEXS=null;const EXT_DEXS=['xyz','para','io','mkts','flx','vntl','hyna','km','abcd','cash'];
+let DEXS=null;const EXT_DEXS=['xyz','para','io','mkts'];
 async function loadPerps(){if(!DEXS){try{const d=await hl({type:'perpDexs'});DEXS=d.map((x,i)=>x&&EXT_DEXS.includes(x.name)?{name:x.name,idx:i}:null).filter(Boolean)}catch(e){DEXS=[{name:'xyz',idx:1}]}}
  const [m,...X]=await Promise.all([hl({type:'metaAndAssetCtxs'}),...DEXS.map(d=>hl({type:'metaAndAssetCtxs',dex:d.name}).catch(()=>null))]);
  S.perps=m[0].universe.map((u,i)=>u.isDelisted?null:perpObj(u,m[1][i],'',i)).filter(p=>p&&p.px>0);
@@ -442,7 +455,11 @@ async function tokCached(){if(tokCache&&Date.now()-tokCacheAt<120000)return tokC
 async function loadTokens(f){let d=null;const c=await tokCached();if(c&&c.lists&&c.lists[f]&&Date.now()/1000-c.updated<900)d=c.lists[f];if(!d)d=await gt(TOKPATH[f],60000);const L=(d.data||[]).map(p=>tokObj(p,d.included)).filter(t=>t.px>0);S.tokens[f]=L;return L}
 async function loadLB(){for(const u of LB_URLS){try{const r=await fetch(u,{cache:'no-cache'});if(r.ok){S.lb=await r.json();return}}catch(e){}}S.lb={rows:[],updated:0}}
 const lbRow=a=>S.lb?.rows.find(r=>r.a.toLowerCase()===String(a||'').toLowerCase());
-const nameOf=a=>{const r=lbRow(a);return r&&r.n?r.n:shortA(a)};
+let ALIAS=store.get('aliases',null);
+async function loadAliases(){try{if(ALIAS&&Date.now()-ALIAS.t<864e5)return;const d=await fetch('https://api.hypurrscan.io/globalAliases').then(r=>r.json());const m={};for(const k in d)m[k.toLowerCase()]=d[k];ALIAS={t:Date.now(),m};store.set('aliases',ALIAS)}catch(e){}}
+const aliasOf=a=>ALIAS?.m?.[String(a||'').toLowerCase()]||'';
+const nameOf=a=>{const r=lbRow(a);return r&&r.n?r.n:aliasOf(a)||shortA(a)};
+const isEntity=a=>{const r=lbRow(a);return r?!!r.x:!!aliasOf(a)};
 const dirEs=d=>({'Open Long':'opened long','Close Long':'closed long','Open Short':'opened short','Close Short':'closed short','Buy':'bought','Sell':'sold','Long > Short':'flipped short','Short > Long':'flipped long'}[d]||d||'traded');
 
 // ---------- lista izquierda ----------
@@ -462,7 +479,7 @@ async function renderList(){const g=++listGen,el=$('#list');renderFilt();const f
   else if(S.tab==='mercados'){const OTH=[...IDX,...COMM,...FX,...RATES,...PREIPO];const L=S.xyz.filter(m=>f==='idx'?IDX.includes(m.sym):f==='comm'?COMM.includes(m.sym):f==='fx'?FX.includes(m.sym):f==='rates'?RATES.includes(m.sym):f==='pre'?PREIPO.includes(m.sym):!OTH.includes(m.sym)).sort((a,b)=>b.vol-a.vol);el.innerHTML=`<div class="dim sm" style="padding:8px 10px">${L.length} markets · 24/7 perpetuals on Hyperliquid</div>`;el.innerHTML+=L.map(mrow).join('')||'<div class="load">no markets available</div>'}
   else if(S.tab==='rank'&&f==='thrive'){await renderThriveRank(g)}
   else if(S.tab==='rank'){if(!S.lb)await loadLB();if(g!==listGen)return;const R=[...S.lb.rows].sort((a,b)=>b[f][0]-a[f][0]).slice(0,100);
-   el.innerHTML=`<div class="dim sm" style="padding:8px 10px">real PnL on Hyperliquid${S.lb.updated?' · updated '+ago(S.lb.updated*1000)+' ago':''}</div>`+R.map((r,i)=>`<div class="it" data-u="${r.a}"><span class="m dim" style="width:18px">${i+1}</span><img class="av" src="${avOf(r.a)}" alt=""><div class="g"><div class="n">${esc(r.n||shortA(r.a))}${isFol(r.a)?'<span class="fol">following</span>':''}</div><div class="sm mut">account ${sh(r.v)} · ROI ${pc(r[f][1]*100)}</div></div><div class="r m ${r[f][0]>=0?'up':'dn'}">${r[f][0]>=0?'+':''}${sh(r[f][0])}</div></div>`).join('')}
+   el.innerHTML=`<div class="dim sm" style="padding:8px 10px">real PnL on Hyperliquid${S.lb.updated?' · updated '+ago(S.lb.updated*1000)+' ago':''}</div>`+R.map((r,i)=>`<div class="it" data-u="${r.a}"><span class="m dim" style="width:18px">${i+1}</span><img class="av" src="${avOf(r.a)}" alt=""><div class="g"><div class="n">${esc(r.n||shortA(r.a))}${r.x?'<span class="fol" style="color:#fbbf24">entity</span>':''}${isFol(r.a)?'<span class="fol">following</span>':''}</div><div class="sm mut">account ${sh(r.v)} · ROI ${pc(r[f][1]*100)}</div></div><div class="r m ${r[f][0]>=0?'up':'dn'}">${r[f][0]>=0?'+':''}${sh(r[f][0])}</div></div>`).join('')}
   else if(S.tab==='feed')await renderFeed(g);
  }catch(e){if(g===listGen)el.innerHTML=`<div class="err">${esc(e.message)}. <a href="#" data-retry style="color:#aab4ff">retry</a></div>`}}
 async function renderFeed(g){const el=$('#list'),f=S.filt.feed;if(!S.lb)await loadLB();
@@ -585,12 +602,12 @@ async function loadTokInfo(m,g){if(!m.token)return;try{const d=await gt(`/networ
 async function loadPerpTrades(g){const m=S.cur;try{const d=await hl({type:'recentTrades',coin:m.id});if(g!==selGen)return;d.reverse().forEach(addPerpTrade)}catch(e){}renderPerpTrades(false,true);
  loadPerpHistory(m,g)}
 const FILLS={};
-async function fillsOf(a){const c=FILLS[a];if(c&&Date.now()-c.t<180000)return c.d;const d=await hl({type:'userFills',user:a});FILLS[a]={t:Date.now(),d};return d}
+async function fillsOf(a,prio=1){const c=FILLS[a];if(c&&Date.now()-c.t<300000)return c.d;const d=await hl({type:'userFills',user:a},prio);FILLS[a]={t:Date.now(),d};return d}
 // historial real: operaciones de los top traders (24 h, 7 días y 30 días) y de los que sigues, repartidas en el gráfico
 async function loadPerpHistory(m,g){if(!S.lb)await loadLB();const R=S.lb.rows||[];
- const users=[...new Set([...S.follow.filter(a=>a.startsWith('0x')),...[...R].sort((a,b)=>b.day[0]-a.day[0]).slice(0,25).map(r=>r.a),...[...R].sort((a,b)=>b.week[0]-a.week[0]).slice(0,25).map(r=>r.a),...[...R].sort((a,b)=>b.month[0]-a.month[0]).slice(0,25).map(r=>r.a)])].slice(0,60);
+ const users=[...new Set([...S.follow.filter(a=>a.startsWith('0x')),...[...R].filter(r=>!r.x).sort((a,b)=>b.day[0]-a.day[0]).slice(0,10).map(r=>r.a),...[...R].filter(r=>!r.x).sort((a,b)=>b.week[0]-a.week[0]).slice(0,8).map(r=>r.a),...[...R].filter(r=>!r.x).sort((a,b)=>b.month[0]-a.month[0]).slice(0,8).map(r=>r.a)])].slice(0,22);
  let i=0,last=0;const add=(a,fl)=>{fl.forEach(f=>{if(f.coin===m.id)S.hist.push({u:a,b:f.side==='B',usd:+f.sz*+f.px,px:+f.px,t:f.time,fol:isFol(a)?1:0,hist:1})});if(Date.now()-last>400){last=Date.now();draw()}};
- await Promise.all(Array.from({length:6},async()=>{while(i<users.length){const a=users[i++];try{const fl=await fillsOf(a);if(g!==selGen)return;add(a,fl)}catch(e){}}}));
+ await Promise.all(Array.from({length:2},async()=>{while(i<users.length){const a=users[i++];try{const fl=await fillsOf(a,0);if(g!==selGen)return;add(a,fl)}catch(e){}}}));
  if(g===selGen)draw()}
 function addPerpTrade(t){const b=t.side==='B',u=b?t.users?.[0]:t.users?.[1],o={u,b,usd:+t.sz*+t.px,px:+t.px,t:t.time,tid:t.tid};
  if(S.trades.some(x=>x.tid===o.tid))return;S.trades.unshift(o);if(S.trades.length>300)S.trades.length=300;S.bub.push(o);if(S.bub.length>900)S.bub.splice(0,300)}
@@ -599,7 +616,7 @@ let rpT=0;function renderPerpTrades(flash,force){if(BOOK.tab==='book')return;if(
 async function refreshStates(){if(Date.now()-S.statesAt<60000)return;S.statesAt=Date.now();if(!S.lb)await loadLB();
  const top=[...S.lb.rows].sort((a,b)=>b.month[0]-a.month[0]).slice(0,30).map(r=>r.a),fol=S.follow.filter(a=>a.startsWith('0x'));
  const list=[...new Set([...fol,...top])].slice(0,40);let i=0;
- await Promise.all(Array.from({length:5},async()=>{while(i<list.length){const a=list[i++];try{S.states[a]=await hl({type:'clearinghouseState',user:a})}catch(e){}}}))}
+ await Promise.all(Array.from({length:5},async()=>{while(i<list.length){const a=list[i++];try{S.states[a]=await hl({type:'clearinghouseState',user:a},0)}catch(e){}}}))}
 async function loadTopPositions(g){const m=S.cur;$('#lpT').textContent='top trader positions';$('#lpN').textContent='';$('#lpR').innerHTML='<span class="dim">top 30 of the month + who you follow</span>';
  if(!Object.keys(S.states).length)$('#lp').innerHTML='<div class="load">reading real positions…</div>';await refreshStates();if(g!==selGen)return;
  const R=[];Object.entries(S.states).forEach(([a,st])=>{(st.assetPositions||[]).forEach(p=>{if(p.position.coin===m.id)R.push({a,q:p.position})})});
@@ -820,7 +837,7 @@ async function libs(){if(RS.libs)return RS.libs;await loadScript('https://cdnjs.
 const isMain=()=>REAL.net==='main';
 function agentKeyName(a){return 'real.agent.'+REAL.net+'.'+a}
 async function loadAgent(){if(!RS.addr)return null;const k=store.get(agentKeyName(RS.addr),null);if(!k)return null;await libs();RS.agent=new ethers.Wallet(k);return RS.agent}
-async function realInfo(body){return (await libs()).info(REAL.net,body)}
+async function realInfo(body){return REAL.net==='main'?hl(body,2):(await libs()).info(REAL.net,body)}
 // ---------- solana real (Jupiter + Phantom) ----------
 const JUP='https://lite-api.jup.ag',WSOL='So11111111111111111111111111111111111111112';
 const solProv=()=>window.phantom?.solana||window.solflare||window.backpack||window.solana||null;
@@ -849,7 +866,8 @@ async function solSwap(){const m=S.cur,v=parseFloat($('#amt').value);if(!m||m.ki
  catch(e){if(e.message!=='canceled')toast('<span class="dn">swap failed:</span> '+esc(e.message||e))}
  finally{RS.busy=false;ticket()}}
 
-async function refreshReal(){if(!RS.addr)return;try{const D=S.extDexs||['xyz'];const [st,oo,...ex]=await Promise.all([realInfo({type:'clearinghouseState',user:RS.addr}),realInfo({type:'frontendOpenOrders',user:RS.addr}),...D.map(d=>realInfo({type:'clearinghouseState',user:RS.addr,dex:d}).catch(()=>null)),...D.map(d=>realInfo({type:'frontendOpenOrders',user:RS.addr,dex:d}).catch(()=>[]))]);const n=D.length;ex.slice(0,n).forEach(x=>{if(x)st.assetPositions=(st.assetPositions||[]).concat(x.assetPositions||[])});RS.state=st;RS.orders=(oo||[]).concat(...ex.slice(n).map(o=>o||[]));if(RS.on){wallet();renderPos(true)}}catch(e){}}
+let realN=0;async function refreshReal(force){if(!RS.addr)return;try{const D=S.extDexs||['xyz'];const withOrders=force||realN++%4===0;const [st,...ex]=await Promise.all([realInfo({type:'clearinghouseState',user:RS.addr}),...D.map(d=>realInfo({type:'clearinghouseState',user:RS.addr,dex:d}).catch(()=>null))]);ex.forEach(x=>{if(x)st.assetPositions=(st.assetPositions||[]).concat(x.assetPositions||[])});RS.state=st;
+ if(withOrders){const O=await Promise.all([realInfo({type:'frontendOpenOrders',user:RS.addr}),...D.map(d=>realInfo({type:'frontendOpenOrders',user:RS.addr,dex:d}).catch(()=>[]))]);RS.orders=[].concat(...O.map(o=>o||[]))}if(RS.on){wallet();renderPos(true)}}catch(e){}}
 async function realSetup(){await libs();const eth=window.ethereum;const step=(n,ok,txt,btn)=>`<div class="step ${ok?'ok':''}"><i>${ok?'✓':n}</i><div class="t">${txt}</div>${btn||''}</div>`;
  let acct=0,agentOk=false,feeOk=!REAL.builder;
  if(RS.addr){try{const st=await realInfo({type:'clearinghouseState',user:RS.addr});RS.state=st;acct=+st.marginSummary.accountValue+ +(st.withdrawable||0)*0}catch(e){}
@@ -900,36 +918,59 @@ async function realOrder(){const m=S.cur,v=parseFloat($('#amt').value);if(!m||m.
   const oa=H.orderAction(orders,REAL.builder?{b:REAL.builder,f:REAL.fee}:null,orders.length>1?'normalTpsl':'na');n=Date.now();
   r=await H.post(REAL.net,oa,n,await H.signL1(ag,oa,n,isMain()));const err=fmtErr(r);if(err)throw new Error(err);
   const f=r.response.data.statuses[0].filled;toast(f?`<span class="up">filled</span> ${isBuy?'long':'short'} ${esc(m.sym)} · ${f.totalSz} @ ${px(+f.avgPx)}`:'order sent');
-  $('#amt').value='';$('#tp').value='';$('#sl').value='';setTimeout(refreshReal,800)}
+  $('#amt').value='';$('#tp').value='';$('#sl').value='';setTimeout(()=>refreshReal(true),800)}
  catch(e){toast('<span class="dn">order rejected:</span> '+esc(e.message))}
  finally{RS.busy=false;ticket()}}
 async function realClose(coin){const H=await libs(),ag=RS.agent||await loadAgent();const p=(RS.state?.assetPositions||[]).find(x=>x.position.coin===coin)?.position;const m=allPerps().find(x=>x.id===coin);if(!p||!m||!ag)return;
  const isBuy=+p.szi<0,sz=Math.abs(+p.szi),mid=S.mids[coin]||m.px,lim=H.roundPx(isBuy?mid*(1+REAL.slippage):mid*(1-REAL.slippage),m.szDec);
  try{const oa=H.orderAction([H.orderWire({asset:m.asset,isBuy,px:lim,sz,reduceOnly:true,tif:'Ioc'})],REAL.builder?{b:REAL.builder,f:REAL.fee}:null),n=Date.now();
-  const r=await H.post(REAL.net,oa,n,await H.signL1(ag,oa,n,isMain()));const err=fmtErr(r);if(err)throw new Error(err);toast(`<span class="up">cerraste</span> ${esc(m.sym)}`);setTimeout(refreshReal,800)}
+  const r=await H.post(REAL.net,oa,n,await H.signL1(ag,oa,n,isMain()));const err=fmtErr(r);if(err)throw new Error(err);toast(`<span class="up">cerraste</span> ${esc(m.sym)}`);setTimeout(()=>refreshReal(true),800)}
  catch(e){toast('<span class="dn">couldn’t close:</span> '+esc(e.message))}}
-async function realCancel(asset,oid){const H=await libs(),ag=RS.agent||await loadAgent();try{const a=H.cancelAction([{asset,oid}]),n=Date.now();const r=await H.post(REAL.net,a,n,await H.signL1(ag,a,n,isMain()));const err=fmtErr(r);if(err)throw new Error(err);toast('order canceled');setTimeout(refreshReal,600)}catch(e){toast('<span class="dn">'+esc(e.message)+'</span>')}}
+async function realCancel(asset,oid){const H=await libs(),ag=RS.agent||await loadAgent();try{const a=H.cancelAction([{asset,oid}]),n=Date.now();const r=await H.post(REAL.net,a,n,await H.signL1(ag,a,n,isMain()));const err=fmtErr(r);if(err)throw new Error(err);toast('order canceled');setTimeout(()=>refreshReal(true),600)}catch(e){toast('<span class="dn">'+esc(e.message)+'</span>')}}
 
 // ---------- perfiles ----------
 function closeProf(){$('#prof').classList.remove('on')}
 function openWallet(a){if(!a)return;if(/^0x[0-9a-fA-F]{40}$/.test(a))openProfile(a);else window.open('https://solscan.io/account/'+a,'_blank','noopener')}
-async function openProfile(a){a=a.toLowerCase();const el=$('#prof');el.classList.add('on');setMobile('chart');const r=lbRow(a);history.replaceState(null,'','#u/'+a);
+async function openProfile(a){a=a.toLowerCase();const el=$('#prof');el.dataset.u=a;el.classList.add('on');setMobile('chart');const r=lbRow(a);history.replaceState(null,'','#u/'+a);
  const fb=()=>`<button class="btn ${isFol(a)?'gh':''}" data-follow="${a}">${isFol(a)?'following':'follow and get alerts'}</button>`;
  el.innerHTML=`<button class="back" data-back><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>back to chart</button>
- <div class="phead"><img src="${avOf(a)}" alt=""><div><h2>${esc(nameOf(a))}</h2><div class="mut m sm">${a} · <a href="#" data-copy="${a}" style="color:#aab4ff">copy</a></div></div><div style="margin-left:auto;display:flex;gap:8px">${fb()}<a class="btn gh" href="https://hypurrscan.io/address/${a}" target="_blank" rel="noopener">hypurrscan</a></div></div>
- <div class="kpis" id="pk"><div class="kpi"><div class="k">account value</div><div class="v m" id="pkv">${r?sh(r.v):'…'}</div></div>${['day','week','month','allTime'].map((w,i)=>`<div class="kpi"><div class="k">PnL ${['24h','7 days','30 days','all time'][i]}</div><div class="v m ${r&&r[w][0]>=0?'up':'dn'}">${r?(r[w][0]>=0?'+':'')+sh(r[w][0]):'—'}</div><div class="sm m mut">${r?'ROI '+pc(r[w][1]*100):'outside the top'}</div></div>`).join('')}</div>
+ <div class="phead"><img src="${avOf(a)}" alt=""><div><h2>${esc(nameOf(a))}${isEntity(a)?'<span class="onth" style="color:#fbbf24;border-color:rgba(251,191,36,.4)">labeled entity</span>':''}</h2><div class="mut m sm">${r?`#${[...S.lb.rows].sort((x,y)=>y.month[0]-x.month[0]).findIndex(x=>x.a===r.a)+1} on the 30-day leaderboard · `:''}${a} · <a href="#" data-copy="${a}" style="color:#aab4ff">copy</a></div></div><div style="margin-left:auto;display:flex;gap:8px">${fb()}<a class="btn gh" href="https://hypurrscan.io/address/${a}" target="_blank" rel="noopener">hypurrscan</a></div></div>
+ <div class="kpis" id="pk">${['account value','PnL 24h','PnL 7 days','PnL 30 days','PnL all time'].map(k=>`<div class="kpi"><div class="k">${k}</div><div class="v m" style="opacity:.35">…</div><div class="sm m mut">&nbsp;</div></div>`).join('')}</div>
+ <div class="sect" id="pchart"><h3>PnL history <span class="ptab" id="pcTabs">${['day','week','month','allTime'].map((w,i)=>`<button data-pc="${w}" class="${w==='month'?'on':''}">${['24h','7d','30d','all'][i]}</button>`).join('')}</span></h3><div style="position:relative;height:170px"><canvas id="pcv" style="position:absolute;inset:0;width:100%;height:100%"></canvas><div class="cvmsg" id="pcmsg">loading official history from Hyperliquid…</div></div></div>
  <div id="pth"></div>
  <div class="sect"><h3>open positions <span class="dim" id="pposN"></span></h3><div class="scrollx" id="ppos"><div class="load">reading positions…</div></div></div>
  <div class="sect"><h3>recent trades</h3><div class="scrollx" id="pfills"><div class="load">loading…</div></div></div>`;
  sbRest(`thesis_feed?address=eq.${a}&order=created_at.desc&limit=20`).then(L=>{if(!L.length)return;const h=L[0].handle;if(h)$('#prof h2').innerHTML=esc(h)+'<span class="onth">on thrive</span>';
   $('#pth').innerHTML=`<div class="sect"><h3>theses <span class="dim">${L.length}</span></h3>${L.map(t=>`<div class="th"><div class="b"><div><b>${esc(t.market.replace(/^perp:(xyz:)?|^tok:/,''))}</b> ${t.side&&t.side!=='neutral'?`<span class="badge ${t.side==='long'?'b':'s'}">${t.side}</span>`:''} <span class="dim sm">${ago(Date.parse(t.created_at))} ago · ${t.likes} likes</span></div><div class="t">${esc(t.body)}</div></div></div>`).join('')}</div>`}).catch(()=>{});
- try{const [st,fl]=await Promise.all([hl({type:'clearinghouseState',user:a}),hl({type:'userFills',user:a})]);S.states[a]=st;
-  $('#pkv').textContent=sh(+st.marginSummary.accountValue);
+ try{const [st,fl,pf]=await Promise.all([hl({type:'clearinghouseState',user:a},2),hl({type:'userFills',user:a},2),hl({type:'portfolio',user:a},2).catch(()=>null)]);S.states[a]=st;
+  if($('#prof').dataset.u!==a)return;
+  renderProfileKpis(a,st,pf,fl);
   const P=st.assetPositions||[];$('#pposN').textContent=P.length+' · exposure '+sh(+st.marginSummary.totalNtlPos);
   $('#ppos').innerHTML=P.length?`<table><thead><tr><th>market</th><th>side</th><th>size</th><th>entry</th><th>PnL</th><th>lev.</th><th>liquidation</th></tr></thead><tbody>${P.map(({position:q})=>{const L=+q.szi>0,u=+q.unrealizedPnl,mk=allPerps().find(x=>x.id===q.coin)||{id:q.coin,sym:q.coin.replace(/^\w+:/,''),img:'https://app.hyperliquid.xyz/coins/'+encodeURIComponent(q.coin)+'.svg'};
    return`<tr class="cl" data-m="perp|${esc(q.coin)}"><td><div class="who">${icon(mk,22)}${esc(mk.sym)}</div></td><td><span class="badge ${L?'b':'s'}">${L?'long':'short'}</span></td><td class="m">${sh(+q.positionValue)}</td><td class="m">${px(q.entryPx)}</td><td class="m ${u>=0?'up':'dn'}">${u>=0?'+':''}${sh(u)} <span class="sm">${pc(q.returnOnEquity*100)}</span></td><td class="m">${q.leverage?.value}×</td><td class="m dim">${q.liquidationPx?px(q.liquidationPx):'—'}</td></tr>`}).join('')}</tbody></table>`:'<div class="load">no open positions</div>';
   $('#pfills').innerHTML=fl.length?`<table><thead><tr><th>market</th><th>side</th><th>size</th><th>price</th><th>closed PnL</th><th>time</th></tr></thead><tbody>${fl.slice(0,60).map(f=>{const cp=+f.closedPnl;return`<tr class="cl" data-m="perp|${esc(f.coin)}"><td>${esc(f.coin.replace(/^\w+:/,''))}</td><td><span class="badge ${f.side==='B'?'b':'s'}">${esc(dirEs(f.dir))}</span></td><td class="m">${sh(f.sz*f.px)}</td><td class="m">${px(f.px)}</td><td class="m ${cp>0?'up':cp<0?'dn':'dim'}">${cp?(cp>0?'+':'')+sh(cp):'—'}</td><td class="dim">${ago(f.time)}</td></tr>`}).join('')}</tbody></table>`:'<div class="load">no trades</div>';
  }catch(e){$('#ppos').innerHTML=`<div class="err">${esc(e.message)}</div>`}}
+// KPIs del perfil desde el endpoint oficial "portfolio" de Hyperliquid: valor de cuenta y PnL por ventana
+let PF=null;
+function renderProfileKpis(a,st,pf,fl){PF=pf?Object.fromEntries(pf):null;const perp=+st.marginSummary.accountValue;
+ const win=w=>{const v=PF?.[w];if(!v)return null;const ph=v.pnlHistory||[],ah=v.accountValueHistory||[];if(!ph.length)return null;const pnl=+ph[ph.length-1][1]-(+ph[0][1]);const start=+(ah[0]?.[1]||0);return{pnl,roi:start>1?pnl/start*100:null,vol:+v.vlm||0}};
+ const acct=PF?.allTime?.accountValueHistory?.length?+PF.allTime.accountValueHistory.at(-1)[1]:perp;
+ const K=[['account value',sh(Math.max(acct,perp)),'',acct>perp+1?`perps ${sh(perp)} · rest in spot/vaults`:'live from Hyperliquid']].concat([['day','PnL 24h'],['week','PnL 7 days'],['month','PnL 30 days'],['allTime','PnL all time']].map(([w,l])=>{const x=win(w);return x?[l,(x.pnl>=0?'+':'')+sh(x.pnl),x.pnl>=0?'up':'dn',(x.roi!=null?'ROI '+pc(x.roi)+' · ':'')+'vol '+sh(x.vol)]:[l,'—','','no data']}));
+ $('#pk').innerHTML=K.map(([k,v,c,sub])=>`<div class="kpi"><div class="k">${k}</div><div class="v m ${c}">${v}</div><div class="sm m mut">${sub}</div></div>`).join('');
+ const empty=Math.max(acct,perp)<1&&!(st.assetPositions||[]).length;
+ if(empty)$('#pk').insertAdjacentHTML('afterend',`<div class="sect" style="padding:12px 14px;color:#fde68a;border-color:rgba(251,191,36,.3)">this account is empty right now: no balance and no open positions on Hyperliquid. ${fl.length?'its trade history is below.':'it has no recent trades.'}</div>`);
+ drawPnl('month')}
+function drawPnl(w){const c=$('#pcv');if(!c)return;$$('[data-pc]').forEach(b=>b.classList.toggle('on',b.dataset.pc===w));const v=PF?.[w];const msg=$('#pcmsg');
+ const ph=(v?.pnlHistory||[]).map(p=>[+p[0],+p[1]]);if(ph.length<2){msg.textContent='no PnL history for this period';msg.style.display='grid';c.getContext('2d').clearRect(0,0,c.width,c.height);return}msg.style.display='none';
+ const d=devicePixelRatio,W=c.clientWidth,H=c.clientHeight;c.width=W*d;c.height=H*d;const x=c.getContext('2d');x.scale(d,d);
+ const b0=ph[0][1],vals=ph.map(p=>p[1]-b0),mn=Math.min(0,...vals),mx=Math.max(0,...vals),t0=ph[0][0],t1=ph.at(-1)[0];
+ const X=t=>8+(W-80)*(t-t0)/Math.max(1,t1-t0),Y=v=>10+(H-30)*(1-(v-mn)/Math.max(1e-9,mx-mn));const up=vals.at(-1)>=0,col=up?'#22c55e':'#ef4444';
+ x.strokeStyle='rgba(203,208,235,.08)';x.beginPath();x.moveTo(8,Y(0));x.lineTo(W-72,Y(0));x.stroke();
+ const g=x.createLinearGradient(0,0,0,H);g.addColorStop(0,col+'55');g.addColorStop(1,col+'00');
+ x.beginPath();ph.forEach((p,i)=>{const X0=X(p[0]),Y0=Y(vals[i]);i?x.lineTo(X0,Y0):x.moveTo(X0,Y0)});x.strokeStyle=col;x.lineWidth=2;x.stroke();x.lineTo(X(t1),Y(0));x.lineTo(X(t0),Y(0));x.fillStyle=g;x.fill();
+ x.font='10px Geist Mono';x.fillStyle='#62636e';[mx,0,mn].forEach(v=>x.fillText((v>=0?'+':'')+sh(v),W-68,Y(v)+3));
+ const f=t=>new Date(t).toLocaleDateString('en-US',{month:'short',day:'numeric'});x.fillText(f(t0),8,H-6);x.fillText(f(t1),W-120,H-6)}
+
 function toggleFollow(a){a=a.toLowerCase();const i=S.follow.indexOf(a);if(i>=0){S.follow.splice(i,1);toast('you unfollowed '+esc(nameOf(a)))}else{S.follow.push(a);S.seen[a]=Date.now();store.set('seen',S.seen);toast(`you’re now following <b>${esc(nameOf(a))}</b>. we’ll alert you on every trade.`)}store.set('follow',S.follow);S.statesAt=0}
 function toggleFav(){const m=S.cur;const i=S.favs.findIndex(x=>x.id===m.id);if(i>=0){S.favs.splice(i,1);toast('removed from favorites')}else{S.favs.push({kind:m.kind,id:m.id,sym:m.sym,img:m.img,px:m.px,ch:m.ch,mc:m.mc,vol:m.vol,pool:m.pool});toast(`${esc(m.sym)} saved to favorites`)}store.set('favs',S.favs);head();if(S.filt[S.tab]==='fav')renderList()}
 
@@ -991,6 +1032,7 @@ document.addEventListener('click',e=>{const T=e.target;
  const sd=T.closest('[data-side]');if(sd){S.side=sd.dataset.side;ticket();return}
  const pr=T.closest('[data-p]');if(pr){$('#amt').value=pr.dataset.p;ticket();return}
  const pt=T.closest('[data-pt]');if(pt){S.ptab=pt.dataset.pt;$$('[data-pt]').forEach(b=>b.classList.toggle('on',b===pt));renderPos(true);return}
+ const pcb=T.closest('[data-pc]');if(pcb){drawPnl(pcb.dataset.pc);return}
  const lpb=T.closest('[data-lp]');if(lpb){lpTab(lpb.dataset.lp);return}
  const si=T.closest('[data-signin]');if(si){signIn(si.dataset.signin);return}
  if(T.closest('[data-signinopen]')){e.preventDefault();signInModal();return}
@@ -1031,7 +1073,7 @@ addEventListener('resize',draw);
 setInterval(()=>{$('#clock').textContent=new Date().toTimeString().slice(0,8)+' local time'},1000);
 
 // ---------- arranque ----------
-(async function boot(){applyLay();restoreSession();$$('[data-ct]').forEach(b=>b.classList.toggle('on',b.dataset.ct===VIEW.type));wallet();renderPos(true);bell();renderFilt();
+(async function boot(){applyLay();restoreSession();loadAliases();$$('[data-ct]').forEach(b=>b.classList.toggle('on',b.dataset.ct===VIEW.type));wallet();renderPos(true);bell();renderFilt();
  try{await loadPerps()}catch(e){$('#list').innerHTML=`<div class="err">couldn’t connect to Hyperliquid: ${esc(e.message)}</div>`}
  wsOpen();foot();const lbP=loadLB();
  const h=decodeURIComponent(location.hash.slice(1)),last=store.get('last',null);
@@ -1049,7 +1091,7 @@ setInterval(()=>{$('#clock').textContent=new Date().toTimeString().slice(0,8)+' 
  setInterval(()=>{if(S.cur&&S.cur.kind==='perp'&&!document.hidden)loadTopPositions(selGen)},90000);
  setInterval(()=>{if(S.cur&&S.cur.kind==='perp')about()},5000);
  setInterval(pollAlerts,45000);setTimeout(pollAlerts,5000);
- setInterval(()=>{if(RS.on&&!document.hidden)refreshReal()},5000);
+ setInterval(()=>{if(RS.on&&!document.hidden)refreshReal()},7000);
  setInterval(()=>{if(RS.on&&RS.sol&&!document.hidden)refreshSol()},20000);
  if(store.get('mode','paper')==='real'&&((RS.addr&&store.get(agentKeyName(RS.addr),null))||RS.sol)){loadAgent().catch(()=>{}).then(()=>setMode('real',true))}
  setInterval(()=>{if(S.tab==='feed'&&!document.hidden)renderList()},60000);

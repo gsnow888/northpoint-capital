@@ -2,7 +2,7 @@
    Páginas (HTML) y scripts propios: primero la red → siempre la versión nueva; sin conexión, la copia guardada.
    Imágenes e íconos: del caché y se actualizan en segundo plano.
    APIs y datos de mercado: nunca pasan por aquí (siempre en vivo). */
-const VERSION = 'thrive-v6';
+const VERSION = 'thrive-v7';
 const SHELL = ['./', 'index.html', 'app.html', 'help.html', 'hl-sign.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'img/espacio.jpg',
   ...Array.from({ length: 16 }, (_, i) => `av/${String(i + 1).padStart(2, '0')}.jpg`)];
 
