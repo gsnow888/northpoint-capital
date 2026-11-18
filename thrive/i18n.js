@@ -9,6 +9,12 @@
   if (q) try { localStorage.setItem(KEY, q); } catch (e) {}
 
   const ES = {
+    'welcome to thrive': 'bienvenido a thrive', 'we sent a sign-in link to': 'te mandamos un link para entrar a', '. open it on this device and you’re in.': '. ábrelo en este dispositivo y listo.', '. practice money until you connect real funds.': '. dinero de práctica hasta que conectes fondos reales.', 'sign in to start trading with the best traders on Hyperliquid. it takes 10 seconds.': 'entra para operar junto a los mejores traders de Hyperliquid. toma 10 segundos.',
+    'continue with Google': 'continuar con Google', 'or with your email': 'o con tu correo', 'send me a sign-in link': 'mándame un link para entrar', 'continue with email': 'continuar con correo',
+    'or sign in with a crypto wallet': 'o entra con una wallet cripto', 'check your inbox': 'revisa tu correo', 'use another email': 'usar otro correo', 'sending…': 'enviando…', 'try again': 'intentar de nuevo',
+    'no email? check spam, or wait a minute and try again.': '¿no llegó? revisa spam, o espera un minuto e inténtalo de nuevo.', 'type a valid email': 'escribe un correo válido',
+    'too many attempts, wait a minute and try again': 'demasiados intentos, espera un minuto e inténtalo de nuevo', 'that link expired. ask for a new one.': 'ese link expiró. pide uno nuevo.',
+    'practice money until you connect real funds.': 'dinero de práctica hasta que conectes fondos reales.', 'by continuing you accept the': 'al continuar aceptas los', 'terms': 'términos', 'and': 'y', 'privacy policy': 'aviso de privacidad',
     // ---------- clanes, perfil FOMO, panel trench, tutorial ----------
     'clans': 'clanes', 'new': 'nuevo', 'see all ›': 'ver todos ›', 'your rank': 'tu puesto', 'outside the top': 'fuera del top', 'sign in': 'entrar',
     'teams of traders competing together. combined PnL is the sum of members’ real Hyperliquid PnL.': 'equipos de traders que compiten juntos. el PnL combinado es la suma del PnL real en Hyperliquid de sus miembros.',
@@ -153,6 +159,7 @@
   };
   // frases con datos variables
   const RX = [
+    [/^we sent a sign-in link to (.+)\. open it on this device and you’re in\.$/, 'te mandamos un link a $1. ábrelo en este dispositivo y listo.'], [/^welcome, (.+)$/, 'bienvenido, $1'], [/^welcome$/, 'bienvenido'],
     [/^(.+) · practice money, real prices$/, '$1 · dinero de práctica, precios reales'], [/^(.+) · real trade on Hyperliquid$/, '$1 · trade real en Hyperliquid'],
     [/^(.+) · closed short · (.+)$/, '$1 · cerró short · $2'], [/^(.+) · closed long · (.+)$/, '$1 · cerró long · $2'], [/^(.+) · opened (long|short) · (.+)$/, '$1 · abrió $2 · $3'],
     [/^step (\d+) of (\d+)$/, 'paso $1 de $2'], [/^if (.+) moves 1% your way$/, 'si $1 se mueve 1% a tu favor'], [/^if (.+) rises 1%$/, 'si $1 sube 1%'],

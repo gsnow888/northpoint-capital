@@ -263,6 +263,23 @@ body.resizing{cursor:col-resize;user-select:none}body.resizing.rowr{cursor:row-r
 .tour .bub .ft{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
 .tour .dots{display:flex;gap:4px}.tour .dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.18);transition:background .3s,width .3s}.tour .dots i.on{background:#fff;width:16px;border-radius:4px}
 .tour .bub button{height:30px;padding:0 14px;border-radius:9px;font-size:12.5px;font-weight:600}.tour .nx{background:#fff;color:#0b0a14}.tour .sk{color:var(--mut);background:none}
+.bull{display:inline-grid;place-items:center;border-radius:30%;flex:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.25),inset 0 -2px 4px rgba(0,0,0,.35),0 2px 8px rgba(0,0,0,.4)}
+.bull svg{width:72%;height:72%;fill:none;stroke:#fff;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 1px 1px rgba(0,0,0,.4))}
+/* puerta de entrada */
+.gate{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:16px;background:radial-gradient(900px 500px at 50% -10%,rgba(81,106,246,.18),transparent 60%),rgba(4,4,9,.82);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);transition:opacity .45s,visibility .45s}
+.gate.off{opacity:0;visibility:hidden;pointer-events:none}
+.gate .gc{width:min(380px,100%);background:linear-gradient(180deg,#121119,#0b0a12);border:1px solid var(--line2);border-radius:24px;padding:28px 22px 20px;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.6);animation:pin .5s cubic-bezier(.2,.7,.2,1)}
+.gate .mark{width:56px;height:56px;border-radius:16px;margin:0 auto 14px}.gate .mark svg{width:28px!important;height:28px!important}
+.gate h2{font-size:24px;font-weight:600;letter-spacing:-.03em}.gate .sub{color:var(--mut);font-size:13.5px;margin:6px 0 20px;line-height:1.45}
+.gbtn{width:100%;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;gap:10px;font-weight:600;font-size:14px;transition:transform .12s,filter .2s,background .2s}
+.gbtn:active{transform:scale(.98)}.gbtn.g{background:#fff;color:#111}.gbtn.g:hover{filter:brightness(.94)}.gbtn svg{width:18px;height:18px}
+.gbtn.e{background:#516af6;color:#fff;margin-top:8px}.gbtn.e:hover{filter:brightness(1.1)}.gbtn:disabled{opacity:.6}
+.gate .or{display:flex;align-items:center;gap:10px;color:var(--dim);font-size:11px;margin:16px 0}.gate .or:before,.gate .or:after{content:"";flex:1;height:1px;background:var(--line)}
+.gate input{width:100%;height:46px;border-radius:13px;background:#07070c;border:1px solid var(--line2);padding:0 14px;font-size:14px;color:#fff;text-align:left;transition:border-color .2s}
+.gate input:focus{border-color:#516af6;outline:none}
+.gate .wl{display:inline-block;margin-top:16px;color:var(--mut);font-size:12px;cursor:pointer}.gate .wl:hover{color:#fff}
+.gate .legal{color:var(--dim);font-size:10.5px;margin-top:14px;line-height:1.5}.gate .legal a{color:var(--mut);text-decoration:underline}
+.gate .sent svg{width:44px;height:44px;stroke:#4ade80;margin-bottom:10px}
 .kbdl{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;margin:12px 0 16px;font-size:12px}
 .kbdl b{font-family:'Geist Mono',monospace;background:var(--card);border:1px solid var(--line2);border-radius:6px;padding:1px 7px;text-align:center;font-weight:500}
 .pane{display:flex;flex-direction:column;min-height:0;border-right:1px solid var(--line)}
@@ -339,9 +356,9 @@ tr.cl:hover td{background:rgba(203,208,235,.03)}
 .foot .st{margin-left:auto;display:flex;gap:5px;align-items:center}
 .foot .st i{width:6px;height:6px;border-radius:50%;background:var(--up)}
 .foot .st.off i{background:var(--dn)}
-.toasts{position:fixed;bottom:40px;left:50%;transform:translateX(-50%);display:grid;gap:6px;z-index:40;pointer-events:none;width:max-content;max-width:92vw}
+.toasts{position:fixed;bottom:40px;left:50%;transform:translateX(-50%);display:grid;gap:6px;z-index:99;pointer-events:none;width:max-content;max-width:92vw}
 .toast{background:#15141f;border:1px solid var(--line2);border-radius:12px;padding:10px 14px;font-size:12px;animation:fl .3s;display:flex;gap:8px;align-items:center;box-shadow:0 10px 30px rgba(0,0,0,.5)}
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;place-items:center;z-index:50}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;place-items:center;z-index:95}
 .modal.on{display:grid}
 .modal .in{width:min(380px,92vw);background:#100f18;border:1px solid var(--line2);border-radius:18px;padding:18px}
 .modal h3{font-size:16px;font-weight:500;margin-bottom:4px}
@@ -484,6 +501,7 @@ tr.cl:hover td{background:rgba(203,208,235,.03)}
   </nav>
 </div>
 <div class="toasts" id="toasts"></div>
+<div class="gate off" id="gate"><div class="gc" id="gateIn"></div></div>
 <div class="modal" id="modal"><div class="in" id="modalIn"></div></div>
 
 <script>
@@ -892,6 +910,32 @@ function about(){const m=S.cur;if(!m)return;let h;
 
 // ---------- cuentas de thrive (Supabase + inicio de sesión con wallet) ----------
 const AC={sb:null,user:null,profile:null,lib:false,syncT:0,lpTab:'main',side:'neutral'};
+const AUTH_RET=(()=>{const h=location.hash.slice(1);if(!/access_token=|error_description=/.test(h))return null;const q=Object.fromEntries(new URLSearchParams(h));history.replaceState(null,'',location.pathname+location.search);return q})();
+const isWalletAddr=a=>/^0x[0-9a-fA-F]{40}$/.test(a||'')||/^[1-9A-HJ-NP-Za-km-z]{32,44}$/.test(a||'');
+const myKey=()=>AC.profile?.address||AC.user?.id||'';
+let AUTHCFG=null;async function authCfg(){if(AUTHCFG)return AUTHCFG;try{const r=await fetch(SB.url+'/auth/v1/settings',{headers:{apikey:SB.key}});AUTHCFG=(await r.json()).external||{}}catch(e){AUTHCFG={email:true}}return AUTHCFG}
+const GLOGO='<svg viewBox="0 0 24 24"><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5a5.6 5.6 0 01-2.4 3.6v3h3.9c2.2-2.1 3.5-5.2 3.5-8.8z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.9-3c-1.1.7-2.4 1.2-4.1 1.2-3.1 0-5.8-2.1-6.7-5H1.3v3.1A12 12 0 0012 24z"/><path fill="#FBBC05" d="M5.3 14.3a7.2 7.2 0 010-4.6V6.6H1.3a12 12 0 000 10.8z"/><path fill="#EA4335" d="M12 4.8c1.8 0 3.3.6 4.6 1.8l3.4-3.4A12 12 0 001.3 6.6l4 3.1c.9-2.9 3.6-4.9 6.7-4.9z"/></svg>';
+const STARP='<path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/>';
+async function showGate(state){const g=$('#gate'),el=$('#gateIn');g.classList.remove('off');const cfg=await authCfg();
+ if(state&&state.sent){el.innerHTML=`<div class="sent"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><h2>check your inbox</h2><div class="sub">we sent a sign-in link to <b style="color:#fff">${esc(state.sent)}</b>. open it on this device and you’re in.</div><button class="gbtn e" data-gback>use another email</button><div class="legal">no email? check spam, or wait a minute and try again.</div>`;return}
+ el.innerHTML=`<span class="mark"><svg viewBox="0 0 24 24">${STARP}</svg></span><h2>welcome to thrive</h2><div class="sub">sign in to start trading with the best traders on Hyperliquid. it takes 10 seconds.</div>
+ ${cfg.google?`<button class="gbtn g" data-gauth="google">${GLOGO}continue with Google</button><div class="or">or with your email</div>`:''}
+ <form id="gform" onsubmit="return false"><input id="gmail" type="email" autocomplete="email" inputmode="email" placeholder="you@gmail.com" required><button class="gbtn e" id="gsend" data-gemail>${cfg.google?'send me a sign-in link':'continue with email'}</button></form>
+ <span class="wl" data-gwallet>or sign in with a crypto wallet</span>
+ <div class="legal">by continuing you accept the <a href="terms.html" target="_blank">terms</a> and <a href="privacy.html" target="_blank">privacy policy</a>. practice money until you connect real funds.</div>`}
+function hideGate(){$('#gate').classList.add('off')}
+async function gateEmail(){const em=($('#gmail')?.value||'').trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){toast('type a valid email');$('#gmail')?.focus();return}
+ const b=$('#gsend');b.disabled=true;b.textContent='sending…';
+ try{const sb=await sbLib();const {error}=await sb.auth.signInWithOtp({email:em,options:{emailRedirectTo:location.origin+location.pathname}});if(error)throw error;store.set('gmailLast',em);showGate({sent:em})}
+ catch(e){b.disabled=false;b.textContent='try again';toast('<span class="dn">'+esc(/rate|seconds/i.test(e.message)?'too many attempts, wait a minute and try again':e.message)+'</span>')}}
+async function gateGoogle(){try{const sb=await sbLib();const {error}=await sb.auth.signInWithOAuth({provider:'google',options:{redirectTo:location.origin+location.pathname}});if(error)throw error}catch(e){toast('<span class="dn">'+esc(e.message)+'</span>')}}
+async function gateStart(){
+ if(AUTH_RET){if(AUTH_RET.error_description){showGate();toast('<span class="dn">'+esc(AUTH_RET.error_description.replace(/\+/g,' '))+'</span>');return}
+  try{const sb=await sbLib();const {data,error}=await sb.auth.setSession({access_token:AUTH_RET.access_token,refresh_token:AUTH_RET.refresh_token});if(error)throw error;AC.session=data.session;AC.user=data.user;hideGate();await afterLogin(true);welcome();return}
+  catch(e){toast('<span class="dn">that link expired. ask for a new one.</span>')}}
+ if(localStorage.getItem('np.sb.auth')){try{const sb=await sbLib();const {data}=await sb.auth.getSession();if(data.session){AC.session=data.session;AC.user=data.session.user;hideGate();await afterLogin(false);if(location.hash==='#tour'||!store.get('tour',0))setTimeout(()=>tour(0),1200);return}}catch(e){}}
+ showGate()}
+function welcome(){const n=AC.user?.user_metadata?.full_name||AC.user?.email||'';toast(`welcome${n?', <b>'+esc(n.split(' ')[0].split('@')[0])+'</b>':''}`);setTimeout(()=>tour(0),1200)}
 const sbHeaders=()=>({apikey:SB.key,Authorization:'Bearer '+(AC.session?.access_token||SB.key)});
 async function sbRest(path){const r=await fetch(SB.url+'/rest/v1/'+path,{headers:sbHeaders()});if(!r.ok)throw new Error('thrive db '+r.status);return r.json()}
 async function sbLib(){if(!AC.lib){await loadScript('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.80.0/dist/umd/supabase.min.js');AC.lib=true}
@@ -902,9 +946,9 @@ async function restoreSession(){try{if(!localStorage.getItem('np.sb.auth'))retur
 async function signIn(chain){const sb=await sbLib();const wallet=chain==='solana'?solProv():window.ethereum;
  if(!wallet){window.open(chain==='solana'?'https://phantom.com/download':'https://rabby.io','_blank','noopener');toast('install a '+(chain==='solana'?'Solana':'Ethereum')+' wallet first');return}
  try{toast('sign the message in your wallet…');const {data,error}=await sb.auth.signInWithWeb3({chain,wallet,statement:'Sign in to thrive. This does not cost anything and does not move funds.',options:{url:location.origin+location.pathname}});
-  if(error)throw error;AC.session=data.session;AC.user=data.user;$('#modal').classList.remove('on');await afterLogin(true)}
+  if(error)throw error;AC.session=data.session;AC.user=data.user;$('#modal').classList.remove('on');const wasGate=!$('#gate').classList.contains('off');hideGate();await afterLogin(true);if(wasGate)welcome()}
  catch(e){toast('<span class="dn">sign in failed:</span> '+esc(e.message||e))}}
-async function afterLogin(fresh){const sb=await sbLib();const {data:p}=await sb.from('profiles').select('*').eq('id',AC.user.id).single();AC.profile=p;
+async function afterLogin(fresh){const sb=await sbLib();const {data:p}=await sb.from('profiles').select('*').eq('id',AC.user.id).single();AC.profile=p||{id:AC.user.id};if(!isWalletAddr(AC.profile.address))AC.profile.address=null;AC.profile.email=AC.user.email;
  try{const {data:st}=await sb.from('user_state').select('data').eq('user_id',AC.user.id).maybeSingle();const d=st?.data||{};
   if(d.follow)S.follow=[...new Set([...S.follow,...d.follow])];
   if(d.favs){const ids=new Set(S.favs.map(x=>x.id));d.favs.forEach(f=>{if(!ids.has(f.id))S.favs.push(f)})}
@@ -915,14 +959,14 @@ async function afterLogin(fresh){const sb=await sbLib();const {data:p}=await sb.
  if(fresh&&!p?.handle)setTimeout(accountModal,600);loadTheses()}
 function syncSoon(){if(!AC.user)return;clearTimeout(AC.syncT);AC.syncT=setTimeout(async()=>{try{await AC.sb.from('user_state').upsert({user_id:AC.user.id,data:{follow:S.follow,favs:S.favs,paper:S.paper,layout:LAY},updated_at:new Date().toISOString()})}catch(e){}},2500)}
 {const _set=store.set;store.set=(k,v)=>{_set(k,v);if(['follow','favs','paper','layout'].includes(k))syncSoon()}}
-function accountUI(){const me=$('#meBtn');me.src=AC.profile?avOf(AC.profile.address):'av/09.jpg';me.title=AC.profile?(AC.profile.handle||AC.profile.address):'sign in';me.style.boxShadow=AC.profile?'0 0 0 2px #22c55e':'0 0 0 2px var(--acc)'}
+function accountUI(){const me=$('#meBtn');me.src=AC.profile?(AC.user?.user_metadata?.avatar_url||avOf(myKey())):'av/09.jpg';me.title=AC.profile?(AC.profile.handle||AC.profile.email||AC.profile.address):'sign in';me.style.boxShadow=AC.profile?'0 0 0 2px #22c55e':'0 0 0 2px var(--acc)'}
 function signInModal(){modal(`<h3>sign in to thrive</h3><div class="mut sm">use your wallet. no email, no password. signing is free and never moves funds.</div>
  <button class="auth-opt" data-signin="ethereum"><span class="ic2" style="background:#1b2140;color:#8fa0ff">Ξ</span><span><b>Ethereum wallet</b><div class="dim sm">MetaMask, Rabby, Coinbase Wallet…</div></span></button>
  <button class="auth-opt" data-signin="solana"><span class="ic2" style="background:#1d1433;color:#b48cff">◎</span><span><b>Solana wallet</b><div class="dim sm">Phantom, Solflare, Backpack…</div></span></button>
  <div class="dim sm" style="margin:12px 0 4px">with an account you can post theses, appear on the thrive leaderboard and sync your follows, favorites and practice account across devices.</div>
  <button class="btn gh" data-mclose style="width:100%;justify-content:center;margin-top:10px">not now</button>`)}
 function accountModal(){if(!AC.user)return signInModal();const p=AC.profile||{},P=S.paper,tot=P.hist.reduce((a,h)=>a+h.pnl,0);
- modal(`<div class="phead" style="margin-bottom:12px"><img src="${avOf(p.address)}" alt=""><div><h2>${esc(p.handle||'your account')}</h2><div class="mut sm m">${esc(p.chain||'')} · ${esc(shortA(p.address))}</div></div></div>
+ modal(`<div class="phead" style="margin-bottom:12px"><img src="${AC.user?.user_metadata?.avatar_url||avOf(myKey())}" alt=""><div><h2>${esc(p.handle||'your account')}</h2><div class="mut sm m">${esc(p.chain||'')} · ${esc(shortA(p.address))}</div></div></div>
  <div class="dim sm" style="margin-bottom:6px">username (3–20 letters, numbers, _ or .)</div>
  <div style="display:flex;gap:8px;margin-bottom:12px"><input class="field" id="hdl" maxlength="20" value="${esc(p.handle||'')}" placeholder="e.g. andre.trades"><button class="btn" data-savehdl>save</button></div>
  <div class="kpis" style="grid-template-columns:repeat(2,1fr)"><div class="kpi"><div class="k">practice PnL</div><div class="v m ${tot>=0?'up':'dn'}">${tot>=0?'+':''}${usd(tot)}</div></div><div class="kpi"><div class="k">following</div><div class="v m">${S.follow.filter(a=>!a.startsWith('m:')).length}</div></div></div>
@@ -930,7 +974,7 @@ function accountModal(){if(!AC.user)return signInModal();const p=AC.profile||{},
  <div style="display:flex;gap:8px">${/^0x/.test(p.address||'')?`<button class="btn gh" data-myprof2 style="flex:1;justify-content:center">view public profile</button>`:''}<button class="btn gh" data-signout style="flex:1;justify-content:center">sign out</button><button class="btn" data-mclose style="flex:1;justify-content:center">done</button></div>`)}
 async function saveHandle(){const v=$('#hdl').value.trim().toLowerCase();if(!/^[a-z0-9_.]{3,20}$/.test(v))return toast('use 3–20 letters, numbers, _ or .');
  const {data,error}=await AC.sb.from('profiles').update({handle:v}).eq('id',AC.user.id).select().single();if(error)return toast('<span class="dn">'+(/duplicate|unique/.test(error.message)?'that username is taken':esc(error.message))+'</span>');AC.profile=data;toast('username saved: <b>'+esc(v)+'</b>');accountUI();accountModal()}
-async function signOut(){try{await AC.sb.auth.signOut()}catch(e){}AC.user=null;AC.profile=null;AC.session=null;accountUI();$('#modal').classList.remove('on');toast('signed out');loadTheses()}
+async function signOut(){try{await AC.sb.auth.signOut()}catch(e){}setTimeout(()=>showGate(),300);AC.user=null;AC.profile=null;AC.session=null;accountUI();$('#modal').classList.remove('on');toast('signed out');loadTheses()}
 
 // ---------- tesis por mercado ----------
 const mkey=m=>m?(m.kind==='perp'?'perp:'+m.id:'tok:'+m.pool):'';
@@ -959,6 +1003,11 @@ async function renderThriveRank(g){const el=$('#list');el.innerHTML='<div class=
 // ---------- clasificación estilo FOMO ----------
 const MEDAL=c=>`<svg class="medal" viewBox="0 0 24 24"><path d="M7 2h4l1 5-3 1zM17 2h-4l-1 5 3 1z" fill="${c}" opacity=".55"/><circle cx="12" cy="14" r="7" fill="${c}"/><circle cx="12" cy="14" r="4.6" fill="none" stroke="rgba(0,0,0,.25)" stroke-width="1.2"/></svg>`;
 const MED=['#f5c542','#c9d1dc','#d58b4f'];
+// logo de clan: cabeza de toro (4 cuernos distintos) sobre fondo del color del clan
+const BULLH=['M8.5 9.5C5 9.5 3 7.5 3 4.5M15.5 9.5c3.5 0 5.5-2 5.5-5','M8.5 9.5C5.5 9 4.5 6 6 3.5M15.5 9.5c3-.5 4-3.5 2.5-6','M8.5 9.5C4 10 2 8 2.5 6M15.5 9.5c4.5.5 6.5-1.5 6-3.5','M8.5 9.5C6 9 4 7 4.5 4c1 1.5 2.5 2.5 4 2.5M15.5 9.5c2.5-.5 4.5-2.5 4-5.5-1 1.5-2.5 2.5-4 2.5'];
+const BULLC=[['#16a34a','#052e16'],['#2563eb','#0b1640'],['#dc2626','#3b0808'],['#d97706','#3a1d02'],['#7c3aed','#1e0b3d'],['#0891b2','#062a33'],['#db2777','#3b0820'],['#52525b','#09090b']];
+function bull(name,sz=30){const h=hash(String(name)),c=BULLC[h%BULLC.length],k=BULLH[(h>>4)%BULLH.length];
+ return `<span class="bull" style="width:${sz}px;height:${sz}px;background:radial-gradient(circle at 50% 30%,${c[0]},${c[1]} 80%)"><svg viewBox="0 0 24 24"><path d="${k}"/><path d="M8.5 9.5h7l-.8 6.6c-.3 2.3-1.6 3.4-2.7 3.4s-2.4-1.1-2.7-3.4z"/><path d="M8.6 11 6 12.2M15.4 11l2.6 1.2"/><circle cx="10.3" cy="12.6" r=".55" fill="#fff"/><circle cx="13.7" cy="12.6" r=".55" fill="#fff"/><path d="M10.6 17.3h.01M13.4 17.3h.01" stroke-width="1.6"/></svg></span>`}
 let VAULTS=null,CLANS=null;
 async function loadVaults(){if(VAULTS)return VAULTS;for(const u of ['https://studioamr.github.io/northpoint-social/data/vaults.json','data/vaults.json']){try{const r=await fetch(u,{cache:'no-cache'});if(r.ok){VAULTS=await r.json();return VAULTS}}catch(e){}}VAULTS={rows:[]};return VAULTS}
 async function loadClans(){try{CLANS=await sbRest('clan_list?order=members.desc&limit=50')}catch(e){CLANS=[]}return CLANS}
@@ -970,7 +1019,7 @@ async function renderRank(g,f){const el=$('#list');if(f==='thrive')return render
  const cl=(CLANS||[]).map(c=>({kind:'clan',id:c.id,n:c.name,tag:c.tag,p:clanPnl(c,f),m:c.members})).concat((VAULTS.rows||[]).slice().sort((a,b)=>(b[f]||0)-(a[f]||0)).slice(0,6).map(v=>({kind:'vault',id:v.a,n:v.n,tag:'V',p:v[f]||0}))).slice(0,6);
  const my=AC.profile&&/^0x/.test(AC.profile.address||'')?AC.profile.address:null,myIdx=my?R.findIndex(r=>r.a===my):-1;
  el.innerHTML=`<div class="sech"><span>clans<span class="new">new</span></span><a data-clans>see all ›</a></div>
- <div class="clans">${cl.map(c=>`<div class="clan" ${c.kind==='clan'?`data-clan="${c.id}"`:`data-u="${c.id}"`}><span class="cav" style="background:${COL[hash(c.n)%COL.length]}">${esc(String(c.tag).slice(0,3))}</span><div class="g"><div class="n">${esc(c.n)}</div><div class="p ${c.p>=0?'up':'dn'}">${c.p>=0?'+':''}${sh(c.p)}</div></div></div>`).join('')}</div>
+ <div class="clans">${cl.map(c=>`<div class="clan" ${c.kind==='clan'?`data-clan="${c.id}"`:`data-u="${c.id}"`}>${bull(c.n,32)}<div class="g"><div class="n">${esc(c.n)}</div><div class="p ${c.p>=0?'up':'dn'}">${c.p>=0?'+':''}${sh(c.p)}</div></div></div>`).join('')}</div>
  <div class="mypos"><img class="av" src="${my?avOf(my):'av/09.jpg'}" alt=""><div style="flex:1"><div class="sm mut">your rank</div><div class="m" style="font-weight:600">${myIdx>=0?'#'+(myIdx+1):my?'outside the top':'#-'}</div></div>${my?'':'<button class="btn" style="height:26px;font-size:11px" data-signinopen>sign in</button>'}</div>
  <div class="dim sm" style="padding:0 12px 6px">real PnL on Hyperliquid${S.lb.updated?' · updated '+ago(S.lb.updated*1000)+' ago':''}</div>`+
  top.map((r,i)=>`<div class="rrow" data-u="${r.a}" style="--rc:${i<3?MED[i]:'transparent'}">${i<3?MEDAL(MED[i]):`<span class="rk">${i+1}</span>`}<span class="ava"><img src="${avOf(r.a)}" alt="" loading="lazy"><span class="ring"></span></span><div class="g"><div class="n">${esc(r.n||shortA(r.a))}${r.x?'<span class="fol" style="color:#fbbf24">entity</span>':''}</div><button class="fpill ${isFol(r.a)?'on':''}" data-follow="${r.a}">${isFol(r.a)?'following':'follow'}</button></div><div class="r"><div class="pn ${r[f][0]>=0?'up':'dn'}">${r[f][0]>=0?'+':''}${usd(r[f][0])}</div>${holdIcons(r.a)}</div></div>`).join('');
@@ -983,8 +1032,8 @@ async function openClans(){const el=$('#prof');el.dataset.u='clans';el.classList
  el.innerHTML=`<div class="pv"><button class="back" data-back><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>back to chart</button>
  <h2 style="font-size:24px;font-weight:600;letter-spacing:-.02em;margin:4px 0 4px">clans</h2><div class="mut" style="margin-bottom:14px">teams of traders competing together. combined PnL is the sum of members’ real Hyperliquid PnL.</div>
  ${AC.user?(myClan?`<div class="sect" style="padding:12px 14px">you are in <b>${esc(myClan.name)}</b> <span class="mut">[${esc(myClan.tag)}]</span> · <a href="#" data-leaveclan style="color:#fca5a5">leave clan</a></div>`:`<div class="sect"><h3>create a clan</h3><div style="padding:12px;display:grid;grid-template-columns:2fr 1fr auto;gap:8px"><input class="field" id="cn" maxlength="30" placeholder="clan name"><input class="field" id="ct" maxlength="5" placeholder="TAG"><button class="btn" data-mkclan>create</button></div></div>`):`<div class="sect" style="padding:12px 14px"><a href="#" data-signinopen style="color:#aab4ff">sign in with your wallet to create or join a clan</a></div>`}
- <div class="sect"><h3>thrive clans <span class="dim">${(CLANS||[]).length}</span></h3>${(CLANS||[]).length?`<table><thead><tr><th>clan</th><th>members</th><th>combined PnL 24h</th><th>30d</th><th></th></tr></thead><tbody>${CLANS.map(c=>{const d=clanPnl(c,'day'),m=clanPnl(c,'month');return`<tr><td><div class="who"><span class="cav" style="width:26px;height:26px;border-radius:8px;display:grid;place-items:center;font:700 9px 'Geist Mono',monospace;background:${COL[hash(c.name)%COL.length]}">${esc(c.tag.slice(0,3))}</span><b>${esc(c.name)}</b></div></td><td class="m">${c.members}</td><td class="m ${d>=0?'up':'dn'}">${d>=0?'+':''}${sh(d)}</td><td class="m ${m>=0?'up':'dn'}">${m>=0?'+':''}${sh(m)}</td><td>${AC.user&&!myClan?`<button class="xbtn" data-joinclan="${c.id}">join</button>`:''}</td></tr>`}).join('')}</tbody></table>`:'<div class="load">no clans yet. be the first to create one.</div>'}</div>
- <div class="sect"><h3>Hyperliquid vaults <span class="dim">real strategies run by a leader with depositors</span></h3><div class="scrollx"><table><thead><tr><th>vault</th><th>TVL</th><th>APR</th><th>PnL 30d</th><th>leader</th><th></th></tr></thead><tbody>${(VAULTS.rows||[]).slice(0,40).map(v=>`<tr class="cl" data-u="${v.a}"><td><div class="who"><img class="av" src="${avOf(v.a)}" alt=""><span class="nm" style="max-width:220px">${esc(v.n)}</span></div></td><td class="m">${sh(v.tvl)}</td><td class="m ${v.apr>=0?'up':'dn'}">${pc(v.apr*100)}</td><td class="m ${v.month>=0?'up':'dn'}">${v.month>=0?'+':''}${sh(v.month)}</td><td class="m dim">${esc(nameOf(v.l))}</td><td><a class="xbtn" href="https://app.hyperliquid.xyz/vaults/${v.a}" target="_blank" rel="noopener">deposit</a></td></tr>`).join('')}</tbody></table></div></div></div>`}
+ <div class="sect"><h3>thrive clans <span class="dim">${(CLANS||[]).length}</span></h3>${(CLANS||[]).length?`<table><thead><tr><th>clan</th><th>members</th><th>combined PnL 24h</th><th>30d</th><th></th></tr></thead><tbody>${CLANS.map(c=>{const d=clanPnl(c,'day'),m=clanPnl(c,'month');return`<tr><td><div class="who">${bull(c.name,28)}<b>${esc(c.name)}</b> <span class="dim sm">[${esc(c.tag)}]</span></div></td><td class="m">${c.members}</td><td class="m ${d>=0?'up':'dn'}">${d>=0?'+':''}${sh(d)}</td><td class="m ${m>=0?'up':'dn'}">${m>=0?'+':''}${sh(m)}</td><td>${AC.user&&!myClan?`<button class="xbtn" data-joinclan="${c.id}">join</button>`:''}</td></tr>`}).join('')}</tbody></table>`:'<div class="load">no clans yet. be the first to create one.</div>'}</div>
+ <div class="sect"><h3>Hyperliquid vaults <span class="dim">real strategies run by a leader with depositors</span></h3><div class="scrollx"><table><thead><tr><th>vault</th><th>TVL</th><th>APR</th><th>PnL 30d</th><th>leader</th><th></th></tr></thead><tbody>${(VAULTS.rows||[]).slice(0,40).map(v=>`<tr class="cl" data-u="${v.a}"><td><div class="who">${bull(v.n,28)}<span class="nm" style="max-width:220px">${esc(v.n)}</span></div></td><td class="m">${sh(v.tvl)}</td><td class="m ${v.apr>=0?'up':'dn'}">${pc(v.apr*100)}</td><td class="m ${v.month>=0?'up':'dn'}">${v.month>=0?'+':''}${sh(v.month)}</td><td class="m dim">${esc(nameOf(v.l))}</td><td><a class="xbtn" href="https://app.hyperliquid.xyz/vaults/${v.a}" target="_blank" rel="noopener">deposit</a></td></tr>`).join('')}</tbody></table></div></div></div>`}
 async function clanAction(k,v){if(!AC.user)return signInModal();try{
  if(k==='mk'){const name=$('#cn').value.trim(),tag=$('#ct').value.trim().toUpperCase();if(name.length<3||!/^[A-Z0-9]{2,5}$/.test(tag))return toast('name 3–30 characters, tag 2–5 letters or numbers');const {error}=await AC.sb.from('clans').insert({name,tag});if(error)throw error;toast('clan created: <b>'+esc(name)+'</b>')}
  else if(k==='join'){const {error}=await AC.sb.from('clan_members').insert({clan_id:+v});if(error)throw error;toast('you joined the clan')}
@@ -1268,6 +1317,10 @@ document.addEventListener('click',e=>{const T=e.target;
  if(T.closest('[data-tour]')){$('#modal').classList.remove('on');tour(0);return}
  if(T.closest('[data-mclose]')){$('#modal').classList.remove('on');return}
  const pt=T.closest('[data-pt]');if(pt){S.ptab=pt.dataset.pt;$$('[data-pt]').forEach(b=>b.classList.toggle('on',b===pt));renderPos(true);return}
+ if(T.closest('[data-gemail]')){e.preventDefault();gateEmail();return}
+ if(T.closest('[data-gauth]')){gateGoogle();return}
+ if(T.closest('[data-gback]')){showGate();return}
+ if(T.closest('[data-gwallet]')){signInModal();return}
  if(T.closest('[data-clans]')){openClans();return}
  const clb=T.closest('[data-clan]');if(clb){openClans();return}
  if(T.closest('[data-mkclan]')){clanAction('mk');return}
@@ -1316,9 +1369,8 @@ addEventListener('resize',draw);
 setInterval(()=>{$('#clock').textContent=new Date().toTimeString().slice(0,8)+' local time'},1000);
 
 // ---------- arranque ----------
-setTimeout(()=>{if(location.hash==='#tour'||(!store.get('tour',0)&&!/^#u\//.test(location.hash)))tour(0)},2600);
 addEventListener('resize',()=>{const t=$('#tour');if(t)t.remove()});
-(async function boot(){applyLay();restoreSession();loadAliases();$$('[data-ct]').forEach(b=>b.classList.toggle('on',b.dataset.ct===VIEW.type));wallet();renderPos(true);bell();renderFilt();
+(async function boot(){applyLay();gateStart();loadAliases();$$('[data-ct]').forEach(b=>b.classList.toggle('on',b.dataset.ct===VIEW.type));wallet();renderPos(true);bell();renderFilt();
  try{await loadPerps()}catch(e){$('#list').innerHTML=`<div class="err">couldn’t connect to Hyperliquid: ${esc(e.message)}</div>`}
  wsOpen();foot();const lbP=loadLB();
  const h=decodeURIComponent(location.hash.slice(1)),last=store.get('last',null);
