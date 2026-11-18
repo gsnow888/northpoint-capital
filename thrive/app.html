@@ -138,6 +138,25 @@ body.resizing{cursor:col-resize;user-select:none}body.resizing.rowr{cursor:row-r
 .book .ask i{background:var(--dn)}.book .bid i{background:var(--up)}
 .book .mid{display:flex;justify-content:space-between;padding:6px 12px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--mut);font-family:'Geist Mono',monospace;font-size:11.5px}
 .book .hd{display:grid;grid-template-columns:1fr 1fr 1fr;padding:6px 12px;color:var(--dim);font-size:10.5px}.book .hd span{text-align:right}.book .hd span:first-child{text-align:left}
+.th-c{padding:10px 12px;border-bottom:1px solid var(--line);display:grid;gap:8px}
+.th-c textarea{width:100%;min-height:54px;resize:vertical;background:var(--card);border:1px solid var(--line);border-radius:10px;color:var(--tx);font:12.5px/1.45 Geist,system-ui;padding:8px 10px;outline:0}
+.th-c textarea:focus{border-color:rgba(81,106,246,.6)}
+.th-row{display:flex;gap:8px;align-items:center}
+.th-row .seg{display:flex;gap:2px;background:var(--card);border-radius:8px;padding:2px}
+.th-row .seg button{padding:3px 8px;border-radius:6px;font-size:11px;color:var(--mut)}
+.th-row .seg button.on{background:#1f1e2c;color:var(--tx)}
+.th{display:flex;gap:10px;padding:10px 12px;border-bottom:1px solid rgba(203,208,235,.05)}
+.th .b{flex:1;min-width:0}
+.th .t{white-space:pre-wrap;word-wrap:break-word;color:#d5d6de;margin-top:3px;font-size:12.5px;line-height:1.45}
+.th .meta{display:flex;gap:10px;align-items:center;margin-top:6px;color:var(--dim);font-size:11px}
+.th .lk{display:flex;gap:4px;align-items:center;color:var(--dim)}
+.th .lk.on{color:#f472b6}.th .lk svg{width:13px;height:13px}
+.th .who2{cursor:pointer}.th .who2:hover b{text-decoration:underline}
+.onth{font-size:10px;color:#aab4ff;border:1px solid rgba(81,106,246,.4);border-radius:6px;padding:1px 5px;margin-left:6px}
+.auth-opt{display:flex;gap:12px;align-items:center;width:100%;padding:12px;border-radius:12px;background:var(--card);border:1px solid var(--line);text-align:left;margin-top:8px}
+.auth-opt:hover{border-color:rgba(81,106,246,.5)}
+.auth-opt .ic2{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-weight:600;flex:none}
+.field{width:100%;height:38px;border-radius:10px;background:var(--card);border:1px solid var(--line);padding:0 12px;color:var(--tx);font:13px Geist;outline:0}
 .kbdl{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;margin:12px 0 16px;font-size:12px}
 .kbdl b{font-family:'Geist Mono',monospace;background:var(--card);border:1px solid var(--line2);border-radius:6px;padding:1px 7px;text-align:center;font-weight:500}
 .pane{display:flex;flex-direction:column;min-height:0;border-right:1px solid var(--line)}
@@ -298,8 +317,8 @@ tr.cl:hover td{background:rgba(203,208,235,.03)}
       <div class="rz h" id="rzB" style="bottom:calc(var(--bh,290px) - 3px)"></div>
       <div class="bottom" id="bottom"><div class="rz v" id="rzP" style="right:calc(var(--pw,380px) - 3px)"></div>
         <div class="pane">
-          <div class="ph"><b id="lpT">traders</b><span class="mut" id="lpN"></span><span class="rt" id="lpR"></span></div>
-          <div class="scroll" id="lp"><div class="load">loading…</div></div>
+          <div class="ph"><span class="ptab"><button data-lp="main" class="on" id="lpT">traders</button><button data-lp="theses">theses <span class="dim" id="thN"></span></button></span><span class="mut" id="lpN"></span><span class="rt" id="lpR"></span></div>
+          <div class="scroll" id="lp"><div class="load">loading…</div></div><div class="scroll" id="lpTh" style="display:none"></div>
         </div>
         <div class="pane">
           <div class="ph"><span class="ptab" id="rpTabs"><button data-rp="trades" class="on">trades</button><button data-rp="book" id="bookTab">order book</button></span><span class="mut" id="rpLive">live</span><span class="rt"><button class="xbtn" data-swap title="swap panels">⇄</button></span></div>
@@ -338,6 +357,8 @@ tr.cl:hover td{background:rgba(203,208,235,.03)}
 // ===== CONFIGURACIÓN DE DINERO REAL =====
 // builder = la wallet de NorthPoint que cobra la comisión en cada orden real (necesita ≥100 USDC en su cuenta de perps de Hyperliquid).
 // fee en décimas de punto base: 50 = 0.05 %. maxFeeRate es lo que el usuario autoriza una vez (debe ser ≥ fee).
+// Supabase (cuentas de thrive). La llave publicable está hecha para ir en el navegador; la seguridad la da RLS en la base.
+const SB={url:'https://uwnkhkqawjhxwysizrzv.supabase.co',key:'sb_publishable_aSi5csZKTrpJKMFAFvHE5A_eju6oUqE'};
 const REAL={net:'main',builder:'',fee:50,maxFeeRate:'0.05%',slippage:0.01,
  // Solana (Jupiter): comisión de plataforma en puntos base y la cuenta de tokens de NorthPoint que la recibe (vacía = sin comisión)
  solFeeBps:0,solFeeAccount:'',solSlippageBps:100};
@@ -422,7 +443,7 @@ const dirEs=d=>({'Open Long':'opened long','Close Long':'closed long','Open Shor
 
 // ---------- lista izquierda ----------
 const FILTERS={tokens:[['trend','trending'],['new','new'],['top','top volume'],['grad','graduated'],['fav','favorites']],perps:[['vol','volume'],['gain','gainers'],['lose','losers'],['lev','leverage'],['fav','favorites']],
- mercados:[['idx','indices'],['comm','commodities'],['stk','stocks'],['fx','forex']],rank:[['day','24h'],['week','7 days'],['month','30 days'],['allTime','all time']],feed:[['all','following'],['top','top today']]};
+ mercados:[['idx','indices'],['comm','commodities'],['stk','stocks'],['fx','forex']],rank:[['day','24h'],['week','7 days'],['month','30 days'],['allTime','all time'],['thrive','thrive traders']],feed:[['all','following'],['top','top today']]};
 function renderFilt(){$('#filt').innerHTML=FILTERS[S.tab].map(([k,l])=>`<button data-f="${k}" class="${S.filt[S.tab]===k?'on':''}">${l}</button>`).join('');$$('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===S.tab))}
 function mrow(m){const extra=m.kind==='tok'?sh(m.mc)+' MC':sh(m.vol)+' vol';
  return `<div class="it ${S.cur&&S.cur.id===m.id?'on':''}" data-m="${m.kind}|${esc(m.id)}">${icon(m,30)}<div class="g"><div class="n">${esc(m.sym)}</div><div class="sm m mut">$${px(m.px)}</div></div><div class="r"><div class="sm m">${extra}</div><div class="sm m ${m.ch>=0?'up':'dn'}">${pc(m.ch)}</div></div></div>`}
@@ -435,6 +456,7 @@ async function renderList(){const g=++listGen,el=$('#list');renderFilt();const f
   else if(S.tab==='perps'){let L=f==='fav'?allPerps().filter(p=>S.favs.some(x=>x.id===p.id)):[...S.perps];
    L.sort(f==='gain'?(a,b)=>b.ch-a.ch:f==='lose'?(a,b)=>a.ch-b.ch:f==='lev'?(a,b)=>b.maxLev-a.maxLev||b.vol-a.vol:(a,b)=>b.vol-a.vol);el.innerHTML=L.map(mrow).join('')||'<div class="load">tap the star on a perp to save it here.</div>'}
   else if(S.tab==='mercados'){const L=S.xyz.filter(m=>f==='idx'?IDX.includes(m.sym):f==='comm'?COMM.includes(m.sym):f==='fx'?FX.includes(m.sym):!IDX.includes(m.sym)&&!COMM.includes(m.sym)&&!FX.includes(m.sym)).sort((a,b)=>b.vol-a.vol);el.innerHTML=L.map(mrow).join('')||'<div class="load">no markets available</div>'}
+  else if(S.tab==='rank'&&f==='thrive'){await renderThriveRank(g)}
   else if(S.tab==='rank'){if(!S.lb)await loadLB();if(g!==listGen)return;const R=[...S.lb.rows].sort((a,b)=>b[f][0]-a[f][0]).slice(0,100);
    el.innerHTML=`<div class="dim sm" style="padding:8px 10px">real PnL on Hyperliquid${S.lb.updated?' · updated '+ago(S.lb.updated*1000)+' ago':''}</div>`+R.map((r,i)=>`<div class="it" data-u="${r.a}"><span class="m dim" style="width:18px">${i+1}</span><img class="av" src="${avOf(r.a)}" alt=""><div class="g"><div class="n">${esc(r.n||shortA(r.a))}${isFol(r.a)?'<span class="fol">following</span>':''}</div><div class="sm mut">account ${sh(r.v)} · ROI ${pc(r[f][1]*100)}</div></div><div class="r m ${r[f][0]>=0?'up':'dn'}">${r[f][0]>=0?'+':''}${sh(r[f][0])}</div></div>`).join('')}
   else if(S.tab==='feed')await renderFeed(g);
@@ -455,7 +477,7 @@ async function select(m){VIEW.off=0;S.cur=m;const g=++selGen;S.bub=[];S.trades=[
  head();ticket();about();renderPos(true);
  $('#lp').innerHTML=$('#rp').innerHTML='<div class="load">loading…</div>';
  store.set('last',{kind:m.kind,id:m.id});history.replaceState(null,'','#'+(m.kind==='tok'?'t/':'p/')+m.id);
- wsTrades(m);bookSub(m);await loadCandles(g);if(g!==selGen)return;
+ wsTrades(m);bookSub(m);loadTheses();await loadCandles(g);if(g!==selGen)return;
  if(m.kind==='tok'){await loadTokTrades(g,true);loadTokInfo(m,g)}else{loadPerpTrades(g);loadTopPositions(g)}}
 function head(){const m=S.cur;if(!m)return;const fav=S.favs.some(x=>x.id===m.id);
  const st=m.kind==='tok'?[['price','$'+px(m.px)],['24h change',pc(m.ch),m.ch>=0?'up':'dn'],['market cap',sh(m.mc)],['24h vol',sh(m.vol)],['liquidity',sh(m.liq)],['24h buys',(m.tx.buys||0).toLocaleString('en-US')],['24h traders',((m.tx.buyers||0)+(m.tx.sellers||0)).toLocaleString('en-US')]]
@@ -660,6 +682,72 @@ function about(){const m=S.cur;if(!m)return;let h;
   <div class="links"><a href="https://app.hyperliquid.xyz/trade/${encodeURIComponent(m.id)}" target="_blank" rel="noopener">hyperliquid</a><a href="https://x.com/search?q=%24${encodeURIComponent(m.sym)}" target="_blank" rel="noopener">search on X</a></div>`}
  $('#about').innerHTML=h}
 
+// ---------- cuentas de thrive (Supabase + inicio de sesión con wallet) ----------
+const AC={sb:null,user:null,profile:null,lib:false,syncT:0,lpTab:'main',side:'neutral'};
+const sbHeaders=()=>({apikey:SB.key,Authorization:'Bearer '+(AC.session?.access_token||SB.key)});
+async function sbRest(path){const r=await fetch(SB.url+'/rest/v1/'+path,{headers:sbHeaders()});if(!r.ok)throw new Error('thrive db '+r.status);return r.json()}
+async function sbLib(){if(!AC.lib){await loadScript('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.80.0/dist/umd/supabase.min.js');AC.lib=true}
+ if(!AC.sb){AC.sb=window.supabase.createClient(SB.url,SB.key,{auth:{persistSession:true,storageKey:'np.sb.auth',autoRefreshToken:true}});
+  AC.sb.auth.onAuthStateChange((ev,ses)=>{AC.session=ses;if(ev==='SIGNED_OUT'){AC.user=null;AC.profile=null;accountUI()}})}
+ return AC.sb}
+async function restoreSession(){try{if(!localStorage.getItem('np.sb.auth'))return;const sb=await sbLib();const {data}=await sb.auth.getSession();if(data.session){AC.session=data.session;AC.user=data.session.user;await afterLogin(false)}}catch(e){}}
+async function signIn(chain){const sb=await sbLib();const wallet=chain==='solana'?solProv():window.ethereum;
+ if(!wallet){window.open(chain==='solana'?'https://phantom.com/download':'https://rabby.io','_blank','noopener');toast('install a '+(chain==='solana'?'Solana':'Ethereum')+' wallet first');return}
+ try{toast('sign the message in your wallet…');const {data,error}=await sb.auth.signInWithWeb3({chain,wallet,statement:'Sign in to thrive. This does not cost anything and does not move funds.',options:{url:location.origin+location.pathname}});
+  if(error)throw error;AC.session=data.session;AC.user=data.user;$('#modal').classList.remove('on');await afterLogin(true)}
+ catch(e){toast('<span class="dn">sign in failed:</span> '+esc(e.message||e))}}
+async function afterLogin(fresh){const sb=await sbLib();const {data:p}=await sb.from('profiles').select('*').eq('id',AC.user.id).single();AC.profile=p;
+ try{const {data:st}=await sb.from('user_state').select('data').eq('user_id',AC.user.id).maybeSingle();const d=st?.data||{};
+  if(d.follow)S.follow=[...new Set([...S.follow,...d.follow])];
+  if(d.favs){const ids=new Set(S.favs.map(x=>x.id));d.favs.forEach(f=>{if(!ids.has(f.id))S.favs.push(f)})}
+  if(d.paper&&(!S.paper.hist.length&&!S.paper.pos.length))S.paper=d.paper;
+  if(d.layout&&fresh){Object.assign(LAY,d.layout);applyLay()}
+  store.set('follow',S.follow);store.set('favs',S.favs);savePaper();renderList();renderPos(true);wallet()}catch(e){}
+ accountUI();syncSoon();if(fresh)toast(`<img class="av" src="${avOf(p?.address)}" style="width:18px;height:18px" alt="">signed in as <b>${esc(p?.handle||shortA(p?.address))}</b>`);
+ if(fresh&&!p?.handle)setTimeout(accountModal,600);loadTheses()}
+function syncSoon(){if(!AC.user)return;clearTimeout(AC.syncT);AC.syncT=setTimeout(async()=>{try{await AC.sb.from('user_state').upsert({user_id:AC.user.id,data:{follow:S.follow,favs:S.favs,paper:S.paper,layout:LAY},updated_at:new Date().toISOString()})}catch(e){}},2500)}
+{const _set=store.set;store.set=(k,v)=>{_set(k,v);if(['follow','favs','paper','layout'].includes(k))syncSoon()}}
+function accountUI(){const me=$('#meBtn');me.src=AC.profile?avOf(AC.profile.address):'av/09.jpg';me.title=AC.profile?(AC.profile.handle||AC.profile.address):'sign in';me.style.boxShadow=AC.profile?'0 0 0 2px #22c55e':'0 0 0 2px var(--acc)'}
+function signInModal(){modal(`<h3>sign in to thrive</h3><div class="mut sm">use your wallet. no email, no password. signing is free and never moves funds.</div>
+ <button class="auth-opt" data-signin="ethereum"><span class="ic2" style="background:#1b2140;color:#8fa0ff">Ξ</span><span><b>Ethereum wallet</b><div class="dim sm">MetaMask, Rabby, Coinbase Wallet…</div></span></button>
+ <button class="auth-opt" data-signin="solana"><span class="ic2" style="background:#1d1433;color:#b48cff">◎</span><span><b>Solana wallet</b><div class="dim sm">Phantom, Solflare, Backpack…</div></span></button>
+ <div class="dim sm" style="margin:12px 0 4px">with an account you can post theses, appear on the thrive leaderboard and sync your follows, favorites and practice account across devices.</div>
+ <button class="btn gh" data-mclose style="width:100%;justify-content:center;margin-top:10px">not now</button>`)}
+function accountModal(){if(!AC.user)return signInModal();const p=AC.profile||{},P=S.paper,tot=P.hist.reduce((a,h)=>a+h.pnl,0);
+ modal(`<div class="phead" style="margin-bottom:12px"><img src="${avOf(p.address)}" alt=""><div><h2>${esc(p.handle||'your account')}</h2><div class="mut sm m">${esc(p.chain||'')} · ${esc(shortA(p.address))}</div></div></div>
+ <div class="dim sm" style="margin-bottom:6px">username (3–20 letters, numbers, _ or .)</div>
+ <div style="display:flex;gap:8px;margin-bottom:12px"><input class="field" id="hdl" maxlength="20" value="${esc(p.handle||'')}" placeholder="e.g. andre.trades"><button class="btn" data-savehdl>save</button></div>
+ <div class="kpis" style="grid-template-columns:repeat(2,1fr)"><div class="kpi"><div class="k">practice PnL</div><div class="v m ${tot>=0?'up':'dn'}">${tot>=0?'+':''}${usd(tot)}</div></div><div class="kpi"><div class="k">following</div><div class="v m">${S.follow.filter(a=>!a.startsWith('m:')).length}</div></div></div>
+ <div class="dim sm" style="margin-bottom:12px">your follows, favorites, practice account and layout sync automatically to this account.</div>
+ <div style="display:flex;gap:8px">${/^0x/.test(p.address||'')?`<button class="btn gh" data-myprof2 style="flex:1;justify-content:center">view public profile</button>`:''}<button class="btn gh" data-signout style="flex:1;justify-content:center">sign out</button><button class="btn" data-mclose style="flex:1;justify-content:center">done</button></div>`)}
+async function saveHandle(){const v=$('#hdl').value.trim().toLowerCase();if(!/^[a-z0-9_.]{3,20}$/.test(v))return toast('use 3–20 letters, numbers, _ or .');
+ const {data,error}=await AC.sb.from('profiles').update({handle:v}).eq('id',AC.user.id).select().single();if(error)return toast('<span class="dn">'+(/duplicate|unique/.test(error.message)?'that username is taken':esc(error.message))+'</span>');AC.profile=data;toast('username saved: <b>'+esc(v)+'</b>');accountUI();accountModal()}
+async function signOut(){try{await AC.sb.auth.signOut()}catch(e){}AC.user=null;AC.profile=null;AC.session=null;accountUI();$('#modal').classList.remove('on');toast('signed out');loadTheses()}
+
+// ---------- tesis por mercado ----------
+const mkey=m=>m?(m.kind==='perp'?'perp:'+m.id:'tok:'+m.pool):'';
+let thGen=0,myLikes=new Set();
+function lpTab(t){AC.lpTab=t;$$('[data-lp]').forEach(b=>b.classList.toggle('on',b.dataset.lp===t));$('#lp').style.display=t==='main'?'':'none';$('#lpTh').style.display=t==='theses'?'':'none';$('#lpN').style.display=$('#lpR').style.display=t==='main'?'':'none';if(t==='theses')loadTheses()}
+async function loadTheses(){const m=S.cur;if(!m)return;const g=++thGen,k=mkey(m),el=$('#lpTh');
+ try{const L=await sbRest(`thesis_feed?market=eq.${encodeURIComponent(k)}&order=created_at.desc&limit=60`);if(g!==thGen)return;$('#thN').textContent=L.length?'('+L.length+')':'';
+  if(AC.user&&L.length){try{const ids=L.map(x=>x.id).join(',');const lk=await sbRest(`likes?select=thesis_id&user_id=eq.${AC.user.id}&thesis_id=in.(${ids})`);myLikes=new Set(lk.map(x=>x.thesis_id))}catch(e){}}
+  if(AC.lpTab!=='theses')return;
+  el.innerHTML=`<div class="th-c">${AC.user?`<textarea id="thBody" maxlength="500" placeholder="what's your thesis on ${esc(m.sym)}? entry, target, why…"></textarea><div class="th-row"><span class="seg">${['long','short','neutral'].map(x=>`<button data-thside="${x}" class="${AC.side===x?'on':''}">${x}</button>`).join('')}</span><span class="dim sm" id="thCnt">0/500</span><button class="btn" data-thpost style="margin-left:auto;height:28px;font-size:12px">post</button></div>`:`<div class="th-row"><span class="mut sm">share your view on ${esc(m.sym)} with every trader watching it.</span><button class="btn" data-signinopen style="margin-left:auto;height:28px;font-size:12px">sign in to post</button></div>`}</div>`+
+  (L.length?L.map(t=>{const mine=AC.user&&t.user_id===AC.user.id,liked=myLikes.has(t.id);return`<div class="th"><img class="av" src="${avOf(t.address)}" alt=""><div class="b"><div class="who2" data-thuser="${esc(t.address)}"><b>${esc(t.handle||shortA(t.address))}</b> ${t.side&&t.side!=='neutral'?`<span class="badge ${t.side==='long'?'b':'s'}">${t.side}</span>`:''} <span class="dim sm">${ago(Date.parse(t.created_at))} ago</span></div><div class="t">${esc(t.body)}</div><div class="meta"><button class="lk ${liked?'on':''}" data-like="${t.id}"><svg viewBox="0 0 24 24" ${liked?'style="fill:currentColor"':''}><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></svg>${t.likes}</button>${mine?`<button data-thdel="${t.id}">delete</button>`:''}</div></div></div>`}).join(''):'<div class="load">no theses on this market yet. be the first.</div>');
+ }catch(e){if(g===thGen)el.innerHTML=`<div class="err">${esc(e.message)}</div>`}}
+async function postThesis(){const b=$('#thBody').value.trim();if(!b)return;const {error}=await AC.sb.from('theses').insert({market:mkey(S.cur),body:b,side:AC.side});if(error)return toast('<span class="dn">'+(/row-level/.test(error.message)?'slow down: max 5 theses per minute':esc(error.message))+'</span>');toast('thesis posted');loadTheses()}
+async function toggleLike(id){if(!AC.user)return signInModal();const on=myLikes.has(id);const q=on?AC.sb.from('likes').delete().eq('user_id',AC.user.id).eq('thesis_id',id):AC.sb.from('likes').insert({thesis_id:id});const {error}=await q;if(error)return toast(esc(error.message));loadTheses()}
+async function delThesis(id){if(!confirm('delete this thesis?'))return;const {error}=await AC.sb.from('theses').delete().eq('id',id);if(error)return toast(esc(error.message));loadTheses()}
+
+// ---------- clasificación de traders de thrive ----------
+async function renderThriveRank(g){const el=$('#list');el.innerHTML='<div class="load">loading thrive traders…</div>';
+ const L=await sbRest('thrive_traders?order=created_at.asc&limit=200');if(g!==listGen)return;
+ if(!L.length){el.innerHTML='<div class="load">no thrive traders yet.<br><br><a href="#" data-signinopen style="color:#aab4ff">sign in with your wallet</a> to be the first on the board.</div>';return}
+ const ev=L.filter(x=>/^0x/.test(x.address||'')).slice(0,40);let i=0;const val={};
+ await Promise.all(Array.from({length:5},async()=>{while(i<ev.length){const a=ev[i++].address;try{const st=await hl({type:'clearinghouseState',user:a});val[a]=+st.marginSummary.accountValue}catch(e){}}}));if(g!==listGen)return;
+ L.sort((a,b)=>(val[b.address]||0)-(val[a.address]||0)||b.theses-a.theses);
+ el.innerHTML=`<div class="dim sm" style="padding:8px 10px">${L.length} traders on thrive · ranked by Hyperliquid account value</div>`+L.map((r,k)=>`<div class="it" data-thuser="${esc(r.address)}"><span class="m dim" style="width:18px">${k+1}</span><img class="av" src="${avOf(r.address)}" alt=""><div class="g"><div class="n">${esc(r.handle||shortA(r.address))}</div><div class="sm mut">${esc(r.chain||'')} · ${r.theses} theses</div></div><div class="r m">${val[r.address]!=null?sh(val[r.address]):'—'}</div></div>`).join('')}
+
 // ---------- diseño ajustable ----------
 const LAY_DEF={sw:272,rw:304,bh:290,pw:380,noside:false,noright:false,focus:false,swap:false};
 const LAY=Object.assign({},LAY_DEF,store.get('layout',{}));
@@ -812,8 +900,11 @@ async function openProfile(a){a=a.toLowerCase();const el=$('#prof');el.classList
  el.innerHTML=`<button class="back" data-back><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>back to chart</button>
  <div class="phead"><img src="${avOf(a)}" alt=""><div><h2>${esc(nameOf(a))}</h2><div class="mut m sm">${a} · <a href="#" data-copy="${a}" style="color:#aab4ff">copy</a></div></div><div style="margin-left:auto;display:flex;gap:8px">${fb()}<a class="btn gh" href="https://hypurrscan.io/address/${a}" target="_blank" rel="noopener">hypurrscan</a></div></div>
  <div class="kpis" id="pk"><div class="kpi"><div class="k">account value</div><div class="v m" id="pkv">${r?sh(r.v):'…'}</div></div>${['day','week','month','allTime'].map((w,i)=>`<div class="kpi"><div class="k">PnL ${['24h','7 days','30 days','all time'][i]}</div><div class="v m ${r&&r[w][0]>=0?'up':'dn'}">${r?(r[w][0]>=0?'+':'')+sh(r[w][0]):'—'}</div><div class="sm m mut">${r?'ROI '+pc(r[w][1]*100):'outside the top'}</div></div>`).join('')}</div>
+ <div id="pth"></div>
  <div class="sect"><h3>open positions <span class="dim" id="pposN"></span></h3><div class="scrollx" id="ppos"><div class="load">reading positions…</div></div></div>
  <div class="sect"><h3>recent trades</h3><div class="scrollx" id="pfills"><div class="load">loading…</div></div></div>`;
+ sbRest(`thesis_feed?address=eq.${a}&order=created_at.desc&limit=20`).then(L=>{if(!L.length)return;const h=L[0].handle;if(h)$('#prof h2').innerHTML=esc(h)+'<span class="onth">on thrive</span>';
+  $('#pth').innerHTML=`<div class="sect"><h3>theses <span class="dim">${L.length}</span></h3>${L.map(t=>`<div class="th"><div class="b"><div><b>${esc(t.market.replace(/^perp:(xyz:)?|^tok:/,''))}</b> ${t.side&&t.side!=='neutral'?`<span class="badge ${t.side==='long'?'b':'s'}">${t.side}</span>`:''} <span class="dim sm">${ago(Date.parse(t.created_at))} ago · ${t.likes} likes</span></div><div class="t">${esc(t.body)}</div></div></div>`).join('')}</div>`}).catch(()=>{});
  try{const [st,fl]=await Promise.all([hl({type:'clearinghouseState',user:a}),hl({type:'userFills',user:a})]);S.states[a]=st;
   $('#pkv').textContent=sh(+st.marginSummary.accountValue);
   const P=st.assetPositions||[];$('#pposN').textContent=P.length+' · exposure '+sh(+st.marginSummary.totalNtlPos);
@@ -882,6 +973,17 @@ document.addEventListener('click',e=>{const T=e.target;
  const sd=T.closest('[data-side]');if(sd){S.side=sd.dataset.side;ticket();return}
  const pr=T.closest('[data-p]');if(pr){$('#amt').value=pr.dataset.p;ticket();return}
  const pt=T.closest('[data-pt]');if(pt){S.ptab=pt.dataset.pt;$$('[data-pt]').forEach(b=>b.classList.toggle('on',b===pt));renderPos(true);return}
+ const lpb=T.closest('[data-lp]');if(lpb){lpTab(lpb.dataset.lp);return}
+ const si=T.closest('[data-signin]');if(si){signIn(si.dataset.signin);return}
+ if(T.closest('[data-signinopen]')){e.preventDefault();signInModal();return}
+ if(T.closest('[data-savehdl]')){saveHandle();return}
+ if(T.closest('[data-signout]')){signOut();return}
+ if(T.closest('[data-myprof2]')){$('#modal').classList.remove('on');openProfile(AC.profile.address);return}
+ const ts=T.closest('[data-thside]');if(ts){AC.side=ts.dataset.thside;$$('[data-thside]').forEach(b=>b.classList.toggle('on',b===ts));return}
+ if(T.closest('[data-thpost]')){postThesis();return}
+ const lk=T.closest('[data-like]');if(lk){toggleLike(+lk.dataset.like);return}
+ const td=T.closest('[data-thdel]');if(td){delThesis(+td.dataset.thdel);return}
+ const tu=T.closest('[data-thuser]');if(tu){const a=tu.dataset.thuser;if(/^0x/.test(a))openProfile(a);else window.open('https://solscan.io/account/'+a,'_blank','noopener');return}
  const ly=T.closest('[data-lay]');if(ly){layAction(ly.dataset.lay);return}
  if(T.closest('[data-swap]')){layAction('swap');return}
  const rpb=T.closest('[data-rp]');if(rpb){rpTab(rpb.dataset.rp);return}
@@ -894,7 +996,7 @@ document.addEventListener('click',e=>{const T=e.target;
  const rk=T.closest('[data-rcancel]');if(rk){const[a,o]=rk.dataset.rcancel.split('|');realCancel(+a,+o);return}
  if(T.closest('[data-myprof]')){e.preventDefault();openProfile(RS.addr);return}
  if(T.closest('#dep')){if(RS.on){window.open('https://app.hyperliquid.xyz/portfolio','_blank','noopener');return}depositModal();return}
- if(T.closest('#meBtn')){meModal();return}
+ if(T.closest('#meBtn')){AC.user?accountModal():signInModal();return}
  const dp=T.closest('[data-dep]');if(dp){S.paper.cash+=+dp.dataset.dep;savePaper();wallet();ticket();toast(`practice deposit: +$${(+dp.dataset.dep).toLocaleString('en-US')}`);return}
  if(T.closest('[data-reset]')){if(confirm('reset your practice account? your positions and history will be deleted.')){S.paper={cash:10000,pos:[],hist:[]};savePaper();wallet();renderPos(true);ticket();draw();$('#modal').classList.remove('on')}return}
  if(T.closest('[data-mclose]')||T.id==='modal'){$('#modal').classList.remove('on');return}
@@ -902,6 +1004,7 @@ document.addEventListener('click',e=>{const T=e.target;
 });
 $('#go').addEventListener('click',()=>RS.on?(S.cur&&S.cur.kind==='tok'?solSwap():realOrder()):trade());
 $('#amt').addEventListener('input',()=>ticket(true));
+document.addEventListener('input',e=>{if(e.target.id==='thBody'){$('#thCnt').textContent=e.target.value.length+'/500'}});
 $('#lev').addEventListener('input',e=>{S.lev=+e.target.value;$('#levV').textContent=S.lev+'×';ticket(true)});
 $('#q').addEventListener('input',e=>{clearTimeout(qT);qT=setTimeout(()=>search(e.target.value),350)});
 $('#q').addEventListener('keydown',e=>{if(e.key==='Enter'){const f=$('#sres .r');if(f)f.click()}if(e.key==='Escape'){$('#sres').classList.remove('on');e.target.blur()}});
@@ -910,7 +1013,7 @@ addEventListener('resize',draw);
 setInterval(()=>{$('#clock').textContent=new Date().toTimeString().slice(0,8)+' local time'},1000);
 
 // ---------- arranque ----------
-(async function boot(){applyLay();$$('[data-ct]').forEach(b=>b.classList.toggle('on',b.dataset.ct===VIEW.type));wallet();renderPos(true);bell();renderFilt();
+(async function boot(){applyLay();restoreSession();$$('[data-ct]').forEach(b=>b.classList.toggle('on',b.dataset.ct===VIEW.type));wallet();renderPos(true);bell();renderFilt();
  try{await loadPerps()}catch(e){$('#list').innerHTML=`<div class="err">couldn’t connect to Hyperliquid: ${esc(e.message)}</div>`}
  wsOpen();foot();const lbP=loadLB();
  const h=decodeURIComponent(location.hash.slice(1)),last=store.get('last',null);

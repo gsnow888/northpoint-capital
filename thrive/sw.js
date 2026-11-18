@@ -1,5 +1,5 @@
 /* Thrive · service worker: la app abre al instante y funciona sin red (los datos de mercado siempre vienen en vivo). */
-const VERSION = 'thrive-v1';
+const VERSION = 'thrive-v2';
 const SHELL = ['./', 'index.html', 'app.html', 'hl-sign.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'img/espacio.jpg',
   ...Array.from({ length: 16 }, (_, i) => `av/${String(i + 1).padStart(2, '0')}.jpg`)];
 
