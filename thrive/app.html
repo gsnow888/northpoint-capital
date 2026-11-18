@@ -471,7 +471,7 @@ async function renderFeed(g){const el=$('#list'),f=S.filt.feed;if(!S.lb)await lo
 
 // ---------- seleccionar mercado ----------
 let selGen=0;
-async function select(m){VIEW.off=0;S.cur=m;const g=++selGen;S.bub=[];S.trades=[];closeProf();
+async function select(m){VIEW.off=0;S.cur=m;S.hist=[];const g=++selGen;S.bub=[];S.trades=[];closeProf();
  $$('.it[data-m]').forEach(e=>e.classList.toggle('on',e.dataset.m===m.kind+'|'+m.id));
  if(m.kind==='tok'&&S.side!=='buy'&&!S.paper.pos.some(p=>p.id===m.id))S.side='buy';
  head();ticket();about();renderPos(true);
@@ -518,11 +518,15 @@ function drawNow(){const K=viewSlice(),d=devicePixelRatio,W=cv.clientWidth,H=cv.
  // mis open positions: línea de entrada
  S.paper.pos.filter(p=>p.id===S.cur.id).forEach(p=>{const y=Y(p.e||p.cost/p.q);if(y<0||y>ch)return;x.setLineDash([6,4]);x.strokeStyle='#516af6';x.beginPath();x.moveTo(0,y);x.lineTo(pw,y);x.stroke();x.setLineDash([]);x.fillStyle='#516af6';x.fillText('your entry',6,y-4)});
  const fol=$('#oFol').checked,big=$('#oBig').checked,rows=[];
- if($('#oTr').checked)S.bub.forEach(b=>{if(fol&&!isFol(b.u))return;if(big&&b.usd<1000&&!b.fol)return;rows.push(b)});
+ if($('#oTr').checked)(S.hist||[]).concat(S.bub).forEach(b=>{if(fol&&!isFol(b.u))return;if(big&&b.usd<1000&&!b.fol)return;rows.push(b)});
  if($('#oMine').checked)S.paper.pos.concat(S.paper.hist).forEach(p=>{if(p.id===S.cur.id)(p.fills||[]).forEach(f=>rows.push({t:f.t,b:f.b,usd:f.usd,px:f.px,me:1}))});
- const occ={};
+ const occ={},grp=new Map();
  rows.forEach(b=>{let i=Math.floor((b.t-t0)/step);if(i>=K.length&&b.t<last.t+step*2)i=K.length-1;if(i<0||i>=K.length)return;
-  const k=K[i],cx=i*bw+bw/2,key=i+(b.b?'b':'s');occ[key]=(occ[key]||0)+1;if(occ[key]>4&&!b.me)return;
+  const gk=i+'|'+(b.b?'b':'s')+'|'+(b.me?'me':b.u);const g0=grp.get(gk);if(g0){g0.usd+=b.usd;g0.n++;if(b.t>g0.t){g0.t=b.t;g0.px=b.px}if(b.fol)g0.fol=1}else grp.set(gk,{...b,i,n:1})});
+ const G=[...grp.values()].sort((a,b)=>(b.me?1e15:b.fol?1e14:b.usd)-(a.me?1e15:a.fol?1e14:a.usd));
+ const cap=Math.max(24,Math.round(K.length*.55));let shown=0;
+ G.forEach(b=>{const i=b.i;if(!b.me&&!b.fol){if(shown>=cap)return}
+  const k=K[i],cx=i*bw+bw/2,key=i+(b.b?'b':'s');occ[key]=(occ[key]||0)+1;if(occ[key]>2&&!b.me)return;if(!b.me)shown++;
   const r=b.me?10:Math.max(7,Math.min(11,4+Math.log10(Math.max(b.usd,10))*1.4));let cy=b.b?Y(k.l)+r+5:Y(k.h)-r-5;cy+=(b.b?1:-1)*(occ[key]-1)*(r*2+2);
   x.beginPath();x.arc(cx,cy,r+2,0,7);x.fillStyle=b.b?'#22c55e':'#ef4444';x.fill();
   const im=img(b.me?'av/09.jpg':avOf(b.u));x.save();x.beginPath();x.arc(cx,cy,r,0,7);x.clip();if(im.complete&&im.naturalWidth)x.drawImage(im,cx-r,cy-r,r*2,r*2);else{x.fillStyle='#22212d';x.fill()}x.restore();
@@ -538,7 +542,7 @@ function drawNow(){const K=viewSlice(),d=devicePixelRatio,W=cv.clientWidth,H=cv.
 cv.addEventListener('mousemove',e=>{const r=cv.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top;hover={x:mx,y:my};
  const h=hits.find(h=>Math.hypot(h.cx-mx,h.cy-my)<h.r+2),tip=$('#tip');cv.style.cursor=h&&!h.b.me?'pointer':'crosshair';
  if(h){const b=h.b;tip.style.display='block';tip.style.left=Math.min(mx+14,cv.clientWidth-190)+'px';tip.style.top=(my+46)+'px';
-  tip.innerHTML=`<div class="who"><img class="av" src="${b.me?'av/09.jpg':avOf(b.u)}" alt=""><b>${b.me?'you (practice)':esc(S.cur.kind==='tok'?shortA(b.u):nameOf(b.u))}</b></div><div style="margin-top:6px"><span class="badge ${b.b?'b':'s'}">${b.b?'buy':'sell'}</span> <span class="m">${sh(b.usd)} @ ${px(b.px)}</span></div><div class="dim" style="margin-top:4px">${ago(b.t)} ago${b.me?'':' · click to view wallet'}</div>`}
+  tip.innerHTML=`<div class="who"><img class="av" src="${b.me?'av/09.jpg':avOf(b.u)}" alt=""><b>${b.me?'you (practice)':esc(S.cur.kind==='tok'?shortA(b.u):nameOf(b.u))}</b></div><div style="margin-top:6px"><span class="badge ${b.b?'b':'s'}">${b.b?'buy':'sell'}</span> <span class="m">${sh(b.usd)} @ ${px(b.px)}</span>${b.n>1?` <span class="dim">· ${b.n} trades</span>`:''}</div><div class="dim" style="margin-top:4px">${ago(b.t)} ago${b.me?'':' · click to view wallet'}</div>`}
  else tip.style.display='none';draw()});
 cv.addEventListener('mouseleave',()=>{hover=null;$('#tip').style.display='none';draw()});
 let drag=null;
@@ -568,12 +572,22 @@ async function loadTokTrades(g,first){const m=S.cur;if(!m||m.kind!=='tok')return
   $('#lp').innerHTML=`<table><thead><tr><th>trader</th><th>bought</th><th>sold</th><th>net</th><th>est. PnL</th><th>trades</th><th>last</th></tr></thead><tbody>${A.map(a=>{const net=a.buy-a.sell,pnl=a.buy>0?a.sell-a.buy+Math.max(0,a.qb-a.qs)*m.px:null;
    return`<tr class="cl" data-w="${esc(a.u)}"><td><div class="who"><img class="av" src="${avOf(a.u)}" alt=""><span class="nm">${shortA(a.u)}</span></div></td><td class="m up">${sh(a.buy)}</td><td class="m dn">${sh(a.sell)}</td><td class="m ${net>=0?'up':'dn'}">${sh(net)}</td><td class="m ${pnl==null?'dim':pnl>=0?'up':'dn'}">${pnl==null?'—':(pnl>=0?'+':'')+sh(pnl)}</td><td class="m">${a.n}</td><td class="dim">${ago(a.last)}</td></tr>`}).join('')}</tbody></table><div class="dim sm" style="padding:8px 10px;white-space:normal">estimated PnL = sells − buys + what they still hold at the current price, counting only these trades. Click a wallet to view it on Solscan.</div>`;
   draw();about();
+  if(first&&!S.hist.length){try{const d2=await gt(`/networks/solana/pools/${m.pool}/trades?trade_volume_in_usd_greater_than=500`,60000);if(g!==selGen)return;
+   S.hist=(d2.data||[]).map(t=>{const a=t.attributes,b=a.kind==='buy';return{u:a.tx_from_address,b,usd:+a.volume_in_usd,px:+(b?a.price_to_in_usd:a.price_from_in_usd),t:Date.parse(a.block_timestamp),hist:1}}).filter(t=>t.u&&!T.some(x=>x.t===t.t&&x.u===t.u));draw()}catch(e){}}
  }catch(e){if(g===selGen){$('#rp').innerHTML=`<div class="load">${esc(e.message)}</div>`;if(!S.trades.length)$('#lp').innerHTML=`<div class="load">${esc(e.message)}</div>`;setTimeout(()=>{if(g===selGen&&!S.trades.length)loadTokTrades(g,true)},12000)}}}
 async function loadTokInfo(m,g){if(!m.token)return;try{const d=await gt(`/networks/solana/tokens/${m.token}/info`,300000);if(g!==selGen)return;const a=d.data?.attributes||{};m.holders=a.holders?.count;m.desc=a.description;m.links={web:a.websites?.[0],x:a.twitter_handle,tg:a.telegram_handle};about()}catch(e){}}
 
 // ---------- perps: operaciones y top trader positions ----------
 async function loadPerpTrades(g){const m=S.cur;try{const d=await hl({type:'recentTrades',coin:m.id});if(g!==selGen)return;d.reverse().forEach(addPerpTrade)}catch(e){}renderPerpTrades(false,true);
- for(const a of S.follow.filter(a=>a.startsWith('0x')).slice(0,8)){try{const fl=await hl({type:'userFills',user:a});if(g!==selGen)return;fl.filter(f=>f.coin===m.id).forEach(f=>S.bub.push({u:a,b:f.side==='B',usd:f.sz*f.px,px:+f.px,t:f.time,fol:1}))}catch(e){}}draw()}
+ loadPerpHistory(m,g)}
+const FILLS={};
+async function fillsOf(a){const c=FILLS[a];if(c&&Date.now()-c.t<180000)return c.d;const d=await hl({type:'userFills',user:a});FILLS[a]={t:Date.now(),d};return d}
+// historial real: operaciones de los top traders (24 h, 7 días y 30 días) y de los que sigues, repartidas en el gráfico
+async function loadPerpHistory(m,g){if(!S.lb)await loadLB();const R=S.lb.rows||[];
+ const users=[...new Set([...S.follow.filter(a=>a.startsWith('0x')),...[...R].sort((a,b)=>b.day[0]-a.day[0]).slice(0,25).map(r=>r.a),...[...R].sort((a,b)=>b.week[0]-a.week[0]).slice(0,25).map(r=>r.a),...[...R].sort((a,b)=>b.month[0]-a.month[0]).slice(0,25).map(r=>r.a)])].slice(0,60);
+ let i=0,last=0;const add=(a,fl)=>{fl.forEach(f=>{if(f.coin===m.id)S.hist.push({u:a,b:f.side==='B',usd:+f.sz*+f.px,px:+f.px,t:f.time,fol:isFol(a)?1:0,hist:1})});if(Date.now()-last>400){last=Date.now();draw()}};
+ await Promise.all(Array.from({length:6},async()=>{while(i<users.length){const a=users[i++];try{const fl=await fillsOf(a);if(g!==selGen)return;add(a,fl)}catch(e){}}}));
+ if(g===selGen)draw()}
 function addPerpTrade(t){const b=t.side==='B',u=b?t.users?.[0]:t.users?.[1],o={u,b,usd:+t.sz*+t.px,px:+t.px,t:t.time,tid:t.tid};
  if(S.trades.some(x=>x.tid===o.tid))return;S.trades.unshift(o);if(S.trades.length>300)S.trades.length=300;S.bub.push(o);if(S.bub.length>900)S.bub.splice(0,300)}
 let rpT=0;function renderPerpTrades(flash,force){if(BOOK.tab==='book')return;if(Date.now()-rpT<400&&!force)return;rpT=Date.now();const m=S.cur;if(!m||m.kind!=='perp')return;
