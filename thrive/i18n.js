@@ -9,6 +9,34 @@
   if (q) try { localStorage.setItem(KEY, q); } catch (e) {}
 
   const ES = {
+    // ---------- clanes, perfil FOMO, panel trench, tutorial ----------
+    'clans': 'clanes', 'new': 'nuevo', 'see all ›': 'ver todos ›', 'your rank': 'tu puesto', 'outside the top': 'fuera del top', 'sign in': 'entrar',
+    'teams of traders competing together. combined PnL is the sum of members’ real Hyperliquid PnL.': 'equipos de traders que compiten juntos. el PnL combinado es la suma del PnL real en Hyperliquid de sus miembros.',
+    'create a clan': 'crear un clan', 'clan name': 'nombre del clan', 'create': 'crear', 'join': 'unirme', 'leave clan': 'salir del clan', 'thrive clans': 'clanes de thrive',
+    'clan': 'clan', 'members': 'miembros', 'combined PnL 24h': 'PnL combinado 24h', 'no clans yet. be the first to create one.': 'todavía no hay clanes. sé el primero en crear uno.',
+    'Hyperliquid vaults': 'vaults de Hyperliquid', 'real strategies run by a leader with depositors': 'estrategias reales de un líder con depositantes', 'vault': 'vault', 'leader': 'líder',
+    'loading clans…': 'cargando clanes…', 'you joined the clan': 'te uniste al clan', 'you left the clan': 'saliste del clan', 'that name or tag is taken': 'ese nombre o tag ya existe',
+    'name 3–30 characters, tag 2–5 letters or numbers': 'nombre de 3 a 30 caracteres, tag de 2 a 5 letras o números',
+    'followers': 'seguidores', 'trades': 'trades', '30d rank': 'puesto 30d', 'copy address': 'copiar dirección', 'labeled entity': 'entidad etiquetada', 'hypurrscan': 'hypurrscan',
+    'loading official data from Hyperliquid…': 'cargando datos oficiales de Hyperliquid…', 'positions': 'posiciones', 'all': 'todo', 'perps': 'perps', 'asset': 'activo', 'position': 'posición',
+    'reading positions…': 'leyendo posiciones…', 'no positions': 'sin posiciones', 'theses': 'tesis', 'real trades on Hyperliquid': 'trades reales en Hyperliquid', 'buy': 'compra', 'sell': 'venta',
+    'no recent trades': 'sin trades recientes', 'no history for this period': 'sin historial en este periodo', 'PnL 7d': 'PnL 7d', 'PnL 30d': 'PnL 30d', 'PnL all time': 'PnL histórico',
+    'volume 30d': 'volumen 30d', 'profile link copied': 'link del perfil copiado', 'copy profile link': 'copiar link del perfil', 'spot': 'spot',
+    'this account is empty right now: no balance and no open positions on Hyperliquid.': 'esta cuenta está vacía ahora: sin saldo ni posiciones abiertas en Hyperliquid.',
+    'available': 'disponible', 'up': 'sube', 'down': 'baja', 'long': 'long', 'short': 'short', 'amount': 'monto', 'max': 'máx', 'payout multiplier': 'multiplicador de pago',
+    'details': 'detalles', 'tap to trade!': '¡toca para operar!', 'cash out whenever you want!': '¡cash out cuando quieras!', 'cash out': 'cash out', 'cash out complete': 'cash out realizado',
+    'duration': 'duración', 'keep trading': 'seguir operando', 'practice money, real prices': 'dinero de práctica, precios reales', 'real trade on Hyperliquid': 'trade real en Hyperliquid',
+    'replay the tutorial': 'repetir el tutorial', 'sign in with your wallet to create or join a clan': 'entra con tu wallet para crear o unirte a un clan', 'open position': 'abrir posición', 'skip': 'saltar', 'next': 'siguiente',
+    'pick a market': 'elige un mercado', 'crypto, memecoins, stocks like NVIDIA and Apple, gold and oil. every price is live.': 'cripto, memecoins, acciones como NVIDIA y Apple, oro y petróleo. todos los precios son en vivo.',
+    'watch the chart': 'mira el gráfico', 'the bubbles are real traders buying and selling right now. tap one to see their profile.': 'las burbujas son traders reales comprando y vendiendo ahora mismo. toca una para ver su perfil.',
+    'up or down?': '¿sube o baja?', 'choose which way you think the price goes next.': 'elige hacia dónde crees que va el precio.',
+    'choose an amount': 'elige un monto', 'slide or type how much to put in. you start with $10,000 of practice money.': 'desliza o escribe cuánto meter. empiezas con $10,000 de práctica.',
+    'multiplies your gains, and your losses too. higher means riskier.': 'multiplica tus ganancias, y también tus pérdidas. más alto es más riesgo.',
+    'tap to trade': 'toca para operar', 'one tap opens the position at the live price.': 'un toque abre la posición al precio en vivo.',
+    'cash out whenever you want': 'cash out cuando quieras', 'your position shows here. tap the green button to take your profit.': 'tu posición aparece aquí. toca el botón verde para cobrar tu ganancia.',
+    'follow the best': 'sigue a los mejores', 'see who is winning on Hyperliquid, join a clan and follow traders.': 'mira quién gana en Hyperliquid, únete a un clan y sigue traders.',
+    'take the 1-minute tour': 'tour de 1 minuto', 'trading on the web, built around people, not just charts': 'trading en la web, hecho alrededor de personas, no solo gráficos',
+    'trading on the web': 'trading en la web', 'for the rest of us': 'para todos los demás',
     // ---------- navegación y comunes ----------
     'tokens': 'tokens', 'perps': 'perps', 'indices & stocks': 'índices y acciones', 'leaderboard': 'clasificación', 'feed': 'feed', 'help': 'ayuda',
     'log in': 'entrar', 'start trading': 'empezar a operar', 'download app': 'descargar app', 'download on the': 'descárgala en', 'get it on': 'disponible en',
@@ -125,6 +153,12 @@
   };
   // frases con datos variables
   const RX = [
+    [/^(.+) · practice money, real prices$/, '$1 · dinero de práctica, precios reales'], [/^(.+) · real trade on Hyperliquid$/, '$1 · trade real en Hyperliquid'],
+    [/^(.+) · closed short · (.+)$/, '$1 · cerró short · $2'], [/^(.+) · closed long · (.+)$/, '$1 · cerró long · $2'], [/^(.+) · opened (long|short) · (.+)$/, '$1 · abrió $2 · $3'],
+    [/^step (\d+) of (\d+)$/, 'paso $1 de $2'], [/^if (.+) moves 1% your way$/, 'si $1 se mueve 1% a tu favor'], [/^if (.+) rises 1%$/, 'si $1 sube 1%'],
+    [/^(\d+) seconds$/, '$1 segundos'], [/^(\d+) minutes$/, '$1 minutos'], [/^([\d.]+) hours$/, '$1 horas'], [/^([\d.]+) days$/, '$1 días'], [/^avg hold (.+)$/, 'retención prom. $1'],
+    [/^(.+) recent trades$/, '$1 trades recientes'], [/^active since (.+)$/, 'activo desde $1'], [/^(\d+) perps · (\d+) tokens · exposure (.+)$/, '$1 perps · $2 tokens · exposición $3'],
+    [/^you are in$/, 'estás en'], [/^clan created: (.+)$/, 'clan creado: $1'], [/^start trading$/, 'empezar a operar'],
     [/^(\d+[smhd]) ago$/, 'hace $1'], [/^(.+?) · (\d+[smhd]) ago$/, '$1 · hace $2'], [/^(\d+[smhd]) ago · (.+)$/, 'hace $1 · $2'],
     [/^real PnL on Hyperliquid · updated (\d+[smhd]) ago$/, 'PnL real en Hyperliquid · actualizado hace $1'], [/^real PnL on Hyperliquid$/, 'PnL real en Hyperliquid'],
     [/^account (.+) · ROI (.+)$/, 'cuenta $1 · ROI $2'], [/^(\d+) markets · 24\/7 perpetuals on Hyperliquid$/, '$1 mercados · perpetuos 24/7 en Hyperliquid'],

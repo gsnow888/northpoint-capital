@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Thrive by NorthPoint</title>
-<meta name="description" content="thrive by northpoint: the social trading app. follow the best traders, see what they trade in real time and copy in one tap.">
+<meta name="description" content="thrive by northpoint: social trading on the web. follow the best traders, see what they trade in real time and copy in one tap.">
 <script src="i18n.js" defer></script>
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#060510">
@@ -210,16 +210,19 @@ footer{padding:70px 0 40px;border-top:1px solid var(--line)}
 .lang{display:flex;background:rgba(203,208,235,.08);border:1px solid rgba(203,208,235,.12);border-radius:9px;padding:2px;flex:none}
 .lang button{padding:3px 7px;border-radius:7px;font:600 10.5px "Geist Mono",monospace;color:#9899a3;letter-spacing:.04em}
 .lang button.on{background:#1f1e2c;color:#fff}
+.mark{width:30px;height:30px;border-radius:9px;background:radial-gradient(circle at 50% 40%,#17171c,#000 70%);border:1px solid rgba(255,255,255,.14);display:inline-grid;place-items:center;flex:none;box-shadow:0 0 0 1px #000,0 6px 18px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.08);position:relative;overflow:hidden}
+.mark svg{width:16px!important;height:16px!important;fill:#fff!important;stroke:none!important;filter:drop-shadow(0 0 3px #fff) drop-shadow(0 0 8px rgba(255,255,255,.75));animation:twk 3.2s ease-in-out infinite}
+.mark:after{content:"";position:absolute;inset:-40%;background:linear-gradient(115deg,transparent 42%,rgba(255,255,255,.22) 50%,transparent 58%);animation:shine 5s ease-in-out infinite}
+@keyframes twk{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.14) rotate(45deg)}}
+@keyframes shine{0%,70%{transform:translateX(-60%)}100%{transform:translateX(60%)}}
 </style>
 </head>
 <body>
 
 <nav id="nav"><div class="wrap">
-  <a class="logo" href="./"><svg class="star" viewBox="0 0 24 24"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg>thrive<small class="by">by northpoint</small></a>
+  <a class="logo" href="./"><span class="mark"><svg viewBox="0 0 24 24"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg></span>thrive<small class="by">by northpoint</small></a>
   <div class="menu"><a href="app.html#tab/tokens">tokens</a><a href="app.html#tab/perps">perps</a><a href="app.html#tab/mercados">indices &amp; stocks</a><a href="app.html#tab/rank">leaderboard</a><a href="help.html">help</a></div>
   <div class="right">
-    <a class="store" href="#" data-install><svg viewBox="0 0 24 24" style="fill:#fff;stroke:none;width:20px;height:20px"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><span>download on the<b>App Store</b></span></a>
-    <a class="store" href="#" data-install><svg viewBox="0 0 24 24" style="stroke:none;width:19px;height:19px"><path fill="#00d7fe" d="M3.6 2.2c-.3.3-.4.7-.4 1.2v17.2c0 .5.1.9.4 1.2l9.7-9.8z"/><path fill="#ffce00" d="M16.5 15.2l-3.2-3.2 3.2-3.2 3.9 2.2c1.1.6 1.1 1.6 0 2.2z"/><path fill="#ff3a44" d="M16.5 15.2L13.3 12l-9.7 9.8c.4.4.9.4 1.6.1z"/><path fill="#00f076" d="M16.5 8.8L5.2 2.1c-.7-.4-1.2-.3-1.6.1l9.7 9.8z"/></svg><span>get it on<b>Google Play</b></span></a>
     <div class="lang" data-langtoggle></div>
     <a class="login" href="app.html">log in</a>
   </div>
@@ -229,7 +232,7 @@ footer{padding:70px 0 40px;border-top:1px solid var(--line)}
   <div class="sea"></div><canvas id="glints"></canvas>
     <div class="hero-in">
         <div class="word">thrive<span class="oc">by northpoint</span></div>
-    <div class="cta"><a class="btn pri" href="app.html">start trading</a><a class="btn dk" href="#" data-install>download app</a></div>
+    <div class="cta"><a class="btn pri" href="app.html">start trading</a><a class="btn dk" href="app.html#tour">take the 1-minute tour</a></div>
   </div>
 </header>
 
@@ -242,14 +245,14 @@ footer{padding:70px 0 40px;border-top:1px solid var(--line)}
   <div class="rig rv">
     <div class="monitor"><div class="mscreen" id="msc"><picture><source srcset="img/terminal.webp" type="image/webp"><img src="img/terminal.jpg" alt="thrive terminal" loading="lazy" decoding="async" width="2000" height="1125"></picture></div></div>
     <div class="stand"></div>
-    <div class="phone"><picture><source srcset="img/movil.webp" type="image/webp"><img src="img/movil.jpg" alt="thrive mobile app" loading="lazy" decoding="async"></picture></div>
+    <div class="phone"><picture><source srcset="img/movil.webp" type="image/webp"><img src="img/movil.jpg" alt="thrive on mobile" loading="lazy" decoding="async"></picture></div>
   </div>
 </section>
 
 <section class="bento wrap">
   <div class="rv">
     <h2 class="h2">never miss a move</h2>
-    <p class="lead">the trading app built around people, not just charts</p>
+    <p class="lead">trading on the web, built around people, not just charts</p>
   </div>
   <div class="grid">
     <div class="cell rv"><div class="kicker">leaderboard</div><h3>climb the leaderboard and earn your spot</h3>
@@ -281,14 +284,14 @@ footer{padding:70px 0 40px;border-top:1px solid var(--line)}
 </section>
 
 <section class="crowd" id="crowd">
-  <h2 class="h2 rv">a trading app<br>for the rest of us</h2>
+  <h2 class="h2 rv">trading on the web<br>for the rest of us</h2>
   <p class="lead rv" style="position:relative">join the traders who trade together, follow each other and share every move in real time.</p>
   <div class="cta rv"><a class="btn pri" href="app.html">start trading</a></div>
 </section>
 
 <footer><div class="wrap">
   <div class="fgrid">
-    <div><div class="logo" style="margin-bottom:10px" data-f><svg class="star" viewBox="0 0 24 24"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg>thrive<small class="by">by northpoint</small></div></div>
+    <div><div class="logo" style="margin-bottom:10px" data-f><span class="mark"><svg viewBox="0 0 24 24"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg></span>thrive<small class="by">by northpoint</small></div></div>
     <div><h4>product</h4><a href="app.html">terminal</a><a href="app.html#tab/feed">social feed</a><a href="app.html#tab/rank">leaderboard</a><a href="#" data-install>install app</a></div>
     <div><h4>markets</h4><a href="app.html#p/xyz:XYZ100">nasdaq 100</a><a href="app.html#p/xyz:SP500">s&amp;p 500</a><a href="app.html#p/BTC">bitcoin</a><a href="app.html#tab/tokens">solana memecoins</a></div>
     <div><h4>learn</h4><a href="help.html">help center</a><a href="help.html#real">trading for real</a><a href="help.html#fees">fees</a></div>
