@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Thrive</title>
 <meta name="description" content="thrive by northpoint: the social trading app. follow the best traders, see what they trade in real time and copy in one tap.">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#060510">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Thrive">
+<link rel="icon" href="icons/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
@@ -133,16 +141,20 @@ footer{padding:70px 0 40px;border-top:1px solid var(--line)}
   .phone{width:170px;height:350px;right:-6px;border-radius:30px}.phone img{border-radius:24px}
   .fgrid{grid-template-columns:1fr 1fr}
 }
+.ib{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;place-items:center;z-index:100}.ib.on{display:grid}
+.ib-in{width:min(380px,92vw);background:#100f18;border:1px solid var(--line);border-radius:18px;padding:18px;font-size:14px}
+.ib-h{display:flex;gap:12px;align-items:center;margin-bottom:12px}.ib-h img{width:48px;height:48px;border-radius:12px}.ib-s{color:var(--mut);font-size:12.5px}
+.ib-body ol{margin:8px 0 6px 18px;color:#c9cad3;line-height:1.8}
 </style>
 </head>
 <body>
 
 <nav id="nav"><div class="wrap">
-  <a class="logo" href="#" data-x><svg class="star" viewBox="0 0 24 24"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg>thrive</a>
-  <div class="menu"><a href="#">markets</a><a href="#">futures</a><a href="#">leaderboard</a><a href="#">blog</a><a href="#">resources</a></div>
+  <a class="logo" href="./"><svg class="star" viewBox="0 0 24 24"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg>thrive</a>
+  <div class="menu"><a href="app.html#tab/tokens">tokens</a><a href="app.html#tab/perps">perps</a><a href="app.html#tab/mercados">indices &amp; stocks</a><a href="app.html#tab/rank">leaderboard</a><a href="help.html">help</a></div>
   <div class="right">
-    <a class="store" href="#"><svg viewBox="0 0 24 24" style="fill:#fff;stroke:none;width:20px;height:20px"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><span>download on the<b>App Store</b></span></a>
-    <a class="store" href="#"><svg viewBox="0 0 24 24" style="stroke:none;width:19px;height:19px"><path fill="#00d7fe" d="M3.6 2.2c-.3.3-.4.7-.4 1.2v17.2c0 .5.1.9.4 1.2l9.7-9.8z"/><path fill="#ffce00" d="M16.5 15.2l-3.2-3.2 3.2-3.2 3.9 2.2c1.1.6 1.1 1.6 0 2.2z"/><path fill="#ff3a44" d="M16.5 15.2L13.3 12l-9.7 9.8c.4.4.9.4 1.6.1z"/><path fill="#00f076" d="M16.5 8.8L5.2 2.1c-.7-.4-1.2-.3-1.6.1l9.7 9.8z"/></svg><span>get it on<b>Google Play</b></span></a>
+    <a class="store" href="#" data-install><svg viewBox="0 0 24 24" style="fill:#fff;stroke:none;width:20px;height:20px"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><span>download on the<b>App Store</b></span></a>
+    <a class="store" href="#" data-install><svg viewBox="0 0 24 24" style="stroke:none;width:19px;height:19px"><path fill="#00d7fe" d="M3.6 2.2c-.3.3-.4.7-.4 1.2v17.2c0 .5.1.9.4 1.2l9.7-9.8z"/><path fill="#ffce00" d="M16.5 15.2l-3.2-3.2 3.2-3.2 3.9 2.2c1.1.6 1.1 1.6 0 2.2z"/><path fill="#ff3a44" d="M16.5 15.2L13.3 12l-9.7 9.8c.4.4.9.4 1.6.1z"/><path fill="#00f076" d="M16.5 8.8L5.2 2.1c-.7-.4-1.2-.3-1.6.1l9.7 9.8z"/></svg><span>get it on<b>Google Play</b></span></a>
     <a class="login" href="app.html">log in</a>
   </div>
 </div></nav>
@@ -151,7 +163,7 @@ footer{padding:70px 0 40px;border-top:1px solid var(--line)}
   <div class="sea"></div><canvas id="glints"></canvas>
     <div class="hero-in">
         <div class="word">thrive<span class="oc">by northpoint</span></div>
-    <div class="cta"><a class="btn pri" href="app.html">start trading</a><a class="btn dk" href="#">download app</a></div>
+    <div class="cta"><a class="btn pri" href="app.html">start trading</a><a class="btn dk" href="#" data-install>download app</a></div>
   </div>
 </header>
 
@@ -198,16 +210,17 @@ footer{padding:70px 0 40px;border-top:1px solid var(--line)}
 <footer><div class="wrap">
   <div class="fgrid">
     <div><div class="logo" style="margin-bottom:10px" data-f><svg class="star" viewBox="0 0 24 24"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg>thrive</div></div>
-    <div><h4>product</h4><a href="#">futures</a><a href="#">social trading</a><a href="#">leaderboard</a></div>
-    <div><h4>markets</h4><a href="#">micro nasdaq</a><a href="#">s&amp;p 500</a><a href="#">bitcoin</a><a href="#">solana</a></div>
-    <div><h4>learn</h4><a href="#">academy</a><a href="#">blog</a><a href="#">help center</a></div>
-    <div><h4>company</h4><a href="#">about</a><a href="#">referrals</a><a href="#">affiliates</a><a href="#">careers</a></div>
-    <div><h4>legal</h4><a href="#">terms</a><a href="#">privacy</a><a href="#">risk disclosure</a></div>
+    <div><h4>product</h4><a href="app.html">terminal</a><a href="app.html#tab/feed">social feed</a><a href="app.html#tab/rank">leaderboard</a><a href="#" data-install>install app</a></div>
+    <div><h4>markets</h4><a href="app.html#p/xyz:XYZ100">nasdaq 100</a><a href="app.html#p/xyz:SP500">s&amp;p 500</a><a href="app.html#p/BTC">bitcoin</a><a href="app.html#tab/tokens">solana memecoins</a></div>
+    <div><h4>learn</h4><a href="help.html">help center</a><a href="help.html#real">trading for real</a><a href="help.html#fees">fees</a></div>
+    <div><h4>company</h4><a href="help.html#about">about</a><a href="https://northpointcapital.io/" rel="noopener">northpoint capital</a><a href="help.html#contact">contact</a></div>
+    <div><h4>legal</h4><a href="terms.html">terms</a><a href="privacy.html">privacy</a><a href="risk.html">risk disclosure</a></div>
   </div>
-  <div class="fbot"><span>© 2026 thrive · northpoint capital</span><div><a href="#">X</a><a href="#">discord</a><a href="#">instagram</a><a href="#">youtube</a></div></div>
+  <div class="fbot"><span>© 2026 thrive · northpoint capital</span><div><a href="terms.html">terms</a><a href="privacy.html">privacy</a><a href="risk.html">risk</a></div></div>
   <p style="color:#5d5e69;font-size:12px;margin-top:22px">trading perpetuals and crypto assets involves risk of loss. past performance does not guarantee future results.</p>
 </div></footer>
 
+<div class="ib" id="installBox"><div class="ib-in"><div class="ib-h"><img src="icons/icon-192.png" alt=""><div><b>install thrive</b><div class="ib-s">the full terminal on your home screen. no app store needed.</div></div></div><div class="ib-body"></div><button class="btn pri" data-ibclose style="width:100%;justify-content:center;margin-top:8px">got it</button></div></div>
 <script>
 const rnd=(a,b)=>a+Math.random()*(b-a);
 const C=['#516af6','#7a5cff','#00b894','#e17055','#d63384','#0984e3','#fdcb6e','#6c5ce7'];
@@ -254,6 +267,21 @@ setInterval(lb,5000);
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 if(/^#y\d+$/.test(location.hash)){document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));scrollTo(0,+location.hash.slice(2))}
+
+// ---------- instalar la app (PWA) ----------
+let installEvt=null;
+addEventListener('beforeinstallprompt',e=>{e.preventDefault();installEvt=e});
+if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+const isStandalone=()=>matchMedia('(display-mode: standalone)').matches||navigator.standalone;
+function installApp(){
+ if(isStandalone()){location.href='app.html';return}
+ if(installEvt){installEvt.prompt();installEvt.userChoice.finally(()=>installEvt=null);return}
+ const ios=/iphone|ipad|ipod/i.test(navigator.userAgent);
+ const box=document.getElementById('installBox');box.querySelector('.ib-body').innerHTML=ios
+  ?'<b>on iPhone or iPad</b><ol><li>open this page in <b>Safari</b></li><li>tap the <b>share</b> button</li><li>choose <b>add to home screen</b></li></ol>'
+  :'<b>on Android or desktop</b><ol><li>open this page in <b>Chrome</b> or <b>Edge</b></li><li>open the browser menu <b>⋮</b></li><li>choose <b>install app</b> or <b>add to home screen</b></li></ol>';
+ box.classList.add('on')}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-install]');if(t){e.preventDefault();installApp()}if(e.target.closest('[data-ibclose]')||e.target.id==='installBox')document.getElementById('installBox').classList.remove('on')});
 </script>
 </body>
 </html>

@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Thrive Terminal</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23060510'/%3E%3Cpath fill='%23fff' d='M12 3l1.6 7.4L21 12l-7.4 1.6L12 21l-1.6-7.4L3 12l7.4-1.6z'/%3E%3C/svg%3E">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#060510">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Thrive">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -404,7 +411,10 @@ function tokObj(p,inc){const a=p.attributes,bid=p.relationships?.base_token?.dat
  return{kind:'tok',id:a.address,pool:a.address,sym,name:bt.name||a.name,img:bt.image_url&&!/missing/.test(bt.image_url)?bt.image_url:null,token:(bid||'').replace('solana_',''),px:+a.base_token_price_usd||0,
   ch:+(a.price_change_percentage?.h24||0),chg:a.price_change_percentage||{},vol:+(a.volume_usd?.h24||0),mc:+(a.market_cap_usd||a.fdv_usd||0),liq:+(a.reserve_in_usd||0),tx:a.transactions?.h24||{},created:a.pool_created_at,dex:p.relationships?.dex?.data?.id||''}}
 const TOKPATH={trend:'/networks/solana/trending_pools?include=base_token,dex',new:'/networks/solana/new_pools?include=base_token,dex',top:'/networks/solana/pools?include=base_token,dex&sort=h24_volume_usd_desc',grad:'/networks/solana/dexes/pumpswap/pools?include=base_token,dex'};
-async function loadTokens(f){const d=await gt(TOKPATH[f],60000);const L=(d.data||[]).map(p=>tokObj(p,d.included)).filter(t=>t.px>0);S.tokens[f]=L;return L}
+const TOK_CACHE=['https://studioamr.github.io/northpoint-social/data/tokens.json','data/tokens.json'];let tokCache=null,tokCacheAt=0;
+// listas de tokens desde nuestro caché (GitHub Action cada 5 min); si está viejo (>15 min) se piden en vivo a GeckoTerminal
+async function tokCached(){if(tokCache&&Date.now()-tokCacheAt<120000)return tokCache;for(const u of TOK_CACHE){try{const r=await fetch(u,{cache:'no-cache'});if(r.ok){const d=await r.json();if(!tokCache||d.updated>=tokCache.updated){tokCache=d;tokCacheAt=Date.now()}return tokCache}}catch(e){}}return tokCache}
+async function loadTokens(f){let d=null;const c=await tokCached();if(c&&c.lists&&c.lists[f]&&Date.now()/1000-c.updated<900)d=c.lists[f];if(!d)d=await gt(TOKPATH[f],60000);const L=(d.data||[]).map(p=>tokObj(p,d.included)).filter(t=>t.px>0);S.tokens[f]=L;return L}
 async function loadLB(){for(const u of LB_URLS){try{const r=await fetch(u,{cache:'no-cache'});if(r.ok){S.lb=await r.json();return}}catch(e){}}S.lb={rows:[],updated:0}}
 const lbRow=a=>S.lb?.rows.find(r=>r.a.toLowerCase()===String(a||'').toLowerCase());
 const nameOf=a=>{const r=lbRow(a);return r&&r.n?r.n:shortA(a)};
@@ -904,6 +914,7 @@ setInterval(()=>{$('#clock').textContent=new Date().toTimeString().slice(0,8)+' 
  try{await loadPerps()}catch(e){$('#list').innerHTML=`<div class="err">couldn’t connect to Hyperliquid: ${esc(e.message)}</div>`}
  wsOpen();foot();const lbP=loadLB();
  const h=decodeURIComponent(location.hash.slice(1)),last=store.get('last',null);
+ if(h.startsWith('tab/')&&FILTERS[h.slice(4)]){S.tab=h.slice(4);if(innerWidth<=820)setMobile('list')}
  renderList();
  if(h.startsWith('p/')){const m=allPerps().find(x=>x.id===h.slice(2));if(m)select(m)}
  else if(h.startsWith('t/'))openM('tok',h.slice(2));
@@ -922,6 +933,8 @@ setInterval(()=>{$('#clock').textContent=new Date().toTimeString().slice(0,8)+' 
  if(store.get('mode','paper')==='real'&&((RS.addr&&store.get(agentKeyName(RS.addr),null))||RS.sol)){loadAgent().catch(()=>{}).then(()=>setMode('real',true))}
  setInterval(()=>{if(S.tab==='feed'&&!document.hidden)renderList()},60000);
 })();
+
+if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
 </script>
 </body>
 </html>

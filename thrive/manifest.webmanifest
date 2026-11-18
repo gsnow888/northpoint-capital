@@ -1,0 +1,22 @@
+{
+  "name": "Thrive by NorthPoint",
+  "short_name": "Thrive",
+  "description": "Social trading terminal: follow the best traders, see what they trade live and trade it in one tap.",
+  "start_url": "app.html?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#05050f",
+  "theme_color": "#060510",
+  "categories": ["finance", "social"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Trending tokens", "url": "app.html#tab/tokens", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Leaderboard", "url": "app.html#tab/rank", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Bitcoin", "url": "app.html#p/BTC", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

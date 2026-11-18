@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>risk disclosure · Thrive</title>
+<meta name="description" content="read this before you trade with real money.">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#060510">
+<link rel="icon" href="icons/favicon.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#060510;--card:#12111a;--line:rgba(203,208,235,.1);--tx:#f7f7f7;--mut:#9899a3;--acc:#516af6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 Geist,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#aab4ff;text-decoration:none}a:hover{text-decoration:underline}
+nav{display:flex;align-items:center;gap:24px;max-width:1100px;margin:0 auto;padding:18px 24px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:600;font-size:21px;letter-spacing:-.04em;color:#fff}
+.logo svg{width:15px;height:15px;fill:#fff;filter:drop-shadow(0 0 6px rgba(140,160,255,.9))}
+nav .sp{margin-left:auto;display:flex;gap:18px;font-size:14px}nav .sp a{color:#d6d7de}
+.btn{display:inline-flex;align-items:center;height:36px;padding:0 16px;border-radius:999px;background:var(--acc);color:#fff!important;font-weight:500;font-size:14px}
+main{max-width:760px;margin:0 auto;padding:40px 24px 80px}
+.k{font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--acc)}
+h1{font-size:clamp(34px,5vw,48px);font-weight:500;letter-spacing:-.03em;line-height:1.05;margin:8px 0 12px}
+.lead{color:var(--mut);font-size:17px;margin-bottom:8px}.upd{color:#62636e;font-size:13px;margin-bottom:26px}
+h2{font-size:21px;font-weight:500;letter-spacing:-.01em;margin:34px 0 10px;scroll-margin-top:20px}
+h3{font-size:16px;font-weight:600;margin:20px 0 6px}
+p,li{color:#c9cad3}p{margin:0 0 12px}ul,ol{margin:0 0 14px 20px}li{margin:4px 0}
+b{color:#fff;font-weight:600}
+.draft{background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.35);color:#fde68a;border-radius:12px;padding:12px 14px;font-size:14px;margin:0 0 26px}
+.draft b{color:#fde68a;text-transform:uppercase;letter-spacing:.08em;font-size:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}.toc a{padding:6px 12px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:13px;color:#d6d7de}
+footer{border-top:1px solid var(--line);padding:26px 24px;color:var(--mut);font-size:13px;text-align:center}footer a{color:var(--mut);margin:0 8px}
+</style>
+</head>
+<body>
+<nav><a class="logo" href="./"><svg viewBox="0 0 24 24"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg>thrive</a>
+<div class="sp"><a href="help.html">help</a><a href="terms.html">terms</a><a href="privacy.html">privacy</a><a href="risk.html">risk</a></div><a class="btn" href="app.html">open terminal</a></nav>
+<main>
+<div class="k">legal</div>
+<h1>risk disclosure</h1>
+<p class="lead">read this before you trade with real money.</p>
+<p class="upd">last updated November 18, 2026</p>
+<div class="draft"><b>draft</b> · this document is a working draft pending review by legal counsel. it is not yet the final legal text.</div>
+
+<div class="card"><p style="margin:0"><b>you can lose all the money you trade.</b> only trade with money you can afford to lose. past performance, leaderboards and other traders' results do not guarantee future results.</p></div>
+<h2>leverage and liquidation</h2>
+<p>perpetuals let you trade with leverage. a small move against you can wipe out your margin. if your position reaches its liquidation price it is closed automatically and you lose the margin. higher leverage means a closer liquidation price.</p>
+<h2>memecoins and new tokens</h2>
+<p>many Solana tokens are new, illiquid or created to deceive buyers. prices can fall close to zero in minutes, developers can abandon a project, and you may be unable to sell. always check liquidity and price impact.</p>
+<h2>slippage and price impact</h2>
+<p>market orders and swaps fill at the best available price, which can differ from the price you saw. thrive limits slippage by default and warns you about large price impact, but fills are never guaranteed.</p>
+<h2>following and copying traders</h2>
+<p>other traders' trades are shown for information only. they may have different goals, capital, timing and risk tolerance, and they can be wrong. copying a trade does not copy their results.</p>
+<h2>protocol and technology risk</h2>
+<p>Hyperliquid, Jupiter, Solana, wallets and smart contracts can have bugs, outages, exploits or rule changes. data shown in thrive can be delayed or wrong.</p>
+<h2>keys and security</h2>
+<p>if someone gets your seed phrase they can take your funds. if someone gets your browser's trading key they can open and close positions (not withdraw). revoke unused keys in Hyperliquid → more → API.</p>
+<h2>regulation and taxes</h2>
+<p>crypto and derivatives may be restricted where you live, and gains may be taxable. you are responsible for following your local laws and reporting taxes.</p>
+
+</main>
+<footer>© 2026 thrive · a northpoint capital project · <a href="terms.html">terms</a><a href="privacy.html">privacy</a><a href="risk.html">risk disclosure</a><a href="help.html">help</a></footer>
+</body>
+</html>
