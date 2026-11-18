@@ -135,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 27211.0,
-   "cambio": -1173.5,
-   "pct": -4.13
+   "precio": 27298.5,
+   "cambio": -736.25,
+   "pct": -2.63
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7377.25,
-   "cambio": -238.0,
-   "pct": -3.13
+   "precio": 7386.5,
+   "cambio": -196.5,
+   "pct": -2.59
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3793.2,
-   "cambio": -92.1,
-   "pct": -2.37
+   "precio": 3766.5,
+   "cambio": -119.8,
+   "pct": -3.08
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 85.02,
-   "cambio": -3.72,
-   "pct": -4.19
+   "precio": 84.23,
+   "cambio": -4.33,
+   "pct": -4.89
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2710.8,
-   "cambio": -96.5,
-   "pct": -3.44
+   "precio": 2708.8,
+   "cambio": -88.7,
+   "pct": -3.17
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 50868.0,
-   "cambio": -1522.0,
-   "pct": -2.91
+   "precio": 50816.0,
+   "cambio": -1602.0,
+   "pct": -3.06
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 64490.0,
-   "cambio": -7015.0,
-   "pct": -9.81
+   "precio": 64135.0,
+   "cambio": -4780.0,
+   "pct": -6.94
   }
  ],
  "acciones": [
@@ -354,136 +354,136 @@
  ],
  "noticias": [
   {
-   "titulo": "Democrat Mary Peltola wins Alaska Senate election",
-   "url": "https://www.cnbc.com/2026/11/18/alaska-senate-mary-peltola-wins-election.html",
+   "titulo": "Fed officials set to raise rates again in December, but the future still looks murky",
+   "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 18 Nov 2026 03:51:15 GMT"
+   "fecha": "Wed, 18 Nov 2026 12:37:32 GMT"
   },
   {
-   "titulo": "Putin says EU is losing industry, falling behind competition ahead of meeting with Trump, Xi",
-   "url": "https://www.cnbc.com/2026/11/18/putin-apec-eu-trump-xi-meeting.html",
+   "titulo": "Nvidia’s Kress faces a divided workforce as some employees push for Huang’s return",
+   "url": "https://www.cnbc.com/2026/11/18/nvidia-kress-jensen-huang-return.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 18 Nov 2026 03:49:04 GMT"
+   "fecha": "Wed, 18 Nov 2026 12:34:24 GMT"
   },
   {
-   "titulo": "China’s Xi calls for removing trade and investment barriers ahead of his meeting with Trump and Putin",
-   "url": "https://www.cnbc.com/2026/11/18/china-xi-trade-investment-barriers.html",
+   "titulo": "Mortgage demand turns lower, as interest rates shoot back up to the highest level in three weeks.",
+   "url": "https://www.cnbc.com/2026/11/18/mortgage-demand-turns-lower-as-interest-rates-shoot-back-up-to-the-highest-level-in-three-weeks.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 18 Nov 2026 03:30:51 GMT"
-  },
-  {
-   "titulo": "Three things to watch as Trump, Xi and Putin meet in China",
-   "url": "https://www.cnbc.com/2026/11/18/apec-trump-xi-putin-shenzhen.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 18 Nov 2026 03:25:32 GMT"
-  },
-  {
-   "titulo": "JPMorgan is working on AI agent transactions that don’t involve humans",
-   "url": "https://www.cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 18 Nov 2026 03:17:55 GMT"
-  },
-  {
-   "titulo": "Zelenskyy says Starshield speed curbs still in place over 'occupied territories' of Ukraine",
-   "url": "https://www.cnbc.com/2026/11/18/ukraine-starshield-starlink-musk-spacex.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 18 Nov 2026 02:50:16 GMT"
-  },
-  {
-   "titulo": "LeBron James sues startup over viral AI ad allegedly exploiting his likeness",
-   "url": "https://www.cnbc.com/2026/11/18/lebron-james-startup-ai-lawsuit.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 18 Nov 2026 02:02:02 GMT"
-  },
-  {
-   "titulo": "CoreWeave’s stock pops — even as Nvidia talks up a ‘disciplined’ approach to financing",
-   "url": "https://www.marketwatch.com/story/coreweaves-stock-pops-even-as-nvidia-talks-up-a-disciplined-approach-to-financing-e7f00876?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 18 Nov 2026 01:59:00 GMT"
-  },
-  {
-   "titulo": "Medicare Part B premiums rise due higher healthcare spending",
-   "url": "https://www.marketwatch.com/story/medicare-part-b-premiums-rise-due-higher-healthcare-spending-f2daba13?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 18 Nov 2026 01:45:00 GMT"
-  },
-  {
-   "titulo": "OpenAI bugging case defendant Alfozan set for trial in January",
-   "url": "https://www.cnbc.com/2026/11/17/openai-spy-alfozan-trial-saudi.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 18 Nov 2026 01:31:37 GMT"
-  },
-  {
-   "titulo": "Nvidia’s stock rises as blowout numbers help ease CEO transition fears",
-   "url": "https://www.marketwatch.com/story/nvidias-stock-rises-as-blowout-numbers-help-ease-ceo-transition-fears-2f20d38a?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 18 Nov 2026 01:28:00 GMT"
-  },
-  {
-   "titulo": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
-   "url": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 17 Nov 2026 23:30:00 GMT"
-  },
-  {
-   "titulo": "I’m in my 40s. Should I accept a lower pension in exchange for naming my husband or child as a beneficiary?",
-   "url": "https://www.marketwatch.com/story/im-in-my-40s-should-i-accept-a-lower-pension-in-exchange-for-naming-my-husband-or-child-as-a-beneficiary-b2352059?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 17 Nov 2026 23:15:00 GMT"
-  },
-  {
-   "titulo": "Costco is benefiting from ‘apocalyptic concerns’ as customers stock up on goods, analysts say",
-   "url": "https://www.marketwatch.com/story/costco-is-benefiting-from-apocalyptic-concerns-as-customers-stock-up-on-goods-analysts-say-24f611ab?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 17 Nov 2026 22:46:00 GMT"
+   "fecha": "Wed, 18 Nov 2026 12:34:10 GMT"
   },
   {
    "titulo": "‘It’s downright dirty’: My brother took over our ailing mother’s life and finances. What can I do?",
    "url": "https://www.marketwatch.com/story/it-is-heartbreaking-exhausting-and-downright-dirty-my-brother-took-over-our-ailing-mothers-life-and-finances-what-can-i-do-b4d48817?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Tue, 17 Nov 2026 22:30:00 GMT"
+   "fecha": "Wed, 18 Nov 2026 12:32:00 GMT"
   },
   {
-   "titulo": "‘Nvidia’s turmoil has me spooked’: Has the time come to sell my stocks?",
-   "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
+   "titulo": "Trump arrives in China for historic meeting with Xi, Putin",
+   "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-china-apec.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 18 Nov 2026 12:24:24 GMT"
+  },
+  {
+   "titulo": "Nvidia’s leadership saga unfolds as demand is surging for Anthropic’s IPO",
+   "url": "https://www.marketwatch.com/story/nvidias-leadership-saga-unfolds-as-demand-is-surging-for-anthropics-ipo-a7a12d40?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Tue, 17 Nov 2026 22:15:00 GMT"
+   "fecha": "Wed, 18 Nov 2026 12:22:00 GMT"
   },
   {
-   "titulo": "Want to earn 5% on shorter-term Treasurys again? Watch for this shift.",
-   "url": "https://www.marketwatch.com/story/want-to-earn-5-on-shorter-term-treasurys-again-watch-for-this-shift-d6ff42f2?mod=mw_rss_topstories",
+   "titulo": "Target posts best sales growth in five years, raises guidance",
+   "url": "https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 18 Nov 2026 12:17:33 GMT"
+  },
+  {
+   "titulo": "Lowe's posts strong online sales, raises outlook despite slow housing market",
+   "url": "https://www.cnbc.com/2026/11/18/lowes-low-q3-2026-earnings.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 18 Nov 2026 11:47:59 GMT"
+  },
+  {
+   "titulo": "The Fed is tightening, the economy is slowing — and that’s the perfect setup to buy bonds, this trader argues",
+   "url": "https://www.marketwatch.com/story/the-fed-is-tightening-the-economy-is-slowing-and-thats-the-perfect-setup-to-buy-bonds-this-trader-argues-b1c88b23?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Tue, 17 Nov 2026 22:08:00 GMT"
+   "fecha": "Wed, 18 Nov 2026 11:38:00 GMT"
   },
   {
-   "titulo": "Widespread outages hit banks, air travel, the NSA and Apple, disrupting seemingly everything",
-   "url": "https://www.cnbc.com/2026/11/17/apple-microsoft-faa-jpmorgan-outages.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 17 Nov 2026 22:03:57 GMT"
-  },
-  {
-   "titulo": "My older brother, who has no children, cut our only sister out of his will. I’ll get everything instead. Do I tell her?",
-   "url": "https://www.marketwatch.com/story/she-has-a-history-of-financial-mismanagement-my-brother-cut-my-sister-out-of-his-will-im-getting-everything-do-i-tell-her-3e537851?mod=mw_rss_topstories",
+   "titulo": "Target is seeing a revival — but it still needs to work on shoes and women’s clothing",
+   "url": "https://www.marketwatch.com/story/target-is-seeing-a-revival-but-it-still-needs-to-work-on-shoes-and-womens-clothing-afb16799?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Tue, 17 Nov 2026 21:30:00 GMT"
+   "fecha": "Wed, 18 Nov 2026 11:33:00 GMT"
   },
   {
-   "titulo": "Wall Street's fear gauge is surging again and this time it's not just about AI jitters",
-   "url": "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 17 Nov 2026 20:28:07 GMT"
+   "titulo": "The good news: Bubble predictions vastly outnumber actual episodes. The bad: There may be a 97% chance of one, right now.",
+   "url": "https://www.marketwatch.com/story/the-good-news-bubble-predictions-vastly-outnumber-actual-episodes-the-bad-there-may-be-a-97-chance-of-one-right-now-8ca55732?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 18 Nov 2026 11:23:00 GMT"
   },
   {
-   "titulo": "Trump’s accounts traded up to $97.5 million in Nvidia as Huang gained White House access",
-   "url": "https://www.cnbc.com/2026/11/16/trump-nvidia-stock-trades-jensen-huang.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 17 Nov 2026 10:08:32 GMT"
+   "titulo": "Strategists say investors should start asking ‘what could go right’ after tech’s 42% valuation reset",
+   "url": "https://www.marketwatch.com/story/strategists-say-investors-should-start-asking-what-could-go-right-after-techs-42-valuation-reset-279a640a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 18 Nov 2026 11:17:00 GMT"
   },
   {
-   "titulo": "Aschenbrenner’s Situational Awareness made AI bets again before October rout",
-   "url": "https://www.cnbc.com/2026/11/16/situational-awareness-aschenbrenner-new-ai-bets.html",
+   "titulo": "Ukraine allies reject U.S. criticism of deep strikes inside Russia ahead of Trump-Putin-Xi summit",
+   "url": "https://www.cnbc.com/2026/11/18/ukraine-russia-war-trump-putin-deep-strikes.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 16 Nov 2026 23:05:12 GMT"
+   "fecha": "Wed, 18 Nov 2026 10:49:37 GMT"
+  },
+  {
+   "titulo": "China’s military seeks Nvidia’s advanced chips for AI capabilities, commission says",
+   "url": "https://www.cnbc.com/2026/11/18/nvidia-chips-china-military-ai.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 18 Nov 2026 10:45:01 GMT"
+  },
+  {
+   "titulo": "‘I’ve been a stay-at-home mom’: I’m 50 and have a chronic illness. My husband lost his job. Should he raid his 401(k)?",
+   "url": "https://www.marketwatch.com/story/ive-been-a-stay-at-home-mom-im-50-and-have-a-chronic-illness-my-husband-lost-his-job-should-he-raid-his-401-k-63e59123?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 18 Nov 2026 10:15:00 GMT"
+  },
+  {
+   "titulo": "DJ Zedd sells his Hollywood Hills home for $4 million",
+   "url": "https://www.marketwatch.com/story/dj-zedd-sells-his-hollywood-hills-home-for-4-million-92a04353?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 18 Nov 2026 10:05:00 GMT"
+  },
+  {
+   "titulo": "‘New Girl’ star Jake Johnson sells Pasadena home in just 2 weeks for $530K over asking price",
+   "url": "https://www.marketwatch.com/story/new-girl-star-jake-johnson-sells-pasadena-home-in-just-2-weeks-for-530k-over-asking-price-bc4d04c6?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 18 Nov 2026 09:59:00 GMT"
+  },
+  {
+   "titulo": "Cantor Fitzgerald's Nvidia business interests targeted in Democrats' Lutnick probe",
+   "url": "https://www.cnbc.com/2026/11/18/nvidia-lutnick-china-ai-megaspeed-cantor-fitzgerald.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 18 Nov 2026 09:45:01 GMT"
+  },
+  {
+   "titulo": "What Wall Street analysts are now saying after Nvidia’s beat-and-raise quarter",
+   "url": "https://www.marketwatch.com/story/what-wall-street-analysts-are-now-saying-after-nvidias-beat-and-raise-quarter-9311c85d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 18 Nov 2026 09:41:00 GMT"
+  },
+  {
+   "titulo": "Senators press acting U.S. Navy Secretary on Iran war costs, sailor health in confirmation hearing",
+   "url": "https://www.cnbc.com/2026/11/18/us-iran-navy-hormuz-war-cao.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 18 Nov 2026 07:24:06 GMT"
+  },
+  {
+   "titulo": "Iran says army targets U.S. drone and missile sites in Kuwait as Gulf attacks mount",
+   "url": "https://www.cnbc.com/2026/11/18/trump-iran-war-hormuz-oil-.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 18 Nov 2026 05:24:54 GMT"
+  },
+  {
+   "titulo": "Democrat Mary Peltola wins Alaska Senate election",
+   "url": "https://www.cnbc.com/2026/11/18/alaska-senate-mary-peltola-wins-election.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 18 Nov 2026 04:18:13 GMT"
   }
  ],
  "videos": [
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-18T03:53:09Z",
+ "ts": "2026-11-18T12:45:04Z",
  "fallas": [
   "videos",
   "directos"
