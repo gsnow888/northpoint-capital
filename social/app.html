@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="es-MX">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>NorthPoint Terminal</title>
+<title>Thrive Terminal</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23060510'/%3E%3Cpath fill='%23fff' d='M12 3l1.6 7.4L21 12l-7.4 1.6L12 21l-1.6-7.4L3 12l7.4-1.6z'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -217,56 +217,56 @@ tr.cl:hover td{background:rgba(203,208,235,.03)}
 <body>
 <div class="app">
   <header class="top">
-    <a class="logo" href="./"><svg viewBox="0 0 24 24"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg><span>northpoint</span></a>
-    <span class="live">EN VIVO</span>
+    <a class="logo" href="./"><svg viewBox="0 0 24 24"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg><span>thrive</span></a>
+    <span class="live">LIVE</span>
     <div class="searchw">
-      <div class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" placeholder="busca tokens, perps o traders (0x…)" autocomplete="off"><span class="kbd">/</span></div>
+      <div class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" placeholder="search tokens, perps or traders (0x…)" autocomplete="off"><span class="kbd">/</span></div>
       <div class="sres" id="sres"></div>
     </div>
-    <div class="mode" id="mode"><button data-mode="paper" class="on">práctica</button><button data-mode="real">real</button></div>
+    <div class="mode" id="mode"><button data-mode="paper" class="on">practice</button><button data-mode="real">real</button></div>
     <div class="wallet">
-      <div><div class="m" id="cash"></div><a id="dep">depositar más</a></div>
-      <div><div class="m" id="pv">$0.00</div><div class="dim">posiciones</div></div>
-      <button class="bell" id="bell" title="alertas"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 1112 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 003.4 0"/></svg><b id="bellN"></b></button>
-      <img class="me" id="meBtn" src="av/09.jpg" alt="tu cuenta">
+      <div><div class="m" id="cash"></div><a id="dep">deposit more</a></div>
+      <div><div class="m" id="pv">$0.00</div><div class="dim">positions</div></div>
+      <button class="bell" id="bell" title="alerts"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 1112 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 003.4 0"/></svg><b id="bellN"></b></button>
+      <img class="me" id="meBtn" src="av/09.jpg" alt="your account">
     </div>
     <div class="drop" id="drop"></div>
   </header>
 
   <div class="main" id="main" data-v="chart">
     <aside class="side">
-      <div class="tabs" id="tabs"><button data-t="tokens" class="on">tokens</button><button data-t="perps">perps</button><button data-t="mercados">índices y acciones</button><button data-t="rank">clasificación</button><button data-t="feed">feed</button></div>
+      <div class="tabs" id="tabs"><button data-t="tokens" class="on">tokens</button><button data-t="perps">perps</button><button data-t="mercados">indices & stocks</button><button data-t="rank">leaderboard</button><button data-t="feed">feed</button></div>
       <div class="filt" id="filt"></div>
-      <div class="list" id="list"><div class="load">cargando…</div></div>
+      <div class="list" id="list"><div class="load">loading…</div></div>
     </aside>
 
     <section class="center">
-      <div class="ihead" id="ihead"><div class="load">cargando mercado…</div></div>
+      <div class="ihead" id="ihead"><div class="load">loading market…</div></div>
       <div class="chartw">
         <div class="tool">
           <span class="tf" id="tf"><button data-i="1m">1m</button><button data-i="5m" class="on">5m</button><button data-i="15m">15m</button><button data-i="1h">1h</button><button data-i="4h">4h</button><button data-i="1d">1d</button></span>
-          <span class="sep"></span><span><b>precio</b> / volumen</span>
+          <span class="sep"></span><span><b>price</b> / volumen</span>
           <span style="margin-left:auto" class="m" id="ohlc"></span>
         </div>
-        <div class="cvw"><canvas id="cv"></canvas><div class="cvmsg" id="cvmsg">cargando velas…</div></div>
+        <div class="cvw"><canvas id="cv"></canvas><div class="cvmsg" id="cvmsg">loading candles…</div></div>
         <div class="tip" id="tip"></div>
         <div class="ovr">
-          <span>sobre el gráfico:</span>
-          <label><input type="checkbox" id="oMine" checked>mis operaciones</label>
+          <span>on chart:</span>
+          <label><input type="checkbox" id="oMine" checked>my trades</label>
           <label><input type="checkbox" id="oTr" checked>traders</label>
-          <label><input type="checkbox" id="oFol">solo seguidos</label>
-          <label><input type="checkbox" id="oBig" checked>tamaño mínimo (&gt;$1K)</label>
+          <label><input type="checkbox" id="oFol">following only</label>
+          <label><input type="checkbox" id="oBig" checked>min size (&gt;$1K)</label>
           <span style="margin-left:auto" class="m" id="clock"></span>
         </div>
       </div>
       <div class="bottom">
         <div class="pane">
           <div class="ph"><b id="lpT">traders</b><span class="mut" id="lpN"></span><span class="rt" id="lpR"></span></div>
-          <div class="scroll" id="lp"><div class="load">cargando…</div></div>
+          <div class="scroll" id="lp"><div class="load">loading…</div></div>
         </div>
         <div class="pane">
-          <div class="ph"><b>operaciones</b><span class="mut">en vivo</span></div>
-          <div class="scroll" id="rp"><div class="load">cargando…</div></div>
+          <div class="ph"><b>operaciones</b><span class="mut">live</span></div>
+          <div class="scroll" id="rp"><div class="load">loading…</div></div>
         </div>
       </div>
       <div class="prof" id="prof"></div>
@@ -274,23 +274,23 @@ tr.cl:hover td{background:rgba(203,208,235,.03)}
 
     <aside class="right" id="right">
       <div class="bs" id="bs"></div>
-      <div class="amt"><span class="mut m" style="font-size:22px">$</span><input id="amt" inputmode="decimal" placeholder="0"><span class="dim sm" id="amtL">monto</span></div>
+      <div class="amt"><span class="mut m" style="font-size:22px">$</span><input id="amt" inputmode="decimal" placeholder="0"><span class="dim sm" id="amtL">amount</span></div>
       <div class="pre"><button data-p="10">$10</button><button data-p="100">$100</button><button data-p="500">$500</button><button data-p="1000">$1000</button></div>
-      <div class="lev" id="levw"><span>apalancamiento</span><input type="range" id="lev" min="1" max="20" value="5"><b class="m" id="levV">5×</b></div>
-      <div class="tpsl" id="tpsl" style="display:none"><input id="tp" inputmode="decimal" placeholder="take profit (precio)"><input id="sl" inputmode="decimal" placeholder="stop loss (precio)"></div>
+      <div class="lev" id="levw"><span>leverage</span><input type="range" id="lev" min="1" max="20" value="5"><b class="m" id="levV">5×</b></div>
+      <div class="tpsl" id="tpsl" style="display:none"><input id="tp" inputmode="decimal" placeholder="take profit (price)"><input id="sl" inputmode="decimal" placeholder="stop loss (price)"></div>
       <div class="est" id="est"></div>
-      <button class="go buy" id="go" disabled>elige un monto</button>
-      <div class="dim sm" style="text-align:center" id="modeNote">modo práctica: precios reales, dinero simulado</div>
+      <button class="go buy" id="go" disabled>choose an amount</button>
+      <div class="dim sm" style="text-align:center" id="modeNote">practice mode: real prices, simulated money</div>
       <div class="box" id="about"></div>
-      <div class="box"><h3>tus posiciones<span class="ptabs"><button data-pt="open" class="on">abiertas</button><button data-pt="closed">cerradas</button></span></h3><div id="mypos"></div></div>
+      <div class="box"><h3>your positions<span class="ptabs"><button data-pt="open" class="on">open</button><button data-pt="closed">closed</button></span></h3><div id="mypos"></div></div>
     </aside>
   </div>
 
   <footer class="foot" id="foot"></footer>
   <nav class="mtabs" id="mtabs">
-    <button data-v="list"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>mercados</button>
-    <button data-v="chart" class="on"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-8M15 8h5v5"/></svg>gráfico</button>
-    <button data-v="trade"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="3"/><path d="M16 12.5h2M3 10h18"/></svg>operar</button>
+    <button data-v="list"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>markets</button>
+    <button data-v="chart" class="on"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-8M15 8h5v5"/></svg>chart</button>
+    <button data-v="trade"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="3"/><path d="M16 12.5h2M3 10h18"/></svg>trade</button>
   </nav>
 </div>
 <div class="toasts" id="toasts"></div>
@@ -321,7 +321,7 @@ const COL=['#516af6','#7a5cff','#00b894','#e17055','#d63384','#0984e3','#e0a100'
 const store={get(k,d){try{const v=localStorage.getItem('np.'+k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem('np.'+k,JSON.stringify(v))}catch(e){}}};
 
 // ---------- red ----------
-async function hl(body){const r=await fetch(HL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw new Error('Hyperliquid respondió '+r.status);return r.json()}
+async function hl(body){const r=await fetch(HL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw new Error('Hyperliquid returned '+r.status);return r.json()}
 const gtCache=new Map();let gtChain=Promise.resolve(),gtLast=0;
 // GeckoTerminal permite ~30 consultas por minuto por IP; vamos a 1 cada 2.6 s y, si responde 429 (llega sin CORS), esperamos y reintentamos.
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
@@ -330,9 +330,9 @@ function gt(path,ttl=30000){const c=gtCache.get(path);if(c&&Date.now()-c.t<ttl)r
   for(let n=0;n<3;n++){const w=gtLast+2600-Date.now();if(w>0)await wait(w);gtLast=Date.now();let r;
    try{r=await fetch(GT+path,{headers:{Accept:'application/json'}})}catch(e){r=null}
    if(r&&r.ok){const d=await r.json();gtCache.set(path,{t:Date.now(),d});return d}
-   if(r&&r.status!==429){if(c2)return c2.d;throw new Error('GeckoTerminal respondió '+r.status)}
+   if(r&&r.status!==429){if(c2)return c2.d;throw new Error('GeckoTerminal returned '+r.status)}
    gtLast=Date.now()+(n+1)*9000}
-  if(c2)return c2.d;throw new Error('GeckoTerminal está saturado; reintentando en unos segundos')});
+  if(c2)return c2.d;throw new Error('GeckoTerminal is busy; retrying in a few seconds')});
  gtChain=p.catch(()=>{});return p}
 
 // ---------- estado ----------
@@ -359,9 +359,9 @@ function icon(m,size){const id=++icoN;let inner,tag='';const sp=SPECIAL[m.id];
 
 // ---------- mercados ----------
 const IDX=['XYZ100','SP500','JP225','KR200','EWY','EWJ','EWZ','XLE','URNM','DRAM'],COMM=['GOLD','SILVER','CL','BRENTOIL','COPPER','NATGAS','PLATINUM','PALLADIUM'],FX=['JPY','EUR'];
-const NAMES={XYZ100:'nasdaq 100',SP500:'s&p 500',JP225:'nikkei 225',KR200:'kospi 200',GOLD:'oro',SILVER:'plata',CL:'petróleo WTI',BRENTOIL:'petróleo brent',COPPER:'cobre',NATGAS:'gas natural',PLATINUM:'platino',PALLADIUM:'paladio',JPY:'yen japonés',EUR:'euro',NVDA:'nvidia',TSLA:'tesla',AAPL:'apple',MSFT:'microsoft',GOOGL:'alphabet (google)',AMZN:'amazon',META:'meta',AMD:'amd',NFLX:'netflix',COIN:'coinbase',HOOD:'robinhood',PLTR:'palantir',MSTR:'strategy',ORCL:'oracle',INTC:'intel',TSM:'tsmc',BABA:'alibaba',GME:'gamestop',COST:'costco',LLY:'eli lilly',MU:'micron',CRCL:'circle',RIVN:'rivian',SMSN:'samsung',SOFTBANK:'softbank',HYUNDAI:'hyundai',RKLB:'rocket lab',DKNG:'draftkings',HIMS:'hims & hers',MRVL:'marvell',BTC:'bitcoin',ETH:'ethereum',SOL:'solana',HYPE:'hyperliquid'};
+const NAMES={XYZ100:'nasdaq 100',SP500:'s&p 500',JP225:'nikkei 225',KR200:'kospi 200',GOLD:'gold',SILVER:'silver',CL:'WTI crude',BRENTOIL:'brent crude',COPPER:'copper',NATGAS:'natural gas',PLATINUM:'platinum',PALLADIUM:'palladium',JPY:'japanese yen',EUR:'euro',NVDA:'nvidia',TSLA:'tesla',AAPL:'apple',MSFT:'microsoft',GOOGL:'alphabet (google)',AMZN:'amazon',META:'meta',AMD:'amd',NFLX:'netflix',COIN:'coinbase',HOOD:'robinhood',PLTR:'palantir',MSTR:'strategy',ORCL:'oracle',INTC:'intel',TSM:'tsmc',BABA:'alibaba',GME:'gamestop',COST:'costco',LLY:'eli lilly',MU:'micron',CRCL:'circle',RIVN:'rivian',SMSN:'samsung',SOFTBANK:'softbank',HYUNDAI:'hyundai',RKLB:'rocket lab',DKNG:'draftkings',HIMS:'hims & hers',MRVL:'marvell',BTC:'bitcoin',ETH:'ethereum',SOL:'solana',HYPE:'hyperliquid'};
 function perpObj(u,c,dex,asset){const id=u.name,sym=id.replace(/^\w+:/,''),p=+c.markPx||+c.midPx||0,prev=+c.prevDayPx||p;
- return{kind:'perp',dex,id,sym,name:NAMES[sym]||(dex?sym.toLowerCase():sym+' perpetuo'),img:'https://app.hyperliquid.xyz/coins/'+encodeURIComponent(id)+'.svg',px:p,prev,ch:prev?(p/prev-1)*100:0,vol:+c.dayNtlVlm||0,oi:(+c.openInterest||0)*p,fund:+c.funding||0,maxLev:u.maxLeverage||10,asset,szDec:u.szDecimals}}
+ return{kind:'perp',dex,id,sym,name:NAMES[sym]||(dex?sym.toLowerCase():sym+' perpetual'),img:'https://app.hyperliquid.xyz/coins/'+encodeURIComponent(id)+'.svg',px:p,prev,ch:prev?(p/prev-1)*100:0,vol:+c.dayNtlVlm||0,oi:(+c.openInterest||0)*p,fund:+c.funding||0,maxLev:u.maxLeverage||10,asset,szDec:u.szDecimals}}
 let XYZ_IDX=null;
 async function loadPerps(){if(XYZ_IDX==null){try{const d=await hl({type:'perpDexs'});XYZ_IDX=d.findIndex(x=>x&&x.name==='xyz')}catch(e){XYZ_IDX=-1}}const [m,x]=await Promise.all([hl({type:'metaAndAssetCtxs'}),hl({type:'metaAndAssetCtxs',dex:'xyz'}).catch(()=>[{universe:[]},[]])]);
  S.perps=m[0].universe.map((u,i)=>u.isDelisted?null:perpObj(u,m[1][i],'',i)).filter(p=>p&&p.px>0);
@@ -376,11 +376,11 @@ async function loadTokens(f){const d=await gt(TOKPATH[f],60000);const L=(d.data|
 async function loadLB(){for(const u of LB_URLS){try{const r=await fetch(u,{cache:'no-cache'});if(r.ok){S.lb=await r.json();return}}catch(e){}}S.lb={rows:[],updated:0}}
 const lbRow=a=>S.lb?.rows.find(r=>r.a.toLowerCase()===String(a||'').toLowerCase());
 const nameOf=a=>{const r=lbRow(a);return r&&r.n?r.n:shortA(a)};
-const dirEs=d=>({'Open Long':'abrió long','Close Long':'cerró long','Open Short':'abrió short','Close Short':'cerró short','Buy':'compró','Sell':'vendió','Long > Short':'pasó a short','Short > Long':'pasó a long'}[d]||d||'operó');
+const dirEs=d=>({'Open Long':'opened long','Close Long':'closed long','Open Short':'opened short','Close Short':'closed short','Buy':'bought','Sell':'sold','Long > Short':'flipped short','Short > Long':'flipped long'}[d]||d||'traded');
 
 // ---------- lista izquierda ----------
-const FILTERS={tokens:[['trend','en tendencia'],['new','nuevos'],['top','más volumen'],['grad','graduados'],['fav','favoritos']],perps:[['vol','volumen'],['gain','ganadores'],['lose','perdedores'],['lev','apalancamiento'],['fav','favoritos']],
- mercados:[['idx','índices'],['comm','materias primas'],['stk','acciones'],['fx','divisas']],rank:[['day','24 h'],['week','7 días'],['month','30 días'],['allTime','histórico']],feed:[['all','seguidos'],['top','top del día']]};
+const FILTERS={tokens:[['trend','trending'],['new','new'],['top','top volume'],['grad','graduated'],['fav','favorites']],perps:[['vol','volume'],['gain','gainers'],['lose','losers'],['lev','leverage'],['fav','favorites']],
+ mercados:[['idx','indices'],['comm','commodities'],['stk','stocks'],['fx','forex']],rank:[['day','24h'],['week','7 days'],['month','30 days'],['allTime','all time']],feed:[['all','following'],['top','top today']]};
 function renderFilt(){$('#filt').innerHTML=FILTERS[S.tab].map(([k,l])=>`<button data-f="${k}" class="${S.filt[S.tab]===k?'on':''}">${l}</button>`).join('');$$('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===S.tab))}
 function mrow(m){const extra=m.kind==='tok'?sh(m.mc)+' MC':sh(m.vol)+' vol';
  return `<div class="it ${S.cur&&S.cur.id===m.id?'on':''}" data-m="${m.kind}|${esc(m.id)}">${icon(m,30)}<div class="g"><div class="n">${esc(m.sym)}</div><div class="sm m mut">$${px(m.px)}</div></div><div class="r"><div class="sm m">${extra}</div><div class="sm m ${m.ch>=0?'up':'dn'}">${pc(m.ch)}</div></div></div>`}
@@ -388,22 +388,22 @@ let listGen=0;
 async function renderList(){const g=++listGen,el=$('#list');renderFilt();const f=S.filt[S.tab];
  try{
   if(S.tab==='tokens'){
-   if(f==='fav'){const F=S.favs.filter(x=>x.kind==='tok');el.innerHTML=F.length?F.map(mrow).join(''):'<div class="load">toca la estrella de un token para guardarlo aquí.</div>';return}
-   if(!S.tokens[f])el.innerHTML='<div class="load">cargando tokens de Solana…</div>';const L=await loadTokens(f);if(g!==listGen)return;el.innerHTML=L.map(mrow).join('')||'<div class="load">sin resultados</div>'}
+   if(f==='fav'){const F=S.favs.filter(x=>x.kind==='tok');el.innerHTML=F.length?F.map(mrow).join(''):'<div class="load">tap the star on a token to save it here.</div>';return}
+   if(!S.tokens[f])el.innerHTML='<div class="load">loading Solana tokens…</div>';const L=await loadTokens(f);if(g!==listGen)return;el.innerHTML=L.map(mrow).join('')||'<div class="load">no results</div>'}
   else if(S.tab==='perps'){let L=f==='fav'?allPerps().filter(p=>S.favs.some(x=>x.id===p.id)):[...S.perps];
-   L.sort(f==='gain'?(a,b)=>b.ch-a.ch:f==='lose'?(a,b)=>a.ch-b.ch:f==='lev'?(a,b)=>b.maxLev-a.maxLev||b.vol-a.vol:(a,b)=>b.vol-a.vol);el.innerHTML=L.map(mrow).join('')||'<div class="load">toca la estrella de un perp para guardarlo aquí.</div>'}
-  else if(S.tab==='mercados'){const L=S.xyz.filter(m=>f==='idx'?IDX.includes(m.sym):f==='comm'?COMM.includes(m.sym):f==='fx'?FX.includes(m.sym):!IDX.includes(m.sym)&&!COMM.includes(m.sym)&&!FX.includes(m.sym)).sort((a,b)=>b.vol-a.vol);el.innerHTML=L.map(mrow).join('')||'<div class="load">sin mercados disponibles</div>'}
+   L.sort(f==='gain'?(a,b)=>b.ch-a.ch:f==='lose'?(a,b)=>a.ch-b.ch:f==='lev'?(a,b)=>b.maxLev-a.maxLev||b.vol-a.vol:(a,b)=>b.vol-a.vol);el.innerHTML=L.map(mrow).join('')||'<div class="load">tap the star on a perp to save it here.</div>'}
+  else if(S.tab==='mercados'){const L=S.xyz.filter(m=>f==='idx'?IDX.includes(m.sym):f==='comm'?COMM.includes(m.sym):f==='fx'?FX.includes(m.sym):!IDX.includes(m.sym)&&!COMM.includes(m.sym)&&!FX.includes(m.sym)).sort((a,b)=>b.vol-a.vol);el.innerHTML=L.map(mrow).join('')||'<div class="load">no markets available</div>'}
   else if(S.tab==='rank'){if(!S.lb)await loadLB();if(g!==listGen)return;const R=[...S.lb.rows].sort((a,b)=>b[f][0]-a[f][0]).slice(0,100);
-   el.innerHTML=`<div class="dim sm" style="padding:8px 10px">PnL real en Hyperliquid${S.lb.updated?' · actualizado hace '+ago(S.lb.updated*1000):''}</div>`+R.map((r,i)=>`<div class="it" data-u="${r.a}"><span class="m dim" style="width:18px">${i+1}</span><img class="av" src="${avOf(r.a)}" alt=""><div class="g"><div class="n">${esc(r.n||shortA(r.a))}${isFol(r.a)?'<span class="fol">siguiendo</span>':''}</div><div class="sm mut">cuenta ${sh(r.v)} · ROI ${pc(r[f][1]*100)}</div></div><div class="r m ${r[f][0]>=0?'up':'dn'}">${r[f][0]>=0?'+':''}${sh(r[f][0])}</div></div>`).join('')}
+   el.innerHTML=`<div class="dim sm" style="padding:8px 10px">real PnL on Hyperliquid${S.lb.updated?' · updated '+ago(S.lb.updated*1000)+' ago':''}</div>`+R.map((r,i)=>`<div class="it" data-u="${r.a}"><span class="m dim" style="width:18px">${i+1}</span><img class="av" src="${avOf(r.a)}" alt=""><div class="g"><div class="n">${esc(r.n||shortA(r.a))}${isFol(r.a)?'<span class="fol">following</span>':''}</div><div class="sm mut">account ${sh(r.v)} · ROI ${pc(r[f][1]*100)}</div></div><div class="r m ${r[f][0]>=0?'up':'dn'}">${r[f][0]>=0?'+':''}${sh(r[f][0])}</div></div>`).join('')}
   else if(S.tab==='feed')await renderFeed(g);
- }catch(e){if(g===listGen)el.innerHTML=`<div class="err">${esc(e.message)}. <a href="#" data-retry style="color:#aab4ff">reintentar</a></div>`}}
+ }catch(e){if(g===listGen)el.innerHTML=`<div class="err">${esc(e.message)}. <a href="#" data-retry style="color:#aab4ff">retry</a></div>`}}
 async function renderFeed(g){const el=$('#list'),f=S.filt.feed;if(!S.lb)await loadLB();
  const addrs=f==='all'?S.follow:[...S.lb.rows].sort((a,b)=>b.day[0]-a.day[0]).slice(0,8).map(r=>r.a);
- if(!addrs.length){el.innerHTML='<div class="load">aún no sigues a nadie.<br><br>abre la <b>clasificación</b>, entra a un perfil y toca <b>seguir</b>: sus operaciones aparecerán aquí y te avisaremos en vivo.</div>';return}
- el.innerHTML='<div class="load">cargando operaciones…</div>';const all=[];
+ if(!addrs.length){el.innerHTML='<div class="load">you’re not following anyone yet.<br><br>open the <b>leaderboard</b>, open a profile and tap <b>follow</b>: their trades will show up here and we’ll alert you in real time.</div>';return}
+ el.innerHTML='<div class="load">loading trades…</div>';const all=[];
  for(const a of addrs.slice(0,12)){try{const fl=await hl({type:'userFills',user:a});fl.slice(0,25).forEach(x=>all.push({...x,user:a}))}catch(e){}if(g!==listGen)return}
  all.sort((a,b)=>b.time-a.time);
- el.innerHTML=all.slice(0,80).map(x=>{const b=x.side==='B',cp=+x.closedPnl;return `<div class="it" style="align-items:flex-start" data-u="${x.user}"><img class="av" src="${avOf(x.user)}" alt=""><div class="g"><div class="n">${esc(nameOf(x.user))} <span class="dim sm">hace ${ago(x.time)}</span></div><div class="sm" style="white-space:normal;color:#c9cad3">${esc(dirEs(x.dir))} <b data-m="perp|${esc(x.coin)}">${esc(x.coin.replace(/^\w+:/,''))}</b> · ${sh(x.sz*x.px)} @ ${px(x.px)}${cp?` · <span class="${cp>=0?'up':'dn'}">${cp>=0?'+':''}${sh(cp)}</span>`:''}</div></div><span class="badge ${b?'b':'s'}">${b?'compra':'venta'}</span></div>`}).join('')||'<div class="load">sin operaciones recientes</div>'}
+ el.innerHTML=all.slice(0,80).map(x=>{const b=x.side==='B',cp=+x.closedPnl;return `<div class="it" style="align-items:flex-start" data-u="${x.user}"><img class="av" src="${avOf(x.user)}" alt=""><div class="g"><div class="n">${esc(nameOf(x.user))} <span class="dim sm">${ago(x.time)} ago</span></div><div class="sm" style="white-space:normal;color:#c9cad3">${esc(dirEs(x.dir))} <b data-m="perp|${esc(x.coin)}">${esc(x.coin.replace(/^\w+:/,''))}</b> · ${sh(x.sz*x.px)} @ ${px(x.px)}${cp?` · <span class="${cp>=0?'up':'dn'}">${cp>=0?'+':''}${sh(cp)}</span>`:''}</div></div><span class="badge ${b?'b':'s'}">${b?'buy':'sell'}</span></div>`}).join('')||'<div class="load">no recent trades</div>'}
 
 // ---------- seleccionar mercado ----------
 let selGen=0;
@@ -411,26 +411,26 @@ async function select(m){S.cur=m;const g=++selGen;S.bub=[];S.trades=[];closeProf
  $$('.it[data-m]').forEach(e=>e.classList.toggle('on',e.dataset.m===m.kind+'|'+m.id));
  if(m.kind==='tok'&&S.side!=='buy'&&!S.paper.pos.some(p=>p.id===m.id))S.side='buy';
  head();ticket();about();renderPos(true);
- $('#lp').innerHTML=$('#rp').innerHTML='<div class="load">cargando…</div>';
+ $('#lp').innerHTML=$('#rp').innerHTML='<div class="load">loading…</div>';
  store.set('last',{kind:m.kind,id:m.id});history.replaceState(null,'','#'+(m.kind==='tok'?'t/':'p/')+m.id);
  wsTrades(m);await loadCandles(g);if(g!==selGen)return;
  if(m.kind==='tok'){await loadTokTrades(g,true);loadTokInfo(m,g)}else{loadPerpTrades(g);loadTopPositions(g)}}
 function head(){const m=S.cur;if(!m)return;const fav=S.favs.some(x=>x.id===m.id);
- const st=m.kind==='tok'?[['precio','$'+px(m.px)],['cambio 24 h',pc(m.ch),m.ch>=0?'up':'dn'],['cap. de mercado',sh(m.mc)],['vol 24 h',sh(m.vol)],['liquidez',sh(m.liq)],['compras 24 h',(m.tx.buys||0).toLocaleString('es-MX')],['traders 24 h',((m.tx.buyers||0)+(m.tx.sellers||0)).toLocaleString('es-MX')]]
-  :[['precio','$'+px(m.px)],['cambio 24 h',pc(m.ch),m.ch>=0?'up':'dn'],['vol 24 h',sh(m.vol)],['interés abierto',sh(m.oi)],['funding 1h',(m.fund*100).toFixed(4)+'%',m.fund>=0?'up':'dn'],['apalanc. máx',m.maxLev+'×']];
- $('#ihead').innerHTML=`${icon(m,38)}<div class="meta"><h1>${esc(m.sym)} <span class="mut" style="font-weight:400;font-size:12px">${esc(m.name)}</span></h1><div class="mut sm">${m.kind==='tok'?'solana · '+esc(m.dex)+' · '+shortA(m.token):'hyperliquid'+(m.dex?' · '+m.dex:'')+' · perpetuo 24/7'}</div></div>
+ const st=m.kind==='tok'?[['price','$'+px(m.px)],['24h change',pc(m.ch),m.ch>=0?'up':'dn'],['market cap',sh(m.mc)],['24h vol',sh(m.vol)],['liquidity',sh(m.liq)],['24h buys',(m.tx.buys||0).toLocaleString('en-US')],['24h traders',((m.tx.buyers||0)+(m.tx.sellers||0)).toLocaleString('en-US')]]
+  :[['price','$'+px(m.px)],['24h change',pc(m.ch),m.ch>=0?'up':'dn'],['24h vol',sh(m.vol)],['open interest',sh(m.oi)],['1h funding',(m.fund*100).toFixed(4)+'%',m.fund>=0?'up':'dn'],['max leverage',m.maxLev+'×']];
+ $('#ihead').innerHTML=`${icon(m,38)}<div class="meta"><h1>${esc(m.sym)} <span class="mut" style="font-weight:400;font-size:12px">${esc(m.name)}</span></h1><div class="mut sm">${m.kind==='tok'?'solana · '+esc(m.dex)+' · '+shortA(m.token):'hyperliquid'+(m.dex?' · '+m.dex:'')+' · 24/7 perpetual'}</div></div>
  <button class="star ${fav?'on':''}" id="fav" title="favorito"><svg viewBox="0 0 24 24"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1 6.2-5.5-2.9-5.5 2.9 1-6.2L3 9.7l6.2-.9z"/></svg></button>
  <div class="stats">${st.map(([k,v,c])=>`<div><div class="k">${k}</div><div class="v m ${c||''}">${v}</div></div>`).join('')}</div>`}
 
 // ---------- velas y gráfico ----------
 const TFMS={'1m':6e4,'5m':3e5,'15m':9e5,'1h':36e5,'4h':144e5,'1d':864e5};
-async function loadCandles(g){const m=S.cur;if(!m)return;const msg=$('#cvmsg');msg.textContent='cargando velas…';msg.style.display='grid';
+async function loadCandles(g){const m=S.cur;if(!m)return;const msg=$('#cvmsg');msg.textContent='loading candles…';msg.style.display='grid';
  try{let K;
   if(m.kind==='perp'){const d=await hl({type:'candleSnapshot',req:{coin:m.id,interval:S.tf,startTime:Date.now()-TFMS[S.tf]*150}});K=d.map(c=>({t:c.t,o:+c.o,h:+c.h,l:+c.l,c:+c.c,v:+c.v*+c.c}))}
   else{const mp={'1m':['minute',1],'5m':['minute',5],'15m':['minute',15],'1h':['hour',1],'4h':['hour',4],'1d':['day',1]}[S.tf];
    const d=await gt(`/networks/solana/pools/${m.pool}/ohlcv/${mp[0]}?aggregate=${mp[1]}&limit=150&currency=usd`,20000);
    K=(d.data?.attributes?.ohlcv_list||[]).map(c=>({t:c[0]*1000,o:+c[1],h:+c[2],l:+c[3],c:+c[4],v:+c[5]})).sort((a,b)=>a.t-b.t)}
-  if(g!==selGen||S.cur!==m)return;S.candles=K;msg.style.display=K.length?'none':'grid';if(!K.length)msg.textContent='sin velas para este mercado todavía';draw();
+  if(g!==selGen||S.cur!==m)return;S.candles=K;msg.style.display=K.length?'none':'grid';if(!K.length)msg.textContent='no candles for this market yet';draw();
  }catch(e){if(g===selGen){msg.textContent=e.message;msg.style.display='grid'}}}
 const cv=$('#cv');let hits=[],hover=null;const IMG={};
 function img(src){if(!IMG[src]){const i=new Image();i.onload=()=>draw();i.src=src;IMG[src]=i}return IMG[src]}
@@ -440,15 +440,15 @@ function drawNow(){const K=S.candles,d=devicePixelRatio,W=cv.clientWidth,H=cv.cl
  const Y=v=>12+(ch-12)*(1-(v-mn+pad)/(mx-mn+pad*2)),bw=pw/K.length,t0=K[0].t,step=TFMS[S.tf];
  x.font='10px Geist Mono';
  for(let g=0;g<6;g++){const v=mn-pad+(mx-mn+pad*2)*g/5,y=Y(v);x.strokeStyle='rgba(203,208,235,.05)';x.beginPath();x.moveTo(0,y);x.lineTo(pw,y);x.stroke();x.fillStyle='#62636e';x.fillText(px(v),pw+6,y+3)}
- for(let g=0;g<K.length;g+=Math.max(1,Math.ceil(K.length/7))){const dt=new Date(K[g].t);x.fillStyle='#62636e';x.fillText(S.tf==='1d'?dt.toLocaleDateString('es-MX',{day:'2-digit',month:'short'}):dt.toTimeString().slice(0,5),g*bw+2,H-6)}
+ for(let g=0;g<K.length;g+=Math.max(1,Math.ceil(K.length/7))){const dt=new Date(K[g].t);x.fillStyle='#62636e';x.fillText(S.tf==='1d'?dt.toLocaleDateString('en-US',{day:'2-digit',month:'short'}):dt.toTimeString().slice(0,5),g*bw+2,H-6)}
  const mv=Math.max(...K.map(k=>k.v))||1;
  K.forEach((k,i)=>{const up=k.c>=k.o;x.fillStyle=up?'rgba(34,197,94,.28)':'rgba(239,68,68,.28)';const h=k.v/mv*vh;x.fillRect(i*bw+bw*.15,H-20-h,bw*.7,h)});
  K.forEach((k,i)=>{const up=k.c>=k.o,cx=i*bw+bw/2;x.strokeStyle=x.fillStyle=up?'#22c55e':'#ef4444';x.beginPath();x.moveTo(cx,Y(k.h));x.lineTo(cx,Y(k.l));x.stroke();x.fillRect(i*bw+bw*.15,Math.min(Y(k.o),Y(k.c)),Math.max(1,bw*.7),Math.max(1,Math.abs(Y(k.o)-Y(k.c))))});
  const last=K[K.length-1],ly=Y(last.c),upl=last.c>=last.o;
  x.setLineDash([3,3]);x.strokeStyle=upl?'#22c55e':'#ef4444';x.beginPath();x.moveTo(0,ly);x.lineTo(pw,ly);x.stroke();x.setLineDash([]);
  x.fillStyle=upl?'#22c55e':'#ef4444';x.fillRect(pw,ly-9,R,18);x.fillStyle='#fff';x.fillText(px(last.c),pw+5,ly+3);
- // mis posiciones abiertas: línea de entrada
- S.paper.pos.filter(p=>p.id===S.cur.id).forEach(p=>{const y=Y(p.e||p.cost/p.q);if(y<0||y>ch)return;x.setLineDash([6,4]);x.strokeStyle='#516af6';x.beginPath();x.moveTo(0,y);x.lineTo(pw,y);x.stroke();x.setLineDash([]);x.fillStyle='#516af6';x.fillText('tu entrada',6,y-4)});
+ // mis open positions: línea de entrada
+ S.paper.pos.filter(p=>p.id===S.cur.id).forEach(p=>{const y=Y(p.e||p.cost/p.q);if(y<0||y>ch)return;x.setLineDash([6,4]);x.strokeStyle='#516af6';x.beginPath();x.moveTo(0,y);x.lineTo(pw,y);x.stroke();x.setLineDash([]);x.fillStyle='#516af6';x.fillText('your entry',6,y-4)});
  const fol=$('#oFol').checked,big=$('#oBig').checked,rows=[];
  if($('#oTr').checked)S.bub.forEach(b=>{if(fol&&!isFol(b.u))return;if(big&&b.usd<1000&&!b.fol)return;rows.push(b)});
  if($('#oMine').checked)S.paper.pos.concat(S.paper.hist).forEach(p=>{if(p.id===S.cur.id)(p.fills||[]).forEach(f=>rows.push({t:f.t,b:f.b,usd:f.usd,px:f.px,me:1}))});
@@ -466,7 +466,7 @@ function drawNow(){const K=S.candles,d=devicePixelRatio,W=cv.clientWidth,H=cv.cl
 cv.addEventListener('mousemove',e=>{const r=cv.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top;hover={x:mx,y:my};
  const h=hits.find(h=>Math.hypot(h.cx-mx,h.cy-my)<h.r+2),tip=$('#tip');cv.style.cursor=h&&!h.b.me?'pointer':'crosshair';
  if(h){const b=h.b;tip.style.display='block';tip.style.left=Math.min(mx+14,cv.clientWidth-190)+'px';tip.style.top=(my+46)+'px';
-  tip.innerHTML=`<div class="who"><img class="av" src="${b.me?'av/09.jpg':avOf(b.u)}" alt=""><b>${b.me?'tú (práctica)':esc(S.cur.kind==='tok'?shortA(b.u):nameOf(b.u))}</b></div><div style="margin-top:6px"><span class="badge ${b.b?'b':'s'}">${b.b?'compra':'venta'}</span> <span class="m">${sh(b.usd)} @ ${px(b.px)}</span></div><div class="dim" style="margin-top:4px">hace ${ago(b.t)}${b.me?'':' · clic para ver la wallet'}</div>`}
+  tip.innerHTML=`<div class="who"><img class="av" src="${b.me?'av/09.jpg':avOf(b.u)}" alt=""><b>${b.me?'you (practice)':esc(S.cur.kind==='tok'?shortA(b.u):nameOf(b.u))}</b></div><div style="margin-top:6px"><span class="badge ${b.b?'b':'s'}">${b.b?'buy':'sell'}</span> <span class="m">${sh(b.usd)} @ ${px(b.px)}</span></div><div class="dim" style="margin-top:4px">${ago(b.t)} ago${b.me?'':' · click to view wallet'}</div>`}
  else tip.style.display='none';draw()});
 cv.addEventListener('mouseleave',()=>{hover=null;$('#tip').style.display='none';draw()});
 cv.addEventListener('click',()=>{const h=hits.find(h=>hover&&Math.hypot(h.cx-hover.x,h.cy-hover.y)<h.r+2);if(h&&!h.b.me)openWallet(h.b.u)});
@@ -477,33 +477,33 @@ async function loadTokTrades(g,first){const m=S.cur;if(!m||m.kind!=='tok')return
  try{const d=await gt(`/networks/solana/pools/${m.pool}/trades`,15000);if(g!==selGen)return;
   const T=(d.data||[]).map(t=>{const a=t.attributes,b=a.kind==='buy';return{u:a.tx_from_address,b,usd:+a.volume_in_usd,px:+(b?a.price_to_in_usd:a.price_from_in_usd),t:Date.parse(a.block_timestamp),tx:a.tx_hash,amt:+(b?a.to_token_amount:a.from_token_amount)}}).filter(t=>t.u);
   const prev=new Set(S.trades.map(t=>t.tx));S.trades=T;S.bub=T;
-  $('#rp').innerHTML=`<table><thead><tr><th>trader</th><th>acción</th><th>monto</th><th>precio</th><th>hora</th></tr></thead><tbody>${T.slice(0,80).map(t=>`<tr class="cl ${!first&&!prev.has(t.tx)?'fl':''}" data-w="${esc(t.u)}"><td><div class="who"><img class="av" src="${avOf(t.u)}" style="width:20px;height:20px" alt=""><span class="nm">${shortA(t.u)}</span></div></td><td><span class="badge ${t.b?'b':'s'}">${t.b?'compra':'venta'}</span></td><td class="m">${sh(t.usd)}</td><td class="m">$${px(t.px)}</td><td class="dim">${ago(t.t)}</td></tr>`).join('')}</tbody></table>`;
+  $('#rp').innerHTML=`<table><thead><tr><th>trader</th><th>side</th><th>amount</th><th>price</th><th>time</th></tr></thead><tbody>${T.slice(0,80).map(t=>`<tr class="cl ${!first&&!prev.has(t.tx)?'fl':''}" data-w="${esc(t.u)}"><td><div class="who"><img class="av" src="${avOf(t.u)}" style="width:20px;height:20px" alt=""><span class="nm">${shortA(t.u)}</span></div></td><td><span class="badge ${t.b?'b':'s'}">${t.b?'buy':'sell'}</span></td><td class="m">${sh(t.usd)}</td><td class="m">$${px(t.px)}</td><td class="dim">${ago(t.t)}</td></tr>`).join('')}</tbody></table>`;
   const agg={};T.forEach(t=>{const a=agg[t.u]=agg[t.u]||{u:t.u,buy:0,sell:0,qb:0,qs:0,n:0,last:0};a.n++;a.last=Math.max(a.last,t.t);if(t.b){a.buy+=t.usd;a.qb+=t.amt}else{a.sell+=t.usd;a.qs+=t.amt}});
   const A=Object.values(agg).sort((a,b)=>(b.buy+b.sell)-(a.buy+a.sell)).slice(0,40);
-  $('#lpT').textContent='top traders';$('#lpN').textContent=`(${Object.keys(agg).length} wallets en las últimas ${T.length} operaciones)`;$('#lpR').innerHTML='';
-  $('#lp').innerHTML=`<table><thead><tr><th>trader</th><th>compró</th><th>vendió</th><th>neto</th><th>PnL estimado</th><th>ops</th><th>última</th></tr></thead><tbody>${A.map(a=>{const net=a.buy-a.sell,pnl=a.buy>0?a.sell-a.buy+Math.max(0,a.qb-a.qs)*m.px:null;
-   return`<tr class="cl" data-w="${esc(a.u)}"><td><div class="who"><img class="av" src="${avOf(a.u)}" alt=""><span class="nm">${shortA(a.u)}</span></div></td><td class="m up">${sh(a.buy)}</td><td class="m dn">${sh(a.sell)}</td><td class="m ${net>=0?'up':'dn'}">${sh(net)}</td><td class="m ${pnl==null?'dim':pnl>=0?'up':'dn'}">${pnl==null?'—':(pnl>=0?'+':'')+sh(pnl)}</td><td class="m">${a.n}</td><td class="dim">${ago(a.last)}</td></tr>`}).join('')}</tbody></table><div class="dim sm" style="padding:8px 10px;white-space:normal">PnL estimado = ventas − compras + lo que aún conserva a precio actual, contando solo estas operaciones. Clic en una wallet para verla en Solscan.</div>`;
+  $('#lpT').textContent='top traders';$('#lpN').textContent=`(${Object.keys(agg).length} wallets in the last ${T.length} trades)`;$('#lpR').innerHTML='';
+  $('#lp').innerHTML=`<table><thead><tr><th>trader</th><th>bought</th><th>sold</th><th>net</th><th>est. PnL</th><th>trades</th><th>last</th></tr></thead><tbody>${A.map(a=>{const net=a.buy-a.sell,pnl=a.buy>0?a.sell-a.buy+Math.max(0,a.qb-a.qs)*m.px:null;
+   return`<tr class="cl" data-w="${esc(a.u)}"><td><div class="who"><img class="av" src="${avOf(a.u)}" alt=""><span class="nm">${shortA(a.u)}</span></div></td><td class="m up">${sh(a.buy)}</td><td class="m dn">${sh(a.sell)}</td><td class="m ${net>=0?'up':'dn'}">${sh(net)}</td><td class="m ${pnl==null?'dim':pnl>=0?'up':'dn'}">${pnl==null?'—':(pnl>=0?'+':'')+sh(pnl)}</td><td class="m">${a.n}</td><td class="dim">${ago(a.last)}</td></tr>`}).join('')}</tbody></table><div class="dim sm" style="padding:8px 10px;white-space:normal">estimated PnL = sells − buys + what they still hold at the current price, counting only these trades. Click a wallet to view it on Solscan.</div>`;
   draw();about();
  }catch(e){if(g===selGen){$('#rp').innerHTML=`<div class="load">${esc(e.message)}</div>`;if(!S.trades.length)$('#lp').innerHTML=`<div class="load">${esc(e.message)}</div>`;setTimeout(()=>{if(g===selGen&&!S.trades.length)loadTokTrades(g,true)},12000)}}}
 async function loadTokInfo(m,g){if(!m.token)return;try{const d=await gt(`/networks/solana/tokens/${m.token}/info`,300000);if(g!==selGen)return;const a=d.data?.attributes||{};m.holders=a.holders?.count;m.desc=a.description;m.links={web:a.websites?.[0],x:a.twitter_handle,tg:a.telegram_handle};about()}catch(e){}}
 
-// ---------- perps: operaciones y posiciones de top traders ----------
+// ---------- perps: operaciones y top trader positions ----------
 async function loadPerpTrades(g){const m=S.cur;try{const d=await hl({type:'recentTrades',coin:m.id});if(g!==selGen)return;d.reverse().forEach(addPerpTrade)}catch(e){}renderPerpTrades(false,true);
  for(const a of S.follow.filter(a=>a.startsWith('0x')).slice(0,8)){try{const fl=await hl({type:'userFills',user:a});if(g!==selGen)return;fl.filter(f=>f.coin===m.id).forEach(f=>S.bub.push({u:a,b:f.side==='B',usd:f.sz*f.px,px:+f.px,t:f.time,fol:1}))}catch(e){}}draw()}
 function addPerpTrade(t){const b=t.side==='B',u=b?t.users?.[0]:t.users?.[1],o={u,b,usd:+t.sz*+t.px,px:+t.px,t:t.time,tid:t.tid};
  if(S.trades.some(x=>x.tid===o.tid))return;S.trades.unshift(o);if(S.trades.length>300)S.trades.length=300;S.bub.push(o);if(S.bub.length>900)S.bub.splice(0,300)}
 let rpT=0;function renderPerpTrades(flash,force){if(Date.now()-rpT<400&&!force)return;rpT=Date.now();const m=S.cur;if(!m||m.kind!=='perp')return;
- $('#rp').innerHTML=`<table><thead><tr><th>trader</th><th>acción</th><th>tamaño</th><th>precio</th><th>hora</th></tr></thead><tbody>${S.trades.slice(0,80).map((t,i)=>`<tr class="cl ${flash&&i===0?'fl':''}" data-u="${t.u||''}"><td><div class="who"><img class="av" src="${avOf(t.u)}" style="width:20px;height:20px" alt=""><span class="nm">${esc(nameOf(t.u))}</span>${isFol(t.u)?'<span class="fol">●</span>':''}</div></td><td><span class="badge ${t.b?'b':'s'}">${t.b?'compra':'venta'}</span></td><td class="m">${sh(t.usd)}</td><td class="m">${px(t.px)}</td><td class="dim">${ago(t.t)}</td></tr>`).join('')||'<tr><td class="dim" colspan="5">esperando operaciones…</td></tr>'}</tbody></table>`}
+ $('#rp').innerHTML=`<table><thead><tr><th>trader</th><th>side</th><th>size</th><th>price</th><th>time</th></tr></thead><tbody>${S.trades.slice(0,80).map((t,i)=>`<tr class="cl ${flash&&i===0?'fl':''}" data-u="${t.u||''}"><td><div class="who"><img class="av" src="${avOf(t.u)}" style="width:20px;height:20px" alt=""><span class="nm">${esc(nameOf(t.u))}</span>${isFol(t.u)?'<span class="fol">●</span>':''}</div></td><td><span class="badge ${t.b?'b':'s'}">${t.b?'buy':'sell'}</span></td><td class="m">${sh(t.usd)}</td><td class="m">${px(t.px)}</td><td class="dim">${ago(t.t)}</td></tr>`).join('')||'<tr><td class="dim" colspan="5">waiting for trades…</td></tr>'}</tbody></table>`}
 async function refreshStates(){if(Date.now()-S.statesAt<60000)return;S.statesAt=Date.now();if(!S.lb)await loadLB();
  const top=[...S.lb.rows].sort((a,b)=>b.month[0]-a.month[0]).slice(0,30).map(r=>r.a),fol=S.follow.filter(a=>a.startsWith('0x'));
  const list=[...new Set([...fol,...top])].slice(0,40);let i=0;
  await Promise.all(Array.from({length:5},async()=>{while(i<list.length){const a=list[i++];try{S.states[a]=await hl({type:'clearinghouseState',user:a})}catch(e){}}}))}
-async function loadTopPositions(g){const m=S.cur;$('#lpT').textContent='posiciones de top traders';$('#lpN').textContent='';$('#lpR').innerHTML='<span class="dim">top 30 del mes + los que sigues</span>';
- if(!Object.keys(S.states).length)$('#lp').innerHTML='<div class="load">leyendo posiciones reales…</div>';await refreshStates();if(g!==selGen)return;
+async function loadTopPositions(g){const m=S.cur;$('#lpT').textContent='top trader positions';$('#lpN').textContent='';$('#lpR').innerHTML='<span class="dim">top 30 of the month + who you follow</span>';
+ if(!Object.keys(S.states).length)$('#lp').innerHTML='<div class="load">reading real positions…</div>';await refreshStates();if(g!==selGen)return;
  const R=[];Object.entries(S.states).forEach(([a,st])=>{(st.assetPositions||[]).forEach(p=>{if(p.position.coin===m.id)R.push({a,q:p.position})})});
  R.sort((x,y)=>Math.abs(y.q.positionValue)-Math.abs(x.q.positionValue));$('#lpN').textContent=`(${R.length})`;
- $('#lp').innerHTML=R.length?`<table><thead><tr><th>trader</th><th>lado</th><th>posición</th><th>entrada</th><th>PnL no realizado</th><th>apalanc.</th><th>liquidación</th></tr></thead><tbody>${R.map(({a,q})=>{const L=+q.szi>0,u=+q.unrealizedPnl;
-  return`<tr class="cl" data-u="${a}"><td><div class="who"><img class="av" src="${avOf(a)}" alt=""><span class="nm">${esc(nameOf(a))}</span>${isFol(a)?'<span class="fol">siguiendo</span>':''}</div></td><td><span class="badge ${L?'b':'s'}">${L?'long':'short'}</span></td><td class="m">${sh(+q.positionValue)}<div class="dim sm">${Math.abs(+q.szi)} ${esc(m.sym)}</div></td><td class="m">${px(q.entryPx)}</td><td class="m ${u>=0?'up':'dn'}">${u>=0?'+':''}${sh(u)}<div class="sm">${pc(q.returnOnEquity*100)}</div></td><td class="m">${q.leverage?.value||'—'}×</td><td class="m dim">${q.liquidationPx?px(q.liquidationPx):'—'}</td></tr>`}).join('')}</tbody></table>`:'<div class="load">ninguno de los top traders tiene posición abierta en este mercado ahora mismo.</div>'}
+ $('#lp').innerHTML=R.length?`<table><thead><tr><th>trader</th><th>side</th><th>position</th><th>entry</th><th>unrealized PnL</th><th>lev.</th><th>liquidation</th></tr></thead><tbody>${R.map(({a,q})=>{const L=+q.szi>0,u=+q.unrealizedPnl;
+  return`<tr class="cl" data-u="${a}"><td><div class="who"><img class="av" src="${avOf(a)}" alt=""><span class="nm">${esc(nameOf(a))}</span>${isFol(a)?'<span class="fol">following</span>':''}</div></td><td><span class="badge ${L?'b':'s'}">${L?'long':'short'}</span></td><td class="m">${sh(+q.positionValue)}<div class="dim sm">${Math.abs(+q.szi)} ${esc(m.sym)}</div></td><td class="m">${px(q.entryPx)}</td><td class="m ${u>=0?'up':'dn'}">${u>=0?'+':''}${sh(u)}<div class="sm">${pc(q.returnOnEquity*100)}</div></td><td class="m">${q.leverage?.value||'—'}×</td><td class="m dim">${q.liquidationPx?px(q.liquidationPx):'—'}</td></tr>`}).join('')}</tbody></table>`:'<div class="load">none of the top traders has an open position in this market right now.</div>'}
 
 // ---------- websocket ----------
 let ws,wsCoin=null,wsOk=false;
@@ -526,26 +526,26 @@ let tickT=0;function tick(){if(Date.now()-tickT<1000)return;tickT=Date.now();
 // ---------- operar (práctica) ----------
 function ticket(soft){const m=S.cur;if(!m)return;const perp=m.kind==='perp';$('#tpsl').style.display=RS.on&&perp?'grid':'none';
  if(RS.on){return ticketReal(soft)}
- if(!soft){$('#bs').innerHTML=perp?`<button class="buy ${S.side==='buy'?'on':''}" data-side="buy">long</button><button class="sell ${S.side==='sell'?'on':''}" data-side="sell">short</button>`:`<button class="buy ${S.side==='buy'?'on':''}" data-side="buy">compra</button><button class="sell ${S.side==='sell'?'on':''}" data-side="sell">venta</button>`;
+ if(!soft){$('#bs').innerHTML=perp?`<button class="buy ${S.side==='buy'?'on':''}" data-side="buy">long</button><button class="sell ${S.side==='sell'?'on':''}" data-side="sell">short</button>`:`<button class="buy ${S.side==='buy'?'on':''}" data-side="buy">buy</button><button class="sell ${S.side==='sell'?'on':''}" data-side="sell">sell</button>`;
   $('#levw').style.display=perp?'flex':'none';$('#lev').max=m.maxLev||10;if(S.lev>m.maxLev)S.lev=m.maxLev;$('#lev').value=S.lev;$('#levV').textContent=S.lev+'×';
-  $('#amtL').textContent=perp?'margen':S.side==='sell'?'a vender':'a comprar'}
+  $('#amtL').textContent=perp?'margin':S.side==='sell'?'to sell':'to buy'}
  const v=parseFloat($('#amt').value)||0,p=m.px,g=$('#go');let ok=v>0,lines=[];
  if(perp){const not=v*S.lev,q=not/p,liq=S.side==='buy'?p*(1-.9/S.lev):p*(1+.9/S.lev);ok=ok&&v<=S.paper.cash;
-  lines=[['precio','$'+px(p)],['tamaño',`${q?q.toPrecision(4):'0'} ${m.sym} · ${sh(not)}`],['liquidación aprox.',v?'$'+px(liq):'—'],['comisión 0.045%',usd(not*.00045)]];
-  g.textContent=v>S.paper.cash?'saldo insuficiente':v?`${S.side==='buy'?'long':'short'} ${m.sym} ${S.lev}×`:'elige un margen'}
+  lines=[['price','$'+px(p)],['size',`${q?q.toPrecision(4):'0'} ${m.sym} · ${sh(not)}`],['est. liquidation',v?'$'+px(liq):'—'],['fee 0.045%',usd(not*.00045)]];
+  g.textContent=v>S.paper.cash?'insufficient balance':v?`${S.side==='buy'?'long':'short'} ${m.sym} ${S.lev}×`:'choose a margin'}
  else{const pos=S.paper.pos.find(x=>x.id===m.id&&x.kind==='tok');
-  if(S.side==='buy'){ok=ok&&v<=S.paper.cash;lines=[['precio','$'+px(p)],['recibes aprox.',`${v?((v*.995)/p).toLocaleString('en-US',{maximumFractionDigits:2}):0} ${m.sym}`],['comisión 0.5%',usd(v*.005)]];g.textContent=v>S.paper.cash?'saldo insuficiente':v?`comprar ${m.sym}`:'elige un monto'}
-  else{const have=pos?pos.q*p:0;ok=ok&&!!pos&&v<=have+1e-6;lines=[['tienes',pos?`${pos.q.toLocaleString('en-US',{maximumFractionDigits:2})} ${m.sym} · ${sh(have)}`:'nada'],['comisión 0.5%',usd(v*.005)]];g.textContent=!pos?`no tienes ${m.sym}`:v>have+1e-6?'más de lo que tienes':v?`vender ${m.sym}`:'elige un monto'}}
+  if(S.side==='buy'){ok=ok&&v<=S.paper.cash;lines=[['price','$'+px(p)],['you get approx.',`${v?((v*.995)/p).toLocaleString('en-US',{maximumFractionDigits:2}):0} ${m.sym}`],['fee 0.5%',usd(v*.005)]];g.textContent=v>S.paper.cash?'insufficient balance':v?`buy ${m.sym}`:'choose an amount'}
+  else{const have=pos?pos.q*p:0;ok=ok&&!!pos&&v<=have+1e-6;lines=[['you have',pos?`${pos.q.toLocaleString('en-US',{maximumFractionDigits:2})} ${m.sym} · ${sh(have)}`:'nothing'],['fee 0.5%',usd(v*.005)]];g.textContent=!pos?`you don’t have ${m.sym}`:v>have+1e-6?'more than you have':v?`sell ${m.sym}`:'choose an amount'}}
  g.className='go '+S.side;g.disabled=!ok;$('#est').innerHTML=lines.map(([k,v])=>`<div><span>${k}</span><span class="m">${v}</span></div>`).join('')}
 function ticketReal(soft){const m=S.cur,perp=m.kind==='perp',g=$('#go');
- if(!soft){$('#bs').innerHTML=perp?`<button class="buy ${S.side==='buy'?'on':''}" data-side="buy">long</button><button class="sell ${S.side==='sell'?'on':''}" data-side="sell">short</button>`:`<button class="buy on" data-side="buy">compra</button><button class="sell" data-side="sell">venta</button>`;
-  $('#levw').style.display=perp?'flex':'none';$('#lev').max=m.maxLev||10;if(S.lev>m.maxLev)S.lev=m.maxLev;$('#lev').value=S.lev;$('#levV').textContent=S.lev+'×';$('#amtL').textContent='margen USDC'}
- if(!perp){g.className='go buy';g.disabled=true;g.textContent='tokens de solana en real: próximamente';$('#est').innerHTML='<div><span>por ahora los tokens se operan en modo práctica</span></div>';return}
+ if(!soft){$('#bs').innerHTML=perp?`<button class="buy ${S.side==='buy'?'on':''}" data-side="buy">long</button><button class="sell ${S.side==='sell'?'on':''}" data-side="sell">short</button>`:`<button class="buy on" data-side="buy">buy</button><button class="sell" data-side="sell">sell</button>`;
+  $('#levw').style.display=perp?'flex':'none';$('#lev').max=m.maxLev||10;if(S.lev>m.maxLev)S.lev=m.maxLev;$('#lev').value=S.lev;$('#levV').textContent=S.lev+'×';$('#amtL').textContent='USDC margin'}
+ if(!perp){g.className='go buy';g.disabled=true;g.textContent='real solana tokens: coming soon';$('#est').innerHTML='<div><span>for now, tokens trade in practice mode</span></div>';return}
  const v=parseFloat($('#amt').value)||0,p=S.mids[m.id]||m.px,wd=+(RS.state?.withdrawable||0),not=v*S.lev,fee=not*(0.00045+(REAL.builder?REAL.fee/1e5:0));
  const liq=S.side==='buy'?p*(1-.9/S.lev):p*(1+.9/S.lev);
- $('#est').innerHTML=[['disponible',usd(wd)],['precio','$'+px(p)],['tamaño',`${v?(not/p).toPrecision(4):0} ${m.sym} · ${sh(not)}`],['liquidación aprox.',v?'$'+px(liq):'—'],['comisiones aprox.',usd(fee)]].map(([k,x])=>`<div><span>${k}</span><span class="m">${x}</span></div>`).join('');
+ $('#est').innerHTML=[['available',usd(wd)],['price','$'+px(p)],['size',`${v?(not/p).toPrecision(4):0} ${m.sym} · ${sh(not)}`],['est. liquidation',v?'$'+px(liq):'—'],['est. fees',usd(fee)]].map(([k,x])=>`<div><span>${k}</span><span class="m">${x}</span></div>`).join('');
  g.className='go '+S.side;g.disabled=!(v>0&&v<=wd&&not>=10)||RS.busy||m.asset==null;
- g.textContent=m.asset==null?'no disponible en real':v>wd?'saldo insuficiente':v&&not<10?'mínimo $10 de tamaño':v?`${S.side==='buy'?'long':'short'} ${m.sym} ${S.lev}× · REAL`:'elige un margen'}
+ g.textContent=m.asset==null?'not available in real':v>wd?'insufficient balance':v&&not<10?'minimum $10 size':v?`${S.side==='buy'?'long':'short'} ${m.sym} ${S.lev}× · REAL`:'choose a margin'}
 function curPx(p){if(p.kind==='perp')return S.mids[p.id]||p.e;if(S.cur&&S.cur.id===p.id)return S.cur.px;for(const L of Object.values(S.tokens)){const t=L.find(t=>t.id===p.id);if(t)return t.px}return p.last||p.cost/p.q}
 function upnl(p){const c=curPx(p);return p.kind==='perp'?(c-p.e)*p.q*(p.side==='buy'?1:-1):c*p.q-p.cost}
 function trade(){const m=S.cur,v=parseFloat($('#amt').value);if(!m||!(v>0))return;const P=S.paper,now=Date.now(),p=m.px;
@@ -553,40 +553,40 @@ function trade(){const m=S.cur,v=parseFloat($('#amt').value);if(!m||!(v>0))retur
   P.pos.push({uid:now,kind:'perp',id:m.id,sym:m.sym,img:m.img,side:S.side,q,e:p,m:v,lev:S.lev,t:now,fills:[{t:now,b:S.side==='buy',usd:not,px:p}]});
   toast(`${S.side==='buy'?'long':'short'} ${esc(m.sym)} ${S.lev}× · ${sh(not)} @ ${px(p)}`)}
  else{let pos=P.pos.find(x=>x.id===m.id&&x.kind==='tok');const fee=v*.005;
-  if(S.side==='buy'){if(v>P.cash)return;P.cash-=v;const q=(v-fee)/p;if(!pos){pos={uid:now,kind:'tok',id:m.id,sym:m.sym,img:m.img,q:0,cost:0,t:now,fills:[]};P.pos.push(pos)}pos.q+=q;pos.cost+=v;pos.last=p;pos.fills.push({t:now,b:true,usd:v,px:p});toast(`compraste ${sh(v)} de ${esc(m.sym)} a $${px(p)}`)}
+  if(S.side==='buy'){if(v>P.cash)return;P.cash-=v;const q=(v-fee)/p;if(!pos){pos={uid:now,kind:'tok',id:m.id,sym:m.sym,img:m.img,q:0,cost:0,t:now,fills:[]};P.pos.push(pos)}pos.q+=q;pos.cost+=v;pos.last=p;pos.fills.push({t:now,b:true,usd:v,px:p});toast(`you bought ${sh(v)} of ${esc(m.sym)} at $${px(p)}`)}
   else{if(!pos)return;const q=Math.min(pos.q,v/p),cost=pos.cost*q/pos.q,got=q*p-fee;P.cash+=got;pos.q-=q;pos.cost-=cost;pos.last=p;pos.fills.push({t:now,b:false,usd:q*p,px:p});
    P.hist.unshift({kind:'tok',id:m.id,sym:m.sym,img:m.img,side:'sell',pnl:got-cost,usd:q*p,t:now,fills:[{t:now,b:false,usd:q*p,px:p}]});
-   if(pos.q*p<0.01)P.pos=P.pos.filter(x=>x!==pos);toast(`vendiste ${sh(q*p)} de ${esc(m.sym)} · <span class="${got-cost>=0?'up':'dn'}">${got-cost>=0?'+':''}${usd(got-cost)}</span>`)}}
+   if(pos.q*p<0.01)P.pos=P.pos.filter(x=>x!==pos);toast(`you sold ${sh(q*p)} of ${esc(m.sym)} · <span class="${got-cost>=0?'up':'dn'}">${got-cost>=0?'+':''}${usd(got-cost)}</span>`)}}
  P.hist.length=Math.min(P.hist.length,100);savePaper();$('#amt').value='';ticket();renderPos(true);wallet();draw()}
 function closePos(uid){const P=S.paper,p=P.pos.find(x=>x.uid===uid);if(!p)return;const c=curPx(p),now=Date.now();let pnl;
  if(p.kind==='perp'){const u=upnl(p),fee=p.q*c*.00045;pnl=u-fee;P.cash+=Math.max(0,p.m+pnl);P.hist.unshift({kind:'perp',id:p.id,sym:p.sym,img:p.img,side:p.side,lev:p.lev,pnl,usd:p.q*c,t:now,fills:[...p.fills,{t:now,b:p.side!=='buy',usd:p.q*c,px:c}]})}
  else{const got=p.q*c*.995;pnl=got-p.cost;P.cash+=got;P.hist.unshift({kind:'tok',id:p.id,sym:p.sym,img:p.img,side:'sell',pnl,usd:p.q*c,t:now,fills:[...p.fills,{t:now,b:false,usd:p.q*c,px:c}]})}
- P.pos=P.pos.filter(x=>x!==p);P.hist.length=Math.min(P.hist.length,100);savePaper();toast(`cerraste ${esc(p.sym)}: <span class="${pnl>=0?'up':'dn'}">${pnl>=0?'+':''}${usd(pnl)}</span>`);renderPos(true);wallet();ticket();draw()}
-function checkLiq(){const P=S.paper;let ch=0;P.pos.filter(p=>p.kind==='perp').forEach(p=>{if(p.m+upnl(p)<=p.m*.1){const c=curPx(p);P.hist.unshift({kind:'perp',id:p.id,sym:p.sym,img:p.img,side:p.side,lev:p.lev,pnl:-p.m,usd:p.q*c,t:Date.now(),liq:1,fills:p.fills});P.pos=P.pos.filter(x=>x!==p);toast(`<span class="dn">liquidado</span> ${esc(p.sym)} ${p.lev}×: −${usd(p.m)}`);ch=1}});if(ch){savePaper();renderPos(true);wallet()}}
+ P.pos=P.pos.filter(x=>x!==p);P.hist.length=Math.min(P.hist.length,100);savePaper();toast(`you closed ${esc(p.sym)}: <span class="${pnl>=0?'up':'dn'}">${pnl>=0?'+':''}${usd(pnl)}</span>`);renderPos(true);wallet();ticket();draw()}
+function checkLiq(){const P=S.paper;let ch=0;P.pos.filter(p=>p.kind==='perp').forEach(p=>{if(p.m+upnl(p)<=p.m*.1){const c=curPx(p);P.hist.unshift({kind:'perp',id:p.id,sym:p.sym,img:p.img,side:p.side,lev:p.lev,pnl:-p.m,usd:p.q*c,t:Date.now(),liq:1,fills:p.fills});P.pos=P.pos.filter(x=>x!==p);toast(`<span class="dn">liquidated</span> ${esc(p.sym)} ${p.lev}×: −${usd(p.m)}`);ch=1}});if(ch){savePaper();renderPos(true);wallet()}}
 let posT=0;function renderPos(force){if(Date.now()-posT<900&&!force)return;posT=Date.now();const P=S.paper,el=$('#mypos');
  if(RS.on){const st=RS.state,L=st?.assetPositions||[],O=RS.orders||[];
-  if(S.ptab==='open')el.innerHTML=(L.length?L.map(({position:q})=>{const mk=allPerps().find(x=>x.id===q.coin)||{id:q.coin,sym:q.coin.replace(/^\w+:/,''),img:''},Lg=+q.szi>0,u=+q.unrealizedPnl;return`<div class="pos"><div class="l" data-open="perp|${esc(q.coin)}">${icon(mk,26)}<div><b>${esc(mk.sym)}</b> <span class="badge ${Lg?'b':'s'}">${Lg?'long':'short'} ${q.leverage?.value}×</span><span class="realtag">real</span><div class="dim sm m">${Math.abs(+q.szi)} @ ${px(q.entryPx)} · liq ${q.liquidationPx?px(q.liquidationPx):'—'}</div></div></div><div style="text-align:right"><div class="m ${u>=0?'up':'dn'}">${u>=0?'+':''}${usd(u)}</div><div class="sm m ${u>=0?'up':'dn'}">${pc(q.returnOnEquity*100)}</div></div><button class="xbtn" data-rclose="${esc(q.coin)}">cerrar</button></div>`}).join(''):'<div class="dim" style="padding:14px 0;text-align:center">sin posiciones reales abiertas</div>')
-   +(O.length?'<div class="dim sm" style="margin-top:8px">órdenes abiertas</div>'+O.map(o=>{const mk=allPerps().find(x=>x.id===o.coin);return`<div class="pos"><div class="l"><b>${esc(o.coin.replace(/^\w+:/,''))}</b> <span class="dim sm">${esc(o.orderType||'limit')} ${o.side==='B'?'compra':'venta'} ${o.sz} @ ${px(o.triggerPx&&+o.triggerPx?o.triggerPx:o.limitPx)}</span></div>${mk&&mk.asset!=null?`<button class="xbtn" data-rcancel="${mk.asset}|${o.oid}">cancelar</button>`:''}</div>`}).join(''):'');
-  else el.innerHTML='<div class="dim" style="padding:14px 0;text-align:center">tu historial real está en tu perfil: <a href="#" data-myprof style="color:#aab4ff">ver perfil</a></div>';
+  if(S.ptab==='open')el.innerHTML=(L.length?L.map(({position:q})=>{const mk=allPerps().find(x=>x.id===q.coin)||{id:q.coin,sym:q.coin.replace(/^\w+:/,''),img:''},Lg=+q.szi>0,u=+q.unrealizedPnl;return`<div class="pos"><div class="l" data-open="perp|${esc(q.coin)}">${icon(mk,26)}<div><b>${esc(mk.sym)}</b> <span class="badge ${Lg?'b':'s'}">${Lg?'long':'short'} ${q.leverage?.value}×</span><span class="realtag">real</span><div class="dim sm m">${Math.abs(+q.szi)} @ ${px(q.entryPx)} · liq ${q.liquidationPx?px(q.liquidationPx):'—'}</div></div></div><div style="text-align:right"><div class="m ${u>=0?'up':'dn'}">${u>=0?'+':''}${usd(u)}</div><div class="sm m ${u>=0?'up':'dn'}">${pc(q.returnOnEquity*100)}</div></div><button class="xbtn" data-rclose="${esc(q.coin)}">close</button></div>`}).join(''):'<div class="dim" style="padding:14px 0;text-align:center">no open real positions</div>')
+   +(O.length?'<div class="dim sm" style="margin-top:8px">open orders</div>'+O.map(o=>{const mk=allPerps().find(x=>x.id===o.coin);return`<div class="pos"><div class="l"><b>${esc(o.coin.replace(/^\w+:/,''))}</b> <span class="dim sm">${esc(o.orderType||'limit')} ${o.side==='B'?'buy':'sell'} ${o.sz} @ ${px(o.triggerPx&&+o.triggerPx?o.triggerPx:o.limitPx)}</span></div>${mk&&mk.asset!=null?`<button class="xbtn" data-rcancel="${mk.asset}|${o.oid}">cancel</button>`:''}</div>`}).join(''):'');
+  else el.innerHTML='<div class="dim" style="padding:14px 0;text-align:center">your real trade history is on your profile: <a href="#" data-myprof style="color:#aab4ff">view profile</a></div>';
   return}
  checkLiq();
- if(S.ptab==='open')el.innerHTML=P.pos.length?P.pos.map(p=>{const u=upnl(p),base=p.kind==='perp'?p.m:p.cost;return`<div class="pos"><div class="l" data-open="${p.kind}|${esc(p.id)}">${icon(p,26)}<div><b>${esc(p.sym)}</b> ${p.kind==='perp'?`<span class="badge ${p.side==='buy'?'b':'s'}">${p.side==='buy'?'long':'short'} ${p.lev}×</span>`:''}<div class="dim sm m">${p.kind==='perp'?`${p.q.toPrecision(4)} @ ${px(p.e)}`:`costo ${sh(p.cost)}`}</div></div></div><div style="text-align:right"><div class="m ${u>=0?'up':'dn'}">${u>=0?'+':''}${usd(u)}</div><div class="sm m ${u>=0?'up':'dn'}">${pc(u/base*100)}</div></div><button class="xbtn" data-close="${p.uid}">cerrar</button></div>`}).join(''):'<div class="dim" style="padding:14px 0;text-align:center">sin posiciones abiertas</div>';
- else el.innerHTML=P.hist.length?P.hist.slice(0,30).map(h=>`<div class="pos"><div class="l" data-open="${h.kind}|${esc(h.id)}">${icon(h,26)}<div><b>${esc(h.sym)}</b> <span class="dim sm">${h.liq?'liquidado':h.kind==='perp'?(h.side==='buy'?'long':'short')+' '+h.lev+'×':'venta'}</span><div class="dim sm">hace ${ago(h.t)} · ${sh(h.usd)}</div></div></div><div class="m ${h.pnl>=0?'up':'dn'}">${h.pnl>=0?'+':''}${usd(h.pnl)}</div></div>`).join(''):'<div class="dim" style="padding:14px 0;text-align:center">aún no cierras operaciones</div>'}
-function wallet(){if(RS.on){const st=RS.state;$('#cash').textContent=usd(+(st?.withdrawable||0))+' disponible';$('#pv').textContent=usd(+(st?.marginSummary?.accountValue||0));return}const P=S.paper,pv=P.pos.reduce((a,p)=>a+(p.kind==='perp'?p.m+upnl(p):curPx(p)*p.q),0);$('#cash').textContent=usd(P.cash)+' efectivo';$('#pv').textContent=usd(pv)}
+ if(S.ptab==='open')el.innerHTML=P.pos.length?P.pos.map(p=>{const u=upnl(p),base=p.kind==='perp'?p.m:p.cost;return`<div class="pos"><div class="l" data-open="${p.kind}|${esc(p.id)}">${icon(p,26)}<div><b>${esc(p.sym)}</b> ${p.kind==='perp'?`<span class="badge ${p.side==='buy'?'b':'s'}">${p.side==='buy'?'long':'short'} ${p.lev}×</span>`:''}<div class="dim sm m">${p.kind==='perp'?`${p.q.toPrecision(4)} @ ${px(p.e)}`:`costo ${sh(p.cost)}`}</div></div></div><div style="text-align:right"><div class="m ${u>=0?'up':'dn'}">${u>=0?'+':''}${usd(u)}</div><div class="sm m ${u>=0?'up':'dn'}">${pc(u/base*100)}</div></div><button class="xbtn" data-close="${p.uid}">close</button></div>`}).join(''):'<div class="dim" style="padding:14px 0;text-align:center">no open positions</div>';
+ else el.innerHTML=P.hist.length?P.hist.slice(0,30).map(h=>`<div class="pos"><div class="l" data-open="${h.kind}|${esc(h.id)}">${icon(h,26)}<div><b>${esc(h.sym)}</b> <span class="dim sm">${h.liq?'liquidated':h.kind==='perp'?(h.side==='buy'?'long':'short')+' '+h.lev+'×':'sell'}</span><div class="dim sm">${ago(h.t)} ago · ${sh(h.usd)}</div></div></div><div class="m ${h.pnl>=0?'up':'dn'}">${h.pnl>=0?'+':''}${usd(h.pnl)}</div></div>`).join(''):'<div class="dim" style="padding:14px 0;text-align:center">you haven’t closed any trades yet</div>'}
+function wallet(){if(RS.on){const st=RS.state;$('#cash').textContent=usd(+(st?.withdrawable||0))+' available';$('#pv').textContent=usd(+(st?.marginSummary?.accountValue||0));return}const P=S.paper,pv=P.pos.reduce((a,p)=>a+(p.kind==='perp'?p.m+upnl(p):curPx(p)*p.q),0);$('#cash').textContent=usd(P.cash)+' cash';$('#pv').textContent=usd(pv)}
 function about(){const m=S.cur;if(!m)return;let h;
  if(m.kind==='tok'){const tx=m.tx,buys=tx.buys||0,sells=tx.sells||0,by=tx.buyers||0,sl=tx.sellers||0,c=m.chg;
-  h=`<h3>acerca de ${esc(m.sym)}</h3><div class="mut sm">${esc(m.name)}${m.holders?` · ${(+m.holders).toLocaleString('es-MX')} holders`:''}</div>${m.desc?`<div class="sm" style="margin-top:6px;color:#c9cad3;max-height:52px;overflow:hidden">${esc(String(m.desc).slice(0,180))}</div>`:''}
+  h=`<h3>acerca of ${esc(m.sym)}</h3><div class="mut sm">${esc(m.name)}${m.holders?` · ${(+m.holders).toLocaleString('en-US')} holders`:''}</div>${m.desc?`<div class="sm" style="margin-top:6px;color:#c9cad3;max-height:52px;overflow:hidden">${esc(String(m.desc).slice(0,180))}</div>`:''}
   <div class="chg">${[['5m',c.m5],['1h',c.h1],['6h',c.h6],['24h',c.h24]].map(([k,v])=>`<div><div class="mut">${k}</div><div class="m ${+v>=0?'up':'dn'}">${v!=null?pc(+v):'—'}</div></div>`).join('')}</div>
-  <div style="margin-top:12px" class="bl"><span>${buys.toLocaleString('es-MX')} compras</span><span>${sells.toLocaleString('es-MX')} ventas</span></div><div class="bar"><i style="width:${buys/(buys+sells||1)*100}%;background:var(--up)"></i></div>
-  <div class="bl"><span>${by.toLocaleString('es-MX')} compradores</span><span>${sl.toLocaleString('es-MX')} vendedores</span></div><div class="bar"><i style="width:${by/(by+sl||1)*100}%;background:var(--up)"></i></div>
-  <div class="links"><a href="https://solscan.io/token/${esc(m.token)}" target="_blank" rel="noopener">solscan</a><a href="https://dexscreener.com/solana/${esc(m.pool)}" target="_blank" rel="noopener">dexscreener</a>${m.links?.web?`<a href="${esc(m.links.web)}" target="_blank" rel="noopener">sitio web</a>`:''}${m.links?.x?`<a href="https://x.com/${esc(m.links.x)}" target="_blank" rel="noopener">X oficial</a>`:''}<a href="https://x.com/search?q=%24${encodeURIComponent(m.sym)}" target="_blank" rel="noopener">buscar en X</a></div>`}
+  <div style="margin-top:12px" class="bl"><span>${buys.toLocaleString('en-US')} buys</span><span>${sells.toLocaleString('en-US')} sells</span></div><div class="bar"><i style="width:${buys/(buys+sells||1)*100}%;background:var(--up)"></i></div>
+  <div class="bl"><span>${by.toLocaleString('en-US')} buyers</span><span>${sl.toLocaleString('en-US')} sellers</span></div><div class="bar"><i style="width:${by/(by+sl||1)*100}%;background:var(--up)"></i></div>
+  <div class="links"><a href="https://solscan.io/token/${esc(m.token)}" target="_blank" rel="noopener">solscan</a><a href="https://dexscreener.com/solana/${esc(m.pool)}" target="_blank" rel="noopener">dexscreener</a>${m.links?.web?`<a href="${esc(m.links.web)}" target="_blank" rel="noopener">website</a>`:''}${m.links?.x?`<a href="https://x.com/${esc(m.links.x)}" target="_blank" rel="noopener">official X</a>`:''}<a href="https://x.com/search?q=%24${encodeURIComponent(m.sym)}" target="_blank" rel="noopener">search on X</a></div>`}
  else{const K=S.candles,last=K.length?K[K.length-1].c:m.px,chAt=ms=>{const k=K.find(k=>k.t>=Date.now()-ms);return k?(last/k.o-1)*100:null};
   const tr=S.trades,b=tr.filter(t=>t.b).reduce((a,t)=>a+t.usd,0),s=tr.filter(t=>!t.b).reduce((a,t)=>a+t.usd,0);
-  h=`<h3>acerca de ${esc(m.sym)}</h3><div class="mut sm">${esc(m.name)} · perpetuo en Hyperliquid${m.dex?' ('+m.dex+')':''} · hasta ${m.maxLev}×</div>
+  h=`<h3>acerca of ${esc(m.sym)}</h3><div class="mut sm">${esc(m.name)} · perpetual on Hyperliquid${m.dex?' ('+m.dex+')':''} · up to ${m.maxLev}×</div>
   <div class="chg">${[['5m',chAt(3e5)],['1h',chAt(36e5)],['4h',chAt(144e5)],['24h',m.ch]].map(([k,v])=>`<div><div class="mut">${k}</div><div class="m ${v>=0?'up':'dn'}">${v==null?'—':pc(v)}</div></div>`).join('')}</div>
-  <div style="margin-top:12px" class="bl"><span class="m">${sh(b)} compras</span><span class="m">${sh(s)} ventas</span></div><div class="bar"><i style="width:${b/(b+s||1)*100}%;background:var(--up)"></i></div>
-  <div class="bl"><span>funding 1h</span><span class="m ${m.fund>=0?'up':'dn'}">${(m.fund*100).toFixed(4)}%</span></div><div class="bl" style="margin-top:4px"><span>interés abierto</span><span class="m">${sh(m.oi)}</span></div>
-  <div class="links"><a href="https://app.hyperliquid.xyz/trade/${encodeURIComponent(m.id)}" target="_blank" rel="noopener">hyperliquid</a><a href="https://x.com/search?q=%24${encodeURIComponent(m.sym)}" target="_blank" rel="noopener">buscar en X</a></div>`}
+  <div style="margin-top:12px" class="bl"><span class="m">${sh(b)} buys</span><span class="m">${sh(s)} sells</span></div><div class="bar"><i style="width:${b/(b+s||1)*100}%;background:var(--up)"></i></div>
+  <div class="bl"><span>1h funding</span><span class="m ${m.fund>=0?'up':'dn'}">${(m.fund*100).toFixed(4)}%</span></div><div class="bl" style="margin-top:4px"><span>open interest</span><span class="m">${sh(m.oi)}</span></div>
+  <div class="links"><a href="https://app.hyperliquid.xyz/trade/${encodeURIComponent(m.id)}" target="_blank" rel="noopener">hyperliquid</a><a href="https://x.com/search?q=%24${encodeURIComponent(m.sym)}" target="_blank" rel="noopener">search on X</a></div>`}
  $('#about').innerHTML=h}
 
 // ---------- dinero real (Hyperliquid) ----------
@@ -604,40 +604,40 @@ async function realSetup(){await libs();const eth=window.ethereum;const step=(n,
   const ag=await loadAgent();if(ag){try{const ex=await realInfo({type:'extraAgents',user:RS.addr});agentOk=ex.some(x=>x.address.toLowerCase()===ag.address.toLowerCase())}catch(e){agentOk=true}}
   if(REAL.builder){try{const mf=await realInfo({type:'maxBuilderFee',user:RS.addr,builder:REAL.builder.toLowerCase()});feeOk=mf>=REAL.fee}catch(e){}}}
  const accepted=store.get('real.terms',false);
- modal(`<h3>activar trading real</h3><div class="mut sm">operas desde tu propia wallet en Hyperliquid. northpoint nunca toca tu dinero ni puede retirarlo.</div>
+ modal(`<h3>enable real trading</h3><div class="mut sm">you trade from your own wallet on Hyperliquid. thrive never touches your money and can’t withdraw it.</div>
  <div class="steps">
- ${step(1,accepted,'acepto el <b>aviso de riesgo</b>: los perps con apalancamiento pueden perder todo el margen. confirmo que no resido en EE.UU. ni en otro país donde Hyperliquid no opera.',accepted?'':'<button class="btn" data-rs="terms">acepto</button>')}
- ${step(2,!!RS.addr,RS.addr?`wallet conectada <span class="m">${shortA(RS.addr)}</span>`:'conecta tu wallet (MetaMask, Rabby o similar)',RS.addr?'<button class="btn gh" data-rs="disconnect">cambiar</button>':(eth?'<button class="btn" data-rs="connect">conectar</button>':'<a class="btn" href="https://rabby.io" target="_blank" rel="noopener">instalar wallet</a>'))}
- ${step(3,acct>0,acct>0?`saldo en Hyperliquid: <b class="m">${usd(acct)}</b>`:'deposita USDC en Hyperliquid (mínimo 5 USDC, desde Arbitrum)',RS.addr?(acct>0?'':'<a class="btn gh" href="https://app.hyperliquid.xyz/portfolio" target="_blank" rel="noopener">depositar</a><button class="btn gh" data-rs="recheck">revisar</button>'):'')}
- ${step(4,agentOk,'autoriza una <b>llave de operación</b> para no firmar cada orden. puede abrir y cerrar posiciones, <b>no puede retirar</b>. se guarda solo en este navegador.',RS.addr&&acct>0&&!agentOk?'<button class="btn" data-rs="agent">autorizar</button>':'')}
- ${REAL.builder?step(5,feeOk,`autoriza la comisión de northpoint: <b>${REAL.maxFeeRate}</b> por operación`,RS.addr&&acct>0&&!feeOk?'<button class="btn" data-rs="fee">autorizar</button>':''):''}
+ ${step(1,accepted,'I accept the <b>risk disclosure</b>: leveraged perps can lose the entire margin. I confirm I do not reside in the US or any other country where Hyperliquid does not operate.',accepted?'':'<button class="btn" data-rs="terms">I accept</button>')}
+ ${step(2,!!RS.addr,RS.addr?`wallet connected <span class="m">${shortA(RS.addr)}</span>`:'connect your wallet (MetaMask, Rabby or similar)',RS.addr?'<button class="btn gh" data-rs="disconnect">change</button>':(eth?'<button class="btn" data-rs="connect">connect</button>':'<a class="btn" href="https://rabby.io" target="_blank" rel="noopener">install wallet</a>'))}
+ ${step(3,acct>0,acct>0?`Hyperliquid balance: <b class="m">${usd(acct)}</b>`:'deposit USDC on Hyperliquid (minimum 5 USDC, from Arbitrum)',RS.addr?(acct>0?'':'<a class="btn gh" href="https://app.hyperliquid.xyz/portfolio" target="_blank" rel="noopener">deposit</a><button class="btn gh" data-rs="recheck">check</button>'):'')}
+ ${step(4,agentOk,'authorize a <b>trading key</b> so you don’t sign every order. it can open and close positions, <b>it cannot withdraw</b>. it’s stored only in this browser.',RS.addr&&acct>0&&!agentOk?'<button class="btn" data-rs="agent">authorize</button>':'')}
+ ${REAL.builder?step(5,feeOk,`authorize the thrive fee: <b>${REAL.maxFeeRate}</b> per trade`,RS.addr&&acct>0&&!feeOk?'<button class="btn" data-rs="fee">authorize</button>':''):''}
  </div>
- <div style="display:flex;gap:8px"><button class="btn gh" data-mclose style="flex:1;justify-content:center">cerrar</button><button class="btn" data-rs="go" style="flex:1;justify-content:center" ${accepted&&RS.addr&&acct>0&&agentOk&&feeOk?'':'disabled'}>empezar en real</button></div>`)}
+ <div style="display:flex;gap:8px"><button class="btn gh" data-mclose style="flex:1;justify-content:center">close</button><button class="btn" data-rs="go" style="flex:1;justify-content:center" ${accepted&&RS.addr&&acct>0&&agentOk&&feeOk?'':'disabled'}>start trading real</button></div>`)}
 async function rsAction(k){const H=await libs(),eth=window.ethereum;
  try{
   if(k==='terms'){store.set('real.terms',true)}
   else if(k==='connect'){const [a]=await eth.request({method:'eth_requestAccounts'});RS.addr=a.toLowerCase();store.set('real.addr',RS.addr)}
   else if(k==='disconnect'){RS.addr=null;store.set('real.addr',null);setMode('paper')}
   else if(k==='agent'){const chain=await eth.request({method:'eth_chainId'}),ag=ethers.Wallet.createRandom(),n=Date.now();
-   const act=H.approveAgentAction(ag.address,'northpoint',isMain(),chain,n);toast('firma en tu wallet para autorizar la llave…');
+   const act=H.approveAgentAction(ag.address,'thrive',isMain(),chain,n);toast('sign in your wallet to authorize the key…');
    const sig=await H.signUserWithProvider(eth,RS.addr,act);const r=await H.post(REAL.net,act,n,sig);if(r.status!=='ok')throw new Error(typeof r.response==='string'?r.response:JSON.stringify(r.response));
-   store.set(agentKeyName(RS.addr),ag.privateKey);RS.agent=ag;toast('llave de operación autorizada')}
+   store.set(agentKeyName(RS.addr),ag.privateKey);RS.agent=ag;toast('trading key authorized')}
   else if(k==='fee'){const chain=await eth.request({method:'eth_chainId'}),n=Date.now();const act=H.approveBuilderFeeAction(REAL.builder,REAL.maxFeeRate,isMain(),chain,n);
-   const sig=await H.signUserWithProvider(eth,RS.addr,act);const r=await H.post(REAL.net,act,n,sig);if(r.status!=='ok')throw new Error(typeof r.response==='string'?r.response:JSON.stringify(r.response));toast('comisión autorizada')}
+   const sig=await H.signUserWithProvider(eth,RS.addr,act);const r=await H.post(REAL.net,act,n,sig);if(r.status!=='ok')throw new Error(typeof r.response==='string'?r.response:JSON.stringify(r.response));toast('fee authorized')}
   else if(k==='go'){$('#modal').classList.remove('on');setMode('real',true);return}
  }catch(e){toast('<span class="dn">'+esc(e.message||e)+'</span>')}
  realSetup()}
 function setMode(m,ready){if(m==='real'&&!ready){realSetup();return}RS.on=m==='real';$$('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.mode===m));
- $('#modeNote').innerHTML=RS.on?`<span class="up">modo real</span> · ${shortA(RS.addr)} · órdenes reales en Hyperliquid`:'modo práctica: precios reales, dinero simulado';
- $('#dep').textContent=RS.on?'depositar en hyperliquid':'depositar más';store.set('mode',RS.on?'real':'paper');if(RS.on)refreshReal();ticket();wallet();renderPos(true)}
+ $('#modeNote').innerHTML=RS.on?`<span class="up">real mode</span> · ${shortA(RS.addr)} · real orders on Hyperliquid`:'practice mode: real prices, simulated money';
+ $('#dep').textContent=RS.on?'deposit on hyperliquid':'deposit more';store.set('mode',RS.on?'real':'paper');if(RS.on)refreshReal();ticket();wallet();renderPos(true)}
 function fmtErr(r){if(r.status!=='ok')return typeof r.response==='string'?r.response:JSON.stringify(r.response);const st=r.response?.data?.statuses||[];const e=st.find(x=>x.error);return e?e.error:null}
 async function realOrder(){const m=S.cur,v=parseFloat($('#amt').value);if(!m||m.kind!=='perp'||!(v>0)||RS.busy)return;
- if(m.asset==null){toast('este mercado aún no está disponible en modo real');return}
+ if(m.asset==null){toast('this market isn’t available in real mode yet');return}
  const H=await libs(),ag=RS.agent||await loadAgent();if(!ag){realSetup();return}
  const isBuy=S.side==='buy',lev=Math.min(S.lev,m.maxLev),mid=S.mids[m.id]||m.px,sz=H.roundSz(v*lev/mid,m.szDec);
- if(sz<=0){toast('el monto es muy chico para este mercado');return}
- if(sz*mid<10){toast('Hyperliquid pide órdenes de al menos $10 de tamaño');return}
- RS.busy=true;$('#go').disabled=true;$('#go').textContent='enviando…';
+ if(sz<=0){toast('the amount is too small for this market');return}
+ if(sz*mid<10){toast('Hyperliquid requires orders of at least $10 in size');return}
+ RS.busy=true;$('#go').disabled=true;$('#go').textContent='sending…';
  try{let n=Date.now();const la=H.leverageAction(m.asset,lev,true);let r=await H.post(REAL.net,la,n,await H.signL1(ag,la,n,isMain()));if(r.status!=='ok')throw new Error(fmtErr(r));
   const lim=H.roundPx(isBuy?mid*(1+REAL.slippage):mid*(1-REAL.slippage),m.szDec),orders=[H.orderWire({asset:m.asset,isBuy,px:lim,sz,tif:'Ioc'})];
   const tp=parseFloat($('#tp').value),sl=parseFloat($('#sl').value);
@@ -645,45 +645,45 @@ async function realOrder(){const m=S.cur,v=parseFloat($('#amt').value);if(!m||m.
   if(sl>0)orders.push(H.orderWire({asset:m.asset,isBuy:!isBuy,px:H.roundPx(sl,m.szDec),sz,reduceOnly:true,trigger:{isMarket:true,px:H.roundPx(sl,m.szDec),tpsl:'sl'}}));
   const oa=H.orderAction(orders,REAL.builder?{b:REAL.builder,f:REAL.fee}:null,orders.length>1?'normalTpsl':'na');n=Date.now();
   r=await H.post(REAL.net,oa,n,await H.signL1(ag,oa,n,isMain()));const err=fmtErr(r);if(err)throw new Error(err);
-  const f=r.response.data.statuses[0].filled;toast(f?`<span class="up">ejecutada</span> ${isBuy?'long':'short'} ${esc(m.sym)} · ${f.totalSz} @ ${px(+f.avgPx)}`:'orden enviada');
+  const f=r.response.data.statuses[0].filled;toast(f?`<span class="up">filled</span> ${isBuy?'long':'short'} ${esc(m.sym)} · ${f.totalSz} @ ${px(+f.avgPx)}`:'order sent');
   $('#amt').value='';$('#tp').value='';$('#sl').value='';setTimeout(refreshReal,800)}
- catch(e){toast('<span class="dn">orden rechazada:</span> '+esc(e.message))}
+ catch(e){toast('<span class="dn">order rejected:</span> '+esc(e.message))}
  finally{RS.busy=false;ticket()}}
 async function realClose(coin){const H=await libs(),ag=RS.agent||await loadAgent();const p=(RS.state?.assetPositions||[]).find(x=>x.position.coin===coin)?.position;const m=allPerps().find(x=>x.id===coin);if(!p||!m||!ag)return;
  const isBuy=+p.szi<0,sz=Math.abs(+p.szi),mid=S.mids[coin]||m.px,lim=H.roundPx(isBuy?mid*(1+REAL.slippage):mid*(1-REAL.slippage),m.szDec);
  try{const oa=H.orderAction([H.orderWire({asset:m.asset,isBuy,px:lim,sz,reduceOnly:true,tif:'Ioc'})],REAL.builder?{b:REAL.builder,f:REAL.fee}:null),n=Date.now();
   const r=await H.post(REAL.net,oa,n,await H.signL1(ag,oa,n,isMain()));const err=fmtErr(r);if(err)throw new Error(err);toast(`<span class="up">cerraste</span> ${esc(m.sym)}`);setTimeout(refreshReal,800)}
- catch(e){toast('<span class="dn">no se pudo cerrar:</span> '+esc(e.message))}}
-async function realCancel(asset,oid){const H=await libs(),ag=RS.agent||await loadAgent();try{const a=H.cancelAction([{asset,oid}]),n=Date.now();const r=await H.post(REAL.net,a,n,await H.signL1(ag,a,n,isMain()));const err=fmtErr(r);if(err)throw new Error(err);toast('orden cancelada');setTimeout(refreshReal,600)}catch(e){toast('<span class="dn">'+esc(e.message)+'</span>')}}
+ catch(e){toast('<span class="dn">couldn’t close:</span> '+esc(e.message))}}
+async function realCancel(asset,oid){const H=await libs(),ag=RS.agent||await loadAgent();try{const a=H.cancelAction([{asset,oid}]),n=Date.now();const r=await H.post(REAL.net,a,n,await H.signL1(ag,a,n,isMain()));const err=fmtErr(r);if(err)throw new Error(err);toast('order canceled');setTimeout(refreshReal,600)}catch(e){toast('<span class="dn">'+esc(e.message)+'</span>')}}
 
 // ---------- perfiles ----------
 function closeProf(){$('#prof').classList.remove('on')}
 function openWallet(a){if(!a)return;if(/^0x[0-9a-fA-F]{40}$/.test(a))openProfile(a);else window.open('https://solscan.io/account/'+a,'_blank','noopener')}
 async function openProfile(a){a=a.toLowerCase();const el=$('#prof');el.classList.add('on');setMobile('chart');const r=lbRow(a);history.replaceState(null,'','#u/'+a);
- const fb=()=>`<button class="btn ${isFol(a)?'gh':''}" data-follow="${a}">${isFol(a)?'siguiendo':'seguir y recibir alertas'}</button>`;
- el.innerHTML=`<button class="back" data-back><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>volver al gráfico</button>
- <div class="phead"><img src="${avOf(a)}" alt=""><div><h2>${esc(nameOf(a))}</h2><div class="mut m sm">${a} · <a href="#" data-copy="${a}" style="color:#aab4ff">copiar</a></div></div><div style="margin-left:auto;display:flex;gap:8px">${fb()}<a class="btn gh" href="https://hypurrscan.io/address/${a}" target="_blank" rel="noopener">hypurrscan</a></div></div>
- <div class="kpis" id="pk"><div class="kpi"><div class="k">valor de cuenta</div><div class="v m" id="pkv">${r?sh(r.v):'…'}</div></div>${['day','week','month','allTime'].map((w,i)=>`<div class="kpi"><div class="k">PnL ${['24 h','7 días','30 días','histórico'][i]}</div><div class="v m ${r&&r[w][0]>=0?'up':'dn'}">${r?(r[w][0]>=0?'+':'')+sh(r[w][0]):'—'}</div><div class="sm m mut">${r?'ROI '+pc(r[w][1]*100):'fuera del top'}</div></div>`).join('')}</div>
- <div class="sect"><h3>posiciones abiertas <span class="dim" id="pposN"></span></h3><div class="scrollx" id="ppos"><div class="load">leyendo posiciones…</div></div></div>
- <div class="sect"><h3>operaciones recientes</h3><div class="scrollx" id="pfills"><div class="load">cargando…</div></div></div>`;
+ const fb=()=>`<button class="btn ${isFol(a)?'gh':''}" data-follow="${a}">${isFol(a)?'following':'follow and get alerts'}</button>`;
+ el.innerHTML=`<button class="back" data-back><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>back to chart</button>
+ <div class="phead"><img src="${avOf(a)}" alt=""><div><h2>${esc(nameOf(a))}</h2><div class="mut m sm">${a} · <a href="#" data-copy="${a}" style="color:#aab4ff">copy</a></div></div><div style="margin-left:auto;display:flex;gap:8px">${fb()}<a class="btn gh" href="https://hypurrscan.io/address/${a}" target="_blank" rel="noopener">hypurrscan</a></div></div>
+ <div class="kpis" id="pk"><div class="kpi"><div class="k">account value</div><div class="v m" id="pkv">${r?sh(r.v):'…'}</div></div>${['day','week','month','allTime'].map((w,i)=>`<div class="kpi"><div class="k">PnL ${['24h','7 days','30 days','all time'][i]}</div><div class="v m ${r&&r[w][0]>=0?'up':'dn'}">${r?(r[w][0]>=0?'+':'')+sh(r[w][0]):'—'}</div><div class="sm m mut">${r?'ROI '+pc(r[w][1]*100):'outside the top'}</div></div>`).join('')}</div>
+ <div class="sect"><h3>open positions <span class="dim" id="pposN"></span></h3><div class="scrollx" id="ppos"><div class="load">reading positions…</div></div></div>
+ <div class="sect"><h3>recent trades</h3><div class="scrollx" id="pfills"><div class="load">loading…</div></div></div>`;
  try{const [st,fl]=await Promise.all([hl({type:'clearinghouseState',user:a}),hl({type:'userFills',user:a})]);S.states[a]=st;
   $('#pkv').textContent=sh(+st.marginSummary.accountValue);
-  const P=st.assetPositions||[];$('#pposN').textContent=P.length+' · exposición '+sh(+st.marginSummary.totalNtlPos);
-  $('#ppos').innerHTML=P.length?`<table><thead><tr><th>mercado</th><th>lado</th><th>tamaño</th><th>entrada</th><th>PnL</th><th>apalanc.</th><th>liquidación</th></tr></thead><tbody>${P.map(({position:q})=>{const L=+q.szi>0,u=+q.unrealizedPnl,mk=allPerps().find(x=>x.id===q.coin)||{id:q.coin,sym:q.coin.replace(/^\w+:/,''),img:'https://app.hyperliquid.xyz/coins/'+encodeURIComponent(q.coin)+'.svg'};
-   return`<tr class="cl" data-m="perp|${esc(q.coin)}"><td><div class="who">${icon(mk,22)}${esc(mk.sym)}</div></td><td><span class="badge ${L?'b':'s'}">${L?'long':'short'}</span></td><td class="m">${sh(+q.positionValue)}</td><td class="m">${px(q.entryPx)}</td><td class="m ${u>=0?'up':'dn'}">${u>=0?'+':''}${sh(u)} <span class="sm">${pc(q.returnOnEquity*100)}</span></td><td class="m">${q.leverage?.value}×</td><td class="m dim">${q.liquidationPx?px(q.liquidationPx):'—'}</td></tr>`}).join('')}</tbody></table>`:'<div class="load">sin posiciones abiertas</div>';
-  $('#pfills').innerHTML=fl.length?`<table><thead><tr><th>mercado</th><th>acción</th><th>tamaño</th><th>precio</th><th>PnL cerrado</th><th>hora</th></tr></thead><tbody>${fl.slice(0,60).map(f=>{const cp=+f.closedPnl;return`<tr class="cl" data-m="perp|${esc(f.coin)}"><td>${esc(f.coin.replace(/^\w+:/,''))}</td><td><span class="badge ${f.side==='B'?'b':'s'}">${esc(dirEs(f.dir))}</span></td><td class="m">${sh(f.sz*f.px)}</td><td class="m">${px(f.px)}</td><td class="m ${cp>0?'up':cp<0?'dn':'dim'}">${cp?(cp>0?'+':'')+sh(cp):'—'}</td><td class="dim">${ago(f.time)}</td></tr>`}).join('')}</tbody></table>`:'<div class="load">sin operaciones</div>';
+  const P=st.assetPositions||[];$('#pposN').textContent=P.length+' · exposure '+sh(+st.marginSummary.totalNtlPos);
+  $('#ppos').innerHTML=P.length?`<table><thead><tr><th>market</th><th>side</th><th>size</th><th>entry</th><th>PnL</th><th>lev.</th><th>liquidation</th></tr></thead><tbody>${P.map(({position:q})=>{const L=+q.szi>0,u=+q.unrealizedPnl,mk=allPerps().find(x=>x.id===q.coin)||{id:q.coin,sym:q.coin.replace(/^\w+:/,''),img:'https://app.hyperliquid.xyz/coins/'+encodeURIComponent(q.coin)+'.svg'};
+   return`<tr class="cl" data-m="perp|${esc(q.coin)}"><td><div class="who">${icon(mk,22)}${esc(mk.sym)}</div></td><td><span class="badge ${L?'b':'s'}">${L?'long':'short'}</span></td><td class="m">${sh(+q.positionValue)}</td><td class="m">${px(q.entryPx)}</td><td class="m ${u>=0?'up':'dn'}">${u>=0?'+':''}${sh(u)} <span class="sm">${pc(q.returnOnEquity*100)}</span></td><td class="m">${q.leverage?.value}×</td><td class="m dim">${q.liquidationPx?px(q.liquidationPx):'—'}</td></tr>`}).join('')}</tbody></table>`:'<div class="load">no open positions</div>';
+  $('#pfills').innerHTML=fl.length?`<table><thead><tr><th>market</th><th>side</th><th>size</th><th>price</th><th>closed PnL</th><th>time</th></tr></thead><tbody>${fl.slice(0,60).map(f=>{const cp=+f.closedPnl;return`<tr class="cl" data-m="perp|${esc(f.coin)}"><td>${esc(f.coin.replace(/^\w+:/,''))}</td><td><span class="badge ${f.side==='B'?'b':'s'}">${esc(dirEs(f.dir))}</span></td><td class="m">${sh(f.sz*f.px)}</td><td class="m">${px(f.px)}</td><td class="m ${cp>0?'up':cp<0?'dn':'dim'}">${cp?(cp>0?'+':'')+sh(cp):'—'}</td><td class="dim">${ago(f.time)}</td></tr>`}).join('')}</tbody></table>`:'<div class="load">no trades</div>';
  }catch(e){$('#ppos').innerHTML=`<div class="err">${esc(e.message)}</div>`}}
-function toggleFollow(a){a=a.toLowerCase();const i=S.follow.indexOf(a);if(i>=0){S.follow.splice(i,1);toast('dejaste de seguir a '+esc(nameOf(a)))}else{S.follow.push(a);S.seen[a]=Date.now();store.set('seen',S.seen);toast(`ahora sigues a <b>${esc(nameOf(a))}</b>. te avisaremos de cada operación.`)}store.set('follow',S.follow);S.statesAt=0}
-function toggleFav(){const m=S.cur;const i=S.favs.findIndex(x=>x.id===m.id);if(i>=0){S.favs.splice(i,1);toast('quitado de favoritos')}else{S.favs.push({kind:m.kind,id:m.id,sym:m.sym,img:m.img,px:m.px,ch:m.ch,mc:m.mc,vol:m.vol,pool:m.pool});toast(`${esc(m.sym)} guardado en favoritos`)}store.set('favs',S.favs);head();if(S.filt[S.tab]==='fav')renderList()}
+function toggleFollow(a){a=a.toLowerCase();const i=S.follow.indexOf(a);if(i>=0){S.follow.splice(i,1);toast('you unfollowed '+esc(nameOf(a)))}else{S.follow.push(a);S.seen[a]=Date.now();store.set('seen',S.seen);toast(`you’re now following <b>${esc(nameOf(a))}</b>. we’ll alert you on every trade.`)}store.set('follow',S.follow);S.statesAt=0}
+function toggleFav(){const m=S.cur;const i=S.favs.findIndex(x=>x.id===m.id);if(i>=0){S.favs.splice(i,1);toast('removed from favorites')}else{S.favs.push({kind:m.kind,id:m.id,sym:m.sym,img:m.img,px:m.px,ch:m.ch,mc:m.mc,vol:m.vol,pool:m.pool});toast(`${esc(m.sym)} saved to favorites`)}store.set('favs',S.favs);head();if(S.filt[S.tab]==='fav')renderList()}
 
 // ---------- alertas ----------
 async function pollAlerts(){const L=S.follow.filter(a=>a.startsWith('0x'));for(const a of L){try{const fl=await hl({type:'userFills',user:a});const since=S.seen[a]||Date.now()-36e5,nw=fl.filter(f=>f.time>since).slice(0,5);
   if(fl.length)S.seen[a]=Math.max(since,fl[0].time);nw.reverse().forEach(f=>{const n={a,t:f.time,txt:`${dirEs(f.dir)} ${f.coin.replace(/^\w+:/,'')} · ${sh(f.sz*f.px)} @ ${px(f.px)}`,new:1};S.notes.unshift(n);toast(`<img class="av" src="${avOf(a)}" style="width:18px;height:18px" alt=""><b>${esc(nameOf(a))}</b> ${esc(n.txt)}`);
-   if(window.Notification&&Notification.permission==='granted'&&document.hidden)try{new Notification('northpoint · '+nameOf(a),{body:n.txt,icon:avOf(a)})}catch(e){}})}catch(e){}}
+   if(window.Notification&&Notification.permission==='granted'&&document.hidden)try{new Notification('thrive · '+nameOf(a),{body:n.txt,icon:avOf(a)})}catch(e){}})}catch(e){}}
  if(S.notes.length>60)S.notes.length=60;store.set('notif',S.notes);store.set('seen',S.seen);bell()}
 function bell(){const n=S.notes.filter(x=>x.new).length,b=$('#bellN');b.textContent=n;b.classList.toggle('on',n>0)}
 function renderDrop(){const canN=window.Notification&&Notification.permission==='default';
- $('#drop').innerHTML=`<div class="h"><b>alertas</b><span class="dim">${S.follow.filter(a=>a.startsWith('0x')).length} traders seguidos</span></div>${canN?'<div class="ni" data-notif><div class="sm" style="color:#aab4ff">activar notificaciones del navegador</div></div>':''}`+(S.notes.length?S.notes.slice(0,40).map(n=>`<div class="ni" data-u="${n.a}"><img class="av" src="${avOf(n.a)}" alt=""><div><div><b>${esc(nameOf(n.a))}</b> <span class="dim sm">hace ${ago(n.t)}</span></div><div class="sm" style="color:#c9cad3">${esc(n.txt)}</div></div></div>`).join(''):'<div class="load">sigue a traders desde la clasificación y aquí verás cada operación que hagan, en vivo.</div>')}
+ $('#drop').innerHTML=`<div class="h"><b>alerts</b><span class="dim">${S.follow.filter(a=>a.startsWith('0x')).length} traders followed</span></div>${canN?'<div class="ni" data-notif><div class="sm" style="color:#aab4ff">enable browser notifications</div></div>':''}`+(S.notes.length?S.notes.slice(0,40).map(n=>`<div class="ni" data-u="${n.a}"><img class="av" src="${avOf(n.a)}" alt=""><div><div><b>${esc(nameOf(n.a))}</b> <span class="dim sm">${ago(n.t)} ago</span></div><div class="sm" style="color:#c9cad3">${esc(n.txt)}</div></div></div>`).join(''):'<div class="load">follow traders from the leaderboard and you’ll see every trade they make here, in real time.</div>')}
 
 // ---------- búsqueda ----------
 let qT=0,qGen=0;
@@ -691,21 +691,21 @@ async function search(q){const g=++qGen,el=$('#sres');q=q.trim();if(!q){el.class
  const ql=q.toLowerCase(),P=allPerps().filter(m=>m.sym.toLowerCase().includes(ql)||m.name.toLowerCase().includes(ql)).sort((a,b)=>b.vol-a.vol).slice(0,8);
  const T=(S.lb?.rows||[]).filter(r=>r.a.includes(ql)||(r.n||'').toLowerCase().includes(ql)).slice(0,5);
  const addr=/^0x[0-9a-f]{40}$/i.test(q)?q.toLowerCase():null,sol=/^[1-9A-HJ-NP-Za-km-z]{32,44}$/.test(q)?q:null;
- const html=k=>`${addr?`<div class="h">dirección</div><div class="r" data-u="${addr}"><img class="av" src="${avOf(addr)}" alt="">ver perfil de ${shortA(addr)}</div>`:''}${P.length?'<div class="h">perps, índices y acciones</div>'+P.map(m=>`<div class="r" data-m="perp|${esc(m.id)}">${icon(m,22)}<b>${esc(m.sym)}</b><span class="dim">${esc(m.name)}</span><span class="m" style="margin-left:auto">$${px(m.px)}</span></div>`).join(''):''}${T.length?'<div class="h">traders</div>'+T.map(r=>`<div class="r" data-u="${r.a}"><img class="av" src="${avOf(r.a)}" alt="">${esc(r.n||shortA(r.a))}<span class="m ${r.month[0]>=0?'up':'dn'}" style="margin-left:auto">${sh(r.month[0])} 30d</span></div>`).join(''):''}${k}`;
- el.innerHTML=html(q.length<2||addr?'':'<div class="h">tokens de solana</div><div class="load">buscando…</div>');el.classList.add('on');
+ const html=k=>`${addr?`<div class="h">address</div><div class="r" data-u="${addr}"><img class="av" src="${avOf(addr)}" alt="">view profile de ${shortA(addr)}</div>`:''}${P.length?'<div class="h">perps, indices & stocks</div>'+P.map(m=>`<div class="r" data-m="perp|${esc(m.id)}">${icon(m,22)}<b>${esc(m.sym)}</b><span class="dim">${esc(m.name)}</span><span class="m" style="margin-left:auto">$${px(m.px)}</span></div>`).join(''):''}${T.length?'<div class="h">traders</div>'+T.map(r=>`<div class="r" data-u="${r.a}"><img class="av" src="${avOf(r.a)}" alt="">${esc(r.n||shortA(r.a))}<span class="m ${r.month[0]>=0?'up':'dn'}" style="margin-left:auto">${sh(r.month[0])} 30d</span></div>`).join(''):''}${k}`;
+ el.innerHTML=html(q.length<2||addr?'':'<div class="h">solana tokens</div><div class="load">searching…</div>');el.classList.add('on');
  if(addr||q.length<2)return;
  try{const d=await gt('/search/pools?query='+encodeURIComponent(q)+'&network=solana&include=base_token,dex',60000);if(g!==qGen)return;const L=(d.data||[]).map(p=>tokObj(p,d.included)).filter(t=>t.px>0).slice(0,8);
-  S.tokens.search=L;el.innerHTML=html(L.length?'<div class="h">tokens de solana</div>'+L.map(t=>`<div class="r" data-m="tok|${esc(t.id)}">${icon(t,22)}<b>${esc(t.sym)}</b><span class="dim">${sh(t.mc)} MC</span><span class="m" style="margin-left:auto">$${px(t.px)}</span></div>`).join(''):sol?'':'<div class="h">tokens de solana</div><div class="load">sin coincidencias</div>')}catch(e){if(g===qGen)el.innerHTML=html(`<div class="err">${esc(e.message)}</div>`)}}
+  S.tokens.search=L;el.innerHTML=html(L.length?'<div class="h">solana tokens</div>'+L.map(t=>`<div class="r" data-m="tok|${esc(t.id)}">${icon(t,22)}<b>${esc(t.sym)}</b><span class="dim">${sh(t.mc)} MC</span><span class="m" style="margin-left:auto">$${px(t.px)}</span></div>`).join(''):sol?'':'<div class="h">solana tokens</div><div class="load">no matches</div>')}catch(e){if(g===qGen)el.innerHTML=html(`<div class="err">${esc(e.message)}</div>`)}}
 
 // ---------- varios ----------
 function foot(){const L=['BTC','ETH','SOL','HYPE','xyz:XYZ100','xyz:SP500','xyz:GOLD'].map(id=>allPerps().find(m=>m.id===id)).filter(Boolean);
- $('#foot').innerHTML=L.map(m=>`<span style="cursor:pointer" data-m="perp|${esc(m.id)}"><b style="color:var(--tx)">${esc(m.sym==='XYZ100'?'NASDAQ':m.sym==='SP500'?'S&P 500':m.sym==='GOLD'?'ORO':m.sym)}</b> <span class="m">${px(m.px)}</span> <span class="m ${m.ch>=0?'up':'dn'}">${pc(m.ch)}</span></span>`).join('')+`<span class="st ${wsOk?'':'off'}"><i></i>${wsOk?'conectado':'reconectando'}</span><span class="dim">datos: hyperliquid · geckoterminal</span>`}
+ $('#foot').innerHTML=L.map(m=>`<span style="cursor:pointer" data-m="perp|${esc(m.id)}"><b style="color:var(--tx)">${esc(m.sym==='XYZ100'?'NASDAQ':m.sym==='SP500'?'S&P 500':m.sym==='GOLD'?'ORO':m.sym)}</b> <span class="m">${px(m.px)}</span> <span class="m ${m.ch>=0?'up':'dn'}">${pc(m.ch)}</span></span>`).join('')+`<span class="st ${wsOk?'':'off'}"><i></i>${wsOk?'connected':'reconnecting'}</span><span class="dim">data: hyperliquid · geckoterminal</span>`}
 function toast(h){const t=document.createElement('div');t.className='toast';t.innerHTML=h;$('#toasts').appendChild(t);setTimeout(()=>t.remove(),3800)}
 function setMobile(v){$('#main').dataset.v=v;$$('#mtabs button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));if(v==='chart')setTimeout(draw,30)}
 function modal(h){$('#modalIn').innerHTML=h;$('#modal').classList.add('on')}
-function depositModal(){modal(`<h3>depositar (práctica)</h3><div class="mut sm" style="margin-bottom:14px">agrega saldo simulado para practicar con precios reales. nada de esto es dinero real.</div><div class="pre" style="grid-template-columns:repeat(3,1fr)">${[1000,5000,10000].map(v=>`<button data-dep="${v}">+$${v.toLocaleString('en-US')}</button>`).join('')}</div><div style="display:flex;gap:8px;margin-top:14px"><button class="btn gh" data-reset style="flex:1;justify-content:center">reiniciar cuenta</button><button class="btn" data-mclose style="flex:1;justify-content:center">listo</button></div>`)}
+function depositModal(){modal(`<h3>deposit (practice)</h3><div class="mut sm" style="margin-bottom:14px">add simulated balance to practice with real prices. none of this is real money.</div><div class="pre" style="grid-template-columns:repeat(3,1fr)">${[1000,5000,10000].map(v=>`<button data-dep="${v}">+$${v.toLocaleString('en-US')}</button>`).join('')}</div><div style="display:flex;gap:8px;margin-top:14px"><button class="btn gh" data-reset style="flex:1;justify-content:center">reset account</button><button class="btn" data-mclose style="flex:1;justify-content:center">done</button></div>`)}
 function meModal(){const P=S.paper,tot=P.hist.reduce((a,h)=>a+h.pnl,0),wins=P.hist.filter(h=>h.pnl>0).length;
- modal(`<div class="phead" style="margin-bottom:10px"><img src="av/09.jpg" alt=""><div><h2>tu cuenta</h2><div class="mut sm">modo práctica · se guarda en este navegador</div></div></div><div class="kpis" style="grid-template-columns:repeat(2,1fr)"><div class="kpi"><div class="k">PnL realizado</div><div class="v m ${tot>=0?'up':'dn'}">${tot>=0?'+':''}${usd(tot)}</div></div><div class="kpi"><div class="k">acierto</div><div class="v m">${P.hist.length?Math.round(wins/P.hist.length*100)+'%':'—'}</div></div><div class="kpi"><div class="k">operaciones cerradas</div><div class="v m">${P.hist.length}</div></div><div class="kpi"><div class="k">traders seguidos</div><div class="v m">${S.follow.filter(a=>a.startsWith('0x')).length}</div></div></div><button class="btn" data-mclose style="width:100%;justify-content:center">cerrar</button>`)}
+ modal(`<div class="phead" style="margin-bottom:10px"><img src="av/09.jpg" alt=""><div><h2>your account</h2><div class="mut sm">practice mode · saved in this browser</div></div></div><div class="kpis" style="grid-template-columns:repeat(2,1fr)"><div class="kpi"><div class="k">realized PnL</div><div class="v m ${tot>=0?'up':'dn'}">${tot>=0?'+':''}${usd(tot)}</div></div><div class="kpi"><div class="k">win rate</div><div class="v m">${P.hist.length?Math.round(wins/P.hist.length*100)+'%':'—'}</div></div><div class="kpi"><div class="k">closed trades</div><div class="v m">${P.hist.length}</div></div><div class="kpi"><div class="k">traders followed</div><div class="v m">${S.follow.filter(a=>a.startsWith('0x')).length}</div></div></div><button class="btn" data-mclose style="width:100%;justify-content:center">close</button>`)}
 async function openM(kind,id){let m;if(kind==='perp')m=allPerps().find(x=>x.id===id);else{for(const L of Object.values(S.tokens)){m=L.find(t=>t.id===id);if(m)break}if(!m)m=S.favs.find(x=>x.id===id&&x.kind==='tok')&&null;
  if(!m){try{const d=await gt(`/networks/solana/pools/${id}?include=base_token,dex`,30000);m=tokObj(d.data,d.included)}catch(e){toast(esc(e.message));return}}}
  if(m){select(m);setMobile('chart')}}
@@ -722,8 +722,8 @@ document.addEventListener('click',e=>{const T=e.target;
  if(!T.closest('#drop'))$('#drop').classList.remove('on');
  const ni=T.closest('.ni[data-u]');if(ni){$('#drop').classList.remove('on');openProfile(ni.dataset.u);return}
  if(T.closest('a[href]')&&!T.closest('[data-copy]'))return;
- const fo=T.closest('[data-follow]');if(fo){toggleFollow(fo.dataset.follow);const on=isFol(fo.dataset.follow);fo.classList.toggle('gh',on);fo.textContent=on?'siguiendo':'seguir y recibir alertas';return}
- const cp=T.closest('[data-copy]');if(cp){e.preventDefault();navigator.clipboard?.writeText(cp.dataset.copy).then(()=>toast('dirección copiada'));return}
+ const fo=T.closest('[data-follow]');if(fo){toggleFollow(fo.dataset.follow);const on=isFol(fo.dataset.follow);fo.classList.toggle('gh',on);fo.textContent=on?'following':'follow and get alerts';return}
+ const cp=T.closest('[data-copy]');if(cp){e.preventDefault();navigator.clipboard?.writeText(cp.dataset.copy).then(()=>toast('address copied'));return}
  const cl=T.closest('[data-close]');if(cl){closePos(+cl.dataset.close);return}
  const mo=T.closest('[data-m]');if(mo){const i=mo.dataset.m.indexOf('|');openM(mo.dataset.m.slice(0,i),mo.dataset.m.slice(i+1));return}
  const op=T.closest('[data-open]');if(op){const i=op.dataset.open.indexOf('|');openM(op.dataset.open.slice(0,i),op.dataset.open.slice(i+1));return}
@@ -737,13 +737,13 @@ document.addEventListener('click',e=>{const T=e.target;
  const tf=T.closest('#tf button');if(tf){S.tf=tf.dataset.i;$$('#tf button').forEach(b=>b.classList.toggle('on',b===tf));loadCandles(selGen);return}
  const md=T.closest('[data-mode]');if(md){setMode(md.dataset.mode);return}
  const rs=T.closest('[data-rs]');if(rs){rsAction(rs.dataset.rs);return}
- const rc=T.closest('[data-rclose]');if(rc){if(confirm('¿cerrar esta posición REAL a precio de mercado?'))realClose(rc.dataset.rclose);return}
+ const rc=T.closest('[data-rclose]');if(rc){if(confirm('close this REAL position at market price?'))realClose(rc.dataset.rclose);return}
  const rk=T.closest('[data-rcancel]');if(rk){const[a,o]=rk.dataset.rcancel.split('|');realCancel(+a,+o);return}
  if(T.closest('[data-myprof]')){e.preventDefault();openProfile(RS.addr);return}
  if(T.closest('#dep')){if(RS.on){window.open('https://app.hyperliquid.xyz/portfolio','_blank','noopener');return}depositModal();return}
  if(T.closest('#meBtn')){meModal();return}
- const dp=T.closest('[data-dep]');if(dp){S.paper.cash+=+dp.dataset.dep;savePaper();wallet();ticket();toast(`depósito de práctica: +$${(+dp.dataset.dep).toLocaleString('en-US')}`);return}
- if(T.closest('[data-reset]')){if(confirm('¿reiniciar tu cuenta de práctica? se borran tus posiciones e historial.')){S.paper={cash:10000,pos:[],hist:[]};savePaper();wallet();renderPos(true);ticket();draw();$('#modal').classList.remove('on')}return}
+ const dp=T.closest('[data-dep]');if(dp){S.paper.cash+=+dp.dataset.dep;savePaper();wallet();ticket();toast(`practice deposit: +$${(+dp.dataset.dep).toLocaleString('en-US')}`);return}
+ if(T.closest('[data-reset]')){if(confirm('reset your practice account? your positions and history will be deleted.')){S.paper={cash:10000,pos:[],hist:[]};savePaper();wallet();renderPos(true);ticket();draw();$('#modal').classList.remove('on')}return}
  if(T.closest('[data-mclose]')||T.id==='modal'){$('#modal').classList.remove('on');return}
  const mt=T.closest('#mtabs button');if(mt){setMobile(mt.dataset.v);return}
 });
@@ -754,11 +754,11 @@ $('#q').addEventListener('input',e=>{clearTimeout(qT);qT=setTimeout(()=>search(e
 $('#q').addEventListener('keydown',e=>{if(e.key==='Enter'){const f=$('#sres .r');if(f)f.click()}if(e.key==='Escape'){$('#sres').classList.remove('on');e.target.blur()}});
 addEventListener('keydown',e=>{if(e.key==='/'&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){e.preventDefault();$('#q').focus()}});
 addEventListener('resize',draw);
-setInterval(()=>{$('#clock').textContent=new Date().toTimeString().slice(0,8)+' hora local'},1000);
+setInterval(()=>{$('#clock').textContent=new Date().toTimeString().slice(0,8)+' local time'},1000);
 
 // ---------- arranque ----------
 (async function boot(){wallet();renderPos(true);bell();renderFilt();
- try{await loadPerps()}catch(e){$('#list').innerHTML=`<div class="err">no se pudo conectar con Hyperliquid: ${esc(e.message)}</div>`}
+ try{await loadPerps()}catch(e){$('#list').innerHTML=`<div class="err">couldn’t connect to Hyperliquid: ${esc(e.message)}</div>`}
  wsOpen();foot();const lbP=loadLB();
  const h=decodeURIComponent(location.hash.slice(1)),last=store.get('last',null);
  renderList();
