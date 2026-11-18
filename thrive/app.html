@@ -768,6 +768,27 @@ async function refreshStates(){if(Date.now()-S.statesAt<60000)return;S.statesAt=
  const top=[...S.lb.rows].sort((a,b)=>b.month[0]-a.month[0]).slice(0,30).map(r=>r.a),fol=S.follow.filter(a=>a.startsWith('0x'));
  const list=[...new Set([...fol,...top])].slice(0,40);let i=0;
  await Promise.all(Array.from({length:5},async()=>{while(i<list.length){const a=list[i++];try{S.states[a]=await hl({type:'clearinghouseState',user:a},0)}catch(e){}}}))}
+const DST={};
+async function dexState(a,dex,prio=2){const k=dex||'',B=DST[k]||(DST[k]={}),c=B[a];if(c&&Date.now()-c.t<60000)return c.st;
+ const st=await hl(dex?{type:'clearinghouseState',user:a,dex}:{type:'clearinghouseState',user:a},prio);B[a]={t:Date.now(),st};if(!dex)S.states[a]=st;return st}
+async function loadTopPositions(g){const m=S.cur,dex=m.dex||'';$('#lpT').textContent='top trader positions';$('#lpN').textContent='';$('#lpR').innerHTML='<span class="dim">top traders of the month, who you follow and who is trading this market now</span>';
+ $('#lp').innerHTML='<div class="load">reading real positions…</div>';if(!S.lb)await loadLB();
+ for(let k=0;k<12&&!S.trades.length&&g===selGen;k++)await new Promise(r=>setTimeout(r,250));if(g!==selGen)return;
+ const top=[...S.lb.rows].sort((a,b)=>b.month[0]-a.month[0]).slice(0,40).map(r=>r.a),fol=S.follow.filter(a=>/^0x[0-9a-f]{40}$/.test(a));
+ const live=[...new Set([...S.trades].filter(t=>t.u).sort((a,b)=>b.usd-a.usd).map(t=>String(t.u).toLowerCase()))].slice(0,45);
+ const pool=[...new Set([...fol,...live,...top])].slice(0,100),liveSet=new Set(live),R=new Map();let done=0,last=0;
+ const draw2=fin=>{if(g!==selGen)return;const L=[...R.entries()].map(([a,q])=>({a,q})).sort((x,y)=>Math.abs(y.q.positionValue)-Math.abs(x.q.positionValue));
+  $('#lpN').textContent=fin?`(${L.length})`:`(${L.length}) · checking ${done}/${pool.length}`;
+  $('#lp').innerHTML=L.length?`<table><thead><tr><th>trader</th><th>side</th><th>position</th><th>entry</th><th>unrealized PnL</th><th>lev.</th><th>liquidation</th></tr></thead><tbody>${L.map(({a,q})=>{const Lg=+q.szi>0,u=+q.unrealizedPnl;
+   return`<tr class="cl" data-u="${a}"><td><div class="who"><img class="av" src="${avOf(a)}" alt=""><span class="nm">${esc(nameOf(a))}</span>${isFol(a)?'<span class="fol">following</span>':liveSet.has(a)?'<span class="fol" style="color:#4ade80">trading now</span>':''}</div></td><td><span class="badge ${Lg?'b':'s'}">${Lg?'long':'short'}</span></td><td class="m">${sh(+q.positionValue)}<div class="dim sm">${Math.abs(+q.szi)} ${esc(m.sym)}</div></td><td class="m">${px(q.entryPx)}</td><td class="m ${u>=0?'up':'dn'}">${u>=0?'+':''}${sh(u)}<div class="sm">${pc(q.returnOnEquity*100)}</div></td><td class="m">${q.leverage?.value||'—'}×</td><td class="m dim">${q.liquidationPx?px(q.liquidationPx):'—'}</td></tr>`}).join('')}</tbody></table>`
+   :fin?'<div class="load">none of these traders has an open position in this market right now.</div>':`<div class="load">reading real positions… ${done}/${pool.length}</div>`};
+ let i=0;await Promise.all(Array.from({length:6},async()=>{while(i<pool.length){if(g!==selGen)return;const a=pool[i++];try{const st=await dexState(a,dex,2);(st.assetPositions||[]).forEach(p=>{if(p.position.coin===m.id&&+p.position.szi)R.set(a,p.position)})}catch(e){}done++;if(Date.now()-last>500){last=Date.now();draw2(false)}}}));
+ draw2(true)}
+
+async function refreshStates(){if(Date.now()-S.statesAt<60000)return;S.statesAt=Date.now();if(!S.lb)await loadLB();
+ const top=[...S.lb.rows].sort((a,b)=>b.month[0]-a.month[0]).slice(0,30).map(r=>r.a),fol=S.follow.filter(a=>a.startsWith('0x'));
+ const list=[...new Set([...fol,...top])].slice(0,40);let i=0;
+ await Promise.all(Array.from({length:5},async()=>{while(i<list.length){const a=list[i++];try{S.states[a]=await hl({type:'clearinghouseState',user:a},0)}catch(e){}}}))}
 async function loadTopPositions(g){const m=S.cur;$('#lpT').textContent='top trader positions';$('#lpN').textContent='';$('#lpR').innerHTML='<span class="dim">top 30 of the month + who you follow</span>';
  if(!Object.keys(S.states).length)$('#lp').innerHTML='<div class="load">reading real positions…</div>';await refreshStates();if(g!==selGen)return;
  const R=[];Object.entries(S.states).forEach(([a,st])=>{(st.assetPositions||[]).forEach(p=>{if(p.position.coin===m.id)R.push({a,q:p.position})})});
