@@ -34,6 +34,19 @@ svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke
 .sres .h{padding:8px 12px 4px;color:var(--dim);font-size:10.5px;text-transform:uppercase;letter-spacing:.06em}
 .sres .r{display:flex;align-items:center;gap:9px;padding:7px 12px;cursor:pointer}
 .sres .r:hover{background:rgba(203,208,235,.06)}
+.mode{display:flex;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:2px;font-size:11px}
+.mode button{padding:4px 9px;border-radius:7px;color:var(--mut)}
+.mode button.on{background:#1c1b28;color:var(--tx)}
+.mode button[data-mode=real].on{background:rgba(34,197,94,.14);color:var(--up)}
+.steps{display:grid;gap:10px;margin:14px 0}
+.step{display:flex;gap:10px;align-items:flex-start;padding:10px;border-radius:12px;background:var(--card);border:1px solid var(--line)}
+.step i{width:22px;height:22px;border-radius:50%;flex:none;display:grid;place-items:center;font-style:normal;font-size:11px;background:#22212d}
+.step.ok i{background:var(--up);color:#04130a}
+.step .t{flex:1}
+.step .btn{height:28px;font-size:12px}
+.tpsl{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.tpsl input{height:32px;border-radius:8px;background:var(--card);border:1px solid var(--line);padding:0 8px;font-family:'Geist Mono',monospace;font-size:11.5px;min-width:0}
+.realtag{font-size:10px;color:var(--up);border:1px solid rgba(34,197,94,.35);border-radius:6px;padding:1px 5px;margin-left:6px}
 .wallet{display:flex;gap:14px;align-items:center;text-align:right;font-size:11px}
 .wallet a{color:var(--acc);cursor:pointer}
 .me{width:28px;height:28px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px var(--acc);cursor:pointer}
@@ -126,6 +139,7 @@ tr.cl:hover td{background:rgba(203,208,235,.03)}
 .sect .scrollx{overflow-x:auto}
 .btn{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 14px;border-radius:999px;background:var(--acc);color:#fff;font-weight:500}
 .btn.gh{background:var(--card2);border:1px solid var(--line2);color:var(--tx)}
+.btn:disabled{opacity:.35;cursor:default}
 .right{border-left:1px solid var(--line);overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:12px;scrollbar-width:none}
 .bs{display:grid;grid-template-columns:1fr 1fr;gap:6px}
 .bs button{height:34px;border-radius:9px;background:var(--card);color:var(--mut);font-weight:500;font-size:13px}
@@ -188,6 +202,7 @@ tr.cl:hover td{background:rgba(203,208,235,.03)}
  .searchw{width:auto;flex:1;margin:0}
  .wallet>div:not(:first-child){display:none}
  .live,.top .kbd,.logo span{display:none}
+ .mode button{padding:4px 6px}
  .stats{display:none}
  .foot{display:none}
  .mtabs{display:flex;border-top:1px solid var(--line);background:#08070f}
@@ -208,6 +223,7 @@ tr.cl:hover td{background:rgba(203,208,235,.03)}
       <div class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" placeholder="busca tokens, perps o traders (0x…)" autocomplete="off"><span class="kbd">/</span></div>
       <div class="sres" id="sres"></div>
     </div>
+    <div class="mode" id="mode"><button data-mode="paper" class="on">práctica</button><button data-mode="real">real</button></div>
     <div class="wallet">
       <div><div class="m" id="cash"></div><a id="dep">depositar más</a></div>
       <div><div class="m" id="pv">$0.00</div><div class="dim">posiciones</div></div>
@@ -261,9 +277,10 @@ tr.cl:hover td{background:rgba(203,208,235,.03)}
       <div class="amt"><span class="mut m" style="font-size:22px">$</span><input id="amt" inputmode="decimal" placeholder="0"><span class="dim sm" id="amtL">monto</span></div>
       <div class="pre"><button data-p="10">$10</button><button data-p="100">$100</button><button data-p="500">$500</button><button data-p="1000">$1000</button></div>
       <div class="lev" id="levw"><span>apalancamiento</span><input type="range" id="lev" min="1" max="20" value="5"><b class="m" id="levV">5×</b></div>
+      <div class="tpsl" id="tpsl" style="display:none"><input id="tp" inputmode="decimal" placeholder="take profit (precio)"><input id="sl" inputmode="decimal" placeholder="stop loss (precio)"></div>
       <div class="est" id="est"></div>
       <button class="go buy" id="go" disabled>elige un monto</button>
-      <div class="dim sm" style="text-align:center">modo práctica: precios reales, dinero simulado</div>
+      <div class="dim sm" style="text-align:center" id="modeNote">modo práctica: precios reales, dinero simulado</div>
       <div class="box" id="about"></div>
       <div class="box"><h3>tus posiciones<span class="ptabs"><button data-pt="open" class="on">abiertas</button><button data-pt="closed">cerradas</button></span></h3><div id="mypos"></div></div>
     </aside>
@@ -281,6 +298,11 @@ tr.cl:hover td{background:rgba(203,208,235,.03)}
 
 <script>
 'use strict';
+// ===== CONFIGURACIÓN DE DINERO REAL =====
+// builder = la wallet de NorthPoint que cobra la comisión en cada orden real (necesita ≥100 USDC en su cuenta de perps de Hyperliquid).
+// fee en décimas de punto base: 50 = 0.05 %. maxFeeRate es lo que el usuario autoriza una vez (debe ser ≥ fee).
+const REAL={net:'main',builder:'',fee:50,maxFeeRate:'0.05%',slippage:0.01};
+if(new URLSearchParams(location.search).get('net')==='test')REAL.net='test'; // red de pruebas para verificar firmas
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const HL='https://api.hyperliquid.xyz/info',GT='https://api.geckoterminal.com/api/v2';
 const LB_URLS=['https://studioamr.github.io/northpoint-social/data/leaderboard.json','data/leaderboard.json'];
@@ -338,11 +360,12 @@ function icon(m,size){const id=++icoN;let inner,tag='';const sp=SPECIAL[m.id];
 // ---------- mercados ----------
 const IDX=['XYZ100','SP500','JP225','KR200','EWY','EWJ','EWZ','XLE','URNM','DRAM'],COMM=['GOLD','SILVER','CL','BRENTOIL','COPPER','NATGAS','PLATINUM','PALLADIUM'],FX=['JPY','EUR'];
 const NAMES={XYZ100:'nasdaq 100',SP500:'s&p 500',JP225:'nikkei 225',KR200:'kospi 200',GOLD:'oro',SILVER:'plata',CL:'petróleo WTI',BRENTOIL:'petróleo brent',COPPER:'cobre',NATGAS:'gas natural',PLATINUM:'platino',PALLADIUM:'paladio',JPY:'yen japonés',EUR:'euro',NVDA:'nvidia',TSLA:'tesla',AAPL:'apple',MSFT:'microsoft',GOOGL:'alphabet (google)',AMZN:'amazon',META:'meta',AMD:'amd',NFLX:'netflix',COIN:'coinbase',HOOD:'robinhood',PLTR:'palantir',MSTR:'strategy',ORCL:'oracle',INTC:'intel',TSM:'tsmc',BABA:'alibaba',GME:'gamestop',COST:'costco',LLY:'eli lilly',MU:'micron',CRCL:'circle',RIVN:'rivian',SMSN:'samsung',SOFTBANK:'softbank',HYUNDAI:'hyundai',RKLB:'rocket lab',DKNG:'draftkings',HIMS:'hims & hers',MRVL:'marvell',BTC:'bitcoin',ETH:'ethereum',SOL:'solana',HYPE:'hyperliquid'};
-function perpObj(u,c,dex){const id=u.name,sym=id.replace(/^\w+:/,''),p=+c.markPx||+c.midPx||0,prev=+c.prevDayPx||p;
- return{kind:'perp',dex,id,sym,name:NAMES[sym]||(dex?sym.toLowerCase():sym+' perpetuo'),img:'https://app.hyperliquid.xyz/coins/'+encodeURIComponent(id)+'.svg',px:p,prev,ch:prev?(p/prev-1)*100:0,vol:+c.dayNtlVlm||0,oi:(+c.openInterest||0)*p,fund:+c.funding||0,maxLev:u.maxLeverage||10}}
-async function loadPerps(){const [m,x]=await Promise.all([hl({type:'metaAndAssetCtxs'}),hl({type:'metaAndAssetCtxs',dex:'xyz'}).catch(()=>[{universe:[]},[]])]);
- S.perps=m[0].universe.map((u,i)=>u.isDelisted?null:perpObj(u,m[1][i],'')).filter(p=>p&&p.px>0);
- S.xyz=x[0].universe.map((u,i)=>u.isDelisted?null:perpObj(u,x[1][i],'xyz')).filter(p=>p&&p.px>0);
+function perpObj(u,c,dex,asset){const id=u.name,sym=id.replace(/^\w+:/,''),p=+c.markPx||+c.midPx||0,prev=+c.prevDayPx||p;
+ return{kind:'perp',dex,id,sym,name:NAMES[sym]||(dex?sym.toLowerCase():sym+' perpetuo'),img:'https://app.hyperliquid.xyz/coins/'+encodeURIComponent(id)+'.svg',px:p,prev,ch:prev?(p/prev-1)*100:0,vol:+c.dayNtlVlm||0,oi:(+c.openInterest||0)*p,fund:+c.funding||0,maxLev:u.maxLeverage||10,asset,szDec:u.szDecimals}}
+let XYZ_IDX=null;
+async function loadPerps(){if(XYZ_IDX==null){try{const d=await hl({type:'perpDexs'});XYZ_IDX=d.findIndex(x=>x&&x.name==='xyz')}catch(e){XYZ_IDX=-1}}const [m,x]=await Promise.all([hl({type:'metaAndAssetCtxs'}),hl({type:'metaAndAssetCtxs',dex:'xyz'}).catch(()=>[{universe:[]},[]])]);
+ S.perps=m[0].universe.map((u,i)=>u.isDelisted?null:perpObj(u,m[1][i],'',i)).filter(p=>p&&p.px>0);
+ S.xyz=x[0].universe.map((u,i)=>u.isDelisted?null:perpObj(u,x[1][i],'xyz',XYZ_IDX>0?100000+XYZ_IDX*10000+i:null)).filter(p=>p&&p.px>0);
  allPerps().forEach(p=>S.mids[p.id]=p.px)}
 function tokObj(p,inc){const a=p.attributes,bid=p.relationships?.base_token?.data?.id,bt=(inc||[]).find(i=>i.id===bid)?.attributes||{};
  const sym=(bt.symbol||String(a.name).split(' / ')[0]||'?').trim();
@@ -501,7 +524,8 @@ let tickT=0;function tick(){if(Date.now()-tickT<1000)return;tickT=Date.now();
  if(S.tab==='perps'||S.tab==='mercados')$$('#list .it[data-m]').forEach(el=>{const id=el.dataset.m.slice(5),m=allPerps().find(p=>p.id===id);if(m){const v=el.querySelector('.g .m'),c=el.querySelector('.r .m:last-child');if(v)v.textContent='$'+px(m.px);if(c){c.textContent=pc(m.ch);c.className='sm m '+(m.ch>=0?'up':'dn')}}})}
 
 // ---------- operar (práctica) ----------
-function ticket(soft){const m=S.cur;if(!m)return;const perp=m.kind==='perp';
+function ticket(soft){const m=S.cur;if(!m)return;const perp=m.kind==='perp';$('#tpsl').style.display=RS.on&&perp?'grid':'none';
+ if(RS.on){return ticketReal(soft)}
  if(!soft){$('#bs').innerHTML=perp?`<button class="buy ${S.side==='buy'?'on':''}" data-side="buy">long</button><button class="sell ${S.side==='sell'?'on':''}" data-side="sell">short</button>`:`<button class="buy ${S.side==='buy'?'on':''}" data-side="buy">compra</button><button class="sell ${S.side==='sell'?'on':''}" data-side="sell">venta</button>`;
   $('#levw').style.display=perp?'flex':'none';$('#lev').max=m.maxLev||10;if(S.lev>m.maxLev)S.lev=m.maxLev;$('#lev').value=S.lev;$('#levV').textContent=S.lev+'×';
   $('#amtL').textContent=perp?'margen':S.side==='sell'?'a vender':'a comprar'}
@@ -513,6 +537,15 @@ function ticket(soft){const m=S.cur;if(!m)return;const perp=m.kind==='perp';
   if(S.side==='buy'){ok=ok&&v<=S.paper.cash;lines=[['precio','$'+px(p)],['recibes aprox.',`${v?((v*.995)/p).toLocaleString('en-US',{maximumFractionDigits:2}):0} ${m.sym}`],['comisión 0.5%',usd(v*.005)]];g.textContent=v>S.paper.cash?'saldo insuficiente':v?`comprar ${m.sym}`:'elige un monto'}
   else{const have=pos?pos.q*p:0;ok=ok&&!!pos&&v<=have+1e-6;lines=[['tienes',pos?`${pos.q.toLocaleString('en-US',{maximumFractionDigits:2})} ${m.sym} · ${sh(have)}`:'nada'],['comisión 0.5%',usd(v*.005)]];g.textContent=!pos?`no tienes ${m.sym}`:v>have+1e-6?'más de lo que tienes':v?`vender ${m.sym}`:'elige un monto'}}
  g.className='go '+S.side;g.disabled=!ok;$('#est').innerHTML=lines.map(([k,v])=>`<div><span>${k}</span><span class="m">${v}</span></div>`).join('')}
+function ticketReal(soft){const m=S.cur,perp=m.kind==='perp',g=$('#go');
+ if(!soft){$('#bs').innerHTML=perp?`<button class="buy ${S.side==='buy'?'on':''}" data-side="buy">long</button><button class="sell ${S.side==='sell'?'on':''}" data-side="sell">short</button>`:`<button class="buy on" data-side="buy">compra</button><button class="sell" data-side="sell">venta</button>`;
+  $('#levw').style.display=perp?'flex':'none';$('#lev').max=m.maxLev||10;if(S.lev>m.maxLev)S.lev=m.maxLev;$('#lev').value=S.lev;$('#levV').textContent=S.lev+'×';$('#amtL').textContent='margen USDC'}
+ if(!perp){g.className='go buy';g.disabled=true;g.textContent='tokens de solana en real: próximamente';$('#est').innerHTML='<div><span>por ahora los tokens se operan en modo práctica</span></div>';return}
+ const v=parseFloat($('#amt').value)||0,p=S.mids[m.id]||m.px,wd=+(RS.state?.withdrawable||0),not=v*S.lev,fee=not*(0.00045+(REAL.builder?REAL.fee/1e5:0));
+ const liq=S.side==='buy'?p*(1-.9/S.lev):p*(1+.9/S.lev);
+ $('#est').innerHTML=[['disponible',usd(wd)],['precio','$'+px(p)],['tamaño',`${v?(not/p).toPrecision(4):0} ${m.sym} · ${sh(not)}`],['liquidación aprox.',v?'$'+px(liq):'—'],['comisiones aprox.',usd(fee)]].map(([k,x])=>`<div><span>${k}</span><span class="m">${x}</span></div>`).join('');
+ g.className='go '+S.side;g.disabled=!(v>0&&v<=wd&&not>=10)||RS.busy||m.asset==null;
+ g.textContent=m.asset==null?'no disponible en real':v>wd?'saldo insuficiente':v&&not<10?'mínimo $10 de tamaño':v?`${S.side==='buy'?'long':'short'} ${m.sym} ${S.lev}× · REAL`:'elige un margen'}
 function curPx(p){if(p.kind==='perp')return S.mids[p.id]||p.e;if(S.cur&&S.cur.id===p.id)return S.cur.px;for(const L of Object.values(S.tokens)){const t=L.find(t=>t.id===p.id);if(t)return t.px}return p.last||p.cost/p.q}
 function upnl(p){const c=curPx(p);return p.kind==='perp'?(c-p.e)*p.q*(p.side==='buy'?1:-1):c*p.q-p.cost}
 function trade(){const m=S.cur,v=parseFloat($('#amt').value);if(!m||!(v>0))return;const P=S.paper,now=Date.now(),p=m.px;
@@ -530,10 +563,16 @@ function closePos(uid){const P=S.paper,p=P.pos.find(x=>x.uid===uid);if(!p)return
  else{const got=p.q*c*.995;pnl=got-p.cost;P.cash+=got;P.hist.unshift({kind:'tok',id:p.id,sym:p.sym,img:p.img,side:'sell',pnl,usd:p.q*c,t:now,fills:[...p.fills,{t:now,b:false,usd:p.q*c,px:c}]})}
  P.pos=P.pos.filter(x=>x!==p);P.hist.length=Math.min(P.hist.length,100);savePaper();toast(`cerraste ${esc(p.sym)}: <span class="${pnl>=0?'up':'dn'}">${pnl>=0?'+':''}${usd(pnl)}</span>`);renderPos(true);wallet();ticket();draw()}
 function checkLiq(){const P=S.paper;let ch=0;P.pos.filter(p=>p.kind==='perp').forEach(p=>{if(p.m+upnl(p)<=p.m*.1){const c=curPx(p);P.hist.unshift({kind:'perp',id:p.id,sym:p.sym,img:p.img,side:p.side,lev:p.lev,pnl:-p.m,usd:p.q*c,t:Date.now(),liq:1,fills:p.fills});P.pos=P.pos.filter(x=>x!==p);toast(`<span class="dn">liquidado</span> ${esc(p.sym)} ${p.lev}×: −${usd(p.m)}`);ch=1}});if(ch){savePaper();renderPos(true);wallet()}}
-let posT=0;function renderPos(force){if(Date.now()-posT<900&&!force)return;posT=Date.now();const P=S.paper,el=$('#mypos');checkLiq();
+let posT=0;function renderPos(force){if(Date.now()-posT<900&&!force)return;posT=Date.now();const P=S.paper,el=$('#mypos');
+ if(RS.on){const st=RS.state,L=st?.assetPositions||[],O=RS.orders||[];
+  if(S.ptab==='open')el.innerHTML=(L.length?L.map(({position:q})=>{const mk=allPerps().find(x=>x.id===q.coin)||{id:q.coin,sym:q.coin.replace(/^\w+:/,''),img:''},Lg=+q.szi>0,u=+q.unrealizedPnl;return`<div class="pos"><div class="l" data-open="perp|${esc(q.coin)}">${icon(mk,26)}<div><b>${esc(mk.sym)}</b> <span class="badge ${Lg?'b':'s'}">${Lg?'long':'short'} ${q.leverage?.value}×</span><span class="realtag">real</span><div class="dim sm m">${Math.abs(+q.szi)} @ ${px(q.entryPx)} · liq ${q.liquidationPx?px(q.liquidationPx):'—'}</div></div></div><div style="text-align:right"><div class="m ${u>=0?'up':'dn'}">${u>=0?'+':''}${usd(u)}</div><div class="sm m ${u>=0?'up':'dn'}">${pc(q.returnOnEquity*100)}</div></div><button class="xbtn" data-rclose="${esc(q.coin)}">cerrar</button></div>`}).join(''):'<div class="dim" style="padding:14px 0;text-align:center">sin posiciones reales abiertas</div>')
+   +(O.length?'<div class="dim sm" style="margin-top:8px">órdenes abiertas</div>'+O.map(o=>{const mk=allPerps().find(x=>x.id===o.coin);return`<div class="pos"><div class="l"><b>${esc(o.coin.replace(/^\w+:/,''))}</b> <span class="dim sm">${esc(o.orderType||'limit')} ${o.side==='B'?'compra':'venta'} ${o.sz} @ ${px(o.triggerPx&&+o.triggerPx?o.triggerPx:o.limitPx)}</span></div>${mk&&mk.asset!=null?`<button class="xbtn" data-rcancel="${mk.asset}|${o.oid}">cancelar</button>`:''}</div>`}).join(''):'');
+  else el.innerHTML='<div class="dim" style="padding:14px 0;text-align:center">tu historial real está en tu perfil: <a href="#" data-myprof style="color:#aab4ff">ver perfil</a></div>';
+  return}
+ checkLiq();
  if(S.ptab==='open')el.innerHTML=P.pos.length?P.pos.map(p=>{const u=upnl(p),base=p.kind==='perp'?p.m:p.cost;return`<div class="pos"><div class="l" data-open="${p.kind}|${esc(p.id)}">${icon(p,26)}<div><b>${esc(p.sym)}</b> ${p.kind==='perp'?`<span class="badge ${p.side==='buy'?'b':'s'}">${p.side==='buy'?'long':'short'} ${p.lev}×</span>`:''}<div class="dim sm m">${p.kind==='perp'?`${p.q.toPrecision(4)} @ ${px(p.e)}`:`costo ${sh(p.cost)}`}</div></div></div><div style="text-align:right"><div class="m ${u>=0?'up':'dn'}">${u>=0?'+':''}${usd(u)}</div><div class="sm m ${u>=0?'up':'dn'}">${pc(u/base*100)}</div></div><button class="xbtn" data-close="${p.uid}">cerrar</button></div>`}).join(''):'<div class="dim" style="padding:14px 0;text-align:center">sin posiciones abiertas</div>';
  else el.innerHTML=P.hist.length?P.hist.slice(0,30).map(h=>`<div class="pos"><div class="l" data-open="${h.kind}|${esc(h.id)}">${icon(h,26)}<div><b>${esc(h.sym)}</b> <span class="dim sm">${h.liq?'liquidado':h.kind==='perp'?(h.side==='buy'?'long':'short')+' '+h.lev+'×':'venta'}</span><div class="dim sm">hace ${ago(h.t)} · ${sh(h.usd)}</div></div></div><div class="m ${h.pnl>=0?'up':'dn'}">${h.pnl>=0?'+':''}${usd(h.pnl)}</div></div>`).join(''):'<div class="dim" style="padding:14px 0;text-align:center">aún no cierras operaciones</div>'}
-function wallet(){const P=S.paper,pv=P.pos.reduce((a,p)=>a+(p.kind==='perp'?p.m+upnl(p):curPx(p)*p.q),0);$('#cash').textContent=usd(P.cash)+' efectivo';$('#pv').textContent=usd(pv)}
+function wallet(){if(RS.on){const st=RS.state;$('#cash').textContent=usd(+(st?.withdrawable||0))+' disponible';$('#pv').textContent=usd(+(st?.marginSummary?.accountValue||0));return}const P=S.paper,pv=P.pos.reduce((a,p)=>a+(p.kind==='perp'?p.m+upnl(p):curPx(p)*p.q),0);$('#cash').textContent=usd(P.cash)+' efectivo';$('#pv').textContent=usd(pv)}
 function about(){const m=S.cur;if(!m)return;let h;
  if(m.kind==='tok'){const tx=m.tx,buys=tx.buys||0,sells=tx.sells||0,by=tx.buyers||0,sl=tx.sellers||0,c=m.chg;
   h=`<h3>acerca de ${esc(m.sym)}</h3><div class="mut sm">${esc(m.name)}${m.holders?` · ${(+m.holders).toLocaleString('es-MX')} holders`:''}</div>${m.desc?`<div class="sm" style="margin-top:6px;color:#c9cad3;max-height:52px;overflow:hidden">${esc(String(m.desc).slice(0,180))}</div>`:''}
@@ -549,6 +588,73 @@ function about(){const m=S.cur;if(!m)return;let h;
   <div class="bl"><span>funding 1h</span><span class="m ${m.fund>=0?'up':'dn'}">${(m.fund*100).toFixed(4)}%</span></div><div class="bl" style="margin-top:4px"><span>interés abierto</span><span class="m">${sh(m.oi)}</span></div>
   <div class="links"><a href="https://app.hyperliquid.xyz/trade/${encodeURIComponent(m.id)}" target="_blank" rel="noopener">hyperliquid</a><a href="https://x.com/search?q=%24${encodeURIComponent(m.sym)}" target="_blank" rel="noopener">buscar en X</a></div>`}
  $('#about').innerHTML=h}
+
+// ---------- dinero real (Hyperliquid) ----------
+const RS={on:false,addr:store.get('real.addr',null),agent:null,state:null,orders:[],libs:null,busy:false};
+function loadScript(src){return new Promise((ok,ko)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=()=>ko(new Error('no se pudo cargar '+src));document.head.appendChild(s)})}
+async function libs(){if(RS.libs)return RS.libs;await loadScript('https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.4/ethers.umd.min.js');await loadScript('https://cdn.jsdelivr.net/npm/@msgpack/msgpack@2.8.0/dist.es5+umd/msgpack.min.js');await loadScript('hl-sign.js');RS.libs=window.HLSign;return RS.libs}
+const isMain=()=>REAL.net==='main';
+function agentKeyName(a){return 'real.agent.'+REAL.net+'.'+a}
+async function loadAgent(){if(!RS.addr)return null;const k=store.get(agentKeyName(RS.addr),null);if(!k)return null;await libs();RS.agent=new ethers.Wallet(k);return RS.agent}
+async function realInfo(body){return (await libs()).info(REAL.net,body)}
+async function refreshReal(){if(!RS.addr)return;try{const [st,sx,oo,ox]=await Promise.all([realInfo({type:'clearinghouseState',user:RS.addr}),realInfo({type:'clearinghouseState',user:RS.addr,dex:'xyz'}).catch(()=>null),realInfo({type:'frontendOpenOrders',user:RS.addr}),realInfo({type:'frontendOpenOrders',user:RS.addr,dex:'xyz'}).catch(()=>[])]);if(sx)st.assetPositions=(st.assetPositions||[]).concat(sx.assetPositions||[]);RS.state=st;RS.orders=(oo||[]).concat(ox||[]);if(RS.on){wallet();renderPos(true)}}catch(e){}}
+async function realSetup(){await libs();const eth=window.ethereum;const step=(n,ok,txt,btn)=>`<div class="step ${ok?'ok':''}"><i>${ok?'✓':n}</i><div class="t">${txt}</div>${btn||''}</div>`;
+ let acct=0,agentOk=false,feeOk=!REAL.builder;
+ if(RS.addr){try{const st=await realInfo({type:'clearinghouseState',user:RS.addr});RS.state=st;acct=+st.marginSummary.accountValue+ +(st.withdrawable||0)*0}catch(e){}
+  const ag=await loadAgent();if(ag){try{const ex=await realInfo({type:'extraAgents',user:RS.addr});agentOk=ex.some(x=>x.address.toLowerCase()===ag.address.toLowerCase())}catch(e){agentOk=true}}
+  if(REAL.builder){try{const mf=await realInfo({type:'maxBuilderFee',user:RS.addr,builder:REAL.builder.toLowerCase()});feeOk=mf>=REAL.fee}catch(e){}}}
+ const accepted=store.get('real.terms',false);
+ modal(`<h3>activar trading real</h3><div class="mut sm">operas desde tu propia wallet en Hyperliquid. northpoint nunca toca tu dinero ni puede retirarlo.</div>
+ <div class="steps">
+ ${step(1,accepted,'acepto el <b>aviso de riesgo</b>: los perps con apalancamiento pueden perder todo el margen. confirmo que no resido en EE.UU. ni en otro país donde Hyperliquid no opera.',accepted?'':'<button class="btn" data-rs="terms">acepto</button>')}
+ ${step(2,!!RS.addr,RS.addr?`wallet conectada <span class="m">${shortA(RS.addr)}</span>`:'conecta tu wallet (MetaMask, Rabby o similar)',RS.addr?'<button class="btn gh" data-rs="disconnect">cambiar</button>':(eth?'<button class="btn" data-rs="connect">conectar</button>':'<a class="btn" href="https://rabby.io" target="_blank" rel="noopener">instalar wallet</a>'))}
+ ${step(3,acct>0,acct>0?`saldo en Hyperliquid: <b class="m">${usd(acct)}</b>`:'deposita USDC en Hyperliquid (mínimo 5 USDC, desde Arbitrum)',RS.addr?(acct>0?'':'<a class="btn gh" href="https://app.hyperliquid.xyz/portfolio" target="_blank" rel="noopener">depositar</a><button class="btn gh" data-rs="recheck">revisar</button>'):'')}
+ ${step(4,agentOk,'autoriza una <b>llave de operación</b> para no firmar cada orden. puede abrir y cerrar posiciones, <b>no puede retirar</b>. se guarda solo en este navegador.',RS.addr&&acct>0&&!agentOk?'<button class="btn" data-rs="agent">autorizar</button>':'')}
+ ${REAL.builder?step(5,feeOk,`autoriza la comisión de northpoint: <b>${REAL.maxFeeRate}</b> por operación`,RS.addr&&acct>0&&!feeOk?'<button class="btn" data-rs="fee">autorizar</button>':''):''}
+ </div>
+ <div style="display:flex;gap:8px"><button class="btn gh" data-mclose style="flex:1;justify-content:center">cerrar</button><button class="btn" data-rs="go" style="flex:1;justify-content:center" ${accepted&&RS.addr&&acct>0&&agentOk&&feeOk?'':'disabled'}>empezar en real</button></div>`)}
+async function rsAction(k){const H=await libs(),eth=window.ethereum;
+ try{
+  if(k==='terms'){store.set('real.terms',true)}
+  else if(k==='connect'){const [a]=await eth.request({method:'eth_requestAccounts'});RS.addr=a.toLowerCase();store.set('real.addr',RS.addr)}
+  else if(k==='disconnect'){RS.addr=null;store.set('real.addr',null);setMode('paper')}
+  else if(k==='agent'){const chain=await eth.request({method:'eth_chainId'}),ag=ethers.Wallet.createRandom(),n=Date.now();
+   const act=H.approveAgentAction(ag.address,'northpoint',isMain(),chain,n);toast('firma en tu wallet para autorizar la llave…');
+   const sig=await H.signUserWithProvider(eth,RS.addr,act);const r=await H.post(REAL.net,act,n,sig);if(r.status!=='ok')throw new Error(typeof r.response==='string'?r.response:JSON.stringify(r.response));
+   store.set(agentKeyName(RS.addr),ag.privateKey);RS.agent=ag;toast('llave de operación autorizada')}
+  else if(k==='fee'){const chain=await eth.request({method:'eth_chainId'}),n=Date.now();const act=H.approveBuilderFeeAction(REAL.builder,REAL.maxFeeRate,isMain(),chain,n);
+   const sig=await H.signUserWithProvider(eth,RS.addr,act);const r=await H.post(REAL.net,act,n,sig);if(r.status!=='ok')throw new Error(typeof r.response==='string'?r.response:JSON.stringify(r.response));toast('comisión autorizada')}
+  else if(k==='go'){$('#modal').classList.remove('on');setMode('real',true);return}
+ }catch(e){toast('<span class="dn">'+esc(e.message||e)+'</span>')}
+ realSetup()}
+function setMode(m,ready){if(m==='real'&&!ready){realSetup();return}RS.on=m==='real';$$('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.mode===m));
+ $('#modeNote').innerHTML=RS.on?`<span class="up">modo real</span> · ${shortA(RS.addr)} · órdenes reales en Hyperliquid`:'modo práctica: precios reales, dinero simulado';
+ $('#dep').textContent=RS.on?'depositar en hyperliquid':'depositar más';store.set('mode',RS.on?'real':'paper');if(RS.on)refreshReal();ticket();wallet();renderPos(true)}
+function fmtErr(r){if(r.status!=='ok')return typeof r.response==='string'?r.response:JSON.stringify(r.response);const st=r.response?.data?.statuses||[];const e=st.find(x=>x.error);return e?e.error:null}
+async function realOrder(){const m=S.cur,v=parseFloat($('#amt').value);if(!m||m.kind!=='perp'||!(v>0)||RS.busy)return;
+ if(m.asset==null){toast('este mercado aún no está disponible en modo real');return}
+ const H=await libs(),ag=RS.agent||await loadAgent();if(!ag){realSetup();return}
+ const isBuy=S.side==='buy',lev=Math.min(S.lev,m.maxLev),mid=S.mids[m.id]||m.px,sz=H.roundSz(v*lev/mid,m.szDec);
+ if(sz<=0){toast('el monto es muy chico para este mercado');return}
+ if(sz*mid<10){toast('Hyperliquid pide órdenes de al menos $10 de tamaño');return}
+ RS.busy=true;$('#go').disabled=true;$('#go').textContent='enviando…';
+ try{let n=Date.now();const la=H.leverageAction(m.asset,lev,true);let r=await H.post(REAL.net,la,n,await H.signL1(ag,la,n,isMain()));if(r.status!=='ok')throw new Error(fmtErr(r));
+  const lim=H.roundPx(isBuy?mid*(1+REAL.slippage):mid*(1-REAL.slippage),m.szDec),orders=[H.orderWire({asset:m.asset,isBuy,px:lim,sz,tif:'Ioc'})];
+  const tp=parseFloat($('#tp').value),sl=parseFloat($('#sl').value);
+  if(tp>0)orders.push(H.orderWire({asset:m.asset,isBuy:!isBuy,px:H.roundPx(tp,m.szDec),sz,reduceOnly:true,trigger:{isMarket:true,px:H.roundPx(tp,m.szDec),tpsl:'tp'}}));
+  if(sl>0)orders.push(H.orderWire({asset:m.asset,isBuy:!isBuy,px:H.roundPx(sl,m.szDec),sz,reduceOnly:true,trigger:{isMarket:true,px:H.roundPx(sl,m.szDec),tpsl:'sl'}}));
+  const oa=H.orderAction(orders,REAL.builder?{b:REAL.builder,f:REAL.fee}:null,orders.length>1?'normalTpsl':'na');n=Date.now();
+  r=await H.post(REAL.net,oa,n,await H.signL1(ag,oa,n,isMain()));const err=fmtErr(r);if(err)throw new Error(err);
+  const f=r.response.data.statuses[0].filled;toast(f?`<span class="up">ejecutada</span> ${isBuy?'long':'short'} ${esc(m.sym)} · ${f.totalSz} @ ${px(+f.avgPx)}`:'orden enviada');
+  $('#amt').value='';$('#tp').value='';$('#sl').value='';setTimeout(refreshReal,800)}
+ catch(e){toast('<span class="dn">orden rechazada:</span> '+esc(e.message))}
+ finally{RS.busy=false;ticket()}}
+async function realClose(coin){const H=await libs(),ag=RS.agent||await loadAgent();const p=(RS.state?.assetPositions||[]).find(x=>x.position.coin===coin)?.position;const m=allPerps().find(x=>x.id===coin);if(!p||!m||!ag)return;
+ const isBuy=+p.szi<0,sz=Math.abs(+p.szi),mid=S.mids[coin]||m.px,lim=H.roundPx(isBuy?mid*(1+REAL.slippage):mid*(1-REAL.slippage),m.szDec);
+ try{const oa=H.orderAction([H.orderWire({asset:m.asset,isBuy,px:lim,sz,reduceOnly:true,tif:'Ioc'})],REAL.builder?{b:REAL.builder,f:REAL.fee}:null),n=Date.now();
+  const r=await H.post(REAL.net,oa,n,await H.signL1(ag,oa,n,isMain()));const err=fmtErr(r);if(err)throw new Error(err);toast(`<span class="up">cerraste</span> ${esc(m.sym)}`);setTimeout(refreshReal,800)}
+ catch(e){toast('<span class="dn">no se pudo cerrar:</span> '+esc(e.message))}}
+async function realCancel(asset,oid){const H=await libs(),ag=RS.agent||await loadAgent();try{const a=H.cancelAction([{asset,oid}]),n=Date.now();const r=await H.post(REAL.net,a,n,await H.signL1(ag,a,n,isMain()));const err=fmtErr(r);if(err)throw new Error(err);toast('orden cancelada');setTimeout(refreshReal,600)}catch(e){toast('<span class="dn">'+esc(e.message)+'</span>')}}
 
 // ---------- perfiles ----------
 function closeProf(){$('#prof').classList.remove('on')}
@@ -629,14 +735,19 @@ document.addEventListener('click',e=>{const T=e.target;
  const pr=T.closest('[data-p]');if(pr){$('#amt').value=pr.dataset.p;ticket();return}
  const pt=T.closest('[data-pt]');if(pt){S.ptab=pt.dataset.pt;$$('[data-pt]').forEach(b=>b.classList.toggle('on',b===pt));renderPos(true);return}
  const tf=T.closest('#tf button');if(tf){S.tf=tf.dataset.i;$$('#tf button').forEach(b=>b.classList.toggle('on',b===tf));loadCandles(selGen);return}
- if(T.closest('#dep')){depositModal();return}
+ const md=T.closest('[data-mode]');if(md){setMode(md.dataset.mode);return}
+ const rs=T.closest('[data-rs]');if(rs){rsAction(rs.dataset.rs);return}
+ const rc=T.closest('[data-rclose]');if(rc){if(confirm('¿cerrar esta posición REAL a precio de mercado?'))realClose(rc.dataset.rclose);return}
+ const rk=T.closest('[data-rcancel]');if(rk){const[a,o]=rk.dataset.rcancel.split('|');realCancel(+a,+o);return}
+ if(T.closest('[data-myprof]')){e.preventDefault();openProfile(RS.addr);return}
+ if(T.closest('#dep')){if(RS.on){window.open('https://app.hyperliquid.xyz/portfolio','_blank','noopener');return}depositModal();return}
  if(T.closest('#meBtn')){meModal();return}
  const dp=T.closest('[data-dep]');if(dp){S.paper.cash+=+dp.dataset.dep;savePaper();wallet();ticket();toast(`depósito de práctica: +$${(+dp.dataset.dep).toLocaleString('en-US')}`);return}
  if(T.closest('[data-reset]')){if(confirm('¿reiniciar tu cuenta de práctica? se borran tus posiciones e historial.')){S.paper={cash:10000,pos:[],hist:[]};savePaper();wallet();renderPos(true);ticket();draw();$('#modal').classList.remove('on')}return}
  if(T.closest('[data-mclose]')||T.id==='modal'){$('#modal').classList.remove('on');return}
  const mt=T.closest('#mtabs button');if(mt){setMobile(mt.dataset.v);return}
 });
-$('#go').addEventListener('click',trade);
+$('#go').addEventListener('click',()=>RS.on?realOrder():trade());
 $('#amt').addEventListener('input',()=>ticket(true));
 $('#lev').addEventListener('input',e=>{S.lev=+e.target.value;$('#levV').textContent=S.lev+'×';ticket(true)});
 $('#q').addEventListener('input',e=>{clearTimeout(qT);qT=setTimeout(()=>search(e.target.value),350)});
@@ -663,6 +774,8 @@ setInterval(()=>{$('#clock').textContent=new Date().toTimeString().slice(0,8)+' 
  setInterval(()=>{if(S.cur&&S.cur.kind==='perp'&&!document.hidden)loadTopPositions(selGen)},90000);
  setInterval(()=>{if(S.cur&&S.cur.kind==='perp')about()},5000);
  setInterval(pollAlerts,45000);setTimeout(pollAlerts,5000);
+ setInterval(()=>{if(RS.on&&!document.hidden)refreshReal()},5000);
+ if(store.get('mode','paper')==='real'&&RS.addr&&store.get(agentKeyName(RS.addr),null)){loadAgent().then(()=>setMode('real',true)).catch(()=>{})}
  setInterval(()=>{if(S.tab==='feed'&&!document.hidden)renderList()},60000);
 })();
 </script>

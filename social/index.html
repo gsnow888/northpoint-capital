@@ -37,10 +37,11 @@ nav .wrap{display:flex;align-items:center;height:68px;gap:34px;max-width:1360px}
 .login{height:36px;padding:0 16px;border-radius:999px;background:#f7f7f7;color:#060510;font-weight:500;font-size:14px;display:inline-flex;align-items:center}
 
 /* hero */
-.hero{position:relative;min-height:100vh;display:flex;align-items:flex-start;justify-content:center;text-align:center;overflow:hidden;padding:calc(var(--sh) * .262) 24px 0;background:#060510;--sh:max(118vh,56vw)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-start;justify-content:center;text-align:center;overflow:hidden;padding:150px 24px 0;background:#05050f;--sh:max(100vh,calc(55.8vw + 300px))}
 .hero{min-height:var(--sh)!important}
-.sea{position:absolute;inset:0;background:url(img/mar.jpg) center top/cover no-repeat}
-.sea:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,5,16,.35) 0%,rgba(6,5,16,0) 14%,rgba(6,5,16,.25) 40%,rgba(6,5,16,.15) 62%,rgba(6,5,16,0) 75%,rgba(6,5,16,.7) 93%,#060510 100%)}
+.sea{position:absolute;inset:0;background:url(img/espacio.jpg) center bottom/100% auto no-repeat;-webkit-mask-image:linear-gradient(180deg,transparent 0,transparent calc(100% - 55.8vw),#000 calc(100% - 55.8vw + 16vw));mask-image:linear-gradient(180deg,transparent 0,transparent calc(100% - 55.8vw),#000 calc(100% - 55.8vw + 16vw))}
+@media (max-aspect-ratio:4/3){.sea{background-size:auto 62%;-webkit-mask-image:linear-gradient(180deg,transparent 30%,#000 50%);mask-image:linear-gradient(180deg,transparent 30%,#000 50%)}}
+.sea:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,5,16,0) 86%,#060510 100%)}
 @keyframes drift{to{transform:scale(1.09) translateY(-1.5%)}}
 .polaris{position:absolute;width:220px;height:220px;left:50%;top:calc(var(--sh) * .196);transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(190,205,255,.55) 0%,rgba(110,135,255,.18) 30%,transparent 65%);mix-blend-mode:screen;animation:pulse 4s ease-in-out infinite;pointer-events:none}
 @keyframes pulse{50%{opacity:.55;transform:translate(-50%,-50%) scale(.85)}}
@@ -102,8 +103,10 @@ nav .wrap{display:flex;align-items:center;height:68px;gap:34px;max-width:1360px}
 .amts span{text-align:center;padding:7px 0;border-radius:10px;background:rgba(203,208,235,.07);font-family:'Geist Mono',monospace;font-size:12px}
 
 /* comunidad */
-.crowd{position:relative;margin-top:80px;padding:calc(max(720px,56vw) * .25) 24px 0;min-height:max(720px,56vw);background-size:cover!important;text-align:center;overflow:hidden;
-  background:linear-gradient(180deg,var(--bg) 0%,rgba(6,5,16,.1) 18%,rgba(6,5,16,.15) 60%,rgba(6,5,16,.5) 88%,var(--bg) 100%),url(img/flota.jpg) center top/cover no-repeat}
+.crowd{position:relative;margin-top:80px;padding:220px 24px 240px;text-align:center;overflow:hidden;
+  background:radial-gradient(1100px 620px at 50% 115%,#3b2aa8 0%,#22197a 32%,#110d3d 58%,var(--bg) 82%)}
+.bub{position:absolute;border-radius:50%;background-size:cover;box-shadow:0 0 0 3px rgba(255,255,255,.08),0 20px 50px rgba(0,0,0,.5);animation:bob 6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-16px)}}
 .bub{position:absolute;border-radius:50%;display:grid;place-items:center;font-weight:600;color:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.08),0 20px 50px rgba(0,0,0,.5);animation:bob 6s ease-in-out infinite}
 @keyframes bob{50%{transform:translateY(-16px)}}
 .crowd .h2{position:relative}
@@ -143,10 +146,9 @@ footer{padding:70px 0 40px;border-top:1px solid var(--line)}
 </div></nav>
 
 <header class="hero">
-  <div class="sea"></div><div class="polaris" id="polaris"></div><canvas id="glints"></canvas>
+  <div class="sea"></div><canvas id="glints"></canvas>
     <div class="hero-in">
-    <div class="kick">sigue la estrella del norte</div>
-    <div class="word">northpoint<span class="oc">ocean</span></div>
+        <div class="word">northpoint<span class="oc">ocean</span></div>
         <p>ve en vivo quién lleva el rumbo correcto y síguelo en segundos.</p>
     <div class="cta"><a class="btn pri" href="app.html">abrir la terminal</a><a class="btn dk" href="#">descargar app</a></div>
   </div>
@@ -181,14 +183,14 @@ footer{padding:70px 0 40px;border-top:1px solid var(--line)}
       <div class="mini" style="padding:16px"><div class="sbtn" style="background:#f7f7f7;color:#060510">continuar con Apple</div><div class="sbtn" style="background:rgba(203,208,235,.1);border:1px solid var(--line)">continuar con Google</div><div class="sbtn" style="color:var(--mut)">usar correo</div></div></div>
     <div class="cell rv"><div class="kicker">todos los mercados</div><h3>memecoins, perps, índices y acciones en un solo lugar</h3>
       <div class="chains"><span>Bitcoin</span><span>Solana</span><span>memecoins</span><span>Nasdaq 100</span><span>S&amp;P 500</span><span>Oro</span><span>Petróleo</span><span>NVIDIA</span><span>Tesla</span><span>+300 mercados</span></div></div>
-    <div class="cell rv"><div class="kicker">modo práctica</div><h3>practica con precios reales</h3>
-      <div class="mini"><div class="mono" style="color:var(--mut);font-size:12px;text-align:center">monto</div><div class="amt">$1,000</div><div class="amts"><span>$100</span><span>$500</span><span>$1k</span><span>máx</span></div><div class="sbtn" style="background:#f7f7f7;color:#060510">depositar saldo de práctica</div></div></div>
+    <div class="cell rv"><div class="kicker">sin custodia</div><h3>opera real desde tu wallet, o practica gratis</h3>
+      <div class="mini"><div class="mono" style="color:var(--mut);font-size:12px;text-align:center">monto</div><div class="amt">$1,000</div><div class="amts"><span>$100</span><span>$500</span><span>$1k</span><span>máx</span></div><div class="sbtn" style="background:#f7f7f7;color:#060510">conectar wallet</div><div class="sbtn" style="background:rgba(203,208,235,.1);border:1px solid var(--line)">practicar con $10,000</div></div></div>
   </div>
 </section>
 
 <section class="crowd" id="crowd">
-  <h2 class="h2 rv">una flota.<br>un solo norte.</h2>
-  <p class="lead rv" style="position:relative">nadie cruza este mar solo. cuando uno encuentra el rumbo, toda la flota lo ve.</p>
+  <h2 class="h2 rv">una app de trading<br>para todos nosotros</h2>
+  <p class="lead rv" style="position:relative">únete a los traders que operan juntos, se siguen y comparten cada movimiento en vivo.</p>
   <div class="cta rv"><a class="btn pri" href="app.html">abrir la terminal</a></div>
 </section>
 
@@ -223,13 +225,17 @@ for(let i=0;i<10;i++)addF();
 // destellos: estrellas que titilan y brillos sobre el agua
 (()=>{const c=document.getElementById('glints');if(!c)return;const x=c.getContext('2d');let W,H,S=[],G=[];
  function sz(){const d=devicePixelRatio;W=c.offsetWidth;H=c.offsetHeight;c.width=W*d;c.height=H*d;x.setTransform(d,0,0,d,0,0);
-  S=Array.from({length:90},()=>({x:Math.random()*W,y:Math.random()*H*.45,r:Math.random()*1.1+.2,p:Math.random()*6}));
+  S=Array.from({length:140},()=>({x:Math.random()*W,y:Math.random()*H*.5,r:Math.random()*1.1+.2,p:Math.random()*6}));
   G=Array.from({length:70},()=>({x:W*.5+(Math.random()-.5)*W*.18*(1+Math.random()),y:H*(.62+Math.random()*.33),p:Math.random()*6,w:Math.random()*10+4}))}
  sz();addEventListener('resize',sz);
  (function f(t){x.clearRect(0,0,W,H);
   S.forEach(s=>{x.globalAlpha=.15+.5*Math.abs(Math.sin(t/1700+s.p));x.fillStyle='#fff';x.beginPath();x.arc(s.x,s.y,s.r,0,7);x.fill()});
-  G.forEach(g=>{const a=Math.max(0,Math.sin(t/900+g.p));x.globalAlpha=a*.55;x.fillStyle='#c9d3ff';x.fillRect(g.x-g.w/2,g.y,g.w,1.2)});
+  
   x.globalAlpha=1;requestAnimationFrame(f)})(0)})();
+
+// burbujas de la comunidad
+(()=>{const el=document.getElementById('crowd');if(!el)return;for(let i=0;i<18;i++){const b=document.createElement('div'),z=rnd(36,84);b.className='bub';
+ Object.assign(b.style,{width:z+'px',height:z+'px',backgroundImage:`url(${IM(T[i%T.length])})`,left:(i%2?rnd(4,30):rnd(70,95))+'%',top:rnd(8,82)+'%',animationDelay:-rnd(0,6)+'s',opacity:rnd(.6,1)});el.appendChild(b)}})();
 
 // bento
 function lb(){const r=T.slice(0,4).map((t,i)=>({t,c:C[i],v:rnd(8e3,9e4)})).sort((a,b)=>b.v-a.v);document.getElementById('lb').innerHTML=r.map((x,i)=>`<div class="mrow"><span class="mono" style="color:var(--mut);width:14px">${i+1}</span><img class="av" src="${IM(x.t)}" alt=""><span class="n">${x.t}</span><span class="pill">+$${(x.v/1000).toFixed(1)}k</span></div>`).join('')}
