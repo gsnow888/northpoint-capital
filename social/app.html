@@ -265,7 +265,7 @@ tr.cl:hover td{background:rgba(203,208,235,.03)}
           <div class="scroll" id="lp"><div class="load">loading…</div></div>
         </div>
         <div class="pane">
-          <div class="ph"><b>operaciones</b><span class="mut">live</span></div>
+          <div class="ph"><b>trades</b><span class="mut">live</span></div>
           <div class="scroll" id="rp"><div class="load">loading…</div></div>
         </div>
       </div>
@@ -575,14 +575,14 @@ let posT=0;function renderPos(force){if(Date.now()-posT<900&&!force)return;posT=
 function wallet(){if(RS.on){const st=RS.state;$('#cash').textContent=usd(+(st?.withdrawable||0))+' available';$('#pv').textContent=usd(+(st?.marginSummary?.accountValue||0));return}const P=S.paper,pv=P.pos.reduce((a,p)=>a+(p.kind==='perp'?p.m+upnl(p):curPx(p)*p.q),0);$('#cash').textContent=usd(P.cash)+' cash';$('#pv').textContent=usd(pv)}
 function about(){const m=S.cur;if(!m)return;let h;
  if(m.kind==='tok'){const tx=m.tx,buys=tx.buys||0,sells=tx.sells||0,by=tx.buyers||0,sl=tx.sellers||0,c=m.chg;
-  h=`<h3>acerca of ${esc(m.sym)}</h3><div class="mut sm">${esc(m.name)}${m.holders?` · ${(+m.holders).toLocaleString('en-US')} holders`:''}</div>${m.desc?`<div class="sm" style="margin-top:6px;color:#c9cad3;max-height:52px;overflow:hidden">${esc(String(m.desc).slice(0,180))}</div>`:''}
+  h=`<h3>about ${esc(m.sym)}</h3><div class="mut sm">${esc(m.name)}${m.holders?` · ${(+m.holders).toLocaleString('en-US')} holders`:''}</div>${m.desc?`<div class="sm" style="margin-top:6px;color:#c9cad3;max-height:52px;overflow:hidden">${esc(String(m.desc).slice(0,180))}</div>`:''}
   <div class="chg">${[['5m',c.m5],['1h',c.h1],['6h',c.h6],['24h',c.h24]].map(([k,v])=>`<div><div class="mut">${k}</div><div class="m ${+v>=0?'up':'dn'}">${v!=null?pc(+v):'—'}</div></div>`).join('')}</div>
   <div style="margin-top:12px" class="bl"><span>${buys.toLocaleString('en-US')} buys</span><span>${sells.toLocaleString('en-US')} sells</span></div><div class="bar"><i style="width:${buys/(buys+sells||1)*100}%;background:var(--up)"></i></div>
   <div class="bl"><span>${by.toLocaleString('en-US')} buyers</span><span>${sl.toLocaleString('en-US')} sellers</span></div><div class="bar"><i style="width:${by/(by+sl||1)*100}%;background:var(--up)"></i></div>
   <div class="links"><a href="https://solscan.io/token/${esc(m.token)}" target="_blank" rel="noopener">solscan</a><a href="https://dexscreener.com/solana/${esc(m.pool)}" target="_blank" rel="noopener">dexscreener</a>${m.links?.web?`<a href="${esc(m.links.web)}" target="_blank" rel="noopener">website</a>`:''}${m.links?.x?`<a href="https://x.com/${esc(m.links.x)}" target="_blank" rel="noopener">official X</a>`:''}<a href="https://x.com/search?q=%24${encodeURIComponent(m.sym)}" target="_blank" rel="noopener">search on X</a></div>`}
  else{const K=S.candles,last=K.length?K[K.length-1].c:m.px,chAt=ms=>{const k=K.find(k=>k.t>=Date.now()-ms);return k?(last/k.o-1)*100:null};
   const tr=S.trades,b=tr.filter(t=>t.b).reduce((a,t)=>a+t.usd,0),s=tr.filter(t=>!t.b).reduce((a,t)=>a+t.usd,0);
-  h=`<h3>acerca of ${esc(m.sym)}</h3><div class="mut sm">${esc(m.name)} · perpetual on Hyperliquid${m.dex?' ('+m.dex+')':''} · up to ${m.maxLev}×</div>
+  h=`<h3>about ${esc(m.sym)}</h3><div class="mut sm">${esc(m.name)} · perpetual on Hyperliquid${m.dex?' ('+m.dex+')':''} · up to ${m.maxLev}×</div>
   <div class="chg">${[['5m',chAt(3e5)],['1h',chAt(36e5)],['4h',chAt(144e5)],['24h',m.ch]].map(([k,v])=>`<div><div class="mut">${k}</div><div class="m ${v>=0?'up':'dn'}">${v==null?'—':pc(v)}</div></div>`).join('')}</div>
   <div style="margin-top:12px" class="bl"><span class="m">${sh(b)} buys</span><span class="m">${sh(s)} sells</span></div><div class="bar"><i style="width:${b/(b+s||1)*100}%;background:var(--up)"></i></div>
   <div class="bl"><span>1h funding</span><span class="m ${m.fund>=0?'up':'dn'}">${(m.fund*100).toFixed(4)}%</span></div><div class="bl" style="margin-top:4px"><span>open interest</span><span class="m">${sh(m.oi)}</span></div>
@@ -699,7 +699,7 @@ async function search(q){const g=++qGen,el=$('#sres');q=q.trim();if(!q){el.class
 
 // ---------- varios ----------
 function foot(){const L=['BTC','ETH','SOL','HYPE','xyz:XYZ100','xyz:SP500','xyz:GOLD'].map(id=>allPerps().find(m=>m.id===id)).filter(Boolean);
- $('#foot').innerHTML=L.map(m=>`<span style="cursor:pointer" data-m="perp|${esc(m.id)}"><b style="color:var(--tx)">${esc(m.sym==='XYZ100'?'NASDAQ':m.sym==='SP500'?'S&P 500':m.sym==='GOLD'?'ORO':m.sym)}</b> <span class="m">${px(m.px)}</span> <span class="m ${m.ch>=0?'up':'dn'}">${pc(m.ch)}</span></span>`).join('')+`<span class="st ${wsOk?'':'off'}"><i></i>${wsOk?'connected':'reconnecting'}</span><span class="dim">data: hyperliquid · geckoterminal</span>`}
+ $('#foot').innerHTML=L.map(m=>`<span style="cursor:pointer" data-m="perp|${esc(m.id)}"><b style="color:var(--tx)">${esc(m.sym==='XYZ100'?'NASDAQ':m.sym==='SP500'?'S&P 500':m.sym==='GOLD'?'GOLD':m.sym)}</b> <span class="m">${px(m.px)}</span> <span class="m ${m.ch>=0?'up':'dn'}">${pc(m.ch)}</span></span>`).join('')+`<span class="st ${wsOk?'':'off'}"><i></i>${wsOk?'connected':'reconnecting'}</span><span class="dim">data: hyperliquid · geckoterminal</span>`}
 function toast(h){const t=document.createElement('div');t.className='toast';t.innerHTML=h;$('#toasts').appendChild(t);setTimeout(()=>t.remove(),3800)}
 function setMobile(v){$('#main').dataset.v=v;$$('#mtabs button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));if(v==='chart')setTimeout(draw,30)}
 function modal(h){$('#modalIn').innerHTML=h;$('#modal').classList.add('on')}
