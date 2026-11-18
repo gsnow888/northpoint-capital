@@ -398,7 +398,7 @@ function gt(path,ttl=30000){const c=gtCache.get(path);if(c&&Date.now()-c.t<ttl)r
  gtChain=p.catch(()=>{});return p}
 
 // ---------- estado ----------
-const S={tab:'tokens',filt:{tokens:'trend',perps:'vol',mercados:'idx',rank:'month',feed:'all'},cur:null,tf:'5m',candles:[],bub:[],side:'buy',lev:5,ptab:'open',
+const S={tab:'tokens',filt:{tokens:'trend',perps:'vol',mercados:'stk',rank:'month',feed:'all'},cur:null,tf:'5m',candles:[],bub:[],side:'buy',lev:5,ptab:'open',
  perps:[],xyz:[],tokens:{},lb:null,states:{},statesAt:0,mids:{},follow:store.get('follow',[]),favs:store.get('favs',[]),notes:store.get('notif',[]),seen:store.get('seen',{}),
  paper:store.get('paper',{cash:10000,pos:[],hist:[]}),trades:[]};
 const savePaper=()=>store.set('paper',S.paper);
@@ -413,21 +413,23 @@ const OIL=`<circle cx="16" cy="16" r="16" fill="#241a10"/><path fill="#111" stro
 const SPECIAL={'xyz:XYZ100':['flag','NDX'],'xyz:SP500':['flag','SPX'],'xyz:GOLD':['gold'],'xyz:SILVER':['silver'],'xyz:PLATINUM':['silver'],'xyz:PALLADIUM':['silver'],'xyz:CL':['oil'],'xyz:BRENTOIL':['oil'],'xyz:NATGAS':['oil']};
 let icoN=0;
 function letter(sym){return `<span class="lt" style="background:${COL[hash(sym)%COL.length]}">${esc(String(sym).slice(0,3))}</span>`}
-function icon(m,size){const id=++icoN;let inner,tag='';const sp=SPECIAL[m.id];
+function icon(m,size){const id=++icoN;let inner,tag='';const sp=SPECIAL[m.id]||SPECIAL['xyz:'+m.sym];
  if(sp){inner=`<svg viewBox="0 0 32 32">${sp[0]==='flag'?FLAG(id):sp[0]==='gold'?GOLD:sp[0]==='silver'?SILVER:OIL}</svg>`;if(sp[1])tag=`<b class="tag">${sp[1]}</b>`}
  else if(m.img)inner=`<img src="${esc(m.img)}" alt="" loading="lazy" data-sym="${esc(m.sym)}" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'lt',textContent:this.dataset.sym.slice(0,3)}))">`;
  else inner=letter(m.sym);
  return `<span class="ico" style="width:${size}px;height:${size}px">${inner}${tag}</span>`}
 
 // ---------- mercados ----------
-const IDX=['XYZ100','SP500','JP225','KR200','EWY','EWJ','EWZ','XLE','URNM','DRAM'],COMM=['GOLD','SILVER','CL','BRENTOIL','COPPER','NATGAS','PLATINUM','PALLADIUM'],FX=['JPY','EUR'];
-const NAMES={XYZ100:'nasdaq 100',SP500:'s&p 500',JP225:'nikkei 225',KR200:'kospi 200',GOLD:'gold',SILVER:'silver',CL:'WTI crude',BRENTOIL:'brent crude',COPPER:'copper',NATGAS:'natural gas',PLATINUM:'platinum',PALLADIUM:'palladium',JPY:'japanese yen',EUR:'euro',NVDA:'nvidia',TSLA:'tesla',AAPL:'apple',MSFT:'microsoft',GOOGL:'alphabet (google)',AMZN:'amazon',META:'meta',AMD:'amd',NFLX:'netflix',COIN:'coinbase',HOOD:'robinhood',PLTR:'palantir',MSTR:'strategy',ORCL:'oracle',INTC:'intel',TSM:'tsmc',BABA:'alibaba',GME:'gamestop',COST:'costco',LLY:'eli lilly',MU:'micron',CRCL:'circle',RIVN:'rivian',SMSN:'samsung',SOFTBANK:'softbank',HYUNDAI:'hyundai',RKLB:'rocket lab',DKNG:'draftkings',HIMS:'hims & hers',MRVL:'marvell',BTC:'bitcoin',ETH:'ethereum',SOL:'solana',HYPE:'hyperliquid'};
+const IDX=['XYZ100','SP500','JP225','KR200','EWY','EWJ','EWZ','XLE','URNM','DRAM','SMH','IGV','GDX','SOXL','KORU','TOTAL2','OTHERS','BTCD','BVIV'],COMM=['GOLD','SILVER','CL','BRENTOIL','COPPER','NATGAS','PLATINUM','PALLADIUM'],FX=['JPY','EUR'],RATES=['2Y','10Y','30Y'],PREIPO=['OAI','ANTH','ANT','SPCX','UNITREE','ZHIPU','CXMT','CBRS','PRL'];
+const NAMES={COHR:'coherent',AAOI:'applied optoelectronics',IREN:'iris energy',CIFR:'cipher mining',SMH:'semiconductor ETF',CRDO:'credo',SMCI:'supermicro',LRCX:'lam research',VST:'vistra',AVGO:'broadcom',GDX:'gold miners ETF',STX:'seagate',TER:'teradyne',GLW:'corning',CRWD:'crowdstrike',NET:'cloudflare',RDDT:'reddit',MELI:'mercadolibre',CIEN:'ciena',SOFI:'sofi',IONQ:'ionq',TCNT:'tencent',GPRO:'gopro',XIAOMI:'xiaomi',OAI:'openai (pre-IPO)',ANTH:'anthropic (pre-IPO)',ANT:'ant group (pre-IPO)',SPCX:'spacex (pre-IPO)',UNITREE:'unitree (pre-IPO)',ZHIPU:'zhipu ai (pre-IPO)',CXMT:'changxin memory (pre-IPO)',CBRS:'cerebras (pre-IPO)',NBIS:'nebius',SKHX:'sk hynix',SKHY:'sk hynix',SNDK:'sandisk',SOXL:'semiconductors 3× ETF',KORU:'south korea 3× ETF',MU:'micron',IGV:'software ETF','2Y':'US 2-year treasury','10Y':'US 10-year treasury','30Y':'US 30-year treasury',TOTAL2:'crypto market cap ex-BTC',OTHERS:'altcoins index',BTCD:'bitcoin dominance',BVIV:'bitcoin volatility index',KIOXIA:'kioxia',TTWO:'take-two',CRWV:'coreweave',MRVL:'marvell',TSM:'tsmc',XYZ100:'nasdaq 100',SP500:'s&p 500',JP225:'nikkei 225',KR200:'kospi 200',GOLD:'gold',SILVER:'silver',CL:'WTI crude',BRENTOIL:'brent crude',COPPER:'copper',NATGAS:'natural gas',PLATINUM:'platinum',PALLADIUM:'palladium',JPY:'japanese yen',EUR:'euro',NVDA:'nvidia',TSLA:'tesla',AAPL:'apple',MSFT:'microsoft',GOOGL:'alphabet (google)',AMZN:'amazon',META:'meta',AMD:'amd',NFLX:'netflix',COIN:'coinbase',HOOD:'robinhood',PLTR:'palantir',MSTR:'strategy',ORCL:'oracle',INTC:'intel',TSM:'tsmc',BABA:'alibaba',GME:'gamestop',COST:'costco',LLY:'eli lilly',MU:'micron',CRCL:'circle',RIVN:'rivian',SMSN:'samsung',SOFTBANK:'softbank',HYUNDAI:'hyundai',RKLB:'rocket lab',DKNG:'draftkings',HIMS:'hims & hers',MRVL:'marvell',BTC:'bitcoin',ETH:'ethereum',SOL:'solana',HYPE:'hyperliquid'};
 function perpObj(u,c,dex,asset){const id=u.name,sym=id.replace(/^\w+:/,''),p=+c.markPx||+c.midPx||0,prev=+c.prevDayPx||p;
  return{kind:'perp',dex,id,sym,name:NAMES[sym]||(dex?sym.toLowerCase():sym+' perpetual'),img:'https://app.hyperliquid.xyz/coins/'+encodeURIComponent(id)+'.svg',px:p,prev,ch:prev?(p/prev-1)*100:0,vol:+c.dayNtlVlm||0,oi:(+c.openInterest||0)*p,fund:+c.funding||0,maxLev:u.maxLeverage||10,asset,szDec:u.szDecimals}}
-let XYZ_IDX=null;
-async function loadPerps(){if(XYZ_IDX==null){try{const d=await hl({type:'perpDexs'});XYZ_IDX=d.findIndex(x=>x&&x.name==='xyz')}catch(e){XYZ_IDX=-1}}const [m,x]=await Promise.all([hl({type:'metaAndAssetCtxs'}),hl({type:'metaAndAssetCtxs',dex:'xyz'}).catch(()=>[{universe:[]},[]])]);
+let DEXS=null;const EXT_DEXS=['xyz','para','io','mkts','flx','vntl','hyna','km','abcd','cash'];
+async function loadPerps(){if(!DEXS){try{const d=await hl({type:'perpDexs'});DEXS=d.map((x,i)=>x&&EXT_DEXS.includes(x.name)?{name:x.name,idx:i}:null).filter(Boolean)}catch(e){DEXS=[{name:'xyz',idx:1}]}}
+ const [m,...X]=await Promise.all([hl({type:'metaAndAssetCtxs'}),...DEXS.map(d=>hl({type:'metaAndAssetCtxs',dex:d.name}).catch(()=>null))]);
  S.perps=m[0].universe.map((u,i)=>u.isDelisted?null:perpObj(u,m[1][i],'',i)).filter(p=>p&&p.px>0);
- S.xyz=x[0].universe.map((u,i)=>u.isDelisted?null:perpObj(u,x[1][i],'xyz',XYZ_IDX>0?100000+XYZ_IDX*10000+i:null)).filter(p=>p&&p.px>0);
+ const best={};X.forEach((x,k)=>{if(!x||!x[0]||!x[1])return;const D=DEXS[k];x[0].universe.forEach((u,i)=>{if(u.isDelisted||!x[1][i])return;const o=perpObj(u,x[1][i],D.name,100000+D.idx*10000+i);if(!(o.px>0))return;const sym=o.sym;if(!best[sym]||o.vol>best[sym].vol)best[sym]=o})});
+ S.xyz=Object.values(best);S.extDexs=DEXS.filter((d,k)=>X[k]&&X[k][0]&&X[k][0].universe.length).map(d=>d.name);
  allPerps().forEach(p=>S.mids[p.id]=p.px)}
 function tokObj(p,inc){const a=p.attributes,bid=p.relationships?.base_token?.data?.id,bt=(inc||[]).find(i=>i.id===bid)?.attributes||{};
  const sym=(bt.symbol||String(a.name).split(' / ')[0]||'?').trim();
@@ -445,7 +447,7 @@ const dirEs=d=>({'Open Long':'opened long','Close Long':'closed long','Open Shor
 
 // ---------- lista izquierda ----------
 const FILTERS={tokens:[['trend','trending'],['new','new'],['top','top volume'],['grad','graduated'],['fav','favorites']],perps:[['vol','volume'],['gain','gainers'],['lose','losers'],['lev','leverage'],['fav','favorites']],
- mercados:[['idx','indices'],['comm','commodities'],['stk','stocks'],['fx','forex']],rank:[['day','24h'],['week','7 days'],['month','30 days'],['allTime','all time'],['thrive','thrive traders']],feed:[['all','following'],['top','top today']]};
+ mercados:[['stk','stocks'],['idx','indices & ETFs'],['comm','commodities'],['pre','pre-IPO'],['rates','rates'],['fx','forex']],rank:[['day','24h'],['week','7 days'],['month','30 days'],['allTime','all time'],['thrive','thrive traders']],feed:[['all','following'],['top','top today']]};
 function renderFilt(){$('#filt').innerHTML=FILTERS[S.tab].map(([k,l])=>`<button data-f="${k}" class="${S.filt[S.tab]===k?'on':''}">${l}</button>`).join('');$$('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===S.tab))}
 function mrow(m){const extra=m.kind==='tok'?sh(m.mc)+' MC':sh(m.vol)+' vol';
  return `<div class="it ${S.cur&&S.cur.id===m.id?'on':''}" data-m="${m.kind}|${esc(m.id)}">${icon(m,30)}<div class="g"><div class="n">${esc(m.sym)}</div><div class="sm m mut">$${px(m.px)}</div></div><div class="r"><div class="sm m">${extra}</div><div class="sm m ${m.ch>=0?'up':'dn'}">${pc(m.ch)}</div></div></div>`}
@@ -457,7 +459,7 @@ async function renderList(){const g=++listGen,el=$('#list');renderFilt();const f
    if(!S.tokens[f])el.innerHTML='<div class="load">loading Solana tokens…</div>';const L=await loadTokens(f);if(g!==listGen)return;el.innerHTML=L.map(mrow).join('')||'<div class="load">no results</div>'}
   else if(S.tab==='perps'){let L=f==='fav'?allPerps().filter(p=>S.favs.some(x=>x.id===p.id)):[...S.perps];
    L.sort(f==='gain'?(a,b)=>b.ch-a.ch:f==='lose'?(a,b)=>a.ch-b.ch:f==='lev'?(a,b)=>b.maxLev-a.maxLev||b.vol-a.vol:(a,b)=>b.vol-a.vol);el.innerHTML=L.map(mrow).join('')||'<div class="load">tap the star on a perp to save it here.</div>'}
-  else if(S.tab==='mercados'){const L=S.xyz.filter(m=>f==='idx'?IDX.includes(m.sym):f==='comm'?COMM.includes(m.sym):f==='fx'?FX.includes(m.sym):!IDX.includes(m.sym)&&!COMM.includes(m.sym)&&!FX.includes(m.sym)).sort((a,b)=>b.vol-a.vol);el.innerHTML=L.map(mrow).join('')||'<div class="load">no markets available</div>'}
+  else if(S.tab==='mercados'){const OTH=[...IDX,...COMM,...FX,...RATES,...PREIPO];const L=S.xyz.filter(m=>f==='idx'?IDX.includes(m.sym):f==='comm'?COMM.includes(m.sym):f==='fx'?FX.includes(m.sym):f==='rates'?RATES.includes(m.sym):f==='pre'?PREIPO.includes(m.sym):!OTH.includes(m.sym)).sort((a,b)=>b.vol-a.vol);el.innerHTML=`<div class="dim sm" style="padding:8px 10px">${L.length} markets · 24/7 perpetuals on Hyperliquid</div>`;el.innerHTML+=L.map(mrow).join('')||'<div class="load">no markets available</div>'}
   else if(S.tab==='rank'&&f==='thrive'){await renderThriveRank(g)}
   else if(S.tab==='rank'){if(!S.lb)await loadLB();if(g!==listGen)return;const R=[...S.lb.rows].sort((a,b)=>b[f][0]-a[f][0]).slice(0,100);
    el.innerHTML=`<div class="dim sm" style="padding:8px 10px">real PnL on Hyperliquid${S.lb.updated?' · updated '+ago(S.lb.updated*1000)+' ago':''}</div>`+R.map((r,i)=>`<div class="it" data-u="${r.a}"><span class="m dim" style="width:18px">${i+1}</span><img class="av" src="${avOf(r.a)}" alt=""><div class="g"><div class="n">${esc(r.n||shortA(r.a))}${isFol(r.a)?'<span class="fol">following</span>':''}</div><div class="sm mut">account ${sh(r.v)} · ROI ${pc(r[f][1]*100)}</div></div><div class="r m ${r[f][0]>=0?'up':'dn'}">${r[f][0]>=0?'+':''}${sh(r[f][0])}</div></div>`).join('')}
@@ -608,7 +610,7 @@ async function loadTopPositions(g){const m=S.cur;$('#lpT').textContent='top trad
 // ---------- websocket ----------
 let ws,wsCoin=null,wsOk=false;
 function wsOpen(){try{ws=new WebSocket('wss://api.hyperliquid.xyz/ws')}catch(e){return}
- ws.onopen=()=>{wsOk=true;foot();ws.send(JSON.stringify({method:'subscribe',subscription:{type:'allMids'}}));ws.send(JSON.stringify({method:'subscribe',subscription:{type:'allMids',dex:'xyz'}}));if(wsCoin)sub(wsCoin,true);if(BOOK.coin)ws.send(JSON.stringify({method:'subscribe',subscription:{type:'l2Book',coin:BOOK.coin}}))};
+ ws.onopen=()=>{wsOk=true;foot();ws.send(JSON.stringify({method:'subscribe',subscription:{type:'allMids'}}));(S.extDexs||['xyz']).forEach(d=>ws.send(JSON.stringify({method:'subscribe',subscription:{type:'allMids',dex:d}})));if(wsCoin)sub(wsCoin,true);if(BOOK.coin)ws.send(JSON.stringify({method:'subscribe',subscription:{type:'l2Book',coin:BOOK.coin}}))};
  ws.onclose=()=>{wsOk=false;foot();setTimeout(wsOpen,3000)};
  ws.onmessage=e=>{let d;try{d=JSON.parse(e.data)}catch(x){return}
   if(d.channel==='allMids'){const mids=d.data?.mids||{};for(const k in mids)S.mids[k]=+mids[k];tick()}
@@ -847,7 +849,7 @@ async function solSwap(){const m=S.cur,v=parseFloat($('#amt').value);if(!m||m.ki
  catch(e){if(e.message!=='canceled')toast('<span class="dn">swap failed:</span> '+esc(e.message||e))}
  finally{RS.busy=false;ticket()}}
 
-async function refreshReal(){if(!RS.addr)return;try{const [st,sx,oo,ox]=await Promise.all([realInfo({type:'clearinghouseState',user:RS.addr}),realInfo({type:'clearinghouseState',user:RS.addr,dex:'xyz'}).catch(()=>null),realInfo({type:'frontendOpenOrders',user:RS.addr}),realInfo({type:'frontendOpenOrders',user:RS.addr,dex:'xyz'}).catch(()=>[])]);if(sx)st.assetPositions=(st.assetPositions||[]).concat(sx.assetPositions||[]);RS.state=st;RS.orders=(oo||[]).concat(ox||[]);if(RS.on){wallet();renderPos(true)}}catch(e){}}
+async function refreshReal(){if(!RS.addr)return;try{const D=S.extDexs||['xyz'];const [st,oo,...ex]=await Promise.all([realInfo({type:'clearinghouseState',user:RS.addr}),realInfo({type:'frontendOpenOrders',user:RS.addr}),...D.map(d=>realInfo({type:'clearinghouseState',user:RS.addr,dex:d}).catch(()=>null)),...D.map(d=>realInfo({type:'frontendOpenOrders',user:RS.addr,dex:d}).catch(()=>[]))]);const n=D.length;ex.slice(0,n).forEach(x=>{if(x)st.assetPositions=(st.assetPositions||[]).concat(x.assetPositions||[])});RS.state=st;RS.orders=(oo||[]).concat(...ex.slice(n).map(o=>o||[]));if(RS.on){wallet();renderPos(true)}}catch(e){}}
 async function realSetup(){await libs();const eth=window.ethereum;const step=(n,ok,txt,btn)=>`<div class="step ${ok?'ok':''}"><i>${ok?'✓':n}</i><div class="t">${txt}</div>${btn||''}</div>`;
  let acct=0,agentOk=false,feeOk=!REAL.builder;
  if(RS.addr){try{const st=await realInfo({type:'clearinghouseState',user:RS.addr});RS.state=st;acct=+st.marginSummary.accountValue+ +(st.withdrawable||0)*0}catch(e){}
