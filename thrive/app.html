@@ -789,12 +789,6 @@ async function refreshStates(){if(Date.now()-S.statesAt<60000)return;S.statesAt=
  const top=[...S.lb.rows].sort((a,b)=>b.month[0]-a.month[0]).slice(0,30).map(r=>r.a),fol=S.follow.filter(a=>a.startsWith('0x'));
  const list=[...new Set([...fol,...top])].slice(0,40);let i=0;
  await Promise.all(Array.from({length:5},async()=>{while(i<list.length){const a=list[i++];try{S.states[a]=await hl({type:'clearinghouseState',user:a},0)}catch(e){}}}))}
-async function loadTopPositions(g){const m=S.cur;$('#lpT').textContent='top trader positions';$('#lpN').textContent='';$('#lpR').innerHTML='<span class="dim">top 30 of the month + who you follow</span>';
- if(!Object.keys(S.states).length)$('#lp').innerHTML='<div class="load">reading real positions…</div>';await refreshStates();if(g!==selGen)return;
- const R=[];Object.entries(S.states).forEach(([a,st])=>{(st.assetPositions||[]).forEach(p=>{if(p.position.coin===m.id)R.push({a,q:p.position})})});
- R.sort((x,y)=>Math.abs(y.q.positionValue)-Math.abs(x.q.positionValue));$('#lpN').textContent=`(${R.length})`;
- $('#lp').innerHTML=R.length?`<table><thead><tr><th>trader</th><th>side</th><th>position</th><th>entry</th><th>unrealized PnL</th><th>lev.</th><th>liquidation</th></tr></thead><tbody>${R.map(({a,q})=>{const L=+q.szi>0,u=+q.unrealizedPnl;
-  return`<tr class="cl" data-u="${a}"><td><div class="who"><img class="av" src="${avOf(a)}" alt=""><span class="nm">${esc(nameOf(a))}</span>${isFol(a)?'<span class="fol">following</span>':''}</div></td><td><span class="badge ${L?'b':'s'}">${L?'long':'short'}</span></td><td class="m">${sh(+q.positionValue)}<div class="dim sm">${Math.abs(+q.szi)} ${esc(m.sym)}</div></td><td class="m">${px(q.entryPx)}</td><td class="m ${u>=0?'up':'dn'}">${u>=0?'+':''}${sh(u)}<div class="sm">${pc(q.returnOnEquity*100)}</div></td><td class="m">${q.leverage?.value||'—'}×</td><td class="m dim">${q.liquidationPx?px(q.liquidationPx):'—'}</td></tr>`}).join('')}</tbody></table>`:'<div class="load">none of the top traders has an open position in this market right now.</div>'}
 
 // ---------- websocket ----------
 let ws,wsCoin=null,wsOk=false;
