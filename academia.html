@@ -334,7 +334,7 @@ const CONFIG = { whatsapp: "" };   // mismo número que en index.html
 
 const INSTR = {
   andre:   { n:"André Macouzet Ruiz",       r:"Fundador · Trading, datos e IA", foto:"img/andre.jpg",   p:"Opera futuros del Nasdaq y construyó el Terminal de NORTHPOINT. Enseña futuros, estructura de mercado, riesgo, programación e IA." },
-  goyo:    { n:"Gregorio Sánchez Calderón", r:"Cofundador · Finanzas, patrimonio y mentalidad", foto:"img/goyo.jpg", p:"Abogado en derecho fiduciario y patrimonial. Enseña finanzas personales, portafolios, patrimonio y psicología del trader." }
+  goyo:    { n:"Gregorio Sánchez Calderón", r:"Cofundador · Finanzas, patrimonio y mentalidad", foto:"img/goyo.jpg", p:"Abogado en derecho fiduciario y patrimonial. Enseña finanzas personales, portafolios, patrimonio, psicología del trader, marketing digital e IA para negocios." }
 };
 const CATS = [ ["todos","Todos"], ["trading","Trading"], ["ia","Inteligencia artificial"], ["datos","Datos y Python"], ["finanzas","Finanzas"], ["patrimonio","Patrimonio"], ["mente","Mentalidad"] ];
 const PAL = { trading:["#051C2C","#0E3A5C","#2251FF"], ia:["#12082E","#3B1E8F","#8B6CFF"], datos:["#04201F","#0B4A48","#19C2B6"], finanzas:["#0B1B3F","#1A3A8F","#5B7CFF"], patrimonio:["#1B1408","#5A4418","#D4A94A"], mente:["#2A0B14","#6B1E33","#FF7A8A"] };
@@ -387,6 +387,12 @@ const C = [
  ["suc","patrimonio","Planeación sucesoria para familias","Que el patrimonio pase de una generación a otra sin pleitos.","goyo",0,8,40,349,
   ["Testamento, fideicomiso y otras vías","Protocolo familiar","Impuestos en la transmisión","Preparar a la siguiente generación"],
   ["Por qué se pierde un patrimonio","Vías de transmisión","Protocolo familiar","Impuestos","La siguiente generación"]],
+ ["mkt","ia","Marketing digital con IA","Contenido, anuncios y embudo de ventas con inteligencia artificial.","goyo",1,12,64,299,
+  ["Armar un embudo de atención a venta","Escribir ganchos y guiones de video con IA","Lanzar y medir anuncios en Meta con presupuesto pequeño","Saber cuánto puede costar conseguir un cliente"],
+  ["El embudo de ventas","Contenido y ganchos con IA","Anuncios en Meta","Medir y escalar","Su campaña completa"]],
+ ["ianeg","ia","IA para tu empresa o negocio","Atención, operación y decisiones con inteligencia artificial.","goyo",1,10,54,249,
+  ["Montar un asistente que responde a sus clientes","Automatizar cotizaciones, correos y reportes","Analizar ventas y márgenes con IA","Cuidar los datos de sus clientes"],
+  ["Qué puede hacer la IA en un negocio","Atención al cliente","Operación diaria","Decisiones con datos","Su primer proceso automatizado"]],
  ["mente","mente","Psicología del trader: disciplina y proceso","Operar el plan cuando el mercado presiona.","goyo",0,7,36,199,
   ["Reconocer las emociones que rompen el plan","Rutinas antes, durante y después de operar","Cómo manejar una racha perdedora","Medir su disciplina, no solo su resultado"],
   ["El trader contra sí mismo","Rutinas","Rachas perdedoras","Revisión y diario","Proceso sobre resultado"]]
@@ -399,7 +405,7 @@ const PROGS = [
   { id:"elite", lvl:"Mentoría · 6 meses · cupo de 10", n:"Programa Élite Mesa NORTHPOINT", d:"Todo el catálogo más seis meses trabajando al lado de la mesa, con seguimiento uno a uno.", cursos:C.map(c=>c.id), extra:["Mentoría 1:1 cada semana","Sesiones en la oficina de la mesa","Los tres certificados"], p:9800, elite:true }
 ];
 
-const KW = {"fut0": ["Futuros", "desde cero"], "estr": ["Estructura", "y liquidez"], "ny": ["Sesión de", "Nueva York"], "riesgo": ["Gestión", "de riesgo"], "fondeo": ["Cuentas", "de fondeo"], "iatr": ["IA para", "trading"], "ml": ["Machine", "learning"], "agentes": ["Agentes", "de IA"], "py": ["Python", "financiero"], "bt": ["Backtesting", "honesto"], "excel": ["Modelación", "financiera"], "pers": ["Finanzas", "personales"], "port": ["Portafolios", "de inversión"], "fide": ["Fideicomisos", "y patrimonio"], "suc": ["Planeación", "sucesoria"], "mente": ["Psicología", "del trader"]};
+const KW = {"fut0": ["Futuros", "desde cero"], "estr": ["Estructura", "y liquidez"], "ny": ["Sesión de", "Nueva York"], "riesgo": ["Gestión", "de riesgo"], "fondeo": ["Cuentas", "de fondeo"], "iatr": ["IA para", "trading"], "ml": ["Machine", "learning"], "agentes": ["Agentes", "de IA"], "py": ["Python", "financiero"], "bt": ["Backtesting", "honesto"], "excel": ["Modelación", "financiera"], "pers": ["Finanzas", "personales"], "port": ["Portafolios", "de inversión"], "fide": ["Fideicomisos", "y patrimonio"], "suc": ["Planeación", "sucesoria"], "mente": ["Psicología", "del trader"], "mkt": ["Marketing", "con IA"], "ianeg": ["IA para", "tu negocio"]};
 const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
 const usd = n => "$" + n.toLocaleString("en-US") + " USD";
 const usd0 = n => "$" + n.toLocaleString("en-US");
