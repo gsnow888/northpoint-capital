@@ -333,10 +333,8 @@ form.acad .full{grid-column:1/-1}
 const CONFIG = { whatsapp: "" };   // mismo número que en index.html
 
 const INSTR = {
-  andre:   { n:"André Macouzet Ruiz",       r:"Fundador · Datos, IA y futuros", foto:"img/andre.jpg",   p:"Opera futuros del Nasdaq y construyó el Terminal de NORTHPOINT. Enseña datos, IA y estructura de mercado." },
-  pablo:   { n:"Pablo Ochoa Macouzet",      r:"Cofundador · Estrategia y finanzas", foto:"img/pablo.jpg", p:"Ingeniero Industrial y de Sistemas, Master por EGADE. Enseña modelación financiera, riesgo y finanzas personales." },
-  goyo:    { n:"Gregorio Sánchez Calderón", r:"Cofundador · Inversiones y patrimonio", foto:"img/goyo.jpg", p:"Abogado en derecho fiduciario y patrimonial. Enseña carteras de largo plazo, fideicomisos y planeación sucesoria." },
-  gerardo: { n:"Gerardo Andaluz Contreras", r:"Cofundador · Trader de la mesa", foto:"img/gerardo.jpg", p:"Opera futuros de índices en la sesión de Nueva York. Enseña ejecución, plan de sesión y disciplina." }
+  andre:   { n:"André Macouzet Ruiz",       r:"Fundador · Trading, datos e IA", foto:"img/andre.jpg",   p:"Opera futuros del Nasdaq y construyó el Terminal de NORTHPOINT. Enseña futuros, estructura de mercado, riesgo, programación e IA." },
+  goyo:    { n:"Gregorio Sánchez Calderón", r:"Cofundador · Finanzas, patrimonio y mentalidad", foto:"img/goyo.jpg", p:"Abogado en derecho fiduciario y patrimonial. Enseña finanzas personales, portafolios, patrimonio y psicología del trader." }
 };
 const CATS = [ ["todos","Todos"], ["trading","Trading"], ["ia","Inteligencia artificial"], ["datos","Datos y Python"], ["finanzas","Finanzas"], ["patrimonio","Patrimonio"], ["mente","Mentalidad"] ];
 const PAL = { trading:["#051C2C","#0E3A5C","#2251FF"], ia:["#12082E","#3B1E8F","#8B6CFF"], datos:["#04201F","#0B4A48","#19C2B6"], finanzas:["#0B1B3F","#1A3A8F","#5B7CFF"], patrimonio:["#1B1408","#5A4418","#D4A94A"], mente:["#2A0B14","#6B1E33","#FF7A8A"] };
@@ -344,16 +342,16 @@ const NIV = { 1:"Principiante", 2:"Intermedio", 3:"Avanzado", 0:"Todos los nivel
 
 // catálogo: [id, categoría, título, subtítulo, instructor, nivel, horas, lecciones, precio, lo que aprenderá (4), módulos (5)]
 const C = [
- ["fut0","trading","Futuros del Nasdaq desde cero","Qué es un contrato, cómo se mueve y cómo se opera con riesgo definido.","gerardo",1,14,86,249,
+ ["fut0","trading","Futuros del Nasdaq desde cero","Qué es un contrato, cómo se mueve y cómo se opera con riesgo definido.","andre",1,14,86,249,
   ["Leer un contrato de futuros: tick, margen y horario","Montar la plataforma y el gráfico de trabajo","Definir entrada, stop y objetivo antes de operar","Llevar un registro de cada operación"],
   ["El mercado de futuros","Contratos NQ y MNQ","La plataforma y el gráfico","Su primera operación con riesgo definido","Registro y revisión"]],
  ["estr","trading","Estructura de mercado y liquidez","Tendencia, rangos y zonas donde el precio busca liquidez.","andre",2,18,104,349,
   ["Identificar tendencia y cambios de estructura","Marcar liquidez del día anterior, Asia y Londres","Zonas de equilibrio y desequilibrio","Armar un mapa del día antes de abrir"],
   ["Estructura: máximos y mínimos","Liquidez y dónde se acumula","Equilibrio, desequilibrio y FVG","Temporalidades: de 4 horas a 1 minuto","El mapa del día"]],
- ["ny","trading","Sesión de Nueva York: plan, ejecución y registro","Cómo trabaja la mesa de 7:30 a 14:00, paso a paso.","gerardo",2,12,64,299,
+ ["ny","trading","Sesión de Nueva York: plan, ejecución y registro","Cómo trabaja la mesa de 7:30 a 14:00, paso a paso.","andre",2,12,64,299,
   ["Preparar el plan escrito antes de la apertura","Ejecutar solo lo que dice el plan","Gestionar la operación abierta sin improvisar","Cerrar el día con registro y revisión"],
   ["La rutina de la mañana","Apertura y primeros 30 minutos","Ejecución y gestión","Cuándo no operar","Cierre y bitácora"]],
- ["riesgo","trading","Gestión de riesgo profesional","Tamaño de posición, freno mensual y drawdown, como lo mide la mesa.","pablo",0,10,58,279,
+ ["riesgo","trading","Gestión de riesgo profesional","Tamaño de posición, freno mensual y drawdown, como lo mide la mesa.","andre",0,10,58,279,
   ["Calcular el tamaño de cada posición","Poner límites diarios y mensuales","Entender el drawdown y cómo recuperarse","Medir resultados en R, no en dinero"],
   ["Por qué se pierde una cuenta","Tamaño de posición","Límites diarios y mensuales","Drawdown y recuperación","Métricas: R, expectativa y factor de ganancia"]],
  ["fondeo","trading","Cuentas de fondeo: del examen al retiro","Pasar la evaluación, cuidar el drawdown y cobrar.","andre",2,9,48,229,
@@ -374,10 +372,10 @@ const C = [
  ["bt","datos","Backtesting sin autoengaño","Probar una estrategia con datos, sin trampas.","andre",2,14,72,349,
   ["Programar un backtest de principio a fin","Costos, deslizamiento y comisiones reales","Evitar sesgos de supervivencia y de mirar el futuro","Monte Carlo para ver el peor escenario"],
   ["Qué es un backtest honesto","El motor de pruebas","Costos reales","Sesgos y cómo evitarlos","Monte Carlo y tamaño de posición"]],
- ["excel","finanzas","Modelación financiera en Excel","Estados financieros, proyecciones y valuación.","pablo",2,16,90,329,
+ ["excel","finanzas","Modelación financiera en Excel","Estados financieros, proyecciones y valuación.","goyo",2,16,90,329,
   ["Armar estados financieros integrados","Proyectar ingresos y flujo de efectivo","Valuar con flujos descontados","Presentar escenarios a un comité"],
   ["Estructura de un buen modelo","Estados financieros","Proyecciones","Valuación por flujos","Escenarios y sensibilidad"]],
- ["pers","finanzas","Finanzas personales e interés compuesto","Presupuesto, ahorro y cómo hacer que el dinero trabaje.","pablo",1,8,44,149,
+ ["pers","finanzas","Finanzas personales e interés compuesto","Presupuesto, ahorro y cómo hacer que el dinero trabaje.","goyo",1,8,44,149,
   ["Armar un presupuesto que sí se cumple","Fondo de emergencia y deudas","Entender el interés compuesto con números","Elegir dónde poner su ahorro"],
   ["Su punto de partida","Presupuesto","Deudas y fondo de emergencia","Interés compuesto","Plan de ahorro a 5 años"]],
  ["port","finanzas","Análisis de inversiones y portafolios","Asignación de activos, riesgo y rebalanceo.","goyo",2,15,80,349,
@@ -389,7 +387,7 @@ const C = [
  ["suc","patrimonio","Planeación sucesoria para familias","Que el patrimonio pase de una generación a otra sin pleitos.","goyo",0,8,40,349,
   ["Testamento, fideicomiso y otras vías","Protocolo familiar","Impuestos en la transmisión","Preparar a la siguiente generación"],
   ["Por qué se pierde un patrimonio","Vías de transmisión","Protocolo familiar","Impuestos","La siguiente generación"]],
- ["mente","mente","Psicología del trader: disciplina y proceso","Operar el plan cuando el mercado presiona.","gerardo",0,7,36,199,
+ ["mente","mente","Psicología del trader: disciplina y proceso","Operar el plan cuando el mercado presiona.","goyo",0,7,36,199,
   ["Reconocer las emociones que rompen el plan","Rutinas antes, durante y después de operar","Cómo manejar una racha perdedora","Medir su disciplina, no solo su resultado"],
   ["El trader contra sí mismo","Rutinas","Rachas perdedoras","Revisión y diario","Proceso sobre resultado"]]
 ].map(a => ({ id:a[0], cat:a[1], t:a[2], s:a[3], ins:a[4], niv:a[5], h:a[6], lec:a[7], p:a[8], learn:a[9], mods:a[10] }));
