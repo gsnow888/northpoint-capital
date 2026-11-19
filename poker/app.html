@@ -206,6 +206,16 @@ body.inroom .top{display:none}
 .tier.inf .tcard2{box-shadow:inset 0 0 0 1px rgba(231,200,115,.55),0 14px 30px rgba(0,0,0,.5),0 0 40px -10px rgba(231,200,115,.45)}.tier.inf .tc-name{background:linear-gradient(180deg,#fff3c4,#e7c873 50%,#9a7a2a);-webkit-background-clip:text;background-clip:text;color:transparent}
 .chip2.bank{border-color:rgba(43,212,125,.4)}.chip2.bank b{color:var(--g);font-size:13px}
 .plist{display:flex;flex-direction:column;gap:4px;margin-top:8px}.pr{display:flex;align-items:center;gap:8px;font-weight:600}.pr button,.pr i{font:800 10px Manrope;font-style:normal;padding:3px 8px;border-radius:6px;background:rgba(255,107,107,.15);color:#ffb3b3;border:0}.pr.ok button,.pr.ok i{background:rgba(43,212,125,.18);color:var(--g)}
+.mlobby{position:absolute;inset:0;display:none;place-items:center;z-index:9;padding:70px 16px 16px;overflow:auto}.mlobby.on{display:grid}
+.ml-in{width:min(720px,100%);background:rgba(8,11,9,.86);backdrop-filter:blur(24px);border:1px solid var(--line2);border-radius:26px;padding:28px;box-shadow:0 40px 100px rgba(0,0,0,.7)}
+.ml-k{font:700 11px Manrope;letter-spacing:.18em;text-transform:uppercase;color:var(--g2)}.ml-in h2{font:700 30px Unbounded;letter-spacing:-.03em;margin:6px 0 18px}
+.ml-pool{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:8px;margin-bottom:10px}.ml-pool div{padding:14px;border-radius:14px;background:rgba(43,212,125,.06);border:1px solid rgba(43,212,125,.2)}.ml-pool b{display:block;font:700 22px Unbounded}.ml-pool div:first-child b{color:var(--g)}.ml-pool span{color:var(--mut);font-size:11.5px}
+.ml-facts{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:16px}.ml-facts div{padding:10px 12px;border-radius:12px;background:var(--glass);border:1px solid var(--line)}.ml-facts b{display:block;font:700 13px Manrope}.ml-facts span{color:var(--mut);font-size:11px}
+.ml-acts{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.ml-players{display:flex;flex-wrap:wrap;gap:6px;max-height:22vh;overflow:auto}.ml-players span{font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px;background:var(--glass);border:1px solid var(--line)}.ml-players span.out{opacity:.45}.ml-players em{color:var(--dim);font-size:13px}
+.ml-note{color:var(--dim);font-size:11.5px;margin-top:14px}
+.mtabs2{display:flex;gap:6px;margin-top:4px}
+@media (max-width:820px){.ml-pool{grid-template-columns:1fr 1fr}.ml-facts{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -254,6 +264,10 @@ body.inroom .top{display:none}
    <div class="r3"><label class="f"><span>starting stack</span><select class="in" id="tStack"><option value="1500">1,500</option><option value="3000" selected>3,000</option><option value="5000">5,000</option></select></label>
    <label class="f"><span>blinds rise every</span><select class="in" id="tSpeed"><option value="180000">3 min · turbo</option><option value="300000" selected>5 min</option><option value="480000">8 min · deep</option></select></label>
    <label class="f"><span>who can join</span><select class="in" id="tPub"><option value="1">anyone</option><option value="0">invite only</option></select></label></div>
+   <div class="r2"><label class="f"><span>format</span><select class="in" id="tFmt"><option value="mtt">multi-table · unlimited players</option><option value="sng">Sit &amp; Go · 1 table, 9 players</option></select></label>
+   <label class="f"><span>KO bounty per player (USD)</span><input class="in m" id="tKo" inputmode="decimal" value="0" placeholder="0 = no KO"></label></div>
+   <div class="r2"><label class="f"><span>rebuys</span><select class="in" id="tRebuy"><option value="0">no rebuys</option><option value="2">until level 2</option><option value="4" selected>until level 4</option><option value="6">until level 6</option></select></label>
+   <label class="f"><span>late registration</span><select class="in" id="tLate"><option value="0">closed at start</option><option value="3">until level 3</option><option value="6" selected>until level 6</option><option value="9">until level 9</option></select></label></div>
    <div class="r2"><label class="f"><span>money</span><select class="in" id="tMoney"><option value="real">real money · USDC</option><option value="practice">practice · free chips</option></select></label>
    <label class="f"><span>entry per player (USD)</span><input class="in m" id="tAmt" inputmode="decimal" value="10"></label></div>
    
@@ -302,9 +316,11 @@ body.inroom .top{display:none}
 <div class="over" id="over"><div class="mi" id="overIn"></div></div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.80.0/dist/umd/supabase.min.js"></script>
-<script src="pricing.js?v=1795045659"></script>
-<script src="engine.js?v=1795045659"></script>
-<script src="game.js?v=1795045659"></script>
+<script src="pricing.js?v=1795046220"></script>
+<script src="engine.js?v=1795046220"></script>
+<script src="mttcore.js?v=1795046220"></script>
+<script src="game.js?v=1795046220"></script>
 
+<script src="mtt.js?v=1795046220"></script>
 </body>
 </html>
