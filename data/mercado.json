@@ -135,355 +135,355 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 26737.25,
-   "cambio": -547.0,
-   "pct": -2.0
+   "precio": 26472.0,
+   "cambio": -812.25,
+   "pct": -2.98
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7226.25,
-   "cambio": -212.75,
-   "pct": -2.86
+   "precio": 7183.5,
+   "cambio": -255.5,
+   "pct": -3.43
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3675.6,
-   "cambio": -177.4,
-   "pct": -4.6
+   "precio": 3596.2,
+   "cambio": -256.8,
+   "pct": -6.66
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 82.82,
-   "cambio": -2.9,
-   "pct": -3.38
+   "precio": 82.7,
+   "cambio": -3.02,
+   "pct": -3.52
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2674.8,
-   "cambio": -76.6,
-   "pct": -2.78
+   "precio": 2657.9,
+   "cambio": -93.5,
+   "pct": -3.4
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 49350.0,
-   "cambio": -2320.0,
-   "pct": -4.49
+   "precio": 49154.0,
+   "cambio": -2516.0,
+   "pct": -4.87
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 62615.0,
-   "cambio": -2490.0,
-   "pct": -3.82
+   "precio": 62250.0,
+   "cambio": -2855.0,
+   "pct": -4.39
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 147.83,
-   "pct": -5.09,
+   "precio": 147.17,
+   "pct": -5.51,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 661.79,
-   "pct": -4.92,
+   "precio": 658.01,
+   "pct": -5.46,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 354.33,
-   "pct": -4.91,
+   "precio": 352.41,
+   "pct": -5.42,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 78.25,
-   "pct": -5.34,
+   "precio": 77.93,
+   "pct": -5.72,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 649.79,
-   "pct": -5.58,
+   "precio": 645.04,
+   "pct": -6.27,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 719.82,
-   "pct": -4.93,
+   "precio": 715.87,
+   "pct": -5.45,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 70.86,
-   "pct": 0.3,
+   "precio": 70.91,
+   "pct": 0.37,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 34.24,
-   "pct": -4.69,
+   "precio": 34.2,
+   "pct": -4.81,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 93.91,
-   "pct": -2.63,
+   "precio": 93.47,
+   "pct": -3.08,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 69.6,
-   "pct": -6.51,
+   "precio": 69.17,
+   "pct": -7.09,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 336.54,
-   "pct": -5.17,
+   "precio": 335.18,
+   "pct": -5.55,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 35.46,
-   "pct": -12.14,
+   "precio": 35.08,
+   "pct": -13.08,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 349.44,
-   "pct": -1.53,
+   "precio": 349.21,
+   "pct": -1.6,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 502.54,
-   "pct": -3.91,
+   "precio": 498.3,
+   "pct": -4.72,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 148.67,
-   "pct": -10.54,
+   "precio": 145.98,
+   "pct": -12.16,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 278.63,
-   "pct": -6.72,
+   "precio": 272.66,
+   "pct": -8.72,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 259.27,
-   "pct": -3.05,
+   "precio": 257.37,
+   "pct": -3.77,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 600.8,
-   "pct": -3.66,
+   "precio": 596.22,
+   "pct": -4.39,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 376.89,
-   "pct": -5.17,
+   "precio": 374.41,
+   "pct": -5.8,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 569.9,
-   "pct": -3.38,
+   "precio": 572.04,
+   "pct": -3.02,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 1091.26,
-   "pct": -0.09,
+   "precio": 1093.83,
+   "pct": 0.15,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 320.33,
-   "pct": -6.56,
+   "precio": 320.22,
+   "pct": -6.59,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 402.76,
-   "pct": -4.17,
+   "precio": 402.25,
+   "pct": -4.3,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 333.31,
-   "pct": -17.73,
+   "precio": 330.48,
+   "pct": -18.43,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
-   "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
+   "titulo": "My wife is bankrolling her family’s trips to New York and it’s draining our savings. Should I ask her to stop?",
+   "url": "https://www.marketwatch.com/story/my-wife-pays-thousands-of-dollars-for-her-family-to-visit-from-argentina-how-can-i-convince-her-to-stop-9381351c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 20 Nov 2026 01:22:00 GMT"
+  },
+  {
+   "titulo": "SoftBank plunges over 16% as AI sell-off hits Asian tech stocks following Anthropic debut",
+   "url": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 19:19:25 GMT"
+   "fecha": "Fri, 20 Nov 2026 01:20:46 GMT"
+  },
+  {
+   "titulo": "Commerce approved sales of more than 879,000 AI chips to Chinese companies, Rep. Mast says",
+   "url": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 20 Nov 2026 00:53:55 GMT"
+  },
+  {
+   "titulo": "Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices",
+   "url": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 20 Nov 2026 00:52:17 GMT"
+  },
+  {
+   "titulo": "AMD dives on short seller report of alleged China exposure",
+   "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 20 Nov 2026 00:08:34 GMT"
+  },
+  {
+   "titulo": "Anthropic was supposed to save the AI trade. What went wrong?",
+   "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 20 Nov 2026 00:00:38 GMT"
+  },
+  {
+   "titulo": "After Anthropic’s ‘bittersweet’ IPO, here’s what lies ahead",
+   "url": "https://www.marketwatch.com/story/after-anthropics-bittersweet-ipo-heres-what-lies-ahead-8c32fdb7?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 19 Nov 2026 23:56:00 GMT"
+  },
+  {
+   "titulo": "California attorney general issues Nvidia subpoena in probe of China chip diversion",
+   "url": "https://www.cnbc.com/2026/11/19/nvidia-california-bonta-subpoena-china-chips.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 19 Nov 2026 23:21:23 GMT"
+  },
+  {
+   "titulo": "These were the only stocks that rose amid the stock market’s wipeout Thursday",
+   "url": "https://www.marketwatch.com/story/these-were-the-only-stocks-that-rose-amid-the-stock-markets-wipeout-thursday-1eaf32ba?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 19 Nov 2026 23:11:00 GMT"
+  },
+  {
+   "titulo": "Intuit’s downbeat outlook deepens Wall Street’s anxiety about software companies",
+   "url": "https://www.marketwatch.com/story/intuits-downbeat-outlook-deepens-wall-streets-anxiety-about-software-companies-15b878e5?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 19 Nov 2026 22:53:00 GMT"
+  },
+  {
+   "titulo": "A CoreWeave co-founder just made an unconventional $30 million wager on its battered bonds",
+   "url": "https://www.marketwatch.com/story/a-coreweave-co-founder-just-made-an-unconventional-30-million-wager-on-its-battered-bonds-5586b0e9?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 19 Nov 2026 22:41:00 GMT"
+  },
+  {
+   "titulo": "Congress passes bill to protect older investors from financial fraud",
+   "url": "https://www.cnbc.com/2026/11/19/financial-exploitation-prevention-act-older-investors-fraud.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 19 Nov 2026 22:23:29 GMT"
   },
   {
    "titulo": "We’re in our 50s and terrified of a market crash. Should we put $400,000 of our $1 million retirement savings into an annuity?",
    "url": "https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 19 Nov 2026 19:15:00 GMT"
+   "fecha": "Thu, 19 Nov 2026 22:15:00 GMT"
   },
   {
-   "titulo": "The surprising reason the U.S. economy is speeding up — and might have more room to run",
-   "url": "https://www.marketwatch.com/story/the-surprising-reason-the-u-s-economy-is-speeding-up-and-might-have-more-room-to-run-9016c8db?mod=mw_rss_topstories",
+   "titulo": "Anthropic’s stock surges in its debut — and the rest of the market dives anyway",
+   "url": "https://www.marketwatch.com/story/anthropics-stock-surges-in-its-debut-and-the-rest-of-the-market-dives-anyway-19671218?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 19 Nov 2026 19:13:00 GMT"
+   "fecha": "Thu, 19 Nov 2026 22:12:00 GMT"
   },
   {
-   "titulo": "Amid recent banking outages, should you start carrying cash again? Top advisors weigh in",
-   "url": "https://www.cnbc.com/2026/11/19/banking-outages-emergency-cash.html",
+   "titulo": "Markets are sending troubling signals about the state of the economy",
+   "url": "https://www.marketwatch.com/story/markets-are-sending-troubling-signals-about-the-state-of-the-economy-8043f20e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 19 Nov 2026 21:57:00 GMT"
+  },
+  {
+   "titulo": "Nvidia’s stock falls further. It has lost $669 billion in six trading days.",
+   "url": "https://www.marketwatch.com/story/nvidias-stock-falls-further-it-has-lost-611-billion-in-six-trading-days-434af231?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 19 Nov 2026 21:45:00 GMT"
+  },
+  {
+   "titulo": "Intuit to sell Mailchimp to Bending Spoons for $3.68 billion",
+   "url": "https://www.cnbc.com/2026/11/19/intuit-mailchimp-sale-bending-spoons.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 19:06:56 GMT"
+   "fecha": "Thu, 19 Nov 2026 21:40:31 GMT"
   },
   {
-   "titulo": "As Sanofi's Pompe drug shortage drags on, some patients struggle to access treatments",
-   "url": "https://www.cnbc.com/2026/11/19/as-pompe-drug-shortage-drags-on-patients-struggle-to-get-treatments.html",
+   "titulo": "Why Micron, Broadcom and other AI stocks gave up their gains Thursday",
+   "url": "https://www.marketwatch.com/story/why-micron-intel-and-other-ai-stocks-are-getting-a-lift-on-thursday-cf6f59f8?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 19 Nov 2026 21:27:00 GMT"
+  },
+  {
+   "titulo": "Amazon app warns New York of higher costs if Mamdani delivery law passes",
+   "url": "https://www.cnbc.com/2026/11/19/amazon-nyc-delivery-protection-act.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 18:55:57 GMT"
+   "fecha": "Thu, 19 Nov 2026 20:46:23 GMT"
   },
   {
-   "titulo": "Medicare beneficiaries could skip the nursing home for cheaper care at home under new bill",
-   "url": "https://www.marketwatch.com/story/medicare-beneficiaries-could-skip-the-nursing-home-for-cheaper-care-at-home-under-new-bill-e289c8d0?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 19 Nov 2026 18:54:00 GMT"
+   "titulo": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
+   "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 19 Nov 2026 19:58:30 GMT"
   },
   {
-   "titulo": "Social Security should be shut down, this Republican senator says",
-   "url": "https://www.marketwatch.com/story/social-security-should-be-shut-down-this-republican-senator-says-8f7fef81?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 19 Nov 2026 18:53:00 GMT"
+   "titulo": "Trump bought Nvidia, Palantir, SpaceX in September as federal deals, White House ties grew",
+   "url": "https://www.cnbc.com/2026/11/19/trump-nvidia-spacex-palantir-stock-trades-september.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 19 Nov 2026 19:43:08 GMT"
   },
   {
    "titulo": "Jensen Huang's — and Nvidia's — legal exposure balloons",
    "url": "https://www.cnbc.com/2026/11/19/nvidia-jensen-huang-legal.html",
    "fuente": "CNBC",
    "fecha": "Thu, 19 Nov 2026 18:44:34 GMT"
-  },
-  {
-   "titulo": "Elon Musk becomes the latest tech billionaire to make a peace offering to Democrats after the midterms",
-   "url": "https://www.marketwatch.com/story/elon-musk-becomes-the-latest-tech-billionaire-to-make-a-peace-offering-to-democrats-after-the-midterms-05df0c0e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 19 Nov 2026 18:43:00 GMT"
-  },
-  {
-   "titulo": "Netflix, Amazon, Fox to bid for 2030 men's World Cup rights; Disney out",
-   "url": "https://www.cnbc.com/2026/11/19/netflix-amazon-fox-bid-for-2030-mens-world-cup-rights-disney-out.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 18:30:51 GMT"
-  },
-  {
-   "titulo": "AMD dives on short-seller report of alleged China exposure",
-   "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 18:24:54 GMT"
-  },
-  {
-   "titulo": "My wife pays for her family to visit us in New York. How do I tell her we can’t afford it?",
-   "url": "https://www.marketwatch.com/story/my-wife-pays-thousands-of-dollars-for-her-family-to-visit-from-argentina-how-can-i-convince-her-to-stop-9381351c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 19 Nov 2026 18:15:00 GMT"
-  },
-  {
-   "titulo": "‘Rockets are hard’ — yet this analyst thinks AST SpaceMobile’s stock is ready to rebound",
-   "url": "https://www.marketwatch.com/story/rockets-are-hard-yet-this-analyst-thinks-ast-spacemobiles-stock-is-ready-to-rebound-b9ce6f9c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 19 Nov 2026 18:07:00 GMT"
-  },
-  {
-   "titulo": "Amazon launches in-app push against Mamdani-backed delivery bill in New York City",
-   "url": "https://www.cnbc.com/2026/11/19/amazon-nyc-delivery-protection-act.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 18:03:03 GMT"
-  },
-  {
-   "titulo": "UnitedHealth’s stock keeps plunging after government signals crackdown on Medicare Advantage fraud",
-   "url": "https://www.marketwatch.com/story/unitedhealths-stock-keeps-plunging-after-government-signals-crackdown-on-medicare-advantage-fraud-c4770a45?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 19 Nov 2026 18:03:00 GMT"
-  },
-  {
-   "titulo": "Forget data centers. The next great AI stocks are hiding in plain sight in these four sectors.",
-   "url": "https://www.marketwatch.com/story/forget-data-centers-the-next-great-ai-stocks-are-hiding-in-plain-sight-in-these-four-sectors-ee9833b1?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 19 Nov 2026 18:00:00 GMT"
-  },
-  {
-   "titulo": "Trump bought Nvidia, Palantir, SpaceX in September as federal deals, White House ties grew",
-   "url": "https://www.cnbc.com/2026/11/19/trump-nvidia-spacex-palantir-stock-trades-september.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 17:59:04 GMT"
-  },
-  {
-   "titulo": "A CoreWeave co-founder just made an unconventional $30 million wager on its battered bonds",
-   "url": "https://www.marketwatch.com/story/a-coreweave-co-founder-just-made-an-unconventional-30-million-wager-on-its-battered-bonds-5586b0e9?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 19 Nov 2026 17:21:00 GMT"
-  },
-  {
-   "titulo": "Anthropic IPO: Investors who flip the stock may face brokerage penalty",
-   "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-flipping-rules.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 16:31:23 GMT"
-  },
-  {
-   "titulo": "Gold's bad year is getting worse. Why its price keeps falling",
-   "url": "https://www.cnbc.com/2026/11/19/gold-prices-fall-fed-rates-dollar.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 16:29:52 GMT"
-  },
-  {
-   "titulo": "Palo Alto stock jumps on earnings beat and company's big bet on securing open-weight models",
-   "url": "https://www.cnbc.com/2026/11/19/palo-alto-networks-earnings-applied-compute.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 16:28:06 GMT"
-  },
-  {
-   "titulo": "Kash Patel skips House hearing after Mar-a-Lago gala with $50,000 access",
-   "url": "https://www.cnbc.com/2026/11/18/kash-patel-hearing-mar-a-lago-gala.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 14:15:18 GMT"
   }
  ],
  "videos": [
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-19T19:23:45Z",
+ "ts": "2026-11-20T01:26:07Z",
  "fallas": [
   "videos",
   "directos"
