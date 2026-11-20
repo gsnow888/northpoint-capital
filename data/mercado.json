@@ -135,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 26472.0,
-   "cambio": -812.25,
-   "pct": -2.98
+   "precio": 26354.75,
+   "cambio": -929.5,
+   "pct": -3.41
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7183.5,
-   "cambio": -255.5,
-   "pct": -3.43
+   "precio": 7168.75,
+   "cambio": -270.25,
+   "pct": -3.63
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3596.2,
-   "cambio": -256.8,
-   "pct": -6.66
+   "precio": 3581.7,
+   "cambio": -271.3,
+   "pct": -7.04
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 82.7,
-   "cambio": -3.02,
-   "pct": -3.52
+   "precio": 81.54,
+   "cambio": -4.18,
+   "pct": -4.88
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2657.9,
-   "cambio": -93.5,
-   "pct": -3.4
+   "precio": 2658.9,
+   "cambio": -92.5,
+   "pct": -3.36
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 49154.0,
-   "cambio": -2516.0,
-   "pct": -4.87
+   "precio": 49170.0,
+   "cambio": -2500.0,
+   "pct": -4.84
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 62250.0,
-   "cambio": -2855.0,
-   "pct": -4.39
+   "precio": 61770.0,
+   "cambio": -3335.0,
+   "pct": -5.12
   }
  ],
  "acciones": [
@@ -354,28 +354,58 @@
  ],
  "noticias": [
   {
+   "titulo": "SoftBank suffers worst day in over two years as AI sell-off hits Asian tech stocks",
+   "url": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 20 Nov 2026 07:23:06 GMT"
+  },
+  {
+   "titulo": "‘More than just a game’: How GTA VI’s blockbuster launch fuels a booming content economy",
+   "url": "https://www.cnbc.com/2026/11/20/gta-vi-launch-streaming-content-economy.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 20 Nov 2026 07:08:36 GMT"
+  },
+  {
+   "titulo": "Forget Anthropic: In Europe, the IPO hype is about a blue lagoon",
+   "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-iceland-blue-lagoon.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 20 Nov 2026 06:00:01 GMT"
+  },
+  {
+   "titulo": "AI is changing software engineering — and some developers miss the struggle",
+   "url": "https://www.cnbc.com/2026/11/20/ai-coding-tools-software-engineers.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 20 Nov 2026 06:00:01 GMT"
+  },
+  {
+   "titulo": "U.K.-India trade deal faces a stiff test over Scotch whisky import taxes",
+   "url": "https://www.cnbc.com/2026/11/20/uk-india-trade-scotch-whisky-tariffs.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 20 Nov 2026 05:09:52 GMT"
+  },
+  {
+   "titulo": "Senate passes BAAJA permitting reform bill backed by AI, energy sectors",
+   "url": "https://www.cnbc.com/2026/11/20/baaja-bill-senate-passes-permitting-reform.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 20 Nov 2026 03:56:17 GMT"
+  },
+  {
+   "titulo": "‘Nvidia’s turmoil has me spooked’: Should I sell my stocks and buy real estate — or ride out the storm?",
+   "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 20 Nov 2026 03:31:00 GMT"
+  },
+  {
+   "titulo": "I’m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?",
+   "url": "https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Fri, 20 Nov 2026 01:30:00 GMT"
+  },
+  {
    "titulo": "My wife is bankrolling her family’s trips to New York and it’s draining our savings. Should I ask her to stop?",
    "url": "https://www.marketwatch.com/story/my-wife-pays-thousands-of-dollars-for-her-family-to-visit-from-argentina-how-can-i-convince-her-to-stop-9381351c?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Fri, 20 Nov 2026 01:22:00 GMT"
-  },
-  {
-   "titulo": "SoftBank plunges over 16% as AI sell-off hits Asian tech stocks following Anthropic debut",
-   "url": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 20 Nov 2026 01:20:46 GMT"
-  },
-  {
-   "titulo": "Commerce approved sales of more than 879,000 AI chips to Chinese companies, Rep. Mast says",
-   "url": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 20 Nov 2026 00:53:55 GMT"
-  },
-  {
-   "titulo": "Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices",
-   "url": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 20 Nov 2026 00:52:17 GMT"
   },
   {
    "titulo": "AMD dives on short seller report of alleged China exposure",
@@ -420,18 +450,6 @@
    "fecha": "Thu, 19 Nov 2026 22:41:00 GMT"
   },
   {
-   "titulo": "Congress passes bill to protect older investors from financial fraud",
-   "url": "https://www.cnbc.com/2026/11/19/financial-exploitation-prevention-act-older-investors-fraud.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 22:23:29 GMT"
-  },
-  {
-   "titulo": "We’re in our 50s and terrified of a market crash. Should we put $400,000 of our $1 million retirement savings into an annuity?",
-   "url": "https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 19 Nov 2026 22:15:00 GMT"
-  },
-  {
    "titulo": "Anthropic’s stock surges in its debut — and the rest of the market dives anyway",
    "url": "https://www.marketwatch.com/story/anthropics-stock-surges-in-its-debut-and-the-rest-of-the-market-dives-anyway-19671218?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -450,40 +468,22 @@
    "fecha": "Thu, 19 Nov 2026 21:45:00 GMT"
   },
   {
-   "titulo": "Intuit to sell Mailchimp to Bending Spoons for $3.68 billion",
-   "url": "https://www.cnbc.com/2026/11/19/intuit-mailchimp-sale-bending-spoons.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 21:40:31 GMT"
-  },
-  {
-   "titulo": "Why Micron, Broadcom and other AI stocks gave up their gains Thursday",
-   "url": "https://www.marketwatch.com/story/why-micron-intel-and-other-ai-stocks-are-getting-a-lift-on-thursday-cf6f59f8?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 19 Nov 2026 21:27:00 GMT"
-  },
-  {
-   "titulo": "Amazon app warns New York of higher costs if Mamdani delivery law passes",
-   "url": "https://www.cnbc.com/2026/11/19/amazon-nyc-delivery-protection-act.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 20:46:23 GMT"
-  },
-  {
    "titulo": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
    "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
    "fuente": "CNBC",
    "fecha": "Thu, 19 Nov 2026 19:58:30 GMT"
   },
   {
-   "titulo": "Trump bought Nvidia, Palantir, SpaceX in September as federal deals, White House ties grew",
-   "url": "https://www.cnbc.com/2026/11/19/trump-nvidia-spacex-palantir-stock-trades-september.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 19 Nov 2026 19:43:08 GMT"
-  },
-  {
    "titulo": "Jensen Huang's — and Nvidia's — legal exposure balloons",
    "url": "https://www.cnbc.com/2026/11/19/nvidia-jensen-huang-legal.html",
    "fuente": "CNBC",
    "fecha": "Thu, 19 Nov 2026 18:44:34 GMT"
+  },
+  {
+   "titulo": "APEC final day in photos: Trump, Xi and Putin shake hands; Takaichi kept at a distance",
+   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-photos-us-china-russia-trilateral-.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 19 Nov 2026 10:54:07 GMT"
   }
  ],
  "videos": [
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-20T01:26:07Z",
+ "ts": "2026-11-20T09:09:45Z",
  "fallas": [
   "videos",
   "directos"
