@@ -135,51 +135,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 25291.0,
-   "cambio": -1993.25,
-   "pct": -7.31
+   "precio": 25126.5,
+   "cambio": -2157.75,
+   "pct": -7.91
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 6966.75,
-   "cambio": -472.25,
-   "pct": -6.35
+   "precio": 6935.0,
+   "cambio": -504.0,
+   "pct": -6.78
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3539.0,
-   "cambio": -314.0,
-   "pct": -8.15
+   "precio": 3515.4,
+   "cambio": -337.6,
+   "pct": -8.76
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 83.62,
-   "cambio": -2.1,
-   "pct": -2.45
+   "precio": 83.41,
+   "cambio": -2.31,
+   "pct": -2.69
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2599.9,
-   "cambio": -151.5,
-   "pct": -5.51
+   "precio": 2587.4,
+   "cambio": -164.0,
+   "pct": -5.96
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 48391.0,
-   "cambio": -3279.0,
-   "pct": -6.35
+   "precio": 48216.0,
+   "cambio": -3454.0,
+   "pct": -6.68
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 58920.0,
-   "cambio": -6185.0,
-   "pct": -9.5
+   "precio": 55735.0,
+   "cambio": -9370.0,
+   "pct": -14.39
   }
  ],
  "acciones": [
@@ -354,6 +354,12 @@
  ],
  "noticias": [
   {
+   "titulo": "Tech outages are rattling Americans so much that they’re stockpiling cash and supplies",
+   "url": "https://www.marketwatch.com/story/why-are-these-tech-outages-rattling-americans-so-much-that-theyre-stockpiling-cash-and-supplies-07516bdd?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 21 Nov 2026 03:20:00 GMT"
+  },
+  {
    "titulo": "Nvidia stock plunges 14%, wraps up longest weekly losing streak since 2008 financial crisis",
    "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html",
    "fuente": "CNBC",
@@ -376,12 +382,6 @@
    "url": "https://www.marketwatch.com/story/these-stocks-were-crushed-the-most-this-week-as-the-tech-wreck-accelerated-8d6f7323?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Fri, 20 Nov 2026 22:44:00 GMT"
-  },
-  {
-   "titulo": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
-   "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 20 Nov 2026 22:08:41 GMT"
   },
   {
    "titulo": "Nvidia’s stock clinches a stretch of weekly losses not seen since 2008",
@@ -432,12 +432,6 @@
    "fecha": "Fri, 20 Nov 2026 21:10:48 GMT"
   },
   {
-   "titulo": "Here’s what’s been proven to help GLP-1 users from losing too much muscle from the drug",
-   "url": "https://www.marketwatch.com/story/heres-whats-been-proven-to-help-glp-1-users-who-have-lost-muscle-from-the-drug-2c71cdbf?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Fri, 20 Nov 2026 21:01:00 GMT"
-  },
-  {
    "titulo": "Trump says he still has confidence in Lutnick",
    "url": "https://www.cnbc.com/2026/11/20/trump-lutnick-commerce-china-ai.html",
    "fuente": "CNBC",
@@ -484,6 +478,12 @@
    "url": "https://www.cnbc.com/2026/11/20/as-anthropic-shares-tank-investors-scramble-to-hedge-it-could-be-very-expensive.html",
    "fuente": "CNBC",
    "fecha": "Fri, 20 Nov 2026 15:12:40 GMT"
+  },
+  {
+   "titulo": "The bull market has a new problem. The 'smart money' is selling",
+   "url": "https://www.cnbc.com/2026/11/20/equity-issuance-bull-market-problem.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 20 Nov 2026 14:15:29 GMT"
   }
  ],
  "videos": [
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-20T23:46:27Z",
+ "ts": "2026-11-21T06:08:14Z",
  "fallas": [
   "videos",
   "directos"
