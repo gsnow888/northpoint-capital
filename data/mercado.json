@@ -1,134 +1,54 @@
 {
  "calendario": [
   {
-   "dia": "2026-11-16",
-   "hora": "07:30",
-   "hora_ny": "08:30",
-   "iso": "2026-11-16T08:30:00-05:00",
+   "dia": "2026-11-24",
+   "hora": "18:30",
+   "hora_ny": "19:30",
+   "iso": "2026-11-24T19:30:00-05:00",
    "titulo": "CPI m/m",
-   "pais": "CAD",
-   "previsto": "0.3%",
-   "previo": "0.1%"
-  },
-  {
-   "dia": "2026-11-16",
-   "hora": "07:30",
-   "hora_ny": "08:30",
-   "iso": "2026-11-16T08:30:00-05:00",
-   "titulo": "Median CPI y/y",
-   "pais": "CAD",
-   "previsto": "2.0%",
-   "previo": "1.9%"
-  },
-  {
-   "dia": "2026-11-16",
-   "hora": "07:30",
-   "hora_ny": "08:30",
-   "iso": "2026-11-16T08:30:00-05:00",
-   "titulo": "Trimmed CPI y/y",
-   "pais": "CAD",
-   "previsto": "1.9%",
-   "previo": "1.8%"
-  },
-  {
-   "dia": "2026-11-16",
-   "hora": "11:00",
-   "hora_ny": "12:00",
-   "iso": "2026-11-16T12:00:00-05:00",
-   "titulo": "Fed Chairman Warsh Speaks",
-   "pais": "USD",
-   "previsto": "",
-   "previo": ""
-  },
-  {
-   "dia": "2026-11-16",
-   "hora": "16:50",
-   "hora_ny": "17:50",
-   "iso": "2026-11-16T17:50:00-05:00",
-   "titulo": "RBA Gov Bullock Speaks",
    "pais": "AUD",
-   "previsto": "",
-   "previo": ""
-  },
-  {
-   "dia": "2026-11-16",
-   "hora": "20:00",
-   "hora_ny": "21:00",
-   "iso": "2026-11-16T21:00:00-05:00",
-   "titulo": "Inflation Expectations q/q",
-   "pais": "NZD",
-   "previsto": "",
-   "previo": "2.34%"
-  },
-  {
-   "dia": "2026-11-17",
-   "hora": "07:30",
-   "hora_ny": "08:30",
-   "iso": "2026-11-17T08:30:00-05:00",
-   "titulo": "Core Retail Sales m/m",
-   "pais": "USD",
    "previsto": "0.4%",
-   "previo": "0.9%"
-  },
-  {
-   "dia": "2026-11-17",
-   "hora": "07:30",
-   "hora_ny": "08:30",
-   "iso": "2026-11-17T08:30:00-05:00",
-   "titulo": "Retail Sales m/m",
-   "pais": "USD",
-   "previsto": "0.1%",
    "previo": "0.8%"
   },
   {
-   "dia": "2026-11-18",
-   "hora": "01:00",
-   "hora_ny": "02:00",
-   "iso": "2026-11-18T02:00:00-05:00",
+   "dia": "2026-11-24",
+   "hora": "18:30",
+   "hora_ny": "19:30",
+   "iso": "2026-11-24T19:30:00-05:00",
    "titulo": "CPI y/y",
-   "pais": "GBP",
-   "previsto": "3.6%",
-   "previo": "3.5%"
+   "pais": "AUD",
+   "previsto": "4.8%",
+   "previo": "4.3%"
   },
   {
-   "dia": "2026-11-18",
-   "hora": "09:00",
-   "hora_ny": "10:00",
-   "iso": "2026-11-18T10:00:00-05:00",
-   "titulo": "BOE Gov Bailey Speaks",
-   "pais": "GBP",
-   "previsto": "",
-   "previo": ""
+   "dia": "2026-11-24",
+   "hora": "18:30",
+   "hora_ny": "19:30",
+   "iso": "2026-11-24T19:30:00-05:00",
+   "titulo": "Trimmed Mean CPI m/m",
+   "pais": "AUD",
+   "previsto": "0.3%",
+   "previo": "0.3%"
   },
   {
-   "dia": "2026-11-18",
-   "hora": "13:00",
-   "hora_ny": "14:00",
-   "iso": "2026-11-18T14:00:00-05:00",
-   "titulo": "FOMC Meeting Minutes",
+   "dia": "2026-11-25",
+   "hora": "07:30",
+   "hora_ny": "08:30",
+   "iso": "2026-11-25T08:30:00-05:00",
+   "titulo": "Core PCE Price Index m/m",
    "pais": "USD",
-   "previsto": "",
-   "previo": ""
+   "previsto": "0.3%",
+   "previo": "0.3%"
   },
   {
-   "dia": "2026-11-18",
-   "hora": "18:30",
-   "hora_ny": "19:30",
-   "iso": "2026-11-18T19:30:00-05:00",
-   "titulo": "Employment Change",
-   "pais": "AUD",
-   "previsto": "25.5K",
-   "previo": "-39.3K"
-  },
-  {
-   "dia": "2026-11-18",
-   "hora": "18:30",
-   "hora_ny": "19:30",
-   "iso": "2026-11-18T19:30:00-05:00",
-   "titulo": "Unemployment Rate",
-   "pais": "AUD",
-   "previsto": "4.7%",
-   "previo": "4.7%"
+   "dia": "2026-11-25",
+   "hora": "07:30",
+   "hora_ny": "08:30",
+   "iso": "2026-11-25T08:30:00-05:00",
+   "titulo": "Prelim GDP q/q",
+   "pais": "USD",
+   "previsto": "3.5%",
+   "previo": "3.4%"
   }
  ],
  "precios": [
@@ -136,50 +56,50 @@
    "sym": "NQ",
    "nombre": "Nasdaq 100",
    "precio": 25126.5,
-   "cambio": -2157.75,
-   "pct": -7.91
+   "cambio": -1949.0,
+   "pct": -7.2
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
    "precio": 6935.0,
-   "cambio": -504.0,
-   "pct": -6.78
+   "cambio": -424.0,
+   "pct": -5.76
   },
   {
    "sym": "GC",
    "nombre": "Oro",
    "precio": 3515.4,
-   "cambio": -337.6,
-   "pct": -8.76
+   "cambio": -348.8,
+   "pct": -9.03
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
    "precio": 83.41,
-   "cambio": -2.31,
-   "pct": -2.69
+   "cambio": -2.6,
+   "pct": -3.02
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
    "precio": 2587.4,
-   "cambio": -164.0,
-   "pct": -5.96
+   "cambio": -123.8,
+   "pct": -4.57
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
    "precio": 48216.0,
-   "cambio": -3454.0,
-   "pct": -6.68
+   "cambio": -2599.0,
+   "pct": -5.11
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 60125.0,
-   "cambio": -4980.0,
-   "pct": -7.65
+   "precio": 59055.0,
+   "cambio": -4900.0,
+   "pct": -7.66
   }
  ],
  "acciones": [
@@ -354,6 +274,18 @@
  ],
  "noticias": [
   {
+   "titulo": "Quantum computing’s first real-world payoff may come in energy, not drug discovery",
+   "url": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 22 Nov 2026 06:00:01 GMT"
+  },
+  {
+   "titulo": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
+   "url": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 22 Nov 2026 01:15:00 GMT"
+  },
+  {
    "titulo": "My wife is bankrolling her family’s trips to New York and it’s draining our savings. Should I ask her to stop?",
    "url": "https://www.marketwatch.com/story/my-wife-pays-thousands-of-dollars-for-her-family-to-visit-from-argentina-how-can-i-convince-her-to-stop-9381351c?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -382,12 +314,6 @@
    "url": "https://www.marketwatch.com/story/buyers-are-out-for-blood-as-housing-market-finally-hits-rock-bottom-fa5093a6?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Sat, 21 Nov 2026 19:45:00 GMT"
-  },
-  {
-   "titulo": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
-   "url": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 21 Nov 2026 19:23:00 GMT"
   },
   {
    "titulo": "America is definitely rich enough to fix Social Security and Medicare. Here’s how.",
@@ -432,10 +358,10 @@
    "fecha": "Sat, 21 Nov 2026 15:04:56 GMT"
   },
   {
-   "titulo": "Retirees face a looming deadline for required withdrawals — missing it could trigger a tax penalty",
-   "url": "https://www.cnbc.com/2026/11/21/rmd-deadline-penalty-2026.html",
+   "titulo": "I never wanted the American Dream and I felt like something was wrong with me—until I moved abroad",
+   "url": "https://www.cnbc.com/make-it/2026/11/21/never-wanted-american-dream-moving-abroad-redefine-success.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 21 Nov 2026 14:30:02 GMT"
+   "fecha": "Sat, 21 Nov 2026 15:00:02 GMT"
   },
   {
    "titulo": "An ‘illusion of glitz and glamour’: Inside California’s modern-day gold rush, where miners can bring in millions",
@@ -466,12 +392,6 @@
    "url": "https://www.cnbc.com/2026/11/21/china-xi-trump-putin-global-diplomacy-shenzhen.html",
    "fuente": "CNBC",
    "fecha": "Sat, 21 Nov 2026 06:00:02 GMT"
-  },
-  {
-   "titulo": "Nvidia stock plunges 14%, wraps up longest weekly losing streak since 2008 financial crisis",
-   "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 20 Nov 2026 22:59:33 GMT"
   },
   {
    "titulo": "Trump says he still has confidence in Lutnick",
@@ -597,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-22T01:01:20Z",
+ "ts": "2026-11-22T08:09:17Z",
  "fallas": [
   "videos",
   "directos"
