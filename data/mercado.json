@@ -177,9 +177,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 60275.0,
-   "cambio": -4830.0,
-   "pct": -7.42
+   "precio": 60125.0,
+   "cambio": -4980.0,
+   "pct": -7.65
   }
  ],
  "acciones": [
@@ -354,6 +354,18 @@
  ],
  "noticias": [
   {
+   "titulo": "My wife is bankrolling her family’s trips to New York and it’s draining our savings. Should I ask her to stop?",
+   "url": "https://www.marketwatch.com/story/my-wife-pays-thousands-of-dollars-for-her-family-to-visit-from-argentina-how-can-i-convince-her-to-stop-9381351c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 22 Nov 2026 00:03:00 GMT"
+  },
+  {
+   "titulo": "I’m in my 40s. Should I accept a lower pension in exchange for naming my husband or child as a beneficiary?",
+   "url": "https://www.marketwatch.com/story/im-in-my-40s-should-i-accept-a-lower-pension-in-exchange-for-naming-my-husband-or-child-as-a-beneficiary-b2352059?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sat, 21 Nov 2026 23:05:00 GMT"
+  },
+  {
    "titulo": "‘It’s downright dirty’: My brother moved in with our ailing mother and closed her bank account. What can I do?",
    "url": "https://www.marketwatch.com/story/it-is-heartbreaking-exhausting-and-downright-dirty-my-brother-took-over-our-ailing-mothers-life-and-finances-what-can-i-do-b4d48817?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
@@ -412,18 +424,6 @@
    "url": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
    "fuente": "CNBC",
    "fecha": "Sat, 21 Nov 2026 16:40:05 GMT"
-  },
-  {
-   "titulo": "Micron and Sandisk stocks might look like bargains, but analysts say that’s actually a red flag",
-   "url": "https://www.marketwatch.com/story/micron-and-sandisk-stocks-might-look-like-bargains-but-analysts-say-thats-actually-a-red-flag-da1f1f5d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 21 Nov 2026 15:35:00 GMT"
-  },
-  {
-   "titulo": "‘Nvidia’s turmoil has me spooked’: Is it time to sell my stocks?",
-   "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 21 Nov 2026 15:15:00 GMT"
   },
   {
    "titulo": "Tech outages are fueling a new doomsday economy",
@@ -597,7 +597,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-21T20:48:49Z",
+ "ts": "2026-11-22T01:01:20Z",
  "fallas": [
   "videos",
   "directos"
