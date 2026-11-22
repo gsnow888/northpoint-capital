@@ -97,9 +97,9 @@
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 59055.0,
-   "cambio": -4900.0,
-   "pct": -7.66
+   "precio": 60985.0,
+   "cambio": -2970.0,
+   "pct": -4.64
   }
  ],
  "acciones": [
@@ -274,6 +274,84 @@
  ],
  "noticias": [
   {
+   "titulo": "Director of National Intelligence Jay Clayton warns Americans of 'bumps in the road' after tech outages",
+   "url": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 22 Nov 2026 16:18:09 GMT"
+  },
+  {
+   "titulo": "‘I felt so seen’: Why families across America are laughing — and crying — over SNL’s ‘Sister’ sketch",
+   "url": "https://www.marketwatch.com/story/so-sad-and-so-true-has-your-family-talked-about-snls-sister-sketch-yet-19bf9d67?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 22 Nov 2026 16:18:00 GMT"
+  },
+  {
+   "titulo": "‘Never too late to start’: Practical investing advice from some of the top women in finance",
+   "url": "https://www.marketwatch.com/story/never-too-late-to-start-practical-investing-advice-from-some-of-the-top-women-in-finance-e01f0755?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 22 Nov 2026 16:15:00 GMT"
+  },
+  {
+   "titulo": "My husband spent $80,000 on a boat, yet says my plans for a $100,000 pottery studio are irresponsible. Who’s right?",
+   "url": "https://www.marketwatch.com/story/my-husband-spent-80-000-on-a-boat-yet-says-my-plans-for-a-100-000-pottery-studio-are-irresponsible-whos-right-1a69436a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 22 Nov 2026 16:10:00 GMT"
+  },
+  {
+   "titulo": "America is definitely rich enough to fix Social Security and Medicare. Here’s how.",
+   "url": "https://www.marketwatch.com/story/america-is-definitely-rich-enough-to-fix-social-security-and-medicare-heres-how-30678aa5?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 22 Nov 2026 16:04:00 GMT"
+  },
+  {
+   "titulo": "Corporate America hunts for ‘generational’ growth in AI, trading cards and the L.A. airport",
+   "url": "https://www.marketwatch.com/story/corporate-america-hunts-for-generational-growth-in-ai-trading-cards-and-the-l-a-airport-3072eb1a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 22 Nov 2026 15:01:00 GMT"
+  },
+  {
+   "titulo": "Social Security benefits are rising in 2027, but other changes could affect what you keep",
+   "url": "https://www.cnbc.com/2026/11/22/social-security-changes-cola-taxes-medicare.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 22 Nov 2026 14:30:01 GMT"
+  },
+  {
+   "titulo": "Stocks are in a correction heading into the Thanksgiving holiday. What to brace for next.",
+   "url": "https://www.marketwatch.com/story/stocks-are-in-a-correction-heading-into-the-thanksgiving-holiday-what-to-brace-for-next-a1e82491?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 22 Nov 2026 14:00:00 GMT"
+  },
+  {
+   "titulo": "Saudi Arabia, Bahrain report new attacks as Iran says it remains open to a deal with U.S.",
+   "url": "https://www.cnbc.com/2026/11/22/saudi-houthi-bahrain-iran-attacks-araghchi-talks.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 22 Nov 2026 13:25:47 GMT"
+  },
+  {
+   "titulo": "Pizza chains are under pressure. GLP-1 use is only one part of the problem",
+   "url": "https://www.cnbc.com/2026/11/22/pizza-chains-sales-glp-1-demand.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 22 Nov 2026 13:00:01 GMT"
+  },
+  {
+   "titulo": "Can stocks bounce back after a brutal week? This timing model says history is on the market’s side.",
+   "url": "https://www.marketwatch.com/story/can-stocks-bounce-back-after-a-brutal-week-this-timing-model-says-history-is-on-the-markets-side-beff1753?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Sun, 22 Nov 2026 12:30:00 GMT"
+  },
+  {
+   "titulo": "Top Wall Street analysts favor these 3 dividend stocks for strong returns",
+   "url": "https://www.cnbc.com/2026/11/22/top-wall-street-analysts-favor-these-stocks-for-strong-returns.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 22 Nov 2026 12:13:56 GMT"
+  },
+  {
+   "titulo": "The Nasdaq is in freefall. Here's one stock to look at",
+   "url": "https://www.cnbc.com/2026/11/22/the-nasdaq-is-in-freefall-heres-one-stock-to-look-at.html",
+   "fuente": "CNBC",
+   "fecha": "Sun, 22 Nov 2026 12:10:39 GMT"
+  },
+  {
    "titulo": "Quantum computing’s first real-world payoff may come in energy, not drug discovery",
    "url": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
    "fuente": "CNBC",
@@ -298,52 +376,10 @@
    "fecha": "Sat, 21 Nov 2026 23:05:00 GMT"
   },
   {
-   "titulo": "‘It’s downright dirty’: My brother moved in with our ailing mother and closed her bank account. What can I do?",
-   "url": "https://www.marketwatch.com/story/it-is-heartbreaking-exhausting-and-downright-dirty-my-brother-took-over-our-ailing-mothers-life-and-finances-what-can-i-do-b4d48817?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 21 Nov 2026 20:15:00 GMT"
-  },
-  {
-   "titulo": "‘I’ve been a stay-at-home mom’: I’m 50 and have a chronic illness. My husband lost his job. Should he raid his 401(k)?",
-   "url": "https://www.marketwatch.com/story/ive-been-a-stay-at-home-mom-im-50-and-have-a-chronic-illness-my-husband-lost-his-job-should-he-raid-his-401-k-63e59123?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 21 Nov 2026 19:45:00 GMT"
-  },
-  {
-   "titulo": "‘Buyers are out for blood’: With home sales at a record low, buyers are calling the shots",
-   "url": "https://www.marketwatch.com/story/buyers-are-out-for-blood-as-housing-market-finally-hits-rock-bottom-fa5093a6?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 21 Nov 2026 19:45:00 GMT"
-  },
-  {
-   "titulo": "America is definitely rich enough to fix Social Security and Medicare. Here’s how.",
-   "url": "https://www.marketwatch.com/story/america-is-definitely-rich-enough-to-fix-social-security-and-medicare-heres-how-30678aa5?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 21 Nov 2026 18:20:00 GMT"
-  },
-  {
-   "titulo": "‘Never too late to start’: Practical investing advice from some of the top women in finance",
-   "url": "https://www.marketwatch.com/story/never-too-late-to-start-practical-investing-advice-from-some-of-the-top-women-in-finance-e01f0755?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 21 Nov 2026 18:19:00 GMT"
-  },
-  {
    "titulo": "Trump says there could be a 'positive spin' from the latest FBI database hack",
    "url": "https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html",
    "fuente": "CNBC",
    "fecha": "Sat, 21 Nov 2026 16:57:34 GMT"
-  },
-  {
-   "titulo": "Is Social Security a Ponzi scheme? No. Don’t get carried away with 1930s-era prophecies of doom.",
-   "url": "https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 21 Nov 2026 16:50:00 GMT"
-  },
-  {
-   "titulo": "‘I’m sick of flying’: I paid for priority boarding, but the overhead bins were full. Was I duped?",
-   "url": "https://www.marketwatch.com/story/im-sick-of-flying-i-paid-for-priority-boarding-but-the-overhead-bins-were-full-was-i-duped-0badcc80?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sat, 21 Nov 2026 16:50:00 GMT"
   },
   {
    "titulo": "Anthropic’s record IPO collides with tech’s worst week on Wall Street since 2020",
@@ -352,34 +388,10 @@
    "fecha": "Sat, 21 Nov 2026 16:40:05 GMT"
   },
   {
-   "titulo": "Tech outages are fueling a new doomsday economy",
-   "url": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 21 Nov 2026 15:04:56 GMT"
-  },
-  {
-   "titulo": "I never wanted the American Dream and I felt like something was wrong with me—until I moved abroad",
-   "url": "https://www.cnbc.com/make-it/2026/11/21/never-wanted-american-dream-moving-abroad-redefine-success.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 21 Nov 2026 15:00:02 GMT"
-  },
-  {
    "titulo": "An ‘illusion of glitz and glamour’: Inside California’s modern-day gold rush, where miners can bring in millions",
    "url": "https://www.cnbc.com/make-it/2026/11/21/california-mining-modern-gold-rush.html",
    "fuente": "CNBC",
    "fecha": "Sat, 21 Nov 2026 14:05:40 GMT"
-  },
-  {
-   "titulo": "State and federal battle over prediction markets regulation heats up after midterms",
-   "url": "https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 21 Nov 2026 13:12:41 GMT"
-  },
-  {
-   "titulo": "Warren Buffett quadruples Thanksgiving gifts: A breakdown of how much wealth he's giving away",
-   "url": "https://www.cnbc.com/2026/11/21/warren-buffett-quadruples-thanksgiving-gifts.html",
-   "fuente": "CNBC",
-   "fecha": "Sat, 21 Nov 2026 13:01:44 GMT"
   },
   {
    "titulo": "International first class is over for U.S. airlines. Enter the mega business-class cabin",
@@ -388,22 +400,10 @@
    "fecha": "Sat, 21 Nov 2026 12:00:01 GMT"
   },
   {
-   "titulo": "How China is using summits to expand its global influence",
-   "url": "https://www.cnbc.com/2026/11/21/china-xi-trump-putin-global-diplomacy-shenzhen.html",
+   "titulo": "S&P 500 correction: Five forces behind the market sell-off",
+   "url": "https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html",
    "fuente": "CNBC",
-   "fecha": "Sat, 21 Nov 2026 06:00:02 GMT"
-  },
-  {
-   "titulo": "Trump says he still has confidence in Lutnick",
-   "url": "https://www.cnbc.com/2026/11/20/trump-lutnick-commerce-china-ai.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 20 Nov 2026 20:52:08 GMT"
-  },
-  {
-   "titulo": "Jensen Huang to testify publicly before Senate banking panel, Chairman Scott says",
-   "url": "https://www.cnbc.com/2026/11/20/jensen-huang-nvidia-senate-testimony.html",
-   "fuente": "CNBC",
-   "fecha": "Fri, 20 Nov 2026 19:42:53 GMT"
+   "fecha": "Sat, 21 Nov 2026 11:29:25 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-22T08:09:17Z",
+ "ts": "2026-11-22T16:24:45Z",
  "fallas": [
   "videos",
   "directos"
