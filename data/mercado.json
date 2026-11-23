@@ -17,7 +17,7 @@
    "iso": "2026-11-24T19:30:00-05:00",
    "titulo": "CPI y/y",
    "pais": "AUD",
-   "previsto": "4.8%",
+   "previsto": "4.7%",
    "previo": "4.3%"
   },
   {
@@ -55,355 +55,355 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 26021.0,
-   "cambio": -1165.75,
-   "pct": -4.29
+   "precio": 26845.0,
+   "cambio": -341.75,
+   "pct": -1.26
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7134.0,
-   "cambio": -206.5,
-   "pct": -2.81
+   "precio": 7270.5,
+   "cambio": -70.0,
+   "pct": -0.95
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3621.9,
-   "cambio": -120.0,
-   "pct": -3.21
+   "precio": 3634.4,
+   "cambio": -107.5,
+   "pct": -2.87
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 82.39,
-   "cambio": -0.87,
-   "pct": -1.04
+   "precio": 80.25,
+   "cambio": -3.01,
+   "pct": -3.62
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2648.5,
-   "cambio": -73.5,
-   "pct": -2.7
+   "precio": 2678.1,
+   "cambio": -43.9,
+   "pct": -1.61
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 49210.0,
-   "cambio": -1063.0,
-   "pct": -2.11
+   "precio": 49785.0,
+   "cambio": -488.0,
+   "pct": -0.97
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 61335.0,
-   "cambio": -1180.0,
-   "pct": -1.89
+   "precio": 61215.0,
+   "cambio": -1300.0,
+   "pct": -2.08
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 142.08,
-   "pct": -8.51,
+   "precio": 148.21,
+   "pct": -2.72,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 635.54,
-   "pct": -8.34,
+   "precio": 663.91,
+   "pct": -2.4,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 340.02,
-   "pct": -8.38,
+   "precio": 355.27,
+   "pct": -2.48,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 75.38,
-   "pct": -8.79,
+   "precio": 78.25,
+   "pct": -3.38,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 608.45,
-   "pct": -10.51,
+   "precio": 651.03,
+   "pct": -1.62,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 689.81,
-   "pct": -8.56,
+   "precio": 722.29,
+   "pct": -2.39,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 71.33,
-   "pct": 1.09,
+   "precio": 71.36,
+   "pct": 1.05,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 33.94,
-   "pct": -6.04,
+   "precio": 34.39,
+   "pct": -4.1,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 92.56,
-   "pct": -4.05,
+   "precio": 93.67,
+   "pct": -2.66,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 65.69,
-   "pct": -11.41,
+   "precio": 70.43,
+   "pct": -1.87,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 322.87,
-   "pct": -9.17,
+   "precio": 333.02,
+   "pct": -5.64,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 33.02,
-   "pct": -15.2,
+   "precio": 34.62,
+   "pct": -5.9,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 342.56,
-   "pct": -3.85,
+   "precio": 349.08,
+   "pct": -1.05,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 484.52,
-   "pct": -7.51,
+   "precio": 492.5,
+   "pct": -4.92,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 125.53,
-   "pct": -22.92,
+   "precio": 165.05,
+   "pct": 5.71,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 265.29,
-   "pct": -10.31,
+   "precio": 282.1,
+   "pct": -0.57,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 246.82,
-   "pct": -7.44,
+   "precio": 255.39,
+   "pct": -0.92,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 560.84,
-   "pct": -12.6,
+   "precio": 597.6,
+   "pct": -4.6,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 345.82,
-   "pct": -11.38,
+   "precio": 385.46,
+   "pct": 1.51,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 570.0,
-   "pct": -3.87,
+   "precio": 572.36,
+   "pct": -3.46,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 1102.15,
-   "pct": -0.37,
+   "precio": 1097.91,
+   "pct": -1.42,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 310.53,
-   "pct": -10.3,
+   "precio": 316.66,
+   "pct": -6.37,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 401.87,
-   "pct": -5.61,
+   "precio": 409.4,
+   "pct": -4.0,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 339.85,
-   "pct": -16.59,
+   "precio": 336.08,
+   "pct": -18.43,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "The U.S. may enter a recession if the Fed raises rates, hedge-fund manager Bill Ackman says",
-   "url": "https://www.marketwatch.com/story/the-u-s-may-enter-a-recession-if-the-fed-raises-rates-hedge-fund-manager-bill-ackman-says-16738971?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 23 Nov 2026 10:57:00 GMT"
-  },
-  {
-   "titulo": "Nvidia stock bounces as Trump administration pushes for rehiring of Jensen Huang",
-   "url": "https://www.marketwatch.com/story/nvidia-stock-bounces-as-trump-administration-pushes-for-rehiring-of-jensen-huang-08057c29?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 23 Nov 2026 10:56:00 GMT"
-  },
-  {
-   "titulo": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
-   "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
+   "titulo": "Nvidia surge: What investors should do with the stock and the AI trade now",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-stock-jensen-huang-ai-trade.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 10:35:46 GMT"
+   "fecha": "Mon, 23 Nov 2026 22:43:38 GMT"
   },
   {
-   "titulo": "Anthropic, Nvidia shares rise in premarket trading after major tech selloff",
+   "titulo": "Nvidia’s stock is surging again. What to know before chasing the AI rally.",
+   "url": "https://www.marketwatch.com/story/nvidias-stock-is-surging-again-what-to-know-before-chasing-the-ai-rally-226688d7?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 23 Nov 2026 22:04:00 GMT"
+  },
+  {
+   "titulo": "U.S. stocks see best day in more than a year, as return of Jensen Huang revives AI enthusiasm",
+   "url": "https://www.marketwatch.com/story/u-s-stocks-see-best-day-in-more-than-a-year-as-return-of-jensen-huang-revives-ai-enthusiasm-c3b9d274?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 23 Nov 2026 21:51:00 GMT"
+  },
+  {
+   "titulo": "Consumer stocks, seen as safe bet amid cracks in AI trade, were among the S&P 500’s biggest losers Monday",
+   "url": "https://www.marketwatch.com/story/consumer-stocks-seen-as-safe-bet-amid-cracks-in-ai-trade-are-among-the-s-p-500s-biggest-losers-monday-80cf8f81?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 23 Nov 2026 21:45:00 GMT"
+  },
+  {
+   "titulo": "These stocks are the biggest gainers after Jensen Huang’s return to Nvidia",
+   "url": "https://www.marketwatch.com/story/these-stocks-are-the-biggest-gainers-after-jensen-huangs-return-to-nvidia-bb886140?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 23 Nov 2026 21:36:00 GMT"
+  },
+  {
+   "titulo": "Amazon may have just found a ‘cheap’ way to get a lot more out of its chips",
+   "url": "https://www.marketwatch.com/story/amazon-may-have-just-found-a-cheap-way-to-get-a-lot-more-out-of-its-chips-bd822bd5?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 23 Nov 2026 21:33:00 GMT"
+  },
+  {
+   "titulo": "HPE just posted its strongest growth ever — but its stock is wavering",
+   "url": "https://www.marketwatch.com/story/hpe-just-posted-its-strongest-growth-ever-and-its-stock-is-tacking-on-more-big-gains-4421cebb?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 23 Nov 2026 21:28:00 GMT"
+  },
+  {
+   "titulo": "Oracle and CoreWeave stocks stage big gains as investors bet the AI cash will keep flowing",
+   "url": "https://www.marketwatch.com/story/oracle-and-coreweave-stocks-stage-big-gains-as-investors-bet-the-ai-cash-will-keep-flowing-eeb1aa85?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 23 Nov 2026 21:24:00 GMT"
+  },
+  {
+   "titulo": "Tech stocks see monster rally after Jensen Huang returns as Nvidia CEO",
    "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 10:24:25 GMT"
+   "fecha": "Mon, 23 Nov 2026 21:22:13 GMT"
   },
   {
-   "titulo": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech",
-   "url": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 10:15:19 GMT"
+   "titulo": "Short sellers get smoked as Nvidia tallies biggest one-day gain in stock-market history",
+   "url": "https://www.marketwatch.com/story/short-sellers-get-smoked-as-nvidia-tallies-biggest-one-day-gain-in-stock-market-history-e9dc6e9c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 23 Nov 2026 21:19:00 GMT"
   },
   {
-   "titulo": "A 66-year-old nurse faces retirement with just $500 saved. Who’s to blame?",
+   "titulo": "A 66-year-old nurse is facing down retirement with just $500 saved. Who’s to blame?",
    "url": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Mon, 23 Nov 2026 10:15:00 GMT"
+   "fecha": "Mon, 23 Nov 2026 21:15:00 GMT"
   },
   {
-   "titulo": "‘Worst COP ever’: Climate talks collapse after draft deal fails to include fossil fuels",
-   "url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html",
+   "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
+   "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 10:13:30 GMT"
+   "fecha": "Mon, 23 Nov 2026 21:02:17 GMT"
   },
   {
-   "titulo": "James Bond films were shot all over the world. Here are 5 properties made famous by 007.",
-   "url": "https://www.marketwatch.com/story/james-bond-films-were-shot-all-over-the-world-here-are-5-properties-made-famous-by-007-dabafbe6?mod=mw_rss_topstories",
+   "titulo": "Peterson: Here’s what Bessent’s about-face on Jensen Huang reveals about Trump and China",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 23 Nov 2026 21:00:59 GMT"
+  },
+  {
+   "titulo": "I’ve been married for 58 years. It’s ‘our’ money, not ‘his’ and ‘hers.’ Why do so many couples keep their finances separate?",
+   "url": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Mon, 23 Nov 2026 10:02:00 GMT"
+   "fecha": "Mon, 23 Nov 2026 21:00:00 GMT"
   },
   {
-   "titulo": "Google co-founder Sergey Brin and ex-wife Nicole Shanahan list Malibu home for $33.5 million",
-   "url": "https://www.marketwatch.com/story/google-co-founder-sergey-brin-and-ex-wife-nicole-shanahan-list-malibu-home-for-33-5-million-0121adcd?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 23 Nov 2026 10:01:00 GMT"
-  },
-  {
-   "titulo": "Stuck: How a frozen housing market is hitting buyers, sellers and the economy",
-   "url": "https://www.cnbc.com/2026/11/23/housing-market-real-estate-economy.html",
+   "titulo": "Jensen Huang cheered by Nvidia employees after return, pledges to be a better CEO",
+   "url": "https://www.cnbc.com/2026/11/23/jensen-huang-nvidia-ceo-return.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 10:00:01 GMT"
+   "fecha": "Mon, 23 Nov 2026 20:57:41 GMT"
   },
   {
-   "titulo": "Stocks are serving up a ‘fat pitch’ for investors right now, says Morgan Stanley’s top strategist",
-   "url": "https://www.marketwatch.com/story/stocks-are-serving-up-a-fat-pitch-for-investors-right-now-as-morgan-stanleys-top-strategist-19abe30a?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 23 Nov 2026 09:40:00 GMT"
-  },
-  {
-   "titulo": "Stock-market slides this steep and fast trigger a rebound 91% of the time over the last decade",
-   "url": "https://www.marketwatch.com/story/stock-market-slides-this-steep-and-fast-trigger-a-rebound-91-of-the-time-over-the-last-decade-798bd2c2?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 23 Nov 2026 08:37:00 GMT"
-  },
-  {
-   "titulo": "Investors gives a thumbs down to Tata Steel-APL Apollo $1.67 billion deal, plunging shares",
-   "url": "https://www.cnbc.com/2026/11/23/tata-steel-acquisition-deal-apl-india.html",
+   "titulo": "Congress shreds Nvidia's 'outrageous' decision to bring back Huang: 'Failure of character'",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-congress-trump.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 07:25:24 GMT"
+   "fecha": "Mon, 23 Nov 2026 20:22:49 GMT"
   },
   {
-   "titulo": "U.S. probes Megaspeed, Alice Huang as new figure emerges in Nvidia chip case",
-   "url": "https://www.cnbc.com/2026/11/23/nvidia-megaspeed-chipmaker-us.html",
+   "titulo": "Trump administration proposes rule that could curb ESG investing in 401(k)s",
+   "url": "https://www.cnbc.com/2026/11/23/labor-department-esg-401k-rule.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 05:08:03 GMT"
+   "fecha": "Mon, 23 Nov 2026 19:46:28 GMT"
   },
   {
-   "titulo": "The number of 401(k) millionaires drops amid stock-market swings",
-   "url": "https://www.marketwatch.com/story/the-number-of-401-k-millionaires-drops-amid-stock-market-swings-23939b94?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 23 Nov 2026 05:01:00 GMT"
-  },
-  {
-   "titulo": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
-   "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html",
+   "titulo": "DNI Jay Clayton tapped as acting national cyber director",
+   "url": "https://www.cnbc.com/2026/11/23/jay-clayton-cyber-director-kirsten-davies-trump.html",
    "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 03:52:17 GMT"
+   "fecha": "Mon, 23 Nov 2026 19:12:49 GMT"
   },
   {
-   "titulo": "Corporate America hunts for ‘generational’ growth in AI, trading cards and the L.A. airport",
-   "url": "https://www.marketwatch.com/story/corporate-america-hunts-for-generational-growth-in-ai-trading-cards-and-the-l-a-airport-3072eb1a?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 22 Nov 2026 21:51:00 GMT"
-  },
-  {
-   "titulo": "Ron Johnson’s Social Security gaffe buried important news",
-   "url": "https://www.marketwatch.com/story/ron-johnsons-social-security-gaffe-buried-important-news-b96e0ce8?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Sun, 22 Nov 2026 21:28:00 GMT"
-  },
-  {
-   "titulo": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
-   "url": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
+   "titulo": "An options strategy for making even more of your money back in Nvidia",
+   "url": "https://www.cnbc.com/2026/11/23/an-options-strategy-for-making-even-more-of-your-money-back-in-nvidia-.html",
    "fuente": "CNBC",
-   "fecha": "Sun, 22 Nov 2026 18:55:05 GMT"
+   "fecha": "Mon, 23 Nov 2026 18:52:46 GMT"
   },
   {
-   "titulo": "Social Security benefits are rising in 2027, but other changes could affect what you keep",
-   "url": "https://www.cnbc.com/2026/11/22/social-security-changes-cola-taxes-medicare.html",
+   "titulo": "‘This establishes a bottom’: Jensen Huang’s return seen as likely to stop market sell-off, for now",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo-market-rally.html",
    "fuente": "CNBC",
-   "fecha": "Sun, 22 Nov 2026 14:30:01 GMT"
+   "fecha": "Mon, 23 Nov 2026 18:00:47 GMT"
   },
   {
-   "titulo": "Pizza chains are under pressure. GLP-1 use is only one part of the problem",
-   "url": "https://www.cnbc.com/2026/11/22/pizza-chains-sales-glp-1-demand.html",
+   "titulo": "Trump tells CNBC ‘I made the deal’ to reinstate Nvidia’s Jensen Huang",
+   "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
    "fuente": "CNBC",
-   "fecha": "Sun, 22 Nov 2026 13:00:01 GMT"
+   "fecha": "Mon, 23 Nov 2026 17:16:39 GMT"
   },
   {
-   "titulo": "The Nasdaq is in freefall. Here's one stock to look at",
-   "url": "https://www.cnbc.com/2026/11/22/the-nasdaq-is-in-freefall-heres-one-stock-to-look-at.html",
+   "titulo": "More Americans pay this Obama-era investment tax every year — how to avoid it",
+   "url": "https://www.cnbc.com/2026/11/23/net-investment-income-tax-niit.html",
    "fuente": "CNBC",
-   "fecha": "Sun, 22 Nov 2026 12:10:39 GMT"
+   "fecha": "Mon, 23 Nov 2026 13:15:01 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-23T11:14:56Z",
+ "ts": "2026-11-23T22:44:03Z",
  "fallas": [
   "videos",
   "directos"
