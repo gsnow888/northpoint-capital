@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 25126.5,
-   "cambio": -1949.0,
-   "pct": -7.2
+   "precio": 25730.75,
+   "cambio": -1344.75,
+   "pct": -4.97
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 6935.0,
-   "cambio": -424.0,
-   "pct": -5.76
+   "precio": 7070.5,
+   "cambio": -288.5,
+   "pct": -3.92
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3515.4,
-   "cambio": -348.8,
-   "pct": -9.03
+   "precio": 3584.5,
+   "cambio": -279.7,
+   "pct": -7.24
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 83.41,
-   "cambio": -2.6,
-   "pct": -3.02
+   "precio": 83.08,
+   "cambio": -2.93,
+   "pct": -3.41
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2587.4,
-   "cambio": -123.8,
-   "pct": -4.57
+   "precio": 2632.5,
+   "cambio": -78.7,
+   "pct": -2.9
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 48216.0,
-   "cambio": -2599.0,
-   "pct": -5.11
+   "precio": 48956.0,
+   "cambio": -1859.0,
+   "pct": -3.66
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 60945.0,
-   "cambio": -3010.0,
-   "pct": -4.71
+   "precio": 60630.0,
+   "cambio": -3325.0,
+   "pct": -5.2
   }
  ],
  "acciones": [
@@ -364,12 +364,6 @@
    "fecha": "Sun, 22 Nov 2026 13:00:01 GMT"
   },
   {
-   "titulo": "Top Wall Street analysts favor these 3 dividend stocks for strong returns",
-   "url": "https://www.cnbc.com/2026/11/22/top-wall-street-analysts-favor-these-stocks-for-strong-returns.html",
-   "fuente": "CNBC",
-   "fecha": "Sun, 22 Nov 2026 12:13:56 GMT"
-  },
-  {
    "titulo": "Quantum computing’s first real-world payoff may come in energy, not drug discovery",
    "url": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
    "fuente": "CNBC",
@@ -404,6 +398,12 @@
    "url": "https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html",
    "fuente": "CNBC",
    "fecha": "Sat, 21 Nov 2026 11:29:25 GMT"
+  },
+  {
+   "titulo": "‘More than just a game’: How GTA VI’s blockbuster launch fuels a booming content economy",
+   "url": "https://www.cnbc.com/2026/11/20/gta-vi-launch-streaming-content-economy.html",
+   "fuente": "CNBC",
+   "fecha": "Fri, 20 Nov 2026 07:08:36 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-22T22:00:04Z",
+ "ts": "2026-11-23T02:32:29Z",
  "fallas": [
   "videos",
   "directos"
