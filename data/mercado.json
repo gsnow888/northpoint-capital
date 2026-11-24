@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 26845.0,
-   "cambio": -341.75,
-   "pct": -1.26
+   "precio": 26878.5,
+   "cambio": 278.25,
+   "pct": 1.05
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7270.5,
-   "cambio": -70.0,
-   "pct": -0.95
+   "precio": 7273.25,
+   "cambio": 76.0,
+   "pct": 1.06
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3634.4,
-   "cambio": -107.5,
-   "pct": -2.87
+   "precio": 3617.6,
+   "cambio": -67.9,
+   "pct": -1.84
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 80.25,
-   "cambio": -3.01,
-   "pct": -3.62
+   "precio": 79.68,
+   "cambio": -3.53,
+   "pct": -4.24
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2678.1,
-   "cambio": -43.9,
-   "pct": -1.61
+   "precio": 2679.6,
+   "cambio": 16.3,
+   "pct": 0.61
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 49785.0,
-   "cambio": -488.0,
-   "pct": -0.97
+   "precio": 49798.0,
+   "cambio": 618.0,
+   "pct": 1.26
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 61215.0,
-   "cambio": -1300.0,
-   "pct": -2.08
+   "precio": 60330.0,
+   "cambio": -1710.0,
+   "pct": -2.76
   }
  ],
  "acciones": [
@@ -274,6 +274,78 @@
  ],
  "noticias": [
   {
+   "titulo": "Jensen Huang is ‘too big to fire,’ putting Nvidia’s governance in focus: analysts",
+   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-governance.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 24 Nov 2026 06:31:56 GMT"
+  },
+  {
+   "titulo": "AI adoption grows in Asia, but measuring the gains remains tricky",
+   "url": "https://www.cnbc.com/2026/11/24/aws-asia-gains-roi.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 24 Nov 2026 05:07:16 GMT"
+  },
+  {
+   "titulo": "Iran says three tankers hit mines in Hormuz despite U.S. escort, as Treasury widens sanctions",
+   "url": "https://www.cnbc.com/2026/11/24/iran-trump-hormuz-crude-.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 24 Nov 2026 05:05:08 GMT"
+  },
+  {
+   "titulo": "China has changed tactics but is still thwarting India's rise, a U.S. panel says",
+   "url": "https://www.cnbc.com/2026/11/24/us-china-thwarting-india-growth.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 24 Nov 2026 04:27:38 GMT"
+  },
+  {
+   "titulo": "U.S. court orders to proceed with planned ammunition detonation in Iowa",
+   "url": "https://www.cnbc.com/2026/11/24/iowa-detonation-bomb-court-.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 24 Nov 2026 03:32:26 GMT"
+  },
+  {
+   "titulo": "Six key questions raised by Jensen Huang's return to Nvidia",
+   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-politics-market.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 24 Nov 2026 03:05:49 GMT"
+  },
+  {
+   "titulo": "U.S. adds Megaspeed to trade blacklist over export control concerns amid Nvidia controversy",
+   "url": "https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html",
+   "fuente": "CNBC",
+   "fecha": "Tue, 24 Nov 2026 02:37:39 GMT"
+  },
+  {
+   "titulo": "I’ve been married for 58 years. It’s ‘our’ money, not ‘his’ and ‘hers.’ Why do so many couples keep their finances separate?",
+   "url": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 24 Nov 2026 01:01:00 GMT"
+  },
+  {
+   "titulo": "HPE just posted its strongest growth ever — but its stock is sinking",
+   "url": "https://www.marketwatch.com/story/hpe-just-posted-its-strongest-growth-ever-and-its-stock-is-tacking-on-more-big-gains-4421cebb?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Tue, 24 Nov 2026 01:01:00 GMT"
+  },
+  {
+   "titulo": "Trump sealed deal for Nvidia to rehire Jensen Huang as CEO",
+   "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 23 Nov 2026 23:42:17 GMT"
+  },
+  {
+   "titulo": "The newest addition to the S&P 500 is a maker of viral ice-cream machines",
+   "url": "https://www.marketwatch.com/story/the-newest-addition-to-the-s-p-500-is-a-maker-of-viral-ice-cream-machines-5c6e209a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Mon, 23 Nov 2026 23:18:00 GMT"
+  },
+  {
+   "titulo": "CNBC's The China Connection newsletter: AI race spreads from robots to smartphones",
+   "url": "https://www.cnbc.com/2026/11/23/cnbcs-the-china-connection-newsletter-ai-race-spreads-to-smartphones.html",
+   "fuente": "CNBC",
+   "fecha": "Mon, 23 Nov 2026 23:00:01 GMT"
+  },
+  {
    "titulo": "Nvidia surge: What investors should do with the stock and the AI trade now",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-stock-jensen-huang-ai-trade.html",
    "fuente": "CNBC",
@@ -310,22 +382,10 @@
    "fecha": "Mon, 23 Nov 2026 21:33:00 GMT"
   },
   {
-   "titulo": "HPE just posted its strongest growth ever — but its stock is wavering",
-   "url": "https://www.marketwatch.com/story/hpe-just-posted-its-strongest-growth-ever-and-its-stock-is-tacking-on-more-big-gains-4421cebb?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 23 Nov 2026 21:28:00 GMT"
-  },
-  {
    "titulo": "Oracle and CoreWeave stocks stage big gains as investors bet the AI cash will keep flowing",
    "url": "https://www.marketwatch.com/story/oracle-and-coreweave-stocks-stage-big-gains-as-investors-bet-the-ai-cash-will-keep-flowing-eeb1aa85?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Mon, 23 Nov 2026 21:24:00 GMT"
-  },
-  {
-   "titulo": "Tech stocks see monster rally after Jensen Huang returns as Nvidia CEO",
-   "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 21:22:13 GMT"
   },
   {
    "titulo": "Short sellers get smoked as Nvidia tallies biggest one-day gain in stock-market history",
@@ -334,76 +394,16 @@
    "fecha": "Mon, 23 Nov 2026 21:19:00 GMT"
   },
   {
-   "titulo": "A 66-year-old nurse is facing down retirement with just $500 saved. Who’s to blame?",
-   "url": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 23 Nov 2026 21:15:00 GMT"
-  },
-  {
-   "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
-   "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 21:02:17 GMT"
-  },
-  {
    "titulo": "Peterson: Here’s what Bessent’s about-face on Jensen Huang reveals about Trump and China",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
    "fuente": "CNBC",
    "fecha": "Mon, 23 Nov 2026 21:00:59 GMT"
   },
   {
-   "titulo": "I’ve been married for 58 years. It’s ‘our’ money, not ‘his’ and ‘hers.’ Why do so many couples keep their finances separate?",
-   "url": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Mon, 23 Nov 2026 21:00:00 GMT"
-  },
-  {
-   "titulo": "Jensen Huang cheered by Nvidia employees after return, pledges to be a better CEO",
-   "url": "https://www.cnbc.com/2026/11/23/jensen-huang-nvidia-ceo-return.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 20:57:41 GMT"
-  },
-  {
-   "titulo": "Congress shreds Nvidia's 'outrageous' decision to bring back Huang: 'Failure of character'",
-   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-congress-trump.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 20:22:49 GMT"
-  },
-  {
    "titulo": "Trump administration proposes rule that could curb ESG investing in 401(k)s",
    "url": "https://www.cnbc.com/2026/11/23/labor-department-esg-401k-rule.html",
    "fuente": "CNBC",
    "fecha": "Mon, 23 Nov 2026 19:46:28 GMT"
-  },
-  {
-   "titulo": "DNI Jay Clayton tapped as acting national cyber director",
-   "url": "https://www.cnbc.com/2026/11/23/jay-clayton-cyber-director-kirsten-davies-trump.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 19:12:49 GMT"
-  },
-  {
-   "titulo": "An options strategy for making even more of your money back in Nvidia",
-   "url": "https://www.cnbc.com/2026/11/23/an-options-strategy-for-making-even-more-of-your-money-back-in-nvidia-.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 18:52:46 GMT"
-  },
-  {
-   "titulo": "‘This establishes a bottom’: Jensen Huang’s return seen as likely to stop market sell-off, for now",
-   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo-market-rally.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 18:00:47 GMT"
-  },
-  {
-   "titulo": "Trump tells CNBC ‘I made the deal’ to reinstate Nvidia’s Jensen Huang",
-   "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 17:16:39 GMT"
-  },
-  {
-   "titulo": "More Americans pay this Obama-era investment tax every year — how to avoid it",
-   "url": "https://www.cnbc.com/2026/11/23/net-investment-income-tax-niit.html",
-   "fuente": "CNBC",
-   "fecha": "Mon, 23 Nov 2026 13:15:01 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-23T22:44:03Z",
+ "ts": "2026-11-24T06:49:50Z",
  "fallas": [
   "videos",
   "directos"
