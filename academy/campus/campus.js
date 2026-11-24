@@ -1,6 +1,9 @@
-/* NORTHPOINT ACADEMY · Campus
+/* NORTHPOINT ACADEMY · Campus (v2, 24-nov-2026)
+   Estructura de plataforma de bootcamp: inicio con "continúa", módulos, hoja del módulo con capítulos y lecciones,
+   lección con presentación tipo chat, barra inferior con "Siguiente", buscador, soporte y Nori (tutor que busca en
+   las clases; no es un modelo de lenguaje, no inventa respuestas).
    Las clases salen de lecciones.js (generado de los guiones). El avance se guarda en este dispositivo (localStorage).
-   CONFIG.videos: cuando se graben las clases, poner aquí el ID de YouTube de cada una, p. ej. "1.2": "dQw4w9WgXcQ".
+   CONFIG.videos: cuando se graben las clases, poner el ID de YouTube de cada una, p. ej. "1.2": "dQw4w9WgXcQ".
    CONFIG.acceso: SHA-256 de los códigos de alumno que abren los niveles 2 a 4. Es una puerta de cortesía en el
    navegador, no protección real: para cobrar en serio hay que validar del lado del servidor. */
 const CONFIG = {
@@ -15,209 +18,76 @@ const CONFIG = {
 
 const L = window.LECCIONES || [];
 const NIVELES = {
-  1: { n: "Dinero y mercados", d: "Inflación, interés compuesto, presupuesto, deuda y cómo detectar un fraude.", c: "var(--n1)" },
-  2: { n: "Trading", d: "Gráficos, estructura, riesgo, psicología y tu diario. Todo en simulador.", c: "var(--n2)" },
-  3: { n: "IA aplicada", d: "Prompts, investigación, IA para tu negocio, marketing, código y agentes.", c: "var(--n3)" },
-  4: { n: "Proyecto final", d: "Tu portafolio simulado con asistente de IA, defendido frente a nosotros.", c: "var(--n4)" }
+  1: { n: "Dinero y mercados", c: "var(--green)" },
+  2: { n: "Trading", c: "var(--blue)" },
+  3: { n: "IA aplicada", c: "var(--peach)" },
+  4: { n: "Proyecto final", c: "var(--gold)" }
 };
+const MODS = [
+  { id: "bienv", eb: "Módulo adicional", t: "Te damos la bienvenida a NORTHPOINT ACADEMY", ic: "m-hola", clases: ["1.1"], flat: true },
+  { id: "n1", eb: "Nivel 1", t: "Dinero y mercados: cómo funciona tu dinero", ic: "m-n1", clases: L.filter(l => l.nivel === 1 && l.id !== "1.1").map(l => l.id) },
+  { id: "n2", eb: "Nivel 2", t: "Trading en simulador: gráficos, riesgo y mente", ic: "m-n2", clases: L.filter(l => l.nivel === 2).map(l => l.id) },
+  { id: "n3", eb: "Nivel 3", t: "IA aplicada: prompts, negocio, marketing y código", ic: "m-n3", clases: L.filter(l => l.nivel === 3).map(l => l.id) },
+  { id: "n4", eb: "Nivel 4", t: "Proyecto final: tu portafolio simulado con IA", ic: "m-n4", clases: ["4.1"] }
+];
 const INSTR = {
-  andre: { n: "André Macouzet", r: "IA, programación, riesgo y mercados", f: "../img/andre.jpg" },
-  goyo: { n: "Gregorio Sánchez", r: "Dinero, mente y negocios", f: "../img/goyo.jpg" },
-  ambos: { n: "André y Goyo", r: "Cofundadores de NORTHPOINT", f: "" }
+  andre: { n: "André Macouzet", r: "IA, programación, riesgo y mercados", f: "../img/andre.jpg", hola: "¡Hola, soy André!" },
+  goyo: { n: "Gregorio Sánchez", r: "Dinero, mente y negocios", f: "../img/goyo.jpg", hola: "¡Hola, soy Goyo!" },
+  ambos: { n: "André y Goyo", r: "Fundadores de NORTHPOINT", f: "", hola: "¡Hola! Somos André y Goyo." }
 };
 const HERRAMIENTAS = {
-  inflacion: { t: "Calculadora de inflación", d: "Cuánto vale hoy el dinero que guardaste.", ic: "coin", clase: "1.2" },
-  compuesto: { t: "Bola de nieve", d: "Interés compuesto, regla del 72 y comisiones.", ic: "trend", clase: "1.3" },
-  presupuesto: { t: "Presupuesto 50/30/20", d: "Tu dinero del mes contra la regla.", ic: "pie", clase: "1.4" },
-  cuatro: { t: "¿Inviertes o apuestas?", d: "La prueba de las 4 preguntas.", ic: "scale", clase: "1.5" },
-  banderas: { t: "Detector de fraudes", d: "Las 5 banderas rojas de un anuncio.", ic: "shield", clase: "1.7" },
-  riesgo: { t: "Tamaño de posición", d: "Contratos según tu riesgo y tu stop, y tu esperanza.", ic: "target", clase: "2.6" },
-  respira: { t: "Respiración guiada", d: "Cuadrada, suspiro fisiológico y exhalación larga.", ic: "wind", clase: "2.8" },
-  diario: { t: "Diario de trading", d: "Registra en R y mira tu estadística.", ic: "book", clase: "2.9" },
-  prompt: { t: "Constructor de prompts", d: "Rol, Contexto, Tarea, Formato.", ic: "chat", clase: "3.1" },
-  embudo: { t: "¿Te conviene anunciarte?", d: "Costo por cliente contra lo que te deja.", ic: "funnel", clase: "3.4" }
+  inflacion: { t: "Calculadora de inflación", d: "Cuánto vale hoy el dinero que guardaste.", clase: "1.2" },
+  compuesto: { t: "Bola de nieve", d: "Interés compuesto, regla del 72 y comisiones.", clase: "1.3" },
+  presupuesto: { t: "Presupuesto 50/30/20", d: "Tu dinero del mes contra la regla.", clase: "1.4" },
+  cuatro: { t: "¿Inviertes o apuestas?", d: "La prueba de las 4 preguntas.", clase: "1.5" },
+  banderas: { t: "Detector de fraudes", d: "Las 5 banderas rojas de un anuncio.", clase: "1.7" },
+  riesgo: { t: "Tamaño de posición", d: "Contratos según tu riesgo y tu stop, y tu esperanza.", clase: "2.6" },
+  respira: { t: "Respiración guiada", d: "Cuadrada, suspiro fisiológico y exhalación larga.", clase: "2.8" },
+  diario: { t: "Diario de trading", d: "Registra en R y mira tu estadística.", clase: "2.9" },
+  prompt: { t: "Constructor de prompts", d: "Rol, Contexto, Tarea, Formato.", clase: "3.1" },
+  embudo: { t: "¿Te conviene anunciarte?", d: "Costo por cliente contra lo que te deja.", clase: "3.4" }
 };
 const METAS = {
-  dinero: { t: "Ordenar mi dinero", d: "Ahorro, deuda, interés compuesto", ruta: ["1.2", "1.3", "1.4"] },
-  negocio: { t: "Hacer crecer un negocio", d: "IA y marketing para vender", ruta: ["3.1", "3.3", "3.4"] },
-  ia: { t: "Dominar la IA", d: "Prompts, código y agentes", ruta: ["3.1", "3.5", "3.6"] },
-  mercados: { t: "Entender los mercados", d: "Acciones, gráficos y riesgo", ruta: ["1.6", "2.1", "2.6"] }
+  dinero: { t: "Ordenar mi dinero", d: "Ahorro, deuda, interés compuesto" },
+  negocio: { t: "Hacer crecer un negocio", d: "IA y marketing para vender" },
+  ia: { t: "Dominar la IA", d: "Prompts, código y agentes" },
+  mercados: { t: "Entender los mercados", d: "Acciones, gráficos y riesgo" }
 };
 
 /* ── estado ── */
 const KEY = "npa-campus-v1";
 let S = (() => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (_) { return {}; } })();
-S.hechas ||= {}; S.tareas ||= {}; S.quiz ||= {}; S.herr ||= {}; S.diario ||= []; S.proyecto ||= {};
+S.hechas ||= {}; S.tareas ||= {}; S.quiz ||= {}; S.herr ||= {}; S.diario ||= []; S.proyecto ||= {}; S.vistas ||= {}; S.chat ||= {}; S.rate ||= {};
 function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (_) {} }
 
 const $ = (s, el = document) => el.querySelector(s), $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const ic = (n, cls = "i") => `<svg class="${cls}"><use href="#i-${n}"/></svg>`;
+const ill = n => `<svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><use href="#${n}"/></svg>`;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const plain = s => String(s ?? "").replace(/<[^>]+>/g, "");
 const mxn = n => (n < 0 ? "-$" : "$") + Math.round(Math.abs(n)).toLocaleString("es-MX");
 const num = (v, d = 0) => { const n = parseFloat(String(v).replace(/[^\d.\-]/g, "")); return isFinite(n) ? n : d; };
 const byId = id => L.find(x => x.id === id);
 const abierta = l => CONFIG.nivelesLibres.includes(l.nivel) || CONFIG.clasesLibres.includes(l.id) || !!S.acceso;
 const hecha = id => !!S.hechas[id];
 const pct = () => Math.round(Object.keys(S.hechas).filter(byId).length / L.length * 100);
-const nivelPct = n => { const ls = L.filter(l => l.nivel === n); return Math.round(ls.filter(l => hecha(l.id)).length / ls.length * 100); };
+const modDe = id => MODS.find(m => m.clases.includes(id));
 function toast(t) { const el = $("#toast"); el.textContent = t; el.classList.add("on"); clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove("on"), 2200); }
 async function sha(t) { const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(t)); return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, "0")).join(""); }
-function siguiente() {
-  return L.find(l => !hecha(l.id) && abierta(l)) || L.find(l => !hecha(l.id)) || L[L.length - 1];
-}
-function iniciales(n) { return (n || "?").trim().split(/\s+/).slice(0, 2).map(p => p[0]).join("").toUpperCase(); }
+function siguiente() { return L.find(l => !hecha(l.id) && abierta(l)) || L.find(l => !hecha(l.id)) || L[L.length - 1]; }
 
-/* ── bienvenida ── */
-function bienvenida() {
-  let meta = "";
-  $("#root").innerHTML = `<div class="welcome"><div class="wbox">
-    <div class="brand" style="padding:0"><span class="mk">NP</span><span class="tx">NORTHPOINT<small>ACADEMY</small></span></div>
-    <h1>Bienvenido al <strong>campus</strong>.</h1>
-    <p class="muted" style="font-size:16px">23 clases en 4 niveles: dinero, inteligencia artificial, negocios, mercados y un proyecto final. El Nivel 1 es gratis, y tienes una clase de muestra de IA y otra de trading. Con cada clase hay apuntes, una tarea, un quiz y, en varias, una herramienta para practicar.</p>
-    <form id="wf" class="card" style="display:grid;gap:16px">
-      <label class="f">¿Cómo te llamas?<input class="in" name="nombre" required autocomplete="given-name" maxlength="40" placeholder="Tu nombre"></label>
-      <div class="f" style="display:grid;gap:8px"><span>¿Qué te trae aquí?</span><div class="goals">${Object.entries(METAS).map(([k, m]) => `<button type="button" class="goal" data-m="${k}"><b>${m.t}</b><span>${m.d}</span></button>`).join("")}</div></div>
-      <button class="btn btn-p" type="submit">Entrar al campus ${ic("arrow")}</button>
-      <p class="fine">Tu avance se guarda solo en este dispositivo y navegador. No pedimos correo ni contraseña para empezar.</p>
-    </form>
-    <a href="../" class="muted" style="font-size:13px;display:inline-flex;gap:8px;align-items:center">${ic("back")} Volver a NORTHPOINT ACADEMY</a>
-  </div></div>`;
-  $$(".goal").forEach(b => b.onclick = () => { meta = b.dataset.m; $$(".goal").forEach(x => x.classList.toggle("on", x === b)); });
-  $("#wf").onsubmit = e => {
-    e.preventDefault();
-    S.perfil = { nombre: e.target.nombre.value.trim().slice(0, 40), meta: meta || "dinero", desde: new Date().toISOString() };
-    save(); location.hash = "#/"; render();
-  };
+/* partes (lecciones) de cada clase */
+function partes(l) {
+  const p = [{ k: "apuntes", t: l.t, tipo: "Teoría", ic: "doc" }];
+  if (l.herr) p.push({ k: "practica", t: l.herr === "proyecto" ? "Entregables del proyecto" : HERRAMIENTAS[l.herr].t, tipo: "Práctica", ic: "chart" });
+  p.push({ k: "tarea", t: "Tu tarea", tipo: "Práctica", ic: "pencil" });
+  p.push({ k: "quiz", t: `Cuestionario «${l.t}»`, tipo: "Cuestionario", ic: "quiz" });
+  return p;
 }
-
-/* ── armazón ── */
-function shell(contenido, ruta) {
-  const p = pct(), nombre = S.perfil.nombre;
-  const lv = [1, 2, 3, 4].map(n => {
-    const ls = L.filter(l => l.nivel === n);
-    return `<div class="lvl-h"><span>Nivel ${n} · ${NIVELES[n].n}</span><em>${ls.filter(l => hecha(l.id)).length}/${ls.length}</em></div>
-    <div class="ls">${ls.map(l => `<a href="#/clase/${l.id}" class="${hecha(l.id) ? "done" : ""} ${ruta === "clase/" + l.id ? "on" : ""}">
-      <span class="st">${hecha(l.id) ? ic("check", "i") : l.id}</span><span>${esc(l.t)}</span>${abierta(l) ? "" : ic("lock", "i lk")}</a>`).join("")}</div>`;
-  }).join("");
-  const nav = [["", "home", "Inicio"], ["herramientas", "tool", "Herramientas"], ["h/diario", "book", "Mi diario"], ["proyecto", "flag", "Proyecto final"], ["constancia", "award", "Mi constancia"]];
-  $("#root").innerHTML = `<div class="app">
-    <aside class="side" id="side">
-      <a class="brand" href="#/"><span class="mk">NP</span><span class="tx">NORTHPOINT<small>ACADEMY</small></span></a>
-      <div class="me"><span class="av">${esc(iniciales(nombre))}</span><div style="flex:1;min-width:0"><b>${esc(nombre)}</b><span>${p}% del campus</span><div class="bar" style="margin-top:6px"><i style="width:${p}%"></i></div></div></div>
-      <nav class="nav">${nav.map(([h, i, t]) => `<a href="#/${h}" class="${ruta === h ? "on" : ""}">${ic(i)}${t}</a>`).join("")}</nav>
-      ${lv}
-      <div class="side-foot"><a href="../">NORTHPOINT ACADEMY</a> · <a href="#/salir" id="salir">Cambiar de alumno</a></div>
-    </aside>
-    <div class="scrim" id="scrim"></div>
-    <div>
-      <div class="top"><button aria-label="Abrir menú" id="burger">${ic("menu")}</button><a class="brand" href="#/"><span class="mk">NP</span><span class="tx">NORTHPOINT<small>ACADEMY</small></span></a><span class="av" style="width:32px;height:32px;font-size:12px">${esc(iniciales(nombre))}</span></div>
-      <main id="main">${contenido}</main>
-    </div></div>`;
-  $("#burger").onclick = () => document.body.classList.add("drawer");
-  $("#scrim").onclick = () => document.body.classList.remove("drawer");
-  $$("#side a").forEach(a => a.addEventListener("click", () => document.body.classList.remove("drawer")));
-  $("#salir").onclick = e => {
-    e.preventDefault();
-    if (confirm("¿Cambiar de alumno? Se borra el avance guardado en este dispositivo.")) { S = { hechas: {}, tareas: {}, quiz: {}, herr: {}, diario: [], proyecto: {} }; save(); location.hash = "#/"; render(); }
-  };
-  const act = $("#side .ls a.on"); if (act) act.scrollIntoView({ block: "center" });
-}
-
-function poster(l, extra = "") {
-  const i = INSTR[l.quien];
-  const fotos = l.quien === "ambos" ? `<img class="ph two" src="${INSTR.goyo.f}" alt=""><img class="ph" src="${INSTR.andre.f}" alt="">` : `<img class="ph" src="${i.f}" alt="">`;
-  return `<div class="poster" style="--c:${NIVELES[l.nivel].c}"><span class="num">${l.id}</span>${fotos}${extra}</div>`;
-}
-
-/* ── inicio ── */
-function inicio() {
-  const p = pct(), s = siguiente(), meta = METAS[S.perfil.meta] || METAS.dinero, C = 2 * Math.PI * 48;
-  const hechasN = Object.keys(S.hechas).filter(byId).length;
-  const saludo = hechasN === 0 ? "Empecemos por lo que nadie te enseñó." : p === 100 ? "Terminaste las 23 clases." : `Llevas ${hechasN} de ${L.length} clases.`;
-  return `<div class="page wide">
-    <div class="hello"><div><div class="eyebrow">Campus</div><h1 style="margin-top:10px">Hola, ${esc(S.perfil.nombre)}.</h1><p>${saludo}</p></div>
-      <div class="ring"><svg viewBox="0 0 112 112"><circle cx="56" cy="56" r="48" fill="none" stroke="var(--line)" stroke-width="8"/><circle cx="56" cy="56" r="48" fill="none" stroke="var(--acc)" stroke-width="8" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - p / 100)}"/></svg><div><span>${p}%<small>avance</small></span></div></div></div>
-    <a class="card cont" href="#/clase/${s.id}">${poster(s)}<div class="bd"><div class="eyebrow" style="color:${NIVELES[s.nivel].c}">${hechasN ? "Continúa" : "Tu primera clase"} · Nivel ${s.nivel}</div><h2>${esc(s.t)}</h2><p class="muted">${esc(s.sub)} · ${s.min} min · ${INSTR[s.quien].n}</p><div class="row" style="margin-top:6px"><span class="btn btn-p">${abierta(s) ? "Abrir clase" : "Ver cómo desbloquear"} ${ic("arrow")}</span></div></div></a>
-    <div class="sec-t"><h2>Los cuatro niveles</h2><span class="muted" style="font-size:13px">${S.acceso ? "Acceso completo" : "Nivel 1 gratis + 2 clases de muestra"}</span></div>
-    <div class="lvls">${[1, 2, 3, 4].map(n => { const ls = L.filter(l => l.nivel === n), np = nivelPct(n), first = ls.find(l => !hecha(l.id)) || ls[0];
-      return `<a class="lv" href="#/clase/${first.id}" style="--c:${NIVELES[n].c}"><div class="row" style="justify-content:space-between"><span class="n">NIVEL ${n}</span>${CONFIG.nivelesLibres.includes(n) || S.acceso ? `<span class="dot" style="background:${NIVELES[n].c}"></span>` : ic("lock", "i lk")}</div><h3>${NIVELES[n].n}</h3><p>${NIVELES[n].d}</p><div class="bar"><i style="width:${np}%"></i></div><span class="muted" style="font-size:12px">${ls.length} ${ls.length === 1 ? "clase" : "clases"} · ${np}%</span></a>`; }).join("")}</div>
-    <div class="sec-t"><h2>Tu ruta para: ${meta.t.toLowerCase()}</h2><a class="muted" style="font-size:13px" href="#/" id="cambiaMeta">Cambiar</a></div>
-    <div class="grid3">${meta.ruta.map(id => { const l = byId(id); return `<a class="lv" href="#/clase/${id}" style="--c:${NIVELES[l.nivel].c}"><span class="n">${id} · ${l.min} MIN</span><h3>${esc(l.t)}</h3><p>${esc(l.sub)}</p><span style="font-size:12px;font-weight:700;color:${hecha(id) ? "var(--pos)" : "var(--muted)"}">${hecha(id) ? "Completada" : abierta(l) ? "Disponible" : "Requiere inscripción"}</span></a>`; }).join("")}</div>
-    <div class="sec-t"><h2>Herramientas</h2><a class="muted" style="font-size:13px" href="#/herramientas">Ver todas</a></div>
-    <div class="tools">${Object.entries(HERRAMIENTAS).slice(0, 8).map(([k, h]) => toolCard(k, h)).join("")}</div>
-  </div>`;
-}
-function toolCard(k, h) { return `<a class="tl" href="#/h/${k}"><span class="ic">${ic(h.ic)}</span><b>${h.t}</b><span>${h.d}</span></a>`; }
-
-/* ── clase ── */
-function clase(id, tab) {
-  const l = byId(id); if (!l) return `<div class="page"><p>No encontramos esa clase.</p></div>`;
-  S.ultima = id; save();
-  const i = INSTR[l.quien], k = L.indexOf(l), prev = L[k - 1], next = L[k + 1];
-  const head = `<div class="crumb"><a href="#/">Campus</a><span>›</span><span>Nivel ${l.nivel} · ${NIVELES[l.nivel].n}</span><span>›</span><span>Clase ${l.id}</span></div>
-    <div class="les-h"><h1>${esc(l.t)}</h1><p class="sub">${esc(l.sub)}</p>
-    <div class="meta"><span class="chip"><span class="dot" style="background:${NIVELES[l.nivel].c}"></span>Nivel ${l.nivel}</span><span class="chip">${l.min} min</span><span class="chip">${i.n}</span>${hecha(id) ? `<span class="chip" style="color:var(--pos);border-color:rgba(52,211,153,.4)">${ic("check")}Completada</span>` : ""}</div></div>`;
-  if (!abierta(l)) return `<div class="page">${head}<div class="video">${poster(l)}</div>${bloqueo(l)}</div>`;
-  const vid = CONFIG.videos[id];
-  const video = vid ? `<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(vid)}?rel=0" title="${esc(l.t)}" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`
-    : `<div class="video">${poster(l)}<div class="q"><p>“${l.gancho}”</p><span>Video en grabación · mientras, estudia con los apuntes</span></div></div>`;
-  const tabs = [["apuntes", "Apuntes"], ...(l.herr ? [["practica", l.herr === "proyecto" ? "Entregables" : "Practica"]] : []), ["tarea", "Tarea"], ["quiz", "Quiz"]];
-  tab = tabs.some(t => t[0] === tab) ? tab : "apuntes";
-  const okTab = { tarea: !!(S.tareas[id] || "").trim(), quiz: hecha(id) };
-  let body = "";
-  if (tab === "apuntes") body = apuntes(l);
-  if (tab === "practica") body = l.herr === "proyecto" ? `<div id="tool"></div>` : `<div class="card"><div class="eyebrow" style="margin-bottom:6px">Herramienta</div><h3 style="font-size:20px;font-weight:800;margin-bottom:16px">${HERRAMIENTAS[l.herr].t}</h3><div id="tool"></div></div>`;
-  if (tab === "tarea") body = `<div class="card"><div class="eyebrow" style="margin-bottom:8px">Tu tarea</div><p style="font-size:17px;font-weight:600;line-height:1.5">${l.tarea}</p>
-    <label class="f" style="margin-top:18px">Tu respuesta<textarea class="in" id="tareaTx" placeholder="Escribe aquí. Se guarda sola.">${esc(S.tareas[id] || "")}</textarea></label>
-    <div class="row" style="justify-content:space-between;margin-top:10px"><span class="saved" id="savedT">${S.tareas[id] ? "Guardada" : "Sin guardar"}</span><a class="btn btn-g" href="#/clase/${id}/quiz">Ir al quiz ${ic("arrow")}</a></div></div>`;
-  if (tab === "quiz") body = quiz(l);
-  return `<div class="page">${head}${video}
-    <nav class="tabs">${tabs.map(([t, n]) => `<a href="#/clase/${id}/${t}" class="${t === tab ? "on" : ""}">${n}${okTab[t] ? `<span class="ok">${ic("check", "i")}</span>` : ""}</a>`).join("")}</nav>
-    ${body}
-    <div class="nextbar">${prev ? `<a class="btn btn-g" href="#/clase/${prev.id}">${ic("back")} ${prev.id}</a>` : "<span></span>"}${next ? `<a class="btn ${hecha(id) ? "btn-p" : "btn-g"}" href="#/clase/${next.id}">Siguiente: ${esc(next.t)} ${ic("arrow")}</a>` : `<a class="btn btn-p" href="#/constancia">Ver mi constancia ${ic("arrow")}</a>`}</div>
-  </div>`;
-}
-function apuntes(l) {
-  const i = INSTR[l.quien];
-  return `<div class="notes">
-    ${l.aviso ? `<div class="call av">${ic("info")}<div><b class="h">Aviso</b>${l.aviso}</div></div>` : ""}
-    ${l.promesa ? `<p class="prom">${l.promesa}</p>` : ""}
-    ${l.bloques.map((b, k) => `<div class="blk"><span class="k">0${k + 1}</span><div><h3>${b.t}</h3>${b.p ? `<p>${b.p}</p>` : ""}${b.li.length ? `<ul>${b.li.map(x => `<li>${x}</li>`).join("")}</ul>` : ""}</div></div>`).join("")}
-    ${l.ejemplo ? `<div class="call ex">${ic("eye")}<div><b class="h">En el video</b>${l.ejemplo}</div></div>` : ""}
-    ${l.error ? `<div class="call err">${ic("alert")}<div><b class="h">Error común</b>${l.error}</div></div>` : ""}
-    ${l.cierre ? `<p class="cierre">${l.cierre}</p>` : ""}${l.puente ? `<p class="cierre">${l.puente}</p>` : ""}
-    <div class="inst">${i.f ? `<img src="${i.f}" alt="${i.n}">` : `<span class="av">AG</span>`}<div><b>${i.n}</b><span>${i.r}</span></div></div>
-    <div class="row">${l.herr ? `<a class="btn btn-p" href="#/clase/${l.id}/practica">${l.herr === "proyecto" ? "Llenar entregables" : "Practica con la herramienta"} ${ic("arrow")}</a>` : ""}<a class="btn ${l.herr ? "btn-g" : "btn-p"}" href="#/clase/${l.id}/tarea">Hacer la tarea ${ic("arrow")}</a></div>
-  </div>`;
-}
-function quiz(l) {
-  const r = S.quiz[l.id] || {};
-  return `<div class="card" id="quiz"><div class="eyebrow" style="margin-bottom:14px">Quiz · ${l.quiz.length} preguntas</div>
-    ${l.quiz.map((q, k) => `<div class="q-item" data-k="${k}"><h4>${k + 1}. ${q[0]}</h4><div class="opts">${q[1].map((o, j) => `<button type="button" class="opt" data-j="${j}"><span class="r"></span>${o}</button>`).join("")}</div><div class="why"></div></div>`).join("")}
-    <div class="row" style="margin-top:18px"><button class="btn btn-p" id="qOk" type="button">Revisar respuestas</button><span class="muted" style="font-size:13px" id="qMsg">Responde todas para completar la clase.</span></div>
-    ${hecha(l.id) ? `<div class="donebox"><span class="c">${ic("check")}</span><div><b>Clase completada</b><div class="muted" style="font-size:13px">El ${new Date(S.hechas[l.id]).toLocaleDateString("es-MX", { day: "numeric", month: "long" })}.</div></div></div>` : ""}
-  </div>`;
-}
-function bloqueo(l) {
-  return `<div class="card lock"><span class="ic">${ic("lock")}</span><h2>El Nivel ${l.nivel} es parte de la inscripción</h2>
-    <p>El Nivel 1 es gratis, igual que las clases 2.1 y 3.1. Para abrir el resto de trading, inteligencia artificial y el proyecto final, inscríbete y te mandamos tu código de alumno.</p>
-    <div class="row" style="justify-content:center;margin-top:6px"><a class="btn btn-p" href="${CONFIG.inscripcion}">Inscribirme ${ic("arrow")}</a></div>
-    <form id="codeF"><input class="in mono" name="c" placeholder="Código de alumno" autocomplete="off" autocapitalize="characters" aria-label="Código de alumno"><button class="btn btn-g" type="submit">Abrir</button></form>
-    <div class="msg" id="codeMsg"></div></div>`;
-}
+const parteHecha = (l, k) => k === "quiz" ? hecha(l.id) : k === "tarea" ? !!(S.tareas[l.id] || "").trim() : !!S.vistas[l.id + "/" + k];
+const secuencia = () => L.flatMap(l => partes(l).map(p => [l.id, p.k]));
 
 /* ── herramientas ── */
-function herramientas() {
-  return `<div class="page wide"><div class="eyebrow">Herramientas</div><h1 style="font-weight:800;font-size:clamp(26px,3.6vw,36px);margin:10px 0 6px">Para practicar lo que ves en clase.</h1><p class="muted" style="margin-bottom:24px">Todas son gratis y guardan lo que escribes en este dispositivo.</p>
-    <div class="tools">${Object.entries(HERRAMIENTAS).map(([k, h]) => toolCard(k, h)).join("")}</div></div>`;
-}
-function herramientaPag(k) {
-  const h = HERRAMIENTAS[k]; if (!h) return `<div class="page"><p>No existe esa herramienta.</p></div>`;
-  return `<div class="page"><div class="crumb"><a href="#/herramientas">Herramientas</a><span>›</span><span>Clase ${h.clase}</span></div>
-    <h1 style="font-weight:800;font-size:clamp(26px,3.6vw,36px)">${h.t}</h1><p class="muted" style="margin:6px 0 22px">${h.d} Se ve en la <a href="#/clase/${h.clase}" style="color:var(--acc)">clase ${h.clase}</a>.</p>
-    <div class="card"><div id="tool"></div></div></div>`;
-}
-
 const T = {};
 const H = k => (S.herr[k] ||= {});
 function bind(el, k, fn) {
@@ -439,62 +309,306 @@ T.proyecto = el => {
   pinta();
 };
 
-function proyectoPag() {
-  const l = byId("4.1");
-  if (!abierta(l)) return `<div class="page"><div class="eyebrow">Proyecto final</div><h1 style="font-weight:800;font-size:clamp(26px,3.6vw,36px);margin:10px 0 20px">Tu portafolio simulado con IA</h1>${bloqueo(l)}</div>`;
-  return `<div class="page"><div class="eyebrow">Proyecto final</div><h1 style="font-weight:800;font-size:clamp(26px,3.6vw,36px);margin:10px 0 6px">Tu portafolio simulado con IA</h1>
-    <p class="muted" style="margin-bottom:22px">Cuatro entregables y mínimo 30 operaciones en simulador. Rúbrica: reglas seguidas 30%, riesgo 25%, uso de IA 20%, diario y análisis 15%, presentación 10%. <a href="#/clase/4.1" style="color:var(--acc)">Ver la clase 4.1</a>.</p>
-    <div class="card"><div id="tool"></div></div></div>`;
+
+/* ── barra superior ── */
+function topbar(modo, ctx = {}) {
+  const right = modo === "leccion"
+    ? `<button class="tb" data-act="soporte">${ic("help")}<span class="lb">Soporte</span></button><button class="tb" data-act="tutor">${ic("bot")}<span class="lb">Tutor de IA</span></button>`
+    : `<button class="tb" data-act="buscar">${ic("search")}<span class="lb">Buscar</span></button><button class="tb" data-act="soporte">${ic("help")}<span class="lb">Soporte</span></button><button class="tb" data-act="tutor">${ic("bot")}<span class="lb">Tutor de IA</span></button><a class="tb ${ctx.ruta === "ajustes" ? "on" : ""}" href="#/ajustes">${ic("gear")}<span class="lb">Configuración</span></a><span class="sepv"></span><button class="tb" data-act="invitar">${ic("gift")}<span class="lb">Invitar amigos</span></button>`;
+  const left = modo === "leccion"
+    ? `<a class="tb" href="#/">${ic("home")}<span class="lb">Inicio</span></a><button class="tb" data-act="buscar">${ic("search")}<span class="lb">Buscar</span></button>`
+    : `<a class="tb ${ctx.ruta === "" ? "on" : ""}" href="#/">${ic("home")}<span class="lb">Inicio</span></a>`;
+  const mid = modo === "leccion"
+    ? `<div class="mid"><a class="ib" href="${ctx.prev || "#"}" aria-label="Lección anterior" aria-disabled="${!ctx.prev}">${ic("back")}</a><button class="tt" data-act="modulo" data-m="${ctx.mod}">${ic("list")}<span>${esc(ctx.titulo)}</span></button><a class="ib" href="${ctx.next || "#"}" aria-label="Lección siguiente" aria-disabled="${!ctx.next}">${ic("arrow")}</a></div>`
+    : `<div></div>`;
+  return `<header class="top ${modo === "leccion" ? "les" : ""}"><div class="l">${left}</div>${mid}<div class="r">${right}</div></header>`;
 }
 
+/* ── bienvenida ── */
+function bienvenida() {
+  let meta = "";
+  $("#root").innerHTML = `<div class="welcome"><div class="wbox">
+    <span class="logo">northpoint<small>academy</small></span>
+    <h1>Te damos la bienvenida al <b>campus</b>.</h1>
+    <p style="font-size:17px">23 clases en 4 niveles: dinero, inteligencia artificial, negocios, mercados y un proyecto final. El Nivel 1 es gratis, y tienes una clase de muestra de IA y otra de trading.</p>
+    <form id="wf" class="box" style="display:grid;gap:16px">
+      <label class="f">¿Cómo te llamas?<input class="in" name="nombre" required autocomplete="given-name" maxlength="40" placeholder="Tu nombre"></label>
+      <div class="f" style="display:grid;gap:8px"><span>¿Qué te trae aquí?</span><div class="goals">${Object.entries(METAS).map(([k, m]) => `<button type="button" class="goal" data-m="${k}"><b>${m.t}</b><span>${m.d}</span></button>`).join("")}</div></div>
+      <button class="btn btn-p" type="submit" style="height:50px">Entrar al campus ${ic("arrow")}</button>
+      <p class="fine">Tu avance se guarda solo en este dispositivo y navegador. No pedimos correo ni contraseña para empezar.</p>
+    </form>
+    <a href="../../academia.html" class="fine" style="display:inline-flex;gap:8px;align-items:center">${ic("back")} Volver a NORTHPOINT ACADEMY</a>
+  </div></div>`;
+  $$(".goal").forEach(b => b.onclick = () => { meta = b.dataset.m; $$(".goal").forEach(x => x.classList.toggle("on", x === b)); });
+  $("#wf").onsubmit = e => {
+    e.preventDefault();
+    S.perfil = { nombre: e.target.nombre.value.trim().slice(0, 40), meta: meta || "dinero", desde: new Date().toISOString() };
+    save(); location.hash = "#/"; render();
+  };
+}
+
+/* ── inicio ── */
+function inicio() {
+  const s = siguiente(), m = modDe(s.id), ls = m.clases.map(byId), hechasMod = ls.filter(l => hecha(l.id)).length;
+  const modCard = mm => {
+    const cl = mm.clases.map(byId), n = cl.filter(l => hecha(l.id)).length, locked = cl.every(l => !abierta(l));
+    const meta = mm.flat ? `${partes(cl[0]).length} lecciones` : `${cl.length} ${cl.length === 1 ? "capítulo" : "capítulos"}`;
+    return `<button class="mod" data-act="modulo" data-m="${mm.id}"><span class="tile">${ill(mm.ic)}</span><div><small>${mm.eb}</small><b>${esc(mm.t)}</b><span>${locked ? ic("lock") : ""}${meta}</span></div>${n === cl.length ? `<span class="done">${ic("check")}<span>Completado</span></span>` : n ? `<span class="done" style="color:var(--mute)">${n}/${cl.length}</span>` : ""}</button>`;
+  };
+  const extra = [
+    { href: "#/herramientas", eb: "Módulo adicional", t: "Herramientas para practicar", ic: "m-tool", meta: "10 herramientas" },
+    { href: "#/h/diario", eb: "Módulo adicional", t: "Tu diario de trading en R", ic: "m-diario", meta: `${S.diario.length} ${S.diario.length === 1 ? "operación" : "operaciones"}` },
+    { href: "#/constancia", eb: "Módulo adicional", t: "Tu constancia de avance", ic: "m-award", meta: `${pct()}% del campus` }
+  ];
+  return `${topbar("inicio", { ruta: "" })}<main class="home">
+    <div class="prog"><h1>NORTHPOINT ACADEMY</h1>${S.acceso ? `<span class="pill" style="background:var(--green);color:#1A1A1A">Acceso completo</span>` : `<a class="pill" href="${CONFIG.inscripcion}">Inscríbete al programa completo</a>`}</div>
+    <a class="cont" href="#/clase/${s.id}/${primeraPendiente(s)}"><div class="hd"><span class="tile">${ill(m.ic)}</span><div><b>${m.eb} <span class="mini"><i style="width:${Math.round(hechasMod / ls.length * 100)}%"></i></span></b><span>${esc(m.t)}</span></div></div>
+      <div class="card"><small>Capítulo ${s.id}</small><h2>${esc(s.t)}: ${esc(s.sub.charAt(0).toLowerCase() + s.sub.slice(1))}</h2></div></a>
+    <h2 class="secT">Contenido</h2>
+    <div class="mods">${MODS.map(modCard).join("")}${extra.map(x => `<a class="mod" href="${x.href}"><span class="tile">${ill(x.ic)}</span><div><small>${x.eb}</small><b>${x.t}</b><span>${x.meta}</span></div></a>`).join("")}</div>
+  </main>`;
+}
+function primeraPendiente(l) { const p = partes(l).find(p => !parteHecha(l, p.k)); return p ? p.k : "apuntes"; }
+
+/* ── hoja del módulo ── */
+function abrirModulo(id, clase) {
+  const k = MODS.findIndex(m => m.id === id); if (k < 0) return;
+  const m = MODS[k], prev = MODS[k - 1], next = MODS[k + 1], cl = m.clases.map(byId), locked = cl.every(l => !abierta(l));
+  const lesHTML = l => partes(l).map(p => {
+    const cur = location.hash === `#/clase/${l.id}/${p.k}`, ok = parteHecha(l, p.k);
+    return `<a class="les ${cur ? "cur" : ""} ${abierta(l) ? "" : "lk"}" href="#/clase/${l.id}/${p.k}"><span class="ic">${ic(p.ic)}</span><div><b>${esc(p.t)}</b><em>${p.tipo}${l.id === "1.1" ? " · Opcional" : ""}</em></div>${ok ? `<span class="st y">${ic("check")}</span>` : abierta(l) ? "" : `<span class="st">${ic("lock")}</span>`}</a>`;
+  }).join("");
+  let el = $("#sheet"); if (!el) { el = document.createElement("div"); el.id = "sheet"; el.className = "sheet"; document.body.appendChild(el); }
+  el.innerHTML = `<div class="shtop"><button class="ib" data-close aria-label="Ver contenido">${ic("list")}</button>
+      ${prev ? `<button class="nv" data-go="${prev.id}">${ic("left")}<span>${prev.eb}: ${esc(prev.t)}</span></button>` : "<span></span>"}<span></span>
+      ${next ? `<button class="nv r" data-go="${next.id}"><span>${next.eb}: ${esc(next.t)}</span>${ic("right")}</button>` : "<span></span>"}
+      <button class="ib" data-close aria-label="Cerrar">${ic("x")}</button></div>
+    <div class="shbody"><div class="peek"></div><div class="panel"><div class="pin">
+      <div class="mh"><span class="tile lg">${ill(m.ic)}</span><div><small>${m.eb}</small><h2>${esc(m.t)}</h2><span>${locked ? ic("lock") : ""}${m.flat ? `${partes(cl[0]).length} lecciones` : `${cl.length} ${cl.length === 1 ? "capítulo" : "capítulos"}`}</span></div></div>
+      ${m.flat ? `<div class="lessons flat">${lesHTML(cl[0])}</div>` : cl.map((l, i) => `<div class="chap ${l.id === clase ? "open" : ""}"><button type="button"><span class="n">${String(i + 1).padStart(2, "0")}</span><div><b>${esc(l.t)}</b><em>${partes(l).length} lecciones${hecha(l.id) ? " · completado" : ""}</em></div>${hecha(l.id) ? `<span class="ok">${ic("check")}</span>` : ic("down", "i chev")}</button><div class="lessons">${lesHTML(l)}</div></div>`).join("")}
+    </div></div><div class="peek"></div></div>`;
+  el.classList.add("on"); document.documentElement.style.overflow = "hidden";
+  $$("[data-close]", el).forEach(b => b.onclick = cerrarModulo);
+  $$("[data-go]", el).forEach(b => b.onclick = () => abrirModulo(b.dataset.go));
+  $$(".chap>button", el).forEach(b => b.onclick = () => b.parentElement.classList.toggle("open"));
+  $$(".les", el).forEach(a => a.addEventListener("click", cerrarModulo));
+  const o = $(".chap.open", el); if (o) o.scrollIntoView({ block: "center" });
+}
+function cerrarModulo() { const el = $("#sheet"); if (el) el.classList.remove("on"); document.documentElement.style.overflow = ""; }
+
+/* ── lección ── */
+function leccion(id, k) {
+  const l = byId(id); if (!l) return `${topbar("inicio", {})}<main class="page"><p>No encontramos esa clase.</p></main>`;
+  const ps = partes(l); k = ps.some(p => p.k === k) ? k : "apuntes";
+  const seq = secuencia(), pos = seq.findIndex(([a, b]) => a === id && b === k), pv = seq[pos - 1], nx = seq[pos + 1];
+  const m = modDe(id), p = ps.find(x => x.k === k), falta = ps.filter(x => !parteHecha(l, x.k)).length;
+  S.ultima = id; save();
+  const bar = topbar("leccion", { mod: m.id, titulo: `${m.eb}: ${m.t}`, prev: pv && `#/clase/${pv[0]}/${pv[1]}`, next: nx && `#/clase/${nx[0]}/${nx[1]}` });
+  const ch = `<div class="chcard"><small>Capítulo ${l.id} <em>· ${falta ? `Faltan ${falta} ${falta === 1 ? "lección" : "lecciones"}` : "Completado"}</em></small><b>${esc(l.t)}</b><div class="segs">${ps.map(x => `<i class="${parteHecha(l, x.k) ? "y" : x.k === k ? "c" : ""}"></i>`).join("")}</div></div>`;
+  let body;
+  if (!abierta(l)) body = `<span class="eyeb">${p.tipo}</span><h1>${esc(p.t)}</h1>${bloqueo(l)}`;
+  else if (k === "apuntes") body = apuntes(l);
+  else if (k === "practica") body = `<span class="eyeb">Práctica</span><h1>${esc(p.t)}</h1><p style="margin:-14px 0 24px">${l.herr === "proyecto" ? "Llena los cuatro entregables. Se guardan solos." : esc(HERRAMIENTAS[l.herr].d) + " Cambia los números y mira qué pasa."}</p><div id="tool"></div>`;
+  else if (k === "tarea") body = `<span class="eyeb">Práctica</span><h1>Tu tarea</h1><div class="tip"><b class="h">Lo que tienes que hacer</b>${l.tarea}</div>
+      <label class="f">Tu respuesta<textarea class="in" id="tareaTx" placeholder="Escribe aquí. Se guarda sola.">${esc(S.tareas[id] || "")}</textarea></label>
+      <div class="row" style="justify-content:space-between;margin-top:10px"><span class="saved" id="savedT">${S.tareas[id] ? "Guardada" : "Sin guardar"}</span></div>`;
+  else body = quiz(l);
+  const last = !nx;
+  return `${bar}<div class="lwrap"><div class="lin">${ch}${body}</div></div>
+    <div class="botbar"><button class="bbtn g ${S.rate[id] ? "on" : ""}" data-act="rate">${ic("rate")}<span class="lb">Valoración de la lección</span></button><a class="bbtn d" id="sig" href="${last ? "#/constancia" : `#/clase/${nx[0]}/${nx[1]}`}">${last ? "Ver mi constancia" : "Siguiente"} ${ic("arrow")}</a></div>
+    <div class="rate" id="rate"><span>¿Te sirvió esta lección?</span><div><button data-r="up" class="${S.rate[id] === "up" ? "on" : ""}" aria-label="Me sirvió">${ic("up")}</button><button data-r="dn" class="${S.rate[id] === "dn" ? "on" : ""}" aria-label="No me sirvió">${ic("dn")}</button></div></div>`;
+}
+function apuntes(l) {
+  const i = INSTR[l.quien], visto = !!S.chat[l.id];
+  const bubs = [i.hola, l.gancho, l.promesa].filter(Boolean);
+  const vid = CONFIG.videos[l.id];
+  const resto = `${vid ? `<div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(vid)}?rel=0" title="${esc(l.t)}" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>` : ""}
+    ${l.aviso ? `<div class="tip"><b class="h">Aviso</b>${l.aviso}</div>` : ""}
+    ${l.bloques.map(b => `<h3>${b.t}</h3>${b.p ? `<p>${b.p}</p>` : ""}${b.li.length ? `<ul>${b.li.map(x => `<li>${x}</li>`).join("")}</ul>` : ""}`).join("")}
+    ${l.ejemplo ? `<div class="tip"><b class="h">En el video</b>${l.ejemplo}</div>` : ""}
+    ${l.error ? `<div class="tip err"><b class="h">Error común</b>${l.error}</div>` : ""}
+    ${l.cierre || l.puente ? `<div class="tip ok"><b class="h">Para cerrar</b>${l.cierre || l.puente}</div>` : ""}
+    ${!vid ? `<p class="fine" style="margin-top:20px">El video de esta clase está en grabación. Mientras, estos apuntes tienen todo el contenido.</p>` : ""}
+    <div class="instr">${i.f ? `<img src="${i.f}" alt="${i.n}">` : `<span class="ph">AG</span>`}<div><b>${i.n}</b><span>${i.r}</span></div></div>`;
+  return `<span class="eyeb">Teoría${l.id === "1.1" ? " · Opcional" : ""}</span><h1>${esc(l.t)}</h1>
+    <div class="chat"><span class="av ${i.f ? "" : "two"}" ${i.f ? `style="background-image:url(${i.f})"` : ""}>${i.f ? "" : "AG"}</span><div class="bubs" id="bubs" data-n="${bubs.length}">${visto ? bubs.map(b => `<div class="bub">${b}</div>`).join("") : ""}</div></div>
+    <template id="bubsT">${bubs.map(b => `<div class="bub">${b}</div>`).join("")}</template>
+    <div class="rest" id="rest" ${visto ? "" : 'style="display:none"'}>${resto}</div>`;
+}
+function quiz(l) {
+  return `<span class="eyeb">Cuestionario</span><h1>Cuestionario «${esc(l.t)}»</h1><div id="quiz">
+    ${l.quiz.map((q, k) => `<div class="qi" data-k="${k}"><h4>${k + 1}. ${q[0]}</h4><div class="opts">${q[1].map((o, j) => `<button type="button" class="opt" data-j="${j}"><span class="r"></span>${o}</button>`).join("")}</div><div class="why"></div></div>`).join("")}
+    <div class="row" style="margin-top:20px"><button class="btn btn-p" id="qOk" type="button">Revisar respuestas</button><span class="fine" id="qMsg">${hecha(l.id) ? "Ya completaste este capítulo. Puedes repetirlo." : "Acierta todas para completar el capítulo."}</span></div></div>`;
+}
+function bloqueo(l) {
+  return `<div class="lock"><span class="tile">${ic("lock")}</span><h2>El Nivel ${l.nivel} es parte de la inscripción</h2>
+    <p>El Nivel 1 es gratis, igual que los capítulos 2.1 y 3.1. Para abrir el resto de trading, inteligencia artificial y el proyecto final, inscríbete y te mandamos tu código de alumno.</p>
+    <div class="row" style="justify-content:center;margin-top:6px"><a class="btn btn-pe" href="${CONFIG.inscripcion}">Inscribirme ${ic("arrow")}</a></div>
+    <form id="codeF"><input class="in mono" name="c" placeholder="Código de alumno" autocomplete="off" autocapitalize="characters" aria-label="Código de alumno"><button class="btn btn-p" type="submit">Abrir</button></form>
+    <div class="msg" id="codeMsg"></div></div>`;
+}
+
+/* ── páginas ── */
+function herramientas() {
+  return `${topbar("inicio", { ruta: "herramientas" })}<main class="page"><span class="eyeb">Módulo adicional</span><h1>Herramientas para practicar</h1><p class="lead">Todas son gratis y guardan lo que escribes en este dispositivo.</p>
+    <div class="tgrid">${Object.entries(HERRAMIENTAS).map(([k, h]) => `<a class="tl" href="#/h/${k}"><span class="tile">${ill("m-tool")}</span><div><b>${h.t}</b><span>${h.d}</span></div></a>`).join("")}</div></main>`;
+}
+function herramientaPag(k) {
+  const h = HERRAMIENTAS[k]; if (!h) return `${topbar("inicio", {})}<main class="page"><p>No existe esa herramienta.</p></main>`;
+  return `${topbar("inicio", { ruta: "h" })}<main class="page"><a class="fine" href="#/herramientas" style="display:inline-flex;gap:6px;align-items:center">${ic("back")} Herramientas</a><h1>${h.t}</h1><p class="lead">${h.d} Se ve en el <a href="#/clase/${h.clase}/apuntes" style="text-decoration:underline">capítulo ${h.clase}</a>.</p><div class="box"><div id="tool"></div></div></main>`;
+}
+function proyectoPag() {
+  const l = byId("4.1");
+  return `${topbar("inicio", {})}<main class="page"><span class="eyeb">Nivel 4</span><h1>Tu portafolio simulado con IA</h1>
+    ${abierta(l) ? `<p class="lead">Cuatro entregables y mínimo 30 operaciones en simulador. Rúbrica: reglas seguidas 30%, riesgo 25%, uso de IA 20%, diario y análisis 15%, presentación 10%.</p><div class="box"><div id="tool"></div></div>` : bloqueo(l)}</main>`;
+}
 function constancia() {
-  const n = Object.keys(S.hechas).filter(byId).length, falta = L.length - n;
+  const n = Object.keys(S.hechas).filter(byId).length, falta = L.length - n, s = siguiente();
   const folio = "NPA-" + new Date(S.perfil.desde || Date.now()).getFullYear() + "-" + (Math.abs([...(S.perfil.nombre + S.perfil.desde)].reduce((a, c) => Math.imul(a, 31) + c.charCodeAt(0) | 0, 7)) % 100000).toString().padStart(5, "0");
   const fecha = new Date().toLocaleDateString("es-MX", { day: "numeric", month: "long", year: "numeric" });
-  return `<div class="page"><div class="eyebrow">Mi constancia</div><h1 style="font-weight:800;font-size:clamp(26px,3.6vw,36px);margin:10px 0 6px">${falta ? `Te faltan ${falta} ${falta === 1 ? "clase" : "clases"}.` : "Completaste el campus."}</h1>
-    <p class="muted" style="margin-bottom:22px">${falta ? "La constancia de avance se abre al completar las 23 clases (cada clase se completa al acertar todo su quiz)." : "Descarga tu constancia de avance. El certificado NORTHPOINT ACADEMY se emite al aprobar tu defensa del proyecto final."}</p>
-    ${falta ? `<div class="card"><div class="bar" style="height:10px"><i style="width:${pct()}%"></i></div><p class="muted" style="margin-top:12px;font-size:14px">${n} de ${L.length} clases · siguiente: <a href="#/clase/${siguiente().id}" style="color:var(--acc)">${esc(siguiente().t)}</a></p></div>`
-    : `<div class="const"><div class="t"><span>NORTHPOINT · ACADEMY</span><span>${folio}</span></div><div><small>Constancia de avance · Campus en línea</small><h2>${esc(S.perfil.nombre)}</h2><p>Completó las ${L.length} clases de los cuatro niveles del campus de NORTHPOINT ACADEMY: dinero y mercados, trading, inteligencia artificial aplicada y proyecto final, con sus quiz aprobados.</p></div><div class="s"><div>André Macouzet</div><div>Gregorio Sánchez</div><div class="mono" style="font-weight:500">${fecha}</div></div></div>
+  return `${topbar("inicio", {})}<main class="page"><span class="eyeb">Módulo adicional</span><h1>${falta ? `Te faltan ${falta} ${falta === 1 ? "capítulo" : "capítulos"}` : "Completaste el campus"}</h1>
+    <p class="lead">${falta ? "La constancia de avance se abre al completar los 23 capítulos (cada uno se completa al acertar todo su cuestionario)." : "Descarga tu constancia de avance. El certificado NORTHPOINT ACADEMY se emite al aprobar tu defensa del proyecto final."}</p>
+    ${falta ? `<div class="box"><div class="segs" style="gap:3px">${L.map(l => `<i class="${hecha(l.id) ? "y" : ""}"></i>`).join("")}</div><p style="margin-top:14px">${n} de ${L.length} · siguiente: <a href="#/clase/${s.id}/${primeraPendiente(s)}" style="text-decoration:underline">${esc(s.t)}</a></p></div>`
+    : `<div class="const"><div class="t"><span>northpoint academy</span><span>${folio}</span></div><div><small>Constancia de avance · Campus en línea</small><h2>${esc(S.perfil.nombre)}</h2><p>Completó los ${L.length} capítulos de los cuatro niveles del campus de NORTHPOINT ACADEMY: dinero y mercados, trading, inteligencia artificial aplicada y proyecto final, con sus cuestionarios aprobados.</p></div><div class="s"><div>André Macouzet</div><div>Gregorio Sánchez</div><div class="mono" style="font-weight:500">${fecha}</div></div><span class="seal">NORTH<br>POINT<br>2026</span></div>
       <div class="row" style="margin-top:18px"><button class="btn btn-p" type="button" onclick="print()">Descargar en PDF</button><a class="btn btn-g" href="#/proyecto">Ir al proyecto final</a></div>
-      <p class="fine" style="margin-top:12px">Constancia de avance emitida por el campus. No es un título oficial ni una licencia para asesorar o administrar dinero de terceros.</p>`}</div>`;
+      <p class="fine" style="margin-top:12px">Constancia de avance emitida por el campus. No es un título oficial ni una licencia para asesorar o administrar dinero de terceros.</p>`}</main>`;
+}
+function ajustes() {
+  return `${topbar("inicio", { ruta: "ajustes" })}<main class="page"><h1>Configuración</h1><p class="lead">Tu avance se guarda en este dispositivo y navegador.</p>
+    <form class="box" id="af" style="display:grid;gap:14px"><label class="f">Tu nombre<input class="in" name="nombre" value="${esc(S.perfil.nombre)}" maxlength="40"></label>
+      <label class="f">Lo que te trae aquí<select class="in" name="meta">${Object.entries(METAS).map(([k, m]) => `<option value="${k}" ${S.perfil.meta === k ? "selected" : ""}>${m.t}</option>`).join("")}</select></label>
+      <div class="row"><button class="btn btn-p" type="submit">Guardar</button></div></form>
+    <div class="box" style="margin-top:12px"><b style="font:600 18px var(--h);color:var(--ink-s)">Código de alumno</b><p class="fine" style="margin:6px 0 12px">${S.acceso ? "Tienes acceso completo a los cuatro niveles." : "Ábrelo con el código que te mandamos al inscribirte."}</p>${S.acceso ? "" : `<form id="codeF" style="display:flex;gap:8px"><input class="in mono" name="c" placeholder="Código de alumno" autocomplete="off"><button class="btn btn-p" type="submit">Abrir</button></form><div class="fine" id="codeMsg" style="margin-top:8px"></div>`}</div>
+    <div class="box" style="margin-top:12px"><b style="font:600 18px var(--h);color:var(--ink-s)">Empezar de cero</b><p class="fine" style="margin:6px 0 12px">Borra tu avance, tareas y diario de este dispositivo.</p><button class="btn btn-g" type="button" id="reset">Borrar mi avance</button></div></main>`;
+}
+
+/* ── paneles: buscar, soporte, tutor ── */
+function indice() {
+  const out = [];
+  L.forEach(l => {
+    const txt = plain([l.t, l.sub, l.gancho, l.promesa, ...l.bloques.flatMap(b => [b.t, b.p, ...b.li]), l.error, l.tarea, l.ejemplo].join(" "));
+    out.push({ href: `#/clase/${l.id}/apuntes`, t: `${l.id} · ${l.t}`, s: l.sub, ic: modDe(l.id).ic, txt, l });
+  });
+  Object.entries(HERRAMIENTAS).forEach(([k, h]) => out.push({ href: `#/h/${k}`, t: h.t, s: "Herramienta · " + h.d, ic: "m-tool", txt: h.t + " " + h.d }));
+  return out;
+}
+const norm = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+function buscarEn(q) {
+  const ws = norm(q).split(/\W+/).filter(w => w.length > 2 && !["que","como","para","con","los","las","una","del","por","mas","esto","cual","sobre"].includes(w));
+  if (!ws.length) return [];
+  return indice().map(x => { const t = norm(x.txt), tt = norm(x.t); let sc = 0; ws.forEach(w => { if (tt.includes(w)) sc += 5; const n = t.split(w).length - 1; sc += Math.min(n, 6); }); return { ...x, sc }; }).filter(x => x.sc > 0).sort((a, b) => b.sc - a.sc);
+}
+function abrirBuscar() {
+  let el = $("#srch"); if (!el) { el = document.createElement("div"); el.id = "srch"; el.className = "srch"; document.body.appendChild(el); }
+  el.innerHTML = `<div class="sbox"><div class="q">${ic("search")}<input id="sq" placeholder="Busca una clase, un tema o una herramienta" autocomplete="off"><button class="ib" id="sx" aria-label="Cerrar">${ic("x")}</button></div><div class="sres" id="sres"></div></div>`;
+  el.classList.add("on");
+  const pinta = () => { const q = $("#sq").value, r = q.trim() ? buscarEn(q).slice(0, 12) : indice().slice(0, 8);
+    $("#sres").innerHTML = r.length ? r.map((x, i) => `<a href="${x.href}" class="${i === 0 ? "on" : ""}"><span class="tile">${ill(x.ic)}</span><div><b>${esc(x.t)}</b><span>${esc(x.s)}</span></div></a>`).join("") : `<p class="fine" style="padding:14px">Sin resultados para “${esc(q)}”.</p>`;
+    $$("#sres a").forEach(a => a.onclick = cerrarBuscar); };
+  $("#sq").oninput = pinta; $("#sq").onkeydown = e => { if (e.key === "Enter") { const a = $("#sres a"); if (a) { location.hash = a.getAttribute("href"); cerrarBuscar(); } } };
+  $("#sx").onclick = cerrarBuscar; el.onclick = e => { if (e.target === el) cerrarBuscar(); };
+  pinta(); setTimeout(() => $("#sq").focus(), 30);
+}
+function cerrarBuscar() { const el = $("#srch"); if (el) el.classList.remove("on"); }
+function flotante(id, titulo, cuerpo, pie = "") {
+  $$(".float").forEach(f => { if (f.id !== id) f.classList.remove("on"); });
+  let el = $("#" + id);
+  if (!el) { el = document.createElement("div"); el.id = id; el.className = "float"; document.body.appendChild(el); el.innerHTML = `<div class="fhd"><span>${titulo}</span><button class="ib" aria-label="Cerrar">${ic("x")}</button></div>${cuerpo}${pie}`; $(".fhd .ib", el).onclick = () => el.classList.remove("on"); }
+  el.classList.toggle("on"); return el;
+}
+function abrirSoporte() {
+  const wa = CONFIG.whatsapp ? `<a class="btn btn-g" href="https://wa.me/${CONFIG.whatsapp}" target="_blank" rel="noopener">WhatsApp</a>` : "";
+  flotante("soporte", "Soporte", `<div class="fbody"><p class="nm">¿Algo no funciona o tienes una duda que no está en tus clases? Escríbenos y te respondemos.</p><div class="row"><a class="btn btn-p" href="mailto:${CONFIG.correo}?subject=${encodeURIComponent("Soporte campus NORTHPOINT ACADEMY")}">${ic("mail")}Escribir al equipo</a>${wa}</div><p class="fine">Para dudas de contenido, prueba primero con el Tutor de IA: busca la respuesta en tus clases.</p></div>`);
+}
+function abrirTutor() {
+  const el = flotante("tutor", "Chatear con Nori", `<div class="fbody" id="tb"><p class="nm">Hola${S.perfil ? ", " + esc(S.perfil.nombre) : ""}. Soy Nori: busco la respuesta en tus 23 clases y te llevo al capítulo exacto. Pregúntame algo.</p><div class="row" id="sugs">${["¿Qué es la regla del 72?", "¿Cuántos contratos opero?", "¿Cómo escribo un buen prompt?", "¿Cómo detecto un fraude?"].map(s => `<button class="chip" type="button">${s}</button>`).join("")}</div></div>`,
+    `<form class="fin" id="tf"><input id="ti" placeholder="Pregunta cualquier cosa..." autocomplete="off"><div class="row"><span></span><button class="send" type="submit">${ic("arrow")}Enviar</button></div></form><div class="ffoot">Nori busca en tus clases; no es asesoría de inversión.</div>`);
+  if (el.dataset.w) return; el.dataset.w = 1;
+  const ask = q => {
+    const tb = $("#tb"); tb.insertAdjacentHTML("beforeend", `<p class="nm me">${esc(q)}</p>`);
+    const r = buscarEn(q).filter(x => x.l).slice(0, 2);
+    let a;
+    if (!r.length) a = `No lo encontré en tus clases. Prueba con otras palabras o escribe al equipo en <a href="#" data-act="soporte">Soporte</a>.`;
+    else a = "Esto lo vemos en tus clases:" + r.map(x => { const l = x.l, ws = norm(q).split(/\W+/).filter(w => w.length > 3);
+      const b = l.bloques.find(b => ws.some(w => norm(plain(b.p + b.li.join(" ") + b.t)).includes(w))) || l.bloques[0];
+      const sn = plain(b.p || b.li.join(" ")).slice(0, 220);
+      return `<a class="ref" href="#/clase/${l.id}/apuntes"><b>${l.id} · ${esc(l.t)} · ${esc(b.t)}</b>${esc(sn)}${sn.length >= 220 ? "…" : ""}</a>`; }).join("");
+    tb.insertAdjacentHTML("beforeend", `<div class="nm">${a}</div>`); tb.scrollTop = tb.scrollHeight;
+    $$("#tb [data-act=soporte]").forEach(x => x.onclick = e => { e.preventDefault(); abrirSoporte(); });
+  };
+  $("#tf").onsubmit = e => { e.preventDefault(); const v = $("#ti").value.trim(); if (v) { ask(v); $("#ti").value = ""; } };
+  $$("#sugs .chip").forEach(c => c.onclick = () => ask(c.textContent));
 }
 
 /* ── router ── */
 function render() {
-  window.__stopTool && window.__stopTool(); window.__stopTool = null;
+  window.__stopTool && window.__stopTool(); window.__stopTool = null; clearTimeout(render.chat);
   if (!S.perfil) return bienvenida();
   const r = location.hash.replace(/^#\/?/, "").split("/");
-  let html, ruta = r[0] || "", tool = null;
-  if (ruta === "clase") { html = clase(r[1], r[2]); ruta = "clase/" + r[1]; const l = byId(r[1]); if (l && abierta(l) && r[2] === "practica") tool = l.herr; }
+  let html, tool = null, ruta = r[0] || "";
+  if (ruta === "clase") { html = leccion(r[1], r[2]); const l = byId(r[1]); if (l && abierta(l) && r[2] === "practica") tool = l.herr; }
   else if (ruta === "herramientas") html = herramientas();
-  else if (ruta === "h") { html = herramientaPag(r[1]); tool = r[1]; ruta = r[1] === "diario" ? "h/diario" : "herramientas"; }
+  else if (ruta === "h") { html = herramientaPag(r[1]); tool = r[1]; }
   else if (ruta === "proyecto") { html = proyectoPag(); if (abierta(byId("4.1"))) tool = "proyecto"; }
   else if (ruta === "constancia") html = constancia();
-  else { html = inicio(); ruta = ""; }
-  shell(html, ruta);
+  else if (ruta === "ajustes") html = ajustes();
+  else html = inicio();
+  $("#root").innerHTML = html;
   if (tool && T[tool] && $("#tool")) T[tool]($("#tool"));
-  wire();
+  wire(r);
   if (!render.keep) scrollTo(0, 0); render.keep = false;
+  if (ruta === "m" && r[1]) abrirModulo(r[1]); else cerrarModulo();
 }
-function wire() {
+function marcarVista(id, k) { if (k === "apuntes" || k === "practica") { S.vistas[id + "/" + k] = true; save(); } }
+function wire(r) {
+  $$("[data-act]").forEach(b => b.addEventListener("click", e => {
+    const a = b.dataset.act;
+    if (a === "buscar") abrirBuscar();
+    if (a === "soporte") abrirSoporte();
+    if (a === "tutor") abrirTutor();
+    if (a === "modulo") abrirModulo(b.dataset.m, r[0] === "clase" ? r[1] : null);
+    if (a === "invitar") { const u = location.origin + location.pathname; (navigator.clipboard?.writeText(u) || Promise.reject()).then(() => toast("Link del campus copiado. Compártelo."), () => toast(u)); }
+    if (a === "rate") $("#rate").classList.toggle("on");
+  }));
+  if (r[0] === "clase") {
+    const id = r[1], k = r[2] || "apuntes", l = byId(id);
+    const sig = $("#sig"); if (sig) sig.addEventListener("click", () => marcarVista(id, k));
+    if (l && abierta(l) && k === "practica") marcarVista(id, k);
+    $$("#rate [data-r]").forEach(b => b.onclick = () => { S.rate[id] = b.dataset.r; save(); $$("#rate [data-r]").forEach(x => x.classList.toggle("on", x === b)); $("[data-act=rate]").classList.add("on"); toast("Gracias, lo tomamos en cuenta"); setTimeout(() => $("#rate").classList.remove("on"), 700); });
+    const bubs = $("#bubs");
+    if (bubs && !S.chat[id]) {
+      const tpl = [...$("#bubsT").content.children], rest = $("#rest");
+      const skip = document.createElement("div"); skip.className = "skip"; skip.innerHTML = `<button type="button">Omitir</button>`; document.body.appendChild(skip);
+      let n = 0;
+      const fin = () => { clearTimeout(render.chat); bubs.innerHTML = ""; tpl.forEach(t => bubs.appendChild(t.cloneNode(true))); rest.style.display = ""; skip.remove(); S.chat[id] = 1; save(); };
+      const paso = () => {
+        if (n >= tpl.length) return fin();
+        const ty = document.createElement("div"); ty.className = "bub typing"; ty.innerHTML = "<i></i><i></i><i></i>"; bubs.appendChild(ty);
+        render.chat = setTimeout(() => { ty.remove(); bubs.appendChild(tpl[n].cloneNode(true)); n++; render.chat = setTimeout(paso, n >= tpl.length ? 500 : 650); }, Math.min(1400, 450 + plain(tpl[n].textContent).length * 6));
+      };
+      skip.firstChild.onclick = fin;
+      if (matchMedia("(prefers-reduced-motion: reduce)").matches) fin(); else paso();
+      const off = () => { skip.remove(); removeEventListener("hashchange", off); }; addEventListener("hashchange", off);
+    }
+  }
   const t = $("#tareaTx");
-  if (t) { const id = location.hash.split("/")[2]; t.addEventListener("input", () => { S.tareas[id] = t.value; save(); const s = $("#savedT"); s.textContent = "Guardada"; s.classList.add("on"); clearTimeout(wire.t); wire.t = setTimeout(() => s.classList.remove("on"), 900); }); }
+  if (t) { const id = r[1]; t.addEventListener("input", () => { S.tareas[id] = t.value; save(); const s = $("#savedT"); s.textContent = "Guardada"; s.classList.add("on"); $$(".segs i")[partes(byId(id)).findIndex(p => p.k === "tarea")]?.classList.toggle("y", !!t.value.trim()); clearTimeout(wire.t); wire.t = setTimeout(() => s.classList.remove("on"), 900); }); }
   const q = $("#quiz");
   if (q) {
-    const id = location.hash.split("/")[2], l = byId(id), sel = {};
-    $$(".q-item", q).forEach(it => $$(".opt", it).forEach(o => o.onclick = () => { sel[it.dataset.k] = +o.dataset.j; $$(".opt", it).forEach(x => x.className = "opt" + (x === o ? " sel" : "")); $(".why", it).textContent = ""; }));
+    const id = r[1], l = byId(id), sel = {};
+    $$(".qi", q).forEach(it => $$(".opt", it).forEach(o => o.onclick = () => { sel[it.dataset.k] = +o.dataset.j; $$(".opt", it).forEach(x => x.className = "opt" + (x === o ? " sel" : "")); $(".why", it).textContent = ""; }));
     $("#qOk").onclick = () => {
       if (Object.keys(sel).length < l.quiz.length) { $("#qMsg").textContent = "Te falta responder alguna pregunta."; return; }
       let bien = 0;
-      $$(".q-item", q).forEach(it => { const k = +it.dataset.k, qq = l.quiz[k], ok = sel[k] === qq[2]; if (ok) bien++;
+      $$(".qi", q).forEach(it => { const k = +it.dataset.k, qq = l.quiz[k], ok = sel[k] === qq[2]; if (ok) bien++;
         $$(".opt", it).forEach(x => { const j = +x.dataset.j; x.className = "opt" + (j === sel[k] ? (ok ? " ok" : " bad") : ""); });
         const w = $(".why", it); w.className = "why " + (ok ? "ok" : "bad"); w.textContent = ok ? "Correcto. " + qq[3] : "Revisa los apuntes e inténtalo otra vez."; });
       S.quiz[id] = { bien, de: l.quiz.length, fecha: new Date().toISOString() };
       if (bien === l.quiz.length) {
         const nueva = !hecha(id); S.hechas[id] ||= new Date().toISOString(); save();
-        if (nueva) { toast("Clase completada"); render.keep = true; setTimeout(() => { render(); $("#quiz")?.scrollIntoView({ block: "center" }); }, 900); }
-        $("#qMsg").textContent = `${bien}/${l.quiz.length}. Clase completada.`;
-      } else { save(); $("#qMsg").textContent = `${bien}/${l.quiz.length}. Corrige las que fallaste para completar la clase.`; }
+        $("#qMsg").textContent = `${bien}/${l.quiz.length}. Capítulo completado.`;
+        if (nueva) { toast("Capítulo completado"); const segs = $$(".segs i"); segs[segs.length - 1].className = "y"; }
+      } else { save(); $("#qMsg").textContent = `${bien}/${l.quiz.length}. Corrige las que fallaste para completar el capítulo.`; }
     };
   }
   const f = $("#codeF");
@@ -505,8 +619,11 @@ function wire() {
     if (CONFIG.acceso.includes(h)) { S.acceso = { desde: new Date().toISOString() }; save(); toast("Acceso completo abierto"); render.keep = true; render(); }
     else { m.style.color = "var(--neg)"; m.textContent = "Ese código no es válido. Revísalo o escríbenos."; }
   };
-  const cm = $("#cambiaMeta");
-  if (cm) cm.onclick = e => { e.preventDefault(); const ks = Object.keys(METAS); S.perfil.meta = ks[(ks.indexOf(S.perfil.meta) + 1) % ks.length]; save(); render.keep = true; render(); };
+  const af = $("#af");
+  if (af) af.onsubmit = e => { e.preventDefault(); const n = af.nombre.value.trim(); if (n) S.perfil.nombre = n.slice(0, 40); S.perfil.meta = af.meta.value; save(); toast("Guardado"); };
+  const rs = $("#reset");
+  if (rs) rs.onclick = () => { if (confirm("¿Borrar tu avance de este dispositivo? No se puede deshacer.")) { S = { hechas: {}, tareas: {}, quiz: {}, herr: {}, diario: [], proyecto: {}, vistas: {}, chat: {}, rate: {} }; save(); location.hash = "#/"; render(); } };
 }
 addEventListener("hashchange", render);
+addEventListener("keydown", e => { if (e.key === "Escape") { cerrarBuscar(); cerrarModulo(); $$(".float").forEach(f => f.classList.remove("on")); } if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k" && S.perfil) { e.preventDefault(); abrirBuscar(); } });
 render();
