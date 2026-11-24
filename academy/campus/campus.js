@@ -57,7 +57,7 @@ const METAS = {
 /* ── estado ── */
 const KEY = "npa-campus-v1";
 let S = (() => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (_) { return {}; } })();
-S.hechas ||= {}; S.tareas ||= {}; S.quiz ||= {}; S.herr ||= {}; S.diario ||= []; S.proyecto ||= {}; S.vistas ||= {}; S.chat ||= {}; S.rate ||= {};
+["hechas","tareas","quiz","herr","proyecto","vistas","chat","rate"].forEach(k => { if (!S[k] || typeof S[k] !== "object") S[k] = {}; }); if (!Array.isArray(S.diario)) S.diario = [];
 function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (_) {} }
 
 const $ = (s, el = document) => el.querySelector(s), $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -89,7 +89,7 @@ const secuencia = () => L.flatMap(l => partes(l).map(p => [l.id, p.k]));
 
 /* ── herramientas ── */
 const T = {};
-const H = k => (S.herr[k] ||= {});
+const H = k => (S.herr[k] = S.herr[k] || {});
 function bind(el, k, fn) {
   $$("[data-v]", el).forEach(inp => {
     const st = H(k); if (st[inp.dataset.v] !== undefined) inp.value = st[inp.dataset.v];
@@ -605,7 +605,7 @@ function wire(r) {
         const w = $(".why", it); w.className = "why " + (ok ? "ok" : "bad"); w.textContent = ok ? "Correcto. " + qq[3] : "Revisa los apuntes e inténtalo otra vez."; });
       S.quiz[id] = { bien, de: l.quiz.length, fecha: new Date().toISOString() };
       if (bien === l.quiz.length) {
-        const nueva = !hecha(id); S.hechas[id] ||= new Date().toISOString(); save();
+        const nueva = !hecha(id); if (!S.hechas[id]) S.hechas[id] = new Date().toISOString(); save();
         $("#qMsg").textContent = `${bien}/${l.quiz.length}. Capítulo completado.`;
         if (nueva) { toast("Capítulo completado"); const segs = $$(".segs i"); segs[segs.length - 1].className = "y"; }
       } else { save(); $("#qMsg").textContent = `${bien}/${l.quiz.length}. Corrige las que fallaste para completar el capítulo.`; }
