@@ -313,11 +313,11 @@ T.proyecto = el => {
 /* ── barra superior ── */
 function topbar(modo, ctx = {}) {
   const right = modo === "leccion"
-    ? `<button class="tb" data-act="soporte">${ic("help")}<span class="lb">Soporte</span></button><button class="tb" data-act="tutor">${ic("bot")}<span class="lb">Tutor de IA</span></button>`
-    : `<button class="tb" data-act="buscar">${ic("search")}<span class="lb">Buscar</span></button><button class="tb" data-act="soporte">${ic("help")}<span class="lb">Soporte</span></button><button class="tb" data-act="tutor">${ic("bot")}<span class="lb">Tutor de IA</span></button><a class="tb ${ctx.ruta === "ajustes" ? "on" : ""}" href="#/ajustes">${ic("gear")}<span class="lb">Configuración</span></a><span class="sepv"></span><button class="tb" data-act="invitar">${ic("gift")}<span class="lb">Invitar amigos</span></button>`;
+    ? `<button class="tb" data-act="soporte" aria-label="Soporte">${ic("help")}<span class="lb">Soporte</span></button><button class="tb" data-act="tutor" aria-label="Tutor de IA">${ic("bot")}<span class="lb">Tutor de IA</span></button>`
+    : `<button class="tb" data-act="buscar" aria-label="Buscar">${ic("search")}<span class="lb">Buscar</span></button><button class="tb" data-act="soporte" aria-label="Soporte">${ic("help")}<span class="lb">Soporte</span></button><button class="tb" data-act="tutor" aria-label="Tutor de IA">${ic("bot")}<span class="lb">Tutor de IA</span></button><a class="tb ${ctx.ruta === "ajustes" ? "on" : ""}" href="#/ajustes" aria-label="Configuración">${ic("gear")}<span class="lb">Configuración</span></a><span class="sepv"></span><button class="tb" data-act="invitar" aria-label="Invitar amigos">${ic("gift")}<span class="lb">Invitar amigos</span></button>`;
   const left = modo === "leccion"
-    ? `<a class="tb" href="#/">${ic("home")}<span class="lb">Inicio</span></a><button class="tb" data-act="buscar">${ic("search")}<span class="lb">Buscar</span></button>`
-    : `<a class="tb ${ctx.ruta === "" ? "on" : ""}" href="#/">${ic("home")}<span class="lb">Inicio</span></a>`;
+    ? `<a class="tb" href="#/" aria-label="Inicio">${ic("home")}<span class="lb">Inicio</span></a><button class="tb" data-act="buscar" aria-label="Buscar">${ic("search")}<span class="lb">Buscar</span></button>`
+    : `<a class="tb ${ctx.ruta === "" ? "on" : ""}" href="#/" aria-label="Inicio">${ic("home")}<span class="lb">Inicio</span></a>`;
   const mid = modo === "leccion"
     ? `<div class="mid"><a class="ib" href="${ctx.prev || "#"}" aria-label="Lección anterior" aria-disabled="${!ctx.prev}">${ic("back")}</a><button class="tt" data-act="modulo" data-m="${ctx.mod}">${ic("list")}<span>${esc(ctx.titulo)}</span></button><a class="ib" href="${ctx.next || "#"}" aria-label="Lección siguiente" aria-disabled="${!ctx.next}">${ic("arrow")}</a></div>`
     : `<div></div>`;

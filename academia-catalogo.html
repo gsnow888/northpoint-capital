@@ -316,7 +316,7 @@ form.acad .full{grid-column:1/-1}
   </div>
   <form class="acad" id="acadForm">
     <label>Nombre<input name="nombre" required autocomplete="name"></label>
-    <label>WhatsApp<input name="whatsapp" required inputmode="tel" autocomplete="tel"></label>
+    <label>WhatsApp<input name="whatsapp" required inputmode="tel" autocomplete="tel" minlength="10"></label>
     <label class="full">Me interesa<select name="interes" id="interes"></select></label>
     <p class="consent full">Al enviar acepta nuestro <a href="privacidad.html">aviso de privacidad</a>. Usamos sus datos solo para contactarle sobre la Academia.</p>
     <div class="full"><button class="btn" type="submit">Apartar mi lugar</button><div class="okmsg" id="okA">Listo. Le escribimos en cuanto abra el siguiente grupo.</div></div>
@@ -526,10 +526,11 @@ addEventListener("keydown", e => { if(e.key==="Escape") cerrar(); });
 $("#interes").innerHTML = [...PROGS.map(p=>`Programa · ${p.n}`), ...C.map(c=>`Clase · ${c.t}`), "Para mi empresa", "Todavía no sé, quiero orientación"].map(x=>`<option>${x}</option>`).join("");
 function pre(txt){ const s = $("#interes"); const o = [...s.options].find(o => o.text.endsWith(txt) || o.text===txt); if(o) s.value = o.text; }
 document.addEventListener("click", e => { const a = e.target.closest(".pg [data-pre], #empresas [data-pre]"); if(a) pre(a.dataset.pre); });
-$("#acadForm").addEventListener("submit", e => { e.preventDefault(); const d = Object.fromEntries(new FormData(e.target));
-  try{ const l = JSON.parse(localStorage.getItem("np-academia-interes")||"[]"); l.push({ ...d, fecha:new Date().toISOString() }); localStorage.setItem("np-academia-interes", JSON.stringify(l)); }catch(_){}
-  if(CONFIG.whatsapp) window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(`Hola, Academia NORTHPOINT.\nNombre: ${d.nombre}\nMe interesa: ${d.interes}`)}`, "_blank");
-  $("#okA").style.display = "block"; e.target.reset(); });
+$("#acadForm").addEventListener("submit", async e => { e.preventDefault(); const f = e.target, d = Object.fromEntries(new FormData(f)), b = f.querySelector("button[type=submit]");
+  b.disabled = true; b.textContent = "Enviando…"; let ok = false;
+  try{ const r = await fetch("https://api.web3forms.com/submit", { method:"POST", headers:{ "Content-Type":"application/json", Accept:"application/json" }, body: JSON.stringify({ access_key:"93ddaacd-47f4-412d-acc7-39c3c1b80a59", subject:"Catálogo ACADEMY · " + d.nombre, from_name:"NORTHPOINT ACADEMY", ...d, origen:"academia-catalogo.html" }) }); ok = (await r.json()).success === true; }catch(_){}
+  if(ok){ $("#okA").style.display = "block"; f.reset(); b.textContent = "Enviado"; }
+  else { b.disabled = false; b.textContent = "No se pudo enviar, reintentar"; } });
 
 // academia.html#ia (o #trading, #finanzas…) abre la categoría directo
 if(CATS.some(c=>c[0]===location.hash.slice(1))){ filtro = location.hash.slice(1); }
