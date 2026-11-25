@@ -42,7 +42,7 @@
   (catálogo de clases) vive en academia-catalogo.html.
 -->
 <style>
-:root{--bg:#F2F1EE;--ink:#1A1A1A;--ink2:rgba(0,0,0,.83);--mute:rgba(0,0,0,.55);--line:rgba(0,0,0,.1);--card:#fff;--peach:#FF976B;--peach-lt:#FFD6C5;--peach-xl:#FFE9DF;--green:#6CC989;--green-lt:#B8E9C8;--dark:#1A1A1A;--dark2:#2A2A2A;--blue:#1863DC;--sun:#FFD84D;--h:"Inter Tight","Helvetica Neue",Arial,sans-serif;--b:Inter,"Helvetica Neue",Arial,sans-serif;--w:1160px}
+:root{--bg:#F3F4F6;--ink:#1A1A1A;--ink2:rgba(0,0,0,.83);--mute:rgba(0,0,0,.55);--line:rgba(0,0,0,.1);--card:#fff;--peach:#2563FF;--peach-lt:#DCE6FF;--peach-xl:#EEF3FF;--green:#2563FF;--green-lt:#DCE6FF;--dark:#1A1A1A;--dark2:#2A2A2A;--blue:#2563FF;--sun:#FFFFFF;--h:"Inter Tight","Helvetica Neue",Arial,sans-serif;--b:Inter,"Helvetica Neue",Arial,sans-serif;--w:1160px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font:400 16px/1.45 var(--b);-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -86,9 +86,9 @@ section{position:relative}
 .burger{display:none}
 
 /* hero */
-.hero{position:relative;min-height:min(760px,100svh);color:#fff;display:flex;align-items:stretch;overflow:hidden;background:#2b221c}
+.hero{position:relative;min-height:min(760px,100svh);color:#fff;display:flex;align-items:stretch;overflow:hidden;background:#0a0f1c}
 .hero .bg{position:absolute;inset:0;background:center/cover no-repeat url(academy/img/w/hero.webp)}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,14,10,.78) 0%,rgba(20,14,10,.5) 38%,rgba(20,14,10,0) 70%),linear-gradient(0deg,rgba(20,14,10,.35),transparent 30%)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,8,20,.78) 0%,rgba(4,8,20,.5) 38%,rgba(4,8,20,0) 70%),linear-gradient(0deg,rgba(4,8,20,.35),transparent 30%)}
 .hero .wrap{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;padding:120px 0 150px}
 .hero h1{max-width:800px;font-size:clamp(40px,4.9vw,70px)}
 .hero .row{display:flex;gap:28px;align-items:flex-start;margin-top:24px;flex-wrap:wrap}
@@ -117,7 +117,7 @@ section{position:relative}
 .b93 .big{font:300 clamp(96px,11vw,150px)/.85 var(--h);letter-spacing:-.05em}
 .b93 p{font:400 18px/1.25 var(--b);margin-top:18px}
 .src{font:400 14px var(--b);color:var(--mute);margin-top:40px}
-.bphoto{position:relative;min-height:550px;border-radius:24px 120px 24px 24px;overflow:hidden;color:#fff;background:#3a2c22 center/cover no-repeat}
+.bphoto{position:relative;min-height:550px;border-radius:24px 120px 24px 24px;overflow:hidden;color:#fff;background:#0d1220 center/cover no-repeat}
 .bphoto:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,0) 45%,rgba(0,0,0,.5))}
 .bphoto .t{position:absolute;left:24px;top:22px;max-width:330px;font:400 clamp(30px,3.2vw,42px)/1.02 var(--h);letter-spacing:-.02em}
 .bphoto .t small{display:block;font:400 14px var(--b);color:rgba(255,255,255,.7);margin-top:20px;letter-spacing:0}
@@ -148,7 +148,7 @@ section{position:relative}
 .refund small{font:400 14px var(--b)}
 .refund b{display:block;font:300 66px/.9 var(--h);letter-spacing:-.04em;margin:6px 0 10px}
 .refund span{font:400 14px/1.3 var(--b)}
-.cview{position:relative;min-height:552px;border-radius:24px;overflow:hidden;background:#3a2c22 center/cover no-repeat;transition:background-image .4s}
+.cview{position:relative;min-height:552px;border-radius:24px;overflow:hidden;background:#0d1220 center/cover no-repeat;transition:background-image .4s}
 .cview:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.55),rgba(0,0,0,0) 40%)}
 .cpanel{position:absolute;right:16px;top:16px;bottom:24px;width:360px;background:#fff;border-radius:8px;padding:24px;display:flex;flex-direction:column}
 .cpanel h3{font:400 44px/.95 var(--h);letter-spacing:-.02em}
@@ -168,7 +168,7 @@ section{position:relative}
 .quizb .btn{height:48px;font-size:16px;padding:0 22px}
 
 /* reseñas → adentro */
-.adentro{padding:96px 0;background:radial-gradient(60% 70% at 50% 40%,rgba(255,151,107,.18),transparent 70%),var(--bg)}
+.adentro{padding:96px 0;background:radial-gradient(60% 70% at 50% 40%,rgba(37,99,255,.12),transparent 70%),var(--bg)}
 .adentro .head{text-align:center;margin-bottom:42px}
 .adentro .head .h{font-size:clamp(32px,3.4vw,48px);line-height:1}
 .adentro .head .lnk{color:var(--mute);margin-top:16px}
@@ -193,7 +193,8 @@ section{position:relative}
 .st .ph{position:relative;background:#111 center 20%/cover no-repeat;filter:grayscale(1) contrast(1.05)}
 .st .ph:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 50%,#222)}
 .st .tx{padding:36px 30px 28px 8px;display:flex;flex-direction:column}
-.st q{font:400 clamp(19px,1.9vw,24px)/1.3 var(--b);quotes:"“" "”"}
+.st .stq{font:400 clamp(19px,1.9vw,24px)/1.35 var(--b)}
+.st .ph.col{filter:none}
 .st .who{position:static;margin-top:auto}
 .st .play{position:absolute;left:24px;top:24px;width:52px;height:52px}
 .alum .ctrl{display:flex;justify-content:space-between;align-items:center;margin-top:28px}
@@ -246,7 +247,8 @@ section{position:relative}
 .cert .row1{display:flex;justify-content:space-between;font:700 13px var(--h);letter-spacing:-.02em}
 .cert .row1 span:last-child{font:500 10px ui-monospace,Menlo,monospace;color:var(--mute)}
 .cert small{font:500 10px var(--b);letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
-.cert h4{font:400 clamp(22px,2.6vw,34px)/1 var(--h);letter-spacing:-.02em;margin:8px 0}
+.cert h4{font:400 clamp(22px,2.6vw,34px)/1 var(--h);letter-spacing:-.02em;margin:8px 0;min-height:1em;transition:opacity .35s,transform .35s}
+.cert h4.sw{opacity:0;transform:translateY(8px)}
 .cert p{font:400 12px/1.4 var(--b);color:var(--ink2);max-width:80%}
 .cert .sig{display:flex;gap:28px}
 .cert .sig div{border-top:1px solid var(--ink);padding-top:5px;font:500 11px var(--b);min-width:110px}
@@ -290,7 +292,7 @@ section{position:relative}
 .com .bub:before{content:"";position:absolute;left:12px;top:-7px;border:7px solid transparent;border-bottom-color:var(--green);border-top:0}
 .cgrid2{display:grid;grid-template-columns:376px 1fr 1fr;gap:16px}
 .qt{display:flex;flex-direction:column;justify-content:flex-end;gap:14px;padding-bottom:6px}
-.qt q{font:400 15px/1.4 var(--b);quotes:"“" "”"}
+.qt q{font:400 17px/1.45 var(--b);quotes:"“" "”"}
 .qt .p{display:flex;gap:12px;align-items:center;font:400 13px/1.25 var(--b)}
 .qt .p img{width:44px;height:44px;border-radius:10px;object-fit:cover;object-position:center 20%;filter:grayscale(1)}
 .cc{border-radius:24px;padding:24px;min-height:340px;display:flex;flex-direction:column;gap:18px}
@@ -303,7 +305,7 @@ section{position:relative}
 .pins span{background:#fff;border-radius:8px;padding:7px 10px;font:500 13px var(--b);display:flex;gap:5px;align-items:center}
 .pins svg{width:13px;height:13px}
 .cgrid3{display:grid;grid-template-columns:1.6fr 1fr;gap:16px;margin-top:16px}
-.ev{position:relative;min-height:460px;border-radius:24px 120px 24px 24px;overflow:hidden;background:#3a2c22 center/cover no-repeat}
+.ev{position:relative;min-height:460px;border-radius:24px 120px 24px 24px;overflow:hidden;background:#0d1220 center/cover no-repeat}
 .ev .b72{left:auto;right:auto;left:auto;inset:24px auto auto 36%;width:auto;max-width:300px}
 .ev .b72 b{font-size:52px}
 .evt{display:flex;flex-direction:column;justify-content:flex-end;gap:16px;padding:0 0 6px}
@@ -386,7 +388,7 @@ footer{padding:20px 0 120px}
 .promo .t{font:600 clamp(18px,2.4vw,26px)/1 var(--h);letter-spacing:-.02em}
 .promo .t span{display:block;font:400 13px var(--b);color:var(--green);letter-spacing:0;margin-top:4px}
 .sticker{position:absolute;left:44%;top:-14px;background:var(--sun);color:var(--ink);font:600 12px/1.05 var(--h);padding:7px 12px;transform:rotate(12deg);text-align:center;box-shadow:0 6px 12px rgba(0,0,0,.25)}
-.sticker:before{content:"";position:absolute;left:-20px;top:4px;width:30px;height:30px;border-radius:50%;background:#F05A3E;z-index:-1}
+.sticker:before{content:"";position:absolute;left:-20px;top:4px;width:30px;height:30px;border-radius:50%;background:#2563FF;z-index:-1}
 .promo .btn{height:44px;font-size:15px;padding:0 20px;border-radius:8px}
 .promo .x{color:rgba(255,255,255,.6);padding:6px}
 
@@ -445,7 +447,7 @@ footer{padding:20px 0 120px}
   .promo .btn{height:40px;font-size:14px;padding:0 14px}
   .hero{min-height:auto}
   .hero .wrap{padding:96px 0 200px}
-  .hero:after{background:linear-gradient(0deg,rgba(20,14,10,.92) 25%,rgba(20,14,10,.5) 70%,rgba(20,14,10,.3))}
+  .hero:after{background:linear-gradient(0deg,rgba(4,8,20,.92) 25%,rgba(4,8,20,.5) 70%,rgba(4,8,20,.3))}
   .hero .bg{background-position:70% center}
   .hcap{left:16px;right:auto;bottom:120px}
   .benef ul{grid-template-columns:1fr 1fr;padding:24px 16px}
@@ -508,14 +510,14 @@ body.ready .hero .row{transition-delay:.15s}body.ready .hero .btn{transition-del
 .offer.on{display:flex}
 .obox{position:relative;background:#fff;border-radius:24px;width:min(860px,100%);display:grid;grid-template-columns:1fr 1.1fr;overflow:hidden;animation:oin .5s cubic-bezier(.2,.9,.25,1.15);max-height:calc(100vh - 32px)}
 @keyframes oin{from{opacity:0;transform:translateY(30px) scale(.94) rotate(-1deg)}to{opacity:1;transform:none}}
-.obox .im{position:relative;background:#3a2c22 center/cover no-repeat;min-height:420px}
+.obox .im{position:relative;background:#0d1220 center/cover no-repeat;min-height:420px}
 .obox .im:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.55),transparent 55%)}
 .obox .big{position:absolute;left:22px;bottom:18px;z-index:1;color:#fff;font:300 120px/.8 var(--h);letter-spacing:-.06em}
 .obox .big small{font-size:44px}
 .stk{position:absolute;right:-8px;top:22px;z-index:2;background:var(--sun);color:var(--ink);font:700 15px/1.05 var(--h);padding:10px 16px;transform:rotate(9deg);box-shadow:0 8px 16px rgba(0,0,0,.25);text-align:center}
-.stk:before{content:"%";position:absolute;left:-26px;top:6px;width:36px;height:36px;border-radius:50%;background:#F05A3E;color:#fff;display:grid;place-items:center;font:700 16px var(--h);transform:rotate(-20deg)}
+.stk:before{content:"%";position:absolute;left:-26px;top:6px;width:36px;height:36px;border-radius:50%;background:#2563FF;color:#fff;display:grid;place-items:center;font:700 16px var(--h);transform:rotate(-20deg)}
 .obox .tx{padding:34px 30px 26px;display:flex;flex-direction:column;gap:14px;overflow-y:auto}
-.obox .tx .eb{font:600 12px var(--b);letter-spacing:.14em;text-transform:uppercase;color:#C2410C}
+.obox .tx .eb{font:600 12px var(--b);letter-spacing:.14em;text-transform:uppercase;color:#2563FF}
 .obox h3{font:300 clamp(30px,3.2vw,42px)/.95 var(--h);letter-spacing:-.03em}
 .obox h3 b{font-weight:600}
 .obox p{font:400 15.5px/1.45 var(--b);color:var(--ink2)}
@@ -532,7 +534,7 @@ body.ready .hero .row{transition-delay:.15s}body.ready .hero .btn{transition-del
 .ook{display:none;background:var(--green-lt);border-radius:14px;padding:18px;font:400 15px/1.45 var(--b)}
 .ook b{display:block;font:600 22px/1.1 var(--h);margin-bottom:6px}
 .promo .cdm{font:500 13px var(--b);color:var(--green);letter-spacing:0;margin-top:4px;display:block}
-.disc{font:400 14px var(--b);color:#C2410C;margin-top:4px}
+.disc{font:400 14px var(--b);color:#2563FF;margin-top:4px}
 .cbadge{display:inline-flex;gap:8px;align-items:center;background:var(--sun);border-radius:8px;padding:8px 12px;font:600 14px var(--b);margin-top:20px}
 @media(max-width:720px){
   .obox{grid-template-columns:1fr}
@@ -542,11 +544,68 @@ body.ready .hero .row{transition-delay:.15s}body.ready .hero .btn{transition-del
   .bird{width:66px;height:40px}.bird.s{width:42px;height:26px}.bird.s2{width:32px;height:20px}
 }
 @media(prefers-reduced-motion:reduce){.hero h1,.hero .row,.hero .btn,.hcap{opacity:1;transform:none}.bird .wl,.bird .wr{animation:none}}
+
+/* paleta NORTHPOINT: azul del journal y negro */
+.btn-peach,.btn-green{color:#fff}
+.btn-peach:hover,.btn-green:hover{filter:none;background:#1D4FE0}
+.tabs button.on i{background:#AFC6FF}
+.gbox .nums div:first-child,.gbox .nums div:first-child span{color:#fff}
+.com .bub,.cc.green,.cc.green h3,.evt .tag,.cc.beige .tag{color:#fff}
+.cc.green .tag{background:rgba(255,255,255,.18);color:#fff}
+.line .ok{color:#fff}
+.msg .av{color:#fff}
+.cert .seal{color:#fff}
+.sticker,.stk{border:1px solid rgba(0,0,0,.08)}
+.sticker:before,.stk:before{background:#2563FF}
+.promo .t span,.promo .cdm{color:#7AA2FF}
+.disc,.obox .tx .eb{color:#2563FF}
+.cbadge{background:#DCE6FF}
+.steps3 div.on:before{box-shadow:0 0 0 3px var(--ink)}
+.bubble{color:var(--ink)}
+.quizb .btn{color:#fff}
+
+/* ── movimiento ── */
+:root{--ease:cubic-bezier(.2,.7,.2,1)}
+.js .rv{transition-delay:var(--d,0s)}
+.hero .bg{animation:kb 22s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.1) translate(-1.5%,-1%)}}
+body.ready .hero .bg{transform:none}
+.btn{transition:filter .2s,transform .25s var(--ease),box-shadow .25s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -14px rgba(37,99,255,.75)}
+.btn-dark:hover{box-shadow:0 14px 30px -14px rgba(0,0,0,.6)}
+.rc,.col,.cc,.lv,.st,.tl,.apane .tx,.apane .vis,.b93,.bphoto,.cview,.ev{transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.rc:hover,.col:hover,.cc:hover{transform:translateY(-6px);box-shadow:0 28px 50px -34px rgba(13,18,32,.55)}
+.rc:nth-child(2):hover{transform:translateY(-22px)}
+.bphoto:hover,.ev:hover{transform:scale(1.01)}
+.cview{background-size:cover;background-position:center}
+.cview .cpanel,.cview .who{z-index:2}
+.cview.sw:after{content:"";position:absolute;inset:0;background:#0d1220;animation:veil .55s var(--ease) forwards;z-index:0}
+@keyframes veil{from{opacity:.85}to{opacity:0}}
+.cpanel>*{transition:opacity .35s var(--ease),transform .35s var(--ease)}
+.cpanel.sw>*{opacity:0;transform:translateY(10px)}
+.apane.sw .tx>*,.apane.sw .vis>*{opacity:0;transform:translateY(10px)}
+.apane .tx>*,.apane .vis>*{transition:opacity .35s var(--ease),transform .35s var(--ease)}
+.apane .vis .line{transition-delay:calc(var(--i,0) * 60ms)}
+.atabs button,.tabs button{transition:background .25s,color .25s,transform .2s}
+.atabs button:hover{transform:translateY(-1px)}
+.faq details p{animation:none}
+.faq details[open] p{animation:fin .35s var(--ease)}
+@keyframes fin{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.faq summary{transition:color .2s}
+.faq summary:hover{color:#2563FF}
+.nav .bar{transition:box-shadow .3s}
+.nav.sc .bar{box-shadow:0 10px 30px -18px rgba(13,18,32,.45)}
+.benef li .ck{transition:transform .4s var(--ease)}
+.benef li:hover .ck{transform:scale(1.15) rotate(-8deg)}
+.cert .paper{transition:transform .6s var(--ease)}
+.cert:hover .paper{transform:rotate(-1deg) scale(1.01)}
+.stp .mock>*{transition:transform .6s var(--ease)}
+.stp:hover .mock>*{transform:translateY(-4px)}
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="bird" viewBox="0 0 100 60"><path d="M22 34 4 25l9 10-10 10z" fill="currentColor"/><path d="M20 34c10-4 24-6 38-4 10 1 18 0 26-3-4 7-12 11-22 12-14 2-28 1-42-5z" fill="currentColor"/><path d="M42 36c9 3 19 3 28-1-6 5-16 6-28 1z" fill="#FFB08F"/><circle cx="82" cy="29" r="5.5" fill="currentColor"/><path d="M86.5 27.5 94 29.6 86.5 31.6z" fill="#FF976B"/><circle cx="83.5" cy="28" r="1.1" fill="#fff"/></symbol>
+    <symbol id="bird" viewBox="0 0 100 60"><path d="M22 34 4 25l9 10-10 10z" fill="currentColor"/><path d="M20 34c10-4 24-6 38-4 10 1 18 0 26-3-4 7-12 11-22 12-14 2-28 1-42-5z" fill="currentColor"/><path d="M42 36c9 3 19 3 28-1-6 5-16 6-28 1z" fill="#7AA2FF"/><circle cx="82" cy="29" r="5.5" fill="currentColor"/><path d="M86.5 27.5 94 29.6 86.5 31.6z" fill="#2563FF"/><circle cx="83.5" cy="28" r="1.1" fill="#fff"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
   <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
@@ -591,7 +650,7 @@ body.ready .hero .row{transition-delay:.15s}body.ready .hero .btn{transition-del
   <div class="wrap">
     <h1 class="h h1">Construye tu nuevo futuro. <b>Aprende IA, negocios y trading con nuestros programas online.</b></h1>
     <div class="row">
-      <p>Pasa de cero experiencia a aplicar lo que aprendes con clases cortas, herramientas y un proyecto final que defiendes frente a los fundadores.</p>
+      <p>Programas en línea para principiantes: clases cortas, herramientas prácticas y un proyecto final evaluado por expertos.</p>
       <span class="bubble"><svg><use href="#i-bolt"/></svg>Nivel 1 gratis, sin tarjeta</span>
     </div>
     <a class="btn btn-peach" href="#inscripcion">Agenda una consulta</a>
@@ -602,7 +661,7 @@ body.ready .hero .row{transition-delay:.15s}body.ready .hero .btn{transition-del
   </div>
 </section>
 
-<div class="benef wrap"><ul>
+<div class="benef rv wrap"><ul>
   <li><span class="ck"><svg class="i"><use href="#i-check"/></svg></span>Para principiantes</li>
   <li><span class="ck"><svg class="i"><use href="#i-check"/></svg></span>A tu ritmo</li>
   <li><span class="ck"><svg class="i"><use href="#i-check"/></svg></span>100% en línea</li>
@@ -614,7 +673,7 @@ body.ready .hero .row{transition-delay:.15s}body.ready .hero .btn{transition-del
 <section class="objetivo"><div class="wrap">
   <h2 class="h h2 rv">Nuestro objetivo es que apliques lo que aprendes. <b>Por eso terminas con un proyecto real.</b></h2>
   <div class="bento">
-    <div class="b93 rv"><div><div class="big">23</div><p>clases cortas en 4 niveles, escritas y enseñadas por los fundadores de NORTHPOINT.</p></div><div class="src">Fuente: campus NORTHPOINT ACADEMY, 2026</div></div>
+    <div class="b93 rv"><div><div class="big">23</div><p>clases cortas en 4 niveles, de cero a un proyecto propio.</p></div><div class="src">Empieza hoy con el Nivel 1 gratis</div></div>
     <div class="bphoto rv" data-bg="academy/img/w/ia.webp">
       <div class="t">Dinero, IA, negocios y mercados en un solo campus<small>Nivel 1 gratis: inflación, interés compuesto, deuda y fraudes</small></div>
       <div class="b72"><b>10</b><span>herramientas para practicar lo que ves en cada clase</span></div>
@@ -626,8 +685,8 @@ body.ready .hero .row{transition-delay:.15s}body.ready .hero .btn{transition-del
 
 <div class="sp"></div>
 <section class="carr" id="programas"><div class="wrap">
-  <div class="top"><h2 class="h h2">Descubre tu <b>programa ideal</b></h2><div class="chips"><span class="chip">100% en línea</span><span class="chip">A tu ritmo</span></div></div>
-  <div class="cgrid">
+  <div class="top"><h2 class="h h2 rv">Descubre tu <b>programa ideal</b></h2><div class="chips"><span class="chip">100% en línea</span><span class="chip">A tu ritmo</span></div></div>
+  <div class="cgrid rv">
     <div><div class="tabs" id="tabs"></div>
       <div class="refund"><small>Empieza con el</small><b>Nivel 1</b><span>gratis y sin tarjeta, con sus 7 clases y herramientas</span></div></div>
     <div class="cview" id="cview">
@@ -639,71 +698,71 @@ body.ready .hero .row{transition-delay:.15s}body.ready .hero .btn{transition-del
 </div></section>
 
 <section class="adentro"><div class="wrap">
-  <div class="head"><h2 class="h">4 niveles · 23 clases<br>hechos por quienes los usan</h2><a class="lnk" href="academy/campus/">Entra al campus <svg class="i"><use href="#i-ext"/></svg></a></div>
+  <div class="head"><h2 class="h">Todo lo que necesitas para aprender,<br><b>en un solo lugar</b></h2><a class="lnk" href="academy/campus/">Conoce el campus <svg class="i"><use href="#i-ext"/></svg></a></div>
   <div class="rgrid">
-    <div class="rc rv"><div class="ico"><span style="background:var(--green)"><svg class="i"><use href="#i-book"/></svg></span>Apuntes</div><div class="score">23/23</div><div class="cnt">clases con apuntes y quiz</div>
-      <ul><li>Dinero y mercados</li><li>Trading en simulador</li><li>IA aplicada</li><li>Proyecto final</li></ul></div>
-    <div class="rc rv"><div class="ico"><span style="background:var(--peach)"><svg class="i"><use href="#i-flag"/></svg></span>Regla</div><div class="score">1ª regla</div><div class="cnt">de todo el campus</div>
-      <q>Primero hablamos de riesgo, luego de ganancia. Todo lo de mercados se practica en simulador.</q></div>
-    <div class="rc rv"><div class="ico"><span style="background:var(--blue)"><svg class="i"><use href="#i-tool"/></svg></span>Práctica</div><div class="score">10</div><div class="cnt">herramientas incluidas</div>
+    <div class="rc rv"><div class="ico"><span style="background:var(--green)"><svg class="i"><use href="#i-book"/></svg></span>Aprende</div><div class="score">23</div><div class="cnt">clases cortas con apuntes y evaluación</div>
+      <ul><li>Finanzas personales</li><li>Inteligencia artificial</li><li>Negocios y marketing</li><li>Mercados y trading</li></ul></div>
+    <div class="rc rv"><div class="ico"><span style="background:var(--peach)"><svg class="i"><use href="#i-flag"/></svg></span>Demuestra</div><div class="score">1</div><div class="cnt">proyecto final evaluado</div>
+      <ul><li>Construyes algo propio</li><li>Lo presentas en vivo</li><li>Recibes retroalimentación</li><li>Obtienes tu certificado</li></ul></div>
+    <div class="rc rv"><div class="ico"><span style="background:var(--blue)"><svg class="i"><use href="#i-tool"/></svg></span>Practica</div><div class="score">10</div><div class="cnt">herramientas interactivas</div>
       <ul><li>Bola de nieve y regla del 72</li><li>Presupuesto 50/30/20</li><li>Tamaño de posición</li><li>Constructor de prompts</li></ul></div>
   </div>
 </div></section>
 
 <section class="alum"><div class="wrap">
-  <div class="top"><h2 class="h h2">Conoce a quienes te enseñan, <b>y lo que creen de verdad</b></h2><a class="lnk" href="equipo.html">Conoce al equipo <svg class="i"><use href="#i-ext"/></svg></a></div>
+  <div class="top"><h2 class="h h2 rv">Conoce a tus instructores <b>y cómo vas a aprender</b></h2><a class="lnk" href="equipo.html">Conoce al equipo <svg class="i"><use href="#i-ext"/></svg></a></div>
   <div class="track" id="track"></div>
   <div class="ctrl"><a class="btn btn-peach btn-sm" href="#inscripcion" style="height:48px;font-size:16px">Agenda una llamada</a><div class="arrows"><button id="prev" aria-label="Anterior"><svg class="i"><use href="#i-back"/></svg></button><button id="next" aria-label="Siguiente"><svg class="i"><use href="#i-arrow"/></svg></button></div></div>
 </div></section>
 
 <section class="camino" id="camino">
   <div class="pin">
-    <div class="left"><h2 class="h h2">Tu camino paso a paso <b>hacia aplicar lo que aprendes</b></h2><a class="btn btn-green" href="#inscripcion">Agenda una consulta gratuita</a></div>
+    <div class="left"><h2 class="h h2 rv">Tu camino paso a paso <b>hacia aplicar lo que aprendes</b></h2><a class="btn btn-green" href="#inscripcion">Agenda una consulta gratuita</a></div>
     <div class="rail" id="rail">
-      <div class="stp"><div class="lab"><svg class="i"><use href="#i-bolt"/></svg>Ruta a tu medida</div><h3>Consulta gratuita</h3><p>Te recomendamos el programa según tu meta, tu tiempo y lo que ya sabes.</p>
+      <div class="stp rv"><div class="lab"><svg class="i"><use href="#i-bolt"/></svg>Ruta a tu medida</div><h3>Consulta gratuita</h3><p>Te recomendamos el programa según tu meta, tu tiempo y lo que ya sabes.</p>
         <div class="mock"><div class="face" style="left:0;top:20px;width:190px;height:230px;background-image:var(--goyo)"><span class="mic"><svg class="i"><use href="#i-mic"/></svg>Gregorio</span></div><div class="face" style="left:150px;top:70px;width:200px;height:220px;background-image:var(--andre);border-radius:12px 60px 12px 12px"><span class="mic"><svg class="i"><use href="#i-mic"/></svg>André</span></div></div></div>
-      <div class="stp"><div class="lab"><svg class="i"><use href="#i-bolt"/></svg>Clases y práctica</div><h3>Campus en línea</h3><p>Clases cortas con apuntes, tarea, quiz y herramientas para practicar.</p>
+      <div class="stp rv"><div class="lab"><svg class="i"><use href="#i-bolt"/></svg>Clases y práctica</div><h3>Campus en línea</h3><p>Clases cortas con apuntes, tarea, quiz y herramientas para practicar.</p>
         <div class="mock"><div class="win" style="left:0;top:10px;width:330px;padding:16px"><div style="display:flex;gap:12px;align-items:center"><span style="width:52px;height:52px;border-radius:8px;background:var(--dark);color:#fff;display:grid;place-items:center;font:700 13px var(--h)">1.3</span><div><div style="font:500 11px var(--b);color:var(--mute)">Nivel 1</div><div style="font:600 15px var(--h)">Interés compuesto</div><div style="height:4px;width:110px;background:var(--bg);border-radius:4px;margin-top:6px"><i style="display:block;width:60%;height:100%;background:var(--green);border-radius:4px"></i></div></div></div>
           <div style="display:grid;gap:6px;margin-top:14px;font:400 12px var(--b)"><div class="line" style="background:var(--bg);padding:9px 12px">01 · Apuntes<span class="ok"><svg class="i"><use href="#i-check"/></svg></span></div><div class="line" style="background:var(--bg);padding:9px 12px">02 · Bola de nieve<span class="ok"><svg class="i"><use href="#i-check"/></svg></span></div><div class="line" style="background:var(--bg);padding:9px 12px">03 · Quiz<em>3 preguntas</em></div></div></div>
           <div class="msg" style="left:150px;top:210px"><span class="av">N</span><b>Nori<small>asistente</small></b><span>La regla del 72 está en tus apuntes de la clase 1.3.</span></div></div></div>
-      <div class="stp"><div class="lab"><svg class="i"><use href="#i-bolt"/></svg>Demuestra lo que sabes</div><h3>Proyecto final</h3><p>Cuatro entregables y una defensa de 10 minutos frente a los fundadores.</p>
+      <div class="stp rv"><div class="lab"><svg class="i"><use href="#i-bolt"/></svg>Demuestra lo que sabes</div><h3>Proyecto final</h3><p>Cuatro entregables y una defensa de 10 minutos frente a los fundadores.</p>
         <div class="mock"><div class="win" style="left:0;top:10px;width:320px;padding:16px;display:grid;gap:6px"><div style="font:600 15px var(--h);margin-bottom:4px">Rúbrica</div><div class="line" style="background:var(--bg)">Reglas seguidas<em>30%</em></div><div class="line" style="background:var(--bg)">Gestión de riesgo<em>25%</em></div><div class="line" style="background:var(--bg)">Uso de IA<em>20%</em></div><div class="line" style="background:var(--bg)">Diario y análisis<em>15%</em></div><div class="line" style="background:var(--bg)">Presentación<em>10%</em></div></div></div></div>
-      <div class="stp"><div class="lab"><svg class="i"><use href="#i-bolt"/></svg>Valida tu preparación</div><h3>Certificado</h3><p>Al aprobar tu defensa recibes el certificado NORTHPOINT ACADEMY con folio.</p>
+      <div class="stp rv"><div class="lab"><svg class="i"><use href="#i-bolt"/></svg>Valida tu preparación</div><h3>Certificado</h3><p>Al aprobar tu defensa recibes el certificado NORTHPOINT ACADEMY con folio.</p>
         <div class="mock"><div class="win" style="left:0;top:20px;width:340px;padding:14px"><div class="cert" style="padding:0;background:none"><div class="paper" style="box-shadow:none;border:1px solid var(--line)"><div class="row1"><span>northpoint academy</span><span>NPA-2026</span></div><div><small>Certificado</small><h4 style="font-size:22px">Tu nombre</h4></div><div class="sig"><div>André M.</div><div>Gregorio S.</div></div></div></div></div></div></div>
-      <div class="stp"><div class="lab"><svg class="i"><use href="#i-bolt"/></svg>Una red que te respalda</div><h3>Comunidad NORTHPOINT</h3><p>Sesiones en vivo con los fundadores y un grupo de alumnos para seguir creciendo.</p>
-        <div class="mock"><div class="msg" style="left:0;top:20px;width:300px"><span class="av">AM</span><b>André<small>sesión en vivo</small></b><span>Hoy revisamos sus prompts del proyecto. Traigan su diario.</span></div><div class="msg" style="left:60px;top:120px;width:280px"><span class="av" style="background:var(--green)">GS</span><b>Goyo<small>sesión en vivo</small></b><span>Primero el presupuesto, luego la inversión. Nos vemos el jueves.</span></div></div></div>
+      <div class="stp rv"><div class="lab"><svg class="i"><use href="#i-bolt"/></svg>Una red que te respalda</div><h3>Comunidad NORTHPOINT</h3><p>Sesiones en vivo con los fundadores y un grupo de alumnos para seguir creciendo.</p>
+        <div class="mock"><div class="msg" style="left:0;top:20px;width:300px"><span class="av">AM</span><b>André<small>sesión en vivo</small></b><span>Sesión en vivo: revisión de proyectos finales y preguntas abiertas.</span></div><div class="msg" style="left:60px;top:120px;width:280px"><span class="av" style="background:var(--green)">GS</span><b>Goyo<small>sesión en vivo</small></b><span>Sesión en vivo: cómo armar tu presupuesto y tu plan de inversión.</span></div></div></div>
     </div>
   </div>
 </section>
 
 <section class="apoyo"><div class="wrap grid">
-  <div><h2 class="h h2">Aprende con total <b>apoyo y flexibilidad</b></h2><p>Avanza a tu ritmo con clases cortas, resuelve dudas con Nori, el asistente del campus, y pide revisión de tu proyecto al equipo. El Nivel 1 está abierto para que lo pruebes hoy.</p><a class="btn btn-peach" href="#inscripcion">Agenda una consulta</a></div>
+  <div><h2 class="h h2 rv">Aprende con total <b>apoyo y flexibilidad</b></h2><p>Avanza a tu ritmo con clases cortas, resuelve dudas con Nori, el asistente del campus, y pide revisión de tu proyecto al equipo. El Nivel 1 está abierto para que lo pruebes hoy.</p><a class="btn btn-peach" href="#inscripcion">Agenda una consulta</a></div>
   <a class="media rv" href="academy/campus/"><img src="academy/img/w/campus.webp" loading="lazy" decoding="async" alt="Una clase del campus NORTHPOINT ACADEMY" loading="lazy"><span class="play"><svg><use href="#i-play"/></svg></span><span class="dur">Abrir el campus</span></a>
 </div></section>
 
 <section class="certs"><div class="wrap grid">
-  <div><h2 class="h h2">Obtén un certificado que <b>valida tu preparación</b></h2><p style="font:400 18px/1.45 var(--b);margin-top:20px;max-width:440px">Se otorga al aprobar el proyecto final frente a los fundadores. Lleva tu nombre y un folio. Es un certificado de finalización, no un título oficial.</p></div>
-  <div class="cert rv"><div class="paper"><div class="row1"><span>northpoint academy</span><span>NPA-2026-00417</span></div><div><small>Certificado de finalización</small><h4>IA y Negocios Digitales</h4><p>Se otorga a <b>tu nombre</b> por completar las clases, el proyecto final y su defensa.</p></div><div class="sig"><div>André Macouzet</div><div>Gregorio Sánchez</div></div><span class="seal">NORTH<br>POINT<br>2026</span></div></div>
+  <div><h2 class="h h2 rv">Obtén un certificado que <b>valida tu preparación</b></h2><p style="font:400 18px/1.45 var(--b);margin-top:20px;max-width:440px">Se otorga al aprobar el proyecto final frente a los fundadores. Lleva tu nombre y un folio. Es un certificado de finalización, no un título oficial.</p></div>
+  <div class="cert rv"><div class="paper"><div class="row1"><span>northpoint academy</span><span>NPA-2026-00417</span></div><div><small>Certificado de finalización</small><h4 id="certT" aria-live="polite">IA y Negocios Digitales</h4><p>Se otorga a <b>tu nombre</b> por completar las clases, el proyecto final y su defensa.</p></div><div class="sig"><div>André Macouzet</div><div>Gregorio Sánchez</div></div><span class="seal">NORTH<br>POINT<br>2026</span></div></div>
 </div></section>
 
 <section class="acel"><div class="wrap">
-  <h2 class="h h2">Demuestra lo que sabes con nuestro <b>Proyecto final</b></h2>
-  <p class="lead">No basta con ver videos. Construyes algo propio con lo que aprendiste, lo mides y lo defiendes en 10 minutos. Te calificamos el proceso, no la suerte.</p>
-  <div class="atabs" id="atabs"></div>
-  <div class="apane"><div class="tx"><div><span class="n" id="aN"></span><h3 id="aT"></h3><p id="aP"></p></div></div><div class="vis" id="aV"></div></div>
+  <h2 class="h h2 rv">Demuestra lo que sabes con nuestro <b>Proyecto final</b></h2>
+  <p class="lead">Aplicas lo aprendido en un proyecto propio, mides tus resultados y lo presentas en 10 minutos. Se evalúa tu proceso y tu criterio, no la suerte.</p>
+  <div class="atabs rv" id="atabs"></div>
+  <div class="apane rv"><div class="tx"><div><span class="n" id="aN"></span><h3 id="aT"></h3><p id="aP"></p></div></div><div class="vis" id="aV"></div></div>
 </div></section>
 
-<section class="gratis"><div class="wrap"><div class="gbox">
-  <div><h2 class="h h2">Tenemos tanta confianza en el campus <b>que el Nivel 1 es gratis</b></h2><p>Entra, toma las 7 clases de Dinero y mercados, usa las herramientas y prueba una clase de IA y otra de trading. Si te sirve, te inscribes. Sin tarjeta y sin letra chiquita.</p><a class="btn btn-green" href="academy/campus/">Empieza sin riesgos</a></div>
+<section class="gratis"><div class="wrap"><div class="gbox rv">
+  <div><h2 class="h h2 rv">Pruébalo antes de decidir: <b>el Nivel 1 es gratis</b></h2><p>Accede a las 7 clases de Dinero y mercados, a las herramientas y a una clase de muestra de IA y otra de trading. Cuando estés listo, eliges tu programa. No necesitas tarjeta de crédito.</p><a class="btn btn-green" href="academy/campus/">Empieza gratis</a></div>
   <div class="nums"><div><b>7</b><span>clases gratis del Nivel 1</span></div><div><b>2</b><span>clases de muestra: IA y trading</span></div><div><b>10</b><span>herramientas abiertas</span></div><div><b>$0</b><span>para empezar</span></div></div>
 </div></div></section>
 
 <section class="com" id="comunidad"><div class="wrap">
-  <div class="top"><h2 class="h h2">Únete a la comunidad NORTHPOINT, <b>la generación que entiende el dinero y la IA</b></h2><span class="bub">Sesiones en vivo con los fundadores</span></div>
+  <div class="top"><h2 class="h h2 rv">Únete a la comunidad NORTHPOINT, <b>la generación que entiende el dinero y la IA</b></h2><span class="bub">Sesiones en vivo con los fundadores</span></div>
   <div class="cgrid2">
-    <div class="qt"><q>La IA no te va a quitar el trabajo. La persona que sepa usar la IA, sí.</q><div class="p"><img src="academy/img/w/andre.webp" loading="lazy" decoding="async" alt="André Macouzet"><span>André Macouzet,<br>fundador de NORTHPOINT</span></div></div>
-    <div class="cc beige rv"><span class="tag"><svg class="i"><use href="#i-bolt"/></svg>Crece tu red</span><h3>Conoce a otros alumnos en sesiones en vivo y sigue en contacto en el grupo de la academia</h3><div class="pins"><span><svg class="i"><use href="#i-pin"/></svg>Morelia</span><span><svg class="i"><use href="#i-pin"/></svg>En línea, todo México</span></div></div>
-    <div class="cc green rv"><span class="tag"><svg class="i"><use href="#i-bolt"/></svg>Aprende de los fundadores</span><h3>Pregunta directo a quienes construyen las herramientas de NORTHPOINT y revisan tu proyecto</h3></div>
+    <div class="qt"><q>Aprender en comunidad acelera los resultados: resuelves dudas más rápido, compartes avances y mantienes la constancia.</q><div class="p"><img src="academy/img/w/goyo.webp" loading="lazy" decoding="async" alt="Gregorio Sánchez"><span>Gregorio Sánchez,<br>cofundador de NORTHPOINT</span></div></div>
+    <div class="cc beige rv"><span class="tag"><svg class="i"><use href="#i-bolt"/></svg>Crece tu red</span><h3>Conecta con otros alumnos en sesiones en vivo y en el grupo privado de la academia</h3><div class="pins"><span><svg class="i"><use href="#i-pin"/></svg>Morelia</span><span><svg class="i"><use href="#i-pin"/></svg>En línea, todo México</span></div></div>
+    <div class="cc green rv"><span class="tag"><svg class="i"><use href="#i-bolt"/></svg>Aprende de los fundadores</span><h3>Resuelve tus dudas directamente con los instructores y recibe retroalimentación de tu proyecto</h3></div>
   </div>
   <div class="cgrid3">
     <div class="ev rv" data-bg="academy/img/w/taller.webp"><span style="position:absolute;right:16px;bottom:14px;font:400 12px var(--b);color:rgba(255,255,255,.8)">Imagen ilustrativa</span><div class="b72"><b>B2B</b><span>talleres de IA para empresas y escuelas, en su oficina o en línea</span></div></div>
@@ -712,13 +771,13 @@ body.ready .hero .row{transition-delay:.15s}body.ready .hero .btn{transition-del
 </div></section>
 
 <section class="cmp"><div class="wrap">
-  <h2 class="h h2">¿NORTHPOINT frente a otras opciones? <b>Esto es lo que te llevas.</b></h2>
+  <h2 class="h h2 rv">¿NORTHPOINT frente a otras opciones? <b>Esto es lo que te llevas.</b></h2>
   <a class="lnk" href="equipo.html">Conoce más sobre nosotros <svg class="i"><use href="#i-ext"/></svg></a>
   <div class="cols" id="cols"></div>
 </div></section>
 
-<section class="cons" id="inscripcion"><div class="wrap"><div class="cbox">
-  <div><h2 class="h h2">Comienza hoy, <b>agenda una consulta gratuita con los fundadores</b></h2>
+<section class="cons" id="inscripcion"><div class="wrap"><div class="cbox rv">
+  <div><h2 class="h h2 rv">Comienza hoy, <b>agenda una consulta gratuita con los fundadores</b></h2>
     <div class="avs"><img src="academy/img/w/andre.webp" loading="lazy" decoding="async" alt="André Macouzet"><img src="academy/img/w/goyo.webp" loading="lazy" decoding="async" alt="Gregorio Sánchez"></div>
     <div class="cbadge">15% de descuento en tu programa al agendar · hasta el 31 de diciembre</div>
     <div class="steps3" id="steps3"><div class="on">Ingresa tus datos de contacto</div><div>Cuéntanos tu meta</div><div>Te escribimos para agendar</div></div></div>
@@ -741,7 +800,7 @@ body.ready .hero .row{transition-delay:.15s}body.ready .hero .btn{transition-del
 </div></div></section>
 
 <section class="faq" id="faq"><div class="wrap in">
-  <h2 class="h h2">FAQ</h2>
+  <h2 class="h h2 rv">FAQ</h2>
   <div id="faqs"></div>
 </div></section>
 
@@ -767,7 +826,7 @@ body.ready .hero .row{transition-delay:.15s}body.ready .hero .btn{transition-del
   <div class="tx">
     <span class="eb">Oferta de lanzamiento</span>
     <h3 id="oT">Agenda tu consulta y <b>llévate 15% en tu programa</b></h3>
-    <p>Déjanos tus datos, platicamos 15 minutos sobre tu meta y te apartamos el 15% de descuento en cualquier programa completo.</p>
+    <p>Déjanos tus datos, conversamos 15 minutos sobre tus objetivos y te reservamos un 15% de descuento en cualquier programa completo.</p>
     <div class="cd" id="cdPop"></div>
     <form class="oform" id="oform" novalidate>
       <input name="nombre" aria-label="Tu nombre" placeholder="Tu nombre" autocomplete="name" required maxlength="80">
@@ -804,6 +863,7 @@ $("#tabs").innerHTML = PROGS.map((p,i) => `<button type="button" data-i="${i}"><
 function showProg(i, user){
   cur = i; const p = PROGS[i];
   $$("#tabs button").forEach((b,k) => { b.classList.remove("on"); void b.offsetWidth; if(k===i) b.classList.add("on"); });
+  const cv = $("#cview"), cp = $(".cpanel"); cp.classList.add("sw"); cv.classList.remove("sw"); void cv.offsetWidth; cv.classList.add("sw"); setTimeout(() => cp.classList.remove("sw"), 160);
   if(cviewCerca){ $("#cview").style.backgroundImage = `url(${p.img})`; const nx = new Image(); nx.src = PROGS[(i+1)%PROGS.length].img; }
   $("#cT").textContent = p.t; $("#cD").textContent = p.d; $("#cP").textContent = p.p; $("#cPr").textContent = p.pr; $("#cU").textContent = p.u;
   const fotos = p.ins === "ambos" ? ["andre","goyo"] : [p.ins];
@@ -819,12 +879,12 @@ showProg(0);
 
 /* carrusel de instructores (frases reales de los guiones de clase) */
 const ST = [
-  { f:"academy/img/w/andre.webp", q:"Si llegaste aquí buscando que alguien te diga “compra esto y hazte rico”, te ahorramos el tiempo: aquí no es.", n:"André Macouzet", a:"Clase 1.1", b:"Bienvenida" },
-  { f:"academy/img/w/goyo.webp", q:"La mayoría de la gente que dice que invierte en realidad está apostando. Y no lo sabe.", n:"Gregorio Sánchez", a:"Clase 1.5", b:"Invertir vs apostar" },
-  { f:"academy/img/w/andre.webp", q:"Puedes tener razón el 40% de las veces y ganar dinero. Puedes tener razón el 70% y quebrar. La diferencia es la gestión de riesgo.", n:"André Macouzet", a:"Clase 2.6", b:"Gestión de riesgo" },
-  { f:"academy/img/w/goyo.webp", q:"Antes necesitabas una agencia para hacer anuncios. Hoy necesitas saber qué decir. La IA hace el resto.", n:"Gregorio Sánchez", a:"Clase 3.4", b:"Marketing digital con IA" }
+  { f:"academy/img/w/andre.webp", g:1, q:"Construye herramientas de inteligencia artificial y opera mercados financieros. En la academia enseña IA aplicada, programación, automatización y gestión de riesgo.", n:"André Macouzet", a:"Fundador", b:"IA, datos y mercados" },
+  { f:"academy/img/w/goyo.webp", g:1, q:"Especialista en finanzas, patrimonio y negocios. En la academia enseña finanzas personales, marketing digital e inteligencia artificial para empresas.", n:"Gregorio Sánchez", a:"Cofundador", b:"Finanzas y negocios" },
+  { f:"academy/img/w/ia.webp", q:"Clases de 5 a 15 minutos que puedes tomar desde tu celular o computadora, con apuntes, tareas y evaluaciones en cada capítulo.", n:"Aprende a tu ritmo", a:"Formato", b:"100% en línea" },
+  { f:"academy/img/w/trading.webp", q:"Todo lo que aprendes sobre mercados lo practicas en simulador, con reglas claras de riesgo, antes de tomar cualquier decisión real.", n:"Practica sin arriesgar", a:"Método", b:"Simulador y herramientas" }
 ];
-$("#track").innerHTML = ST.map(s => `<article class="st"><div class="ph" style="background-image:url(${s.f})"></div><a class="play" href="academy/campus/" aria-label="Ver la clase"><svg><use href="#i-play"/></svg></a><div class="tx"><q>${s.q.replace(/^“|”$/g,"")}</q><dl class="who"><dt class="n" style="color:#fff">${s.n}</dt><dt>Fuente:</dt><dd>${s.a}</dd><dt>Tema:</dt><dd>${s.b}</dd></dl></div></article>`).join("");
+$("#track").innerHTML = ST.map(s => `<article class="st"><div class="ph ${s.g ? "" : "col"}" style="background-image:url(${s.f})"></div><div class="tx"><p class="stq">${s.q}</p><dl class="who"><dt class="n" style="color:#fff">${s.n}</dt><dt>${s.g ? "Rol" : "Qué es"}:</dt><dd>${s.a}</dd><dt>${s.g ? "Enseña" : "Cómo"}:</dt><dd>${s.b}</dd></dl></div></article>`).join("");
 let si = 0;
 function slide(d){ const cards = $$(".st"), step = cards[0].offsetWidth + 16, max = cards.length - Math.max(1, Math.floor($("#track").parentElement.offsetWidth / step)); si = Math.max(0, Math.min(max, si + d)); $("#track").style.transform = `translateX(${-si*step}px)`; $("#prev").disabled = si===0; $("#next").disabled = si>=max; }
 $("#prev").onclick = () => slide(-1); $("#next").onclick = () => slide(1); slide(0);
@@ -858,11 +918,11 @@ const AC = [
   { k:"Plan", t:"Tu plan escrito", p:"Reglas de entrada, riesgo por operación y límite diario. Todo por escrito antes de practicar, como trabaja un profesional.", v:[["Riesgo por operación","0.5–1%"],["Límite del día","fijo"],["Regla de las dos","activa"]] },
   { k:"Asistente IA", t:"Tu asistente de IA", p:"Un prompt o un agente que te arme el análisis diario, y un indicador propio escrito con ayuda de la IA y explicado línea por línea.", v:[["Prompt de análisis diario","listo"],["Indicador propio","compila"],["Fuentes verificadas","3"]] },
   { k:"Resultados", t:"Tus resultados", p:"Mínimo 30 operaciones en simulador registradas en tu diario y medidas en R: acierto, R total, qué funciona y qué error se repite.", v:[["Operaciones en simulador","30+"],["Medidas en R","sí"],["Plan seguido","%"]] },
-  { k:"Defensa", t:"Tu defensa", p:"Presentas 10 minutos frente a André y Goyo. No calificamos si ganaste o perdiste: calificamos si seguiste tus reglas y sabes explicar tus errores.", v:[["Reglas seguidas","30%"],["Gestión de riesgo","25%"],["Uso de IA","20%"],["Diario y análisis","15%"],["Presentación","10%"]] }
+  { k:"Defensa", t:"Tu defensa", p:"Presentas tu proyecto en 10 minutos frente a los instructores. Se evalúa si seguiste tus reglas, cómo mediste tus resultados y qué aprendiste de tus errores.", v:[["Reglas seguidas","30%"],["Gestión de riesgo","25%"],["Uso de IA","20%"],["Diario y análisis","15%"],["Presentación","10%"]] }
 ];
 $("#atabs").innerHTML = AC.map((a,i) => `<button type="button" data-i="${i}">${a.k}</button>`).join("");
-function showAc(i){ const a = AC[i]; $$("#atabs button").forEach((b,k) => b.classList.toggle("on", k===i)); $("#aN").textContent = "0" + (i+1); $("#aT").textContent = a.t; $("#aP").textContent = a.p;
-  $("#aV").innerHTML = a.v.map(([x,y]) => `<div class="line">${x}<span style="display:flex;gap:10px;align-items:center"><em>${y}</em><span class="ok">${ico("check")}</span></span></div>`).join(""); }
+function showAc(i){ const a = AC[i]; const ap = $(".apane"); ap.classList.add("sw"); setTimeout(() => ap.classList.remove("sw"), 180); $$("#atabs button").forEach((b,k) => b.classList.toggle("on", k===i)); $("#aN").textContent = "0" + (i+1); $("#aT").textContent = a.t; $("#aP").textContent = a.p;
+  $("#aV").innerHTML = a.v.map(([x,y], n) => `<div class="line" style="--i:${n}">${x}<span style="display:flex;gap:10px;align-items:center"><em>${y}</em><span class="ok">${ico("check")}</span></span></div>`).join(""); }
 $$("#atabs button").forEach(b => b.onclick = () => showAc(+b.dataset.i)); showAc(0);
 
 /* comparativa */
@@ -873,7 +933,7 @@ const COLS = [
   { n:"Cursos en línea", t:"Horas o semanas", s:[0,0,0,0,0,1], pr:"$" },
   { n:"Autoaprendizaje", t:"Flexible", s:[1,0,0,0,1,0], pr:"Gratis" }
 ];
-$("#cols").innerHTML = COLS.map(c => `<div class="col ${c.me?"me":""}"><h3>${c.n}</h3><div class="t">${ico("clock")}${c.t}</div><ul>${ROWS.map((r,i) => `<li class="${c.s[i]?"":"no"}">${ico(c.s[i]?"check":"x")}${r}</li>`).join("")}</ul><div class="pr">Precio: ${c.pr}</div>${c.me?`<a class="btn btn-dark" href="#inscripcion">Únete ahora</a>`:""}</div>`).join("");
+$("#cols").innerHTML = COLS.map(c => `<div class="col rv ${c.me?"me":""}"><h3>${c.n}</h3><div class="t">${ico("clock")}${c.t}</div><ul>${ROWS.map((r,i) => `<li class="${c.s[i]?"":"no"}">${ico(c.s[i]?"check":"x")}${r}</li>`).join("")}</ul><div class="pr">Precio: ${c.pr}</div>${c.me?`<a class="btn btn-dark" href="#inscripcion">Únete ahora</a>`:""}</div>`).join("");
 
 /* consulta */
 function setProgSelect(n){ const s = $("#selProg"); const o = [...s.options].find(o => o.text===n); if(o) s.value = o.text; }
@@ -909,7 +969,7 @@ const FAQ = [
   ["¿Cuál es el idioma de las clases?","Español. Las herramientas y los ejemplos están pensados para México: pesos, Banxico, INEGI y negocios locales."],
   ["¿Cuánto cuesta?","El Nivel 1 del campus es gratis. Los programas completos van de $2,400 a $3,900 USD y el Programa Élite cuesta $9,800 USD con mentoría incluida. Si agendas tu consulta antes del 31 de diciembre de 2026, tienes 15% de descuento en cualquier programa completo. También vendemos clases sueltas en el catálogo."],
   ["¿Qué opciones de pago hay?","En la consulta te explicamos las formas de pago disponibles para el programa que elijas. Escríbenos y te mandamos el detalle."],
-  ["¿Me enseñan a hacerme rico con el trading?","No. Nadie puede prometerte ganancias y desconfía de quien lo haga. Enseñamos riesgo antes que ganancia, todo se practica en simulador y no damos asesoría de inversión."],
+  ["¿Garantizan ganancias en el trading?","No. Ningún programa serio puede garantizar ganancias. Enseñamos gestión de riesgo, análisis y disciplina; las prácticas de mercados se hacen en simulador y el contenido no es asesoría de inversión."],
   ["¿Recibiré un certificado?","Sí, al aprobar el proyecto final frente a los fundadores recibes el certificado NORTHPOINT ACADEMY con folio. Es un certificado de finalización, no un título oficial ni una licencia para asesorar a terceros."],
   ["¿Qué necesito para empezar?","Una computadora o celular con internet. Para las clases de trading usamos TradingView en modo simulador, que es gratis."],
   ["¿Tienen programas para empresas o escuelas?","Sí. Damos talleres de IA para empresas y programas para escuelas, en sus instalaciones o en línea, con rutas a la medida y reportes de avance. Pide una propuesta en el formulario."]
@@ -1028,6 +1088,20 @@ const lazyIO = new IntersectionObserver(es => es.forEach(e => { if(!e.isIntersec
   lazyIO.unobserve(el); }), { rootMargin:"600px 0px" });
 $$("[data-bg]").forEach(el => lazyIO.observe(el)); lazyIO.observe($("#cview"));
 document.documentElement.style.setProperty("--andre", "url(academy/img/w/andre.webp)"); document.documentElement.style.setProperty("--goyo", "url(academy/img/w/goyo.webp)");
+
+
+/* el título del certificado recorre todos los programas */
+(function(){ const el = $("#certT"); if(!el) return; const nombres = ["Fundamentos NORTHPOINT", ...PROGS.map(p => p.n)]; let k = 1;
+  setInterval(() => { el.classList.add("sw"); setTimeout(() => { el.textContent = nombres[k++ % nombres.length]; el.classList.remove("sw"); }, 350); }, 2600); })();
+
+
+/* escalonado y contadores */
+$$(".rv").forEach(el => { const sib = [...el.parentElement.children].filter(x => x.classList.contains("rv")); const k = sib.indexOf(el); if(k > 0) el.style.setProperty("--d", Math.min(k, 6) * 0.08 + "s"); });
+const cuenta = el => { const fin = parseFloat(el.dataset.n), pre = el.dataset.pre || "", t0 = performance.now(), dur = 1100;
+  const paso = t => { const p = Math.min(1, (t - t0) / dur), v = Math.round(fin * (1 - Math.pow(1 - p, 3))); el.textContent = pre + v; if(p < 1) requestAnimationFrame(paso); }; requestAnimationFrame(paso); };
+const numIO = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ cuenta(e.target); numIO.unobserve(e.target); } }), { threshold:.6 });
+$$(".b93 .big, .b72 b, .rc .score, .gbox .nums b, .refund b").forEach(el => { const m = el.textContent.trim().match(/^(\$?)(\d+)$/); if(m){ el.dataset.pre = m[1]; el.dataset.n = m[2]; el.textContent = m[1] + "0"; numIO.observe(el); } });
+addEventListener("scroll", () => $(".nav").classList.toggle("sc", scrollY > 30), { passive:true });
 
 /* aparición al hacer scroll */
 const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin:"0px 0px -8% 0px" });
