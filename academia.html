@@ -33,7 +33,7 @@
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <!--
   NORTHPOINT ACADEMY · landing (24-nov-2026). Estructura de landing de bootcamp: hero con foto, beneficios, bento de cifras,
   selector de programas, quiz, carrusel, camino paso a paso fijo con scroll horizontal, certificado, proyecto final,
@@ -87,7 +87,7 @@ section{position:relative}
 
 /* hero */
 .hero{position:relative;min-height:min(760px,100svh);color:#fff;display:flex;align-items:stretch;overflow:hidden;background:#2b221c}
-.hero .bg{position:absolute;inset:0;background:center/cover no-repeat url(academy/img/hero.jpg)}
+.hero .bg{position:absolute;inset:0;background:center/cover no-repeat url(academy/img/w/hero.webp)}
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,14,10,.78) 0%,rgba(20,14,10,.5) 38%,rgba(20,14,10,0) 70%),linear-gradient(0deg,rgba(20,14,10,.35),transparent 30%)}
 .hero .wrap{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;padding:120px 0 150px}
 .hero h1{max-width:800px;font-size:clamp(40px,4.9vw,70px)}
@@ -486,32 +486,11 @@ footer{padding:20px 0 120px}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
 
-/* ── intro ── */
-#intro{position:fixed;inset:0;z-index:200;background:var(--dark);color:#fff;display:grid;place-items:center;overflow:hidden;transition:clip-path 1s cubic-bezier(.77,0,.18,1);clip-path:inset(0 0 0 0)}
-#intro.out{clip-path:inset(0 0 100% 0)}
-#intro .in{display:grid;justify-items:center;gap:18px;text-align:center}
-#intro .star{width:84px;height:84px}
-#intro .star path{fill:none;stroke:var(--peach);stroke-width:1.6;stroke-dasharray:240;stroke-dashoffset:240;animation:draw 1s .1s cubic-bezier(.6,0,.2,1) forwards}
-#intro .star circle{fill:var(--peach);transform-origin:50% 50%;transform:scale(0);animation:pop .4s .9s cubic-bezier(.3,1.6,.5,1) forwards}
-@keyframes draw{to{stroke-dashoffset:0}}
-@keyframes pop{to{transform:scale(1)}}
-#intro .word{display:flex;font:700 clamp(46px,9vw,120px)/1 var(--h);letter-spacing:-.05em;overflow:hidden;padding:0 .04em .08em}
-#intro .word span{display:inline-block;transform:translateY(110%);animation:up .7s cubic-bezier(.2,.8,.2,1) forwards}
-@keyframes up{to{transform:none}}
-#intro .sub{font:500 13px var(--b);letter-spacing:.42em;text-transform:uppercase;color:rgba(255,255,255,.7);opacity:0;animation:fade .6s 1.25s forwards}
-#intro .tag{font:400 clamp(16px,1.6vw,20px)/1.3 var(--h);color:rgba(255,255,255,.85);opacity:0;animation:fade .6s 1.55s forwards;max-width:520px;padding:0 20px}
-#intro .tag b{color:var(--peach);font-weight:600}
-@keyframes fade{to{opacity:1}}
-#intro .skip{position:absolute;right:20px;bottom:20px;font:500 13px var(--b);color:rgba(255,255,255,.55);padding:8px 12px;border-radius:8px}
-#intro .skip:hover{color:#fff;background:rgba(255,255,255,.08)}
-#intro .bar{position:absolute;left:0;bottom:0;height:3px;background:var(--peach);width:0;animation:load 2.6s linear forwards}
-@keyframes load{to{width:100%}}
 .hero .bg{transform:scale(1.12);transition:transform 2.2s cubic-bezier(.2,.7,.2,1)}
 .hero h1,.hero .row,.hero .btn,.hcap{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
 body.ready .hero .bg{transform:none}
 body.ready .hero h1,body.ready .hero .row,body.ready .hero .btn,body.ready .hcap{opacity:1;transform:none}
 body.ready .hero .row{transition-delay:.15s}body.ready .hero .btn{transition-delay:.28s}body.ready .hcap{transition-delay:.4s}
-body.lock{overflow:hidden}
 
 /* ── pájaros (asistentes) ── */
 #birds{position:fixed;inset:0;z-index:52;pointer-events:none;overflow:hidden}
@@ -529,7 +508,7 @@ body.lock{overflow:hidden}
 .offer.on{display:flex}
 .obox{position:relative;background:#fff;border-radius:24px;width:min(860px,100%);display:grid;grid-template-columns:1fr 1.1fr;overflow:hidden;animation:oin .5s cubic-bezier(.2,.9,.25,1.15);max-height:calc(100vh - 32px)}
 @keyframes oin{from{opacity:0;transform:translateY(30px) scale(.94) rotate(-1deg)}to{opacity:1;transform:none}}
-.obox .im{position:relative;background:#3a2c22 center/cover no-repeat url(academy/img/marketing.jpg);min-height:420px}
+.obox .im{position:relative;background:#3a2c22 center/cover no-repeat;min-height:420px}
 .obox .im:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.55),transparent 55%)}
 .obox .big{position:absolute;left:22px;bottom:18px;z-index:1;color:#fff;font:300 120px/.8 var(--h);letter-spacing:-.06em}
 .obox .big small{font-size:44px}
@@ -562,7 +541,7 @@ body.lock{overflow:hidden}
   .obox .tx{padding:22px 18px 18px}
   .bird{width:66px;height:40px}.bird.s{width:42px;height:26px}.bird.s2{width:32px;height:20px}
 }
-@media(prefers-reduced-motion:reduce){#intro{display:none}.hero h1,.hero .row,.hero .btn,.hcap{opacity:1;transform:none}.bird .wl,.bird .wr{animation:none}}
+@media(prefers-reduced-motion:reduce){.hero h1,.hero .row,.hero .btn,.hcap{opacity:1;transform:none}.bird .wl,.bird .wr{animation:none}}
 </style>
 </head>
 <body>
@@ -588,7 +567,6 @@ body.lock{overflow:hidden}
   <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
 </svg>
 
-<div id="introSlot"></div>
 <div id="birds"></div>
 <header class="nav">
   <div class="bar">
@@ -637,7 +615,7 @@ body.lock{overflow:hidden}
   <h2 class="h h2 rv">Nuestro objetivo es que apliques lo que aprendes. <b>Por eso terminas con un proyecto real.</b></h2>
   <div class="bento">
     <div class="b93 rv"><div><div class="big">23</div><p>clases cortas en 4 niveles, escritas y enseñadas por los fundadores de NORTHPOINT.</p></div><div class="src">Fuente: campus NORTHPOINT ACADEMY, 2026</div></div>
-    <div class="bphoto rv" style="background-image:url(academy/img/ia.jpg)">
+    <div class="bphoto rv" data-bg="academy/img/w/ia.webp">
       <div class="t">Dinero, IA, negocios y mercados en un solo campus<small>Nivel 1 gratis: inflación, interés compuesto, deuda y fraudes</small></div>
       <div class="b72"><b>10</b><span>herramientas para practicar lo que ves en cada clase</span></div>
       <dl class="who"><dt class="n" style="color:#fff">André Macouzet y Gregorio Sánchez</dt><dt>Rol:</dt><dd>Fundadores e instructores</dd></dl>
@@ -683,7 +661,7 @@ body.lock{overflow:hidden}
     <div class="left"><h2 class="h h2">Tu camino paso a paso <b>hacia aplicar lo que aprendes</b></h2><a class="btn btn-green" href="#inscripcion">Agenda una consulta gratuita</a></div>
     <div class="rail" id="rail">
       <div class="stp"><div class="lab"><svg class="i"><use href="#i-bolt"/></svg>Ruta a tu medida</div><h3>Consulta gratuita</h3><p>Te recomendamos el programa según tu meta, tu tiempo y lo que ya sabes.</p>
-        <div class="mock"><div class="face" style="left:0;top:20px;width:190px;height:230px;background-image:url(academy/img/goyo.jpg)"><span class="mic"><svg class="i"><use href="#i-mic"/></svg>Gregorio</span></div><div class="face" style="left:150px;top:70px;width:200px;height:220px;background-image:url(academy/img/andre.jpg);border-radius:12px 60px 12px 12px"><span class="mic"><svg class="i"><use href="#i-mic"/></svg>André</span></div></div></div>
+        <div class="mock"><div class="face" style="left:0;top:20px;width:190px;height:230px;background-image:var(--goyo)"><span class="mic"><svg class="i"><use href="#i-mic"/></svg>Gregorio</span></div><div class="face" style="left:150px;top:70px;width:200px;height:220px;background-image:var(--andre);border-radius:12px 60px 12px 12px"><span class="mic"><svg class="i"><use href="#i-mic"/></svg>André</span></div></div></div>
       <div class="stp"><div class="lab"><svg class="i"><use href="#i-bolt"/></svg>Clases y práctica</div><h3>Campus en línea</h3><p>Clases cortas con apuntes, tarea, quiz y herramientas para practicar.</p>
         <div class="mock"><div class="win" style="left:0;top:10px;width:330px;padding:16px"><div style="display:flex;gap:12px;align-items:center"><span style="width:52px;height:52px;border-radius:8px;background:var(--dark);color:#fff;display:grid;place-items:center;font:700 13px var(--h)">1.3</span><div><div style="font:500 11px var(--b);color:var(--mute)">Nivel 1</div><div style="font:600 15px var(--h)">Interés compuesto</div><div style="height:4px;width:110px;background:var(--bg);border-radius:4px;margin-top:6px"><i style="display:block;width:60%;height:100%;background:var(--green);border-radius:4px"></i></div></div></div>
           <div style="display:grid;gap:6px;margin-top:14px;font:400 12px var(--b)"><div class="line" style="background:var(--bg);padding:9px 12px">01 · Apuntes<span class="ok"><svg class="i"><use href="#i-check"/></svg></span></div><div class="line" style="background:var(--bg);padding:9px 12px">02 · Bola de nieve<span class="ok"><svg class="i"><use href="#i-check"/></svg></span></div><div class="line" style="background:var(--bg);padding:9px 12px">03 · Quiz<em>3 preguntas</em></div></div></div>
@@ -700,7 +678,7 @@ body.lock{overflow:hidden}
 
 <section class="apoyo"><div class="wrap grid">
   <div><h2 class="h h2">Aprende con total <b>apoyo y flexibilidad</b></h2><p>Avanza a tu ritmo con clases cortas, resuelve dudas con Nori, el asistente del campus, y pide revisión de tu proyecto al equipo. El Nivel 1 está abierto para que lo pruebes hoy.</p><a class="btn btn-peach" href="#inscripcion">Agenda una consulta</a></div>
-  <a class="media rv" href="academy/campus/"><img src="academy/img/campus.jpg" alt="Una clase del campus NORTHPOINT ACADEMY" loading="lazy"><span class="play"><svg><use href="#i-play"/></svg></span><span class="dur">Abrir el campus</span></a>
+  <a class="media rv" href="academy/campus/"><img src="academy/img/w/campus.webp" loading="lazy" decoding="async" alt="Una clase del campus NORTHPOINT ACADEMY" loading="lazy"><span class="play"><svg><use href="#i-play"/></svg></span><span class="dur">Abrir el campus</span></a>
 </div></section>
 
 <section class="certs"><div class="wrap grid">
@@ -723,12 +701,12 @@ body.lock{overflow:hidden}
 <section class="com" id="comunidad"><div class="wrap">
   <div class="top"><h2 class="h h2">Únete a la comunidad NORTHPOINT, <b>la generación que entiende el dinero y la IA</b></h2><span class="bub">Sesiones en vivo con los fundadores</span></div>
   <div class="cgrid2">
-    <div class="qt"><q>La IA no te va a quitar el trabajo. La persona que sepa usar la IA, sí.</q><div class="p"><img src="academy/img/andre.jpg" alt="André Macouzet"><span>André Macouzet,<br>fundador de NORTHPOINT</span></div></div>
+    <div class="qt"><q>La IA no te va a quitar el trabajo. La persona que sepa usar la IA, sí.</q><div class="p"><img src="academy/img/w/andre.webp" loading="lazy" decoding="async" alt="André Macouzet"><span>André Macouzet,<br>fundador de NORTHPOINT</span></div></div>
     <div class="cc beige rv"><span class="tag"><svg class="i"><use href="#i-bolt"/></svg>Crece tu red</span><h3>Conoce a otros alumnos en sesiones en vivo y sigue en contacto en el grupo de la academia</h3><div class="pins"><span><svg class="i"><use href="#i-pin"/></svg>Morelia</span><span><svg class="i"><use href="#i-pin"/></svg>En línea, todo México</span></div></div>
     <div class="cc green rv"><span class="tag"><svg class="i"><use href="#i-bolt"/></svg>Aprende de los fundadores</span><h3>Pregunta directo a quienes construyen las herramientas de NORTHPOINT y revisan tu proyecto</h3></div>
   </div>
   <div class="cgrid3">
-    <div class="ev rv" style="background-image:url(academy/img/taller.jpg)"><span style="position:absolute;right:16px;bottom:14px;font:400 12px var(--b);color:rgba(255,255,255,.8)">Imagen ilustrativa</span><div class="b72"><b>B2B</b><span>talleres de IA para empresas y escuelas, en su oficina o en línea</span></div></div>
+    <div class="ev rv" data-bg="academy/img/w/taller.webp"><span style="position:absolute;right:16px;bottom:14px;font:400 12px var(--b);color:rgba(255,255,255,.8)">Imagen ilustrativa</span><div class="b72"><b>B2B</b><span>talleres de IA para empresas y escuelas, en su oficina o en línea</span></div></div>
     <div class="evt"><span class="tag"><svg class="i"><use href="#i-bolt"/></svg>Para empresas y escuelas</span><h3>Llevamos los programas a tu equipo o a tu escuela, con rutas a la medida y reportes de avance</h3><a class="lnk" href="#inscripcion">Pide una propuesta <svg class="i"><use href="#i-ext"/></svg></a></div>
   </div>
 </div></section>
@@ -741,7 +719,7 @@ body.lock{overflow:hidden}
 
 <section class="cons" id="inscripcion"><div class="wrap"><div class="cbox">
   <div><h2 class="h h2">Comienza hoy, <b>agenda una consulta gratuita con los fundadores</b></h2>
-    <div class="avs"><img src="academy/img/andre.jpg" alt="André Macouzet"><img src="academy/img/goyo.jpg" alt="Gregorio Sánchez"></div>
+    <div class="avs"><img src="academy/img/w/andre.webp" loading="lazy" decoding="async" alt="André Macouzet"><img src="academy/img/w/goyo.webp" loading="lazy" decoding="async" alt="Gregorio Sánchez"></div>
     <div class="cbadge">15% de descuento en tu programa al agendar · hasta el 31 de diciembre</div>
     <div class="steps3" id="steps3"><div class="on">Ingresa tus datos de contacto</div><div>Cuéntanos tu meta</div><div>Te escribimos para agendar</div></div></div>
   <form class="cform" id="cform" novalidate>
@@ -806,11 +784,11 @@ body.lock{overflow:hidden}
 const W3F_KEY = "93ddaacd-47f4-412d-acc7-39c3c1b80a59";   // misma cuenta Web3Forms que trading/aplicar.html
 const INS = { andre:["André Macouzet","Fundador · IA, datos y mercados"], goyo:["Gregorio Sánchez","Cofundador · negocios, finanzas y patrimonio"], ambos:["André y Gregorio","Fundadores de NORTHPOINT"] };
 const PROGS = [
-  { id:"neg", n:"IA y Negocios Digitales", t:"Programa de IA y Negocios Digitales", d:"10 semanas", p:"Pon la inteligencia artificial a trabajar en tu negocio: atención a clientes, operación, marketing, anuncios y números.", pr:"$2,400 USD", u:"programa completo", ins:"goyo", img:"academy/img/marketing.jpg" },
-  { id:"fin", n:"Finanzas y Patrimonio Familiar", t:"Programa de Finanzas y Patrimonio", d:"10 semanas", p:"Presupuesto, deuda, interés compuesto, portafolios y la estructura legal que protege lo que construyes.", pr:"$2,400 USD", u:"programa completo", ins:"goyo", img:"academy/img/finanzas.jpg" },
-  { id:"ia", n:"IA y Datos para Mercados", t:"Programa de IA y Datos para Mercados", d:"16 semanas", p:"Python, backtesting y modelos de machine learning aplicados a la investigación y al trading, sin autoengaño.", pr:"$3,900 USD", u:"programa completo", ins:"andre", img:"academy/img/datos.jpg" },
-  { id:"trader", n:"Trader Profesional de Futuros", t:"Programa de Trader de Futuros", d:"12 semanas", p:"De cero a operar en simulador con un plan escrito, riesgo definido y un diario de cada operación.", pr:"$2,900 USD", u:"programa completo", ins:"andre", img:"academy/img/trading.jpg" },
-  { id:"elite", n:"Programa Élite NORTHPOINT", t:"Programa Élite NORTHPOINT", d:"6 meses · cupo de 10", p:"Todo el catálogo más seis meses de mentoría uno a uno con los fundadores y sesiones en la oficina de Morelia.", pr:"$9,800 USD", u:"mentoría incluida", ins:"ambos", img:"academy/img/elite.jpg" }
+  { id:"neg", n:"IA y Negocios Digitales", t:"Programa de IA y Negocios Digitales", d:"10 semanas", p:"Pon la inteligencia artificial a trabajar en tu negocio: atención a clientes, operación, marketing, anuncios y números.", pr:"$2,400 USD", u:"programa completo", ins:"goyo", img:"academy/img/w/marketing.webp" },
+  { id:"fin", n:"Finanzas y Patrimonio Familiar", t:"Programa de Finanzas y Patrimonio", d:"10 semanas", p:"Presupuesto, deuda, interés compuesto, portafolios y la estructura legal que protege lo que construyes.", pr:"$2,400 USD", u:"programa completo", ins:"goyo", img:"academy/img/w/finanzas.webp" },
+  { id:"ia", n:"IA y Datos para Mercados", t:"Programa de IA y Datos para Mercados", d:"16 semanas", p:"Python, backtesting y modelos de machine learning aplicados a la investigación y al trading, sin autoengaño.", pr:"$3,900 USD", u:"programa completo", ins:"andre", img:"academy/img/w/datos.webp" },
+  { id:"trader", n:"Trader Profesional de Futuros", t:"Programa de Trader de Futuros", d:"12 semanas", p:"De cero a operar en simulador con un plan escrito, riesgo definido y un diario de cada operación.", pr:"$2,900 USD", u:"programa completo", ins:"andre", img:"academy/img/w/trading.webp" },
+  { id:"elite", n:"Programa Élite NORTHPOINT", t:"Programa Élite NORTHPOINT", d:"6 meses · cupo de 10", p:"Todo el catálogo más seis meses de mentoría uno a uno con los fundadores y sesiones en la oficina de Morelia.", pr:"$9,800 USD", u:"mentoría incluida", ins:"ambos", img:"academy/img/w/elite.webp" }
 ];
 const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
 const ico = n => `<svg class="i"><use href="#i-${n}"/></svg>`;
@@ -820,16 +798,16 @@ $("#burger").onclick = () => $("#drawer").classList.toggle("on");
 $$("#drawer a").forEach(a => a.onclick = () => $("#drawer").classList.remove("on"));
 
 /* programas: pestañas con barra de avance y rotación */
-let cur = 0, rot;
+let cur = 0, rot, cviewCerca = false;
 $("#tabs").innerHTML = PROGS.map((p,i) => `<button type="button" data-i="${i}"><i></i><span>${p.n}</span></button>`).join("");
-PROGS.forEach(p => { const im = new Image(); im.src = p.img; });
+
 function showProg(i, user){
   cur = i; const p = PROGS[i];
   $$("#tabs button").forEach((b,k) => { b.classList.remove("on"); void b.offsetWidth; if(k===i) b.classList.add("on"); });
-  $("#cview").style.backgroundImage = `url(${p.img})`;
+  if(cviewCerca){ $("#cview").style.backgroundImage = `url(${p.img})`; const nx = new Image(); nx.src = PROGS[(i+1)%PROGS.length].img; }
   $("#cT").textContent = p.t; $("#cD").textContent = p.d; $("#cP").textContent = p.p; $("#cPr").textContent = p.pr; $("#cU").textContent = p.u;
   const fotos = p.ins === "ambos" ? ["andre","goyo"] : [p.ins];
-  $("#cwho").innerHTML = `<div class="im">${fotos.map(f => `<img src="academy/img/${f}.jpg" alt="">`).join("")}<div><dt style="color:rgba(255,255,255,.75)">Imparte</dt><dd style="font-weight:500">${INS[p.ins][0]}</dd></div></div>`;
+  $("#cwho").innerHTML = `<div class="im">${fotos.map(f => `<img src="academy/img/w/${f}.webp" alt="">`).join("")}<div><dt style="color:rgba(255,255,255,.75)">Imparte</dt><dd style="font-weight:500">${INS[p.ins][0]}</dd></div></div>`;
   $("#cB").onclick = () => setProgSelect(p.n);
   const base = +p.pr.replace(/[^\d]/g,""); $("#cDisc").textContent = `$${Math.round(base*.85).toLocaleString("en-US")} USD con tu 15% al agendar consulta`;
   clearTimeout(rot); if(!user) rot = setTimeout(() => showProg((cur+1)%PROGS.length), 7000);
@@ -841,10 +819,10 @@ showProg(0);
 
 /* carrusel de instructores (frases reales de los guiones de clase) */
 const ST = [
-  { f:"academy/img/andre.jpg", q:"Si llegaste aquí buscando que alguien te diga “compra esto y hazte rico”, te ahorramos el tiempo: aquí no es.", n:"André Macouzet", a:"Clase 1.1", b:"Bienvenida" },
-  { f:"academy/img/goyo.jpg", q:"La mayoría de la gente que dice que invierte en realidad está apostando. Y no lo sabe.", n:"Gregorio Sánchez", a:"Clase 1.5", b:"Invertir vs apostar" },
-  { f:"academy/img/andre.jpg", q:"Puedes tener razón el 40% de las veces y ganar dinero. Puedes tener razón el 70% y quebrar. La diferencia es la gestión de riesgo.", n:"André Macouzet", a:"Clase 2.6", b:"Gestión de riesgo" },
-  { f:"academy/img/goyo.jpg", q:"Antes necesitabas una agencia para hacer anuncios. Hoy necesitas saber qué decir. La IA hace el resto.", n:"Gregorio Sánchez", a:"Clase 3.4", b:"Marketing digital con IA" }
+  { f:"academy/img/w/andre.webp", q:"Si llegaste aquí buscando que alguien te diga “compra esto y hazte rico”, te ahorramos el tiempo: aquí no es.", n:"André Macouzet", a:"Clase 1.1", b:"Bienvenida" },
+  { f:"academy/img/w/goyo.webp", q:"La mayoría de la gente que dice que invierte en realidad está apostando. Y no lo sabe.", n:"Gregorio Sánchez", a:"Clase 1.5", b:"Invertir vs apostar" },
+  { f:"academy/img/w/andre.webp", q:"Puedes tener razón el 40% de las veces y ganar dinero. Puedes tener razón el 70% y quebrar. La diferencia es la gestión de riesgo.", n:"André Macouzet", a:"Clase 2.6", b:"Gestión de riesgo" },
+  { f:"academy/img/w/goyo.webp", q:"Antes necesitabas una agencia para hacer anuncios. Hoy necesitas saber qué decir. La IA hace el resto.", n:"Gregorio Sánchez", a:"Clase 3.4", b:"Marketing digital con IA" }
 ];
 $("#track").innerHTML = ST.map(s => `<article class="st"><div class="ph" style="background-image:url(${s.f})"></div><a class="play" href="academy/campus/" aria-label="Ver la clase"><svg><use href="#i-play"/></svg></a><div class="tx"><q>${s.q.replace(/^“|”$/g,"")}</q><dl class="who"><dt class="n" style="color:#fff">${s.n}</dt><dt>Fuente:</dt><dd>${s.a}</dd><dt>Tema:</dt><dd>${s.b}</dd></dl></div></article>`).join("");
 let si = 0;
@@ -963,23 +941,9 @@ $("#quiz").addEventListener("click", e => { if(e.target.id==="quiz") closeQuiz()
 addEventListener("keydown", e => { if(e.key==="Escape") closeQuiz(); });
 
 
-/* ── intro ── */
+
 const ss = { get(k){ try{ return sessionStorage.getItem(k); }catch(_){ return ss[k]; } }, set(k,v){ try{ sessionStorage.setItem(k,v); }catch(_){ ss[k]=v; } } };
-(function intro(){
-  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if(ss.get("npa-intro") || reduce){ document.body.classList.add("ready"); return; }
-  ss.set("npa-intro","1");
-  $("#introSlot").innerHTML = `<div id="intro"><div class="in">
-    <svg class="star" viewBox="0 0 64 64"><path d="M32 2 L37.5 26.5 L62 32 L37.5 37.5 L32 62 L26.5 37.5 L2 32 L26.5 26.5 Z"/><circle cx="32" cy="32" r="3.2"/></svg>
-    <div class="word">${"northpoint".split("").map((c,i)=>`<span style="animation-delay:${.35+i*.045}s">${c}</span>`).join("")}</div>
-    <div class="sub">Academy</div><div class="tag">Dinero, IA, negocios y mercados. <b>Encuentra tu norte.</b></div></div>
-    <button class="skip" type="button" id="introSkip">Saltar intro</button><span class="bar"></span></div>`;
-  document.body.classList.add("lock");
-  let done = false;
-  const fin = () => { if(done) return; done = true; const el = $("#intro"); el.classList.add("out"); document.body.classList.remove("lock"); setTimeout(() => document.body.classList.add("ready"), 250); setTimeout(() => el.remove(), 1100); };
-  $("#introSkip").onclick = fin; $("#intro").addEventListener("click", fin);
-  setTimeout(fin, 2700);
-})();
+requestAnimationFrame(() => requestAnimationFrame(() => document.body.classList.add("ready")));   // entrada del hero
 
 /* ── oferta 15% ── */
 const FIN = new Date("2026-12-31T23:59:59-06:00").getTime();
@@ -993,8 +957,9 @@ function tick(){
 tick(); setInterval(tick, 1000);
 let ofertaVista = !!ss.get("npa-oferta");
 function abrirOferta(auto){
-  if(auto && (ofertaVista || $("#quiz").classList.contains("on") || $("#intro") || FIN < Date.now())) return;
+  if(auto && (ofertaVista || $("#quiz").classList.contains("on") || FIN < Date.now())) return;
   ofertaVista = true; ss.set("npa-oferta","1");
+  $(".obox .im").style.backgroundImage = `url(academy/img/w/${innerWidth < 720 ? "marketing-s" : "marketing"}.webp)`;
   $("#offer").classList.add("on"); $("#offer").setAttribute("aria-hidden","false");
 }
 function cerrarOferta(){ $("#offer").classList.remove("on"); $("#offer").setAttribute("aria-hidden","true"); }
@@ -1022,7 +987,7 @@ const layer = $("#birds");
 BIRDS.forEach(b => { const el = document.createElement("div"); el.className = "bird " + b.cls; el.innerHTML = birdSVG; layer.appendChild(el); b.el = el; b.x = innerWidth * .8; b.y = innerHeight * .3; b.vx = 0; b.vy = 0; b.dir = -1; b.rot = 0; b.col = ""; });
 document.addEventListener("keydown", e => { if(e.key==="Escape") cerrarOferta(); });
 let tPrev = performance.now(), syPrev = scrollY, vScroll = 0, colorT = 0;
-function sobreOscuro(x, y){ const el = document.elementsFromPoint(Math.min(innerWidth-1,Math.max(0,x)), Math.min(innerHeight-1,Math.max(0,y))).find(e => !e.closest("#birds")); return !!(el && el.closest(".camino,.cmp,.hero,.gbox,.st,#intro,.offer.on")); }
+function sobreOscuro(x, y){ const el = document.elementsFromPoint(Math.min(innerWidth-1,Math.max(0,x)), Math.min(innerHeight-1,Math.max(0,y))).find(e => !e.closest("#birds")); return !!(el && el.closest(".camino,.cmp,.hero,.gbox,.st,.offer.on")); }
 function vuelo(t){
   const dt = Math.min(48, t - tPrev) / 16.67; tPrev = t;
   vScroll += ((scrollY - syPrev) - vScroll) * .12; syPrev = scrollY;
@@ -1054,6 +1019,15 @@ function vuelo(t){
   requestAnimationFrame(vuelo);
 }
 if(!matchMedia("(prefers-reduced-motion: reduce)").matches) requestAnimationFrame(vuelo); else layer.style.display = "none";
+
+
+/* carga diferida de fotos (data-bg) y de la foto de programas */
+const lazyIO = new IntersectionObserver(es => es.forEach(e => { if(!e.isIntersecting) return; const el = e.target;
+  if(el.id === "cview"){ cviewCerca = true; el.style.backgroundImage = `url(${PROGS[cur].img})`; const nx = new Image(); nx.src = PROGS[(cur+1)%PROGS.length].img; }
+  else el.style.backgroundImage = `url(${el.dataset.bg})`;
+  lazyIO.unobserve(el); }), { rootMargin:"600px 0px" });
+$$("[data-bg]").forEach(el => lazyIO.observe(el)); lazyIO.observe($("#cview"));
+document.documentElement.style.setProperty("--andre", "url(academy/img/w/andre.webp)"); document.documentElement.style.setProperty("--goyo", "url(academy/img/w/goyo.webp)");
 
 /* aparición al hacer scroll */
 const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin:"0px 0px -8% 0px" });
