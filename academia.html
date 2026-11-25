@@ -471,10 +471,110 @@ footer{padding:20px 0 120px}
   .mbox h3{font-size:28px}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
+
+/* ── intro ── */
+#intro{position:fixed;inset:0;z-index:200;background:var(--dark);color:#fff;display:grid;place-items:center;overflow:hidden;transition:clip-path 1s cubic-bezier(.77,0,.18,1);clip-path:inset(0 0 0 0)}
+#intro.out{clip-path:inset(0 0 100% 0)}
+#intro .in{display:grid;justify-items:center;gap:18px;text-align:center}
+#intro .star{width:84px;height:84px}
+#intro .star path{fill:none;stroke:var(--peach);stroke-width:1.6;stroke-dasharray:240;stroke-dashoffset:240;animation:draw 1s .1s cubic-bezier(.6,0,.2,1) forwards}
+#intro .star circle{fill:var(--peach);transform-origin:50% 50%;transform:scale(0);animation:pop .4s .9s cubic-bezier(.3,1.6,.5,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{to{transform:scale(1)}}
+#intro .word{display:flex;font:700 clamp(46px,9vw,120px)/1 var(--h);letter-spacing:-.05em;overflow:hidden;padding:0 .04em .08em}
+#intro .word span{display:inline-block;transform:translateY(110%);animation:up .7s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes up{to{transform:none}}
+#intro .sub{font:500 13px var(--b);letter-spacing:.42em;text-transform:uppercase;color:rgba(255,255,255,.7);opacity:0;animation:fade .6s 1.25s forwards}
+#intro .tag{font:400 clamp(16px,1.6vw,20px)/1.3 var(--h);color:rgba(255,255,255,.85);opacity:0;animation:fade .6s 1.55s forwards;max-width:520px;padding:0 20px}
+#intro .tag b{color:var(--peach);font-weight:600}
+@keyframes fade{to{opacity:1}}
+#intro .skip{position:absolute;right:20px;bottom:20px;font:500 13px var(--b);color:rgba(255,255,255,.55);padding:8px 12px;border-radius:8px}
+#intro .skip:hover{color:#fff;background:rgba(255,255,255,.08)}
+#intro .bar{position:absolute;left:0;bottom:0;height:3px;background:var(--peach);width:0;animation:load 2.6s linear forwards}
+@keyframes load{to{width:100%}}
+.hero .bg{transform:scale(1.12);transition:transform 2.2s cubic-bezier(.2,.7,.2,1)}
+.hero h1,.hero .row,.hero .btn,.hcap{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+body.ready .hero .bg{transform:none}
+body.ready .hero h1,body.ready .hero .row,body.ready .hero .btn,body.ready .hcap{opacity:1;transform:none}
+body.ready .hero .row{transition-delay:.15s}body.ready .hero .btn{transition-delay:.28s}body.ready .hcap{transition-delay:.4s}
+body.lock{overflow:hidden}
+
+/* ── pájaros (asistentes) ── */
+#birds{position:fixed;inset:0;z-index:52;pointer-events:none}
+.bird{position:absolute;left:0;top:0;width:96px;height:58px;pointer-events:auto;cursor:pointer;will-change:transform;filter:drop-shadow(0 6px 8px rgba(0,0,0,.18))}
+.bird svg{width:100%;height:100%;overflow:visible}
+.bird .wl,.bird .wr{transform-box:fill-box;animation:flap .42s ease-in-out infinite alternate}
+.bird .wl{transform-origin:100% 80%}.bird .wr{transform-origin:0% 80%}
+.bird.glide .wl,.bird.glide .wr{animation-duration:1.2s}
+@keyframes flap{from{transform:rotate(18deg) scaleY(1)}to{transform:rotate(-34deg) scaleY(.55)}}
+.bird.s{width:58px;height:35px;opacity:.9}
+.bird.s2{width:44px;height:27px;opacity:.75}
+.bsay{position:absolute;left:0;top:0;z-index:53;pointer-events:auto;cursor:pointer;background:#fff;color:var(--ink);border-radius:12px 12px 12px 4px;padding:9px 12px;font:500 13.5px/1.3 var(--b);box-shadow:0 14px 30px -12px rgba(0,0,0,.35);max-width:220px;opacity:0;transform:translateY(6px) scale(.96);transition:opacity .3s,transform .3s;will-change:transform}
+.bsay.on{opacity:1}
+.bsay b{color:#C2410C}
+.nori{position:fixed;right:16px;bottom:84px;z-index:96;width:min(370px,calc(100vw - 32px));background:#fff;border-radius:18px;box-shadow:0 30px 70px -25px rgba(0,0,0,.45);display:none;flex-direction:column;overflow:hidden}
+.nori.on{display:flex;animation:pin .35s cubic-bezier(.2,.8,.2,1)}
+@keyframes pin{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+.nori .hd{display:flex;align-items:center;gap:12px;padding:16px 16px 12px;border-bottom:1px solid var(--line)}
+.nori .hd .av{width:42px;height:42px;border-radius:50%;background:var(--bg);display:grid;place-items:center}
+.nori .hd .av svg{width:34px;height:21px;color:#1A1A1A}
+.nori .hd b{display:block;font:600 16px var(--h)}
+.nori .hd span{font:400 12.5px var(--b);color:var(--mute)}
+.nori .hd .x{margin-left:auto;width:34px;height:34px;border-radius:9px;background:var(--bg);display:grid;place-items:center}
+.nori .bd{padding:14px 16px;display:grid;gap:10px;max-height:min(52vh,420px);overflow-y:auto}
+.nm{font:400 15px/1.45 var(--b);background:var(--bg);border-radius:4px 14px 14px 14px;padding:10px 12px;justify-self:start;max-width:92%}
+.nm.me{background:var(--dark);color:#fff;border-radius:14px 4px 14px 14px;justify-self:end}
+.nm a{text-decoration:underline}
+.qr{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 16px}
+.qr button{border:1px solid var(--line);border-radius:999px;padding:8px 12px;font:500 13.5px var(--b);background:#fff}
+.qr button:hover{background:var(--peach-lt);border-color:var(--peach-lt)}
+
+/* ── oferta ── */
+.offer{position:fixed;inset:0;z-index:95;background:rgba(26,26,26,.62);backdrop-filter:blur(5px);display:none;align-items:center;justify-content:center;padding:16px}
+.offer.on{display:flex}
+.obox{position:relative;background:#fff;border-radius:24px;width:min(860px,100%);display:grid;grid-template-columns:1fr 1.1fr;overflow:hidden;animation:oin .5s cubic-bezier(.2,.9,.25,1.15);max-height:calc(100vh - 32px)}
+@keyframes oin{from{opacity:0;transform:translateY(30px) scale(.94) rotate(-1deg)}to{opacity:1;transform:none}}
+.obox .im{position:relative;background:#3a2c22 center/cover no-repeat url(academy/img/marketing.jpg);min-height:420px}
+.obox .im:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.55),transparent 55%)}
+.obox .big{position:absolute;left:22px;bottom:18px;z-index:1;color:#fff;font:300 120px/.8 var(--h);letter-spacing:-.06em}
+.obox .big small{font-size:44px}
+.stk{position:absolute;right:-8px;top:22px;z-index:2;background:var(--sun);color:var(--ink);font:700 15px/1.05 var(--h);padding:10px 16px;transform:rotate(9deg);box-shadow:0 8px 16px rgba(0,0,0,.25);text-align:center}
+.stk:before{content:"%";position:absolute;left:-26px;top:6px;width:36px;height:36px;border-radius:50%;background:#F05A3E;color:#fff;display:grid;place-items:center;font:700 16px var(--h);transform:rotate(-20deg)}
+.obox .tx{padding:34px 30px 26px;display:flex;flex-direction:column;gap:14px;overflow-y:auto}
+.obox .tx .eb{font:600 12px var(--b);letter-spacing:.14em;text-transform:uppercase;color:#C2410C}
+.obox h3{font:300 clamp(30px,3.2vw,42px)/.95 var(--h);letter-spacing:-.03em}
+.obox h3 b{font-weight:600}
+.obox p{font:400 15.5px/1.45 var(--b);color:var(--ink2)}
+.cd{display:flex;gap:6px;align-items:center;font:500 13px var(--b);color:var(--mute)}
+.cd b{display:inline-grid;place-items:center;min-width:46px;height:46px;border-radius:10px;background:var(--dark);color:#fff;font:600 20px var(--h);letter-spacing:-.02em}
+.cd i{font-style:normal;font-size:10px;display:block;color:rgba(255,255,255,.6);font-weight:500;letter-spacing:.06em;margin-top:-4px}
+.cd .u{display:grid;justify-items:center;gap:0}
+.oform{display:grid;gap:8px}
+.oform input{height:50px;border:0;border-radius:10px;background:var(--bg);padding:0 14px;font:400 16px var(--b)}
+.oform input:focus{outline:2px solid var(--ink)}
+.oform .btn{height:52px;font-size:16px}
+.obox .fine{font:400 11.5px/1.4 var(--b);color:var(--mute)}
+.obox .x{position:absolute;right:12px;top:12px;z-index:3;width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.9);display:grid;place-items:center}
+.ook{display:none;background:var(--green-lt);border-radius:14px;padding:18px;font:400 15px/1.45 var(--b)}
+.ook b{display:block;font:600 22px/1.1 var(--h);margin-bottom:6px}
+.promo .cdm{font:500 13px var(--b);color:var(--green);letter-spacing:0;margin-top:4px;display:block}
+.disc{font:400 14px var(--b);color:#C2410C;margin-top:4px}
+.cbadge{display:inline-flex;gap:8px;align-items:center;background:var(--sun);border-radius:8px;padding:8px 12px;font:600 14px var(--b);margin-top:20px}
+@media(max-width:720px){
+  .obox{grid-template-columns:1fr}
+  .obox .im{min-height:170px}
+  .obox .big{font-size:84px}.obox .big small{font-size:32px}
+  .obox .tx{padding:22px 18px 18px}
+  .bird{width:66px;height:40px}.bird.s{width:42px;height:26px}.bird.s2{width:32px;height:20px}
+  .nori{bottom:76px;right:12px}
+  .bsay{max-width:170px;font-size:12.5px}
+}
+@media(prefers-reduced-motion:reduce){#intro{display:none}.hero h1,.hero .row,.hero .btn,.hcap{opacity:1;transform:none}.bird .wl,.bird .wr{animation:none}}
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="bird" viewBox="0 0 100 60"><path d="M22 34 4 25l9 10-10 10z" fill="currentColor"/><path d="M20 34c10-4 24-6 38-4 10 1 18 0 26-3-4 7-12 11-22 12-14 2-28 1-42-5z" fill="currentColor"/><path d="M42 36c9 3 19 3 28-1-6 5-16 6-28 1z" fill="#FFB08F"/><circle cx="82" cy="29" r="5.5" fill="currentColor"/><path d="M86.5 27.5 94 29.6 86.5 31.6z" fill="#FF976B"/><circle cx="83.5" cy="28" r="1.1" fill="#fff"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
   <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
@@ -495,6 +595,8 @@ footer{padding:20px 0 120px}
   <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
 </svg>
 
+<div id="introSlot"></div>
+<div id="birds"></div>
 <header class="nav">
   <div class="bar">
     <a class="logo" href="academia.html">northpoint<small>academy</small></a>
@@ -559,7 +661,7 @@ footer{padding:20px 0 120px}
       <div class="refund"><small>Empieza con el</small><b>Nivel 1</b><span>gratis y sin tarjeta, con sus 7 clases y herramientas</span></div></div>
     <div class="cview" id="cview">
       <dl class="who" id="cwho"></dl>
-      <div class="cpanel"><h3 id="cT"></h3><span class="dur" id="cD"></span><p id="cP"></p><div class="pr"><small>Desde</small><b id="cPr"></b><small id="cU"></small></div><a class="btn btn-dark" id="cB" href="#inscripcion">Explora el programa</a></div>
+      <div class="cpanel"><h3 id="cT"></h3><span class="dur" id="cD"></span><p id="cP"></p><div class="pr"><small>Desde</small><b id="cPr"></b><small id="cU"></small><div class="disc" id="cDisc"></div></div><a class="btn btn-dark" id="cB" href="#inscripcion">Explora el programa</a></div>
     </div>
   </div>
   <div class="quizb rv"><h2 class="h">¿No sabes qué programa es para ti? <b>Haz un quiz de 1 minuto y descúbrelo</b></h2><button class="btn btn-peach" id="openQuiz" type="button">Ir al quiz <svg class="i"><use href="#i-arrow"/></svg></button></div>
@@ -647,6 +749,7 @@ footer{padding:20px 0 120px}
 <section class="cons" id="inscripcion"><div class="wrap"><div class="cbox">
   <div><h2 class="h h2">Comienza hoy, <b>agenda una consulta gratuita con los fundadores</b></h2>
     <div class="avs"><img src="academy/img/andre.jpg" alt="André Macouzet"><img src="academy/img/goyo.jpg" alt="Gregorio Sánchez"></div>
+    <div class="cbadge">15% de descuento en tu programa al agendar · hasta el 31 de diciembre</div>
     <div class="steps3" id="steps3"><div class="on">Ingresa tus datos de contacto</div><div>Cuéntanos tu meta</div><div>Te escribimos para agendar</div></div></div>
   <form class="cform" id="cform" novalidate>
     <div id="f1" style="display:grid;gap:8px">
@@ -684,8 +787,27 @@ footer{padding:20px 0 120px}
   <p class="disc">Contenido educativo. Las clases enseñan finanzas, inteligencia artificial, negocios y mercados; no son asesoría de inversión, legal ni fiscal. Operar futuros y otros instrumentos apalancados implica riesgo de perder dinero. El certificado es de finalización emitido por NORTHPOINT, no un título oficial.</p>
 </div></footer>
 
-<div class="promo" id="promo"><div class="t">Empieza hoy sin costo<span>Nivel 1 abierto · sin tarjeta</span></div><span class="sticker">Nivel 1<br>gratis</span><div style="display:flex;align-items:center;gap:6px"><a class="btn btn-green" href="academy/campus/">Entrar al campus</a><button class="x" id="promoX" aria-label="Cerrar"><svg class="i"><use href="#i-x"/></svg></button></div></div>
+<div class="promo" id="promo"><div class="t">15% en tu programa<span class="cdm" id="cdBar">termina en: —</span></div><span class="sticker">Agenda tu<br>consulta</span><div style="display:flex;align-items:center;gap:6px"><button class="btn btn-green" type="button" data-offer>Quiero el descuento</button><button class="x" id="promoX" aria-label="Cerrar"><svg class="i"><use href="#i-x"/></svg></button></div></div>
 
+
+<div class="offer" id="offer" aria-hidden="true"><div class="obox" role="dialog" aria-modal="true" aria-labelledby="oT">
+  <button class="x" id="oX" aria-label="Cerrar"><svg class="i"><use href="#i-x"/></svg></button>
+  <div class="im"><span class="stk">Hasta el<br>31 de dic</span><div class="big">15<small>%</small></div></div>
+  <div class="tx">
+    <span class="eb">Oferta de lanzamiento</span>
+    <h3 id="oT">Agenda tu consulta y <b>llévate 15% en tu programa</b></h3>
+    <p>Déjanos tus datos, platicamos 15 minutos sobre tu meta y te apartamos el 15% de descuento en cualquier programa completo.</p>
+    <div class="cd" id="cdPop"></div>
+    <form class="oform" id="oform" novalidate>
+      <input name="nombre" placeholder="Tu nombre" autocomplete="name" required maxlength="80">
+      <input name="telefono" type="tel" placeholder="WhatsApp (10 dígitos)" autocomplete="tel-national" inputmode="tel" required maxlength="20">
+      <button class="btn btn-peach" type="submit" id="oSend">Quiero mi 15%</button>
+    </form>
+    <div class="ook" id="ook"><b>Listo, tu 15% queda apartado.</b>Te escribimos por WhatsApp para agendar tu consulta. Mientras, empieza gratis el Nivel 1 en el <a href="academy/campus/" style="text-decoration:underline">campus</a>.</div>
+    <p class="fine">Válido para inscripciones a programas completos de quien agenda su consulta, hasta el 31 de diciembre de 2026. Al enviar aceptas que te contactemos y el <a href="privacidad.html" style="text-decoration:underline">aviso de privacidad</a>.</p>
+  </div>
+</div></div>
+<div class="nori" id="nori" role="dialog" aria-label="Asistente"><div class="hd"><span class="av"><svg viewBox="0 0 100 60"><use href="#bird"/></svg></span><div><b>Nori</b><span>Asistente de NORTHPOINT ACADEMY</span></div><button class="x" id="nX" aria-label="Cerrar"><svg class="i"><use href="#i-x"/></svg></button></div><div class="bd" id="nBody"></div><div class="qr" id="nQR"></div></div>
 <div class="modal" id="quiz" aria-hidden="true"><div class="mbox" role="dialog" aria-modal="true" aria-labelledby="qT"><button class="x" id="qX" aria-label="Cerrar"><svg class="i"><use href="#i-x"/></svg></button><div id="qBody"></div></div></div>
 
 <script>
@@ -717,6 +839,7 @@ function showProg(i, user){
   const fotos = p.ins === "ambos" ? ["andre","goyo"] : [p.ins];
   $("#cwho").innerHTML = `<div class="im">${fotos.map(f => `<img src="academy/img/${f}.jpg" alt="">`).join("")}<div><dt style="color:rgba(255,255,255,.75)">Imparte</dt><dd style="font-weight:500">${INS[p.ins][0]}</dd></div></div>`;
   $("#cB").onclick = () => setProgSelect(p.n);
+  const base = +p.pr.replace(/[^\d]/g,""); $("#cDisc").textContent = `$${Math.round(base*.85).toLocaleString("en-US")} USD con tu 15% al agendar consulta`;
   clearTimeout(rot); if(!user) rot = setTimeout(() => showProg((cur+1)%PROGS.length), 7000);
   else { $("#tabs").classList.add("paused"); }
 }
@@ -796,7 +919,7 @@ F.onsubmit = async e => {
   let ok = false;
   try{
     const r = await fetch("https://api.web3forms.com/submit", { method:"POST", headers:{ "Content-Type":"application/json", Accept:"application/json" },
-      body: JSON.stringify({ access_key:W3F_KEY, subject:"Consulta NORTHPOINT ACADEMY · " + d.nombre, from_name:"NORTHPOINT ACADEMY", ...d, telefono:"+52 " + d.telefono, origen:"academia.html" }) });
+      body: JSON.stringify({ access_key:W3F_KEY, subject:"Consulta NORTHPOINT ACADEMY · " + d.nombre, from_name:"NORTHPOINT ACADEMY", ...d, telefono:"+52 " + d.telefono, promo:"15% al agendar consulta (hasta 31-dic-2026)", origen:"academia.html" }) });
     ok = (await r.json()).success === true;
   }catch(_){}
   try{ const l = JSON.parse(localStorage.getItem("npa-consultas")||"[]"); l.push({ ...d, fecha:new Date().toISOString(), enviada:ok }); localStorage.setItem("npa-consultas", JSON.stringify(l)); }catch(_){}
@@ -846,6 +969,110 @@ function closeQuiz(){ $("#quiz").classList.remove("on"); $("#quiz").setAttribute
 $("#openQuiz").onclick = openQuiz; $("#qX").onclick = closeQuiz;
 $("#quiz").addEventListener("click", e => { if(e.target.id==="quiz") closeQuiz(); });
 addEventListener("keydown", e => { if(e.key==="Escape") closeQuiz(); });
+
+
+/* ── intro ── */
+const ss = { get(k){ try{ return sessionStorage.getItem(k); }catch(_){ return ss[k]; } }, set(k,v){ try{ sessionStorage.setItem(k,v); }catch(_){ ss[k]=v; } } };
+(function intro(){
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(ss.get("npa-intro") || reduce){ document.body.classList.add("ready"); return; }
+  ss.set("npa-intro","1");
+  $("#introSlot").innerHTML = `<div id="intro"><div class="in">
+    <svg class="star" viewBox="0 0 64 64"><path d="M32 2 L37.5 26.5 L62 32 L37.5 37.5 L32 62 L26.5 37.5 L2 32 L26.5 26.5 Z"/><circle cx="32" cy="32" r="3.2"/></svg>
+    <div class="word">${"northpoint".split("").map((c,i)=>`<span style="animation-delay:${.35+i*.045}s">${c}</span>`).join("")}</div>
+    <div class="sub">Academy</div><div class="tag">Dinero, IA, negocios y mercados. <b>Encuentra tu norte.</b></div></div>
+    <button class="skip" type="button" id="introSkip">Saltar intro</button><span class="bar"></span></div>`;
+  document.body.classList.add("lock");
+  let done = false;
+  const fin = () => { if(done) return; done = true; const el = $("#intro"); el.classList.add("out"); document.body.classList.remove("lock"); setTimeout(() => document.body.classList.add("ready"), 250); setTimeout(() => el.remove(), 1100); };
+  $("#introSkip").onclick = fin; $("#intro").addEventListener("click", fin);
+  setTimeout(fin, 2700);
+})();
+
+/* ── oferta 15% ── */
+const FIN = new Date("2026-12-31T23:59:59-06:00").getTime();
+function faltan(){ const d = Math.max(0, FIN - Date.now()); return [Math.floor(d/864e5), Math.floor(d/36e5)%24, Math.floor(d/6e4)%60, Math.floor(d/1e3)%60]; }
+const pad = n => String(n).padStart(2,"0");
+function tick(){
+  const [d,h,m,sg] = faltan();
+  $("#cdBar").textContent = FIN > Date.now() ? `termina en: ${d}d : ${pad(h)}h : ${pad(m)}m : ${pad(sg)}s` : "oferta terminada";
+  $("#cdPop").innerHTML = `<span class="u"><b>${d}</b></span><span class="u"><b>${pad(h)}</b></span><span class="u"><b>${pad(m)}</b></span><span class="u"><b>${pad(sg)}</b></span><span style="margin-left:6px">días · horas · min · seg</span>`;
+}
+tick(); setInterval(tick, 1000);
+let ofertaVista = !!ss.get("npa-oferta");
+function abrirOferta(auto){
+  if(auto && (ofertaVista || $("#quiz").classList.contains("on") || $("#intro") || FIN < Date.now())) return;
+  ofertaVista = true; ss.set("npa-oferta","1");
+  $("#offer").classList.add("on"); $("#offer").setAttribute("aria-hidden","false");
+}
+function cerrarOferta(){ $("#offer").classList.remove("on"); $("#offer").setAttribute("aria-hidden","true"); }
+$("#oX").onclick = cerrarOferta; $("#offer").addEventListener("click", e => { if(e.target.id==="offer") cerrarOferta(); });
+document.addEventListener("click", e => { if(e.target.closest("[data-offer]")) abrirOferta(false); });
+setTimeout(() => abrirOferta(true), 22000);
+addEventListener("scroll", () => { if(scrollY / (document.body.scrollHeight - innerHeight) > .55) abrirOferta(true); }, { passive:true });
+document.addEventListener("mouseout", e => { if(!e.relatedTarget && e.clientY < 8 && innerWidth > 900) abrirOferta(true); });
+$("#oform").onsubmit = async e => {
+  e.preventDefault(); const f = e.target, d = Object.fromEntries(new FormData(f));
+  if(!d.nombre.trim()){ f.nombre.focus(); return; }
+  if(d.telefono.replace(/\D/g,"").length < 10){ f.telefono.focus(); f.telefono.style.outline = "2px solid #C0392B"; return; }
+  const b = $("#oSend"); b.disabled = true; b.textContent = "Apartando…";
+  let ok = false;
+  try{ const r = await fetch("https://api.web3forms.com/submit", { method:"POST", headers:{ "Content-Type":"application/json", Accept:"application/json" }, body: JSON.stringify({ access_key:W3F_KEY, subject:"15% ACADEMY · " + d.nombre, from_name:"NORTHPOINT ACADEMY", nombre:d.nombre, telefono:"+52 " + d.telefono, promo:"15% al agendar consulta (hasta 31-dic-2026)", origen:"pop-up academia.html" }) }); ok = (await r.json()).success === true; }catch(_){}
+  if(ok){ f.style.display = "none"; $("#ook").style.display = "block"; }
+  else { b.disabled = false; b.textContent = "No se pudo, reintentar"; }
+};
+
+/* ── Nori y los pájaros ── */
+const birdSVG = `<svg viewBox="0 0 100 60"><g class="wl"><path d="M50 31C44 18 33 7 15 1c10 10 19 21 26 32z" fill="currentColor" opacity=".8"/></g><use href="#bird"/><g class="wr"><path d="M55 31C59 16 68 5 86-1c-8 10-16 22-22 33z" fill="currentColor"/></g></svg>`;
+const BIRDS = [ { cls:"", ph:0, lag:0 }, { cls:"s", ph:1.7, lag:.08, dx:-70, dy:30 }, { cls:"s2", ph:3.1, lag:.14, dx:-120, dy:-24 } ];
+const layer = $("#birds");
+BIRDS.forEach((b,i) => { const el = document.createElement("div"); el.className = "bird " + b.cls; el.innerHTML = birdSVG; el.style.color = "#1A1A1A"; el.title = "Nori, tu asistente"; el.onclick = abrirNori; layer.appendChild(el); b.el = el; b.x = innerWidth * .7; b.y = innerHeight * .3; b.fx = 1; });
+const say = document.createElement("div"); say.className = "bsay"; say.onclick = abrirNori; layer.appendChild(say);
+const MSG = [ [".hero","Hola, soy Nori. <b>¿Te ayudo a elegir?</b>"], [".objetivo","El Nivel 1 es <b>gratis</b>. Pruébalo hoy."], ["#programas","¿No sabes cuál? Haz el <b>quiz de 1 minuto</b>."], [".alum","Ellos te enseñan. Frases reales de sus clases."], ["#camino","Así vas de cero a tu <b>proyecto final</b>."], [".gratis","7 clases gratis, <b>sin tarjeta</b>."], [".cmp","Compara. Y si agendas, <b>15% de descuento</b>."], ["#inscripcion","Deja tus datos: <b>15%</b> hasta el 31 de diciembre."], ["#faq","¿Otra duda? <b>Pregúntame</b>."] ];
+let lastMsg = "", sayT, tPrev = performance.now(), sy = scrollY, vScroll = 0;
+function secActual(){ let cur = MSG[0]; for(const m of MSG){ const el = $(m[0]); if(el && el.getBoundingClientRect().top < innerHeight * .55) cur = m; } return cur; }
+function darkUnder(x, y){ const el = document.elementsFromPoint(Math.min(innerWidth-1,Math.max(0,x)), Math.min(innerHeight-1,Math.max(0,y))).find(e => !e.closest("#birds")); const sec = el && el.closest(".camino,.cmp,.hero,.gbox,.st,#intro"); return !!sec; }
+function loop(t){
+  const dt = Math.min(50, t - tPrev); tPrev = t;
+  vScroll += ((scrollY - sy) - vScroll) * .2; sy = scrollY;
+  const W = innerWidth, H = innerHeight, mob = W < 720;
+  const lead = BIRDS[0];
+  const tx = W * (mob ? .5 : .5) + W * (mob ? .34 : .4) * Math.sin(scrollY * .0021 + t * .00018);
+  const ty = H * (mob ? .2 : .28) + H * (mob ? .08 : .16) * Math.sin(scrollY * .0033 + t * .0005);
+  BIRDS.forEach((b,i) => {
+    const gx = i ? lead.x + (b.dx||0) * lead.fx * -1 + Math.sin(t*.002 + b.ph) * 12 : tx, gy = i ? lead.y + (b.dy||0) + Math.cos(t*.0022 + b.ph) * 10 : ty;
+    const k = i ? .06 : .045, nx = b.x + (gx - b.x) * k, ny = b.y + (gy - b.y) * k, vx = nx - b.x;
+    if(Math.abs(vx) > .25) b.fx = vx > 0 ? 1 : -1;
+    b.x = nx; b.y = ny;
+    const rot = Math.max(-18, Math.min(18, (gy - ny) * .25));
+    b.el.style.transform = `translate(${b.x - b.el.offsetWidth/2}px,${b.y - b.el.offsetHeight/2}px) scaleX(${b.fx}) rotate(${rot * b.fx}deg)`;
+    b.el.classList.toggle("glide", Math.abs(vScroll) < .4 && Math.abs(vx) < .6);
+    b.el.style.color = darkUnder(b.x, b.y) ? "#FFFFFF" : "#1A1A1A";
+  });
+  const m = secActual();
+  if(m[1] !== lastMsg && !$("#nori").classList.contains("on")){ lastMsg = m[1]; say.innerHTML = m[1]; say.classList.add("on"); clearTimeout(sayT); sayT = setTimeout(() => say.classList.remove("on"), 4200); }
+  const bx = Math.min(W - 230, Math.max(8, lead.x + 40)), by = Math.max(64, lead.y - 74);
+  say.style.transform = `translate(${bx}px,${by}px)` + (say.classList.contains("on") ? "" : " translateY(6px) scale(.96)");
+  requestAnimationFrame(loop);
+}
+if(!matchMedia("(prefers-reduced-motion: reduce)").matches) requestAnimationFrame(loop); else layer.style.display = "none";
+
+const NB = $("#nBody");
+function nmsg(t, me){ NB.insertAdjacentHTML("beforeend", `<div class="nm ${me?"me":""}">${t}</div>`); NB.scrollTop = NB.scrollHeight; }
+const NQ = [
+  ["¿Qué programa me conviene?", () => { nmsg("Te hago 4 preguntas y te recomiendo uno. Tarda un minuto."); setTimeout(() => { cerrarNori(); openQuiz(); }, 700); }],
+  ["¿Cuánto cuesta?", () => nmsg(`El Nivel 1 del campus es <b>gratis</b>. Los programas completos: ${PROGS.map(p => `${p.n} <b>${p.pr}</b>`).join(", ")}. Si agendas tu consulta antes del 31 de diciembre, te apartamos <b>15%</b>.`)],
+  ["Quiero mi 15%", () => { nmsg("Va. Déjame tu nombre y WhatsApp y te lo apartamos."); setTimeout(() => { cerrarNori(); abrirOferta(false); }, 600); }],
+  ["¿Es para principiantes?", () => nmsg(`Sí. Empiezas desde cero: primero cómo funciona el dinero, luego IA y mercados. Pruébalo gratis en el <a href="academy/campus/">campus</a>.`)],
+  ["¿Me van a hacer rico?", () => nmsg("No, y desconfía de quien te lo prometa. Enseñamos riesgo antes que ganancia, todo lo de mercados se practica en simulador y no damos asesoría de inversión.")],
+  ["Hablar con una persona", () => { nmsg("Te llevo al formulario. André o Goyo te escriben para agendar."); setTimeout(() => { cerrarNori(); $("#inscripcion").scrollIntoView({ behavior:"smooth" }); }, 600); }]
+];
+$("#nQR").innerHTML = NQ.map((q,i) => `<button type="button" data-q="${i}">${q[0]}</button>`).join("");
+$$("#nQR button").forEach(b => b.onclick = () => { const q = NQ[+b.dataset.q]; nmsg(q[0], true); setTimeout(q[1], 350); });
+function abrirNori(){ const n = $("#nori"); if(!NB.children.length) nmsg(`Hola, soy <b>Nori</b>. Vuelo por la página para ayudarte a elegir. ¿Qué te gustaría saber?`); n.classList.add("on"); say.classList.remove("on"); }
+function cerrarNori(){ $("#nori").classList.remove("on"); }
+$("#nX").onclick = cerrarNori;
+addEventListener("keydown", e => { if(e.key==="Escape"){ cerrarOferta(); cerrarNori(); } });
 
 /* aparición al hacer scroll */
 const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin:"0px 0px -8% 0px" });
