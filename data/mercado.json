@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 25984.75,
-   "cambio": -615.5,
-   "pct": -2.31
+   "precio": 25520.0,
+   "cambio": 393.5,
+   "pct": 1.57
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7175.0,
-   "cambio": -22.25,
-   "pct": -0.31
+   "precio": 7079.25,
+   "cambio": 144.25,
+   "pct": 2.08
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3556.2,
-   "cambio": -129.3,
-   "pct": -3.51
+   "precio": 3549.3,
+   "cambio": 33.9,
+   "pct": 0.96
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 80.88,
-   "cambio": -2.33,
-   "pct": -2.8
+   "precio": 82.51,
+   "cambio": -1.47,
+   "pct": -1.75
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2677.6,
-   "cambio": 14.3,
-   "pct": 0.54
+   "precio": 2653.0,
+   "cambio": 65.6,
+   "pct": 2.54
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 49915.0,
-   "cambio": 735.0,
-   "pct": 1.49
+   "precio": 49421.0,
+   "cambio": 1205.0,
+   "pct": 2.5
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 59205.0,
-   "cambio": -2835.0,
-   "pct": -4.57
+   "precio": 58525.0,
+   "cambio": 220.0,
+   "pct": 0.38
   }
  ],
  "acciones": [
@@ -274,10 +274,82 @@
  ],
  "noticias": [
   {
-   "titulo": "U.S. jury convicts Huawei in a criminal trial over fraud and trade secrets",
-   "url": "https://www.cnbc.com/2026/11/25/huawei-fraud-trade-trial.html",
+   "titulo": "Here’s how to find value in cybersecurity stocks after a strong year",
+   "url": "https://www.marketwatch.com/story/heres-how-to-find-value-in-cybersecurity-stocks-after-a-strong-year-7fbe1f80?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 12:30:00 GMT"
+  },
+  {
+   "titulo": "This strategist’s bond-trading model is outperforming by a wide margin. The Fed slowing the economy is a good thing, he says.",
+   "url": "https://www.marketwatch.com/story/this-strategists-bond-trading-model-is-outperforming-by-a-wide-margin-the-fed-slowing-the-economy-is-a-good-thing-he-argues-f39dfc5f?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 12:29:00 GMT"
+  },
+  {
+   "titulo": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
+   "url": "https://www.cnbc.com/2026/11/25/nvidia-kevin-warsh-fed-market-signals.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 02:43:33 GMT"
+   "fecha": "Wed, 25 Nov 2026 12:26:41 GMT"
+  },
+  {
+   "titulo": "Tech’s slump is deepening. Are Americans heading into Black Friday with less buying power?",
+   "url": "https://www.marketwatch.com/story/techs-slump-is-deepening-are-americans-heading-into-black-friday-with-less-buying-power-7f9da81c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 12:20:00 GMT"
+  },
+  {
+   "titulo": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
+   "url": "https://www.cnbc.com/2026/11/25/secondhand-holiday-shopping-grows-as-shoppers-seek-value.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 12:00:01 GMT"
+  },
+  {
+   "titulo": "The S&P 500 is headed to 8,200 — and downturns like this one are actually part of the reason, says JPMorgan",
+   "url": "https://www.marketwatch.com/story/the-s-p-500-is-headed-to-8-200-and-downturns-like-this-one-are-actually-part-of-the-reason-why-says-jpmorgan-b6acae4b?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 11:27:00 GMT"
+  },
+  {
+   "titulo": "Budget carrier Norse Atlantic falls 77% after warning its finances are ‘critical’ amid soaring fuel costs",
+   "url": "https://www.cnbc.com/2026/11/25/norse-atlantic-financial-warning-fuel-costs.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 11:10:28 GMT"
+  },
+  {
+   "titulo": "Trump’s meddling in Huang scandal reignites voter angst over tech’s outsized political power",
+   "url": "https://www.cnbc.com/2026/11/25/huang-reinstatement-reignites-voter-angst-over-techs-outsized-power.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 11:00:01 GMT"
+  },
+  {
+   "titulo": "Kylie Jenner again relists concrete mansion in L.A. for $38 million",
+   "url": "https://www.marketwatch.com/story/kylie-jenner-again-relists-concrete-mansion-in-l-a-for-38-million-2e5143e5?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 10:05:00 GMT"
+  },
+  {
+   "titulo": "I hate that Jensen Huang is back at Nvidia, but I love what it’s done for my 401(k). Am I a hypocrite?",
+   "url": "https://www.marketwatch.com/story/i-hate-that-jensen-huang-is-back-at-nvidia-but-i-love-what-its-done-for-my-401-k-am-i-a-hypocrite-f63c0303?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 10:05:00 GMT"
+  },
+  {
+   "titulo": "NBA star Kevin Durant lists Arizona mansion for $13.9 million, a year after trade to Houston",
+   "url": "https://www.marketwatch.com/story/nba-star-kevin-durant-lists-arizona-mansion-for-13-9-million-a-year-after-trade-to-houston-1b0ae57e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 10:01:00 GMT"
+  },
+  {
+   "titulo": "Ukraine tells Putin to ‘stop complaining’ over oil refinery attacks as Russia promises retaliation",
+   "url": "https://www.cnbc.com/2026/11/25/ukraine-putin-russia-oil-refinery-attacks.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 09:18:37 GMT"
+  },
+  {
+   "titulo": "Crypto talent will return ‘when AI implodes,’ Arthur Hayes says",
+   "url": "https://www.cnbc.com/2026/11/25/talents-crypto-ai-investment.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 06:09:44 GMT"
   },
   {
    "titulo": "Houthi attack on Saudi Arabian sovereign wealth fund PIF's tower injures 11",
@@ -286,28 +358,10 @@
    "fecha": "Wed, 25 Nov 2026 02:36:43 GMT"
   },
   {
-   "titulo": "Trump open to pardoning Jensen Huang if needed: NY Post",
-   "url": "https://www.cnbc.com/2026/11/25/trump-huang-pardon-politics.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 02:09:45 GMT"
-  },
-  {
    "titulo": "I’m in my 70s and buying a new BMW X1. Should I put my only son on the title?",
    "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
    "fecha": "Wed, 25 Nov 2026 02:00:00 GMT"
-  },
-  {
-   "titulo": "SoftBank drops 14% as Wall Street AI sell-off ripples across Asian tech names",
-   "url": "https://www.cnbc.com/2026/11/25/tech-stocks-softbank-group-advantest-sk-hynix-samsung.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 01:57:29 GMT"
-  },
-  {
-   "titulo": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
-   "url": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 01:13:56 GMT"
   },
   {
    "titulo": "Dell’s stock rises as the AI boom helps sales more than double",
@@ -322,16 +376,16 @@
    "fecha": "Wed, 25 Nov 2026 00:05:00 GMT"
   },
   {
+   "titulo": "Jim Cramer sizes up six retail stocks after earnings — and names his two favorites",
+   "url": "https://www.cnbc.com/2026/11/24/jim-cramer-retail-stocks-earnings.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 00:04:08 GMT"
+  },
+  {
    "titulo": "Jensen Huang tells staff that Nvidia doesn't need a succession plan",
    "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-employee-meeting.html",
    "fuente": "CNBC",
    "fecha": "Tue, 24 Nov 2026 23:13:49 GMT"
-  },
-  {
-   "titulo": "Micron boosted CEO Sanjay Mehrotra’s security budget by 2,000%, new filing shows",
-   "url": "https://www.marketwatch.com/story/micron-boosted-ceo-sanjay-mehrotras-security-budget-by-2-000-new-filing-shows-d6202acc?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 24 Nov 2026 23:11:00 GMT"
   },
   {
    "titulo": "Trump Account contributions from friends and family pass $1 billion mark, Treasury says",
@@ -346,64 +400,10 @@
    "fecha": "Tue, 24 Nov 2026 22:07:45 GMT"
   },
   {
-   "titulo": "12 days of sardines and Croc charms: Are Advent calendars getting out of control?",
-   "url": "https://www.marketwatch.com/story/12-days-of-sardines-and-croc-charms-are-advent-calendars-getting-out-of-control-81f24548?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 24 Nov 2026 21:53:00 GMT"
-  },
-  {
-   "titulo": "Anthropic’s stock just broke below its IPO price for the first time",
-   "url": "https://www.marketwatch.com/story/anthropics-stock-just-broke-below-its-ipo-price-for-the-first-time-5dc82668?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 24 Nov 2026 21:46:00 GMT"
-  },
-  {
-   "titulo": "HPE just posted its strongest growth ever — but its stock is sinking",
-   "url": "https://www.marketwatch.com/story/hpe-just-posted-its-strongest-growth-ever-and-its-stock-is-tacking-on-more-big-gains-4421cebb?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 24 Nov 2026 21:45:00 GMT"
-  },
-  {
-   "titulo": "How much more are richest Americans spending on the holidays compared to everyone else?",
-   "url": "https://www.marketwatch.com/story/see-how-much-more-money-the-richest-americans-are-spending-on-the-holidays-compared-to-everyone-else-f0ff3f4b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 24 Nov 2026 21:31:00 GMT"
-  },
-  {
-   "titulo": "A 66-year-old nurse is facing down retirement with just $500 saved. Who’s to blame?",
-   "url": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 24 Nov 2026 21:30:00 GMT"
-  },
-  {
-   "titulo": "Micron’s stock falls as an analyst warns about a future supply glut",
-   "url": "https://www.marketwatch.com/story/microns-stock-falls-as-an-analyst-warns-about-a-future-supply-glut-f7fbeefb?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Tue, 24 Nov 2026 21:22:00 GMT"
-  },
-  {
    "titulo": "Trump wanted Jensen Huang back. Now, the president is all alone in Washington",
    "url": "https://www.cnbc.com/2026/11/24/trump-jensen-huang-nvidia.html",
    "fuente": "CNBC",
    "fecha": "Tue, 24 Nov 2026 21:13:39 GMT"
-  },
-  {
-   "titulo": "Drugmaker Insmed shares rally 14% after Sanofi agrees to buy it in pharma’s biggest deal in three years",
-   "url": "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 24 Nov 2026 21:07:19 GMT"
-  },
-  {
-   "titulo": "Jensen Huang to face DC grilling the same day Nvidia releases new products at GTC",
-   "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-congress-gtc.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 24 Nov 2026 17:51:45 GMT"
-  },
-  {
-   "titulo": "China has changed tactics but is still thwarting India's rise, a U.S. panel says",
-   "url": "https://www.cnbc.com/2026/11/24/us-china-thwarting-india-growth.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 24 Nov 2026 04:27:38 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-25T02:57:42Z",
+ "ts": "2026-11-25T12:33:25Z",
  "fallas": [
   "videos",
   "directos"
