@@ -500,35 +500,16 @@ body.ready .hero .row{transition-delay:.15s}body.ready .hero .btn{transition-del
 body.lock{overflow:hidden}
 
 /* ── pájaros (asistentes) ── */
-#birds{position:fixed;inset:0;z-index:52;pointer-events:none}
-.bird{position:absolute;left:0;top:0;width:96px;height:58px;pointer-events:auto;cursor:pointer;will-change:transform;filter:drop-shadow(0 6px 8px rgba(0,0,0,.18))}
+#birds{position:fixed;inset:0;z-index:52;pointer-events:none;overflow:hidden}
+.bird{position:absolute;left:0;top:0;width:96px;height:58px;pointer-events:none;will-change:transform;transition:color .6s;filter:drop-shadow(0 8px 10px rgba(0,0,0,.14))}
 .bird svg{width:100%;height:100%;overflow:visible}
-.bird .wl,.bird .wr{transform-box:fill-box;animation:flap .42s ease-in-out infinite alternate}
+.bird .wl,.bird .wr{transform-box:fill-box;animation:flap var(--fd,.5s) ease-in-out infinite alternate}
 .bird .wl{transform-origin:100% 80%}.bird .wr{transform-origin:0% 80%}
-.bird.glide .wl,.bird.glide .wr{animation-duration:1.2s}
+.bird.glide .wl,.bird.glide .wr{animation:soar 2.4s ease-in-out infinite alternate}
+@keyframes soar{from{transform:rotate(-6deg) scaleY(.9)}to{transform:rotate(-14deg) scaleY(.8)}}
 @keyframes flap{from{transform:rotate(18deg) scaleY(1)}to{transform:rotate(-34deg) scaleY(.55)}}
 .bird.s{width:58px;height:35px;opacity:.9}
 .bird.s2{width:44px;height:27px;opacity:.75}
-.bsay{position:absolute;left:0;top:0;z-index:53;pointer-events:auto;cursor:pointer;background:#fff;color:var(--ink);border-radius:12px 12px 12px 4px;padding:9px 12px;font:500 13.5px/1.3 var(--b);box-shadow:0 14px 30px -12px rgba(0,0,0,.35);max-width:220px;opacity:0;transform:translateY(6px) scale(.96);transition:opacity .3s,transform .3s;will-change:transform}
-.bsay.on{opacity:1}
-.bsay b{color:#C2410C}
-.nori{position:fixed;right:16px;bottom:84px;z-index:96;width:min(370px,calc(100vw - 32px));background:#fff;border-radius:18px;box-shadow:0 30px 70px -25px rgba(0,0,0,.45);display:none;flex-direction:column;overflow:hidden}
-.nori.on{display:flex;animation:pin .35s cubic-bezier(.2,.8,.2,1)}
-@keyframes pin{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
-.nori .hd{display:flex;align-items:center;gap:12px;padding:16px 16px 12px;border-bottom:1px solid var(--line)}
-.nori .hd .av{width:42px;height:42px;border-radius:50%;background:var(--bg);display:grid;place-items:center}
-.nori .hd .av svg{width:34px;height:21px;color:#1A1A1A}
-.nori .hd b{display:block;font:600 16px var(--h)}
-.nori .hd span{font:400 12.5px var(--b);color:var(--mute)}
-.nori .hd .x{margin-left:auto;width:34px;height:34px;border-radius:9px;background:var(--bg);display:grid;place-items:center}
-.nori .bd{padding:14px 16px;display:grid;gap:10px;max-height:min(52vh,420px);overflow-y:auto}
-.nm{font:400 15px/1.45 var(--b);background:var(--bg);border-radius:4px 14px 14px 14px;padding:10px 12px;justify-self:start;max-width:92%}
-.nm.me{background:var(--dark);color:#fff;border-radius:14px 4px 14px 14px;justify-self:end}
-.nm a{text-decoration:underline}
-.qr{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 16px}
-.qr button{border:1px solid var(--line);border-radius:999px;padding:8px 12px;font:500 13.5px var(--b);background:#fff}
-.qr button:hover{background:var(--peach-lt);border-color:var(--peach-lt)}
-
 /* ── oferta ── */
 .offer{position:fixed;inset:0;z-index:95;background:rgba(26,26,26,.62);backdrop-filter:blur(5px);display:none;align-items:center;justify-content:center;padding:16px}
 .offer.on{display:flex}
@@ -566,8 +547,6 @@ body.lock{overflow:hidden}
   .obox .big{font-size:84px}.obox .big small{font-size:32px}
   .obox .tx{padding:22px 18px 18px}
   .bird{width:66px;height:40px}.bird.s{width:42px;height:26px}.bird.s2{width:32px;height:20px}
-  .nori{bottom:76px;right:12px}
-  .bsay{max-width:170px;font-size:12.5px}
 }
 @media(prefers-reduced-motion:reduce){#intro{display:none}.hero h1,.hero .row,.hero .btn,.hcap{opacity:1;transform:none}.bird .wl,.bird .wr{animation:none}}
 </style>
@@ -807,7 +786,6 @@ body.lock{overflow:hidden}
     <p class="fine">Válido para inscripciones a programas completos de quien agenda su consulta, hasta el 31 de diciembre de 2026. Al enviar aceptas que te contactemos y el <a href="privacidad.html" style="text-decoration:underline">aviso de privacidad</a>.</p>
   </div>
 </div></div>
-<div class="nori" id="nori" role="dialog" aria-label="Asistente"><div class="hd"><span class="av"><svg viewBox="0 0 100 60"><use href="#bird"/></svg></span><div><b>Nori</b><span>Asistente de NORTHPOINT ACADEMY</span></div><button class="x" id="nX" aria-label="Cerrar"><svg class="i"><use href="#i-x"/></svg></button></div><div class="bd" id="nBody"></div><div class="qr" id="nQR"></div></div>
 <div class="modal" id="quiz" aria-hidden="true"><div class="mbox" role="dialog" aria-modal="true" aria-labelledby="qT"><button class="x" id="qX" aria-label="Cerrar"><svg class="i"><use href="#i-x"/></svg></button><div id="qBody"></div></div></div>
 
 <script>
@@ -1022,57 +1000,46 @@ $("#oform").onsubmit = async e => {
   else { b.disabled = false; b.textContent = "No se pudo, reintentar"; }
 };
 
-/* ── Nori y los pájaros ── */
+/* ── pájaros: vuelan con el scroll, solo decoración ── */
 const birdSVG = `<svg viewBox="0 0 100 60"><g class="wl"><path d="M50 31C44 18 33 7 15 1c10 10 19 21 26 32z" fill="currentColor" opacity=".8"/></g><use href="#bird"/><g class="wr"><path d="M55 31C59 16 68 5 86-1c-8 10-16 22-22 33z" fill="currentColor"/></g></svg>`;
-const BIRDS = [ { cls:"", ph:0, lag:0 }, { cls:"s", ph:1.7, lag:.08, dx:-70, dy:30 }, { cls:"s2", ph:3.1, lag:.14, dx:-120, dy:-24 } ];
+// formación en V detrás del líder: [atrás, abajo] en px, desfase de bamboleo
+const BIRDS = [ { cls:"", off:[0,0], ph:0 }, { cls:"s", off:[86,34], ph:1.9 }, { cls:"s2", off:[150,-18], ph:3.4 } ];
 const layer = $("#birds");
-BIRDS.forEach((b,i) => { const el = document.createElement("div"); el.className = "bird " + b.cls; el.innerHTML = birdSVG; el.style.color = "#1A1A1A"; el.title = "Nori, tu asistente"; el.onclick = abrirNori; layer.appendChild(el); b.el = el; b.x = innerWidth * .7; b.y = innerHeight * .3; b.fx = 1; });
-const say = document.createElement("div"); say.className = "bsay"; say.onclick = abrirNori; layer.appendChild(say);
-const MSG = [ [".hero","Hola, soy Nori. <b>¿Te ayudo a elegir?</b>"], [".objetivo","El Nivel 1 es <b>gratis</b>. Pruébalo hoy."], ["#programas","¿No sabes cuál? Haz el <b>quiz de 1 minuto</b>."], [".alum","Ellos te enseñan. Frases reales de sus clases."], ["#camino","Así vas de cero a tu <b>proyecto final</b>."], [".gratis","7 clases gratis, <b>sin tarjeta</b>."], [".cmp","Compara. Y si agendas, <b>15% de descuento</b>."], ["#inscripcion","Deja tus datos: <b>15%</b> hasta el 31 de diciembre."], ["#faq","¿Otra duda? <b>Pregúntame</b>."] ];
-let lastMsg = "", sayT, tPrev = performance.now(), sy = scrollY, vScroll = 0;
-function secActual(){ let cur = MSG[0]; for(const m of MSG){ const el = $(m[0]); if(el && el.getBoundingClientRect().top < innerHeight * .55) cur = m; } return cur; }
-function darkUnder(x, y){ const el = document.elementsFromPoint(Math.min(innerWidth-1,Math.max(0,x)), Math.min(innerHeight-1,Math.max(0,y))).find(e => !e.closest("#birds")); const sec = el && el.closest(".camino,.cmp,.hero,.gbox,.st,#intro"); return !!sec; }
-function loop(t){
-  const dt = Math.min(50, t - tPrev); tPrev = t;
-  vScroll += ((scrollY - sy) - vScroll) * .2; sy = scrollY;
+BIRDS.forEach(b => { const el = document.createElement("div"); el.className = "bird " + b.cls; el.innerHTML = birdSVG; layer.appendChild(el); b.el = el; b.x = innerWidth * .8; b.y = innerHeight * .3; b.vx = 0; b.vy = 0; b.dir = -1; b.rot = 0; b.col = ""; });
+document.addEventListener("keydown", e => { if(e.key==="Escape") cerrarOferta(); });
+let tPrev = performance.now(), syPrev = scrollY, vScroll = 0, colorT = 0;
+function sobreOscuro(x, y){ const el = document.elementsFromPoint(Math.min(innerWidth-1,Math.max(0,x)), Math.min(innerHeight-1,Math.max(0,y))).find(e => !e.closest("#birds")); return !!(el && el.closest(".camino,.cmp,.hero,.gbox,.st,#intro,.offer.on")); }
+function vuelo(t){
+  const dt = Math.min(48, t - tPrev) / 16.67; tPrev = t;
+  vScroll += ((scrollY - syPrev) - vScroll) * .12; syPrev = scrollY;
   const W = innerWidth, H = innerHeight, mob = W < 720;
+  // trayectoria del líder: curva de Lissajous que avanza con el scroll y respira despacio con el tiempo
+  const a = scrollY * (mob ? .0024 : .0016) + t * .00009;
+  const tx = W * .5 + W * (mob ? .32 : .4) * Math.sin(a);
+  const ty = H * (mob ? .2 : .3) + H * (mob ? .1 : .17) * Math.sin(a * 2 + .8) + Math.sin(t * .0011) * 8;
   const lead = BIRDS[0];
-  const tx = W * (mob ? .5 : .5) + W * (mob ? .34 : .4) * Math.sin(scrollY * .0021 + t * .00018);
-  const ty = H * (mob ? .2 : .28) + H * (mob ? .08 : .16) * Math.sin(scrollY * .0033 + t * .0005);
-  BIRDS.forEach((b,i) => {
-    const gx = i ? lead.x + (b.dx||0) * lead.fx * -1 + Math.sin(t*.002 + b.ph) * 12 : tx, gy = i ? lead.y + (b.dy||0) + Math.cos(t*.0022 + b.ph) * 10 : ty;
-    const k = i ? .06 : .045, nx = b.x + (gx - b.x) * k, ny = b.y + (gy - b.y) * k, vx = nx - b.x;
-    if(Math.abs(vx) > .25) b.fx = vx > 0 ? 1 : -1;
-    b.x = nx; b.y = ny;
-    const rot = Math.max(-18, Math.min(18, (gy - ny) * .25));
-    b.el.style.transform = `translate(${b.x - b.el.offsetWidth/2}px,${b.y - b.el.offsetHeight/2}px) scaleX(${b.fx}) rotate(${rot * b.fx}deg)`;
-    b.el.classList.toggle("glide", Math.abs(vScroll) < .4 && Math.abs(vx) < .6);
-    b.el.style.color = darkUnder(b.x, b.y) ? "#FFFFFF" : "#1A1A1A";
+  BIRDS.forEach((b, i) => {
+    let gx = tx, gy = ty;
+    if(i){ gx = lead.x - lead.dir * b.off[0] + Math.sin(t * .0016 + b.ph) * 10; gy = lead.y + b.off[1] + Math.cos(t * .0019 + b.ph) * 9; }
+    // resorte con amortiguación: el giro y la frenada se sienten suaves
+    const k = i ? .010 : .008, damp = .86;
+    b.vx = (b.vx + (gx - b.x) * k * dt) * Math.pow(damp, dt);
+    b.vy = (b.vy + (gy - b.y) * k * dt) * Math.pow(damp, dt);
+    b.x += b.vx * dt; b.y += b.vy * dt;
+    if(Math.abs(b.vx) > .35) b.dir = b.vx > 0 ? 1 : -1;
+    const sp = Math.hypot(b.vx, b.vy);
+    const target = Math.max(-26, Math.min(26, Math.atan2(b.vy, Math.abs(b.vx) + .001) * 57.3));
+    b.rot += (target - b.rot) * .08;
+    b.el.style.transform = `translate(${b.x - b.el.offsetWidth / 2}px,${b.y - b.el.offsetHeight / 2}px) scaleX(${b.dir}) rotate(${b.rot}deg)`;
+    // aleteo: rápido cuando hay scroll o velocidad, planeo cuando todo está quieto
+    const energia = Math.min(1, Math.abs(vScroll) / 14 + sp / 9);
+    b.el.style.setProperty("--fd", (.62 - energia * .34).toFixed(2) + "s");
+    b.el.classList.toggle("glide", energia < .12);
   });
-  const m = secActual();
-  if(m[1] !== lastMsg && !$("#nori").classList.contains("on")){ lastMsg = m[1]; say.innerHTML = m[1]; say.classList.add("on"); clearTimeout(sayT); sayT = setTimeout(() => say.classList.remove("on"), 4200); }
-  const bx = Math.min(W - 230, Math.max(8, lead.x + 40)), by = Math.max(64, lead.y - 74);
-  say.style.transform = `translate(${bx}px,${by}px)` + (say.classList.contains("on") ? "" : " translateY(6px) scale(.96)");
-  requestAnimationFrame(loop);
+  if(t - colorT > 160){ colorT = t; BIRDS.forEach(b => { const c = sobreOscuro(b.x, b.y) ? "#FFFFFF" : "#1A1A1A"; if(c !== b.col){ b.col = c; b.el.style.color = c; } }); }
+  requestAnimationFrame(vuelo);
 }
-if(!matchMedia("(prefers-reduced-motion: reduce)").matches) requestAnimationFrame(loop); else layer.style.display = "none";
-
-const NB = $("#nBody");
-function nmsg(t, me){ NB.insertAdjacentHTML("beforeend", `<div class="nm ${me?"me":""}">${t}</div>`); NB.scrollTop = NB.scrollHeight; }
-const NQ = [
-  ["¿Qué programa me conviene?", () => { nmsg("Te hago 4 preguntas y te recomiendo uno. Tarda un minuto."); setTimeout(() => { cerrarNori(); openQuiz(); }, 700); }],
-  ["¿Cuánto cuesta?", () => nmsg(`El Nivel 1 del campus es <b>gratis</b>. Los programas completos: ${PROGS.map(p => `${p.n} <b>${p.pr}</b>`).join(", ")}. Si agendas tu consulta antes del 31 de diciembre, te apartamos <b>15%</b>.`)],
-  ["Quiero mi 15%", () => { nmsg("Va. Déjame tu nombre y WhatsApp y te lo apartamos."); setTimeout(() => { cerrarNori(); abrirOferta(false); }, 600); }],
-  ["¿Es para principiantes?", () => nmsg(`Sí. Empiezas desde cero: primero cómo funciona el dinero, luego IA y mercados. Pruébalo gratis en el <a href="academy/campus/">campus</a>.`)],
-  ["¿Me van a hacer rico?", () => nmsg("No, y desconfía de quien te lo prometa. Enseñamos riesgo antes que ganancia, todo lo de mercados se practica en simulador y no damos asesoría de inversión.")],
-  ["Hablar con una persona", () => { nmsg("Te llevo al formulario. André o Goyo te escriben para agendar."); setTimeout(() => { cerrarNori(); $("#inscripcion").scrollIntoView({ behavior:"smooth" }); }, 600); }]
-];
-$("#nQR").innerHTML = NQ.map((q,i) => `<button type="button" data-q="${i}">${q[0]}</button>`).join("");
-$$("#nQR button").forEach(b => b.onclick = () => { const q = NQ[+b.dataset.q]; nmsg(q[0], true); setTimeout(q[1], 350); });
-function abrirNori(){ const n = $("#nori"); if(!NB.children.length) nmsg(`Hola, soy <b>Nori</b>. Vuelo por la página para ayudarte a elegir. ¿Qué te gustaría saber?`); n.classList.add("on"); say.classList.remove("on"); }
-function cerrarNori(){ $("#nori").classList.remove("on"); }
-$("#nX").onclick = cerrarNori;
-addEventListener("keydown", e => { if(e.key==="Escape"){ cerrarOferta(); cerrarNori(); } });
+if(!matchMedia("(prefers-reduced-motion: reduce)").matches) requestAnimationFrame(vuelo); else layer.style.display = "none";
 
 /* aparición al hacer scroll */
 const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin:"0px 0px -8% 0px" });
