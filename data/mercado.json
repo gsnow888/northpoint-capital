@@ -55,355 +55,355 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 25520.0,
-   "cambio": 393.5,
-   "pct": 1.57
+   "precio": 26038.0,
+   "cambio": 911.5,
+   "pct": 3.63
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7079.25,
-   "cambio": 144.25,
-   "pct": 2.08
+   "precio": 7190.25,
+   "cambio": 255.25,
+   "pct": 3.68
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3549.3,
-   "cambio": 33.9,
-   "pct": 0.96
+   "precio": 3608.0,
+   "cambio": 92.6,
+   "pct": 2.63
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 82.51,
-   "cambio": -1.47,
-   "pct": -1.75
+   "precio": 84.09,
+   "cambio": 0.11,
+   "pct": 0.13
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2653.0,
-   "cambio": 65.6,
-   "pct": 2.54
+   "precio": 2703.8,
+   "cambio": 116.4,
+   "pct": 4.5
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 49421.0,
-   "cambio": 1205.0,
-   "pct": 2.5
+   "precio": 50222.0,
+   "cambio": 2006.0,
+   "pct": 4.16
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 58525.0,
-   "cambio": 220.0,
-   "pct": 0.38
+   "precio": 60240.0,
+   "cambio": 1935.0,
+   "pct": 3.32
   }
  ],
  "acciones": [
   {
    "tick": "VT",
    "nombre": "Vanguard Total World",
-   "precio": 147.56,
-   "pct": -2.05,
+   "precio": 147.54,
+   "pct": -1.59,
    "moneda": "USD"
   },
   {
    "tick": "VOO",
    "nombre": "Vanguard S&P 500",
-   "precio": 660.71,
+   "precio": 658.87,
    "pct": -1.85,
    "moneda": "USD"
   },
   {
    "tick": "VTI",
    "nombre": "Vanguard Total US",
-   "precio": 353.84,
-   "pct": -1.76,
+   "precio": 353.2,
+   "pct": -1.75,
    "moneda": "USD"
   },
   {
    "tick": "VXUS",
    "nombre": "Vanguard Internacional",
-   "precio": 77.94,
-   "pct": -2.71,
+   "precio": 78.02,
+   "pct": -1.54,
    "moneda": "USD"
   },
   {
    "tick": "QQQ",
    "nombre": "Invesco Nasdaq 100",
-   "precio": 638.1,
-   "pct": -2.87,
+   "precio": 633.93,
+   "pct": -3.88,
    "moneda": "USD"
   },
   {
    "tick": "SPY",
    "nombre": "SPDR S&P 500",
-   "precio": 718.78,
-   "pct": -1.86,
+   "precio": 716.7,
+   "pct": -1.85,
    "moneda": "USD"
   },
   {
    "tick": "BND",
    "nombre": "Vanguard Bonos US",
-   "precio": 71.36,
-   "pct": 0.92,
+   "precio": 71.6,
+   "pct": 1.03,
    "moneda": "USD"
   },
   {
    "tick": "SCHD",
    "nombre": "Schwab Dividendos",
-   "precio": 34.89,
-   "pct": -1.19,
+   "precio": 35.29,
+   "pct": 1.7,
    "moneda": "USD"
   },
   {
    "tick": "VNQ",
    "nombre": "Vanguard Inmobiliario",
-   "precio": 94.78,
-   "pct": -0.12,
+   "precio": 95.66,
+   "pct": 0.5,
    "moneda": "USD"
   },
   {
    "tick": "IEMG",
    "nombre": "iShares Emergentes",
-   "precio": 69.07,
-   "pct": -2.83,
+   "precio": 68.78,
+   "pct": -2.54,
    "moneda": "USD"
   },
   {
    "tick": "GLD",
    "nombre": "SPDR Oro",
-   "precio": 325.45,
-   "pct": -7.67,
+   "precio": 327.45,
+   "pct": -4.03,
    "moneda": "USD"
   },
   {
    "tick": "IBIT",
    "nombre": "iShares Bitcoin",
-   "precio": 33.76,
-   "pct": -6.59,
+   "precio": 34.07,
+   "pct": -3.65,
    "moneda": "USD"
   },
   {
    "tick": "AAPL",
    "nombre": "Apple",
-   "precio": 354.07,
-   "pct": 0.61,
+   "precio": 355.58,
+   "pct": 0.89,
    "moneda": "USD"
   },
   {
    "tick": "MSFT",
    "nombre": "Microsoft",
-   "precio": 496.13,
-   "pct": -2.0,
+   "precio": 489.93,
+   "pct": -3.61,
    "moneda": "USD"
   },
   {
    "tick": "NVDA",
    "nombre": "Nvidia",
-   "precio": 155.38,
-   "pct": -0.05,
+   "precio": 149.3,
+   "pct": -1.1,
    "moneda": "USD"
   },
   {
    "tick": "GOOGL",
    "nombre": "Alphabet",
-   "precio": 279.05,
-   "pct": -0.41,
+   "precio": 273.1,
+   "pct": -3.31,
    "moneda": "USD"
   },
   {
    "tick": "AMZN",
    "nombre": "Amazon",
-   "precio": 252.29,
-   "pct": -2.17,
+   "precio": 244.43,
+   "pct": -8.71,
    "moneda": "USD"
   },
   {
    "tick": "META",
    "nombre": "Meta",
-   "precio": 589.82,
-   "pct": -4.69,
+   "precio": 609.89,
+   "pct": -1.05,
    "moneda": "USD"
   },
   {
    "tick": "TSLA",
    "nombre": "Tesla",
-   "precio": 384.68,
-   "pct": 1.2,
+   "precio": 380.14,
+   "pct": -0.93,
    "moneda": "USD"
   },
   {
    "tick": "BRK-B",
    "nombre": "Berkshire",
-   "precio": 577.21,
-   "pct": -1.63,
+   "precio": 579.32,
+   "pct": 0.82,
    "moneda": "USD"
   },
   {
    "tick": "COST",
    "nombre": "Costco",
-   "precio": 1091.71,
-   "pct": -1.65,
+   "precio": 1086.81,
+   "pct": -0.89,
    "moneda": "USD"
   },
   {
    "tick": "JPM",
    "nombre": "JPMorgan",
-   "precio": 317.1,
-   "pct": -3.9,
+   "precio": 316.74,
+   "pct": -2.27,
    "moneda": "USD"
   },
   {
    "tick": "V",
    "nombre": "Visa",
-   "precio": 416.78,
-   "pct": 0.0,
+   "precio": 424.39,
+   "pct": 2.21,
    "moneda": "USD"
   },
   {
    "tick": "UNH",
    "nombre": "UnitedHealth",
-   "precio": 341.88,
-   "pct": -12.27,
+   "precio": 346.19,
+   "pct": -1.06,
    "moneda": "USD"
   }
  ],
  "noticias": [
   {
-   "titulo": "Here’s how to find value in cybersecurity stocks after a strong year",
-   "url": "https://www.marketwatch.com/story/heres-how-to-find-value-in-cybersecurity-stocks-after-a-strong-year-7fbe1f80?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 12:30:00 GMT"
+   "titulo": "Macy's postpones Thanksgiving Day Parade due to severe weather",
+   "url": "https://www.cnbc.com/2026/11/25/macys-thanksgiving-day-parade-postponed.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 21:55:51 GMT"
   },
   {
-   "titulo": "This strategist’s bond-trading model is outperforming by a wide margin. The Fed slowing the economy is a good thing, he says.",
-   "url": "https://www.marketwatch.com/story/this-strategists-bond-trading-model-is-outperforming-by-a-wide-margin-the-fed-slowing-the-economy-is-a-good-thing-he-argues-f39dfc5f?mod=mw_rss_topstories",
+   "titulo": "Nvidia’s stock has given back more than half of Monday’s rally as dip buyers cash in",
+   "url": "https://www.marketwatch.com/story/nvidias-stock-is-giving-back-more-than-half-of-mondays-rally-as-dip-buyers-cash-in-ee4fa52c?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 12:29:00 GMT"
+   "fecha": "Wed, 25 Nov 2026 21:50:00 GMT"
+  },
+  {
+   "titulo": "Elon Musk and SpaceX to donate roughly $17.8 billion to ‘Trump accounts’",
+   "url": "https://www.marketwatch.com/story/elon-musk-and-spacex-to-donate-roughly-17-8-billion-to-trump-accounts-071c12e1?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 21:50:00 GMT"
+  },
+  {
+   "titulo": "HP’s stock is a standout gainer in the tech selloff, as an earnings beat still matters",
+   "url": "https://www.marketwatch.com/story/hps-stock-is-a-standout-gainer-in-the-tech-rout-as-an-earnings-beat-still-matters-8f6c76ad?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 21:36:00 GMT"
+  },
+  {
+   "titulo": "How to spot ‘bogus boutiques’ and other Black Friday shopping scams",
+   "url": "https://www.marketwatch.com/story/how-to-spot-bogus-boutiques-and-other-black-friday-shopping-scams-86cc182d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 21:29:00 GMT"
+  },
+  {
+   "titulo": "Bullish hopes spring as traders bet against a higher VIX: Options Action Live",
+   "url": "https://www.cnbc.com/2026/11/25/bullish-hopes-spring-as-traders-bet-against-a-higher-vix-options-action-live.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 21:26:47 GMT"
+  },
+  {
+   "titulo": "Vance says he was assured Jensen Huang was not under DOJ investigation",
+   "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 21:00:08 GMT"
+  },
+  {
+   "titulo": "We're buying more of a stock down big from its July highs",
+   "url": "https://www.cnbc.com/investingclub/2026/11/25/were-buying-more-of-a-stock-down-big-from-its-july-highs.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 19:55:18 GMT"
+  },
+  {
+   "titulo": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
+   "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 19:52:47 GMT"
+  },
+  {
+   "titulo": "Nvidia is heading for its first ‘death cross’ since March 2025 as stock continues to struggle",
+   "url": "https://www.marketwatch.com/story/nvidia-is-heading-for-its-first-death-cross-since-march-2025-as-stock-continues-to-struggle-a611b99c?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 19:43:00 GMT"
+  },
+  {
+   "titulo": "The Fed says inflation hasn’t gotten any better ahead of its key December vote to raise rates",
+   "url": "https://www.marketwatch.com/story/the-fed-says-inflation-hasnt-gotten-any-better-ahead-of-its-key-december-vote-to-raise-rates-65024d33?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 19:39:00 GMT"
+  },
+  {
+   "titulo": "New-home sales just hit a 2026 high as builders dangle low mortgages and Black Friday deals",
+   "url": "https://www.marketwatch.com/story/new-home-sales-just-hit-a-2026-high-as-builders-dangle-low-mortgages-and-black-friday-deals-291a3b62?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 19:20:00 GMT"
+  },
+  {
+   "titulo": "Why macro investor Raoul Pal says the dollar is the signal to watch for stocks and crypto",
+   "url": "https://www.marketwatch.com/story/why-macro-investor-raoul-pal-says-the-dollar-is-the-signal-to-watch-for-stocks-and-crypto-d36f3c49?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 19:16:00 GMT"
+  },
+  {
+   "titulo": "Saudi national in OpenAI bugging case is out on bond after DOJ tries to block release",
+   "url": "https://www.cnbc.com/2026/11/25/openai-bugging-aflozan-bond-release-saudi.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 19:11:53 GMT"
+  },
+  {
+   "titulo": "Grocery stores have ‘staggering deals’ for Thanksgiving — but don’t get used to these lower prices",
+   "url": "https://www.marketwatch.com/story/grocery-stores-have-staggering-deals-for-thanksgiving-but-dont-get-used-to-these-lower-prices-just-yet-7adfc7f5?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 18:52:00 GMT"
+  },
+  {
+   "titulo": "We are living in perilous times if Nvidia’s Jensen Huang dictates your 401(k) balance",
+   "url": "https://www.marketwatch.com/story/we-are-living-in-perilous-times-if-nvidias-jensen-huang-dictates-your-401-k-balance-e0942d1e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 18:00:00 GMT"
+  },
+  {
+   "titulo": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
+   "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 16:17:13 GMT"
+  },
+  {
+   "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
+   "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 16:02:52 GMT"
+  },
+  {
+   "titulo": "Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank",
+   "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 14:18:45 GMT"
+  },
+  {
+   "titulo": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
+   "url": "https://www.cnbc.com/2026/11/25/secondhand-holiday-shopping-grows-as-shoppers-seek-value.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 14:17:01 GMT"
+  },
+  {
+   "titulo": "Trump’s meddling in Huang scandal reignites voter angst over tech’s outsized political power",
+   "url": "https://www.cnbc.com/2026/11/25/huang-reinstatement-reignites-voter-angst-over-techs-outsized-power.html",
+   "fuente": "CNBC",
+   "fecha": "Wed, 25 Nov 2026 13:20:34 GMT"
   },
   {
    "titulo": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
    "url": "https://www.cnbc.com/2026/11/25/nvidia-kevin-warsh-fed-market-signals.html",
    "fuente": "CNBC",
    "fecha": "Wed, 25 Nov 2026 12:26:41 GMT"
-  },
-  {
-   "titulo": "Tech’s slump is deepening. Are Americans heading into Black Friday with less buying power?",
-   "url": "https://www.marketwatch.com/story/techs-slump-is-deepening-are-americans-heading-into-black-friday-with-less-buying-power-7f9da81c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 12:20:00 GMT"
-  },
-  {
-   "titulo": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
-   "url": "https://www.cnbc.com/2026/11/25/secondhand-holiday-shopping-grows-as-shoppers-seek-value.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 12:00:01 GMT"
-  },
-  {
-   "titulo": "The S&P 500 is headed to 8,200 — and downturns like this one are actually part of the reason, says JPMorgan",
-   "url": "https://www.marketwatch.com/story/the-s-p-500-is-headed-to-8-200-and-downturns-like-this-one-are-actually-part-of-the-reason-why-says-jpmorgan-b6acae4b?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 11:27:00 GMT"
-  },
-  {
-   "titulo": "Budget carrier Norse Atlantic falls 77% after warning its finances are ‘critical’ amid soaring fuel costs",
-   "url": "https://www.cnbc.com/2026/11/25/norse-atlantic-financial-warning-fuel-costs.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 11:10:28 GMT"
-  },
-  {
-   "titulo": "Trump’s meddling in Huang scandal reignites voter angst over tech’s outsized political power",
-   "url": "https://www.cnbc.com/2026/11/25/huang-reinstatement-reignites-voter-angst-over-techs-outsized-power.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 11:00:01 GMT"
-  },
-  {
-   "titulo": "Kylie Jenner again relists concrete mansion in L.A. for $38 million",
-   "url": "https://www.marketwatch.com/story/kylie-jenner-again-relists-concrete-mansion-in-l-a-for-38-million-2e5143e5?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 10:05:00 GMT"
-  },
-  {
-   "titulo": "I hate that Jensen Huang is back at Nvidia, but I love what it’s done for my 401(k). Am I a hypocrite?",
-   "url": "https://www.marketwatch.com/story/i-hate-that-jensen-huang-is-back-at-nvidia-but-i-love-what-its-done-for-my-401-k-am-i-a-hypocrite-f63c0303?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 10:05:00 GMT"
-  },
-  {
-   "titulo": "NBA star Kevin Durant lists Arizona mansion for $13.9 million, a year after trade to Houston",
-   "url": "https://www.marketwatch.com/story/nba-star-kevin-durant-lists-arizona-mansion-for-13-9-million-a-year-after-trade-to-houston-1b0ae57e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 10:01:00 GMT"
-  },
-  {
-   "titulo": "Ukraine tells Putin to ‘stop complaining’ over oil refinery attacks as Russia promises retaliation",
-   "url": "https://www.cnbc.com/2026/11/25/ukraine-putin-russia-oil-refinery-attacks.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 09:18:37 GMT"
-  },
-  {
-   "titulo": "Crypto talent will return ‘when AI implodes,’ Arthur Hayes says",
-   "url": "https://www.cnbc.com/2026/11/25/talents-crypto-ai-investment.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 06:09:44 GMT"
-  },
-  {
-   "titulo": "Houthi attack on Saudi Arabian sovereign wealth fund PIF's tower injures 11",
-   "url": "https://www.cnbc.com/2026/11/25/us-iran-war-trump-hormuz-houthi-saudi-pif-tower.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 02:36:43 GMT"
-  },
-  {
-   "titulo": "I’m in my 70s and buying a new BMW X1. Should I put my only son on the title?",
-   "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 02:00:00 GMT"
-  },
-  {
-   "titulo": "Dell’s stock rises as the AI boom helps sales more than double",
-   "url": "https://www.marketwatch.com/story/dells-stock-rises-as-the-ai-boom-helps-sales-more-than-double-cfb8cf65?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 01:11:00 GMT"
-  },
-  {
-   "titulo": "My husband secretly sends his ex-wife $1,500 a month after she lost her job. We have $2.4 million saved. Has he lied by omission?",
-   "url": "https://www.marketwatch.com/story/my-husband-secretly-sends-his-ex-wife-1-500-a-month-after-she-lost-her-job-we-have-2-4-million-saved-has-he-lied-by-omission-ede1972a?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 00:05:00 GMT"
-  },
-  {
-   "titulo": "Jim Cramer sizes up six retail stocks after earnings — and names his two favorites",
-   "url": "https://www.cnbc.com/2026/11/24/jim-cramer-retail-stocks-earnings.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 00:04:08 GMT"
-  },
-  {
-   "titulo": "Jensen Huang tells staff that Nvidia doesn't need a succession plan",
-   "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-employee-meeting.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 24 Nov 2026 23:13:49 GMT"
-  },
-  {
-   "titulo": "Trump Account contributions from friends and family pass $1 billion mark, Treasury says",
-   "url": "https://www.cnbc.com/2026/11/24/trump-accounts-family-contributions-billion.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 24 Nov 2026 22:18:47 GMT"
-  },
-  {
-   "titulo": "Dell earnings beat on AI strength, company authorizes $25 billion buyback",
-   "url": "https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 24 Nov 2026 22:07:45 GMT"
-  },
-  {
-   "titulo": "Trump wanted Jensen Huang back. Now, the president is all alone in Washington",
-   "url": "https://www.cnbc.com/2026/11/24/trump-jensen-huang-nvidia.html",
-   "fuente": "CNBC",
-   "fecha": "Tue, 24 Nov 2026 21:13:39 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-25T12:33:25Z",
+ "ts": "2026-11-25T21:58:23Z",
  "fallas": [
   "videos",
   "directos"
