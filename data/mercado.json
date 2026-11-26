@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 26305.25,
-   "cambio": 1178.75,
-   "pct": 4.69
+   "precio": 26221.25,
+   "cambio": 1094.75,
+   "pct": 4.36
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7250.0,
-   "cambio": 315.0,
-   "pct": 4.54
+   "precio": 7234.5,
+   "cambio": 299.5,
+   "pct": 4.32
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3598.4,
-   "cambio": 83.0,
-   "pct": 2.36
+   "precio": 3593.4,
+   "cambio": 78.0,
+   "pct": 2.22
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 84.52,
-   "cambio": 0.54,
-   "pct": 0.64
+   "precio": 84.91,
+   "cambio": 0.93,
+   "pct": 1.11
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2721.0,
-   "cambio": 133.6,
+   "precio": 2720.8,
+   "cambio": 133.4,
    "pct": 5.16
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 50484.0,
-   "cambio": 2268.0,
-   "pct": 4.7
+   "precio": 50443.0,
+   "cambio": 2227.0,
+   "pct": 4.62
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 60985.0,
-   "cambio": 2680.0,
-   "pct": 4.6
+   "precio": 60790.0,
+   "cambio": 2485.0,
+   "pct": 4.26
   }
  ],
  "acciones": [
@@ -274,10 +274,100 @@
  ],
  "noticias": [
   {
-   "titulo": "Futures point to Black Friday gains for Wall Street as global markets welcome U.S. resilience.",
-   "url": "https://www.marketwatch.com/story/futures-point-to-black-friday-gains-for-wall-street-as-global-markets-welcome-u-s-resilience-ad6bcef2?mod=mw_rss_topstories",
+   "titulo": "‘I’ve been a stay-at-home mom’: I’m 50 and have a chronic illness. My husband lost his job. Should he raid his 401(k)?",
+   "url": "https://www.marketwatch.com/story/ive-been-a-stay-at-home-mom-im-50-and-have-a-chronic-illness-my-husband-lost-his-job-should-he-raid-his-401-k-63e59123?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Thu, 26 Nov 2026 13:41:00 GMT"
+   "fecha": "Thu, 26 Nov 2026 22:00:00 GMT"
+  },
+  {
+   "titulo": "I’m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?",
+   "url": "https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 26 Nov 2026 21:45:00 GMT"
+  },
+  {
+   "titulo": "I hate that Jensen Huang is back at Nvidia, but I love what it’s done for my 401(k). Am I a hypocrite?",
+   "url": "https://www.marketwatch.com/story/i-hate-that-jensen-huang-is-back-at-nvidia-but-i-love-what-its-done-for-my-401-k-am-i-a-hypocrite-f63c0303?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 26 Nov 2026 21:30:00 GMT"
+  },
+  {
+   "titulo": "Trump demands probe into ‘record setting error’ after third-quarter GDP data gets massive revision higher",
+   "url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 26 Nov 2026 21:13:17 GMT"
+  },
+  {
+   "titulo": "A 66-year-old nurse is facing down retirement with just $500 saved. Who’s to blame?",
+   "url": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 26 Nov 2026 19:00:00 GMT"
+  },
+  {
+   "titulo": "I’ve been married for 58 years. It’s ‘our’ money, not ‘his’ and ‘hers.’ Why do so many couples keep their finances separate?",
+   "url": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 26 Nov 2026 18:30:00 GMT"
+  },
+  {
+   "titulo": "Microdrama apps chase profits as Hollywood moves into short-form, vertical video",
+   "url": "https://www.cnbc.com/2026/11/26/micro-drama-apps-hollywood-vertical-video.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 26 Nov 2026 18:27:43 GMT"
+  },
+  {
+   "titulo": "Semiconductor chips are the new oil. Here's why",
+   "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 26 Nov 2026 17:52:15 GMT"
+  },
+  {
+   "titulo": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
+   "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 26 Nov 2026 16:12:47 GMT"
+  },
+  {
+   "titulo": "Buyer beware? Nvidia's volatile swings expose risks of single-stock ETFs",
+   "url": "https://www.cnbc.com/2026/11/26/nvidias-volatile-swings-expose-risks-of-single-stock-etfs.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 26 Nov 2026 16:00:01 GMT"
+  },
+  {
+   "titulo": "I’m in my 70s and buying a new BMW X1. Should I put my only son on the title?",
+   "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 26 Nov 2026 16:00:00 GMT"
+  },
+  {
+   "titulo": "We are living in perilous times if Nvidia CEO Jensen Huang dictates your 401(k) balance",
+   "url": "https://www.marketwatch.com/story/we-are-living-in-perilous-times-if-nvidias-jensen-huang-dictates-your-401-k-balance-e0942d1e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 26 Nov 2026 15:30:00 GMT"
+  },
+  {
+   "titulo": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
+   "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 26 Nov 2026 15:28:26 GMT"
+  },
+  {
+   "titulo": "My husband secretly sends his ex-wife $1,500 a month after she lost her job. We have $2.4 million saved. Has he lied by omission?",
+   "url": "https://www.marketwatch.com/story/my-husband-secretly-sends-his-ex-wife-1-500-a-month-after-she-lost-her-job-we-have-2-4-million-saved-has-he-lied-by-omission-ede1972a?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 26 Nov 2026 15:13:00 GMT"
+  },
+  {
+   "titulo": "This retired professor has reinvented himself — as a Taylor Swift scholar",
+   "url": "https://www.marketwatch.com/story/this-retired-professor-has-reinvented-himself-as-a-taylor-swift-scholar-88456c8d?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 26 Nov 2026 14:35:00 GMT"
+  },
+  {
+   "titulo": "Nvidia and the whole AI trade aren’t out of the woods — not by a long shot",
+   "url": "https://www.marketwatch.com/story/nvidia-and-the-whole-ai-trade-arent-out-of-the-woods-not-by-a-long-shot-bccc0025?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 26 Nov 2026 14:00:00 GMT"
   },
   {
    "titulo": "What is ‘texture-maxxing’? The food trend putting crunch on the menu",
@@ -286,70 +376,10 @@
    "fecha": "Thu, 26 Nov 2026 13:34:51 GMT"
   },
   {
-   "titulo": "Roth IRA conversions aren’t free money. Watch out for these 5 costly mistakes.",
-   "url": "https://www.marketwatch.com/story/roth-ira-conversions-arent-free-money-watch-out-for-these-5-costly-mistakes-39b182d3?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 26 Nov 2026 13:24:00 GMT"
-  },
-  {
-   "titulo": "‘I felt so seen’: Why families across America are laughing — and crying — over SNL’s ‘Sister’ sketch",
-   "url": "https://www.marketwatch.com/story/so-sad-and-so-true-has-your-family-talked-about-snls-sister-sketch-yet-19bf9d67?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 26 Nov 2026 13:06:00 GMT"
-  },
-  {
-   "titulo": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
-   "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
+   "titulo": "Planes, trains and automobiles: The best ways to beat travel fatigue—so you can come home feeling rested and fulfilled",
+   "url": "https://www.cnbc.com/make-it/2026/11/26/travel-fatigue-holiday-tips.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 26 Nov 2026 12:46:55 GMT"
-  },
-  {
-   "titulo": "Capital preservation rather than chasing the market higher is how hedge funds are negotiating market volatility",
-   "url": "https://www.marketwatch.com/story/capital-preservation-rather-than-chasing-the-market-higher-is-how-hedge-funds-are-negotiating-market-volatility-f4288b71?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 26 Nov 2026 12:37:00 GMT"
-  },
-  {
-   "titulo": "Global stocks rally as investors shrug off U.S. tariffs and AI jitters to 'fish for bargains'",
-   "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 26 Nov 2026 12:22:25 GMT"
-  },
-  {
-   "titulo": "Switzerland’s biggest bank set for showdown with lawmakers as capital fight intensifies amid crisis planning",
-   "url": "https://www.cnbc.com/2026/11/26/ubs-swiss-capital-rules-finma-crisis-plan.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 26 Nov 2026 11:17:39 GMT"
-  },
-  {
-   "titulo": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
-   "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 26 Nov 2026 10:45:45 GMT"
-  },
-  {
-   "titulo": "The tech rout should bottom soon, with a 25% rally for the S&P 500 to follow, says Deutsche Bank",
-   "url": "https://www.marketwatch.com/story/the-tech-rout-should-bottom-soon-with-a-25-rally-for-the-s-p-500-to-follow-says-deutsche-bank-c9070bf6?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 26 Nov 2026 10:11:00 GMT"
-  },
-  {
-   "titulo": "Norse Atlantic suspends all flights, warns it may file for bankruptcy after share price collapse",
-   "url": "https://www.cnbc.com/2026/11/26/norse-airline-finance-business.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 26 Nov 2026 09:02:30 GMT"
-  },
-  {
-   "titulo": "Wealthy Europeans look beyond stocks amid AI selloff. Here’s where they’re investing",
-   "url": "https://www.cnbc.com/2026/11/26/wealthy-europeans-alternative-investments-ai.html",
-   "fuente": "CNBC",
-   "fecha": "Thu, 26 Nov 2026 07:23:42 GMT"
-  },
-  {
-   "titulo": "Is the stock market open for Thanksgiving? The answer might surprise you.",
-   "url": "https://www.marketwatch.com/story/is-the-stock-market-open-for-thanksgiving-the-answer-might-surprise-you-e68114d4?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 26 Nov 2026 07:16:00 GMT"
+   "fecha": "Thu, 26 Nov 2026 13:00:01 GMT"
   },
   {
    "titulo": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
@@ -358,46 +388,16 @@
    "fecha": "Thu, 26 Nov 2026 06:39:34 GMT"
   },
   {
-   "titulo": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
-   "url": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
+   "titulo": "Liesman: Why Greenspan could bet on productivity — and Warsh needs to hike",
+   "url": "https://www.cnbc.com/2026/11/25/kevin-warsh-greenspan-fed-rates-ai-inflation.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 26 Nov 2026 03:19:44 GMT"
+   "fecha": "Wed, 25 Nov 2026 21:56:43 GMT"
   },
   {
-   "titulo": "‘Your booth is waiting’: Denny’s welcomes Jensen Huang back as Nvidia CEO",
-   "url": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
+   "titulo": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
+   "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
    "fuente": "CNBC",
-   "fecha": "Thu, 26 Nov 2026 03:13:43 GMT"
-  },
-  {
-   "titulo": "We are living in perilous times if Nvidia’s Jensen Huang dictates your 401(k) balance",
-   "url": "https://www.marketwatch.com/story/we-are-living-in-perilous-times-if-nvidias-jensen-huang-dictates-your-401-k-balance-e0942d1e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 26 Nov 2026 01:15:00 GMT"
-  },
-  {
-   "titulo": "Why this stock-market selloff is probably going to get worse before it gets better",
-   "url": "https://www.marketwatch.com/story/why-this-stock-market-selloff-is-probably-going-to-get-worse-before-it-gets-better-fce63a89?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Thu, 26 Nov 2026 00:33:00 GMT"
-  },
-  {
-   "titulo": "A 66-year-old nurse is facing down retirement with just $500 saved. Who’s to blame?",
-   "url": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 23:30:00 GMT"
-  },
-  {
-   "titulo": "I’m in my 70s and buying a new BMW X1. Should I put my only son on the title?",
-   "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 23:30:00 GMT"
-  },
-  {
-   "titulo": "Nvidia sellers seek new buyers as U.S. curbs China AI chip access, sources tell CNBC",
-   "url": "https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 17:28:24 GMT"
+   "fecha": "Wed, 25 Nov 2026 16:17:13 GMT"
   },
   {
    "titulo": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-26T14:01:14Z",
+ "ts": "2026-11-26T23:04:58Z",
  "fallas": [
   "videos",
   "directos"
