@@ -55,51 +55,51 @@
   {
    "sym": "NQ",
    "nombre": "Nasdaq 100",
-   "precio": 26038.0,
-   "cambio": 911.5,
-   "pct": 3.63
+   "precio": 26339.25,
+   "cambio": 1212.75,
+   "pct": 4.83
   },
   {
    "sym": "ES",
    "nombre": "S&P 500",
-   "precio": 7190.25,
-   "cambio": 255.25,
-   "pct": 3.68
+   "precio": 7241.75,
+   "cambio": 306.75,
+   "pct": 4.42
   },
   {
    "sym": "GC",
    "nombre": "Oro",
-   "precio": 3608.0,
-   "cambio": 92.6,
-   "pct": 2.63
+   "precio": 3606.3,
+   "cambio": 90.9,
+   "pct": 2.59
   },
   {
    "sym": "CL",
    "nombre": "Crudo WTI",
-   "precio": 84.09,
-   "cambio": 0.11,
-   "pct": 0.13
+   "precio": 84.37,
+   "cambio": 0.39,
+   "pct": 0.46
   },
   {
    "sym": "RTY",
    "nombre": "Russell 2000",
-   "precio": 2703.8,
-   "cambio": 116.4,
-   "pct": 4.5
+   "precio": 2719.6,
+   "cambio": 132.2,
+   "pct": 5.11
   },
   {
    "sym": "YM",
    "nombre": "Dow 30",
-   "precio": 50222.0,
-   "cambio": 2006.0,
-   "pct": 4.16
+   "precio": 50410.0,
+   "cambio": 2194.0,
+   "pct": 4.55
   },
   {
    "sym": "BTC",
    "nombre": "Bitcoin CME",
-   "precio": 60240.0,
-   "cambio": 1935.0,
-   "pct": 3.32
+   "precio": 60780.0,
+   "cambio": 2475.0,
+   "pct": 4.24
   }
  ],
  "acciones": [
@@ -274,16 +274,100 @@
  ],
  "noticias": [
   {
-   "titulo": "Macy's postpones Thanksgiving Day Parade due to severe weather",
-   "url": "https://www.cnbc.com/2026/11/25/macys-thanksgiving-day-parade-postponed.html",
+   "titulo": "Judge blocks FCC early-renewal process for Disney-owned ABC stations, for now",
+   "url": "https://www.cnbc.com/2026/11/26/fcc-disney-abc-stations-judge-block.html",
    "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 21:55:51 GMT"
+   "fecha": "Thu, 26 Nov 2026 04:00:15 GMT"
   },
   {
-   "titulo": "Nvidia’s stock has given back more than half of Monday’s rally as dip buyers cash in",
+   "titulo": "South Korea upgrades growth forecast, raises benchmark rates to highest in two years",
+   "url": "https://www.cnbc.com/2026/11/26/bok-rate-decision-korea-gdp-inflation.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 26 Nov 2026 03:32:53 GMT"
+  },
+  {
+   "titulo": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
+   "url": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 26 Nov 2026 03:19:44 GMT"
+  },
+  {
+   "titulo": "K-beauty stocks rally as Korean brands top Amazon bestseller lists globally ahead of Black Friday",
+   "url": "https://www.cnbc.com/2026/11/26/k-beauty-firms-amazon-sales-black-friday.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 26 Nov 2026 03:09:47 GMT"
+  },
+  {
+   "titulo": "Norse Atlantic flights suspended after warning finances 'critical'",
+   "url": "https://www.cnbc.com/2026/11/26/norse-airline-finance-business.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 26 Nov 2026 01:52:20 GMT"
+  },
+  {
+   "titulo": "South Korea's Kospi leads gains as tech rebound lifts Asia markets",
+   "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 26 Nov 2026 01:45:52 GMT"
+  },
+  {
+   "titulo": "We are living in perilous times if Nvidia’s Jensen Huang dictates your 401(k) balance",
+   "url": "https://www.marketwatch.com/story/we-are-living-in-perilous-times-if-nvidias-jensen-huang-dictates-your-401-k-balance-e0942d1e?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 26 Nov 2026 01:15:00 GMT"
+  },
+  {
+   "titulo": "Hedge funds are no longer just for the rich. They’re coming for everyday investors",
+   "url": "https://www.cnbc.com/2026/11/26/hedge-funds-retail-investors.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 26 Nov 2026 01:10:58 GMT"
+  },
+  {
+   "titulo": "Why this stock-market selloff is probably going to get worse before it gets better",
+   "url": "https://www.marketwatch.com/story/why-this-stock-market-selloff-is-probably-going-to-get-worse-before-it-gets-better-fce63a89?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Thu, 26 Nov 2026 00:33:00 GMT"
+  },
+  {
+   "titulo": "Inside India newsletter: Roaring economy, foreign investors’ return and now record auto sales",
+   "url": "https://www.cnbc.com/2026/11/26/india-auto-slaes-economy-suzuki-hyundai-toyota.html",
+   "fuente": "CNBC",
+   "fecha": "Thu, 26 Nov 2026 00:12:16 GMT"
+  },
+  {
+   "titulo": "A 66-year-old nurse is facing down retirement with just $500 saved. Who’s to blame?",
+   "url": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 23:30:00 GMT"
+  },
+  {
+   "titulo": "I’m in my 70s and buying a new BMW X1. Should I put my only son on the title?",
+   "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 23:30:00 GMT"
+  },
+  {
+   "titulo": "I’ve been married for 58 years. It’s ‘our’ money, not ‘his’ and ‘hers.’ Why do so many couples keep their finances separate?",
+   "url": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 23:00:00 GMT"
+  },
+  {
+   "titulo": "I hate that Jensen Huang is back at Nvidia, but I love what it’s done for my 401(k). Am I a hypocrite?",
+   "url": "https://www.marketwatch.com/story/i-hate-that-jensen-huang-is-back-at-nvidia-but-i-love-what-its-done-for-my-401-k-am-i-a-hypocrite-f63c0303?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 22:45:00 GMT"
+  },
+  {
+   "titulo": "Oracle, CoreWeave and other tech stocks bounce back after selloff",
+   "url": "https://www.marketwatch.com/story/oracles-stock-sinks-toward-a-3-year-low-as-the-ai-trade-continues-to-unravel-d4698d77?mod=mw_rss_topstories",
+   "fuente": "MarketWatch",
+   "fecha": "Wed, 25 Nov 2026 22:16:00 GMT"
+  },
+  {
+   "titulo": "Nvidia’s stock has given back a big chunk of Monday’s rally as dip buyers cash in",
    "url": "https://www.marketwatch.com/story/nvidias-stock-is-giving-back-more-than-half-of-mondays-rally-as-dip-buyers-cash-in-ee4fa52c?mod=mw_rss_topstories",
    "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 21:50:00 GMT"
+   "fecha": "Wed, 25 Nov 2026 22:11:00 GMT"
   },
   {
    "titulo": "Elon Musk and SpaceX to donate roughly $17.8 billion to ‘Trump accounts’",
@@ -298,76 +382,10 @@
    "fecha": "Wed, 25 Nov 2026 21:36:00 GMT"
   },
   {
-   "titulo": "How to spot ‘bogus boutiques’ and other Black Friday shopping scams",
-   "url": "https://www.marketwatch.com/story/how-to-spot-bogus-boutiques-and-other-black-friday-shopping-scams-86cc182d?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 21:29:00 GMT"
-  },
-  {
-   "titulo": "Bullish hopes spring as traders bet against a higher VIX: Options Action Live",
-   "url": "https://www.cnbc.com/2026/11/25/bullish-hopes-spring-as-traders-bet-against-a-higher-vix-options-action-live.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 21:26:47 GMT"
-  },
-  {
    "titulo": "Vance says he was assured Jensen Huang was not under DOJ investigation",
    "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
    "fuente": "CNBC",
    "fecha": "Wed, 25 Nov 2026 21:00:08 GMT"
-  },
-  {
-   "titulo": "We're buying more of a stock down big from its July highs",
-   "url": "https://www.cnbc.com/investingclub/2026/11/25/were-buying-more-of-a-stock-down-big-from-its-july-highs.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 19:55:18 GMT"
-  },
-  {
-   "titulo": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
-   "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 19:52:47 GMT"
-  },
-  {
-   "titulo": "Nvidia is heading for its first ‘death cross’ since March 2025 as stock continues to struggle",
-   "url": "https://www.marketwatch.com/story/nvidia-is-heading-for-its-first-death-cross-since-march-2025-as-stock-continues-to-struggle-a611b99c?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 19:43:00 GMT"
-  },
-  {
-   "titulo": "The Fed says inflation hasn’t gotten any better ahead of its key December vote to raise rates",
-   "url": "https://www.marketwatch.com/story/the-fed-says-inflation-hasnt-gotten-any-better-ahead-of-its-key-december-vote-to-raise-rates-65024d33?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 19:39:00 GMT"
-  },
-  {
-   "titulo": "New-home sales just hit a 2026 high as builders dangle low mortgages and Black Friday deals",
-   "url": "https://www.marketwatch.com/story/new-home-sales-just-hit-a-2026-high-as-builders-dangle-low-mortgages-and-black-friday-deals-291a3b62?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 19:20:00 GMT"
-  },
-  {
-   "titulo": "Why macro investor Raoul Pal says the dollar is the signal to watch for stocks and crypto",
-   "url": "https://www.marketwatch.com/story/why-macro-investor-raoul-pal-says-the-dollar-is-the-signal-to-watch-for-stocks-and-crypto-d36f3c49?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 19:16:00 GMT"
-  },
-  {
-   "titulo": "Saudi national in OpenAI bugging case is out on bond after DOJ tries to block release",
-   "url": "https://www.cnbc.com/2026/11/25/openai-bugging-aflozan-bond-release-saudi.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 19:11:53 GMT"
-  },
-  {
-   "titulo": "Grocery stores have ‘staggering deals’ for Thanksgiving — but don’t get used to these lower prices",
-   "url": "https://www.marketwatch.com/story/grocery-stores-have-staggering-deals-for-thanksgiving-but-dont-get-used-to-these-lower-prices-just-yet-7adfc7f5?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 18:52:00 GMT"
-  },
-  {
-   "titulo": "We are living in perilous times if Nvidia’s Jensen Huang dictates your 401(k) balance",
-   "url": "https://www.marketwatch.com/story/we-are-living-in-perilous-times-if-nvidias-jensen-huang-dictates-your-401-k-balance-e0942d1e?mod=mw_rss_topstories",
-   "fuente": "MarketWatch",
-   "fecha": "Wed, 25 Nov 2026 18:00:00 GMT"
   },
   {
    "titulo": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
@@ -382,28 +400,10 @@
    "fecha": "Wed, 25 Nov 2026 16:02:52 GMT"
   },
   {
-   "titulo": "Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank",
-   "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 14:18:45 GMT"
-  },
-  {
    "titulo": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
    "url": "https://www.cnbc.com/2026/11/25/secondhand-holiday-shopping-grows-as-shoppers-seek-value.html",
    "fuente": "CNBC",
    "fecha": "Wed, 25 Nov 2026 14:17:01 GMT"
-  },
-  {
-   "titulo": "Trump’s meddling in Huang scandal reignites voter angst over tech’s outsized political power",
-   "url": "https://www.cnbc.com/2026/11/25/huang-reinstatement-reignites-voter-angst-over-techs-outsized-power.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 13:20:34 GMT"
-  },
-  {
-   "titulo": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
-   "url": "https://www.cnbc.com/2026/11/25/nvidia-kevin-warsh-fed-market-signals.html",
-   "fuente": "CNBC",
-   "fecha": "Wed, 25 Nov 2026 12:26:41 GMT"
   }
  ],
  "videos": [
@@ -517,7 +517,7 @@
   }
  ],
  "directos": [],
- "ts": "2026-11-25T21:58:23Z",
+ "ts": "2026-11-26T04:04:06Z",
  "fallas": [
   "videos",
   "directos"
